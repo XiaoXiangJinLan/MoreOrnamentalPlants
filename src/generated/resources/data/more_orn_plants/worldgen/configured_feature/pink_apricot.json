@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "foliage_placer": {
+      "type": "more_orn_plants:apricot_foliage_placer",
+      "height": 4,
+      "offset": 0,
+      "outer_layer_hole_chance": 0.1,
+      "radius": 3
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "more_orn_plants:pink_apricot_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 2
+    },
+    "trunk_placer": {
+      "type": "more_orn_plants:apricot_trunk_placer",
+      "base_height": 9,
+      "branch_chance": 0.7,
+      "branch_max_length": 6,
+      "branch_min_length": 4,
+      "branch_start_height": 3,
+      "branch_upward_bias": 0.6,
+      "height_rand_a": 2,
+      "height_rand_b": 2,
+      "max_branches_per_level": 3
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "more_orn_plants:apricot_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

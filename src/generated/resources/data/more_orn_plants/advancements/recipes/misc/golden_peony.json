@@ -1,0 +1,61 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_light_yellow_peony": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:light_yellow_peony"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ochre_yellow_peony": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:ochre_yellow_peony"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:golden_peony"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yellow_peony": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:yellow_peony"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_yellow_peony",
+      "has_light_yellow_peony",
+      "has_ochre_yellow_peony",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:golden_peony"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:wintersweet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wintersweet_bush": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:wintersweet_bush"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wintersweet_bush",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:wintersweet"
+    ]
+  },
+  "sends_telemetry_event": false
+}

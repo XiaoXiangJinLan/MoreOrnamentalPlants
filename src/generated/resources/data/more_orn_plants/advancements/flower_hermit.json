@@ -1,0 +1,36 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_chrysanthemum": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "more_orn_plants:chrysanthemum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.flower_hermit.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "more_orn_plants:chrysanthemum"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.flower_hermit.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_chrysanthemum"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

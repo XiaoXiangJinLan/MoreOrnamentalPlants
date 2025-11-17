@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:purple_leaf_plum_planks"
+    }
+  ],
+  "result": {
+    "item": "more_orn_plants:purple_leaf_plum_button"
+  }
+}

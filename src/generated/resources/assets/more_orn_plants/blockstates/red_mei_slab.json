@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "more_orn_plants:block/red_mei_slab"
+    },
+    "type=double": {
+      "model": "more_orn_plants:block/red_mei_planks"
+    },
+    "type=top": {
+      "model": "more_orn_plants:block/red_mei_slab_top"
+    }
+  }
+}

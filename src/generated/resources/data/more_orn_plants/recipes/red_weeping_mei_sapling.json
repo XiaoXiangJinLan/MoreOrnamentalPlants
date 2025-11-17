@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "more_orn_plants:red_mei_sapling"
+    }
+  },
+  "pattern": [
+    " # ",
+    "# #"
+  ],
+  "result": {
+    "item": "more_orn_plants:red_weeping_mei_sapling"
+  },
+  "show_notification": true
+}

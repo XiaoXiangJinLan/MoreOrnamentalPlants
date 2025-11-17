@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "more_orn_plants:block/purple_leaf_plum_planks"
+  }
+}

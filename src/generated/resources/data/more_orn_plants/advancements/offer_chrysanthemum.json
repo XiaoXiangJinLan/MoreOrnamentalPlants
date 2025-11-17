@@ -1,0 +1,49 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "pot_chrysanthemum": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:flower_pot"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "tag": "more_orn_plants:chrysanthemum"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.offer_chrysanthemum.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:flower_pot"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.offer_chrysanthemum.title"
+    }
+  },
+  "requirements": [
+    [
+      "pot_chrysanthemum"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

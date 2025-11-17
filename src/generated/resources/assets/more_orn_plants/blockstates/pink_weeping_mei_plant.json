@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "top=false": {
+      "model": "more_orn_plants:block/pink_weeping_mei_plant"
+    },
+    "top=true": {
+      "model": "more_orn_plants:block/pink_weeping_mei_plant_top"
+    }
+  }
+}

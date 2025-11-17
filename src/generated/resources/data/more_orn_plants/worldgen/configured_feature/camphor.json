@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "foliage_placer": {
+      "type": "minecraft:fancy_foliage_placer",
+      "height": 3,
+      "offset": 0,
+      "radius": 2
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "more_orn_plants:camphor_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 2
+    },
+    "trunk_placer": {
+      "type": "more_orn_plants:camphor_trunk_placer",
+      "base_height": 9,
+      "branch_chance": 0.7,
+      "branch_length": 3,
+      "fork_height": 3,
+      "height_rand_a": 4,
+      "height_rand_b": 2,
+      "max_branches": 4,
+      "min_branches": 2
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "more_orn_plants:camphor_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

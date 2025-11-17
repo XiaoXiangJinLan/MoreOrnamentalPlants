@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:purple_chrysanthemum"
+    },
+    {
+      "item": "more_orn_plants:purple_chrysanthemum"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "more_orn_plants:violet_pink_chrysanthemum"
+  }
+}

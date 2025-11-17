@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "more_orn_plants:block/red_mei_planks"
+  }
+}

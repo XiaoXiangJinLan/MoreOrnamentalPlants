@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "more_orn_plants:block/camphor_planks",
+    "side": "more_orn_plants:block/camphor_planks",
+    "top": "more_orn_plants:block/camphor_planks"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_lilac": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:lilac"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.flower_melancholy.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:lilac"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.flower_melancholy.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_lilac"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

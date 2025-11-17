@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "more_orn_plants:block/green_calyx_mei_planks",
+    "side": "more_orn_plants:block/green_calyx_mei_planks",
+    "top": "more_orn_plants:block/green_calyx_mei_planks"
+  }
+}

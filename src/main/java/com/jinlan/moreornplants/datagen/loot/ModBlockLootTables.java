@@ -1,0 +1,707 @@
+package com.jinlan.moreornplants.datagen.loot;
+
+import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.block.PeachPinkPetalsBlock;
+import com.jinlan.moreornplants.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
+import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoublePlantBlock;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraftforge.registries.RegistryObject;
+
+import java.util.Set;
+
+public class ModBlockLootTables extends BlockLootSubProvider {
+    public ModBlockLootTables() {
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+    }
+
+    @Override
+    protected void generate() {
+        this.dropSelf(ModBlocks.RED_MEI_LOG.get());
+        this.dropSelf(ModBlocks.RED_MEI_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_RED_MEI_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_RED_MEI_WOOD.get());
+        this.dropSelf(ModBlocks.RED_MEI_PLANKS.get());
+        this.dropSelf(ModBlocks.WHITE_MEI_LOG.get());
+        this.dropSelf(ModBlocks.WHITE_MEI_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_WHITE_MEI_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_WHITE_MEI_WOOD.get());
+        this.dropSelf(ModBlocks.WHITE_MEI_PLANKS.get());
+        this.dropSelf(ModBlocks.GREEN_CALYX_MEI_LOG.get());
+        this.dropSelf(ModBlocks.GREEN_CALYX_MEI_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.get());
+        this.dropSelf(ModBlocks.GREEN_CALYX_MEI_PLANKS.get());
+        this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_LOG.get());
+        this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD.get());
+        this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_LOG.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_CRABAPPLE_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_CRABAPPLE_WOOD.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_PLANKS.get());
+        this.dropSelf(ModBlocks.APRICOT_LOG.get());
+        this.dropSelf(ModBlocks.APRICOT_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_APRICOT_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_APRICOT_WOOD.get());
+        this.dropSelf(ModBlocks.APRICOT_PLANKS.get());
+        this.dropSelf(ModBlocks.PEACH_LOG.get());
+        this.dropSelf(ModBlocks.PEACH_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PEACH_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_PEACH_WOOD.get());
+        this.dropSelf(ModBlocks.PEACH_PLANKS.get());
+        this.dropSelf(ModBlocks.PEAR_LOG.get());
+        this.dropSelf(ModBlocks.PEAR_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PEAR_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_PEAR_WOOD.get());
+        this.dropSelf(ModBlocks.PEAR_PLANKS.get());
+        this.dropSelf(ModBlocks.PURPLE_LEAF_PLUM_LOG.get());
+        this.dropSelf(ModBlocks.PURPLE_LEAF_PLUM_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_WOOD.get());
+        this.dropSelf(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_LOG.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_OSMANTHUS_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_OSMANTHUS_WOOD.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_PLANKS.get());
+        this.dropSelf(ModBlocks.GINKGO_LOG.get());
+        this.dropSelf(ModBlocks.GINKGO_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_GINKGO_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_GINKGO_WOOD.get());
+        this.dropSelf(ModBlocks.GINKGO_PLANKS.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_LOG.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_CHINESE_PARASOL_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_CHINESE_PARASOL_WOOD.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_PLANKS.get());
+        this.dropSelf(ModBlocks.SWEETGUM_LOG.get());
+        this.dropSelf(ModBlocks.SWEETGUM_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_SWEETGUM_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_SWEETGUM_WOOD.get());
+        this.dropSelf(ModBlocks.SWEETGUM_PLANKS.get());
+        this.dropSelf(ModBlocks.CAMPHOR_LOG.get());
+        this.dropSelf(ModBlocks.CAMPHOR_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_CAMPHOR_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_CAMPHOR_WOOD.get());
+        this.dropSelf(ModBlocks.CAMPHOR_PLANKS.get());
+        this.dropSelf(ModBlocks.WEEPING_CRABAPPLE.get());
+
+        this.dropSelf(ModBlocks.RED_MEI_STAIRS.get());
+        this.dropSelf(ModBlocks.RED_MEI_BUTTON.get());
+        this.dropSelf(ModBlocks.RED_MEI_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.RED_MEI_FENCE.get());
+        this.dropSelf(ModBlocks.RED_MEI_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.WHITE_MEI_STAIRS.get());
+        this.dropSelf(ModBlocks.WHITE_MEI_BUTTON.get());
+        this.dropSelf(ModBlocks.WHITE_MEI_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.WHITE_MEI_FENCE.get());
+        this.dropSelf(ModBlocks.WHITE_MEI_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.GREEN_CALYX_MEI_STAIRS.get());
+        this.dropSelf(ModBlocks.GREEN_CALYX_MEI_BUTTON.get());
+        this.dropSelf(ModBlocks.GREEN_CALYX_MEI_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.GREEN_CALYX_MEI_FENCE.get());
+        this.dropSelf(ModBlocks.GREEN_CALYX_MEI_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_STAIRS.get());
+        this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_BUTTON.get());
+        this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_FENCE.get());
+        this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_STAIRS.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_BUTTON.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_FENCE.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.APRICOT_STAIRS.get());
+        this.dropSelf(ModBlocks.APRICOT_BUTTON.get());
+        this.dropSelf(ModBlocks.APRICOT_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.APRICOT_FENCE.get());
+        this.dropSelf(ModBlocks.APRICOT_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.PEACH_STAIRS.get());
+        this.dropSelf(ModBlocks.PEACH_BUTTON.get());
+        this.dropSelf(ModBlocks.PEACH_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.PEACH_FENCE.get());
+        this.dropSelf(ModBlocks.PEACH_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.PEAR_STAIRS.get());
+        this.dropSelf(ModBlocks.PEAR_BUTTON.get());
+        this.dropSelf(ModBlocks.PEAR_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.PEAR_FENCE.get());
+        this.dropSelf(ModBlocks.PEAR_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.PURPLE_LEAF_PLUM_STAIRS.get());
+        this.dropSelf(ModBlocks.PURPLE_LEAF_PLUM_BUTTON.get());
+        this.dropSelf(ModBlocks.PURPLE_LEAF_PLUM_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.PURPLE_LEAF_PLUM_FENCE.get());
+        this.dropSelf(ModBlocks.PURPLE_LEAF_PLUM_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_STAIRS.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_BUTTON.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_FENCE.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.GINKGO_STAIRS.get());
+        this.dropSelf(ModBlocks.GINKGO_BUTTON.get());
+        this.dropSelf(ModBlocks.GINKGO_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.GINKGO_FENCE.get());
+        this.dropSelf(ModBlocks.GINKGO_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_STAIRS.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_BUTTON.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_FENCE.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.SWEETGUM_STAIRS.get());
+        this.dropSelf(ModBlocks.SWEETGUM_BUTTON.get());
+        this.dropSelf(ModBlocks.SWEETGUM_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.SWEETGUM_FENCE.get());
+        this.dropSelf(ModBlocks.SWEETGUM_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.CAMPHOR_STAIRS.get());
+        this.dropSelf(ModBlocks.CAMPHOR_BUTTON.get());
+        this.dropSelf(ModBlocks.CAMPHOR_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.CAMPHOR_FENCE.get());
+        this.dropSelf(ModBlocks.CAMPHOR_FENCE_GATE.get());
+
+        this.add(ModBlocks.RED_MEI_SLAB.get(),
+                createSlabItemTable(ModBlocks.RED_MEI_SLAB.get()));
+        this.add(ModBlocks.WHITE_MEI_SLAB.get(),
+                createSlabItemTable(ModBlocks.WHITE_MEI_SLAB.get()));
+        this.add(ModBlocks.GREEN_CALYX_MEI_SLAB.get(),
+                createSlabItemTable(ModBlocks.GREEN_CALYX_MEI_SLAB.get()));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_SLAB.get(),
+                createSlabItemTable(ModBlocks.DOUBLE_PINK_MEI_SLAB.get()));
+        this.add(ModBlocks.CRABAPPLE_SLAB.get(),
+                createSlabItemTable(ModBlocks.CRABAPPLE_SLAB.get()));
+        this.add(ModBlocks.APRICOT_SLAB.get(),
+                createSlabItemTable(ModBlocks.APRICOT_SLAB.get()));
+        this.add(ModBlocks.PEACH_SLAB.get(),
+                createSlabItemTable(ModBlocks.PEACH_SLAB.get()));
+        this.add(ModBlocks.PEAR_SLAB.get(),
+                createSlabItemTable(ModBlocks.PEAR_SLAB.get()));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_SLAB.get(),
+                createSlabItemTable(ModBlocks.PURPLE_LEAF_PLUM_SLAB.get()));
+        this.add(ModBlocks.OSMANTHUS_SLAB.get(),
+                createSlabItemTable(ModBlocks.OSMANTHUS_SLAB.get()));
+        this.add(ModBlocks.GINKGO_SLAB.get(),
+                createSlabItemTable(ModBlocks.GINKGO_SLAB.get()));
+        this.add(ModBlocks.CHINESE_PARASOL_SLAB.get(),
+                createSlabItemTable(ModBlocks.CHINESE_PARASOL_SLAB.get()));
+        this.add(ModBlocks.SWEETGUM_SLAB.get(),
+                createSlabItemTable(ModBlocks.SWEETGUM_SLAB.get()));
+        this.add(ModBlocks.CAMPHOR_SLAB.get(),
+                createSlabItemTable(ModBlocks.CAMPHOR_SLAB.get()));
+
+        this.dropSelf(ModBlocks.RED_MEI_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.WHITE_MEI_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.GREEN_CALYX_MEI_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.APRICOT_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.PEACH_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.PEAR_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.PURPLE_LEAF_PLUM_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.GINKGO_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.SWEETGUM_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.CAMPHOR_TRAPDOOR.get());
+
+        this.add(ModBlocks.RED_MEI_DOOR.get(),
+                createDoorTable(ModBlocks.RED_MEI_DOOR.get()));
+        this.add(ModBlocks.WHITE_MEI_DOOR.get(),
+                createDoorTable(ModBlocks.WHITE_MEI_DOOR.get()));
+        this.add(ModBlocks.GREEN_CALYX_MEI_DOOR.get(),
+                createDoorTable(ModBlocks.GREEN_CALYX_MEI_DOOR.get()));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_DOOR.get(),
+                createDoorTable(ModBlocks.DOUBLE_PINK_MEI_DOOR.get()));
+        this.add(ModBlocks.CRABAPPLE_DOOR.get(),
+                createDoorTable(ModBlocks.CRABAPPLE_DOOR.get()));
+        this.add(ModBlocks.APRICOT_DOOR.get(),
+                createDoorTable(ModBlocks.APRICOT_DOOR.get()));
+        this.add(ModBlocks.PEACH_DOOR.get(),
+                createDoorTable(ModBlocks.PEACH_DOOR.get()));
+        this.add(ModBlocks.PEAR_DOOR.get(),
+                createDoorTable(ModBlocks.PEAR_DOOR.get()));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_DOOR.get(),
+                createDoorTable(ModBlocks.PURPLE_LEAF_PLUM_DOOR.get()));
+        this.add(ModBlocks.OSMANTHUS_DOOR.get(),
+                createDoorTable(ModBlocks.OSMANTHUS_DOOR.get()));
+        this.add(ModBlocks.GINKGO_DOOR.get(),
+                createDoorTable(ModBlocks.GINKGO_DOOR.get()));
+        this.add(ModBlocks.CHINESE_PARASOL_DOOR.get(),
+                createDoorTable(ModBlocks.CHINESE_PARASOL_DOOR.get()));
+        this.add(ModBlocks.SWEETGUM_DOOR.get(),
+                createDoorTable(ModBlocks.SWEETGUM_DOOR.get()));
+        this.add(ModBlocks.CAMPHOR_DOOR.get(),
+                createDoorTable(ModBlocks.CAMPHOR_DOOR.get()));
+
+        this.add(ModBlocks.RED_MEI_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.RED_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WHITE_MEI_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WHITE_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.GREEN_CALYX_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.DOUBLE_PINK_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.VERSICOLOR_MEI_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PINK_APRICOT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WEEPING_CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PINK_APRICOT_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PINK_APRICOT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WHITE_APRICOT_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WHITE_APRICOT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WILD_PEACH_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WILD_PEACH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PEAR_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PEAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.ORANGE_OSMANTHUS_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WHITE_OSMANTHUS_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WHITE_OSMANTHUS_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.GOLDEN_GINKGO_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.GOLDEN_GINKGO_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.GREEN_GINKGO_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.GREEN_GINKGO_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.SWEETGUM_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.SWEETGUM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.CAMPHOR_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.CAMPHOR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.NEW_CAMPHOR_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.CAMPHOR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(ModBlocks.RED_WEEPING_MEI.get(), block ->
+                createLeavesDrops(block, ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), block ->
+                createLeavesDrops(block, ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WHITE_WEEPING_MEI.get(), block ->
+                createLeavesDrops(block, ModBlocks.WHITE_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), block ->
+                createLeavesDrops(block, ModBlocks.WHITE_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.GREEN_WEEPING_MEI.get(), block ->
+                createLeavesDrops(block, ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.GREEN_WEEPING_MEI_PLANT.get(), block ->
+                createLeavesDrops(block, ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PINK_WEEPING_MEI.get(), block ->
+                createLeavesDrops(block, ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PINK_WEEPING_MEI_PLANT.get(), block ->
+                createLeavesDrops(block, ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), block ->
+                createLeavesDrops(block, ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get(), block ->
+                createLeavesDrops(block, ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        this.add(ModBlocks.RED_MEI_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_SIGN.get()));
+        this.add(ModBlocks.RED_MEI_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.RED_MEI_SIGN.get()));
+        this.add(ModBlocks.WHITE_MEI_SIGN.get(), block -> createSingleItemTable(ModItems.WHITE_MEI_SIGN.get()));
+        this.add(ModBlocks.WHITE_MEI_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.WHITE_MEI_SIGN.get()));
+        this.add(ModBlocks.GREEN_CALYX_MEI_SIGN.get(), block -> createSingleItemTable(ModItems.GREEN_CALYX_MEI_SIGN.get()));
+        this.add(ModBlocks.GREEN_CALYX_MEI_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.GREEN_CALYX_MEI_SIGN.get()));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_SIGN.get(), block -> createSingleItemTable(ModItems.DOUBLE_PINK_MEI_SIGN.get()));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.DOUBLE_PINK_MEI_SIGN.get()));
+        this.add(ModBlocks.CRABAPPLE_SIGN.get(), block -> createSingleItemTable(ModItems.CRABAPPLE_SIGN.get()));
+        this.add(ModBlocks.CRABAPPLE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.CRABAPPLE_SIGN.get()));
+        this.add(ModBlocks.APRICOT_SIGN.get(), block -> createSingleItemTable(ModItems.APRICOT_SIGN.get()));
+        this.add(ModBlocks.APRICOT_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.APRICOT_SIGN.get()));
+        this.add(ModBlocks.PEACH_SIGN.get(), block -> createSingleItemTable(ModItems.PEACH_SIGN.get()));
+        this.add(ModBlocks.PEACH_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PEACH_SIGN.get()));
+        this.add(ModBlocks.PEAR_SIGN.get(), block -> createSingleItemTable(ModItems.PEAR_SIGN.get()));
+        this.add(ModBlocks.PEAR_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PEAR_SIGN.get()));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_SIGN.get(), block -> createSingleItemTable(ModItems.PURPLE_LEAF_PLUM_SIGN.get()));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PURPLE_LEAF_PLUM_SIGN.get()));
+        this.add(ModBlocks.OSMANTHUS_SIGN.get(), block -> createSingleItemTable(ModItems.OSMANTHUS_SIGN.get()));
+        this.add(ModBlocks.OSMANTHUS_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OSMANTHUS_SIGN.get()));
+        this.add(ModBlocks.GINKGO_SIGN.get(), block -> createSingleItemTable(ModItems.GINKGO_SIGN.get()));
+        this.add(ModBlocks.GINKGO_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.GINKGO_SIGN.get()));
+        this.add(ModBlocks.CHINESE_PARASOL_SIGN.get(), block -> createSingleItemTable(ModItems.CHINESE_PARASOL_SIGN.get()));
+        this.add(ModBlocks.CHINESE_PARASOL_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.CHINESE_PARASOL_SIGN.get()));
+        this.add(ModBlocks.SWEETGUM_SIGN.get(), block -> createSingleItemTable(ModItems.SWEETGUM_SIGN.get()));
+        this.add(ModBlocks.SWEETGUM_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.SWEETGUM_SIGN.get()));
+        this.add(ModBlocks.CAMPHOR_SIGN.get(), block -> createSingleItemTable(ModItems.CAMPHOR_SIGN.get()));
+        this.add(ModBlocks.CAMPHOR_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.CAMPHOR_SIGN.get()));
+
+        this.add(ModBlocks.RED_MEI_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.RED_MEI_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.RED_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.WHITE_MEI_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.WHITE_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.WHITE_MEI_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.WHITE_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.GREEN_CALYX_MEI_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.GREEN_CALYX_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.GREEN_CALYX_MEI_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.GREEN_CALYX_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.DOUBLE_PINK_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.DOUBLE_PINK_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.CRABAPPLE_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CRABAPPLE_HANGING_SIGN.get()));
+        this.add(ModBlocks.CRABAPPLE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.CRABAPPLE_HANGING_SIGN.get()));
+        this.add(ModBlocks.APRICOT_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.APRICOT_HANGING_SIGN.get()));
+        this.add(ModBlocks.APRICOT_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.APRICOT_HANGING_SIGN.get()));
+        this.add(ModBlocks.PEACH_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.PEACH_HANGING_SIGN.get()));
+        this.add(ModBlocks.PEACH_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PEACH_HANGING_SIGN.get()));
+        this.add(ModBlocks.PEAR_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.PEAR_HANGING_SIGN.get()));
+        this.add(ModBlocks.PEAR_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PEAR_HANGING_SIGN.get()));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.PURPLE_LEAF_PLUM_HANGING_SIGN.get()));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PURPLE_LEAF_PLUM_HANGING_SIGN.get()));
+        this.add(ModBlocks.OSMANTHUS_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.OSMANTHUS_HANGING_SIGN.get()));
+        this.add(ModBlocks.OSMANTHUS_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.OSMANTHUS_HANGING_SIGN.get()));
+        this.add(ModBlocks.GINKGO_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.GINKGO_HANGING_SIGN.get()));
+        this.add(ModBlocks.GINKGO_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.GINKGO_HANGING_SIGN.get()));
+        this.add(ModBlocks.CHINESE_PARASOL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CHINESE_PARASOL_HANGING_SIGN.get()));
+        this.add(ModBlocks.CHINESE_PARASOL_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.CHINESE_PARASOL_HANGING_SIGN.get()));
+        this.add(ModBlocks.SWEETGUM_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.SWEETGUM_HANGING_SIGN.get()));
+        this.add(ModBlocks.SWEETGUM_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.SWEETGUM_HANGING_SIGN.get()));
+        this.add(ModBlocks.CAMPHOR_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CAMPHOR_HANGING_SIGN.get()));
+        this.add(ModBlocks.CAMPHOR_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.CAMPHOR_HANGING_SIGN.get()));
+
+        this.dropSelf(ModBlocks.RED_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_RED_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.RED_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.WHITE_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_WHITE_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.GREEN_CALYX_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_GREEN_CALYX_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.GREEN_CALYX_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_DOUBLE_PINK_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.VERSICOLOR_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_VERSICOLOR_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.VERSICOLOR_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.RED_WEEPING_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_RED_WEEPING_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.RED_WEEPING_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_WHITE_WEEPING_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_GREEN_WEEPING_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.PINK_WEEPING_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_PINK_WEEPING_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_WEEPING_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_VERSICOLOR_WEEPING_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get());
+        this.add(ModBlocks.POTTED_UPRIGHT_CRABAPPLE_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
+        this.dropSelf(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get());
+        this.add(ModBlocks.POTTED_WEEPING_CRABAPPLE_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get()));
+        this.dropSelf(ModBlocks.PINK_APRICOT_SAPLING.get());
+        this.add(ModBlocks.POTTED_PINK_APRICOT_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_APRICOT_SAPLING.get()));
+        this.dropSelf(ModBlocks.WHITE_APRICOT_SAPLING.get());
+        this.add(ModBlocks.POTTED_WHITE_APRICOT_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_APRICOT_SAPLING.get()));
+        this.dropSelf(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get());
+        this.add(ModBlocks.POTTED_ORNAMENTAL_PEACH_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
+        this.dropSelf(ModBlocks.WILD_PEACH_SAPLING.get());
+        this.add(ModBlocks.POTTED_WILD_PEACH_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.WILD_PEACH_SAPLING.get()));
+        this.dropSelf(ModBlocks.PEAR_SAPLING.get());
+        this.add(ModBlocks.POTTED_PEAR_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.PEAR_SAPLING.get()));
+        this.dropSelf(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get());
+        this.add(ModBlocks.POTTED_FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get()));
+        this.dropSelf(ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get());
+        this.add(ModBlocks.POTTED_PURPLE_LEAF_PLUM_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get()));
+        this.dropSelf(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get());
+        this.add(ModBlocks.POTTED_GOLDEN_OSMANTHUS_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get()));
+        this.dropSelf(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get());
+        this.add(ModBlocks.POTTED_ORANGE_OSMANTHUS_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get()));
+        this.dropSelf(ModBlocks.WHITE_OSMANTHUS_SAPLING.get());
+        this.add(ModBlocks.POTTED_WHITE_OSMANTHUS_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_OSMANTHUS_SAPLING.get()));
+        this.dropSelf(ModBlocks.GOLDEN_GINKGO_SAPLING.get());
+        this.add(ModBlocks.POTTED_GOLDEN_GINKGO_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.GOLDEN_GINKGO_SAPLING.get()));
+        this.dropSelf(ModBlocks.GREEN_GINKGO_SAPLING.get());
+        this.add(ModBlocks.POTTED_GREEN_GINKGO_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.GREEN_GINKGO_SAPLING.get()));
+        this.dropSelf(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get());
+        this.add(ModBlocks.POTTED_YELLOW_CHINESE_PARASOL_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get()));
+        this.dropSelf(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get());
+        this.add(ModBlocks.POTTED_GREEN_CHINESE_PARASOL_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get()));
+        this.dropSelf(ModBlocks.SWEETGUM_SAPLING.get());
+        this.add(ModBlocks.POTTED_SWEETGUM_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.SWEETGUM_SAPLING.get()));
+        this.dropSelf(ModBlocks.CAMPHOR_SAPLING.get());
+        this.add(ModBlocks.POTTED_CAMPHOR_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.CAMPHOR_SAPLING.get()));
+
+        this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
+        this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),
+                createPotFlowerItemTable(ModBlocks.CHRYSANTHEMUM.get()));
+        this.dropSelf(ModBlocks.GOLDEN_CHRYSANTHEMUM.get());
+        this.add(ModBlocks.POTTED_GOLDEN_CHRYSANTHEMUM.get(),
+                createPotFlowerItemTable(ModBlocks.GOLDEN_CHRYSANTHEMUM.get()));
+        this.dropSelf(ModBlocks.GOLD_BACKED_SCARLET_MUM.get());
+        this.add(ModBlocks.POTTED_GOLD_BACKED_SCARLET_MUM.get(),
+                createPotFlowerItemTable(ModBlocks.GOLD_BACKED_SCARLET_MUM.get()));
+        this.dropSelf(ModBlocks.WHITE_CHRYSANTHEMUM.get());
+        this.add(ModBlocks.POTTED_WHITE_CHRYSANTHEMUM.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_CHRYSANTHEMUM.get()));
+        this.dropSelf(ModBlocks.GREEN_CHRYSANTHEMUM.get());
+        this.add(ModBlocks.POTTED_GREEN_CHRYSANTHEMUM.get(),
+                createPotFlowerItemTable(ModBlocks.GREEN_CHRYSANTHEMUM.get()));
+        this.dropSelf(ModBlocks.PURPLE_CHRYSANTHEMUM.get());
+        this.add(ModBlocks.POTTED_PURPLE_CHRYSANTHEMUM.get(),
+                createPotFlowerItemTable(ModBlocks.PURPLE_CHRYSANTHEMUM.get()));
+        this.dropSelf(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get());
+        this.add(ModBlocks.POTTED_VIOLET_PINK_CHRYSANTHEMUM.get(),
+                createPotFlowerItemTable(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get()));
+        this.dropSelf(ModBlocks.PINK_CHRYSANTHEMUM.get());
+        this.add(ModBlocks.POTTED_PINK_CHRYSANTHEMUM.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_CHRYSANTHEMUM.get()));
+        this.dropSelf(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get());
+        this.add(ModBlocks.POTTED_LIGHT_PINK_CHRYSANTHEMUM.get(),
+                createPotFlowerItemTable(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get()));
+        this.dropSelf(ModBlocks.SPRING_CYMBIDIUM.get());
+        this.add(ModBlocks.POTTED_SPRING_CYMBIDIUM.get(),
+                createPotFlowerItemTable(ModBlocks.SPRING_CYMBIDIUM.get()));
+        this.dropSelf(ModBlocks.PEONY.get());
+        this.add(ModBlocks.POTTED_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.PEONY.get()));
+        this.dropSelf(ModBlocks.LIGHT_PINK_PEONY.get());
+        this.add(ModBlocks.POTTED_LIGHT_PINK_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.LIGHT_PINK_PEONY.get()));
+        this.dropSelf(ModBlocks.VIOLET_PINK_PEONY.get());
+        this.add(ModBlocks.POTTED_VIOLET_PINK_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.VIOLET_PINK_PEONY.get()));
+        this.dropSelf(ModBlocks.PINK_PEONY.get());
+        this.add(ModBlocks.POTTED_PINK_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_PEONY.get()));
+        this.dropSelf(ModBlocks.RED_PEONY.get());
+        this.add(ModBlocks.POTTED_RED_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.RED_PEONY.get()));
+        this.dropSelf(ModBlocks.LIGHT_RED_PEONY.get());
+        this.add(ModBlocks.POTTED_LIGHT_RED_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.LIGHT_RED_PEONY.get()));
+        this.dropSelf(ModBlocks.INK_RED_PEONY.get());
+        this.add(ModBlocks.POTTED_INK_RED_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.INK_RED_PEONY.get()));
+        this.dropSelf(ModBlocks.VERMILION_PEONY.get());
+        this.add(ModBlocks.POTTED_VERMILION_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.VERMILION_PEONY.get()));
+        this.dropSelf(ModBlocks.PURPLE_PEONY.get());
+        this.add(ModBlocks.POTTED_PURPLE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.PURPLE_PEONY.get()));
+        this.dropSelf(ModBlocks.LIGHT_PURPLE_PEONY.get());
+        this.add(ModBlocks.POTTED_LIGHT_PURPLE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.LIGHT_PURPLE_PEONY.get()));
+        this.dropSelf(ModBlocks.INK_PURPLE_PEONY.get());
+        this.add(ModBlocks.POTTED_INK_PURPLE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.INK_PURPLE_PEONY.get()));
+        this.dropSelf(ModBlocks.VIOLET_PEONY.get());
+        this.add(ModBlocks.POTTED_VIOLET_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.VIOLET_PEONY.get()));
+        this.dropSelf(ModBlocks.YELLOW_PEONY.get());
+        this.add(ModBlocks.POTTED_YELLOW_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.YELLOW_PEONY.get()));
+        this.dropSelf(ModBlocks.LIGHT_YELLOW_PEONY.get());
+        this.add(ModBlocks.POTTED_LIGHT_YELLOW_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.LIGHT_YELLOW_PEONY.get()));
+        this.dropSelf(ModBlocks.OCHRE_YELLOW_PEONY.get());
+        this.add(ModBlocks.POTTED_OCHRE_YELLOW_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.OCHRE_YELLOW_PEONY.get()));
+        this.dropSelf(ModBlocks.GOLDEN_PEONY.get());
+        this.add(ModBlocks.POTTED_GOLDEN_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.GOLDEN_PEONY.get()));
+        this.dropSelf(ModBlocks.WHITE_PEONY.get());
+        this.add(ModBlocks.POTTED_WHITE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_PEONY.get()));
+        this.dropSelf(ModBlocks.INK_PEONY.get());
+        this.add(ModBlocks.POTTED_INK_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.INK_PEONY.get()));
+        this.dropSelf(ModBlocks.BLUE_PEONY.get());
+        this.add(ModBlocks.POTTED_BLUE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.BLUE_PEONY.get()));
+        this.dropSelf(ModBlocks.GREEN_PEONY.get());
+        this.add(ModBlocks.POTTED_GREEN_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.GREEN_PEONY.get()));
+        this.dropSelf(ModBlocks.COLORFUL_PEONY.get());
+        this.add(ModBlocks.POTTED_COLORFUL_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.COLORFUL_PEONY.get()));
+        this.dropSelf(ModBlocks.LIGHT_COLORFUL_PEONY.get());
+        this.add(ModBlocks.POTTED_LIGHT_COLORFUL_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.LIGHT_COLORFUL_PEONY.get()));
+        this.dropSelf(ModBlocks.INK_COLORFUL_PEONY.get());
+        this.add(ModBlocks.POTTED_INK_COLORFUL_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.INK_COLORFUL_PEONY.get()));
+        this.dropSelf(ModBlocks.RED_WHITE_PEONY.get());
+        this.add(ModBlocks.POTTED_RED_WHITE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.RED_WHITE_PEONY.get()));
+        this.dropSelf(ModBlocks.PINK_WHITE_PEONY.get());
+        this.add(ModBlocks.POTTED_PINK_WHITE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_WHITE_PEONY.get()));
+        this.dropSelf(ModBlocks.YELLOW_WHITE_PEONY.get());
+        this.add(ModBlocks.POTTED_YELLOW_WHITE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.YELLOW_WHITE_PEONY.get()));
+        this.dropSelf(ModBlocks.PURPLE_WHITE_PEONY.get());
+        this.add(ModBlocks.POTTED_PURPLE_WHITE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.PURPLE_WHITE_PEONY.get()));
+        this.dropSelf(ModBlocks.WU_HUA_LONG_YU_PEONY.get());
+        this.add(ModBlocks.POTTED_WU_HUA_LONG_YU_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.WU_HUA_LONG_YU_PEONY.get()));
+        this.dropSelf(ModBlocks.MAUVE_PEONY.get());
+        this.add(ModBlocks.POTTED_MAUVE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.MAUVE_PEONY.get()));
+        this.dropSelf(ModBlocks.CAMELLIA.get());
+        this.add(ModBlocks.POTTED_CAMELLIA.get(),
+                createPotFlowerItemTable(ModBlocks.CAMELLIA.get()));
+        this.dropSelf(ModBlocks.PINK_CAMELLIA.get());
+        this.add(ModBlocks.POTTED_PINK_CAMELLIA.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_CAMELLIA.get()));
+        this.dropSelf(ModBlocks.WHITE_CAMELLIA.get());
+        this.add(ModBlocks.POTTED_WHITE_CAMELLIA.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_CAMELLIA.get()));
+        this.dropSelf(ModBlocks.VERSICOLOR_CAMELLIA.get());
+        this.add(ModBlocks.POTTED_VERSICOLOR_CAMELLIA.get(),
+                createPotFlowerItemTable(ModBlocks.VERSICOLOR_CAMELLIA.get()));
+        this.dropSelf(ModBlocks.CRIMSON_AZALEA.get());
+        this.add(ModBlocks.POTTED_CRIMSON_AZALEA.get(),
+                createPotFlowerItemTable(ModBlocks.CRIMSON_AZALEA.get()));
+
+        this.dropSelf(ModBlocks.WINTERSWEET_BUSH.get());
+        this.add(ModBlocks.POTTED_WINTERSWEET_BUSH.get(),
+                createPotFlowerItemTable(ModBlocks.WINTERSWEET_BUSH.get()));
+        this.dropSelf(ModBlocks.CHINESE_ROSE_BUSH.get());
+        this.add(ModBlocks.POTTED_CHINESE_ROSE_BUSH.get(),
+                createPotFlowerItemTable(ModBlocks.CHINESE_ROSE_BUSH.get()));
+        this.dropSelf(ModBlocks.PINK_CHINESE_ROSE_BUSH.get());
+        this.add(ModBlocks.POTTED_PINK_CHINESE_ROSE_BUSH.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_CHINESE_ROSE_BUSH.get()));
+        this.dropSelf(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get());
+        this.add(ModBlocks.POTTED_YELLOW_CHINESE_ROSE_BUSH.get(),
+                createPotFlowerItemTable(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get()));
+        this.dropSelf(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get());
+        this.add(ModBlocks.POTTED_WHITE_CHINESE_ROSE_BUSH.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get()));
+        this.dropSelf(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get());
+        this.add(ModBlocks.POTTED_RED_PINK_CHINESE_ROSE_BUSH.get(),
+                createPotFlowerItemTable(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get()));
+        this.dropSelf(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get());
+        this.add(ModBlocks.POTTED_RED_YELLOW_CHINESE_ROSE_BUSH.get(),
+                createPotFlowerItemTable(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get()));
+        this.dropSelf(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get());
+        this.add(ModBlocks.POTTED_RED_WHITE_CHINESE_ROSE_BUSH.get(),
+                createPotFlowerItemTable(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get()));
+        this.dropSelf(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get());
+        this.add(ModBlocks.POTTED_PINK_WHITE_CHINESE_ROSE_BUSH.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get()));
+        this.dropSelf(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get());
+        this.add(ModBlocks.POTTED_YELLOW_WHITE_CHINESE_ROSE_BUSH.get(),
+                createPotFlowerItemTable(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get()));
+
+        this.add(ModBlocks.WINTERSWEET.get(), createSinglePropConditionTable(ModBlocks.WINTERSWEET.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.TWO_QIAO_PEONY.get(), createSinglePropConditionTable(ModBlocks.TWO_QIAO_PEONY.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.VERSICOLOR_PEONY.get(), createSinglePropConditionTable(ModBlocks.VERSICOLOR_PEONY.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.PINK_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.PINK_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.YELLOW_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.YELLOW_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.WHITE_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.RED_PINK_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.RED_PINK_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.RED_YELLOW_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.RED_WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.RED_WHITE_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.PINK_WHITE_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+
+        this.add(ModBlocks.PEACH_PINK_PETALS.get(), block -> {
+            LootPool.Builder pool = LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                    .add(LootItem.lootTableItem(ModBlocks.PEACH_PINK_PETALS.get())
+                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1.0F))
+                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                            .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 1))))
+                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2.0F))
+                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                            .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 2))))
+                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(3.0F))
+                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                            .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 3))))
+                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(4.0F))
+                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                            .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 4))))
+                            .apply(ApplyExplosionDecay.explosionDecay()));
+            return LootTable.lootTable().withPool(pool);
+        });
+
+    }
+
+    @Override
+    protected Iterable<Block> getKnownBlocks() {
+        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    }
+}
