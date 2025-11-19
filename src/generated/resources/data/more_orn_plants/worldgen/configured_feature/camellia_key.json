@@ -6,10 +6,21 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "more_orn_plants:camellia"
-            }
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "more_orn_plants:camellia"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:white_camellia"
+                },
+                "weight": 1
+              }
+            ]
           }
         }
       },

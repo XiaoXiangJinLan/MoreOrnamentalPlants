@@ -24,6 +24,8 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.GREEN_CALYX_MEI_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
         event.registerLayerDefinition(ModModelLayers.DOUBLE_PINK_MEI_BOAT_LAYER, BoatModel::createBodyModel);
         event.registerLayerDefinition(ModModelLayers.DOUBLE_PINK_MEI_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
+        event.registerLayerDefinition(ModModelLayers.CRABAPPLE_BOAT_LAYER, BoatModel::createBodyModel);
+        event.registerLayerDefinition(ModModelLayers.CRABAPPLE_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
         event.registerLayerDefinition(ModModelLayers.CAMPHOR_BOAT_LAYER, BoatModel::createBodyModel);
         event.registerLayerDefinition(ModModelLayers.CAMPHOR_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
     }

@@ -7,6 +7,7 @@ import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -941,5 +942,51 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get(), 2)
                 .unlockedBy(getHasName(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get()), has(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "yellow_white_chinese_rose_from_bush"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.RED_DYE)
+                .requires(ModTags.Items.RED_DYE)
+                .group("red_dye")
+                .unlockedBy("has_red_dye_item", has(ModTags.Items.RED_DYE))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.PINK_DYE)
+                .requires(ModTags.Items.PINK_DYE)
+                .group("pink_dye")
+                .unlockedBy("has_pink_dye_item", has(ModTags.Items.PINK_DYE))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.WHITE_DYE)
+                .requires(ModTags.Items.WHITE_DYE)
+                .group("white_dye")
+                .unlockedBy("has_white_dye_item", has(ModTags.Items.WHITE_DYE))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.YELLOW_DYE)
+                .requires(ModTags.Items.YELLOW_DYE)
+                .group("yellow_dye")
+                .unlockedBy("has_yellow_dye_item", has(ModTags.Items.YELLOW_DYE))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.PURPLE_DYE)
+                .requires(ModTags.Items.PURPLE_DYE)
+                .group("purple_dye")
+                .unlockedBy("has_purple_dye_item", has(ModTags.Items.PURPLE_DYE))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.LIME_DYE)
+                .requires(ModTags.Items.LIME_DYE)
+                .group("lime_dye")
+                .unlockedBy("has_lime_dye_item", has(ModTags.Items.LIME_DYE))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.GREEN_DYE)
+                .requires(ModTags.Items.GREEN_DYE)
+                .group("green_dye")
+                .unlockedBy("has_green_dye_item", has(ModTags.Items.GREEN_DYE))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.LIGHT_BLUE_DYE)
+                .requires(ModTags.Items.LIGHT_BLUE_DYE)
+                .group("light_blue_dye")
+                .unlockedBy("has_light_blue_dye_item", has(ModTags.Items.LIGHT_BLUE_DYE))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BLACK_DYE)
+                .requires(ModTags.Items.BLACK_DYE)
+                .group("black_dye")
+                .unlockedBy("has_black_dye_item", has(ModTags.Items.BLACK_DYE))
+                .save(pWriter);
     }
 }

@@ -699,6 +699,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get())
                 .add(ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get());
 
+        this.tag(ModTags.Blocks.GINKGO)
+                .add(ModBlocks.GOLDEN_GINKGO_SAPLING.get())
+                .add(ModBlocks.GREEN_GINKGO_SAPLING.get());
+
         this.tag(ModTags.Blocks.CHINESE_PARASOL)
                 .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get())
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get());

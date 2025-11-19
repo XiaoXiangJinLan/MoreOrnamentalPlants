@@ -1,4 +1,22 @@
-// 1.20.1	2025-11-16T22:52:01.9827371	Recipes
+// 1.20.1	2025-11-19T19:57:08.3001472	Recipes
+0290eb7a0ffcc20eea9683cb62981c5d3b220c7f data/minecraft/advancements/recipes/misc/black_dye.json
+6bedeb81cad801bcb5ddfdd21a6d75cd682d86ec data/minecraft/advancements/recipes/misc/green_dye.json
+2de50cd7359ad3dd18e709d48d661a66da7c4b26 data/minecraft/advancements/recipes/misc/light_blue_dye.json
+db9e6e45e2b62277ab759883028565097ed43b8f data/minecraft/advancements/recipes/misc/lime_dye.json
+e859b9b32e2cb34ac5ffa66adccce74b2b8b1975 data/minecraft/advancements/recipes/misc/pink_dye.json
+0f81d082604d9a101db67a7abff670ec9422ae8c data/minecraft/advancements/recipes/misc/purple_dye.json
+faf87c32e58f17fb310227693e9fa649bb10ca6f data/minecraft/advancements/recipes/misc/red_dye.json
+e7e01f28644c28154d9eb027f99958fbc3eb7f7b data/minecraft/advancements/recipes/misc/white_dye.json
+25182081265df85050aacace366a75c4203e22c1 data/minecraft/advancements/recipes/misc/yellow_dye.json
+1882272c99220b95029774d4cc5e458cf250e425 data/minecraft/recipes/black_dye.json
+51a1eb18e12a10d7b61d86f0ea4d5a30a96b9589 data/minecraft/recipes/green_dye.json
+fe099d70a77231c3058f2f517e12888af8b26903 data/minecraft/recipes/light_blue_dye.json
+89fbd9cb348b02cc5a9b58f1e8027a1555852a3e data/minecraft/recipes/lime_dye.json
+dd2f766d0c7c4d0258d0443e8953140af03ce16e data/minecraft/recipes/pink_dye.json
+9821a413afec51c14dec8083f87afa9708c7bfa7 data/minecraft/recipes/purple_dye.json
+de5cc6dbf372e8cb8b5b862b1f1c4b20f98595b2 data/minecraft/recipes/red_dye.json
+218341a7da1df9f87f3d7c49ec7300b4ad5d3147 data/minecraft/recipes/white_dye.json
+d14c31edd2d0d6891deef68e9b6c29e65c3e5a87 data/minecraft/recipes/yellow_dye.json
 10907db77dcd3f4354b04ba787bd91e9544fae63 data/more_orn_plants/advancements/recipes/building_blocks/apricot_planks.json
 7f1749a44c4250e9a0eeba80a7d27f17672e0cf9 data/more_orn_plants/advancements/recipes/building_blocks/apricot_slab.json
 1e5904507d8c2e0acedb15e99495980092f58f40 data/more_orn_plants/advancements/recipes/building_blocks/apricot_stairs.json

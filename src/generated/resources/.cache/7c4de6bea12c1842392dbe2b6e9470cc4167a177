@@ -1,4 +1,4 @@
-// 1.20.1	2025-11-16T22:52:01.9732624	Tags for minecraft:block mod id more_orn_plants
+// 1.20.1	2025-11-19T19:57:08.2969021	Tags for minecraft:block mod id more_orn_plants
 e43b907106e24c65b594228dabfaa87582d00fdf data/minecraft/tags/blocks/ceiling_hanging_signs.json
 53ce1595b575b7967089b306ef0fc5914ca78a11 data/minecraft/tags/blocks/fence_gates.json
 b523be54ae91cf29da923a544ec650beb698e4ff data/minecraft/tags/blocks/flowers.json
@@ -31,6 +31,7 @@ e3bbc6d486cc0792bdcdf6bb2c0da508939151ca data/more_orn_plants/tags/blocks/aprico
 e0d5185cf60a7ff236f9d4fa2894180654bd2b77 data/more_orn_plants/tags/blocks/crabapple.json
 bb247fef3cd34749130563305b7387266456fdc2 data/more_orn_plants/tags/blocks/crabapple_logs.json
 4da5ef66f42438f537d28e33610c73b01ad81576 data/more_orn_plants/tags/blocks/double_pink_mei_logs.json
+37ea26f5e9711dd112ef5bce6ee738d233ba5734 data/more_orn_plants/tags/blocks/ginkgo.json
 275620f291cc17158abe5d8c53e440054f91d8e7 data/more_orn_plants/tags/blocks/ginkgo_logs.json
 46a5fa572a79eda06beed5a87ca383dc801dae7f data/more_orn_plants/tags/blocks/green_calyx_mei_logs.json
 8d86a028bae7eeb0c300ebc49c829a6134f97e28 data/more_orn_plants/tags/blocks/herbaceous_peony.json

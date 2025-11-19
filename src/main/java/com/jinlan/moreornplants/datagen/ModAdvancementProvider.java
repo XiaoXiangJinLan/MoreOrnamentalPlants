@@ -249,23 +249,6 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "aura_from_east"), existingFileHelper);
 
-            Advancement  phoenixRoost = Advancement.Builder.advancement()
-                    .parent(root)
-                    .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get()),
-                            Component.translatable("advancement.moreornplants.phoenix_roost.title"),
-                            Component.translatable("advancement.moreornplants.phoenix_roost.description"),
-                            null,
-                            FrameType.TASK,
-                            true,
-                            true,
-                            false
-                    ))
-                    .addCriterion("get_chinese_parasol", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ModTags.Items.CHINESE_PARASOL).build()
-                    ))
-                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "phoenix_roost"), existingFileHelper);
-
             Advancement  lastingBeauty = Advancement.Builder.advancement()
                     .parent(root)
                     .display(new DisplayInfo(
@@ -368,10 +351,78 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "flower_loyalist"), existingFileHelper);
 
+            Advancement  grandMonarch = Advancement.Builder.advancement()
+                    .parent(root)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.GOLDEN_GINKGO_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.grand_monarch.title"),
+                            Component.translatable("advancement.moreornplants.grand_monarch.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("get_ginkgo", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(ModTags.Items.GINKGO).build()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "grand_monarch"), existingFileHelper);
+
+            Advancement sacredTimber = Advancement.Builder.advancement()
+                    .parent(root)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.CAMPHOR_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.sacred_timber.title"),
+                            Component.translatable("advancement.moreornplants.sacred_timber.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("get_camphor", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ModBlocks.CAMPHOR_SAPLING.get()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "sacred_timber"), existingFileHelper);
+
+            Advancement  phoenixRoost = Advancement.Builder.advancement()
+                    .parent(root)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.phoenix_roost.title"),
+                            Component.translatable("advancement.moreornplants.phoenix_roost.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("get_chinese_parasol", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(ModTags.Items.CHINESE_PARASOL).build()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "phoenix_roost"), existingFileHelper);
+
+            Advancement riversideBeacon = Advancement.Builder.advancement()
+                    .parent(root)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.SWEETGUM_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.riverside_beacon.title"),
+                            Component.translatable("advancement.moreornplants.riverside_beacon.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("get_sweetgum", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ModBlocks.SWEETGUM_SAPLING.get()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "riverside_beacon"), existingFileHelper);
+
             Advancement fourGentlemen = Advancement.Builder.advancement()
                     .parent(root)
                     .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get()),
+                            new ItemStack(Blocks.BAMBOO),
                             Component.translatable("advancement.moreornplants.four_gentlemen.title"),
                             Component.translatable("advancement.moreornplants.four_gentlemen.description"),
                             null,
@@ -392,7 +443,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "four_gentlemen"), existingFileHelper);
 
             Advancement sendSpring = Advancement.Builder.advancement()
-                    .parent(root)
+                    .parent(flowerLeader)
                     .display(new DisplayInfo(
                             new ItemStack(ModBlocks.WHITE_MEI_SAPLING.get()),
                             Component.translatable("advancement.moreornplants.send_spring.title"),
@@ -409,9 +460,9 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "send_spring"), existingFileHelper);
 
             Advancement offerChrysanthemum = Advancement.Builder.advancement()
-                    .parent(root)
+                    .parent(flowerHermit)
                     .display(new DisplayInfo(
-                            new ItemStack(Blocks.FLOWER_POT),
+                            new ItemStack(ModBlocks.GOLDEN_CHRYSANTHEMUM.get()),
                             Component.translatable("advancement.moreornplants.offer_chrysanthemum.title"),
                             Component.translatable("advancement.moreornplants.offer_chrysanthemum.description"),
                             null,
@@ -420,8 +471,8 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             true,
                             false
                     ))
-                    .addCriterion("pot_chrysanthemum", ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(
-                            LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(Blocks.FLOWER_POT).build()),
+                    .addCriterion("offer_chrysanthemum", ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(
+                            LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL, Blocks.FARMLAND, Blocks.MOSS_BLOCK, Blocks.MUD).build()),
                             ItemPredicate.Builder.item().of(ModTags.Items.CHRYSANTHEMUMS)))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "offer_chrysanthemum"), existingFileHelper);
 
@@ -462,7 +513,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
             Advancement flowersAsMatchmakers = Advancement.Builder.advancement()
                     .parent(root)
                     .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.TWO_QIAO_PEONY.get()),
+                            new ItemStack(ModBlocks.PINK_CHINESE_ROSE.get()),
                             Component.translatable("advancement.moreornplants.flowers_as_matchmakers.title"),
                             Component.translatable("advancement.moreornplants.flowers_as_matchmakers.description"),
                             null,

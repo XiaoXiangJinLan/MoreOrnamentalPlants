@@ -240,6 +240,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.WHITE_MEI_BOAT.get())
                 .add(ModItems.GREEN_CALYX_MEI_BOAT.get())
                 .add(ModItems.DOUBLE_PINK_MEI_BOAT.get())
+                .add(ModItems.CRABAPPLE_BOAT.get())
                 .add(ModItems.CAMPHOR_BOAT.get());
 
         this.tag(ItemTags.CHEST_BOATS)
@@ -247,6 +248,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.WHITE_MEI_CHEST_BOAT.get())
                 .add(ModItems.GREEN_CALYX_MEI_CHEST_BOAT.get())
                 .add(ModItems.DOUBLE_PINK_MEI_CHEST_BOAT.get())
+                .add(ModItems.CRABAPPLE_CHEST_BOAT.get())
                 .add(ModItems.CAMPHOR_CHEST_BOAT.get());
 
         this.tag(ModTags.Items.RED_MEI_LOGS)
@@ -534,6 +536,17 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get().asItem());
 
+        this.tag(ModTags.Items.CHRYSANTHEMUMS_2)
+                .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.GOLDEN_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem())
+                .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get().asItem());
+
         this.tag(ModTags.Items.CAMELLIAS)
                 .add(ModBlocks.CAMELLIA.get().asItem())
                 .add(ModBlocks.PINK_CAMELLIA.get().asItem())
@@ -566,8 +579,72 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get().asItem())
                 .add(ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get().asItem());
 
+        this.tag(ModTags.Items.GINKGO)
+                .add(ModBlocks.GOLDEN_GINKGO_SAPLING.get().asItem())
+                .add(ModBlocks.GREEN_GINKGO_SAPLING.get().asItem());
+
         this.tag(ModTags.Items.CHINESE_PARASOL)
                 .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get().asItem())
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get().asItem());
+
+        this.tag(ModTags.Items.RED_DYE)
+                .add(ModBlocks.RED_PEONY.get().asItem())
+                .add(ModBlocks.LIGHT_RED_PEONY.get().asItem())
+                .add(ModBlocks.INK_RED_PEONY.get().asItem())
+                .add(ModBlocks.VERMILION_PEONY.get().asItem())
+                .add(ModBlocks.CHINESE_ROSE_BUSH.get().asItem())
+                .add(ModBlocks.CHINESE_ROSE.get().asItem())
+                .add(ModBlocks.CAMELLIA.get().asItem())
+                .add(ModBlocks.CRIMSON_AZALEA.get().asItem());
+
+        this.tag(ModTags.Items.PINK_DYE)
+                .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.PEONY.get().asItem())
+                .add(ModBlocks.LIGHT_PINK_PEONY.get().asItem())
+                .add(ModBlocks.VIOLET_PINK_PEONY.get().asItem())
+                .add(ModBlocks.PINK_PEONY.get().asItem())
+                .add(ModBlocks.MAUVE_PEONY.get().asItem())
+                .add(ModBlocks.PINK_CHINESE_ROSE.get().asItem())
+                .add(ModBlocks.PINK_CHINESE_ROSE_BUSH.get().asItem())
+                .add(ModBlocks.PINK_CAMELLIA.get().asItem())
+                .add(ModBlocks.PEACH_PINK_PETALS.get().asItem())
+                .add(ModBlocks.WEEPING_CRABAPPLE.get().asItem());
+
+        this.tag(ModTags.Items.WHITE_DYE)
+                .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.WHITE_PEONY.get().asItem())
+                .add(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get().asItem())
+                .add(ModBlocks.WHITE_CAMELLIA.get().asItem());
+
+        this.tag(ModTags.Items.YELLOW_DYE)
+                .add(ModBlocks.WINTERSWEET.get().asItem())
+                .add(ModBlocks.WINTERSWEET_BUSH.get().asItem())
+                .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.YELLOW_PEONY.get().asItem())
+                .add(ModBlocks.LIGHT_YELLOW_PEONY.get().asItem())
+                .add(ModBlocks.OCHRE_YELLOW_PEONY.get().asItem())
+                .add(ModBlocks.GOLDEN_PEONY.get().asItem())
+                .add(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem())
+                .add(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get().asItem());
+
+        this.tag(ModTags.Items.PURPLE_DYE)
+                .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.PURPLE_PEONY.get().asItem())
+                .add(ModBlocks.LIGHT_PURPLE_PEONY.get().asItem())
+                .add(ModBlocks.INK_PURPLE_PEONY.get().asItem())
+                .add(ModBlocks.VIOLET_PEONY.get().asItem());
+
+        this.tag(ModTags.Items.LIME_DYE)
+                .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.GREEN_PEONY.get().asItem());
+
+        this.tag(ModTags.Items.GREEN_DYE)
+                .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem());
+
+        this.tag(ModTags.Items.LIGHT_BLUE_DYE)
+                .add(ModBlocks.BLUE_PEONY.get().asItem());
+
+        this.tag(ModTags.Items.BLACK_DYE)
+                .add(ModBlocks.INK_PEONY.get().asItem());
     }
 }

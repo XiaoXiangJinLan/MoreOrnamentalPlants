@@ -39,6 +39,7 @@ public class ModBoatEntity extends Boat {
             case WHITE_MEI -> ModItems.WHITE_MEI_BOAT.get();
             case GREEN_CALYX_MEI ->ModItems.GREEN_CALYX_MEI_BOAT.get();
             case DOUBLE_PINK_MEI ->ModItems.DOUBLE_PINK_MEI_BOAT.get();
+            case CRABAPPLE ->ModItems.CRABAPPLE_BOAT.get();
             case CAMPHOR ->ModItems.CAMPHOR_BOAT.get();
         };
     }
@@ -71,6 +72,7 @@ public class ModBoatEntity extends Boat {
         WHITE_MEI(ModBlocks.WHITE_MEI_PLANKS.get(), "white_mei"),
         GREEN_CALYX_MEI(ModBlocks.GREEN_CALYX_MEI_PLANKS.get(), "green_calyx_mei"),
         DOUBLE_PINK_MEI(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get(), "double_pink_mei"),
+        CRABAPPLE(ModBlocks.CRABAPPLE_PLANKS.get(), "crabapple"),
         CAMPHOR(ModBlocks.CAMPHOR_PLANKS.get(), "camphor");
 
         private final String name;

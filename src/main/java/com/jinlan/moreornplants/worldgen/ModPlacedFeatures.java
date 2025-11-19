@@ -43,6 +43,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SWEETGUM_PLACED = registerKey("sweetgum_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_PLACED = registerKey("camphor_placed");
     public static final ResourceKey<PlacedFeature> ANCIENT_CAMPHOR_PLACED = registerKey("ancient_camphor_placed");
+    public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_FOREST_PLACED = registerKey("chrysanthemum_forest_placed");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_PLACED = registerKey("chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> GOLDEN_CHRYSANTHEMUM_PLACED = registerKey("golden_chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> WHITE_CHRYSANTHEMUM_PLACED = registerKey("white_chrysanthemum_placed");
@@ -54,7 +55,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WHITE_CHINESE_ROSE_PLACED = registerKey("white_chinese_rose_placed");
     public static final ResourceKey<PlacedFeature> CHERRY_PLACED =registerKey("cherry_placed");
     public static final ResourceKey<PlacedFeature> CAMELLIA_PLACED = registerKey("camellia_placed");
-    public static final ResourceKey<PlacedFeature> WHITE_CAMELLIA_PLACED = registerKey("white_camellia_placed");
+    public static final ResourceKey<PlacedFeature> FLOWERS_GROVE_FLOWERS_PLACED = registerKey("flowers_grove_flowers_placed");
     public static final ResourceKey<PlacedFeature> VERSICOLOR_CAMELLIA_PLACED = registerKey("versicolor_camellia_placed");
     public static final ResourceKey<PlacedFeature> CRIMSON_AZALEA_PLACED = registerKey("crimson_azalea_placed");
     public static final ResourceKey<PlacedFeature> RED_MEI_RED_PLACED = registerKey("red_mei_red_placed");
@@ -108,6 +109,9 @@ public class ModPlacedFeatures {
         register(context, CHERRY_PLACED, configuredFeatures.getOrThrow(TreeFeatures.CHERRY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         Blocks.CHERRY_SAPLING));
+        register(context, FLOWERS_GROVE_FLOWERS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.FLOWERS_GROVE_FLOWERS),
+                List.of(RarityFilter.onAverageOnceEvery(5),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, CHRYSANTHEMUM_GROVE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_GROVE),
                 List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
@@ -167,20 +171,23 @@ public class ModPlacedFeatures {
         register(context, ANCIENT_GOLDEN_GINKGO_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_GOLDEN_GINKGO),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0 ,0.1F, 1),
                         ModBlocks.GOLDEN_GINKGO_SAPLING.get()));
+        register(context, CHRYSANTHEMUM_FOREST_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_FOREST),
+                List.of(RarityFilter.onAverageOnceEvery(6),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, CHRYSANTHEMUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(3),
+                List.of(RarityFilter.onAverageOnceEvery(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GOLDEN_CHRYSANTHEMUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_CHRYSANTHEMUM_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(3),
+                List.of(RarityFilter.onAverageOnceEvery(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, WHITE_CHRYSANTHEMUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_CHRYSANTHEMUM_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(3),
+                List.of(RarityFilter.onAverageOnceEvery(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PURPLE_CHRYSANTHEMUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_CHRYSANTHEMUM_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(3),
+                List.of(RarityFilter.onAverageOnceEvery(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PINK_CHRYSANTHEMUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_CHRYSANTHEMUM_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(3),
+                List.of(RarityFilter.onAverageOnceEvery(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, CAMPHOR_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
@@ -200,10 +207,7 @@ public class ModPlacedFeatures {
                         ModBlocks.WHITE_OSMANTHUS_SAPLING.get()));
 
         register(context, CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMELLIA_KEY),
-                List.of(CountPlacement.of(15),
-                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
-        register(context, WHITE_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_CAMELLIA_KEY),
-                List.of(CountPlacement.of(15),
+                List.of(CountPlacement.of(30),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, VERSICOLOR_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.VERSICOLOR_CAMELLIA_KEY),
                 List.of(CountPlacement.of(15),

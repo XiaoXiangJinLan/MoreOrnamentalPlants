@@ -1,7 +1,7 @@
 {
-  "parent": "more_orn_plants:root",
+  "parent": "more_orn_plants:flower_hermit",
   "criteria": {
-    "pot_chrysanthemum": {
+    "offer_chrysanthemum": {
       "conditions": {
         "location": [
           {
@@ -9,7 +9,12 @@
             "predicate": {
               "block": {
                 "blocks": [
-                  "minecraft:flower_pot"
+                  "minecraft:grass_block",
+                  "minecraft:dirt",
+                  "minecraft:podzol",
+                  "minecraft:farmland",
+                  "minecraft:moss_block",
+                  "minecraft:mud"
                 ]
               }
             }
@@ -33,7 +38,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:flower_pot"
+      "item": "more_orn_plants:golden_chrysanthemum"
     },
     "show_toast": true,
     "title": {
@@ -42,7 +47,7 @@
   },
   "requirements": [
     [
-      "pot_chrysanthemum"
+      "offer_chrysanthemum"
     ]
   ],
   "sends_telemetry_event": true

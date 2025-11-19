@@ -25,6 +25,11 @@ public class ModModelLayers {
     public static final ModelLayerLocation DOUBLE_PINK_MEI_CHEST_BOAT_LAYER = new ModelLayerLocation(
             new ResourceLocation(MoreOrnPlants.MOD_ID, "chest_boat/double_pink_mei"), "main");
 
+    public static final ModelLayerLocation CRABAPPLE_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "boat/crabapple"), "main");
+    public static final ModelLayerLocation CRABAPPLE_CHEST_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "chest_boat/crabapple"), "main");
+
     public static final ModelLayerLocation CAMPHOR_BOAT_LAYER = new ModelLayerLocation(
             new ResourceLocation(MoreOrnPlants.MOD_ID, "boat/camphor"), "main");
     public static final ModelLayerLocation CAMPHOR_CHEST_BOAT_LAYER = new ModelLayerLocation(

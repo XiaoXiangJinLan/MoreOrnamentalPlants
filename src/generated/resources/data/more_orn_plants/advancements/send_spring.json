@@ -1,5 +1,5 @@
 {
-  "parent": "more_orn_plants:root",
+  "parent": "more_orn_plants:the_leader_among_flower",
   "criteria": {
     "place_mei_sapling": {
       "conditions": {
@@ -38,7 +38,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "more_orn_plants:red_mei_sapling"
+      "item": "more_orn_plants:white_mei_sapling"
     },
     "show_toast": true,
     "title": {

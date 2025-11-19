@@ -174,6 +174,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GREEN_CALYX_MEI_CHEST_BOAT);
         simpleItem(ModItems.DOUBLE_PINK_MEI_BOAT);
         simpleItem(ModItems.DOUBLE_PINK_MEI_CHEST_BOAT);
+        simpleItem(ModItems.CRABAPPLE_BOAT);
+        simpleItem(ModItems.CRABAPPLE_CHEST_BOAT);
         simpleItem(ModItems.CAMPHOR_BOAT);
         simpleItem(ModItems.CAMPHOR_CHEST_BOAT);
 

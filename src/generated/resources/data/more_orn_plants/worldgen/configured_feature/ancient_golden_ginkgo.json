@@ -13,8 +13,8 @@
       "crown_height": {
         "type": "minecraft:uniform",
         "value": {
-          "max_inclusive": 18,
-          "min_inclusive": 16
+          "max_inclusive": 17,
+          "min_inclusive": 15
         }
       },
       "offset": 1,
@@ -41,7 +41,7 @@
     },
     "trunk_placer": {
       "type": "minecraft:giant_trunk_placer",
-      "base_height": 26,
+      "base_height": 24,
       "height_rand_a": 2,
       "height_rand_b": 4
     },

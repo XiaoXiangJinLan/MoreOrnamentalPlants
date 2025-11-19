@@ -6,13 +6,36 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "minecraft:peony",
-              "Properties": {
-                "half": "lower"
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "minecraft:peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 6
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:two_qiao_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:versicolor_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
               }
-            }
+            ]
           }
         }
       },

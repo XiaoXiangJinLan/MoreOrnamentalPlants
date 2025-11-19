@@ -90,6 +90,10 @@ public class ModItems {
             ITEMS.register("double_pink_mei_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.DOUBLE_PINK_MEI, new Item.Properties()));
     public static final RegistryObject<Item> DOUBLE_PINK_MEI_CHEST_BOAT =
             ITEMS.register("double_pink_mei_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.DOUBLE_PINK_MEI, new Item.Properties()));
+    public static final RegistryObject<Item> CRABAPPLE_BOAT =
+            ITEMS.register("crabapple_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.CRABAPPLE, new Item.Properties()));
+    public static final RegistryObject<Item> CRABAPPLE_CHEST_BOAT =
+            ITEMS.register("crabapple_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.CRABAPPLE, new Item.Properties()));
     public static final RegistryObject<Item> CAMPHOR_BOAT =
             ITEMS.register("camphor_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.CAMPHOR, new Item.Properties()));
     public static final RegistryObject<Item> CAMPHOR_CHEST_BOAT =

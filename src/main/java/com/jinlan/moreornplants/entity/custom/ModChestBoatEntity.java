@@ -34,6 +34,7 @@ public class ModChestBoatEntity extends ChestBoat {
             case WHITE_MEI -> ModItems.WHITE_MEI_CHEST_BOAT.get();
             case GREEN_CALYX_MEI ->ModItems.GREEN_CALYX_MEI_CHEST_BOAT.get();
             case DOUBLE_PINK_MEI ->ModItems.DOUBLE_PINK_MEI_CHEST_BOAT.get();
+            case CRABAPPLE ->ModItems.CRABAPPLE_CHEST_BOAT.get();
             case CAMPHOR ->ModItems.CAMPHOR_CHEST_BOAT.get();
         }
         return super.getDropItem();

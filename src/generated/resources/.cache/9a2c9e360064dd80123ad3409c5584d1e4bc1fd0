@@ -1,4 +1,4 @@
-// 1.20.1	2025-11-16T22:52:01.9771839	Item Models: more_orn_plants
+// 1.20.1	2025-11-19T19:57:08.2969021	Item Models: more_orn_plants
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 39a0c47de41c8f4c008fa78c98367fe5051375b4 assets/more_orn_plants/models/item/apricot_door.json
 d308f898dd5a38b4641d61ae56caa65d7c0c1e4e assets/more_orn_plants/models/item/apricot_fence.json
@@ -38,7 +38,9 @@ ba7225f490383c88c7cefb9287a7db375cc74527 assets/more_orn_plants/models/item/chin
 cdddf5af96a99d2b4e2cda77cb66a31c3af136be assets/more_orn_plants/models/item/chinese_rose_bush.json
 2b401a60442d22eb3c447931213f10925f96343a assets/more_orn_plants/models/item/chrysanthemum.json
 bdeaa6a948e66d0595c89f62d6bb4e900361cfc7 assets/more_orn_plants/models/item/colorful_peony.json
+5948c30d7f5d11c41f942a501b3256d09e307bed assets/more_orn_plants/models/item/crabapple_boat.json
 45f10cf905f939d1e70f98d9b6a048d4812ac489 assets/more_orn_plants/models/item/crabapple_button.json
+4e44a25e3e1d92988cb8ba4beb025b6902e00c35 assets/more_orn_plants/models/item/crabapple_chest_boat.json
 3efc6d7c5a3197d1a2734df79c8d8c01900fc1eb assets/more_orn_plants/models/item/crabapple_door.json
 cc4482a3d804e01b77522d172ef36b20b6f36c50 assets/more_orn_plants/models/item/crabapple_fence.json
 e4d3345f64da4060d3d6c43e27de37c6c84b1b43 assets/more_orn_plants/models/item/crabapple_fence_gate.json

@@ -37,6 +37,7 @@ public class ModTags {
         public static final TagKey<Block> APRICOT = tag("apricot");
         public static final TagKey<Block> PEACH = tag("peach");
         public static final TagKey<Block> PLUM = tag("plum");
+        public static final TagKey<Block> GINKGO = tag("ginkgo");
         public static final TagKey<Block> CHINESE_PARASOL = tag("chinese_parasol");
 
         private static TagKey<Block> tag(String name) {
@@ -65,6 +66,7 @@ public class ModTags {
         public static final TagKey<Item> HERBACEOUS_PEONY = tag("herbaceous_peony");
         public static final TagKey<Item> CHINESE_ROSES = tag("chinese_rose");
         public static final TagKey<Item> CHRYSANTHEMUMS = tag("chrysanthemum");
+        public static final TagKey<Item> CHRYSANTHEMUMS_2 = tag("chrysanthemum_2");
         public static final TagKey<Item> CAMELLIAS = tag("camellia");
         public static final TagKey<Item> AZALEA = tag("azalea");
         public static final TagKey<Item> CRABAPPLE = tag("crabapple");
@@ -72,7 +74,17 @@ public class ModTags {
         public static final TagKey<Item> APRICOT = tag("apricot");
         public static final TagKey<Item> PEACH = tag("peach");
         public static final TagKey<Item> PLUM = tag("plum");
+        public static final TagKey<Item> GINKGO = tag("ginkgo");
         public static final TagKey<Item> CHINESE_PARASOL = tag("chinese_parasol");
+        public static final TagKey<Item> RED_DYE = tag("red_dye");
+        public static final TagKey<Item> PINK_DYE = tag("pink_dye");
+        public static final TagKey<Item> WHITE_DYE = tag("white_dye");
+        public static final TagKey<Item> YELLOW_DYE = tag("yellow_dye");
+        public static final TagKey<Item> LIME_DYE = tag("lime_dye");
+        public static final TagKey<Item> GREEN_DYE = tag("green_dye");
+        public static final TagKey<Item> PURPLE_DYE = tag("purple_dye");
+        public static final TagKey<Item> LIGHT_BLUE_DYE = tag("light_blue_dye");
+        public static final TagKey<Item> BLACK_DYE = tag("black_dye");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(MoreOrnPlants.MOD_ID, name));
