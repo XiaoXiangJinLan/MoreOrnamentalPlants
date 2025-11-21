@@ -380,6 +380,22 @@
   "item.more_orn_plants.double_pink_mei_chest_boat": "宫粉梅运输船",
   "item.more_orn_plants.crabapple_boat": "海棠木船",
   "item.more_orn_plants.crabapple_chest_boat": "海棠木运输船",
+  "item.more_orn_plants.apricot_boat": "杏木船",
+  "item.more_orn_plants.apricot_chest_boat": "杏木运输船",
+  "item.more_orn_plants.peach_boat": "桃木船",
+  "item.more_orn_plants.peach_chest_boat": "桃木运输船",
+  "item.more_orn_plants.pear_boat": "梨木船",
+  "item.more_orn_plants.pear_chest_boat": "梨木运输船",
+  "item.more_orn_plants.purple_leaf_plum_boat": "紫叶李木船",
+  "item.more_orn_plants.purple_leaf_plum_chest_boat": "紫叶李运输船",
+  "item.more_orn_plants.osmanthus_boat": "桂木船",
+  "item.more_orn_plants.osmanthus_chest_boat": "桂木运输船",
+  "item.more_orn_plants.ginkgo_boat": "银杏木船",
+  "item.more_orn_plants.ginkgo_chest_boat": "银杏木运输船",
+  "item.more_orn_plants.chinese_parasol_boat": "梧桐木船",
+  "item.more_orn_plants.chinese_parasol_chest_boat": "梧桐木运输船",
+  "item.more_orn_plants.sweetgum_boat": "枫香木船",
+  "item.more_orn_plants.sweetgum_chest_boat": "枫香木运输船",
   "item.more_orn_plants.camphor_boat": "樟木船",
   "item.more_orn_plants.camphor_chest_boat": "樟木运输船",
 
@@ -442,8 +458,8 @@
   "advancement.moreornplants.riverside_beacon.description": "月落乌啼霜满天，江枫渔火对愁眠",
   "advancement.moreornplants.four_gentlemen.title": "花中四君子",
   "advancement.moreornplants.four_gentlemen.description": "获得梅兰竹菊",
-  "advancement.moreornplants.send_spring.title": "江南无所有，聊赠一枝春",
-  "advancement.moreornplants.send_spring.description": "种下梅花树",
+  "advancement.moreornplants.send_spring.title": "种梅",
+  "advancement.moreornplants.send_spring.description": "江南无所有，聊赠一枝春",
   "advancement.moreornplants.offer_chrysanthemum.title": "供菊",
   "advancement.moreornplants.offer_chrysanthemum.description": "隔岸香分三径露，抛书人对一枝秋",
   "advancement.moreornplants.tread_snow_seek_mei.title": "踏雪寻梅",
@@ -453,6 +469,6 @@
   "advancement.moreornplants.flowers_as_matchmakers.title": "花为媒",
   "advancement.moreornplants.flowers_as_matchmakers.description": "百花园中春意闹，万态千姿难画描，虽然是花开颜色好，看来你人比花更娇",
   "advancement.moreornplants.crimson_highlands.title": "映山红",
-  "advancement.moreornplants.crimson_highlands.description": "映山红哟映山红，革命鲜花代代红"
+  "advancement.moreornplants.crimson_highlands.description": "高举红旗朝前迈，革命鲜花代代红"
 
 }

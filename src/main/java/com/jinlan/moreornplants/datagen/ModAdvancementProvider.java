@@ -38,11 +38,13 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             Component.translatable("advancement.moreornplants.root.description"),
                             new ResourceLocation("minecraft:textures/block/moss_block.png"),
                             FrameType.TASK,
-                            true,
-                            true,
+                            false,
+                            false,
                             false
                     ))
-                    .addCriterion("tick", InventoryChangeTrigger.TriggerInstance.hasItems(Blocks.AIR))
+                    .addCriterion("get_florilegium", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(ModTags.Items.PLANT_IN_FLORILEGIUM).build()
+                    ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "root"), existingFileHelper);
 
             Advancement flowerLeader = Advancement.Builder.advancement()
@@ -269,7 +271,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
             Advancement flowerBeauty = Advancement.Builder.advancement()
                     .parent(root)
                     .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.CRIMSON_AZALEA.get()),
+                            new ItemStack(Blocks.FLOWERING_AZALEA),
                             Component.translatable("advancement.moreornplants.flower_beauty.title"),
                             Component.translatable("advancement.moreornplants.flower_beauty.description"),
                             null,
@@ -462,7 +464,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
             Advancement offerChrysanthemum = Advancement.Builder.advancement()
                     .parent(flowerHermit)
                     .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.GOLDEN_CHRYSANTHEMUM.get()),
+                            new ItemStack(ModBlocks.WHITE_CHRYSANTHEMUM.get()),
                             Component.translatable("advancement.moreornplants.offer_chrysanthemum.title"),
                             Component.translatable("advancement.moreornplants.offer_chrysanthemum.description"),
                             null,
@@ -477,7 +479,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "offer_chrysanthemum"), existingFileHelper);
 
             Advancement treadSnowSeekMei = Advancement.Builder.advancement()
-                    .parent(root)
+                    .parent(flowerLeader)
                     .display(new DisplayInfo(
                             new ItemStack(ModBlocks.RED_MEI_SAPLING.get()),
                             Component.translatable("advancement.moreornplants.tread_snow_seek_mei.title"),
@@ -494,9 +496,9 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "tread_snow_seek_mei"), existingFileHelper);
 
             Advancement peachBlossomSpring = Advancement.Builder.advancement()
-                    .parent(root)
+                    .parent(wulingVista)
                     .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()),
+                            new ItemStack(ModBlocks.WILD_PEACH_SAPLING.get()),
                             Component.translatable("advancement.moreornplants.peach_blossom_spring.title"),
                             Component.translatable("advancement.moreornplants.peach_blossom_spring.description"),
                             null,
@@ -511,7 +513,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "peach_blossom_spring"), existingFileHelper);
 
             Advancement flowersAsMatchmakers = Advancement.Builder.advancement()
-                    .parent(root)
+                    .parent(flowerQueen)
                     .display(new DisplayInfo(
                             new ItemStack(ModBlocks.PINK_CHINESE_ROSE.get()),
                             Component.translatable("advancement.moreornplants.flowers_as_matchmakers.title"),
@@ -528,7 +530,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "flowers_as_matchmakers"), existingFileHelper);
 
             Advancement crimsonHighlands = Advancement.Builder.advancement()
-                    .parent(root)
+                    .parent(flowerBeauty)
                     .display(new DisplayInfo(
                             new ItemStack(ModBlocks.CRIMSON_AZALEA.get()),
                             Component.translatable("advancement.moreornplants.crimson_highlands.title"),

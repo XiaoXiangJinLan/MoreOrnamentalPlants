@@ -40,6 +40,14 @@ public class ModBoatEntity extends Boat {
             case GREEN_CALYX_MEI ->ModItems.GREEN_CALYX_MEI_BOAT.get();
             case DOUBLE_PINK_MEI ->ModItems.DOUBLE_PINK_MEI_BOAT.get();
             case CRABAPPLE ->ModItems.CRABAPPLE_BOAT.get();
+            case APRICOT ->ModItems.APRICOT_BOAT.get();
+            case PEACH ->ModItems.PEACH_BOAT.get();
+            case PEAR ->ModItems.PEAR_BOAT.get();
+            case PURPLE_LEAF_PLUM ->ModItems.PURPLE_LEAF_PLUM_BOAT.get();
+            case OSMANTHUS ->ModItems.OSMANTHUS_BOAT.get();
+            case GINKGO ->ModItems.GINKGO_BOAT.get();
+            case SWEETGUM ->ModItems.SWEETGUM_BOAT.get();
+            case CHINESE_PARASOL ->ModItems.CHINESE_PARASOL_BOAT.get();
             case CAMPHOR ->ModItems.CAMPHOR_BOAT.get();
         };
     }
@@ -73,6 +81,14 @@ public class ModBoatEntity extends Boat {
         GREEN_CALYX_MEI(ModBlocks.GREEN_CALYX_MEI_PLANKS.get(), "green_calyx_mei"),
         DOUBLE_PINK_MEI(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get(), "double_pink_mei"),
         CRABAPPLE(ModBlocks.CRABAPPLE_PLANKS.get(), "crabapple"),
+        APRICOT(ModBlocks.APRICOT_PLANKS.get(), "apricot"),
+        PEACH(ModBlocks.PEACH_PLANKS.get(), "peach"),
+        PEAR(ModBlocks.PEAR_PLANKS.get(), "pear"),
+        PURPLE_LEAF_PLUM(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get(), "purple_leaf_plum"),
+        OSMANTHUS(ModBlocks.OSMANTHUS_PLANKS.get(), "osmanthus"),
+        GINKGO(ModBlocks.GINKGO_PLANKS.get(), "ginkgo"),
+        SWEETGUM(ModBlocks.SWEETGUM_PLANKS.get(), "sweetgum"),
+        CHINESE_PARASOL(ModBlocks.CHINESE_PARASOL_PLANKS.get(), "chinese_parasol"),
         CAMPHOR(ModBlocks.CAMPHOR_PLANKS.get(), "camphor");
 
         private final String name;

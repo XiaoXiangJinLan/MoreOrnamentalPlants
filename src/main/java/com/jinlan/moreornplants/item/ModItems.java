@@ -94,6 +94,38 @@ public class ModItems {
             ITEMS.register("crabapple_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.CRABAPPLE, new Item.Properties()));
     public static final RegistryObject<Item> CRABAPPLE_CHEST_BOAT =
             ITEMS.register("crabapple_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.CRABAPPLE, new Item.Properties()));
+    public static final RegistryObject<Item> APRICOT_BOAT =
+            ITEMS.register("apricot_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.APRICOT, new Item.Properties()));
+    public static final RegistryObject<Item> APRICOT_CHEST_BOAT =
+            ITEMS.register("apricot_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.APRICOT, new Item.Properties()));
+    public static final RegistryObject<Item> PEACH_BOAT =
+            ITEMS.register("peach_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.PEACH, new Item.Properties()));
+    public static final RegistryObject<Item> PEACH_CHEST_BOAT =
+            ITEMS.register("peach_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.PEACH, new Item.Properties()));
+    public static final RegistryObject<Item> PEAR_BOAT =
+            ITEMS.register("pear_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.PEAR, new Item.Properties()));
+    public static final RegistryObject<Item> PEAR_CHEST_BOAT =
+            ITEMS.register("pear_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.PEAR, new Item.Properties()));
+    public static final RegistryObject<Item> PURPLE_LEAF_PLUM_BOAT =
+            ITEMS.register("purple_leaf_plum_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.PURPLE_LEAF_PLUM, new Item.Properties()));
+    public static final RegistryObject<Item> PURPLE_LEAF_PLUM_CHEST_BOAT =
+            ITEMS.register("purple_leaf_plum_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.PURPLE_LEAF_PLUM, new Item.Properties()));
+    public static final RegistryObject<Item> OSMANTHUS_BOAT =
+            ITEMS.register("osmanthus_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.OSMANTHUS, new Item.Properties()));
+    public static final RegistryObject<Item> OSMANTHUS_CHEST_BOAT =
+            ITEMS.register("osmanthus_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.OSMANTHUS, new Item.Properties()));
+    public static final RegistryObject<Item> GINKGO_BOAT =
+            ITEMS.register("ginkgo_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.GINKGO, new Item.Properties()));
+    public static final RegistryObject<Item> GINKGO_CHEST_BOAT =
+            ITEMS.register("ginkgo_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.GINKGO, new Item.Properties()));
+    public static final RegistryObject<Item> SWEETGUM_BOAT =
+            ITEMS.register("sweetgum_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.SWEETGUM, new Item.Properties()));
+    public static final RegistryObject<Item> SWEETGUM_CHEST_BOAT =
+            ITEMS.register("sweetgum_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.SWEETGUM, new Item.Properties()));
+    public static final RegistryObject<Item> CHINESE_PARASOL_BOAT =
+            ITEMS.register("chinese_parasol_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.CHINESE_PARASOL, new Item.Properties()));
+    public static final RegistryObject<Item> CHINESE_PARASOL_CHEST_BOAT =
+            ITEMS.register("chinese_parasol_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.CHINESE_PARASOL, new Item.Properties()));
     public static final RegistryObject<Item> CAMPHOR_BOAT =
             ITEMS.register("camphor_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.CAMPHOR, new Item.Properties()));
     public static final RegistryObject<Item> CAMPHOR_CHEST_BOAT =

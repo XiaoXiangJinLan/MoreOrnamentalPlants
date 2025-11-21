@@ -127,6 +127,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CRABAPPLE_BUTTON.get());
                         pOutput.accept(ModItems.CRABAPPLE_SIGN.get());
                         pOutput.accept(ModItems.CRABAPPLE_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.CRABAPPLE_BOAT.get());
+                        pOutput.accept(ModItems.CRABAPPLE_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.PINK_APRICOT_LEAVES.get());
                         pOutput.accept(ModBlocks.WHITE_APRICOT_LEAVES.get());
                         pOutput.accept(ModBlocks.PINK_APRICOT_SAPLING.get());
@@ -146,6 +148,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.APRICOT_BUTTON.get());
                         pOutput.accept(ModItems.APRICOT_SIGN.get());
                         pOutput.accept(ModItems.APRICOT_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.APRICOT_BOAT.get());
+                        pOutput.accept(ModItems.APRICOT_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get());
                         pOutput.accept(ModBlocks.WILD_PEACH_LEAVES.get());
                         pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get());
@@ -165,6 +169,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PEACH_BUTTON.get());
                         pOutput.accept(ModItems.PEACH_SIGN.get());
                         pOutput.accept(ModItems.PEACH_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.PEACH_BOAT.get());
+                        pOutput.accept(ModItems.PEACH_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.PEAR_LEAVES.get());
                         pOutput.accept(ModBlocks.PEAR_SAPLING.get());
                         pOutput.accept(ModBlocks.PEAR_LOG.get());
@@ -182,6 +188,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PEAR_BUTTON.get());
                         pOutput.accept(ModItems.PEAR_SIGN.get());
                         pOutput.accept(ModItems.PEAR_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.PEAR_BOAT.get());
+                        pOutput.accept(ModItems.PEAR_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get());
                         pOutput.accept(ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get());
                         pOutput.accept(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get());
@@ -201,6 +209,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PURPLE_LEAF_PLUM_BUTTON.get());
                         pOutput.accept(ModItems.PURPLE_LEAF_PLUM_SIGN.get());
                         pOutput.accept(ModItems.PURPLE_LEAF_PLUM_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.PURPLE_LEAF_PLUM_BOAT.get());
+                        pOutput.accept(ModItems.PURPLE_LEAF_PLUM_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get());
                         pOutput.accept(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get());
                         pOutput.accept(ModBlocks.WHITE_OSMANTHUS_LEAVES.get());
@@ -222,6 +232,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.OSMANTHUS_BUTTON.get());
                         pOutput.accept(ModItems.OSMANTHUS_SIGN.get());
                         pOutput.accept(ModItems.OSMANTHUS_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.OSMANTHUS_BOAT.get());
+                        pOutput.accept(ModItems.OSMANTHUS_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.GOLDEN_GINKGO_LEAVES.get());
                         pOutput.accept(ModBlocks.GREEN_GINKGO_LEAVES.get());
                         pOutput.accept(ModBlocks.GOLDEN_GINKGO_SAPLING.get());
@@ -241,6 +253,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.GINKGO_BUTTON.get());
                         pOutput.accept(ModItems.GINKGO_SIGN.get());
                         pOutput.accept(ModItems.GINKGO_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.GINKGO_BOAT.get());
+                        pOutput.accept(ModItems.GINKGO_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get());
                         pOutput.accept(ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get());
                         pOutput.accept(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get());
@@ -260,6 +274,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHINESE_PARASOL_BUTTON.get());
                         pOutput.accept(ModItems.CHINESE_PARASOL_SIGN.get());
                         pOutput.accept(ModItems.CHINESE_PARASOL_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.CHINESE_PARASOL_BOAT.get());
+                        pOutput.accept(ModItems.CHINESE_PARASOL_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.SWEETGUM_LEAVES.get());
                         pOutput.accept(ModBlocks.SWEETGUM_SAPLING.get());
                         pOutput.accept(ModBlocks.SWEETGUM_LOG.get());
@@ -277,6 +293,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SWEETGUM_BUTTON.get());
                         pOutput.accept(ModItems.SWEETGUM_SIGN.get());
                         pOutput.accept(ModItems.SWEETGUM_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.SWEETGUM_BOAT.get());
+                        pOutput.accept(ModItems.SWEETGUM_CHEST_BOAT.get());
                         pOutput.accept(ModBlocks.CAMPHOR_LEAVES.get());
                         pOutput.accept(ModBlocks.NEW_CAMPHOR_LEAVES.get());
                         pOutput.accept(ModBlocks.CAMPHOR_SAPLING.get());

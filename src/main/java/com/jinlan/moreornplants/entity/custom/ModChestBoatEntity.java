@@ -35,6 +35,14 @@ public class ModChestBoatEntity extends ChestBoat {
             case GREEN_CALYX_MEI ->ModItems.GREEN_CALYX_MEI_CHEST_BOAT.get();
             case DOUBLE_PINK_MEI ->ModItems.DOUBLE_PINK_MEI_CHEST_BOAT.get();
             case CRABAPPLE ->ModItems.CRABAPPLE_CHEST_BOAT.get();
+            case APRICOT ->ModItems.APRICOT_CHEST_BOAT.get();
+            case PEACH ->ModItems.PEACH_CHEST_BOAT.get();
+            case PEAR ->ModItems.PEAR_CHEST_BOAT.get();
+            case PURPLE_LEAF_PLUM ->ModItems.PURPLE_LEAF_PLUM_CHEST_BOAT.get();
+            case OSMANTHUS ->ModItems.OSMANTHUS_CHEST_BOAT.get();
+            case GINKGO ->ModItems.GINKGO_CHEST_BOAT.get();
+            case SWEETGUM ->ModItems.SWEETGUM_CHEST_BOAT.get();
+            case CHINESE_PARASOL ->ModItems.CHINESE_PARASOL_CHEST_BOAT.get();
             case CAMPHOR ->ModItems.CAMPHOR_CHEST_BOAT.get();
         }
         return super.getDropItem();

@@ -1,5 +1,5 @@
 {
-  "parent": "more_orn_plants:root",
+  "parent": "more_orn_plants:the_leader_among_flower",
   "criteria": {
     "visit_red_mei_forest": {
       "conditions": {

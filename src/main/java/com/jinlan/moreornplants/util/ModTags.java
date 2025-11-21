@@ -66,7 +66,7 @@ public class ModTags {
         public static final TagKey<Item> HERBACEOUS_PEONY = tag("herbaceous_peony");
         public static final TagKey<Item> CHINESE_ROSES = tag("chinese_rose");
         public static final TagKey<Item> CHRYSANTHEMUMS = tag("chrysanthemum");
-        public static final TagKey<Item> CHRYSANTHEMUMS_2 = tag("chrysanthemum_2");
+        public static final TagKey<Item> PLANT_IN_FLORILEGIUM = tag("plant_in_florilegium");
         public static final TagKey<Item> CAMELLIAS = tag("camellia");
         public static final TagKey<Item> AZALEA = tag("azalea");
         public static final TagKey<Item> CRABAPPLE = tag("crabapple");

@@ -176,6 +176,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DOUBLE_PINK_MEI_CHEST_BOAT);
         simpleItem(ModItems.CRABAPPLE_BOAT);
         simpleItem(ModItems.CRABAPPLE_CHEST_BOAT);
+        simpleItem(ModItems.APRICOT_BOAT);
+        simpleItem(ModItems.APRICOT_CHEST_BOAT);
+        simpleItem(ModItems.PEACH_BOAT);
+        simpleItem(ModItems.PEACH_CHEST_BOAT);
+        simpleItem(ModItems.PEAR_BOAT);
+        simpleItem(ModItems.PEAR_CHEST_BOAT);
+        simpleItem(ModItems.PURPLE_LEAF_PLUM_BOAT);
+        simpleItem(ModItems.PURPLE_LEAF_PLUM_CHEST_BOAT);
+        simpleItem(ModItems.OSMANTHUS_BOAT);
+        simpleItem(ModItems.OSMANTHUS_CHEST_BOAT);
+        simpleItem(ModItems.GINKGO_BOAT);
+        simpleItem(ModItems.GINKGO_CHEST_BOAT);
+        simpleItem(ModItems.SWEETGUM_BOAT);
+        simpleItem(ModItems.SWEETGUM_CHEST_BOAT);
+        simpleItem(ModItems.CHINESE_PARASOL_BOAT);
+        simpleItem(ModItems.CHINESE_PARASOL_CHEST_BOAT);
         simpleItem(ModItems.CAMPHOR_BOAT);
         simpleItem(ModItems.CAMPHOR_CHEST_BOAT);
 

@@ -275,13 +275,13 @@ public class ModConfiguredFeatures {
 
         register(context, FLOWERING_PURPLE_LEAF_PLUM, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PURPLE_LEAF_PLUM_LOG.get()),
-                new StraightTrunkPlacer(6, 2, 0),
+                new StraightTrunkPlacer(7, 2, 0),
                 BlockStateProvider.simple(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 5),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
         register(context, PURPLE_LEAF_PLUM, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PURPLE_LEAF_PLUM_LOG.get()),
-                new StraightTrunkPlacer(6, 2, 0),
+                new StraightTrunkPlacer(7, 2, 0),
                 BlockStateProvider.simple(ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 5),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());

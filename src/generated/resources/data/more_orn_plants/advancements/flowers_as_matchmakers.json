@@ -1,5 +1,5 @@
 {
-  "parent": "more_orn_plants:root",
+  "parent": "more_orn_plants:flower_queen",
   "criteria": {
     "visit_flowers_grove": {
       "conditions": {

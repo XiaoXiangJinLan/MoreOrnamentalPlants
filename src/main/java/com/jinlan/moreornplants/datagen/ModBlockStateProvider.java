@@ -604,31 +604,31 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.WINTERSWEET_BUSH.get())).renderType("cutout"));
         flowerBlock(ModBlocks.CHINESE_ROSE_BUSH);
         simpleBlockWithItem(ModBlocks.POTTED_CHINESE_ROSE_BUSH.get(), models().singleTexture("potted_chinese_rose_bush", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.CHINESE_ROSE_BUSH.get())).renderType("cutout"));
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_chinese_rose_bush")).renderType("cutout"));
         flowerBlock(ModBlocks.PINK_CHINESE_ROSE_BUSH);
         simpleBlockWithItem(ModBlocks.POTTED_PINK_CHINESE_ROSE_BUSH.get(), models().singleTexture("potted_pink_chinese_rose_bush", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.PINK_CHINESE_ROSE_BUSH.get())).renderType("cutout"));
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_pink_chinese_rose_bush")).renderType("cutout"));
         flowerBlock(ModBlocks.YELLOW_CHINESE_ROSE_BUSH);
         simpleBlockWithItem(ModBlocks.POTTED_YELLOW_CHINESE_ROSE_BUSH.get(), models().singleTexture("potted_yellow_chinese_rose_bush", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get())).renderType("cutout"));
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_yellow_chinese_rose_bush")).renderType("cutout"));
         flowerBlock(ModBlocks.WHITE_CHINESE_ROSE_BUSH);
         simpleBlockWithItem(ModBlocks.POTTED_WHITE_CHINESE_ROSE_BUSH.get(), models().singleTexture("potted_white_chinese_rose_bush", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get())).renderType("cutout"));
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_white_chinese_rose_bush")).renderType("cutout"));
         flowerBlock(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH);
         simpleBlockWithItem(ModBlocks.POTTED_RED_PINK_CHINESE_ROSE_BUSH.get(), models().singleTexture("potted_red_pink_chinese_rose_bush", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get())).renderType("cutout"));
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_red_pink_chinese_rose_bush")).renderType("cutout"));
         flowerBlock(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH);
         simpleBlockWithItem(ModBlocks.POTTED_RED_YELLOW_CHINESE_ROSE_BUSH.get(), models().singleTexture("potted_red_yellow_chinese_rose_bush", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get())).renderType("cutout"));
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_red_yellow_chinese_rose_bush")).renderType("cutout"));
         flowerBlock(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH);
         simpleBlockWithItem(ModBlocks.POTTED_RED_WHITE_CHINESE_ROSE_BUSH.get(), models().singleTexture("potted_red_white_chinese_rose_bush", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get())).renderType("cutout"));
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_red_white_chinese_rose_bush")).renderType("cutout"));
         flowerBlock(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH);
         simpleBlockWithItem(ModBlocks.POTTED_PINK_WHITE_CHINESE_ROSE_BUSH.get(), models().singleTexture("potted_pink_white_chinese_rose_bush", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get())).renderType("cutout"));
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_pink_white_chinese_rose_bush")).renderType("cutout"));
         flowerBlock(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH);
         simpleBlockWithItem(ModBlocks.POTTED_YELLOW_WHITE_CHINESE_ROSE_BUSH.get(), models().singleTexture("potted_yellow_white_chinese_rose_bush", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get())).renderType("cutout"));
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_yellow_white_chinese_rose_bush")).renderType("cutout"));
 
         peachPinkPetalsBlock(ModBlocks.PEACH_PINK_PETALS);
     }

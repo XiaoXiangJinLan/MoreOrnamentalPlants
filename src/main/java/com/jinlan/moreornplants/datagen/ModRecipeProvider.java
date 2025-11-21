@@ -598,12 +598,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         woodenBoat(pWriter, ModItems.WHITE_MEI_BOAT.get(), ModBlocks.WHITE_MEI_PLANKS.get());
         woodenBoat(pWriter, ModItems.GREEN_CALYX_MEI_BOAT.get(), ModBlocks.GREEN_CALYX_MEI_PLANKS.get());
         woodenBoat(pWriter, ModItems.DOUBLE_PINK_MEI_BOAT.get(), ModBlocks.DOUBLE_PINK_MEI_PLANKS.get());
+        woodenBoat(pWriter, ModItems.CRABAPPLE_BOAT.get(), ModBlocks.CRABAPPLE_PLANKS.get());
+        woodenBoat(pWriter, ModItems.APRICOT_BOAT.get(), ModBlocks.APRICOT_PLANKS.get());
+        woodenBoat(pWriter, ModItems.PEACH_BOAT.get(), ModBlocks.PEACH_PLANKS.get());
+        woodenBoat(pWriter, ModItems.PEAR_BOAT.get(), ModBlocks.PEAR_PLANKS.get());
+        woodenBoat(pWriter, ModItems.PURPLE_LEAF_PLUM_BOAT.get(), ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get());
+        woodenBoat(pWriter, ModItems.OSMANTHUS_BOAT.get(), ModBlocks.OSMANTHUS_PLANKS.get());
+        woodenBoat(pWriter, ModItems.GINKGO_BOAT.get(), ModBlocks.GINKGO_PLANKS.get());
+        woodenBoat(pWriter, ModItems.SWEETGUM_BOAT.get(), ModBlocks.SWEETGUM_PLANKS.get());
+        woodenBoat(pWriter, ModItems.CHINESE_PARASOL_BOAT.get(), ModBlocks.CHINESE_PARASOL_PLANKS.get());
         woodenBoat(pWriter, ModItems.CAMPHOR_BOAT.get(), ModBlocks.CAMPHOR_PLANKS.get());
 
         chestBoat(pWriter, ModItems.RED_MEI_CHEST_BOAT.get(), ModBlocks.RED_MEI_PLANKS.get());
         chestBoat(pWriter, ModItems.WHITE_MEI_CHEST_BOAT.get(), ModBlocks.WHITE_MEI_PLANKS.get());
         chestBoat(pWriter, ModItems.GREEN_CALYX_MEI_CHEST_BOAT.get(), ModBlocks.GREEN_CALYX_MEI_PLANKS.get());
         chestBoat(pWriter, ModItems.DOUBLE_PINK_MEI_CHEST_BOAT.get(), ModBlocks.DOUBLE_PINK_MEI_PLANKS.get());
+        chestBoat(pWriter, ModItems.CRABAPPLE_CHEST_BOAT.get(), ModBlocks.CRABAPPLE_PLANKS.get());
+        chestBoat(pWriter, ModItems.APRICOT_CHEST_BOAT.get(), ModBlocks.APRICOT_PLANKS.get());
+        chestBoat(pWriter, ModItems.PEACH_CHEST_BOAT.get(), ModBlocks.PEACH_PLANKS.get());
+        chestBoat(pWriter, ModItems.PEAR_CHEST_BOAT.get(), ModBlocks.PEAR_PLANKS.get());
+        chestBoat(pWriter, ModItems.PURPLE_LEAF_PLUM_CHEST_BOAT.get(), ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get());
+        chestBoat(pWriter, ModItems.OSMANTHUS_CHEST_BOAT.get(), ModBlocks.OSMANTHUS_PLANKS.get());
+        chestBoat(pWriter, ModItems.GINKGO_CHEST_BOAT.get(), ModBlocks.GINKGO_PLANKS.get());
+        chestBoat(pWriter, ModItems.SWEETGUM_CHEST_BOAT.get(), ModBlocks.SWEETGUM_PLANKS.get());
+        chestBoat(pWriter, ModItems.CHINESE_PARASOL_CHEST_BOAT.get(), ModBlocks.CHINESE_PARASOL_PLANKS.get());
         chestBoat(pWriter, ModItems.CAMPHOR_CHEST_BOAT.get(), ModBlocks.CAMPHOR_PLANKS.get());
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GREEN_CALYX_MEI_SAPLING.get(), 1)
