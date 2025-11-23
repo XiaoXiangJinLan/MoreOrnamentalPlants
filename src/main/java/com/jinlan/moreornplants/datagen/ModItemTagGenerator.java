@@ -7,6 +7,7 @@ import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -202,6 +203,38 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.CHINESE_PARASOL_FENCE_GATE.get().asItem())
                 .add(ModBlocks.SWEETGUM_FENCE_GATE.get().asItem())
                 .add(ModBlocks.CAMPHOR_FENCE_GATE.get().asItem());
+
+        this.tag(ItemTags.WOODEN_DOORS)
+                .add(ModBlocks.RED_MEI_DOOR.get().asItem())
+                .add(ModBlocks.WHITE_MEI_DOOR.get().asItem())
+                .add(ModBlocks.GREEN_CALYX_MEI_DOOR.get().asItem())
+                .add(ModBlocks.DOUBLE_PINK_MEI_DOOR.get().asItem())
+                .add(ModBlocks.CRABAPPLE_DOOR.get().asItem())
+                .add(ModBlocks.APRICOT_DOOR.get().asItem())
+                .add(ModBlocks.PEACH_DOOR.get().asItem())
+                .add(ModBlocks.PEAR_DOOR.get().asItem())
+                .add(ModBlocks.PURPLE_LEAF_PLUM_DOOR.get().asItem())
+                .add(ModBlocks.OSMANTHUS_DOOR.get().asItem())
+                .add(ModBlocks.GINKGO_DOOR.get().asItem())
+                .add(ModBlocks.CHINESE_PARASOL_DOOR.get().asItem())
+                .add(ModBlocks.SWEETGUM_DOOR.get().asItem())
+                .add(ModBlocks.CAMPHOR_DOOR.get().asItem());
+
+        this.tag(ItemTags.WOODEN_TRAPDOORS)
+                .add(ModBlocks.RED_MEI_TRAPDOOR.get().asItem())
+                .add(ModBlocks.WHITE_MEI_TRAPDOOR.get().asItem())
+                .add(ModBlocks.GREEN_CALYX_MEI_TRAPDOOR.get().asItem())
+                .add(ModBlocks.DOUBLE_PINK_MEI_TRAPDOOR.get().asItem())
+                .add(ModBlocks.CRABAPPLE_TRAPDOOR.get().asItem())
+                .add(ModBlocks.APRICOT_TRAPDOOR.get().asItem())
+                .add(ModBlocks.PEACH_TRAPDOOR.get().asItem())
+                .add(ModBlocks.PEAR_TRAPDOOR.get().asItem())
+                .add(ModBlocks.PURPLE_LEAF_PLUM_TRAPDOOR.get().asItem())
+                .add(ModBlocks.OSMANTHUS_TRAPDOOR.get().asItem())
+                .add(ModBlocks.GINKGO_TRAPDOOR.get().asItem())
+                .add(ModBlocks.CHINESE_PARASOL_TRAPDOOR.get().asItem())
+                .add(ModBlocks.SWEETGUM_TRAPDOOR.get().asItem())
+                .add(ModBlocks.CAMPHOR_TRAPDOOR.get().asItem());
 
         this.tag(ItemTags.SIGNS)
                 .add(ModItems.RED_MEI_SIGN.get())

@@ -169,7 +169,7 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1 ,0.1F, 1),
                         ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get()));
         register(context, ANCIENT_GOLDEN_GINKGO_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_GOLDEN_GINKGO),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0 ,0.1F, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0 ,0.05F, 1),
                         ModBlocks.GOLDEN_GINKGO_SAPLING.get()));
         register(context, CHRYSANTHEMUM_FOREST_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_FOREST),
                 List.of(RarityFilter.onAverageOnceEvery(6),
@@ -227,7 +227,7 @@ public class ModPlacedFeatures {
                         ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
 
         register(context, UPRIGHT_CRABAPPLE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.UPRIGHT_CRABAPPLE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1),
                         ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
         register(context, PEONY_MEADOWS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS),
                 List.of(CountPlacement.of(20),

@@ -86,7 +86,7 @@ public class AncientGinkgoFoliagePlacer extends FoliagePlacer {
     private void addExtraTopLayers(LevelSimulatedReader level, FoliageSetter blockSetter, RandomSource random,
                                    TreeConfiguration config, BlockPos center, int offset, boolean doubleTrunk) {
         // 在原有顶层之上添加1-2层小半径的层
-        int extraLayers = 1 + random.nextInt(2);
+        int extraLayers = 2;
         for (int i = 1; i <= extraLayers; i++) {
             int radius = Math.max(1, 4 - i); // 逐层减小半径
             this.placeLeavesRow(level, blockSetter, random, config,

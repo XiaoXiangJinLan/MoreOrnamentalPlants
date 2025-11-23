@@ -24,8 +24,7 @@ public class thePeachBlossomSpringRegion extends Region {
 
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
-        if (!BiomeConfigManager.isBiomeEnabled("the_peach_blossom_spring") ||
-                !BiomeConfigManager.isLocationAllowed(ModBiomes.THE_PEACH_BLOSSOM_SPRING.location())) {
+        if (!BiomeConfigManager.isBiomeEnabled("the_peach_blossom_spring")) {
             return;
         }
         VanillaParameterOverlayBuilder builder = new VanillaParameterOverlayBuilder();

@@ -419,7 +419,7 @@ public class ModOverworldBiomesBuilder {
     }
 
     // ========== 生物群系选择器方法 ==========
-        private ResourceKey<Biome> pickMiddleBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
+    private ResourceKey<Biome> pickMiddleBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
         // 获取过滤后的生物群系映射
         ResourceKey<Biome>[][] filteredMiddleBiomes = createFilteredBiomeMap(MIDDLE_BIOMES_MOD);
         ResourceKey<Biome>[][] filteredMiddleVariants = createFilteredBiomeMap(MIDDLE_BIOMES_VARIANT_MOD);
@@ -429,29 +429,18 @@ public class ModOverworldBiomesBuilder {
                 filteredMiddleBiomes[temperatureIndex][humidityIndex] :
                 filteredMiddleVariants[temperatureIndex][humidityIndex];
 
-        // 如果启用了模组生物群系优先，并且模组生物群系存在且允许，则使用它
-        if (BiomeConfigManager.shouldPrioritizeModBiomes() && modBiome != null) {
-            return modBiome;
-        }
-
         // 检查模组生物群系是否启用且允许
         if (modBiome != null) {
             return modBiome;
         }
 
         // 回退到原版生物群系
-        ResourceKey<Biome> vanillaBiome;
         if (weirdness.max() < 0L) {
-            vanillaBiome = this.MIDDLE_BIOMES[temperatureIndex][humidityIndex];
+            return this.MIDDLE_BIOMES[temperatureIndex][humidityIndex];
         } else {
             ResourceKey<Biome> variant = this.MIDDLE_BIOMES_VARIANT[temperatureIndex][humidityIndex];
-            vanillaBiome = variant != null ? variant : this.MIDDLE_BIOMES[temperatureIndex][humidityIndex];
+            return variant != null ? variant : this.MIDDLE_BIOMES[temperatureIndex][humidityIndex];
         }
-
-        // 如果不允许覆盖原版，但模组生物群系存在且允许，则使用模组生物群系
-            BiomeConfigManager.allowVanillaOverride();
-
-            return vanillaBiome;
     }
 
     private ResourceKey<Biome> pickMiddleBiomeOrSlopeIfCold(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
@@ -470,29 +459,18 @@ public class ModOverworldBiomesBuilder {
                 filteredPlateauBiomes[temperatureIndex][humidityIndex] :
                 filteredPlateauVariants[temperatureIndex][humidityIndex];
 
-        // 如果启用了模组生物群系优先，并且模组生物群系存在且允许，则使用它
-        if (BiomeConfigManager.shouldPrioritizeModBiomes() && modBiome != null) {
-            return modBiome;
-        }
-
         // 检查模组生物群系是否启用且允许
         if (modBiome != null) {
             return modBiome;
         }
 
         // 回退到原版生物群系
-        ResourceKey<Biome> vanillaBiome;
         if (weirdness.max() < 0L) {
-            vanillaBiome = this.PLATEAU_BIOMES[temperatureIndex][humidityIndex];
+            return this.PLATEAU_BIOMES[temperatureIndex][humidityIndex];
         } else {
             ResourceKey<Biome> variant = this.PLATEAU_BIOMES_VARIANT[temperatureIndex][humidityIndex];
-            vanillaBiome = variant != null ? variant : this.PLATEAU_BIOMES[temperatureIndex][humidityIndex];
+            return variant != null ? variant : this.PLATEAU_BIOMES[temperatureIndex][humidityIndex];
         }
-
-        // 如果不允许覆盖原版，但模组生物群系存在且允许，则使用模组生物群系
-        BiomeConfigManager.allowVanillaOverride();
-
-        return vanillaBiome;
     }
 
     private ResourceKey<Biome> pickPeakBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
@@ -610,12 +588,7 @@ public class ModOverworldBiomesBuilder {
 
         String biomeName = getBiomeName(biome);
 
-        // 检查是否启用
-        if (!BiomeConfigManager.isBiomeEnabled(biomeName)) {
-            return false;
-        }
-
-        // 检查位置是否允许
-        return BiomeConfigManager.isLocationAllowed(biome.location());
+        // 只检查是否启用
+        return BiomeConfigManager.isBiomeEnabled(biomeName);
     }
 }
