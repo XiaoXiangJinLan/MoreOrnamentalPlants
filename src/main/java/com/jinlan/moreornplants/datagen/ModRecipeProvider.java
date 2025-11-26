@@ -724,13 +724,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_WHITE_CHINESE_ROSE.get(), 2)
                 .requires(ModBlocks.CHINESE_ROSE.get())
-                .requires(ModBlocks.WHITE_CAMELLIA.get())
+                .requires(ModBlocks.WHITE_CHINESE_ROSE.get())
                 .unlockedBy(getHasName(ModBlocks.CHINESE_ROSE.get()), has(ModBlocks.CHINESE_ROSE.get()))
                 .unlockedBy(getHasName(ModBlocks.WHITE_CHINESE_ROSE.get()), has(ModBlocks.WHITE_CHINESE_ROSE.get()))
                 .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINK_WHITE_CHINESE_ROSE.get(), 2)
                 .requires(ModBlocks.PINK_CHINESE_ROSE.get())
-                .requires(ModBlocks.WHITE_CAMELLIA.get())
+                .requires(ModBlocks.WHITE_CHINESE_ROSE.get())
                 .unlockedBy(getHasName(ModBlocks.PINK_CHINESE_ROSE.get()), has(ModBlocks.PINK_CHINESE_ROSE.get()))
                 .unlockedBy(getHasName(ModBlocks.WHITE_CHINESE_ROSE.get()), has(ModBlocks.WHITE_CHINESE_ROSE.get()))
                 .save(pWriter);

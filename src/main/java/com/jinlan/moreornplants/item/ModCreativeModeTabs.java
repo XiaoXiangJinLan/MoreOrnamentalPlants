@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> PLANTS_TAB =
             CREATIVE_MODE_TABS.register("plants_tab", () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get()))
+                    .icon(() -> new ItemStack(ModBlocks.PEONY.get()))
                     .title(Component.translatable("itemGroup.plants"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.RED_MEI_LEAVES.get());

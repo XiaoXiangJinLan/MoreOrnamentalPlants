@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:sunflower_flowers_grove",
+  "feature": "more_orn_plants:tall_flowers_grove",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 6
+      "chance": 2
     },
     {
       "type": "minecraft:in_square"

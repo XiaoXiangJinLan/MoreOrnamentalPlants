@@ -91,9 +91,9 @@
       "more_orn_plants:white_chinese_rose_placed",
       "more_orn_plants:pink_camellia_placed",
       "more_orn_plants:crimson_azalea_grove_placed",
-      "minecraft:flower_forest_flowers",
-      "minecraft:flower_flower_forest",
-      "more_orn_plants:sunflower_flowers_grove_placed_key"
+      "more_orn_plants:small_flowers_grove_placed",
+      "more_orn_plants:tulip_grove_placed",
+      "more_orn_plants:tall_flowers_grove_placed"
     ],
     [
       "minecraft:freeze_top_layer"

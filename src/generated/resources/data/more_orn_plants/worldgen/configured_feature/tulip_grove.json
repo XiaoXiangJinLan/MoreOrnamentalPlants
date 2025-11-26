@@ -6,13 +6,33 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "minecraft:sunflower",
-              "Properties": {
-                "half": "lower"
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "minecraft:red_tulip"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "minecraft:orange_tulip"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "minecraft:white_tulip"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "minecraft:pink_tulip"
+                },
+                "weight": 1
               }
-            }
+            ]
           }
         }
       },
@@ -25,15 +45,6 @@
               {
                 "type": "minecraft:matching_blocks",
                 "blocks": "minecraft:air"
-              },
-              {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:air",
-                "offset": [
-                  0,
-                  1,
-                  0
-                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -53,8 +64,8 @@
         }
       ]
     },
-    "tries": 16,
-    "xz_spread": 1,
-    "y_spread": 1
+    "tries": 52,
+    "xz_spread": 6,
+    "y_spread": 6
   }
 }

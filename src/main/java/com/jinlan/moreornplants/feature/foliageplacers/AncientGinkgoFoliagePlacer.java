@@ -88,7 +88,7 @@ public class AncientGinkgoFoliagePlacer extends FoliagePlacer {
         // 在原有顶层之上添加1-2层小半径的层
         int extraLayers = 2;
         for (int i = 1; i <= extraLayers; i++) {
-            int radius = Math.max(1, 4 - i); // 逐层减小半径
+            int radius = Math.max(1, 3 - i); // 逐层减小半径
             this.placeLeavesRow(level, blockSetter, random, config,
                     new BlockPos(center.getX(), center.getY() + offset + i, center.getZ()),
                     radius, 0, doubleTrunk);
