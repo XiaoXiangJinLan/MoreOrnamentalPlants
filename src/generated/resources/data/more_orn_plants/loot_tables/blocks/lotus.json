@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "more_orn_plants:lotus",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "half": "lower"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:lotus"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:lotus_seed_pod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:lotus_root"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "more_orn_plants:blocks/lotus"
+}

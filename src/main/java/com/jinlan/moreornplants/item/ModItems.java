@@ -131,6 +131,26 @@ public class ModItems {
     public static final RegistryObject<Item> CAMPHOR_CHEST_BOAT =
             ITEMS.register("camphor_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.CAMPHOR, new Item.Properties()));
 
+    public static final RegistryObject<Item> MOTTLED_BAMBOO_SHOOTS =
+            ITEMS.register("mottled_bamboo_shoots", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_BAMBOO_SHOOTS =
+            ITEMS.register("black_bamboo_shoots", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PEELED_BAMBOO_SHOOTS =
+            ITEMS.register("peeled_bamboo_shoots", () -> new Item((new Item.Properties()).food(ModFoods.PEELED_BAMBOO_SHOOTS)));
+    public static final RegistryObject<Item> BAMBOO_SHOOTS_SOUP =
+            ITEMS.register("bamboo_shoots_soup", () -> new Item((new Item.Properties()).food(ModFoods.BAMBOO_SHOOTS_SOUP)));
+
+    public static final RegistryObject<Item> LOTUS_ROOT =
+            ITEMS.register("lotus_root", () -> new Item((new Item.Properties()).food(ModFoods.LOTUS_ROOT)));
+    public static final RegistryObject<Item> LOTUS_ROOT_SOUP =
+            ITEMS.register("lotus_root_soup", () -> new Item((new Item.Properties()).food(ModFoods.LOTUS_ROOT_SOUP)));
+    public static final RegistryObject<Item> LOTUS_SEED =
+            ITEMS.register("lotus_seed", () -> new Item((new Item.Properties()).food(ModFoods.LOTUS_SEED)));
+    public static final RegistryObject<Item> LOTUS_SEED_POD =
+            ITEMS.register("lotus_seed_pod", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LOTUS_SEED_SOUP =
+            ITEMS.register("lotus_seed_soup", () -> new Item((new Item.Properties()).food(ModFoods.LOTUS_SEED_SOUP)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

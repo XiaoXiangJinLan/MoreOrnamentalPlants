@@ -1,0 +1,38 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_lotus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:lotus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.lotus_sage.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "more_orn_plants:lotus"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.lotus_sage.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_lotus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

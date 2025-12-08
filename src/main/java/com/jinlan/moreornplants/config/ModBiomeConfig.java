@@ -2,9 +2,6 @@ package com.jinlan.moreornplants.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class ModBiomeConfig {
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec SPEC;
@@ -16,6 +13,9 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_FLOWERS_GROVE;
     public static final ForgeConfigSpec.BooleanValue ENABLE_COLORED_FOREST;
     public static final ForgeConfigSpec.BooleanValue ENABLE_PEACH_BLOSSOM_SPRING;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_CRIMSON_HIGHLANDS;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_COTTONROSE_REALM;
 
     // 区域权重配置
     public static final ForgeConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
@@ -44,6 +44,15 @@ public class ModBiomeConfig {
         ENABLE_PEACH_BLOSSOM_SPRING = BUILDER
                 .comment("Enable The Peach Blossom Spring biome generation")
                 .define("enablePeachBlossomSpring", true);
+        ENABLE_CAMELLIA_VALLEY = BUILDER
+                .comment("Enable Camellia Valley biome generation")
+                .define("enableCamelliaValley", true);
+        ENABLE_CRIMSON_HIGHLANDS = BUILDER
+                .comment("Enable Crimson Highlands biome generation")
+                .define("enableCrimsonHighlands", true);
+        ENABLE_COTTONROSE_REALM = BUILDER
+                .comment("Enable Cottonrose Realm biome generation")
+                .define("enableCottonroseRealm", true);
         BUILDER.pop();
 
         // 区域权重设置

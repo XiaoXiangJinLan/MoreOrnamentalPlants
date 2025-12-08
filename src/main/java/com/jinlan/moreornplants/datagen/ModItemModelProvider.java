@@ -299,6 +299,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         tallCrossItem(ModBlocks.RED_WHITE_CHINESE_ROSE);
         tallCrossItem(ModBlocks.PINK_WHITE_CHINESE_ROSE);
         tallCrossItem(ModBlocks.YELLOW_WHITE_CHINESE_ROSE);
+        tallCrossItem(ModBlocks.CRAPE_MYRTLE);
+        tallCrossItem(ModBlocks.COTTON_ROSE);
+
+        simplerBlockItem(ModBlocks.MOTTLED_BAMBOO);
+        simpleItem(ModItems.MOTTLED_BAMBOO_SHOOTS);
+        simplerBlockItem(ModBlocks.BLACK_BAMBOO);
+        simpleItem(ModItems.BLACK_BAMBOO_SHOOTS);
+        simpleItem(ModItems.PEELED_BAMBOO_SHOOTS);
+        simpleItem(ModItems.BAMBOO_SHOOTS_SOUP);
+
+        simplerBlockItem(ModBlocks.LOTUS);
+        simpleItem(ModItems.LOTUS_ROOT);
+        simpleItem(ModItems.LOTUS_SEED);
+        simpleItem(ModItems.LOTUS_SEED_POD);
+        simpleItem(ModItems.LOTUS_ROOT_SOUP);
+        simpleItem(ModItems.LOTUS_SEED_SOUP);
 
         peachPinkPetalsItem(ModBlocks.PEACH_PINK_PETALS);
     }

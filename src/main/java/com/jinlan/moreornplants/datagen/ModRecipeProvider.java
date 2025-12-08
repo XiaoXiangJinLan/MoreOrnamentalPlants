@@ -1006,5 +1006,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("black_dye")
                 .unlockedBy("has_black_dye_item", has(ModTags.Items.BLACK_DYE))
                 .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.PEELED_BAMBOO_SHOOTS.get())
+                .requires(ModItems.MOTTLED_BAMBOO_SHOOTS.get())
+                .unlockedBy(getHasName(ModItems.MOTTLED_BAMBOO_SHOOTS.get()), has(ModItems.MOTTLED_BAMBOO_SHOOTS.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "peeled_bamboo_shoots_from_mottled_bamboo"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.PEELED_BAMBOO_SHOOTS.get())
+                .requires(ModItems.BLACK_BAMBOO_SHOOTS.get())
+                .unlockedBy(getHasName(ModItems.BLACK_BAMBOO_SHOOTS.get()), has(ModItems.BLACK_BAMBOO_SHOOTS.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "peeled_bamboo_shoots_from_black_bamboo"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BAMBOO_SHOOTS_SOUP.get())
+                .requires(ModItems.PEELED_BAMBOO_SHOOTS.get())
+                .requires(Items.BOWL)
+                .unlockedBy(getHasName(ModItems.PEELED_BAMBOO_SHOOTS.get()), has(ModItems.PEELED_BAMBOO_SHOOTS.get()))
+                .unlockedBy("has_bowl", has(Items.BOWL))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.LOTUS_ROOT_SOUP.get())
+                .requires(ModItems.LOTUS_ROOT.get())
+                .requires(Items.BOWL)
+                .unlockedBy(getHasName(ModItems.LOTUS_ROOT.get()), has(ModItems.LOTUS_ROOT.get()))
+                .unlockedBy("has_bowl", has(Items.BOWL))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.LOTUS_SEED.get(), 6)
+                .requires(ModItems.LOTUS_SEED_POD.get())
+                .unlockedBy(getHasName(ModItems.LOTUS_SEED_POD.get()), has(ModItems.LOTUS_SEED_POD.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.LOTUS_SEED_SOUP.get())
+                .requires(ModItems.LOTUS_SEED.get(), 6)
+                .requires(Items.BOWL)
+                .unlockedBy(getHasName(ModItems.LOTUS_SEED.get()), has(ModItems.LOTUS_SEED.get()))
+                .unlockedBy("has_bowl", has(Items.BOWL))
+                .save(pWriter);
     }
 }

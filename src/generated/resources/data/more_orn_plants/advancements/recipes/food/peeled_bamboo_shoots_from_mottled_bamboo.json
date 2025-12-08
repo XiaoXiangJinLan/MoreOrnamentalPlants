@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mottled_bamboo_shoots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:mottled_bamboo_shoots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:peeled_bamboo_shoots_from_mottled_bamboo"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_mottled_bamboo_shoots",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:peeled_bamboo_shoots_from_mottled_bamboo"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:mottled_bamboo_shoots"
+    }
+  ],
+  "result": {
+    "item": "more_orn_plants:peeled_bamboo_shoots"
+  }
+}

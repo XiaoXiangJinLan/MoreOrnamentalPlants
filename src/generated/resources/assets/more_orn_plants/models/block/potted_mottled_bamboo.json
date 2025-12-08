@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/potted_bamboo",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bamboo": "more_orn_plants:block/mottled_bamboo_stalk",
+    "leaf": "more_orn_plants:block/mottled_bamboo_singleleaf"
+  }
+}

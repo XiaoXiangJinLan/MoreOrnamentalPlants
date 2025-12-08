@@ -4,7 +4,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "more_orn_plants:plant_in_florilegium"
+            "tag": "forge:plant_in_florilegium"
           }
         ]
       },

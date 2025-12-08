@@ -22,7 +22,7 @@
           {
             "condition": "minecraft:match_tool",
             "predicate": {
-              "tag": "more_orn_plants:chrysanthemum"
+              "tag": "forge:chrysanthemum"
             }
           }
         ]

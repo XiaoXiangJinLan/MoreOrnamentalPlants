@@ -71,11 +71,11 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_grass_forest",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
+      "more_orn_plants:grass_forest",
       "more_orn_plants:ancient_camphor_placed",
       "more_orn_plants:camphor_placed",
       "more_orn_plants:green_chinese_parasol_placed",

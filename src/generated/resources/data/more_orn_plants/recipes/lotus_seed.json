@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:lotus_seed_pod"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "more_orn_plants:lotus_seed"
+  }
+}

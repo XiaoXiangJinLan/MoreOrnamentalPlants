@@ -73,7 +73,7 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_grass_forest",
+      "more_orn_plants:grass_forest",
       "more_orn_plants:weeping_crabapple_placed",
       "more_orn_plants:pink_apricot_placed",
       "more_orn_plants:ornamental_peach_grove_placed",
@@ -89,8 +89,10 @@
       "more_orn_plants:pink_chinese_rose_placed",
       "more_orn_plants:yellow_chinese_rose_placed",
       "more_orn_plants:white_chinese_rose_placed",
+      "more_orn_plants:crape_myrtle_placed",
       "more_orn_plants:pink_camellia_placed",
       "more_orn_plants:crimson_azalea_grove_placed",
+      "more_orn_plants:cotton_rose_grove_placed",
       "more_orn_plants:small_flowers_grove_placed",
       "more_orn_plants:tulip_grove_placed",
       "more_orn_plants:tall_flowers_grove_placed"

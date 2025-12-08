@@ -6,6 +6,8 @@ import com.jinlan.moreornplants.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
@@ -14,13 +16,20 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
+    private static final LootItemCondition.Builder HAS_SHEARS_OR_SILK_TOUCH = HAS_SHEARS.or(HAS_SILK_TOUCH);
+    private static final LootItemCondition.Builder HAS_NO_SHEARS_OR_SILK_TOUCH = HAS_SHEARS_OR_SILK_TOUCH.invert();
+    private static final float[] NORMAL_LEAVES_STICK_CHANCES = new float[]{0.02F, 0.022222223F, 0.025F, 0.033333335F, 0.1F};
+
     public ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
@@ -297,23 +306,23 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.RED_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), block ->
-                createLeavesDrops(block, ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+                createWeepingMeiPlantDrops(block, ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.WHITE_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.WHITE_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), block ->
-                createLeavesDrops(block, ModBlocks.WHITE_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+                createWeepingMeiPlantDrops(block, ModBlocks.WHITE_WEEPING_MEI.get(), ModBlocks.WHITE_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.GREEN_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.GREEN_WEEPING_MEI_PLANT.get(), block ->
-                createLeavesDrops(block, ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+                createWeepingMeiPlantDrops(block, ModBlocks.GREEN_WEEPING_MEI.get(), ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.PINK_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.PINK_WEEPING_MEI_PLANT.get(), block ->
-                createLeavesDrops(block, ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+                createWeepingMeiPlantDrops(block, ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get(), block ->
-                createLeavesDrops(block, ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+                createWeepingMeiPlantDrops(block, ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(ModBlocks.RED_MEI_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_SIGN.get()));
         this.add(ModBlocks.RED_MEI_WALL_SIGN.get(), block ->
@@ -674,6 +683,30 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.CRAPE_MYRTLE.get(), createSinglePropConditionTable(ModBlocks.CRAPE_MYRTLE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.COTTON_ROSE.get(), createSinglePropConditionTable(ModBlocks.COTTON_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+
+        this.dropSelf(ModBlocks.MOTTLED_BAMBOO.get());
+        this.dropOther(ModBlocks.MOTTLED_BAMBOO_SAPLING.get(), ModItems.MOTTLED_BAMBOO_SHOOTS.get());
+        this.add(ModBlocks.POTTED_MOTTLED_BAMBOO.get(),
+                createPotFlowerItemTable(ModBlocks.MOTTLED_BAMBOO.get()));
+        this.dropSelf(ModBlocks.BLACK_BAMBOO.get());
+        this.dropOther(ModBlocks.BLACK_BAMBOO_SAPLING.get(), ModItems.BLACK_BAMBOO_SHOOTS.get());
+        this.add(ModBlocks.POTTED_BLACK_BAMBOO.get(),
+                createPotFlowerItemTable(ModBlocks.BLACK_BAMBOO.get()));
+
+        this.add(ModBlocks.LOTUS.get(), block -> {
+            LootPool.Builder pool = LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                    .add(LootItem.lootTableItem(ModBlocks.LOTUS.get().asItem()))
+                    .add(LootItem.lootTableItem(ModItems.LOTUS_SEED_POD.get()))
+                    .add(LootItem.lootTableItem(ModItems.LOTUS_ROOT.get()))
+                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                            .setProperties(StatePropertiesPredicate.Builder.properties()
+                                    .hasProperty(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)));
+            return LootTable.lootTable().withPool(pool);
+        });
 
         this.add(ModBlocks.PEACH_PINK_PETALS.get(), block -> {
             LootPool.Builder pool = LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
@@ -698,6 +731,33 @@ public class ModBlockLootTables extends BlockLootSubProvider {
             return LootTable.lootTable().withPool(pool);
         });
 
+    }
+
+    protected LootTable.Builder createWeepingMeiPlantDrops(Block plantBlock, Block flowerBlock, Block saplingBlock, float... saplingChances) {
+        LootPool.Builder shearPool = LootPool.lootPool()
+                .add(LootItem.lootTableItem(flowerBlock))
+                .when(HAS_SHEARS_OR_SILK_TOUCH);
+
+        LootPool.Builder saplingPool = LootPool.lootPool()
+                .add(this.applyExplosionCondition(plantBlock,
+                                LootItem.lootTableItem(saplingBlock))
+                        .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, saplingChances)))
+                .when(HAS_NO_SHEARS_OR_SILK_TOUCH);
+
+        LootPool.Builder stickPool = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1.0F))
+                .when(HAS_NO_SHEARS_OR_SILK_TOUCH)
+                .add(this.applyExplosionDecay(plantBlock,
+                                LootItem.lootTableItem(Items.STICK)
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))))
+                        .when(BonusLevelTableCondition.bonusLevelFlatChance(
+                                Enchantments.BLOCK_FORTUNE,
+                                NORMAL_LEAVES_STICK_CHANCES)));
+
+        return LootTable.lootTable()
+                .withPool(shearPool)
+                .withPool(saplingPool)
+                .withPool(stickPool);
     }
 
     @Override

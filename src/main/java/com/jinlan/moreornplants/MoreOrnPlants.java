@@ -51,6 +51,7 @@ public class MoreOrnPlants
         ModTrunkPlacerTypes.register(modEventBus);
         ModFoliagePlacerTypes.register(modEventBus);
         ModTreeDecoratorTypes.register(modEventBus);
+        ModFeatures.register(modEventBus);
 
         context.registerConfig(ModConfig.Type.COMMON, SPEC, "moreornplants-biomes.toml");
 
@@ -149,24 +150,22 @@ public class MoreOrnPlants
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.getId(), ModBlocks.POTTED_RED_WHITE_CHINESE_ROSE_BUSH);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.getId(), ModBlocks.POTTED_PINK_WHITE_CHINESE_ROSE_BUSH);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.getId(), ModBlocks.POTTED_YELLOW_WHITE_CHINESE_ROSE_BUSH);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.MOTTLED_BAMBOO.getId(), ModBlocks.POTTED_MOTTLED_BAMBOO);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BLACK_BAMBOO.getId(), ModBlocks.POTTED_BLACK_BAMBOO);
         });
     }
 
-    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
 
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
-        // Do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {

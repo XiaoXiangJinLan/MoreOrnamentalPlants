@@ -73,11 +73,11 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_grass_forest",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
+      "more_orn_plants:grass_forest",
       "more_orn_plants:ancient_golden_ginkgo_placed",
       "more_orn_plants:golden_ginkgo_placed",
       "more_orn_plants:yellow_chinese_parasol_placed",
@@ -89,7 +89,8 @@
       "more_orn_plants:golden_chrysanthemum_placed",
       "more_orn_plants:white_chrysanthemum_placed",
       "more_orn_plants:purple_chrysanthemum_placed",
-      "more_orn_plants:pink_chrysanthemum_placed"
+      "more_orn_plants:pink_chrysanthemum_placed",
+      "more_orn_plants:cotton_rose_forest_placed"
     ],
     [
       "minecraft:freeze_top_layer"

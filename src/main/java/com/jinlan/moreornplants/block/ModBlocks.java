@@ -910,6 +910,10 @@ public class ModBlocks {
             registerBlock("pink_white_chinese_rose", () -> new TallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> YELLOW_WHITE_CHINESE_ROSE =
             registerBlock("yellow_white_chinese_rose", () -> new TallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> CRAPE_MYRTLE =
+            registerBlock("crape_myrtle", () -> new TallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> COTTON_ROSE =
+            registerBlock("cotton_rose", () -> new TallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> WINTERSWEET_BUSH =
             registerBlock("wintersweet_bush", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
@@ -955,6 +959,22 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PEACH_PINK_PETALS =
             registerBlock("peach_pink_petals", () -> new PeachPinkPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+
+    public static final RegistryObject<Block> MOTTLED_BAMBOO_SAPLING =
+            registerBlock("mottled_bamboo_sapling", () -> new MottledBambooSaplingBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_SAPLING)));
+    public static final RegistryObject<Block> MOTTLED_BAMBOO =
+            registerBlock("mottled_bamboo", () -> new MottledBambooStalkBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO)));
+    public static final RegistryObject<Block> POTTED_MOTTLED_BAMBOO =
+            BLOCKS.register("potted_mottled_bamboo", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MOTTLED_BAMBOO, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> BLACK_BAMBOO_SAPLING =
+            registerBlock("black_bamboo_sapling", () -> new BlackBambooSaplingBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_SAPLING)));
+    public static final RegistryObject<Block> BLACK_BAMBOO =
+            registerBlock("black_bamboo", () -> new BlackBambooStalkBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO)));
+    public static final RegistryObject<Block> POTTED_BLACK_BAMBOO =
+            BLOCKS.register("potted_black_bamboo", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.BLACK_BAMBOO, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+
+    public static final RegistryObject<Block> LOTUS =
+            registerBlock("lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).noCollission()));
 
     private static ModFlammableRotatedPillarBlock log(MapColor pTopMapColor, MapColor pSideMapColor) {
         return new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((p_152624_) ->

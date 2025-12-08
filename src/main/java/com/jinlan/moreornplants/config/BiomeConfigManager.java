@@ -9,6 +9,9 @@ public class BiomeConfigManager {
             case "flowers_grove" -> ModBiomeConfig.ENABLE_FLOWERS_GROVE.get();
             case "colored_forest" -> ModBiomeConfig.ENABLE_COLORED_FOREST.get();
             case "the_peach_blossom_spring" -> ModBiomeConfig.ENABLE_PEACH_BLOSSOM_SPRING.get();
+            case "camellia_valley" -> ModBiomeConfig.ENABLE_CAMELLIA_VALLEY.get();
+            case "crimson_highlands" -> ModBiomeConfig.ENABLE_CRIMSON_HIGHLANDS.get();
+            case "cottonrose_realm" -> ModBiomeConfig.ENABLE_COTTONROSE_REALM.get();
             default -> true;
         };
     }

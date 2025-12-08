@@ -18,13 +18,13 @@
                 "data": {
                   "Name": "more_orn_plants:light_red_peony"
                 },
-                "weight": 1
+                "weight": 2
               },
               {
                 "data": {
                   "Name": "more_orn_plants:light_purple_peony"
                 },
-                "weight": 1
+                "weight": 2
               },
               {
                 "data": {
@@ -70,8 +70,8 @@
         }
       ]
     },
-    "tries": 64,
-    "xz_spread": 16,
-    "y_spread": 16
+    "tries": 81,
+    "xz_spread": 15,
+    "y_spread": 10
   }
 }
