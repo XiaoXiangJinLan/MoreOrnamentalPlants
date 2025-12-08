@@ -96,6 +96,7 @@ public class MoreOrnPlants
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.getId(), ModBlocks.POTTED_GREEN_CHINESE_PARASOL_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SWEETGUM_SAPLING.getId(), ModBlocks.POTTED_SWEETGUM_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CAMPHOR_SAPLING.getId(), ModBlocks.POTTED_CAMPHOR_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CRAPE_MYRTLE_SAPLING.getId(), ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHRYSANTHEMUM.getId(), ModBlocks.POTTED_CHRYSANTHEMUM);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GOLDEN_CHRYSANTHEMUM.getId(), ModBlocks.POTTED_GOLDEN_CHRYSANTHEMUM);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GOLD_BACKED_SCARLET_MUM.getId(), ModBlocks.POTTED_GOLD_BACKED_SCARLET_MUM);

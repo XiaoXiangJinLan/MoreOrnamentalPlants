@@ -65,6 +65,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> VERSICOLOR_CAMELLIA_PLACED = registerKey("versicolor_camellia_placed");
     public static final ResourceKey<PlacedFeature> PINK_CAMELLIA_PLACED = registerKey("pink_camellia_placed");
     public static final ResourceKey<PlacedFeature> CRAPE_MYRTLE_PLACED = registerKey("crape_myrtle_placed");
+    public static final ResourceKey<PlacedFeature> CRAPE_MYRTLE_TREE_PLACED = registerKey("crape_myrtle_tree_placed");
     public static final ResourceKey<PlacedFeature> COTTON_ROSE_PLACED = registerKey("cotton_rose_placed");
     public static final ResourceKey<PlacedFeature> COTTON_ROSE_GROVE_PLACED = registerKey("cotton_rose_grove_placed");
     public static final ResourceKey<PlacedFeature> COTTON_ROSE_FOREST_PLACED = registerKey("cotton_rose_forest_placed");
@@ -120,6 +121,9 @@ public class ModPlacedFeatures {
         register(context, ORANGE_OSMANTHUS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORANGE_OSMANTHUS),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.ORANGE_OSMANTHUS_SAPLING.get()));
+        register(context, CRAPE_MYRTLE_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRAPE_MYRTLE_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1),
+                        ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
         register(context, CHERRY_PLACED, configuredFeatures.getOrThrow(TreeFeatures.CHERRY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         Blocks.CHERRY_SAPLING));

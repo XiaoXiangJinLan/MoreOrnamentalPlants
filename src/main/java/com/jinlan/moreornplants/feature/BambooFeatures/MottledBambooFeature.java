@@ -1,7 +1,7 @@
 package com.jinlan.moreornplants.feature.BambooFeatures;
 
 import com.jinlan.moreornplants.block.ModBlocks;
-import com.jinlan.moreornplants.block.MottledBambooStalkBlock;
+import com.jinlan.moreornplants.block.BambooBlock.MottledBambooStalkBlock;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

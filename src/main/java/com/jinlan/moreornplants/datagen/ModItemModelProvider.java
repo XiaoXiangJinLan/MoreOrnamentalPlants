@@ -223,6 +223,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING);
         saplingItem(ModBlocks.SWEETGUM_SAPLING);
         saplingItem(ModBlocks.CAMPHOR_SAPLING);
+        saplingItem(ModBlocks.CRAPE_MYRTLE_SAPLING);
 
         flowerItem(ModBlocks.RED_WEEPING_MEI);
         flowerItem(ModBlocks.WHITE_WEEPING_MEI);
@@ -310,6 +311,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BAMBOO_SHOOTS_SOUP);
 
         simplerBlockItem(ModBlocks.LOTUS);
+        simplerBlockItem(ModBlocks.LOTUS_LEAF);
         simpleItem(ModItems.LOTUS_ROOT);
         simpleItem(ModItems.LOTUS_SEED);
         simpleItem(ModItems.LOTUS_SEED_POD);

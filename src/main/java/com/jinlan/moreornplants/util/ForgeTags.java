@@ -11,10 +11,10 @@ public class ForgeTags {
         public static final TagKey<Item> MEI = tag("mei");
         public static final TagKey<Item> TREE_PEONY = tag("tree_peony");
         public static final TagKey<Item> HERBACEOUS_PEONY = tag("herbaceous_peony");
-        public static final TagKey<Item> CHINESE_ROSES = tag("chinese_rose");
-        public static final TagKey<Item> CHRYSANTHEMUMS = tag("chrysanthemum");
+        public static final TagKey<Item> CHINESE_ROSE = tag("chinese_rose");
+        public static final TagKey<Item> CHRYSANTHEMUM = tag("chrysanthemum");
         public static final TagKey<Item> PLANT_IN_FLORILEGIUM = tag("plant_in_florilegium");
-        public static final TagKey<Item> CAMELLIAS = tag("camellia");
+        public static final TagKey<Item> CAMELLIA = tag("camellia");
         public static final TagKey<Item> AZALEA = tag("azalea");
         public static final TagKey<Item> CRABAPPLE = tag("crabapple");
         public static final TagKey<Item> OSMANTHUS = tag("osmanthus");
@@ -23,6 +23,7 @@ public class ForgeTags {
         public static final TagKey<Item> PLUM = tag("plum");
         public static final TagKey<Item> GINKGO = tag("ginkgo");
         public static final TagKey<Item> CHINESE_PARASOL = tag("chinese_parasol");
+        public static final TagKey<Item> CRAPE_MYRTLE = tag("crape_myrtle");
         public static final TagKey<Item> BAMBOO = tag("bamboo");
 
         public static final TagKey<Item> VEGETABLES = tag("vegetables");

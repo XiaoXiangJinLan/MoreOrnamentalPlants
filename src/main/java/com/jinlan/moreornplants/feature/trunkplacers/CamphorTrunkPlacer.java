@@ -1,6 +1,6 @@
 package com.jinlan.moreornplants.feature.trunkplacers;
 
-import com.jinlan.moreornplants.block.ModFlammableRotatedPillarBlock;
+import com.jinlan.moreornplants.block.ModRotatedPillarBlock;
 import com.jinlan.moreornplants.init.ModTrunkPlacerTypes;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -181,7 +181,7 @@ public class CamphorTrunkPlacer extends TrunkPlacer {
     protected void placeLog(LevelSimulatedReader level, BiConsumer<BlockPos, BlockState> blockSetter,
                             RandomSource random, BlockPos pos, TreeConfiguration config, Direction.Axis axis) {
         BlockState logState = config.trunkProvider.getState(random, pos)
-                .setValue(ModFlammableRotatedPillarBlock.AXIS, axis);
+                .setValue(ModRotatedPillarBlock.AXIS, axis);
         blockSetter.accept(pos, logState);
     }
 }

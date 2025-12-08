@@ -12,7 +12,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.common.data.ForgeItemTagsProvider;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -48,6 +47,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get().asItem())
                 .add(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get().asItem())
                 .add(ModBlocks.WHITE_OSMANTHUS_SAPLING.get().asItem())
+                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem())
                 .add(ModBlocks.RED_MEI_LEAVES.get().asItem())
                 .add(ModBlocks.WHITE_MEI_LEAVES.get().asItem())
                 .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get().asItem())
@@ -70,6 +70,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get().asItem())
                 .add(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get().asItem())
                 .add(ModBlocks.WHITE_OSMANTHUS_LEAVES.get().asItem())
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get().asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.get().asItem());
 
         this.tag(ItemTags.LEAVES)
@@ -96,7 +97,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get().asItem())
                 .add(ModBlocks.SWEETGUM_LEAVES.get().asItem())
                 .add(ModBlocks.CAMPHOR_LEAVES.get().asItem())
-                .add(ModBlocks.NEW_CAMPHOR_LEAVES.get().asItem());
+                .add(ModBlocks.NEW_CAMPHOR_LEAVES.get().asItem())
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get().asItem());
 
         this.tag(ItemTags.LOGS_THAT_BURN)
                 .addTag(ModTags.Items.RED_MEI_LOGS)
@@ -112,7 +114,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ModTags.Items.GINKGO_LOGS)
                 .addTag(ModTags.Items.CHINESE_PARASOL_LOGS)
                 .addTag(ModTags.Items.SWEETGUM_LOGS)
-                .addTag(ModTags.Items.CAMPHOR_LOGS);
+                .addTag(ModTags.Items.CAMPHOR_LOGS)
+                .add(ModBlocks.CRAPE_MYRTLE_LOG.get().asItem())
+                .add(ModBlocks.CRAPE_MYRTLE_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.RED_MEI_PLANKS.get().asItem())
@@ -409,7 +413,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get().asItem())
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get().asItem())
                 .add(ModBlocks.SWEETGUM_SAPLING.get().asItem())
-                .add(ModBlocks.CAMPHOR_SAPLING.get().asItem());
+                .add(ModBlocks.CAMPHOR_SAPLING.get().asItem())
+                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem());
 
         this.tag(ItemTags.SMALL_FLOWERS)
                 .add(ModBlocks.WINTERSWEET_BUSH.get().asItem())
@@ -423,35 +428,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
-                .add(ModBlocks.PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_PINK_PEONY.get().asItem())
-                .add(ModBlocks.VIOLET_PINK_PEONY.get().asItem())
-                .add(ModBlocks.PINK_PEONY.get().asItem())
-                .add(ModBlocks.RED_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_RED_PEONY.get().asItem())
-                .add(ModBlocks.INK_RED_PEONY.get().asItem())
-                .add(ModBlocks.VERMILION_PEONY.get().asItem())
-                .add(ModBlocks.PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.INK_PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.VIOLET_PEONY.get().asItem())
-                .add(ModBlocks.YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.OCHRE_YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.GOLDEN_PEONY.get().asItem())
-                .add(ModBlocks.WHITE_PEONY.get().asItem())
-                .add(ModBlocks.INK_PEONY.get().asItem())
-                .add(ModBlocks.BLUE_PEONY.get().asItem())
-                .add(ModBlocks.GREEN_PEONY.get().asItem())
-                .add(ModBlocks.COLORFUL_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_COLORFUL_PEONY.get().asItem())
-                .add(ModBlocks.INK_COLORFUL_PEONY.get().asItem())
-                .add(ModBlocks.RED_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.PINK_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.YELLOW_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.PURPLE_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.WU_HUA_LONG_YU_PEONY.get().asItem())
-                .add(ModBlocks.MAUVE_PEONY.get().asItem())
+                .addTag(ForgeTags.Items.HERBACEOUS_PEONY)
                 .add(ModBlocks.CHINESE_ROSE_BUSH.get().asItem())
                 .add(ModBlocks.PINK_CHINESE_ROSE_BUSH.get().asItem())
                 .add(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get().asItem())
@@ -461,10 +438,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get().asItem())
                 .add(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get().asItem())
                 .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.CAMELLIA.get().asItem())
-                .add(ModBlocks.PINK_CAMELLIA.get().asItem())
-                .add(ModBlocks.WHITE_CAMELLIA.get().asItem())
-                .add(ModBlocks.VERSICOLOR_CAMELLIA.get().asItem())
+                .addTag(ForgeTags.Items.CAMELLIA)
                 .add(ModBlocks.CRIMSON_AZALEA.get().asItem());
 
         this.tag(ItemTags.TALL_FLOWERS)
@@ -513,78 +487,19 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get().asItem())
                 .add(ModBlocks.SWEETGUM_SAPLING.get().asItem())
                 .add(ModBlocks.CAMPHOR_SAPLING.get().asItem())
-                .add(ModBlocks.WINTERSWEET_BUSH.get().asItem())
-                .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GOLDEN_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem())
-                .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get().asItem())
+                .addTag(ForgeTags.Items.CHRYSANTHEMUM)
                 .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
-                .add(ModBlocks.PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_PINK_PEONY.get().asItem())
-                .add(ModBlocks.VIOLET_PINK_PEONY.get().asItem())
-                .add(ModBlocks.PINK_PEONY.get().asItem())
-                .add(ModBlocks.RED_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_RED_PEONY.get().asItem())
-                .add(ModBlocks.INK_RED_PEONY.get().asItem())
-                .add(ModBlocks.VERMILION_PEONY.get().asItem())
-                .add(ModBlocks.PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.INK_PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.VIOLET_PEONY.get().asItem())
-                .add(ModBlocks.YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.OCHRE_YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.GOLDEN_PEONY.get().asItem())
-                .add(ModBlocks.WHITE_PEONY.get().asItem())
-                .add(ModBlocks.INK_PEONY.get().asItem())
-                .add(ModBlocks.BLUE_PEONY.get().asItem())
-                .add(ModBlocks.GREEN_PEONY.get().asItem())
-                .add(ModBlocks.COLORFUL_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_COLORFUL_PEONY.get().asItem())
-                .add(ModBlocks.INK_COLORFUL_PEONY.get().asItem())
-                .add(ModBlocks.RED_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.PINK_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.YELLOW_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.PURPLE_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.WU_HUA_LONG_YU_PEONY.get().asItem())
-                .add(ModBlocks.MAUVE_PEONY.get().asItem())
-                .add(ModBlocks.CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.PINK_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.CAMELLIA.get().asItem())
-                .add(ModBlocks.PINK_CAMELLIA.get().asItem())
-                .add(ModBlocks.WHITE_CAMELLIA.get().asItem())
-                .add(ModBlocks.VERSICOLOR_CAMELLIA.get().asItem())
-                .add(ModBlocks.CRIMSON_AZALEA.get().asItem())
-                .add(ModBlocks.WINTERSWEET.get().asItem())
-                .add(ModBlocks.TWO_QIAO_PEONY.get().asItem())
-                .add(ModBlocks.VERSICOLOR_PEONY.get().asItem())
-                .add(ModBlocks.CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.PINK_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.WHITE_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.RED_PINK_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.CRAPE_MYRTLE.get().asItem())
+                .add(ModBlocks.LOTUS.get().asItem())
+                .addTag(ForgeTags.Items.HERBACEOUS_PEONY)
+                .addTag(ForgeTags.Items.CHINESE_ROSE)
+                .addTag(ForgeTags.Items.CAMELLIA)
+                .addTag(ForgeTags.Items.AZALEA)
+                .addTag(ForgeTags.Items.WINTERSWEET)
+                .addTag(ForgeTags.Items.TREE_PEONY)
+                .addTag(ForgeTags.Items.CRAPE_MYRTLE)
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
-                .add(Blocks.AZALEA.asItem())
                 .add(Blocks.FLOWERING_AZALEA.asItem())
                 .add(Blocks.POPPY.asItem())
-                .add(Blocks.PEONY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
                 .add(Blocks.SUNFLOWER.asItem())
                 .add(Blocks.LILAC.asItem());
@@ -641,7 +556,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WU_HUA_LONG_YU_PEONY.get().asItem())
                 .add(ModBlocks.MAUVE_PEONY.get().asItem());
 
-        this.tag(ForgeTags.Items.CHINESE_ROSES)
+        this.tag(ForgeTags.Items.CHINESE_ROSE)
                 .add(ModBlocks.CHINESE_ROSE_BUSH.get().asItem())
                 .add(ModBlocks.PINK_CHINESE_ROSE_BUSH.get().asItem())
                 .add(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get().asItem())
@@ -661,7 +576,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().asItem());
 
-        this.tag(ForgeTags.Items.CHRYSANTHEMUMS)
+        this.tag(ForgeTags.Items.CHRYSANTHEMUM)
                 .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.GOLDEN_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem())
@@ -672,7 +587,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get().asItem());
 
-        this.tag(ForgeTags.Items.CAMELLIAS)
+        this.tag(ForgeTags.Items.CAMELLIA)
                 .add(ModBlocks.CAMELLIA.get().asItem())
                 .add(ModBlocks.PINK_CAMELLIA.get().asItem())
                 .add(ModBlocks.WHITE_CAMELLIA.get().asItem())
@@ -712,6 +627,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get().asItem())
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get().asItem());
 
+        this.tag(ForgeTags.Items.CRAPE_MYRTLE)
+                .add(ModBlocks.CRAPE_MYRTLE.get().asItem())
+                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem());
+
         this.tag(ForgeTags.Items.BAMBOO)
                 .add(Blocks.BAMBOO.asItem())
                 .add(ModBlocks.MOTTLED_BAMBOO.get().asItem())
@@ -739,7 +658,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_CAMELLIA.get().asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE.get().asItem())
-                .add(ModBlocks.COTTON_ROSE.get().asItem());
+                .add(ModBlocks.COTTON_ROSE.get().asItem())
+                .add(ModBlocks.LOTUS.get().asItem());
 
         this.tag(ModTags.Items.WHITE_DYE)
                 .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
@@ -764,14 +684,15 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.LIGHT_PURPLE_PEONY.get().asItem())
                 .add(ModBlocks.INK_PURPLE_PEONY.get().asItem())
                 .add(ModBlocks.VIOLET_PEONY.get().asItem())
-                .add(ModBlocks.CRAPE_MYRTLE.get().asItem());
+                .addTag(ForgeTags.Items.CRAPE_MYRTLE);
 
         this.tag(ModTags.Items.LIME_DYE)
                 .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.GREEN_PEONY.get().asItem());
 
         this.tag(ModTags.Items.GREEN_DYE)
-                .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem());
+                .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
+                .add(ModBlocks.LOTUS_LEAF.get().asItem());
 
         this.tag(ModTags.Items.LIGHT_BLUE_DYE)
                 .add(ModBlocks.BLUE_PEONY.get().asItem());

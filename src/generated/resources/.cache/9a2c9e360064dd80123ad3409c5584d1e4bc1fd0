@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-08T10:32:35.3974872	Item Models: more_orn_plants
+// 1.20.1	2025-12-08T22:47:39.0098221	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -59,6 +59,7 @@ c9106d95da7cf1680899da935dfa2bc3b2ebd490 assets/more_orn_plants/models/item/crab
 71102a1b79aeda31b8bfab71e02a6be6a9584cd2 assets/more_orn_plants/models/item/crabapple_stairs.json
 7278fc57b4e02a33758361723f5115f40a4a1f4b assets/more_orn_plants/models/item/crabapple_trapdoor.json
 10711225e950b126be6d56e810613962a0f2d68e assets/more_orn_plants/models/item/crape_myrtle.json
+6b38822943a585af3b3d509260a6ef0660207ff1 assets/more_orn_plants/models/item/crape_myrtle_sapling.json
 3222c1d5d2b5783e3cbafd8c5d3158c8401c0807 assets/more_orn_plants/models/item/crimson_azalea.json
 f57b921601b556c0855bf5b3b0e12ecc35743ea8 assets/more_orn_plants/models/item/double_pink_mei_boat.json
 d2f2b5fd85318ff17b2288d5a2640ef194999934 assets/more_orn_plants/models/item/double_pink_mei_button.json
@@ -121,6 +122,7 @@ c7302395fc825207277893742938db71115016d7 assets/more_orn_plants/models/item/ligh
 0ae147da870ac68079e85a7eaadcd7a14d77e391 assets/more_orn_plants/models/item/light_red_peony.json
 528294878b0d61bcc8f1d596a84d7a312f288c0c assets/more_orn_plants/models/item/light_yellow_peony.json
 01f8acf6fbb7b67e2dfca03662ac32aa23ba85c1 assets/more_orn_plants/models/item/lotus.json
+463ad699a087898948ae6921273323535bde38bb assets/more_orn_plants/models/item/lotus_leaf.json
 9aa45ea9aa03aa5d406e2654ff05eed451570cc2 assets/more_orn_plants/models/item/lotus_root.json
 25a3eb13573a334da7ecbc04c508ae74e45a2a88 assets/more_orn_plants/models/item/lotus_root_soup.json
 c65bbf0cf9e35292d22261732c8c3074dacac680 assets/more_orn_plants/models/item/lotus_seed.json

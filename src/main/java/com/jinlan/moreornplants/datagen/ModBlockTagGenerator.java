@@ -45,6 +45,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_WHITE_OSMANTHUS_SAPLING.get())
                 .add(ModBlocks.POTTED_GOLDEN_GINKGO_SAPLING.get())
                 .add(ModBlocks.POTTED_GREEN_GINKGO_SAPLING.get())
+                .add(ModBlocks.POTTED_YELLOW_CHINESE_PARASOL_SAPLING.get())
+                .add(ModBlocks.POTTED_GREEN_CHINESE_PARASOL_SAPLING.get())
+                .add(ModBlocks.POTTED_SWEETGUM_SAPLING.get())
+                .add(ModBlocks.POTTED_CAMPHOR_SAPLING.get())
+                .add(ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING.get())
                 .add(ModBlocks.POTTED_WINTERSWEET_BUSH.get())
                 .add(ModBlocks.POTTED_CHRYSANTHEMUM.get())
                 .add(ModBlocks.POTTED_GOLDEN_CHRYSANTHEMUM.get())
@@ -124,6 +129,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get())
                 .add(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get())
                 .add(ModBlocks.WHITE_OSMANTHUS_SAPLING.get())
+                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get())
                 .add(ModBlocks.RED_MEI_LEAVES.get())
                 .add(ModBlocks.WHITE_MEI_LEAVES.get())
                 .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get())
@@ -151,6 +157,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get())
                 .add(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get())
                 .add(ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get())
                 .add(ModBlocks.PEACH_PINK_PETALS.get());
 
         this.tag(BlockTags.LEAVES)
@@ -177,7 +184,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get())
                 .add(ModBlocks.SWEETGUM_LEAVES.get())
                 .add(ModBlocks.CAMPHOR_LEAVES.get())
-                .add(ModBlocks.NEW_CAMPHOR_LEAVES.get());
+                .add(ModBlocks.NEW_CAMPHOR_LEAVES.get())
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .addTag(ModTags.Blocks.RED_MEI_LOGS)
@@ -193,7 +201,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(ModTags.Blocks.GINKGO_LOGS)
                 .addTag(ModTags.Blocks.CHINESE_PARASOL_LOGS)
                 .addTag(ModTags.Blocks.SWEETGUM_LOGS)
-                .addTag(ModTags.Blocks.CAMPHOR_LOGS);
+                .addTag(ModTags.Blocks.CAMPHOR_LOGS)
+                .add(ModBlocks.CRAPE_MYRTLE_LOG.get())
+                .add(ModBlocks.CRAPE_MYRTLE_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.RED_MEI_PLANKS.get())
@@ -502,7 +512,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get())
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get())
                 .add(ModBlocks.SWEETGUM_SAPLING.get())
-                .add(ModBlocks.CAMPHOR_SAPLING.get());
+                .add(ModBlocks.CAMPHOR_SAPLING.get())
+                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get());
 
         this.tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.WINTERSWEET_BUSH.get())

@@ -10,8 +10,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
 import org.jetbrains.annotations.Nullable;
 
-public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
-    public ModFlammableRotatedPillarBlock(Properties pProperties) {
+public class ModRotatedPillarBlock extends RotatedPillarBlock {
+    public ModRotatedPillarBlock(Properties pProperties) {
         super(pProperties);
     }
 

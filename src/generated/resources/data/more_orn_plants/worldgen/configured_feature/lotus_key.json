@@ -6,14 +6,68 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "more_orn_plants:lotus",
-              "Properties": {
-                "half": "lower",
-                "waterlogged": "true"
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "more_orn_plants:lotus_leaf",
+                  "Properties": {
+                    "age": "3",
+                    "facing": "north",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:lotus_leaf",
+                  "Properties": {
+                    "age": "3",
+                    "facing": "east",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:lotus_leaf",
+                  "Properties": {
+                    "age": "3",
+                    "facing": "south",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:lotus_leaf",
+                  "Properties": {
+                    "age": "3",
+                    "facing": "west",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:lotus",
+                  "Properties": {
+                    "age": "3",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 1
               }
-            }
+            ]
           }
         }
       },
@@ -54,8 +108,8 @@
         }
       ]
     },
-    "tries": 8,
-    "xz_spread": 6,
-    "y_spread": 0
+    "tries": 206,
+    "xz_spread": 14,
+    "y_spread": 2
   }
 }

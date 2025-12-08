@@ -3,6 +3,7 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.PeachPinkPetalsBlock;
+import com.jinlan.moreornplants.block.WaterLotusLeafBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.PinkWeepingMeiPlantBlock;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
@@ -13,6 +14,7 @@ import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.client.model.generators.MultiPartBlockStateBuilder;
+import net.minecraftforge.client.model.generators.VariantBlockStateBuilder;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -66,6 +68,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         logBlock(((RotatedPillarBlock) ModBlocks.CAMPHOR_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.CAMPHOR_WOOD.get()),
                 blockTexture(ModBlocks.CAMPHOR_LOG.get()), blockTexture(ModBlocks.CAMPHOR_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.CRAPE_MYRTLE_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CRAPE_MYRTLE_WOOD.get()),
+                blockTexture(ModBlocks.CRAPE_MYRTLE_LOG.get()), blockTexture(ModBlocks.CRAPE_MYRTLE_LOG.get()));
 
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_RED_MEI_LOG.get()), blockTexture(ModBlocks.STRIPPED_RED_MEI_LOG.get()), new ResourceLocation(MoreOrnPlants.MOD_ID, "block/stripped_red_mei_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_RED_MEI_WOOD.get()), blockTexture(ModBlocks.STRIPPED_RED_MEI_LOG.get()),
@@ -166,6 +171,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.CAMPHOR_WOOD);
         blockItem(ModBlocks.STRIPPED_CAMPHOR_LOG);
         blockItem(ModBlocks.STRIPPED_CAMPHOR_WOOD);
+        blockItem(ModBlocks.CRAPE_MYRTLE_LOG);
+        blockItem(ModBlocks.CRAPE_MYRTLE_WOOD);
 
         blockwithItem(ModBlocks.RED_MEI_PLANKS);
         blockwithItem(ModBlocks.WHITE_MEI_PLANKS);
@@ -440,6 +447,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.CAMPHOR_SAPLING);
         simpleBlockWithItem(ModBlocks.POTTED_CAMPHOR_SAPLING.get(), models().singleTexture("potted_camphor_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CAMPHOR_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.CRAPE_MYRTLE_LEAVES);
+        saplingBlock(ModBlocks.CRAPE_MYRTLE_SAPLING);
+        simpleBlockWithItem(ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING.get(), models().singleTexture("potted_crape_myrtle_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.CRAPE_MYRTLE_SAPLING.get())).renderType("cutout"));
 
         flowerBlock(ModBlocks.RED_WEEPING_MEI);
         weepingMeiPlantBlock(ModBlocks.RED_WEEPING_MEI_PLANT);
@@ -641,6 +652,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         pottedBambooBlock(ModBlocks.POTTED_BLACK_BAMBOO);
 
         lotusBlock(ModBlocks.LOTUS);
+        lotusLeafBlock(ModBlocks.LOTUS_LEAF);
 
         peachPinkPetalsBlock(ModBlocks.PEACH_PINK_PETALS);
     }
@@ -846,6 +858,47 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 .modelForState().modelFile(bottomModel).addModel()
                 .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER)
                 .modelForState().modelFile(topModel).addModel();
+
+        simpleBlockItem(blockRegistryObject.get(), bottomModel);
+    }
+
+    private void lotusLeafBlock(RegistryObject<Block> blockRegistryObject) {
+        String baseName = blockRegistryObject.getId().getPath();
+
+        ModelFile bottomModel = models().cross(baseName + "_bottom",
+                        new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_bottom"))
+                .renderType("cutout");
+
+        ModelFile topModel = models().withExistingParent(baseName + "_top", modLoc("block/lotus_leaf"))
+                .texture("leaf", modLoc("block/" + baseName))
+                .texture("stem", modLoc("block/" + baseName + "_stem"))
+                .renderType("cutout");
+
+        VariantBlockStateBuilder builder = getVariantBuilder(blockRegistryObject.get());
+
+        builder.partialState()
+                .with(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
+                .modelForState()
+                .modelFile(bottomModel)
+                .addModel();
+
+        for (Direction direction : Direction.Plane.HORIZONTAL) {
+            int rotationY;
+            switch (direction) {
+                case EAST -> rotationY = 90;
+                case NORTH -> rotationY = 180;
+                case WEST -> rotationY = 270;
+                default -> rotationY = 0;
+            }
+
+            builder.partialState()
+                    .with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER)
+                    .with(WaterLotusLeafBlock.FACING, direction)
+                    .modelForState()
+                    .modelFile(topModel)
+                    .rotationY(rotationY)
+                    .addModel();
+        }
 
         simpleBlockItem(blockRegistryObject.get(), bottomModel);
     }

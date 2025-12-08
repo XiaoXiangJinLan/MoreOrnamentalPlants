@@ -961,6 +961,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get()), has(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "yellow_white_chinese_rose_from_bush"));
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRAPE_MYRTLE.get(), 2)
+                .requires(ModBlocks.CRAPE_MYRTLE_SAPLING.get(), 2)
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_SAPLING.get()), has(ModBlocks.CRAPE_MYRTLE_SAPLING.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRAPE_MYRTLE_SAPLING.get(), 2)
+                .requires(ModBlocks.CRAPE_MYRTLE.get(), 2)
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE.get()), has(ModBlocks.CRAPE_MYRTLE.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.RED_DYE)
                 .requires(ModTags.Items.RED_DYE)
                 .group("red_dye")

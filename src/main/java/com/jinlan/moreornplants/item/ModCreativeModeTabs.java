@@ -43,6 +43,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SWEETGUM_LEAVES.get());
                         pOutput.accept(ModBlocks.CAMPHOR_LEAVES.get());
                         pOutput.accept(ModBlocks.NEW_CAMPHOR_LEAVES.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
                         pOutput.accept(ModBlocks.RED_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.WHITE_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.GREEN_CALYX_MEI_SAPLING.get());
@@ -71,6 +72,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get());
                         pOutput.accept(ModBlocks.SWEETGUM_SAPLING.get());
                         pOutput.accept(ModBlocks.CAMPHOR_SAPLING.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_SAPLING.get());
                         pOutput.accept(ModBlocks.SPRING_CYMBIDIUM.get());
                         pOutput.accept(ModBlocks.CHRYSANTHEMUM.get());
                         pOutput.accept(ModBlocks.GOLDEN_CHRYSANTHEMUM.get());
@@ -137,6 +139,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TWO_QIAO_PEONY.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_PEONY.get());
                         pOutput.accept(ModBlocks.LOTUS.get());
+                        pOutput.accept(ModBlocks.LOTUS_LEAF.get());
                         pOutput.accept(ModBlocks.CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.PINK_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.YELLOW_CHINESE_ROSE.get());
@@ -359,6 +362,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CAMPHOR_BUTTON.get());
                         pOutput.accept(ModItems.CAMPHOR_SIGN.get());
                         pOutput.accept(ModItems.CAMPHOR_HANGING_SIGN.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_LOG.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_WOOD.get());
                         pOutput.accept(ModItems.RED_MEI_BOAT.get());
                         pOutput.accept(ModItems.RED_MEI_CHEST_BOAT.get());
                         pOutput.accept(ModItems.WHITE_MEI_BOAT.get());
@@ -390,11 +395,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.MOTTLED_BAMBOO_SHOOTS.get());
                         pOutput.accept(ModItems.BLACK_BAMBOO_SHOOTS.get());
                         pOutput.accept(ModItems.PEELED_BAMBOO_SHOOTS.get());
-                        pOutput.accept(ModItems.BAMBOO_SHOOTS_SOUP.get());
                         pOutput.accept(ModItems.LOTUS_ROOT.get());
-                        pOutput.accept(ModItems.LOTUS_ROOT_SOUP.get());
                         pOutput.accept(ModItems.LOTUS_SEED_POD.get());
                         pOutput.accept(ModItems.LOTUS_SEED.get());
+                        pOutput.accept(ModItems.BAMBOO_SHOOTS_SOUP.get());
+                        pOutput.accept(ModItems.LOTUS_ROOT_SOUP.get());
                         pOutput.accept(ModItems.LOTUS_SEED_SOUP.get());
                     }).build());
 

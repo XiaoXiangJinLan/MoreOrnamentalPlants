@@ -75,6 +75,9 @@ public class ModParticleTypes {
     public static final RegistryObject<SimpleParticleType> CAMPHOR_LEAVES =
             registerParticleType("camphor_leaves", () -> new SimpleParticleType(false));
 
+    public static final RegistryObject<SimpleParticleType> CRAPE_MYRTLE_LEAVES =
+            registerParticleType("crape_myrtle_leaves", () -> new SimpleParticleType(false));
+
     public static <T extends ParticleType<?>> RegistryObject<T> registerParticleType(String name, Supplier<T> particleType) {
         return ModParticleTypes.PARTICLES.register(name, particleType);
     }

@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.datagen.loot;
 
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.PeachPinkPetalsBlock;
+import com.jinlan.moreornplants.block.WaterLotusBlock;
 import com.jinlan.moreornplants.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -106,6 +107,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_CAMPHOR_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_CAMPHOR_WOOD.get());
         this.dropSelf(ModBlocks.CAMPHOR_PLANKS.get());
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_LOG.get());
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_WOOD.get());
         this.dropSelf(ModBlocks.WEEPING_CRABAPPLE.get());
 
         this.dropSelf(ModBlocks.RED_MEI_STAIRS.get());
@@ -302,6 +305,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.CAMPHOR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.NEW_CAMPHOR_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CAMPHOR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.CRAPE_MYRTLE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.CRAPE_MYRTLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(ModBlocks.RED_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -494,6 +499,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CAMPHOR_SAPLING.get());
         this.add(ModBlocks.POTTED_CAMPHOR_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.CAMPHOR_SAPLING.get()));
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_SAPLING.get());
+        this.add(ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
 
         this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),
@@ -697,16 +705,50 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_BLACK_BAMBOO.get(),
                 createPotFlowerItemTable(ModBlocks.BLACK_BAMBOO.get()));
 
-        this.add(ModBlocks.LOTUS.get(), block -> {
-            LootPool.Builder pool = LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                    .add(LootItem.lootTableItem(ModBlocks.LOTUS.get().asItem()))
-                    .add(LootItem.lootTableItem(ModItems.LOTUS_SEED_POD.get()))
-                    .add(LootItem.lootTableItem(ModItems.LOTUS_ROOT.get()))
-                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                            .setProperties(StatePropertiesPredicate.Builder.properties()
-                                    .hasProperty(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)));
-            return LootTable.lootTable().withPool(pool);
-        });
+        this.add(ModBlocks.LOTUS.get(), block -> LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModBlocks.LOTUS.get().asItem()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.LOTUS_SEED_POD.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
+                                        .hasProperty(WaterLotusBlock.AGE, 2))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.LOTUS_SEED_POD.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
+                                        .hasProperty(WaterLotusBlock.AGE, 3))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.LOTUS_ROOT.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
+                                        .hasProperty(WaterLotusBlock.AGE, 3))))
+        );
+        this.add(ModBlocks.LOTUS_LEAF.get(), block -> LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModBlocks.LOTUS_LEAF.get().asItem()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.LOTUS_ROOT.get())
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
+                                        .hasProperty(WaterLotusBlock.AGE, 2))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.LOTUS_ROOT.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2, 3))))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
+                                        .hasProperty(WaterLotusBlock.AGE, 3))))
+        );
 
         this.add(ModBlocks.PEACH_PINK_PETALS.get(), block -> {
             LootPool.Builder pool = LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))

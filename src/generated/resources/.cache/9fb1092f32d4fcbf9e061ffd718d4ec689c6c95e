@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-08T10:32:35.3974872	Recipes
+// 1.20.1	2025-12-08T22:47:39.0183323	Recipes
 0290eb7a0ffcc20eea9683cb62981c5d3b220c7f data/minecraft/advancements/recipes/misc/black_dye.json
 6bedeb81cad801bcb5ddfdd21a6d75cd682d86ec data/minecraft/advancements/recipes/misc/green_dye.json
 2de50cd7359ad3dd18e709d48d661a66da7c4b26 data/minecraft/advancements/recipes/misc/light_blue_dye.json
@@ -139,6 +139,8 @@ f5467c9ee41c8d1700abbfcc10e5a68518b1eac2 data/more_orn_plants/advancements/recip
 7ba215a652658b180b4d9c2fb0063b2e4e812d47 data/more_orn_plants/advancements/recipes/misc/chinese_rose.json
 ee255d3b93cea3e33034f3a26a6a257e769bd758 data/more_orn_plants/advancements/recipes/misc/chinese_rose_bush.json
 4b843e3e4522d404f6adf35a2eb77306d5dc0a0a data/more_orn_plants/advancements/recipes/misc/colorful_peony.json
+42b18cc42ec5e545b722e53f02f9865e394094c7 data/more_orn_plants/advancements/recipes/misc/crape_myrtle.json
+85b67ec439b28ffc823355f51e5c22e1d156469a data/more_orn_plants/advancements/recipes/misc/crape_myrtle_sapling.json
 fa719fa55df0bce38e9de2d95e54a8c0154ca41e data/more_orn_plants/advancements/recipes/misc/double_pink_mei_sapling.json
 69779f65367bd7774da624ec69d2ed48c0d69e95 data/more_orn_plants/advancements/recipes/misc/golden_peony.json
 89633c20b496fadc630d25811f05aba8fdbb1f1b data/more_orn_plants/advancements/recipes/misc/gold_backed_scarlet_mum.json
@@ -352,6 +354,8 @@ ed801d22b5c0370d652a3f4a86ebbe86fd17f1dc data/more_orn_plants/recipes/crabapple_
 afcb8620608c21b82f47dacd90b891966b0176d8 data/more_orn_plants/recipes/crabapple_stairs.json
 ae50682eaf58a1196490e7b9516d9ee95fd85c65 data/more_orn_plants/recipes/crabapple_trapdoor.json
 1237d04fbe393d4a67b848cb1507177827798c91 data/more_orn_plants/recipes/crabapple_wood.json
+fa4af81f2f38b0077368542ddc532c7d15592c42 data/more_orn_plants/recipes/crape_myrtle.json
+e2a82ddebd3d2d5d693b52bd5469079af67402ce data/more_orn_plants/recipes/crape_myrtle_sapling.json
 eec39bad0d89383b3b91b06a5dfee74cb0b61cb3 data/more_orn_plants/recipes/double_pink_mei_boat.json
 57d7059f56c3ee76186c2ac62ccaf270241336a4 data/more_orn_plants/recipes/double_pink_mei_button.json
 1bf83ee7d11f5463470e98c5f490f263b5abc365 data/more_orn_plants/recipes/double_pink_mei_chest_boat.json

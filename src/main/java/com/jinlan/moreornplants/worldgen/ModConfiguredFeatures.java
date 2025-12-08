@@ -3,6 +3,8 @@ package com.jinlan.moreornplants.worldgen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.PeachPinkPetalsBlock;
+import com.jinlan.moreornplants.block.WaterLotusBlock;
+import com.jinlan.moreornplants.block.WaterLotusLeafBlock;
 import com.jinlan.moreornplants.feature.blockstateproviders.VersicolorMeiLeavesProvider;
 import com.jinlan.moreornplants.feature.foliageplacers.*;
 import com.jinlan.moreornplants.feature.treedecorators.SnowAroundTrunk;
@@ -32,8 +34,10 @@ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSi
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.GiantTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
@@ -112,6 +116,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_GROVE = registerKey("tall_flowers_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_MEADOWS = registerKey("peony_meadows");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_KEY = registerKey("crape_myrtle_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_TREE = registerKey("crape_myrtle_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> COTTON_ROSE_KEY = registerKey("cotton_rose_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> COTTON_ROSE_GROVE = registerKey("cotton_rose_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> COTTON_ROSE_FOREST = registerKey("cotton_rose_forest");
@@ -381,6 +386,13 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(0, 0, 0)).ignoreVines().build());
+
+        register(context, CRAPE_MYRTLE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LEAVES.get()),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
 
         register(context, CYMBIDIUM_FOREST, Feature.FLOWER, new RandomPatchConfiguration(8, 8, 8,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -670,9 +682,15 @@ public class ModConfiguredFeatures {
                 PlacementUtils.onlyWhenEmpty( ModFeatures.BLACK_BAMBOO.get(),
                         new ProbabilityFeatureConfiguration(0.0F))));
 
-        register(context, LOTUS_KEY, Feature.FLOWER, new RandomPatchConfiguration(8, 6, 0,
+        SimpleWeightedRandomList.Builder<BlockState> lotusBuilder = SimpleWeightedRandomList.builder();
+        for (Direction direction : Direction.Plane.HORIZONTAL) {
+            lotusBuilder.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState()
+                            .setValue(WaterLotusLeafBlock.FACING, direction).setValue(WaterLotusBlock.AGE, 3),2);
+        }
+        lotusBuilder.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, 3), 1);
+        register(context, LOTUS_KEY, Feature.FLOWER, new RandomPatchConfiguration(206, 14, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LOTUS.get())),
+                        new SimpleBlockConfiguration(new WeightedStateProvider(lotusBuilder.build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.WATER),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),

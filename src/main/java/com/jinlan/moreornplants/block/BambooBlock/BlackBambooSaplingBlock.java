@@ -1,5 +1,6 @@
-package com.jinlan.moreornplants.block;
+package com.jinlan.moreornplants.block.BambooBlock;
 
+import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

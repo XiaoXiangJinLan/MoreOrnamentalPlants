@@ -2,9 +2,7 @@ package com.jinlan.moreornplants.datagen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
-import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ForgeTags;
-import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.advancements.*;
 import net.minecraft.advancements.critereon.*;
@@ -130,7 +128,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             false
                     ))
                     .addCriterion("get_chinese_rose", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHINESE_ROSES).build()
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHINESE_ROSE).build()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "flower_queen"), existingFileHelper);
 
@@ -164,7 +162,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             false
                     ))
                     .addCriterion("get_chrysanthemum", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHRYSANTHEMUMS).build()
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHRYSANTHEMUM).build()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "flower_hermit"), existingFileHelper);
 
@@ -300,7 +298,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             false
                     ))
                     .addCriterion("get_crape_myrtle", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ModBlocks.CRAPE_MYRTLE.get()
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.CRAPE_MYRTLE).build()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "hundred_day_red"), existingFileHelper);
 
@@ -317,7 +315,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             false
                     ))
                     .addCriterion("get_camellia", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CAMELLIAS).build()
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.CAMELLIA).build()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "lasting_beauty"), existingFileHelper);
 
@@ -510,7 +508,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .addCriterion("get_bamboo", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ItemPredicate.Builder.item().of(ForgeTags.Items.BAMBOO).build()))
                     .addCriterion("get_chrysanthemum", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHRYSANTHEMUMS).build()))
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHRYSANTHEMUM).build()))
                     .requirements(RequirementsStrategy.AND)
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "four_gentlemen"), existingFileHelper);
 
@@ -545,7 +543,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     ))
                     .addCriterion("offer_chrysanthemum", ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(
                             LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL, Blocks.FARMLAND, Blocks.MOSS_BLOCK, Blocks.MUD).build()),
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHRYSANTHEMUMS)))
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHRYSANTHEMUM)))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "offer_chrysanthemum"), existingFileHelper);
 
             Advancement treadSnowSeekMei = Advancement.Builder.advancement()
