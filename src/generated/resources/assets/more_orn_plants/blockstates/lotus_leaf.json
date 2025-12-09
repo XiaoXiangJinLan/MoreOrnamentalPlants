@@ -2,7 +2,7 @@
   "variants": {
     "facing=east,half=upper": {
       "model": "more_orn_plants:block/lotus_leaf_top",
-      "y": 90
+      "y": 270
     },
     "facing=north,half=upper": {
       "model": "more_orn_plants:block/lotus_leaf_top",
@@ -13,7 +13,7 @@
     },
     "facing=west,half=upper": {
       "model": "more_orn_plants:block/lotus_leaf_top",
-      "y": 270
+      "y": 90
     },
     "half=lower": {
       "model": "more_orn_plants:block/lotus_leaf_bottom"

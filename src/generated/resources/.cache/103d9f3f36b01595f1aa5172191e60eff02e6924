@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-08T23:51:54.3682475	Registries
+// 1.20.1	2025-12-09T18:45:43.8014235	Registries
 54f9c1f69d7bea98c7a414829aa0ca64f1d52648 data/more_orn_plants/forge/biome_modifier/add_tree_white_mei.json
 7a8cb4b9b184fede7ffadd92fc6d4f74f475aaf8 data/more_orn_plants/worldgen/biome/camellia_valley.json
 052a9aa2a028456bcc75dc059353ae7aba83ae39 data/more_orn_plants/worldgen/biome/colored_forest.json
@@ -49,7 +49,7 @@ f667565f68f7010d534c2d23f5d16cfdcca37a87 data/more_orn_plants/worldgen/configure
 274980cc01635c4d11a0eba0510be9156823e4cc data/more_orn_plants/worldgen/configured_feature/green_ginkgo.json
 638a8e565fc9a37cd876c45de7e5b51f859ce720 data/more_orn_plants/worldgen/configured_feature/green_weeping_mei_key.json
 48da242b82ed8cf5a359f22c5b9208db234c98d8 data/more_orn_plants/worldgen/configured_feature/lily_of_the_valley_forest.json
-f0571dfa99195ff929aab6f66a208e5260ba99ba data/more_orn_plants/worldgen/configured_feature/lotus_key.json
+bd98e4aa41fc78c5a1204cdc3a84c5a8bb4cae17 data/more_orn_plants/worldgen/configured_feature/lotus_key.json
 f9f732ddc026bbea7884afdd770e85f748abbcf9 data/more_orn_plants/worldgen/configured_feature/mottled_bamboo_key.json
 42ca0390d37d5b26dafa59d4eb8f2c4c22913903 data/more_orn_plants/worldgen/configured_feature/orange_osmanthus.json
 b8d371e973acedf16677844382f560af53147969 data/more_orn_plants/worldgen/configured_feature/ornamental_peach.json

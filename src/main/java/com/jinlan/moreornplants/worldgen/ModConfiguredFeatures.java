@@ -688,7 +688,7 @@ public class ModConfiguredFeatures {
                             .setValue(WaterLotusLeafBlock.FACING, direction).setValue(WaterLotusBlock.AGE, 3),2);
         }
         lotusBuilder.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, 3), 1);
-        register(context, LOTUS_KEY, Feature.FLOWER, new RandomPatchConfiguration(206, 14, 2,
+        register(context, LOTUS_KEY, Feature.FLOWER, new RandomPatchConfiguration(256, 14, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(lotusBuilder.build())),
                         BlockPredicate.allOf(

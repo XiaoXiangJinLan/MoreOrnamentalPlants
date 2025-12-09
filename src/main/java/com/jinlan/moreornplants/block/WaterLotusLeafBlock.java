@@ -22,7 +22,7 @@ public class WaterLotusLeafBlock extends WaterLotusBlock {
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(HALF, DoubleBlockHalf.LOWER)
                 .setValue(WATERLOGGED, true)
-                .setValue(FACING, Direction.SOUTH)); // 默认朝北
+                .setValue(FACING, Direction.SOUTH));
     }
 
     @Override
@@ -81,7 +81,7 @@ public class WaterLotusLeafBlock extends WaterLotusBlock {
     @Override
     protected void growPlant(ServerLevel level, BlockPos pos, BlockState state, int newAge) {
         // 保存原有的方向（如果有）
-        Direction facing = state.hasProperty(FACING) ? state.getValue(FACING) : Direction.NORTH;
+        Direction facing = state.hasProperty(FACING) ? state.getValue(FACING) : Direction.SOUTH;
 
         super.growPlant(level, pos, state, newAge);
 

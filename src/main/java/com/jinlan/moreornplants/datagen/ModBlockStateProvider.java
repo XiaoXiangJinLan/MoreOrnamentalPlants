@@ -885,9 +885,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         for (Direction direction : Direction.Plane.HORIZONTAL) {
             int rotationY;
             switch (direction) {
-                case EAST -> rotationY = 90;
+                case WEST -> rotationY = 90;
                 case NORTH -> rotationY = 180;
-                case WEST -> rotationY = 270;
+                case EAST -> rotationY = 270;
                 default -> rotationY = 0;
             }
 

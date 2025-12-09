@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-08T23:37:47.9704893	Block States: more_orn_plants
+// 1.20.1	2025-12-09T18:45:43.8141283	Block States: more_orn_plants
 9f477862195a9ba3921c74ddbff1a8ba77d99aec assets/more_orn_plants/blockstates/apricot_button.json
 444b7fe3ca5cb2ee1608b9d1d29850f787e500f6 assets/more_orn_plants/blockstates/apricot_door.json
 cdbc329471eb85936341f4f3c041e9714c4535ce assets/more_orn_plants/blockstates/apricot_fence.json
@@ -153,7 +153,7 @@ ca48240a229b101821d54bae3f4d41c42b96c19e assets/more_orn_plants/blockstates/ligh
 5c0d99863dc1ef3c917513086cd37a74c238b0be assets/more_orn_plants/blockstates/light_red_peony.json
 568552a7dadb71a69ce884e984fda0c330ecd0d7 assets/more_orn_plants/blockstates/light_yellow_peony.json
 d9513cf902ff0b5af6fc0a50154ccc35e4188ecf assets/more_orn_plants/blockstates/lotus.json
-3c0f4bd0f891567b1c8a1b5f6314762562f870e8 assets/more_orn_plants/blockstates/lotus_leaf.json
+5d05d67cdb7e93e17288d6aa4906669e2f8c933b assets/more_orn_plants/blockstates/lotus_leaf.json
 0d0474722ac2cc209d50ed9892cb6c543b4779a7 assets/more_orn_plants/blockstates/mauve_peony.json
 1e02438086e5a1589f71c111d6465eb1de8c1968 assets/more_orn_plants/blockstates/mottled_bamboo_sapling.json
 f6154c061cbe60c74207bf447db304b349f75e9e assets/more_orn_plants/blockstates/new_camphor_leaves.json
