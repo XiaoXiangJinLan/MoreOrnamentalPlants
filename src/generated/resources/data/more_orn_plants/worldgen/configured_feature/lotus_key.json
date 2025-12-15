@@ -18,7 +18,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 2
+                "weight": 12
               },
               {
                 "data": {
@@ -30,7 +30,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 2
+                "weight": 12
               },
               {
                 "data": {
@@ -42,7 +42,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 2
+                "weight": 12
               },
               {
                 "data": {
@@ -50,6 +50,39 @@
                   "Properties": {
                     "age": "3",
                     "facing": "west",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 12
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:lotus",
+                  "Properties": {
+                    "age": "0",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:lotus",
+                  "Properties": {
+                    "age": "1",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:lotus",
+                  "Properties": {
+                    "age": "2",
                     "half": "lower",
                     "waterlogged": "true"
                   }
@@ -65,7 +98,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 1
+                "weight": 2
               }
             ]
           }

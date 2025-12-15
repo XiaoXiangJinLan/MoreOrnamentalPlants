@@ -173,7 +173,10 @@ public class MoreOrnPlants
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            Sheets.addWoodType(ModWoodTypes.MEI);
+            Sheets.addWoodType(ModWoodTypes.RED_MEI);
+            Sheets.addWoodType(ModWoodTypes.WHITE_MEI);
+            Sheets.addWoodType(ModWoodTypes.GREEN_CALYX_MEI);
+            Sheets.addWoodType(ModWoodTypes.DOUBLE_PINK_MEI);
             Sheets.addWoodType(ModWoodTypes.CRABAPPLE);
             Sheets.addWoodType(ModWoodTypes.APRICOT);
             Sheets.addWoodType(ModWoodTypes.PEACH);

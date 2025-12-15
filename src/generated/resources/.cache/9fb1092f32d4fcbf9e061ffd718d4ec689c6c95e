@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-08T22:47:39.0183323	Recipes
+// 1.20.1	2025-12-10T21:10:17.7641094	Recipes
 0290eb7a0ffcc20eea9683cb62981c5d3b220c7f data/minecraft/advancements/recipes/misc/black_dye.json
 6bedeb81cad801bcb5ddfdd21a6d75cd682d86ec data/minecraft/advancements/recipes/misc/green_dye.json
 2de50cd7359ad3dd18e709d48d661a66da7c4b26 data/minecraft/advancements/recipes/misc/light_blue_dye.json
@@ -411,8 +411,8 @@ dbf76315de8fe16add9f54acdb02686890a94256 data/more_orn_plants/recipes/green_weep
 ad24f0a363058f30a8898703a5b3d393372aec6c data/more_orn_plants/recipes/light_colorful_peony.json
 35df6f672dc14521d99614729ca4e574306936c3 data/more_orn_plants/recipes/light_pink_chrysanthemum.json
 4793a25ffd0c24591f85f7623971e7c1e24df547 data/more_orn_plants/recipes/lotus_root_soup.json
-3f90a6e9636deffc8fa3112dd99ce9d33ea72af2 data/more_orn_plants/recipes/lotus_seed.json
-1c019363c8e89750cd858724ed6ea6b955e82f83 data/more_orn_plants/recipes/lotus_seed_soup.json
+8ec9cf50d39bbb64b246a1cb13973a7101d1c7d0 data/more_orn_plants/recipes/lotus_seed.json
+2bf2636ed393c54697a1deefe4741c24f8a40b36 data/more_orn_plants/recipes/lotus_seed_soup.json
 9832fe99f8dda3beae26ef2dde8188f2a59da3fc data/more_orn_plants/recipes/osmanthus_boat.json
 ad6abcfb8d8ec0c26d677a9b110288c1eb0563d2 data/more_orn_plants/recipes/osmanthus_button.json
 7e0fb1fc5ffb0730dcb6c0b3b362d1112520a8f1 data/more_orn_plants/recipes/osmanthus_chest_boat.json

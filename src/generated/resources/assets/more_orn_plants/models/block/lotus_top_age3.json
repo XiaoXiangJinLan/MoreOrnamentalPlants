@@ -3,6 +3,7 @@
   "render_type": "minecraft:cutout",
   "textures": {
     "petal": "more_orn_plants:block/lotus_petal",
-    "stem": "more_orn_plants:block/lotus_stem"
+    "petal_small": "more_orn_plants:block/lotus_petal_small",
+    "stem": "more_orn_plants:block/lotus_stem_age_3"
   }
 }

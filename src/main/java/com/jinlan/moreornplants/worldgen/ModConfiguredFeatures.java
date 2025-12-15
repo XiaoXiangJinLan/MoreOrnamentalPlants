@@ -685,9 +685,12 @@ public class ModConfiguredFeatures {
         SimpleWeightedRandomList.Builder<BlockState> lotusBuilder = SimpleWeightedRandomList.builder();
         for (Direction direction : Direction.Plane.HORIZONTAL) {
             lotusBuilder.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState()
-                            .setValue(WaterLotusLeafBlock.FACING, direction).setValue(WaterLotusBlock.AGE, 3),2);
+                            .setValue(WaterLotusLeafBlock.FACING, direction).setValue(WaterLotusBlock.AGE, 3),12);
         }
-        lotusBuilder.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, 3), 1);
+        for (int age = 0; age <= 3; age++) {
+            int weight = (age <= 1) ? 1 : 2;
+            lotusBuilder.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
+        }
         register(context, LOTUS_KEY, Feature.FLOWER, new RandomPatchConfiguration(256, 14, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(lotusBuilder.build())),

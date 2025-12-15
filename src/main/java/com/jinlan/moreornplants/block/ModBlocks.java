@@ -402,13 +402,13 @@ public class ModBlocks {
             registerBlock("camphor_fence" , () -> new FenceBlock(BlockBehaviour.Properties.of().mapColor(CAMPHOR_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> RED_MEI_FENCE_GATE =
-            registerBlock("red_mei_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.MEI));
+            registerBlock("red_mei_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.RED_MEI));
     public static final RegistryObject<Block> WHITE_MEI_FENCE_GATE =
-            registerBlock("white_mei_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of().mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.MEI));
+            registerBlock("white_mei_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of().mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.WHITE_MEI));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_FENCE_GATE =
-            registerBlock("green_calyx_mei_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of().mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.MEI));
+            registerBlock("green_calyx_mei_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of().mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.GREEN_CALYX_MEI));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_FENCE_GATE =
-            registerBlock("double_pink_mei_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of().mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.MEI));
+            registerBlock("double_pink_mei_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of().mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.DOUBLE_PINK_MEI));
     public static final RegistryObject<Block> CRABAPPLE_FENCE_GATE =
             registerBlock("crabapple_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.of().mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.CRABAPPLE));
     public static final RegistryObject<Block> APRICOT_FENCE_GATE =
@@ -489,13 +489,13 @@ public class ModBlocks {
             registerBlock("camphor_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.CAMPHOR_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
 
     public static final RegistryObject<Block> RED_MEI_SIGN =
-            BLOCKS.register("red_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("red_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
     public static final RegistryObject<Block> WHITE_MEI_SIGN =
-            BLOCKS.register("white_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("white_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.WHITE_MEI));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_SIGN =
-            BLOCKS.register("green_calyx_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("green_calyx_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.GREEN_CALYX_MEI));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_SIGN =
-            BLOCKS.register("double_pink_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("double_pink_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.DOUBLE_PINK_MEI));
     public static final RegistryObject<Block> CRABAPPLE_SIGN =
             BLOCKS.register("crabapple_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()), ModWoodTypes.CRABAPPLE));
     public static final RegistryObject<Block> APRICOT_SIGN =
@@ -518,13 +518,13 @@ public class ModBlocks {
             BLOCKS.register("camphor_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
 
     public static final RegistryObject<Block> RED_MEI_WALL_SIGN =
-            BLOCKS.register("red_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("red_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
     public static final RegistryObject<Block> WHITE_MEI_WALL_SIGN =
-            BLOCKS.register("white_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("white_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.WHITE_MEI));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_WALL_SIGN =
-            BLOCKS.register("green_calyx_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("green_calyx_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.GREEN_CALYX_MEI));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_WALL_SIGN =
-            BLOCKS.register("double_pink_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("double_pink_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.DOUBLE_PINK_MEI));
     public static final RegistryObject<Block> CRABAPPLE_WALL_SIGN =
             BLOCKS.register("crabapple_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()), ModWoodTypes.CRABAPPLE));
     public static final RegistryObject<Block> APRICOT_WALL_SIGN =
@@ -547,13 +547,13 @@ public class ModBlocks {
             BLOCKS.register("camphor_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
 
     public static final RegistryObject<Block> RED_MEI_HANGING_SIGN =
-            BLOCKS.register("red_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("red_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
     public static final RegistryObject<Block> WHITE_MEI_HANGING_SIGN =
-            BLOCKS.register("white_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("white_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.WHITE_MEI));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_HANGING_SIGN =
-            BLOCKS.register("green_calyx_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("green_calyx_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.GREEN_CALYX_MEI));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_HANGING_SIGN =
-            BLOCKS.register("double_pink_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("double_pink_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.DOUBLE_PINK_MEI));
     public static final RegistryObject<Block> CRABAPPLE_HANGING_SIGN =
             BLOCKS.register("crabapple_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()), ModWoodTypes.CRABAPPLE));
     public static final RegistryObject<Block> APRICOT_HANGING_SIGN =
@@ -576,33 +576,33 @@ public class ModBlocks {
             BLOCKS.register("camphor_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
 
     public static final RegistryObject<Block> RED_MEI_WALL_HANGING_SIGN =
-            BLOCKS.register("red_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.MEI));
+            BLOCKS.register("red_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
     public static final RegistryObject<Block> WHITE_MEI_WALL_HANGING_SIGN =
-            BLOCKS.register("white_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("white_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.WHITE_MEI));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_WALL_HANGING_SIGN =
-            BLOCKS.register("green_calyx_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("green_calyx_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.GREEN_CALYX_MEI));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_WALL_HANGING_SIGN =
-            BLOCKS.register("double_pink_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.MEI));
+            BLOCKS.register("double_pink_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.DOUBLE_PINK_MEI));
     public static final RegistryObject<Block> CRABAPPLE_WALL_HANGING_SIGN =
-            BLOCKS.register("crabapple_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()), ModWoodTypes.CRABAPPLE));
+            BLOCKS.register("crabapple_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()), ModWoodTypes.CRABAPPLE));
     public static final RegistryObject<Block> APRICOT_WALL_HANGING_SIGN =
-            BLOCKS.register("apricot_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor()), ModWoodTypes.APRICOT));
+            BLOCKS.register("apricot_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor()), ModWoodTypes.APRICOT));
     public static final RegistryObject<Block> PEACH_WALL_HANGING_SIGN =
-            BLOCKS.register("peach_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor()), ModWoodTypes.PEACH));
+            BLOCKS.register("peach_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor()), ModWoodTypes.PEACH));
     public static final RegistryObject<Block> PEAR_WALL_HANGING_SIGN =
-            BLOCKS.register("pear_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor()), ModWoodTypes.PEAR));
+            BLOCKS.register("pear_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor()), ModWoodTypes.PEAR));
     public static final RegistryObject<Block> PURPLE_LEAF_PLUM_WALL_HANGING_SIGN =
-            BLOCKS.register("purple_leaf_plum_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor()), ModWoodTypes.PURPLE_LEAF_PLUM));
+            BLOCKS.register("purple_leaf_plum_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor()), ModWoodTypes.PURPLE_LEAF_PLUM));
     public static final RegistryObject<Block> OSMANTHUS_WALL_HANGING_SIGN =
-            BLOCKS.register("osmanthus_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor()), ModWoodTypes.OSMANTHUS));
+            BLOCKS.register("osmanthus_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor()), ModWoodTypes.OSMANTHUS));
     public static final RegistryObject<Block> GINKGO_WALL_HANGING_SIGN =
-            BLOCKS.register("ginkgo_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(GINKGO_PLANKS.get().defaultMapColor()), ModWoodTypes.GINKGO));
+            BLOCKS.register("ginkgo_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(GINKGO_PLANKS.get().defaultMapColor()), ModWoodTypes.GINKGO));
     public static final RegistryObject<Block> CHINESE_PARASOL_WALL_HANGING_SIGN =
-            BLOCKS.register("chinese_parasol_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINESE_PARASOL));
+            BLOCKS.register("chinese_parasol_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINESE_PARASOL));
     public static final RegistryObject<Block> SWEETGUM_WALL_HANGING_SIGN =
-            BLOCKS.register("sweetgum_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor()), ModWoodTypes.SWEETGUM));
+            BLOCKS.register("sweetgum_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor()), ModWoodTypes.SWEETGUM));
     public static final RegistryObject<Block> CAMPHOR_WALL_HANGING_SIGN =
-            BLOCKS.register("camphor_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
+            BLOCKS.register("camphor_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
 
     public static final RegistryObject<Block> RED_MEI_SAPLING =
             registerBlock("red_mei_sapling", () -> new SaplingBlock(new RedMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));

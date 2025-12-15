@@ -5,7 +5,10 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class ModWoodTypes {
-    public static final WoodType MEI = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":mei", BlockSetType.OAK));
+    public static final WoodType RED_MEI = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":red_mei", BlockSetType.OAK));
+    public static final WoodType WHITE_MEI = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":white_mei", BlockSetType.OAK));
+    public static final WoodType GREEN_CALYX_MEI = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":green_calyx_mei", BlockSetType.OAK));
+    public static final WoodType DOUBLE_PINK_MEI = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":double_pink_mei", BlockSetType.OAK));
     public static final WoodType CRABAPPLE = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":crabapple", BlockSetType.OAK));
     public static final WoodType APRICOT = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":apricot", BlockSetType.OAK));
     public static final WoodType PEACH = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":peach", BlockSetType.OAK));

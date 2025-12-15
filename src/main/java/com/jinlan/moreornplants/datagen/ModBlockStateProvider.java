@@ -3,13 +3,13 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.PeachPinkPetalsBlock;
+import com.jinlan.moreornplants.block.WaterLotusBlock;
 import com.jinlan.moreornplants.block.WaterLotusLeafBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.PinkWeepingMeiPlantBlock;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.properties.BambooLeaves;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -843,22 +843,31 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void lotusBlock(RegistryObject<Block> blockRegistryObject) {
         String baseName = blockRegistryObject.getId().getPath();
-
         ModelFile bottomModel = models().cross(baseName + "_bottom",
                         new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_bottom"))
                 .renderType("cutout");
-
-        ModelFile topModel = models().withExistingParent(baseName + "_top", modLoc("block/lotus_petals"))
-                .texture("petal", modLoc("block/" + baseName + "_petal"))
-                .texture("stem", modLoc("block/" + baseName + "_stem"))
-                .renderType("cutout");
-
-        getVariantBuilder(blockRegistryObject.get())
-                .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
-                .modelForState().modelFile(bottomModel).addModel()
-                .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER)
-                .modelForState().modelFile(topModel).addModel();
-
+        for (int age = 0; age <= 3; age++) {
+            String stemTexture = "lotus_stem_age_" + age;
+            String petalTexture = (age <= 1) ? "lotus_petal_none" : "lotus_petal";
+            String petalSmallTexture;
+            if (age == 0) {
+                petalSmallTexture = "lotus_petal_none";
+            } else if (age == 1) {
+                petalSmallTexture = "lotus_petal";
+            } else {
+                petalSmallTexture = "lotus_petal_small";
+            }
+            ModelFile topModel = models().withExistingParent(baseName + "_top_age" + age, modLoc("block/lotus_petals"))
+                    .texture("petal", modLoc("block/" + petalTexture))
+                    .texture("petal_small", modLoc("block/" + petalSmallTexture))
+                    .texture("stem", modLoc("block/" + stemTexture))
+                    .renderType("cutout");
+            getVariantBuilder(blockRegistryObject.get())
+                    .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER).with(WaterLotusBlock.AGE, age)
+                    .modelForState().modelFile(bottomModel).addModel()
+                    .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER).with(WaterLotusBlock.AGE, age)
+                    .modelForState().modelFile(topModel).addModel();
+        }
         simpleBlockItem(blockRegistryObject.get(), bottomModel);
     }
 

@@ -1036,12 +1036,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.LOTUS_ROOT.get()), has(ModItems.LOTUS_ROOT.get()))
                 .unlockedBy("has_bowl", has(Items.BOWL))
                 .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.LOTUS_SEED.get(), 6)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.LOTUS_SEED.get(), 5)
                 .requires(ModItems.LOTUS_SEED_POD.get())
                 .unlockedBy(getHasName(ModItems.LOTUS_SEED_POD.get()), has(ModItems.LOTUS_SEED_POD.get()))
                 .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.LOTUS_SEED_SOUP.get())
-                .requires(ModItems.LOTUS_SEED.get(), 6)
+                .requires(ModItems.LOTUS_SEED.get(), 5)
                 .requires(Items.BOWL)
                 .unlockedBy(getHasName(ModItems.LOTUS_SEED.get()), has(ModItems.LOTUS_SEED.get()))
                 .unlockedBy("has_bowl", has(Items.BOWL))

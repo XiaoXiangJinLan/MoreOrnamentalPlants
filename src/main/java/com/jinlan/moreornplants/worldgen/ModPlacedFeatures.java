@@ -291,7 +291,7 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, LOTUS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.LOTUS_KEY),
-                List.of(CountPlacement.of(2),
+                List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, GRASS_FOREST, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FOREST),

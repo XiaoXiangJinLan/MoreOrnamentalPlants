@@ -7,6 +7,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
@@ -65,7 +66,8 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
 
             return (existingBlock == this || existingState.getFluidState().is(Fluids.WATER))
                     && this.isExposed(level, pos.above())
-                    && level.getBlockState(pos.below()).isFaceSturdy(level, pos.below(), Direction.UP);
+                    && level.getBlockState(pos.below()).isFaceSturdy(level, pos.below(), Direction.UP)
+                    || level.getBlockState(pos.below()).is(Blocks.FARMLAND);
         } else {
             // 上半部分：检查下方是否是荷花的下半部分且含水
             BlockState belowState = level.getBlockState(pos.below());
@@ -89,22 +91,31 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
 
     @Override
     public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-
         int age = state.getValue(AGE);
         if (age < 3) {
-            // 根据当前年龄调整生长速度
-            int growthChance = switch (age) {
-                case 0 -> 5;
-                case 1 -> 8;
-                case 2 -> 10;
-                default -> Integer.MAX_VALUE;
-            };
-
-            if (random.nextInt(growthChance) == 0) {
+            float growthSpeed = getGrowthSpeed(level, pos);
+            if (net.minecraftforge.common.ForgeHooks.onCropsGrowPre(level, pos, state, random.nextInt((int)(25.0F / growthSpeed) + 1) == 0)) {
                 int newAge = age + 1;
                 growPlant(level, pos, state, newAge);
+                net.minecraftforge.common.ForgeHooks.onCropsGrowPost(level, pos, state);
             }
         }
+    }
+
+    protected float getGrowthSpeed(ServerLevel level, BlockPos pos) {
+        float speed = 1.0F;
+        BlockPos belowPos = pos.below();
+        BlockState belowState = level.getBlockState(belowPos);
+
+        if (belowState.is(Blocks.FARMLAND)) {
+            if (belowState.getValue(FarmBlock.MOISTURE) >= FarmBlock.MAX_MOISTURE) {
+                speed = 3.0F;
+            } else {
+                speed = 1.0F;
+            }
+        }
+
+        return speed;
     }
 
     protected void growPlant(ServerLevel level, BlockPos pos, BlockState state, int newAge) {

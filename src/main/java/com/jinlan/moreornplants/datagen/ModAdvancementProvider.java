@@ -7,8 +7,10 @@ import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.advancements.*;
 import net.minecraft.advancements.critereon.*;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
@@ -630,6 +632,58 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             LocationPredicate.Builder.location().setBiome(ModBiomes.COTTONROSE_REALM).build()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "cottonrose_realm"), existingFileHelper);
+
+            Advancement ironThresholdTemple = Advancement.Builder.advancement()
+                    .parent(treadSnowSeekMei)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.RED_WEEPING_MEI_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.little_iron_threshold_temple.title"),
+                            Component.translatable("advancement.moreornplants.little_iron_threshold_temple.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("found_iron_threshold_temple", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setStructure(ResourceKey.create(Registries.STRUCTURE,
+                                    new ResourceLocation(MoreOrnPlants.MOD_ID, "little_iron_threshold_temple"))).build()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "little_iron_threshold_temple"), existingFileHelper);
+            Advancement peachHermitage = Advancement.Builder.advancement()
+                    .parent(peachBlossomSpring)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.PEACH_PINK_PETALS.get()),
+                            Component.translatable("advancement.moreornplants.peach_blossom_hermitage.title"),
+                            Component.translatable("advancement.moreornplants.peach_blossom_hermitage.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("found_peach_hermitage", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setStructure(ResourceKey.create(Registries.STRUCTURE,
+                                    new ResourceLocation(MoreOrnPlants.MOD_ID, "peach_blossom_hermitage"))).build()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "peach_blossom_hermitage"), existingFileHelper);
+            Advancement apricotVillage = Advancement.Builder.advancement()
+                    .parent(flowerScholar)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.WHITE_APRICOT_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.apricot_village.title"),
+                            Component.translatable("advancement.moreornplants.apricot_village.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("found_apricot_village", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setStructure(ResourceKey.create(Registries.STRUCTURE,
+                                    new ResourceLocation(MoreOrnPlants.MOD_ID, "village_apricot"))).build()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "apricot_village"), existingFileHelper);
         }
     }
 }

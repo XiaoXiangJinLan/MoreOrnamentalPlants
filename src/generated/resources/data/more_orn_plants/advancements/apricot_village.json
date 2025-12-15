@@ -1,0 +1,42 @@
+{
+  "parent": "more_orn_plants:flower_scholar",
+  "criteria": {
+    "found_apricot_village": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "more_orn_plants:village_apricot"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.apricot_village.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "more_orn_plants:white_apricot_sapling"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.apricot_village.title"
+    }
+  },
+  "requirements": [
+    [
+      "found_apricot_village"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

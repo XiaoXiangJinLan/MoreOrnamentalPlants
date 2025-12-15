@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 138167338,
+    "separation": 12,
+    "spacing": 36
+  },
+  "structures": [
+    {
+      "structure": "more_orn_plants:peach_blossom_hermitage",
+      "weight": 1
+    }
+  ]
+}

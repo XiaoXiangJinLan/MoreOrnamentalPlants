@@ -1,10 +1,28 @@
 {
   "variants": {
-    "half=lower": {
+    "age=0,half=lower": {
       "model": "more_orn_plants:block/lotus_bottom"
     },
-    "half=upper": {
-      "model": "more_orn_plants:block/lotus_top"
+    "age=0,half=upper": {
+      "model": "more_orn_plants:block/lotus_top_age0"
+    },
+    "age=1,half=lower": {
+      "model": "more_orn_plants:block/lotus_bottom"
+    },
+    "age=1,half=upper": {
+      "model": "more_orn_plants:block/lotus_top_age1"
+    },
+    "age=2,half=lower": {
+      "model": "more_orn_plants:block/lotus_bottom"
+    },
+    "age=2,half=upper": {
+      "model": "more_orn_plants:block/lotus_top_age2"
+    },
+    "age=3,half=lower": {
+      "model": "more_orn_plants:block/lotus_bottom"
+    },
+    "age=3,half=upper": {
+      "model": "more_orn_plants:block/lotus_top_age3"
     }
   }
 }
