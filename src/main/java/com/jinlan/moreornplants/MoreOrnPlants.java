@@ -53,7 +53,7 @@ public class MoreOrnPlants
         ModTreeDecoratorTypes.register(modEventBus);
         ModFeatures.register(modEventBus);
 
-        context.registerConfig(ModConfig.Type.COMMON, SPEC, "moreornplants-biomes.toml");
+        context.registerConfig(ModConfig.Type.COMMON, SPEC, "moreornplants-common.toml");
 
         MinecraftForge.EVENT_BUS.register(this);
 

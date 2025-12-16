@@ -1,5 +1,5 @@
 {
-  "feature": "more_orn_plants:white_apricot",
+  "feature": "more_orn_plants:camphor",
   "placement": [
     {
       "type": "minecraft:count",
@@ -8,7 +8,7 @@
         "distribution": [
           {
             "data": 0,
-            "weight": 4
+            "weight": 9
           },
           {
             "data": 1,
@@ -36,7 +36,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "more_orn_plants:white_apricot_sapling",
+          "Name": "more_orn_plants:camphor_sapling",
           "Properties": {
             "stage": "0"
           }

@@ -44,6 +44,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GREEN_CHINESE_PARASOL_PLACED = registerKey("green_chinese_parasol_placed");
     public static final ResourceKey<PlacedFeature> SWEETGUM_PLACED = registerKey("sweetgum_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_PLACED = registerKey("camphor_placed");
+    public static final ResourceKey<PlacedFeature> CAMPHOR_CAMELLIA_VALLEY_PLACED = registerKey("camphor_camellia_valley_placed");
     public static final ResourceKey<PlacedFeature> ANCIENT_CAMPHOR_PLACED = registerKey("ancient_camphor_placed");
     public static final ResourceKey<PlacedFeature> CYMBIDIUM_PLACED = registerKey("cymbidium_placed");
     public static final ResourceKey<PlacedFeature> CYMBIDIUM_FOREST_PLACED = registerKey("cymbidium_forest_placed");
@@ -255,8 +256,11 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(15),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, WHITE_APRICOT_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_APRICOT),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1),
                         ModBlocks.WHITE_APRICOT_SAPLING.get()));
+        register(context, CAMPHOR_CAMELLIA_VALLEY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                        ModBlocks.CAMPHOR_SAPLING.get()));
 
         register(context, CRIMSON_AZALEA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_AZALEA_KEY),
                 List.of(CountPlacement.of(36),
@@ -269,7 +273,7 @@ public class ModPlacedFeatures {
                         ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
 
         register(context, UPRIGHT_CRABAPPLE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.UPRIGHT_CRABAPPLE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
         register(context, PEONY_MEADOWS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS),
                 List.of(CountPlacement.of(32),

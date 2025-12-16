@@ -83,39 +83,39 @@ public class ModOverworldBiomesBuilder {
     };
 
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_MOD = new ResourceKey[][]{
-            {ModBiomes.RED_MEI_FOREST, ModBiomes.RED_MEI_FOREST, ModBiomes.RED_MEI_FOREST,   ModBiomes.RED_MEI_FOREST,   ModBiomes.RED_MEI_FOREST},
+            {ModBiomes.RED_MEI_FOREST, ModBiomes.RED_MEI_FOREST, ModBiomes.RED_MEI_FOREST,   ModBiomes.RED_MEI_FOREST,   null},
             {ModBiomes.PEONY_MEADOWS,  ModBiomes.PEONY_MEADOWS,  ModBiomes.EVERGREEN_FOREST, ModBiomes.EVERGREEN_FOREST, null},
-            {ModBiomes.FLOWERS_GROVE,  ModBiomes.FLOWERS_GROVE,  ModBiomes.CAMELLIA_VALLEY,  ModBiomes.CAMELLIA_VALLEY,  ModBiomes.CAMELLIA_VALLEY},
+            {ModBiomes.FLOWERS_GROVE,  ModBiomes.FLOWERS_GROVE,  ModBiomes.CAMELLIA_VALLEY,  ModBiomes.CAMELLIA_VALLEY,  null},
             {ModBiomes.COLORED_FOREST, ModBiomes.COLORED_FOREST, null,                       null,                       null},
             {null,                     null,                     null,                       null,                       null}
     };
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_VARIANT_MOD = new ResourceKey[][]{
-            {null,                     ModBiomes.RED_MEI_FOREST, null,                       ModBiomes.RED_MEI_FOREST,  ModBiomes.RED_MEI_FOREST},
-            {ModBiomes.COLORED_FOREST, ModBiomes.PEONY_MEADOWS,  ModBiomes.EVERGREEN_FOREST, null,                      null},
-            {ModBiomes.PEONY_MEADOWS,  ModBiomes.FLOWERS_GROVE,  ModBiomes.COLORED_FOREST,   ModBiomes.CAMELLIA_VALLEY, ModBiomes.CAMELLIA_VALLEY},
-            {ModBiomes.COLORED_FOREST, ModBiomes.COLORED_FOREST, null,                       null,                      null},
-            {null,                     null,                     null,                       null,                      null}
+            {null,                    ModBiomes.RED_MEI_FOREST, null,                      ModBiomes.RED_MEI_FOREST,  ModBiomes.RED_MEI_FOREST},
+            {ModBiomes.PEONY_MEADOWS, ModBiomes.PEONY_MEADOWS,  null,                      null,                      null},
+            {null,                    ModBiomes.FLOWERS_GROVE,  ModBiomes.CAMELLIA_VALLEY, ModBiomes.CAMELLIA_VALLEY, null},
+            {null,                    null,                     null,                      null,                      null},
+            {null,                    null,                     null,                      null,                      null}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_MOD = new ResourceKey[][]{
-            {null,                     null,                        null,                        null,                        null},
-            {ModBiomes.PEONY_MEADOWS,  ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.EVERGREEN_FOREST,  ModBiomes.COLORED_FOREST,    null},
-            {ModBiomes.PEONY_MEADOWS,  ModBiomes.FLOWERS_GROVE,     ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.COLORED_FOREST},
-            {ModBiomes.COLORED_FOREST, ModBiomes.COLORED_FOREST,    null,                        null,                        null},
-            {null,                     null,                        null,                        null,                        null}
+            {null, null,                        null,                        null,                        null},
+            {null, ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.EVERGREEN_FOREST,  ModBiomes.EVERGREEN_FOREST,  null},
+            {null, ModBiomes.FLOWERS_GROVE,     ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.CRIMSON_HIGHLANDS, null},
+            {null, null,                        null,                        null,                        null},
+            {null, null,                        null,                        null,                        null}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_VARIANT_MOD =new ResourceKey[][]{
-            {null,                     null,                     null,                            null,                    null},
-            {null,                     ModBiomes.FLOWERS_GROVE,  ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.COLORED_FOREST,    null},
-            {null,                     null,                     ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.COLORED_FOREST},
-            {ModBiomes.COLORED_FOREST, ModBiomes.COLORED_FOREST, null,                            null,                    null},
-            {null,                     null,                     null,                            null,                    null}
+            {null,                     null,                     null,                        null,                        null},
+            {null,                     ModBiomes.FLOWERS_GROVE,  ModBiomes.CRIMSON_HIGHLANDS, null,                        null},
+            {null,                     null,                     null,                        ModBiomes.CRIMSON_HIGHLANDS, null},
+            {ModBiomes.COLORED_FOREST, ModBiomes.COLORED_FOREST, null,                        null,                        null},
+            {null,                     null,                     null,                        null,                        null}
     };
     private final ResourceKey<Biome>[][] SWAMP_BIOMES_MOD = new ResourceKey[][]{
-            {null,                       null,                       null,                       null,                       null},
-            {null,                       ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM},
-            {null,                       ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM},
-            {null,                       null,                       ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, null},
-            {null,                       null,                       null,                       null,                       null}
+            {null, null,                       null,                       null,                       null},
+            {null, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, null},
+            {null, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, null},
+            {null, null,                       null,                       null,                       null},
+            {null, null,                       null,                       null,                       null}
     };
 
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
@@ -547,8 +547,9 @@ public class ModOverworldBiomesBuilder {
             return modSwampBiome;
         }
 
-        if (temperatureIndex >= 1 && temperatureIndex <= 3 && humidityIndex >= 1) {
-            return temperatureIndex >= 3 ? Biomes.MANGROVE_SWAMP : Biomes.SWAMP;
+        ResourceKey<Biome> vanillaSwampBiome = SWAMP_BIOMES[temperatureIndex][humidityIndex];
+        if (vanillaSwampBiome != null) {
+            return vanillaSwampBiome;
         }
         return this.pickMiddleBiome(temperatureIndex, humidityIndex, Climate.Parameter.point(0.0F));
     }

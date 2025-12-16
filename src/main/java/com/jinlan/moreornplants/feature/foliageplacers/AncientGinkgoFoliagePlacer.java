@@ -43,11 +43,11 @@ public class AncientGinkgoFoliagePlacer extends FoliagePlacer {
 
             // 修改1: 使用更平滑的半径变化函数，让顶端更圆润
             float radiusMultiplier = calculateRadiusMultiplier(relativeHeight);
-            int l = foliageRadius + attachment.radiusOffset() + Mth.floor(radiusMultiplier * 4.0F);
+            int l = foliageRadius + attachment.radiusOffset() + Mth.floor(radiusMultiplier * 1.6F);
 
             int i1;
             // 修改2: 减少特殊情况下的半径增加，让形状更一致
-            if (k > 0 && l == i && (j & 1) == 0 && random.nextFloat() < 0.5f) {
+            if (k > 0 && l == i && (j & 1) == 0 && random.nextFloat() < 0.6f) {
                 i1 = l + 1;
             } else {
                 i1 = l;

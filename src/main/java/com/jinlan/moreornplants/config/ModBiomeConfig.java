@@ -59,7 +59,7 @@ public class ModBiomeConfig {
         BUILDER.push("Region Weight Settings");
         OVERWORLD_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for main overworld biomes region")
-                .defineInRange("overworldBiomesWeight", 2, 1, 20);
+                .defineInRange("overworldBiomesWeight", 4, 1, 20);
         SPECIAL_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for special biomes region")
                 .defineInRange("specialBiomesWeight", 1, 1, 20);

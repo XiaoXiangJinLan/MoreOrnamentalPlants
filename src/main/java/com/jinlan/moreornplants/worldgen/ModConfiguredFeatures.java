@@ -337,15 +337,15 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
         register(context, ANCIENT_GOLDEN_GINKGO, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
-                new GiantTrunkPlacer(24, 2, 4),
+                new GiantTrunkPlacer(22, 2, 2),
                 BlockStateProvider.simple(ModBlocks.GOLDEN_GINKGO_LEAVES.get()),
-                new AncientGinkgoFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), UniformInt.of(15, 17)),
+                new AncientGinkgoFoliagePlacer(ConstantInt.of(3), ConstantInt.of(1), UniformInt.of(15, 17)),
                 new TwoLayersFeatureSize(1, 1, 2)).ignoreVines().build());
         register(context, ANCIENT_GREEN_GINKGO, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
-                new GiantTrunkPlacer(24, 2, 4),
+                new GiantTrunkPlacer(22, 2, 2),
                 BlockStateProvider.simple(ModBlocks.GREEN_GINKGO_LEAVES.get()),
-                new AncientGinkgoFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), UniformInt.of(15, 17)),
+                new AncientGinkgoFoliagePlacer(ConstantInt.of(3), ConstantInt.of(1), UniformInt.of(15, 17)),
                 new TwoLayersFeatureSize(1, 1, 2)).ignoreVines().build());
 
         register(context, YELLOW_CHINESE_PARASOL, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -636,18 +636,18 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
-        register(context, PEONY_MEADOWS, Feature.FLOWER, new RandomPatchConfiguration(81, 15, 10,
+        register(context, PEONY_MEADOWS, Feature.FLOWER, new RandomPatchConfiguration(81, 12, 10,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(Blocks.PEONY.defaultBlockState(), 6)
+                                        .add(Blocks.PEONY.defaultBlockState(), 2)
                                         .add(ModBlocks.TWO_QIAO_PEONY.get().defaultBlockState(), 1)
                                         .add(ModBlocks.VERSICOLOR_PEONY.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, PEONY_KEY, Feature.FLOWER, new RandomPatchConfiguration(81, 15, 10,
+        register(context, PEONY_KEY, Feature.FLOWER, new RandomPatchConfiguration(81, 12, 10,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -659,7 +659,7 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, PINK_CHINESE_ROSE_MEADOW, Feature.FLOWER, new RandomPatchConfiguration(32, 6, 6,
+        register(context, PINK_CHINESE_ROSE_MEADOW, Feature.FLOWER, new RandomPatchConfiguration(45, 6, 6,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PINK_CHINESE_ROSE.get())),
                         BlockPredicate.allOf(
@@ -685,7 +685,7 @@ public class ModConfiguredFeatures {
         SimpleWeightedRandomList.Builder<BlockState> lotusBuilder = SimpleWeightedRandomList.builder();
         for (Direction direction : Direction.Plane.HORIZONTAL) {
             lotusBuilder.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState()
-                            .setValue(WaterLotusLeafBlock.FACING, direction).setValue(WaterLotusBlock.AGE, 3),12);
+                            .setValue(WaterLotusLeafBlock.FACING, direction).setValue(WaterLotusBlock.AGE, 3),10);
         }
         for (int age = 0; age <= 3; age++) {
             int weight = (age <= 1) ? 1 : 2;
