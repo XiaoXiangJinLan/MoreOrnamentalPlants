@@ -1,4 +1,4 @@
-package com.jinlan.moreornplants.block.BambooBlock;
+package com.jinlan.moreornplants.block.BambooBlocks;
 
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.util.ModTags;

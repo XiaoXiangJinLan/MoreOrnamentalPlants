@@ -1,4 +1,4 @@
-package com.jinlan.moreornplants.block;
+package com.jinlan.moreornplants.block.FlowerBlocks;
 
 import com.jinlan.moreornplants.worldgen.tree.CrapeMyrtleTreeGrower;
 import net.minecraft.core.BlockPos;

@@ -1,8 +1,8 @@
 package com.jinlan.moreornplants.datagen.loot;
 
 import com.jinlan.moreornplants.block.ModBlocks;
-import com.jinlan.moreornplants.block.PeachPinkPetalsBlock;
-import com.jinlan.moreornplants.block.WaterLotusBlock;
+import com.jinlan.moreornplants.block.FlowerBlocks.PeachPinkPetalsBlock;
+import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;

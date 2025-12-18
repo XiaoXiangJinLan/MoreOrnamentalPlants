@@ -71,11 +71,10 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_large_fern",
-      "minecraft:patch_grass_forest",
       "more_orn_plants:ancient_red_mei_placed",
       "more_orn_plants:red_mei_placed",
-      "more_orn_plants:wintersweet_placed"
+      "more_orn_plants:wintersweet_placed",
+      "more_orn_plants:grass_fern"
     ],
     [
       "minecraft:freeze_top_layer"

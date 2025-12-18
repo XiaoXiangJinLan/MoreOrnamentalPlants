@@ -59,7 +59,6 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PINK_CHINESE_ROSE_PLACED = registerKey("pink_chinese_rose_placed");
     public static final ResourceKey<PlacedFeature> YELLOW_CHINESE_ROSE_PLACED = registerKey("yellow_chinese_rose_placed");
     public static final ResourceKey<PlacedFeature> WHITE_CHINESE_ROSE_PLACED = registerKey("white_chinese_rose_placed");
-    public static final ResourceKey<PlacedFeature> PINK_CHINESE_ROSE_MEADOW_PLACED = registerKey("pink_chinese_rose_meadow_placed");
     public static final ResourceKey<PlacedFeature> CRIMSON_AZALEA_PLACED = registerKey("crimson_azalea_placed");
     public static final ResourceKey<PlacedFeature> CRIMSON_AZALEA_GROVE_PLACED = registerKey("crimson_azalea_grove_placed");
     public static final ResourceKey<PlacedFeature> CAMELLIA_PLACED = registerKey("camellia_placed");
@@ -84,8 +83,11 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> MOTTLED_BAMBOO_PLACED =registerKey("mottled_bamboo_placed");
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_PLACED =registerKey("black_bamboo_placed");
     public static final ResourceKey<PlacedFeature> LOTUS_PLACED =registerKey("lotus_placed");
-    public static final ResourceKey<PlacedFeature> GRASS_FOREST =registerKey("grass_forest");
+    public static final ResourceKey<PlacedFeature> GRASS_GROVE =registerKey("grass_grove");
+    public static final ResourceKey<PlacedFeature> GRASS_FOREST_1 =registerKey("grass_forest_1");
+    public static final ResourceKey<PlacedFeature> GRASS_FOREST_2 =registerKey("grass_forest_2");
     public static final ResourceKey<PlacedFeature> GRASS_FERN =registerKey("grass_fern");
+    public static final ResourceKey<PlacedFeature> GRASS_FERN_2 =registerKey("grass_fern_2");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -273,16 +275,13 @@ public class ModPlacedFeatures {
                         ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
 
         register(context, UPRIGHT_CRABAPPLE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.UPRIGHT_CRABAPPLE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 1),
                         ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
         register(context, PEONY_MEADOWS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS),
                 List.of(CountPlacement.of(32),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_KEY),
                 List.of(CountPlacement.of(32),
-                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
-        register(context, PINK_CHINESE_ROSE_MEADOW_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_CHINESE_ROSE_MEADOW),
-                List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, COTTON_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COTTON_ROSE_KEY),
@@ -298,10 +297,19 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
-        register(context, GRASS_FOREST, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FOREST),
+        register(context, GRASS_GROVE, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_GROVE),
                 List.of(CountPlacement.of(7),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, GRASS_FOREST_1, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FOREST_1),
+                List.of(CountPlacement.of(9),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, GRASS_FOREST_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FOREST_2),
+                List.of(CountPlacement.of(9),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_FERN, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FERN),
+                List.of(CountPlacement.of(5),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, GRASS_FERN_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FERN_2),
                 List.of(CountPlacement.of(11),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
     }

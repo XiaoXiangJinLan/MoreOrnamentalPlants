@@ -5,30 +5,12 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.ParticleUtils;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.LeavesBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class GoldenOsmanthusLeavesBlock extends LeavesBlock {
-    public GoldenOsmanthusLeavesBlock(BlockBehaviour.Properties properties) {
+public class GoldenOsmanthusLeavesBlock extends ModLeavesBlock {
+    public GoldenOsmanthusLeavesBlock(Properties properties) {
         super(properties);
-    }
-
-    @Override
-    public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-        return true;
-    }
-
-    @Override
-    public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-        return 60;
-    }
-
-    @Override
-    public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-        return 30;
     }
 
     @Override

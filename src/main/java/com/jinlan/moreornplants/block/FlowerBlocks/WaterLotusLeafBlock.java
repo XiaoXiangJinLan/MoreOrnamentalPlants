@@ -1,4 +1,4 @@
-package com.jinlan.moreornplants.block;
+package com.jinlan.moreornplants.block.FlowerBlocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
