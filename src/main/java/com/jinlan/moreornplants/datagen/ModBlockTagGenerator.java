@@ -20,6 +20,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(BlockTags.CROPS)
+                .add(ModBlocks.LOTUS.get())
+                .add(ModBlocks.LOTUS_LEAF.get());
+
         this.tag(BlockTags.FLOWER_POTS)
                 .add(ModBlocks.POTTED_RED_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_WHITE_MEI_SAPLING.get())
