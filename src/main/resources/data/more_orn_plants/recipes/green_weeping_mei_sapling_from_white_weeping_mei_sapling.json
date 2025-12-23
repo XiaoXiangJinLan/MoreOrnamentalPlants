@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:white_weeping_mei_sapling"
+    },
+    {
+      "item": "more_orn_plants:white_weeping_mei_sapling"
+    }
+  ],
+  "result": {
+    "item": "more_orn_plants:green_weeping_mei_sapling"
+  }
+}

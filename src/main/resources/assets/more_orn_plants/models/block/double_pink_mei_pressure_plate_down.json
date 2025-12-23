@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_down",
+  "textures": {
+    "texture": "more_orn_plants:block/double_pink_mei_planks"
+  }
+}

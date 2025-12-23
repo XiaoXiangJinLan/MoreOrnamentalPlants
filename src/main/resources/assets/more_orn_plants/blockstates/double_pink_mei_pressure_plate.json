@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "more_orn_plants:block/double_pink_mei_pressure_plate"
+    },
+    "powered=true": {
+      "model": "more_orn_plants:block/double_pink_mei_pressure_plate_down"
+    }
+  }
+}

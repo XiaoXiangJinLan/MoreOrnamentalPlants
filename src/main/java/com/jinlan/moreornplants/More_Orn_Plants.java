@@ -1,7 +1,11 @@
 package com.jinlan.moreornplants;
 
+import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.init.ModParticles;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,10 +19,50 @@ public class More_Orn_Plants implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+        ModBlocks.registerModBlocks();
+        ModParticles.initialize();
 
-		LOGGER.info("Hello Fabric world!");
+        StrippableBlockRegistry.register(ModBlocks.RED_MEI_LOG, ModBlocks.STRIPPED_RED_MEI_LOG);
+        StrippableBlockRegistry.register(ModBlocks.WHITE_MEI_LOG, ModBlocks.STRIPPED_WHITE_MEI_LOG);
+        StrippableBlockRegistry.register(ModBlocks.GREEN_CALYX_MEI_LOG, ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG);
+        StrippableBlockRegistry.register(ModBlocks.DOUBLE_PINK_MEI_LOG, ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG);
+        StrippableBlockRegistry.register(ModBlocks.RED_MEI_WOOD, ModBlocks.STRIPPED_RED_MEI_WOOD);
+        StrippableBlockRegistry.register(ModBlocks.WHITE_MEI_WOOD, ModBlocks.STRIPPED_WHITE_MEI_WOOD);
+        StrippableBlockRegistry.register(ModBlocks.GREEN_CALYX_MEI_WOOD, ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD);
+        StrippableBlockRegistry.register(ModBlocks.DOUBLE_PINK_MEI_WOOD, ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD);
+
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_MEI_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WHITE_MEI_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GREEN_CALYX_MEI_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DOUBLE_PINK_MEI_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.VERSICOLOR_MEI_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_WEEPING_MEI, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_WEEPING_MEI_PLANT, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WHITE_WEEPING_MEI, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WHITE_WEEPING_MEI_PLANT, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GREEN_WEEPING_MEI, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GREEN_WEEPING_MEI_PLANT, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PINK_WEEPING_MEI, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PINK_WEEPING_MEI_PLANT, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.VERSICOLOR_WEEPING_MEI, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_MEI_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WHITE_MEI_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GREEN_CALYX_MEI_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DOUBLE_PINK_MEI_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_MEI_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WHITE_MEI_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GREEN_CALYX_MEI_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DOUBLE_PINK_MEI_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_RED_MEI_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_WHITE_MEI_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_RED_MEI_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_WHITE_MEI_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD, 5, 5);
+
+        LOGGER.info("Hello Fabric world!");
 	}
 }

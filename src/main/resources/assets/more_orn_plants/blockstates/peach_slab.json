@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "more_orn_plants:block/peach_slab"
+    },
+    "type=double": {
+      "model": "more_orn_plants:block/peach_planks"
+    },
+    "type=top": {
+      "model": "more_orn_plants:block/peach_slab_top"
+    }
+  }
+}

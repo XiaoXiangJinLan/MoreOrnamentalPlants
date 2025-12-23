@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:white_peony"
+    },
+    {
+      "item": "more_orn_plants:white_peony"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "more_orn_plants:green_peony"
+  }
+}

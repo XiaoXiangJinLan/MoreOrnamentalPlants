@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:purple_leaf_plum_hanging_sign"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "more_orn_plants:blocks/purple_leaf_plum_wall_hanging_sign"
+}

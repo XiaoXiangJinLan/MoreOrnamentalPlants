@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:wintersweet_bush"
+    },
+    {
+      "item": "more_orn_plants:wintersweet_bush"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "more_orn_plants:wintersweet"
+  }
+}

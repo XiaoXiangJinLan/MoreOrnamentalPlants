@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "more_orn_plants:camphor_log",
+    "more_orn_plants:camphor_wood",
+    "more_orn_plants:stripped_camphor_log",
+    "more_orn_plants:stripped_camphor_wood"
+  ]
+}

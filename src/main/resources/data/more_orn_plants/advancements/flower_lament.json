@@ -1,0 +1,38 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_poppy": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poppy"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.flower_lament.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:poppy"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.flower_lament.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_poppy"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

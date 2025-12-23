@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ink_purple_peony": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:ink_purple_peony"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ink_red_peony": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:ink_red_peony"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:ink_peony"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_ink_red_peony",
+      "has_ink_purple_peony",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:ink_peony"
+    ]
+  },
+  "sends_telemetry_event": false
+}

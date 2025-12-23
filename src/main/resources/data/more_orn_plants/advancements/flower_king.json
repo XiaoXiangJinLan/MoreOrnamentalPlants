@@ -1,0 +1,36 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_tree_peony": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:tree_peony"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.flower_king.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:peony"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.flower_king.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_tree_peony"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_azalea": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:azalea"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.flower_beauty.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:flowering_azalea"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.flower_beauty.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_azalea"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

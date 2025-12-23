@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "more_orn_plants:osmanthus_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "more_orn_plants:osmanthus_planks"
+  }
+}

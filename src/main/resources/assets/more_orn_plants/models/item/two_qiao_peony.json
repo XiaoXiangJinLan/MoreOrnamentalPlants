@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "more_orn_plants:block/two_qiao_peony_top"
+  }
+}

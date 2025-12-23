@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "get_florilegium": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:plant_in_florilegium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/moss_block.png",
+    "description": {
+      "translate": "advancement.moreornplants.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "more_orn_plants:two_qiao_peony"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.moreornplants.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_florilegium"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

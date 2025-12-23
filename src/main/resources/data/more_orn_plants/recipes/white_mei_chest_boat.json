@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chest_boat",
+  "ingredients": [
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "item": "more_orn_plants:white_mei_planks"
+    }
+  ],
+  "result": {
+    "item": "more_orn_plants:white_mei_chest_boat"
+  }
+}

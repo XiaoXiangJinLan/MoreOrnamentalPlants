@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "more_orn_plants:block/purple_leaf_plum_slab"
+    },
+    "type=double": {
+      "model": "more_orn_plants:block/purple_leaf_plum_planks"
+    },
+    "type=top": {
+      "model": "more_orn_plants:block/purple_leaf_plum_slab_top"
+    }
+  }
+}

@@ -18,6 +18,9 @@
 		"main": [
 			"com.jinlan.moreornplants.More_Orn_Plants"
 		],
+        "client": [
+            "com.jinlan.moreornplants.client.Particle"
+        ],
 		"fabric-datagen": [
 			"com.jinlan.moreornplants.More_Orn_PlantsDataGenerator"
 		]

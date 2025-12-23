@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:mottled_bamboo_shoots"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "more_orn_plants:blocks/mottled_bamboo_sapling"
+}

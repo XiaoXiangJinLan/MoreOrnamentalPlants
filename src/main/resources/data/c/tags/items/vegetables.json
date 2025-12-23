@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#c:vegetables/bamboo_shoots",
+    "#c:vegetables/bamboo_sprouts",
+    "#c:vegetables/lotus_root",
+    "#c:vegetables/lotus_seed",
+    "#c:vegetables/lotus_nut"
+  ]
+}

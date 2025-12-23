@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "more_orn_plants:yellow_chinese_rose",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
+          "name": "more_orn_plants:yellow_chinese_rose"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "more_orn_plants:blocks/yellow_chinese_rose"
+}

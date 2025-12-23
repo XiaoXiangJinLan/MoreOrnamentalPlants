@@ -1,0 +1,38 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_pear": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:pear_sapling"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.pear_in_rain.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "more_orn_plants:pear_sapling"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.pear_in_rain.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_pear"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

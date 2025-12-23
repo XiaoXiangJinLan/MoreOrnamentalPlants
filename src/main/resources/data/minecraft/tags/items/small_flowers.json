@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "more_orn_plants:wintersweet_bush",
+    "more_orn_plants:chrysanthemum",
+    "more_orn_plants:golden_chrysanthemum",
+    "more_orn_plants:gold_backed_scarlet_mum",
+    "more_orn_plants:white_chrysanthemum",
+    "more_orn_plants:green_chrysanthemum",
+    "more_orn_plants:purple_chrysanthemum",
+    "more_orn_plants:violet_pink_chrysanthemum",
+    "more_orn_plants:pink_chrysanthemum",
+    "more_orn_plants:light_pink_chrysanthemum",
+    "more_orn_plants:spring_cymbidium",
+    "#forge:herbaceous_peony",
+    "more_orn_plants:chinese_rose_bush",
+    "more_orn_plants:pink_chinese_rose_bush",
+    "more_orn_plants:yellow_chinese_rose_bush",
+    "more_orn_plants:white_chinese_rose_bush",
+    "more_orn_plants:red_pink_chinese_rose_bush",
+    "more_orn_plants:red_yellow_chinese_rose_bush",
+    "more_orn_plants:red_white_chinese_rose_bush",
+    "more_orn_plants:pink_white_chinese_rose_bush",
+    "more_orn_plants:yellow_white_chinese_rose_bush",
+    "#forge:camellia",
+    "more_orn_plants:crimson_azalea"
+  ]
+}
