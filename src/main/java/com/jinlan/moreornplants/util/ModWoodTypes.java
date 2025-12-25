@@ -19,4 +19,6 @@ public class ModWoodTypes {
     public static final WoodType CHINESE_PARASOL = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":chinese_parasol", BlockSetType.OAK));
     public static final WoodType SWEETGUM = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":sweetgum", BlockSetType.OAK));
     public static final WoodType CAMPHOR = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":camphor", BlockSetType.OAK));
+    public static final WoodType DOVE_TREE = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":dove_tree", BlockSetType.OAK));
+    public static final WoodType CHINABERRY = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":chinaberry", BlockSetType.OAK));
 }

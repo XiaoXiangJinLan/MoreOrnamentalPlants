@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:ginkgo"
+            "tag": "forge:ginkgo_sapling"
           }
         ]
       },

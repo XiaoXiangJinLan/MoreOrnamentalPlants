@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "more_orn_plants:block/dove_tree_planks"
+  }
+}

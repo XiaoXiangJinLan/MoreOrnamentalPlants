@@ -75,4 +75,14 @@ public class ModModelLayers {
     public static final ModelLayerLocation CAMPHOR_CHEST_BOAT_LAYER = new ModelLayerLocation(
             new ResourceLocation(MoreOrnPlants.MOD_ID, "chest_boat/camphor"), "main");
 
+    public static final ModelLayerLocation DOVE_TREE_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "boat/dove_tree"), "main");
+    public static final ModelLayerLocation DOVE_TREE_CHEST_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "chest_boat/dove_tree"), "main");
+
+    public static final ModelLayerLocation CHINABERRY_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "boat/chinaberry"), "main");
+    public static final ModelLayerLocation CHINABERRY_CHEST_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "chest_boat/chinaberry"), "main");
+
 }

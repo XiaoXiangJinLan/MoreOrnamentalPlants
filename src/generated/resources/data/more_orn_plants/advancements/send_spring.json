@@ -22,7 +22,7 @@
           {
             "condition": "minecraft:match_tool",
             "predicate": {
-              "tag": "forge:mei"
+              "tag": "forge:mei_sapling"
             }
           }
         ]

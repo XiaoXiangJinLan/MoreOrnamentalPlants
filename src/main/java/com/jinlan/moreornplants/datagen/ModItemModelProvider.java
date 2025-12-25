@@ -34,6 +34,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.CHINESE_PARASOL_FENCE, ModBlocks.CHINESE_PARASOL_PLANKS);
         fenceItem(ModBlocks.SWEETGUM_FENCE, ModBlocks.SWEETGUM_PLANKS);
         fenceItem(ModBlocks.CAMPHOR_FENCE, ModBlocks.CAMPHOR_PLANKS);
+        fenceItem(ModBlocks.DOVE_TREE_FENCE, ModBlocks.DOVE_TREE_PLANKS);
+        fenceItem(ModBlocks.CHINABERRY_FENCE, ModBlocks.CHINABERRY_PLANKS);
 
         buttonItem(ModBlocks.RED_MEI_BUTTON, ModBlocks.RED_MEI_PLANKS);
         buttonItem(ModBlocks.WHITE_MEI_BUTTON, ModBlocks.WHITE_MEI_PLANKS);
@@ -49,6 +51,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.CHINESE_PARASOL_BUTTON, ModBlocks.CHINESE_PARASOL_PLANKS);
         buttonItem(ModBlocks.SWEETGUM_BUTTON, ModBlocks.SWEETGUM_PLANKS);
         buttonItem(ModBlocks.CAMPHOR_BUTTON, ModBlocks.CAMPHOR_PLANKS);
+        buttonItem(ModBlocks.DOVE_TREE_BUTTON, ModBlocks.DOVE_TREE_PLANKS);
+        buttonItem(ModBlocks.CHINABERRY_BUTTON, ModBlocks.CHINABERRY_PLANKS);
 
         simplerBlockItem(ModBlocks.RED_MEI_DOOR);
         simplerBlockItem(ModBlocks.WHITE_MEI_DOOR);
@@ -64,6 +68,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simplerBlockItem(ModBlocks.CHINESE_PARASOL_DOOR);
         simplerBlockItem(ModBlocks.SWEETGUM_DOOR);
         simplerBlockItem(ModBlocks.CAMPHOR_DOOR);
+        simplerBlockItem(ModBlocks.DOVE_TREE_DOOR);
+        simplerBlockItem(ModBlocks.CHINABERRY_DOOR);
 
         evenSimplerBlockItem(ModBlocks.RED_MEI_STAIRS);
         evenSimplerBlockItem(ModBlocks.RED_MEI_SLAB);
@@ -121,6 +127,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.CAMPHOR_SLAB);
         evenSimplerBlockItem(ModBlocks.CAMPHOR_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.CAMPHOR_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.DOVE_TREE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.DOVE_TREE_SLAB);
+        evenSimplerBlockItem(ModBlocks.DOVE_TREE_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.DOVE_TREE_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.CHINABERRY_STAIRS);
+        evenSimplerBlockItem(ModBlocks.CHINABERRY_SLAB);
+        evenSimplerBlockItem(ModBlocks.CHINABERRY_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.CHINABERRY_FENCE_GATE);
 
         trapdoorItem(ModBlocks.RED_MEI_TRAPDOOR);
         trapdoorItem(ModBlocks.WHITE_MEI_TRAPDOOR);
@@ -136,6 +150,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trapdoorItem(ModBlocks.CHINESE_PARASOL_TRAPDOOR);
         trapdoorItem(ModBlocks.SWEETGUM_TRAPDOOR);
         trapdoorItem(ModBlocks.CAMPHOR_TRAPDOOR);
+        trapdoorItem(ModBlocks.DOVE_TREE_TRAPDOOR);
+        trapdoorItem(ModBlocks.CHINABERRY_TRAPDOOR);
 
         simpleItem(ModItems.RED_MEI_SIGN);
         simpleItem(ModItems.RED_MEI_HANGING_SIGN);
@@ -165,6 +181,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SWEETGUM_HANGING_SIGN);
         simpleItem(ModItems.CAMPHOR_SIGN);
         simpleItem(ModItems.CAMPHOR_HANGING_SIGN);
+        simpleItem(ModItems.DOVE_TREE_SIGN);
+        simpleItem(ModItems.DOVE_TREE_HANGING_SIGN);
+        simpleItem(ModItems.CHINABERRY_SIGN);
+        simpleItem(ModItems.CHINABERRY_HANGING_SIGN);
 
         simpleItem(ModItems.RED_MEI_BOAT);
         simpleItem(ModItems.RED_MEI_CHEST_BOAT);
@@ -194,6 +214,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CHINESE_PARASOL_CHEST_BOAT);
         simpleItem(ModItems.CAMPHOR_BOAT);
         simpleItem(ModItems.CAMPHOR_CHEST_BOAT);
+        simpleItem(ModItems.DOVE_TREE_BOAT);
+        simpleItem(ModItems.DOVE_TREE_CHEST_BOAT);
+        simpleItem(ModItems.CHINABERRY_BOAT);
+        simpleItem(ModItems.CHINABERRY_CHEST_BOAT);
 
         saplingItem(ModBlocks.RED_MEI_SAPLING);
         saplingItem(ModBlocks.WHITE_MEI_SAPLING);
@@ -223,6 +247,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING);
         saplingItem(ModBlocks.SWEETGUM_SAPLING);
         saplingItem(ModBlocks.CAMPHOR_SAPLING);
+        saplingItem(ModBlocks.DOVE_TREE_SAPLING);
+        saplingItem(ModBlocks.CHINABERRY_SAPLING);
         saplingItem(ModBlocks.CRAPE_MYRTLE_SAPLING);
 
         flowerItem(ModBlocks.RED_WEEPING_MEI);

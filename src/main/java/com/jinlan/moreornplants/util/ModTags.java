@@ -24,6 +24,8 @@ public class ModTags {
         public static final TagKey<Block> CHINESE_PARASOL_LOGS = tag("chinese_parasol_logs");
         public static final TagKey<Block> SWEETGUM_LOGS = tag("sweetgum_logs");
         public static final TagKey<Block> CAMPHOR_LOGS = tag("camphor_logs");
+        public static final TagKey<Block> DOVE_TREE_LOGS = tag("dove_tree_logs");
+        public static final TagKey<Block> CHINABERRY_LOGS = tag("chinaberry_logs");
         public static final TagKey<Block> MOTTLED_BAMBOO_PLANTABLE_ON = tag("mottled_bamboo_plantable_on");
         public static final TagKey<Block> BLACK_BAMBOO_PLANTABLE_ON = tag("black_bamboo_plantable_on");
 
@@ -47,6 +49,8 @@ public class ModTags {
         public static final TagKey<Item> CHINESE_PARASOL_LOGS = tag("chinese_parasol_logs");
         public static final TagKey<Item> SWEETGUM_LOGS = tag("sweetgum_logs");
         public static final TagKey<Item> CAMPHOR_LOGS = tag("camphor_logs");
+        public static final TagKey<Item> DOVE_TREE_LOGS = tag("dove_tree_logs");
+        public static final TagKey<Item> CHINABERRY_LOGS = tag("chinaberry_logs");
         public static final TagKey<Item> RED_DYE = tag("red_dye");
         public static final TagKey<Item> PINK_DYE = tag("pink_dye");
         public static final TagKey<Item> WHITE_DYE = tag("white_dye");

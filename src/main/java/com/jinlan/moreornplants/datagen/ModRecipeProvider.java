@@ -36,6 +36,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         planksFromLogs(pWriter, ModBlocks.CHINESE_PARASOL_PLANKS.get(), ModTags.Items.CHINESE_PARASOL_LOGS, 4);
         planksFromLogs(pWriter, ModBlocks.SWEETGUM_PLANKS.get(), ModTags.Items.SWEETGUM_LOGS, 4);
         planksFromLogs(pWriter, ModBlocks.CAMPHOR_PLANKS.get(), ModTags.Items.CAMPHOR_LOGS, 4);
+        planksFromLogs(pWriter, ModBlocks.DOVE_TREE_PLANKS.get(), ModTags.Items.DOVE_TREE_LOGS, 4);
+        planksFromLogs(pWriter, ModBlocks.CHINABERRY_PLANKS.get(), ModTags.Items.CHINABERRY_LOGS, 4);
 
         woodFromLogs(pWriter, ModBlocks.RED_MEI_WOOD.get(), ModBlocks.RED_MEI_LOG.get());
         woodFromLogs(pWriter, ModBlocks.WHITE_MEI_WOOD.get(), ModBlocks.WHITE_MEI_LOG.get());
@@ -51,6 +53,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         woodFromLogs(pWriter, ModBlocks.CHINESE_PARASOL_WOOD.get(), ModBlocks.CHINESE_PARASOL_LOG.get());
         woodFromLogs(pWriter, ModBlocks.SWEETGUM_WOOD.get(), ModBlocks.SWEETGUM_LOG.get());
         woodFromLogs(pWriter, ModBlocks.CAMPHOR_WOOD.get(), ModBlocks.CAMPHOR_LOG.get());
+        woodFromLogs(pWriter, ModBlocks.DOVE_TREE_WOOD.get(), ModBlocks.DOVE_TREE_LOG.get());
+        woodFromLogs(pWriter, ModBlocks.CHINABERRY_WOOD.get(), ModBlocks.CHINABERRY_LOG.get());
+        woodFromLogs(pWriter, ModBlocks.CRAPE_MYRTLE_WOOD.get(), ModBlocks.CRAPE_MYRTLE_LOG.get());
         woodFromLogs(pWriter, ModBlocks.STRIPPED_RED_MEI_WOOD.get(), ModBlocks.STRIPPED_RED_MEI_LOG.get());
         woodFromLogs(pWriter, ModBlocks.STRIPPED_WHITE_MEI_WOOD.get(), ModBlocks.STRIPPED_WHITE_MEI_LOG.get());
         woodFromLogs(pWriter, ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.get(), ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.get());
@@ -65,6 +70,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         woodFromLogs(pWriter, ModBlocks.STRIPPED_CHINESE_PARASOL_WOOD.get(), ModBlocks.STRIPPED_CHINESE_PARASOL_LOG.get());
         woodFromLogs(pWriter, ModBlocks.STRIPPED_SWEETGUM_WOOD.get(), ModBlocks.STRIPPED_SWEETGUM_LOG.get());
         woodFromLogs(pWriter, ModBlocks.STRIPPED_CAMPHOR_WOOD.get(), ModBlocks.STRIPPED_CAMPHOR_LOG.get());
+        woodFromLogs(pWriter, ModBlocks.STRIPPED_DOVE_TREE_WOOD.get(), ModBlocks.STRIPPED_DOVE_TREE_LOG.get());
+        woodFromLogs(pWriter, ModBlocks.STRIPPED_CHINABERRY_WOOD.get(), ModBlocks.STRIPPED_CHINABERRY_LOG.get());
 
         stairBuilder(ModBlocks.RED_MEI_STAIRS.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
                 .group("wooden_stairs")
@@ -121,6 +128,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stairBuilder(ModBlocks.CAMPHOR_STAIRS.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
                 .group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
+                .save(pWriter);
+        stairBuilder(ModBlocks.DOVE_TREE_STAIRS.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .group("wooden_stairs")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(pWriter);
+        stairBuilder(ModBlocks.CHINABERRY_STAIRS.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
+                .group("wooden_stairs")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(pWriter);
 
         slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_MEI_SLAB.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
@@ -179,6 +194,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("wooden_slab")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(pWriter);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DOVE_TREE_SLAB.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(pWriter);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHINABERRY_SLAB.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
+                .group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
+                .save(pWriter);
 
         doorBuilder(ModBlocks.RED_MEI_DOOR.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
                 .group("wooden_door")
@@ -235,6 +258,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         doorBuilder(ModBlocks.CAMPHOR_DOOR.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
                 .group("wooden_door")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
+                .save(pWriter);
+        doorBuilder(ModBlocks.DOVE_TREE_DOOR.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(pWriter);
+        doorBuilder(ModBlocks.CHINABERRY_DOOR.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
+                .group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(pWriter);
 
         trapdoorBuilder(ModBlocks.RED_MEI_TRAPDOOR.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
@@ -293,6 +324,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(pWriter);
+        trapdoorBuilder(ModBlocks.DOVE_TREE_TRAPDOOR.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .group("wooden_trapdoor")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(pWriter);
+        trapdoorBuilder(ModBlocks.CHINABERRY_TRAPDOOR.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
+                .group("wooden_trapdoor")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
+                .save(pWriter);
 
         fenceBuilder(ModBlocks.RED_MEI_FENCE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
                 .group("wooden_fence")
@@ -349,6 +388,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         fenceBuilder(ModBlocks.CAMPHOR_FENCE.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
                 .group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
+                .save(pWriter);
+        fenceBuilder(ModBlocks.DOVE_TREE_FENCE.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .group("wooden_fence")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(pWriter);
+        fenceBuilder(ModBlocks.CHINABERRY_FENCE.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
+                .group("wooden_fence")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(pWriter);
 
         fenceGateBuilder(ModBlocks.RED_MEI_FENCE_GATE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
@@ -407,6 +454,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(pWriter);
+        fenceGateBuilder(ModBlocks.DOVE_TREE_FENCE_GATE.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .group("wooden_fence_gate")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(pWriter);
+        fenceGateBuilder(ModBlocks.CHINABERRY_FENCE_GATE.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
+                .group("wooden_fence_gate")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
+                .save(pWriter);
 
         buttonBuilder(ModBlocks.RED_MEI_BUTTON.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
                 .group("wooden_button")
@@ -463,6 +518,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         buttonBuilder(ModBlocks.CAMPHOR_BUTTON.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
                 .group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
+                .save(pWriter);
+        buttonBuilder(ModBlocks.DOVE_TREE_BUTTON.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .group("wooden_button")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(pWriter);
+        buttonBuilder(ModBlocks.CHINABERRY_BUTTON.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
+                .group("wooden_button")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(pWriter);
 
         pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.RED_MEI_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
@@ -521,6 +584,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(pWriter);
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.DOVE_TREE_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .group("wooden_pressure_plate")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(pWriter);
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CHINABERRY_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
+                .group("wooden_pressure_plate")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
+                .save(pWriter);
 
         signBuilder(ModItems.RED_MEI_SIGN.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
                 .group("wooden_sign")
@@ -578,6 +649,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(pWriter);
+        signBuilder(ModItems.DOVE_TREE_SIGN.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .group("wooden_sign")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(pWriter);
+        signBuilder(ModItems.CHINABERRY_SIGN.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
+                .group("wooden_sign")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
+                .save(pWriter);
 
         hangingSign(pWriter, ModItems.RED_MEI_HANGING_SIGN.get(), ModBlocks.STRIPPED_RED_MEI_LOG.get());
         hangingSign(pWriter, ModItems.WHITE_MEI_HANGING_SIGN.get(), ModBlocks.STRIPPED_WHITE_MEI_LOG.get());
@@ -593,6 +672,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         hangingSign(pWriter, ModItems.CHINESE_PARASOL_HANGING_SIGN.get(), ModBlocks.STRIPPED_CHINESE_PARASOL_LOG.get());
         hangingSign(pWriter, ModItems.SWEETGUM_HANGING_SIGN.get(), ModBlocks.STRIPPED_SWEETGUM_LOG.get());
         hangingSign(pWriter, ModItems.CAMPHOR_HANGING_SIGN.get(), ModBlocks.STRIPPED_CAMPHOR_LOG.get());
+        hangingSign(pWriter, ModItems.DOVE_TREE_HANGING_SIGN.get(), ModBlocks.STRIPPED_DOVE_TREE_LOG.get());
+        hangingSign(pWriter, ModItems.CHINABERRY_HANGING_SIGN.get(), ModBlocks.STRIPPED_CHINABERRY_LOG.get());
 
         woodenBoat(pWriter, ModItems.RED_MEI_BOAT.get(), ModBlocks.RED_MEI_PLANKS.get());
         woodenBoat(pWriter, ModItems.WHITE_MEI_BOAT.get(), ModBlocks.WHITE_MEI_PLANKS.get());
@@ -608,6 +689,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         woodenBoat(pWriter, ModItems.SWEETGUM_BOAT.get(), ModBlocks.SWEETGUM_PLANKS.get());
         woodenBoat(pWriter, ModItems.CHINESE_PARASOL_BOAT.get(), ModBlocks.CHINESE_PARASOL_PLANKS.get());
         woodenBoat(pWriter, ModItems.CAMPHOR_BOAT.get(), ModBlocks.CAMPHOR_PLANKS.get());
+        woodenBoat(pWriter, ModItems.DOVE_TREE_BOAT.get(), ModBlocks.DOVE_TREE_PLANKS.get());
+        woodenBoat(pWriter, ModItems.CHINABERRY_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
 
         chestBoat(pWriter, ModItems.RED_MEI_CHEST_BOAT.get(), ModBlocks.RED_MEI_PLANKS.get());
         chestBoat(pWriter, ModItems.WHITE_MEI_CHEST_BOAT.get(), ModBlocks.WHITE_MEI_PLANKS.get());
@@ -623,6 +706,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(pWriter, ModItems.SWEETGUM_CHEST_BOAT.get(), ModBlocks.SWEETGUM_PLANKS.get());
         chestBoat(pWriter, ModItems.CHINESE_PARASOL_CHEST_BOAT.get(), ModBlocks.CHINESE_PARASOL_PLANKS.get());
         chestBoat(pWriter, ModItems.CAMPHOR_CHEST_BOAT.get(), ModBlocks.CAMPHOR_PLANKS.get());
+        chestBoat(pWriter, ModItems.DOVE_TREE_CHEST_BOAT.get(), ModBlocks.DOVE_TREE_PLANKS.get());
+        chestBoat(pWriter, ModItems.CHINABERRY_CHEST_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GREEN_CALYX_MEI_SAPLING.get(), 1)
                 .requires(ModBlocks.WHITE_MEI_SAPLING.get(), 2)

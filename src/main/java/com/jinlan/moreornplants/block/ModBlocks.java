@@ -81,29 +81,35 @@ public class ModBlocks {
             registerBlock("camphor_leaves", () -> new CamphorLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
     public static final RegistryObject<Block> NEW_CAMPHOR_LEAVES =
             registerBlock("new_camphor_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<Block> DOVE_TREE_LEAVES =
+            registerBlock("dove_tree_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<Block> DOVE_TREE_BLOSSOM_LEAVES =
+            registerBlock("dove_tree_blossom_leaves", () -> new DoveTreeBlossomLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<Block> CHINABERRY_LEAVES =
+            registerBlock("chinaberry_leaves", () -> new ChinaberryLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final RegistryObject<Block> CRAPE_MYRTLE_LEAVES =
             registerBlock("crape_myrtle_leaves", () -> new CrapeMyrtleLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.COLOR_PURPLE)));
 
     public static final RegistryObject<Block> RED_WEEPING_MEI =
             registerBlock("red_weeping_mei", () -> new RedWeepingMeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> RED_WEEPING_MEI_PLANT =
-            registerBlock("red_weeping_mei_plant", () -> new RedWeepingMeiPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+            registerBlock("red_weeping_mei_plant", () -> new RedWeepingMeiPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WHITE_WEEPING_MEI =
             registerBlock("white_weeping_mei", () -> new WhiteWeepingMeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WHITE_WEEPING_MEI_PLANT =
-            registerBlock("white_weeping_mei_plant", () -> new WhiteWeepingMeiPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+            registerBlock("white_weeping_mei_plant", () -> new WhiteWeepingMeiPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GREEN_WEEPING_MEI =
             registerBlock("green_weeping_mei", () -> new GreenWeepingMeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GREEN_WEEPING_MEI_PLANT =
-            registerBlock("green_weeping_mei_plant", () -> new GreenWeepingMeiPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+            registerBlock("green_weeping_mei_plant", () -> new GreenWeepingMeiPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PINK_WEEPING_MEI =
             registerBlock("pink_weeping_mei", () -> new PinkWeepingMeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PINK_WEEPING_MEI_PLANT =
-            registerBlock("pink_weeping_mei_plant", () -> new PinkWeepingMeiPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+            registerBlock("pink_weeping_mei_plant", () -> new PinkWeepingMeiPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> VERSICOLOR_WEEPING_MEI =
             registerBlock("versicolor_weeping_mei", () -> new VersicolorWeepingMeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> VERSICOLOR_WEEPING_MEI_PLANT =
-            registerBlock("versicolor_weeping_mei_plant", () -> new VersicolorWeepingMeiPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+            registerBlock("versicolor_weeping_mei_plant", () -> new VersicolorWeepingMeiPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> WEEPING_CRABAPPLE =
             registerBlock("weeping_crabapple", () -> new WeepingCrabappleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CHERRY_LEAVES).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
@@ -135,7 +141,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> SWEETGUM_LOG =
             registerBlock("sweetgum_log", () -> log(MapColor.TERRACOTTA_RED, MapColor.COLOR_BROWN));
     public static final RegistryObject<Block> CAMPHOR_LOG =
-            registerBlock("camphor_log", () -> log(MapColor.WOOD, MapColor.COLOR_BROWN));
+            registerBlock("camphor_log", () -> log(MapColor.COLOR_LIGHT_GRAY, MapColor.COLOR_BLACK));
+    public static final RegistryObject<Block> DOVE_TREE_LOG =
+            registerBlock("dove_tree_log", () -> log(MapColor.WOOD, MapColor.COLOR_BROWN));
+    public static final RegistryObject<Block> CHINABERRY_LOG =
+            registerBlock("chinaberry_log", () -> log(MapColor.COLOR_RED, MapColor.COLOR_BROWN));
     public static final RegistryObject<Block> CRAPE_MYRTLE_LOG =
             registerBlock("crape_myrtle_log", () -> log(MapColor.WOOD, MapColor.WOOD));
 
@@ -167,6 +177,10 @@ public class ModBlocks {
             registerBlock("sweetgum_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final RegistryObject<Block> CAMPHOR_WOOD =
             registerBlock("camphor_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistryObject<Block> DOVE_TREE_WOOD =
+            registerBlock("dove_tree_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistryObject<Block> CHINABERRY_WOOD =
+            registerBlock("chinaberry_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final RegistryObject<Block> CRAPE_MYRTLE_WOOD =
             registerBlock("crape_myrtle_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
 
@@ -198,6 +212,10 @@ public class ModBlocks {
             registerBlock("stripped_sweetgum_log", () -> log(MapColor.TERRACOTTA_RED, MapColor.COLOR_ORANGE));
     public static final RegistryObject<Block> STRIPPED_CAMPHOR_LOG =
             registerBlock("stripped_camphor_log", () -> log(MapColor.WOOD, MapColor.WOOD));
+    public static final RegistryObject<Block> STRIPPED_DOVE_TREE_LOG =
+            registerBlock("stripped_dove_tree_log", () -> log(MapColor.COLOR_LIGHT_GRAY, MapColor.WOOD));
+    public static final RegistryObject<Block> STRIPPED_CHINABERRY_LOG =
+            registerBlock("stripped_chinaberry_log", () -> log(MapColor.COLOR_RED, MapColor.COLOR_RED));
 
     public static final RegistryObject<Block> STRIPPED_RED_MEI_WOOD =
             registerBlock("stripped_red_mei_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
@@ -227,6 +245,10 @@ public class ModBlocks {
             registerBlock("stripped_sweetgum_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final RegistryObject<Block> STRIPPED_CAMPHOR_WOOD =
             registerBlock("stripped_camphor_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistryObject<Block> STRIPPED_DOVE_TREE_WOOD =
+            registerBlock("stripped_dove_tree_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistryObject<Block> STRIPPED_CHINABERRY_WOOD =
+            registerBlock("stripped_chinaberry_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
 
     public static final RegistryObject<Block> RED_MEI_PLANKS =
             registerBlock("red_mei_planks", () -> new ModPlanksBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
@@ -256,6 +278,10 @@ public class ModBlocks {
             registerBlock("sweetgum_planks", () -> new ModPlanksBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final RegistryObject<Block> CAMPHOR_PLANKS =
             registerBlock("camphor_planks", () -> new ModPlanksBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistryObject<Block> DOVE_TREE_PLANKS =
+            registerBlock("dove_tree_planks", () -> new ModPlanksBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistryObject<Block> CHINABERRY_PLANKS =
+            registerBlock("chinaberry_planks", () -> new ModPlanksBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
 
     public static final RegistryObject<Block> RED_MEI_STAIRS =
             registerBlock("red_mei_stairs", () -> new ModStairBlock(() -> ModBlocks.RED_MEI_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(ModBlocks.RED_MEI_PLANKS.get())));
@@ -285,6 +311,10 @@ public class ModBlocks {
             registerBlock("sweetgum_stairs", () -> new ModStairBlock(() -> ModBlocks.SWEETGUM_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(ModBlocks.SWEETGUM_PLANKS.get())));
     public static final RegistryObject<Block> CAMPHOR_STAIRS =
             registerBlock("camphor_stairs", () -> new ModStairBlock(() -> ModBlocks.CAMPHOR_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(ModBlocks.CAMPHOR_PLANKS.get())));
+    public static final RegistryObject<Block> DOVE_TREE_STAIRS =
+            registerBlock("dove_tree_stairs", () -> new ModStairBlock(() -> ModBlocks.DOVE_TREE_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(ModBlocks.DOVE_TREE_PLANKS.get())));
+    public static final RegistryObject<Block> CHINABERRY_STAIRS =
+            registerBlock("chinaberry_stairs", () -> new ModStairBlock(() -> ModBlocks.CHINABERRY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(ModBlocks.CHINABERRY_PLANKS.get())));
 
     public static final RegistryObject<Block> RED_MEI_SLAB =
             registerBlock("red_mei_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
@@ -314,6 +344,10 @@ public class ModBlocks {
             registerBlock("sweetgum_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final RegistryObject<Block> CAMPHOR_SLAB =
             registerBlock("camphor_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistryObject<Block> DOVE_TREE_SLAB =
+            registerBlock("dove_tree_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final RegistryObject<Block> CHINABERRY_SLAB =
+            registerBlock("chinaberry_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
 
     public static final RegistryObject<Block> RED_MEI_BUTTON =
             registerBlock("red_mei_button", () -> woodenButton(BlockSetType.OAK));
@@ -343,6 +377,10 @@ public class ModBlocks {
             registerBlock("sweetgum_button", () -> woodenButton(BlockSetType.OAK));
     public static final RegistryObject<Block> CAMPHOR_BUTTON =
             registerBlock("camphor_button", () -> woodenButton(BlockSetType.OAK));
+    public static final RegistryObject<Block> DOVE_TREE_BUTTON =
+            registerBlock("dove_tree_button", () -> woodenButton(BlockSetType.OAK));
+    public static final RegistryObject<Block> CHINABERRY_BUTTON =
+            registerBlock("chinaberry_button", () -> woodenButton(BlockSetType.OAK));
 
     public static final RegistryObject<Block> RED_MEI_PRESSURE_PLATE =
             registerBlock("red_mei_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK));
@@ -372,6 +410,10 @@ public class ModBlocks {
             registerBlock("sweetgum_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().mapColor(SWEETGUM_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK));
     public static final RegistryObject<Block> CAMPHOR_PRESSURE_PLATE =
             registerBlock("camphor_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().mapColor(CAMPHOR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK));
+    public static final RegistryObject<Block> DOVE_TREE_PRESSURE_PLATE =
+            registerBlock("dove_tree_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK));
+    public static final RegistryObject<Block> CHINABERRY_PRESSURE_PLATE =
+            registerBlock("chinaberry_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY), BlockSetType.OAK));
 
     public static final RegistryObject<Block> RED_MEI_FENCE =
             registerBlock("red_mei_fence" , () -> new ModFenceBlock(BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
@@ -401,6 +443,10 @@ public class ModBlocks {
             registerBlock("sweetgum_fence" , () -> new ModFenceBlock(BlockBehaviour.Properties.of().mapColor(SWEETGUM_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CAMPHOR_FENCE =
             registerBlock("camphor_fence" , () -> new ModFenceBlock(BlockBehaviour.Properties.of().mapColor(CAMPHOR_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> DOVE_TREE_FENCE =
+            registerBlock("dove_tree_fence" , () -> new ModFenceBlock(BlockBehaviour.Properties.of().mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> CHINABERRY_FENCE =
+            registerBlock("chinaberry_fence" , () -> new ModFenceBlock(BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> RED_MEI_FENCE_GATE =
             registerBlock("red_mei_fence_gate", () -> new ModFenceGateBlock(BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.RED_MEI));
@@ -430,6 +476,10 @@ public class ModBlocks {
             registerBlock("sweetgum_fence_gate", () -> new ModFenceGateBlock(BlockBehaviour.Properties.of().mapColor(SWEETGUM_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.SWEETGUM));
     public static final RegistryObject<Block> CAMPHOR_FENCE_GATE =
             registerBlock("camphor_fence_gate", () -> new ModFenceGateBlock(BlockBehaviour.Properties.of().mapColor(CAMPHOR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.CAMPHOR));
+    public static final RegistryObject<Block> DOVE_TREE_FENCE_GATE =
+            registerBlock("dove_tree_fence_gate", () -> new ModFenceGateBlock(BlockBehaviour.Properties.of().mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.DOVE_TREE));
+    public static final RegistryObject<Block> CHINABERRY_FENCE_GATE =
+            registerBlock("chinaberry_fence_gate", () -> new ModFenceGateBlock(BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava(), ModWoodTypes.CHINABERRY));
 
     public static final RegistryObject<Block> RED_MEI_DOOR =
             registerBlock("red_mei_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.RED_MEI_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
@@ -459,35 +509,43 @@ public class ModBlocks {
             registerBlock("sweetgum_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.SWEETGUM_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> CAMPHOR_DOOR =
             registerBlock("camphor_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.CAMPHOR_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+    public static final RegistryObject<Block> DOVE_TREE_DOOR =
+            registerBlock("dove_tree_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.DOVE_TREE_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+    public static final RegistryObject<Block> CHINABERRY_DOOR =
+            registerBlock("chinaberry_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.CHINABERRY_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
 
     public static final RegistryObject<Block> RED_MEI_TRAPDOOR =
-            registerBlock("red_mei_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.RED_MEI_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("red_mei_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.RED_MEI_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> WHITE_MEI_TRAPDOOR =
-            registerBlock("white_mei_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.WHITE_MEI_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("white_mei_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.WHITE_MEI_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_TRAPDOOR =
-            registerBlock("green_calyx_mei_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("green_calyx_mei_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_TRAPDOOR =
-            registerBlock("double_pink_mei_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("double_pink_mei_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR =
-            registerBlock("crabapple_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.CRABAPPLE_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("crabapple_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.CRABAPPLE_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> APRICOT_TRAPDOOR =
-            registerBlock("apricot_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.APRICOT_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("apricot_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.APRICOT_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> PEACH_TRAPDOOR =
-            registerBlock("peach_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.PEACH_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("peach_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.PEACH_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> PEAR_TRAPDOOR =
-            registerBlock("pear_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.PEAR_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("pear_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.PEAR_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> PURPLE_LEAF_PLUM_TRAPDOOR =
-            registerBlock("purple_leaf_plum_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("purple_leaf_plum_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> OSMANTHUS_TRAPDOOR =
-            registerBlock("osmanthus_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.OSMANTHUS_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("osmanthus_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.OSMANTHUS_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> GINKGO_TRAPDOOR =
-            registerBlock("ginkgo_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.GINKGO_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("ginkgo_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.GINKGO_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> CHINESE_PARASOL_TRAPDOOR =
-            registerBlock("chinese_parasol_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.CHINESE_PARASOL_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("chinese_parasol_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.CHINESE_PARASOL_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> SWEETGUM_TRAPDOOR =
-            registerBlock("sweetgum_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.SWEETGUM_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("sweetgum_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.SWEETGUM_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
     public static final RegistryObject<Block> CAMPHOR_TRAPDOOR =
-            registerBlock("camphor_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(ModBlocks.CAMPHOR_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+            registerBlock("camphor_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.CAMPHOR_PLANKS.get().defaultMapColor()), BlockSetType.OAK));
+    public static final RegistryObject<Block> DOVE_TREE_TRAPDOOR =
+            registerBlock("dove_tree_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.DOVE_TREE_DOOR.get().defaultMapColor()), BlockSetType.OAK));
+    public static final RegistryObject<Block> CHINABERRY_TRAPDOOR =
+            registerBlock("chinaberry_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.CHINABERRY_DOOR.get().defaultMapColor()), BlockSetType.OAK));
 
     public static final RegistryObject<Block> RED_MEI_SIGN =
             BLOCKS.register("red_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
@@ -517,6 +575,10 @@ public class ModBlocks {
             BLOCKS.register("sweetgum_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor()), ModWoodTypes.SWEETGUM));
     public static final RegistryObject<Block> CAMPHOR_SIGN =
             BLOCKS.register("camphor_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
+    public static final RegistryObject<Block> DOVE_TREE_SIGN =
+            BLOCKS.register("dove_tree_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()), ModWoodTypes.DOVE_TREE));
+    public static final RegistryObject<Block> CHINABERRY_SIGN =
+            BLOCKS.register("chinaberry_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINABERRY));
 
     public static final RegistryObject<Block> RED_MEI_WALL_SIGN =
             BLOCKS.register("red_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
@@ -546,6 +608,10 @@ public class ModBlocks {
             BLOCKS.register("sweetgum_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor()), ModWoodTypes.SWEETGUM));
     public static final RegistryObject<Block> CAMPHOR_WALL_SIGN =
             BLOCKS.register("camphor_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
+    public static final RegistryObject<Block> DOVE_TREE_WALL_SIGN =
+            BLOCKS.register("dove_tree_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()), ModWoodTypes.DOVE_TREE));
+    public static final RegistryObject<Block> CHINABERRY_WALL_SIGN =
+            BLOCKS.register("chinaberry_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINABERRY));
 
     public static final RegistryObject<Block> RED_MEI_HANGING_SIGN =
             BLOCKS.register("red_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
@@ -575,6 +641,10 @@ public class ModBlocks {
             BLOCKS.register("sweetgum_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor()), ModWoodTypes.SWEETGUM));
     public static final RegistryObject<Block> CAMPHOR_HANGING_SIGN =
             BLOCKS.register("camphor_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
+    public static final RegistryObject<Block> DOVE_TREE_HANGING_SIGN =
+            BLOCKS.register("dove_tree_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()), ModWoodTypes.DOVE_TREE));
+    public static final RegistryObject<Block> CHINABERRY_HANGING_SIGN =
+            BLOCKS.register("chinaberry_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINABERRY));
 
     public static final RegistryObject<Block> RED_MEI_WALL_HANGING_SIGN =
             BLOCKS.register("red_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
@@ -604,6 +674,10 @@ public class ModBlocks {
             BLOCKS.register("sweetgum_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor()), ModWoodTypes.SWEETGUM));
     public static final RegistryObject<Block> CAMPHOR_WALL_HANGING_SIGN =
             BLOCKS.register("camphor_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
+    public static final RegistryObject<Block> DOVE_TREE_WALL_HANGING_SIGN =
+            BLOCKS.register("dove_tree_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()), ModWoodTypes.DOVE_TREE));
+    public static final RegistryObject<Block> CHINABERRY_WALL_HANGING_SIGN =
+            BLOCKS.register("chinaberry_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINABERRY));
 
     public static final RegistryObject<Block> RED_MEI_SAPLING =
             registerBlock("red_mei_sapling", () -> new SaplingBlock(new RedMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
@@ -661,6 +735,10 @@ public class ModBlocks {
             registerBlock("sweetgum_sapling", () -> new SaplingBlock(new SweetgumTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> CAMPHOR_SAPLING =
             registerBlock("camphor_sapling", () -> new SaplingBlock(new CamphorTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> DOVE_TREE_SAPLING =
+            registerBlock("dove_tree_sapling", () -> new SaplingBlock(new DoveTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> CHINABERRY_SAPLING =
+            registerBlock("chinaberry_sapling", () -> new SaplingBlock(new ChinaberTreeryGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PURPLE).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> CRAPE_MYRTLE_SAPLING =
             registerBlock("crape_myrtle_sapling", () -> new CrapeMyrtleSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
 
@@ -720,6 +798,10 @@ public class ModBlocks {
             BLOCKS.register("potted_sweetgum_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.SWEETGUM_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> POTTED_CAMPHOR_SAPLING =
             BLOCKS.register("potted_camphor_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CAMPHOR_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> POTTED_DOVE_TREE_SAPLING =
+            BLOCKS.register("potted_dove_tree_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.DOVE_TREE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> POTTED_CHINABERRY_SAPLING =
+            BLOCKS.register("potted_chinaberry_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CHINABERRY_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> POTTED_CRAPE_MYRTLE_SAPLING =
             BLOCKS.register("potted_crape_myrtle_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CRAPE_MYRTLE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 

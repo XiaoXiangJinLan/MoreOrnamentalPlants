@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "more_orn_plants:block/dove_tree_slab"
+    },
+    "type=double": {
+      "model": "more_orn_plants:block/dove_tree_planks"
+    },
+    "type=top": {
+      "model": "more_orn_plants:block/dove_tree_slab_top"
+    }
+  }
+}

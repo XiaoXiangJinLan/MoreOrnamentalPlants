@@ -75,6 +75,12 @@ public class ModParticleTypes {
     public static final RegistryObject<SimpleParticleType> CAMPHOR_LEAVES =
             registerParticleType("camphor_leaves", () -> new SimpleParticleType(false));
 
+    public static final RegistryObject<SimpleParticleType> DOVE_TREE_BLOSSOM_LEAVES =
+            registerParticleType("dove_tree_blossom_leaves", () -> new SimpleParticleType(false));
+
+    public static final RegistryObject<SimpleParticleType> CHINABERRY_LEAVES =
+            registerParticleType("chinaberry_leaves", () -> new SimpleParticleType(false));
+
     public static final RegistryObject<SimpleParticleType> CRAPE_MYRTLE_LEAVES =
             registerParticleType("crape_myrtle_leaves", () -> new SimpleParticleType(false));
 

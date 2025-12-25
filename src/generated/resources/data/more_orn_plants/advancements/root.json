@@ -13,7 +13,7 @@
   },
   "display": {
     "announce_to_chat": false,
-    "background": "minecraft:textures/block/moss_block.png",
+    "background": "more_orn_plants:textures/gui/advancement/florilegium.png",
     "description": {
       "translate": "advancement.moreornplants.root.description"
     },

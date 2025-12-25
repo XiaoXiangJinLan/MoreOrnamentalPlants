@@ -24,6 +24,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.LOTUS.get())
                 .add(ModBlocks.LOTUS_LEAF.get());
 
+        this.tag(BlockTags.MAINTAINS_FARMLAND)
+                .add(ModBlocks.LOTUS.get())
+                .add(ModBlocks.LOTUS_LEAF.get());
+
         this.tag(BlockTags.FLOWER_POTS)
                 .add(ModBlocks.POTTED_RED_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_WHITE_MEI_SAPLING.get())
@@ -53,6 +57,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_GREEN_CHINESE_PARASOL_SAPLING.get())
                 .add(ModBlocks.POTTED_SWEETGUM_SAPLING.get())
                 .add(ModBlocks.POTTED_CAMPHOR_SAPLING.get())
+                .add(ModBlocks.POTTED_DOVE_TREE_SAPLING.get())
+                .add(ModBlocks.POTTED_CHINABERRY_SAPLING.get())
                 .add(ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING.get())
                 .add(ModBlocks.POTTED_WINTERSWEET_BUSH.get())
                 .add(ModBlocks.POTTED_CHRYSANTHEMUM.get())
@@ -133,6 +139,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get())
                 .add(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get())
                 .add(ModBlocks.WHITE_OSMANTHUS_SAPLING.get())
+                .add(ModBlocks.DOVE_TREE_SAPLING.get())
+                .add(ModBlocks.CHINABERRY_SAPLING.get())
                 .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get())
                 .add(ModBlocks.RED_MEI_LEAVES.get())
                 .add(ModBlocks.WHITE_MEI_LEAVES.get())
@@ -161,6 +169,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get())
                 .add(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get())
                 .add(ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
+                .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
+                .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get())
                 .add(ModBlocks.PEACH_PINK_PETALS.get());
 
@@ -189,6 +199,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SWEETGUM_LEAVES.get())
                 .add(ModBlocks.CAMPHOR_LEAVES.get())
                 .add(ModBlocks.NEW_CAMPHOR_LEAVES.get())
+                .add(ModBlocks.DOVE_TREE_LEAVES.get())
+                .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
+                .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
@@ -206,6 +219,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(ModTags.Blocks.CHINESE_PARASOL_LOGS)
                 .addTag(ModTags.Blocks.SWEETGUM_LOGS)
                 .addTag(ModTags.Blocks.CAMPHOR_LOGS)
+                .addTag(ModTags.Blocks.DOVE_TREE_LOGS)
+                .addTag(ModTags.Blocks.CHINABERRY_LOGS)
                 .add(ModBlocks.CRAPE_MYRTLE_LOG.get())
                 .add(ModBlocks.CRAPE_MYRTLE_WOOD.get());
 
@@ -223,7 +238,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_PLANKS.get())
                 .add(ModBlocks.CHINESE_PARASOL_PLANKS.get())
                 .add(ModBlocks.SWEETGUM_PLANKS.get())
-                .add(ModBlocks.CAMPHOR_PLANKS.get());
+                .add(ModBlocks.CAMPHOR_PLANKS.get())
+                .add(ModBlocks.DOVE_TREE_PLANKS.get())
+                .add(ModBlocks.CHINABERRY_PLANKS.get());
 
         this.tag(BlockTags.WOODEN_STAIRS)
                 .add(ModBlocks.RED_MEI_STAIRS.get())
@@ -239,7 +256,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_STAIRS.get())
                 .add(ModBlocks.CHINESE_PARASOL_STAIRS.get())
                 .add(ModBlocks.SWEETGUM_STAIRS.get())
-                .add(ModBlocks.CAMPHOR_STAIRS.get());
+                .add(ModBlocks.CAMPHOR_STAIRS.get())
+                .add(ModBlocks.DOVE_TREE_STAIRS.get())
+                .add(ModBlocks.CHINABERRY_STAIRS.get());
 
         this.tag(BlockTags.WOODEN_SLABS)
                 .add(ModBlocks.RED_MEI_SLAB.get())
@@ -255,7 +274,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_SLAB.get())
                 .add(ModBlocks.CHINESE_PARASOL_SLAB.get())
                 .add(ModBlocks.SWEETGUM_SLAB.get())
-                .add(ModBlocks.CAMPHOR_SLAB.get());
+                .add(ModBlocks.CAMPHOR_SLAB.get())
+                .add(ModBlocks.DOVE_TREE_SLAB.get())
+                .add(ModBlocks.CHINABERRY_SLAB.get());
 
         this.tag(BlockTags.WOODEN_BUTTONS)
                 .add(ModBlocks.RED_MEI_BUTTON.get())
@@ -271,7 +292,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_BUTTON.get())
                 .add(ModBlocks.CHINESE_PARASOL_BUTTON.get())
                 .add(ModBlocks.SWEETGUM_BUTTON.get())
-                .add(ModBlocks.CAMPHOR_BUTTON.get());
+                .add(ModBlocks.CAMPHOR_BUTTON.get())
+                .add(ModBlocks.DOVE_TREE_BUTTON.get())
+                .add(ModBlocks.CHINABERRY_BUTTON.get());
 
         this.tag(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(ModBlocks.RED_MEI_PRESSURE_PLATE.get())
@@ -287,7 +310,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_PRESSURE_PLATE.get())
                 .add(ModBlocks.CHINESE_PARASOL_PRESSURE_PLATE.get())
                 .add(ModBlocks.SWEETGUM_PRESSURE_PLATE.get())
-                .add(ModBlocks.CAMPHOR_PRESSURE_PLATE.get());
+                .add(ModBlocks.CAMPHOR_PRESSURE_PLATE.get())
+                .add(ModBlocks.DOVE_TREE_PRESSURE_PLATE.get())
+                .add(ModBlocks.CHINABERRY_PRESSURE_PLATE.get());
 
         this.tag(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.RED_MEI_FENCE.get())
@@ -303,7 +328,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_FENCE.get())
                 .add(ModBlocks.CHINESE_PARASOL_FENCE.get())
                 .add(ModBlocks.SWEETGUM_FENCE.get())
-                .add(ModBlocks.CAMPHOR_FENCE.get());
+                .add(ModBlocks.CAMPHOR_FENCE.get())
+                .add(ModBlocks.DOVE_TREE_FENCE.get())
+                .add(ModBlocks.CHINABERRY_FENCE.get());
 
         this.tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.RED_MEI_FENCE_GATE.get())
@@ -319,7 +346,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_FENCE_GATE.get())
                 .add(ModBlocks.CHINESE_PARASOL_FENCE_GATE.get())
                 .add(ModBlocks.SWEETGUM_FENCE_GATE.get())
-                .add(ModBlocks.CAMPHOR_FENCE_GATE.get());
+                .add(ModBlocks.CAMPHOR_FENCE_GATE.get())
+                .add(ModBlocks.DOVE_TREE_FENCE_GATE.get())
+                .add(ModBlocks.CHINABERRY_FENCE_GATE.get());
 
         this.tag(BlockTags.WOODEN_DOORS)
                 .add(ModBlocks.RED_MEI_DOOR.get())
@@ -335,7 +364,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_DOOR.get())
                 .add(ModBlocks.CHINESE_PARASOL_DOOR.get())
                 .add(ModBlocks.SWEETGUM_DOOR.get())
-                .add(ModBlocks.CAMPHOR_DOOR.get());
+                .add(ModBlocks.CAMPHOR_DOOR.get())
+                .add(ModBlocks.DOVE_TREE_DOOR.get())
+                .add(ModBlocks.CHINABERRY_DOOR.get());
 
         this.tag(BlockTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.RED_MEI_TRAPDOOR.get())
@@ -351,7 +382,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_TRAPDOOR.get())
                 .add(ModBlocks.CHINESE_PARASOL_TRAPDOOR.get())
                 .add(ModBlocks.SWEETGUM_TRAPDOOR.get())
-                .add(ModBlocks.CAMPHOR_TRAPDOOR.get());
+                .add(ModBlocks.CAMPHOR_TRAPDOOR.get())
+                .add(ModBlocks.DOVE_TREE_TRAPDOOR.get())
+                .add(ModBlocks.CHINABERRY_TRAPDOOR.get());
 
         this.tag(BlockTags.STANDING_SIGNS)
                 .add(ModBlocks.RED_MEI_SIGN.get())
@@ -367,7 +400,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_SIGN.get())
                 .add(ModBlocks.CHINESE_PARASOL_SIGN.get())
                 .add(ModBlocks.SWEETGUM_SIGN.get())
-                .add(ModBlocks.CAMPHOR_SIGN.get());
+                .add(ModBlocks.CAMPHOR_SIGN.get())
+                .add(ModBlocks.DOVE_TREE_SIGN.get())
+                .add(ModBlocks.CHINABERRY_SIGN.get());
 
         this.tag(BlockTags.WALL_SIGNS)
                 .add(ModBlocks.RED_MEI_WALL_SIGN.get())
@@ -383,7 +418,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_WALL_SIGN.get())
                 .add(ModBlocks.CHINESE_PARASOL_WALL_SIGN.get())
                 .add(ModBlocks.SWEETGUM_WALL_SIGN.get())
-                .add(ModBlocks.CAMPHOR_WALL_SIGN.get());
+                .add(ModBlocks.CAMPHOR_WALL_SIGN.get())
+                .add(ModBlocks.DOVE_TREE_WALL_SIGN.get())
+                .add(ModBlocks.CHINABERRY_WALL_SIGN.get());
 
         this.tag(BlockTags.CEILING_HANGING_SIGNS)
                 .add(ModBlocks.RED_MEI_HANGING_SIGN.get())
@@ -399,7 +436,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_HANGING_SIGN.get())
                 .add(ModBlocks.CHINESE_PARASOL_HANGING_SIGN.get())
                 .add(ModBlocks.SWEETGUM_HANGING_SIGN.get())
-                .add(ModBlocks.CAMPHOR_HANGING_SIGN.get());
+                .add(ModBlocks.CAMPHOR_HANGING_SIGN.get())
+                .add(ModBlocks.DOVE_TREE_HANGING_SIGN.get())
+                .add(ModBlocks.CHINABERRY_HANGING_SIGN.get());
 
         this.tag(BlockTags.WALL_HANGING_SIGNS)
                 .add(ModBlocks.RED_MEI_WALL_HANGING_SIGN.get())
@@ -415,7 +454,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GINKGO_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.CHINESE_PARASOL_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.SWEETGUM_WALL_HANGING_SIGN.get())
-                .add(ModBlocks.CAMPHOR_WALL_HANGING_SIGN.get());
+                .add(ModBlocks.CAMPHOR_WALL_HANGING_SIGN.get())
+                .add(ModBlocks.DOVE_TREE_WALL_HANGING_SIGN.get())
+                .add(ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get());
 
         this.tag(ModTags.Blocks.RED_MEI_LOGS)
                 .add(ModBlocks.RED_MEI_LOG.get(),
@@ -487,6 +528,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.CAMPHOR_WOOD.get(),
                         ModBlocks.STRIPPED_CAMPHOR_LOG.get(),
                         ModBlocks.STRIPPED_CAMPHOR_WOOD.get());
+        this.tag(ModTags.Blocks.DOVE_TREE_LOGS)
+                .add(ModBlocks.DOVE_TREE_LOG.get(),
+                        ModBlocks.DOVE_TREE_WOOD.get(),
+                        ModBlocks.STRIPPED_DOVE_TREE_LOG.get(),
+                        ModBlocks.STRIPPED_DOVE_TREE_WOOD.get());
+        this.tag(ModTags.Blocks.CHINABERRY_LOGS)
+                .add(ModBlocks.CHINABERRY_LOG.get(),
+                        ModBlocks.CHINABERRY_WOOD.get(),
+                        ModBlocks.STRIPPED_CHINABERRY_LOG.get(),
+                        ModBlocks.STRIPPED_CHINABERRY_WOOD.get());
 
         this.tag(BlockTags.SAPLINGS)
                 .add(ModBlocks.RED_MEI_SAPLING.get())
@@ -517,6 +568,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get())
                 .add(ModBlocks.SWEETGUM_SAPLING.get())
                 .add(ModBlocks.CAMPHOR_SAPLING.get())
+                .add(ModBlocks.DOVE_TREE_SAPLING.get())
+                .add(ModBlocks.CHINABERRY_SAPLING.get())
                 .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get());
 
         this.tag(BlockTags.SMALL_FLOWERS)

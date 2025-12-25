@@ -46,6 +46,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CAMPHOR_PLACED = registerKey("camphor_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_CAMELLIA_VALLEY_PLACED = registerKey("camphor_camellia_valley_placed");
     public static final ResourceKey<PlacedFeature> ANCIENT_CAMPHOR_PLACED = registerKey("ancient_camphor_placed");
+    public static final ResourceKey<PlacedFeature> DOVE_TREE_PLACED = registerKey("dove_tree_placed");
+    public static final ResourceKey<PlacedFeature> CHINABERRY_PLACED = registerKey("chinaberry_placed");
     public static final ResourceKey<PlacedFeature> CYMBIDIUM_PLACED = registerKey("cymbidium_placed");
     public static final ResourceKey<PlacedFeature> CYMBIDIUM_FOREST_PLACED = registerKey("cymbidium_forest_placed");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_FOREST_PLACED = registerKey("chrysanthemum_forest_placed");
@@ -124,6 +126,9 @@ public class ModPlacedFeatures {
         register(context, ORANGE_OSMANTHUS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORANGE_OSMANTHUS),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.ORANGE_OSMANTHUS_SAPLING.get()));
+        register(context, CHINABERRY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINABERRY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
+                        ModBlocks.CHINABERRY_SAPLING.get()));
         register(context, CRAPE_MYRTLE_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRAPE_MYRTLE_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1),
                         ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
@@ -241,6 +246,9 @@ public class ModPlacedFeatures {
         register(context, WHITE_OSMANTHUS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_OSMANTHUS),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.WHITE_OSMANTHUS_SAPLING.get()));
+        register(context, DOVE_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.DOVE_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1),
+                        ModBlocks.DOVE_TREE_SAPLING.get()));
         register(context, CYMBIDIUM_FOREST_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CYMBIDIUM_FOREST),
                 List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));

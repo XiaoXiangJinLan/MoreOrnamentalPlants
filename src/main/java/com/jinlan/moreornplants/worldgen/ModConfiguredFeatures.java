@@ -82,6 +82,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMPHOR = registerKey("camphor");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMPHOR_WITH_NEW_LEAVES = registerKey("camphor_with_new_leaves");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_CAMPHOR = registerKey("ancient_camphor");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DOVE_TREE = registerKey("dove_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHINABERRY = registerKey("chinaberry");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_FOREST = registerKey("chrysanthemum_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_KEY = registerKey("chrysanthemum_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CHRYSANTHEMUM_KEY = registerKey("golden_chrysanthemum_key");
@@ -274,7 +276,7 @@ public class ModConfiguredFeatures {
         for(int i = 1; i <= 4; ++i) {
             for(Direction direction : Direction.Plane.HORIZONTAL) {
                 peachPetalsBuilder.add(ModBlocks.PEACH_PINK_PETALS.get().defaultBlockState()
-                        .setValue(PeachPinkPetalsBlock.AMOUNT, Integer.valueOf(i))
+                        .setValue(PeachPinkPetalsBlock.AMOUNT, i)
                         .setValue(PeachPinkPetalsBlock.FACING, direction), 1);
             }
         }
@@ -384,6 +386,20 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(0, 0, 0)).ignoreVines().build());
+
+        register(context, DOVE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DOVE_TREE_LOG.get()),
+                new FancyTrunkPlacer(10, 4, 4),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get().defaultBlockState(), 3).add(ModBlocks.DOVE_TREE_LEAVES.get().defaultBlockState(), 1)),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+
+        register(context, CHINABERRY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CHINABERRY_LOG.get()),
+                new CamphorTrunkPlacer(9, 3, 1, 4, 3, 4, 0.8F, 2),
+                BlockStateProvider.simple(ModBlocks.CHINABERRY_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         register(context, CRAPE_MYRTLE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LOG.get()),
@@ -705,7 +721,7 @@ public class ModConfiguredFeatures {
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(Blocks.GRASS.defaultBlockState(), 9)
-                                        .add(Blocks.TALL_GRASS.defaultBlockState(), 1).build())),
+                                        .add(Blocks.FERN.defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
@@ -715,7 +731,7 @@ public class ModConfiguredFeatures {
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(Blocks.GRASS.defaultBlockState(), 7)
-                                        .add(Blocks.TALL_GRASS.defaultBlockState(), 1).build())),
+                                        .add(Blocks.FERN.defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),

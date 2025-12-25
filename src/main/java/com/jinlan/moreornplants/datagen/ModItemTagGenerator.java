@@ -47,6 +47,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get().asItem())
                 .add(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get().asItem())
                 .add(ModBlocks.WHITE_OSMANTHUS_SAPLING.get().asItem())
+                .add(ModBlocks.DOVE_TREE_SAPLING.get().asItem())
+                .add(ModBlocks.CHINABERRY_SAPLING.get().asItem())
                 .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem())
                 .add(ModBlocks.RED_MEI_LEAVES.get().asItem())
                 .add(ModBlocks.WHITE_MEI_LEAVES.get().asItem())
@@ -70,6 +72,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get().asItem())
                 .add(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get().asItem())
                 .add(ModBlocks.WHITE_OSMANTHUS_LEAVES.get().asItem())
+                .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get().asItem())
+                .add(ModBlocks.CHINABERRY_LEAVES.get().asItem())
                 .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get().asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.get().asItem());
 
@@ -98,6 +102,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.SWEETGUM_LEAVES.get().asItem())
                 .add(ModBlocks.CAMPHOR_LEAVES.get().asItem())
                 .add(ModBlocks.NEW_CAMPHOR_LEAVES.get().asItem())
+                .add(ModBlocks.DOVE_TREE_LEAVES.get().asItem())
+                .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get().asItem())
+                .add(ModBlocks.CHINABERRY_LEAVES.get().asItem())
                 .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get().asItem());
 
         this.tag(ItemTags.LOGS_THAT_BURN)
@@ -115,6 +122,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ModTags.Items.CHINESE_PARASOL_LOGS)
                 .addTag(ModTags.Items.SWEETGUM_LOGS)
                 .addTag(ModTags.Items.CAMPHOR_LOGS)
+                .addTag(ModTags.Items.DOVE_TREE_LOGS)
+                .addTag(ModTags.Items.CHINABERRY_LOGS)
                 .add(ModBlocks.CRAPE_MYRTLE_LOG.get().asItem())
                 .add(ModBlocks.CRAPE_MYRTLE_WOOD.get().asItem());
 
@@ -132,7 +141,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GINKGO_PLANKS.get().asItem())
                 .add(ModBlocks.CHINESE_PARASOL_PLANKS.get().asItem())
                 .add(ModBlocks.SWEETGUM_PLANKS.get().asItem())
-                .add(ModBlocks.CAMPHOR_PLANKS.get().asItem());
+                .add(ModBlocks.CAMPHOR_PLANKS.get().asItem())
+                .add(ModBlocks.DOVE_TREE_PLANKS.get().asItem())
+                .add(ModBlocks.CHINABERRY_PLANKS.get().asItem());
 
         this.tag(ItemTags.WOODEN_STAIRS)
                 .add(ModBlocks.RED_MEI_STAIRS.get().asItem())
@@ -148,7 +159,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GINKGO_STAIRS.get().asItem())
                 .add(ModBlocks.CHINESE_PARASOL_STAIRS.get().asItem())
                 .add(ModBlocks.SWEETGUM_STAIRS.get().asItem())
-                .add(ModBlocks.CAMPHOR_STAIRS.get().asItem());
+                .add(ModBlocks.CAMPHOR_STAIRS.get().asItem())
+                .add(ModBlocks.DOVE_TREE_STAIRS.get().asItem())
+                .add(ModBlocks.CHINABERRY_STAIRS.get().asItem());
 
         this.tag(ItemTags.WOODEN_SLABS)
                 .add(ModBlocks.RED_MEI_SLAB.get().asItem())
@@ -164,7 +177,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GINKGO_SLAB.get().asItem())
                 .add(ModBlocks.CHINESE_PARASOL_SLAB.get().asItem())
                 .add(ModBlocks.SWEETGUM_SLAB.get().asItem())
-                .add(ModBlocks.CAMPHOR_SLAB.get().asItem());
+                .add(ModBlocks.CAMPHOR_SLAB.get().asItem())
+                .add(ModBlocks.DOVE_TREE_SLAB.get().asItem())
+                .add(ModBlocks.CHINABERRY_SLAB.get().asItem());
 
         this.tag(ItemTags.WOODEN_BUTTONS)
                 .add(ModBlocks.RED_MEI_BUTTON.get().asItem())
@@ -180,7 +195,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GINKGO_BUTTON.get().asItem())
                 .add(ModBlocks.CHINESE_PARASOL_BUTTON.get().asItem())
                 .add(ModBlocks.SWEETGUM_BUTTON.get().asItem())
-                .add(ModBlocks.CAMPHOR_BUTTON.get().asItem());
+                .add(ModBlocks.CAMPHOR_BUTTON.get().asItem())
+                .add(ModBlocks.DOVE_TREE_BUTTON.get().asItem())
+                .add(ModBlocks.CHINABERRY_BUTTON.get().asItem());
 
         this.tag(ItemTags.WOODEN_PRESSURE_PLATES)
                 .add(ModBlocks.RED_MEI_PRESSURE_PLATE.get().asItem())
@@ -196,7 +213,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GINKGO_PRESSURE_PLATE.get().asItem())
                 .add(ModBlocks.CHINESE_PARASOL_PRESSURE_PLATE.get().asItem())
                 .add(ModBlocks.SWEETGUM_PRESSURE_PLATE.get().asItem())
-                .add(ModBlocks.CAMPHOR_PRESSURE_PLATE.get().asItem());
+                .add(ModBlocks.CAMPHOR_PRESSURE_PLATE.get().asItem())
+                .add(ModBlocks.DOVE_TREE_PRESSURE_PLATE.get().asItem())
+                .add(ModBlocks.CHINABERRY_PRESSURE_PLATE.get().asItem());
 
         this.tag(ItemTags.WOODEN_FENCES)
                 .add(ModBlocks.RED_MEI_FENCE.get().asItem())
@@ -212,7 +231,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GINKGO_FENCE.get().asItem())
                 .add(ModBlocks.CHINESE_PARASOL_FENCE.get().asItem())
                 .add(ModBlocks.SWEETGUM_FENCE.get().asItem())
-                .add(ModBlocks.CAMPHOR_FENCE.get().asItem());
+                .add(ModBlocks.CAMPHOR_FENCE.get().asItem())
+                .add(ModBlocks.DOVE_TREE_FENCE.get().asItem())
+                .add(ModBlocks.CHINABERRY_FENCE.get().asItem());
 
         this.tag(ItemTags.FENCE_GATES)
                 .add(ModBlocks.RED_MEI_FENCE_GATE.get().asItem())
@@ -228,7 +249,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GINKGO_FENCE_GATE.get().asItem())
                 .add(ModBlocks.CHINESE_PARASOL_FENCE_GATE.get().asItem())
                 .add(ModBlocks.SWEETGUM_FENCE_GATE.get().asItem())
-                .add(ModBlocks.CAMPHOR_FENCE_GATE.get().asItem());
+                .add(ModBlocks.CAMPHOR_FENCE_GATE.get().asItem())
+                .add(ModBlocks.DOVE_TREE_FENCE_GATE.get().asItem())
+                .add(ModBlocks.CHINABERRY_FENCE_GATE.get().asItem());
 
         this.tag(ItemTags.WOODEN_DOORS)
                 .add(ModBlocks.RED_MEI_DOOR.get().asItem())
@@ -244,7 +267,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GINKGO_DOOR.get().asItem())
                 .add(ModBlocks.CHINESE_PARASOL_DOOR.get().asItem())
                 .add(ModBlocks.SWEETGUM_DOOR.get().asItem())
-                .add(ModBlocks.CAMPHOR_DOOR.get().asItem());
+                .add(ModBlocks.CAMPHOR_DOOR.get().asItem())
+                .add(ModBlocks.DOVE_TREE_DOOR.get().asItem())
+                .add(ModBlocks.CHINABERRY_DOOR.get().asItem());
 
         this.tag(ItemTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.RED_MEI_TRAPDOOR.get().asItem())
@@ -260,7 +285,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GINKGO_TRAPDOOR.get().asItem())
                 .add(ModBlocks.CHINESE_PARASOL_TRAPDOOR.get().asItem())
                 .add(ModBlocks.SWEETGUM_TRAPDOOR.get().asItem())
-                .add(ModBlocks.CAMPHOR_TRAPDOOR.get().asItem());
+                .add(ModBlocks.CAMPHOR_TRAPDOOR.get().asItem())
+                .add(ModBlocks.DOVE_TREE_TRAPDOOR.get().asItem())
+                .add(ModBlocks.CHINABERRY_TRAPDOOR.get().asItem());
 
         this.tag(ItemTags.SIGNS)
                 .add(ModItems.RED_MEI_SIGN.get())
@@ -276,7 +303,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.GINKGO_SIGN.get())
                 .add(ModItems.CHINESE_PARASOL_SIGN.get())
                 .add(ModItems.SWEETGUM_SIGN.get())
-                .add(ModItems.CAMPHOR_SIGN.get());
+                .add(ModItems.CAMPHOR_SIGN.get())
+                .add(ModItems.DOVE_TREE_SIGN.get())
+                .add(ModItems.CHINABERRY_SIGN.get());
 
         this.tag(ItemTags.HANGING_SIGNS)
                 .add(ModItems.RED_MEI_HANGING_SIGN.get())
@@ -292,7 +321,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.GINKGO_HANGING_SIGN.get())
                 .add(ModItems.CHINESE_PARASOL_HANGING_SIGN.get())
                 .add(ModItems.SWEETGUM_HANGING_SIGN.get())
-                .add(ModItems.CAMPHOR_HANGING_SIGN.get());
+                .add(ModItems.CAMPHOR_HANGING_SIGN.get())
+                .add(ModItems.DOVE_TREE_HANGING_SIGN.get())
+                .add(ModItems.CHINABERRY_HANGING_SIGN.get());
 
         this.tag(ItemTags.BOATS)
                 .add(ModItems.RED_MEI_BOAT.get())
@@ -301,8 +332,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.DOUBLE_PINK_MEI_BOAT.get())
                 .add(ModItems.CRABAPPLE_BOAT.get())
                 .add(ModItems.APRICOT_BOAT.get())
+                .add(ModItems.PEACH_BOAT.get())
+                .add(ModItems.PEAR_BOAT.get())
+                .add(ModItems.PURPLE_LEAF_PLUM_BOAT.get())
+                .add(ModItems.OSMANTHUS_BOAT.get())
+                .add(ModItems.GINKGO_BOAT.get())
+                .add(ModItems.SWEETGUM_BOAT.get())
                 .add(ModItems.CHINESE_PARASOL_BOAT.get())
-                .add(ModItems.CAMPHOR_BOAT.get());
+                .add(ModItems.CAMPHOR_BOAT.get())
+                .add(ModItems.DOVE_TREE_BOAT.get())
+                .add(ModItems.CHINABERRY_BOAT.get());
 
         this.tag(ItemTags.CHEST_BOATS)
                 .add(ModItems.RED_MEI_CHEST_BOAT.get())
@@ -311,8 +350,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.DOUBLE_PINK_MEI_CHEST_BOAT.get())
                 .add(ModItems.CRABAPPLE_CHEST_BOAT.get())
                 .add(ModItems.APRICOT_CHEST_BOAT.get())
+                .add(ModItems.PEACH_CHEST_BOAT.get())
+                .add(ModItems.PEAR_CHEST_BOAT.get())
+                .add(ModItems.PURPLE_LEAF_PLUM_CHEST_BOAT.get())
+                .add(ModItems.OSMANTHUS_CHEST_BOAT.get())
+                .add(ModItems.GINKGO_CHEST_BOAT.get())
+                .add(ModItems.SWEETGUM_CHEST_BOAT.get())
                 .add(ModItems.CHINESE_PARASOL_CHEST_BOAT.get())
-                .add(ModItems.CAMPHOR_CHEST_BOAT.get());
+                .add(ModItems.CAMPHOR_CHEST_BOAT.get())
+                .add(ModItems.DOVE_TREE_CHEST_BOAT.get())
+                .add(ModItems.CHINABERRY_CHEST_BOAT.get());
 
         this.tag(ModTags.Items.RED_MEI_LOGS)
                 .add(ModBlocks.RED_MEI_LOG.get().asItem(),
@@ -384,6 +431,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModBlocks.CAMPHOR_WOOD.get().asItem(),
                         ModBlocks.STRIPPED_CAMPHOR_LOG.get().asItem(),
                         ModBlocks.STRIPPED_CAMPHOR_WOOD.get().asItem());
+        this.tag(ModTags.Items.DOVE_TREE_LOGS)
+                .add(ModBlocks.DOVE_TREE_LOG.get().asItem(),
+                        ModBlocks.DOVE_TREE_WOOD.get().asItem(),
+                        ModBlocks.STRIPPED_DOVE_TREE_LOG.get().asItem(),
+                        ModBlocks.STRIPPED_DOVE_TREE_WOOD.get().asItem());
+        this.tag(ModTags.Items.CHINABERRY_LOGS)
+                .add(ModBlocks.CHINABERRY_LOG.get().asItem(),
+                        ModBlocks.CHINABERRY_WOOD.get().asItem(),
+                        ModBlocks.STRIPPED_CHINABERRY_LOG.get().asItem(),
+                        ModBlocks.STRIPPED_CHINABERRY_WOOD.get().asItem());
 
         this.tag(ItemTags.SAPLINGS)
                 .add(ModBlocks.RED_MEI_SAPLING.get().asItem())
@@ -414,19 +471,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get().asItem())
                 .add(ModBlocks.SWEETGUM_SAPLING.get().asItem())
                 .add(ModBlocks.CAMPHOR_SAPLING.get().asItem())
+                .add(ModBlocks.DOVE_TREE_SAPLING.get().asItem())
+                .add(ModBlocks.CHINABERRY_SAPLING.get().asItem())
                 .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem());
 
         this.tag(ItemTags.SMALL_FLOWERS)
                 .add(ModBlocks.WINTERSWEET_BUSH.get().asItem())
-                .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GOLDEN_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem())
-                .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get().asItem())
+                .addTag(ForgeTags.Items.CHRYSANTHEMUM)
                 .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
                 .addTag(ForgeTags.Items.HERBACEOUS_PEONY)
                 .add(ModBlocks.CHINESE_ROSE_BUSH.get().asItem())
@@ -459,34 +510,19 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.LOTUS.get().asItem());
 
         this.tag(ForgeTags.Items.PLANT_IN_FLORILEGIUM)
-                .add(ModBlocks.RED_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.WHITE_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.GREEN_CALYX_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.VERSICOLOR_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.RED_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem())
-                .add(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem())
-                .add(ModBlocks.PINK_APRICOT_SAPLING.get().asItem())
-                .add(ModBlocks.WHITE_APRICOT_SAPLING.get().asItem())
-                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get().asItem())
-                .add(ModBlocks.WILD_PEACH_SAPLING.get().asItem())
+                .addTag(ForgeTags.Items.MEI_SAPLING)
+                .addTag(ForgeTags.Items.CRABAPPLE_SAPLING)
+                .addTag(ForgeTags.Items.APRICOT_SAPLING)
+                .addTag(ForgeTags.Items.PEACH_SAPLING)
                 .add(ModBlocks.PEAR_SAPLING.get().asItem())
-                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get().asItem())
-                .add(ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get().asItem())
-                .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get().asItem())
-                .add(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get().asItem())
-                .add(ModBlocks.WHITE_OSMANTHUS_SAPLING.get().asItem())
-                .add(ModBlocks.GOLDEN_GINKGO_SAPLING.get().asItem())
-                .add(ModBlocks.GREEN_GINKGO_SAPLING.get().asItem())
-                .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get().asItem())
-                .add(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get().asItem())
+                .addTag(ForgeTags.Items.PLUM_SAPLING)
+                .addTag(ForgeTags.Items.OSMANTHUS_SAPLING)
+                .addTag(ForgeTags.Items.GINKGO_SAPLING)
+                .addTag(ForgeTags.Items.CHINESE_PARASOL_SAPLING)
                 .add(ModBlocks.SWEETGUM_SAPLING.get().asItem())
                 .add(ModBlocks.CAMPHOR_SAPLING.get().asItem())
+                .add(ModBlocks.DOVE_TREE_SAPLING.get().asItem())
+                .add(ModBlocks.CHINABERRY_SAPLING.get().asItem())
                 .addTag(ForgeTags.Items.CHRYSANTHEMUM)
                 .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
                 .add(ModBlocks.LOTUS.get().asItem())
@@ -508,7 +544,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WINTERSWEET.get().asItem())
                 .add(ModBlocks.WINTERSWEET_BUSH.get().asItem());
 
-        this.tag(ForgeTags.Items.MEI)
+        this.tag(ForgeTags.Items.MEI_SAPLING)
                 .add(ModBlocks.RED_MEI_SAPLING.get().asItem())
                 .add(ModBlocks.WHITE_MEI_SAPLING.get().asItem())
                 .add(ModBlocks.GREEN_CALYX_MEI_SAPLING.get().asItem())
@@ -598,32 +634,32 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(Blocks.FLOWERING_AZALEA.asItem())
                 .add(ModBlocks.CRIMSON_AZALEA.get().asItem());
 
-        this.tag(ForgeTags.Items.CRABAPPLE)
+        this.tag(ForgeTags.Items.CRABAPPLE_SAPLING)
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem());
 
-        this.tag(ForgeTags.Items.OSMANTHUS)
+        this.tag(ForgeTags.Items.OSMANTHUS_SAPLING)
                 .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get().asItem())
                 .add(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get().asItem())
                 .add(ModBlocks.WHITE_OSMANTHUS_SAPLING.get().asItem());
 
-        this.tag(ForgeTags.Items.APRICOT)
+        this.tag(ForgeTags.Items.APRICOT_SAPLING)
                 .add(ModBlocks.PINK_APRICOT_SAPLING.get().asItem())
                 .add(ModBlocks.WHITE_APRICOT_SAPLING.get().asItem());
 
-        this.tag(ForgeTags.Items.PEACH)
+        this.tag(ForgeTags.Items.PEACH_SAPLING)
                 .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get().asItem())
                 .add(ModBlocks.WILD_PEACH_SAPLING.get().asItem());
 
-        this.tag(ForgeTags.Items.PLUM)
+        this.tag(ForgeTags.Items.PLUM_SAPLING)
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get().asItem())
                 .add(ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get().asItem());
 
-        this.tag(ForgeTags.Items.GINKGO)
+        this.tag(ForgeTags.Items.GINKGO_SAPLING)
                 .add(ModBlocks.GOLDEN_GINKGO_SAPLING.get().asItem())
                 .add(ModBlocks.GREEN_GINKGO_SAPLING.get().asItem());
 
-        this.tag(ForgeTags.Items.CHINESE_PARASOL)
+        this.tag(ForgeTags.Items.CHINESE_PARASOL_SAPLING)
                 .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get().asItem())
                 .add(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get().asItem());
 

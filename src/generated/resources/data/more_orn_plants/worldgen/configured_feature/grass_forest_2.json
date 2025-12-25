@@ -16,10 +16,7 @@
               },
               {
                 "data": {
-                  "Name": "minecraft:tall_grass",
-                  "Properties": {
-                    "half": "lower"
-                  }
+                  "Name": "minecraft:fern"
                 },
                 "weight": 1
               }

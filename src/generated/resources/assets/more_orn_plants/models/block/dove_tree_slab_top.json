@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "more_orn_plants:block/dove_tree_planks",
+    "side": "more_orn_plants:block/dove_tree_planks",
+    "top": "more_orn_plants:block/dove_tree_planks"
+  }
+}

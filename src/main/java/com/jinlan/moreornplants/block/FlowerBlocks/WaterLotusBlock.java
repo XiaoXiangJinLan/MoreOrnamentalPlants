@@ -3,6 +3,7 @@ package com.jinlan.moreornplants.block.FlowerBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -59,14 +60,18 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     @Override
     public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
         if (state.getValue(HALF) == DoubleBlockHalf.LOWER) {
-            // 下半部分：检查是否在水（或已是荷花）中，且下方有支撑，且上方暴露
             BlockState existingState = level.getBlockState(pos);
-            Block existingBlock = existingState.getBlock();
+            BlockPos belowPos = pos.below();
+            BlockState belowState = level.getBlockState(belowPos);
 
-            return (existingBlock == this || existingState.getFluidState().is(Fluids.WATER))
+            return (existingState.getBlock() == this || existingState.getFluidState().is(Fluids.WATER))
                     && this.isExposed(level, pos.above())
-                    && level.getBlockState(pos.below()).isFaceSturdy(level, pos.below(), Direction.UP)
-                    || level.getBlockState(pos.below()).is(Blocks.FARMLAND);
+                    && (belowState.is(BlockTags.DIRT)
+                    || belowState.is(BlockTags.SAND)
+                    || belowState.is(Blocks.CLAY)
+                    || belowState.is(Blocks.GRAVEL)
+                    || belowState.is(Blocks.SUSPICIOUS_GRAVEL)
+                    || belowState.is(Blocks.FARMLAND));
         } else {
             // 上半部分：检查下方是否是荷花的下半部分且含水
             BlockState belowState = level.getBlockState(pos.below());

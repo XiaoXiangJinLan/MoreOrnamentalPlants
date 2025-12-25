@@ -96,6 +96,8 @@ public class MoreOrnPlants
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.getId(), ModBlocks.POTTED_GREEN_CHINESE_PARASOL_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SWEETGUM_SAPLING.getId(), ModBlocks.POTTED_SWEETGUM_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CAMPHOR_SAPLING.getId(), ModBlocks.POTTED_CAMPHOR_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.DOVE_TREE_SAPLING.getId(), ModBlocks.POTTED_DOVE_TREE_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHINABERRY_SAPLING.getId(), ModBlocks.POTTED_CHINABERRY_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CRAPE_MYRTLE_SAPLING.getId(), ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHRYSANTHEMUM.getId(), ModBlocks.POTTED_CHRYSANTHEMUM);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GOLDEN_CHRYSANTHEMUM.getId(), ModBlocks.POTTED_GOLDEN_CHRYSANTHEMUM);
@@ -187,6 +189,8 @@ public class MoreOrnPlants
             Sheets.addWoodType(ModWoodTypes.CHINESE_PARASOL);
             Sheets.addWoodType(ModWoodTypes.SWEETGUM);
             Sheets.addWoodType(ModWoodTypes.CAMPHOR);
+            Sheets.addWoodType(ModWoodTypes.DOVE_TREE);
+            Sheets.addWoodType(ModWoodTypes.CHINABERRY);
 
             EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
             EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));

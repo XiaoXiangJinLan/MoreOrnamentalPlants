@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 public class ForgeTags {
     public static class Items {
         public static final TagKey<Item> WINTERSWEET = tag("wintersweet");
-        public static final TagKey<Item> MEI = tag("mei");
+        public static final TagKey<Item> MEI_SAPLING = tag("mei_sapling");
         public static final TagKey<Item> TREE_PEONY = tag("tree_peony");
         public static final TagKey<Item> HERBACEOUS_PEONY = tag("herbaceous_peony");
         public static final TagKey<Item> CHINESE_ROSE = tag("chinese_rose");
@@ -16,13 +16,13 @@ public class ForgeTags {
         public static final TagKey<Item> PLANT_IN_FLORILEGIUM = tag("plant_in_florilegium");
         public static final TagKey<Item> CAMELLIA = tag("camellia");
         public static final TagKey<Item> AZALEA = tag("azalea");
-        public static final TagKey<Item> CRABAPPLE = tag("crabapple");
-        public static final TagKey<Item> OSMANTHUS = tag("osmanthus");
-        public static final TagKey<Item> APRICOT = tag("apricot");
-        public static final TagKey<Item> PEACH = tag("peach");
-        public static final TagKey<Item> PLUM = tag("plum");
-        public static final TagKey<Item> GINKGO = tag("ginkgo");
-        public static final TagKey<Item> CHINESE_PARASOL = tag("chinese_parasol");
+        public static final TagKey<Item> CRABAPPLE_SAPLING = tag("crabapple_sapling");
+        public static final TagKey<Item> OSMANTHUS_SAPLING = tag("osmanthus_sapling");
+        public static final TagKey<Item> APRICOT_SAPLING = tag("apricot_sapling");
+        public static final TagKey<Item> PEACH_SAPLING = tag("peach_sapling");
+        public static final TagKey<Item> PLUM_SAPLING = tag("plum_sapling");
+        public static final TagKey<Item> GINKGO_SAPLING = tag("ginkgo_sapling");
+        public static final TagKey<Item> CHINESE_PARASOL_SAPLING = tag("chinese_parasol_sapling");
         public static final TagKey<Item> CRAPE_MYRTLE = tag("crape_myrtle");
         public static final TagKey<Item> BAMBOO = tag("bamboo");
 
