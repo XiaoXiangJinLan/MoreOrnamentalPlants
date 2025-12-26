@@ -141,6 +141,13 @@ public class ModRotatedPillarBlock extends RotatedPillarBlock {
             if (state.is(ModBlocks.CHINABERRY_WOOD.get())) {
                 return ModBlocks.STRIPPED_CHINABERRY_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
+
+            if (state.is(ModBlocks.DESERT_POPLAR_LOG.get())) {
+                return ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            if (state.is(ModBlocks.DESERT_POPLAR_WOOD.get())) {
+                return ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
         }
 
         return super.getToolModifiedState(state, context, toolAction, simulate);

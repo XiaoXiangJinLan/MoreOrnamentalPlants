@@ -17,6 +17,7 @@ import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -84,6 +85,10 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_CAMPHOR = registerKey("ancient_camphor");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DOVE_TREE = registerKey("dove_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINABERRY = registerKey("chinaberry");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_0 = registerKey("desert_poplar_0");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_1 = registerKey("desert_poplar_1");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_2 = registerKey("desert_poplar_2");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_3 = registerKey("desert_poplar_3");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_FOREST = registerKey("chrysanthemum_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_KEY = registerKey("chrysanthemum_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CHRYSANTHEMUM_KEY = registerKey("golden_chrysanthemum_key");
@@ -125,6 +130,9 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FOREST_2 = registerKey("grass_forest_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FERN = registerKey("grass_fern");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FERN_2 = registerKey("grass_fern_2");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_DESERT = registerKey("grass_desert");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DEAD_BUSH = registerKey("dead_bush");
+
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -398,6 +406,31 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.CHINABERRY_LOG.get()),
                 new CamphorTrunkPlacer(9, 3, 1, 4, 3, 4, 0.8F, 2),
                 BlockStateProvider.simple(ModBlocks.CHINABERRY_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+
+        register(context, DESERT_POPLAR_0, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DESERT_POPLAR_LOG.get()),
+                new StraightTrunkPlacer(1, 1, 0),
+                BlockStateProvider.simple(ModBlocks.DESERT_POPLAR_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(1), ConstantInt.of(0), 2),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, DESERT_POPLAR_1, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DESERT_POPLAR_LOG.get()),
+                new StraightTrunkPlacer(7, 1, 0),
+                BlockStateProvider.simple(ModBlocks.DESERT_POPLAR_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 5),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, DESERT_POPLAR_2, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DESERT_POPLAR_LOG.get()),
+                new CamphorTrunkPlacer(8, 2, 1, 3, 3, 4, 0.8F, 2),
+                BlockStateProvider.simple(ModBlocks.DESERT_POPLAR_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, DESERT_POPLAR_3, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DESERT_POPLAR_LOG.get()),
+                new AncientCamphorTrunkPlacer(11, 3, 2, 6, 3, 4, 0.6F, 5),
+                BlockStateProvider.simple(ModBlocks.DESERT_POPLAR_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
@@ -760,6 +793,18 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, GRASS_DESERT, Feature.RANDOM_PATCH, new RandomPatchConfiguration(32, 6, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.GRASS)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, DEAD_BUSH, Feature.RANDOM_PATCH, new RandomPatchConfiguration(4, 6, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.DEAD_BUSH)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.SAND)))));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

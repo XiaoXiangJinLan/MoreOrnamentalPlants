@@ -12,6 +12,7 @@ public class BiomeConfigManager {
             case "camellia_valley" -> ModBiomeConfig.ENABLE_CAMELLIA_VALLEY.get();
             case "crimson_highlands" -> ModBiomeConfig.ENABLE_CRIMSON_HIGHLANDS.get();
             case "cottonrose_realm" -> ModBiomeConfig.ENABLE_COTTONROSE_REALM.get();
+            case "desert_poplar_woods" -> ModBiomeConfig.ENABLE_DESERT_POPLAR_WOODS.get();
             default -> true;
         };
     }

@@ -74,6 +74,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         logBlock(((RotatedPillarBlock) ModBlocks.CHINABERRY_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.CHINABERRY_WOOD.get()),
                 blockTexture(ModBlocks.CHINABERRY_LOG.get()), blockTexture(ModBlocks.CHINABERRY_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.DESERT_POPLAR_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.DESERT_POPLAR_WOOD.get()),
+                blockTexture(ModBlocks.DESERT_POPLAR_LOG.get()), blockTexture(ModBlocks.DESERT_POPLAR_LOG.get()));
         logBlock(((RotatedPillarBlock) ModBlocks.CRAPE_MYRTLE_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.CRAPE_MYRTLE_WOOD.get()),
                 blockTexture(ModBlocks.CRAPE_MYRTLE_LOG.get()), blockTexture(ModBlocks.CRAPE_MYRTLE_LOG.get()));
@@ -126,6 +129,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_CHINABERRY_LOG.get()), blockTexture(ModBlocks.STRIPPED_CHINABERRY_LOG.get()), new ResourceLocation(MoreOrnPlants.MOD_ID, "block/stripped_chinaberry_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_CHINABERRY_WOOD.get()), blockTexture(ModBlocks.STRIPPED_CHINABERRY_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_CHINABERRY_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get()), blockTexture(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get()), new ResourceLocation(MoreOrnPlants.MOD_ID, "block/stripped_desert_poplar_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get()), blockTexture(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get()));
 
         blockItem(ModBlocks.RED_MEI_LOG);
         blockItem(ModBlocks.RED_MEI_WOOD);
@@ -191,6 +197,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.CHINABERRY_WOOD);
         blockItem(ModBlocks.STRIPPED_CHINABERRY_LOG);
         blockItem(ModBlocks.STRIPPED_CHINABERRY_WOOD);
+        blockItem(ModBlocks.DESERT_POPLAR_LOG);
+        blockItem(ModBlocks.DESERT_POPLAR_WOOD);
+        blockItem(ModBlocks.STRIPPED_DESERT_POPLAR_LOG);
+        blockItem(ModBlocks.STRIPPED_DESERT_POPLAR_WOOD);
         blockItem(ModBlocks.CRAPE_MYRTLE_LOG);
         blockItem(ModBlocks.CRAPE_MYRTLE_WOOD);
 
@@ -210,6 +220,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockwithItem(ModBlocks.CAMPHOR_PLANKS);
         blockwithItem(ModBlocks.DOVE_TREE_PLANKS);
         blockwithItem(ModBlocks.CHINABERRY_PLANKS);
+        blockwithItem(ModBlocks.DESERT_POPLAR_PLANKS);
 
         stairsBlock(((StairBlock) ModBlocks.RED_MEI_STAIRS.get()), blockTexture(ModBlocks.RED_MEI_PLANKS.get()));
         stairsBlock(((StairBlock) ModBlocks.WHITE_MEI_STAIRS.get()), blockTexture(ModBlocks.WHITE_MEI_PLANKS.get()));
@@ -227,6 +238,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlock(((StairBlock) ModBlocks.CAMPHOR_STAIRS.get()), blockTexture(ModBlocks.CAMPHOR_PLANKS.get()));
         stairsBlock(((StairBlock) ModBlocks.DOVE_TREE_STAIRS.get()), blockTexture(ModBlocks.DOVE_TREE_PLANKS.get()));
         stairsBlock(((StairBlock) ModBlocks.CHINABERRY_STAIRS.get()), blockTexture(ModBlocks.CHINABERRY_PLANKS.get()));
+        stairsBlock(((StairBlock) ModBlocks.DESERT_POPLAR_STAIRS.get()), blockTexture(ModBlocks.DESERT_POPLAR_PLANKS.get()));
 
         slabBlock(((SlabBlock) ModBlocks.RED_MEI_SLAB.get()), blockTexture(ModBlocks.RED_MEI_PLANKS.get()), blockTexture(ModBlocks.RED_MEI_PLANKS.get()));
         slabBlock(((SlabBlock) ModBlocks.WHITE_MEI_SLAB.get()), blockTexture(ModBlocks.WHITE_MEI_PLANKS.get()), blockTexture(ModBlocks.WHITE_MEI_PLANKS.get()));
@@ -244,6 +256,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(((SlabBlock) ModBlocks.CAMPHOR_SLAB.get()), blockTexture(ModBlocks.CAMPHOR_PLANKS.get()), blockTexture(ModBlocks.CAMPHOR_PLANKS.get()));
         slabBlock(((SlabBlock) ModBlocks.DOVE_TREE_SLAB.get()), blockTexture(ModBlocks.DOVE_TREE_PLANKS.get()), blockTexture(ModBlocks.DOVE_TREE_PLANKS.get()));
         slabBlock(((SlabBlock) ModBlocks.CHINABERRY_SLAB.get()), blockTexture(ModBlocks.CHINABERRY_PLANKS.get()), blockTexture(ModBlocks.CHINABERRY_PLANKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.DESERT_POPLAR_SLAB.get()), blockTexture(ModBlocks.DESERT_POPLAR_PLANKS.get()), blockTexture(ModBlocks.DESERT_POPLAR_PLANKS.get()));
 
         buttonBlock(((ButtonBlock) ModBlocks.RED_MEI_BUTTON.get()), blockTexture(ModBlocks.RED_MEI_PLANKS.get()));
         buttonBlock(((ButtonBlock) ModBlocks.WHITE_MEI_BUTTON.get()), blockTexture(ModBlocks.WHITE_MEI_PLANKS.get()));
@@ -261,6 +274,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         buttonBlock(((ButtonBlock) ModBlocks.CAMPHOR_BUTTON.get()), blockTexture(ModBlocks.CAMPHOR_PLANKS.get()));
         buttonBlock(((ButtonBlock) ModBlocks.DOVE_TREE_BUTTON.get()), blockTexture(ModBlocks.DOVE_TREE_PLANKS.get()));
         buttonBlock(((ButtonBlock) ModBlocks.CHINABERRY_BUTTON.get()), blockTexture(ModBlocks.CHINABERRY_PLANKS.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.DESERT_POPLAR_BUTTON.get()), blockTexture(ModBlocks.DESERT_POPLAR_PLANKS.get()));
 
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.RED_MEI_PRESSURE_PLATE.get()), blockTexture(ModBlocks.RED_MEI_PLANKS.get()));
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.WHITE_MEI_PRESSURE_PLATE.get()), blockTexture(ModBlocks.WHITE_MEI_PLANKS.get()));
@@ -278,6 +292,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.CAMPHOR_PRESSURE_PLATE.get()), blockTexture(ModBlocks.CAMPHOR_PLANKS.get()));
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.DOVE_TREE_PRESSURE_PLATE.get()), blockTexture(ModBlocks.DOVE_TREE_PLANKS.get()));
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.CHINABERRY_PRESSURE_PLATE.get()), blockTexture(ModBlocks.CHINABERRY_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.DESERT_POPLAR_PRESSURE_PLATE.get()), blockTexture(ModBlocks.DESERT_POPLAR_PLANKS.get()));
 
         fenceBlock(((FenceBlock) ModBlocks.RED_MEI_FENCE.get()), blockTexture(ModBlocks.RED_MEI_PLANKS.get()));
         fenceBlock(((FenceBlock) ModBlocks.WHITE_MEI_FENCE.get()), blockTexture(ModBlocks.WHITE_MEI_PLANKS.get()));
@@ -295,6 +310,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock(((FenceBlock) ModBlocks.CAMPHOR_FENCE.get()), blockTexture(ModBlocks.CAMPHOR_PLANKS.get()));
         fenceBlock(((FenceBlock) ModBlocks.DOVE_TREE_FENCE.get()), blockTexture(ModBlocks.DOVE_TREE_PLANKS.get()));
         fenceBlock(((FenceBlock) ModBlocks.CHINABERRY_FENCE.get()), blockTexture(ModBlocks.CHINABERRY_PLANKS.get()));
+        fenceBlock(((FenceBlock) ModBlocks.DESERT_POPLAR_FENCE.get()), blockTexture(ModBlocks.DESERT_POPLAR_PLANKS.get()));
 
         fenceGateBlock(((FenceGateBlock) ModBlocks.RED_MEI_FENCE_GATE.get()), blockTexture(ModBlocks.RED_MEI_PLANKS.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.WHITE_MEI_FENCE_GATE.get()), blockTexture(ModBlocks.WHITE_MEI_PLANKS.get()));
@@ -312,6 +328,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceGateBlock(((FenceGateBlock) ModBlocks.CAMPHOR_FENCE_GATE.get()), blockTexture(ModBlocks.CAMPHOR_PLANKS.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.DOVE_TREE_FENCE_GATE.get()), blockTexture(ModBlocks.DOVE_TREE_PLANKS.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.CHINABERRY_FENCE_GATE.get()), blockTexture(ModBlocks.CHINABERRY_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.DESERT_POPLAR_FENCE_GATE.get()), blockTexture(ModBlocks.DESERT_POPLAR_PLANKS.get()));
 
         doorBlockWithRenderType(((DoorBlock) ModBlocks.RED_MEI_DOOR.get()), modLoc("block/red_mei_door_bottom"), modLoc("block/red_mei_door_top"), "cutout");
         doorBlockWithRenderType(((DoorBlock) ModBlocks.WHITE_MEI_DOOR.get()), modLoc("block/white_mei_door_bottom"), modLoc("block/white_mei_door_top"), "cutout");
@@ -329,6 +346,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.CAMPHOR_DOOR.get()), modLoc("block/camphor_door_bottom"), modLoc("block/camphor_door_top"), "cutout");
         doorBlockWithRenderType(((DoorBlock) ModBlocks.DOVE_TREE_DOOR.get()), modLoc("block/dove_tree_door_bottom"), modLoc("block/dove_tree_door_top"), "cutout");
         doorBlockWithRenderType(((DoorBlock) ModBlocks.CHINABERRY_DOOR.get()), modLoc("block/chinaberry_door_bottom"), modLoc("block/chinaberry_door_top"), "cutout");
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.DESERT_POPLAR_DOOR.get()), modLoc("block/desert_poplar_door_bottom"), modLoc("block/desert_poplar_door_top"), "cutout");
 
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.RED_MEI_TRAPDOOR.get()), modLoc("block/red_mei_trapdoor"), true, "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.WHITE_MEI_TRAPDOOR.get()), modLoc("block/white_mei_trapdoor"), true, "cutout");
@@ -346,6 +364,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.CAMPHOR_TRAPDOOR.get()), modLoc("block/camphor_trapdoor"), true, "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.DOVE_TREE_TRAPDOOR.get()), modLoc("block/dove_tree_trapdoor"), true, "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.CHINABERRY_TRAPDOOR.get()), modLoc("block/chinaberry_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.DESERT_POPLAR_TRAPDOOR.get()), modLoc("block/desert_poplar_trapdoor"), true, "cutout");
 
         signBlock(((StandingSignBlock) ModBlocks.RED_MEI_SIGN.get()), ((WallSignBlock) ModBlocks.RED_MEI_WALL_SIGN.get()), blockTexture(ModBlocks.RED_MEI_PLANKS.get()));
         signBlock(((StandingSignBlock) ModBlocks.WHITE_MEI_SIGN.get()), ((WallSignBlock) ModBlocks.WHITE_MEI_WALL_SIGN.get()), blockTexture(ModBlocks.WHITE_MEI_PLANKS.get()));
@@ -363,6 +382,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         signBlock(((StandingSignBlock) ModBlocks.CAMPHOR_SIGN.get()), ((WallSignBlock) ModBlocks.CAMPHOR_WALL_SIGN.get()), blockTexture(ModBlocks.CAMPHOR_PLANKS.get()));
         signBlock(((StandingSignBlock) ModBlocks.DOVE_TREE_SIGN.get()), ((WallSignBlock) ModBlocks.DOVE_TREE_WALL_SIGN.get()), blockTexture(ModBlocks.DOVE_TREE_PLANKS.get()));
         signBlock(((StandingSignBlock) ModBlocks.CHINABERRY_SIGN.get()), ((WallSignBlock) ModBlocks.CHINABERRY_WALL_SIGN.get()), blockTexture(ModBlocks.CHINABERRY_PLANKS.get()));
+        signBlock(((StandingSignBlock) ModBlocks.DESERT_POPLAR_SIGN.get()), ((WallSignBlock) ModBlocks.DESERT_POPLAR_WALL_SIGN.get()), blockTexture(ModBlocks.DESERT_POPLAR_PLANKS.get()));
 
         hangingSignBlock(ModBlocks.RED_MEI_HANGING_SIGN.get(), ModBlocks.RED_MEI_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_RED_MEI_LOG.get()));
         hangingSignBlock(ModBlocks.WHITE_MEI_HANGING_SIGN.get(), ModBlocks.WHITE_MEI_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_WHITE_MEI_LOG.get()));
@@ -380,6 +400,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         hangingSignBlock(ModBlocks.CAMPHOR_HANGING_SIGN.get(), ModBlocks.CAMPHOR_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_CAMPHOR_LOG.get()));
         hangingSignBlock(ModBlocks.DOVE_TREE_HANGING_SIGN.get(), ModBlocks.DOVE_TREE_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_DOVE_TREE_LOG.get()));
         hangingSignBlock(ModBlocks.CHINABERRY_HANGING_SIGN.get(), ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_CHINABERRY_LOG.get()));
+        hangingSignBlock(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get()));
 
         leavesBlock(ModBlocks.RED_MEI_LEAVES);
         saplingBlock(ModBlocks.RED_MEI_SAPLING);
@@ -498,6 +519,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.CHINABERRY_SAPLING);
         simpleBlockWithItem(ModBlocks.POTTED_CHINABERRY_SAPLING.get(), models().singleTexture("potted_chinaberry_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CHINABERRY_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.DESERT_POPLAR_LEAVES);
+        saplingBlock(ModBlocks.DESERT_POPLAR_SAPLING);
+        simpleBlockWithItem(ModBlocks.POTTED_DESERT_POPLAR_SAPLING.get(), models().singleTexture("potted_desert_poplar_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.DESERT_POPLAR_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.CRAPE_MYRTLE_LEAVES);
         saplingBlock(ModBlocks.CRAPE_MYRTLE_SAPLING);
         simpleBlockWithItem(ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING.get(), models().singleTexture("potted_crape_myrtle_sapling", new ResourceLocation("flower_pot_cross"), "plant",

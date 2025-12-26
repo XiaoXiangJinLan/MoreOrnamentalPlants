@@ -46,6 +46,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get());
                         pOutput.accept(ModBlocks.DOVE_TREE_LEAVES.get());
                         pOutput.accept(ModBlocks.CHINABERRY_LEAVES.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_LEAVES.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
                         pOutput.accept(ModBlocks.RED_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.WHITE_MEI_SAPLING.get());
@@ -77,6 +78,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CAMPHOR_SAPLING.get());
                         pOutput.accept(ModBlocks.DOVE_TREE_SAPLING.get());
                         pOutput.accept(ModBlocks.CHINABERRY_SAPLING.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_SAPLING.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_SAPLING.get());
                         pOutput.accept(ModBlocks.SPRING_CYMBIDIUM.get());
                         pOutput.accept(ModBlocks.CHRYSANTHEMUM.get());
@@ -397,6 +399,21 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHINABERRY_BUTTON.get());
                         pOutput.accept(ModItems.CHINABERRY_SIGN.get());
                         pOutput.accept(ModItems.CHINABERRY_HANGING_SIGN.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_LOG.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_PLANKS.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_STAIRS.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_SLAB.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_FENCE.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_DOOR.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.DESERT_POPLAR_BUTTON.get());
+                        pOutput.accept(ModItems.DESERT_POPLAR_SIGN.get());
+                        pOutput.accept(ModItems.DESERT_POPLAR_HANGING_SIGN.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_LOG.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_WOOD.get());
                         pOutput.accept(ModItems.RED_MEI_BOAT.get());
@@ -431,6 +448,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DOVE_TREE_CHEST_BOAT.get());
                         pOutput.accept(ModItems.CHINABERRY_BOAT.get());
                         pOutput.accept(ModItems.CHINABERRY_CHEST_BOAT.get());
+                        pOutput.accept(ModItems.DESERT_POPLAR_BOAT.get());
+                        pOutput.accept(ModItems.DESERT_POPLAR_CHEST_BOAT.get());
                         pOutput.accept(ModItems.MOTTLED_BAMBOO_SHOOTS.get());
                         pOutput.accept(ModItems.BLACK_BAMBOO_SHOOTS.get());
                         pOutput.accept(ModItems.PEELED_BAMBOO_SHOOTS.get());

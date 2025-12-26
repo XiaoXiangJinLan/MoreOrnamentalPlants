@@ -98,6 +98,7 @@ public class MoreOrnPlants
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CAMPHOR_SAPLING.getId(), ModBlocks.POTTED_CAMPHOR_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.DOVE_TREE_SAPLING.getId(), ModBlocks.POTTED_DOVE_TREE_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHINABERRY_SAPLING.getId(), ModBlocks.POTTED_CHINABERRY_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.DESERT_POPLAR_SAPLING.getId(), ModBlocks.POTTED_DESERT_POPLAR_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CRAPE_MYRTLE_SAPLING.getId(), ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHRYSANTHEMUM.getId(), ModBlocks.POTTED_CHRYSANTHEMUM);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GOLDEN_CHRYSANTHEMUM.getId(), ModBlocks.POTTED_GOLDEN_CHRYSANTHEMUM);
@@ -191,6 +192,7 @@ public class MoreOrnPlants
             Sheets.addWoodType(ModWoodTypes.CAMPHOR);
             Sheets.addWoodType(ModWoodTypes.DOVE_TREE);
             Sheets.addWoodType(ModWoodTypes.CHINABERRY);
+            Sheets.addWoodType(ModWoodTypes.DESERT_POPLAR);
 
             EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
             EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));

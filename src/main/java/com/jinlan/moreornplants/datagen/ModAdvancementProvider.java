@@ -525,6 +525,23 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "chinaberry_wind"), existingFileHelper);
 
+            Advancement heroOfDesert = Advancement.Builder.advancement()
+                    .parent(root)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.DESERT_POPLAR_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.hero_of_desert.title"),
+                            Component.translatable("advancement.moreornplants.hero_of_desert.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("get_desert_poplar", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ModBlocks.DESERT_POPLAR_SAPLING.get()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "hero_of_desert"), existingFileHelper);
+
             Advancement fourGentlemen = Advancement.Builder.advancement()
                     .parent(root)
                     .display(new DisplayInfo(

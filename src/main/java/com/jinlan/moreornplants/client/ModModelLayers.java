@@ -85,4 +85,9 @@ public class ModModelLayers {
     public static final ModelLayerLocation CHINABERRY_CHEST_BOAT_LAYER = new ModelLayerLocation(
             new ResourceLocation(MoreOrnPlants.MOD_ID, "chest_boat/chinaberry"), "main");
 
+    public static final ModelLayerLocation DESERT_POPLAR_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "boat/desert_poplar"), "main");
+    public static final ModelLayerLocation DESERT_POPLAR_CHEST_BOAT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "chest_boat/desert_poplar"), "main");
+
 }

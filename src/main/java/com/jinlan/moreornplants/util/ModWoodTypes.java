@@ -21,4 +21,5 @@ public class ModWoodTypes {
     public static final WoodType CAMPHOR = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":camphor", BlockSetType.OAK));
     public static final WoodType DOVE_TREE = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":dove_tree", BlockSetType.OAK));
     public static final WoodType CHINABERRY = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":chinaberry", BlockSetType.OAK));
+    public static final WoodType DESERT_POPLAR = WoodType.register(new WoodType(MoreOrnPlants.MOD_ID + ":desert_poplar", BlockSetType.OAK));
 }

@@ -49,6 +49,8 @@ public class ModItems {
             ITEMS.register("dove_tree_sign", () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.DOVE_TREE_SIGN.get(), ModBlocks.DOVE_TREE_WALL_SIGN.get()));
     public static final RegistryObject<Item> CHINABERRY_SIGN =
             ITEMS.register("chinaberry_sign", () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.CHINABERRY_SIGN.get(), ModBlocks.CHINABERRY_WALL_SIGN.get()));
+    public static final RegistryObject<Item> DESERT_POPLAR_SIGN =
+            ITEMS.register("desert_poplar_sign", () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.DESERT_POPLAR_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_SIGN.get()));
 
     public static final RegistryObject<Item> RED_MEI_HANGING_SIGN =
             ITEMS.register("red_mei_hanging_sign", () -> new HangingSignItem(ModBlocks.RED_MEI_HANGING_SIGN.get(), ModBlocks.RED_MEI_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
@@ -82,6 +84,8 @@ public class ModItems {
             ITEMS.register("dove_tree_hanging_sign", () -> new HangingSignItem(ModBlocks.DOVE_TREE_HANGING_SIGN.get(), ModBlocks.DOVE_TREE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> CHINABERRY_HANGING_SIGN =
             ITEMS.register("chinaberry_hanging_sign", () -> new HangingSignItem(ModBlocks.CHINABERRY_HANGING_SIGN.get(), ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> DESERT_POPLAR_HANGING_SIGN =
+            ITEMS.register("desert_poplar_hanging_sign", () -> new HangingSignItem(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> RED_MEI_BOAT =
             ITEMS.register("red_mei_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.RED_MEI, new Item.Properties()));
@@ -147,6 +151,10 @@ public class ModItems {
             ITEMS.register("chinaberry_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.CHINABERRY, new Item.Properties()));
     public static final RegistryObject<Item> CHINABERRY_CHEST_BOAT =
             ITEMS.register("chinaberry_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.CHINABERRY, new Item.Properties()));
+    public static final RegistryObject<Item> DESERT_POPLAR_BOAT =
+            ITEMS.register("desert_poplar_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.CHINABERRY, new Item.Properties()));
+    public static final RegistryObject<Item> DESERT_POPLAR_CHEST_BOAT =
+            ITEMS.register("desert_poplar_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.CHINABERRY, new Item.Properties()));
 
     public static final RegistryObject<Item> MOTTLED_BAMBOO_SHOOTS =
             ITEMS.register("mottled_bamboo_shoots", () -> new Item(new Item.Properties()));

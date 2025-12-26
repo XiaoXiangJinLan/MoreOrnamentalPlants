@@ -36,6 +36,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.CAMPHOR_FENCE, ModBlocks.CAMPHOR_PLANKS);
         fenceItem(ModBlocks.DOVE_TREE_FENCE, ModBlocks.DOVE_TREE_PLANKS);
         fenceItem(ModBlocks.CHINABERRY_FENCE, ModBlocks.CHINABERRY_PLANKS);
+        fenceItem(ModBlocks.DESERT_POPLAR_FENCE, ModBlocks.DESERT_POPLAR_PLANKS);
 
         buttonItem(ModBlocks.RED_MEI_BUTTON, ModBlocks.RED_MEI_PLANKS);
         buttonItem(ModBlocks.WHITE_MEI_BUTTON, ModBlocks.WHITE_MEI_PLANKS);
@@ -53,6 +54,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.CAMPHOR_BUTTON, ModBlocks.CAMPHOR_PLANKS);
         buttonItem(ModBlocks.DOVE_TREE_BUTTON, ModBlocks.DOVE_TREE_PLANKS);
         buttonItem(ModBlocks.CHINABERRY_BUTTON, ModBlocks.CHINABERRY_PLANKS);
+        buttonItem(ModBlocks.DESERT_POPLAR_BUTTON, ModBlocks.DESERT_POPLAR_PLANKS);
 
         simplerBlockItem(ModBlocks.RED_MEI_DOOR);
         simplerBlockItem(ModBlocks.WHITE_MEI_DOOR);
@@ -70,6 +72,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simplerBlockItem(ModBlocks.CAMPHOR_DOOR);
         simplerBlockItem(ModBlocks.DOVE_TREE_DOOR);
         simplerBlockItem(ModBlocks.CHINABERRY_DOOR);
+        simplerBlockItem(ModBlocks.DESERT_POPLAR_DOOR);
 
         evenSimplerBlockItem(ModBlocks.RED_MEI_STAIRS);
         evenSimplerBlockItem(ModBlocks.RED_MEI_SLAB);
@@ -135,6 +138,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.CHINABERRY_SLAB);
         evenSimplerBlockItem(ModBlocks.CHINABERRY_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.CHINABERRY_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.DESERT_POPLAR_STAIRS);
+        evenSimplerBlockItem(ModBlocks.DESERT_POPLAR_SLAB);
+        evenSimplerBlockItem(ModBlocks.DESERT_POPLAR_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.DESERT_POPLAR_FENCE_GATE);
 
         trapdoorItem(ModBlocks.RED_MEI_TRAPDOOR);
         trapdoorItem(ModBlocks.WHITE_MEI_TRAPDOOR);
@@ -152,6 +159,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trapdoorItem(ModBlocks.CAMPHOR_TRAPDOOR);
         trapdoorItem(ModBlocks.DOVE_TREE_TRAPDOOR);
         trapdoorItem(ModBlocks.CHINABERRY_TRAPDOOR);
+        trapdoorItem(ModBlocks.DESERT_POPLAR_TRAPDOOR);
 
         simpleItem(ModItems.RED_MEI_SIGN);
         simpleItem(ModItems.RED_MEI_HANGING_SIGN);
@@ -185,6 +193,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DOVE_TREE_HANGING_SIGN);
         simpleItem(ModItems.CHINABERRY_SIGN);
         simpleItem(ModItems.CHINABERRY_HANGING_SIGN);
+        simpleItem(ModItems.DESERT_POPLAR_SIGN);
+        simpleItem(ModItems.DESERT_POPLAR_HANGING_SIGN);
 
         simpleItem(ModItems.RED_MEI_BOAT);
         simpleItem(ModItems.RED_MEI_CHEST_BOAT);
@@ -218,6 +228,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DOVE_TREE_CHEST_BOAT);
         simpleItem(ModItems.CHINABERRY_BOAT);
         simpleItem(ModItems.CHINABERRY_CHEST_BOAT);
+        simpleItem(ModItems.DESERT_POPLAR_BOAT);
+        simpleItem(ModItems.DESERT_POPLAR_CHEST_BOAT);
 
         saplingItem(ModBlocks.RED_MEI_SAPLING);
         saplingItem(ModBlocks.WHITE_MEI_SAPLING);
@@ -249,6 +261,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.CAMPHOR_SAPLING);
         saplingItem(ModBlocks.DOVE_TREE_SAPLING);
         saplingItem(ModBlocks.CHINABERRY_SAPLING);
+        saplingItem(ModBlocks.DESERT_POPLAR_SAPLING);
         saplingItem(ModBlocks.CRAPE_MYRTLE_SAPLING);
 
         flowerItem(ModBlocks.RED_WEEPING_MEI);

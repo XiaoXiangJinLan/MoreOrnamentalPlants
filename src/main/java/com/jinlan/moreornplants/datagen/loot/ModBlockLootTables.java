@@ -117,6 +117,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_CHINABERRY_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_CHINABERRY_WOOD.get());
         this.dropSelf(ModBlocks.CHINABERRY_PLANKS.get());
+        this.dropSelf(ModBlocks.DESERT_POPLAR_LOG.get());
+        this.dropSelf(ModBlocks.DESERT_POPLAR_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get());
+        this.dropSelf(ModBlocks.DESERT_POPLAR_PLANKS.get());
         this.dropSelf(ModBlocks.CRAPE_MYRTLE_LOG.get());
         this.dropSelf(ModBlocks.CRAPE_MYRTLE_WOOD.get());
         this.dropSelf(ModBlocks.WEEPING_CRABAPPLE.get());
@@ -201,6 +206,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHINABERRY_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.CHINABERRY_FENCE.get());
         this.dropSelf(ModBlocks.CHINABERRY_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.DESERT_POPLAR_STAIRS.get());
+        this.dropSelf(ModBlocks.DESERT_POPLAR_BUTTON.get());
+        this.dropSelf(ModBlocks.DESERT_POPLAR_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.DESERT_POPLAR_FENCE.get());
+        this.dropSelf(ModBlocks.DESERT_POPLAR_FENCE_GATE.get());
 
         this.add(ModBlocks.RED_MEI_SLAB.get(),
                 createSlabItemTable(ModBlocks.RED_MEI_SLAB.get()));
@@ -234,6 +244,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createSlabItemTable(ModBlocks.DOVE_TREE_SLAB.get()));
         this.add(ModBlocks.CHINABERRY_SLAB.get(),
                 createSlabItemTable(ModBlocks.CHINABERRY_SLAB.get()));
+        this.add(ModBlocks.DESERT_POPLAR_SLAB.get(),
+                createSlabItemTable(ModBlocks.DESERT_POPLAR_SLAB.get()));
 
         this.dropSelf(ModBlocks.RED_MEI_TRAPDOOR.get());
         this.dropSelf(ModBlocks.WHITE_MEI_TRAPDOOR.get());
@@ -251,6 +263,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CAMPHOR_TRAPDOOR.get());
         this.dropSelf(ModBlocks.DOVE_TREE_TRAPDOOR.get());
         this.dropSelf(ModBlocks.CHINABERRY_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.DESERT_POPLAR_TRAPDOOR.get());
 
         this.add(ModBlocks.RED_MEI_DOOR.get(),
                 createDoorTable(ModBlocks.RED_MEI_DOOR.get()));
@@ -284,6 +297,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createDoorTable(ModBlocks.DOVE_TREE_DOOR.get()));
         this.add(ModBlocks.CHINABERRY_DOOR.get(),
                 createDoorTable(ModBlocks.CHINABERRY_DOOR.get()));
+        this.add(ModBlocks.DESERT_POPLAR_DOOR.get(),
+                createDoorTable(ModBlocks.DESERT_POPLAR_DOOR.get()));
 
         this.add(ModBlocks.RED_MEI_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.RED_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -341,6 +356,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.DOVE_TREE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.CHINABERRY_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CHINABERRY_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.DESERT_POPLAR_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.DESERT_POPLAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.CRAPE_MYRTLE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CRAPE_MYRTLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
@@ -413,6 +430,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.CHINABERRY_SIGN.get(), block -> createSingleItemTable(ModItems.CHINABERRY_SIGN.get()));
         this.add(ModBlocks.CHINABERRY_WALL_SIGN.get(), block ->
                 createSingleItemTable(ModItems.CHINABERRY_SIGN.get()));
+        this.add(ModBlocks.DESERT_POPLAR_SIGN.get(), block -> createSingleItemTable(ModItems.DESERT_POPLAR_SIGN.get()));
+        this.add(ModBlocks.DESERT_POPLAR_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.DESERT_POPLAR_SIGN.get()));
 
         this.add(ModBlocks.RED_MEI_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_HANGING_SIGN.get()));
         this.add(ModBlocks.RED_MEI_WALL_HANGING_SIGN.get(), block ->
@@ -462,6 +482,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.CHINABERRY_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CHINABERRY_HANGING_SIGN.get()));
         this.add(ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(), block ->
                 createSingleItemTable(ModItems.CHINABERRY_HANGING_SIGN.get()));
+        this.add(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.DESERT_POPLAR_HANGING_SIGN.get()));
+        this.add(ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.DESERT_POPLAR_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.RED_MEI_SAPLING.get());
         this.add(ModBlocks.POTTED_RED_MEI_SAPLING.get(),
@@ -553,6 +576,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHINABERRY_SAPLING.get());
         this.add(ModBlocks.POTTED_CHINABERRY_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.CHINABERRY_SAPLING.get()));
+        this.dropSelf(ModBlocks.DESERT_POPLAR_SAPLING.get());
+        this.add(ModBlocks.POTTED_DESERT_POPLAR_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.DESERT_POPLAR_SAPLING.get()));
         this.dropSelf(ModBlocks.CRAPE_MYRTLE_SAPLING.get());
         this.add(ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.CRAPE_MYRTLE_SAPLING.get()));

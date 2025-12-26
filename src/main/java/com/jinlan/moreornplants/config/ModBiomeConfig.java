@@ -16,6 +16,7 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_CRIMSON_HIGHLANDS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_COTTONROSE_REALM;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_DESERT_POPLAR_WOODS;
 
     // 区域权重配置
     public static final ForgeConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
@@ -53,6 +54,9 @@ public class ModBiomeConfig {
         ENABLE_COTTONROSE_REALM = BUILDER
                 .comment("Enable Cottonrose Realm biome generation")
                 .define("enableCottonroseRealm", true);
+        ENABLE_DESERT_POPLAR_WOODS = BUILDER
+                .comment("Enable Desert Poplar Woods biome generation")
+                .define("enableDesertPoplarWoods", true);
         BUILDER.pop();
 
         // 区域权重设置

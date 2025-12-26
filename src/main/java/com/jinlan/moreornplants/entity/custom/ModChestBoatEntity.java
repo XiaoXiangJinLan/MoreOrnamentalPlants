@@ -46,6 +46,7 @@ public class ModChestBoatEntity extends ChestBoat {
             case CAMPHOR ->ModItems.CAMPHOR_CHEST_BOAT.get();
             case DOVE_TREE ->ModItems.DOVE_TREE_CHEST_BOAT.get();
             case CHINABERRY ->ModItems.CHINABERRY_CHEST_BOAT.get();
+            case DESERT_POPLAR ->ModItems.DESERT_POPLAR_CHEST_BOAT.get();
         }
         return super.getDropItem();
     }

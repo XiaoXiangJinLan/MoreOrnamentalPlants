@@ -51,6 +51,7 @@ public class ModBoatEntity extends Boat {
             case CAMPHOR ->ModItems.CAMPHOR_BOAT.get();
             case DOVE_TREE ->ModItems.DOVE_TREE_BOAT.get();
             case CHINABERRY ->ModItems.CHINABERRY_BOAT.get();
+            case DESERT_POPLAR ->ModItems.DESERT_POPLAR_BOAT.get();
         };
     }
 
@@ -93,7 +94,8 @@ public class ModBoatEntity extends Boat {
         CHINESE_PARASOL(ModBlocks.CHINESE_PARASOL_PLANKS.get(), "chinese_parasol"),
         CAMPHOR(ModBlocks.CAMPHOR_PLANKS.get(), "camphor"),
         DOVE_TREE(ModBlocks.DOVE_TREE_PLANKS.get(), "dove_tree"),
-        CHINABERRY(ModBlocks.CHINABERRY_PLANKS.get(), "chinaberry");
+        CHINABERRY(ModBlocks.CHINABERRY_PLANKS.get(), "chinaberry"),
+        DESERT_POPLAR(ModBlocks.DESERT_POPLAR_PLANKS.get(), "desert_poplar");
 
         private final String name;
         private final Block planks;
