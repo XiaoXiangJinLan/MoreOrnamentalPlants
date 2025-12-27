@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.worldgen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
@@ -12,6 +13,7 @@ import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 
@@ -89,6 +91,9 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> MOTTLED_BAMBOO_PLACED =registerKey("mottled_bamboo_placed");
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_PLACED =registerKey("black_bamboo_placed");
     public static final ResourceKey<PlacedFeature> LOTUS_PLACED =registerKey("lotus_placed");
+    public static final ResourceKey<PlacedFeature> GRASS_VALLY =registerKey("grass_vally");
+    public static final ResourceKey<PlacedFeature> GRASS_PLAIN =registerKey("grass_plain");
+    public static final ResourceKey<PlacedFeature> GRASS_HIGHLAND =registerKey("grass_highland");
     public static final ResourceKey<PlacedFeature> GRASS_GROVE =registerKey("grass_grove");
     public static final ResourceKey<PlacedFeature> GRASS_FOREST_1 =registerKey("grass_forest_1");
     public static final ResourceKey<PlacedFeature> GRASS_FOREST_2 =registerKey("grass_forest_2");
@@ -96,6 +101,9 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GRASS_FERN_2 =registerKey("grass_fern_2");
     public static final ResourceKey<PlacedFeature> GRASS_DESERT =registerKey("grass_desert");
     public static final ResourceKey<PlacedFeature> DEAD_BUSH =registerKey("dead_bush");
+
+    public static final ResourceKey<PlacedFeature> PINK_APRICOT = registerKey("pink_apricot");
+    public static final ResourceKey<PlacedFeature> WHITE_APRICOT = registerKey("white_apricot");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -324,6 +332,15 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 3),
                         ModBlocks.DESERT_POPLAR_SAPLING.get()));
 
+        register(context, GRASS_VALLY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
+                List.of(CountPlacement.of(10),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, GRASS_PLAIN, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
+                List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 10),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, GRASS_HIGHLAND, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
+                List.of(CountPlacement.of(8),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_GROVE, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_GROVE),
                 List.of(CountPlacement.of(7),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
@@ -339,12 +356,19 @@ public class ModPlacedFeatures {
         register(context, GRASS_FERN_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FERN_2),
                 List.of(CountPlacement.of(11),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
-        register(context, GRASS_DESERT, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_DESERT),
+        register(context, GRASS_DESERT, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
                 List.of(CountPlacement.of(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, DEAD_BUSH, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEAD_BUSH),
                 List.of(CountPlacement.of(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, PINK_APRICOT, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_APRICOT),
+                List.of(BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(
+                                ModBlocks.PINK_APRICOT_SAPLING.get().defaultBlockState(), BlockPos.ZERO))));
+        register(context, WHITE_APRICOT, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_APRICOT),
+                List.of(BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(
+                                ModBlocks.WHITE_APRICOT_SAPLING.get().defaultBlockState(), BlockPos.ZERO))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

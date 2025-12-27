@@ -130,7 +130,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FOREST_2 = registerKey("grass_forest_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FERN = registerKey("grass_fern");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FERN_2 = registerKey("grass_fern_2");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_DESERT = registerKey("grass_desert");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_0 = registerKey("grass_0");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DEAD_BUSH = registerKey("dead_bush");
 
 
@@ -793,7 +793,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, GRASS_DESERT, Feature.RANDOM_PATCH, new RandomPatchConfiguration(32, 6, 3,
+        register(context, GRASS_0, Feature.RANDOM_PATCH, new RandomPatchConfiguration(32, 7, 3,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.GRASS)),
                         BlockPredicate.allOf(

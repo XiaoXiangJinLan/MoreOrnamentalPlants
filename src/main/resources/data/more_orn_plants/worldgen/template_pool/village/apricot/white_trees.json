@@ -1,0 +1,13 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:feature_pool_element",
+        "feature": "more_orn_plants:white_apricot",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

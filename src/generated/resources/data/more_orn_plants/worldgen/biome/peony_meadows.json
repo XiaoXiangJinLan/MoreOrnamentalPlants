@@ -76,7 +76,7 @@
       "more_orn_plants:peony_placed",
       "more_orn_plants:peony_meadows_key",
       "more_orn_plants:upright_crabapple_placed",
-      "minecraft:patch_grass_plain"
+      "more_orn_plants:grass_plain"
     ],
     [
       "minecraft:freeze_top_layer"

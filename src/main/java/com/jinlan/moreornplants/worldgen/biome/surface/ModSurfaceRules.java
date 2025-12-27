@@ -9,22 +9,13 @@ public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource SANDSTONE = SurfaceRules.state(Blocks.SANDSTONE.defaultBlockState());
 
     public static SurfaceRules.RuleSource makeRules() {
-        // 胡杨林使用原版沙漠的地表规则
-        return SurfaceRules.sequence(
-                // 地表规则：使用沙子，天花板使用砂岩（类似沙漠）
-                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR,
+        return SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR,
                         SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.DESERT_POPLAR_WOODS),
-                                SurfaceRules.sequence(
-                                        SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, SANDSTONE),
-                                        SAND
-                                )
-                        )
-                ),
-
-                // 深层规则：深层使用砂岩（类似沙漠深层）
+                                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, SANDSTONE), SAND))),
                 SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.DESERT_POPLAR_WOODS),
-                        SurfaceRules.ifTrue(SurfaceRules.VERY_DEEP_UNDER_FLOOR, SANDSTONE)
-                )
+                        SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR, SAND)),
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.DESERT_POPLAR_WOODS),
+                        SurfaceRules.ifTrue(SurfaceRules.VERY_DEEP_UNDER_FLOOR, SANDSTONE))
         );
     }
 }
