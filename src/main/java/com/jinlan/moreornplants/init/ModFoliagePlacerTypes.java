@@ -42,9 +42,6 @@ public class ModFoliagePlacerTypes {
     public static final RegistryObject<FoliagePlacerType<GinkgoFoliagePlacer>> GINKGO_FOLIAGE_PLACER =
             FOLIAGE_PLACERS.register("ginkgo_foliage_placer", () -> new FoliagePlacerType<>(GinkgoFoliagePlacer.CODEC));
 
-    public static final RegistryObject<FoliagePlacerType<AncientGinkgoFoliagePlacer>> ANCIENT_GINKGO_FOLIAGE_PLACER =
-            FOLIAGE_PLACERS.register("ancient_ginkgo_foliage_placer", () -> new FoliagePlacerType<>(AncientGinkgoFoliagePlacer.CODEC));
-
     public static final RegistryObject<FoliagePlacerType<SweetgumFoliagePlacer>> SWEETGUM_FOLIAGE_PLACER =
             FOLIAGE_PLACERS.register("sweetgum_foliage_placer", () -> new FoliagePlacerType<>(SweetgumFoliagePlacer.CODEC));
 

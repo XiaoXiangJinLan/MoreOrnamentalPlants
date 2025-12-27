@@ -41,7 +41,6 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WHITE_OSMANTHUS_PLACED = registerKey("white_osmanthus_placed");
     public static final ResourceKey<PlacedFeature> GOLDEN_GINKGO_PLACED = registerKey("golden_ginkgo_placed");
     public static final ResourceKey<PlacedFeature> GREEN_GINKGO_PLACED = registerKey("green_ginkgo_placed");
-    public static final ResourceKey<PlacedFeature> ANCIENT_GOLDEN_GINKGO_PLACED = registerKey("ancient_golden_ginkgo_placed");
     public static final ResourceKey<PlacedFeature> YELLOW_CHINESE_PARASOL_PLACED = registerKey("yellow_chinese_parasol_placed");
     public static final ResourceKey<PlacedFeature> GREEN_CHINESE_PARASOL_PLACED = registerKey("green_chinese_parasol_placed");
     public static final ResourceKey<PlacedFeature> SWEETGUM_PLACED = registerKey("sweetgum_placed");
@@ -220,9 +219,6 @@ public class ModPlacedFeatures {
         register(context, PURPLE_LEAF_PLUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_LEAF_PLUM),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1 ,0.1F, 1),
                         ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get()));
-        register(context, ANCIENT_GOLDEN_GINKGO_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_GOLDEN_GINKGO),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0 ,0.05F, 1),
-                        ModBlocks.GOLDEN_GINKGO_SAPLING.get()));
         register(context, CHRYSANTHEMUM_FOREST_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_FOREST),
                 List.of(RarityFilter.onAverageOnceEvery(6),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));

@@ -28,10 +28,7 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.CherryFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
@@ -345,15 +342,15 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
         register(context, ANCIENT_GOLDEN_GINKGO, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
-                new GiantTrunkPlacer(22, 2, 2),
+                new GiantTrunkPlacer(26, 2, 2),
                 BlockStateProvider.simple(ModBlocks.GOLDEN_GINKGO_LEAVES.get()),
-                new AncientGinkgoFoliagePlacer(ConstantInt.of(3), ConstantInt.of(1), UniformInt.of(15, 17)),
+                new MegaPineFoliagePlacer(ConstantInt.of(1), ConstantInt.of(0), UniformInt.of(18, 21)),
                 new TwoLayersFeatureSize(1, 1, 2)).ignoreVines().build());
         register(context, ANCIENT_GREEN_GINKGO, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
-                new GiantTrunkPlacer(22, 2, 2),
+                new GiantTrunkPlacer(26, 2, 2),
                 BlockStateProvider.simple(ModBlocks.GREEN_GINKGO_LEAVES.get()),
-                new AncientGinkgoFoliagePlacer(ConstantInt.of(3), ConstantInt.of(1), UniformInt.of(15, 17)),
+                new MegaPineFoliagePlacer(ConstantInt.of(1), ConstantInt.of(0), UniformInt.of(18, 21)),
                 new TwoLayersFeatureSize(1, 1, 2)).ignoreVines().build());
 
         register(context, YELLOW_CHINESE_PARASOL, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
