@@ -96,6 +96,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GRASS_GROVE =registerKey("grass_grove");
     public static final ResourceKey<PlacedFeature> GRASS_FOREST_1 =registerKey("grass_forest_1");
     public static final ResourceKey<PlacedFeature> GRASS_FOREST_2 =registerKey("grass_forest_2");
+    public static final ResourceKey<PlacedFeature> GRASS_FOREST_3 =registerKey("grass_forest_3");
     public static final ResourceKey<PlacedFeature> GRASS_FERN =registerKey("grass_fern");
     public static final ResourceKey<PlacedFeature> GRASS_FERN_2 =registerKey("grass_fern_2");
     public static final ResourceKey<PlacedFeature> GRASS_DESERT =registerKey("grass_desert");
@@ -338,13 +339,16 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(8),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_GROVE, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_GROVE),
-                List.of(CountPlacement.of(7),
+                List.of(CountPlacement.of(9),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_FOREST_1, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FOREST_1),
                 List.of(CountPlacement.of(9),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_FOREST_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FOREST_2),
                 List.of(CountPlacement.of(9),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, GRASS_FOREST_3, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
+                List.of(CountPlacement.of(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_FERN, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FERN),
                 List.of(CountPlacement.of(5),

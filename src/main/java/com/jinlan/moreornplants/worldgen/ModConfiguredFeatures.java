@@ -740,7 +740,7 @@ public class ModConfiguredFeatures {
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(Blocks.GRASS.defaultBlockState(), 7)
+                                        .add(Blocks.GRASS.defaultBlockState(), 9)
                                         .add(Blocks.TALL_GRASS.defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
