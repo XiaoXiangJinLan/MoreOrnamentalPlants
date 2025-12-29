@@ -152,9 +152,9 @@ public class ModItems {
     public static final RegistryObject<Item> CHINABERRY_CHEST_BOAT =
             ITEMS.register("chinaberry_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.CHINABERRY, new Item.Properties()));
     public static final RegistryObject<Item> DESERT_POPLAR_BOAT =
-            ITEMS.register("desert_poplar_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.CHINABERRY, new Item.Properties()));
+            ITEMS.register("desert_poplar_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
     public static final RegistryObject<Item> DESERT_POPLAR_CHEST_BOAT =
-            ITEMS.register("desert_poplar_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.CHINABERRY, new Item.Properties()));
+            ITEMS.register("desert_poplar_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
 
     public static final RegistryObject<Item> MOTTLED_BAMBOO_SHOOTS =
             ITEMS.register("mottled_bamboo_shoots", () -> new Item(new Item.Properties()));
