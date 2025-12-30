@@ -724,8 +724,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WEEPING_CRABAPPLE.get().asItem())
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
                 .add(ModBlocks.LOTUS.get().asItem())
-                .add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get().asItem())
-                .add(ModBlocks.WILD_PEACH_PETALS.get().asItem());
+                .add(ModItems.ORNAMENTAL_PEACH_PETALS.get())
+                .add(ModItems.WILD_PEACH_PETALS.get());
 
         this.tag(ModTags.Items.WHITE_DYE)
                 .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())

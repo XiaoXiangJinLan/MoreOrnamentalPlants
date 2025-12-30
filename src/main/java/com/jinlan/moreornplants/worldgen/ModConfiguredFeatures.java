@@ -277,23 +277,29 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.WILD_PEACH_LEAVES.get()),
                 new PeachFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(4)),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
-        SimpleWeightedRandomList.Builder<BlockState> peachPetalsBuilder = SimpleWeightedRandomList.builder();
+        SimpleWeightedRandomList.Builder<BlockState> peachPinkPetalsBuilder = SimpleWeightedRandomList.builder();
         for(int i = 1; i <= 4; ++i) {
             for(Direction direction : Direction.Plane.HORIZONTAL) {
-                peachPetalsBuilder.add(ModBlocks.PEACH_PINK_PETALS.get().defaultBlockState()
+                peachPinkPetalsBuilder.add(ModBlocks.PEACH_PINK_PETALS.get().defaultBlockState()
                         .setValue(PeachPinkPetalsBlock.AMOUNT, i)
                         .setValue(PeachPinkPetalsBlock.FACING, direction), 1);
             }
         }
         register(context, PEACH_PINK_PETALS_PATCH, Feature.FLOWER, new RandomPatchConfiguration(96, 6, 2,
                 PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(new WeightedStateProvider(peachPetalsBuilder)))));
+                        new SimpleBlockConfiguration(new WeightedStateProvider(peachPinkPetalsBuilder)))));
+        SimpleWeightedRandomList.Builder<BlockState> peachPetalsBuilder = SimpleWeightedRandomList.builder();
+        for(Direction direction : Direction.Plane.HORIZONTAL) {
+            peachPetalsBuilder.add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get().defaultBlockState()
+                    .setValue(PeachPinkPetalsBlock.FACING, direction), 2);
+        }
+        for(Direction direction : Direction.Plane.HORIZONTAL) {
+            peachPetalsBuilder.add(ModBlocks.WILD_PEACH_PETALS.get().defaultBlockState()
+                    .setValue(PeachPinkPetalsBlock.FACING, direction), 1);
+        }
         register(context, PEACH_PETALS, Feature.RANDOM_PATCH, new RandomPatchConfiguration(32, 7, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(new WeightedStateProvider(
-                                SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.WILD_PEACH_PETALS.get().defaultBlockState(), 1).build())),
+                        new SimpleBlockConfiguration(new WeightedStateProvider(peachPetalsBuilder)),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.WATER)))));
