@@ -22,10 +22,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.CROPS)
                 .add(ModBlocks.LOTUS.get())
+                .add(ModBlocks.WHITE_LOTUS.get())
                 .add(ModBlocks.LOTUS_LEAF.get());
 
         this.tag(BlockTags.MAINTAINS_FARMLAND)
                 .add(ModBlocks.LOTUS.get())
+                .add(ModBlocks.WHITE_LOTUS.get())
                 .add(ModBlocks.LOTUS_LEAF.get());
 
         this.tag(BlockTags.FLOWER_POTS)
@@ -667,7 +669,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get())
                 .add(ModBlocks.CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
-                .add(ModBlocks.LOTUS.get());
+                .add(ModBlocks.LOTUS.get())
+                .add(ModBlocks.WHITE_LOTUS.get());
 
         this.tag(ModTags.Blocks.MOTTLED_BAMBOO_PLANTABLE_ON)
                 .addTag(BlockTags.SAND)

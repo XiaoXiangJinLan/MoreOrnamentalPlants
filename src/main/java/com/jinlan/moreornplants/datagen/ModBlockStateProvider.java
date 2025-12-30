@@ -728,9 +728,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         pottedBambooBlock(ModBlocks.POTTED_BLACK_BAMBOO);
 
         lotusBlock(ModBlocks.LOTUS);
+        lotusBlock(ModBlocks.WHITE_LOTUS);
         lotusLeafBlock(ModBlocks.LOTUS_LEAF);
 
         peachPinkPetalsBlock(ModBlocks.PEACH_PINK_PETALS);
+        leafPileBlock(ModBlocks.ORNAMENTAL_PEACH_PETALS);
+        leafPileBlock(ModBlocks.WILD_PEACH_PETALS);
     }
 
     private void weepingMeiPlantBlock(RegistryObject<Block> blockRegistryObject) {
@@ -865,6 +868,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockItem(blockRegistryObject.get(), model4);
     }
 
+    private void leafPileBlock(RegistryObject<Block> blockRegistryObject) {
+        String baseName = blockRegistryObject.getId().getPath();
+        String texturePath = "block/" + baseName;
+        ModelFile model = models().withExistingParent(baseName, modLoc("block/leaf_pile"))
+                .texture("leaf", modLoc(texturePath))
+                .renderType("cutout");
+        simpleBlock(blockRegistryObject.get(), model);
+        simpleBlockItem(blockRegistryObject.get(), model);
+    }
+
     private void bambooModelsOnly(RegistryObject<Block> blockRegistryObject) {
         String baseName = blockRegistryObject.getId().getPath();
         ResourceLocation stalkTexture = modLoc("block/" + baseName + "_stalk");
@@ -905,17 +918,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void lotusBlock(RegistryObject<Block> blockRegistryObject) {
         String baseName = blockRegistryObject.getId().getPath();
         ModelFile bottomModel = models().cross(baseName + "_bottom",
-                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_bottom")).renderType("cutout");
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/lotus_bottom")).renderType("cutout");
         for (int age = 0; age <= 3; age++) {
-            String stemTexture = "lotus_stem_age_" + age;
-            String petalTexture = (age <= 1) ? "lotus_petal_none" : "lotus_petal";
+            String stemTexture = baseName + "_stem_age_" + age;
+            String petalTexture = (age <= 1) ? baseName + "_petal_none" : baseName + "_petal";
             String petalSmallTexture;
             if (age == 0) {
-                petalSmallTexture = "lotus_petal_none";
+                petalSmallTexture = baseName + "_petal_none";
             } else if (age == 1) {
-                petalSmallTexture = "lotus_petal";
+                petalSmallTexture = baseName + "_petal";
             } else {
-                petalSmallTexture = "lotus_petal_small";
+                petalSmallTexture = baseName + "_petal_small";
             }
             ModelFile topModel = models().withExistingParent(baseName + "_top_age" + age, modLoc("block/lotus_petals"))
                     .texture("petal", modLoc("block/" + petalTexture))
@@ -934,7 +947,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void lotusLeafBlock(RegistryObject<Block> blockRegistryObject) {
         String baseName = blockRegistryObject.getId().getPath();
         ModelFile bottomModel = models().cross(baseName + "_bottom",
-                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_bottom")).renderType("cutout");
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/lotus_bottom")).renderType("cutout");
         ModelFile topModel = models().withExistingParent(baseName + "_top", modLoc("block/lotus_leaf"))
                 .texture("leaf", modLoc("block/" + baseName))
                 .texture("stem", modLoc("block/" + baseName + "_stem"))

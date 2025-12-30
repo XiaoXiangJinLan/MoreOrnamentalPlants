@@ -101,6 +101,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GRASS_FERN_2 =registerKey("grass_fern_2");
     public static final ResourceKey<PlacedFeature> GRASS_DESERT =registerKey("grass_desert");
     public static final ResourceKey<PlacedFeature> DEAD_BUSH =registerKey("dead_bush");
+    public static final ResourceKey<PlacedFeature> PEACH_PETALS =registerKey("peach_petals");
 
     public static final ResourceKey<PlacedFeature> PINK_APRICOT = registerKey("pink_apricot");
     public static final ResourceKey<PlacedFeature> WHITE_APRICOT = registerKey("white_apricot");
@@ -203,6 +204,9 @@ public class ModPlacedFeatures {
                         ModBlocks.WILD_PEACH_SAPLING.get()));
         register(context, PEACH_PINK_PETALS_PATCH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEACH_PINK_PETALS_PATCH),
                 List.of(CountPlacement.of(8),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PEACH_PETALS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEACH_PETALS),
+                List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, GOLDEN_GINKGO_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_GINKGO),
@@ -339,7 +343,7 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(8),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_GROVE, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_GROVE),
-                List.of(CountPlacement.of(11),
+                List.of(CountPlacement.of(14),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_FOREST_1, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FOREST_1),
                 List.of(CountPlacement.of(11),
@@ -354,7 +358,7 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_FERN_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FERN_2),
-                List.of(CountPlacement.of(18),
+                List.of(CountPlacement.of(20),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_DESERT, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
                 List.of(CountPlacement.of(1),

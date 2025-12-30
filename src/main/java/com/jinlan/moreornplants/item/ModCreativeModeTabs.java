@@ -135,6 +135,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.VERSICOLOR_CAMELLIA.get());
                         pOutput.accept(ModBlocks.CRIMSON_AZALEA.get());
                         pOutput.accept(ModBlocks.PEACH_PINK_PETALS.get());
+                        pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_PETALS.get());
+                        pOutput.accept(ModBlocks.WILD_PEACH_PETALS.get());
                         pOutput.accept(ModBlocks.MOTTLED_BAMBOO.get());
                         pOutput.accept(ModBlocks.BLACK_BAMBOO.get());
                         pOutput.accept(ModBlocks.RED_WEEPING_MEI.get());
@@ -146,6 +148,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TWO_QIAO_PEONY.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_PEONY.get());
                         pOutput.accept(ModBlocks.LOTUS.get());
+                        pOutput.accept(ModBlocks.WHITE_LOTUS.get());
                         pOutput.accept(ModBlocks.LOTUS_LEAF.get());
                         pOutput.accept(ModBlocks.CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.PINK_CHINESE_ROSE.get());

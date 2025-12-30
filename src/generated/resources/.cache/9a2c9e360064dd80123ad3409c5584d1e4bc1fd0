@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-26T21:03:43.8165697	Item Models: more_orn_plants
+// 1.20.1	2025-12-30T16:31:57.997695	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -172,6 +172,7 @@ c8dd95d8f382dd745659f51c1eb07a18b4f965dc assets/more_orn_plants/models/item/mott
 48739972c1ddcb46cb103a07814de10b510f960b assets/more_orn_plants/models/item/mottled_bamboo_shoots.json
 dd702884fcb105def37fa9ac8df611cef07d24c5 assets/more_orn_plants/models/item/ochre_yellow_peony.json
 34efb7892cc904a51b63b0d5cf8d5d4b07c86080 assets/more_orn_plants/models/item/orange_osmanthus_sapling.json
+ec9db5116cbe1c74907bfcfe884a45c87ab5f0f7 assets/more_orn_plants/models/item/ornamental_peach_petals.json
 6bd18ddeef30c2fa23b9f18f53b53994e3aeddf1 assets/more_orn_plants/models/item/ornamental_peach_sapling.json
 d32bf5792b541acc5cd950272069bc05b46e2f65 assets/more_orn_plants/models/item/osmanthus_boat.json
 b6dd846ac288de32baecfeb92a8da643d1e1be31 assets/more_orn_plants/models/item/osmanthus_button.json
@@ -295,6 +296,7 @@ f9296a50d905394ab5891c7f80a8fe4fec9aae40 assets/more_orn_plants/models/item/whit
 ca789601a360172ebfe038d3c2e96d048be40204 assets/more_orn_plants/models/item/white_chinese_rose.json
 95ba0298320f0c15e841c67709677f75538b4f5e assets/more_orn_plants/models/item/white_chinese_rose_bush.json
 f7e2a0f509ac2238973acc35ea3cb830bfac70a6 assets/more_orn_plants/models/item/white_chrysanthemum.json
+8ffdea019003cdf878a0bf778a05e3580d542c23 assets/more_orn_plants/models/item/white_lotus.json
 3cabda3b2a84d4e109b429fae0592d8d9713a866 assets/more_orn_plants/models/item/white_mei_boat.json
 4dc23942d57770b8764ea08c40bd9510bd3f58dd assets/more_orn_plants/models/item/white_mei_button.json
 4292075bf739d7ba95c472d1d0236fa1269a3c1f assets/more_orn_plants/models/item/white_mei_chest_boat.json
@@ -312,6 +314,7 @@ b7f1d6af0594ada7fb62805a0c0dc6ffbd6b99d6 assets/more_orn_plants/models/item/whit
 3a3c998253a0eb3057d10dafdf90ae72817ba96f assets/more_orn_plants/models/item/white_peony.json
 4d669e4e3553a9a85250683f2820a50a34b8da83 assets/more_orn_plants/models/item/white_weeping_mei.json
 2cab24c57b15bd48155c4b413deb0ce6d1528c12 assets/more_orn_plants/models/item/white_weeping_mei_sapling.json
+d52210f897ab66737234e57a2a7b7176756a7219 assets/more_orn_plants/models/item/wild_peach_petals.json
 c5d19e9c134d278afe22e9c4ee9f7c6e0c93b63d assets/more_orn_plants/models/item/wild_peach_sapling.json
 44a7823b661c3972f727b10b55a40438034f12b6 assets/more_orn_plants/models/item/wintersweet.json
 18369334418d8a4f177437528220a545a1eb4f1d assets/more_orn_plants/models/item/wintersweet_bush.json

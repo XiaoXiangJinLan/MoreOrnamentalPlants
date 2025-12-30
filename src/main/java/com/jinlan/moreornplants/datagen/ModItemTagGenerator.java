@@ -530,7 +530,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.CRAPE_MYRTLE.get().asItem())
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
-                .add(ModBlocks.LOTUS.get().asItem());
+                .addTag(ForgeTags.Items.LOTUS);
 
         this.tag(ForgeTags.Items.PLANT_IN_FLORILEGIUM)
                 .addTag(ForgeTags.Items.MEI_SAPLING)
@@ -549,7 +549,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.DESERT_POPLAR_SAPLING.get().asItem())
                 .addTag(ForgeTags.Items.CHRYSANTHEMUM)
                 .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
-                .add(ModBlocks.LOTUS.get().asItem())
+                .addTag(ForgeTags.Items.LOTUS)
                 .addTag(ForgeTags.Items.HERBACEOUS_PEONY)
                 .addTag(ForgeTags.Items.CHINESE_ROSE)
                 .addTag(ForgeTags.Items.CAMELLIA)
@@ -696,6 +696,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.MOTTLED_BAMBOO.get().asItem())
                 .add(ModBlocks.BLACK_BAMBOO.get().asItem());
 
+        this.tag(ForgeTags.Items.LOTUS)
+                .add(ModBlocks.LOTUS.get().asItem())
+                .add(ModBlocks.WHITE_LOTUS.get().asItem());
+
         this.tag(ModTags.Items.RED_DYE)
                 .add(ModBlocks.RED_PEONY.get().asItem())
                 .add(ModBlocks.LIGHT_RED_PEONY.get().asItem())
@@ -719,13 +723,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PEACH_PINK_PETALS.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE.get().asItem())
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
-                .add(ModBlocks.LOTUS.get().asItem());
+                .add(ModBlocks.LOTUS.get().asItem())
+                .add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get().asItem())
+                .add(ModBlocks.WILD_PEACH_PETALS.get().asItem());
 
         this.tag(ModTags.Items.WHITE_DYE)
                 .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.WHITE_PEONY.get().asItem())
                 .add(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.WHITE_CAMELLIA.get().asItem());
+                .add(ModBlocks.WHITE_CAMELLIA.get().asItem())
+                .add(ModBlocks.WHITE_LOTUS.get().asItem());
 
         this.tag(ModTags.Items.YELLOW_DYE)
                 .add(ModBlocks.WINTERSWEET.get().asItem())

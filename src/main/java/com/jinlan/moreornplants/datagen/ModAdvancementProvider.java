@@ -283,7 +283,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             false
                     ))
                     .addCriterion("get_lotus", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ModBlocks.LOTUS.get()
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.LOTUS).build()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "lotus_sage"), existingFileHelper);
 

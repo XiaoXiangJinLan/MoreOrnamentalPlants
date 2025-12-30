@@ -25,15 +25,6 @@
               },
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:air",
-                "offset": [
-                  0,
-                  1,
-                  0
-                ]
-              },
-              {
-                "type": "minecraft:matching_blocks",
                 "blocks": [
                   "minecraft:grass_block",
                   "minecraft:dirt",
@@ -51,7 +42,7 @@
       ]
     },
     "tries": 30,
-    "xz_spread": 5,
+    "xz_spread": 6,
     "y_spread": 5
   }
 }

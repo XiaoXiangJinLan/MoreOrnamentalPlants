@@ -35,27 +35,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:lotus_seed_pod"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "block": "more_orn_plants:lotus",
-          "condition": "minecraft:block_state_property",
-          "properties": {
-            "age": "3",
-            "half": "lower"
-          }
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "more_orn_plants:lotus_seed_pod"
+          "name": "more_orn_plants:lotus_root"
         }
       ],
       "rolls": 1.0
@@ -76,6 +56,26 @@
         {
           "type": "minecraft:item",
           "name": "more_orn_plants:lotus_root"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "more_orn_plants:lotus",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "3",
+            "half": "lower"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:lotus_seed_pod"
         }
       ],
       "rolls": 1.0

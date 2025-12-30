@@ -18,7 +18,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 10
+                "weight": 20
               },
               {
                 "data": {
@@ -30,7 +30,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 10
+                "weight": 20
               },
               {
                 "data": {
@@ -42,7 +42,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 10
+                "weight": 20
               },
               {
                 "data": {
@@ -54,11 +54,22 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 10
+                "weight": 20
               },
               {
                 "data": {
                   "Name": "more_orn_plants:lotus",
+                  "Properties": {
+                    "age": "0",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:white_lotus",
                   "Properties": {
                     "age": "0",
                     "half": "lower",
@@ -76,6 +87,17 @@
                     "waterlogged": "true"
                   }
                 },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:white_lotus",
+                  "Properties": {
+                    "age": "1",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
                 "weight": 1
               },
               {
@@ -87,11 +109,33 @@
                     "waterlogged": "true"
                   }
                 },
+                "weight": 4
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:white_lotus",
+                  "Properties": {
+                    "age": "2",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
                 "weight": 2
               },
               {
                 "data": {
                   "Name": "more_orn_plants:lotus",
+                  "Properties": {
+                    "age": "3",
+                    "half": "lower",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 4
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:white_lotus",
                   "Properties": {
                     "age": "3",
                     "half": "lower",

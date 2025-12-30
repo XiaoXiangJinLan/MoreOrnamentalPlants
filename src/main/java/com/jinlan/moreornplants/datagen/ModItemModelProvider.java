@@ -350,6 +350,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BAMBOO_SHOOTS_SOUP);
 
         simplerBlockItem(ModBlocks.LOTUS);
+        simplerBlockItem(ModBlocks.WHITE_LOTUS);
         simplerBlockItem(ModBlocks.LOTUS_LEAF);
         simpleItem(ModItems.LOTUS_ROOT);
         simpleItem(ModItems.LOTUS_SEED);
@@ -357,7 +358,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.LOTUS_ROOT_SOUP);
         simpleItem(ModItems.LOTUS_SEED_SOUP);
 
-        peachPinkPetalsItem(ModBlocks.PEACH_PINK_PETALS);
+        simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
+        simplerBlockItem(ModBlocks.ORNAMENTAL_PEACH_PETALS);
+        simplerBlockItem(ModBlocks.WILD_PEACH_PETALS);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
@@ -408,12 +411,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + block.getId().getPath() + "_top"));
-    }
-
-    private ItemModelBuilder peachPinkPetalsItem(RegistryObject<Block> block) {
-        return withExistingParent(block.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(MoreOrnPlants.MOD_ID, "item/" + block.getId().getPath()));
     }
 
 }

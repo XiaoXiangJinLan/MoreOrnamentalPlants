@@ -25,6 +25,7 @@ public class ForgeTags {
         public static final TagKey<Item> CHINESE_PARASOL_SAPLING = tag("chinese_parasol_sapling");
         public static final TagKey<Item> CRAPE_MYRTLE = tag("crape_myrtle");
         public static final TagKey<Item> BAMBOO = tag("bamboo");
+        public static final TagKey<Item> LOTUS = tag("lotus");
 
         public static final TagKey<Item> VEGETABLES = tag("vegetables");
         public static final TagKey<Item> VEGETABLES_BAMBOO_SHOOTS = tag("vegetables/bamboo_shoots");
