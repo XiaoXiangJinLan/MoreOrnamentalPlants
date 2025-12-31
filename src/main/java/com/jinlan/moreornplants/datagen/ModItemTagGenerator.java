@@ -708,7 +708,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.CHINESE_ROSE_BUSH.get().asItem())
                 .add(ModBlocks.CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.CAMELLIA.get().asItem())
-                .add(ModBlocks.CRIMSON_AZALEA.get().asItem());
+                .add(ModBlocks.CRIMSON_AZALEA.get().asItem())
+                .add(ModItems.SWEETGUM_LEAF_0.get())
+                .add(ModItems.SWEETGUM_LEAF_1.get());
 
         this.tag(ModTags.Items.PINK_DYE)
                 .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
@@ -743,7 +745,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.OCHRE_YELLOW_PEONY.get().asItem())
                 .add(ModBlocks.GOLDEN_PEONY.get().asItem())
                 .add(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get().asItem());
+                .add(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get().asItem())
+                .add(ModItems.CHINESE_PARASOL_LEAF_0.get())
+                .add(ModItems.GINKGO_LEAF.get());
+
+        this.tag(ModTags.Items.ORANGE_DYE)
+                .add(ModItems.CHINESE_PARASOL_LEAF_1.get());
 
         this.tag(ModTags.Items.PURPLE_DYE)
                 .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem())

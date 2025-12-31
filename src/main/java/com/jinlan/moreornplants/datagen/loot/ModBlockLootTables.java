@@ -833,6 +833,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.ORNAMENTAL_PEACH_PETALS.get());
         this.dropSelf(ModBlocks.WILD_PEACH_PETALS.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_LEAF_0.get());
+        this.dropSelf(ModBlocks.CHINESE_PARASOL_LEAF_1.get());
+        this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_0.get());
+        this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_1.get());
+        this.dropSelf(ModBlocks.GINKGO_LEAF_PILE.get());
 
     }
 

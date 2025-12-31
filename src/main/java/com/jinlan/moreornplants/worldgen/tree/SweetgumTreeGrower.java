@@ -11,6 +11,6 @@ public class SweetgumTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return ModConfiguredFeatures.SWEETGUM;
+        return pRandom.nextBoolean() ? ModConfiguredFeatures.SWEETGUM : ModConfiguredFeatures.SWEETGUM_WITH_LEAF_PILE;
     }
 }

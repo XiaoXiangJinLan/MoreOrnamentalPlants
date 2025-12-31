@@ -111,11 +111,11 @@ public class ModOverworldBiomesBuilder {
             {null, null,                        null,                        null,                        null}
     };
     private final ResourceKey<Biome>[][] SWAMP_BIOMES_MOD = new ResourceKey[][]{
-            {null, null,                       null,                       null,                       null},
-            {null, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, null},
-            {null, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, null},
-            {null, null,                       null,                       null,                       null},
-            {null, null,                       null,                       null,                       null}
+            {null,                       null,                       null,                       null,                       null},
+            {null,                       ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, null},
+            {ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM},
+            {null,                       null,                       null,                       null,                       null},
+            {null,                       null,                       null,                       null,                       null}
     };
 
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {

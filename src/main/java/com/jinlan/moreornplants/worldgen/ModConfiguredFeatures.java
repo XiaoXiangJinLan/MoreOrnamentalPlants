@@ -71,12 +71,15 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORANGE_OSMANTHUS = registerKey("orange_osmanthus");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_OSMANTHUS = registerKey("white_osmanthus");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_GINKGO = registerKey("golden_ginkgo");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_GINKGO_WITH_LEAF_PILE = registerKey("golden_ginkgo_with_leaf_pile");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_GINKGO = registerKey("green_ginkgo");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_GOLDEN_GINKGO = registerKey("ancient_golden_ginkgo");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_GREEN_GINKGO = registerKey("ancient_green_ginkgo");
     public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW_CHINESE_PARASOL = registerKey("yellow_chinese_parasol");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW_CHINESE_PARASOL_WITH_LEAF_PILE = registerKey("yellow_chinese_parasol_with_leaf_pile");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_CHINESE_PARASOL = registerKey("green_chinese_parasol");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SWEETGUM = registerKey("sweetgum");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SWEETGUM_WITH_LEAF_PILE = registerKey("sweetgum_with_leaf_pile");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMPHOR = registerKey("camphor");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMPHOR_WITH_NEW_LEAVES = registerKey("camphor_with_new_leaves");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_CAMPHOR = registerKey("ancient_camphor");
@@ -349,6 +352,12 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.GOLDEN_GINKGO_LEAVES.get()),
                 new GinkgoFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(6)),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, GOLDEN_GINKGO_WITH_LEAF_PILE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
+                new StraightTrunkPlacer(12, 3, 0),
+                BlockStateProvider.simple(ModBlocks.GOLDEN_GINKGO_LEAVES.get()),
+                new GinkgoFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(6)),
+                new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new LeafPileDecorator(ModBlocks.GINKGO_LEAF_PILE.get().defaultBlockState(), 6, 2, 0.1F))).ignoreVines().build());
         register(context, GREEN_GINKGO, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
                 new StraightTrunkPlacer(12, 3, 0),
@@ -374,6 +383,16 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+
+        register(context, YELLOW_CHINESE_PARASOL_WITH_LEAF_PILE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CHINESE_PARASOL_LOG.get()),
+                new ChineseParasolTrunkPlacer(13, 4, 1, 2, 3),
+                BlockStateProvider.simple(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), 3),
+                new TwoLayersFeatureSize(1, 0, 2))
+                .decorators(List.of(
+                        new LeafPileDecorator(ModBlocks.CHINESE_PARASOL_LEAF_0.get().defaultBlockState(), 6, 2, 0.05F),
+                        new LeafPileDecorator(ModBlocks.CHINESE_PARASOL_LEAF_1.get().defaultBlockState(), 6, 2, 0.05F))).ignoreVines().build());
         register(context, GREEN_CHINESE_PARASOL, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CHINESE_PARASOL_LOG.get()),
                 new ChineseParasolTrunkPlacer(13, 4, 1, 2, 3),
@@ -387,6 +406,15 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.SWEETGUM_LEAVES.get()),
                 new SweetgumFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(6)),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, SWEETGUM_WITH_LEAF_PILE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.SWEETGUM_LOG.get()),
+                new StraightTrunkPlacer(13, 5, 0),
+                BlockStateProvider.simple(ModBlocks.SWEETGUM_LEAVES.get()),
+                new SweetgumFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(6)),
+                new TwoLayersFeatureSize(1, 0, 2))
+                .decorators(List.of(
+                        new LeafPileDecorator(ModBlocks.SWEETGUM_LEAF_PILE_0.get().defaultBlockState(), 6, 2, 0.05F),
+                        new LeafPileDecorator(ModBlocks.SWEETGUM_LEAF_PILE_1.get().defaultBlockState(), 6, 2, 0.05F))).ignoreVines().build());
 
         register(context, CAMPHOR, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),

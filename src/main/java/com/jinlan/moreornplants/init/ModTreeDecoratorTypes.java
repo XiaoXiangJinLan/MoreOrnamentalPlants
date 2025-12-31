@@ -1,10 +1,7 @@
 package com.jinlan.moreornplants.init;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
-import com.jinlan.moreornplants.feature.treedecorators.SnowAroundTrunk;
-import com.jinlan.moreornplants.feature.treedecorators.VersicolorWeepingMeiVineDecorator;
-import com.jinlan.moreornplants.feature.treedecorators.WeepingCrabappleFlowerDecorator;
-import com.jinlan.moreornplants.feature.treedecorators.WeepingMeiVineDecorator;
+import com.jinlan.moreornplants.feature.treedecorators.*;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -26,6 +23,10 @@ public class ModTreeDecoratorTypes {
 
     public static final RegistryObject<TreeDecoratorType<SnowAroundTrunk>> SNOW_AROUND_TRUNK =
             TREE_DECORATOR.register("snow_around_trunk", () -> new TreeDecoratorType<>(SnowAroundTrunk.CODEC));
+
+    public static final RegistryObject<TreeDecoratorType<LeafPileDecorator>> LEAF_PILE_DECORATOR =
+            TREE_DECORATOR.register("leaf_pile_decorator",
+                    () -> new TreeDecoratorType<>(LeafPileDecorator.CODEC));
 
     public static void register(IEventBus eventBus){
         TREE_DECORATOR.register(eventBus);

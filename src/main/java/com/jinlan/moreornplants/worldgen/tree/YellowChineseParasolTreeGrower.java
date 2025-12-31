@@ -11,6 +11,6 @@ public class YellowChineseParasolTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return ModConfiguredFeatures.YELLOW_CHINESE_PARASOL;
+        return pRandom.nextBoolean() ? ModConfiguredFeatures.YELLOW_CHINESE_PARASOL : ModConfiguredFeatures.YELLOW_CHINESE_PARASOL_WITH_LEAF_PILE;
     }
 }

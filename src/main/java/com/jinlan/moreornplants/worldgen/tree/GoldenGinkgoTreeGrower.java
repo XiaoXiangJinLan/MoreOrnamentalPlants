@@ -11,7 +11,7 @@ public class GoldenGinkgoTreeGrower extends AbstractMegaTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return ModConfiguredFeatures.GOLDEN_GINKGO;
+        return pRandom.nextBoolean() ? ModConfiguredFeatures.GOLDEN_GINKGO : ModConfiguredFeatures.GOLDEN_GINKGO_WITH_LEAF_PILE;
     }
 
     @Nullable

@@ -734,6 +734,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         peachPinkPetalsBlock(ModBlocks.PEACH_PINK_PETALS);
         leafPileBlock(ModBlocks.ORNAMENTAL_PEACH_PETALS);
         leafPileBlock(ModBlocks.WILD_PEACH_PETALS);
+        leafPileBlock(ModBlocks.CHINESE_PARASOL_LEAF_0);
+        leafPileBlock(ModBlocks.CHINESE_PARASOL_LEAF_1);
+        leafPileBlock(ModBlocks.SWEETGUM_LEAF_PILE_0);
+        leafPileBlock(ModBlocks.SWEETGUM_LEAF_PILE_1);
+        leafPileBlock(ModBlocks.GINKGO_LEAF_PILE);
+
     }
 
     private void weepingMeiPlantBlock(RegistryObject<Block> blockRegistryObject) {

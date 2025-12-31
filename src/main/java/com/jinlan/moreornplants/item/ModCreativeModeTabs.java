@@ -137,6 +137,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PEACH_PINK_PETALS.get());
                         pOutput.accept(ModItems.ORNAMENTAL_PEACH_PETALS.get());
                         pOutput.accept(ModItems.WILD_PEACH_PETALS.get());
+                        pOutput.accept(ModItems.CHINESE_PARASOL_LEAF_0.get());
+                        pOutput.accept(ModItems.CHINESE_PARASOL_LEAF_1.get());
+                        pOutput.accept(ModItems.SWEETGUM_LEAF_0.get());
+                        pOutput.accept(ModItems.SWEETGUM_LEAF_1.get());
+                        pOutput.accept(ModItems.GINKGO_LEAF.get());
                         pOutput.accept(ModBlocks.MOTTLED_BAMBOO.get());
                         pOutput.accept(ModBlocks.BLACK_BAMBOO.get());
                         pOutput.accept(ModBlocks.RED_WEEPING_MEI.get());

@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [
+      {
+        "type": "more_orn_plants:leaf_pile_decorator",
+        "horizontal_radius": 6,
+        "leaf_pile_block": {
+          "Name": "more_orn_plants:chinese_parasol_leaf_0",
+          "Properties": {
+            "facing": "north"
+          }
+        },
+        "placement_chance": 0.05,
+        "vertical_radius": 2
+      },
+      {
+        "type": "more_orn_plants:leaf_pile_decorator",
+        "horizontal_radius": 6,
+        "leaf_pile_block": {
+          "Name": "more_orn_plants:chinese_parasol_leaf_1",
+          "Properties": {
+            "facing": "north"
+          }
+        },
+        "placement_chance": 0.05,
+        "vertical_radius": 2
+      }
+    ],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "foliage_placer": {
+      "type": "minecraft:fancy_foliage_placer",
+      "height": 3,
+      "offset": 1,
+      "radius": 2
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "more_orn_plants:yellow_chinese_parasol_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 2
+    },
+    "trunk_placer": {
+      "type": "more_orn_plants:chinese_parasol_trunk_placer",
+      "base_height": 13,
+      "height_rand_a": 4,
+      "height_rand_b": 1,
+      "long_branch_length": 3,
+      "short_branch_length": 2
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "more_orn_plants:chinese_parasol_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

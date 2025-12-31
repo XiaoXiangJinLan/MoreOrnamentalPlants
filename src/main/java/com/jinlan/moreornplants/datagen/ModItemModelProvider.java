@@ -361,6 +361,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
         simpleItem(ModItems.ORNAMENTAL_PEACH_PETALS);
         simpleItem(ModItems.WILD_PEACH_PETALS);
+        flowerItem(ModBlocks.CHINESE_PARASOL_LEAF_0);
+        flowerItem(ModBlocks.CHINESE_PARASOL_LEAF_1);
+        simpleItem(ModItems.SWEETGUM_LEAF_0);
+        simpleItem(ModItems.SWEETGUM_LEAF_1);
+        simpleItem(ModItems.GINKGO_LEAF);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

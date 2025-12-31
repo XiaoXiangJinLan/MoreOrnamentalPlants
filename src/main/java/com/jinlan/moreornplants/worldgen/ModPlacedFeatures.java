@@ -209,13 +209,13 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
-        register(context, GOLDEN_GINKGO_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_GINKGO),
+        register(context, GOLDEN_GINKGO_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_GINKGO_WITH_LEAF_PILE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(4, 0.1f, 1),
                         ModBlocks.GOLDEN_GINKGO_SAPLING.get()));
-        register(context, YELLOW_CHINESE_PARASOL_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.YELLOW_CHINESE_PARASOL),
+        register(context, YELLOW_CHINESE_PARASOL_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.YELLOW_CHINESE_PARASOL_WITH_LEAF_PILE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get()));
-        register(context, SWEETGUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.SWEETGUM),
+        register(context, SWEETGUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.SWEETGUM_WITH_LEAF_PILE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.SWEETGUM_SAPLING.get()));
         register(context, GOLDEN_OSMANTHUS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_OSMANTHUS),
@@ -317,7 +317,7 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, LOTUS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.LOTUS_KEY),
-                List.of(CountPlacement.of(3),
+                List.of(CountPlacement.of(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, DESERT_POPLAR_0_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.DESERT_POPLAR_0),

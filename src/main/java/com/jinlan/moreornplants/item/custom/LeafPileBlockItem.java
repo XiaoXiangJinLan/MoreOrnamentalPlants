@@ -25,7 +25,21 @@ public class LeafPileBlockItem extends BlockItem {
 
     @Override
     public InteractionResult useOn(UseOnContext context) {
-        // 允许右键点击方块放置（用于地面放置）
+        Level level = context.getLevel();
+        Player player = context.getPlayer();
+
+        if (player != null) {
+            // 检查视线是否指向水源
+            BlockHitResult hitResult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.SOURCE_ONLY);
+
+            if (hitResult.getType() == HitResult.Type.BLOCK &&
+                    level.getFluidState(hitResult.getBlockPos()).isSource()) {
+                // 放置在水面上方
+                BlockHitResult adjustedHit = hitResult.withPosition(hitResult.getBlockPos().above());
+                UseOnContext waterContext = new UseOnContext(player, context.getHand(), adjustedHit);
+                return super.useOn(waterContext);
+            }
+        }
         return super.useOn(context);
     }
 
