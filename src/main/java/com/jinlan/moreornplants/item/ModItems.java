@@ -163,9 +163,9 @@ public class ModItems {
     public static final RegistryObject<Item> WILD_PEACH_PETALS =
             ITEMS.register("wild_peach_petals", () -> new LeafPileBlockItem(ModBlocks.WILD_PEACH_PETALS.get(), new Item.Properties(), 100));
     public static final RegistryObject<Item> CHINESE_PARASOL_LEAF_0 =
-            ITEMS.register("chinese_parasol_leaf_0", () -> new LeafPileBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_0.get(), new Item.Properties(), 120));
+            ITEMS.register("chinese_parasol_leaf_0", () -> new LeafPileUseItemNameBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_0.get(), new Item.Properties(), 120));
     public static final RegistryObject<Item> CHINESE_PARASOL_LEAF_1 =
-            ITEMS.register("chinese_parasol_leaf_1", () -> new LeafPileBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_1.get(), new Item.Properties(), 120));
+            ITEMS.register("chinese_parasol_leaf_1", () -> new LeafPileUseItemNameBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_1.get(), new Item.Properties(), 120));
     public static final RegistryObject<Item> SWEETGUM_LEAF_0 =
             ITEMS.register("sweetgum_leaf_0", () -> new LeafPileUseItemNameBlockItem(ModBlocks.SWEETGUM_LEAF_PILE_0.get(), new Item.Properties(), 100));
     public static final RegistryObject<Item> SWEETGUM_LEAF_1 =
