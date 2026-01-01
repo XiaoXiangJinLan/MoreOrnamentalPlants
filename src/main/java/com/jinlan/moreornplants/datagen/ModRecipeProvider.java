@@ -9,7 +9,6 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -1004,89 +1003,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', Blocks.PEONY)
                 .unlockedBy(getHasName(Blocks.PEONY), has(Blocks.PEONY))
                 .save(pWriter);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WINTERSWEET_BUSH.get(), 2)
-                .requires(ModBlocks.WINTERSWEET.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.WINTERSWEET.get()), has(ModBlocks.WINTERSWEET.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WINTERSWEET.get(), 2)
-                .requires(ModBlocks.WINTERSWEET_BUSH.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.WINTERSWEET_BUSH.get()), has(ModBlocks.WINTERSWEET_BUSH.get()))
-                .save(pWriter);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CHINESE_ROSE_BUSH.get(), 2)
-                .requires(ModBlocks.CHINESE_ROSE.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.CHINESE_ROSE.get()), has(ModBlocks.CHINESE_ROSE.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINK_CHINESE_ROSE_BUSH.get(), 2)
-                .requires(ModBlocks.PINK_CHINESE_ROSE.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.PINK_CHINESE_ROSE.get()), has(ModBlocks.PINK_CHINESE_ROSE.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get(), 2)
-                .requires(ModBlocks.YELLOW_CHINESE_ROSE.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.YELLOW_CHINESE_ROSE.get()), has(ModBlocks.YELLOW_CHINESE_ROSE.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WHITE_CHINESE_ROSE_BUSH.get(), 2)
-                .requires(ModBlocks.WHITE_CHINESE_ROSE.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.WHITE_CHINESE_ROSE.get()), has(ModBlocks.WHITE_CHINESE_ROSE.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get(), 2)
-                .requires(ModBlocks.RED_PINK_CHINESE_ROSE.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.RED_PINK_CHINESE_ROSE.get()), has(ModBlocks.RED_PINK_CHINESE_ROSE.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get(), 2)
-                .requires(ModBlocks.RED_YELLOW_CHINESE_ROSE.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.RED_YELLOW_CHINESE_ROSE.get()), has(ModBlocks.RED_YELLOW_CHINESE_ROSE.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get(), 2)
-                .requires(ModBlocks.RED_WHITE_CHINESE_ROSE.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.RED_WHITE_CHINESE_ROSE.get()), has(ModBlocks.RED_WHITE_CHINESE_ROSE.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get(), 2)
-                .requires(ModBlocks.PINK_WHITE_CHINESE_ROSE.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.PINK_WHITE_CHINESE_ROSE.get()), has(ModBlocks.PINK_WHITE_CHINESE_ROSE.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get(), 2)
-                .requires(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get()), has(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get()))
-                .save(pWriter);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CHINESE_ROSE.get(), 2)
-                .requires(ModBlocks.CHINESE_ROSE_BUSH.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.CHINESE_ROSE_BUSH.get()), has(ModBlocks.CHINESE_ROSE_BUSH.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINK_CHINESE_ROSE.get(), 2)
-                .requires(ModBlocks.PINK_CHINESE_ROSE_BUSH.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.PINK_CHINESE_ROSE_BUSH.get()), has(ModBlocks.PINK_CHINESE_ROSE_BUSH.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.YELLOW_CHINESE_ROSE.get(), 2)
-                .requires(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get()), has(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WHITE_CHINESE_ROSE.get(), 2)
-                .requires(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get()), has(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_PINK_CHINESE_ROSE.get(), 2)
-                .requires(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get()), has(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "red_pink_chinese_rose_from_bush"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_YELLOW_CHINESE_ROSE.get(), 2)
-                .requires(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get()), has(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "red_yellow_chinese_rose_from_bush"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_WHITE_CHINESE_ROSE.get(), 2)
-                .requires(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get()), has(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "red_white_chinese_rose_from_bush"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINK_WHITE_CHINESE_ROSE.get(), 2)
-                .requires(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get()), has(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "pink_white_chinese_rose_from_bush"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), 2)
-                .requires(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get()), has(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "yellow_white_chinese_rose_from_bush"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRAPE_MYRTLE.get(), 2)
                 .requires(ModBlocks.CRAPE_MYRTLE_SAPLING.get(), 2)

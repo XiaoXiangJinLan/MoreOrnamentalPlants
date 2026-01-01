@@ -26,11 +26,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:chinese_rose_bush"
+          "name": "more_orn_plants:chinese_rose"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "more_orn_plants:blocks/potted_chinese_rose_bush"
+  "random_sequence": "more_orn_plants:blocks/potted_chinese_rose"
 }

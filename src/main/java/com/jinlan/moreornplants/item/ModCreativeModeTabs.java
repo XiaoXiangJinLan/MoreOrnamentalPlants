@@ -128,7 +128,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get());
                         pOutput.accept(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get());
                         pOutput.accept(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get());
-                        pOutput.accept(ModBlocks.WINTERSWEET_BUSH.get());
+                        pOutput.accept(ModBlocks.WINTER_JASMINE.get());
                         pOutput.accept(ModBlocks.CAMELLIA.get());
                         pOutput.accept(ModBlocks.PINK_CAMELLIA.get());
                         pOutput.accept(ModBlocks.WHITE_CAMELLIA.get());

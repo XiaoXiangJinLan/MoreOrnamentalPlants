@@ -499,7 +499,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem());
 
         this.tag(ItemTags.SMALL_FLOWERS)
-                .add(ModBlocks.WINTERSWEET_BUSH.get().asItem())
+                .add(ModBlocks.WINTER_JASMINE.get().asItem())
                 .addTag(ForgeTags.Items.CHRYSANTHEMUM)
                 .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
                 .addTag(ForgeTags.Items.HERBACEOUS_PEONY)
@@ -565,8 +565,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(Blocks.LILAC.asItem());
 
         this.tag(ForgeTags.Items.WINTERSWEET)
-                .add(ModBlocks.WINTERSWEET.get().asItem())
-                .add(ModBlocks.WINTERSWEET_BUSH.get().asItem());
+                .add(ModBlocks.WINTERSWEET.get().asItem());
 
         this.tag(ForgeTags.Items.MEI_SAPLING)
                 .add(ModBlocks.RED_MEI_SAPLING.get().asItem())
@@ -617,15 +616,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.MAUVE_PEONY.get().asItem());
 
         this.tag(ForgeTags.Items.CHINESE_ROSE)
-                .add(ModBlocks.CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.PINK_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get().asItem())
-                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get().asItem())
                 .add(ModBlocks.CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.PINK_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem())
@@ -738,7 +728,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.YELLOW_DYE)
                 .add(ModBlocks.WINTERSWEET.get().asItem())
-                .add(ModBlocks.WINTERSWEET_BUSH.get().asItem())
                 .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.YELLOW_PEONY.get().asItem())
                 .add(ModBlocks.LIGHT_YELLOW_PEONY.get().asItem())
@@ -746,6 +735,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GOLDEN_PEONY.get().asItem())
                 .add(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get().asItem())
+                .add(ModBlocks.WINTER_JASMINE.get().asItem())
                 .add(ModItems.CHINESE_PARASOL_LEAF_0.get())
                 .add(ModItems.GINKGO_LEAF.get());
 

@@ -1,4 +1,4 @@
-// 1.20.1	2025-12-31T13:20:43.9371055	Loot Tables
+// 1.20.1	2026-01-01T13:20:14.6385158	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_tables/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_tables/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_tables/blocks/apricot_fence.json
@@ -287,7 +287,7 @@ ce189510e4dbb8769d194545390d0c2fbff97128 data/more_orn_plants/loot_tables/blocks
 bc3ec115c29f21a3fca98478fe07021ec4b0e656 data/more_orn_plants/loot_tables/blocks/potted_camellia.json
 58c5a04da72cf6cfaeb0187957d14e79f9989e53 data/more_orn_plants/loot_tables/blocks/potted_camphor_sapling.json
 0c729aa603d9dee7e36df188e28d3be23bc79367 data/more_orn_plants/loot_tables/blocks/potted_chinaberry_sapling.json
-caa1489b40b911e8201db92870f78940af5b1f0b data/more_orn_plants/loot_tables/blocks/potted_chinese_rose_bush.json
+f0a08783cc8b5f77a826b0ed6fdb82d60b3d6630 data/more_orn_plants/loot_tables/blocks/potted_chinese_rose.json
 e9edd044150701c6e0e46ff8c4e8fc62fa72c2fd data/more_orn_plants/loot_tables/blocks/potted_chrysanthemum.json
 ff65243951173ab6573a8c64d39c4b9ce71f662b data/more_orn_plants/loot_tables/blocks/potted_colorful_peony.json
 5ba4096566131863f9693f3fb29e0f4dcf7f38a3 data/more_orn_plants/loot_tables/blocks/potted_crape_myrtle_sapling.json

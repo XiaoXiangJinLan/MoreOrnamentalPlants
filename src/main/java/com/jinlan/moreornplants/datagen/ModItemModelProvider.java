@@ -272,7 +272,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         flowerItem(ModBlocks.WEEPING_CRABAPPLE);
 
-        flowerItem(ModBlocks.WINTERSWEET_BUSH);
+        flowerItem(ModBlocks.WINTER_JASMINE);
         flowerItem(ModBlocks.CHRYSANTHEMUM);
         flowerItem(ModBlocks.GOLDEN_CHRYSANTHEMUM);
         flowerItem(ModBlocks.GOLD_BACKED_SCARLET_MUM);

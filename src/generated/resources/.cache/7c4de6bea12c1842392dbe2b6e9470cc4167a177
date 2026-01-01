@@ -1,9 +1,9 @@
-// 1.20.1	2025-12-30T16:31:57.9960897	Tags for minecraft:block mod id more_orn_plants
+// 1.20.1	2026-01-01T13:20:14.6331398	Tags for minecraft:block mod id more_orn_plants
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/blocks/ceiling_hanging_signs.json
 21725c6c03c5b6dfb49d3424ee057a84716b5322 data/minecraft/tags/blocks/crops.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/minecraft/tags/blocks/fence_gates.json
 4ec0aa344e24d67aafcd515ee994e2759709b1bd data/minecraft/tags/blocks/flowers.json
-3b97481cc80ba267edacecfbb5a1847b83c46a68 data/minecraft/tags/blocks/flower_pots.json
+1ee4cc9eeee05a381a9defd596f3845f8a59f967 data/minecraft/tags/blocks/flower_pots.json
 7a9362210b94af18794a4a59a1989bbaf03d4d8b data/minecraft/tags/blocks/leaves.json
 8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/blocks/logs_that_burn.json
 21725c6c03c5b6dfb49d3424ee057a84716b5322 data/minecraft/tags/blocks/maintains_farmland.json
