@@ -613,6 +613,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SPRING_CYMBIDIUM.get());
         this.add(ModBlocks.POTTED_SPRING_CYMBIDIUM.get(),
                 createPotFlowerItemTable(ModBlocks.SPRING_CYMBIDIUM.get()));
+        this.dropSelf(ModBlocks.SUMMER_CYMBIDIUM.get());
+        this.add(ModBlocks.POTTED_SUMMER_CYMBIDIUM.get(),
+                createPotFlowerItemTable(ModBlocks.SUMMER_CYMBIDIUM.get()));
+        this.dropSelf(ModBlocks.AUTUMN_CYMBIDIUM.get());
+        this.add(ModBlocks.POTTED_AUTUMN_CYMBIDIUM.get(),
+                createPotFlowerItemTable(ModBlocks.AUTUMN_CYMBIDIUM.get()));
         this.dropSelf(ModBlocks.PEONY.get());
         this.add(ModBlocks.POTTED_PEONY.get(),
                 createPotFlowerItemTable(ModBlocks.PEONY.get()));
@@ -715,20 +721,21 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CRIMSON_AZALEA.get());
         this.add(ModBlocks.POTTED_CRIMSON_AZALEA.get(),
                 createPotFlowerItemTable(ModBlocks.CRIMSON_AZALEA.get()));
-        this.dropSelf(ModBlocks.WINTER_JASMINE.get());
-        this.add(ModBlocks.POTTED_WINTER_JASMINE.get(),
-                createPotFlowerItemTable(ModBlocks.WINTER_JASMINE.get()));
+        this.dropSelf(ModBlocks.FOUNTAIN_GRASS.get());
+        this.add(ModBlocks.POTTED_FOUNTAIN_GRASS.get(),
+                createPotFlowerItemTable(ModBlocks.FOUNTAIN_GRASS.get()));
+        this.dropSelf(ModBlocks.PURPLE_FOUNTAIN_GRASS.get());
+        this.add(ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get(),
+                createPotFlowerItemTable(ModBlocks.PURPLE_FOUNTAIN_GRASS.get()));
+        this.dropSelf(ModBlocks.PINK_FOUNTAIN_GRASS.get());
+        this.add(ModBlocks.POTTED_PINK_FOUNTAIN_GRASS.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_FOUNTAIN_GRASS.get()));
+        this.dropSelf(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
+        this.add(ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_FOUNTAIN_GRASS.get()));
 
-        this.dropSelf(ModBlocks.CHINESE_ROSE_BUSH.get());
-        this.dropSelf(ModBlocks.PINK_CHINESE_ROSE_BUSH.get());
-        this.dropSelf(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get());
-        this.dropSelf(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get());
-        this.dropSelf(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get());
-        this.dropSelf(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get());
-        this.dropSelf(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get());
-        this.dropSelf(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get());
-        this.dropSelf(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get());
-
+        this.add(ModBlocks.POTTED_WINTER_CYMBIDIUM.get(),
+                createPotFlowerItemTable(ModBlocks.WINTER_CYMBIDIUM.get()));
         this.add(ModBlocks.POTTED_WINTERSWEET.get(),
                 createPotFlowerItemTable(ModBlocks.WINTERSWEET.get()));
         this.add(ModBlocks.POTTED_CHINESE_ROSE.get(),
@@ -750,6 +757,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_YELLOW_WHITE_CHINESE_ROSE.get(),
                 createPotFlowerItemTable(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get()));
 
+        this.add(ModBlocks.WINTER_CYMBIDIUM.get(), createSinglePropConditionTable(ModBlocks.WINTER_CYMBIDIUM.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.WINTERSWEET.get(), createSinglePropConditionTable(ModBlocks.WINTERSWEET.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.TWO_QIAO_PEONY.get(), createSinglePropConditionTable(ModBlocks.TWO_QIAO_PEONY.get(),
@@ -777,6 +786,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.CRAPE_MYRTLE.get(), createSinglePropConditionTable(ModBlocks.CRAPE_MYRTLE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.COTTON_ROSE.get(), createSinglePropConditionTable(ModBlocks.COTTON_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.MISCANTHUS.get(), createSinglePropConditionTable(ModBlocks.COTTON_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.GOLDEN_MISCANTHUS.get(), createSinglePropConditionTable(ModBlocks.COTTON_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
 
         this.dropSelf(ModBlocks.MOTTLED_BAMBOO.get());

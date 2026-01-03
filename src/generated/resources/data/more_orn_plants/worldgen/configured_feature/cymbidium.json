@@ -6,10 +6,36 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "more_orn_plants:spring_cymbidium"
-            }
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "more_orn_plants:spring_cymbidium"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:summer_cymbidium"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:autumn_cymbidium"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:winter_cymbidium",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
+              }
+            ]
           }
         }
       },
@@ -22,6 +48,15 @@
               {
                 "type": "minecraft:matching_blocks",
                 "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -41,8 +76,8 @@
         }
       ]
     },
-    "tries": 4,
-    "xz_spread": 1,
-    "y_spread": 1
+    "tries": 6,
+    "xz_spread": 5,
+    "y_spread": 4
   }
 }

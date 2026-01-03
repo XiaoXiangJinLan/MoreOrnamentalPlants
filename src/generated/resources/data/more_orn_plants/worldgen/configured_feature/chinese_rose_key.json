@@ -6,13 +6,45 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "more_orn_plants:chinese_rose",
-              "Properties": {
-                "half": "lower"
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "more_orn_plants:chinese_rose",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 5
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:pink_chinese_rose",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 3
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:yellow_chinese_rose",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:white_chinese_rose",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
               }
-            }
+            ]
           }
         }
       },
@@ -53,8 +85,8 @@
         }
       ]
     },
-    "tries": 56,
-    "xz_spread": 5,
-    "y_spread": 4
+    "tries": 81,
+    "xz_spread": 12,
+    "y_spread": 6
   }
 }

@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "more_orn_plants:spring_cymbidium"
-            ]
+            "tag": "forge:cymbidium"
           }
         ]
       },

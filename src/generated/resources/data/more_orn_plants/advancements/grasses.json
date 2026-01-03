@@ -1,0 +1,36 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_grasses": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ornamental_grass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.grasses.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "more_orn_plants:fountain_grass"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.grasses.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_grasses"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

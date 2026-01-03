@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:wintersweet"
+            "items": [
+              "more_orn_plants:wintersweet"
+            ]
           }
         ]
       },

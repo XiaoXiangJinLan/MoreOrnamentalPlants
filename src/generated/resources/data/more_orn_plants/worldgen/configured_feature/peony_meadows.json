@@ -15,7 +15,7 @@
                     "half": "lower"
                   }
                 },
-                "weight": 2
+                "weight": 1
               },
               {
                 "data": {
@@ -78,6 +78,6 @@
     },
     "tries": 81,
     "xz_spread": 12,
-    "y_spread": 10
+    "y_spread": 6
   }
 }

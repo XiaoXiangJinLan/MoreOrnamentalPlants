@@ -433,7 +433,7 @@ public class ModOverworldBiomesBuilder {
     }
 
     // ========== 生物群系选择器方法 ==========
-    private ResourceKey<Biome> pickMiddleBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
+    protected ResourceKey<Biome> pickMiddleBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
         // 获取过滤后的生物群系映射
         ResourceKey<Biome>[][] filteredMiddleBiomes = createFilteredBiomeMap(MIDDLE_BIOMES_MOD);
         ResourceKey<Biome>[][] filteredMiddleVariants = createFilteredBiomeMap(MIDDLE_BIOMES_VARIANT_MOD);
@@ -457,13 +457,13 @@ public class ModOverworldBiomesBuilder {
         }
     }
 
-    private ResourceKey<Biome> pickMiddleBiomeOrSlopeIfCold(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
+    protected ResourceKey<Biome> pickMiddleBiomeOrSlopeIfCold(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
         return temperatureIndex == 0 ?
                 this.pickSlopeBiome(temperatureIndex, humidityIndex, weirdness) :
                 this.pickMiddleBiome(temperatureIndex, humidityIndex, weirdness);
     }
 
-    private ResourceKey<Biome> pickPlateauBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
+    protected ResourceKey<Biome> pickPlateauBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
         // 获取过滤后的生物群系映射
         ResourceKey<Biome>[][] filteredPlateauBiomes = createFilteredBiomeMap(PLATEAU_BIOMES_MOD);
         ResourceKey<Biome>[][] filteredPlateauVariants = createFilteredBiomeMap(PLATEAU_BIOMES_VARIANT_MOD);
@@ -487,7 +487,7 @@ public class ModOverworldBiomesBuilder {
         }
     }
 
-    private ResourceKey<Biome> pickPeakBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
+    protected ResourceKey<Biome> pickPeakBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
         if (temperatureIndex <= 2) {
             return weirdness.max() < 0L ? Biomes.JAGGED_PEAKS : Biomes.FROZEN_PEAKS;
         } else {
@@ -495,7 +495,7 @@ public class ModOverworldBiomesBuilder {
         }
     }
 
-    private ResourceKey<Biome> pickSlopeBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
+    protected ResourceKey<Biome> pickSlopeBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
         if (temperatureIndex == 0) {
             return weirdness.max() < 0L ? Biomes.SNOWY_SLOPES : Biomes.GROVE;
         } else if (temperatureIndex == 1) {
@@ -505,7 +505,7 @@ public class ModOverworldBiomesBuilder {
         }
     }
 
-    private ResourceKey<Biome> pickBadlandsBiome(int humidityIndex, Climate.Parameter weirdness) {
+    protected ResourceKey<Biome> pickBadlandsBiome(int humidityIndex, Climate.Parameter weirdness) {
         if (humidityIndex < 2) {
             return weirdness.max() < 0L ? Biomes.ERODED_BADLANDS : Biomes.BADLANDS;
         } else {
@@ -513,20 +513,20 @@ public class ModOverworldBiomesBuilder {
         }
     }
 
-    private ResourceKey<Biome> pickShatteredBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness, ResourceKey<Biome> fallback) {
+    protected ResourceKey<Biome> pickShatteredBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness, ResourceKey<Biome> fallback) {
         // 这里可以添加模组的破碎地形生物群系
         // 目前回退到风袭地形
         return temperatureIndex > 1 && humidityIndex < 4 && weirdness.max() >= 0L ?
                 Biomes.WINDSWEPT_SAVANNA : fallback;
     }
 
-    private ResourceKey<Biome> pickShatteredCoastBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness, ResourceKey<Biome> beachBiome) {
+    protected ResourceKey<Biome> pickShatteredCoastBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness, ResourceKey<Biome> beachBiome) {
         ResourceKey<Biome> resourcekey = weirdness.max() >= 0L ?
                 this.pickMiddleBiome(temperatureIndex, humidityIndex, weirdness) : beachBiome;
         return this.pickShatteredBiome(temperatureIndex, humidityIndex, weirdness, resourcekey);
     }
 
-    private ResourceKey<Biome> pickExtremeHillsBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
+    protected ResourceKey<Biome> pickExtremeHillsBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
         // 风袭丘陵生物群系
         if (temperatureIndex <= 2) {
             return Biomes.WINDSWEPT_HILLS;
@@ -535,11 +535,11 @@ public class ModOverworldBiomesBuilder {
         }
     }
 
-    private ResourceKey<Biome> pickBeachBiome(int temperatureIndex) {
+    protected ResourceKey<Biome> pickBeachBiome(int temperatureIndex) {
         return temperatureIndex == 0 ? Biomes.SNOWY_BEACH : Biomes.BEACH;
     }
 
-    private ResourceKey<Biome> pickSwampBiome(int temperatureIndex, int humidityIndex) {
+    protected ResourceKey<Biome> pickSwampBiome(int temperatureIndex, int humidityIndex) {
         ResourceKey<Biome>[][] filteredSwampBiomes = createFilteredBiomeMap(SWAMP_BIOMES_MOD);
         ResourceKey<Biome> modSwampBiome = filteredSwampBiomes[temperatureIndex][humidityIndex];
 
@@ -554,7 +554,7 @@ public class ModOverworldBiomesBuilder {
         return this.pickMiddleBiome(temperatureIndex, humidityIndex, Climate.Parameter.point(0.0F));
     }
 
-    private ResourceKey<Biome> pickRiverBiome(int temperatureIndex) {
+    protected ResourceKey<Biome> pickRiverBiome(int temperatureIndex) {
         return temperatureIndex == 0 ? Biomes.FROZEN_RIVER : Biomes.RIVER;
     }
 
@@ -583,7 +583,7 @@ public class ModOverworldBiomesBuilder {
                 Climate.Parameter.span(0.2F, 0.9F), weirdness, offset), biome));
     }
 
-    private ResourceKey<Biome>[][] createFilteredBiomeMap(ResourceKey<Biome>[][] baseMap) {
+    protected ResourceKey<Biome>[][] createFilteredBiomeMap(ResourceKey<Biome>[][] baseMap) {
         ResourceKey<Biome>[][] filteredMap = new ResourceKey[5][5];
 
         for (int i = 0; i < baseMap.length; i++) {
@@ -600,12 +600,12 @@ public class ModOverworldBiomesBuilder {
         return filteredMap;
     }
 
-    private String getBiomeName(ResourceKey<Biome> biome) {
+    protected String getBiomeName(ResourceKey<Biome> biome) {
         if (biome == null) return "";
         return biome.location().getPath();
     }
 
-    private boolean isBiomeAllowed(ResourceKey<Biome> biome) {
+    protected boolean isBiomeAllowed(ResourceKey<Biome> biome) {
         if (biome == null) return false;
 
         String biomeName = getBiomeName(biome);

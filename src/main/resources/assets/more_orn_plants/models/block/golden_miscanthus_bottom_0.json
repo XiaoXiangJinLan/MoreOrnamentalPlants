@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "more_orn_plants:block/golden_miscanthus_bottom_0"
+  },
+  "render_type": "cutout"
+}

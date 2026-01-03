@@ -13,12 +13,20 @@ public class BiomeConfigManager {
             case "crimson_highlands" -> ModBiomeConfig.ENABLE_CRIMSON_HIGHLANDS.get();
             case "cottonrose_realm" -> ModBiomeConfig.ENABLE_COTTONROSE_REALM.get();
             case "desert_poplar_woods" -> ModBiomeConfig.ENABLE_DESERT_POPLAR_WOODS.get();
+            case "chinese_rose_fields" -> ModBiomeConfig.ENABLE_CHINESE_ROSE_FIELDS.get();
+            case "chinaberry_woods" -> ModBiomeConfig.ENABLE_CHINABERRY_WOODS.get();
+            case "miscanthus_fields" -> ModBiomeConfig.ENABLE_MISCANTHUS_FIELDS.get();
+            case "crops_green" -> ModBiomeConfig.ENABLE_CROPS_GREEN.get();
             default -> true;
         };
     }
 
     public static int getOverworldBiomesWeight() {
         return ModBiomeConfig.OVERWORLD_BIOMES_WEIGHT.get();
+    }
+
+    public static int getSecondOverworldBiomesWeight() {
+        return ModBiomeConfig.SECOND_OVERWORLD_BIOMES_WEIGHT.get();
     }
 
     public static int getSpecialBiomesWeight() {

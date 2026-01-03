@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "more_orn_plants:block/miscanthus_top_1"
+  },
+  "render_type": "cutout"
+}

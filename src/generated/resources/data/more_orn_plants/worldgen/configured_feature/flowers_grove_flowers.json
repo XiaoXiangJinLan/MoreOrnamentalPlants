@@ -10,25 +10,28 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:chinese_rose_bush"
+                  "Name": "more_orn_plants:spring_cymbidium"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:pink_chinese_rose_bush"
+                  "Name": "more_orn_plants:summer_cymbidium"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:white_chinese_rose_bush"
+                  "Name": "more_orn_plants:autumn_cymbidium"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:yellow_chinese_rose_bush"
+                  "Name": "more_orn_plants:winter_cymbidium",
+                  "Properties": {
+                    "half": "lower"
+                  }
                 },
                 "weight": 1
               },
@@ -36,7 +39,7 @@
                 "data": {
                   "Name": "more_orn_plants:pink_camellia"
                 },
-                "weight": 1
+                "weight": 6
               }
             ]
           }
@@ -71,7 +74,7 @@
       ]
     },
     "tries": 24,
-    "xz_spread": 10,
-    "y_spread": 10
+    "xz_spread": 6,
+    "y_spread": 4
   }
 }

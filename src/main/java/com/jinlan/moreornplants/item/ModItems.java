@@ -3,6 +3,7 @@ package com.jinlan.moreornplants.item;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.entity.custom.ModBoatEntity;
+import com.jinlan.moreornplants.item.custom.BurnBlockItem;
 import com.jinlan.moreornplants.item.custom.LeafPileBlockItem;
 import com.jinlan.moreornplants.item.custom.LeafPileUseItemNameBlockItem;
 import com.jinlan.moreornplants.item.custom.ModBoatItem;
@@ -157,6 +158,9 @@ public class ModItems {
             ITEMS.register("desert_poplar_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
     public static final RegistryObject<Item> DESERT_POPLAR_CHEST_BOAT =
             ITEMS.register("desert_poplar_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
+
+    public static final RegistryObject<Item> GOLDEN_MISCANTHUS =
+            ITEMS.register("golden_miscanthus", () -> new BurnBlockItem(ModBlocks.GOLDEN_MISCANTHUS.get(), new Item.Properties(), 600));
 
     public static final RegistryObject<Item> ORNAMENTAL_PEACH_PETALS =
             ITEMS.register("ornamental_peach_petals", () -> new LeafPileBlockItem(ModBlocks.ORNAMENTAL_PEACH_PETALS.get(), new Item.Properties(), 100));

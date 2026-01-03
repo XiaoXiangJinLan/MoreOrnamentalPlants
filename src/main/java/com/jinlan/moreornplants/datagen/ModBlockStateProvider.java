@@ -571,6 +571,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.SPRING_CYMBIDIUM);
         simpleBlock(ModBlocks.POTTED_SPRING_CYMBIDIUM.get(), models().singleTexture("potted_spring_cymbidium", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.SPRING_CYMBIDIUM.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.SUMMER_CYMBIDIUM);
+        simpleBlock(ModBlocks.POTTED_SUMMER_CYMBIDIUM.get(), models().singleTexture("potted_summer_cymbidium", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.SUMMER_CYMBIDIUM.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.AUTUMN_CYMBIDIUM);
+        simpleBlock(ModBlocks.POTTED_AUTUMN_CYMBIDIUM.get(), models().singleTexture("potted_autumn_cymbidium", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.AUTUMN_CYMBIDIUM.get())).renderType("cutout"));
         flowerBlock(ModBlocks.PEONY);
         simpleBlock(ModBlocks.POTTED_PEONY.get(), models().singleTexture("potted_peony", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.PEONY.get())).renderType("cutout"));
@@ -673,9 +679,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.CRIMSON_AZALEA);
         simpleBlock(ModBlocks.POTTED_CRIMSON_AZALEA.get(), models().singleTexture("potted_crimson_azalea", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CRIMSON_AZALEA.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.FOUNTAIN_GRASS);
+        simpleBlock(ModBlocks.POTTED_FOUNTAIN_GRASS.get(), models().singleTexture("potted_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_fountain_grass")).renderType("cutout"));
+        flowerBlock(ModBlocks.PURPLE_FOUNTAIN_GRASS);
+        simpleBlock(ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get(), models().singleTexture("potted_purple_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_purple_fountain_grass")).renderType("cutout"));
+        flowerBlock(ModBlocks.PINK_FOUNTAIN_GRASS);
+        simpleBlock(ModBlocks.POTTED_PINK_FOUNTAIN_GRASS.get(), models().singleTexture("potted_pink_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_pink_fountain_grass")).renderType("cutout"));
+        flowerBlock(ModBlocks.WHITE_FOUNTAIN_GRASS);
+        simpleBlock(ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get(), models().singleTexture("potted_white_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_white_fountain_grass")).renderType("cutout"));
 
         tallCrossBlock(ModBlocks.TWO_QIAO_PEONY);
         tallCrossBlock(ModBlocks.VERSICOLOR_PEONY);
+        tallCrossBlock(ModBlocks.WINTER_CYMBIDIUM);
+        simpleBlock(ModBlocks.POTTED_WINTER_CYMBIDIUM.get(), models().singleTexture("potted_winter_cymbidium", new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_winter_cymbidium")).renderType("cutout"));
         tallCrossBlock(ModBlocks.CHINESE_ROSE);
         simpleBlock(ModBlocks.POTTED_CHINESE_ROSE.get(), models().singleTexture("potted_chinese_rose", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_chinese_rose")).renderType("cutout"));
@@ -708,19 +729,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_wintersweet")).renderType("cutout"));
         tallCrossBlock(ModBlocks.COTTON_ROSE);
         tallRotatedCrossBlock(ModBlocks.CRAPE_MYRTLE);
-
-        flowerBlock(ModBlocks.WINTER_JASMINE);
-        simpleBlock(ModBlocks.POTTED_WINTER_JASMINE.get(), models().singleTexture("potted_winter_jasmine", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.WINTER_JASMINE.get())).renderType("cutout"));
-        flowerBlock(ModBlocks.CHINESE_ROSE_BUSH);
-        flowerBlock(ModBlocks.PINK_CHINESE_ROSE_BUSH);
-        flowerBlock(ModBlocks.YELLOW_CHINESE_ROSE_BUSH);
-        flowerBlock(ModBlocks.WHITE_CHINESE_ROSE_BUSH);
-        flowerBlock(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH);
-        flowerBlock(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH);
-        flowerBlock(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH);
-        flowerBlock(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH);
-        flowerBlock(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH);
 
         saplingBlock(ModBlocks.MOTTLED_BAMBOO_SAPLING, true);
         bambooModelsOnly(ModBlocks.MOTTLED_BAMBOO);

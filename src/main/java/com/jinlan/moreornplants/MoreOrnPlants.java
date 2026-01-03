@@ -110,6 +110,9 @@ public class MoreOrnPlants
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_CHRYSANTHEMUM.getId(), ModBlocks.POTTED_PINK_CHRYSANTHEMUM);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.getId(), ModBlocks.POTTED_LIGHT_PINK_CHRYSANTHEMUM);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SPRING_CYMBIDIUM.getId(), ModBlocks.POTTED_SPRING_CYMBIDIUM);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SUMMER_CYMBIDIUM.getId(), ModBlocks.POTTED_SUMMER_CYMBIDIUM);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.AUTUMN_CYMBIDIUM.getId(), ModBlocks.POTTED_AUTUMN_CYMBIDIUM);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WINTER_CYMBIDIUM.getId(), ModBlocks.POTTED_WINTER_CYMBIDIUM);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PEONY.getId(), ModBlocks.POTTED_PEONY);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.LIGHT_PINK_PEONY.getId(), ModBlocks.POTTED_LIGHT_PINK_PEONY);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VIOLET_PINK_PEONY.getId(), ModBlocks.POTTED_VIOLET_PEONY);
@@ -145,7 +148,10 @@ public class MoreOrnPlants
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_CAMELLIA.getId(), ModBlocks.POTTED_PINK_CAMELLIA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VERSICOLOR_CAMELLIA.getId(), ModBlocks.POTTED_VERSICOLOR_CAMELLIA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CRIMSON_AZALEA.getId(), ModBlocks.POTTED_CRIMSON_AZALEA);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WINTER_JASMINE.getId(), ModBlocks.POTTED_WINTER_JASMINE);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.FOUNTAIN_GRASS.getId(), ModBlocks.POTTED_FOUNTAIN_GRASS);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PURPLE_FOUNTAIN_GRASS.getId(), ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_FOUNTAIN_GRASS.getId(), ModBlocks.POTTED_PINK_FOUNTAIN_GRASS);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WHITE_FOUNTAIN_GRASS.getId(), ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHINESE_ROSE.getId(), ModBlocks.POTTED_CHINESE_ROSE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_CHINESE_ROSE.getId(), ModBlocks.POTTED_PINK_CHINESE_ROSE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.YELLOW_CHINESE_ROSE.getId(), ModBlocks.POTTED_YELLOW_CHINESE_ROSE);

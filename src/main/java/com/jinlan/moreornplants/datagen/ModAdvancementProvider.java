@@ -79,7 +79,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             false
                     ))
                     .addCriterion("get_wintersweet", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.WINTERSWEET).build()
+                            ModBlocks.WINTERSWEET.get()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "the_winter_guest"), existingFileHelper);
 
@@ -147,7 +147,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             false
                     ))
                     .addCriterion("get_cymbidium", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ModBlocks.SPRING_CYMBIDIUM.get()
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.CYMBIDIUM).build()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "regal_fragrance"), existingFileHelper);
 
@@ -541,6 +541,23 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             ModBlocks.DESERT_POPLAR_SAPLING.get()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "hero_of_desert"), existingFileHelper);
+
+            Advancement grasses = Advancement.Builder.advancement()
+                    .parent(root)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.FOUNTAIN_GRASS.get()),
+                            Component.translatable("advancement.moreornplants.grasses.title"),
+                            Component.translatable("advancement.moreornplants.grasses.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("get_grasses", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.ORNAMENTAL_GRASS).build()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "grasses"), existingFileHelper);
 
             Advancement fourGentlemen = Advancement.Builder.advancement()
                     .parent(root)

@@ -272,7 +272,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         flowerItem(ModBlocks.WEEPING_CRABAPPLE);
 
-        flowerItem(ModBlocks.WINTER_JASMINE);
         flowerItem(ModBlocks.CHRYSANTHEMUM);
         flowerItem(ModBlocks.GOLDEN_CHRYSANTHEMUM);
         flowerItem(ModBlocks.GOLD_BACKED_SCARLET_MUM);
@@ -283,6 +282,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.PINK_CHRYSANTHEMUM);
         flowerItem(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM);
         flowerItem(ModBlocks.SPRING_CYMBIDIUM);
+        flowerItem(ModBlocks.SUMMER_CYMBIDIUM);
+        flowerItem(ModBlocks.AUTUMN_CYMBIDIUM);
         flowerItem(ModBlocks.PEONY);
         flowerItem(ModBlocks.LIGHT_PINK_PEONY);
         flowerItem(ModBlocks.VIOLET_PINK_PEONY);
@@ -312,21 +313,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.PURPLE_WHITE_PEONY);
         flowerItem(ModBlocks.WU_HUA_LONG_YU_PEONY);
         flowerItem(ModBlocks.MAUVE_PEONY);
-        flowerItem(ModBlocks.CHINESE_ROSE_BUSH);
-        flowerItem(ModBlocks.PINK_CHINESE_ROSE_BUSH);
-        flowerItem(ModBlocks.YELLOW_CHINESE_ROSE_BUSH);
-        flowerItem(ModBlocks.WHITE_CHINESE_ROSE_BUSH);
-        flowerItem(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH);
-        flowerItem(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH);
-        flowerItem(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH);
-        flowerItem(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH);
-        flowerItem(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH);
         flowerItem(ModBlocks.CAMELLIA);
         flowerItem(ModBlocks.PINK_CAMELLIA);
         flowerItem(ModBlocks.WHITE_CAMELLIA);
         flowerItem(ModBlocks.VERSICOLOR_CAMELLIA);
         flowerItem(ModBlocks.CRIMSON_AZALEA);
+        flowerItem(ModBlocks.FOUNTAIN_GRASS);
+        flowerItem(ModBlocks.PURPLE_FOUNTAIN_GRASS);
+        flowerItem(ModBlocks.PINK_FOUNTAIN_GRASS);
+        flowerItem(ModBlocks.WHITE_FOUNTAIN_GRASS);
 
+        flowerUsePottedTextureItem(ModBlocks.WINTER_CYMBIDIUM);
         tallCrossItem(ModBlocks.WINTERSWEET);
         tallCrossItem(ModBlocks.TWO_QIAO_PEONY);
         tallCrossItem(ModBlocks.VERSICOLOR_PEONY);
@@ -416,6 +413,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(block.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + block.getId().getPath() + "_top"));
+    }
+
+    private ItemModelBuilder flowerUsePottedTextureItem(RegistryObject<Block> block) {
+        return withExistingParent(block.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_" + block.getId().getPath()));
     }
 
 }

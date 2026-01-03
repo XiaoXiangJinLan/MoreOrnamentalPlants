@@ -20,6 +20,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.FOUNTAIN_GRASS.get())
+                .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.PINK_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
+
         this.tag(BlockTags.CROPS)
                 .add(ModBlocks.LOTUS.get())
                 .add(ModBlocks.WHITE_LOTUS.get())
@@ -73,6 +79,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_PINK_CHRYSANTHEMUM.get())
                 .add(ModBlocks.POTTED_LIGHT_PINK_CHRYSANTHEMUM.get())
                 .add(ModBlocks.POTTED_SPRING_CYMBIDIUM.get())
+                .add(ModBlocks.POTTED_SUMMER_CYMBIDIUM.get())
+                .add(ModBlocks.POTTED_AUTUMN_CYMBIDIUM.get())
+                .add(ModBlocks.POTTED_WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.POTTED_PEONY.get())
                 .add(ModBlocks.POTTED_LIGHT_PINK_PEONY.get())
                 .add(ModBlocks.POTTED_VIOLET_PINK_PEONY.get())
@@ -117,7 +126,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_WHITE_CAMELLIA.get())
                 .add(ModBlocks.POTTED_VERSICOLOR_CAMELLIA.get())
                 .add(ModBlocks.POTTED_CRIMSON_AZALEA.get())
-                .add(ModBlocks.POTTED_WINTER_JASMINE.get());
+                .add(ModBlocks.POTTED_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.POTTED_PINK_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get());
 
         this.tag(BlockTags.FLOWERS)
                 .addTag(BlockTags.SMALL_FLOWERS)
@@ -231,6 +243,26 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(ModTags.Blocks.DESERT_POPLAR_LOGS)
                 .add(ModBlocks.CRAPE_MYRTLE_LOG.get())
                 .add(ModBlocks.CRAPE_MYRTLE_WOOD.get());
+
+        this.tag(BlockTags.OVERWORLD_NATURAL_LOGS)
+                .add(ModBlocks.RED_MEI_LOG.get())
+                .add(ModBlocks.WHITE_MEI_LOG.get())
+                .add(ModBlocks.GREEN_CALYX_MEI_LOG.get())
+                .add(ModBlocks.DOUBLE_PINK_MEI_LOG.get())
+                .add(ModBlocks.CRABAPPLE_LOG.get())
+                .add(ModBlocks.APRICOT_LOG.get())
+                .add(ModBlocks.PEACH_LOG.get())
+                .add(ModBlocks.PEAR_LOG.get())
+                .add(ModBlocks.PURPLE_LEAF_PLUM_LOG.get())
+                .add(ModBlocks.OSMANTHUS_LOG.get())
+                .add(ModBlocks.GINKGO_LOG.get())
+                .add(ModBlocks.CHINESE_PARASOL_LOG.get())
+                .add(ModBlocks.SWEETGUM_LOG.get())
+                .add(ModBlocks.CAMPHOR_LOG.get())
+                .add(ModBlocks.DOVE_TREE_LOG.get())
+                .add(ModBlocks.CHINABERRY_LOG.get())
+                .add(ModBlocks.DESERT_POPLAR_LOG.get())
+                .add(ModBlocks.CRAPE_MYRTLE_LOG.get());
 
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.RED_MEI_PLANKS.get())
@@ -599,8 +631,26 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.DESERT_POPLAR_SAPLING.get())
                 .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get());
 
+        this.tag(BlockTags.REPLACEABLE_BY_TREES)
+                .add(ModBlocks.WINTER_CYMBIDIUM.get())
+                .add(ModBlocks.WINTERSWEET.get())
+                .add(ModBlocks.TWO_QIAO_PEONY.get())
+                .add(ModBlocks.VERSICOLOR_PEONY.get())
+                .add(ModBlocks.CHINESE_ROSE.get())
+                .add(ModBlocks.PINK_CHINESE_ROSE.get())
+                .add(ModBlocks.YELLOW_CHINESE_ROSE.get())
+                .add(ModBlocks.WHITE_CHINESE_ROSE.get())
+                .add(ModBlocks.RED_PINK_CHINESE_ROSE.get())
+                .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get())
+                .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get())
+                .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get())
+                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get())
+                .add(ModBlocks.CRAPE_MYRTLE.get())
+                .add(ModBlocks.COTTON_ROSE.get())
+                .add(ModBlocks.LOTUS.get())
+                .add(ModBlocks.WHITE_LOTUS.get());
+
         this.tag(BlockTags.SMALL_FLOWERS)
-                .add(ModBlocks.WINTER_JASMINE.get())
                 .add(ModBlocks.CHRYSANTHEMUM.get())
                 .add(ModBlocks.GOLDEN_CHRYSANTHEMUM.get())
                 .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get())
@@ -611,6 +661,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_CHRYSANTHEMUM.get())
                 .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get())
                 .add(ModBlocks.SPRING_CYMBIDIUM.get())
+                .add(ModBlocks.SUMMER_CYMBIDIUM.get())
+                .add(ModBlocks.AUTUMN_CYMBIDIUM.get())
                 .add(ModBlocks.PEONY.get())
                 .add(ModBlocks.LIGHT_PINK_PEONY.get())
                 .add(ModBlocks.VIOLET_PINK_PEONY.get())
@@ -640,15 +692,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PURPLE_WHITE_PEONY.get())
                 .add(ModBlocks.WU_HUA_LONG_YU_PEONY.get())
                 .add(ModBlocks.MAUVE_PEONY.get())
-                .add(ModBlocks.CHINESE_ROSE_BUSH.get())
-                .add(ModBlocks.PINK_CHINESE_ROSE_BUSH.get())
-                .add(ModBlocks.YELLOW_CHINESE_ROSE_BUSH.get())
-                .add(ModBlocks.WHITE_CHINESE_ROSE_BUSH.get())
-                .add(ModBlocks.RED_PINK_CHINESE_ROSE_BUSH.get())
-                .add(ModBlocks.RED_YELLOW_CHINESE_ROSE_BUSH.get())
-                .add(ModBlocks.RED_WHITE_CHINESE_ROSE_BUSH.get())
-                .add(ModBlocks.PINK_WHITE_CHINESE_ROSE_BUSH.get())
-                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE_BUSH.get())
                 .add(ModBlocks.CAMELLIA.get())
                 .add(ModBlocks.PINK_CAMELLIA.get())
                 .add(ModBlocks.WHITE_CAMELLIA.get())
@@ -656,6 +699,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRIMSON_AZALEA.get());
 
         this.tag(BlockTags.TALL_FLOWERS)
+                .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
                 .add(ModBlocks.TWO_QIAO_PEONY.get())
                 .add(ModBlocks.VERSICOLOR_PEONY.get())

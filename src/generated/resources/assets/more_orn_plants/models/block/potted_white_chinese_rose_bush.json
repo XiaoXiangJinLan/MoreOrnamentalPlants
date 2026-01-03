@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/flower_pot_cross",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "plant": "more_orn_plants:block/potted_white_chinese_rose_bush"
-  }
-}

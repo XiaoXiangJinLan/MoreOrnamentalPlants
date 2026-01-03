@@ -13,6 +13,7 @@ public class ModTerrablender {
         // 使用配置管理器获取权重
         int specialWeight = BiomeConfigManager.getSpecialBiomesWeight();
         int overworldWeight = BiomeConfigManager.getOverworldBiomesWeight();
+        int secondOverworldWeight = BiomeConfigManager.getSecondOverworldBiomesWeight();
 
         Regions.register(new thePeachBlossomSpringRegion(
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "the_peach_blossom_spring"), specialWeight));
@@ -20,6 +21,9 @@ public class ModTerrablender {
         // 注册主要生物群系区域
         Regions.register(new OverworldBiomesRegion(
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "overworld_biomes"), overworldWeight));
+
+        Regions.register(new SecondOverworldBiomesRegion(
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "second_overworld_biomes"), secondOverworldWeight));
 
         SurfaceRuleManager.addSurfaceRules(
                 SurfaceRuleManager.RuleCategory.OVERWORLD,
