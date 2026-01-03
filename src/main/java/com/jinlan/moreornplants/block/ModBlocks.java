@@ -151,7 +151,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DESERT_POPLAR_LOG =
             registerBlock("desert_poplar_log", () -> log(MapColor.WOOD, MapColor.COLOR_BROWN));
     public static final RegistryObject<Block> CRAPE_MYRTLE_LOG =
-            registerBlock("crape_myrtle_log", () -> log(MapColor.WOOD, MapColor.WOOD));
+            BLOCKS.register("crape_myrtle_log", () -> log(MapColor.WOOD, MapColor.WOOD));
 
     public static final RegistryObject<Block> RED_MEI_WOOD =
             registerBlock("red_mei_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
@@ -188,7 +188,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DESERT_POPLAR_WOOD =
             registerBlock("desert_poplar_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final RegistryObject<Block> CRAPE_MYRTLE_WOOD =
-            registerBlock("crape_myrtle_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+            BLOCKS.register("crape_myrtle_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
 
     public static final RegistryObject<Block> STRIPPED_RED_MEI_LOG =
             registerBlock("stripped_red_mei_log", () -> log(MapColor.COLOR_RED, MapColor.COLOR_RED));
@@ -1111,13 +1111,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOTTLED_BAMBOO_SAPLING =
             BLOCKS.register("mottled_bamboo_sapling", () -> new MottledBambooSaplingBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_SAPLING)));
     public static final RegistryObject<Block> MOTTLED_BAMBOO =
-            registerBlock("mottled_bamboo", () -> new MottledBambooStalkBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO)));
+            BLOCKS.register("mottled_bamboo", () -> new MottledBambooStalkBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO)));
     public static final RegistryObject<Block> POTTED_MOTTLED_BAMBOO =
             BLOCKS.register("potted_mottled_bamboo", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MOTTLED_BAMBOO, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> BLACK_BAMBOO_SAPLING =
             BLOCKS.register("black_bamboo_sapling", () -> new BlackBambooSaplingBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_SAPLING)));
     public static final RegistryObject<Block> BLACK_BAMBOO =
-            registerBlock("black_bamboo", () -> new BlackBambooStalkBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO)));
+            BLOCKS.register("black_bamboo", () -> new BlackBambooStalkBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO)));
     public static final RegistryObject<Block> POTTED_BLACK_BAMBOO =
             BLOCKS.register("potted_black_bamboo", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.BLACK_BAMBOO, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 

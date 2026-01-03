@@ -1,4 +1,4 @@
-// 1.20.1	2026-01-03T12:13:50.3483343	Item Models: more_orn_plants
+// 1.20.1	2026-01-03T17:36:49.9583312	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -14,7 +14,6 @@ cf06f992c7bbb6413419c9649e66d4b702771615 assets/more_orn_plants/models/item/apri
 8c6d645041766f2cfe2ebfb18cae535e8870c8b2 assets/more_orn_plants/models/item/autumn_cymbidium.json
 8290305dc8f4ebccd0d99ec8cb7a5547867d8ea6 assets/more_orn_plants/models/item/bamboo_shoots_soup.json
 7fc4851906b16c6858c66591235a814c6243fecf assets/more_orn_plants/models/item/black_bamboo.json
-856ed685fba0bfc214edf80357e787b47f47df1b assets/more_orn_plants/models/item/black_bamboo_shoots.json
 222e7aee9360450873041b06fa86a5b39ca9858d assets/more_orn_plants/models/item/blue_peony.json
 06cd478acfb84856361727114d2dbae023d3ee3b assets/more_orn_plants/models/item/camellia.json
 d0ae438419435f95f6f4807f8834d5e8625abcde assets/more_orn_plants/models/item/camphor_boat.json
@@ -173,7 +172,6 @@ c4424db61baa4c184a7645012b893e674a332510 assets/more_orn_plants/models/item/lotu
 2a08575aa050e78c0dcd06337a1d99e842771b97 assets/more_orn_plants/models/item/lotus_seed_soup.json
 2d7b2df34140207172d9f78bc616430e5578f6f3 assets/more_orn_plants/models/item/mauve_peony.json
 c8dd95d8f382dd745659f51c1eb07a18b4f965dc assets/more_orn_plants/models/item/mottled_bamboo.json
-48739972c1ddcb46cb103a07814de10b510f960b assets/more_orn_plants/models/item/mottled_bamboo_shoots.json
 dd702884fcb105def37fa9ac8df611cef07d24c5 assets/more_orn_plants/models/item/ochre_yellow_peony.json
 34efb7892cc904a51b63b0d5cf8d5d4b07c86080 assets/more_orn_plants/models/item/orange_osmanthus_sapling.json
 ec9db5116cbe1c74907bfcfe884a45c87ab5f0f7 assets/more_orn_plants/models/item/ornamental_peach_petals.json

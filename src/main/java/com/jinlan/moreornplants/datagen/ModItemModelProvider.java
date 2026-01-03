@@ -340,9 +340,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         tallCrossItem(ModBlocks.COTTON_ROSE);
 
         simplerBlockItem(ModBlocks.MOTTLED_BAMBOO);
-        simpleItem(ModItems.MOTTLED_BAMBOO_SHOOTS);
         simplerBlockItem(ModBlocks.BLACK_BAMBOO);
-        simpleItem(ModItems.BLACK_BAMBOO_SHOOTS);
         simpleItem(ModItems.PEELED_BAMBOO_SHOOTS);
         simpleItem(ModItems.BAMBOO_SHOOTS_SOUP);
 

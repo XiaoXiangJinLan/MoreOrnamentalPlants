@@ -378,8 +378,8 @@
 
   "block.more_orn_plants.crape_myrtle_leaves": "紫薇葉",
   "block.more_orn_plants.crape_myrtle_sapling": "紫薇秧",
-  "block.more_orn_plants.crape_myrtle_log": "紫薇樁 §o（小喬木，非建材）",
-  "block.more_orn_plants.crape_myrtle_wood": "紫薇木 §o（小喬木，非建材）",
+  "block.more_orn_plants.crape_myrtle_log": "紫薇樁",
+  "block.more_orn_plants.crape_myrtle_wood": "紫薇木",
 
   "block.more_orn_plants.chrysanthemum": "菊",
   "block.more_orn_plants.golden_chrysanthemum": "金菊",
@@ -419,7 +419,7 @@
   "block.more_orn_plants.ink_colorful_peony": "墨彩芍藥",
   "block.more_orn_plants.red_white_peony": "錦繡芍藥",
   "block.more_orn_plants.pink_white_peony": "霞綺芍藥",
-  "block.more_orn_plants.yellow_white_peony": "金縷芍藥",
+  "block.more_orn_plants.yellow_white_peony": "金織芍藥",
   "block.more_orn_plants.purple_white_peony": "雲羅芍藥",
   "block.more_orn_plants.wu_hua_long_yu_peony": "五花龍玉",
   "block.more_orn_plants.mauve_peony": "小芍藥",
@@ -456,9 +456,9 @@
   "block.more_orn_plants.sweetgum_leaf_pile_0": "楓香落葉",
   "block.more_orn_plants.sweetgum_leaf_pile_1": "楓香落葉",
   "block.more_orn_plants.ginkgo_leaf_pile": "銀杏落葉",
-  "block.more_orn_plants.mottled_bamboo": "湘妃竹 §o（觀賞種，非建材，貓熊不食）",
+  "block.more_orn_plants.mottled_bamboo": "湘妃竹",
   "block.more_orn_plants.mottled_bamboo_sapling": "湘妃竹筍 §o（觀賞種，非建材，貓熊不食）",
-  "block.more_orn_plants.black_bamboo": "紫竹 §o（觀賞種，非建材，貓熊不食）",
+  "block.more_orn_plants.black_bamboo": "紫竹",
   "block.more_orn_plants.black_bamboo_sapling": "紫竹筍 §o（觀賞種，非建材，貓熊不食）",
   "block.more_orn_plants.lotus": "蓮",
   "block.more_orn_plants.white_lotus": "白蓮",
@@ -601,8 +601,6 @@
   "item.more_orn_plants.sweetgum_leaf_0": "楓香葉",
   "item.more_orn_plants.sweetgum_leaf_1": "楓香葉",
   "item.more_orn_plants.ginkgo_leaf": "銀杏葉",
-  "item.more_orn_plants.mottled_bamboo_shoots": "湘妃竹筍 §o（觀賞種，非建材，貓熊不食）",
-  "item.more_orn_plants.black_bamboo_shoots": "紫竹筍 §o（觀賞種，非建材，貓熊不食）",
   "item.more_orn_plants.peeled_bamboo_shoots": "既扡竹筍",
   "item.more_orn_plants.bamboo_shoots_soup": "竹筍羹",
   "item.more_orn_plants.lotus_root": "藕",
@@ -711,5 +709,8 @@
   "advancement.moreornplants.peach_blossom_hermitage.title": "人間四月芳菲盡，山寺桃花始盛開",
   "advancement.moreornplants.peach_blossom_hermitage.description": "桃花塢裡桃花庵，桃花庵裡桃花仙",
   "advancement.moreornplants.apricot_village.title": "杏花村",
-  "advancement.moreornplants.apricot_village.description": "借問酒家何處有？牧童遙指杏花村"
+  "advancement.moreornplants.apricot_village.description": "借問酒家何處有？牧童遙指杏花村",
+
+  "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§o小喬木，非建材",
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§o觀賞種，非建材，貓熊不食"
 }

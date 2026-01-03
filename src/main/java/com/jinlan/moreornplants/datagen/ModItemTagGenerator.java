@@ -9,6 +9,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -128,8 +129,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ModTags.Items.DOVE_TREE_LOGS)
                 .addTag(ModTags.Items.CHINABERRY_LOGS)
                 .addTag(ModTags.Items.DESERT_POPLAR_LOGS)
-                .add(ModBlocks.CRAPE_MYRTLE_LOG.get().asItem())
-                .add(ModBlocks.CRAPE_MYRTLE_WOOD.get().asItem());
+                .add(ModItems.CRAPE_MYRTLE_LOG.get())
+                .add(ModItems.CRAPE_MYRTLE_WOOD.get());
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.RED_MEI_PLANKS.get().asItem())
@@ -679,9 +680,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem());
 
         this.tag(ForgeTags.Items.BAMBOO)
-                .add(Blocks.BAMBOO.asItem())
-                .add(ModBlocks.MOTTLED_BAMBOO.get().asItem())
-                .add(ModBlocks.BLACK_BAMBOO.get().asItem());
+                .add(Items.BAMBOO)
+                .add(ModItems.MOTTLED_BAMBOO.get())
+                .add(ModItems.BLACK_BAMBOO.get());
 
         this.tag(ForgeTags.Items.LOTUS)
                 .add(ModBlocks.LOTUS.get().asItem())

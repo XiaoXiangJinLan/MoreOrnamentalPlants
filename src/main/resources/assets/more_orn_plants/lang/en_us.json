@@ -378,8 +378,8 @@
 
   "block.more_orn_plants.crape_myrtle_leaves": "Crape Myrtle Leaves",
   "block.more_orn_plants.crape_myrtle_sapling": "Crape Myrtle Sapling",
-  "block.more_orn_plants.crape_myrtle_log": "Crape Myrtle Log §o(Small tree, non-building material)",
-  "block.more_orn_plants.crape_myrtle_wood": "Crape Myrtle Wood §o(Small tree, non-building material)",
+  "block.more_orn_plants.crape_myrtle_log": "Crape Myrtle Log",
+  "block.more_orn_plants.crape_myrtle_wood": "Crape Myrtle Wood",
 
   "block.more_orn_plants.chrysanthemum": "Chrysanthemum",
   "block.more_orn_plants.golden_chrysanthemum": "Golden Chrysanthemum",
@@ -456,9 +456,9 @@
   "block.more_orn_plants.sweetgum_leaf_pile_0": "Sweetgum Leaf Pile",
   "block.more_orn_plants.sweetgum_leaf_pile_1": "Sweetgum Leaf Pile",
   "block.more_orn_plants.ginkgo_leaf_pile": "Ginkgo Leaf Pile",
-  "block.more_orn_plants.mottled_bamboo": "Mottled Bamboo §o(Ornamental varieties, non-building material, pandas don't like to eat)",
+  "block.more_orn_plants.mottled_bamboo": "Mottled Bamboo",
   "block.more_orn_plants.mottled_bamboo_sapling": "Mottled Bamboo Shoots §o(Ornamental varieties, non-building material, pandas don't like to eat)",
-  "block.more_orn_plants.black_bamboo": "Black Bamboo §o(Ornamental varieties, non-building material, pandas don't like to eat)",
+  "block.more_orn_plants.black_bamboo": "Black Bamboo",
   "block.more_orn_plants.black_bamboo_sapling": "Black Bamboo Shoots §o(Ornamental varieties, non-building material, pandas don't like to eat)",
   "block.more_orn_plants.lotus": "Lotus",
   "block.more_orn_plants.white_lotus": "White Lotus",
@@ -602,8 +602,6 @@
   "item.more_orn_plants.sweetgum_leaf_0": "Sweetgum Leaf",
   "item.more_orn_plants.sweetgum_leaf_1": "Sweetgum Leaf",
   "item.more_orn_plants.ginkgo_leaf": "Ginkgo Leaf",
-  "item.more_orn_plants.mottled_bamboo_shoots": "Mottled Bamboo Shoots §o(Ornamental varieties, non-building material, pandas don't like to eat)",
-  "item.more_orn_plants.black_bamboo_shoots": "Black Bamboo Shoots §o(Ornamental varieties, non-building material, pandas don't like to eat)",
   "item.more_orn_plants.peeled_bamboo_shoots": "Peeled Bamboo Shoots",
   "item.more_orn_plants.bamboo_shoots_soup": "Bamboo Shoots Soup",
   "item.more_orn_plants.lotus_root": "Lotus Root",
@@ -712,5 +710,8 @@
   "advancement.moreornplants.peach_blossom_hermitage.title": "Peach Blossoms of the Secluded Temple",
   "advancement.moreornplants.peach_blossom_hermitage.description": "In the Cove of Peach Blooms stands the Hermitage fair;\nIn the Hermitage dwells an immortal, free from care.",
   "advancement.moreornplants.apricot_village.title": "Apricot Blossom Village",
-  "advancement.moreornplants.apricot_village.description": "“Where might an inn be?” A question thrown. \nA cowherd points afar where apricots have grown."
+  "advancement.moreornplants.apricot_village.description": "“Where might an inn be?” A question thrown. \nA cowherd points afar where apricots have grown.",
+
+  "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§oSmall tree, non-building material",
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§oOrnamental varieties,\nnon-building material,\npandas don't like to eat"
 }

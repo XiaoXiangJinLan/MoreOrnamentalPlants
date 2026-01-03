@@ -4,23 +4,18 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
-import org.jetbrains.annotations.Nullable;
 
-public class LeafPileBlockItem extends BlockItem {
-    private int burnTime = 0 ;
+public class LeafPileBlockItem extends BurnBlockItem {
     public LeafPileBlockItem(Block block, Item.Properties properties, int burnTime) {
-        super(block, properties);
-        this.burnTime = burnTime;
+        super(block, properties, burnTime);
     }
 
     @Override
@@ -57,10 +52,5 @@ public class LeafPileBlockItem extends BlockItem {
 
         // 如果玩家没有看向方块（如看向空气），则使用默认行为
         return super.use(level, player, hand);
-    }
-
-    @Override
-    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-        return this.burnTime;
     }
 }

@@ -1064,14 +1064,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_black_dye_item", has(ModTags.Items.BLACK_DYE))
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.PEELED_BAMBOO_SHOOTS.get())
-                .requires(ModItems.MOTTLED_BAMBOO_SHOOTS.get())
-                .unlockedBy(getHasName(ModItems.MOTTLED_BAMBOO_SHOOTS.get()), has(ModItems.MOTTLED_BAMBOO_SHOOTS.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "peeled_bamboo_shoots_from_mottled_bamboo"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.PEELED_BAMBOO_SHOOTS.get())
-                .requires(ModItems.BLACK_BAMBOO_SHOOTS.get())
-                .unlockedBy(getHasName(ModItems.BLACK_BAMBOO_SHOOTS.get()), has(ModItems.BLACK_BAMBOO_SHOOTS.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "peeled_bamboo_shoots_from_black_bamboo"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BAMBOO_SHOOTS_SOUP.get())
                 .requires(ModItems.PEELED_BAMBOO_SHOOTS.get())
                 .requires(Items.BOWL)

@@ -3,10 +3,7 @@ package com.jinlan.moreornplants.item;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.entity.custom.ModBoatEntity;
-import com.jinlan.moreornplants.item.custom.BurnBlockItem;
-import com.jinlan.moreornplants.item.custom.LeafPileBlockItem;
-import com.jinlan.moreornplants.item.custom.LeafPileUseItemNameBlockItem;
-import com.jinlan.moreornplants.item.custom.ModBoatItem;
+import com.jinlan.moreornplants.item.custom.*;
 import net.minecraft.world.item.BowlFoodItem;
 import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
@@ -159,6 +156,11 @@ public class ModItems {
     public static final RegistryObject<Item> DESERT_POPLAR_CHEST_BOAT =
             ITEMS.register("desert_poplar_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
 
+    public static final RegistryObject<Item> CRAPE_MYRTLE_LOG =
+            ITEMS.register("crape_myrtle_log", () -> new crapeMyrtleLogBlockItem(ModBlocks.CRAPE_MYRTLE_LOG.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRAPE_MYRTLE_WOOD =
+            ITEMS.register("crape_myrtle_wood", () -> new crapeMyrtleLogBlockItem(ModBlocks.CRAPE_MYRTLE_WOOD.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> GOLDEN_MISCANTHUS =
             ITEMS.register("golden_miscanthus", () -> new BurnBlockItem(ModBlocks.GOLDEN_MISCANTHUS.get(), new Item.Properties(), 600));
 
@@ -177,10 +179,10 @@ public class ModItems {
     public static final RegistryObject<Item> GINKGO_LEAF =
             ITEMS.register("ginkgo_leaf", () -> new LeafPileUseItemNameBlockItem(ModBlocks.GINKGO_LEAF_PILE.get(), new Item.Properties(), 100));
 
-    public static final RegistryObject<Item> MOTTLED_BAMBOO_SHOOTS =
-            ITEMS.register("mottled_bamboo_shoots", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BLACK_BAMBOO_SHOOTS =
-            ITEMS.register("black_bamboo_shoots", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MOTTLED_BAMBOO =
+            ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_BAMBOO =
+            ITEMS.register("black_bamboo", () -> new modBambooBlockItem(ModBlocks.BLACK_BAMBOO.get(), new Item.Properties()));
     public static final RegistryObject<Item> PEELED_BAMBOO_SHOOTS =
             ITEMS.register("peeled_bamboo_shoots", () -> new Item((new Item.Properties()).food(ModFoods.PEELED_BAMBOO_SHOOTS)));
     public static final RegistryObject<Item> BAMBOO_SHOOTS_SOUP =

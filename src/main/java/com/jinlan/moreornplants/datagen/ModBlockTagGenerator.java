@@ -21,6 +21,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.MOTTLED_BAMBOO.get())
+                .add(ModBlocks.BLACK_BAMBOO.get())
                 .add(ModBlocks.FOUNTAIN_GRASS.get())
                 .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.PINK_FOUNTAIN_GRASS.get())
@@ -35,6 +37,22 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.LOTUS.get())
                 .add(ModBlocks.WHITE_LOTUS.get())
                 .add(ModBlocks.LOTUS_LEAF.get());
+
+        this.tag(BlockTags.SWORD_EFFICIENT)
+                .add(ModBlocks.RED_WEEPING_MEI.get())
+                .add(ModBlocks.RED_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.WHITE_WEEPING_MEI.get())
+                .add(ModBlocks.WHITE_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.GREEN_WEEPING_MEI.get())
+                .add(ModBlocks.GREEN_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.PINK_WEEPING_MEI.get())
+                .add(ModBlocks.PINK_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get())
+                .add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.FOUNTAIN_GRASS.get())
+                .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.PINK_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
 
         this.tag(BlockTags.FLOWER_POTS)
                 .add(ModBlocks.POTTED_RED_MEI_SAPLING.get())
@@ -176,7 +194,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get())
                 .add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
-                .add(ModBlocks.WEEPING_CRABAPPLE.get())
                 .add(ModBlocks.PINK_APRICOT_LEAVES.get())
                 .add(ModBlocks.WHITE_APRICOT_LEAVES.get())
                 .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get())
@@ -193,6 +210,39 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PEACH_PINK_PETALS.get());
 
         this.tag(BlockTags.LEAVES)
+                .add(ModBlocks.RED_MEI_LEAVES.get())
+                .add(ModBlocks.WHITE_MEI_LEAVES.get())
+                .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get())
+                .add(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get())
+                .add(ModBlocks.VERSICOLOR_MEI_LEAVES.get())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get())
+                .add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
+                .add(ModBlocks.PINK_APRICOT_LEAVES.get())
+                .add(ModBlocks.WHITE_APRICOT_LEAVES.get())
+                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get())
+                .add(ModBlocks.WILD_PEACH_LEAVES.get())
+                .add(ModBlocks.PEAR_LEAVES.get())
+                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get())
+                .add(ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get())
+                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get())
+                .add(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get())
+                .add(ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
+                .add(ModBlocks.GOLDEN_GINKGO_LEAVES.get())
+                .add(ModBlocks.GREEN_GINKGO_LEAVES.get())
+                .add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get())
+                .add(ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get())
+                .add(ModBlocks.SWEETGUM_LEAVES.get())
+                .add(ModBlocks.CAMPHOR_LEAVES.get())
+                .add(ModBlocks.NEW_CAMPHOR_LEAVES.get())
+                .add(ModBlocks.DOVE_TREE_LEAVES.get())
+                .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
+                .add(ModBlocks.CHINABERRY_LEAVES.get())
+                .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
+
+        this.tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(ModBlocks.MOTTLED_BAMBOO_SAPLING.get())
+                .add(ModBlocks.BLACK_BAMBOO_SAPLING.get())
                 .add(ModBlocks.RED_MEI_LEAVES.get())
                 .add(ModBlocks.WHITE_MEI_LEAVES.get())
                 .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get())
@@ -651,6 +701,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WHITE_LOTUS.get());
 
         this.tag(BlockTags.SMALL_FLOWERS)
+                .add(ModBlocks.WEEPING_CRABAPPLE.get())
                 .add(ModBlocks.CHRYSANTHEMUM.get())
                 .add(ModBlocks.GOLDEN_CHRYSANTHEMUM.get())
                 .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get())

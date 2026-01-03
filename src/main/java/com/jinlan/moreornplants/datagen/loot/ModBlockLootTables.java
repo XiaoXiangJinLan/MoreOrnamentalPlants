@@ -793,11 +793,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
 
         this.dropSelf(ModBlocks.MOTTLED_BAMBOO.get());
-        this.dropOther(ModBlocks.MOTTLED_BAMBOO_SAPLING.get(), ModItems.MOTTLED_BAMBOO_SHOOTS.get());
+        this.dropOther(ModBlocks.MOTTLED_BAMBOO_SAPLING.get(), ModItems.PEELED_BAMBOO_SHOOTS.get());
         this.add(ModBlocks.POTTED_MOTTLED_BAMBOO.get(),
                 createPotFlowerItemTable(ModBlocks.MOTTLED_BAMBOO.get()));
         this.dropSelf(ModBlocks.BLACK_BAMBOO.get());
-        this.dropOther(ModBlocks.BLACK_BAMBOO_SAPLING.get(), ModItems.BLACK_BAMBOO_SHOOTS.get());
+        this.dropOther(ModBlocks.BLACK_BAMBOO_SAPLING.get(), ModItems.PEELED_BAMBOO_SHOOTS.get());
         this.add(ModBlocks.POTTED_BLACK_BAMBOO.get(),
                 createPotFlowerItemTable(ModBlocks.BLACK_BAMBOO.get()));
 
