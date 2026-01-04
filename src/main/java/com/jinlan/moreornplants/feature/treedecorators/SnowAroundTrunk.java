@@ -122,12 +122,9 @@ public class SnowAroundTrunk extends TreeDecorator {
         if (isValidSnowBase(level, pos.below())) {
             // 检查当前位置是否可放置雪层（只允许在空气位置放置）
             if (level.isStateAtPosition(pos, BlockBehaviour.BlockStateBase::isAir)) {
-                // 随机决定雪层层数（1-2层）
-                int layers = 1 + random.nextInt(2);
-
-                // 创建多层雪状态
+                // 创建1层雪状态
                 BlockState snowState = Blocks.SNOW.defaultBlockState()
-                        .setValue(SnowLayerBlock.LAYERS, Math.min(layers, 8));
+                        .setValue(SnowLayerBlock.LAYERS, 1);
 
                 // 放置雪层
                 context.setBlock(pos, snowState);

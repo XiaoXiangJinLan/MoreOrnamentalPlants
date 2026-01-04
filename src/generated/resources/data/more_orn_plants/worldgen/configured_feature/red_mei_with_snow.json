@@ -5,8 +5,8 @@
       {
         "type": "more_orn_plants:snow_around_trunk",
         "placement_chance": 0.9,
-        "radius": 10,
-        "vertical_range": 10
+        "radius": 8,
+        "vertical_range": 6
       }
     ],
     "dirt_provider": {

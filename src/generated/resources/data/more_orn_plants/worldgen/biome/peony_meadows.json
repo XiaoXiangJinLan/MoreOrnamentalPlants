@@ -10,7 +10,7 @@
   "effects": {
     "fog_color": 14798847,
     "foliage_color": 11983713,
-    "grass_color": 16760245,
+    "grass_color": 16765385,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -74,7 +74,7 @@
     [
       "minecraft:glow_lichen",
       "more_orn_plants:peony_placed",
-      "more_orn_plants:peony_meadows_key",
+      "more_orn_plants:peony_meadows_placed",
       "more_orn_plants:upright_crabapple_placed",
       "more_orn_plants:grass_plain"
     ],

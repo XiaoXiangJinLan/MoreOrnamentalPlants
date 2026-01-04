@@ -17,6 +17,10 @@ public class BiomeConfigManager {
             case "chinaberry_woods" -> ModBiomeConfig.ENABLE_CHINABERRY_WOODS.get();
             case "miscanthus_fields" -> ModBiomeConfig.ENABLE_MISCANTHUS_FIELDS.get();
             case "crops_green" -> ModBiomeConfig.ENABLE_CROPS_GREEN.get();
+            case "spring_river" -> ModBiomeConfig.ENABLE_SPRING_RIVER.get();
+            case "penglai" -> ModBiomeConfig.ENABLE_PENGLAI.get();
+            case "mount_mei" -> ModBiomeConfig.ENABLE_MOUNT_MEI.get();
+            case "yunmeng_marsh" -> ModBiomeConfig.ENABLE_YUNMENG_MARSH.get();
             default -> true;
         };
     }

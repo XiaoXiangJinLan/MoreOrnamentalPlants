@@ -172,7 +172,8 @@
                 "blocks": [
                   "minecraft:dirt",
                   "minecraft:sand",
-                  "minecraft:clay"
+                  "minecraft:clay",
+                  "minecraft:mud"
                 ],
                 "offset": [
                   0,

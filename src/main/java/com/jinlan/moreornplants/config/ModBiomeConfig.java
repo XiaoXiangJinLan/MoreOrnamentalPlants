@@ -8,6 +8,9 @@ public class ModBiomeConfig {
 
     // 生物群系启用配置
     public static final ForgeConfigSpec.BooleanValue ENABLE_RED_MEI_FOREST;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_SPRING_RIVER;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_PENGLAI;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_MOUNT_MEI;
     public static final ForgeConfigSpec.BooleanValue ENABLE_PEONY_MEADOWS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_EVERGREEN_FOREST;
     public static final ForgeConfigSpec.BooleanValue ENABLE_FLOWERS_GROVE;
@@ -16,6 +19,7 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_CRIMSON_HIGHLANDS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_COTTONROSE_REALM;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_YUNMENG_MARSH;
     public static final ForgeConfigSpec.BooleanValue ENABLE_DESERT_POPLAR_WOODS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_CHINESE_ROSE_FIELDS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_CHINABERRY_WOODS;
@@ -28,13 +32,20 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.IntValue SPECIAL_BIOMES_WEIGHT;
 
     static {
-        BUILDER.push("MoreOrnPlants Biome Configuration");
-
         // 生物群系启用设置
         BUILDER.push("Biome Enable Settings");
         ENABLE_RED_MEI_FOREST = BUILDER
                 .comment("Enable Red Mei Forest biome generation")
                 .define("enableRedMeiForest", true);
+        ENABLE_SPRING_RIVER = BUILDER
+                .comment("Enable Spring River biome generation")
+                .define("enableSpringRiver", true);
+        ENABLE_PENGLAI = BUILDER
+                .comment("Enable Penglai biome generation")
+                .define("enablePenglai", true);
+        ENABLE_MOUNT_MEI = BUILDER
+                .comment("Enable Mount Mei biome generation")
+                .define("enableMountMei", true);
         ENABLE_PEONY_MEADOWS = BUILDER
                 .comment("Enable Peony Meadows biome generation")
                 .define("enablePeonyMeadows", true);
@@ -59,6 +70,9 @@ public class ModBiomeConfig {
         ENABLE_COTTONROSE_REALM = BUILDER
                 .comment("Enable Cottonrose Realm biome generation")
                 .define("enableCottonroseRealm", true);
+        ENABLE_YUNMENG_MARSH = BUILDER
+                .comment("Enable Yunmeng Marsh biome generation")
+                .define("enableYunmengMarsh", true);
         ENABLE_DESERT_POPLAR_WOODS = BUILDER
                 .comment("Enable Desert Poplar Woods biome generation")
                 .define("enableDesertPoplarWoods", true);
@@ -83,13 +97,12 @@ public class ModBiomeConfig {
                 .defineInRange("overworldBiomesWeight", 5, 1, 20);
         SECOND_OVERWORLD_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for second overworld biomes region")
-                .defineInRange("overworldBiomesWeight", 4, 1, 20);
+                .defineInRange("secondOverworldBiomesWeight", 4, 1, 20);
         SPECIAL_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for special biomes region")
                 .defineInRange("specialBiomesWeight", 1, 1, 20);
         BUILDER.pop();
 
-        BUILDER.pop();
         SPEC = BUILDER.build();
     }
 }
