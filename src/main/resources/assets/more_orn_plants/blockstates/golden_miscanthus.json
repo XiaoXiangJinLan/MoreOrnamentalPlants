@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "half=lower": [ { "model": "more_orn_plants:block/golden_miscanthus_bottom_0", "weight": 1 },
+      { "model": "more_orn_plants:block/golden_miscanthus_bottom_1", "weight": 1 } ],
+    "half=upper": [ { "model": "more_orn_plants:block/golden_miscanthus_top_0", "weight": 1 },
+      { "model": "more_orn_plants:block/golden_miscanthus_top_1", "weight": 1 } ]
+  }
+}
