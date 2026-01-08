@@ -31,7 +31,7 @@ public class ModTags {
         public static final TagKey<Block> BLACK_BAMBOO_PLANTABLE_ON = tag("black_bamboo_plantable_on");
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(new ResourceLocation(MoreOrnPlants.MODID, name));
+            return BlockTags.create(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));
         }
     }
 
@@ -65,7 +65,7 @@ public class ModTags {
         public static final TagKey<Item> BLACK_DYE = tag("black_dye");
 
         private static TagKey<Item> tag(String name) {
-            return ItemTags.create(new ResourceLocation(MoreOrnPlants.MODID, name));
+            return ItemTags.create(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));
         }
     }
 }

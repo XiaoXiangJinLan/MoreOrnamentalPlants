@@ -5,7 +5,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class ForgeTags {
+public class CommonTags {
     public static class Items {
         public static final TagKey<Item> MEI_SAPLING = tag("mei_sapling");
         public static final TagKey<Item> TREE_PEONY = tag("tree_peony");
@@ -36,7 +36,7 @@ public class ForgeTags {
         public static final TagKey<Item> VEGETABLES_LOTUS_NUT = tag("vegetables/lotus_nut");
 
         private static TagKey<Item> tag(String path) {
-            return ItemTags.create(new ResourceLocation("forge", path));
+            return ItemTags.create(ResourceLocation.parse(("c" + ":" + path)));
         }
     }
 }

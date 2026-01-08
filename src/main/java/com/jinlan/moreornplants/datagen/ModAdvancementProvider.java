@@ -2,10 +2,11 @@ package com.jinlan.moreornplants.datagen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
-import com.jinlan.moreornplants.util.ForgeTags;
+import com.jinlan.moreornplants.util.CommonTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.advancements.*;
 import net.minecraft.advancements.critereon.*;
+import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
@@ -15,9 +16,12 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.structure.Structure;
 import net.neoforged.neoforge.common.data.AdvancementProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.Optional;
@@ -31,7 +35,9 @@ public class ModAdvancementProvider extends AdvancementProvider {
 
     public static class ModAdvancements implements AdvancementGenerator {
         @Override
-        public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> saver, ExistingFileHelper existingFileHelper) {
+        public void generate(HolderLookup.Provider registries, @NotNull Consumer<AdvancementHolder> saver, @NotNull ExistingFileHelper existingFileHelper) {
+            HolderGetter<Biome> biomeGetter = registries.lookupOrThrow(Registries.BIOME);
+            HolderGetter<Structure> structureGetter = registries.lookupOrThrow(Registries.STRUCTURE);
             // 根进度
             AdvancementHolder root = Advancement.Builder.advancement()
                     .display(new DisplayInfo(
@@ -45,7 +51,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_florilegium", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.PLANT_IN_FLORILEGIUM).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.PLANT_IN_FLORILEGIUM).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID), existingFileHelper);
 
@@ -62,7 +68,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_mei", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.MEI_SAPLING).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.MEI_SAPLING).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "the_leader_among_flower"), existingFileHelper);
 
@@ -96,7 +102,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_tree_peony", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.TREE_PEONY).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.TREE_PEONY).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "flower_king"), existingFileHelper).value();
 
@@ -113,7 +119,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_herbaceous_peony", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.HERBACEOUS_PEONY).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.HERBACEOUS_PEONY).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "flower_chancellor"), existingFileHelper).value();
 
@@ -130,7 +136,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_chinese_rose", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHINESE_ROSE).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.CHINESE_ROSE).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "flower_queen"), existingFileHelper);
 
@@ -147,7 +153,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_cymbidium", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CYMBIDIUM).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.CYMBIDIUM).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "regal_fragrance"), existingFileHelper).value() ;
 
@@ -164,7 +170,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_chrysanthemum", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHRYSANTHEMUM).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.CHRYSANTHEMUM).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "flower_hermit"), existingFileHelper);
 
@@ -181,7 +187,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_crabapple", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CRABAPPLE_SAPLING).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.CRABAPPLE_SAPLING).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "celestial_consort"), existingFileHelper).value();
 
@@ -198,7 +204,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_osmanthus", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.OSMANTHUS_SAPLING).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.OSMANTHUS_SAPLING).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "fragrance_afar"), existingFileHelper).value();
 
@@ -215,7 +221,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_apricot", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.APRICOT_SAPLING).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.APRICOT_SAPLING).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "flower_scholar"), existingFileHelper);
 
@@ -232,7 +238,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_peach", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.PEACH_SAPLING).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.PEACH_SAPLING).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "wuling_vista"), existingFileHelper);
 
@@ -266,7 +272,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_plum", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.PLUM_SAPLING).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.PLUM_SAPLING).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "aura_from_east"), existingFileHelper).value();
 
@@ -283,7 +289,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_lotus", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.LOTUS).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.LOTUS).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "lotus_sage"), existingFileHelper).value();
 
@@ -300,7 +306,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_crape_myrtle", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CRAPE_MYRTLE).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.CRAPE_MYRTLE).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "hundred_day_red"), existingFileHelper).value();
 
@@ -317,7 +323,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_camellia", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CAMELLIA).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.CAMELLIA).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "lasting_beauty"), existingFileHelper).value();
 
@@ -334,7 +340,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_azalea", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.AZALEA).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.AZALEA).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "flower_beauty"), existingFileHelper);
 
@@ -436,7 +442,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_ginkgo", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.GINKGO_SAPLING).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.GINKGO_SAPLING).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "grand_monarch"), existingFileHelper).value();
 
@@ -470,7 +476,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_chinese_parasol", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHINESE_PARASOL_SAPLING).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.CHINESE_PARASOL_SAPLING).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "phoenix_roost"), existingFileHelper).value();
 
@@ -555,7 +561,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_grasses", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.ORNAMENTAL_GRASS).build()
+                            ItemPredicate.Builder.item().of(CommonTags.Items.ORNAMENTAL_GRASS).build()
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "grasses"), existingFileHelper).value();
 
@@ -572,13 +578,13 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("get_mei", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.MEI_SAPLING).build()))
+                            ItemPredicate.Builder.item().of(CommonTags.Items.MEI_SAPLING).build()))
                     .addCriterion("get_spring_cymbidium", InventoryChangeTrigger.TriggerInstance.hasItems(
                             ModBlocks.SPRING_CYMBIDIUM.get()))
                     .addCriterion("get_bamboo", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.BAMBOO).build()))
+                            ItemPredicate.Builder.item().of(CommonTags.Items.BAMBOO).build()))
                     .addCriterion("get_chrysanthemum", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHRYSANTHEMUM).build()))
+                            ItemPredicate.Builder.item().of(CommonTags.Items.CHRYSANTHEMUM).build()))
                     .requirements(AdvancementRequirements.Strategy.AND)
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "four_gentlemen"), existingFileHelper).value();
 
@@ -596,7 +602,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                     ))
                     .addCriterion("place_mei_sapling", ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(
                             LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(BlockTags.DIRT).of(Blocks.FARMLAND)),
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.MEI_SAPLING)))
+                            ItemPredicate.Builder.item().of(CommonTags.Items.MEI_SAPLING)))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "send_spring"), existingFileHelper).value();
 
             Advancement offerChrysanthemum = Advancement.Builder.advancement()
@@ -613,7 +619,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                     ))
                     .addCriterion("offer_chrysanthemum", ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(
                             LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(BlockTags.DIRT).of(Blocks.FARMLAND)),
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CHRYSANTHEMUM)))
+                            ItemPredicate.Builder.item().of(CommonTags.Items.CHRYSANTHEMUM)))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "offer_chrysanthemum"), existingFileHelper).value();
 
             AdvancementHolder treadSnowSeekMei = Advancement.Builder.advancement()
@@ -629,7 +635,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("visit_red_mei_forest", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiomes(ModBiomes.RED_MEI_FOREST).build()
+                            LocationPredicate.Builder.location().setBiomes(HolderSet.direct(biomeGetter.getOrThrow(ModBiomes.RED_MEI_FOREST)))
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "tread_snow_seek_mei"), existingFileHelper);
 
@@ -646,7 +652,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("visit_peach_blossom_spring", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiomes(ModBiomes.THE_PEACH_BLOSSOM_SPRING).build()
+                            LocationPredicate.Builder.location().setBiomes(HolderSet.direct(biomeGetter.getOrThrow(ModBiomes.THE_PEACH_BLOSSOM_SPRING)))
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "peach_blossom_spring"), existingFileHelper);
 
@@ -663,9 +669,9 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("visit_flowers_grove", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiomes(ModBiomes.FLOWERS_GROVE).build()
+                            LocationPredicate.Builder.location().setBiomes(HolderSet.direct(biomeGetter.getOrThrow(ModBiomes.FLOWERS_GROVE)))
                     ))
-                    .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "flowers_as_matchmakers"), existingFileHelper);
+                    .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "flowers_as_matchmakers"), existingFileHelper).value();
 
             Advancement crimsonHighlands = Advancement.Builder.advancement()
                     .parent(flowerBeauty)
@@ -680,9 +686,9 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("visit_crimson_highlands", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiomes(ModBiomes.CRIMSON_HIGHLANDS).build()
+                            LocationPredicate.Builder.location().setBiomes(HolderSet.direct(biomeGetter.getOrThrow(ModBiomes.CRIMSON_HIGHLANDS)))
                     ))
-                    .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "crimson_highlands"), existingFileHelper);
+                    .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "crimson_highlands"), existingFileHelper).value();
 
             Advancement cottonroseRealm = Advancement.Builder.advancement()
                     .parent(frostDefiant)
@@ -697,9 +703,9 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("visit_cottonrose_realm", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiomes(ModBiomes.COTTONROSE_REALM).build()
+                            LocationPredicate.Builder.location().setBiomes(HolderSet.direct(biomeGetter.getOrThrow(ModBiomes.COTTONROSE_REALM)))
                     ))
-                    .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "cottonrose_realm"), existingFileHelper);
+                    .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "cottonrose_realm"), existingFileHelper).value();
 
             Advancement ironThresholdTemple = Advancement.Builder.advancement()
                     .parent(treadSnowSeekMei)
@@ -714,8 +720,8 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("found_iron_threshold_temple", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setStructures(HolderSet.direct(registries.lookupOrThrow(Registries.STRUCTURE).getOrThrow(
-                                    ResourceKey.create(Registries.STRUCTURE, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "little_iron_threshold_temple")))))
+                            LocationPredicate.Builder.location().setStructures(HolderSet.direct(structureGetter.getOrThrow(ResourceKey.create(Registries.STRUCTURE,
+                                    ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "little_iron_threshold_temple")))))
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "little_iron_threshold_temple"), existingFileHelper).value();
             Advancement peachHermitage = Advancement.Builder.advancement()
@@ -731,8 +737,8 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("found_peach_hermitage", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setStructures(HolderSet.direct(registries.lookupOrThrow(Registries.STRUCTURE).getOrThrow(
-                                    ResourceKey.create(Registries.STRUCTURE, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "peach_blossom_hermitage")))))
+                            LocationPredicate.Builder.location().setStructures(HolderSet.direct(structureGetter.getOrThrow(ResourceKey.create(Registries.STRUCTURE,
+                                    ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "peach_blossom_hermitage")))))
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "peach_blossom_hermitage"), existingFileHelper).value();
             Advancement apricotVillage = Advancement.Builder.advancement()
@@ -748,8 +754,8 @@ public class ModAdvancementProvider extends AdvancementProvider {
                             false
                     ))
                     .addCriterion("found_apricot_village", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setStructures(HolderSet.direct(registries.lookupOrThrow(Registries.STRUCTURE).getOrThrow(
-                                    ResourceKey.create(Registries.STRUCTURE, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "village_apricot")))))
+                            LocationPredicate.Builder.location().setStructures(HolderSet.direct(structureGetter.getOrThrow(ResourceKey.create(Registries.STRUCTURE,
+                                    ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "village_apricot")))))
                     ))
                     .save(saver, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "apricot_village"), existingFileHelper).value();
         }
