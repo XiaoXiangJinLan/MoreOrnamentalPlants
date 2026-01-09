@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_chinese_rose": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:chinese_rose"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.flower_queen.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:chinese_rose"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.flower_queen.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_chinese_rose"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

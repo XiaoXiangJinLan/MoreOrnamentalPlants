@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_lotus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:lotus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.lotus_sage.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:lotus"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.lotus_sage.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_lotus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

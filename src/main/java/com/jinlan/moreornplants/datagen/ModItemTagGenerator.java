@@ -12,6 +12,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -132,6 +133,44 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ModTags.Items.DESERT_POPLAR_LOGS)
                 .add(ModItems.CRAPE_MYRTLE_LOG.get())
                 .add(ModItems.CRAPE_MYRTLE_WOOD.get());
+
+        this.tag(Tags.Items.STRIPPED_LOGS)
+                .add(ModBlocks.STRIPPED_RED_MEI_LOG.asItem())
+                .add(ModBlocks.STRIPPED_WHITE_MEI_LOG.asItem())
+                .add(ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG.asItem())
+                .add(ModBlocks.STRIPPED_CRABAPPLE_LOG.asItem())
+                .add(ModBlocks.STRIPPED_APRICOT_LOG.asItem())
+                .add(ModBlocks.STRIPPED_PEACH_LOG.asItem())
+                .add(ModBlocks.STRIPPED_PEAR_LOG.asItem())
+                .add(ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_LOG.asItem())
+                .add(ModBlocks.STRIPPED_OSMANTHUS_LOG.asItem())
+                .add(ModBlocks.STRIPPED_GINKGO_LOG.asItem())
+                .add(ModBlocks.STRIPPED_CHINESE_PARASOL_LOG.asItem())
+                .add(ModBlocks.STRIPPED_SWEETGUM_LOG.asItem())
+                .add(ModBlocks.STRIPPED_CAMPHOR_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DOVE_TREE_LOG.asItem())
+                .add(ModBlocks.STRIPPED_CHINABERRY_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.asItem());
+
+        this.tag(Tags.Items.STRIPPED_WOODS)
+                .add(ModBlocks.STRIPPED_RED_MEI_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_WHITE_MEI_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_CRABAPPLE_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_APRICOT_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_PEACH_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_PEAR_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_OSMANTHUS_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_GINKGO_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_CHINESE_PARASOL_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_SWEETGUM_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_CAMPHOR_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DOVE_TREE_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_CHINABERRY_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.asItem());
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.RED_MEI_PLANKS.get().asItem())
@@ -265,6 +304,25 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.DOVE_TREE_FENCE_GATE.get().asItem())
                 .add(ModBlocks.CHINABERRY_FENCE_GATE.get().asItem())
                 .add(ModBlocks.DESERT_POPLAR_FENCE_GATE.get().asItem());
+
+        this.tag(Tags.Items.FENCE_GATES_WOODEN)
+                .add(ModBlocks.RED_MEI_FENCE_GATE.asItem())
+                .add(ModBlocks.WHITE_MEI_FENCE_GATE.asItem())
+                .add(ModBlocks.GREEN_CALYX_MEI_FENCE_GATE.asItem())
+                .add(ModBlocks.DOUBLE_PINK_MEI_FENCE_GATE.asItem())
+                .add(ModBlocks.CRABAPPLE_FENCE_GATE.asItem())
+                .add(ModBlocks.APRICOT_FENCE_GATE.asItem())
+                .add(ModBlocks.PEACH_FENCE_GATE.asItem())
+                .add(ModBlocks.PEAR_FENCE_GATE.asItem())
+                .add(ModBlocks.PURPLE_LEAF_PLUM_FENCE_GATE.asItem())
+                .add(ModBlocks.OSMANTHUS_FENCE_GATE.asItem())
+                .add(ModBlocks.GINKGO_FENCE_GATE.asItem())
+                .add(ModBlocks.CHINESE_PARASOL_FENCE_GATE.asItem())
+                .add(ModBlocks.SWEETGUM_FENCE_GATE.asItem())
+                .add(ModBlocks.CAMPHOR_FENCE_GATE.asItem())
+                .add(ModBlocks.DOVE_TREE_FENCE_GATE.asItem())
+                .add(ModBlocks.CHINABERRY_FENCE_GATE.asItem())
+                .add(ModBlocks.DESERT_POPLAR_FENCE_GATE.asItem());
 
         this.tag(ItemTags.WOODEN_DOORS)
                 .add(ModBlocks.RED_MEI_DOOR.get().asItem())
@@ -726,20 +784,20 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_FOUNTAIN_GRASS.get().asItem());
 
         this.tag(ModTags.Items.WHITE_DYE)
-                .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.WHITE_PEONY.get().asItem())
-                .add(ModBlocks.WHITE_CAMELLIA.get().asItem())
-                .add(ModBlocks.WHITE_LOTUS.get().asItem())
-                .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get().asItem());
+                .add(ModBlocks.WHITE_CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.WHITE_PEONY.asItem())
+                .add(ModBlocks.WHITE_CAMELLIA.asItem())
+                .add(ModBlocks.WHITE_LOTUS.asItem())
+                .add(ModBlocks.WHITE_FOUNTAIN_GRASS.asItem());
 
         this.tag(ModTags.Items.YELLOW_DYE)
-                .add(ModBlocks.WINTERSWEET.get().asItem())
-                .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.OCHRE_YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.GOLDEN_PEONY.get().asItem())
-                .add(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem())
+                .add(ModBlocks.WINTERSWEET.asItem())
+                .add(ModBlocks.CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.YELLOW_PEONY.asItem())
+                .add(ModBlocks.LIGHT_YELLOW_PEONY.asItem())
+                .add(ModBlocks.OCHRE_YELLOW_PEONY.asItem())
+                .add(ModBlocks.GOLDEN_PEONY.asItem())
+                .add(ModBlocks.YELLOW_CHINESE_ROSE.asItem())
                 .add(ModItems.GOLDEN_MISCANTHUS.get())
                 .add(ModItems.CHINESE_PARASOL_LEAF_0.get())
                 .add(ModItems.GINKGO_LEAF.get());
@@ -748,51 +806,105 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.CHINESE_PARASOL_LEAF_1.get());
 
         this.tag(ModTags.Items.PURPLE_DYE)
-                .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.INK_PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.VIOLET_PEONY.get().asItem())
-                .addTag(CommonTags.Items.CRAPE_MYRTLE)
-                .add(ModBlocks.FOUNTAIN_GRASS.get().asItem())
-                .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get().asItem());
+                .add(ModBlocks.PURPLE_CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.PURPLE_PEONY.asItem())
+                .add(ModBlocks.LIGHT_PURPLE_PEONY.asItem())
+                .add(ModBlocks.INK_PURPLE_PEONY.asItem())
+                .add(ModBlocks.VIOLET_PEONY.asItem())
+                .add(ModBlocks.CRAPE_MYRTLE.asItem())
+                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.FOUNTAIN_GRASS.asItem())
+                .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.asItem());
 
         this.tag(ModTags.Items.LIME_DYE)
-                .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GREEN_PEONY.get().asItem());
+                .add(ModBlocks.GREEN_CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.GREEN_PEONY.asItem());
 
         this.tag(ModTags.Items.GREEN_DYE)
-                .addTag(CommonTags.Items.CYMBIDIUM)
-                .add(ModBlocks.LOTUS_LEAF.get().asItem())
-                .add(ModBlocks.MISCANTHUS.get().asItem());
+                .add(ModBlocks.SPRING_CYMBIDIUM.asItem())
+                .add(ModBlocks.SUMMER_CYMBIDIUM.asItem())
+                .add(ModBlocks.AUTUMN_CYMBIDIUM.asItem())
+                .add(ModBlocks.WINTER_CYMBIDIUM.asItem())
+                .add(ModBlocks.LOTUS_LEAF.asItem())
+                .add(ModBlocks.MISCANTHUS.asItem());
 
         this.tag(ModTags.Items.LIGHT_BLUE_DYE)
-                .add(ModBlocks.BLUE_PEONY.get().asItem());
+                .add(ModBlocks.BLUE_PEONY.asItem());
 
         this.tag(ModTags.Items.BLACK_DYE)
-                .add(ModBlocks.INK_PEONY.get().asItem());
+                .add(ModBlocks.INK_PEONY.asItem());
 
-        this.tag(CommonTags.Items.VEGETABLES)
-                .addTag(CommonTags.Items.VEGETABLES_BAMBOO_SHOOTS)
-                .addTag(CommonTags.Items.VEGETABLES_BAMBOO_SPROUTS)
-                .addTag(CommonTags.Items.VEGETABLES_LOTUS_ROOT)
-                .addTag(CommonTags.Items.VEGETABLES_LOTUS_SEED)
-                .addTag(CommonTags.Items.VEGETABLES_LOTUS_NUT);
+        this.tag(Tags.Items.CROPS)
+                .addTag(CommonTags.Items.CROPS_LOTUS);
 
-        this.tag(CommonTags.Items.VEGETABLES_BAMBOO_SHOOTS)
+        this.tag(CommonTags.Items.CROPS_LOTUS)
+                .add(ModBlocks.LOTUS.asItem())
+                .add(ModBlocks.WHITE_LOTUS.asItem())
+                .add(ModBlocks.LOTUS_LEAF.asItem());
+
+        this.tag(Tags.Items.FOODS_SOUP)
+                .add(ModItems.LOTUS_ROOT_SOUP.get())
+                .add(ModItems.LOTUS_SEED_SOUP.get())
+                .add(ModItems.BAMBOO_SHOOTS_SOUP.get());
+
+        this.tag(Tags.Items.FOODS_VEGETABLE)
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get())
+                .add(ModItems.LOTUS_ROOT.get())
+                .add(ModItems.LOTUS_SEED.get());
+
+        this.tag(CommonTags.Items.FOODS_BAMBOO_SHOOTS)
                 .add(ModItems.PEELED_BAMBOO_SHOOTS.get());
 
-        this.tag(CommonTags.Items.VEGETABLES_BAMBOO_SPROUTS)
+        this.tag(CommonTags.Items.FOODS_BAMBOO_SPROUTS)
                 .add(ModItems.PEELED_BAMBOO_SHOOTS.get());
 
-        this.tag(CommonTags.Items.VEGETABLES_LOTUS_ROOT)
+        this.tag(CommonTags.Items.FOODS_LOTUS_ROOT)
                 .add(ModItems.LOTUS_ROOT.get());
 
-        this.tag(CommonTags.Items.VEGETABLES_LOTUS_SEED)
+        this.tag(CommonTags.Items.FOODS_LOTUS_SEED)
                 .add(ModItems.LOTUS_SEED.get());
 
-        this.tag(CommonTags.Items.VEGETABLES_LOTUS_NUT)
+        this.tag(CommonTags.Items.FOODS_LOTUS_NUT)
                 .add(ModItems.LOTUS_SEED.get());
 
+        this.tag(ItemTags.GOAT_FOOD)
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get())
+                .add(ModItems.LOTUS_ROOT.get())
+                .add(ModItems.LOTUS_SEED.get());
+
+        this.tag(ItemTags.PANDA_FOOD)
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get());
+
+        this.tag(ItemTags.RABBIT_FOOD)
+                .add(ModItems.LOTUS_ROOT.get());
+
+        this.tag(ItemTags.HORSE_FOOD)
+                .add(ModItems.LOTUS_ROOT.get());
+
+        this.tag(ItemTags.COW_FOOD)
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get())
+                .add(ModItems.LOTUS_ROOT.get())
+                .add(ModItems.LOTUS_SEED.get());
+
+        this.tag(ItemTags.CHICKEN_FOOD)
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get())
+                .add(ModItems.LOTUS_ROOT.get())
+                .add(ModItems.LOTUS_SEED.get());
+
+        this.tag(ItemTags.SHEEP_FOOD)
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get())
+                .add(ModItems.LOTUS_ROOT.get())
+                .add(ModItems.LOTUS_SEED.get());
+
+        this.tag(ItemTags.PIG_FOOD)
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get())
+                .add(ModItems.LOTUS_ROOT.get())
+                .add(ModItems.LOTUS_SEED.get());
+
+        this.tag(ItemTags.CAT_FOOD)
+                .add(ModItems.LOTUS_ROOT_SOUP.get());
+
+        this.tag(ItemTags.WOLF_FOOD)
+                .add(ModItems.LOTUS_ROOT_SOUP.get());
     }
 }

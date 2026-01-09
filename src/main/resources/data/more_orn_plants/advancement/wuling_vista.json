@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_peach": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:peach_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.wuling_vista.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:ornamental_peach_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.wuling_vista.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_peach"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crape_myrtle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:crape_myrtle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:crape_myrtle_sapling"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crape_myrtle"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:crape_myrtle_sapling"
+    ]
+  }
+}

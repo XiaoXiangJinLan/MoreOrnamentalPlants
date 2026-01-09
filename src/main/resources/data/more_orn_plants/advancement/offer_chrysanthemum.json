@@ -1,0 +1,66 @@
+{
+  "parent": "more_orn_plants:flower_hermit",
+  "criteria": {
+    "offer_chrysanthemum_farmland": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#neoforge:villager_farmlands"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "#c:chrysanthemum"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    },
+    "offer_chrysanthemum_dirt": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:dirt"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "#c:chrysanthemum"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.offer_chrysanthemum.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:white_chrysanthemum"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.offer_chrysanthemum.title"
+    }
+  },
+  "requirements": [
+    [
+      "offer_chrysanthemum_farmland",
+      "offer_chrysanthemum_dirt"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

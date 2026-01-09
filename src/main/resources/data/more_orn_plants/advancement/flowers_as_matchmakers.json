@@ -1,0 +1,39 @@
+{
+  "parent": "more_orn_plants:flower_queen",
+  "criteria": {
+    "visit_flowers_grove": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "more_orn_plants:flowers_grove"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.flowers_as_matchmakers.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:pink_chinese_rose"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.flowers_as_matchmakers.title"
+    }
+  },
+  "requirements": [
+    [
+      "visit_flowers_grove"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_camellia": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:camellia"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.lasting_beauty.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:camellia"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.lasting_beauty.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_camellia"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

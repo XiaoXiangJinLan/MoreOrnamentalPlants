@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_desert_poplar": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:desert_poplar_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.hero_of_desert.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:desert_poplar_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.hero_of_desert.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_desert_poplar"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

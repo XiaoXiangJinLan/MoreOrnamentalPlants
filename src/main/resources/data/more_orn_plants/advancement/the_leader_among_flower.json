@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_mei": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:mei_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.the_leader_among_flower.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:double_pink_mei_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.the_leader_among_flower.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_mei"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

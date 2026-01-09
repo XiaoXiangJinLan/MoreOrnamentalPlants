@@ -1,0 +1,72 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_bamboo": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:bamboo"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "get_chrysanthemum": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:chrysanthemum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "get_mei": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:mei_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "get_spring_cymbidium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:spring_cymbidium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.four_gentlemen.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:bamboo"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.four_gentlemen.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_mei"
+    ],
+    [
+      "get_spring_cymbidium"
+    ],
+    [
+      "get_bamboo"
+    ],
+    [
+      "get_chrysanthemum"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,39 @@
+{
+  "parent": "more_orn_plants:the_frost_defiant",
+  "criteria": {
+    "visit_cottonrose_realm": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "more_orn_plants:cottonrose_realm"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.cottonrose_realm.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:mottled_bamboo"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.cottonrose_realm.title"
+    }
+  },
+  "requirements": [
+    [
+      "visit_cottonrose_realm"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

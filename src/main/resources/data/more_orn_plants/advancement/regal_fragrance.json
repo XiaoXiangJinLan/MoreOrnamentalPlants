@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_cymbidium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:cymbidium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.regal_fragrance.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:spring_cymbidium"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.regal_fragrance.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_cymbidium"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

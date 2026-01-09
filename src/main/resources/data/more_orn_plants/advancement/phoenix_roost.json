@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_chinese_parasol": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:chinese_parasol_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.phoenix_roost.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:yellow_chinese_parasol_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.phoenix_roost.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_chinese_parasol"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

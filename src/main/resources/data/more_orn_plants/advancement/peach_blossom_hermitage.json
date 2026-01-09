@@ -1,0 +1,39 @@
+{
+  "parent": "more_orn_plants:peach_blossom_spring",
+  "criteria": {
+    "found_peach_hermitage": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "more_orn_plants:peach_blossom_hermitage"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.peach_blossom_hermitage.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:peach_pink_petals"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.peach_blossom_hermitage.title"
+    }
+  },
+  "requirements": [
+    [
+      "found_peach_hermitage"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "get_florilegium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:plant_in_florilegium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "more_orn_plants:textures/gui/advancement/florilegium.png",
+    "description": {
+      "translate": "advancement.moreornplants.root.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:two_qiao_peony"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.moreornplants.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_florilegium"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

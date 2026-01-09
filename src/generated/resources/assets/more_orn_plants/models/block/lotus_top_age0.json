@@ -1,0 +1,9 @@
+{
+  "parent": "more_orn_plants:block/lotus_petals",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "petal": "more_orn_plants:block/lotus_petal_none",
+    "petal_small": "more_orn_plants:block/lotus_petal_none",
+    "stem": "more_orn_plants:block/lotus_stem_age_0"
+  }
+}

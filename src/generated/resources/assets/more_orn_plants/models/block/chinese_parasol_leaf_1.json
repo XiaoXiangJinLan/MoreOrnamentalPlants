@@ -1,0 +1,7 @@
+{
+  "parent": "more_orn_plants:block/leaf_pile",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "leaf": "more_orn_plants:block/chinese_parasol_leaf_1"
+  }
+}

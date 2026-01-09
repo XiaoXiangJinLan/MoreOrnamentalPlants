@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_herbaceous_peony": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:herbaceous_peony"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.flower_chancellor.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:peony"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.flower_chancellor.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_herbaceous_peony"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

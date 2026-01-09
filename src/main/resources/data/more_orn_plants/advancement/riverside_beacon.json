@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_sweetgum": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:sweetgum_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.riverside_beacon.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:sweetgum_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.riverside_beacon.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_sweetgum"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "more_orn_plants:block/chinese_parasol_slab"
+    },
+    "type=double": {
+      "model": "more_orn_plants:block/chinese_parasol_planks"
+    },
+    "type=top": {
+      "model": "more_orn_plants:block/chinese_parasol_slab_top"
+    }
+  }
+}

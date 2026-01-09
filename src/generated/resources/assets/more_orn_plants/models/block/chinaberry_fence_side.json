@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "more_orn_plants:block/chinaberry_planks"
+  }
+}

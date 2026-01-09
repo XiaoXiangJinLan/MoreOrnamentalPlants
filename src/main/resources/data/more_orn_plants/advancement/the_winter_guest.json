@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_wintersweet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:wintersweet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.the_winter_guest.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:wintersweet"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.the_winter_guest.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_wintersweet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

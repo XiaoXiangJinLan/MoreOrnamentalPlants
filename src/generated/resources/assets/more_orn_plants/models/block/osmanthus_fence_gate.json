@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate",
+  "textures": {
+    "texture": "more_orn_plants:block/osmanthus_planks"
+  }
+}

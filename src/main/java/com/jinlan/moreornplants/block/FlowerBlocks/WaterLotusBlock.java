@@ -23,6 +23,8 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.neoforged.neoforge.common.CommonHooks;
+import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -39,7 +41,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(WATERLOGGED, AGE);
     }
@@ -69,7 +71,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
+    public boolean canSurvive(BlockState state, @NotNull LevelReader level, @NotNull BlockPos pos) {
         if (state.getValue(HALF) == DoubleBlockHalf.LOWER) {
             BlockState existingState = level.getBlockState(pos);
             BlockPos belowPos = pos.below();
@@ -82,7 +84,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
                     || belowState.is(Blocks.CLAY)
                     || belowState.is(Blocks.GRAVEL)
                     || belowState.is(Blocks.SUSPICIOUS_GRAVEL)
-                    || belowState.is(Blocks.FARMLAND));
+                    || belowState.is(Tags.Blocks.VILLAGER_FARMLANDS));
         } else {
             // 上半部分：检查下方是否是荷花的下半部分且含水
             BlockState belowState = level.getBlockState(pos.below());
@@ -94,7 +96,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
+    public void setPlacedBy(Level level, BlockPos pos, BlockState state, @NotNull LivingEntity placer, @NotNull ItemStack stack) {
         // 放置上半部分（强制不含水）
         BlockPos abovePos = pos.above();
         BlockState aboveState = this.defaultBlockState()
@@ -109,10 +111,10 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
         int age = state.getValue(AGE);
         if (age < 3) {
             float growthSpeed = getGrowthSpeed(level, pos);
-            if (net.neoforged.neoforge.common.CommonHooks.canCropGrow(level, pos, state, random.nextInt((int)(25.0F / growthSpeed) + 1) == 0)) {
+            if (CommonHooks.canCropGrow(level, pos, state, random.nextInt((int)(25.0F / growthSpeed) + 1) == 0)) {
                 int newAge = age + 1;
                 growPlant(level, pos, state, newAge);
-                net.neoforged.neoforge.common.CommonHooks.canCropGrow(level, pos, state, random.nextBoolean());
+                CommonHooks.fireCropGrowPost(level, pos, state);
             }
         }
     }
@@ -121,15 +123,11 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
         float speed = 1.0F;
         BlockPos belowPos = pos.below();
         BlockState belowState = level.getBlockState(belowPos);
-
         if (belowState.is(Blocks.FARMLAND)) {
             if (belowState.getValue(FarmBlock.MOISTURE) >= FarmBlock.MAX_MOISTURE) {
                 speed = 3.0F;
-            } else {
-                speed = 1.0F;
             }
         }
-
         return speed;
     }
 
@@ -166,7 +164,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
 
     @Override
     public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {
-        return false;
+        return state.getValue(AGE) < 3;
     }
 
     @Override
@@ -187,8 +185,9 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
+    @NotNull
     public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState,
-                                  LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+                                           LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
         // 处理含水逻辑
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));

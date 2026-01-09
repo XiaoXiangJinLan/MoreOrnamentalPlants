@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/bamboo2_age1",
+  "textures": {
+    "all": "more_orn_plants:block/black_bamboo_stalk"
+  }
+}

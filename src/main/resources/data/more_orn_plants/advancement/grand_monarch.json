@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_ginkgo": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ginkgo_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.grand_monarch.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:golden_ginkgo_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.grand_monarch.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_ginkgo"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

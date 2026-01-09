@@ -1,0 +1,39 @@
+{
+  "parent": "more_orn_plants:flower_beauty",
+  "criteria": {
+    "visit_crimson_highlands": {
+    "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "more_orn_plants:crimson_highlands"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.crimson_highlands.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:crimson_azalea"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.crimson_highlands.title"
+    }
+  },
+  "requirements": [
+    [
+      "visit_crimson_highlands"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

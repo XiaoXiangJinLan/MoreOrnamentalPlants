@@ -30,19 +30,19 @@ public class ModBiomes {
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "camellia_valley"));
     public static final ResourceKey<Biome> CRIMSON_HIGHLANDS = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "crimson_highlands"));
-    public static final ResourceKey<Biome> PEONY_MEADOWS =ResourceKey.create(Registries.BIOME,
+    public static final ResourceKey<Biome> PEONY_MEADOWS = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "peony_meadows"));
-    public static final ResourceKey<Biome> COTTONROSE_REALM =ResourceKey.create(Registries.BIOME,
+    public static final ResourceKey<Biome> COTTONROSE_REALM = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "cottonrose_realm"));
-    public static final ResourceKey<Biome> DESERT_POPLAR_WOODS =ResourceKey.create(Registries.BIOME,
+    public static final ResourceKey<Biome> DESERT_POPLAR_WOODS = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "desert_poplar_woods"));
-    public static final ResourceKey<Biome> CHINESE_ROSE_FIELDS =ResourceKey.create(Registries.BIOME,
+    public static final ResourceKey<Biome> CHINESE_ROSE_FIELDS = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "chinese_rose_fields"));
-    public static final ResourceKey<Biome> CHINABERRY_WOODS =ResourceKey.create(Registries.BIOME,
+    public static final ResourceKey<Biome> CHINABERRY_WOODS = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "chinaberry_woods"));
-    public static final ResourceKey<Biome> MISCANTHUS_FIELDS =ResourceKey.create(Registries.BIOME,
+    public static final ResourceKey<Biome> MISCANTHUS_FIELDS = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "miscanthus_fields"));
-    public static final ResourceKey<Biome> CROPS_GREEN =ResourceKey.create(Registries.BIOME,
+    public static final ResourceKey<Biome> CROPS_GREEN = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "crops_green"));
     public static final ResourceKey<Biome> SPRING_RIVER = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "spring_river"));

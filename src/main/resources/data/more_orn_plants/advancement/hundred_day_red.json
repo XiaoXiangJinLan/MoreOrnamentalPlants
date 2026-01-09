@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_crape_myrtle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:crape_myrtle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.hundred_day_red.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:crape_myrtle"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.hundred_day_red.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_crape_myrtle"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

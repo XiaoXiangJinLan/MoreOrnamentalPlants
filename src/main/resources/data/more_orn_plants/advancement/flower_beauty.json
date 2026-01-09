@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_azalea": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:azalea"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.flower_beauty.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:flowering_azalea"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.flower_beauty.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_azalea"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:light_pink_peony"
+    },
+    {
+      "item": "more_orn_plants:light_red_peony"
+    },
+    {
+      "item": "more_orn_plants:light_purple_peony"
+    },
+    {
+      "item": "more_orn_plants:light_yellow_peony"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "more_orn_plants:light_colorful_peony"
+  }
+}

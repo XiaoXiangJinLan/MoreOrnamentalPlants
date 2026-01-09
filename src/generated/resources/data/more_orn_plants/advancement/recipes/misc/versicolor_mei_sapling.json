@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_double_pink_mei_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:double_pink_mei_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:versicolor_mei_sapling"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_mei_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:white_mei_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_double_pink_mei_sapling",
+      "has_white_mei_sapling"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:versicolor_mei_sapling"
+    ]
+  }
+}

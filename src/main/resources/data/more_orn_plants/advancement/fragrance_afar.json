@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_osmanthus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:osmanthus_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.fragrance_afar.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:golden_osmanthus_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.fragrance_afar.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_osmanthus"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

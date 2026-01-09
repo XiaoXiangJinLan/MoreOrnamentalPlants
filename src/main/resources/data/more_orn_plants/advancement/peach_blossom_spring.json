@@ -1,0 +1,39 @@
+{
+  "parent": "more_orn_plants:wuling_vista",
+  "criteria": {
+    "visit_peach_blossom_spring": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "more_orn_plants:the_peach_blossom_spring"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.peach_blossom_spring.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:wild_peach_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.peach_blossom_spring.title"
+    }
+  },
+  "requirements": [
+    [
+      "visit_peach_blossom_spring"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

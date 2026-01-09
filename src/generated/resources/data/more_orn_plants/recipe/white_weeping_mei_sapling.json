@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "more_orn_plants:white_mei_sapling"
+    }
+  },
+  "pattern": [
+    " # ",
+    "# #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_orn_plants:white_weeping_mei_sapling"
+  }
+}

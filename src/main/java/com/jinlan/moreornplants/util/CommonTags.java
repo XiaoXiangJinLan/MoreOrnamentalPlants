@@ -28,15 +28,15 @@ public class CommonTags {
         public static final TagKey<Item> LOTUS = tag("lotus");
         public static final TagKey<Item> ORNAMENTAL_GRASS = tag("ornamental_grass");
 
-        public static final TagKey<Item> VEGETABLES = tag("vegetables");
-        public static final TagKey<Item> VEGETABLES_BAMBOO_SHOOTS = tag("vegetables/bamboo_shoots");
-        public static final TagKey<Item> VEGETABLES_BAMBOO_SPROUTS = tag("vegetables/bamboo_sprouts");
-        public static final TagKey<Item> VEGETABLES_LOTUS_ROOT = tag("vegetables/lotus_root");
-        public static final TagKey<Item> VEGETABLES_LOTUS_SEED = tag("vegetables/lotus_seed");
-        public static final TagKey<Item> VEGETABLES_LOTUS_NUT = tag("vegetables/lotus_nut");
+        public static final TagKey<Item> CROPS_LOTUS = tag("crops/lotus");
+        public static final TagKey<Item> FOODS_BAMBOO_SHOOTS = tag("foods/bamboo_shoots");
+        public static final TagKey<Item> FOODS_BAMBOO_SPROUTS = tag("foods/bamboo_sprouts");
+        public static final TagKey<Item> FOODS_LOTUS_ROOT = tag("foods/lotus_root");
+        public static final TagKey<Item> FOODS_LOTUS_SEED = tag("foods/lotus_seed");
+        public static final TagKey<Item> FOODS_LOTUS_NUT = tag("foods/lotus_nut");
 
         private static TagKey<Item> tag(String path) {
-            return ItemTags.create(ResourceLocation.parse(("c" + ":" + path)));
+            return ItemTags.create(ResourceLocation.parse("c" + ":" + path));
         }
     }
 }

@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_sunflower": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:sunflower"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.flower_loyalist.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:sunflower"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.flower_loyalist.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_sunflower"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

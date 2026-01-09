@@ -88,7 +88,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DESERT_POPLAR_LEAVES =
             registerBlock("desert_poplar_leaves", () -> new DesertPoplarLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES).mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final DeferredBlock<Block> CRAPE_MYRTLE_LEAVES =
-            registerBlock("crape_myrtle_leaves", () -> new CrapeMyrtleLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING).mapColor(MapColor.COLOR_PURPLE)));
+            registerBlock("crape_myrtle_leaves", () -> new CrapeMyrtleLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES).mapColor(MapColor.COLOR_PURPLE)));
 
     public static final DeferredBlock<Block> RED_WEEPING_MEI =
             registerBlock("red_weeping_mei", () -> new RedWeepingMeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
@@ -294,39 +294,39 @@ public class ModBlocks {
             registerBlock("desert_poplar_planks", () -> new ModPlanksBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
 
     public static final DeferredBlock<Block> RED_MEI_STAIRS =
-            registerBlock("red_mei_stairs", () -> new ModStairBlock(() -> ModBlocks.RED_MEI_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.RED_MEI_PLANKS.get())));
+            registerBlock("red_mei_stairs", () -> stair(ModBlocks.RED_MEI_PLANKS.get()));
     public static final DeferredBlock<Block> WHITE_MEI_STAIRS =
-            registerBlock("white_mei_stairs", () -> new ModStairBlock(() -> ModBlocks.WHITE_MEI_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.WHITE_MEI_PLANKS.get())));
+            registerBlock("white_mei_stairs", () -> stair(ModBlocks.WHITE_MEI_PLANKS.get()));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_STAIRS =
-            registerBlock("green_calyx_mei_stairs", () -> new ModStairBlock(() -> ModBlocks.GREEN_CALYX_MEI_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())));
+            registerBlock("green_calyx_mei_stairs", () -> stair(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_STAIRS =
-            registerBlock("double_pink_mei_stairs", () -> new ModStairBlock(() -> ModBlocks.DOUBLE_PINK_MEI_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())));
+            registerBlock("double_pink_mei_stairs", () -> stair(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()));
     public static final DeferredBlock<Block> CRABAPPLE_STAIRS =
-            registerBlock("crabapple_stairs", () -> new ModStairBlock(() -> ModBlocks.CRABAPPLE_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.CRABAPPLE_PLANKS.get())));
+            registerBlock("crabapple_stairs", () -> stair(ModBlocks.CRABAPPLE_PLANKS.get()));
     public static final DeferredBlock<Block> APRICOT_STAIRS =
-            registerBlock("apricot_stairs", () -> new ModStairBlock(() -> ModBlocks.APRICOT_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.APRICOT_PLANKS.get())));
+            registerBlock("apricot_stairs", () -> stair(ModBlocks.APRICOT_PLANKS.get()));
     public static final DeferredBlock<Block> PEACH_STAIRS =
-            registerBlock("peach_stairs", () -> new ModStairBlock(() -> ModBlocks.PEACH_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.PEACH_PLANKS.get())));
+            registerBlock("peach_stairs", () -> stair(ModBlocks.PEACH_PLANKS.get()));
     public static final DeferredBlock<Block> PEAR_STAIRS =
-            registerBlock("pear_stairs", () -> new ModStairBlock(() -> ModBlocks.PEAR_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.PEAR_PLANKS.get())));
+            registerBlock("pear_stairs", () -> stair(ModBlocks.PEAR_PLANKS.get()));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_STAIRS =
-            registerBlock("purple_leaf_plum_stairs", () -> new ModStairBlock(() -> ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get())));
+            registerBlock("purple_leaf_plum_stairs", () -> stair(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()));
     public static final DeferredBlock<Block> OSMANTHUS_STAIRS =
-            registerBlock("osmanthus_stairs", () -> new ModStairBlock(() -> ModBlocks.OSMANTHUS_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.OSMANTHUS_PLANKS.get())));
+            registerBlock("osmanthus_stairs", () -> stair(ModBlocks.OSMANTHUS_PLANKS.get()));
     public static final DeferredBlock<Block> GINKGO_STAIRS =
-            registerBlock("ginkgo_stairs", () -> new ModStairBlock(() -> ModBlocks.GINKGO_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.GINKGO_PLANKS.get())));
+            registerBlock("ginkgo_stairs", () -> stair(ModBlocks.GINKGO_PLANKS.get()));
     public static final DeferredBlock<Block> CHINESE_PARASOL_STAIRS =
-            registerBlock("chinese_parasol_stairs", () -> new ModStairBlock(() -> ModBlocks.CHINESE_PARASOL_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.CHINESE_PARASOL_PLANKS.get())));
+            registerBlock("chinese_parasol_stairs", () -> stair(ModBlocks.CHINESE_PARASOL_PLANKS.get()));
     public static final DeferredBlock<Block> SWEETGUM_STAIRS =
-            registerBlock("sweetgum_stairs", () -> new ModStairBlock(() -> ModBlocks.SWEETGUM_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.SWEETGUM_PLANKS.get())));
+            registerBlock("sweetgum_stairs", () -> stair(ModBlocks.SWEETGUM_PLANKS.get()));
     public static final DeferredBlock<Block> CAMPHOR_STAIRS =
-            registerBlock("camphor_stairs", () -> new ModStairBlock(() -> ModBlocks.CAMPHOR_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.CAMPHOR_PLANKS.get())));
+            registerBlock("camphor_stairs", () -> stair(ModBlocks.CAMPHOR_PLANKS.get()));
     public static final DeferredBlock<Block> DOVE_TREE_STAIRS =
-            registerBlock("dove_tree_stairs", () -> new ModStairBlock(() -> ModBlocks.DOVE_TREE_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.DOVE_TREE_PLANKS.get())));
+            registerBlock("dove_tree_stairs", () -> stair(ModBlocks.DOVE_TREE_PLANKS.get()));
     public static final DeferredBlock<Block> CHINABERRY_STAIRS =
-            registerBlock("chinaberry_stairs", () -> new ModStairBlock(() -> ModBlocks.CHINABERRY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.CHINABERRY_PLANKS.get())));
+            registerBlock("chinaberry_stairs", () -> stair(ModBlocks.CHINABERRY_PLANKS.get()));
     public static final DeferredBlock<Block> DESERT_POPLAR_STAIRS =
-            registerBlock("desert_poplar_stairs", () -> new ModStairBlock(() -> ModBlocks.DESERT_POPLAR_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(ModBlocks.DESERT_POPLAR_PLANKS.get())));
+            registerBlock("desert_poplar_stairs", () -> stair(ModBlocks.DESERT_POPLAR_PLANKS.get()));
 
     public static final DeferredBlock<Block> RED_MEI_SLAB =
             registerBlock("red_mei_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
@@ -504,214 +504,214 @@ public class ModBlocks {
             registerBlock("desert_poplar_fence_gate", () -> new ModFenceGateBlock(ModWoodTypes.DESERT_POPLAR, BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava()));
 
     public static final DeferredBlock<Block> RED_MEI_DOOR =
-            registerBlock("red_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.RED_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("red_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(RED_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> WHITE_MEI_DOOR =
-            registerBlock("white_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.WHITE_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("white_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_DOOR =
-            registerBlock("green_calyx_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.GREEN_CALYX_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("green_calyx_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_DOOR =
-            registerBlock("double_pink_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("double_pink_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CRABAPPLE_DOOR =
-            registerBlock("crabapple_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.CRABAPPLE_PLANKS.get().defaultMapColor())));
+            registerBlock("crabapple_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> APRICOT_DOOR =
-            registerBlock("apricot_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.APRICOT_PLANKS.get().defaultMapColor())));
+            registerBlock("apricot_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(APRICOT_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEACH_DOOR =
-            registerBlock("peach_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.PEACH_PLANKS.get().defaultMapColor())));
+            registerBlock("peach_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(PEACH_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEAR_DOOR =
-            registerBlock("pear_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.PEAR_PLANKS.get().defaultMapColor())));
+            registerBlock("pear_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(PEAR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_DOOR =
-            registerBlock("purple_leaf_plum_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor())));
+            registerBlock("purple_leaf_plum_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> OSMANTHUS_DOOR =
-            registerBlock("osmanthus_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.OSMANTHUS_PLANKS.get().defaultMapColor())));
+            registerBlock("osmanthus_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GINKGO_DOOR =
-            registerBlock("ginkgo_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.GINKGO_PLANKS.get().defaultMapColor())));
+            registerBlock("ginkgo_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(GINKGO_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINESE_PARASOL_DOOR =
-            registerBlock("chinese_parasol_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.CHINESE_PARASOL_PLANKS.get().defaultMapColor())));
+            registerBlock("chinese_parasol_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> SWEETGUM_DOOR =
-            registerBlock("sweetgum_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.SWEETGUM_PLANKS.get().defaultMapColor())));
+            registerBlock("sweetgum_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(SWEETGUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CAMPHOR_DOOR =
-            registerBlock("camphor_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.CAMPHOR_PLANKS.get().defaultMapColor())));
+            registerBlock("camphor_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CAMPHOR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOVE_TREE_DOOR =
-            registerBlock("dove_tree_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.DOVE_TREE_PLANKS.get().defaultMapColor())));
+            registerBlock("dove_tree_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINABERRY_DOOR =
-            registerBlock("chinaberry_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.CHINABERRY_PLANKS.get().defaultMapColor())));
+            registerBlock("chinaberry_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CHINABERRY_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DESERT_POPLAR_DOOR =
-            registerBlock("desert_poplar_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(ModBlocks.DESERT_POPLAR_PLANKS.get().defaultMapColor())));
+            registerBlock("desert_poplar_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor())));
 
     public static final DeferredBlock<Block> RED_MEI_TRAPDOOR =
-            registerBlock("red_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.RED_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("red_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_RED)));
     public static final DeferredBlock<Block> WHITE_MEI_TRAPDOOR =
-            registerBlock("white_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.WHITE_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("white_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.SNOW)));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_TRAPDOOR =
-            registerBlock("green_calyx_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.GREEN_CALYX_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("green_calyx_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_GREEN)));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_TRAPDOOR =
-            registerBlock("double_pink_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("double_pink_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_PINK)));
     public static final DeferredBlock<Block> CRABAPPLE_TRAPDOOR =
-            registerBlock("crabapple_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.CRABAPPLE_PLANKS.get().defaultMapColor())));
+            registerBlock("crabapple_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_MAGENTA)));
     public static final DeferredBlock<Block> APRICOT_TRAPDOOR =
-            registerBlock("apricot_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.APRICOT_PLANKS.get().defaultMapColor())));
+            registerBlock("apricot_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_PINK)));
     public static final DeferredBlock<Block> PEACH_TRAPDOOR =
-            registerBlock("peach_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.PEACH_PLANKS.get().defaultMapColor())));
+            registerBlock("peach_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_PINK)));
     public static final DeferredBlock<Block> PEAR_TRAPDOOR =
-            registerBlock("pear_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.PEAR_PLANKS.get().defaultMapColor())));
+            registerBlock("pear_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.SAND)));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_TRAPDOOR =
-            registerBlock("purple_leaf_plum_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor())));
+            registerBlock("purple_leaf_plum_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final DeferredBlock<Block> OSMANTHUS_TRAPDOOR =
-            registerBlock("osmanthus_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.OSMANTHUS_PLANKS.get().defaultMapColor())));
+            registerBlock("osmanthus_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.WOOD)));
     public static final DeferredBlock<Block> GINKGO_TRAPDOOR =
-            registerBlock("ginkgo_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.GINKGO_PLANKS.get().defaultMapColor())));
+            registerBlock("ginkgo_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.GOLD)));
     public static final DeferredBlock<Block> CHINESE_PARASOL_TRAPDOOR =
-            registerBlock("chinese_parasol_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.CHINESE_PARASOL_PLANKS.get().defaultMapColor())));
+            registerBlock("chinese_parasol_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_GREEN)));
     public static final DeferredBlock<Block> SWEETGUM_TRAPDOOR =
-            registerBlock("sweetgum_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.SWEETGUM_PLANKS.get().defaultMapColor())));
+            registerBlock("sweetgum_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.TERRACOTTA_RED)));
     public static final DeferredBlock<Block> CAMPHOR_TRAPDOOR =
-            registerBlock("camphor_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.CAMPHOR_PLANKS.get().defaultMapColor())));
+            registerBlock("camphor_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.WOOD)));
     public static final DeferredBlock<Block> DOVE_TREE_TRAPDOOR =
-            registerBlock("dove_tree_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.DOVE_TREE_PLANKS.get().defaultMapColor())));
+            registerBlock("dove_tree_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_GRAY)));
     public static final DeferredBlock<Block> CHINABERRY_TRAPDOOR =
-            registerBlock("chinaberry_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.CHINABERRY_PLANKS.get().defaultMapColor())));
+            registerBlock("chinaberry_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_RED)));
     public static final DeferredBlock<Block> DESERT_POPLAR_TRAPDOOR =
-            registerBlock("desert_poplar_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(ModBlocks.DESERT_POPLAR_PLANKS.get().defaultMapColor())));
+            registerBlock("desert_poplar_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.WOOD)));
 
     public static final DeferredBlock<Block> RED_MEI_SIGN =
-            BLOCKS.register("red_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
+            BLOCKS.register("red_mei_sign", () -> new ModStandingSignBlock(ModWoodTypes.RED_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.COLOR_RED)));
     public static final DeferredBlock<Block> WHITE_MEI_SIGN =
-            BLOCKS.register("white_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.WHITE_MEI));
+            BLOCKS.register("white_mei_sign", () -> new ModStandingSignBlock(ModWoodTypes.WHITE_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.SNOW)));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_SIGN =
-            BLOCKS.register("green_calyx_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.GREEN_CALYX_MEI));
+            BLOCKS.register("green_calyx_mei_sign", () -> new ModStandingSignBlock(ModWoodTypes.GREEN_CALYX_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_SIGN =
-            BLOCKS.register("double_pink_mei_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.DOUBLE_PINK_MEI));
+            BLOCKS.register("double_pink_mei_sign", () -> new ModStandingSignBlock(ModWoodTypes.DOUBLE_PINK_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CRABAPPLE_SIGN =
-            BLOCKS.register("crabapple_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()), ModWoodTypes.CRABAPPLE));
+            BLOCKS.register("crabapple_sign", () -> new ModStandingSignBlock(ModWoodTypes.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> APRICOT_SIGN =
-            BLOCKS.register("apricot_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor()), ModWoodTypes.APRICOT));
+            BLOCKS.register("apricot_sign", () -> new ModStandingSignBlock(ModWoodTypes.APRICOT, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEACH_SIGN =
-            BLOCKS.register("peach_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor()), ModWoodTypes.PEACH));
+            BLOCKS.register("peach_sign", () -> new ModStandingSignBlock(ModWoodTypes.PEACH, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEAR_SIGN =
-            BLOCKS.register("pear_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor()), ModWoodTypes.PEAR));
+            BLOCKS.register("pear_sign", () -> new ModStandingSignBlock(ModWoodTypes.PEAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_SIGN =
-            BLOCKS.register("purple_leaf_plum_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor()), ModWoodTypes.PURPLE_LEAF_PLUM));
+            BLOCKS.register("purple_leaf_plum_sign", () -> new ModStandingSignBlock(ModWoodTypes.PURPLE_LEAF_PLUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> OSMANTHUS_SIGN =
-            BLOCKS.register("osmanthus_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor()), ModWoodTypes.OSMANTHUS));
+            BLOCKS.register("osmanthus_sign", () -> new ModStandingSignBlock(ModWoodTypes.OSMANTHUS, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GINKGO_SIGN =
-            BLOCKS.register("ginkgo_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(GINKGO_PLANKS.get().defaultMapColor()), ModWoodTypes.GINKGO));
+            BLOCKS.register("ginkgo_sign", () -> new ModStandingSignBlock(ModWoodTypes.GINKGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(GINKGO_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINESE_PARASOL_SIGN =
-            BLOCKS.register("chinese_parasol_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINESE_PARASOL));
+            BLOCKS.register("chinese_parasol_sign", () -> new ModStandingSignBlock(ModWoodTypes.CHINESE_PARASOL, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> SWEETGUM_SIGN =
-            BLOCKS.register("sweetgum_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor()), ModWoodTypes.SWEETGUM));
+            BLOCKS.register("sweetgum_sign", () -> new ModStandingSignBlock(ModWoodTypes.SWEETGUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CAMPHOR_SIGN =
-            BLOCKS.register("camphor_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
+            BLOCKS.register("camphor_sign", () -> new ModStandingSignBlock(ModWoodTypes.CAMPHOR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOVE_TREE_SIGN =
-            BLOCKS.register("dove_tree_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()), ModWoodTypes.DOVE_TREE));
+            BLOCKS.register("dove_tree_sign", () -> new ModStandingSignBlock(ModWoodTypes.DOVE_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINABERRY_SIGN =
-            BLOCKS.register("chinaberry_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINABERRY));
+            BLOCKS.register("chinaberry_sign", () -> new ModStandingSignBlock(ModWoodTypes.CHINABERRY, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DESERT_POPLAR_SIGN =
-            BLOCKS.register("desert_poplar_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor()), ModWoodTypes.DESERT_POPLAR));
+            BLOCKS.register("desert_poplar_sign", () -> new ModStandingSignBlock(ModWoodTypes.DESERT_POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor())));
 
     public static final DeferredBlock<Block> RED_MEI_WALL_SIGN =
-            BLOCKS.register("red_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
+            BLOCKS.register("red_mei_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.RED_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> WHITE_MEI_WALL_SIGN =
-            BLOCKS.register("white_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.WHITE_MEI));
+            BLOCKS.register("white_mei_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.WHITE_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_WALL_SIGN =
-            BLOCKS.register("green_calyx_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.GREEN_CALYX_MEI));
+            BLOCKS.register("green_calyx_mei_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.GREEN_CALYX_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_WALL_SIGN =
-            BLOCKS.register("double_pink_mei_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.DOUBLE_PINK_MEI));
+            BLOCKS.register("double_pink_mei_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.DOUBLE_PINK_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CRABAPPLE_WALL_SIGN =
-            BLOCKS.register("crabapple_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()), ModWoodTypes.CRABAPPLE));
+            BLOCKS.register("crabapple_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> APRICOT_WALL_SIGN =
-            BLOCKS.register("apricot_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor()), ModWoodTypes.APRICOT));
+            BLOCKS.register("apricot_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.APRICOT, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEACH_WALL_SIGN =
-            BLOCKS.register("peach_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor()), ModWoodTypes.PEACH));
+            BLOCKS.register("peach_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.PEACH, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEAR_WALL_SIGN =
-            BLOCKS.register("pear_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor()), ModWoodTypes.PEAR));
+            BLOCKS.register("pear_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.PEAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_WALL_SIGN =
-            BLOCKS.register("purple_leaf_plum_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor()), ModWoodTypes.PURPLE_LEAF_PLUM));
+            BLOCKS.register("purple_leaf_plum_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.PURPLE_LEAF_PLUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> OSMANTHUS_WALL_SIGN =
-            BLOCKS.register("osmanthus_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor()), ModWoodTypes.OSMANTHUS));
+            BLOCKS.register("osmanthus_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.OSMANTHUS, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GINKGO_WALL_SIGN =
-            BLOCKS.register("ginkgo_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(GINKGO_PLANKS.get().defaultMapColor()), ModWoodTypes.GINKGO));
+            BLOCKS.register("ginkgo_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.GINKGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(GINKGO_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINESE_PARASOL_WALL_SIGN =
-            BLOCKS.register("chinese_parasol_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINESE_PARASOL));
+            BLOCKS.register("chinese_parasol_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.CHINESE_PARASOL, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> SWEETGUM_WALL_SIGN =
-            BLOCKS.register("sweetgum_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor()), ModWoodTypes.SWEETGUM));
+            BLOCKS.register("sweetgum_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.SWEETGUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CAMPHOR_WALL_SIGN =
-            BLOCKS.register("camphor_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
+            BLOCKS.register("camphor_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.CAMPHOR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOVE_TREE_WALL_SIGN =
-            BLOCKS.register("dove_tree_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()), ModWoodTypes.DOVE_TREE));
+            BLOCKS.register("dove_tree_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.DOVE_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINABERRY_WALL_SIGN =
-            BLOCKS.register("chinaberry_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINABERRY));
+            BLOCKS.register("chinaberry_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.CHINABERRY, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DESERT_POPLAR_WALL_SIGN =
-            BLOCKS.register("desert_poplar_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor()), ModWoodTypes.DESERT_POPLAR));
+            BLOCKS.register("desert_poplar_wall_sign", () -> new ModWallSignBlock(ModWoodTypes.DESERT_POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor())));
 
     public static final DeferredBlock<Block> RED_MEI_HANGING_SIGN =
-            BLOCKS.register("red_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
+            BLOCKS.register("red_mei_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.RED_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> WHITE_MEI_HANGING_SIGN =
-            BLOCKS.register("white_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.WHITE_MEI));
+            BLOCKS.register("white_mei_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.WHITE_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_HANGING_SIGN =
-            BLOCKS.register("green_calyx_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.GREEN_CALYX_MEI));
+            BLOCKS.register("green_calyx_mei_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.GREEN_CALYX_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_HANGING_SIGN =
-            BLOCKS.register("double_pink_mei_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.DOUBLE_PINK_MEI));
+            BLOCKS.register("double_pink_mei_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.DOUBLE_PINK_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CRABAPPLE_HANGING_SIGN =
-            BLOCKS.register("crabapple_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()), ModWoodTypes.CRABAPPLE));
+            BLOCKS.register("crabapple_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> APRICOT_HANGING_SIGN =
-            BLOCKS.register("apricot_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor()), ModWoodTypes.APRICOT));
+            BLOCKS.register("apricot_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.APRICOT, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEACH_HANGING_SIGN =
-            BLOCKS.register("peach_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor()), ModWoodTypes.PEACH));
+            BLOCKS.register("peach_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.PEACH, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEAR_HANGING_SIGN =
-            BLOCKS.register("pear_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor()), ModWoodTypes.PEAR));
+            BLOCKS.register("pear_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.PEAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_HANGING_SIGN =
-            BLOCKS.register("purple_leaf_plum_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor()), ModWoodTypes.PURPLE_LEAF_PLUM));
+            BLOCKS.register("purple_leaf_plum_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.PURPLE_LEAF_PLUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> OSMANTHUS_HANGING_SIGN =
-            BLOCKS.register("osmanthus_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor()), ModWoodTypes.OSMANTHUS));
+            BLOCKS.register("osmanthus_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.OSMANTHUS, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GINKGO_HANGING_SIGN =
-            BLOCKS.register("ginkgo_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(GINKGO_PLANKS.get().defaultMapColor()), ModWoodTypes.GINKGO));
+            BLOCKS.register("ginkgo_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.GINKGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(GINKGO_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINESE_PARASOL_HANGING_SIGN =
-            BLOCKS.register("chinese_parasol_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINESE_PARASOL));
+            BLOCKS.register("chinese_parasol_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.CHINESE_PARASOL, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> SWEETGUM_HANGING_SIGN =
-            BLOCKS.register("sweetgum_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor()), ModWoodTypes.SWEETGUM));
+            BLOCKS.register("sweetgum_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.SWEETGUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CAMPHOR_HANGING_SIGN =
-            BLOCKS.register("camphor_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
+            BLOCKS.register("camphor_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.CAMPHOR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOVE_TREE_HANGING_SIGN =
-            BLOCKS.register("dove_tree_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()), ModWoodTypes.DOVE_TREE));
+            BLOCKS.register("dove_tree_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.DOVE_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINABERRY_HANGING_SIGN =
-            BLOCKS.register("chinaberry_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINABERRY));
+            BLOCKS.register("chinaberry_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.CHINABERRY, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DESERT_POPLAR_HANGING_SIGN =
-            BLOCKS.register("desert_poplar_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor()), ModWoodTypes.DESERT_POPLAR));
+            BLOCKS.register("desert_poplar_hanging_sign", () -> new ModHangingSignBlock(ModWoodTypes.DESERT_POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor())));
 
     public static final DeferredBlock<Block> RED_MEI_WALL_HANGING_SIGN =
-            BLOCKS.register("red_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.RED_MEI));
+            BLOCKS.register("red_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.RED_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(RED_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> WHITE_MEI_WALL_HANGING_SIGN =
-            BLOCKS.register("white_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.WHITE_MEI));
+            BLOCKS.register("white_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.WHITE_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_WALL_HANGING_SIGN =
-            BLOCKS.register("green_calyx_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.GREEN_CALYX_MEI));
+            BLOCKS.register("green_calyx_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.GREEN_CALYX_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_WALL_HANGING_SIGN =
-            BLOCKS.register("double_pink_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()), ModWoodTypes.DOUBLE_PINK_MEI));
+            BLOCKS.register("double_pink_mei_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.DOUBLE_PINK_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CRABAPPLE_WALL_HANGING_SIGN =
-            BLOCKS.register("crabapple_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()), ModWoodTypes.CRABAPPLE));
+            BLOCKS.register("crabapple_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> APRICOT_WALL_HANGING_SIGN =
-            BLOCKS.register("apricot_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor()), ModWoodTypes.APRICOT));
+            BLOCKS.register("apricot_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.APRICOT, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEACH_WALL_HANGING_SIGN =
-            BLOCKS.register("peach_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor()), ModWoodTypes.PEACH));
+            BLOCKS.register("peach_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.PEACH, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEAR_WALL_HANGING_SIGN =
-            BLOCKS.register("pear_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor()), ModWoodTypes.PEAR));
+            BLOCKS.register("pear_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.PEAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_WALL_HANGING_SIGN =
-            BLOCKS.register("purple_leaf_plum_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor()), ModWoodTypes.PURPLE_LEAF_PLUM));
+            BLOCKS.register("purple_leaf_plum_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.PURPLE_LEAF_PLUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> OSMANTHUS_WALL_HANGING_SIGN =
-            BLOCKS.register("osmanthus_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor()), ModWoodTypes.OSMANTHUS));
+            BLOCKS.register("osmanthus_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.OSMANTHUS, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GINKGO_WALL_HANGING_SIGN =
-            BLOCKS.register("ginkgo_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(GINKGO_PLANKS.get().defaultMapColor()), ModWoodTypes.GINKGO));
+            BLOCKS.register("ginkgo_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.GINKGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(GINKGO_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINESE_PARASOL_WALL_HANGING_SIGN =
-            BLOCKS.register("chinese_parasol_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINESE_PARASOL));
+            BLOCKS.register("chinese_parasol_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.CHINESE_PARASOL, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> SWEETGUM_WALL_HANGING_SIGN =
-            BLOCKS.register("sweetgum_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor()), ModWoodTypes.SWEETGUM));
+            BLOCKS.register("sweetgum_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.SWEETGUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(SWEETGUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CAMPHOR_WALL_HANGING_SIGN =
-            BLOCKS.register("camphor_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor()), ModWoodTypes.CAMPHOR));
+            BLOCKS.register("camphor_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.CAMPHOR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CAMPHOR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOVE_TREE_WALL_HANGING_SIGN =
-            BLOCKS.register("dove_tree_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()), ModWoodTypes.DOVE_TREE));
+            BLOCKS.register("dove_tree_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.DOVE_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINABERRY_WALL_HANGING_SIGN =
-            BLOCKS.register("chinaberry_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor()), ModWoodTypes.CHINABERRY));
+            BLOCKS.register("chinaberry_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.CHINABERRY, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(CHINABERRY_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DESERT_POPLAR_WALL_HANGING_SIGN =
-            BLOCKS.register("desert_poplar_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor()), ModWoodTypes.DESERT_POPLAR));
+            BLOCKS.register("desert_poplar_wall_hanging_sign", () -> new ModWallHangingSignBlock(ModWoodTypes.DESERT_POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor())));
 
     public static final DeferredBlock<Block> RED_MEI_SAPLING =
             registerBlock("red_mei_sapling", () -> new SaplingBlock(ModTreeGrower.RED_MEI, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
@@ -1148,6 +1148,10 @@ public class ModBlocks {
 
     private static Block woodenButton() {
         return new ButtonBlock(BlockSetType.OAK, 30, BlockBehaviour.Properties.of().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY));
+    }
+
+    private static Block stair(Block baseBlock) {
+        return new ModStairBlock(baseBlock.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock));
     }
 
     public static Block leafPile(MapColor pColor, SoundType pType) {

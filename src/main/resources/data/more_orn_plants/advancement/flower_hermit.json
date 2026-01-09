@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_chrysanthemum": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:chrysanthemum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.flower_hermit.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:chrysanthemum"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.flower_hermit.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_chrysanthemum"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

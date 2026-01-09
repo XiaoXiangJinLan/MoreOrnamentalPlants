@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "more_orn_plants:block/white_chinese_rose_bottom"
+    },
+    "half=upper": {
+      "model": "more_orn_plants:block/white_chinese_rose_top"
+    }
+  }
+}

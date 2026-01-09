@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "more_orn_plants:purple_leaf_plum_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "more_orn_plants:purple_leaf_plum_planks"
+  }
+}

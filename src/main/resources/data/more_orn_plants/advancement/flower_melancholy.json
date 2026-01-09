@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_lilac": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:lilac"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.flower_melancholy.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:lilac"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.flower_melancholy.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_lilac"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:white_mei_sapling"
+    },
+    {
+      "item": "more_orn_plants:white_mei_sapling"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_orn_plants:green_calyx_mei_sapling"
+  }
+}

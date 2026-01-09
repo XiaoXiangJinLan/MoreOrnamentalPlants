@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
@@ -26,7 +27,7 @@ public class WaterLotusLeafBlock extends WaterLotusBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(FACING); // 添加方向属性
     }
@@ -43,7 +44,7 @@ public class WaterLotusLeafBlock extends WaterLotusBlock {
     }
 
     @Override
-    public void setPlacedBy(net.minecraft.world.level.Level level, BlockPos pos, BlockState state, net.minecraft.world.entity.LivingEntity placer, net.minecraft.world.item.ItemStack stack) {
+    public void setPlacedBy(net.minecraft.world.level.Level level, BlockPos pos, BlockState state, net.minecraft.world.entity.@NotNull LivingEntity placer, net.minecraft.world.item.@NotNull ItemStack stack) {
         super.setPlacedBy(level, pos, state, placer, stack);
 
         // 确保上半部分也有相同的朝向
@@ -55,8 +56,9 @@ public class WaterLotusLeafBlock extends WaterLotusBlock {
     }
 
     @Override
+    @NotNull
     public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState,
-                                  LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+                                           LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
         // 调用父类方法处理含水逻辑
         BlockState updatedState = super.updateShape(state, direction, neighborState, level, pos, neighborPos);
 

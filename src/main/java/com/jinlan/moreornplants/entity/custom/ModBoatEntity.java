@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.function.IntFunction;
+import java.util.function.Supplier;
 
 public class ModBoatEntity extends Boat {
     private static final EntityDataAccessor<Integer> DATA_TD_TYPE = SynchedEntityData.defineId(Boat.class, EntityDataSerializers.INT);
@@ -102,10 +103,10 @@ public class ModBoatEntity extends Boat {
 
         private final String name;
         private final Block planks;
-        private final java.util.function.Supplier<Block> planksSupplier;
-        final java.util.function.Supplier<Item> boatItem;
-        final java.util.function.Supplier<Item> chestBoatItem;
-        private final java.util.function.Supplier<Item> stickItem;
+        private final Supplier<Block> planksSupplier;
+        final Supplier<Item> boatItem;
+        final Supplier<Item> chestBoatItem;
+        private final Supplier<Item> stickItem;
         private final boolean raft;
         public static final StringRepresentable.EnumCodec<ModBoatEntity.Type> CODEC = StringRepresentable.fromEnum(ModBoatEntity.Type::values);
         private static final IntFunction<ModBoatEntity.Type> BY_ID = ByIdMap.continuous(Enum::ordinal, values(), ByIdMap.OutOfBoundsStrategy.ZERO);
@@ -127,11 +128,11 @@ public class ModBoatEntity extends Boat {
         }
 
         Type(
-                java.util.function.Supplier<Block> planks,
+                Supplier<Block> planks,
                 String name,
-                java.util.function.Supplier<Item> boatItem,
-                java.util.function.Supplier<Item> chestBoatItem,
-                java.util.function.Supplier<Item> stickItem,
+                Supplier<Item> boatItem,
+                Supplier<Item> chestBoatItem,
+                Supplier<Item> stickItem,
                 boolean raft
         ) {
             this.name = name;

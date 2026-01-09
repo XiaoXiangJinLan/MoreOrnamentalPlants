@@ -697,6 +697,32 @@
   "advancement.moreornplants.apricot_village.description": "借问酒家何处有？牧童遥指杏花村",
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§o小乔木，非建材",
-  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§o观赏品种，非建材，熊猫不爱吃"
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§o观赏品种，非建材，熊猫不爱吃",
 
+  "more_orn_plants.configuration.title": "观赏植物模组配置",
+  "more_orn_plants.configuration.section.moreornplants.common.toml": "群系配置",
+  "more_orn_plants.configuration.section.moreornplants.common.toml.title": "群系配置",
+  "more_orn_plants.configuration.Biome Enable Settings": "群系启用设置",
+  "more_orn_plants.configuration.Region Weight Settings": "区域权重设置",
+  "more_orn_plants.configuration.enableRedMeiForest": "生成白雪红梅",
+  "more_orn_plants.configuration.enableSpringRiver": "生成春江",
+  "more_orn_plants.configuration.enablePenglai": "生成蓬莱",
+  "more_orn_plants.configuration.enableMountMei": "生成梅山",
+  "more_orn_plants.configuration.enablePeonyMeadows": "生成牡丹花海",
+  "more_orn_plants.configuration.enableEvergreenForest": "生成常绿林",
+  "more_orn_plants.configuration.enableFlowersGrove": "生成百花林",
+  "more_orn_plants.configuration.enableColoredForest": "生成彩叶林",
+  "more_orn_plants.configuration.enablePeachBlossomSpring": "生成世外桃源",
+  "more_orn_plants.configuration.enableCamelliaValley": "生成茶花谷",
+  "more_orn_plants.configuration.enableCrimsonHighlands": "生成映山红",
+  "more_orn_plants.configuration.enableCottonroseRealm": "生成芙蓉国",
+  "more_orn_plants.configuration.enableYunmengMarsh": "生成云梦泽",
+  "more_orn_plants.configuration.enableDesertPoplarWoods": "生成胡杨林",
+  "more_orn_plants.configuration.enableChineseRoseFields": "生成月季花海",
+  "more_orn_plants.configuration.enableChinaberryWoods": "生成楝花林",
+  "more_orn_plants.configuration.enableMiscanthusFields": "生成芒草田",
+  "more_orn_plants.configuration.enableCropsGreen": "生成禾青",
+  "more_orn_plants.configuration.overworldBiomesWeight": "主群系权重",
+  "more_orn_plants.configuration.secondOverworldBiomesWeight": "次群系权重",
+  "more_orn_plants.configuration.specialBiomesWeight": "特殊群系权重（桃花源）"
 }

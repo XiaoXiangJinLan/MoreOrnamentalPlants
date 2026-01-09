@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "more_orn_plants:block/chinese_parasol_leaf_0",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "more_orn_plants:block/chinese_parasol_leaf_0"
+    },
+    "facing=south": {
+      "model": "more_orn_plants:block/chinese_parasol_leaf_0",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "more_orn_plants:block/chinese_parasol_leaf_0",
+      "y": 270
+    }
+  }
+}

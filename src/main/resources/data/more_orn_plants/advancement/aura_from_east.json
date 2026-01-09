@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_plum": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:plum_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.aura_from_east.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:flowering_purple_leaf_plum_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.aura_from_east.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_plum"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

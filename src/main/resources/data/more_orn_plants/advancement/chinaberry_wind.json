@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_chinaberry": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:chinaberry_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.chinaberry_wind.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:chinaberry_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.chinaberry_wind.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_chinaberry"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

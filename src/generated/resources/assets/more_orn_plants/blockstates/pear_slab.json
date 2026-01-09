@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "more_orn_plants:block/pear_slab"
+    },
+    "type=double": {
+      "model": "more_orn_plants:block/pear_planks"
+    },
+    "type=top": {
+      "model": "more_orn_plants:block/pear_slab_top"
+    }
+  }
+}

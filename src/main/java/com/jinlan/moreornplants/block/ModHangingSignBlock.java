@@ -9,8 +9,8 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import org.jetbrains.annotations.NotNull;
 
 public class ModHangingSignBlock extends CeilingHangingSignBlock {
-    public ModHangingSignBlock(Properties pProperties, WoodType pType) {
-        super(pType, pProperties);
+    public ModHangingSignBlock(WoodType type, Properties properties) {
+        super(type, properties);
     }
 
     @Override

@@ -611,7 +611,7 @@
 
   "itemGroup.plants": "觀賞植物",
 
-  "advancement.moreornplants.root.title": "群芳譜",
+  "advancement.moreornplants.root.title": "羣芳譜",
   "advancement.moreornplants.root.description": "花開四季皆應景，具是天生地造成",
   "advancement.moreornplants.the_leader_among_flower.title": "花中之魁",
   "advancement.moreornplants.the_leader_among_flower.description": "俏也不爭春，只把春來報。待到山花爛漫時，她在叢中笑",
@@ -697,5 +697,32 @@
   "advancement.moreornplants.apricot_village.description": "借問酒家何處有？牧童遙指杏花村",
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§o小喬木，非建材",
-  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§o觀賞品種，非建材，熊貓不愛吃"
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§o觀賞品種，非建材，熊貓不愛吃",
+
+  "more_orn_plants.configuration.title": "觀賞植物模組配置",
+  "more_orn_plants.configuration.section.moreornplants.common.toml": "羣系配置",
+  "more_orn_plants.configuration.section.moreornplants.common.toml.title": "羣系配置",
+  "more_orn_plants.configuration.Biome Enable Settings": "羣系啓用设置",
+  "more_orn_plants.configuration.Region Weight Settings": "區域權重设置",
+  "more_orn_plants.configuration.enableRedMeiForest": "生成白雪紅梅",
+  "more_orn_plants.configuration.enableSpringRiver": "生成春江",
+  "more_orn_plants.configuration.enablePenglai": "生成蓬萊",
+  "more_orn_plants.configuration.enableMountMei": "生成梅山",
+  "more_orn_plants.configuration.enablePeonyMeadows": "生成牡丹花海",
+  "more_orn_plants.configuration.enableEvergreenForest": "生成常綠林",
+  "more_orn_plants.configuration.enableFlowersGrove": "生成百花林",
+  "more_orn_plants.configuration.enableColoredForest": "生成彩葉林",
+  "more_orn_plants.configuration.enablePeachBlossomSpring": "生成世外桃源",
+  "more_orn_plants.configuration.enableCamelliaValley": "生成茶花谷",
+  "more_orn_plants.configuration.enableCrimsonHighlands": "生成映山紅",
+  "more_orn_plants.configuration.enableCottonroseRealm": "生成芙蓉國",
+  "more_orn_plants.configuration.enableYunmengMarsh": "生成雲夢澤",
+  "more_orn_plants.configuration.enableDesertPoplarWoods": "生成胡楊林",
+  "more_orn_plants.configuration.enableChineseRoseFields": "生成月季花海",
+  "more_orn_plants.configuration.enableChinaberryWoods": "生成楝花林",
+  "more_orn_plants.configuration.enableMiscanthusFields": "生成芒草田",
+  "more_orn_plants.configuration.enableCropsGreen": "生成禾青",
+  "more_orn_plants.configuration.overworldBiomesWeight": "主羣系權重",
+  "more_orn_plants.configuration.secondOverworldBiomesWeight": "次羣系權重",
+  "more_orn_plants.configuration.specialBiomesWeight": "特殊羣系权重（桃花源）"
 }

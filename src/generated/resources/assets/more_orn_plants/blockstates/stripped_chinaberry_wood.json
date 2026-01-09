@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "more_orn_plants:block/stripped_chinaberry_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "more_orn_plants:block/stripped_chinaberry_wood"
+    },
+    "axis=z": {
+      "model": "more_orn_plants:block/stripped_chinaberry_wood_horizontal",
+      "x": 90
+    }
+  }
+}

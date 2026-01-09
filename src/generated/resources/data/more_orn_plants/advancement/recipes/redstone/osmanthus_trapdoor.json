@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_osmanthus_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:osmanthus_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:osmanthus_trapdoor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_osmanthus_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:osmanthus_trapdoor"
+    ]
+  }
+}

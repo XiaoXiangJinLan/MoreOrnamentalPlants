@@ -1,6 +1,7 @@
 package com.jinlan.moreornplants;
 
 import com.google.common.collect.ImmutableMap;
+import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.entity.ModEntities;
 import com.jinlan.moreornplants.entity.custom.ModBoatEntity;
 import com.jinlan.moreornplants.entity.custom.ModChestBoatEntity;
@@ -17,35 +18,34 @@ import net.minecraft.client.model.ChestBoatModel;
 import net.minecraft.client.model.ListModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.BoatRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.vehicle.Boat;
+import net.minecraft.world.level.GrassColor;
+import net.minecraft.world.level.block.DoublePlantBlock;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 import java.util.stream.Stream;
 
-// This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = MoreOrnPlants.MODID, dist = Dist.CLIENT)
-// You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
 @EventBusSubscriber(modid = MoreOrnPlants.MODID, value = Dist.CLIENT)
 public class MoreOrnPlantsClient {
     public MoreOrnPlantsClient(ModContainer container) {
-        // Allows NeoForge to create a config screen for this mod's configs.
-        // The config screen is accessed by going to the Mods screen > clicking on your mod > clicking on config.
-        // Do not forget to add translations for your config options to the en_us.json file.
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 
@@ -173,18 +173,18 @@ public class MoreOrnPlantsClient {
         }
 
         public static ModelLayerLocation createBoatModelName(ModBoatEntity.Type pType) {
-            return createLocation("boat/" + pType.getName());
+            return createLocation("boat/" + pType.getName(), "main");
         }
 
         public static ModelLayerLocation createChestBoatModelName(ModBoatEntity.Type pType) {
-            return createLocation("chest_boat/" + pType.getName());
+            return createLocation("chest_boat/" + pType.getName(), "main");
         }
 
-        private static ModelLayerLocation createLocation(String pPath) {
-            return new ModelLayerLocation(ResourceLocation.parse(MoreOrnPlants.MODID), "main");
+        private static ModelLayerLocation createLocation(String pPath, String pModel) {
+            return new ModelLayerLocation(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + pPath), pModel);
         }
 
-        public @NotNull Pair<ResourceLocation, ListModel<Boat>> getModelWithLocation(@NotNull Boat boat) {
+        public Pair<ResourceLocation, ListModel<Boat>> getModelWithLocation(Boat boat) {
             if (boat instanceof ModBoatEntity modBoat) {
                 return this.boatResources.get(modBoat.getModVariant());
             } else if (boat instanceof ModChestBoatEntity modChestBoatEntity) {
@@ -281,6 +281,32 @@ public class MoreOrnPlantsClient {
         public static final ModelLayerLocation DESERT_POPLAR_CHEST_BOAT_LAYER = new ModelLayerLocation(
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "chest_boat/desert_poplar"), "main");
 
+    }
+
+    @SubscribeEvent
+    public static void registerBlockColors(RegisterColorHandlersEvent.Block event) {
+        // 为芒草注册颜色处理器
+        event.register((state, level, pos, tintIndex) -> {
+            if (level != null && pos != null) {
+                // 处理双格植物：使用下半部分的位置获取颜色
+                if (state.hasProperty(DoublePlantBlock.HALF) &&
+                        state.getValue(DoublePlantBlock.HALF) == DoubleBlockHalf.UPPER) {
+                    pos = pos.below();
+                }
+                // 完全模仿原版草的颜色逻辑
+                return BiomeColors.getAverageGrassColor(level, pos);
+            }
+            return GrassColor.getDefaultColor();
+        }, ModBlocks.MISCANTHUS.get());
+    }
+
+    @SubscribeEvent
+    public static void registerItemColors(RegisterColorHandlersEvent.Item event) {
+        // 为芒草物品注册颜色处理器
+        event.register((stack, tintIndex) -> {
+            // 使用默认的草颜色
+            return GrassColor.getDefaultColor();
+        }, ModBlocks.MISCANTHUS.get().asItem());
     }
 
     @SubscribeEvent

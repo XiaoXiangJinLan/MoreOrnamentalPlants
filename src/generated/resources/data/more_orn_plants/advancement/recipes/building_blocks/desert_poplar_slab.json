@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_desert_poplar_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:desert_poplar_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:desert_poplar_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_desert_poplar_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:desert_poplar_slab"
+    ]
+  }
+}

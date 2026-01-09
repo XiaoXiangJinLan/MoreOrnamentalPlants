@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:lotus_seed"
+    },
+    {
+      "item": "more_orn_plants:lotus_seed"
+    },
+    {
+      "item": "more_orn_plants:lotus_seed"
+    },
+    {
+      "item": "more_orn_plants:lotus_seed"
+    },
+    {
+      "item": "more_orn_plants:lotus_seed"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_orn_plants:lotus_seed_soup"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:white_dye"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_dye_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#more_orn_plants:white_dye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_white_dye_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:white_dye"
+    ]
+  }
+}

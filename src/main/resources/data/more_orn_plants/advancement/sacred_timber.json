@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_camphor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:camphor_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.sacred_timber.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:camphor_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.sacred_timber.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_camphor"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

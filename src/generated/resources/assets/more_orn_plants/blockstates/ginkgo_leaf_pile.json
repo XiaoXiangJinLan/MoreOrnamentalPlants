@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "more_orn_plants:block/ginkgo_leaf_pile",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "more_orn_plants:block/ginkgo_leaf_pile"
+    },
+    "facing=south": {
+      "model": "more_orn_plants:block/ginkgo_leaf_pile",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "more_orn_plants:block/ginkgo_leaf_pile",
+      "y": 270
+    }
+  }
+}

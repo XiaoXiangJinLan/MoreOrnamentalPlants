@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_crabapple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:crabapple_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.celestial_consort.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:upright_crabapple_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.celestial_consort.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_crabapple"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

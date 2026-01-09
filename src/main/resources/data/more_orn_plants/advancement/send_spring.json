@@ -1,0 +1,66 @@
+{
+  "parent": "more_orn_plants:the_leader_among_flower",
+  "criteria": {
+    "place_mei_sapling_farmlands": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#neoforge:villager_farmlands"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "#c:mei_sapling"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    },
+    "place_mei_sapling_dirt": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:dirt"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "#c:mei_sapling"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.send_spring.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:white_mei_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.send_spring.title"
+    }
+  },
+  "requirements": [
+    [
+      "place_mei_sapling_farmlands",
+      "place_mei_sapling_dirt"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "more_orn_plants:block/purple_leaf_plum_planks"
+  }
+}
