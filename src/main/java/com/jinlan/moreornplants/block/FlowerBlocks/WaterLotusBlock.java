@@ -25,6 +25,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.neoforge.common.CommonHooks;
 import net.neoforged.neoforge.common.Tags;
+import net.neoforged.neoforge.common.util.TriState;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -110,7 +111,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         int age = state.getValue(AGE);
         if (age < 3) {
-            float growthSpeed = getGrowthSpeed(level, pos);
+            float growthSpeed = getGrowthSpeed(state, level, pos);
             if (CommonHooks.canCropGrow(level, pos, state, random.nextInt((int)(25.0F / growthSpeed) + 1) == 0)) {
                 int newAge = age + 1;
                 growPlant(level, pos, state, newAge);
@@ -119,16 +120,17 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
         }
     }
 
-    protected float getGrowthSpeed(ServerLevel level, BlockPos pos) {
-        float speed = 1.0F;
-        BlockPos belowPos = pos.below();
-        BlockState belowState = level.getBlockState(belowPos);
-        if (belowState.is(Blocks.FARMLAND)) {
-            if (belowState.getValue(FarmBlock.MOISTURE) >= FarmBlock.MAX_MOISTURE) {
-                speed = 3.0F;
+    protected float getGrowthSpeed(BlockState blockState, BlockGetter level, BlockPos pos) {
+        float f = 1.0F;
+        BlockPos blockpos = pos.below();
+        BlockState belowState = level.getBlockState(blockpos);
+        TriState soilDecision = belowState.canSustainPlant(level, blockpos, Direction.UP, blockState);
+        if (soilDecision.isDefault() ? belowState.getBlock() instanceof FarmBlock : soilDecision.isTrue()) {
+            if (belowState.isFertile(level, pos)) {
+                f = 3.0F;
             }
         }
-        return speed;
+        return f;
     }
 
     protected void growPlant(ServerLevel level, BlockPos pos, BlockState state, int newAge) {

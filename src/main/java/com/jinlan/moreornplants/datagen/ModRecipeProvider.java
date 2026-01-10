@@ -751,17 +751,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(recipeOutput, ModItems.CHINABERRY_CHEST_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
         chestBoat(recipeOutput, ModItems.DESERT_POPLAR_CHEST_BOAT.get(), ModBlocks.DESERT_POPLAR_PLANKS.get());
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GREEN_CALYX_MEI_SAPLING.get(), 1)
-                .requires(ModBlocks.WHITE_MEI_SAPLING.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.WHITE_MEI_SAPLING.get()), has(ModBlocks.WHITE_MEI_SAPLING.get()))
-                .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.DOUBLE_PINK_MEI_SAPLING.get(), 2)
-                .requires(ModBlocks.RED_MEI_SAPLING.get())
-                .requires(ModBlocks.WHITE_MEI_SAPLING.get())
-                .unlockedBy(getHasName(ModBlocks.RED_MEI_SAPLING.get()), has(ModBlocks.RED_MEI_SAPLING.get()))
-                .unlockedBy(getHasName(ModBlocks.WHITE_MEI_SAPLING.get()), has(ModBlocks.WHITE_MEI_SAPLING.get()))
-                .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), 2)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), 1)
                 .requires(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get())
                 .requires(ModBlocks.WHITE_MEI_SAPLING.get())
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get()), has(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get()))
@@ -779,34 +769,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModBlocks.WHITE_MEI_SAPLING.get())
                 .unlockedBy(getHasName(ModBlocks.WHITE_MEI_SAPLING.get()), has(ModBlocks.WHITE_MEI_SAPLING.get()))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), 1)
-                .requires(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get()), has(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get()))
-                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "green_weeping_mei_sapling_from_white_weeping_mei_sapling");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), 1)
                 .pattern(" # ")
                 .pattern("# #")
                 .define('#', ModBlocks.GREEN_CALYX_MEI_SAPLING.get())
                 .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_SAPLING.get()), has(ModBlocks.GREEN_CALYX_MEI_SAPLING.get()))
-                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "green_weeping_mei_sapling_from_green_calyx_mei_sapling");
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), 2)
-                .requires(ModBlocks.RED_WEEPING_MEI_SAPLING.get())
-                .requires(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get())
-                .unlockedBy(getHasName(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get()), has(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get()))
-                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "pink_weeping_mei_sapling_from_red_and_white_weeping_mei_sapling");
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), 2)
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), 1)
                 .pattern(" # ")
                 .pattern("# #")
                 .define('#', ModBlocks.DOUBLE_PINK_MEI_SAPLING.get())
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get()), has(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get()))
-                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "pink_weeping_mei_sapling_from_double_pink_mei_sapling");
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), 2)
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), 1)
                 .requires(ModBlocks.PINK_WEEPING_MEI_SAPLING.get())
                 .requires(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get())
                 .unlockedBy(getHasName(ModBlocks.PINK_WEEPING_MEI_SAPLING.get()), has(ModBlocks.PINK_WEEPING_MEI_SAPLING.get()))
                 .unlockedBy(getHasName(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get()), has(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get()))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":" + "versicolor_weeping_mei_sapling_from_pink_and_white_weeping_mei_sapling");
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), 2)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), 1)
                 .pattern(" # ")
                 .pattern("# #")
                 .define('#', ModBlocks.VERSICOLOR_MEI_SAPLING.get())

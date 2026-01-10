@@ -4,10 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.IceBlock;
-import net.minecraft.world.level.block.WaterlilyBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -59,10 +56,9 @@ public class LeafPileBlock extends WaterlilyBlock {
         FluidState fluidstate1 = pLevel.getFluidState(pPos.above());
         boolean canPlaceOnWater = (fluidstate.getType() == Fluids.WATER || pState.getBlock() instanceof IceBlock) && fluidstate1.getType() == Fluids.EMPTY;
 
-        boolean canPlaceOnFullSurface = pState.isFaceSturdy(pLevel, pPos, Direction.UP)
-                && pState.getBlock() != Blocks.AIR && fluidstate1.getType() == Fluids.EMPTY;
+        boolean canPlaceOnFullSurface = pState.isFaceSturdy(pLevel, pPos, Direction.UP) && pState.getBlock() != Blocks.AIR;
 
-        boolean canPlaceOnFarmland = pState.getBlock() == Blocks.FARMLAND && fluidstate1.getType() == Fluids.EMPTY;
+        boolean canPlaceOnFarmland = pState.getBlock() instanceof FarmBlock;
 
         return canPlaceOnWater || canPlaceOnFullSurface || canPlaceOnFarmland;
     }

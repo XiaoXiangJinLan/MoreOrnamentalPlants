@@ -27,6 +27,7 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class ModBlockLootTablesProvider extends BlockLootSubProvider {
@@ -37,9 +38,15 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         return this.hasShearsOrSilkTouch().invert();
     }
     private static final float[] NORMAL_LEAVES_STICK_CHANCES = new float[]{0.02F, 0.022222223F, 0.025F, 0.033333335F, 0.1F};
+    private final Set<Block> excludedBlocks = new HashSet<>();
 
     public ModBlockLootTablesProvider(HolderLookup.Provider registries) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
+        excludedBlocks.add(ModBlocks.RED_WEEPING_MEI_PLANT.get());
+        excludedBlocks.add(ModBlocks.WHITE_WEEPING_MEI_PLANT.get());
+        excludedBlocks.add(ModBlocks.GREEN_WEEPING_MEI_PLANT.get());
+        excludedBlocks.add(ModBlocks.PINK_WEEPING_MEI_PLANT.get());
+        excludedBlocks.add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get());
     }
 
     @Override
@@ -370,23 +377,13 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.RED_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), block ->
-                createLeavesDrops(block, ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.WHITE_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.WHITE_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.add(ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), block ->
-                createLeavesDrops(block, ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.GREEN_WEEPING_MEI.get(), block ->
-                createLeavesDrops(block, ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.add(ModBlocks.GREEN_WEEPING_MEI_PLANT.get(), block ->
                 createLeavesDrops(block, ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.PINK_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.add(ModBlocks.PINK_WEEPING_MEI_PLANT.get(), block ->
-                createLeavesDrops(block, ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), block ->
-                createLeavesDrops(block, ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get(), block ->
                 createLeavesDrops(block, ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(ModBlocks.RED_MEI_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_SIGN.get()));
@@ -903,6 +900,6 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
 
     @Override
     protected @NotNull Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
+        return ModBlocks.BLOCKS.getEntries().stream().map(Holder::value).filter(block -> !excludedBlocks.contains(block))::iterator;
     }
 }

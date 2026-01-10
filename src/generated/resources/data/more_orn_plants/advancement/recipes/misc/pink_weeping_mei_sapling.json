@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_orn_plants:pink_weeping_mei_sapling_from_double_pink_mei_sapling"
+        "recipe": "more_orn_plants:pink_weeping_mei_sapling"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "more_orn_plants:pink_weeping_mei_sapling_from_double_pink_mei_sapling"
+      "more_orn_plants:pink_weeping_mei_sapling"
     ]
   }
 }
