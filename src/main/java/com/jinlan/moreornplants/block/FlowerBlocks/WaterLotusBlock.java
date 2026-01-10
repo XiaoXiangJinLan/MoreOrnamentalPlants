@@ -124,8 +124,6 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
         if (belowState.is(Blocks.FARMLAND)) {
             if (belowState.getValue(FarmBlock.MOISTURE) >= FarmBlock.MAX_MOISTURE) {
                 speed = 3.0F;
-            } else {
-                speed = 1.0F;
             }
         }
 

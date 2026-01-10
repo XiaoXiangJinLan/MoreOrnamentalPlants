@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_orn_plants:green_weeping_mei_sapling_from_green_calyx_mei_sapling"
+        "recipe": "more_orn_plants:green_weeping_mei_sapling"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "more_orn_plants:green_weeping_mei_sapling_from_green_calyx_mei_sapling"
+      "more_orn_plants:green_weeping_mei_sapling"
     ]
   },
   "sends_telemetry_event": false
