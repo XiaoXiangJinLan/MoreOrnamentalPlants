@@ -104,7 +104,7 @@ public class MoreOrnPlants {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WINTER_CYMBIDIUM.getId(), ModBlocks.POTTED_WINTER_CYMBIDIUM);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PEONY.getId(), ModBlocks.POTTED_PEONY);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.LIGHT_PINK_PEONY.getId(), ModBlocks.POTTED_LIGHT_PINK_PEONY);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VIOLET_PINK_PEONY.getId(), ModBlocks.POTTED_VIOLET_PEONY);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VIOLET_PINK_PEONY.getId(), ModBlocks.POTTED_VIOLET_PINK_PEONY);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_PEONY.getId(), ModBlocks.POTTED_PINK_PEONY);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.RED_PEONY.getId(), ModBlocks.POTTED_RED_PEONY);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.LIGHT_RED_PEONY.getId(), ModBlocks.POTTED_LIGHT_RED_PEONY);

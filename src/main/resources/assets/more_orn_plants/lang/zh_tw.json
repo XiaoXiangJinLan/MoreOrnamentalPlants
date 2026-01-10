@@ -542,6 +542,7 @@
 
   "entity.more_orn_plants.mod_boat": "船",
   "entity.more_orn_plants.mod_chest_boat": "儲物箱船",
+
   "item.more_orn_plants.red_mei_boat": "紅梅木船",
   "item.more_orn_plants.red_mei_chest_boat": "儲物箱紅梅木船",
   "item.more_orn_plants.white_mei_boat": "江梅木船",
@@ -696,8 +697,8 @@
   "advancement.moreornplants.apricot_village.title": "杏花村",
   "advancement.moreornplants.apricot_village.description": "借問酒家何處有？牧童遙指杏花村",
 
-  "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§o小喬木，非建材",
-  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§o觀賞品種，非建材，熊貓不愛吃",
+  "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小喬木，非建材",
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞品種，非建材，熊貓不愛吃",
 
   "more_orn_plants.configuration.title": "觀賞植物模組配置",
   "more_orn_plants.configuration.section.moreornplants.common.toml": "羣系配置",

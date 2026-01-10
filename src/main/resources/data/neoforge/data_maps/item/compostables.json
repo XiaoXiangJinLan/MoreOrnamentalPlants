@@ -1,0 +1,451 @@
+{
+  "values": {
+    "more_orn_plants:red_mei_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:red_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_mei_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:green_calyx_mei_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:green_calyx_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:double_pink_mei_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:double_pink_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:versicolor_mei_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:versicolor_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:red_weeping_mei": {
+      "chance": 0.65
+    },
+    "more_orn_plants:red_weeping_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_weeping_mei": {
+      "chance": 0.65
+    },
+    "more_orn_plants:white_weeping_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:green_weeping_mei": {
+      "chance": 0.65
+    },
+    "more_orn_plants:green_weeping_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:pink_weeping_mei": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_weeping_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:versicolor_weeping_mei": {
+      "chance": 0.65
+    },
+    "more_orn_plants:versicolor_weeping_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:upright_crabapple_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:weeping_crabapple_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:upright_crabapple_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:weeping_crabapple_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:weeping_crabapple": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_apricot_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_apricot_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:pink_apricot_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_apricot_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:ornamental_peach_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:wild_peach_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:ornamental_peach_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:wild_peach_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:pear_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:pear_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:flowering_purple_leaf_plum_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:purple_leaf_plum_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:flowering_purple_leaf_plum_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:purple_leaf_plum_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:golden_osmanthus_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:orange_osmanthus_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_osmanthus_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:golden_osmanthus_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:orange_osmanthus_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_osmanthus_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:golden_ginkgo_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:green_ginkgo_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:golden_ginkgo_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:green_ginkgo_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:yellow_chinese_parasol_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:green_chinese_parasol_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:yellow_chinese_parasol_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:green_chinese_parasol_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:sweetgum_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:sweetgum_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:camphor_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:new_camphor_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:camphor_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:dove_tree_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:dove_tree_blossom_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:dove_tree_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:chinaberry_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:chinaberry_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:desert_poplar_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:desert_poplar_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:crape_myrtle_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:crape_myrtle_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:chrysanthemum": {
+      "chance": 0.65
+    },
+    "more_orn_plants:golden_chrysanthemum": {
+      "chance": 0.65
+    },
+    "more_orn_plants:gold_backed_scarlet_mum": {
+      "chance": 0.65
+    },
+    "more_orn_plants:white_chrysanthemum": {
+      "chance": 0.65
+    },
+    "more_orn_plants:green_chrysanthemum": {
+      "chance": 0.65
+    },
+    "more_orn_plants:purple_chrysanthemum": {
+      "chance": 0.65
+    },
+    "more_orn_plants:violet_pink_chrysanthemum": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_chrysanthemum": {
+      "chance": 0.65
+    },
+    "more_orn_plants:light_pink_chrysanthemum": {
+      "chance": 0.65
+    },
+    "more_orn_plants:spring_cymbidium": {
+      "chance": 0.65
+    },
+    "more_orn_plants:summer_cymbidium": {
+      "chance": 0.65
+    },
+    "more_orn_plants:autumn_cymbidium": {
+      "chance": 0.65
+    },
+    "more_orn_plants:winter_cymbidium": {
+      "chance": 0.65
+    },
+    "more_orn_plants:peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:light_pink_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:violet_pink_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:red_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:light_red_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:ink_red_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:vermilion_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:purple_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:light_purple_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:ink_purple_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:violet_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:yellow_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:light_yellow_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:ochre_yellow_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:golden_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:white_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:ink_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:blue_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:green_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:colorful_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:light_colorful_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:ink_colorful_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:red_white_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_white_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:yellow_white_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:purple_white_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:wu_hua_long_yu_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:mauve_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:two_qiao_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:versicolor_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:chinese_rose": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_chinese_rose": {
+      "chance": 0.65
+    },
+    "more_orn_plants:yellow_chinese_rose": {
+      "chance": 0.65
+    },
+    "more_orn_plants:white_chinese_rose": {
+      "chance": 0.65
+    },
+    "more_orn_plants:red_pink_chinese_rose": {
+      "chance": 0.65
+    },
+    "more_orn_plants:red_yellow_chinese_rose": {
+      "chance": 0.65
+    },
+    "more_orn_plants:red_white_chinese_rose": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_white_chinese_rose": {
+      "chance": 0.65
+    },
+    "more_orn_plants:yellow_white_chinese_rose": {
+      "chance": 0.65
+    },
+    "more_orn_plants:crape_myrtle": {
+      "chance": 0.65
+    },
+    "more_orn_plants:cotton_rose": {
+      "chance": 0.65
+    },
+    "more_orn_plants:camellia": {
+      "chance": 0.65
+    },
+    "more_orn_plants:white_camellia": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_camellia": {
+      "chance": 0.65
+    },
+    "more_orn_plants:versicolor_camellia": {
+      "chance": 0.65
+    },
+    "more_orn_plants:crimson_azalea": {
+      "chance": 0.65
+    },
+    "more_orn_plants:wintersweet": {
+      "chance": 0.65
+    },
+    "more_orn_plants:miscanthus": {
+      "chance": 0.85
+    },
+    "more_orn_plants:golden_miscanthus": {
+      "chance": 0.65
+    },
+    "more_orn_plants:fountain_grass": {
+      "chance": 0.65
+    },
+    "more_orn_plants:purple_fountain_grass": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_fountain_grass": {
+      "chance": 0.65
+    },
+    "more_orn_plants:white_fountain_grass": {
+      "chance": 0.65
+    },
+    "more_orn_plants:peach_pink_petals": {
+      "chance": 0.3
+    },
+    "more_orn_plants:ornamental_peach_petals": {
+      "chance": 0.3
+    },
+    "more_orn_plants:wild_peach_petals": {
+      "chance": 0.3
+    },
+    "more_orn_plants:chinese_parasol_leaf_0": {
+      "chance": 0.3
+    },
+    "more_orn_plants:chinese_parasol_leaf_1": {
+      "chance": 0.3
+    },
+    "more_orn_plants:sweetgum_leaf_pile_0": {
+      "chance": 0.3
+    },
+    "more_orn_plants:sweetgum_leaf_pile_1": {
+      "chance": 0.3
+    },
+    "more_orn_plants:ginkgo_leaf_pile": {
+      "chance": 0.3
+    },
+    "more_orn_plants:lotus": {
+      "chance": 0.65
+    },
+    "more_orn_plants:white_lotus": {
+      "chance": 0.65
+    },
+    "more_orn_plants:lotus_leaf": {
+      "chance": 0.65
+    },
+    "more_orn_plants:peeled_bamboo_shoots": {
+      "chance": 0.65
+    },
+    "more_orn_plants:lotus_root": {
+      "chance": 0.65
+    },
+    "more_orn_plants:lotus_seed": {
+      "chance": 0.3
+    },
+    "more_orn_plants:lotus_seed_pod": {
+      "chance": 0.5
+    }
+  }
+}

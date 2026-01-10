@@ -10,6 +10,7 @@ import com.jinlan.moreornplants.block.LeavesBlocks.*;
 import com.jinlan.moreornplants.block.WeepingBlocks.*;
 import com.jinlan.moreornplants.block.tree.ModTreeGrower;
 import com.jinlan.moreornplants.item.ModItems;
+import com.jinlan.moreornplants.util.ModBlockSetType;
 import com.jinlan.moreornplants.util.ModWoodTypes;
 import net.minecraft.core.Direction;
 import net.minecraft.world.effect.MobEffects;
@@ -364,74 +365,74 @@ public class ModBlocks {
             registerBlock("desert_poplar_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
 
     public static final DeferredBlock<Block> RED_MEI_BUTTON =
-            registerBlock("red_mei_button", ModBlocks::woodenButton);
+            registerBlock("red_mei_button", () -> woodenButton(ModBlockSetType.RED_MEI));
     public static final DeferredBlock<Block> WHITE_MEI_BUTTON =
-            registerBlock("white_mei_button", ModBlocks::woodenButton);
+            registerBlock("white_mei_button", () -> woodenButton(ModBlockSetType.WHITE_MEI));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_BUTTON =
-            registerBlock("green_calyx_mei_button", ModBlocks::woodenButton);
+            registerBlock("green_calyx_mei_button", () -> woodenButton(ModBlockSetType.GREEN_CALYX_MEI));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_BUTTON =
-            registerBlock("double_pink_mei_button", ModBlocks::woodenButton);
+            registerBlock("double_pink_mei_button", () -> woodenButton(ModBlockSetType.DOUBLE_PINK_MEI));
     public static final DeferredBlock<Block> CRABAPPLE_BUTTON =
-            registerBlock("crabapple_button", ModBlocks::woodenButton);
+            registerBlock("crabapple_button", () -> woodenButton(ModBlockSetType.CRABAPPLE));
     public static final DeferredBlock<Block> APRICOT_BUTTON =
-            registerBlock("apricot_button", ModBlocks::woodenButton);
+            registerBlock("apricot_button", () -> woodenButton(ModBlockSetType.APRICOT));
     public static final DeferredBlock<Block> PEACH_BUTTON =
-            registerBlock("peach_button", ModBlocks::woodenButton);
+            registerBlock("peach_button", () -> woodenButton(ModBlockSetType.PEACH));
     public static final DeferredBlock<Block> PEAR_BUTTON =
-            registerBlock("pear_button", ModBlocks::woodenButton);
+            registerBlock("pear_button", () -> woodenButton(ModBlockSetType.PEAR));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_BUTTON =
-            registerBlock("purple_leaf_plum_button", ModBlocks::woodenButton);
+            registerBlock("purple_leaf_plum_button", () -> woodenButton(ModBlockSetType.PURPLE_LEAF_PLUM));
     public static final DeferredBlock<Block> OSMANTHUS_BUTTON =
-            registerBlock("osmanthus_button", ModBlocks::woodenButton);
+            registerBlock("osmanthus_button", () -> woodenButton(ModBlockSetType.OSMANTHUS));
     public static final DeferredBlock<Block> GINKGO_BUTTON =
-            registerBlock("ginkgo_button", ModBlocks::woodenButton);
+            registerBlock("ginkgo_button", () -> woodenButton(ModBlockSetType.GINKGO));
     public static final DeferredBlock<Block> CHINESE_PARASOL_BUTTON =
-            registerBlock("chinese_parasol_button", ModBlocks::woodenButton);
+            registerBlock("chinese_parasol_button", () -> woodenButton(ModBlockSetType.CHINESE_PARASOL));
     public static final DeferredBlock<Block> SWEETGUM_BUTTON =
-            registerBlock("sweetgum_button", ModBlocks::woodenButton);
+            registerBlock("sweetgum_button", () -> woodenButton(ModBlockSetType.SWEETGUM));
     public static final DeferredBlock<Block> CAMPHOR_BUTTON =
-            registerBlock("camphor_button", ModBlocks::woodenButton);
+            registerBlock("camphor_button", () -> woodenButton(ModBlockSetType.CAMPHOR));
     public static final DeferredBlock<Block> DOVE_TREE_BUTTON =
-            registerBlock("dove_tree_button", ModBlocks::woodenButton);
+            registerBlock("dove_tree_button", () -> woodenButton(ModBlockSetType.DOVE_TREE));
     public static final DeferredBlock<Block> CHINABERRY_BUTTON =
-            registerBlock("chinaberry_button", ModBlocks::woodenButton);
+            registerBlock("chinaberry_button", () -> woodenButton(ModBlockSetType.CHINABERRY));
     public static final DeferredBlock<Block> DESERT_POPLAR_BUTTON =
-            registerBlock("desert_poplar_button", ModBlocks::woodenButton);
+            registerBlock("desert_poplar_button", () -> woodenButton(ModBlockSetType.DESERT_POPLAR));
 
     public static final DeferredBlock<Block> RED_MEI_PRESSURE_PLATE =
-            registerBlock("red_mei_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("red_mei_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.RED_MEI, BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WHITE_MEI_PRESSURE_PLATE =
-            registerBlock("white_mei_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("white_mei_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.WHITE_MEI, BlockBehaviour.Properties.of().mapColor(WHITE_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_PRESSURE_PLATE =
-            registerBlock("green_calyx_mei_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("green_calyx_mei_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.GREEN_CALYX_MEI, BlockBehaviour.Properties.of().mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_PRESSURE_PLATE =
-            registerBlock("double_pink_mei_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("double_pink_mei_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.DOUBLE_PINK_MEI, BlockBehaviour.Properties.of().mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CRABAPPLE_PRESSURE_PLATE =
-            registerBlock("crabapple_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("crabapple_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.CRABAPPLE, BlockBehaviour.Properties.of().mapColor(CRABAPPLE_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> APRICOT_PRESSURE_PLATE =
-            registerBlock("apricot_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(APRICOT_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("apricot_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.APRICOT, BlockBehaviour.Properties.of().mapColor(APRICOT_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PEACH_PRESSURE_PLATE =
-            registerBlock("peach_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(PEACH_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("peach_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.PEACH, BlockBehaviour.Properties.of().mapColor(PEACH_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PEAR_PRESSURE_PLATE =
-            registerBlock("pear_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(PEAR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("pear_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.PEAR, BlockBehaviour.Properties.of().mapColor(PEAR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_PRESSURE_PLATE =
-            registerBlock("purple_leaf_plum_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("purple_leaf_plum_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.PURPLE_LEAF_PLUM, BlockBehaviour.Properties.of().mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> OSMANTHUS_PRESSURE_PLATE =
-            registerBlock("osmanthus_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(OSMANTHUS_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("osmanthus_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.OSMANTHUS, BlockBehaviour.Properties.of().mapColor(OSMANTHUS_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> GINKGO_PRESSURE_PLATE =
-            registerBlock("ginkgo_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(GINKGO_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("ginkgo_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.GINKGO, BlockBehaviour.Properties.of().mapColor(GINKGO_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CHINESE_PARASOL_PRESSURE_PLATE =
-            registerBlock("chinese_parasol_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("chinese_parasol_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.CHINESE_PARASOL, BlockBehaviour.Properties.of().mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> SWEETGUM_PRESSURE_PLATE =
-            registerBlock("sweetgum_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(SWEETGUM_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("sweetgum_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.SWEETGUM, BlockBehaviour.Properties.of().mapColor(SWEETGUM_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CAMPHOR_PRESSURE_PLATE =
-            registerBlock("camphor_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(CAMPHOR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("camphor_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.CAMPHOR, BlockBehaviour.Properties.of().mapColor(CAMPHOR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> DOVE_TREE_PRESSURE_PLATE =
-            registerBlock("dove_tree_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("dove_tree_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.DOVE_TREE, BlockBehaviour.Properties.of().mapColor(DOVE_TREE_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CHINABERRY_PRESSURE_PLATE =
-            registerBlock("chinaberry_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("chinaberry_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.CHINABERRY, BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> DESERT_POPLAR_PRESSURE_PLATE =
-            registerBlock("desert_poplar_pressure_plate", () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+            registerBlock("desert_poplar_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.DESERT_POPLAR, BlockBehaviour.Properties.of().mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> RED_MEI_FENCE =
             registerBlock("red_mei_fence" , () -> new ModFenceBlock(BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
@@ -504,74 +505,74 @@ public class ModBlocks {
             registerBlock("desert_poplar_fence_gate", () -> new ModFenceGateBlock(ModWoodTypes.DESERT_POPLAR, BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava()));
 
     public static final DeferredBlock<Block> RED_MEI_DOOR =
-            registerBlock("red_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(RED_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("red_mei_door", () -> new DoorBlock(ModBlockSetType.RED_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(RED_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> WHITE_MEI_DOOR =
-            registerBlock("white_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("white_mei_door", () -> new DoorBlock(ModBlockSetType.WHITE_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(WHITE_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_DOOR =
-            registerBlock("green_calyx_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("green_calyx_mei_door", () -> new DoorBlock(ModBlockSetType.GREEN_CALYX_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_DOOR =
-            registerBlock("double_pink_mei_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor())));
+            registerBlock("double_pink_mei_door", () -> new DoorBlock(ModBlockSetType.DOUBLE_PINK_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CRABAPPLE_DOOR =
-            registerBlock("crabapple_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor())));
+            registerBlock("crabapple_door", () -> new DoorBlock(ModBlockSetType.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> APRICOT_DOOR =
-            registerBlock("apricot_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(APRICOT_PLANKS.get().defaultMapColor())));
+            registerBlock("apricot_door", () -> new DoorBlock(ModBlockSetType.APRICOT, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(APRICOT_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEACH_DOOR =
-            registerBlock("peach_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(PEACH_PLANKS.get().defaultMapColor())));
+            registerBlock("peach_door", () -> new DoorBlock(ModBlockSetType.PEACH, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(PEACH_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PEAR_DOOR =
-            registerBlock("pear_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(PEAR_PLANKS.get().defaultMapColor())));
+            registerBlock("pear_door", () -> new DoorBlock(ModBlockSetType.PEAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(PEAR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_DOOR =
-            registerBlock("purple_leaf_plum_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor())));
+            registerBlock("purple_leaf_plum_door", () -> new DoorBlock(ModBlockSetType.PURPLE_LEAF_PLUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> OSMANTHUS_DOOR =
-            registerBlock("osmanthus_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor())));
+            registerBlock("osmanthus_door", () -> new DoorBlock(ModBlockSetType.OSMANTHUS, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GINKGO_DOOR =
-            registerBlock("ginkgo_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(GINKGO_PLANKS.get().defaultMapColor())));
+            registerBlock("ginkgo_door", () -> new DoorBlock(ModBlockSetType.GINKGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(GINKGO_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINESE_PARASOL_DOOR =
-            registerBlock("chinese_parasol_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor())));
+            registerBlock("chinese_parasol_door", () -> new DoorBlock(ModBlockSetType.CHINESE_PARASOL, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CHINESE_PARASOL_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> SWEETGUM_DOOR =
-            registerBlock("sweetgum_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(SWEETGUM_PLANKS.get().defaultMapColor())));
+            registerBlock("sweetgum_door", () -> new DoorBlock(ModBlockSetType.SWEETGUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(SWEETGUM_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CAMPHOR_DOOR =
-            registerBlock("camphor_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CAMPHOR_PLANKS.get().defaultMapColor())));
+            registerBlock("camphor_door", () -> new DoorBlock(ModBlockSetType.CAMPHOR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CAMPHOR_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DOVE_TREE_DOOR =
-            registerBlock("dove_tree_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor())));
+            registerBlock("dove_tree_door", () -> new DoorBlock(ModBlockSetType.DOVE_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(DOVE_TREE_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> CHINABERRY_DOOR =
-            registerBlock("chinaberry_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CHINABERRY_PLANKS.get().defaultMapColor())));
+            registerBlock("chinaberry_door", () -> new DoorBlock(ModBlockSetType.CHINABERRY, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(CHINABERRY_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> DESERT_POPLAR_DOOR =
-            registerBlock("desert_poplar_door", () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor())));
+            registerBlock("desert_poplar_door", () -> new DoorBlock(ModBlockSetType.DESERT_POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor())));
 
     public static final DeferredBlock<Block> RED_MEI_TRAPDOOR =
-            registerBlock("red_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_RED)));
+            registerBlock("red_mei_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.RED_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_RED)));
     public static final DeferredBlock<Block> WHITE_MEI_TRAPDOOR =
-            registerBlock("white_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.SNOW)));
+            registerBlock("white_mei_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.WHITE_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.SNOW)));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_TRAPDOOR =
-            registerBlock("green_calyx_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_GREEN)));
+            registerBlock("green_calyx_mei_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.GREEN_CALYX_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_GREEN)));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_TRAPDOOR =
-            registerBlock("double_pink_mei_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_PINK)));
+            registerBlock("double_pink_mei_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.DOUBLE_PINK_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_PINK)));
     public static final DeferredBlock<Block> CRABAPPLE_TRAPDOOR =
-            registerBlock("crabapple_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_MAGENTA)));
+            registerBlock("crabapple_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_MAGENTA)));
     public static final DeferredBlock<Block> APRICOT_TRAPDOOR =
-            registerBlock("apricot_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_PINK)));
+            registerBlock("apricot_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.APRICOT, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_PINK)));
     public static final DeferredBlock<Block> PEACH_TRAPDOOR =
-            registerBlock("peach_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_PINK)));
+            registerBlock("peach_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.PEACH, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_PINK)));
     public static final DeferredBlock<Block> PEAR_TRAPDOOR =
-            registerBlock("pear_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.SAND)));
+            registerBlock("pear_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.PEAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.SAND)));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_TRAPDOOR =
-            registerBlock("purple_leaf_plum_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.TERRACOTTA_PURPLE)));
+            registerBlock("purple_leaf_plum_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.PURPLE_LEAF_PLUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final DeferredBlock<Block> OSMANTHUS_TRAPDOOR =
-            registerBlock("osmanthus_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.WOOD)));
+            registerBlock("osmanthus_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.OSMANTHUS, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.WOOD)));
     public static final DeferredBlock<Block> GINKGO_TRAPDOOR =
-            registerBlock("ginkgo_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.GOLD)));
+            registerBlock("ginkgo_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.GINKGO, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.GOLD)));
     public static final DeferredBlock<Block> CHINESE_PARASOL_TRAPDOOR =
-            registerBlock("chinese_parasol_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_GREEN)));
+            registerBlock("chinese_parasol_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.CHINESE_PARASOL, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_GREEN)));
     public static final DeferredBlock<Block> SWEETGUM_TRAPDOOR =
-            registerBlock("sweetgum_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.TERRACOTTA_RED)));
+            registerBlock("sweetgum_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.SWEETGUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.TERRACOTTA_RED)));
     public static final DeferredBlock<Block> CAMPHOR_TRAPDOOR =
-            registerBlock("camphor_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.WOOD)));
+            registerBlock("camphor_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.CAMPHOR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.WOOD)));
     public static final DeferredBlock<Block> DOVE_TREE_TRAPDOOR =
-            registerBlock("dove_tree_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_GRAY)));
+            registerBlock("dove_tree_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.DOVE_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_LIGHT_GRAY)));
     public static final DeferredBlock<Block> CHINABERRY_TRAPDOOR =
-            registerBlock("chinaberry_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_RED)));
+            registerBlock("chinaberry_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.CHINABERRY, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.COLOR_RED)));
     public static final DeferredBlock<Block> DESERT_POPLAR_TRAPDOOR =
-            registerBlock("desert_poplar_trapdoor", () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.WOOD)));
+            registerBlock("desert_poplar_trapdoor", () -> new TrapDoorBlock(ModBlockSetType.DESERT_POPLAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.WOOD)));
 
     public static final DeferredBlock<Block> RED_MEI_SIGN =
             BLOCKS.register("red_mei_sign", () -> new ModStandingSignBlock(ModWoodTypes.RED_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.COLOR_RED)));
@@ -779,69 +780,69 @@ public class ModBlocks {
             registerBlock("crape_myrtle_sapling", () -> new CrapeMyrtleSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> POTTED_RED_MEI_SAPLING =
-            BLOCKS.register("potted_red_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_mei_sapling", () -> flowerPot(RED_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_MEI_SAPLING =
-            BLOCKS.register("potted_white_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_mei_sapling", () -> flowerPot(WHITE_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_GREEN_CALYX_MEI_SAPLING =
-            BLOCKS.register("potted_green_calyx_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_CALYX_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_calyx_mei_sapling", () -> flowerPot(GREEN_CALYX_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_DOUBLE_PINK_MEI_SAPLING =
-            BLOCKS.register("potted_double_pink_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.DOUBLE_PINK_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_double_pink_mei_sapling", () -> flowerPot(DOUBLE_PINK_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_VERSICOLOR_MEI_SAPLING =
-            BLOCKS.register("potted_versicolor_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VERSICOLOR_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_versicolor_mei_sapling", () -> flowerPot(VERSICOLOR_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_RED_WEEPING_MEI_SAPLING =
-            BLOCKS.register("potted_red_weeping_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_WEEPING_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_weeping_mei_sapling", () -> flowerPot(RED_WEEPING_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_WEEPING_MEI_SAPLING =
-            BLOCKS.register("potted_white_weeping_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_WEEPING_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_weeping_mei_sapling", () -> flowerPot(WHITE_WEEPING_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_GREEN_WEEPING_MEI_SAPLING =
-            BLOCKS.register("potted_green_weeping_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_WEEPING_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_weeping_mei_sapling", () -> flowerPot(GREEN_WEEPING_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_PINK_WEEPING_MEI_SAPLING =
-            BLOCKS.register("potted_pink_weeping_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_WEEPING_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_weeping_mei_sapling", () -> flowerPot(PINK_WEEPING_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_VERSICOLOR_WEEPING_MEI_SAPLING =
-            BLOCKS.register("potted_versicolor_weeping_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_versicolor_weeping_mei_sapling", () -> flowerPot(VERSICOLOR_WEEPING_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_UPRIGHT_CRABAPPLE_SAPLING =
-            BLOCKS.register("potted_upright_crabapple_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.UPRIGHT_CRABAPPLE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_upright_crabapple_sapling", () -> flowerPot(UPRIGHT_CRABAPPLE_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_WEEPING_CRABAPPLE_SAPLING =
-            BLOCKS.register("potted_weeping_crabapple_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WEEPING_CRABAPPLE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_weeping_crabapple_sapling", () -> flowerPot(WEEPING_CRABAPPLE_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_PINK_APRICOT_SAPLING =
-            BLOCKS.register("potted_pink_apricot_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_APRICOT_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_apricot_sapling", () -> flowerPot(PINK_APRICOT_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_APRICOT_SAPLING =
-            BLOCKS.register("potted_white_apricot_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_APRICOT_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_apricot_sapling", () -> flowerPot(WHITE_APRICOT_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_ORNAMENTAL_PEACH_SAPLING =
-            BLOCKS.register("potted_ornamental_peach_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.ORNAMENTAL_PEACH_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ornamental_peach_sapling", () -> flowerPot(ORNAMENTAL_PEACH_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_WILD_PEACH_SAPLING =
-            BLOCKS.register("potted_wild_peach_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WILD_PEACH_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_wild_peach_sapling", () -> flowerPot(WILD_PEACH_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_PEAR_SAPLING =
-            BLOCKS.register("potted_pear_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PEAR_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pear_sapling", () -> flowerPot(PEAR_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_FLOWERING_PURPLE_LEAF_PLUM_SAPLING =
-            BLOCKS.register("potted_flowering_purple_leaf_plum_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_flowering_purple_leaf_plum_sapling", () -> flowerPot(FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_PURPLE_LEAF_PLUM_SAPLING =
-            BLOCKS.register("potted_purple_leaf_plum_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PURPLE_LEAF_PLUM_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_purple_leaf_plum_sapling", () -> flowerPot(PURPLE_LEAF_PLUM_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_GOLDEN_OSMANTHUS_SAPLING =
-            BLOCKS.register("potted_golden_osmanthus_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLDEN_OSMANTHUS_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_golden_osmanthus_sapling", () -> flowerPot(GOLDEN_OSMANTHUS_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_ORANGE_OSMANTHUS_SAPLING =
-            BLOCKS.register("potted_orange_osmanthus_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.ORANGE_OSMANTHUS_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_orange_osmanthus_sapling", () -> flowerPot(ORANGE_OSMANTHUS_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_OSMANTHUS_SAPLING =
-            BLOCKS.register("potted_white_osmanthus_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_OSMANTHUS_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_osmanthus_sapling", () -> flowerPot(WHITE_OSMANTHUS_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_GOLDEN_GINKGO_SAPLING =
-            BLOCKS.register("potted_golden_ginkgo_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLDEN_GINKGO_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_golden_ginkgo_sapling", () -> flowerPot(GOLDEN_GINKGO_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_GREEN_GINKGO_SAPLING =
-            BLOCKS.register("potted_green_ginkgo_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_GINKGO_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_ginkgo_sapling", () -> flowerPot(GREEN_GINKGO_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_YELLOW_CHINESE_PARASOL_SAPLING =
-            BLOCKS.register("potted_yellow_chinese_parasol_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_yellow_chinese_parasol_sapling", () -> flowerPot(YELLOW_CHINESE_PARASOL_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_GREEN_CHINESE_PARASOL_SAPLING =
-            BLOCKS.register("potted_green_chinese_parasol_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_CHINESE_PARASOL_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_chinese_parasol_sapling", () -> flowerPot(GREEN_CHINESE_PARASOL_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_SWEETGUM_SAPLING =
-            BLOCKS.register("potted_sweetgum_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.SWEETGUM_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_sweetgum_sapling", () -> flowerPot(SWEETGUM_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_CAMPHOR_SAPLING =
-            BLOCKS.register("potted_camphor_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CAMPHOR_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_camphor_sapling", () -> flowerPot(CAMPHOR_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_DOVE_TREE_SAPLING =
-            BLOCKS.register("potted_dove_tree_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.DOVE_TREE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_dove_tree_sapling", () -> flowerPot(DOVE_TREE_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_CHINABERRY_SAPLING =
-            BLOCKS.register("potted_chinaberry_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CHINABERRY_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_chinaberry_sapling", () -> flowerPot(CHINABERRY_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_DESERT_POPLAR_SAPLING =
-            BLOCKS.register("potted_desert_poplar_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.DESERT_POPLAR_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_desert_poplar_sapling", () -> flowerPot(DESERT_POPLAR_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_CRAPE_MYRTLE_SAPLING =
-            BLOCKS.register("potted_crape_myrtle_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CRAPE_MYRTLE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_crape_myrtle_sapling", () -> flowerPot(CRAPE_MYRTLE_SAPLING.get()));
 
     public static final DeferredBlock<Block> CHRYSANTHEMUM =
             registerBlock("chrysanthemum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
@@ -945,105 +946,105 @@ public class ModBlocks {
             registerBlock("white_fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> POTTED_CHRYSANTHEMUM =
-            BLOCKS.register("potted_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_chrysanthemum", () -> flowerPot(CHRYSANTHEMUM.get()));
     public static final DeferredBlock<Block> POTTED_GOLDEN_CHRYSANTHEMUM =
-            BLOCKS.register("potted_golden_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLDEN_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_golden_chrysanthemum", () -> flowerPot(GOLDEN_CHRYSANTHEMUM.get()));
     public static final DeferredBlock<Block> POTTED_GOLD_BACKED_SCARLET_MUM =
-            BLOCKS.register("potted_gold_backed_scarlet_mum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLD_BACKED_SCARLET_MUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_gold_backed_scarlet_mum", () -> flowerPot(GOLD_BACKED_SCARLET_MUM.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_CHRYSANTHEMUM =
-            BLOCKS.register("potted_white_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_chrysanthemum", () -> flowerPot(WHITE_CHRYSANTHEMUM.get()));
     public static final DeferredBlock<Block> POTTED_GREEN_CHRYSANTHEMUM =
-            BLOCKS.register("potted_green_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_chrysanthemum", () -> flowerPot(GREEN_CHRYSANTHEMUM.get()));
     public static final DeferredBlock<Block> POTTED_PURPLE_CHRYSANTHEMUM =
-            BLOCKS.register("potted_purple_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PURPLE_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_purple_chrysanthemum", () -> flowerPot(PURPLE_CHRYSANTHEMUM.get()));
     public static final DeferredBlock<Block> POTTED_VIOLET_PINK_CHRYSANTHEMUM =
-            BLOCKS.register("potted_violet_pink_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VIOLET_PINK_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_violet_pink_chrysanthemum", () -> flowerPot(VIOLET_PINK_CHRYSANTHEMUM.get()));
     public static final DeferredBlock<Block> POTTED_PINK_CHRYSANTHEMUM =
-            BLOCKS.register("potted_pink_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_chrysanthemum", () -> flowerPot(PINK_CHRYSANTHEMUM.get()));
     public static final DeferredBlock<Block> POTTED_LIGHT_PINK_CHRYSANTHEMUM =
-            BLOCKS.register("potted_light_pink_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_PINK_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_pink_chrysanthemum", () -> flowerPot(LIGHT_PINK_CHRYSANTHEMUM.get()));
     public static final DeferredBlock<Block> POTTED_SPRING_CYMBIDIUM =
-            BLOCKS.register("potted_spring_cymbidium", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.SPRING_CYMBIDIUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_spring_cymbidium", () -> flowerPot(SPRING_CYMBIDIUM.get()));
     public static final DeferredBlock<Block> POTTED_SUMMER_CYMBIDIUM =
-            BLOCKS.register("potted_summer_cymbidium", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.SUMMER_CYMBIDIUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_summer_cymbidium", () -> flowerPot(SUMMER_CYMBIDIUM.get()));
     public static final DeferredBlock<Block> POTTED_AUTUMN_CYMBIDIUM =
-            BLOCKS.register("potted_autumn_cymbidium", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.AUTUMN_CYMBIDIUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_autumn_cymbidium", () -> flowerPot(AUTUMN_CYMBIDIUM.get()));
     public static final DeferredBlock<Block> POTTED_PEONY =
-            BLOCKS.register("potted_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_peony", () -> flowerPot(PEONY.get()));
     public static final DeferredBlock<Block> POTTED_LIGHT_PINK_PEONY =
-            BLOCKS.register("potted_light_pink_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_PINK_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_pink_peony", () -> flowerPot(LIGHT_PINK_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_VIOLET_PINK_PEONY =
-            BLOCKS.register("potted_violet_pink_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VIOLET_PINK_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_violet_pink_peony", () -> flowerPot(VIOLET_PINK_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_PINK_PEONY =
-            BLOCKS.register("potted_pink_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_peony", () -> flowerPot(PINK_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_RED_PEONY =
-            BLOCKS.register("potted_red_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_peony", () -> flowerPot(RED_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_LIGHT_RED_PEONY =
-            BLOCKS.register("potted_light_red_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_RED_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_red_peony", () -> flowerPot(LIGHT_RED_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_INK_RED_PEONY =
-            BLOCKS.register("potted_ink_red_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.INK_RED_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ink_red_peony", () -> flowerPot(INK_RED_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_VERMILION_PEONY =
-            BLOCKS.register("potted_vermilion_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VERMILION_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_vermilion_peony", () -> flowerPot(VERMILION_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_PURPLE_PEONY =
-            BLOCKS.register("potted_purple_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PURPLE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_purple_peony", () -> flowerPot(PURPLE_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_LIGHT_PURPLE_PEONY =
-            BLOCKS.register("potted_light_purple_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_PURPLE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_purple_peony", () -> flowerPot(LIGHT_PURPLE_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_INK_PURPLE_PEONY =
-            BLOCKS.register("potted_ink_purple_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.INK_PURPLE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ink_purple_peony", () -> flowerPot(INK_PURPLE_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_VIOLET_PEONY =
-            BLOCKS.register("potted_violet_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VIOLET_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_violet_peony", () -> flowerPot(VIOLET_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_YELLOW_PEONY =
-            BLOCKS.register("potted_yellow_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_yellow_peony", () -> flowerPot(YELLOW_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_LIGHT_YELLOW_PEONY =
-            BLOCKS.register("potted_light_yellow_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_YELLOW_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_yellow_peony", () -> flowerPot(LIGHT_YELLOW_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_OCHRE_YELLOW_PEONY =
-            BLOCKS.register("potted_ochre_yellow_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.OCHRE_YELLOW_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ochre_yellow_peony", () -> flowerPot(OCHRE_YELLOW_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_GOLDEN_PEONY =
-            BLOCKS.register("potted_golden_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLDEN_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_golden_peony", () -> flowerPot(GOLDEN_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_PEONY =
-            BLOCKS.register("potted_white_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_peony", () -> flowerPot(WHITE_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_INK_PEONY =
-            BLOCKS.register("potted_ink_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.INK_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ink_peony", () -> flowerPot(INK_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_BLUE_PEONY =
-            BLOCKS.register("potted_blue_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.BLUE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_blue_peony", () -> flowerPot(BLUE_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_GREEN_PEONY =
-            BLOCKS.register("potted_green_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_peony", () -> flowerPot(GREEN_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_COLORFUL_PEONY =
-            BLOCKS.register("potted_colorful_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.COLORFUL_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_colorful_peony", () -> flowerPot(COLORFUL_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_LIGHT_COLORFUL_PEONY =
-            BLOCKS.register("potted_light_colorful_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_COLORFUL_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_colorful_peony", () -> flowerPot(LIGHT_COLORFUL_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_INK_COLORFUL_PEONY =
-            BLOCKS.register("potted_ink_colorful_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.INK_COLORFUL_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ink_colorful_peony", () -> flowerPot(INK_COLORFUL_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_RED_WHITE_PEONY =
-            BLOCKS.register("potted_red_white_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_WHITE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_white_peony", () -> flowerPot(RED_WHITE_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_PINK_WHITE_PEONY =
-            BLOCKS.register("potted_pink_white_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_WHITE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_white_peony", () -> flowerPot(PINK_WHITE_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_YELLOW_WHITE_PEONY =
-            BLOCKS.register("potted_yellow_white_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_WHITE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_yellow_white_peony", () -> flowerPot(YELLOW_WHITE_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_PURPLE_WHITE_PEONY =
-            BLOCKS.register("potted_purple_white_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PURPLE_WHITE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_purple_white_peony", () -> flowerPot(PURPLE_WHITE_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_WU_HUA_LONG_YU_PEONY =
-            BLOCKS.register("potted_wu_hua_long_yu_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WU_HUA_LONG_YU_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_wu_hua_long_yu_peony", () -> flowerPot(WU_HUA_LONG_YU_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_MAUVE_PEONY =
-            BLOCKS.register("potted_mauve_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MAUVE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_mauve_peony", () -> flowerPot(MAUVE_PEONY.get()));
     public static final DeferredBlock<Block> POTTED_CAMELLIA =
-            BLOCKS.register("potted_camellia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CAMELLIA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_camellia", () -> flowerPot(CAMELLIA.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_CAMELLIA =
-            BLOCKS.register("potted_white_camellia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_CAMELLIA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_camellia", () -> flowerPot(WHITE_CAMELLIA.get()));
     public static final DeferredBlock<Block> POTTED_PINK_CAMELLIA =
-            BLOCKS.register("potted_pink_camellia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_CAMELLIA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_camellia", () -> flowerPot(PINK_CAMELLIA.get()));
     public static final DeferredBlock<Block> POTTED_VERSICOLOR_CAMELLIA =
-            BLOCKS.register("potted_versicolor_camellia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VERSICOLOR_CAMELLIA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_versicolor_camellia", () -> flowerPot(VERSICOLOR_CAMELLIA.get()));
     public static final DeferredBlock<Block> POTTED_CRIMSON_AZALEA =
-            BLOCKS.register("potted_crimson_azalea", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CRIMSON_AZALEA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_crimson_azalea", () -> flowerPot(CRIMSON_AZALEA.get()));
     public static final DeferredBlock<Block> POTTED_FOUNTAIN_GRASS =
-            BLOCKS.register("potted_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_fountain_grass", () -> flowerPot(FOUNTAIN_GRASS.get()));
     public static final DeferredBlock<Block> POTTED_PURPLE_FOUNTAIN_GRASS =
-            BLOCKS.register("potted_purple_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PURPLE_FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_purple_fountain_grass", () -> flowerPot(PURPLE_FOUNTAIN_GRASS.get()));
     public static final DeferredBlock<Block> POTTED_PINK_FOUNTAIN_GRASS =
-            BLOCKS.register("potted_pink_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_fountain_grass", () -> flowerPot(PINK_FOUNTAIN_GRASS.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_FOUNTAIN_GRASS =
-            BLOCKS.register("potted_white_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_fountain_grass", () -> flowerPot(WHITE_FOUNTAIN_GRASS.get()));
 
     public static final DeferredBlock<Block> WINTERSWEET =
             registerBlock("wintersweet", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
@@ -1081,27 +1082,27 @@ public class ModBlocks {
             BLOCKS.register("golden_miscanthus", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> POTTED_WINTER_CYMBIDIUM =
-            BLOCKS.register("potted_winter_cymbidium", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WINTER_CYMBIDIUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_winter_cymbidium", () -> flowerPot(WINTER_CYMBIDIUM.get()));
     public static final DeferredBlock<Block> POTTED_WINTERSWEET =
-            BLOCKS.register("potted_wintersweet", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WINTERSWEET, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_wintersweet", () -> flowerPot(WINTERSWEET.get()));
     public static final DeferredBlock<Block> POTTED_CHINESE_ROSE =
-            BLOCKS.register("potted_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_chinese_rose", () -> flowerPot(CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_PINK_CHINESE_ROSE =
-            BLOCKS.register("potted_pink_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_chinese_rose", () -> flowerPot(PINK_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_YELLOW_CHINESE_ROSE =
-            BLOCKS.register("potted_yellow_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_yellow_chinese_rose", () -> flowerPot(YELLOW_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_CHINESE_ROSE =
-            BLOCKS.register("potted_white_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_chinese_rose", () -> flowerPot(WHITE_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_RED_PINK_CHINESE_ROSE =
-            BLOCKS.register("potted_red_pink_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_PINK_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_pink_chinese_rose", () -> flowerPot(RED_PINK_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_RED_YELLOW_CHINESE_ROSE =
-            BLOCKS.register("potted_red_yellow_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_YELLOW_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_yellow_chinese_rose", () -> flowerPot(RED_YELLOW_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_RED_WHITE_CHINESE_ROSE =
-            BLOCKS.register("potted_red_white_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_WHITE_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_white_chinese_rose", () -> flowerPot(RED_WHITE_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_PINK_WHITE_CHINESE_ROSE =
-            BLOCKS.register("potted_pink_white_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_WHITE_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_white_chinese_rose", () -> flowerPot(PINK_WHITE_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_YELLOW_WHITE_CHINESE_ROSE =
-            BLOCKS.register("potted_yellow_white_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_WHITE_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_yellow_white_chinese_rose", () -> flowerPot(YELLOW_WHITE_CHINESE_ROSE.get()));
 
     public static final DeferredBlock<Block> PEACH_PINK_PETALS =
             registerBlock("peach_pink_petals", () -> new PeachPinkPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
@@ -1111,13 +1112,13 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MOTTLED_BAMBOO =
             BLOCKS.register("mottled_bamboo", () -> new MottledBambooStalkBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO)));
     public static final DeferredBlock<Block> POTTED_MOTTLED_BAMBOO =
-            BLOCKS.register("potted_mottled_bamboo", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MOTTLED_BAMBOO, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_mottled_bamboo", () -> flowerPot(MOTTLED_BAMBOO.get()));
     public static final DeferredBlock<Block> BLACK_BAMBOO_SAPLING =
             BLOCKS.register("black_bamboo_sapling", () -> new BlackBambooSaplingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_SAPLING)));
     public static final DeferredBlock<Block> BLACK_BAMBOO =
             BLOCKS.register("black_bamboo", () -> new BlackBambooStalkBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO)));
     public static final DeferredBlock<Block> POTTED_BLACK_BAMBOO =
-            BLOCKS.register("potted_black_bamboo", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.BLACK_BAMBOO, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_black_bamboo", () -> flowerPot(BLACK_BAMBOO.get()));
 
     public static final DeferredBlock<Block> LOTUS =
             registerBlock("lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.COLOR_PINK).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
@@ -1146,8 +1147,12 @@ public class ModBlocks {
                         .instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava());
     }
 
-    private static Block woodenButton() {
-        return new ButtonBlock(BlockSetType.OAK, 30, BlockBehaviour.Properties.of().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY));
+    private static Block woodenButton(BlockSetType type) {
+        return new ButtonBlock(type, 30, BlockBehaviour.Properties.of().noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY));
+    }
+
+    private static Block flowerPot(Block potted) {
+        return new FlowerPotBlock(potted, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY));
     }
 
     private static Block stair(Block baseBlock) {

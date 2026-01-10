@@ -22,7 +22,7 @@ import java.util.function.IntFunction;
 import java.util.function.Supplier;
 
 public class ModBoatEntity extends Boat {
-    private static final EntityDataAccessor<Integer> DATA_TD_TYPE = SynchedEntityData.defineId(Boat.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Integer> DATA_TD_TYPE = SynchedEntityData.defineId(ModBoatEntity.class, EntityDataSerializers.INT);
 
     public ModBoatEntity(EntityType<? extends Boat> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -72,7 +72,7 @@ public class ModBoatEntity extends Boat {
         builder.define(DATA_TD_TYPE, Type.RED_MEI.ordinal());
     }
 
-    protected void addAdditionalSavaData(CompoundTag pCompound) {
+    protected void addAdditionalSaveData(CompoundTag pCompound) {
         pCompound.putString("Type", this.getModVariant().getSerializedName());
     }
 

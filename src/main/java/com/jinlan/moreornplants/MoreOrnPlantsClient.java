@@ -38,6 +38,7 @@ import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 import java.util.stream.Stream;
@@ -184,7 +185,7 @@ public class MoreOrnPlantsClient {
             return new ModelLayerLocation(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + pPath), pModel);
         }
 
-        public Pair<ResourceLocation, ListModel<Boat>> getModelWithLocation(Boat boat) {
+        public @NotNull Pair<ResourceLocation, ListModel<Boat>> getModelWithLocation(@NotNull Boat boat) {
             if (boat instanceof ModBoatEntity modBoat) {
                 return this.boatResources.get(modBoat.getModVariant());
             } else if (boat instanceof ModChestBoatEntity modChestBoatEntity) {
@@ -311,6 +312,8 @@ public class MoreOrnPlantsClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
+
+
         Sheets.addWoodType(ModWoodTypes.RED_MEI);
         Sheets.addWoodType(ModWoodTypes.WHITE_MEI);
         Sheets.addWoodType(ModWoodTypes.GREEN_CALYX_MEI);

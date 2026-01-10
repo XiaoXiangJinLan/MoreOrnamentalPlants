@@ -7,14 +7,13 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.entity.vehicle.ChestBoat;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
 public class ModChestBoatEntity extends ChestBoat {
-    private static final EntityDataAccessor<Integer> DATA_TD_TYPE = SynchedEntityData.defineId(Boat.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Integer> DATA_TD_TYPE = SynchedEntityData.defineId(ModChestBoatEntity.class, EntityDataSerializers.INT);
 
     public ModChestBoatEntity(EntityType<? extends ChestBoat> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -30,7 +29,7 @@ public class ModChestBoatEntity extends ChestBoat {
 
     @Override
     public @NotNull Item getDropItem() {
-        switch (getModVariant()) {
+        return switch (getModVariant()) {
             case RED_MEI -> ModItems.RED_MEI_CHEST_BOAT.get();
             case WHITE_MEI -> ModItems.WHITE_MEI_CHEST_BOAT.get();
             case GREEN_CALYX_MEI ->ModItems.GREEN_CALYX_MEI_CHEST_BOAT.get();
@@ -48,8 +47,7 @@ public class ModChestBoatEntity extends ChestBoat {
             case DOVE_TREE ->ModItems.DOVE_TREE_CHEST_BOAT.get();
             case CHINABERRY ->ModItems.CHINABERRY_CHEST_BOAT.get();
             case DESERT_POPLAR ->ModItems.DESERT_POPLAR_CHEST_BOAT.get();
-        }
-        return super.getDropItem();
+        };
     }
 
     public void setVariant(ModBoatEntity.Type pVariant) {
@@ -61,11 +59,13 @@ public class ModChestBoatEntity extends ChestBoat {
         builder.define(DATA_TD_TYPE, ModBoatEntity.Type.RED_MEI.ordinal());
     }
 
-    protected void addAdditionalSavaData(CompoundTag pCompound) {
+    protected void addAdditionalSaveData(@NotNull CompoundTag pCompound) {
+        super.addAdditionalSaveData(pCompound);
         pCompound.putString("Type", this.getModVariant().getSerializedName());
     }
 
-    protected void readAdditionalSaveData(CompoundTag pCompound) {
+    protected void readAdditionalSaveData(@NotNull CompoundTag pCompound) {
+        super.readAdditionalSaveData(pCompound);
         if (pCompound.contains("Type", 8)) {
             this.setVariant(ModBoatEntity.Type.byName(pCompound.getString("Type")));
         }
