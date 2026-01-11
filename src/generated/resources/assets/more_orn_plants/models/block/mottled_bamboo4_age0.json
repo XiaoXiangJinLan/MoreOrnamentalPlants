@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/bamboo4_age0",
+  "render_type": "minecraft:cutout",
   "textures": {
     "all": "more_orn_plants:block/mottled_bamboo_stalk"
   }

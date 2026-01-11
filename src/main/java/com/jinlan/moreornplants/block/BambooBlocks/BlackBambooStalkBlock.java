@@ -82,28 +82,28 @@ public class BlackBambooStalkBlock extends BambooStalkBlock {
     }
 
     @Override
-    protected void growBamboo(@NotNull BlockState pState, Level pLevel, BlockPos pPos, @NotNull RandomSource pRandom, int pAge) {
-        BlockState blockstate = pLevel.getBlockState(pPos.below());
-        BlockPos blockpos = pPos.below(2);
-        BlockState blockstate1 = pLevel.getBlockState(blockpos);
+    protected void growBamboo(@NotNull BlockState state, Level level, BlockPos pos, @NotNull RandomSource random, int age) {
+        BlockState blockstate = level.getBlockState(pos.below());
+        BlockPos blockpos = pos.below(2);
+        BlockState blockstate1 = level.getBlockState(blockpos);
         BambooLeaves bambooleaves = BambooLeaves.NONE;
-        if (pAge >= 1) {
-            if (blockstate.is(ModBlocks.BLACK_BAMBOO.get()) && blockstate.getValue(LEAVES) != BambooLeaves.NONE) {
-                if (blockstate.is(ModBlocks.BLACK_BAMBOO.get()) && blockstate.getValue(LEAVES) != BambooLeaves.NONE) {
-                    bambooleaves = BambooLeaves.LARGE;
-                    if (blockstate1.is(ModBlocks.BLACK_BAMBOO.get())) {
-                        pLevel.setBlock(pPos.below(), blockstate.setValue(LEAVES, BambooLeaves.SMALL), 3);
-                        pLevel.setBlock(blockpos, blockstate1.setValue(LEAVES, BambooLeaves.NONE), 3);
-                    }
-                }
-            } else {
+        if (age >= 1) {
+            if (!blockstate.is(ModBlocks.BLACK_BAMBOO) || blockstate.getValue(LEAVES) == BambooLeaves.NONE) {
                 bambooleaves = BambooLeaves.SMALL;
+            } else if (blockstate.is(ModBlocks.BLACK_BAMBOO) && blockstate.getValue(LEAVES) != BambooLeaves.NONE) {
+                bambooleaves = BambooLeaves.LARGE;
+                if (blockstate1.is(ModBlocks.BLACK_BAMBOO)) {
+                    level.setBlock(pos.below(), blockstate.setValue(LEAVES, BambooLeaves.SMALL), 3);
+                    level.setBlock(blockpos, blockstate1.setValue(LEAVES, BambooLeaves.NONE), 3);
+                }
             }
         }
 
-        int i = pState.getValue(AGE) != 1 && !blockstate1.is(ModBlocks.BLACK_BAMBOO.get()) ? 0 : 1;
-        int j = (pAge < 11 || !(pRandom.nextFloat() < 0.25F)) && pAge != 15 ? 0 : 1;
-        pLevel.setBlock(pPos.above(), this.defaultBlockState().setValue(AGE, i).setValue(LEAVES, bambooleaves).setValue(STAGE, j), 3);
+        int i = state.getValue(AGE) != 1 && !blockstate1.is(ModBlocks.BLACK_BAMBOO) ? 0 : 1;
+        int j = (age < 11 || !(random.nextFloat() < 0.25F)) && age != 15 ? 0 : 1;
+        level.setBlock(
+                pos.above(), this.defaultBlockState().setValue(AGE, i).setValue(LEAVES, bambooleaves).setValue(STAGE, j), 3
+        );
     }
 
     @Override

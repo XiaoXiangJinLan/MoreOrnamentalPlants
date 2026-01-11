@@ -820,7 +820,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void leavesBlock(DeferredBlock<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(),
                 models().singleTexture(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
-                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+                        "all", blockTexture(blockRegistryObject.get())));
     }
 
     private void blockItem(DeferredBlock<Block> blockRegistryObject) {
@@ -847,10 +847,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         for (int i = 1; i <= 4; i++) {
             models().getBuilder(baseName + i + "_age0")
                     .parent(new ModelFile.UncheckedModelFile("block/bamboo" + i + "_age0"))
-                    .texture("all", stalkTexture);
+                    .texture("all", stalkTexture).renderType("cutout");
             models().getBuilder(baseName + i + "_age1")
                     .parent(new ModelFile.UncheckedModelFile("block/bamboo" + i + "_age1"))
-                    .texture("all", stalkTexture);
+                    .texture("all", stalkTexture).renderType("cutout");
         }
         models().getBuilder(baseName + "_small_leaves")
                 .parent(new ModelFile.UncheckedModelFile("block/bamboo_small_leaves"))
