@@ -511,7 +511,8 @@ public class ModConfiguredFeatures {
                                         .add(ModBlocks.SPRING_CYMBIDIUM.get().defaultBlockState(), 1)
                                         .add(ModBlocks.SUMMER_CYMBIDIUM.get().defaultBlockState(), 1)
                                         .add(ModBlocks.AUTUMN_CYMBIDIUM.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.WINTER_CYMBIDIUM.get().defaultBlockState(), 1).build())),
+                                        .add(ModBlocks.WINTER_CYMBIDIUM.get().defaultBlockState(), 1)
+                                        .add(Blocks.BLUE_ORCHID.defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));

@@ -1,5 +1,6 @@
-// 1.20.1	2026-01-03T18:56:11.3597551	Tags for minecraft:block mod id more_orn_plants
+// 1.20.1	2026-01-11T12:15:59.803151	Tags for minecraft:block mod id more_orn_plants
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/blocks/ceiling_hanging_signs.json
+42089a1ef9f36ec2d4f4dac97ce4b5ec52328729 data/minecraft/tags/blocks/climbable.json
 21725c6c03c5b6dfb49d3424ee057a84716b5322 data/minecraft/tags/blocks/crops.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/minecraft/tags/blocks/fence_gates.json
 f7fb0bb6b7442e235e3420d026cde361b43f3acc data/minecraft/tags/blocks/flowers.json

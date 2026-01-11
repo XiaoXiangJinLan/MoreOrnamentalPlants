@@ -240,6 +240,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
                 .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
 
+        this.tag(BlockTags.CLIMBABLE)
+                .add(ModBlocks.RED_WEEPING_MEI.get())
+                .add(ModBlocks.RED_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.WHITE_WEEPING_MEI.get())
+                .add(ModBlocks.WHITE_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.GREEN_WEEPING_MEI.get())
+                .add(ModBlocks.GREEN_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.PINK_WEEPING_MEI.get())
+                .add(ModBlocks.PINK_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get())
+                .add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get());
+
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.MOTTLED_BAMBOO_SAPLING.get())
                 .add(ModBlocks.BLACK_BAMBOO_SAPLING.get())

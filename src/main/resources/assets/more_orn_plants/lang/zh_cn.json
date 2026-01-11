@@ -696,7 +696,7 @@
   "advancement.moreornplants.apricot_village.title": "杏花村",
   "advancement.moreornplants.apricot_village.description": "借问酒家何处有？牧童遥指杏花村",
 
-  "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§o小乔木，非建材",
-  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§o观赏品种，非建材，熊猫不爱吃"
+  "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小乔木，非建材",
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7观赏品种，非建材，熊猫不爱吃"
 
 }
