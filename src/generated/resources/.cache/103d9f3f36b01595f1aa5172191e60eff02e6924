@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-09T19:03:40.0456699	Registries
+// 1.21.1	2026-01-11T12:33:54.3210726	Registries
 3ddc3b133094aa07c1409ba7eaf7c44055262e1e data/more_orn_plants/worldgen/biome/camellia_valley.json
 c4e6b8bfd78b4150bf555185f300db6539cb8efc data/more_orn_plants/worldgen/biome/chinaberry_woods.json
 bc9cb81b4ac24fad7406c10470544df8b20a0f10 data/more_orn_plants/worldgen/biome/chinese_rose_fields.json
@@ -48,7 +48,7 @@ b45868211ac6d40f0ba92c3c8ded2b475b48cadf data/more_orn_plants/worldgen/configure
 a0a789ff764f415122319cf5cf1bd676b18c7e56 data/more_orn_plants/worldgen/configured_feature/crimson_azalea_grove.json
 503ba397d57f37715e34700be06d62cf59a90f83 data/more_orn_plants/worldgen/configured_feature/crimson_azalea_key.json
 6be695872fd793405b68a1c43403bc068b5ebfa9 data/more_orn_plants/worldgen/configured_feature/cymbidium.json
-4640374492b8737a1497cd86325d8b253d04d631 data/more_orn_plants/worldgen/configured_feature/cymbidium_river.json
+69ac2826c24f2df0d2e4c09d7dc5e0a3e4d55986 data/more_orn_plants/worldgen/configured_feature/cymbidium_river.json
 aff042025eb5951085f5298f4398042724a93143 data/more_orn_plants/worldgen/configured_feature/dead_bush.json
 28f0358130727fa30c971531a95f06998fdc5903 data/more_orn_plants/worldgen/configured_feature/desert_poplar_0.json
 ab8e7372ac75756bd1528fdff670c278dae975cb data/more_orn_plants/worldgen/configured_feature/desert_poplar_1.json
