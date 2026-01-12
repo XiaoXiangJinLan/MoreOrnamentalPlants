@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.block.FlowerBlocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -57,11 +58,11 @@ public class LeafPileBlock extends WaterlilyBlock {
         boolean canPlaceOnWater = (fluidstate.getType() == Fluids.WATER || pState.getBlock() instanceof IceBlock) && fluidstate1.getType() == Fluids.EMPTY;
 
         boolean canPlaceOnFullSurface = pState.isFaceSturdy(pLevel, pPos, Direction.UP)
-                && pState.getBlock() != Blocks.AIR && fluidstate1.getType() == Fluids.EMPTY;
+                && pState.getBlock() != Blocks.AIR;
 
-        boolean canPlaceOnFarmland = pState.getBlock() == Blocks.FARMLAND && fluidstate1.getType() == Fluids.EMPTY;
+        boolean canPlaceOnFarmlandOrLeaves = pState.getBlock() == Blocks.FARMLAND || pState.is(BlockTags.LEAVES);
 
-        return canPlaceOnWater || canPlaceOnFullSurface || canPlaceOnFarmland;
+        return canPlaceOnWater || canPlaceOnFullSurface || canPlaceOnFarmlandOrLeaves;
     }
 
     @Override
