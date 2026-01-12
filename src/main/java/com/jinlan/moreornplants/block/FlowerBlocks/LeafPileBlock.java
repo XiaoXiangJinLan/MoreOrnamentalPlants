@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.block.FlowerBlocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
@@ -51,16 +52,16 @@ public class LeafPileBlock extends WaterlilyBlock {
     }
 
     @Override
-    protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, @NotNull BlockPos pPos) {
-        FluidState fluidstate = pLevel.getFluidState(pPos);
-        FluidState fluidstate1 = pLevel.getFluidState(pPos.above());
-        boolean canPlaceOnWater = (fluidstate.getType() == Fluids.WATER || pState.getBlock() instanceof IceBlock) && fluidstate1.getType() == Fluids.EMPTY;
+    protected boolean mayPlaceOn(BlockState state, BlockGetter level, @NotNull BlockPos pos) {
+        FluidState fluidstate = level.getFluidState(pos);
+        FluidState fluidstate1 = level.getFluidState(pos.above());
+        boolean canPlaceOnWater = (fluidstate.getType() == Fluids.WATER || state.getBlock() instanceof IceBlock) && fluidstate1.getType() == Fluids.EMPTY;
 
-        boolean canPlaceOnFullSurface = pState.isFaceSturdy(pLevel, pPos, Direction.UP) && pState.getBlock() != Blocks.AIR;
+        boolean canPlaceOnFullSurface = state.isFaceSturdy(level, pos, Direction.UP) && state.getBlock() != Blocks.AIR;
 
-        boolean canPlaceOnFarmland = pState.getBlock() instanceof FarmBlock;
+        boolean canPlaceOnFarmlandOrLeaves = state.getBlock() instanceof FarmBlock || state.is(BlockTags.LEAVES);
 
-        return canPlaceOnWater || canPlaceOnFullSurface || canPlaceOnFarmland;
+        return canPlaceOnWater || canPlaceOnFullSurface || canPlaceOnFarmlandOrLeaves;
     }
 
     @Override
