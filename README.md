@@ -113,7 +113,7 @@ New Fuels
 **梧桐落叶**：可以燃烧120游戏刻；  
 **其他落叶**：可以燃烧100游戏刻。
 
-Else: The following are the block id for some of the plant blocks in this mod
+The block id for some of the plant blocks in this mod
 ==========
 #_flowers_#  
 more_orn_plants:peony more_orn_plants:light_pink_peony more_orn_plants:violet_pink_peony more_orn_plants:pink_peony more_orn_plants:red_peony 
