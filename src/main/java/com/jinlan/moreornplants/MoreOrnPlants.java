@@ -152,6 +152,7 @@ public class MoreOrnPlants {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.getId(), ModBlocks.POTTED_YELLOW_WHITE_CHINESE_ROSE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.MOTTLED_BAMBOO.getId(), ModBlocks.POTTED_MOTTLED_BAMBOO);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BLACK_BAMBOO.getId(), ModBlocks.POTTED_BLACK_BAMBOO);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BAMBOO_STICK.getId(), ModBlocks.POTTED_BAMBOO_STICK);
         });
     }
 

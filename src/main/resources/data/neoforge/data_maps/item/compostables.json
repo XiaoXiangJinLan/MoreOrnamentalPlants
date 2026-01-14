@@ -446,6 +446,9 @@
     },
     "more_orn_plants:lotus_seed_pod": {
       "chance": 0.5
+    },
+    "more_orn_plants:bamboo_stick": {
+      "chance": 0.3
     }
   }
 }

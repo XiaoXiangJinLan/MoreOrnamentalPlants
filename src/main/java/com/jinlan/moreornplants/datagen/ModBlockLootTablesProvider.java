@@ -1,28 +1,21 @@
 package com.jinlan.moreornplants.datagen;
 
-import com.jinlan.moreornplants.block.FlowerBlocks.PeachPinkPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
-import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
-import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import org.jetbrains.annotations.NotNull;
@@ -31,13 +24,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ModBlockLootTablesProvider extends BlockLootSubProvider {
-    private LootItemCondition.Builder hasShearsOrSilkTouch() {
-        return HAS_SHEARS.or(this.hasSilkTouch());
-    }
-    private LootItemCondition.Builder doesNotHaveShearsOrSilkTouch() {
-        return this.hasShearsOrSilkTouch().invert();
-    }
-    private static final float[] NORMAL_LEAVES_STICK_CHANCES = new float[]{0.02F, 0.022222223F, 0.025F, 0.033333335F, 0.1F};
     private final Set<Block> excludedBlocks = new HashSet<>();
 
     public ModBlockLootTablesProvider(HolderLookup.Provider registries) {
@@ -737,6 +723,9 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
         this.add(ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.WHITE_FOUNTAIN_GRASS.get()));
+        this.dropSelf(ModBlocks.BAMBOO_STICK.get());
+        this.add(ModBlocks.POTTED_BAMBOO_STICK.get(),
+                createPotFlowerItemTable(ModBlocks.BAMBOO_STICK.get()));
 
         this.add(ModBlocks.POTTED_WINTER_CYMBIDIUM.get(),
                 createPotFlowerItemTable(ModBlocks.WINTER_CYMBIDIUM.get()));
@@ -828,29 +817,7 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                                         .hasProperty(WaterLotusBlock.AGE, 3))))
         );
 
-        this.add(ModBlocks.PEACH_PINK_PETALS.get(), block -> {
-            LootPool.Builder pool = LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                    .add(LootItem.lootTableItem(ModBlocks.PEACH_PINK_PETALS.get())
-                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1.0F))
-                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                            .setProperties(StatePropertiesPredicate.Builder.properties()
-                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 1))))
-                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2.0F))
-                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                            .setProperties(StatePropertiesPredicate.Builder.properties()
-                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 2))))
-                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(3.0F))
-                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                            .setProperties(StatePropertiesPredicate.Builder.properties()
-                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 3))))
-                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(4.0F))
-                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                            .setProperties(StatePropertiesPredicate.Builder.properties()
-                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 4))))
-                            .apply(ApplyExplosionDecay.explosionDecay()));
-            return LootTable.lootTable().withPool(pool);
-        });
-
+        this.add(ModBlocks.PEACH_PINK_PETALS.get(), createPetalsDrops(ModBlocks.PEACH_PINK_PETALS.get()));
         this.dropSelf(ModBlocks.ORNAMENTAL_PEACH_PETALS.get());
         this.dropSelf(ModBlocks.WILD_PEACH_PETALS.get());
         this.dropSelf(ModBlocks.CHINESE_PARASOL_LEAF_0.get());
@@ -859,17 +826,6 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_1.get());
         this.dropSelf(ModBlocks.GINKGO_LEAF_PILE.get());
 
-    }
-
-    protected LootTable.Builder createWeepingMeiPlantDrops(Block plantBlock, Block flowerBlock, Block saplingBlock, float... chances) {
-        return this.createSilkTouchOrShearsDispatchTable(plantBlock, this.applyExplosionCondition(plantBlock, LootItem.lootTableItem(saplingBlock))
-                        .when(BonusLevelTableCondition.bonusLevelFlatChance(
-                                this.registries.lookupOrThrow(Registries.ENCHANTMENT)
-                                        .getOrThrow(Enchantments.FORTUNE), chances)))
-                .withPool(LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0F)).when(this.doesNotHaveShearsOrSilkTouch()).add(this.applyExplosionDecay(plantBlock, LootItem.lootTableItem(Items.STICK)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))).when(BonusLevelTableCondition.bonusLevelFlatChance(this.registries.lookupOrThrow(Registries.ENCHANTMENT)
-                                .getOrThrow(Enchantments.FORTUNE), NORMAL_LEAVES_STICK_CHANCES))));
     }
 
     private LootTable.Builder createLotusDrops(Block lotusBlock) {

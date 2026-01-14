@@ -36,7 +36,7 @@ covering the ground.
 by White Apricot and Camphor trees.  
 • Crimson Highlands – Highland slopes covered with Crimson Azaleas, dotted with Red Mei and Ornamental Peach trees.  
 • Peony Meadows – A sea of flowers growing various Peonies and Herbaceous Peonies, accompanied by Upright Crabapple 
-trees. The ground and sky are tinted pale pink-purple.  
+trees. The sky are tinted pale pink-purple.  
 • Chinese Rose Fields – A floral field growing various Chinese Roses and vanilla Rose Bushes.  
 • Miscanthus Fields – A plain covered with Golden Miscanthus.  
 • Crops Green – A plain growing various Fountain Grasses, Miscanthus, Chinese Roses, Autumn Cymbidium, vanilla Alliums, 
@@ -90,7 +90,7 @@ New Fuels
 •**梅山**：生长有绿萼梅的高山雪坡；  
 •**茶花谷**：生长有大量山茶及变种白山茶、红白山茶的山谷，伴有白杏和樟树点缀；  
 •**映山红**：生长有大量映山红的高地山坡，伴有红梅和碧桃点缀；  
-•**牡丹花海**：生长有多种牡丹和芍药的花海，伴有西府海棠点缀，地面和天空为淡粉紫色；  
+•**牡丹花海**：生长有多种牡丹和芍药的花海，伴有西府海棠点缀，天空为淡粉紫色；  
 •**月季花海**：生长有多种月季、原版玫瑰丛的花海；  
 •**芒草田**：生长有大量金芒草的平原；  
 •**禾青**：生长有多种狼尾草、芒草、月季、建兰、原版绒球葱和蒲公英的平原，伴有樟树点缀；  

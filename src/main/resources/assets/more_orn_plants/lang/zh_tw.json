@@ -444,6 +444,7 @@
   "block.more_orn_plants.lotus": "荷花",
   "block.more_orn_plants.white_lotus": "白蓮",
   "block.more_orn_plants.lotus_leaf": "荷葉",
+  "block.more_orn_plants.bamboo_stick": "竹筍炒肉",
 
   "block.more_orn_plants.potted_red_mei_sapling": "紅梅樹苗盆栽",
   "block.more_orn_plants.potted_white_mei_sapling": "江梅樹苗盆栽",
@@ -540,6 +541,7 @@
   "block.more_orn_plants.potted_white_fountain_grass": "白狼尾草盆栽",
   "block.more_orn_plants.potted_mottled_bamboo": "湘妃竹盆栽",
   "block.more_orn_plants.potted_black_bamboo": "紫竹盆栽",
+  "block.more_orn_plants.potted_bamboo_stick": "竹筍炒肉盆栽",
 
   "entity.more_orn_plants.mod_boat": "船",
   "entity.more_orn_plants.mod_chest_boat": "儲物箱船",

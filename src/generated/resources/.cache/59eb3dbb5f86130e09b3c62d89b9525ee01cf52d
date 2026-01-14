@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-10T15:22:18.0257142	Loot Tables
+// 1.21.1	2026-01-14T18:28:50.2187807	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_table/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_table/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_table/blocks/apricot_fence.json
@@ -15,6 +15,7 @@ d3487aaa8669d81208ba7b68adf95ca7a963e133 data/more_orn_plants/loot_table/blocks/
 50119286da18529329d05ae0780856a9444b360c data/more_orn_plants/loot_table/blocks/apricot_wall_sign.json
 340bb9eecdf720f4241f62be477d314f6495be14 data/more_orn_plants/loot_table/blocks/apricot_wood.json
 622a8c65cc22ee51436213011c852860ff97adba data/more_orn_plants/loot_table/blocks/autumn_cymbidium.json
+e642b04125ea29046f8cb70b2b26c476ef36ddf8 data/more_orn_plants/loot_table/blocks/bamboo_stick.json
 1b29850b1d0dd31332a4476eda900e3914bf710d data/more_orn_plants/loot_table/blocks/black_bamboo.json
 fb2517ffe1470e2ee21bc44fdf8bbb193150bd30 data/more_orn_plants/loot_table/blocks/black_bamboo_sapling.json
 36e600f303974a55f8612197060c530d527ee6c2 data/more_orn_plants/loot_table/blocks/blue_peony.json
@@ -283,6 +284,7 @@ e4a152f7a13d5bd6418883c14afee448f5ed5204 data/more_orn_plants/loot_table/blocks/
 a7f650f180b09f235271c5f1cbbc643a189c59aa data/more_orn_plants/loot_table/blocks/pink_white_chinese_rose.json
 f80ebed5c895690e84192dfc9f60d6c4d182441a data/more_orn_plants/loot_table/blocks/pink_white_peony.json
 dc55dc7e13297e130866e84892f39c0ada97fc9e data/more_orn_plants/loot_table/blocks/potted_autumn_cymbidium.json
+03bca2a20b4f7c6ae374eaa5bf291b3fbca0877f data/more_orn_plants/loot_table/blocks/potted_bamboo_stick.json
 86c45057d1f0f48be1af0fa5eeee5410140e6e6f data/more_orn_plants/loot_table/blocks/potted_black_bamboo.json
 ce189510e4dbb8769d194545390d0c2fbff97128 data/more_orn_plants/loot_table/blocks/potted_blue_peony.json
 bc3ec115c29f21a3fca98478fe07021ec4b0e656 data/more_orn_plants/loot_table/blocks/potted_camellia.json

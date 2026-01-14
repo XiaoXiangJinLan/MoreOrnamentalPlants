@@ -322,6 +322,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.PURPLE_FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PINK_FOUNTAIN_GRASS);
         flowerItem(ModBlocks.WHITE_FOUNTAIN_GRASS);
+        flowerItem(ModBlocks.BAMBOO_STICK);
 
         flowerUsePottedTextureItem(ModBlocks.WINTER_CYMBIDIUM);
         tallCrossItem(ModBlocks.WINTERSWEET);

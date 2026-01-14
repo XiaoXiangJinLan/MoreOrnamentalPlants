@@ -23,22 +23,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
         this.tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(ModBlocks.MOTTLED_BAMBOO.get())
-                .add(ModBlocks.BLACK_BAMBOO.get())
-                .add(ModBlocks.FOUNTAIN_GRASS.get())
-                .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.PINK_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
+                .add(ModBlocks.MOTTLED_BAMBOO.get(), ModBlocks.BLACK_BAMBOO.get())
+                .add(ModBlocks.FOUNTAIN_GRASS.get(), ModBlocks.PURPLE_FOUNTAIN_GRASS.get(), ModBlocks.PINK_FOUNTAIN_GRASS.get(), ModBlocks.WHITE_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.CROPS)
-                .add(ModBlocks.LOTUS.get())
-                .add(ModBlocks.WHITE_LOTUS.get())
-                .add(ModBlocks.LOTUS_LEAF.get());
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.LOTUS_LEAF.get());
 
         this.tag(BlockTags.MAINTAINS_FARMLAND)
-                .add(ModBlocks.LOTUS.get())
-                .add(ModBlocks.WHITE_LOTUS.get())
-                .add(ModBlocks.LOTUS_LEAF.get());
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.LOTUS_LEAF.get());
 
         this.tag(BlockTags.SWORD_EFFICIENT)
                 .add(ModBlocks.RED_WEEPING_MEI.get())
@@ -51,10 +44,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.FOUNTAIN_GRASS.get())
-                .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.PINK_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
+                .add(ModBlocks.FOUNTAIN_GRASS.get(), ModBlocks.PURPLE_FOUNTAIN_GRASS.get(), ModBlocks.PINK_FOUNTAIN_GRASS.get(), ModBlocks.WHITE_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.FLOWER_POTS)
                 .add(ModBlocks.POTTED_RED_MEI_SAPLING.get())
@@ -67,22 +58,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_GREEN_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_PINK_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_VERSICOLOR_WEEPING_MEI_SAPLING.get())
-                .add(ModBlocks.POTTED_UPRIGHT_CRABAPPLE_SAPLING.get())
-                .add(ModBlocks.POTTED_WEEPING_CRABAPPLE_SAPLING.get())
-                .add(ModBlocks.POTTED_PINK_APRICOT_SAPLING.get())
-                .add(ModBlocks.POTTED_WHITE_APRICOT_SAPLING.get())
-                .add(ModBlocks.POTTED_ORNAMENTAL_PEACH_SAPLING.get())
-                .add(ModBlocks.POTTED_WILD_PEACH_SAPLING.get())
+                .add(ModBlocks.POTTED_UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.POTTED_WEEPING_CRABAPPLE_SAPLING.get())
+                .add(ModBlocks.POTTED_PINK_APRICOT_SAPLING.get(), ModBlocks.POTTED_WHITE_APRICOT_SAPLING.get())
+                .add(ModBlocks.POTTED_ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.POTTED_WILD_PEACH_SAPLING.get())
                 .add(ModBlocks.POTTED_PEAR_SAPLING.get())
-                .add(ModBlocks.POTTED_FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get())
-                .add(ModBlocks.POTTED_PURPLE_LEAF_PLUM_SAPLING.get())
-                .add(ModBlocks.POTTED_GOLDEN_OSMANTHUS_SAPLING.get())
-                .add(ModBlocks.POTTED_ORANGE_OSMANTHUS_SAPLING.get())
-                .add(ModBlocks.POTTED_WHITE_OSMANTHUS_SAPLING.get())
-                .add(ModBlocks.POTTED_GOLDEN_GINKGO_SAPLING.get())
-                .add(ModBlocks.POTTED_GREEN_GINKGO_SAPLING.get())
-                .add(ModBlocks.POTTED_YELLOW_CHINESE_PARASOL_SAPLING.get())
-                .add(ModBlocks.POTTED_GREEN_CHINESE_PARASOL_SAPLING.get())
+                .add(ModBlocks.POTTED_FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get(), ModBlocks.POTTED_PURPLE_LEAF_PLUM_SAPLING.get())
+                .add(ModBlocks.POTTED_GOLDEN_OSMANTHUS_SAPLING.get(), ModBlocks.POTTED_ORANGE_OSMANTHUS_SAPLING.get(), ModBlocks.POTTED_WHITE_OSMANTHUS_SAPLING.get())
+                .add(ModBlocks.POTTED_GOLDEN_GINKGO_SAPLING.get(), ModBlocks.POTTED_GREEN_GINKGO_SAPLING.get())
+                .add(ModBlocks.POTTED_YELLOW_CHINESE_PARASOL_SAPLING.get(), ModBlocks.POTTED_GREEN_CHINESE_PARASOL_SAPLING.get())
                 .add(ModBlocks.POTTED_SWEETGUM_SAPLING.get())
                 .add(ModBlocks.POTTED_CAMPHOR_SAPLING.get())
                 .add(ModBlocks.POTTED_DOVE_TREE_SAPLING.get())
@@ -164,17 +147,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get())
-                .add(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get())
-                .add(ModBlocks.PINK_APRICOT_SAPLING.get())
-                .add(ModBlocks.WHITE_APRICOT_SAPLING.get())
-                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get())
-                .add(ModBlocks.WILD_PEACH_SAPLING.get())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get())
+                .add(ModBlocks.PINK_APRICOT_SAPLING.get(), ModBlocks.WHITE_APRICOT_SAPLING.get())
+                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.WILD_PEACH_SAPLING.get())
                 .add(ModBlocks.PEAR_SAPLING.get())
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get())
-                .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get())
-                .add(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get())
-                .add(ModBlocks.WHITE_OSMANTHUS_SAPLING.get())
+                .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get(), ModBlocks.ORANGE_OSMANTHUS_SAPLING.get(), ModBlocks.WHITE_OSMANTHUS_SAPLING.get())
                 .add(ModBlocks.DOVE_TREE_SAPLING.get())
                 .add(ModBlocks.CHINABERRY_SAPLING.get())
                 .add(ModBlocks.DESERT_POPLAR_SAPLING.get())
@@ -194,17 +172,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get())
-                .add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
-                .add(ModBlocks.PINK_APRICOT_LEAVES.get())
-                .add(ModBlocks.WHITE_APRICOT_LEAVES.get())
-                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get())
-                .add(ModBlocks.WILD_PEACH_LEAVES.get())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
+                .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get())
+                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get())
                 .add(ModBlocks.PEAR_LEAVES.get())
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get())
-                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get())
-                .add(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get())
-                .add(ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
+                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
                 .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
@@ -217,27 +190,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get())
                 .add(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get())
                 .add(ModBlocks.VERSICOLOR_MEI_LEAVES.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get())
-                .add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
-                .add(ModBlocks.PINK_APRICOT_LEAVES.get())
-                .add(ModBlocks.WHITE_APRICOT_LEAVES.get())
-                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get())
-                .add(ModBlocks.WILD_PEACH_LEAVES.get())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
+                .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get())
+                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get())
                 .add(ModBlocks.PEAR_LEAVES.get())
-                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get())
-                .add(ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get())
-                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get())
-                .add(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get())
-                .add(ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
-                .add(ModBlocks.GOLDEN_GINKGO_LEAVES.get())
-                .add(ModBlocks.GREEN_GINKGO_LEAVES.get())
-                .add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get())
-                .add(ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get())
+                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get(), ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get())
+                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
+                .add(ModBlocks.GOLDEN_GINKGO_LEAVES.get(), ModBlocks.GREEN_GINKGO_LEAVES.get())
+                .add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get(), ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get())
                 .add(ModBlocks.SWEETGUM_LEAVES.get())
-                .add(ModBlocks.CAMPHOR_LEAVES.get())
-                .add(ModBlocks.NEW_CAMPHOR_LEAVES.get())
-                .add(ModBlocks.DOVE_TREE_LEAVES.get())
-                .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
+                .add(ModBlocks.CAMPHOR_LEAVES.get(), ModBlocks.NEW_CAMPHOR_LEAVES.get())
+                .add(ModBlocks.DOVE_TREE_LEAVES.get(), ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
                 .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
@@ -255,37 +218,27 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get());
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
-                .add(ModBlocks.MOTTLED_BAMBOO_SAPLING.get())
-                .add(ModBlocks.BLACK_BAMBOO_SAPLING.get())
+                .add(ModBlocks.MOTTLED_BAMBOO_SAPLING.get(), ModBlocks.BLACK_BAMBOO_SAPLING.get())
                 .add(ModBlocks.RED_MEI_LEAVES.get())
                 .add(ModBlocks.WHITE_MEI_LEAVES.get())
                 .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get())
                 .add(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get())
                 .add(ModBlocks.VERSICOLOR_MEI_LEAVES.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get())
-                .add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
-                .add(ModBlocks.PINK_APRICOT_LEAVES.get())
-                .add(ModBlocks.WHITE_APRICOT_LEAVES.get())
-                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get())
-                .add(ModBlocks.WILD_PEACH_LEAVES.get())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
+                .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get())
+                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get())
                 .add(ModBlocks.PEAR_LEAVES.get())
-                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get())
-                .add(ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get())
-                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get())
-                .add(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get())
-                .add(ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
-                .add(ModBlocks.GOLDEN_GINKGO_LEAVES.get())
-                .add(ModBlocks.GREEN_GINKGO_LEAVES.get())
-                .add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get())
-                .add(ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get())
+                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get(), ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get())
+                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
+                .add(ModBlocks.GOLDEN_GINKGO_LEAVES.get(), ModBlocks.GREEN_GINKGO_LEAVES.get())
+                .add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get(), ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get())
                 .add(ModBlocks.SWEETGUM_LEAVES.get())
-                .add(ModBlocks.CAMPHOR_LEAVES.get())
-                .add(ModBlocks.NEW_CAMPHOR_LEAVES.get())
-                .add(ModBlocks.DOVE_TREE_LEAVES.get())
-                .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
+                .add(ModBlocks.CAMPHOR_LEAVES.get(), ModBlocks.NEW_CAMPHOR_LEAVES.get())
+                .add(ModBlocks.DOVE_TREE_LEAVES.get(), ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
-                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get())
+                .add(ModBlocks.PEACH_PINK_PETALS.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .addTag(ModTags.Blocks.RED_MEI_LOGS)
@@ -633,90 +586,39 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get());
 
         this.tag(ModTags.Blocks.RED_MEI_LOGS)
-                .add(ModBlocks.RED_MEI_LOG.get(),
-                        ModBlocks.RED_MEI_WOOD.get(),
-                        ModBlocks.STRIPPED_RED_MEI_LOG.get(),
-                        ModBlocks.STRIPPED_RED_MEI_WOOD.get());
+                .add(ModBlocks.RED_MEI_LOG.get(), ModBlocks.RED_MEI_WOOD.get(), ModBlocks.STRIPPED_RED_MEI_LOG.get(), ModBlocks.STRIPPED_RED_MEI_WOOD.get());
         this.tag(ModTags.Blocks.WHITE_MEI_LOGS)
-                .add(ModBlocks.WHITE_MEI_LOG.get(),
-                        ModBlocks.WHITE_MEI_WOOD.get(),
-                        ModBlocks.STRIPPED_WHITE_MEI_LOG.get(),
-                        ModBlocks.STRIPPED_WHITE_MEI_WOOD.get());
+                .add(ModBlocks.WHITE_MEI_LOG.get(), ModBlocks.WHITE_MEI_WOOD.get(), ModBlocks.STRIPPED_WHITE_MEI_LOG.get(), ModBlocks.STRIPPED_WHITE_MEI_WOOD.get());
         this.tag(ModTags.Blocks.GREEN_CALYX_MEI_LOGS)
-                .add(ModBlocks.GREEN_CALYX_MEI_LOG.get(),
-                        ModBlocks.GREEN_CALYX_MEI_WOOD.get(),
-                        ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.get(),
-                        ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.get());
+                .add(ModBlocks.GREEN_CALYX_MEI_LOG.get(), ModBlocks.GREEN_CALYX_MEI_WOOD.get(), ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.get(), ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.get());
         this.tag(ModTags.Blocks.DOUBLE_PINK_MEI_LOGS)
-                .add(ModBlocks.DOUBLE_PINK_MEI_LOG.get(),
-                        ModBlocks.DOUBLE_PINK_MEI_WOOD.get(),
-                        ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG.get(),
-                        ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD.get());
+                .add(ModBlocks.DOUBLE_PINK_MEI_LOG.get(), ModBlocks.DOUBLE_PINK_MEI_WOOD.get(), ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG.get(), ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD.get());
         this.tag(ModTags.Blocks.CRABAPPLE_LOGS)
-                .add(ModBlocks.CRABAPPLE_LOG.get(),
-                        ModBlocks.CRABAPPLE_WOOD.get(),
-                        ModBlocks.STRIPPED_CRABAPPLE_LOG.get(),
-                        ModBlocks.STRIPPED_CRABAPPLE_WOOD.get());
+                .add(ModBlocks.CRABAPPLE_LOG.get(), ModBlocks.CRABAPPLE_WOOD.get(), ModBlocks.STRIPPED_CRABAPPLE_LOG.get(), ModBlocks.STRIPPED_CRABAPPLE_WOOD.get());
         this.tag(ModTags.Blocks.APRICOT_LOGS)
-                .add(ModBlocks.APRICOT_LOG.get(),
-                        ModBlocks.APRICOT_WOOD.get(),
-                        ModBlocks.STRIPPED_APRICOT_LOG.get(),
-                        ModBlocks.STRIPPED_APRICOT_WOOD.get());
+                .add(ModBlocks.APRICOT_LOG.get(), ModBlocks.APRICOT_WOOD.get(), ModBlocks.STRIPPED_APRICOT_LOG.get(), ModBlocks.STRIPPED_APRICOT_WOOD.get());
         this.tag(ModTags.Blocks.PEACH_LOGS)
-                .add(ModBlocks.PEACH_LOG.get(),
-                        ModBlocks.PEACH_WOOD.get(),
-                        ModBlocks.STRIPPED_PEACH_LOG.get(),
-                        ModBlocks.STRIPPED_PEACH_WOOD.get());
+                .add(ModBlocks.PEACH_LOG.get(), ModBlocks.PEACH_WOOD.get(), ModBlocks.STRIPPED_PEACH_LOG.get(), ModBlocks.STRIPPED_PEACH_WOOD.get());
         this.tag(ModTags.Blocks.PEAR_LOGS)
-                .add(ModBlocks.PEAR_LOG.get(),
-                        ModBlocks.PEAR_WOOD.get(),
-                        ModBlocks.STRIPPED_PEAR_LOG.get(),
-                        ModBlocks.STRIPPED_PEAR_WOOD.get());
+                .add(ModBlocks.PEAR_LOG.get(), ModBlocks.PEAR_WOOD.get(), ModBlocks.STRIPPED_PEAR_LOG.get(), ModBlocks.STRIPPED_PEAR_WOOD.get());
         this.tag(ModTags.Blocks.PURPLE_LEAF_PLUM_LOGS)
-                .add(ModBlocks.PURPLE_LEAF_PLUM_LOG.get(),
-                        ModBlocks.PURPLE_LEAF_PLUM_WOOD.get(),
-                        ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_LOG.get(),
-                        ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_WOOD.get());
+                .add(ModBlocks.PURPLE_LEAF_PLUM_LOG.get(), ModBlocks.PURPLE_LEAF_PLUM_WOOD.get(), ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_LOG.get(), ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_WOOD.get());
         this.tag(ModTags.Blocks.OSMANTHUS_LOGS)
-                .add(ModBlocks.OSMANTHUS_LOG.get(),
-                        ModBlocks.OSMANTHUS_WOOD.get(),
-                        ModBlocks.STRIPPED_OSMANTHUS_LOG.get(),
-                        ModBlocks.STRIPPED_OSMANTHUS_WOOD.get());
+                .add(ModBlocks.OSMANTHUS_LOG.get(), ModBlocks.OSMANTHUS_WOOD.get(), ModBlocks.STRIPPED_OSMANTHUS_LOG.get(), ModBlocks.STRIPPED_OSMANTHUS_WOOD.get());
         this.tag(ModTags.Blocks.GINKGO_LOGS)
-                .add(ModBlocks.GINKGO_LOG.get(),
-                        ModBlocks.GINKGO_WOOD.get(),
-                        ModBlocks.STRIPPED_GINKGO_LOG.get(),
-                        ModBlocks.STRIPPED_GINKGO_WOOD.get());
+                .add(ModBlocks.GINKGO_LOG.get(), ModBlocks.GINKGO_WOOD.get(), ModBlocks.STRIPPED_GINKGO_LOG.get(), ModBlocks.STRIPPED_GINKGO_WOOD.get());
         this.tag(ModTags.Blocks.CHINESE_PARASOL_LOGS)
-                .add(ModBlocks.CHINESE_PARASOL_LOG.get(),
-                        ModBlocks.CHINESE_PARASOL_WOOD.get(),
-                        ModBlocks.STRIPPED_CHINESE_PARASOL_LOG.get(),
-                        ModBlocks.STRIPPED_CHINESE_PARASOL_WOOD.get());
+                .add(ModBlocks.CHINESE_PARASOL_LOG.get(), ModBlocks.CHINESE_PARASOL_WOOD.get(), ModBlocks.STRIPPED_CHINESE_PARASOL_LOG.get(), ModBlocks.STRIPPED_CHINESE_PARASOL_WOOD.get());
         this.tag(ModTags.Blocks.SWEETGUM_LOGS)
-                .add(ModBlocks.SWEETGUM_LOG.get(),
-                        ModBlocks.SWEETGUM_WOOD.get(),
-                        ModBlocks.STRIPPED_SWEETGUM_LOG.get(),
-                        ModBlocks.STRIPPED_SWEETGUM_WOOD.get());
+                .add(ModBlocks.SWEETGUM_LOG.get(), ModBlocks.SWEETGUM_WOOD.get(), ModBlocks.STRIPPED_SWEETGUM_LOG.get(), ModBlocks.STRIPPED_SWEETGUM_WOOD.get());
         this.tag(ModTags.Blocks.CAMPHOR_LOGS)
-                .add(ModBlocks.CAMPHOR_LOG.get(),
-                        ModBlocks.CAMPHOR_WOOD.get(),
-                        ModBlocks.STRIPPED_CAMPHOR_LOG.get(),
-                        ModBlocks.STRIPPED_CAMPHOR_WOOD.get());
+                .add(ModBlocks.CAMPHOR_LOG.get(), ModBlocks.CAMPHOR_WOOD.get(), ModBlocks.STRIPPED_CAMPHOR_LOG.get(), ModBlocks.STRIPPED_CAMPHOR_WOOD.get());
         this.tag(ModTags.Blocks.DOVE_TREE_LOGS)
-                .add(ModBlocks.DOVE_TREE_LOG.get(),
-                        ModBlocks.DOVE_TREE_WOOD.get(),
-                        ModBlocks.STRIPPED_DOVE_TREE_LOG.get(),
-                        ModBlocks.STRIPPED_DOVE_TREE_WOOD.get());
+                .add(ModBlocks.DOVE_TREE_LOG.get(), ModBlocks.DOVE_TREE_WOOD.get(), ModBlocks.STRIPPED_DOVE_TREE_LOG.get(), ModBlocks.STRIPPED_DOVE_TREE_WOOD.get());
         this.tag(ModTags.Blocks.CHINABERRY_LOGS)
-                .add(ModBlocks.CHINABERRY_LOG.get(),
-                        ModBlocks.CHINABERRY_WOOD.get(),
-                        ModBlocks.STRIPPED_CHINABERRY_LOG.get(),
-                        ModBlocks.STRIPPED_CHINABERRY_WOOD.get());
+                .add(ModBlocks.CHINABERRY_LOG.get(), ModBlocks.CHINABERRY_WOOD.get(),ModBlocks.STRIPPED_CHINABERRY_LOG.get(), ModBlocks.STRIPPED_CHINABERRY_WOOD.get());
         this.tag(ModTags.Blocks.DESERT_POPLAR_LOGS)
-                .add(ModBlocks.DESERT_POPLAR_LOG.get(),
-                        ModBlocks.DESERT_POPLAR_WOOD.get(),
-                        ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get(),
-                        ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get());
+                .add(ModBlocks.DESERT_POPLAR_LOG.get(), ModBlocks.DESERT_POPLAR_WOOD.get(), ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get(), ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get());
 
         this.tag(BlockTags.SAPLINGS)
                 .add(ModBlocks.RED_MEI_SAPLING.get())
@@ -755,21 +657,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.REPLACEABLE_BY_TREES)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
-                .add(ModBlocks.TWO_QIAO_PEONY.get())
-                .add(ModBlocks.VERSICOLOR_PEONY.get())
-                .add(ModBlocks.CHINESE_ROSE.get())
-                .add(ModBlocks.PINK_CHINESE_ROSE.get())
-                .add(ModBlocks.YELLOW_CHINESE_ROSE.get())
-                .add(ModBlocks.WHITE_CHINESE_ROSE.get())
-                .add(ModBlocks.RED_PINK_CHINESE_ROSE.get())
-                .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get())
-                .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get())
-                .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get())
-                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get())
+                .add(ModBlocks.TWO_QIAO_PEONY.get(), ModBlocks.VERSICOLOR_PEONY.get())
+                .add(ModBlocks.CHINESE_ROSE.get(), ModBlocks.PINK_CHINESE_ROSE.get(), ModBlocks.YELLOW_CHINESE_ROSE.get(), ModBlocks.WHITE_CHINESE_ROSE.get(),
+                        ModBlocks.RED_PINK_CHINESE_ROSE.get(), ModBlocks.RED_YELLOW_CHINESE_ROSE.get(), ModBlocks.RED_WHITE_CHINESE_ROSE.get(),
+                        ModBlocks.PINK_WHITE_CHINESE_ROSE.get(), ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get())
                 .add(ModBlocks.CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
-                .add(ModBlocks.LOTUS.get())
-                .add(ModBlocks.WHITE_LOTUS.get());
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get());
 
         this.tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.WEEPING_CRABAPPLE.get())

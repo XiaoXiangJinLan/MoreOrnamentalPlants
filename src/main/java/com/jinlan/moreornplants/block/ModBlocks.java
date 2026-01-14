@@ -944,6 +944,8 @@ public class ModBlocks {
             registerBlock("pink_fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WHITE_FOUNTAIN_GRASS =
             registerBlock("white_fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> BAMBOO_STICK =
+            BLOCKS.register("bamboo_stick", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> POTTED_CHRYSANTHEMUM =
             BLOCKS.register("potted_chrysanthemum", () -> flowerPot(CHRYSANTHEMUM.get()));
@@ -1045,6 +1047,8 @@ public class ModBlocks {
             BLOCKS.register("potted_pink_fountain_grass", () -> flowerPot(PINK_FOUNTAIN_GRASS.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_FOUNTAIN_GRASS =
             BLOCKS.register("potted_white_fountain_grass", () -> flowerPot(WHITE_FOUNTAIN_GRASS.get()));
+    public static final DeferredBlock<Block> POTTED_BAMBOO_STICK =
+            BLOCKS.register("potted_bamboo_stick", () -> flowerPot(BAMBOO_STICK.get()));
 
     public static final DeferredBlock<Block> WINTERSWEET =
             registerBlock("wintersweet", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
