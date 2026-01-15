@@ -124,6 +124,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GRASS_FOREST_2 =registerKey("grass_forest_2");
     public static final ResourceKey<PlacedFeature> GRASS_FOREST_3 =registerKey("grass_forest_3");
     public static final ResourceKey<PlacedFeature> GRASS_FERN =registerKey("grass_fern");
+    public static final ResourceKey<PlacedFeature> GRASS_FURONG =registerKey("grass_furong");
     public static final ResourceKey<PlacedFeature> GRASS_FERN_2 =registerKey("grass_fern_2");
     public static final ResourceKey<PlacedFeature> GRASS_DESERT =registerKey("grass_desert");
     public static final ResourceKey<PlacedFeature> DEAD_BUSH =registerKey("dead_bush");
@@ -472,8 +473,11 @@ public class ModPlacedFeatures {
         register(context, GRASS_FERN, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FERN),
                 List.of(CountPlacement.of(5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, GRASS_FURONG, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
+                List.of(CountPlacement.of(7),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_FERN_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FERN_2),
-                List.of(CountPlacement.of(20),
+                List.of(CountPlacement.of(18),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_DESERT, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
                 List.of(CountPlacement.of(1),

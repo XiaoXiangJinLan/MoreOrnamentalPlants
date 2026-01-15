@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-14T17:06:26.9542788	Tags for minecraft:block mod id more_orn_plants
+// 1.21.1	2026-01-14T20:51:32.3024629	Tags for minecraft:block mod id more_orn_plants
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/c/tags/block/fence_gates/wooden.json
 03b0f5a11ed9ffe99eeaa7b86840233f2320f7e5 data/c/tags/block/stripped_logs.json
 a7fab72ff624f6e7874d56884f64dce8d2da50c9 data/c/tags/block/stripped_woods.json
@@ -15,7 +15,8 @@ bba393515a9b29e4b29a2fbfbb50392c20d876f8 data/minecraft/tags/block/flower_pots.j
 acb5caed195e7987ccd3b956d920af42f889eec9 data/minecraft/tags/block/mineable/hoe.json
 31dbb2f2f136298e59f2bb57a398fc358867fd43 data/minecraft/tags/block/overworld_natural_logs.json
 73c33643918bd977c2ecc0002fa55666390463e5 data/minecraft/tags/block/planks.json
-ffceafa8c8dde680fe6ea7a680d0b59413945f81 data/minecraft/tags/block/replaceable_by_trees.json
+71ef24eb58ee22873939020cd0d701d1e6100120 data/minecraft/tags/block/replaceable.json
+69f7457099f8fc883f4056acacf864fe92d268f4 data/minecraft/tags/block/replaceable_by_trees.json
 a5d045e1c5e97b9c0e2fc49bf302b8d3c9b77d63 data/minecraft/tags/block/saplings.json
 fab531a4be1698ea88e3ac81a587e5d33681e828 data/minecraft/tags/block/small_flowers.json
 e212d8183275fb9c12db833d8ade37009bec90dd data/minecraft/tags/block/standing_signs.json

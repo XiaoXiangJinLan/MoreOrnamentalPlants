@@ -33,6 +33,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MAINTAINS_FARMLAND)
                 .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.LOTUS_LEAF.get());
 
+        this.tag(BlockTags.REPLACEABLE).add(ModBlocks.BAMBOO_STICK.get());
+
         this.tag(BlockTags.SWORD_EFFICIENT)
                 .add(ModBlocks.RED_WEEPING_MEI.get())
                 .add(ModBlocks.RED_WEEPING_MEI_PLANT.get())
@@ -663,7 +665,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.PINK_WHITE_CHINESE_ROSE.get(), ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get())
                 .add(ModBlocks.CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get());
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get())
+                .add(ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.WEEPING_CRABAPPLE.get())
