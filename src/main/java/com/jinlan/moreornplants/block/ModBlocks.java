@@ -945,6 +945,8 @@ public class ModBlocks {
             registerBlock("pink_fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WHITE_FOUNTAIN_GRASS =
             registerBlock("white_fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> BAMBOO_STICK =
+            BLOCKS.register("bamboo_stick", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> POTTED_CHRYSANTHEMUM =
             BLOCKS.register("potted_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
@@ -1046,6 +1048,8 @@ public class ModBlocks {
             BLOCKS.register("potted_pink_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> POTTED_WHITE_FOUNTAIN_GRASS =
             BLOCKS.register("potted_white_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> POTTED_BAMBOO_STICK =
+            BLOCKS.register("potted_bamboo_stick", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.BAMBOO_STICK, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> WINTERSWEET =
             registerBlock("wintersweet", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));

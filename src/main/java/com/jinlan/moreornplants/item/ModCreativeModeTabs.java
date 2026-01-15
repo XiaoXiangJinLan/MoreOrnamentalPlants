@@ -130,6 +130,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PURPLE_FOUNTAIN_GRASS.get());
                         pOutput.accept(ModBlocks.PINK_FOUNTAIN_GRASS.get());
                         pOutput.accept(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
+                        pOutput.accept(ModItems.BAMBOO_STICK.get());
                         pOutput.accept(ModBlocks.PEACH_PINK_PETALS.get());
                         pOutput.accept(ModItems.ORNAMENTAL_PEACH_PETALS.get());
                         pOutput.accept(ModItems.WILD_PEACH_PETALS.get());

@@ -691,6 +691,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.WHITE_FOUNTAIN_GRASS);
         simpleBlock(ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get(), models().singleTexture("potted_white_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_white_fountain_grass")).renderType("cutout"));
+        flowerBlock(ModBlocks.BAMBOO_STICK);
+        simpleBlock(ModBlocks.POTTED_BAMBOO_STICK.get(), models().singleTexture("potted_bamboo_stick", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.BAMBOO_STICK.get())).renderType("cutout"));
 
         tallCrossBlock(ModBlocks.TWO_QIAO_PEONY);
         tallCrossBlock(ModBlocks.VERSICOLOR_PEONY);

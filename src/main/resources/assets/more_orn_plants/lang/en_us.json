@@ -463,6 +463,7 @@
   "block.more_orn_plants.lotus": "Lotus",
   "block.more_orn_plants.white_lotus": "White Lotus",
   "block.more_orn_plants.lotus_leaf": "Lotus Leaf",
+  "block.more_orn_plants.bamboo_stick": "Bamboo Stick",
 
   "block.more_orn_plants.potted_red_mei_sapling": "Potted Red Mei Sapling",
   "block.more_orn_plants.potted_white_mei_sapling": "Potted White Mei Sapling",
@@ -559,6 +560,7 @@
   "block.more_orn_plants.potted_white_fountain_grass": "Potted White Fountain Grass",
   "block.more_orn_plants.potted_mottled_bamboo": "Potted Mottled Bamboo",
   "block.more_orn_plants.potted_black_bamboo": "Potted Black Bamboo",
+  "block.more_orn_plants.potted_bamboo_stick": "Potted Bamboo Stick",
 
   "entity.more_orn_plants.mod_boat": "Boat",
   "entity.more_orn_plants.mod_chest_boat": "Boat with Chest",
