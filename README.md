@@ -52,7 +52,8 @@ New Structures
 ==========
 • Little Iron Threshold Temple – A small temple generated in the Red Mei Forest.  
 • Peach Blossom Hermitage – A small temple generated in The Peach Blossom Spring.  
-• Apricot Village – A traditional Chinese-style village generated in the Camellia Valley.
+• Apricot Village – A traditional Chinese-style village generated in the Camellia Valley.  
+• Bamboo Garden - A small garden generated in the Cottonrose Realm.
 
 New Foods
 ==========
@@ -101,7 +102,8 @@ New Fuels
 ## 新结构
 **小铁槛寺**：小型寺庙，生成在白雪红梅；  
 **桃花庵**：小型寺庙，生成在世外桃源；  
-**杏花村**：中国传统乡村风格的村庄，生成在茶花谷；
+**杏花村**：中国传统乡村风格的村庄，生成在茶花谷；  
+**竹园**：小型园林，生成在芙蓉国；
 
 ## 新食物
 **竹笋**：通过挖掘湘妃竹笋和紫竹竹笋获得，在1.21.1版本可以喂食熊猫！  
@@ -130,6 +132,7 @@ more_orn_plants:pink_camellia more_orn_plants:white_camellia more_orn_plants:ver
 
 #_grass_#  
 more_orn_plants:fountain_grass more_orn_plants:purple_fountain_grass more_orn_plants:pink_fountain_grass more_orn_plants:white_fountain_grass
+more_orn_plants:bamboo_stick
 
 #_sapling_#  
 more_orn_plants:red_mei_sapling more_orn_plants:white_mei_sapling more_orn_plants:green_calyx_mei_sapling more_orn_plants:double_pink_mei_sapling 
@@ -141,7 +144,10 @@ more_orn_plants:flowering_purple_leaf_plum_sapling more_orn_plants:purple_leaf_p
 more_orn_plants:orange_osmanthus_sapling more_orn_plants:white_osmanthus_sapling more_orn_plants:crape_myrtle_sapling more_orn_plants:golden_ginkgo_sapling 
 more_orn_plants:green_ginkgo_sapling more_orn_plants:yellow_chinese_parasol_sapling more_orn_plants:green_chinese_parasol_sapling 
 more_orn_plants:sweetgum_sapling more_orn_plants:camphor_sapling more_orn_plants:dove_tree_sapling more_orn_plants:chinaberry_sapling 
-more_orn_plants:desert_poplar_sapling more_orn_plants:mottled_bamboo_sapling more_orn_plants:black_bamboo_sapling
+more_orn_plants:desert_poplar_sapling
+
+#_bamboo_sapling_#  
+more_orn_plants:mottled_bamboo_sapling more_orn_plants:black_bamboo_sapling
 
 #_leaves_#  
 more_orn_plants:red_mei_leaves more_orn_plants:white_mei_leaves more_orn_plants:green_calyx_mei_leaves more_orn_plants:double_pink_mei_leaves 
