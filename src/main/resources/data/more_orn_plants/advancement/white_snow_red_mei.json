@@ -1,0 +1,39 @@
+{
+  "parent": "more_orn_plants:the_leader_among_flower",
+  "criteria": {
+    "visit_red_mei_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "more_orn_plants:red_mei_forest"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.white_snow_red_mei.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:red_mei_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.white_snow_red_mei.title"
+    }
+  },
+  "requirements": [
+    [
+      "visit_red_mei_forest"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

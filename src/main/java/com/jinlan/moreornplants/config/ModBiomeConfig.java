@@ -12,11 +12,13 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_SPRING_RIVER;
     public static final ModConfigSpec.BooleanValue ENABLE_PENGLAI;
     public static final ModConfigSpec.BooleanValue ENABLE_MOUNT_MEI;
+    public static final ModConfigSpec.BooleanValue ENABLE_FRAGRANT_SNOW_SEA;
     public static final ModConfigSpec.BooleanValue ENABLE_PEONY_MEADOWS;
     public static final ModConfigSpec.BooleanValue ENABLE_EVERGREEN_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_FLOWERS_GROVE;
     public static final ModConfigSpec.BooleanValue ENABLE_COLORED_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_PEACH_BLOSSOM_SPRING;
+    public static final ModConfigSpec.BooleanValue ENABLE_APRICOT_SPRING_PLATEAU;
     public static final ModConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
     public static final ModConfigSpec.BooleanValue ENABLE_CRIMSON_HIGHLANDS;
     public static final ModConfigSpec.BooleanValue ENABLE_COTTONROSE_REALM;
@@ -47,6 +49,9 @@ public class ModBiomeConfig {
         ENABLE_MOUNT_MEI = BUILDER
                 .comment("Enable Mount Mei biome generation")
                 .define("enableMountMei", true);
+        ENABLE_FRAGRANT_SNOW_SEA = BUILDER
+                .comment("Enable Fragrant Snow Sea biome generation")
+                .define("enableFragrantSnowSea", true);
         ENABLE_PEONY_MEADOWS = BUILDER
                 .comment("Enable Peony Meadows biome generation")
                 .define("enablePeonyMeadows", true);
@@ -62,6 +67,9 @@ public class ModBiomeConfig {
         ENABLE_PEACH_BLOSSOM_SPRING = BUILDER
                 .comment("Enable The Peach Blossom Spring biome generation")
                 .define("enablePeachBlossomSpring", true);
+        ENABLE_APRICOT_SPRING_PLATEAU = BUILDER
+                .comment("Enable The Apricot Spring Plateau biome generation")
+                .define("enableApricotSpringPlateau", true);
         ENABLE_CAMELLIA_VALLEY = BUILDER
                 .comment("Enable Camellia Valley biome generation")
                 .define("enableCamelliaValley", true);

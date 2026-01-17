@@ -818,6 +818,7 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         );
 
         this.add(ModBlocks.PEACH_PINK_PETALS.get(), createPetalsDrops(ModBlocks.PEACH_PINK_PETALS.get()));
+        this.add(ModBlocks.FRAGRANT_SNOW_PETALS.get(), createPetalsDrops(ModBlocks.FRAGRANT_SNOW_PETALS.get()));
         this.dropSelf(ModBlocks.ORNAMENTAL_PEACH_PETALS.get());
         this.dropSelf(ModBlocks.WILD_PEACH_PETALS.get());
         this.dropSelf(ModBlocks.CHINESE_PARASOL_LEAF_0.get());

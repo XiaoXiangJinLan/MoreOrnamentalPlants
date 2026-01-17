@@ -1,6 +1,6 @@
 This mod adds a variety of ornamental plants to Minecraft, most of which are traditional plants from the mysterious 
 East—China. These include famous flowering trees such as Mei (Plum Blossom) and Crabapple, colorful foliage trees like 
-Ginkgo, as well as renowned flowers like Chinese Rose, Herbaceous Peony, and Camellia. The mod also introduces eighteen 
+Ginkgo, as well as renowned flowers like Chinese Rose, Herbaceous Peony, and Camellia. The mod also introduces twenty 
 new biomes and four new structures, awaiting your exploration!
 
 New Trees
@@ -16,8 +16,11 @@ Miscanthus, Mottled Bamboo, Black Bamboo, and two legendary Peony varieties: Two
 New Biomes
 ==========
 • Red Mei Forest – A snowy plain dotted with Red Mei and Wintersweet.  
+• Fragrant Snow Sea – A snowy plain dotted with White Mei, Green Calyx Mei, White Weeping Mei and Green Weeping Mei, with
+Fragrant Snow Petals on the ground.  
 • The Peach Blossom Spring – A fairyland growing Ornamental Peach and Wild Peach trees, with Peach Pink Petals on the 
 ground, pale blue-pink water surfaces, and drifting Ornamental Peach Petals and Wild Peach Petals.  
+• the Apricot Spring Plateau – A Plateau growing Pink Apricot and White Apricot trees.  
 • Penglai – A mystical island over the sea, growing White Weeping Mei, Pink Weeping Mei, Green Weeping Mei, Crabapple, 
 Peony, Herbaceous Peony, and Chinese Rose.  
 • Evergreen Forest – A forest dominated by Camphor trees, accompanied by Chinese Parasol, Ginkgo, and White Osmanthus, 
@@ -52,7 +55,7 @@ New Structures
 ==========
 • Little Iron Threshold Temple – A small temple generated in the Red Mei Forest.  
 • Peach Blossom Hermitage – A small temple generated in The Peach Blossom Spring.  
-• Apricot Village – A traditional Chinese-style village generated in the Camellia Valley.  
+• Apricot Village – A traditional Chinese-style village generated in the Camellia Valley and the Apricot Spring Plateau.  
 • Bamboo Garden - A small garden generated in the Cottonrose Realm.
 
 New Foods
@@ -70,7 +73,7 @@ New Fuels
 • Other Fallen Leaf – Burn for 100 game ticks.
 
 本模组将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠，彩叶树种：银杏，以及著名花卉月季、芍药、茶花等。
-本模组还添加了十八个全新的生物群系、四个结构，等待你来探索！
+本模组还添加了二十个全新的生物群系、四个结构，等待你来探索！
 
 ## 新树种
 梅花、海棠、杏花、桃花、梨花、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
@@ -80,7 +83,9 @@ New Fuels
 
 ## 新群系
 •**白雪红梅**：生长有红梅和腊梅的雪原；  
+•**香雪海**：生长有江梅、绿萼梅、垂枝白梅以及绿萼垂枝梅的雪原，地面长有香雪花簇；  
 •**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃花花簇，水面为淡蓝粉色，漂浮有流红、浮英；  
+•**高原春杏**：生长有粉杏和白杏的高原；  
 •**蓬莱**：生长有垂枝白梅、宫粉垂枝梅、绿萼垂枝梅、海棠、牡丹、芍药、月季的海上仙山；  
 •**常绿林**：樟树为优势树种的森林，其次为梧桐、银杏、银桂，偶尔出现珙桐，林下生长有四种兰花、原版兰花和铃兰；  
 •**彩叶林**：银杏为优势树种的彩林，其次为梧桐、枫香、金桂、紫叶李，地面为亮黄色，林下生长有多种菊花、芙蓉；  
@@ -102,7 +107,7 @@ New Fuels
 ## 新结构
 **小铁槛寺**：小型寺庙，生成在白雪红梅；  
 **桃花庵**：小型寺庙，生成在世外桃源；  
-**杏花村**：中国传统乡村风格的村庄，生成在茶花谷；  
+**杏花村**：中国传统乡村风格的村庄，生成在茶花谷和高原春杏；  
 **竹园**：小型园林，生成在芙蓉国；
 
 ## 新食物
@@ -124,11 +129,14 @@ more_orn_plants:light_purple_peony more_orn_plants:ink_purple_peony more_orn_pla
 more_orn_plants:light_yellow_peony more_orn_plants:ochre_yellow_peony more_orn_plants:golden_peony more_orn_plants:white_peony 
 more_orn_plants:ink_peony more_orn_plants:blue_peony more_orn_plants:green_peony more_orn_plants:colorful_peony more_orn_plants:light_colorful_peony 
 more_orn_plants:ink_colorful_peony more_orn_plants:red_white_peony more_orn_plants:pink_white_peony more_orn_plants:yellow_white_peony 
-more_orn_plants:purple_white_peony more_orn_plants:wu_hua_long_yu_peony more_orn_plants:mauve_peony more_orn_plants:peach_pink_petals 
-more_orn_plants:chrysanthemum more_orn_plants:golden_chrysanthemum more_orn_plants:gold_backed_scarlet_mum more_orn_plants:white_chrysanthemum 
-more_orn_plants:green_chrysanthemum more_orn_plants:purple_chrysanthemum more_orn_plants:violet_pink_chrysanthemum more_orn_plants:pink_chrysanthemum 
-more_orn_plants:spring_cymbidium more_orn_plants:summer_cymbidium more_orn_plants:autumn_cymbidium more_orn_plants:camellia 
-more_orn_plants:pink_camellia more_orn_plants:white_camellia more_orn_plants:versicolor_camellia more_orn_plants:crimson_azalea
+more_orn_plants:purple_white_peony more_orn_plants:wu_hua_long_yu_peony more_orn_plants:mauve_peony more_orn_plants:chrysanthemum 
+more_orn_plants:golden_chrysanthemum more_orn_plants:gold_backed_scarlet_mum more_orn_plants:white_chrysanthemum more_orn_plants:green_chrysanthemum 
+more_orn_plants:purple_chrysanthemum more_orn_plants:violet_pink_chrysanthemum more_orn_plants:pink_chrysanthemum more_orn_plants:spring_cymbidium 
+more_orn_plants:summer_cymbidium more_orn_plants:autumn_cymbidium more_orn_plants:camellia more_orn_plants:pink_camellia 
+more_orn_plants:white_camellia more_orn_plants:versicolor_camellia more_orn_plants:crimson_azalea
+
+#_petals_#  
+more_orn_plants:peach_pink_petals more_orn_plants:fragrant_snow_petals
 
 #_grass_#  
 more_orn_plants:fountain_grass more_orn_plants:purple_fountain_grass more_orn_plants:pink_fountain_grass more_orn_plants:white_fountain_grass

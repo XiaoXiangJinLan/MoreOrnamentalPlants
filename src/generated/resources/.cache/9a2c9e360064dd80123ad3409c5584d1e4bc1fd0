@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-14T17:06:26.9615828	Item Models: more_orn_plants
+// 1.21.1	2026-01-17T17:12:09.0263387	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -117,6 +117,7 @@ ad50b3996efaf3aa9dc19f99ea15ca5df33d816f assets/more_orn_plants/models/item/dove
 1672a3bf062d7322637f0e060ddef572dce08b2a assets/more_orn_plants/models/item/dove_tree_trapdoor.json
 d87d96fd4265a86a4eac5cbf16df0bd1dc61382f assets/more_orn_plants/models/item/flowering_purple_leaf_plum_sapling.json
 edc7c15ea6b635693fd355ae42190ed163a9620b assets/more_orn_plants/models/item/fountain_grass.json
+97420e7f929e2c2515aaaff7c54685696a3501c2 assets/more_orn_plants/models/item/fragrant_snow_petals.json
 204c0933b4c6c9145a66e4e8c98d1b95bc359364 assets/more_orn_plants/models/item/ginkgo_boat.json
 2ca24e54cdbf1548076cd9b0deb30fcb2ebfbf5b assets/more_orn_plants/models/item/ginkgo_button.json
 2bf346fb5a80bf463ec6c448fa2a034a55f9fcb6 assets/more_orn_plants/models/item/ginkgo_chest_boat.json

@@ -6,7 +6,7 @@ import net.minecraft.world.level.biome.Climate;
 
 public class ModSecondOverworldBiomesBuilder extends ModOverworldBiomesBuilder{
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_MOD = new ResourceKey[][]{
-            {null,                          null,                          null,                        null,                        null},
+            {ModBiomes.FRAGRANT_SNOW_SEA,   ModBiomes.FRAGRANT_SNOW_SEA,   ModBiomes.FRAGRANT_SNOW_SEA, ModBiomes.FRAGRANT_SNOW_SEA, null},
             {ModBiomes.CHINESE_ROSE_FIELDS, ModBiomes.CHINESE_ROSE_FIELDS, ModBiomes.MISCANTHUS_FIELDS, ModBiomes.MISCANTHUS_FIELDS, null},
             {ModBiomes.CROPS_GREEN,         ModBiomes.CROPS_GREEN,         ModBiomes.CHINABERRY_WOODS,  ModBiomes.CHINABERRY_WOODS,  null},
             {null,                    null,                                null,                        null,                        null},

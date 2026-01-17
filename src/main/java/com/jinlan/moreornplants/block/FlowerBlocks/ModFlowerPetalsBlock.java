@@ -6,9 +6,9 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.PinkPetalsBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class PeachPinkPetalsBlock extends PinkPetalsBlock{
+public class ModFlowerPetalsBlock extends PinkPetalsBlock{
 
-    public PeachPinkPetalsBlock(Properties properties) {
+    public ModFlowerPetalsBlock(Properties properties) {
         super(properties);
     }
 

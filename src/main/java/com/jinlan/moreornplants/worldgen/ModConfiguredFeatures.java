@@ -1,7 +1,7 @@
 package com.jinlan.moreornplants.worldgen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
-import com.jinlan.moreornplants.block.FlowerBlocks.PeachPinkPetalsBlock;
+import com.jinlan.moreornplants.block.FlowerBlocks.ModFlowerPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
@@ -58,6 +58,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_WEEPING_MEI = registerKey("green_weeping_mei_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_WEEPING_MEI = registerKey("pink_weeping_mei_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_WEEPING_MEI = registerKey("versicolor_weeping_mei_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FRAGRANT_SNOW_PETALS_PATCH = registerKey("fragrant_snow_petals_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE = registerKey("upright_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE = registerKey("weeping_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_APRICOT = registerKey("pink_apricot");
@@ -145,6 +146,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FOREST_1 = registerKey("grass_forest_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FOREST_2 = registerKey("grass_forest_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FERN = registerKey("grass_fern");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FERN_1 = registerKey("grass_fern_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FERN_2 = registerKey("grass_fern_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_0 = registerKey("grass_0");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DEAD_BUSH = registerKey("dead_bush");
@@ -265,6 +267,18 @@ public class ModConfiguredFeatures {
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new SnowAroundTrunk(8, 0.9F, 6))).ignoreVines().build());
 
+        SimpleWeightedRandomList.Builder<BlockState> fragrantSnowPetalsBuilder = SimpleWeightedRandomList.builder();
+        for(int i = 1; i <= 4; ++i) {
+            for(Direction direction : Direction.Plane.HORIZONTAL) {
+                fragrantSnowPetalsBuilder.add(ModBlocks.FRAGRANT_SNOW_PETALS.get().defaultBlockState()
+                        .setValue(ModFlowerPetalsBlock.AMOUNT, i)
+                        .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
+            }
+        }
+        register(context, FRAGRANT_SNOW_PETALS_PATCH, Feature.FLOWER, new RandomPatchConfiguration(102, 7, 3,
+                PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(fragrantSnowPetalsBuilder)))));
+
         register(context, UPRIGHT_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
                 new StraightTrunkPlacer(5, 2, 0),
@@ -307,8 +321,8 @@ public class ModConfiguredFeatures {
         for(int i = 1; i <= 4; ++i) {
             for(Direction direction : Direction.Plane.HORIZONTAL) {
                 peachPinkPetalsBuilder.add(ModBlocks.PEACH_PINK_PETALS.get().defaultBlockState()
-                        .setValue(PeachPinkPetalsBlock.AMOUNT, i)
-                        .setValue(PeachPinkPetalsBlock.FACING, direction), 1);
+                        .setValue(ModFlowerPetalsBlock.AMOUNT, i)
+                        .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
             }
         }
         register(context, PEACH_PINK_PETALS_PATCH, Feature.FLOWER, new RandomPatchConfiguration(96, 6, 2,
@@ -317,11 +331,11 @@ public class ModConfiguredFeatures {
         SimpleWeightedRandomList.Builder<BlockState> peachPetalsBuilder = SimpleWeightedRandomList.builder();
         for(Direction direction : Direction.Plane.HORIZONTAL) {
             peachPetalsBuilder.add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get().defaultBlockState()
-                    .setValue(PeachPinkPetalsBlock.FACING, direction), 2);
+                    .setValue(ModFlowerPetalsBlock.FACING, direction), 2);
         }
         for(Direction direction : Direction.Plane.HORIZONTAL) {
             peachPetalsBuilder.add(ModBlocks.WILD_PEACH_PETALS.get().defaultBlockState()
-                    .setValue(PeachPinkPetalsBlock.FACING, direction), 1);
+                    .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
         }
         register(context, PEACH_PETALS, Feature.RANDOM_PATCH, new RandomPatchConfiguration(32, 7, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -519,11 +533,11 @@ public class ModConfiguredFeatures {
         SimpleWeightedRandomList.Builder<BlockState> peachPetalsRiverBuilder = SimpleWeightedRandomList.builder();
         for(Direction direction : Direction.Plane.HORIZONTAL) {
             peachPetalsRiverBuilder.add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get().defaultBlockState()
-                    .setValue(PeachPinkPetalsBlock.FACING, direction), 1);
+                    .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
         }
         for(Direction direction : Direction.Plane.HORIZONTAL) {
             peachPetalsRiverBuilder.add(ModBlocks.WILD_PEACH_PETALS.get().defaultBlockState()
-                    .setValue(PeachPinkPetalsBlock.FACING, direction), 1);
+                    .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
         }
         register(context, PEACH_PETALS_RIVER, Feature.RANDOM_PATCH, new RandomPatchConfiguration(8, 4, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -1018,6 +1032,15 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, GRASS_FERN_1, Feature.RANDOM_PATCH, new RandomPatchConfiguration(32, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(Blocks.SHORT_GRASS.defaultBlockState(), 4)
+                                        .add(Blocks.FERN.defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
         register(context, GRASS_FERN_2, Feature.RANDOM_PATCH, new RandomPatchConfiguration(40, 5, 5,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
