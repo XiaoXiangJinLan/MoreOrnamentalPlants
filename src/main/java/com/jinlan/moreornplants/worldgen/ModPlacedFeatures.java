@@ -479,10 +479,10 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.WHITE_APRICOT_SAPLING.get()));
         register(context, PINK_APRICOT_PLATEAU_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_APRICOT),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 3),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 2),
                         ModBlocks.PINK_APRICOT_SAPLING.get()));
         register(context, WHITE_APRICOT_PLATEAU_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_APRICOT),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 3),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 2),
                         ModBlocks.WHITE_APRICOT_SAPLING.get()));
 
         register(context, GRASS_VALLY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),

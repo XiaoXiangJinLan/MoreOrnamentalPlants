@@ -102,13 +102,35 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "more_orn_plants:village/apricot/houses/small_house_poor_scholar",
+        "location": "more_orn_plants:village/apricot/houses/small_house_poor_scholar_0",
         "processors": {
           "processors": []
         },
         "projection": "rigid"
       },
-      "weight": 4
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "more_orn_plants:village/apricot/houses/small_house_poor_scholar_1",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "more_orn_plants:village/apricot/houses/small_house_poor_scholar_2",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 3
     },
     {
       "element": {
