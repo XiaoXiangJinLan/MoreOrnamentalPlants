@@ -55,8 +55,10 @@ New Structures
 ==========
 • Little Iron Threshold Temple – A small temple generated in the Red Mei Forest.  
 • Peach Blossom Hermitage – A small temple generated in The Peach Blossom Spring.  
-• Apricot Village – A traditional Chinese-style village generated in the Camellia Valley and the Apricot Spring Plateau.  
-• Bamboo Garden - A small garden generated in the Cottonrose Realm.
+• Apricot Village – A traditional style village generated in the Camellia Valley and the Apricot Spring Plateau.  
+• Bamboo Garden - A small garden generated in the Cottonrose Realm.  
+• Mount Mei Tudi Temple – A small folk temple generated in the Mount Mei.  
+• XiangXue Pavilion - A traditional style pavilion generated in the Fragrant Snow Sea.
 
 New Foods
 ==========
@@ -107,8 +109,10 @@ New Fuels
 ## 新结构
 **小铁槛寺**：小型寺庙，生成在白雪红梅；  
 **桃花庵**：小型寺庙，生成在世外桃源；  
-**杏花村**：中国传统乡村风格的村庄，生成在茶花谷和高原春杏；  
-**竹园**：小型园林，生成在芙蓉国；
+**杏花村**：传统乡村风格的村庄，生成在茶花谷和高原春杏；  
+**竹园**：小型园林，生成在芙蓉国；  
+**梅山土地庙**：民间小庙，生成在梅山；  
+**香雪亭**：传统风亭子，生成在香雪海；
 
 ## 新食物
 **竹笋**：通过挖掘湘妃竹笋和紫竹竹笋获得，在1.21.1版本可以喂食熊猫！  
@@ -218,3 +222,4 @@ more_orn_plants:potted_orange_osmanthus_sapling more_orn_plants:potted_white_osm
 more_orn_plants:potted_golden_ginkgo_sapling more_orn_plants:potted_green_ginkgo_sapling more_orn_plants:potted_yellow_chinese_parasol_sapling 
 more_orn_plants:potted_green_chinese_parasol_sapling more_orn_plants:potted_sweetgum_sapling more_orn_plants:potted_camphor_sapling 
 more_orn_plants:potted_dove_tree_sapling more_orn_plants:potted_chinaberry_sapling more_orn_plants:potted_desert_poplar_sapling
+more_orn_plants:potted_bamboo_stick

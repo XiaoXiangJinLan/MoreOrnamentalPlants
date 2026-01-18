@@ -3,15 +3,14 @@ package com.jinlan.moreornplants.item.custom;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.NotNull;
 
-public class BambooStickItem extends BlockItem {
-    public BambooStickItem(Block block, Properties properties) {
-        super(block, properties);
+public class BambooStickItem extends BurnBlockItem {
+    public BambooStickItem(Block pBlock, Properties pProperties, int burnTime) {
+        super(pBlock, pProperties, burnTime);
     }
 
     @Override
