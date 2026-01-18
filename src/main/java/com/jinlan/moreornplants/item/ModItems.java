@@ -180,12 +180,12 @@ public class ModItems {
             ITEMS.register("ginkgo_leaf", () -> new LeafPileUseItemNameBlockItem(ModBlocks.GINKGO_LEAF_PILE.get(), new Item.Properties(), 100));
 
     public static final RegistryObject<Item> BAMBOO_STICK =
-            ITEMS.register("bamboo_stick", () -> new BambooStickItem(ModBlocks.BAMBOO_STICK.get(), new Item.Properties()));
+            ITEMS.register("bamboo_stick", () -> new BambooStickItem(ModBlocks.BAMBOO_STICK.get(), new Item.Properties(), 200));
 
     public static final RegistryObject<Item> MOTTLED_BAMBOO =
-            ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties()));
+            ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties(), 50));
     public static final RegistryObject<Item> BLACK_BAMBOO =
-            ITEMS.register("black_bamboo", () -> new modBambooBlockItem(ModBlocks.BLACK_BAMBOO.get(), new Item.Properties()));
+            ITEMS.register("black_bamboo", () -> new modBambooBlockItem(ModBlocks.BLACK_BAMBOO.get(), new Item.Properties(), 50));
     public static final RegistryObject<Item> PEELED_BAMBOO_SHOOTS =
             ITEMS.register("peeled_bamboo_shoots", () -> new Item((new Item.Properties()).food(ModFoods.PEELED_BAMBOO_SHOOTS)));
     public static final RegistryObject<Item> BAMBOO_SHOOTS_SOUP =

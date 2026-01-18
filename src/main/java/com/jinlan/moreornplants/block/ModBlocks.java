@@ -1110,7 +1110,9 @@ public class ModBlocks {
             BLOCKS.register("potted_yellow_white_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_WHITE_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> PEACH_PINK_PETALS =
-            registerBlock("peach_pink_petals", () -> new PeachPinkPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+            registerBlock("peach_pink_petals", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> FRAGRANT_SNOW_PETALS =
+            registerBlock("fragrant_snow_petals", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> MOTTLED_BAMBOO_SAPLING =
             BLOCKS.register("mottled_bamboo_sapling", () -> new MottledBambooSaplingBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_SAPLING)));

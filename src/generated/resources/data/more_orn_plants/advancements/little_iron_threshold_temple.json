@@ -1,5 +1,5 @@
 {
-  "parent": "more_orn_plants:tread_snow_seek_mei",
+  "parent": "more_orn_plants:white_snow_red_mei",
   "criteria": {
     "found_iron_threshold_temple": {
       "conditions": {

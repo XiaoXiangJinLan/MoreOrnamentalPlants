@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 138167339,
+    "separation": 12,
+    "spacing": 36
+  },
+  "structures": [
+    {
+      "structure": "more_orn_plants:xiangxue_pavilion",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "parent": "more_orn_plants:the_leader_among_flower",
+  "criteria": {
+    "visit_fragrant_snow_sea": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:fragrant_snow_sea"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.fragrant_snow_sea.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "more_orn_plants:white_weeping_mei_sapling"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.fragrant_snow_sea.title"
+    }
+  },
+  "requirements": [
+    [
+      "visit_fragrant_snow_sea"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

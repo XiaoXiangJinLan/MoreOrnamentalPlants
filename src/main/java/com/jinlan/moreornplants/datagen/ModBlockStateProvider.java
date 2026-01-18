@@ -2,7 +2,7 @@ package com.jinlan.moreornplants.datagen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
-import com.jinlan.moreornplants.block.FlowerBlocks.PeachPinkPetalsBlock;
+import com.jinlan.moreornplants.block.FlowerBlocks.ModFlowerPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.PinkWeepingMeiPlantBlock;
@@ -744,7 +744,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         lotusBlock(ModBlocks.WHITE_LOTUS);
         lotusLeafBlock(ModBlocks.LOTUS_LEAF);
 
-        peachPinkPetalsBlock(ModBlocks.PEACH_PINK_PETALS);
+        PetalsBlock(ModBlocks.PEACH_PINK_PETALS);
+        PetalsBlock(ModBlocks.FRAGRANT_SNOW_PETALS);
         leafPileBlock(ModBlocks.ORNAMENTAL_PEACH_PETALS);
         leafPileBlock(ModBlocks.WILD_PEACH_PETALS);
         leafPileBlock(ModBlocks.CHINESE_PARASOL_LEAF_0);
@@ -838,7 +839,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    private void peachPinkPetalsBlock(RegistryObject<Block> blockRegistryObject) {
+    private void PetalsBlock(RegistryObject<Block> blockRegistryObject) {
         ResourceLocation flowerbedTexture = modLoc("block/peach_pink_petals");
         ResourceLocation stemTexture = modLoc("block/peach_pink_petals_stem");
         ModelFile model1 = models().withExistingParent(blockRegistryObject.getId().getPath() + "_1", new ResourceLocation("block/flowerbed_1"))
@@ -861,26 +862,26 @@ public class ModBlockStateProvider extends BlockStateProvider {
                     .modelFile(model1)
                     .rotationY(yRot)
                     .addModel()
-                    .condition(PeachPinkPetalsBlock.FACING, facing)
-                    .condition(PeachPinkPetalsBlock.AMOUNT, 1, 2, 3, 4);
+                    .condition(ModFlowerPetalsBlock.FACING, facing)
+                    .condition(ModFlowerPetalsBlock.AMOUNT, 1, 2, 3, 4);
             builder.part()
                     .modelFile(model2)
                     .rotationY(yRot)
                     .addModel()
-                    .condition(PeachPinkPetalsBlock.FACING, facing)
-                    .condition(PeachPinkPetalsBlock.AMOUNT, 2, 3, 4);
+                    .condition(ModFlowerPetalsBlock.FACING, facing)
+                    .condition(ModFlowerPetalsBlock.AMOUNT, 2, 3, 4);
             builder.part()
                     .modelFile(model3)
                     .rotationY(yRot)
                     .addModel()
-                    .condition(PeachPinkPetalsBlock.FACING, facing)
-                    .condition(PeachPinkPetalsBlock.AMOUNT, 3, 4);
+                    .condition(ModFlowerPetalsBlock.FACING, facing)
+                    .condition(ModFlowerPetalsBlock.AMOUNT, 3, 4);
             builder.part()
                     .modelFile(model4)
                     .rotationY(yRot)
                     .addModel()
-                    .condition(PeachPinkPetalsBlock.FACING, facing)
-                    .condition(PeachPinkPetalsBlock.AMOUNT, 4);
+                    .condition(ModFlowerPetalsBlock.FACING, facing)
+                    .condition(ModFlowerPetalsBlock.AMOUNT, 4);
         }
     }
 

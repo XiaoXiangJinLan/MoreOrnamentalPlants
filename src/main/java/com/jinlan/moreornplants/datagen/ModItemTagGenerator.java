@@ -78,7 +78,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.CHINABERRY_LEAVES.get().asItem())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get().asItem())
                 .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get().asItem())
-                .add(ModBlocks.PEACH_PINK_PETALS.get().asItem());
+                .add(ModBlocks.PEACH_PINK_PETALS.get().asItem())
+                .add(ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem());
 
         this.tag(ItemTags.LEAVES)
                 .add(ModBlocks.RED_MEI_LEAVES.get().asItem())
@@ -551,9 +552,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ForgeTags.Items.AZALEA)
                 .addTag(ForgeTags.Items.TREE_PEONY)
                 .addTag(ForgeTags.Items.CRAPE_MYRTLE)
+                .addTag(ForgeTags.Items.BAMBOO)
                 .addTag(ForgeTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
-                .add(Blocks.FLOWERING_AZALEA.asItem())
+                .add(ModBlocks.PEACH_PINK_PETALS.get().asItem())
+                .add(ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
                 .add(Blocks.SUNFLOWER.asItem())
@@ -729,7 +732,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_PEONY.get().asItem())
                 .add(ModBlocks.WHITE_CAMELLIA.get().asItem())
                 .add(ModBlocks.WHITE_LOTUS.get().asItem())
-                .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get().asItem());
+                .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get().asItem())
+                .add(ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem());
 
         this.tag(ModTags.Items.YELLOW_DYE)
                 .add(ModBlocks.WINTERSWEET.get().asItem())

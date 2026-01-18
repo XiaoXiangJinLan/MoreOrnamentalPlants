@@ -209,7 +209,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
                 .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get())
-                .add(ModBlocks.PEACH_PINK_PETALS.get());
+                .add(ModBlocks.PEACH_PINK_PETALS.get())
+                .add(ModBlocks.FRAGRANT_SNOW_PETALS.get());
 
         this.tag(BlockTags.LEAVES)
                 .add(ModBlocks.RED_MEI_LEAVES.get())
@@ -285,7 +286,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
-                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get())
+                .add(ModBlocks.PEACH_PINK_PETALS.get())
+                .add(ModBlocks.FRAGRANT_SNOW_PETALS.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .addTag(ModTags.Blocks.RED_MEI_LOGS)

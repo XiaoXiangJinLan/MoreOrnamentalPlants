@@ -1,7 +1,7 @@
 package com.jinlan.moreornplants.datagen.loot;
 
 import com.jinlan.moreornplants.block.ModBlocks;
-import com.jinlan.moreornplants.block.FlowerBlocks.PeachPinkPetalsBlock;
+import com.jinlan.moreornplants.block.FlowerBlocks.ModFlowerPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -827,29 +827,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                                         .hasProperty(WaterLotusBlock.AGE, 3))))
         );
 
-        this.add(ModBlocks.PEACH_PINK_PETALS.get(), block -> {
-            LootPool.Builder pool = LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                    .add(LootItem.lootTableItem(ModBlocks.PEACH_PINK_PETALS.get())
-                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1.0F))
-                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                            .setProperties(StatePropertiesPredicate.Builder.properties()
-                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 1))))
-                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2.0F))
-                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                            .setProperties(StatePropertiesPredicate.Builder.properties()
-                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 2))))
-                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(3.0F))
-                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                            .setProperties(StatePropertiesPredicate.Builder.properties()
-                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 3))))
-                            .apply(SetItemCountFunction.setCount(ConstantValue.exactly(4.0F))
-                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                            .setProperties(StatePropertiesPredicate.Builder.properties()
-                                                    .hasProperty(PeachPinkPetalsBlock.AMOUNT, 4))))
-                            .apply(ApplyExplosionDecay.explosionDecay()));
-            return LootTable.lootTable().withPool(pool);
-        });
-
+        this.add(ModBlocks.PEACH_PINK_PETALS.get(), createPetalsDrops(ModBlocks.PEACH_PINK_PETALS.get()));
+        this.add(ModBlocks.FRAGRANT_SNOW_PETALS.get(), createPetalsDrops(ModBlocks.FRAGRANT_SNOW_PETALS.get()));
         this.dropSelf(ModBlocks.ORNAMENTAL_PEACH_PETALS.get());
         this.dropSelf(ModBlocks.WILD_PEACH_PETALS.get());
         this.dropSelf(ModBlocks.CHINESE_PARASOL_LEAF_0.get());

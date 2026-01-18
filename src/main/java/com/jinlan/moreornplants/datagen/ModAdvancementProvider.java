@@ -619,7 +619,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
             Advancement treadSnowSeekMei = Advancement.Builder.advancement()
                     .parent(flowerLeader)
                     .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.RED_MEI_SAPLING.get()),
+                            new ItemStack(ModBlocks.VERSICOLOR_MEI_SAPLING.get()),
                             Component.translatable("advancement.moreornplants.tread_snow_seek_mei.title"),
                             Component.translatable("advancement.moreornplants.tread_snow_seek_mei.description"),
                             null,
@@ -631,7 +631,47 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .addCriterion("visit_red_mei_forest", PlayerTrigger.TriggerInstance.located(
                             LocationPredicate.Builder.location().setBiome(ModBiomes.RED_MEI_FOREST).build()
                     ))
+                    .addCriterion("visit_fragrant_snow_sea", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.FRAGRANT_SNOW_SEA).build()
+                    ))
+                    .addCriterion("visit_mount_mei", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.MOUNT_MEI).build()
+                    ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "tread_snow_seek_mei"), existingFileHelper);
+
+            Advancement whiteSnowRedMei = Advancement.Builder.advancement()
+                    .parent(flowerLeader)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.RED_MEI_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.white_snow_red_mei.title"),
+                            Component.translatable("advancement.moreornplants.white_snow_red_mei.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("visit_red_mei_forest", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.RED_MEI_FOREST).build()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "white_snow_red_mei"), existingFileHelper);
+
+            Advancement FragrantSnowSea = Advancement.Builder.advancement()
+                    .parent(flowerLeader)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.fragrant_snow_sea.title"),
+                            Component.translatable("advancement.moreornplants.fragrant_snow_sea.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("visit_fragrant_snow_sea", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.FRAGRANT_SNOW_SEA).build()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "fragrant_snow_sea"), existingFileHelper);
 
             Advancement peachBlossomSpring = Advancement.Builder.advancement()
                     .parent(wulingVista)
@@ -702,7 +742,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "cottonrose_realm"), existingFileHelper);
 
             Advancement ironThresholdTemple = Advancement.Builder.advancement()
-                    .parent(treadSnowSeekMei)
+                    .parent(whiteSnowRedMei)
                     .display(new DisplayInfo(
                             new ItemStack(ModBlocks.RED_WEEPING_MEI_SAPLING.get()),
                             Component.translatable("advancement.moreornplants.little_iron_threshold_temple.title"),

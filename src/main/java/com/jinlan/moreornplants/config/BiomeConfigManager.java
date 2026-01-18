@@ -21,6 +21,8 @@ public class BiomeConfigManager {
             case "penglai" -> ModBiomeConfig.ENABLE_PENGLAI.get();
             case "mount_mei" -> ModBiomeConfig.ENABLE_MOUNT_MEI.get();
             case "yunmeng_marsh" -> ModBiomeConfig.ENABLE_YUNMENG_MARSH.get();
+            case "fragrant_snow_sea" -> ModBiomeConfig.ENABLE_FRAGRANT_SNOW_SEA.get();
+            case "the_apricot_spring_plateau" -> ModBiomeConfig.ENABLE_APRICOT_SPRING_PLATEAU.get();
             default -> true;
         };
     }

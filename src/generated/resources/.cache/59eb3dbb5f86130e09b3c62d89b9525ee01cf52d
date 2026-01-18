@@ -1,4 +1,4 @@
-// 1.20.1	2026-01-14T19:57:44.6397665	Loot Tables
+// 1.20.1	2026-01-18T23:19:38.6662411	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_tables/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_tables/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_tables/blocks/apricot_fence.json
@@ -151,6 +151,7 @@ b5c68c67fc62626a5e33ef43b88a1176dfbe09e7 data/more_orn_plants/loot_tables/blocks
 ce1f6412fadc79fb9513ba5ccd4ad19419d6a137 data/more_orn_plants/loot_tables/blocks/flowering_purple_leaf_plum_leaves.json
 bfe9b5a0b269d982ebd0b33716529fee7263ee0a data/more_orn_plants/loot_tables/blocks/flowering_purple_leaf_plum_sapling.json
 5c242371fb4f05ee13173d8bebaa847bf284bd97 data/more_orn_plants/loot_tables/blocks/fountain_grass.json
+b849ef88c118b50abd9a0749acf52e750ae268a9 data/more_orn_plants/loot_tables/blocks/fragrant_snow_petals.json
 1d49b04191572c68b390899665aa82ead4b43ab3 data/more_orn_plants/loot_tables/blocks/ginkgo_button.json
 dbc499721ac836446f738b8ccf0dd9bca80ee5f3 data/more_orn_plants/loot_tables/blocks/ginkgo_door.json
 dc03a490754d8e5a41ce5512bab14c16b5613702 data/more_orn_plants/loot_tables/blocks/ginkgo_fence.json

@@ -750,6 +750,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(pWriter, ModItems.CHINABERRY_CHEST_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
         chestBoat(pWriter, ModItems.DESERT_POPLAR_CHEST_BOAT.get(), ModBlocks.DESERT_POPLAR_PLANKS.get());
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 2)
+                .define('#', ModItems.MOTTLED_BAMBOO.get())
+                .pattern("#")
+                .pattern("#")
+                .group("sticks")
+                .unlockedBy("has_bamboo", has(ModItems.MOTTLED_BAMBOO.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "stick_from_mottled_bamboo_item"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 2)
+                .define('#', ModItems.BLACK_BAMBOO.get())
+                .pattern("#")
+                .pattern("#")
+                .group("sticks")
+                .unlockedBy("has_bamboo", has(ModItems.BLACK_BAMBOO.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "stick_from_black_bamboo_item"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, Blocks.SCAFFOLDING, 6)
+                .define('~', Items.STRING)
+                .define('I', ModItems.MOTTLED_BAMBOO.get())
+                .pattern("I~I")
+                .pattern("I I")
+                .pattern("I I")
+                .unlockedBy("has_bamboo", has(ModItems.MOTTLED_BAMBOO.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "scaffolding_from_mottled_bamboo_item"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, Blocks.SCAFFOLDING, 6)
+                .define('~', Items.STRING)
+                .define('I', ModItems.BLACK_BAMBOO.get())
+                .pattern("I~I")
+                .pattern("I I")
+                .pattern("I I")
+                .unlockedBy("has_bamboo", has(ModItems.BLACK_BAMBOO.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "scaffolding_from_black_bamboo_item"));
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), 1)
                 .requires(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get())
                 .requires(ModBlocks.WHITE_MEI_SAPLING.get())
