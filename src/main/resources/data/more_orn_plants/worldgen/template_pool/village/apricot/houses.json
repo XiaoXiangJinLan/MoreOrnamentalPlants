@@ -9,7 +9,7 @@
         },
         "projection": "rigid"
       },
-      "weight": 2
+      "weight": 4
     },
     {
       "element": {
@@ -20,7 +20,7 @@
         },
         "projection": "rigid"
       },
-      "weight": 2
+      "weight": 4
     },
     {
       "element": {
@@ -31,7 +31,7 @@
         },
         "projection": "rigid"
       },
-      "weight": 2
+      "weight": 4
     },
     {
       "element": {
@@ -42,7 +42,7 @@
         },
         "projection": "rigid"
       },
-      "weight": 2
+      "weight": 4
     },
     {
       "element": {
@@ -59,28 +59,6 @@
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
         "location": "more_orn_plants:village/apricot/houses/apricot_house_5",
-        "processors": {
-          "processors": []
-        },
-        "projection": "rigid"
-      },
-      "weight": 4
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "more_orn_plants:village/apricot/houses/apricot_house_6",
-        "processors": {
-          "processors": []
-        },
-        "projection": "rigid"
-      },
-      "weight": 4
-    },
-    {
-      "element": {
-        "element_type": "minecraft:legacy_single_pool_element",
-        "location": "more_orn_plants:village/apricot/houses/apricot_house_7",
         "processors": {
           "processors": []
         },
