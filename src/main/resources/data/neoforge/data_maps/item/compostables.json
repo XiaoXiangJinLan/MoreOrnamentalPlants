@@ -405,6 +405,9 @@
     "more_orn_plants:peach_pink_petals": {
       "chance": 0.3
     },
+    "more_orn_plants:fragrant_snow_petals": {
+      "chance": 0.3
+    },
     "more_orn_plants:ornamental_peach_petals": {
       "chance": 0.3
     },

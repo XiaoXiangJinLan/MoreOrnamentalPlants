@@ -13,7 +13,6 @@ public class CommonTags {
         public static final TagKey<Item> HERBACEOUS_PEONY = tag("herbaceous_peony");
         public static final TagKey<Item> CHINESE_ROSE = tag("chinese_rose");
         public static final TagKey<Item> CHRYSANTHEMUM = tag("chrysanthemum");
-        public static final TagKey<Item> PLANT_IN_FLORILEGIUM = tag("plant_in_florilegium");
         public static final TagKey<Item> CAMELLIA = tag("camellia");
         public static final TagKey<Item> AZALEA = tag("azalea");
         public static final TagKey<Item> CRABAPPLE_SAPLING = tag("crabapple_sapling");

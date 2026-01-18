@@ -217,7 +217,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.copy(BlockTags.SMALL_FLOWERS, ItemTags.SMALL_FLOWERS);
         this.copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
 
-        this.tag(CommonTags.Items.PLANT_IN_FLORILEGIUM)
+        this.tag(ModTags.Items.PLANT_IN_FLORILEGIUM)
                 .addTag(CommonTags.Items.MEI_SAPLING)
                 .addTag(CommonTags.Items.CRABAPPLE_SAPLING)
                 .addTag(CommonTags.Items.APRICOT_SAPLING)
@@ -242,9 +242,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(CommonTags.Items.AZALEA)
                 .addTag(CommonTags.Items.TREE_PEONY)
                 .addTag(CommonTags.Items.CRAPE_MYRTLE)
+                .addTag(CommonTags.Items.BAMBOO)
                 .addTag(CommonTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
-                .add(Blocks.FLOWERING_AZALEA.asItem())
+                .add(ModBlocks.PEACH_PINK_PETALS.asItem())
+                .add(ModBlocks.FRAGRANT_SNOW_PETALS.asItem())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
                 .add(Blocks.SUNFLOWER.asItem())

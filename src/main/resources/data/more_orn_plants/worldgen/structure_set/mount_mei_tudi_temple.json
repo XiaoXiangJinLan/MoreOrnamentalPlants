@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 138167337,
+    "separation": 12,
+    "spacing": 36
+  },
+  "structures": [
+    {
+      "structure": "more_orn_plants:mount_mei_tudi_temple",
+      "weight": 1
+    }
+  ]
+}

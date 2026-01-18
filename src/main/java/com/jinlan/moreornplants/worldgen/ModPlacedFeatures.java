@@ -65,10 +65,13 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CAMPHOR_VALLEY_PLACED = registerKey("camphor_valley_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_PLAIN_PLACED = registerKey("camphor_plain_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_WOODS_PLACED = registerKey("camphor_woods_placed");
+    public static final ResourceKey<PlacedFeature> SMALL_CAMPHOR_WOODS_PLACED = registerKey("small_camphor_woods_placed");
     public static final ResourceKey<PlacedFeature> ANCIENT_CAMPHOR_PLACED = registerKey("ancient_camphor_placed");
     public static final ResourceKey<PlacedFeature> DOVE_TREE_PLACED = registerKey("dove_tree_placed");
     public static final ResourceKey<PlacedFeature> CHINABERRY_PLACED = registerKey("chinaberry_placed");
     public static final ResourceKey<PlacedFeature> CHINABERRY_WOODS_PLACED = registerKey("chinaberry_woods_placed");
+    public static final ResourceKey<PlacedFeature> CHINABERRY_SMALL_PLACED = registerKey("chinaberry_small_placed");
+    public static final ResourceKey<PlacedFeature> CHINABERRY_PLAIN_PLACED = registerKey("chinaberry_plain_placed");
     public static final ResourceKey<PlacedFeature> DESERT_POPLAR_0_PLACED = registerKey("desert_poplar_0_placed");
     public static final ResourceKey<PlacedFeature> DESERT_POPLAR_1_PLACED = registerKey("desert_poplar_1_placed");
     public static final ResourceKey<PlacedFeature> DESERT_POPLAR_2_PLACED = registerKey("desert_poplar_2_placed");
@@ -442,8 +445,14 @@ public class ModPlacedFeatures {
         register(context, CHINABERRY_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINABERRY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1),
                         ModBlocks.CHINABERRY_SAPLING.get()));
+        register(context, CHINABERRY_SMALL_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINABERRY_SMALL),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.2f, 1),
+                        ModBlocks.CHINABERRY_SAPLING.get()));
         register(context, CAMPHOR_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
+                        ModBlocks.CAMPHOR_SAPLING.get()));
+        register(context, SMALL_CAMPHOR_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_CAMPHOR),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.CAMPHOR_SAPLING.get()));
         register(context, FOUNTAIN_GRASS_WOODS, configuredFeatures.getOrThrow(ModConfiguredFeatures.FOUNTAIN_GRASS_WOODS),
                 List.of(CountPlacement.of(18),
@@ -452,6 +461,9 @@ public class ModPlacedFeatures {
         register(context, CAMPHOR_PLAIN_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 2),
                         ModBlocks.CAMPHOR_SAPLING.get()));
+        register(context, CHINABERRY_PLAIN_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINABERRY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
+                        ModBlocks.CHINABERRY_SAPLING.get()));
         register(context, FOUNTAIN_GRASS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.FOUNTAIN_GRASS),
                 List.of(CountPlacement.of(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));

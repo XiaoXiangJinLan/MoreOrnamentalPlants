@@ -85,8 +85,10 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMPHOR = registerKey("camphor");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMPHOR_WITH_NEW_LEAVES = registerKey("camphor_with_new_leaves");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_CAMPHOR = registerKey("ancient_camphor");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_CAMPHOR = registerKey("small_camphor");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DOVE_TREE = registerKey("dove_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINABERRY = registerKey("chinaberry");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHINABERRY_SMALL = registerKey("chinaberry_small");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_0 = registerKey("desert_poplar_0");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_1 = registerKey("desert_poplar_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_2 = registerKey("desert_poplar_2");
@@ -471,6 +473,12 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(0, 0, 0)).ignoreVines().build());
+        register(context, SMALL_CAMPHOR, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new StraightTrunkPlacer(5, 2, 1),
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         register(context, DOVE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.DOVE_TREE_LOG.get()),
@@ -484,6 +492,12 @@ public class ModConfiguredFeatures {
                 new CamphorTrunkPlacer(9, 3, 1, 4, 3, 4, 0.8F, 2),
                 BlockStateProvider.simple(ModBlocks.CHINABERRY_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, CHINABERRY_SMALL, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CHINABERRY_LOG.get()),
+                new StraightTrunkPlacer(5, 2, 1),
+                BlockStateProvider.simple(ModBlocks.CHINABERRY_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         register(context, DESERT_POPLAR_0, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
