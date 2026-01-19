@@ -840,15 +840,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void PetalsBlock(RegistryObject<Block> blockRegistryObject) {
-        ResourceLocation flowerbedTexture = modLoc("block/peach_pink_petals");
-        ResourceLocation stemTexture = modLoc("block/peach_pink_petals_stem");
-        ModelFile model1 = models().withExistingParent(blockRegistryObject.getId().getPath() + "_1", new ResourceLocation("block/flowerbed_1"))
+        String baseName = blockRegistryObject.getId().getPath();
+        ResourceLocation flowerbedTexture = modLoc("block/" + baseName);
+        ResourceLocation stemTexture = modLoc("block/" + baseName + "_stem");
+        ModelFile model1 = models().withExistingParent(baseName + "_1", new ResourceLocation("block/flowerbed_1"))
                 .texture("flowerbed", flowerbedTexture).texture("stem", stemTexture).renderType("cutout");
-        ModelFile model2 = models().withExistingParent(blockRegistryObject.getId().getPath() + "_2", new ResourceLocation("block/flowerbed_2"))
+        ModelFile model2 = models().withExistingParent(baseName + "_2", new ResourceLocation("block/flowerbed_2"))
                 .texture("flowerbed", flowerbedTexture).texture("stem", stemTexture).renderType("cutout");
-        ModelFile model3 = models().withExistingParent(blockRegistryObject.getId().getPath() + "_3", new ResourceLocation("block/flowerbed_3"))
+        ModelFile model3 = models().withExistingParent(baseName + "_3", new ResourceLocation("block/flowerbed_3"))
                 .texture("flowerbed", flowerbedTexture).texture("stem", stemTexture).renderType("cutout");
-        ModelFile model4 = models().withExistingParent(blockRegistryObject.getId().getPath() + "_4", new ResourceLocation("block/flowerbed_4"))
+        ModelFile model4 = models().withExistingParent(baseName + "_4", new ResourceLocation("block/flowerbed_4"))
                 .texture("flowerbed", flowerbedTexture).texture("stem", stemTexture).renderType("cutout");
         MultiPartBlockStateBuilder builder = getMultipartBuilder(blockRegistryObject.get());
         for (Direction facing : Direction.Plane.HORIZONTAL) {

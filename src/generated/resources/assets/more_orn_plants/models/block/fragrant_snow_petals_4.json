@@ -2,7 +2,7 @@
   "parent": "minecraft:block/flowerbed_4",
   "render_type": "minecraft:cutout",
   "textures": {
-    "flowerbed": "more_orn_plants:block/peach_pink_petals",
-    "stem": "more_orn_plants:block/peach_pink_petals_stem"
+    "flowerbed": "more_orn_plants:block/fragrant_snow_petals",
+    "stem": "more_orn_plants:block/fragrant_snow_petals_stem"
   }
 }

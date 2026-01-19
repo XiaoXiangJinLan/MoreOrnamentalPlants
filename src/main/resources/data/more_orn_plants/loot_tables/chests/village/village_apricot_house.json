@@ -71,6 +71,11 @@
           "type": "minecraft:item",
           "name": "minecraft:porkchop",
           "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:bamboo_stick",
+          "weight": 2
         }
       ],
       "rolls": {
