@@ -18,7 +18,7 @@
                 "data": {
                   "Name": "more_orn_plants:white_camellia"
                 },
-                "weight": 1
+                "weight": 2
               }
             ]
           }
@@ -52,8 +52,8 @@
         }
       ]
     },
-    "tries": 56,
+    "tries": 64,
     "xz_spread": 12,
-    "y_spread": 12
+    "y_spread": 6
   }
 }

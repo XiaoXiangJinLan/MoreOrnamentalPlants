@@ -43,6 +43,6 @@
     },
     "tries": 80,
     "xz_spread": 12,
-    "y_spread": 12
+    "y_spread": 6
   }
 }

@@ -11,7 +11,7 @@ public class BiomeConfigManager {
             case "the_peach_blossom_spring" -> ModBiomeConfig.ENABLE_PEACH_BLOSSOM_SPRING.get();
             case "camellia_valley" -> ModBiomeConfig.ENABLE_CAMELLIA_VALLEY.get();
             case "crimson_highlands" -> ModBiomeConfig.ENABLE_CRIMSON_HIGHLANDS.get();
-            case "cottonrose_realm" -> ModBiomeConfig.ENABLE_COTTONROSE_REALM.get();
+            case "furong_guo" -> ModBiomeConfig.ENABLE_FURONG_GUO.get();
             case "desert_poplar_woods" -> ModBiomeConfig.ENABLE_DESERT_POPLAR_WOODS.get();
             case "chinese_rose_fields" -> ModBiomeConfig.ENABLE_CHINESE_ROSE_FIELDS.get();
             case "chinaberry_woods" -> ModBiomeConfig.ENABLE_CHINABERRY_WOODS.get();

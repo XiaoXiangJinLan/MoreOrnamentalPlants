@@ -724,22 +724,22 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "crimson_highlands"), existingFileHelper);
 
-            Advancement cottonroseRealm = Advancement.Builder.advancement()
+            Advancement furongGuo = Advancement.Builder.advancement()
                     .parent(frostDefiant)
                     .display(new DisplayInfo(
                             new ItemStack(ModBlocks.MOTTLED_BAMBOO.get()),
-                            Component.translatable("advancement.moreornplants.cottonrose_realm.title"),
-                            Component.translatable("advancement.moreornplants.cottonrose_realm.description"),
+                            Component.translatable("advancement.moreornplants.furong_guo.title"),
+                            Component.translatable("advancement.moreornplants.furong_guo.description"),
                             null,
                             FrameType.TASK,
                             true,
                             true,
                             false
                     ))
-                    .addCriterion("visit_cottonrose_realm", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiome(ModBiomes.COTTONROSE_REALM).build()
+                    .addCriterion("visit_Furong Guo", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.FURONG_GUO).build()
                     ))
-                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "cottonrose_realm"), existingFileHelper);
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "furong_guo"), existingFileHelper);
 
             Advancement ironThresholdTemple = Advancement.Builder.advancement()
                     .parent(whiteSnowRedMei)

@@ -10,7 +10,6 @@
             "state": {
               "Name": "more_orn_plants:crape_myrtle",
               "Properties": {
-                "facing": "north",
                 "half": "lower"
               }
             }

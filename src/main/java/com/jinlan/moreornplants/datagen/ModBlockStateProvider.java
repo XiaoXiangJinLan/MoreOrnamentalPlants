@@ -731,7 +731,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.POTTED_WINTERSWEET.get(), models().singleTexture("potted_wintersweet", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_wintersweet")).renderType("cutout"));
         tallCrossBlock(ModBlocks.COTTON_ROSE);
-        tallRotatedCrossBlock(ModBlocks.CRAPE_MYRTLE);
+        tallCrossBlock(ModBlocks.CRAPE_MYRTLE);
 
         saplingBlock(ModBlocks.MOTTLED_BAMBOO_SAPLING, true);
         bambooModelsOnly(ModBlocks.MOTTLED_BAMBOO);
@@ -977,34 +977,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 case EAST -> rotationY = 270;
                 default -> rotationY = 0;
             }
-            builder.partialState()
-                    .with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER)
-                    .with(WaterLotusLeafBlock.FACING, direction)
-                    .modelForState().modelFile(topModel).rotationY(rotationY)
-                    .addModel();
-        }
-    }
-
-    private void tallRotatedCrossBlock(RegistryObject<Block> blockRegistryObject) {
-        String baseName = blockRegistryObject.getId().getPath();
-        ModelFile bottomModel = models().withExistingParent(baseName + "_bottom", modLoc("block/crape_myrtle"))
-                .texture("cross", modLoc("block/" + baseName + "_bottom")).renderType("cutout");
-        ModelFile topModel = models().withExistingParent(baseName + "_top", modLoc("block/crape_myrtle"))
-                .texture("cross", modLoc("block/" + baseName + "_top")).renderType("cutout");
-        VariantBlockStateBuilder builder = getVariantBuilder(blockRegistryObject.get());
-        for (Direction direction : Direction.Plane.HORIZONTAL) {
-            int rotationY;
-            switch (direction) {
-                case EAST -> rotationY = 90;
-                case SOUTH -> rotationY = 180;
-                case WEST -> rotationY = 270;
-                default -> rotationY = 0;
-            }
-            builder.partialState()
-                    .with(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
-                    .with(WaterLotusLeafBlock.FACING, direction)
-                    .modelForState().modelFile(bottomModel).rotationY(rotationY)
-                    .addModel();
             builder.partialState()
                     .with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER)
                     .with(WaterLotusLeafBlock.FACING, direction)

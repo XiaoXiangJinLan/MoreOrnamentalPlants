@@ -132,11 +132,11 @@ public class ModOverworldBiomesBuilder {
             {null, null,                   null,                   null,                   null}
     };
     private final ResourceKey<Biome>[][] SWAMP_BIOMES_MOD = new ResourceKey[][]{
-            {null,                       null,                       null,                       null,                       null},
-            {null,                       ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, null},
-            {ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM, ModBiomes.COTTONROSE_REALM},
-            {ModBiomes.YUNMENG_MARSH,    ModBiomes.YUNMENG_MARSH,    ModBiomes.YUNMENG_MARSH,    ModBiomes.YUNMENG_MARSH,    ModBiomes.YUNMENG_MARSH},
-            {null,                       ModBiomes.YUNMENG_MARSH,    ModBiomes.YUNMENG_MARSH,    ModBiomes.YUNMENG_MARSH,    null}
+            {null,                    null,                    null,                    null,                    null},
+            {null,                    ModBiomes.FURONG_GUO,    ModBiomes.FURONG_GUO,    ModBiomes.FURONG_GUO,    null},
+            {ModBiomes.FURONG_GUO,    ModBiomes.FURONG_GUO,    ModBiomes.FURONG_GUO,    ModBiomes.FURONG_GUO,    ModBiomes.FURONG_GUO},
+            {ModBiomes.YUNMENG_MARSH, ModBiomes.YUNMENG_MARSH, ModBiomes.YUNMENG_MARSH, ModBiomes.YUNMENG_MARSH, ModBiomes.YUNMENG_MARSH},
+            {null,                    ModBiomes.YUNMENG_MARSH, ModBiomes.YUNMENG_MARSH, ModBiomes.YUNMENG_MARSH, null}
     };
     private final ResourceKey<Biome>[][] ISLAND_BIOMES_MOD = new ResourceKey[][]{
             {null,              null,              null,              null,              null},

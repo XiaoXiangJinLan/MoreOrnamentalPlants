@@ -383,10 +383,10 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(15),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, WHITE_APRICOT_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_APRICOT),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1),
                         ModBlocks.WHITE_APRICOT_SAPLING.get()));
         register(context, CAMPHOR_VALLEY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.CAMPHOR_SAPLING.get()));
 
         register(context, CRIMSON_AZALEA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_AZALEA_KEY),
@@ -498,7 +498,7 @@ public class ModPlacedFeatures {
                         ModBlocks.WHITE_APRICOT_SAPLING.get()));
 
         register(context, GRASS_VALLY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
-                List.of(CountPlacement.of(10),
+                List.of(CountPlacement.of(12),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_PLAIN, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
                 List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 10),

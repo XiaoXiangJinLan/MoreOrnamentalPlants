@@ -32,8 +32,8 @@ public class ModBiomes {
             new ResourceLocation(MoreOrnPlants.MOD_ID, "crimson_highlands"));
     public static final ResourceKey<Biome> PEONY_MEADOWS = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "peony_meadows"));
-    public static final ResourceKey<Biome> COTTONROSE_REALM = ResourceKey.create(Registries.BIOME,
-            new ResourceLocation(MoreOrnPlants.MOD_ID, "cottonrose_realm"));
+    public static final ResourceKey<Biome> FURONG_GUO = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "furong_guo"));
     public static final ResourceKey<Biome> DESERT_POPLAR_WOODS = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "desert_poplar_woods"));
     public static final ResourceKey<Biome> CHINESE_ROSE_FIELDS = ResourceKey.create(Registries.BIOME,
@@ -66,7 +66,7 @@ public class ModBiomes {
         context.register(CAMELLIA_VALLEY, camelliaValley(context));
         context.register(CRIMSON_HIGHLANDS, crimsonHighlands(context));
         context.register(PEONY_MEADOWS, peonyMeadows(context));
-        context.register(COTTONROSE_REALM, cottonroseRealm(context));
+        context.register(FURONG_GUO, furongGuo(context));
         context.register(DESERT_POPLAR_WOODS, desertPoplarWoods(context));
         context.register(CHINESE_ROSE_FIELDS, chineseRoseFields(context));
         context.register(CHINABERRY_WOODS, chinaberryWoods(context));
@@ -342,7 +342,7 @@ public class ModBiomes {
                 .build();
     }
 
-    private static Biome cottonroseRealm(BootstapContext<Biome> context) {
+    private static Biome furongGuo(BootstapContext<Biome> context) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
 
         BiomeDefaultFeatures.farmAnimals(spawnBuilder);
