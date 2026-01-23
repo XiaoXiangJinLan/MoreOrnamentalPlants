@@ -21,7 +21,7 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_APRICOT_SPRING_PLATEAU;
     public static final ModConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
     public static final ModConfigSpec.BooleanValue ENABLE_CRIMSON_HIGHLANDS;
-    public static final ModConfigSpec.BooleanValue ENABLE_COTTONROSE_REALM;
+    public static final ModConfigSpec.BooleanValue ENABLE_FURONG_GUO;
     public static final ModConfigSpec.BooleanValue ENABLE_YUNMENG_MARSH;
     public static final ModConfigSpec.BooleanValue ENABLE_DESERT_POPLAR_WOODS;
     public static final ModConfigSpec.BooleanValue ENABLE_CHINESE_ROSE_FIELDS;
@@ -76,9 +76,9 @@ public class ModBiomeConfig {
         ENABLE_CRIMSON_HIGHLANDS = BUILDER
                 .comment("Enable Crimson Highlands biome generation")
                 .define("enableCrimsonHighlands", true);
-        ENABLE_COTTONROSE_REALM = BUILDER
-                .comment("Enable Cottonrose Realm biome generation")
-                .define("enableCottonroseRealm", true);
+        ENABLE_FURONG_GUO = BUILDER
+                .comment("Enable Furong Guo biome generation")
+                .define("enableFurongGuo", true);
         ENABLE_YUNMENG_MARSH = BUILDER
                 .comment("Enable Yunmeng Marsh biome generation")
                 .define("enableYunmengMarsh", true);

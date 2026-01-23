@@ -46,7 +46,7 @@ trees. The sky are tinted pale pink-purple.
 and Dandelions, accompanied by Camphor trees.  
 • Spring River – A river with drifting Ornamental Peach Petals and Wild Peach Petals on its surface. The banks grow 
 White Mei, four types of Cymbidium, and vanilla Orchids.  
-• Cottonrose Realm – A plain wetland growing abundant Cotton Roses, Mottled Bamboo, and Black Bamboo. The water is 
+• Furong Guo – A plain wetland growing abundant Cotton Roses, Mottled Bamboo, and Black Bamboo. The water is 
 filled with Lotus Leaves and Lotus flowers.  
 • Yunmeng Marsh – A wetland swamp growing Double Pink Mei and Camphor trees. The undergrowth features Summer Cymbidium, 
 and the water is filled with Lotus Leaves and Lotus flowers.
@@ -56,7 +56,7 @@ New Structures
 • Little Iron Threshold Temple – A small temple generated in the Red Mei Forest.  
 • Peach Blossom Hermitage – A small temple generated in The Peach Blossom Spring.  
 • Apricot Village – A traditional style village generated in the Camellia Valley and the Apricot Spring Plateau.  
-• Bamboo Garden - A small garden generated in the Cottonrose Realm.  
+• Bamboo Garden - A small garden generated in the Furong Guo.  
 • Mount Mei Tudi Temple – A small folk temple generated in the Mount Mei.  
 • XiangXue Pavilion - A traditional style pavilion generated in the Fragrant Snow Sea.
 

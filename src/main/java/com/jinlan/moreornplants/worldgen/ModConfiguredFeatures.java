@@ -688,23 +688,23 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
-        register(context, CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(56, 12, 12,
+        register(context, CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(64, 12, 6,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(ModBlocks.CAMELLIA.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.WHITE_CAMELLIA.get().defaultBlockState(), 1).build())),
+                                        .add(ModBlocks.WHITE_CAMELLIA.get().defaultBlockState(), 2).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, VERSICOLOR_CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(56, 12, 12,
+        register(context, VERSICOLOR_CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(56, 12, 6,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.VERSICOLOR_CAMELLIA.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
-        register(context, CRIMSON_AZALEA_KEY, Feature.FLOWER, new RandomPatchConfiguration(80, 12, 12,
+        register(context, CRIMSON_AZALEA_KEY, Feature.FLOWER, new RandomPatchConfiguration(80, 12, 6,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CRIMSON_AZALEA.get())),
                         BlockPredicate.allOf(

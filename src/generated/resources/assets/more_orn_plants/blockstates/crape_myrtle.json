@@ -1,34 +1,10 @@
 {
   "variants": {
-    "facing=east,half=lower": {
-      "model": "more_orn_plants:block/crape_myrtle_bottom",
-      "y": 90
-    },
-    "facing=east,half=upper": {
-      "model": "more_orn_plants:block/crape_myrtle_top",
-      "y": 90
-    },
-    "facing=north,half=lower": {
+    "half=lower": {
       "model": "more_orn_plants:block/crape_myrtle_bottom"
     },
-    "facing=north,half=upper": {
+    "half=upper": {
       "model": "more_orn_plants:block/crape_myrtle_top"
-    },
-    "facing=south,half=lower": {
-      "model": "more_orn_plants:block/crape_myrtle_bottom",
-      "y": 180
-    },
-    "facing=south,half=upper": {
-      "model": "more_orn_plants:block/crape_myrtle_top",
-      "y": 180
-    },
-    "facing=west,half=lower": {
-      "model": "more_orn_plants:block/crape_myrtle_bottom",
-      "y": 270
-    },
-    "facing=west,half=upper": {
-      "model": "more_orn_plants:block/crape_myrtle_top",
-      "y": 270
     }
   }
 }

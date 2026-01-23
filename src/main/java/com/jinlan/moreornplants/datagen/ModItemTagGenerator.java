@@ -247,6 +247,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.asItem())
                 .add(ModBlocks.FRAGRANT_SNOW_PETALS.asItem())
+                .add(ModItems.BAMBOO_STICK.get())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
                 .add(Blocks.SUNFLOWER.asItem())

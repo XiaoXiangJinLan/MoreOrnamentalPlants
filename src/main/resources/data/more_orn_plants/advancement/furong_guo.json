@@ -1,7 +1,7 @@
 {
   "parent": "more_orn_plants:the_frost_defiant",
   "criteria": {
-    "visit_cottonrose_realm": {
+    "visit_furong_guo": {
       "trigger": "minecraft:location",
       "conditions": {
         "player": [
@@ -10,7 +10,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biomes": "more_orn_plants:cottonrose_realm"
+                "biomes": "more_orn_plants:furong_guo"
               }
             }
           }
@@ -20,19 +20,19 @@
   },
   "display": {
     "description": {
-      "translate": "advancement.moreornplants.cottonrose_realm.description"
+      "translate": "advancement.moreornplants.furong_guo.description"
     },
     "icon": {
       "count": 1,
       "id": "more_orn_plants:mottled_bamboo"
     },
     "title": {
-      "translate": "advancement.moreornplants.cottonrose_realm.title"
+      "translate": "advancement.moreornplants.furong_guo.title"
     }
   },
   "requirements": [
     [
-      "visit_cottonrose_realm"
+      "visit_furong_guo"
     ]
   ],
   "sends_telemetry_event": true
