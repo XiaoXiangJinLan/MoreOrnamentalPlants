@@ -10,7 +10,7 @@ Camphor, Dove Tree, Chinaberry, Desert Poplar.
 
 New Plants 
 ==========
-Herbaceous Peony, Chinese Rose, Chrysanthemum, Cymbidium, Lotus, Camellia, Crimson Azalea, Wintersweet, Fountain Grass, 
+Herbaceous Peony, Chinese Rose, Chrysanthemum, Cymbidium, Lotus, Camellia, Red Azalea, Wintersweet, Fountain Grass, 
 Miscanthus, Mottled Bamboo, Black Bamboo, and two legendary Peony varieties: Two Qiao and Versicolor Peony.
 
 New Biomes
@@ -29,7 +29,7 @@ with occasional Dove Trees. The forest floor grows four types of Cymbidium, vani
 Purple-leaf Plum. The ground is bright yellow, and the undergrowth features various Chrysanthemums and Cotton Roses.  
 • Flowers Grove – A floral forest dominated by Weeping Crabapple, along with White Apricot, Ornamental Peach, Pear, 
 Purple-leaf Plum, Orange Osmanthus, Chinaberry, Crape Myrtle trees, and vanilla Cherry. The forest floor grows various 
-Chinese Roses, Chrysanthemums, Cymbidiums, Herbaceous Peonies, Pink Camellias, Crimson Azaleas, Crape Myrtles, Cotton 
+Chinese Roses, Chrysanthemums, Cymbidiums, Herbaceous Peonies, Pink Camellias, Red Azaleas, Crape Myrtles, Cotton 
 Roses, Fountain Grass, and some vanilla plants.  
 • Chinaberry Woods – A sparse woodland dominated by Chinaberry and Camphor trees, with large amounts of Fountain Grass 
 covering the ground.  
@@ -37,7 +37,7 @@ covering the ground.
 • Mount Mei – A high mountain snow slope growing Green Calyx Mei trees.  
 • Camellia Valley – A valley filled with Camellias and their variants (White Camellia, Versicolor Camellia), accompanied 
 by White Apricot and Camphor trees.  
-• Crimson Highlands – Highland slopes covered with Crimson Azaleas, dotted with Red Mei and Ornamental Peach trees.  
+• Red Highlands – Highland slopes covered with Red Azaleas, dotted with Red Mei and Ornamental Peach trees.  
 • Peony Meadows – A sea of flowers growing various Peonies and Herbaceous Peonies, accompanied by Upright Crabapple 
 trees. The sky are tinted pale pink-purple.  
 • Chinese Rose Fields – A floral field growing various Chinese Roses and vanilla Rose Bushes.  
@@ -70,9 +70,7 @@ farm animals.
 
 New Fuels
 ==========
-• Golden Miscanthus – Burns for 600 game ticks.  
-• Chinese Parasol Leaf – Burn for 120 game ticks.  
-• Other Fallen Leaf – Burn for 100 game ticks.
+• Golden Miscanthus – Burns for 600 game ticks.
 
 本模组将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠，彩叶树种：银杏，以及著名花卉月季、芍药、茶花等。
 本模组还添加了二十个全新的生物群系、六个结构，等待你来探索！
@@ -120,9 +118,7 @@ New Fuels
 **竹笋汤**、**莲藕汤**、**莲子汤**：在1.21.1版本可以喂食狼和猫。
 
 ## 新燃料
-**金芒草**：可以燃烧600游戏刻；  
-**梧桐落叶**：可以燃烧120游戏刻；  
-**其他落叶**：可以燃烧100游戏刻。
+**金芒草**：可以燃烧600游戏刻。
 
 The block id for some of the plant blocks in this mod
 ==========
@@ -137,7 +133,7 @@ more_orn_plants:purple_white_peony more_orn_plants:wu_hua_long_yu_peony more_orn
 more_orn_plants:golden_chrysanthemum more_orn_plants:gold_backed_scarlet_mum more_orn_plants:white_chrysanthemum more_orn_plants:green_chrysanthemum 
 more_orn_plants:purple_chrysanthemum more_orn_plants:violet_pink_chrysanthemum more_orn_plants:pink_chrysanthemum more_orn_plants:spring_cymbidium 
 more_orn_plants:summer_cymbidium more_orn_plants:autumn_cymbidium more_orn_plants:camellia more_orn_plants:pink_camellia 
-more_orn_plants:white_camellia more_orn_plants:versicolor_camellia more_orn_plants:crimson_azalea
+more_orn_plants:white_camellia more_orn_plants:versicolor_camellia more_orn_plants:red_azalea
 
 #_petals_#  
 more_orn_plants:peach_pink_petals more_orn_plants:fragrant_snow_petals
@@ -211,7 +207,7 @@ more_orn_plants:potted_pink_chinese_rose more_orn_plants:potted_yellow_chinese_r
 more_orn_plants:potted_red_pink_chinese_rose more_orn_plants:potted_red_yellow_chinese_rose more_orn_plants:potted_red_white_chinese_rose 
 more_orn_plants:potted_pink_white_chinese_rose more_orn_plants:potted_yellow_white_chinese_rose more_orn_plants:potted_camellia 
 more_orn_plants:potted_pink_camellia more_orn_plants:potted_white_camellia more_orn_plants:potted_versicolor_camellia 
-more_orn_plants:potted_crimson_azalea more_orn_plants:potted_wintersweet more_orn_plants:potted_red_mei_sapling more_orn_plants:potted_white_mei_sapling 
+more_orn_plants:potted_red_azalea more_orn_plants:potted_wintersweet more_orn_plants:potted_red_mei_sapling more_orn_plants:potted_white_mei_sapling 
 more_orn_plants:potted_green_calyx_mei_sapling more_orn_plants:potted_double_pink_mei_sapling more_orn_plants:potted_versicolor_mei_sapling 
 more_orn_plants:potted_red_weeping_mei_sapling more_orn_plants:potted_white_weeping_mei_sapling more_orn_plants:potted_green_weeping_mei_sapling 
 more_orn_plants:potted_pink_weeping_mei_sapling more_orn_plants:potted_versicolor_weeping_mei_sapling more_orn_plants:potted_upright_crabapple_sapling 

@@ -1,10 +1,13 @@
 package com.jinlan.moreornplants.block;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import com.jinlan.moreornplants.block.entity.MeiXiangnangBlockEntity;
 import com.jinlan.moreornplants.block.entity.ModHangingSignBlockEntity;
 import com.jinlan.moreornplants.block.entity.ModSignBlockEntity;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -49,6 +52,11 @@ public class ModBlockEntities {
                             ModBlocks.DOVE_TREE_HANGING_SIGN.get(), ModBlocks.DOVE_TREE_WALL_HANGING_SIGN.get(),
                             ModBlocks.CHINABERRY_HANGING_SIGN.get(), ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(),
                             ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get()).build(null));
+
+    public static final Supplier<BlockEntityType<MeiXiangnangBlockEntity>> MEI_XIANGNANG =
+            BLOCK_ENTITIES.register("mei_xiangnang", () ->
+                    BlockEntityType.Builder.of(MeiXiangnangBlockEntity::new,
+                            ModBlocks.MEI_XIANGNANG.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

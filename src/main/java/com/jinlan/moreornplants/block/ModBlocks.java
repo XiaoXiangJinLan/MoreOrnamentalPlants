@@ -934,8 +934,8 @@ public class ModBlocks {
             registerBlock("pink_camellia", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> VERSICOLOR_CAMELLIA =
             registerBlock("versicolor_camellia", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
-    public static final DeferredBlock<Block> CRIMSON_AZALEA =
-            registerBlock("crimson_azalea", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> RED_AZALEA =
+            registerBlock("red_azalea", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> FOUNTAIN_GRASS =
             registerBlock("fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PURPLE_FOUNTAIN_GRASS =
@@ -1037,8 +1037,8 @@ public class ModBlocks {
             BLOCKS.register("potted_pink_camellia", () -> flowerPot(PINK_CAMELLIA.get()));
     public static final DeferredBlock<Block> POTTED_VERSICOLOR_CAMELLIA =
             BLOCKS.register("potted_versicolor_camellia", () -> flowerPot(VERSICOLOR_CAMELLIA.get()));
-    public static final DeferredBlock<Block> POTTED_CRIMSON_AZALEA =
-            BLOCKS.register("potted_crimson_azalea", () -> flowerPot(CRIMSON_AZALEA.get()));
+    public static final DeferredBlock<Block> POTTED_RED_AZALEA =
+            BLOCKS.register("potted_red_azalea", () -> flowerPot(RED_AZALEA.get()));
     public static final DeferredBlock<Block> POTTED_FOUNTAIN_GRASS =
             BLOCKS.register("potted_fountain_grass", () -> flowerPot(FOUNTAIN_GRASS.get()));
     public static final DeferredBlock<Block> POTTED_PURPLE_FOUNTAIN_GRASS =
@@ -1127,7 +1127,7 @@ public class ModBlocks {
             BLOCKS.register("potted_black_bamboo", () -> flowerPot(BLACK_BAMBOO.get()));
 
     public static final DeferredBlock<Block> LOTUS =
-            registerBlock("lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.COLOR_PINK).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
+            registerBlock("lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN).mapColor(MapColor.COLOR_PINK).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final DeferredBlock<Block> WHITE_LOTUS =
             registerBlock("white_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.SNOW).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final DeferredBlock<Block> LOTUS_LEAF =
@@ -1147,6 +1147,9 @@ public class ModBlocks {
             BLOCKS.register("sweetgum_leaf_pile_1", () -> leafPile(MapColor.COLOR_RED,SoundType.PINK_PETALS));
     public static final DeferredBlock<Block> GINKGO_LEAF_PILE =
             BLOCKS.register("ginkgo_leaf_pile", () -> leafPile(MapColor.COLOR_YELLOW,SoundType.PINK_PETALS));
+
+    public static final DeferredBlock<Block> MEI_XIANGNANG =
+            registerBlock("mei_xiangnang", () -> new MeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
 
     private static Block log(MapColor topMapColor, MapColor sideMapColor) {
         return new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(p_152624_ -> p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)

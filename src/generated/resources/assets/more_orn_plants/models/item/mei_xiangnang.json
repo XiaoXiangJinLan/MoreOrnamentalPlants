@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "more_orn_plants:block/crimson_azalea"
+    "layer0": "more_orn_plants:item/mei_xiangnang"
   }
 }

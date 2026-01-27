@@ -28,8 +28,8 @@ public class ModBiomes {
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "flowers_grove"));
     public static final ResourceKey<Biome> CAMELLIA_VALLEY = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "camellia_valley"));
-    public static final ResourceKey<Biome> CRIMSON_HIGHLANDS = ResourceKey.create(Registries.BIOME,
-            ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "crimson_highlands"));
+    public static final ResourceKey<Biome> RED_HIGHLANDS = ResourceKey.create(Registries.BIOME,
+            ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "red_highlands"));
     public static final ResourceKey<Biome> PEONY_MEADOWS = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "peony_meadows"));
     public static final ResourceKey<Biome> FURONG_GUO = ResourceKey.create(Registries.BIOME,
@@ -64,7 +64,7 @@ public class ModBiomes {
         context.register(COLORED_FOREST, coloredForest(context));
         context.register(FLOWERS_GROVE, flowersGrove(context));
         context.register(CAMELLIA_VALLEY, camelliaValley(context));
-        context.register(CRIMSON_HIGHLANDS, crimsonHighlands(context));
+        context.register(RED_HIGHLANDS, redHighlands(context));
         context.register(PEONY_MEADOWS, peonyMeadows(context));
         context.register(FURONG_GUO, furongGuo(context));
         context.register(DESERT_POPLAR_WOODS, desertPoplarWoods(context));
@@ -294,7 +294,7 @@ public class ModBiomes {
                 .build();
     }
 
-    private static Biome crimsonHighlands(BootstrapContext<Biome> context) {
+    private static Biome redHighlands(BootstrapContext<Biome> context) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
         BiomeDefaultFeatures.farmAnimals(spawnBuilder);
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.RABBIT, 4, 2, 3));

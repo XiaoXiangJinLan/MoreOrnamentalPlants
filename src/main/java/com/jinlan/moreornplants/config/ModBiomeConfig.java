@@ -20,7 +20,7 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_PEACH_BLOSSOM_SPRING;
     public static final ModConfigSpec.BooleanValue ENABLE_APRICOT_SPRING_PLATEAU;
     public static final ModConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
-    public static final ModConfigSpec.BooleanValue ENABLE_CRIMSON_HIGHLANDS;
+    public static final ModConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS;
     public static final ModConfigSpec.BooleanValue ENABLE_FURONG_GUO;
     public static final ModConfigSpec.BooleanValue ENABLE_YUNMENG_MARSH;
     public static final ModConfigSpec.BooleanValue ENABLE_DESERT_POPLAR_WOODS;
@@ -73,9 +73,9 @@ public class ModBiomeConfig {
         ENABLE_CAMELLIA_VALLEY = BUILDER
                 .comment("Enable Camellia Valley biome generation")
                 .define("enableCamelliaValley", true);
-        ENABLE_CRIMSON_HIGHLANDS = BUILDER
-                .comment("Enable Crimson Highlands biome generation")
-                .define("enableCrimsonHighlands", true);
+        ENABLE_RED_HIGHLANDS = BUILDER
+                .comment("Enable Red Highlands biome generation")
+                .define("enableRedHighlands", true);
         ENABLE_FURONG_GUO = BUILDER
                 .comment("Enable Furong Guo biome generation")
                 .define("enableFurongGuo", true);

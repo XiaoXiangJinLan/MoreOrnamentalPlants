@@ -317,7 +317,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.PINK_CAMELLIA);
         flowerItem(ModBlocks.WHITE_CAMELLIA);
         flowerItem(ModBlocks.VERSICOLOR_CAMELLIA);
-        flowerItem(ModBlocks.CRIMSON_AZALEA);
+        flowerItem(ModBlocks.RED_AZALEA);
         flowerItem(ModBlocks.FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PURPLE_FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PINK_FOUNTAIN_GRASS);
@@ -363,6 +363,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SWEETGUM_LEAF_0);
         simpleItem(ModItems.SWEETGUM_LEAF_1);
         simpleItem(ModItems.GINKGO_LEAF);
+
+        simplerBlockItem(ModBlocks.MEI_XIANGNANG);
     }
 
     private void saplingItem(DeferredBlock<Block> item) {

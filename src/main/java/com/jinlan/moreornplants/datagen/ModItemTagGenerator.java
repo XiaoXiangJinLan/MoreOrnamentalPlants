@@ -271,6 +271,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.get().asItem())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get().asItem());
 
+        this.tag(CommonTags.Items.MEI_LEAVES)
+                .add(ModBlocks.RED_MEI_LEAVES.get().asItem(), ModBlocks.WHITE_MEI_LEAVES.get().asItem(), ModBlocks.GREEN_CALYX_MEI_LEAVES.get().asItem(),
+                        ModBlocks.DOUBLE_PINK_MEI_LEAVES.get().asItem(), ModBlocks.VERSICOLOR_MEI_LEAVES.get().asItem())
+                .add(ModBlocks.RED_WEEPING_MEI.get().asItem(), ModBlocks.WHITE_WEEPING_MEI.get().asItem(), ModBlocks.GREEN_WEEPING_MEI.get().asItem(),
+                        ModBlocks.PINK_WEEPING_MEI.get().asItem(), ModBlocks.VERSICOLOR_WEEPING_MEI.get().asItem());
+
         this.tag(CommonTags.Items.TREE_PEONY)
                 .add(Blocks.PEONY.asItem(), ModBlocks.TWO_QIAO_PEONY.get().asItem(), ModBlocks.VERSICOLOR_PEONY.get().asItem());
 
@@ -331,13 +337,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.CAMELLIA.get().asItem(), ModBlocks.PINK_CAMELLIA.get().asItem(), ModBlocks.WHITE_CAMELLIA.get().asItem(), ModBlocks.VERSICOLOR_CAMELLIA.get().asItem());
 
         this.tag(CommonTags.Items.AZALEA)
-                .add(Blocks.AZALEA.asItem(), Blocks.FLOWERING_AZALEA.asItem(), ModBlocks.CRIMSON_AZALEA.get().asItem());
+                .add(Blocks.AZALEA.asItem(), Blocks.FLOWERING_AZALEA.asItem(), ModBlocks.RED_AZALEA.get().asItem());
 
         this.tag(CommonTags.Items.CRABAPPLE_SAPLING)
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem());
 
         this.tag(CommonTags.Items.OSMANTHUS_SAPLING)
                 .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get().asItem(), ModBlocks.ORANGE_OSMANTHUS_SAPLING.get().asItem(), ModBlocks.WHITE_OSMANTHUS_SAPLING.get().asItem());
+
+        this.tag(CommonTags.Items.OSMANTHUS_LEAVES)
+                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get().asItem(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get().asItem(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get().asItem());
 
         this.tag(CommonTags.Items.APRICOT_SAPLING)
                 .add(ModBlocks.PINK_APRICOT_SAPLING.get().asItem(), ModBlocks.WHITE_APRICOT_SAPLING.get().asItem());
@@ -371,7 +380,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.RED_PEONY.asItem(), ModBlocks.LIGHT_RED_PEONY.asItem(), ModBlocks.INK_RED_PEONY.asItem(), ModBlocks.VERMILION_PEONY.asItem())
                 .add(ModBlocks.CHINESE_ROSE.asItem())
                 .add(ModBlocks.CAMELLIA.asItem())
-                .add(ModBlocks.CRIMSON_AZALEA.asItem())
+                .add(ModBlocks.RED_AZALEA.asItem())
                 .add(ModItems.SWEETGUM_LEAF_0.get(), ModItems.SWEETGUM_LEAF_1.get());
 
         this.tag(ModTags.Items.PINK_DYE)

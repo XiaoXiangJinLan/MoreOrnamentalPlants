@@ -136,7 +136,7 @@ public class MoreOrnPlants {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WHITE_CAMELLIA.getId(), ModBlocks.POTTED_WHITE_CAMELLIA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_CAMELLIA.getId(), ModBlocks.POTTED_PINK_CAMELLIA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VERSICOLOR_CAMELLIA.getId(), ModBlocks.POTTED_VERSICOLOR_CAMELLIA);
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CRIMSON_AZALEA.getId(), ModBlocks.POTTED_CRIMSON_AZALEA);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.RED_AZALEA.getId(), ModBlocks.POTTED_RED_AZALEA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.FOUNTAIN_GRASS.getId(), ModBlocks.POTTED_FOUNTAIN_GRASS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PURPLE_FOUNTAIN_GRASS.getId(), ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_FOUNTAIN_GRASS.getId(), ModBlocks.POTTED_PINK_FOUNTAIN_GRASS);

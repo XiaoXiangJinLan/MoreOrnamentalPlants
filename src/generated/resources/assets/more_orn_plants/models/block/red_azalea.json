@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "more_orn_plants:block/crimson_azalea"
+    "cross": "more_orn_plants:block/red_azalea"
   }
 }

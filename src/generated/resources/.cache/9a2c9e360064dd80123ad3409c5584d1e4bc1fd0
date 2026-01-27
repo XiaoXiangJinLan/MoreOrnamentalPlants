@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-17T17:12:09.0263387	Item Models: more_orn_plants
+// 1.21.1	2026-01-27T22:25:45.4330462	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -75,7 +75,6 @@ c9106d95da7cf1680899da935dfa2bc3b2ebd490 assets/more_orn_plants/models/item/crab
 7278fc57b4e02a33758361723f5115f40a4a1f4b assets/more_orn_plants/models/item/crabapple_trapdoor.json
 10711225e950b126be6d56e810613962a0f2d68e assets/more_orn_plants/models/item/crape_myrtle.json
 6b38822943a585af3b3d509260a6ef0660207ff1 assets/more_orn_plants/models/item/crape_myrtle_sapling.json
-3222c1d5d2b5783e3cbafd8c5d3158c8401c0807 assets/more_orn_plants/models/item/crimson_azalea.json
 087c41546cdbc1cb76e7461d9948f420fb9df090 assets/more_orn_plants/models/item/desert_poplar_boat.json
 af401652f0c76100ade243d27ec4308fdcf49e04 assets/more_orn_plants/models/item/desert_poplar_button.json
 6697aab5ebaf5c009c866de64f3f320e6b9b24e1 assets/more_orn_plants/models/item/desert_poplar_chest_boat.json
@@ -173,6 +172,7 @@ c65bbf0cf9e35292d22261732c8c3074dacac680 assets/more_orn_plants/models/item/lotu
 c4424db61baa4c184a7645012b893e674a332510 assets/more_orn_plants/models/item/lotus_seed_pod.json
 2a08575aa050e78c0dcd06337a1d99e842771b97 assets/more_orn_plants/models/item/lotus_seed_soup.json
 2d7b2df34140207172d9f78bc616430e5578f6f3 assets/more_orn_plants/models/item/mauve_peony.json
+3b2e9f0a19fa597baaeb0cbde02a4079271563b6 assets/more_orn_plants/models/item/mei_xiangnang.json
 c8dd95d8f382dd745659f51c1eb07a18b4f965dc assets/more_orn_plants/models/item/mottled_bamboo.json
 dd702884fcb105def37fa9ac8df611cef07d24c5 assets/more_orn_plants/models/item/ochre_yellow_peony.json
 34efb7892cc904a51b63b0d5cf8d5d4b07c86080 assets/more_orn_plants/models/item/orange_osmanthus_sapling.json
@@ -245,6 +245,7 @@ f935b03734cb95ec5b6f61f179ac9cd9b4d08b05 assets/more_orn_plants/models/item/purp
 592a80b19cb085cb67761823dfc47b338cf22a6b assets/more_orn_plants/models/item/purple_leaf_plum_trapdoor.json
 45008f909976af8bd36c54897765f48287f8af99 assets/more_orn_plants/models/item/purple_peony.json
 7472445ef3860dd956ec780895b2445b8af1d377 assets/more_orn_plants/models/item/purple_white_peony.json
+ec2cc181651492201813f3afab72f34536f284a0 assets/more_orn_plants/models/item/red_azalea.json
 1fef42d85d078353b79e944fbcc86b65e97ed6e3 assets/more_orn_plants/models/item/red_mei_boat.json
 4167998881ba6ea5b2ccb5bb827b3c3c58ae518c assets/more_orn_plants/models/item/red_mei_button.json
 b3dab991be701b945352955cb0cd9dc9e29fc8e4 assets/more_orn_plants/models/item/red_mei_chest_boat.json

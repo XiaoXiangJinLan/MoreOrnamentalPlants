@@ -2,6 +2,6 @@
   "parent": "minecraft:block/flower_pot_cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "plant": "more_orn_plants:block/crimson_azalea"
+    "plant": "more_orn_plants:block/red_azalea"
   }
 }

@@ -130,7 +130,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_PINK_CAMELLIA.get())
                 .add(ModBlocks.POTTED_WHITE_CAMELLIA.get())
                 .add(ModBlocks.POTTED_VERSICOLOR_CAMELLIA.get())
-                .add(ModBlocks.POTTED_CRIMSON_AZALEA.get())
+                .add(ModBlocks.POTTED_RED_AZALEA.get())
                 .add(ModBlocks.POTTED_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.POTTED_PINK_FOUNTAIN_GRASS.get())
@@ -717,7 +717,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_CAMELLIA.get())
                 .add(ModBlocks.WHITE_CAMELLIA.get())
                 .add(ModBlocks.VERSICOLOR_CAMELLIA.get())
-                .add(ModBlocks.CRIMSON_AZALEA.get());
+                .add(ModBlocks.RED_AZALEA.get());
 
         this.tag(BlockTags.TALL_FLOWERS)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get())

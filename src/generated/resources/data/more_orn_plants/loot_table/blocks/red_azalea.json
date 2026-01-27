@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:crimson_azalea"
+          "name": "more_orn_plants:red_azalea"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "more_orn_plants:blocks/crimson_azalea"
+  "random_sequence": "more_orn_plants:blocks/red_azalea"
 }

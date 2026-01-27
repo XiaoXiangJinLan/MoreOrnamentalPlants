@@ -3,6 +3,7 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.item.ModItems;
+import com.jinlan.moreornplants.util.CommonTags;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -1006,11 +1007,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.WHITE_PEONY.get()), has(ModBlocks.WHITE_PEONY.get()))
                 .save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TWO_QIAO_PEONY.get(), 2)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TWO_QIAO_PEONY, 2)
                 .requires(Blocks.PEONY, 2)
                 .unlockedBy(getHasName(Blocks.PEONY), has(Blocks.PEONY))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VERSICOLOR_PEONY.get(), 1)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VERSICOLOR_PEONY)
                 .pattern(" # ")
                 .pattern("###")
                 .pattern(" # ")
@@ -1018,7 +1019,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Blocks.PEONY), has(Blocks.PEONY))
                 .save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRAPE_MYRTLE.get(), 2)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRAPE_MYRTLE, 2)
                 .requires(ModBlocks.CRAPE_MYRTLE_SAPLING.get(), 2)
                 .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_SAPLING.get()), has(ModBlocks.CRAPE_MYRTLE_SAPLING.get()))
                 .save(recipeOutput);
@@ -1092,13 +1093,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.LOTUS_SEED.get(), 5)
                 .requires(ModItems.LOTUS_SEED_POD.get())
-                .unlockedBy(getHasName(ModItems.LOTUS_SEED_POD.get()), has(ModItems.LOTUS_SEED_POD.get()))
+                .unlockedBy(getHasName(ModItems.LOTUS_SEED_POD.get()), has(ModItems.LOTUS_SEED_POD))
                 .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.LOTUS_SEED_SOUP.get())
                 .requires(ModItems.LOTUS_SEED.get(), 5)
                 .requires(Items.BOWL)
-                .unlockedBy(getHasName(ModItems.LOTUS_SEED.get()), has(ModItems.LOTUS_SEED.get()))
+                .unlockedBy(getHasName(ModItems.LOTUS_SEED.get()), has(ModItems.LOTUS_SEED))
                 .unlockedBy("has_bowl", has(Items.BOWL))
                 .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MEI_XIANGNANG)
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', CommonTags.Items.MEI_LEAVES)
+                .unlockedBy("has_mei_leaves", has(CommonTags.Items.MEI_LEAVES))
+                .save(recipeOutput);
+
     }
 }

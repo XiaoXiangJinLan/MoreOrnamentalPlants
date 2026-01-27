@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-18T18:04:09.8691447	Recipes
+// 1.21.1	2026-01-27T22:25:45.4445323	Recipes
 a68cbdc6f63860c67f3dc9287300708552b98526 data/minecraft/advancement/recipes/misc/black_dye.json
 7cc611a4a6f86822fab2d57cae07732bf5e5e0f9 data/minecraft/advancement/recipes/misc/green_dye.json
 49383de36bba78b7442c11a223a5f17f3deaad6e data/minecraft/advancement/recipes/misc/light_blue_dye.json
@@ -175,6 +175,7 @@ c8aa170a06df0edc827d951abe2fe6a394a16f96 data/more_orn_plants/advancement/recipe
 db501802f317be3ce0585298808af5a81c21d55e data/more_orn_plants/advancement/recipes/misc/ink_peony.json
 cbd880f68757093d6b1fcc19bf8d6468a032f929 data/more_orn_plants/advancement/recipes/misc/light_colorful_peony.json
 2b23383a6c0535e09503ee85ea712a636c4fb87d data/more_orn_plants/advancement/recipes/misc/light_pink_chrysanthemum.json
+7a6d0e6c28c1308d220e703f9bacd7745b1912b6 data/more_orn_plants/advancement/recipes/misc/mei_xiangnang.json
 7f3af33325bbf38e4ac4d2ef1e5c91b7aa497e0d data/more_orn_plants/advancement/recipes/misc/pink_peony.json
 36f412b82a5af852a64bfeab04132f089e93b903 data/more_orn_plants/advancement/recipes/misc/pink_weeping_mei_sapling.json
 bacbd31d53d9e47a824a1228e5883ccae771527c data/more_orn_plants/advancement/recipes/misc/pink_white_chinese_rose.json
@@ -477,6 +478,7 @@ f1fc81e824c925d9bedb113720e5e7139743962a data/more_orn_plants/recipe/light_pink_
 cd64b708acd3d41aef1850e848c632dd096e4143 data/more_orn_plants/recipe/lotus_root_soup.json
 fe3e7cd60fd3076ca7260fb69152c2ab6ec71a9b data/more_orn_plants/recipe/lotus_seed.json
 03f2a16d9987aac94abddca68c92716d6ec3f465 data/more_orn_plants/recipe/lotus_seed_soup.json
+1ca102ed7c0b204de01d5a4e82c04a2036a1ee77 data/more_orn_plants/recipe/mei_xiangnang.json
 3b7f1c560d44f7c5fffb75272503b023ea1cd4d5 data/more_orn_plants/recipe/osmanthus_boat.json
 30353b1318777de5632a80352b02c2802c190328 data/more_orn_plants/recipe/osmanthus_button.json
 e25f9cdafbf8e1ce1f3513fdbc726436a05e568c data/more_orn_plants/recipe/osmanthus_chest_boat.json

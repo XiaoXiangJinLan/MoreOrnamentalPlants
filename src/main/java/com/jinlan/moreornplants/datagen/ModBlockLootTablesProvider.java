@@ -708,9 +708,9 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.VERSICOLOR_CAMELLIA.get());
         this.add(ModBlocks.POTTED_VERSICOLOR_CAMELLIA.get(),
                 createPotFlowerItemTable(ModBlocks.VERSICOLOR_CAMELLIA.get()));
-        this.dropSelf(ModBlocks.CRIMSON_AZALEA.get());
-        this.add(ModBlocks.POTTED_CRIMSON_AZALEA.get(),
-                createPotFlowerItemTable(ModBlocks.CRIMSON_AZALEA.get()));
+        this.dropSelf(ModBlocks.RED_AZALEA.get());
+        this.add(ModBlocks.POTTED_RED_AZALEA.get(),
+                createPotFlowerItemTable(ModBlocks.RED_AZALEA.get()));
         this.dropSelf(ModBlocks.FOUNTAIN_GRASS.get());
         this.add(ModBlocks.POTTED_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.FOUNTAIN_GRASS.get()));
@@ -826,6 +826,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_0.get());
         this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_1.get());
         this.dropSelf(ModBlocks.GINKGO_LEAF_PILE.get());
+
+        this.dropSelf(ModBlocks.MEI_XIANGNANG.get());
 
     }
 
