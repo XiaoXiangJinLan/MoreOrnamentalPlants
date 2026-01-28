@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cymbidium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:cymbidium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:cymbidium_xiangnang"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cymbidium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:cymbidium_xiangnang"
+    ]
+  }
+}

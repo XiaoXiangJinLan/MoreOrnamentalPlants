@@ -1,13 +1,11 @@
 package com.jinlan.moreornplants.block;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
-import com.jinlan.moreornplants.block.entity.MeiXiangnangBlockEntity;
+import com.jinlan.moreornplants.block.entity.xiangnang.*;
 import com.jinlan.moreornplants.block.entity.ModHangingSignBlockEntity;
 import com.jinlan.moreornplants.block.entity.ModSignBlockEntity;
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -57,6 +55,31 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("mei_xiangnang", () ->
                     BlockEntityType.Builder.of(MeiXiangnangBlockEntity::new,
                             ModBlocks.MEI_XIANGNANG.get()).build(null));
+
+    public static final Supplier<BlockEntityType<GuiXiangnangBlockEntity>> GUI_XIANGNANG =
+            BLOCK_ENTITIES.register("gui_xiangnang", () ->
+                    BlockEntityType.Builder.of(GuiXiangnangBlockEntity::new,
+                            ModBlocks.OSMANTHUS_XIANGNANG.get()).build(null));
+
+    public static final Supplier<BlockEntityType<LanXiangnangBlockEntity>> LAN_XIANGNANG =
+            BLOCK_ENTITIES.register("lan_xiangnang", () ->
+                    BlockEntityType.Builder.of(LanXiangnangBlockEntity::new,
+                            ModBlocks.CYMBIDIUM_XIANGNANG.get()).build(null));
+
+    public static final Supplier<BlockEntityType<LaMeiXiangnangBlockEntity>> LA_MEI_XIANGNANG =
+            BLOCK_ENTITIES.register("la_mei_xiangnang", () ->
+                    BlockEntityType.Builder.of(LaMeiXiangnangBlockEntity::new,
+                            ModBlocks.WINTERSWEET_XIANGNANG.get(), ModBlocks.LILAC_XIANGNANG.get()).build(null));
+
+    public static final Supplier<BlockEntityType<TaoXiangnangBlockEntity>> TAO_XIANGNANG =
+            BLOCK_ENTITIES.register("tao_xiangnang", () ->
+                    BlockEntityType.Builder.of(TaoXiangnangBlockEntity::new,
+                            ModBlocks.PEACH_XIANGNANG.get(), ModBlocks.APRICOT_XIANGNANG.get(), ModBlocks.PEAR_XIANGNANG.get(), ModBlocks.LOTUS_XIANGNANG.get()).build(null));
+
+    public static final Supplier<BlockEntityType<YueJiXiangnangBlockEntity>> YUE_JI_XIANGNANG =
+            BLOCK_ENTITIES.register("yue_ji_xiangnang", () ->
+                    BlockEntityType.Builder.of(YueJiXiangnangBlockEntity::new,
+                            ModBlocks.CHINESE_ROSE_XIANGNANG.get(), ModBlocks.RUGOSA_ROSE_XIANGNANG.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

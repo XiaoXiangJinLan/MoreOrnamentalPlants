@@ -1,4 +1,5 @@
-// 1.21.1	2026-01-27T22:25:45.4330462	Tags for minecraft:item mod id more_orn_plants
+// 1.21.1	2026-01-29T01:01:22.2329239	Tags for minecraft:item mod id more_orn_plants
+6fe37a5db97b91f51a0addf9825c60414ee735aa data/c/tags/item/apricot_leaves.json
 e3bbc6d486cc0792bdcdf6bb2c0da508939151ca data/c/tags/item/apricot_sapling.json
 840b53e6221cf92da0033064fd786132be7f06c2 data/c/tags/item/azalea.json
 ecf3903a194080819519550f232f10010513f4b1 data/c/tags/item/bamboo.json
@@ -25,7 +26,9 @@ b34a0407dfa9e2f67cb523a9de35c1d07869f946 data/c/tags/item/lotus.json
 47eedc95c346a952a8a60788de4deaa1ba6a4348 data/c/tags/item/mei_leaves.json
 05bf3dfd796f43ba8e7825be804a0f33d27df840 data/c/tags/item/mei_sapling.json
 96bdbadd0a96dc9c5ef4280bfafb6e237602352a data/c/tags/item/ornamental_grass.json
-cc237b194e623b174daf7391bfdaabac2d684eb7 data/c/tags/item/osmanthus_sapling.json
+a93e8d4e063cb7dc4db2558f4c9a9520378ddde7 data/c/tags/item/osmanthus_leaves.json
+c34752788297cb2989f3bc35049a78ed54eb61fd data/c/tags/item/osmanthus_sapling.json
+7fa7952271b15ef0b6521425d92ed54c35534737 data/c/tags/item/peach_leaves.json
 b446eff90bd1cc382f9d111b7e55028bff3c55bb data/c/tags/item/peach_sapling.json
 05ee996126afa23df5258b108b49a838c71f437e data/c/tags/item/plum_sapling.json
 03b0f5a11ed9ffe99eeaa7b86840233f2320f7e5 data/c/tags/item/stripped_logs.json

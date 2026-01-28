@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,hanging=false": {
+      "model": "more_orn_plants:block/cymbidium_xiangnang",
+      "y": 90
+    },
+    "facing=east,hanging=true": {
+      "model": "more_orn_plants:block/cymbidium_xiangnang_hanging",
+      "y": 90
+    },
+    "facing=north,hanging=false": {
+      "model": "more_orn_plants:block/cymbidium_xiangnang"
+    },
+    "facing=north,hanging=true": {
+      "model": "more_orn_plants:block/cymbidium_xiangnang_hanging"
+    },
+    "facing=south,hanging=false": {
+      "model": "more_orn_plants:block/cymbidium_xiangnang",
+      "y": 180
+    },
+    "facing=south,hanging=true": {
+      "model": "more_orn_plants:block/cymbidium_xiangnang_hanging",
+      "y": 180
+    },
+    "facing=west,hanging=false": {
+      "model": "more_orn_plants:block/cymbidium_xiangnang",
+      "y": 270
+    },
+    "facing=west,hanging=true": {
+      "model": "more_orn_plants:block/cymbidium_xiangnang_hanging",
+      "y": 270
+    }
+  }
+}

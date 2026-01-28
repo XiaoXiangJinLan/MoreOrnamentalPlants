@@ -3,7 +3,7 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
-import com.jinlan.moreornplants.block.MeiXiangnangBlock;
+import com.jinlan.moreornplants.block.xiangnangBlocks.MeiXiangnangBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.WeepingBlocks.PinkWeepingMeiPlantBlock;
 import net.minecraft.core.Direction;
@@ -752,6 +752,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leafPileBlock(ModBlocks.GINKGO_LEAF_PILE);
 
         xiangNangBlock(ModBlocks.MEI_XIANGNANG);
+        xiangNangBlock(ModBlocks.OSMANTHUS_XIANGNANG);
+        xiangNangBlock(ModBlocks.CYMBIDIUM_XIANGNANG);
+        xiangNangBlock(ModBlocks.WINTERSWEET_XIANGNANG);
+        xiangNangBlock(ModBlocks.LILAC_XIANGNANG);
+        xiangNangBlock(ModBlocks.CHINESE_ROSE_XIANGNANG);
+        xiangNangBlock(ModBlocks.RUGOSA_ROSE_XIANGNANG);
+        xiangNangBlock(ModBlocks.APRICOT_XIANGNANG);
+        xiangNangBlock(ModBlocks.PEACH_XIANGNANG);
+        xiangNangBlock(ModBlocks.PEAR_XIANGNANG);
+        xiangNangBlock(ModBlocks.LOTUS_XIANGNANG);
 
     }
 

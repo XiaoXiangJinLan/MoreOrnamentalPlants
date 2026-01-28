@@ -351,8 +351,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(CommonTags.Items.APRICOT_SAPLING)
                 .add(ModBlocks.PINK_APRICOT_SAPLING.get().asItem(), ModBlocks.WHITE_APRICOT_SAPLING.get().asItem());
 
+        this.tag(CommonTags.Items.APRICOT_LEAVES)
+                .add(ModBlocks.PINK_APRICOT_LEAVES.get().asItem(), ModBlocks.WHITE_APRICOT_LEAVES.get().asItem());
+
         this.tag(CommonTags.Items.PEACH_SAPLING)
                 .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get().asItem(), ModBlocks.WILD_PEACH_SAPLING.get().asItem());
+
+        this.tag(CommonTags.Items.PEACH_LEAVES)
+                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get().asItem(), ModBlocks.WILD_PEACH_LEAVES.get().asItem());
 
         this.tag(CommonTags.Items.PLUM_SAPLING)
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get().asItem(), ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get().asItem());

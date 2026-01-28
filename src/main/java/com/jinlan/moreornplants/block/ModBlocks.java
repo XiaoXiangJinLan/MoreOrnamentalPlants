@@ -9,6 +9,7 @@ import com.jinlan.moreornplants.block.FlowerBlocks.*;
 import com.jinlan.moreornplants.block.LeavesBlocks.*;
 import com.jinlan.moreornplants.block.WeepingBlocks.*;
 import com.jinlan.moreornplants.block.tree.ModTreeGrower;
+import com.jinlan.moreornplants.block.xiangnangBlocks.*;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ModBlockSetType;
 import com.jinlan.moreornplants.util.ModWoodTypes;
@@ -1134,22 +1135,42 @@ public class ModBlocks {
             registerBlock("lotus_leaf", () -> new WaterLotusLeafBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
 
     public static final DeferredBlock<Block> ORNAMENTAL_PEACH_PETALS =
-            BLOCKS.register("ornamental_peach_petals", () -> leafPile(MapColor.COLOR_PINK, SoundType.PINK_PETALS));
+            BLOCKS.register("ornamental_peach_petals", () -> leafPile(MapColor.COLOR_PINK));
     public static final DeferredBlock<Block> WILD_PEACH_PETALS =
-            BLOCKS.register("wild_peach_petals", () -> leafPile(MapColor.COLOR_PINK, SoundType.PINK_PETALS));
+            BLOCKS.register("wild_peach_petals", () -> leafPile(MapColor.COLOR_PINK));
     public static final DeferredBlock<Block> CHINESE_PARASOL_LEAF_0 =
-            BLOCKS.register("chinese_parasol_leaf_0", () -> leafPile(MapColor.COLOR_YELLOW, SoundType.PINK_PETALS));
+            BLOCKS.register("chinese_parasol_leaf_0", () -> leafPile(MapColor.COLOR_YELLOW));
     public static final DeferredBlock<Block> CHINESE_PARASOL_LEAF_1 =
-            BLOCKS.register("chinese_parasol_leaf_1", () -> leafPile(MapColor.COLOR_ORANGE, SoundType.PINK_PETALS));
+            BLOCKS.register("chinese_parasol_leaf_1", () -> leafPile(MapColor.COLOR_ORANGE));
     public static final DeferredBlock<Block> SWEETGUM_LEAF_PILE_0 =
-            BLOCKS.register("sweetgum_leaf_pile_0", () -> leafPile(MapColor.COLOR_RED, SoundType.PINK_PETALS));
+            BLOCKS.register("sweetgum_leaf_pile_0", () -> leafPile(MapColor.COLOR_RED));
     public static final DeferredBlock<Block> SWEETGUM_LEAF_PILE_1 =
-            BLOCKS.register("sweetgum_leaf_pile_1", () -> leafPile(MapColor.COLOR_RED,SoundType.PINK_PETALS));
+            BLOCKS.register("sweetgum_leaf_pile_1", () -> leafPile(MapColor.COLOR_RED));
     public static final DeferredBlock<Block> GINKGO_LEAF_PILE =
-            BLOCKS.register("ginkgo_leaf_pile", () -> leafPile(MapColor.COLOR_YELLOW,SoundType.PINK_PETALS));
+            BLOCKS.register("ginkgo_leaf_pile", () -> leafPile(MapColor.COLOR_YELLOW));
 
     public static final DeferredBlock<Block> MEI_XIANGNANG =
             registerBlock("mei_xiangnang", () -> new MeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> OSMANTHUS_XIANGNANG =
+            registerBlock("osmanthus_xiangnang", () -> new GuiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CYMBIDIUM_XIANGNANG =
+            registerBlock("cymbidium_xiangnang", () -> new LanXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> WINTERSWEET_XIANGNANG =
+            registerBlock("wintersweet_xiangnang", () -> new LaMeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> LILAC_XIANGNANG =
+            registerBlock("lilac_xiangnang", () -> new LaMeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CHINESE_ROSE_XIANGNANG =
+            registerBlock("chinese_rose_xiangnang", () -> new YueJiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> RUGOSA_ROSE_XIANGNANG =
+            registerBlock("rugosa_rose_xiangnang", () -> new YueJiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> APRICOT_XIANGNANG =
+            registerBlock("apricot_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> PEACH_XIANGNANG =
+            registerBlock("peach_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> PEAR_XIANGNANG =
+            registerBlock("pear_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> LOTUS_XIANGNANG =
+            registerBlock("lotus_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
 
     private static Block log(MapColor topMapColor, MapColor sideMapColor) {
         return new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(p_152624_ -> p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)
@@ -1168,8 +1189,8 @@ public class ModBlocks {
         return new ModStairBlock(baseBlock.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock));
     }
 
-    public static Block leafPile(MapColor pColor, SoundType pType) {
-        return new LeafPileBlock(BlockBehaviour.Properties.of().mapColor(pColor).noCollission().sound(pType).pushReaction(PushReaction.DESTROY));
+    public static Block leafPile(MapColor color) {
+        return new LeafPileBlock(BlockBehaviour.Properties.of().mapColor(color).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY));
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {

@@ -365,6 +365,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GINKGO_LEAF);
 
         simplerBlockItem(ModBlocks.MEI_XIANGNANG);
+        simplerBlockItem(ModBlocks.OSMANTHUS_XIANGNANG);
+        simplerBlockItem(ModBlocks.CYMBIDIUM_XIANGNANG);
+        simplerBlockItem(ModBlocks.WINTERSWEET_XIANGNANG);
+        simplerBlockItem(ModBlocks.LILAC_XIANGNANG);
+        simplerBlockItem(ModBlocks.CHINESE_ROSE_XIANGNANG);
+        simplerBlockItem(ModBlocks.RUGOSA_ROSE_XIANGNANG);
+        simplerBlockItem(ModBlocks.APRICOT_XIANGNANG);
+        simplerBlockItem(ModBlocks.PEACH_XIANGNANG);
+        simplerBlockItem(ModBlocks.PEAR_XIANGNANG);
+        simplerBlockItem(ModBlocks.LOTUS_XIANGNANG);
     }
 
     private void saplingItem(DeferredBlock<Block> item) {

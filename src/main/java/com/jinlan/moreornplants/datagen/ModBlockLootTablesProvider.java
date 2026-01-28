@@ -828,6 +828,16 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GINKGO_LEAF_PILE.get());
 
         this.dropSelf(ModBlocks.MEI_XIANGNANG.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_XIANGNANG.get());
+        this.dropSelf(ModBlocks.CYMBIDIUM_XIANGNANG.get());
+        this.dropSelf(ModBlocks.WINTERSWEET_XIANGNANG.get());
+        this.dropSelf(ModBlocks.LILAC_XIANGNANG.get());
+        this.dropSelf(ModBlocks.CHINESE_ROSE_XIANGNANG.get());
+        this.dropSelf(ModBlocks.RUGOSA_ROSE_XIANGNANG.get());
+        this.dropSelf(ModBlocks.APRICOT_XIANGNANG.get());
+        this.dropSelf(ModBlocks.PEACH_XIANGNANG.get());
+        this.dropSelf(ModBlocks.PEAR_XIANGNANG.get());
+        this.dropSelf(ModBlocks.LOTUS_XIANGNANG.get());
 
     }
 

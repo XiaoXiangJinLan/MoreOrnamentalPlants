@@ -1,6 +1,7 @@
-package com.jinlan.moreornplants.block;
+package com.jinlan.moreornplants.block.xiangnangBlocks;
 
-import com.jinlan.moreornplants.block.entity.MeiXiangnangBlockEntity;
+import com.jinlan.moreornplants.block.ModBlockEntities;
+import com.jinlan.moreornplants.block.entity.xiangnang.MeiXiangnangBlockEntity;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

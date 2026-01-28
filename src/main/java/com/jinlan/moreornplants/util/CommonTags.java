@@ -28,7 +28,9 @@ public class CommonTags {
         public static final TagKey<Item> ORNAMENTAL_GRASS = tag("ornamental_grass");
 
         public static final TagKey<Item> MEI_LEAVES = tag("mei_leaves");
-        public static final TagKey<Item> OSMANTHUS_LEAVES = tag("osmanthus_sapling");
+        public static final TagKey<Item> OSMANTHUS_LEAVES = tag("osmanthus_leaves");
+        public static final TagKey<Item> APRICOT_LEAVES = tag("apricot_leaves");
+        public static final TagKey<Item> PEACH_LEAVES = tag("peach_leaves");
 
         public static final TagKey<Item> CROPS_LOTUS = tag("crops/lotus");
         public static final TagKey<Item> FOODS_BAMBOO_SHOOTS = tag("foods/bamboo_shoots");

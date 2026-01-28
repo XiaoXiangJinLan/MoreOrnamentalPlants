@@ -1,0 +1,9 @@
+{
+  "parent": "more_orn_plants:block/xiangnang_hanging",
+  "textures": {
+    "back": "more_orn_plants:block/rugosa_rose_xiangnang",
+    "front": "more_orn_plants:block/rugosa_rose_xiangnang",
+    "side": "more_orn_plants:block/rugosa_rose_xiangnang",
+    "silk": "more_orn_plants:block/rugosa_rose_xiangnang"
+  }
+}
