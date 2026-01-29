@@ -54,6 +54,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "more_orn_plants:mei_xiangnang",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
           "name": "more_orn_plants:versicolor_weeping_mei_sapling",
           "weight": 1
         }

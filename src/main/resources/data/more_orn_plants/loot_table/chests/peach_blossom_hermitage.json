@@ -84,6 +84,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "more_orn_plants:peach_xiangnang",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
           "name": "more_orn_plants:wild_peach_sapling",
           "weight": 3
         },

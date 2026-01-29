@@ -1128,7 +1128,7 @@ public class ModBlocks {
             BLOCKS.register("potted_black_bamboo", () -> flowerPot(BLACK_BAMBOO.get()));
 
     public static final DeferredBlock<Block> LOTUS =
-            registerBlock("lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN).mapColor(MapColor.COLOR_PINK).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
+            registerBlock("lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.COLOR_PINK).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final DeferredBlock<Block> WHITE_LOTUS =
             registerBlock("white_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.SNOW).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final DeferredBlock<Block> LOTUS_LEAF =
