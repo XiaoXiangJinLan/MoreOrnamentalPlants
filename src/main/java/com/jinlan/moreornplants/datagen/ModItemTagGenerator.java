@@ -222,29 +222,29 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(CommonTags.Items.CRABAPPLE_SAPLING)
                 .addTag(CommonTags.Items.APRICOT_SAPLING)
                 .addTag(CommonTags.Items.PEACH_SAPLING)
-                .add(ModBlocks.PEAR_SAPLING.get().asItem())
+                .add(ModBlocks.PEAR_SAPLING.asItem())
                 .addTag(CommonTags.Items.PLUM_SAPLING)
                 .addTag(CommonTags.Items.OSMANTHUS_SAPLING)
                 .addTag(CommonTags.Items.GINKGO_SAPLING)
                 .addTag(CommonTags.Items.CHINESE_PARASOL_SAPLING)
-                .add(ModBlocks.SWEETGUM_SAPLING.get().asItem())
-                .add(ModBlocks.CAMPHOR_SAPLING.get().asItem())
-                .add(ModBlocks.DOVE_TREE_SAPLING.get().asItem())
-                .add(ModBlocks.CHINABERRY_SAPLING.get().asItem())
-                .add(ModBlocks.DESERT_POPLAR_SAPLING.get().asItem())
+                .add(ModBlocks.SWEETGUM_SAPLING.asItem())
+                .add(ModBlocks.CAMPHOR_SAPLING.asItem())
+                .add(ModBlocks.DOVE_TREE_SAPLING.asItem())
+                .add(ModBlocks.CHINABERRY_SAPLING.asItem())
+                .add(ModBlocks.DESERT_POPLAR_SAPLING.asItem())
                 .addTag(CommonTags.Items.CYMBIDIUM)
                 .addTag(CommonTags.Items.CHRYSANTHEMUM)
                 .addTag(CommonTags.Items.LOTUS)
                 .addTag(CommonTags.Items.HERBACEOUS_PEONY)
                 .addTag(CommonTags.Items.CHINESE_ROSE)
-                .add(ModBlocks.WINTERSWEET.get().asItem())
+                .add(ModBlocks.WINTERSWEET.asItem())
                 .addTag(CommonTags.Items.CAMELLIA)
                 .addTag(CommonTags.Items.AZALEA)
                 .addTag(CommonTags.Items.TREE_PEONY)
                 .addTag(CommonTags.Items.CRAPE_MYRTLE)
                 .addTag(CommonTags.Items.BAMBOO)
                 .addTag(CommonTags.Items.ORNAMENTAL_GRASS)
-                .add(ModBlocks.COTTON_ROSE.get().asItem())
+                .add(ModBlocks.COTTON_ROSE.asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.asItem())
                 .add(ModBlocks.FRAGRANT_SNOW_PETALS.asItem())
                 .add(ModItems.BAMBOO_STICK.get())
@@ -254,129 +254,129 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(Blocks.LILAC.asItem());
 
         this.tag(CommonTags.Items.CYMBIDIUM)
-                .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
-                .add(ModBlocks.SUMMER_CYMBIDIUM.get().asItem())
-                .add(ModBlocks.AUTUMN_CYMBIDIUM.get().asItem())
-                .add(ModBlocks.WINTER_CYMBIDIUM.get().asItem());
+                .add(ModBlocks.SPRING_CYMBIDIUM.asItem())
+                .add(ModBlocks.SUMMER_CYMBIDIUM.asItem())
+                .add(ModBlocks.AUTUMN_CYMBIDIUM.asItem())
+                .add(ModBlocks.WINTER_CYMBIDIUM.asItem());
 
         this.tag(CommonTags.Items.MEI_SAPLING)
-                .add(ModBlocks.RED_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.WHITE_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.GREEN_CALYX_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.VERSICOLOR_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.RED_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get().asItem());
+                .add(ModBlocks.RED_MEI_SAPLING.asItem())
+                .add(ModBlocks.WHITE_MEI_SAPLING.asItem())
+                .add(ModBlocks.GREEN_CALYX_MEI_SAPLING.asItem())
+                .add(ModBlocks.DOUBLE_PINK_MEI_SAPLING.asItem())
+                .add(ModBlocks.VERSICOLOR_MEI_SAPLING.asItem())
+                .add(ModBlocks.RED_WEEPING_MEI_SAPLING.asItem())
+                .add(ModBlocks.WHITE_WEEPING_MEI_SAPLING.asItem())
+                .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.asItem())
+                .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.asItem())
+                .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.asItem());
 
         this.tag(CommonTags.Items.MEI_LEAVES)
-                .add(ModBlocks.RED_MEI_LEAVES.get().asItem(), ModBlocks.WHITE_MEI_LEAVES.get().asItem(), ModBlocks.GREEN_CALYX_MEI_LEAVES.get().asItem(),
-                        ModBlocks.DOUBLE_PINK_MEI_LEAVES.get().asItem(), ModBlocks.VERSICOLOR_MEI_LEAVES.get().asItem())
-                .add(ModBlocks.RED_WEEPING_MEI.get().asItem(), ModBlocks.WHITE_WEEPING_MEI.get().asItem(), ModBlocks.GREEN_WEEPING_MEI.get().asItem(),
-                        ModBlocks.PINK_WEEPING_MEI.get().asItem(), ModBlocks.VERSICOLOR_WEEPING_MEI.get().asItem());
+                .add(ModBlocks.RED_MEI_LEAVES.asItem(), ModBlocks.WHITE_MEI_LEAVES.asItem(), ModBlocks.GREEN_CALYX_MEI_LEAVES.asItem(),
+                        ModBlocks.DOUBLE_PINK_MEI_LEAVES.asItem(), ModBlocks.VERSICOLOR_MEI_LEAVES.asItem())
+                .add(ModBlocks.RED_WEEPING_MEI.asItem(), ModBlocks.WHITE_WEEPING_MEI.asItem(), ModBlocks.GREEN_WEEPING_MEI.asItem(),
+                        ModBlocks.PINK_WEEPING_MEI.asItem(), ModBlocks.VERSICOLOR_WEEPING_MEI.asItem());
 
         this.tag(CommonTags.Items.TREE_PEONY)
-                .add(Blocks.PEONY.asItem(), ModBlocks.TWO_QIAO_PEONY.get().asItem(), ModBlocks.VERSICOLOR_PEONY.get().asItem());
+                .add(Blocks.PEONY.asItem(), ModBlocks.TWO_QIAO_PEONY.asItem(), ModBlocks.VERSICOLOR_PEONY.asItem());
 
         this.tag(CommonTags.Items.HERBACEOUS_PEONY)
-                .add(ModBlocks.PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_PINK_PEONY.get().asItem())
-                .add(ModBlocks.VIOLET_PINK_PEONY.get().asItem())
-                .add(ModBlocks.PINK_PEONY.get().asItem())
-                .add(ModBlocks.RED_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_RED_PEONY.get().asItem())
-                .add(ModBlocks.INK_RED_PEONY.get().asItem())
-                .add(ModBlocks.VERMILION_PEONY.get().asItem())
-                .add(ModBlocks.PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.INK_PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.VIOLET_PEONY.get().asItem())
-                .add(ModBlocks.YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.OCHRE_YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.GOLDEN_PEONY.get().asItem())
-                .add(ModBlocks.WHITE_PEONY.get().asItem())
-                .add(ModBlocks.INK_PEONY.get().asItem())
-                .add(ModBlocks.BLUE_PEONY.get().asItem())
-                .add(ModBlocks.GREEN_PEONY.get().asItem())
-                .add(ModBlocks.COLORFUL_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_COLORFUL_PEONY.get().asItem())
-                .add(ModBlocks.INK_COLORFUL_PEONY.get().asItem())
-                .add(ModBlocks.RED_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.PINK_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.YELLOW_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.PURPLE_WHITE_PEONY.get().asItem())
-                .add(ModBlocks.WU_HUA_LONG_YU_PEONY.get().asItem())
-                .add(ModBlocks.MAUVE_PEONY.get().asItem());
+                .add(ModBlocks.PEONY.asItem())
+                .add(ModBlocks.LIGHT_PINK_PEONY.asItem())
+                .add(ModBlocks.VIOLET_PINK_PEONY.asItem())
+                .add(ModBlocks.PINK_PEONY.asItem())
+                .add(ModBlocks.RED_PEONY.asItem())
+                .add(ModBlocks.LIGHT_RED_PEONY.asItem())
+                .add(ModBlocks.INK_RED_PEONY.asItem())
+                .add(ModBlocks.VERMILION_PEONY.asItem())
+                .add(ModBlocks.PURPLE_PEONY.asItem())
+                .add(ModBlocks.LIGHT_PURPLE_PEONY.asItem())
+                .add(ModBlocks.INK_PURPLE_PEONY.asItem())
+                .add(ModBlocks.VIOLET_PEONY.asItem())
+                .add(ModBlocks.YELLOW_PEONY.asItem())
+                .add(ModBlocks.LIGHT_YELLOW_PEONY.asItem())
+                .add(ModBlocks.OCHRE_YELLOW_PEONY.asItem())
+                .add(ModBlocks.GOLDEN_PEONY.asItem())
+                .add(ModBlocks.WHITE_PEONY.asItem())
+                .add(ModBlocks.INK_PEONY.asItem())
+                .add(ModBlocks.BLUE_PEONY.asItem())
+                .add(ModBlocks.GREEN_PEONY.asItem())
+                .add(ModBlocks.COLORFUL_PEONY.asItem())
+                .add(ModBlocks.LIGHT_COLORFUL_PEONY.asItem())
+                .add(ModBlocks.INK_COLORFUL_PEONY.asItem())
+                .add(ModBlocks.RED_WHITE_PEONY.asItem())
+                .add(ModBlocks.PINK_WHITE_PEONY.asItem())
+                .add(ModBlocks.YELLOW_WHITE_PEONY.asItem())
+                .add(ModBlocks.PURPLE_WHITE_PEONY.asItem())
+                .add(ModBlocks.WU_HUA_LONG_YU_PEONY.asItem())
+                .add(ModBlocks.MAUVE_PEONY.asItem());
 
         this.tag(CommonTags.Items.CHINESE_ROSE)
-                .add(ModBlocks.CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.PINK_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.WHITE_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.RED_PINK_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().asItem());
+                .add(ModBlocks.CHINESE_ROSE.asItem())
+                .add(ModBlocks.PINK_CHINESE_ROSE.asItem())
+                .add(ModBlocks.YELLOW_CHINESE_ROSE.asItem())
+                .add(ModBlocks.WHITE_CHINESE_ROSE.asItem())
+                .add(ModBlocks.RED_PINK_CHINESE_ROSE.asItem())
+                .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.asItem())
+                .add(ModBlocks.RED_WHITE_CHINESE_ROSE.asItem())
+                .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.asItem())
+                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.asItem());
 
         this.tag(CommonTags.Items.CHRYSANTHEMUM)
-                .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GOLDEN_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem())
-                .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get().asItem());
+                .add(ModBlocks.CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.GOLDEN_CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.asItem())
+                .add(ModBlocks.WHITE_CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.GREEN_CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.PURPLE_CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.PINK_CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.asItem());
 
         this.tag(CommonTags.Items.CAMELLIA)
-                .add(ModBlocks.CAMELLIA.get().asItem(), ModBlocks.PINK_CAMELLIA.get().asItem(), ModBlocks.WHITE_CAMELLIA.get().asItem(), ModBlocks.VERSICOLOR_CAMELLIA.get().asItem());
+                .add(ModBlocks.CAMELLIA.asItem(), ModBlocks.PINK_CAMELLIA.asItem(), ModBlocks.WHITE_CAMELLIA.asItem(), ModBlocks.VERSICOLOR_CAMELLIA.asItem());
 
         this.tag(CommonTags.Items.AZALEA)
-                .add(Blocks.AZALEA.asItem(), Blocks.FLOWERING_AZALEA.asItem(), ModBlocks.RED_AZALEA.get().asItem());
+                .add(Blocks.AZALEA.asItem(), Blocks.FLOWERING_AZALEA.asItem(), ModBlocks.RED_AZALEA.asItem());
 
         this.tag(CommonTags.Items.CRABAPPLE_SAPLING)
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem());
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.asItem(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.asItem());
 
         this.tag(CommonTags.Items.OSMANTHUS_SAPLING)
-                .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get().asItem(), ModBlocks.ORANGE_OSMANTHUS_SAPLING.get().asItem(), ModBlocks.WHITE_OSMANTHUS_SAPLING.get().asItem());
+                .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.asItem(), ModBlocks.ORANGE_OSMANTHUS_SAPLING.asItem(), ModBlocks.WHITE_OSMANTHUS_SAPLING.asItem());
 
         this.tag(CommonTags.Items.OSMANTHUS_LEAVES)
-                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get().asItem(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get().asItem(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get().asItem());
+                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.asItem(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.asItem(), ModBlocks.WHITE_OSMANTHUS_LEAVES.asItem());
 
         this.tag(CommonTags.Items.APRICOT_SAPLING)
-                .add(ModBlocks.PINK_APRICOT_SAPLING.get().asItem(), ModBlocks.WHITE_APRICOT_SAPLING.get().asItem());
+                .add(ModBlocks.PINK_APRICOT_SAPLING.asItem(), ModBlocks.WHITE_APRICOT_SAPLING.asItem());
 
         this.tag(CommonTags.Items.APRICOT_LEAVES)
-                .add(ModBlocks.PINK_APRICOT_LEAVES.get().asItem(), ModBlocks.WHITE_APRICOT_LEAVES.get().asItem());
+                .add(ModBlocks.PINK_APRICOT_LEAVES.asItem(), ModBlocks.WHITE_APRICOT_LEAVES.asItem());
 
         this.tag(CommonTags.Items.PEACH_SAPLING)
-                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get().asItem(), ModBlocks.WILD_PEACH_SAPLING.get().asItem());
+                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.asItem(), ModBlocks.WILD_PEACH_SAPLING.asItem());
 
         this.tag(CommonTags.Items.PEACH_LEAVES)
-                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get().asItem(), ModBlocks.WILD_PEACH_LEAVES.get().asItem());
+                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.asItem(), ModBlocks.WILD_PEACH_LEAVES.asItem());
 
         this.tag(CommonTags.Items.PLUM_SAPLING)
-                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get().asItem(), ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get().asItem());
+                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.asItem(), ModBlocks.PURPLE_LEAF_PLUM_SAPLING.asItem());
 
         this.tag(CommonTags.Items.GINKGO_SAPLING)
-                .add(ModBlocks.GOLDEN_GINKGO_SAPLING.get().asItem(), ModBlocks.GREEN_GINKGO_SAPLING.get().asItem());
+                .add(ModBlocks.GOLDEN_GINKGO_SAPLING.asItem(), ModBlocks.GREEN_GINKGO_SAPLING.asItem());
 
         this.tag(CommonTags.Items.CHINESE_PARASOL_SAPLING)
-                .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get().asItem(), ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get().asItem());
+                .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.asItem(), ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.asItem());
 
         this.tag(CommonTags.Items.CRAPE_MYRTLE)
-                .add(ModBlocks.CRAPE_MYRTLE.get().asItem(), ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem());
+                .add(ModBlocks.CRAPE_MYRTLE.asItem(), ModBlocks.CRAPE_MYRTLE_SAPLING.asItem());
 
         this.tag(CommonTags.Items.BAMBOO)
                 .add(Items.BAMBOO, ModItems.MOTTLED_BAMBOO.get(), ModItems.BLACK_BAMBOO.get());
 
         this.tag(CommonTags.Items.LOTUS)
-                .add(ModBlocks.LOTUS.get().asItem(), ModBlocks.WHITE_LOTUS.get().asItem());
+                .add(ModBlocks.LOTUS.asItem(), ModBlocks.WHITE_LOTUS.asItem());
 
         this.tag(CommonTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.FOUNTAIN_GRASS.asItem(), ModBlocks.PURPLE_FOUNTAIN_GRASS.asItem(), ModBlocks.PINK_FOUNTAIN_GRASS.asItem(), ModBlocks.WHITE_FOUNTAIN_GRASS.asItem())
