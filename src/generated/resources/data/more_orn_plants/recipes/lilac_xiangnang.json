@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:string"
+    },
+    "*": {
+      "item": "minecraft:lilac"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#*#",
+    " # "
+  ],
+  "result": {
+    "item": "more_orn_plants:lilac_xiangnang"
+  },
+  "show_notification": true
+}

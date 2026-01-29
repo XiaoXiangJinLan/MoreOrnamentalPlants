@@ -317,7 +317,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.PINK_CAMELLIA);
         flowerItem(ModBlocks.WHITE_CAMELLIA);
         flowerItem(ModBlocks.VERSICOLOR_CAMELLIA);
-        flowerItem(ModBlocks.CRIMSON_AZALEA);
+        flowerItem(ModBlocks.RED_AZALEA);
         flowerItem(ModBlocks.FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PURPLE_FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PINK_FOUNTAIN_GRASS);
@@ -363,6 +363,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SWEETGUM_LEAF_0);
         simpleItem(ModItems.SWEETGUM_LEAF_1);
         simpleItem(ModItems.GINKGO_LEAF);
+
+        simplerBlockItem(ModBlocks.MEI_XIANGNANG);
+        simplerBlockItem(ModBlocks.OSMANTHUS_XIANGNANG);
+        simplerBlockItem(ModBlocks.CYMBIDIUM_XIANGNANG);
+        simplerBlockItem(ModBlocks.WINTERSWEET_XIANGNANG);
+        simplerBlockItem(ModBlocks.LILAC_XIANGNANG);
+        simplerBlockItem(ModBlocks.CHINESE_ROSE_XIANGNANG);
+        simplerBlockItem(ModBlocks.RUGOSA_ROSE_XIANGNANG);
+        simplerBlockItem(ModBlocks.APRICOT_XIANGNANG);
+        simplerBlockItem(ModBlocks.PEACH_XIANGNANG);
+        simplerBlockItem(ModBlocks.PEAR_XIANGNANG);
+        simplerBlockItem(ModBlocks.LOTUS_XIANGNANG);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

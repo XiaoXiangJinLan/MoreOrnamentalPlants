@@ -125,7 +125,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PINK_CAMELLIA.get());
                         pOutput.accept(ModBlocks.WHITE_CAMELLIA.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_CAMELLIA.get());
-                        pOutput.accept(ModBlocks.CRIMSON_AZALEA.get());
+                        pOutput.accept(ModBlocks.RED_AZALEA.get());
                         pOutput.accept(ModBlocks.FOUNTAIN_GRASS.get());
                         pOutput.accept(ModBlocks.PURPLE_FOUNTAIN_GRASS.get());
                         pOutput.accept(ModBlocks.PINK_FOUNTAIN_GRASS.get());
@@ -466,6 +466,17 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BAMBOO_SHOOTS_SOUP.get());
                         pOutput.accept(ModItems.LOTUS_ROOT_SOUP.get());
                         pOutput.accept(ModItems.LOTUS_SEED_SOUP.get());
+                        pOutput.accept(ModBlocks.CYMBIDIUM_XIANGNANG.get());
+                        pOutput.accept(ModBlocks.OSMANTHUS_XIANGNANG.get());
+                        pOutput.accept(ModBlocks.WINTERSWEET_XIANGNANG.get());
+                        pOutput.accept(ModBlocks.LILAC_XIANGNANG.get());
+                        pOutput.accept(ModBlocks.CHINESE_ROSE_XIANGNANG.get());
+                        pOutput.accept(ModBlocks.RUGOSA_ROSE_XIANGNANG.get());
+                        pOutput.accept(ModBlocks.MEI_XIANGNANG.get());
+                        pOutput.accept(ModBlocks.APRICOT_XIANGNANG.get());
+                        pOutput.accept(ModBlocks.PEACH_XIANGNANG.get());
+                        pOutput.accept(ModBlocks.PEAR_XIANGNANG.get());
+                        pOutput.accept(ModBlocks.LOTUS_XIANGNANG.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -3,6 +3,7 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.item.ModItems;
+import com.jinlan.moreornplants.util.ForgeTags;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -1098,6 +1099,95 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.BOWL)
                 .unlockedBy(getHasName(ModItems.LOTUS_SEED.get()), has(ModItems.LOTUS_SEED.get()))
                 .unlockedBy("has_bowl", has(Items.BOWL))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MEI_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', ForgeTags.Items.MEI_LEAVES)
+                .unlockedBy("has_mei_leaves", has(ForgeTags.Items.MEI_LEAVES))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.OSMANTHUS_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', ForgeTags.Items.OSMANTHUS_LEAVES)
+                .unlockedBy("has_osmanthus_leaves", has(ForgeTags.Items.OSMANTHUS_LEAVES))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CYMBIDIUM_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', ForgeTags.Items.CYMBIDIUM)
+                .unlockedBy("has_cymbidium", has(ForgeTags.Items.CYMBIDIUM))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WINTERSWEET_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', ModBlocks.WINTERSWEET.get())
+                .unlockedBy("has_wintersweet", has(ModBlocks.WINTERSWEET.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LILAC_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', Items.LILAC)
+                .unlockedBy("has_lilac", has(Items.LILAC))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHINESE_ROSE_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', ModBlocks.CHINESE_ROSE.get())
+                .unlockedBy("has_chinese_rose", has(ModBlocks.CHINESE_ROSE.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RUGOSA_ROSE_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', Items.ROSE_BUSH)
+                .unlockedBy("has_rose_bush", has(Items.ROSE_BUSH))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.APRICOT_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', ForgeTags.Items.APRICOT_LEAVES)
+                .unlockedBy("has_apricot_leaves", has(ForgeTags.Items.APRICOT_LEAVES))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PEACH_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', ForgeTags.Items.PEACH_LEAVES)
+                .unlockedBy("has_peach_leaves", has(ForgeTags.Items.PEACH_LEAVES))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PEAR_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', ModBlocks.PEAR_LEAVES.get())
+                .unlockedBy("has_pear_leaves", has(ModBlocks.PEAR_LEAVES.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LOTUS_XIANGNANG.get())
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', ForgeTags.Items.LOTUS)
+                .unlockedBy("has_lotus", has(ForgeTags.Items.LOTUS))
                 .save(pWriter);
     }
 }

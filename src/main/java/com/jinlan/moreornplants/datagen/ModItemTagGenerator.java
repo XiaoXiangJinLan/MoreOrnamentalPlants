@@ -507,7 +507,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.AUTUMN_CYMBIDIUM.get().asItem())
                 .addTag(ForgeTags.Items.HERBACEOUS_PEONY)
                 .addTag(ForgeTags.Items.CAMELLIA)
-                .add(ModBlocks.CRIMSON_AZALEA.get().asItem());
+                .add(ModBlocks.RED_AZALEA.get().asItem());
 
         this.tag(ItemTags.TALL_FLOWERS)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get().asItem())
@@ -581,6 +581,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.get().asItem())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get().asItem());
 
+        this.tag(ForgeTags.Items.MEI_LEAVES)
+                .add(ModBlocks.RED_MEI_LEAVES.get().asItem(), ModBlocks.WHITE_MEI_LEAVES.get().asItem(), ModBlocks.GREEN_CALYX_MEI_LEAVES.get().asItem(),
+                        ModBlocks.DOUBLE_PINK_MEI_LEAVES.get().asItem(), ModBlocks.VERSICOLOR_MEI_LEAVES.get().asItem())
+                .add(ModBlocks.RED_WEEPING_MEI.get().asItem(), ModBlocks.WHITE_WEEPING_MEI.get().asItem(), ModBlocks.GREEN_WEEPING_MEI.get().asItem(),
+                        ModBlocks.PINK_WEEPING_MEI.get().asItem(), ModBlocks.VERSICOLOR_WEEPING_MEI.get().asItem());
+
         this.tag(ForgeTags.Items.TREE_PEONY)
                 .add(Blocks.PEONY.asItem())
                 .add(ModBlocks.TWO_QIAO_PEONY.get().asItem())
@@ -648,7 +654,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ForgeTags.Items.AZALEA)
                 .add(Blocks.AZALEA.asItem())
                 .add(Blocks.FLOWERING_AZALEA.asItem())
-                .add(ModBlocks.CRIMSON_AZALEA.get().asItem());
+                .add(ModBlocks.RED_AZALEA.get().asItem());
 
         this.tag(ForgeTags.Items.CRABAPPLE_SAPLING)
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem())
@@ -659,13 +665,22 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get().asItem())
                 .add(ModBlocks.WHITE_OSMANTHUS_SAPLING.get().asItem());
 
+        this.tag(ForgeTags.Items.OSMANTHUS_LEAVES)
+                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get().asItem(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get().asItem(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get().asItem());
+
         this.tag(ForgeTags.Items.APRICOT_SAPLING)
                 .add(ModBlocks.PINK_APRICOT_SAPLING.get().asItem())
                 .add(ModBlocks.WHITE_APRICOT_SAPLING.get().asItem());
 
+        this.tag(ForgeTags.Items.APRICOT_LEAVES)
+                .add(ModBlocks.PINK_APRICOT_LEAVES.get().asItem(), ModBlocks.WHITE_APRICOT_LEAVES.get().asItem());
+
         this.tag(ForgeTags.Items.PEACH_SAPLING)
                 .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get().asItem())
                 .add(ModBlocks.WILD_PEACH_SAPLING.get().asItem());
+
+        this.tag(ForgeTags.Items.PEACH_LEAVES)
+                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get().asItem(), ModBlocks.WILD_PEACH_LEAVES.get().asItem());
 
         this.tag(ForgeTags.Items.PLUM_SAPLING)
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get().asItem())
@@ -707,7 +722,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.VERMILION_PEONY.get().asItem())
                 .add(ModBlocks.CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.CAMELLIA.get().asItem())
-                .add(ModBlocks.CRIMSON_AZALEA.get().asItem())
+                .add(ModBlocks.RED_AZALEA.get().asItem())
                 .add(ModItems.SWEETGUM_LEAF_0.get())
                 .add(ModItems.SWEETGUM_LEAF_1.get());
 

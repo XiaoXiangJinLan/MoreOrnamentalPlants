@@ -6,6 +6,7 @@ import com.jinlan.moreornplants.block.FlowerBlocks.ModFlowerPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.PinkWeepingMeiPlantBlock;
+import com.jinlan.moreornplants.block.xiangnangBlocks.MeiXiangnangBlock;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -676,9 +677,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.VERSICOLOR_CAMELLIA);
         simpleBlock(ModBlocks.POTTED_VERSICOLOR_CAMELLIA.get(), models().singleTexture("potted_versicolor_camellia", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.VERSICOLOR_CAMELLIA.get())).renderType("cutout"));
-        flowerBlock(ModBlocks.CRIMSON_AZALEA);
-        simpleBlock(ModBlocks.POTTED_CRIMSON_AZALEA.get(), models().singleTexture("potted_crimson_azalea", new ResourceLocation("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.CRIMSON_AZALEA.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.RED_AZALEA);
+        simpleBlock(ModBlocks.POTTED_RED_AZALEA.get(), models().singleTexture("potted_red_azalea", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.RED_AZALEA.get())).renderType("cutout"));
         flowerBlock(ModBlocks.FOUNTAIN_GRASS);
         simpleBlock(ModBlocks.POTTED_FOUNTAIN_GRASS.get(), models().singleTexture("potted_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_fountain_grass")).renderType("cutout"));
@@ -753,6 +754,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leafPileBlock(ModBlocks.SWEETGUM_LEAF_PILE_0);
         leafPileBlock(ModBlocks.SWEETGUM_LEAF_PILE_1);
         leafPileBlock(ModBlocks.GINKGO_LEAF_PILE);
+
+        xiangNangBlock(ModBlocks.MEI_XIANGNANG);
+        xiangNangBlock(ModBlocks.OSMANTHUS_XIANGNANG);
+        xiangNangBlock(ModBlocks.CYMBIDIUM_XIANGNANG);
+        xiangNangBlock(ModBlocks.WINTERSWEET_XIANGNANG);
+        xiangNangBlock(ModBlocks.LILAC_XIANGNANG);
+        xiangNangBlock(ModBlocks.CHINESE_ROSE_XIANGNANG);
+        xiangNangBlock(ModBlocks.RUGOSA_ROSE_XIANGNANG);
+        xiangNangBlock(ModBlocks.APRICOT_XIANGNANG);
+        xiangNangBlock(ModBlocks.PEACH_XIANGNANG);
+        xiangNangBlock(ModBlocks.PEAR_XIANGNANG);
+        xiangNangBlock(ModBlocks.LOTUS_XIANGNANG);
 
     }
 
@@ -981,6 +994,40 @@ public class ModBlockStateProvider extends BlockStateProvider {
                     .with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER)
                     .with(WaterLotusLeafBlock.FACING, direction)
                     .modelForState().modelFile(topModel).rotationY(rotationY)
+                    .addModel();
+        }
+    }
+
+    private void xiangNangBlock(RegistryObject<Block> blockRegistryObject) {
+        String baseName = blockRegistryObject.getId().getPath();
+        ModelFile baseModel = models().withExistingParent(baseName, modLoc("block/xiangnang"))
+                .texture("front", modLoc("block/" + baseName))
+                .texture("back", modLoc("block/" + baseName))
+                .texture("side", modLoc("block/" + baseName))
+                .texture("silk", modLoc("block/" + baseName));
+        ModelFile hangingModel = models().withExistingParent(baseName+ "_hanging", modLoc("block/xiangnang_hanging"))
+                .texture("front", modLoc("block/" + baseName))
+                .texture("back", modLoc("block/" + baseName))
+                .texture("side", modLoc("block/" + baseName))
+                .texture("silk", modLoc("block/" + baseName));
+        VariantBlockStateBuilder builder = getVariantBuilder(blockRegistryObject.get());
+        for (Direction direction : Direction.Plane.HORIZONTAL) {
+            int rotationY;
+            switch (direction) {
+                case EAST -> rotationY = 90;
+                case SOUTH -> rotationY = 180;
+                case WEST -> rotationY = 270;
+                default -> rotationY = 0;
+            }
+            builder.partialState()
+                    .with(MeiXiangnangBlock.HANGING, false)
+                    .with(MeiXiangnangBlock.FACING, direction)
+                    .modelForState().modelFile(baseModel).rotationY(rotationY)
+                    .addModel();
+            builder.partialState()
+                    .with(MeiXiangnangBlock.HANGING, true)
+                    .with(MeiXiangnangBlock.FACING, direction)
+                    .modelForState().modelFile(hangingModel).rotationY(rotationY)
                     .addModel();
         }
     }

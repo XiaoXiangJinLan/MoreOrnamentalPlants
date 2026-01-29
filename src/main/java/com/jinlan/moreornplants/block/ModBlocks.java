@@ -8,6 +8,7 @@ import com.jinlan.moreornplants.block.BambooBlocks.MottledBambooStalkBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.*;
 import com.jinlan.moreornplants.block.LeavesBlocks.*;
 import com.jinlan.moreornplants.block.WeepingBlocks.*;
+import com.jinlan.moreornplants.block.xiangnangBlocks.*;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ModWoodTypes;
 import com.jinlan.moreornplants.worldgen.tree.*;
@@ -935,8 +936,8 @@ public class ModBlocks {
             registerBlock("pink_camellia", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> VERSICOLOR_CAMELLIA =
             registerBlock("versicolor_camellia", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
-    public static final RegistryObject<Block> CRIMSON_AZALEA =
-            registerBlock("crimson_azalea", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> RED_AZALEA =
+            registerBlock("red_azalea", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> FOUNTAIN_GRASS =
             registerBlock("fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PURPLE_FOUNTAIN_GRASS =
@@ -1038,8 +1039,8 @@ public class ModBlocks {
             BLOCKS.register("potted_pink_camellia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_CAMELLIA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> POTTED_VERSICOLOR_CAMELLIA =
             BLOCKS.register("potted_versicolor_camellia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VERSICOLOR_CAMELLIA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
-    public static final RegistryObject<Block> POTTED_CRIMSON_AZALEA =
-            BLOCKS.register("potted_crimson_azalea", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CRIMSON_AZALEA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> POTTED_RED_AZALEA =
+            BLOCKS.register("potted_red_azalea", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_AZALEA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> POTTED_FOUNTAIN_GRASS =
             BLOCKS.register("potted_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> POTTED_PURPLE_FOUNTAIN_GRASS =
@@ -1135,19 +1136,42 @@ public class ModBlocks {
             registerBlock("lotus_leaf", () -> new WaterLotusLeafBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
 
     public static final RegistryObject<Block> ORNAMENTAL_PEACH_PETALS =
-            BLOCKS.register("ornamental_peach_petals", () -> leafPile(MapColor.COLOR_PINK, SoundType.PINK_PETALS));
+            BLOCKS.register("ornamental_peach_petals", () -> leafPile(MapColor.COLOR_PINK));
     public static final RegistryObject<Block> WILD_PEACH_PETALS =
-            BLOCKS.register("wild_peach_petals", () -> leafPile(MapColor.COLOR_PINK, SoundType.PINK_PETALS));
+            BLOCKS.register("wild_peach_petals", () -> leafPile(MapColor.COLOR_PINK));
     public static final RegistryObject<Block> CHINESE_PARASOL_LEAF_0 =
-            BLOCKS.register("chinese_parasol_leaf_0", () -> leafPile(MapColor.COLOR_YELLOW, SoundType.PINK_PETALS));
+            BLOCKS.register("chinese_parasol_leaf_0", () -> leafPile(MapColor.COLOR_YELLOW));
     public static final RegistryObject<Block> CHINESE_PARASOL_LEAF_1 =
-            BLOCKS.register("chinese_parasol_leaf_1", () -> leafPile(MapColor.COLOR_ORANGE, SoundType.PINK_PETALS));
+            BLOCKS.register("chinese_parasol_leaf_1", () -> leafPile(MapColor.COLOR_ORANGE));
     public static final RegistryObject<Block> SWEETGUM_LEAF_PILE_0 =
-            BLOCKS.register("sweetgum_leaf_pile_0", () -> leafPile(MapColor.COLOR_RED, SoundType.PINK_PETALS));
+            BLOCKS.register("sweetgum_leaf_pile_0", () -> leafPile(MapColor.COLOR_RED));
     public static final RegistryObject<Block> SWEETGUM_LEAF_PILE_1 =
-            BLOCKS.register("sweetgum_leaf_pile_1", () -> leafPile(MapColor.COLOR_RED,SoundType.PINK_PETALS));
+            BLOCKS.register("sweetgum_leaf_pile_1", () -> leafPile(MapColor.COLOR_RED));
     public static final RegistryObject<Block> GINKGO_LEAF_PILE =
-            BLOCKS.register("ginkgo_leaf_pile", () -> leafPile(MapColor.COLOR_YELLOW,SoundType.PINK_PETALS));
+            BLOCKS.register("ginkgo_leaf_pile", () -> leafPile(MapColor.COLOR_YELLOW));
+
+    public static final RegistryObject<Block> MEI_XIANGNANG =
+            registerBlock("mei_xiangnang", () -> new MeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> OSMANTHUS_XIANGNANG =
+            registerBlock("osmanthus_xiangnang", () -> new GuiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> CYMBIDIUM_XIANGNANG =
+            registerBlock("cymbidium_xiangnang", () -> new LanXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> WINTERSWEET_XIANGNANG =
+            registerBlock("wintersweet_xiangnang", () -> new LaMeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> LILAC_XIANGNANG =
+            registerBlock("lilac_xiangnang", () -> new LaMeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> CHINESE_ROSE_XIANGNANG =
+            registerBlock("chinese_rose_xiangnang", () -> new YueJiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> RUGOSA_ROSE_XIANGNANG =
+            registerBlock("rugosa_rose_xiangnang", () -> new YueJiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> APRICOT_XIANGNANG =
+            registerBlock("apricot_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> PEACH_XIANGNANG =
+            registerBlock("peach_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> PEAR_XIANGNANG =
+            registerBlock("pear_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> LOTUS_XIANGNANG =
+            registerBlock("lotus_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
 
     private static ModRotatedPillarBlock log(MapColor pTopMapColor, MapColor pSideMapColor) {
         return new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((p_152624_) ->
@@ -1162,8 +1186,8 @@ public class ModBlocks {
         return new ButtonBlock(blockbehaviour$properties, pSetType, 30, true);
     }
 
-    private static LeafPileBlock leafPile(MapColor pColor, SoundType pType) {
-        return new LeafPileBlock(BlockBehaviour.Properties.of().mapColor(pColor).noCollission().sound(pType).pushReaction(PushReaction.DESTROY));
+    private static LeafPileBlock leafPile(MapColor pColor) {
+        return new LeafPileBlock(BlockBehaviour.Properties.of().mapColor(pColor).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY));
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {

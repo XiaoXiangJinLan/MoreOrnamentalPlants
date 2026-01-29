@@ -1,0 +1,9 @@
+{
+  "parent": "more_orn_plants:block/xiangnang",
+  "textures": {
+    "back": "more_orn_plants:block/apricot_xiangnang",
+    "front": "more_orn_plants:block/apricot_xiangnang",
+    "side": "more_orn_plants:block/apricot_xiangnang",
+    "silk": "more_orn_plants:block/apricot_xiangnang"
+  }
+}

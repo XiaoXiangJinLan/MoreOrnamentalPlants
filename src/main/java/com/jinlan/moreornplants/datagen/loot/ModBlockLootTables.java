@@ -1,7 +1,6 @@
 package com.jinlan.moreornplants.datagen.loot;
 
 import com.jinlan.moreornplants.block.ModBlocks;
-import com.jinlan.moreornplants.block.FlowerBlocks.ModFlowerPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -15,7 +14,6 @@ import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.functions.ApplyExplosionDecay;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
@@ -718,9 +716,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.VERSICOLOR_CAMELLIA.get());
         this.add(ModBlocks.POTTED_VERSICOLOR_CAMELLIA.get(),
                 createPotFlowerItemTable(ModBlocks.VERSICOLOR_CAMELLIA.get()));
-        this.dropSelf(ModBlocks.CRIMSON_AZALEA.get());
-        this.add(ModBlocks.POTTED_CRIMSON_AZALEA.get(),
-                createPotFlowerItemTable(ModBlocks.CRIMSON_AZALEA.get()));
+        this.dropSelf(ModBlocks.RED_AZALEA.get());
+        this.add(ModBlocks.POTTED_RED_AZALEA.get(),
+                createPotFlowerItemTable(ModBlocks.RED_AZALEA.get()));
         this.dropSelf(ModBlocks.FOUNTAIN_GRASS.get());
         this.add(ModBlocks.POTTED_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.FOUNTAIN_GRASS.get()));
@@ -836,6 +834,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_0.get());
         this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_1.get());
         this.dropSelf(ModBlocks.GINKGO_LEAF_PILE.get());
+
+        this.dropSelf(ModBlocks.MEI_XIANGNANG.get());
+        this.dropSelf(ModBlocks.OSMANTHUS_XIANGNANG.get());
+        this.dropSelf(ModBlocks.CYMBIDIUM_XIANGNANG.get());
+        this.dropSelf(ModBlocks.WINTERSWEET_XIANGNANG.get());
+        this.dropSelf(ModBlocks.LILAC_XIANGNANG.get());
+        this.dropSelf(ModBlocks.CHINESE_ROSE_XIANGNANG.get());
+        this.dropSelf(ModBlocks.RUGOSA_ROSE_XIANGNANG.get());
+        this.dropSelf(ModBlocks.APRICOT_XIANGNANG.get());
+        this.dropSelf(ModBlocks.PEACH_XIANGNANG.get());
+        this.dropSelf(ModBlocks.PEAR_XIANGNANG.get());
+        this.dropSelf(ModBlocks.LOTUS_XIANGNANG.get());
 
     }
 

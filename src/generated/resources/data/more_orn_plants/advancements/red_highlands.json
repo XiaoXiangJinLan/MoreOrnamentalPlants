@@ -1,0 +1,42 @@
+{
+  "parent": "more_orn_plants:flower_beauty",
+  "criteria": {
+    "visit_red_highlands": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:red_highlands"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.red_highlands.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "more_orn_plants:red_azalea"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.red_highlands.title"
+    }
+  },
+  "requirements": [
+    [
+      "visit_red_highlands"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

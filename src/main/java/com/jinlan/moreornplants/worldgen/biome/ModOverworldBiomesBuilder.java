@@ -105,17 +105,17 @@ public class ModOverworldBiomesBuilder {
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_MOD = new ResourceKey[][]{
             {null,                                 null,                                 null,                       null,                       null},
-            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.CRIMSON_HIGHLANDS,          ModBiomes.COLORED_FOREST,   ModBiomes.COLORED_FOREST,   null},
+            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.RED_HIGHLANDS,              ModBiomes.COLORED_FOREST,   ModBiomes.COLORED_FOREST,   null},
             {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.EVERGREEN_FOREST, ModBiomes.EVERGREEN_FOREST, null},
             {null,                                 null,                                 null,                       null,                       null},
             {null,                                 null,                                 null,                       null,                       null}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_VARIANT_MOD = new ResourceKey[][]{
-            {null, null,                        null,                        null,                        null},
-            {null, ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.CRIMSON_HIGHLANDS, null},
-            {null, null,                        ModBiomes.CRIMSON_HIGHLANDS, ModBiomes.CRIMSON_HIGHLANDS, null},
-            {null, null,                        null,                        null,                        null},
-            {null, null,                        null,                        null,                        null}
+            {null, null,                    null,                    null,                    null},
+            {null, ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, null},
+            {null, null,                    ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, null},
+            {null, null,                    null,                    null,                    null},
+            {null, null,                    null,                    null,                    null}
     };
     private final ResourceKey<Biome>[][] SLOPE_BIOMES_MOD = new ResourceKey[][]{
             {null,                null,                null,                null,                null},

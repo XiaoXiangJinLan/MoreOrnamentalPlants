@@ -707,22 +707,22 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "flowers_as_matchmakers"), existingFileHelper);
 
-            Advancement crimsonHighlands = Advancement.Builder.advancement()
+            Advancement redHighlands = Advancement.Builder.advancement()
                     .parent(flowerBeauty)
                     .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.CRIMSON_AZALEA.get()),
-                            Component.translatable("advancement.moreornplants.crimson_highlands.title"),
-                            Component.translatable("advancement.moreornplants.crimson_highlands.description"),
+                            new ItemStack(ModBlocks.RED_AZALEA.get()),
+                            Component.translatable("advancement.moreornplants.red_highlands.title"),
+                            Component.translatable("advancement.moreornplants.red_highlands.description"),
                             null,
                             FrameType.TASK,
                             true,
                             true,
                             false
                     ))
-                    .addCriterion("visit_crimson_highlands", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiome(ModBiomes.CRIMSON_HIGHLANDS).build()
+                    .addCriterion("visit_red_highlands", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.RED_HIGHLANDS).build()
                     ))
-                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "crimson_highlands"), existingFileHelper);
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "red_highlands"), existingFileHelper);
 
             Advancement furongGuo = Advancement.Builder.advancement()
                     .parent(frostDefiant)

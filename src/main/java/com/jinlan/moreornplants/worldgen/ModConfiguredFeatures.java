@@ -706,7 +706,7 @@ public class ModConfiguredFeatures {
 
         register(context, CRIMSON_AZALEA_KEY, Feature.FLOWER, new RandomPatchConfiguration(80, 12, 6,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CRIMSON_AZALEA.get())),
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RED_AZALEA.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
@@ -809,7 +809,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
         register(context, CRIMSON_AZALEA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(24, 4, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CRIMSON_AZALEA.get())),
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RED_AZALEA.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
