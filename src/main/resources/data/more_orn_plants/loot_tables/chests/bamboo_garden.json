@@ -115,6 +115,11 @@
           ],
           "name": "more_orn_plants:lotus_seed_pod",
           "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:lotus_xiangnang",
+          "weight": 1
         }
       ],
       "rolls": {
