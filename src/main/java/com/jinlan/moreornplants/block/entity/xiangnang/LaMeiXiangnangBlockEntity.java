@@ -14,7 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 
 public class LaMeiXiangnangBlockEntity extends BlockEntity {
-    private static final double EFFECT_RANGE = 5.0;
+    private static final double EFFECT_RANGE = 6.0;
     private static final long CHECK_INTERVAL = 40;
     private static final int EFFECT_DURATION = 300;
     public LaMeiXiangnangBlockEntity(BlockPos pos, BlockState blockState) {
