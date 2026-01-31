@@ -1102,7 +1102,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_bowl", has(Items.BOWL))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MEI_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MEI_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")
@@ -1110,7 +1110,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', CommonTags.Items.MEI_LEAVES)
                 .unlockedBy("has_mei_leaves", has(CommonTags.Items.MEI_LEAVES))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.OSMANTHUS_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OSMANTHUS_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")
@@ -1118,7 +1118,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', CommonTags.Items.OSMANTHUS_LEAVES)
                 .unlockedBy("has_osmanthus_leaves", has(CommonTags.Items.OSMANTHUS_LEAVES))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CYMBIDIUM_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CYMBIDIUM_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")
@@ -1126,7 +1126,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', CommonTags.Items.CYMBIDIUM)
                 .unlockedBy("has_cymbidium", has(CommonTags.Items.CYMBIDIUM))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WINTERSWEET_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WINTERSWEET_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")
@@ -1134,7 +1134,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', ModBlocks.WINTERSWEET)
                 .unlockedBy("has_wintersweet", has(ModBlocks.WINTERSWEET))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LILAC_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LILAC_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")
@@ -1142,7 +1142,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', Items.LILAC)
                 .unlockedBy("has_lilac", has(Items.LILAC))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHINESE_ROSE_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHINESE_ROSE_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")
@@ -1150,7 +1150,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', ModBlocks.CHINESE_ROSE)
                 .unlockedBy("has_chinese_rose", has(ModBlocks.CHINESE_ROSE))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RUGOSA_ROSE_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUGOSA_ROSE_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")
@@ -1158,7 +1158,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', Items.ROSE_BUSH)
                 .unlockedBy("has_rose_bush", has(Items.ROSE_BUSH))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.APRICOT_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.APRICOT_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")
@@ -1166,7 +1166,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', CommonTags.Items.APRICOT_LEAVES)
                 .unlockedBy("has_apricot_leaves", has(CommonTags.Items.APRICOT_LEAVES))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PEACH_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PEACH_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")
@@ -1174,7 +1174,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', CommonTags.Items.PEACH_LEAVES)
                 .unlockedBy("has_peach_leaves", has(CommonTags.Items.PEACH_LEAVES))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PEAR_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PEAR_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")
@@ -1182,7 +1182,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', ModBlocks.PEAR_LEAVES)
                 .unlockedBy("has_pear_leaves", has(ModBlocks.PEAR_LEAVES))
                 .save(recipeOutput);
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LOTUS_XIANGNANG)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LOTUS_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")
                 .pattern(" # ")

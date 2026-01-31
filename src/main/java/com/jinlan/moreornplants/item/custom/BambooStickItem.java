@@ -9,8 +9,8 @@ import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.NotNull;
 
 public class BambooStickItem extends BurnBlockItem {
-    public BambooStickItem(Block pBlock, Properties pProperties, int burnTime) {
-        super(pBlock, pProperties, burnTime);
+    public BambooStickItem(Block block, Properties properties, int burnTime) {
+        super(block, properties, burnTime);
     }
 
     @Override

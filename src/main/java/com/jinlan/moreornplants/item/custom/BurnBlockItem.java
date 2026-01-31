@@ -9,8 +9,8 @@ import org.jetbrains.annotations.Nullable;
 
 public class BurnBlockItem extends BlockItem {
     private int burnTime = 0 ;
-    public BurnBlockItem(Block pBlock, Properties pProperties, int burnTime) {
-        super(pBlock, pProperties);
+    public BurnBlockItem(Block block, Properties properties, int burnTime) {
+        super(block, properties);
         this.burnTime = burnTime;
     }
 

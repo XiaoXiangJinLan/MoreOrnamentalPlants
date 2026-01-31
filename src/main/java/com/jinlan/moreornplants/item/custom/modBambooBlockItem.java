@@ -10,8 +10,8 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class modBambooBlockItem extends BurnBlockItem {
-    public modBambooBlockItem(Block pBlock, Properties pProperties, int burnTime) {
-        super(pBlock, pProperties, burnTime);
+    public modBambooBlockItem(Block block, Properties properties, int burnTime) {
+        super(block, properties, burnTime);
     }
 
     public void appendHoverText(@NotNull ItemStack pStack, @Nullable TooltipContext pContext, List<Component> pTooltipComponents, @NotNull TooltipFlag pIsAdvanced) {

@@ -22,45 +22,36 @@ public class LaMeiXiangnangBlockEntity extends BlockEntity {
     }
 
     public static void tick(Level level, BlockPos pos, BlockState state, LaMeiXiangnangBlockEntity blockEntity) {
-        // 确保只在服务端运行
         if (level.isClientSide) {
             return;
         }
 
-        // 每2秒检查一次（使用游戏时间）
         if (level.getGameTime() % CHECK_INTERVAL != 0) {
             return;
         }
 
-        // 计算效果区域（以方块为中心的3格半径立方体）
         AABB effectArea = new AABB(pos).inflate(EFFECT_RANGE);
 
-        // 获取区域内的所有玩家、动物和村民
         for (LivingEntity entity : level.getEntitiesOfClass(LivingEntity.class, effectArea)) {
-            // 只对玩家、动物和村民生效
             if (entity instanceof Player || entity instanceof Animal || entity instanceof Villager) {
                 applyRegenerationEffect(entity);
             }
         }
     }
 
-    // 应用生命恢复效果
     private static void applyRegenerationEffect(LivingEntity entity) {
-        // 检查是否已经有生命恢复效果
         MobEffectInstance existingEffect = entity.getEffect(MobEffects.REGENERATION);
 
-        // 如果已经有持续时间大于12秒的效果，就不重复应用
-        if (existingEffect != null && existingEffect.getDuration() > 240) {
+        if (existingEffect != null && existingEffect.getDuration() > 260) {
             return;
         }
 
-        // 创建生命恢复I效果，持续5秒
         MobEffectInstance effect = new MobEffectInstance(
                 MobEffects.REGENERATION,
                 EFFECT_DURATION,
-                0, // 等级：0 = I级
-                false, // 不是环境效果（会显示图标）
-                true   // 显示粒子（仅效果本身的粒子）
+                0,
+                false,
+                true
         );
 
         entity.addEffect(effect);

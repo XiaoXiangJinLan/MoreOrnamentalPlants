@@ -14,7 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 
 public class GuiXiangnangBlockEntity extends BlockEntity {
-    private static final double EFFECT_RANGE = 8.0;
+    private static final double EFFECT_RANGE = 9.0;
     private static final long CHECK_INTERVAL = 40;
     private static final int EFFECT_DURATION = 300;
     public GuiXiangnangBlockEntity(BlockPos pos, BlockState blockState) {
@@ -42,7 +42,7 @@ public class GuiXiangnangBlockEntity extends BlockEntity {
     private static void applyRegenerationEffect(LivingEntity entity) {
         MobEffectInstance existingEffect = entity.getEffect(MobEffects.REGENERATION);
 
-        if (existingEffect != null && existingEffect.getDuration() > 240) {
+        if (existingEffect != null && existingEffect.getDuration() > 260) {
             return;
         }
 

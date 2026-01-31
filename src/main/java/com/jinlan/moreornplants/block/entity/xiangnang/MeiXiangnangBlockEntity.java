@@ -49,8 +49,8 @@ public class MeiXiangnangBlockEntity extends BlockEntity {
         // 检查是否已经有生命恢复效果
         MobEffectInstance existingEffect = entity.getEffect(MobEffects.REGENERATION);
 
-        // 如果已经有持续时间大于12秒的效果，就不重复应用
-        if (existingEffect != null && existingEffect.getDuration() > 240) {
+        // 如果已经有持续时间大于13秒的效果，就不重复应用
+        if (existingEffect != null && existingEffect.getDuration() > 260) {
             return;
         }
 

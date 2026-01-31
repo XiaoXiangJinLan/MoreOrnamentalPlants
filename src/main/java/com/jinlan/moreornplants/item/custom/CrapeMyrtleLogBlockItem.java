@@ -11,8 +11,8 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class CrapeMyrtleLogBlockItem extends BlockItem {
-    public CrapeMyrtleLogBlockItem(Block pBlock, Properties pProperties) {
-        super(pBlock, pProperties);
+    public CrapeMyrtleLogBlockItem(Block block, Properties properties) {
+        super(block, properties);
     }
 
     public void appendHoverText(@NotNull ItemStack pStack, @Nullable TooltipContext pContext, List<Component> pTooltipComponents, @NotNull TooltipFlag pIsAdvanced) {

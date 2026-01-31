@@ -41,7 +41,7 @@ public class TaoXiangnangBlockEntity extends BlockEntity {
     private static void applyRegenerationEffect(LivingEntity entity) {
         MobEffectInstance existingEffect = entity.getEffect(MobEffects.REGENERATION);
 
-        if (existingEffect != null && existingEffect.getDuration() > 240) {
+        if (existingEffect != null && existingEffect.getDuration() > 260) {
             return;
         }
 

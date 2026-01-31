@@ -467,17 +467,17 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BAMBOO_SHOOTS_SOUP);
                         pOutput.accept(ModItems.LOTUS_ROOT_SOUP);
                         pOutput.accept(ModItems.LOTUS_SEED_SOUP);
-                        pOutput.accept(ModBlocks.CYMBIDIUM_XIANGNANG);
-                        pOutput.accept(ModBlocks.OSMANTHUS_XIANGNANG);
-                        pOutput.accept(ModBlocks.WINTERSWEET_XIANGNANG);
-                        pOutput.accept(ModBlocks.LILAC_XIANGNANG);
-                        pOutput.accept(ModBlocks.CHINESE_ROSE_XIANGNANG);
-                        pOutput.accept(ModBlocks.RUGOSA_ROSE_XIANGNANG);
-                        pOutput.accept(ModBlocks.MEI_XIANGNANG);
-                        pOutput.accept(ModBlocks.APRICOT_XIANGNANG);
-                        pOutput.accept(ModBlocks.PEACH_XIANGNANG);
-                        pOutput.accept(ModBlocks.PEAR_XIANGNANG);
-                        pOutput.accept(ModBlocks.LOTUS_XIANGNANG);
+                        pOutput.accept(ModItems.CYMBIDIUM_XIANGNANG);
+                        pOutput.accept(ModItems.OSMANTHUS_XIANGNANG);
+                        pOutput.accept(ModItems.WINTERSWEET_XIANGNANG);
+                        pOutput.accept(ModItems.LILAC_XIANGNANG);
+                        pOutput.accept(ModItems.CHINESE_ROSE_XIANGNANG);
+                        pOutput.accept(ModItems.RUGOSA_ROSE_XIANGNANG);
+                        pOutput.accept(ModItems.MEI_XIANGNANG);
+                        pOutput.accept(ModItems.APRICOT_XIANGNANG);
+                        pOutput.accept(ModItems.PEACH_XIANGNANG);
+                        pOutput.accept(ModItems.PEAR_XIANGNANG);
+                        pOutput.accept(ModItems.LOTUS_XIANGNANG);
                     }).build());
 
     public static void register(IEventBus eventBus) {
