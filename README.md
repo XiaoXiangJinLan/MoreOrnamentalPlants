@@ -66,7 +66,7 @@ New Foods
 fed to pandas!  
 • Lotus Root – Obtained by harvesting Lotus flowers and leaves. In version 1.21.1, they can be fed to most 
 farm animals.  
-• Lotus Seeds – Obtained by harvesting Lotus flowers. In version 1.21.1, they can be fed to most farm animals.  
+• Lotus Seeds – Obtained by harvesting Lotus flowers. In version 1.21.1, they can be fed to some farm animals.  
 • Bamboo Shoots Soup, Lotus Root Soup, Lotus Seed Soup – In version 1.21.1, Lotus Root Soup can be fed to wolves and cats.
 
 New Fuels
@@ -116,7 +116,7 @@ New Fuels
 ## 新食物
 **竹笋**：通过挖掘湘妃竹笋和紫竹竹笋获得，食用恢复3饥饿值、1.8饱和度，在1.21.1版本可以喂食熊猫！  
 **莲藕**：通过采集荷花荷叶获得，食用恢复3饥饿值、1.8饱和度，在1.21.1版本可以喂食大部分农场生物；  
-**莲子**：通过采集荷花获得莲蓬，一个莲蓬五个莲子，食用恢复1饥饿值、0.6饱和度，在1.21.1版本可以喂食大部分农场生物；  
+**莲子**：通过采集荷花获得莲蓬，一个莲蓬五个莲子，食用恢复1饥饿值、0.6饱和度，在1.21.1版本可以喂食部分农场生物；  
 **竹笋汤**、**莲藕汤**、**莲子汤**：食用恢复6饥饿值、7.2饱和度，莲藕汤在1.21.1版本可以喂食狼和猫。
 
 ## 新燃料
