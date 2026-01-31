@@ -64,8 +64,9 @@ New Foods
 ==========
 • Bamboo Shoots – Obtained by digging up Mottled Bamboo Shoots and Black Bamboo Shoots. In version 1.21.1, they can be 
 fed to pandas!  
-• Lotus Root & Lotus Seeds – Obtained by harvesting Lotus flowers and leaves. In version 1.21.1, they can be fed to most 
+• Lotus Root – Obtained by harvesting Lotus flowers and leaves. In version 1.21.1, they can be fed to most 
 farm animals.  
+• Lotus Seeds – Obtained by harvesting Lotus flowers. In version 1.21.1, they can be fed to most farm animals.  
 • Bamboo Shoots Soup, Lotus Root Soup, Lotus Seed Soup – In version 1.21.1, they can be fed to wolves and cats.
 
 New Fuels
@@ -100,7 +101,7 @@ New Fuels
 •**月季花海**：生长有多种月季、原版玫瑰丛的花海；  
 •**芒草田**：生长有大量金芒草的平原；  
 •**禾青**：生长有多种狼尾草、芒草、月季、建兰、原版绒球葱和蒲公英的平原，伴有樟树点缀；  
-•**春江**：水面漂浮有流红、浮英的河流，岸边生长有江梅、四种兰花，原版兰花；  
+•**春江**：水面漂浮有流红、浮英的河流，岸边生长有江梅、四种兰花、原版兰花；  
 •**芙蓉国**：生长有大量芙蓉、湘妃竹、紫竹的平原湿地，水里生长有大量荷叶荷花；  
 •**云梦泽**：生长有宫粉梅和樟树的湿地沼泽，林下生长有蕙兰，水里生长有大量荷叶荷花；
 
@@ -113,9 +114,10 @@ New Fuels
 **香雪亭**：传统风亭子，生成在香雪海；
 
 ## 新食物
-**竹笋**：通过挖掘湘妃竹笋和紫竹竹笋获得，在1.21.1版本可以喂食熊猫！  
-**莲藕**、莲子：通过采集荷花荷叶获得，在1.21.1版本可以喂食大部分农场生物；  
-**竹笋汤**、**莲藕汤**、**莲子汤**：在1.21.1版本可以喂食狼和猫。
+**竹笋**：通过挖掘湘妃竹笋和紫竹竹笋获得，食用恢复3饥饿值、1.8饱和度，在1.21.1版本可以喂食熊猫！  
+**莲藕**：通过采集荷花荷叶获得，食用恢复3饥饿值、1.8饱和度，在1.21.1版本可以喂食大部分农场生物；  
+**莲子**：通过采集荷花获得莲蓬，一个莲蓬五个莲子，食用恢复1饥饿值、0.6饱和度，在1.21.1版本可以喂食大部分农场生物；  
+**竹笋汤**、**莲藕汤**、**莲子汤**：食用恢复6饥饿值、7.2饱和度，在1.21.1版本可以喂食狼和猫。
 
 ## 新燃料
 **金芒草**：可以燃烧600游戏刻。
