@@ -364,17 +364,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SWEETGUM_LEAF_1);
         simpleItem(ModItems.GINKGO_LEAF);
 
-        simplerBlockItem(ModBlocks.MEI_XIANGNANG);
-        simplerBlockItem(ModBlocks.OSMANTHUS_XIANGNANG);
-        simplerBlockItem(ModBlocks.CYMBIDIUM_XIANGNANG);
-        simplerBlockItem(ModBlocks.WINTERSWEET_XIANGNANG);
-        simplerBlockItem(ModBlocks.LILAC_XIANGNANG);
-        simplerBlockItem(ModBlocks.CHINESE_ROSE_XIANGNANG);
-        simplerBlockItem(ModBlocks.RUGOSA_ROSE_XIANGNANG);
-        simplerBlockItem(ModBlocks.APRICOT_XIANGNANG);
-        simplerBlockItem(ModBlocks.PEACH_XIANGNANG);
-        simplerBlockItem(ModBlocks.PEAR_XIANGNANG);
-        simplerBlockItem(ModBlocks.LOTUS_XIANGNANG);
+        simpleItem(ModItems.MEI_XIANGNANG);
+        simpleItem(ModItems.OSMANTHUS_XIANGNANG);
+        simpleItem(ModItems.CYMBIDIUM_XIANGNANG);
+        simpleItem(ModItems.WINTERSWEET_XIANGNANG);
+        simpleItem(ModItems.LILAC_XIANGNANG);
+        simpleItem(ModItems.CHINESE_ROSE_XIANGNANG);
+        simpleItem(ModItems.RUGOSA_ROSE_XIANGNANG);
+        simpleItem(ModItems.APRICOT_XIANGNANG);
+        simpleItem(ModItems.PEACH_XIANGNANG);
+        simpleItem(ModItems.PEAR_XIANGNANG);
+        simpleItem(ModItems.LOTUS_XIANGNANG);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

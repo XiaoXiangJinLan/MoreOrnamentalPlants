@@ -50,7 +50,7 @@ public class LaMeiXiangnangBlockEntity extends BlockEntity {
         MobEffectInstance existingEffect = entity.getEffect(MobEffects.REGENERATION);
 
         // 如果已经有持续时间大于12秒的效果，就不重复应用
-        if (existingEffect != null && existingEffect.getDuration() > 240) {
+        if (existingEffect != null && existingEffect.getDuration() > 260) {
             return;
         }
 

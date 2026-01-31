@@ -1151,27 +1151,27 @@ public class ModBlocks {
             BLOCKS.register("ginkgo_leaf_pile", () -> leafPile(MapColor.COLOR_YELLOW));
 
     public static final RegistryObject<Block> MEI_XIANGNANG =
-            registerBlock("mei_xiangnang", () -> new MeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("mei_xiangnang", () -> new MeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> OSMANTHUS_XIANGNANG =
-            registerBlock("osmanthus_xiangnang", () -> new GuiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("osmanthus_xiangnang", () -> new GuiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> CYMBIDIUM_XIANGNANG =
-            registerBlock("cymbidium_xiangnang", () -> new LanXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("cymbidium_xiangnang", () -> new LanXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WINTERSWEET_XIANGNANG =
-            registerBlock("wintersweet_xiangnang", () -> new LaMeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("wintersweet_xiangnang", () -> new LaMeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> LILAC_XIANGNANG =
-            registerBlock("lilac_xiangnang", () -> new LaMeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("lilac_xiangnang", () -> new LaMeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> CHINESE_ROSE_XIANGNANG =
-            registerBlock("chinese_rose_xiangnang", () -> new YueJiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("chinese_rose_xiangnang", () -> new YueJiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> RUGOSA_ROSE_XIANGNANG =
-            registerBlock("rugosa_rose_xiangnang", () -> new YueJiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("rugosa_rose_xiangnang", () -> new YueJiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> APRICOT_XIANGNANG =
-            registerBlock("apricot_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("apricot_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PEACH_XIANGNANG =
-            registerBlock("peach_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("peach_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PEAR_XIANGNANG =
-            registerBlock("pear_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("pear_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> LOTUS_XIANGNANG =
-            registerBlock("lotus_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("lotus_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
 
     private static ModRotatedPillarBlock log(MapColor pTopMapColor, MapColor pSideMapColor) {
         return new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((p_152624_) ->
