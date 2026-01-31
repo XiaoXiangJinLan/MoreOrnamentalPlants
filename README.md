@@ -67,7 +67,7 @@ fed to pandas!
 • Lotus Root – Obtained by harvesting Lotus flowers and leaves. In version 1.21.1, they can be fed to most 
 farm animals.  
 • Lotus Seeds – Obtained by harvesting Lotus flowers. In version 1.21.1, they can be fed to most farm animals.  
-• Bamboo Shoots Soup, Lotus Root Soup, Lotus Seed Soup – In version 1.21.1, they can be fed to wolves and cats.
+• Bamboo Shoots Soup, Lotus Root Soup, Lotus Seed Soup – In version 1.21.1, Lotus Root Soup can be fed to wolves and cats.
 
 New Fuels
 ==========
