@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-29T00:08:44.7539736	Loot Tables
+// 1.21.1	2026-02-07T15:30:10.2453425	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_table/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_table/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_table/blocks/apricot_fence.json
@@ -173,7 +173,7 @@ cac50378021c7227bc882447d96899da10a5bab1 data/more_orn_plants/loot_table/blocks/
 4f2a38156164afcb4544701abcf198914e7d2b37 data/more_orn_plants/loot_table/blocks/golden_chrysanthemum.json
 aedcfe6f8ccf0d822de0205babe7e8785d68088b data/more_orn_plants/loot_table/blocks/golden_ginkgo_leaves.json
 56b5b28c6af8f1311048848a6f713b82a6988a80 data/more_orn_plants/loot_table/blocks/golden_ginkgo_sapling.json
-a3f08cce00019f6b4cf682ae73df882f6bb3268b data/more_orn_plants/loot_table/blocks/golden_miscanthus.json
+04d2ce1634f9d052cef0647071ed363d0d2d0ab8 data/more_orn_plants/loot_table/blocks/golden_miscanthus.json
 45e5bad9ac82b1e18a8d325afa9b65e628268860 data/more_orn_plants/loot_table/blocks/golden_osmanthus_leaves.json
 63a3ce0c62a174ef84c4d3aea081591b31609751 data/more_orn_plants/loot_table/blocks/golden_osmanthus_sapling.json
 de3ed87b780b678f3aa5b83f0c0c59047d2483db data/more_orn_plants/loot_table/blocks/golden_peony.json
@@ -219,7 +219,7 @@ a38bb7735b75fbe58a052d4e0fea266c8ac86d5f data/more_orn_plants/loot_table/blocks/
 18a6f49fde9b35609ec0c19e5a4790981b3d0075 data/more_orn_plants/loot_table/blocks/lotus_xiangnang.json
 a2e80dd2d38b53d528a66147a6837d5b39360569 data/more_orn_plants/loot_table/blocks/mauve_peony.json
 dbea56b8bc30053c07ffd4596a7d2e222aaec02e data/more_orn_plants/loot_table/blocks/mei_xiangnang.json
-98a3ba42db819e539acecf59b01efe93052faeb1 data/more_orn_plants/loot_table/blocks/miscanthus.json
+f3afb2219818ed3821493d8382a6655f900e55bd data/more_orn_plants/loot_table/blocks/miscanthus.json
 b28a8dd01334ca0804941a5f106e16208eee8640 data/more_orn_plants/loot_table/blocks/mottled_bamboo.json
 57cfbabd4f56e68b176d31f8874edf9337156d07 data/more_orn_plants/loot_table/blocks/mottled_bamboo_sapling.json
 797a06a00c3ffdce98fa14202478ef780ae17678 data/more_orn_plants/loot_table/blocks/new_camphor_leaves.json

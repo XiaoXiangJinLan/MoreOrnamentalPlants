@@ -780,10 +780,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.COTTON_ROSE.get(), createSinglePropConditionTable(ModBlocks.COTTON_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
-        this.add(ModBlocks.MISCANTHUS.get(), createSinglePropConditionTable(ModBlocks.COTTON_ROSE.get(),
-                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
-        this.add(ModBlocks.GOLDEN_MISCANTHUS.get(), createSinglePropConditionTable(ModBlocks.COTTON_ROSE.get(),
-                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.MISCANTHUS.get(), block -> createDoublePlantWithSeedDrops(block, ModBlocks.MISCANTHUS.get()));
+        this.add(ModBlocks.GOLDEN_MISCANTHUS.get(), block -> createDoublePlantWithSeedDrops(block, ModBlocks.GOLDEN_MISCANTHUS.get()));
 
         this.dropSelf(ModBlocks.MOTTLED_BAMBOO.get());
         this.dropOther(ModBlocks.MOTTLED_BAMBOO_SAPLING.get(), ModItems.PEELED_BAMBOO_SHOOTS.get());

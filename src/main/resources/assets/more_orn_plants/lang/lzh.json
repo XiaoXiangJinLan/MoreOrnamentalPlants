@@ -648,6 +648,13 @@
 
   "itemGroup.plants": "羣芳譜",
 
+  "structure.more_orn_plants.little_iron_threshold_temple": "小鐵檻寺",
+  "structure.more_orn_plants.peach_blossom_hermitage": "桃花庵",
+  "structure.more_orn_plants.village_apricot": "杏花村",
+  "structure.more_orn_plants.bamboo_garden": "竹園",
+  "structure.more_orn_plants.mount_mei_tudi_temple": "梅山土地廟",
+  "structure.more_orn_plants.xiangxue_pavilion": "香雪亭",
+
   "advancement.moreornplants.root.title": "羣芳譜",
   "advancement.moreornplants.root.description": "花開四季皆應景，俱是天生地造成",
   "advancement.moreornplants.the_leader_among_flower.title": "花魁",

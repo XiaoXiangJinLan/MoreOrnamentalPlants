@@ -648,6 +648,13 @@
 
   "itemGroup.plants": "Ornamental Plants",
 
+  "structure.more_orn_plants.little_iron_threshold_temple": "Little Iron Threshold Temple",
+  "structure.more_orn_plants.peach_blossom_hermitage": "Peach Blossom Hermitage",
+  "structure.more_orn_plants.village_apricot": "Village Apricot",
+  "structure.more_orn_plants.bamboo_garden": "Bamboo Garden",
+  "structure.more_orn_plants.mount_mei_tudi_temple": "Mount Mei Tudi Temple",
+  "structure.more_orn_plants.xiangxue_pavilion": "Xiangxue Pavilion",
+
   "advancement.moreornplants.root.title": "The Florilegium",
   "advancement.moreornplants.root.description": "Each bloom in its season, a perfect sight; Wrought by the hand of heaven and earth.",
   "advancement.moreornplants.the_leader_among_flower.title": "The Leader Among Flowers",
