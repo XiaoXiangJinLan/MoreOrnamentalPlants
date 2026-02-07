@@ -11,7 +11,7 @@ Camphor, Dove Tree, Chinaberry, Desert Poplar.
 New Plants 
 ==========
 Herbaceous Peony, Chinese Rose, Chrysanthemum, Cymbidium, Lotus, Camellia, Red Azalea, Wintersweet, Fountain Grass, 
-Miscanthus, Mottled Bamboo, Black Bamboo, and two legendary Peony varieties: Two Qiao and Versicolor Peony.
+Miscanthus, Mottled Bamboo, Black Bamboo, and two legendary Peony varieties: Zhao's Pink and Two Qiao.
 
 New Biomes
 ==========
@@ -80,7 +80,7 @@ New Fuels
 梅花、海棠、杏花、桃花、梨花、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
 
 ## 新植物
-芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、映山红、腊梅、狼尾草、芒草、湘妃竹、紫竹，以及两大牡丹传奇品种：二乔和什样锦。
+芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、映山红、腊梅、狼尾草、芒草、湘妃竹、紫竹，以及两大牡丹传奇品种：赵粉和二乔。
 
 ## 新群系
 •**白雪红梅**：生长有红梅和腊梅的雪原；  
@@ -170,7 +170,7 @@ more_orn_plants:sweetgum_leaves more_orn_plants:camphor_leaves more_orn_plants:n
 more_orn_plants:dove_tree_blossom_leaves more_orn_plants:chinaberry_leaves more_orn_plants:desert_poplar_leaves
 
 #_tall flowers:half=lower_#  
-more_orn_plants:two_qiao_peony:half=lower more_orn_plants:versicolor_peony:half=lower more_orn_plants:chinese_rose:half=lower 
+more_orn_plants:zhao_pink_peony:half=lower more_orn_plants:two_qiao_peony:half=lower more_orn_plants:versicolor_peony:half=lower more_orn_plants:chinese_rose:half=lower 
 more_orn_plants:pink_chinese_rose:half=lower more_orn_plants:yellow_chinese_rose:half=lower more_orn_plants:white_chinese_rose:half=lower 
 more_orn_plants:red_pink_chinese_rose:half=lower more_orn_plants:red_yellow_chinese_rose:half=lower more_orn_plants:red_white_chinese_rose:half=lower 
 more_orn_plants:pink_white_chinese_rose:half=lower more_orn_plants:yellow_white_chinese_rose:half=lower more_orn_plants:cotton_rose:half=lower 
@@ -178,7 +178,7 @@ more_orn_plants:lotus:half=lower more_orn_plants:white_lotus:half=lower more_orn
 more_orn_plants:miscanthus:half=lower more_orn_plants:golden_miscanthus:half=lower more_orn_plants:crape_myrtle:half=lower more_orn_plants:wintersweet:half=lower
 
 #_tall flowers:half=upper_#  
-more_orn_plants:two_qiao_peony:half=upper more_orn_plants:versicolor_peony:half=upper more_orn_plants:chinese_rose:half=upper 
+more_orn_plants:zhao_pink_peony:half=upper more_orn_plants:two_qiao_peony:half=upper more_orn_plants:versicolor_peony:half=upper more_orn_plants:chinese_rose:half=upper 
 more_orn_plants:pink_chinese_rose:half=upper more_orn_plants:yellow_chinese_rose:half=upper more_orn_plants:white_chinese_rose:half=upper 
 more_orn_plants:red_pink_chinese_rose:half=upper more_orn_plants:red_yellow_chinese_rose:half=upper more_orn_plants:red_white_chinese_rose:half=upper 
 more_orn_plants:pink_white_chinese_rose:half=upper more_orn_plants:yellow_white_chinese_rose:half=upper more_orn_plants:cotton_rose:half=upper 

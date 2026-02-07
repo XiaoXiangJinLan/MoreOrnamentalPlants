@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_orn_plants:two_qiao_peony"
+        "recipe": "more_orn_plants:versicolor_peony_from_peony"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "more_orn_plants:two_qiao_peony"
+      "more_orn_plants:versicolor_peony_from_peony"
     ]
   }
 }

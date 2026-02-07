@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:two_qiao_peony_from_zhao_pink_peony"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zhao_pink_peony": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:zhao_pink_peony"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zhao_pink_peony"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:two_qiao_peony_from_zhao_pink_peony"
+    ]
+  }
+}

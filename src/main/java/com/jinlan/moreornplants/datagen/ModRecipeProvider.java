@@ -1008,16 +1008,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TWO_QIAO_PEONY, 2)
+                .requires(ModBlocks.ZHAO_PINK_PEONY, 2)
+                .unlockedBy(getHasName(ModBlocks.ZHAO_PINK_PEONY), has(ModBlocks.ZHAO_PINK_PEONY))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "two_qiao_peony_from_zhao_pink_peony");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VERSICOLOR_PEONY)
+                .pattern(" # ")
+                .pattern("###")
+                .pattern(" # ")
+                .define('#', ModBlocks.ZHAO_PINK_PEONY)
+                .unlockedBy(getHasName(ModBlocks.ZHAO_PINK_PEONY), has(ModBlocks.ZHAO_PINK_PEONY))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "versicolor_peony_from_zhao_pink_peony");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TWO_QIAO_PEONY, 2)
                 .requires(Blocks.PEONY, 2)
                 .unlockedBy(getHasName(Blocks.PEONY), has(Blocks.PEONY))
-                .save(recipeOutput);
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "two_qiao_peony_from_peony");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VERSICOLOR_PEONY)
                 .pattern(" # ")
                 .pattern("###")
                 .pattern(" # ")
                 .define('#', Blocks.PEONY)
                 .unlockedBy(getHasName(Blocks.PEONY), has(Blocks.PEONY))
-                .save(recipeOutput);
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "versicolor_peony_from_peony");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRAPE_MYRTLE, 2)
                 .requires(ModBlocks.CRAPE_MYRTLE_SAPLING, 2)

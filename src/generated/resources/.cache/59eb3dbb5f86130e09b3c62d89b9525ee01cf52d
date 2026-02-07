@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-07T15:30:10.2453425	Loot Tables
+// 1.21.1	2026-02-08T00:07:52.5202219	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_table/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_table/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_table/blocks/apricot_fence.json
@@ -548,3 +548,4 @@ ae868f4372755a6be8840770cc2b0a156e187068 data/more_orn_plants/loot_table/blocks/
 2c2b3237dab45501c3b707d2bf05ab04ad1a209e data/more_orn_plants/loot_table/blocks/yellow_peony.json
 ddc0f8352db001d54f11b2fd433a092ffcbaef4e data/more_orn_plants/loot_table/blocks/yellow_white_chinese_rose.json
 26ff85aa6adc565c75b5138578e34979d263868d data/more_orn_plants/loot_table/blocks/yellow_white_peony.json
+5a54f07e7a72baebb27e829ec589684a2c2f9ffd data/more_orn_plants/loot_table/blocks/zhao_pink_peony.json

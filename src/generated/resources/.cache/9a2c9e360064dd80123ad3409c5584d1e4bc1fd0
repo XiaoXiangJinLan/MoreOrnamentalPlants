@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-29T00:08:44.7432261	Item Models: more_orn_plants
+// 1.21.1	2026-02-08T00:07:52.5132575	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -339,3 +339,4 @@ d1560c95807c24bf19081c54e84d6688a0c8d992 assets/more_orn_plants/models/item/yell
 7b3615e2c01722daf7e599aabc1d179498324088 assets/more_orn_plants/models/item/yellow_peony.json
 544bfa885a3b852d52b9d673d7a86f0c06e32864 assets/more_orn_plants/models/item/yellow_white_chinese_rose.json
 205788e1162cc3cbaec37080a605532897cdca89 assets/more_orn_plants/models/item/yellow_white_peony.json
+563a58ebd02294cb79f9417a5fe1a11fe7d65f7b assets/more_orn_plants/models/item/zhao_pink_peony.json

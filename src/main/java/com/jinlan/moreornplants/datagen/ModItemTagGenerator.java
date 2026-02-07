@@ -278,7 +278,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModBlocks.PINK_WEEPING_MEI.asItem(), ModBlocks.VERSICOLOR_WEEPING_MEI.asItem());
 
         this.tag(CommonTags.Items.TREE_PEONY)
-                .add(Blocks.PEONY.asItem(), ModBlocks.TWO_QIAO_PEONY.asItem(), ModBlocks.VERSICOLOR_PEONY.asItem());
+                .add(Blocks.PEONY.asItem(), ModBlocks.ZHAO_PINK_PEONY.asItem(), ModBlocks.TWO_QIAO_PEONY.asItem(), ModBlocks.VERSICOLOR_PEONY.asItem());
 
         this.tag(CommonTags.Items.HERBACEOUS_PEONY)
                 .add(ModBlocks.PEONY.asItem())

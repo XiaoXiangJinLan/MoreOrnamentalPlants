@@ -694,6 +694,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.POTTED_BAMBOO_STICK.get(), models().singleTexture("potted_bamboo_stick", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.BAMBOO_STICK.get())).renderType("cutout"));
 
+        tallCrossBlock(ModBlocks.ZHAO_PINK_PEONY);
         tallCrossBlock(ModBlocks.TWO_QIAO_PEONY);
         tallCrossBlock(ModBlocks.VERSICOLOR_PEONY);
         tallCrossBlock(ModBlocks.WINTER_CYMBIDIUM);

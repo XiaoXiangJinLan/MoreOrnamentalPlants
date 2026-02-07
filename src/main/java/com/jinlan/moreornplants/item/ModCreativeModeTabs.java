@@ -150,6 +150,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.VERSICOLOR_WEEPING_MEI);
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE);
                         pOutput.accept(ModBlocks.WINTER_CYMBIDIUM);
+                        pOutput.accept(ModBlocks.ZHAO_PINK_PEONY);
                         pOutput.accept(ModBlocks.TWO_QIAO_PEONY);
                         pOutput.accept(ModBlocks.VERSICOLOR_PEONY);
                         pOutput.accept(ModBlocks.LOTUS);

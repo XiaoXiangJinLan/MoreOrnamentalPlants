@@ -661,7 +661,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.REPLACEABLE_BY_TREES)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
-                .add(ModBlocks.TWO_QIAO_PEONY.get(), ModBlocks.VERSICOLOR_PEONY.get())
+                .add(ModBlocks.ZHAO_PINK_PEONY.get(), ModBlocks.TWO_QIAO_PEONY.get(), ModBlocks.VERSICOLOR_PEONY.get())
                 .add(ModBlocks.CHINESE_ROSE.get(), ModBlocks.PINK_CHINESE_ROSE.get(), ModBlocks.YELLOW_CHINESE_ROSE.get(), ModBlocks.WHITE_CHINESE_ROSE.get(),
                         ModBlocks.RED_PINK_CHINESE_ROSE.get(), ModBlocks.RED_YELLOW_CHINESE_ROSE.get(), ModBlocks.RED_WHITE_CHINESE_ROSE.get(),
                         ModBlocks.PINK_WHITE_CHINESE_ROSE.get(), ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get())
@@ -722,6 +722,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.TALL_FLOWERS)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
+                .add(ModBlocks.ZHAO_PINK_PEONY.get())
                 .add(ModBlocks.TWO_QIAO_PEONY.get())
                 .add(ModBlocks.VERSICOLOR_PEONY.get())
                 .add(ModBlocks.CHINESE_ROSE.get())
