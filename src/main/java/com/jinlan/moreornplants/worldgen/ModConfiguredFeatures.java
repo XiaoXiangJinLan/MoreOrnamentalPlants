@@ -111,7 +111,25 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_TREE_PENGLAI = registerKey("peony_tree_penglai");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMELLIA_KEY = registerKey("camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CAMELLIA_KEY = registerKey("white_camellia_key");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_AZALEA_KEY = registerKey("crimson_azalea_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_AZALEA_TREE_KEY = registerKey("flowering_azalea_tree_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RED_AZALEA_TREE_KEY = registerKey("red_azalea_tree_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MAYING_RHODODENDRON_TREE_KEY = registerKey("maying_rhododendron_tree_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DEWDROP_RHODODENDRON_TREE_KEY = registerKey("dewdrop_rhododendron_tree_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHARMING_RHODODENDRON_TREE_KEY = registerKey("charming_rhododendron_tree_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GREAT_WHITE_RHODODENDRON_TREE_KEY = registerKey("great_white_rhododendron_tree_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_RHODODENDRON_TREE_KEY = registerKey("purple_rhododendron_tree_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_RHODODENDRON_TREE_KEY = registerKey("pink_rhododendron_tree_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_AZALEA_TREE_KEY = registerKey("chinese_azalea_tree_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RED_AZALEA_KEY = registerKey("red_azalea_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MAYING_RHODODENDRON_KEY = registerKey("maying_rhododendron_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DEWDROP_RHODODENDRON_KEY = registerKey("dewdrop_rhododendron_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHARMING_RHODODENDRON_KEY = registerKey("charming_rhododendron_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GREAT_WHITE_RHODODENDRON_KEY = registerKey("great_white_rhododendron_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_RHODODENDRON_KEY = registerKey("purple_rhododendron_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_RHODODENDRON_KEY = registerKey("pink_rhododendron_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_AZALEA_KEY = registerKey("chinese_azalea_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> AZALEA_KEY = registerKey("azalea_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> AZALEA_GROVE = registerKey("azalea_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WINTERSWEET = registerKey("wintersweet");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERS_GROVE_FLOWERS = registerKey("flowers_grove_flowers");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_FLOWERS_GROVE = registerKey("small_flowers_grove");
@@ -127,7 +145,6 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LILY_OF_THE_VALLEY_FOREST = registerKey("lily_of_the_valley_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_ORCHID_FOREST = registerKey("blue_orchid_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_KEY = registerKey("pink_camellia_key");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_AZALEA_GROVE = registerKey("crimson_azalea_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_GROVE = registerKey("tall_flowers_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_KEY = registerKey("crape_myrtle_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_TREE = registerKey("crape_myrtle_tree");
@@ -533,6 +550,61 @@ public class ModConfiguredFeatures {
                 new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
 
+        register(context, FLOWERING_AZALEA_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.FLOWERING_AZALEA_LEAVES.defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 1)),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, RED_AZALEA_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.RED_AZALEA_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, MAYING_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.MAYING_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, DEWDROP_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, CHARMING_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.CHARMING_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, GREAT_WHITE_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, PURPLE_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.PURPLE_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, PINK_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.PINK_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, CHINESE_AZALEA_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.CHINESE_AZALEA_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+
         register(context, CYMBIDIUM_RIVER, Feature.FLOWER, new RandomPatchConfiguration(32, 7, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
@@ -705,9 +777,57 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
-        register(context, CRIMSON_AZALEA_KEY, Feature.FLOWER, new RandomPatchConfiguration(72, 10, 4,
+        register(context, RED_AZALEA_KEY, Feature.FLOWER, new RandomPatchConfiguration(99, 6, 3,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RED_AZALEA.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, MAYING_RHODODENDRON_KEY, Feature.FLOWER, new RandomPatchConfiguration(99, 6, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MAYING_RHODODENDRON.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, DEWDROP_RHODODENDRON_KEY, Feature.FLOWER, new RandomPatchConfiguration(99, 6, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.DEWDROP_RHODODENDRON.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, CHARMING_RHODODENDRON_KEY, Feature.FLOWER, new RandomPatchConfiguration(99, 6, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CHARMING_RHODODENDRON.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, GREAT_WHITE_RHODODENDRON_KEY, Feature.FLOWER, new RandomPatchConfiguration(99, 6, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.GREAT_WHITE_RHODODENDRON.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PURPLE_RHODODENDRON_KEY, Feature.FLOWER, new RandomPatchConfiguration(99, 6, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PURPLE_RHODODENDRON.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PINK_RHODODENDRON_KEY, Feature.FLOWER, new RandomPatchConfiguration(99, 6, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PINK_RHODODENDRON.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, CHINESE_AZALEA_KEY, Feature.FLOWER, new RandomPatchConfiguration(99, 6, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CHINESE_AZALEA.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, AZALEA_KEY, Feature.FLOWER, new RandomPatchConfiguration(6, 4, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.FLOWERING_AZALEA)),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
@@ -815,9 +935,18 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, CRIMSON_AZALEA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(24, 4, 2,
+        register(context, AZALEA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(32, 4, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RED_AZALEA.get())),
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.RED_AZALEA.get().defaultBlockState(), 3)
+                                        .add(ModBlocks.MAYING_RHODODENDRON.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.DEWDROP_RHODODENDRON.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.CHARMING_RHODODENDRON.get().defaultBlockState(), 3)
+                                        .add(ModBlocks.GREAT_WHITE_RHODODENDRON.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.PURPLE_RHODODENDRON.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.PINK_RHODODENDRON.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.CHINESE_AZALEA.get().defaultBlockState(), 2).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));

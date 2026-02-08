@@ -21,6 +21,7 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_APRICOT_SPRING_PLATEAU;
     public static final ModConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
     public static final ModConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS;
+    public static final ModConfigSpec.BooleanValue ENABLE_AZALEA_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_FURONG_GUO;
     public static final ModConfigSpec.BooleanValue ENABLE_YUNMENG_MARSH;
     public static final ModConfigSpec.BooleanValue ENABLE_DESERT_POPLAR_WOODS;
@@ -76,6 +77,9 @@ public class ModBiomeConfig {
         ENABLE_RED_HIGHLANDS = BUILDER
                 .comment("Enable Red Highlands biome generation")
                 .define("enableRedHighlands", true);
+        ENABLE_AZALEA_FOREST = BUILDER
+                .comment("Enable Azalea Forest biome generation")
+                .define("enableAzaleaForest", true);
         ENABLE_FURONG_GUO = BUILDER
                 .comment("Enable Furong Guo biome generation")
                 .define("enableFurongGuo", true);

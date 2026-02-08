@@ -7,8 +7,9 @@ import com.jinlan.moreornplants.block.BambooBlocks.MottledBambooSaplingBlock;
 import com.jinlan.moreornplants.block.BambooBlocks.MottledBambooStalkBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.*;
 import com.jinlan.moreornplants.block.LeavesBlocks.*;
-import com.jinlan.moreornplants.block.WeepingBlocks.*;
+import com.jinlan.moreornplants.block.saplingBlocks.*;
 import com.jinlan.moreornplants.block.tree.ModTreeGrower;
+import com.jinlan.moreornplants.block.WeepingBlocks.*;
 import com.jinlan.moreornplants.block.xiangnangBlocks.*;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ModBlockSetType;
@@ -91,6 +92,22 @@ public class ModBlocks {
             registerBlock("desert_poplar_leaves", () -> new DesertPoplarLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES).mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final DeferredBlock<Block> CRAPE_MYRTLE_LEAVES =
             registerBlock("crape_myrtle_leaves", () -> new CrapeMyrtleLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES).mapColor(MapColor.COLOR_PURPLE)));
+    public static final DeferredBlock<Block> RED_AZALEA_LEAVES =
+            registerBlock("red_azalea_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.COLOR_RED)));
+    public static final DeferredBlock<Block> MAYING_RHODODENDRON_LEAVES =
+            registerBlock("maying_rhododendron_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.COLOR_RED)));
+    public static final DeferredBlock<Block> DEWDROP_RHODODENDRON_LEAVES =
+            registerBlock("dewdrop_rhododendron_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.SNOW)));
+    public static final DeferredBlock<Block> CHARMING_RHODODENDRON_LEAVES =
+            registerBlock("charming_rhododendron_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.COLOR_MAGENTA)));
+    public static final DeferredBlock<Block> GREAT_WHITE_RHODODENDRON_LEAVES =
+            registerBlock("great_white_rhododendron_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.SNOW)));
+    public static final DeferredBlock<Block> PURPLE_RHODODENDRON_LEAVES =
+            registerBlock("purple_rhododendron_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.COLOR_PURPLE)));
+    public static final DeferredBlock<Block> PINK_RHODODENDRON_LEAVES =
+            registerBlock("pink_rhododendron_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.COLOR_PINK)));
+    public static final DeferredBlock<Block> CHINESE_AZALEA_LEAVES =
+            registerBlock("chinese_azalea_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.COLOR_YELLOW)));
 
     public static final DeferredBlock<Block> RED_WEEPING_MEI =
             registerBlock("red_weeping_mei", () -> new RedWeepingMeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
@@ -936,7 +953,21 @@ public class ModBlocks {
     public static final DeferredBlock<Block> VERSICOLOR_CAMELLIA =
             registerBlock("versicolor_camellia", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> RED_AZALEA =
-            registerBlock("red_azalea", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("red_azalea", () -> new RedAzaleaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> MAYING_RHODODENDRON =
+            registerBlock("maying_rhododendron", () -> new MayingRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> DEWDROP_RHODODENDRON =
+            registerBlock("dewdrop_rhododendron", () -> new DewdropRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CHARMING_RHODODENDRON =
+            registerBlock("charming_rhododendron", () -> new CharmingRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> GREAT_WHITE_RHODODENDRON =
+            registerBlock("great_white_rhododendron", () -> new GreatWhiteRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> PURPLE_RHODODENDRON =
+            registerBlock("purple_rhododendron", () -> new PurpleRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> PINK_RHODODENDRON =
+            registerBlock("pink_rhododendron", () -> new PinkRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CHINESE_AZALEA =
+            registerBlock("chinese_azalea", () -> new ChineseAzaleaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> FOUNTAIN_GRASS =
             registerBlock("fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PURPLE_FOUNTAIN_GRASS =
@@ -1040,6 +1071,20 @@ public class ModBlocks {
             BLOCKS.register("potted_versicolor_camellia", () -> flowerPot(VERSICOLOR_CAMELLIA.get()));
     public static final DeferredBlock<Block> POTTED_RED_AZALEA =
             BLOCKS.register("potted_red_azalea", () -> flowerPot(RED_AZALEA.get()));
+    public static final DeferredBlock<Block> POTTED_MAYING_RHODODENDRON =
+            BLOCKS.register("potted_maying_rhododendron", () -> flowerPot(MAYING_RHODODENDRON.get()));
+    public static final DeferredBlock<Block> POTTED_DEWDROP_RHODODENDRON =
+            BLOCKS.register("potted_dewdrop_rhododendron", () -> flowerPot(DEWDROP_RHODODENDRON.get()));
+    public static final DeferredBlock<Block> POTTED_CHARMING_RHODODENDRON =
+            BLOCKS.register("potted_charming_rhododendron", () -> flowerPot(CHARMING_RHODODENDRON.get()));
+    public static final DeferredBlock<Block> POTTED_GREAT_WHITE_RHODODENDRON =
+            BLOCKS.register("potted_great_white_rhododendron", () -> flowerPot(GREAT_WHITE_RHODODENDRON.get()));
+    public static final DeferredBlock<Block> POTTED_PURPLE_RHODODENDRON =
+            BLOCKS.register("potted_purple_rhododendron", () -> flowerPot(PURPLE_RHODODENDRON.get()));
+    public static final DeferredBlock<Block> POTTED_PINK_RHODODENDRON =
+            BLOCKS.register("potted_pink_rhododendron", () -> flowerPot(PINK_RHODODENDRON.get()));
+    public static final DeferredBlock<Block> POTTED_CHINESE_AZALEA =
+            BLOCKS.register("potted_chinese_azalea", () -> flowerPot(CHINESE_AZALEA.get()));
     public static final DeferredBlock<Block> POTTED_FOUNTAIN_GRASS =
             BLOCKS.register("potted_fountain_grass", () -> flowerPot(FOUNTAIN_GRASS.get()));
     public static final DeferredBlock<Block> POTTED_PURPLE_FOUNTAIN_GRASS =

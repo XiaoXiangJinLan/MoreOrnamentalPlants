@@ -1,8 +1,9 @@
-// 1.21.1	2026-02-08T00:07:52.5260726	Recipes
+// 1.21.1	2026-02-08T19:55:33.9428778	Recipes
 a68cbdc6f63860c67f3dc9287300708552b98526 data/minecraft/advancement/recipes/misc/black_dye.json
 7cc611a4a6f86822fab2d57cae07732bf5e5e0f9 data/minecraft/advancement/recipes/misc/green_dye.json
 49383de36bba78b7442c11a223a5f17f3deaad6e data/minecraft/advancement/recipes/misc/light_blue_dye.json
 cc315b851487402fdd20692d69508749cf860ed9 data/minecraft/advancement/recipes/misc/lime_dye.json
+94f68590a8001a3d967a73cc26b43a14fa36dcb3 data/minecraft/advancement/recipes/misc/magenta_dye.json
 43eff8564e55e1b9177ffe5a3069444a49e1f9ab data/minecraft/advancement/recipes/misc/orange_dye.json
 092a9de34e72a745a2b9a2a3d0c7501d26636b65 data/minecraft/advancement/recipes/misc/pink_dye.json
 5bd623159884424b4a5047c28731987bad7d4c8a data/minecraft/advancement/recipes/misc/purple_dye.json
@@ -13,6 +14,7 @@ cc315b851487402fdd20692d69508749cf860ed9 data/minecraft/advancement/recipes/misc
 48fcebac27e68bcba8ed77e22dd0af6e37e7d771 data/minecraft/recipe/green_dye.json
 37e55acd1e2dc561cb826fe51b2e066d4f4423f8 data/minecraft/recipe/light_blue_dye.json
 1aff9aa033a7bb675f55c0cf7f45ddeaa8e65ebf data/minecraft/recipe/lime_dye.json
+7cb04ddc056316a5104e3136d50ea83b51b5f654 data/minecraft/recipe/magenta_dye.json
 58a033d149896424a88179c46405c8fa7bc0066d data/minecraft/recipe/orange_dye.json
 626b1ab312a91129a75035978e2f39961b2cb8a9 data/minecraft/recipe/pink_dye.json
 f330ac95ecbd5dca5b5ea8b1d16466d77bf9ad79 data/minecraft/recipe/purple_dye.json

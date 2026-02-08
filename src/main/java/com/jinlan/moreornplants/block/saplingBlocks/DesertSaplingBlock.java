@@ -1,4 +1,4 @@
-package com.jinlan.moreornplants.block.FlowerBlocks;
+package com.jinlan.moreornplants.block.saplingBlocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;

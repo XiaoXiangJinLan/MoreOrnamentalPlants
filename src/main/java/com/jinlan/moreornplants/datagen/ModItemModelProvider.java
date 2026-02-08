@@ -318,6 +318,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.WHITE_CAMELLIA);
         flowerItem(ModBlocks.VERSICOLOR_CAMELLIA);
         flowerItem(ModBlocks.RED_AZALEA);
+        flowerItem(ModBlocks.MAYING_RHODODENDRON);
+        flowerItem(ModBlocks.DEWDROP_RHODODENDRON);
+        flowerItem(ModBlocks.CHARMING_RHODODENDRON);
+        flowerItem(ModBlocks.GREAT_WHITE_RHODODENDRON);
+        flowerItem(ModBlocks.PURPLE_RHODODENDRON);
+        flowerItem(ModBlocks.PINK_RHODODENDRON);
+        flowerItem(ModBlocks.CHINESE_AZALEA);
         flowerItem(ModBlocks.FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PURPLE_FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PINK_FOUNTAIN_GRASS);

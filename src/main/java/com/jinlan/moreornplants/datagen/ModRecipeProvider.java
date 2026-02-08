@@ -1069,6 +1069,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("purple_dye")
                 .unlockedBy("has_purple_dye_item", has(ModTags.Items.PURPLE_DYE))
                 .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.MAGENTA_DYE)
+                .requires(ModTags.Items.MAGENTA_DYE)
+                .group("purple_dye")
+                .unlockedBy("has_purple_dye_item", has(ModTags.Items.MAGENTA_DYE))
+                .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.LIME_DYE)
                 .requires(ModTags.Items.LIME_DYE)
                 .group("lime_dye")

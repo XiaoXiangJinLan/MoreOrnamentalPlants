@@ -23,6 +23,7 @@ public class BiomeConfigManager {
             case "yunmeng_marsh" -> ModBiomeConfig.ENABLE_YUNMENG_MARSH.get();
             case "fragrant_snow_sea" -> ModBiomeConfig.ENABLE_FRAGRANT_SNOW_SEA.get();
             case "the_apricot_spring_plateau" -> ModBiomeConfig.ENABLE_APRICOT_SPRING_PLATEAU.get();
+            case "azalea_forest" -> ModBiomeConfig.ENABLE_AZALEA_FOREST.get();
             default -> true;
         };
     }

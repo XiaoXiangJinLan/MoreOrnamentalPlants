@@ -19,6 +19,20 @@ public class ModSecondOverworldBiomesBuilder extends ModOverworldBiomesBuilder{
             {null,                          null,                          null,                        null,                        null},
             {null,                          null,                          null,                        null,                        null}
     };
+    private final ResourceKey<Biome>[][] PLATEAU_BIOMES_MOD = new ResourceKey[][]{
+            {null,                    null,                    null,                    null,                    null},
+            {ModBiomes.AZALEA_FOREST, ModBiomes.AZALEA_FOREST, ModBiomes.AZALEA_FOREST, ModBiomes.AZALEA_FOREST, null},
+            {ModBiomes.AZALEA_FOREST, ModBiomes.AZALEA_FOREST, ModBiomes.AZALEA_FOREST, ModBiomes.AZALEA_FOREST, null},
+            {null,                    null,                    null,                    null,                    null},
+            {null,                    null,                    null,                    null,                    null}
+    };
+    private final ResourceKey<Biome>[][] PLATEAU_BIOMES_VARIANT_MOD = new ResourceKey[][]{
+            {null, null, null,                    null, null},
+            {null, null, ModBiomes.AZALEA_FOREST, null, null},
+            {null, null, ModBiomes.AZALEA_FOREST, null, null},
+            {null, null, null,                    null, null},
+            {null, null, null,                    null, null}
+    };
 
     @Override
     protected ResourceKey<Biome> pickMiddleBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
@@ -38,5 +52,21 @@ public class ModSecondOverworldBiomesBuilder extends ModOverworldBiomesBuilder{
 
         // 回退到父类的选择（原版生物群系）
         return super.pickMiddleBiome(temperatureIndex, humidityIndex, weirdness);
+    }
+
+    @Override
+    protected ResourceKey<Biome> pickPlateauBiome(int temperatureIndex, int humidityIndex, Climate.Parameter weirdness) {
+        ResourceKey<Biome>[][] filteredPlateauBiomes = createFilteredBiomeMap(PLATEAU_BIOMES_MOD);
+        ResourceKey<Biome>[][] filteredPlateauVariants = createFilteredBiomeMap(PLATEAU_BIOMES_VARIANT_MOD);
+
+        ResourceKey<Biome> modBiome = weirdness.max() < 0L ?
+                filteredPlateauBiomes[temperatureIndex][humidityIndex] :
+                filteredPlateauVariants[temperatureIndex][humidityIndex];
+
+        if (modBiome != null) {
+            return modBiome;
+        }
+
+        return super.pickPlateauBiome(temperatureIndex, humidityIndex, weirdness);
     }
 }

@@ -184,6 +184,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
                 .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get())
+                .add(ModBlocks.RED_AZALEA_LEAVES.get(), ModBlocks.MAYING_RHODODENDRON_LEAVES.get(), ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get(), ModBlocks.CHARMING_RHODODENDRON_LEAVES.get())
+                .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.get(), ModBlocks.PINK_RHODODENDRON_LEAVES.get(), ModBlocks.CHINESE_AZALEA_LEAVES.get())
                 .add(ModBlocks.PEACH_PINK_PETALS.get())
                 .add(ModBlocks.FRAGRANT_SNOW_PETALS.get());
 
@@ -206,7 +208,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.DOVE_TREE_LEAVES.get(), ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
-                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get())
+                .add(ModBlocks.RED_AZALEA_LEAVES.get(), ModBlocks.MAYING_RHODODENDRON_LEAVES.get(), ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get(), ModBlocks.CHARMING_RHODODENDRON_LEAVES.get())
+                .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.get(), ModBlocks.PINK_RHODODENDRON_LEAVES.get(), ModBlocks.CHINESE_AZALEA_LEAVES.get());
 
         this.tag(BlockTags.CLIMBABLE)
                 .add(ModBlocks.RED_WEEPING_MEI.get())
@@ -241,6 +245,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
                 .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get())
+                .add(ModBlocks.RED_AZALEA_LEAVES.get(), ModBlocks.MAYING_RHODODENDRON_LEAVES.get(), ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get(), ModBlocks.CHARMING_RHODODENDRON_LEAVES.get())
+                .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.get(), ModBlocks.PINK_RHODODENDRON_LEAVES.get(), ModBlocks.CHINESE_AZALEA_LEAVES.get())
                 .add(ModBlocks.PEACH_PINK_PETALS.get())
                 .add(ModBlocks.FRAGRANT_SNOW_PETALS.get());
 
@@ -717,7 +723,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_CAMELLIA.get())
                 .add(ModBlocks.WHITE_CAMELLIA.get())
                 .add(ModBlocks.VERSICOLOR_CAMELLIA.get())
-                .add(ModBlocks.RED_AZALEA.get());
+                .add(ModBlocks.RED_AZALEA.get())
+                .add(ModBlocks.MAYING_RHODODENDRON.get())
+                .add(ModBlocks.DEWDROP_RHODODENDRON.get())
+                .add(ModBlocks.CHARMING_RHODODENDRON.get())
+                .add(ModBlocks.GREAT_WHITE_RHODODENDRON.get())
+                .add(ModBlocks.PURPLE_RHODODENDRON.get())
+                .add(ModBlocks.PINK_RHODODENDRON.get())
+                .add(ModBlocks.CHINESE_AZALEA.get());
 
         this.tag(BlockTags.TALL_FLOWERS)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get())

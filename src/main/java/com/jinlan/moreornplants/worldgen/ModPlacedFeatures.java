@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.worldgen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
+import com.sun.jna.platform.win32.WinDef;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
@@ -94,8 +95,27 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_PENGLAI_PLACED = registerKey("chinese_rose_penglai_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_GROVE_PLACED = registerKey("chinese_rose_grove_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_PLAIN_PLACED = registerKey("chinese_rose_plain_placed");
-    public static final ResourceKey<PlacedFeature> CRIMSON_AZALEA_PLACED = registerKey("crimson_azalea_placed");
-    public static final ResourceKey<PlacedFeature> CRIMSON_AZALEA_GROVE_PLACED = registerKey("crimson_azalea_grove_placed");
+    public static final ResourceKey<PlacedFeature> AZALEA_TREE_PLACED = registerKey("azalea_tree_placed");
+    public static final ResourceKey<PlacedFeature> RED_AZALEA_TREE_PLACED = registerKey("red_azalea_tree_placed");
+    public static final ResourceKey<PlacedFeature> MAYING_RHODODENDRON_TREE_PLACED = registerKey("maying_rhododendron_tree_placed");
+    public static final ResourceKey<PlacedFeature> DEWDROP_RHODODENDRON_TREE_PLACED = registerKey("dewdrop_rhododendron_tree_placed");
+    public static final ResourceKey<PlacedFeature> CHARMING_RHODODENDRON_TREE_PLACED = registerKey("charming_rhododendron_tree_placed");
+    public static final ResourceKey<PlacedFeature> GREAT_WHITE_RHODODENDRON_TREE_PLACED = registerKey("great_white_rhododendron_tree_placed");
+    public static final ResourceKey<PlacedFeature> PURPLE_RHODODENDRON_TREE_PLACED = registerKey("purple_rhododendron_tree_placed");
+    public static final ResourceKey<PlacedFeature> PINK_RHODODENDRON_TREE_PLACED = registerKey("pink_rhododendron_tree_placed");
+    public static final ResourceKey<PlacedFeature> CHINESE_AZALEA_TREE_PLACED = registerKey("chinese_azalea_tree_placed");
+    public static final ResourceKey<PlacedFeature> RED_AZALEA_PLACED = registerKey("red_azalea_placed");
+    public static final ResourceKey<PlacedFeature> MAYING_RHODODENDRON_PLACED = registerKey("maying_rhododendron_placed");
+    public static final ResourceKey<PlacedFeature> DEWDROP_RHODODENDRON_PLACED = registerKey("dewdrop_rhododendron_placed");
+    public static final ResourceKey<PlacedFeature> CHARMING_RHODODENDRON_PLACED = registerKey("charming_rhododendron_placed");
+    public static final ResourceKey<PlacedFeature> GREAT_WHITE_RHODODENDRON_PLACED = registerKey("great_white_rhododendron_placed");
+    public static final ResourceKey<PlacedFeature> PURPLE_RHODODENDRON_PLACED = registerKey("purple_rhododendron_placed");
+    public static final ResourceKey<PlacedFeature> PINK_RHODODENDRON_PLACED = registerKey("pink_rhododendron_placed");
+    public static final ResourceKey<PlacedFeature> CHINESE_AZALEA_PLACED = registerKey("chinese_azalea_placed");
+    public static final ResourceKey<PlacedFeature> AZALEA_PLACED = registerKey("azalea_placed");
+    public static final ResourceKey<PlacedFeature> RED_AZALEA_RED_PLACED = registerKey("red_azalea_red_placed");
+    public static final ResourceKey<PlacedFeature> MAYING_RHODODENDRON_RED_PLACED = registerKey("maying_rhododendron_red_placed");
+    public static final ResourceKey<PlacedFeature> AZALEA_GROVE_PLACED = registerKey("azalea_grove_placed");
     public static final ResourceKey<PlacedFeature> CAMELLIA_PLACED = registerKey("camellia_placed");
     public static final ResourceKey<PlacedFeature> WHITE_CAMELLIA_PLACED = registerKey("white_camellia_placed");
     public static final ResourceKey<PlacedFeature> PINK_CAMELLIA_PLACED = registerKey("pink_camellia_placed");
@@ -277,7 +297,7 @@ public class ModPlacedFeatures {
         register(context, PINK_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_CAMELLIA_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
-        register(context, CRIMSON_AZALEA_GROVE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_AZALEA_GROVE),
+        register(context, AZALEA_GROVE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.AZALEA_GROVE),
                 List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, COTTON_ROSE_GROVE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COTTON_ROSE_GROVE),
@@ -393,8 +413,66 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 1),
                         ModBlocks.CAMPHOR_SAPLING.get()));
 
-        register(context, CRIMSON_AZALEA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRIMSON_AZALEA_KEY),
-                List.of(CountPlacement.of(12),
+        register(context, RED_AZALEA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_AZALEA_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, MAYING_RHODODENDRON_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAYING_RHODODENDRON_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, DEWDROP_RHODODENDRON_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEWDROP_RHODODENDRON_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, CHARMING_RHODODENDRON_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHARMING_RHODODENDRON_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, GREAT_WHITE_RHODODENDRON_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GREAT_WHITE_RHODODENDRON_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PURPLE_RHODODENDRON_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_RHODODENDRON_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PINK_RHODODENDRON_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_RHODODENDRON_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, CHINESE_AZALEA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_AZALEA_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, AZALEA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.AZALEA_KEY),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, AZALEA_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.FLOWERING_AZALEA_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1),
+                        Blocks.AZALEA));
+        register(context, RED_AZALEA_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_AZALEA_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                        ModBlocks.RED_AZALEA.get()));
+        register(context, MAYING_RHODODENDRON_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAYING_RHODODENDRON_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                        ModBlocks.MAYING_RHODODENDRON.get()));
+        register(context, DEWDROP_RHODODENDRON_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEWDROP_RHODODENDRON_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                        ModBlocks.DEWDROP_RHODODENDRON.get()));
+        register(context, CHARMING_RHODODENDRON_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHARMING_RHODODENDRON_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1),
+                        ModBlocks.CHARMING_RHODODENDRON.get()));
+        register(context, GREAT_WHITE_RHODODENDRON_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GREAT_WHITE_RHODODENDRON_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                        ModBlocks.GREAT_WHITE_RHODODENDRON.get()));
+        register(context, PURPLE_RHODODENDRON_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_RHODODENDRON_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                        ModBlocks.PURPLE_RHODODENDRON.get()));
+        register(context, PINK_RHODODENDRON_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_RHODODENDRON_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                        ModBlocks.PINK_RHODODENDRON.get()));
+        register(context, CHINESE_AZALEA_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_AZALEA_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
+                        ModBlocks.CHINESE_AZALEA.get()));
+
+        register(context, RED_AZALEA_RED_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_AZALEA_KEY),
+                List.of(CountPlacement.of(8),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, MAYING_RHODODENDRON_RED_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAYING_RHODODENDRON_KEY),
+                List.of(CountPlacement.of(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, RED_MEI_RED_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_MEI),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1),

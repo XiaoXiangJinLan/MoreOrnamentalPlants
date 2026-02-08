@@ -49,6 +49,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHINABERRY_LEAVES);
                         pOutput.accept(ModBlocks.DESERT_POPLAR_LEAVES);
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_LEAVES);
+                        pOutput.accept(ModBlocks.RED_AZALEA_LEAVES);
+                        pOutput.accept(ModBlocks.MAYING_RHODODENDRON_LEAVES);
+                        pOutput.accept(ModBlocks.DEWDROP_RHODODENDRON_LEAVES);
+                        pOutput.accept(ModBlocks.CHARMING_RHODODENDRON_LEAVES);
+                        pOutput.accept(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES);
+                        pOutput.accept(ModBlocks.PURPLE_RHODODENDRON_LEAVES);
+                        pOutput.accept(ModBlocks.PINK_RHODODENDRON_LEAVES);
+                        pOutput.accept(ModBlocks.CHINESE_AZALEA_LEAVES);
                         pOutput.accept(ModBlocks.RED_MEI_SAPLING);
                         pOutput.accept(ModBlocks.WHITE_MEI_SAPLING);
                         pOutput.accept(ModBlocks.GREEN_CALYX_MEI_SAPLING);
@@ -127,6 +135,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WHITE_CAMELLIA);
                         pOutput.accept(ModBlocks.VERSICOLOR_CAMELLIA);
                         pOutput.accept(ModBlocks.RED_AZALEA);
+                        pOutput.accept(ModBlocks.MAYING_RHODODENDRON);
+                        pOutput.accept(ModBlocks.DEWDROP_RHODODENDRON);
+                        pOutput.accept(ModBlocks.CHARMING_RHODODENDRON);
+                        pOutput.accept(ModBlocks.GREAT_WHITE_RHODODENDRON);
+                        pOutput.accept(ModBlocks.PURPLE_RHODODENDRON);
+                        pOutput.accept(ModBlocks.PINK_RHODODENDRON);
+                        pOutput.accept(ModBlocks.CHINESE_AZALEA);
                         pOutput.accept(ModBlocks.FOUNTAIN_GRASS);
                         pOutput.accept(ModBlocks.PURPLE_FOUNTAIN_GRASS);
                         pOutput.accept(ModBlocks.PINK_FOUNTAIN_GRASS);

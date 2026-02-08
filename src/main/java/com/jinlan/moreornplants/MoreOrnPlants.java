@@ -137,6 +137,13 @@ public class MoreOrnPlants {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_CAMELLIA.getId(), ModBlocks.POTTED_PINK_CAMELLIA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VERSICOLOR_CAMELLIA.getId(), ModBlocks.POTTED_VERSICOLOR_CAMELLIA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.RED_AZALEA.getId(), ModBlocks.POTTED_RED_AZALEA);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.MAYING_RHODODENDRON.getId(), ModBlocks.POTTED_MAYING_RHODODENDRON);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.DEWDROP_RHODODENDRON.getId(), ModBlocks.POTTED_DEWDROP_RHODODENDRON);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHARMING_RHODODENDRON.getId(), ModBlocks.POTTED_CHARMING_RHODODENDRON);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GREAT_WHITE_RHODODENDRON.getId(), ModBlocks.POTTED_GREAT_WHITE_RHODODENDRON);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PURPLE_RHODODENDRON.getId(), ModBlocks.POTTED_PURPLE_RHODODENDRON);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_RHODODENDRON.getId(), ModBlocks.POTTED_PINK_RHODODENDRON);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CHINESE_AZALEA.getId(), ModBlocks.POTTED_CHINESE_AZALEA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.FOUNTAIN_GRASS.getId(), ModBlocks.POTTED_FOUNTAIN_GRASS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PURPLE_FOUNTAIN_GRASS.getId(), ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_FOUNTAIN_GRASS.getId(), ModBlocks.POTTED_PINK_FOUNTAIN_GRASS);

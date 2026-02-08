@@ -1,4 +1,4 @@
-package com.jinlan.moreornplants.block.FlowerBlocks;
+package com.jinlan.moreornplants.block.saplingBlocks;
 
 import com.jinlan.moreornplants.block.tree.ModTreeGrower;
 import com.mojang.serialization.MapCodec;
@@ -32,13 +32,13 @@ public class CrapeMyrtleSaplingBlock extends BushBlock implements BonemealableBl
 
     @Override
     @NotNull
-    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return SHAPE;
     }
 
     @Override
     public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {
-        return false;
+        return level.getFluidState(pos.above()).isEmpty();
     }
 
     @Override

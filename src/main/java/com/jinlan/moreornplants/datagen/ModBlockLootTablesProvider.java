@@ -360,6 +360,23 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.DESERT_POPLAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.CRAPE_MYRTLE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CRAPE_MYRTLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.RED_AZALEA_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.RED_AZALEA.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.MAYING_RHODODENDRON_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.MAYING_RHODODENDRON.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.DEWDROP_RHODODENDRON.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.CHARMING_RHODODENDRON_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.CHARMING_RHODODENDRON.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.GREAT_WHITE_RHODODENDRON.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PURPLE_RHODODENDRON_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PURPLE_RHODODENDRON.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PINK_RHODODENDRON_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PINK_RHODODENDRON.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.CHINESE_AZALEA_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.CHINESE_AZALEA.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
 
         this.add(ModBlocks.RED_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -711,6 +728,27 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RED_AZALEA.get());
         this.add(ModBlocks.POTTED_RED_AZALEA.get(),
                 createPotFlowerItemTable(ModBlocks.RED_AZALEA.get()));
+        this.dropSelf(ModBlocks.MAYING_RHODODENDRON.get());
+        this.add(ModBlocks.POTTED_MAYING_RHODODENDRON.get(),
+                createPotFlowerItemTable(ModBlocks.MAYING_RHODODENDRON.get()));
+        this.dropSelf(ModBlocks.DEWDROP_RHODODENDRON.get());
+        this.add(ModBlocks.POTTED_DEWDROP_RHODODENDRON.get(),
+                createPotFlowerItemTable(ModBlocks.DEWDROP_RHODODENDRON.get()));
+        this.dropSelf(ModBlocks.CHARMING_RHODODENDRON.get());
+        this.add(ModBlocks.POTTED_CHARMING_RHODODENDRON.get(),
+                createPotFlowerItemTable(ModBlocks.CHARMING_RHODODENDRON.get()));
+        this.dropSelf(ModBlocks.GREAT_WHITE_RHODODENDRON.get());
+        this.add(ModBlocks.POTTED_GREAT_WHITE_RHODODENDRON.get(),
+                createPotFlowerItemTable(ModBlocks.GREAT_WHITE_RHODODENDRON.get()));
+        this.dropSelf(ModBlocks.PURPLE_RHODODENDRON.get());
+        this.add(ModBlocks.POTTED_PURPLE_RHODODENDRON.get(),
+                createPotFlowerItemTable(ModBlocks.PURPLE_RHODODENDRON.get()));
+        this.dropSelf(ModBlocks.PINK_RHODODENDRON.get());
+        this.add(ModBlocks.POTTED_PINK_RHODODENDRON.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_RHODODENDRON.get()));
+        this.dropSelf(ModBlocks.CHINESE_AZALEA.get());
+        this.add(ModBlocks.POTTED_CHINESE_AZALEA.get(),
+                createPotFlowerItemTable(ModBlocks.CHINESE_AZALEA.get()));
         this.dropSelf(ModBlocks.FOUNTAIN_GRASS.get());
         this.add(ModBlocks.POTTED_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.FOUNTAIN_GRASS.get()));

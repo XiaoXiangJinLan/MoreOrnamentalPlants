@@ -62,6 +62,7 @@ public class ModTags {
         public static final TagKey<Item> LIME_DYE = tag("lime_dye");
         public static final TagKey<Item> GREEN_DYE = tag("green_dye");
         public static final TagKey<Item> PURPLE_DYE = tag("purple_dye");
+        public static final TagKey<Item> MAGENTA_DYE = tag("magenta_dye");
         public static final TagKey<Item> LIGHT_BLUE_DYE = tag("light_blue_dye");
         public static final TagKey<Item> BLACK_DYE = tag("black_dye");
 

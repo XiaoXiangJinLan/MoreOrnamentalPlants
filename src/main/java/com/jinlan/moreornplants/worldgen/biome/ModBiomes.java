@@ -56,6 +56,8 @@ public class ModBiomes {
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "fragrant_snow_sea"));
     public static final ResourceKey<Biome> THE_APRICOT_SPRING_PLATEAU = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "the_apricot_spring_plateau"));
+    public static final ResourceKey<Biome> AZALEA_FOREST = ResourceKey.create(Registries.BIOME,
+            ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "azalea_forest"));
 
     public static void bootstrap(BootstrapContext<Biome> context) {
         context.register(RED_MEI_FOREST, redMeiForest(context));
@@ -78,6 +80,7 @@ public class ModBiomes {
         context.register(YUNMENG_MARSH, yunmengMarsh(context));
         context.register(FRAGRANT_SNOW_SEA, fragrantSnowSea(context));
         context.register(THE_APRICOT_SPRING_PLATEAU, theApricotSpringPlateau(context));
+        context.register(AZALEA_FOREST, azaleaForest(context));
     }
 
     public static void globalOverworldGeneration(BiomeGenerationSettings.Builder builder) {
@@ -146,7 +149,7 @@ public class ModBiomes {
                 .hasPrecipitation(true).temperature(0.6f).downfall(0.8f)
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(0x93A0F3).waterFogColor(0x925F9B).skyColor(7972607).fogColor(12638463).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                        .waterColor(0x93A0F3).waterFogColor(0x925F9B).skyColor(0xBBAAFF).fogColor(0xE1CFFF).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
                 .build();
     }
 
@@ -254,7 +257,7 @@ public class ModBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHINESE_ROSE_GROVE_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CRAPE_MYRTLE_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_CAMELLIA_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CRIMSON_AZALEA_GROVE_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.AZALEA_GROVE_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.COTTON_ROSE_GROVE_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FOUNTAIN_GRASS_GROVE);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SMALL_FLOWERS_GROVE_PLACED);
@@ -305,7 +308,8 @@ public class ModBiomes {
         globalOverworldGeneration(biomeBuilder);
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
         BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CRIMSON_AZALEA_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_AZALEA_RED_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.MAYING_RHODODENDRON_RED_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_MEI_RED_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.ORNAMENTAL_PEACH_RED_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_HIGHLAND);
@@ -336,10 +340,10 @@ public class ModBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_PLAIN);
 
         return new Biome.BiomeBuilder()
-                .hasPrecipitation(true).temperature(0.7f).downfall(0.6f)
+                .hasPrecipitation(true).temperature(0.7f).downfall(0.4f)
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(6141935).waterFogColor(6141935).skyColor(0xBBAAFF).fogColor(0xE1CFFF).foliageColorOverride(11983713).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                        .waterColor(4159204).waterFogColor(329011).skyColor(7907327).fogColor(12638463).foliageColorOverride(11983713).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
                 .build();
     }
 
@@ -690,6 +694,44 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .waterColor(6141935).waterFogColor(6141935).skyColor(8103167).fogColor(12638463).grassColorOverride(11983713).foliageColorOverride(11983713).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                .build();
+    }
+
+    private static Biome azaleaForest(BootstrapContext<Biome> context) {
+        MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
+        BiomeDefaultFeatures.farmAnimals(spawnBuilder);
+        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.RABBIT, 4, 2, 3));
+
+        BiomeGenerationSettings.Builder biomeBuilder =
+                new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+        globalOverworldGeneration(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.AZALEA_TREE_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_AZALEA_TREE_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.MAYING_RHODODENDRON_TREE_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.DEWDROP_RHODODENDRON_TREE_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHARMING_RHODODENDRON_TREE_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GREAT_WHITE_RHODODENDRON_TREE_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PURPLE_RHODODENDRON_TREE_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_RHODODENDRON_TREE_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHINESE_AZALEA_TREE_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_AZALEA_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.MAYING_RHODODENDRON_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.DEWDROP_RHODODENDRON_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHARMING_RHODODENDRON_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GREAT_WHITE_RHODODENDRON_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PURPLE_RHODODENDRON_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_RHODODENDRON_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHINESE_AZALEA_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.AZALEA_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_HIGHLAND);
+
+        return new Biome.BiomeBuilder()
+                .hasPrecipitation(true).temperature(0.5f).downfall(0.4f)
+                .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
+                .specialEffects((new BiomeSpecialEffects.Builder())
+                        .waterColor(4159204).waterFogColor(329011).skyColor(8103167).fogColor(12638463).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
                 .build();
     }
 }

@@ -249,4 +249,60 @@ public class ModTreeGrower {
             Optional.of(ModConfiguredFeatures.CRAPE_MYRTLE_TREE),
             Optional.empty()
     );
+
+    public static final TreeGrower RED_AZALEA_TREE = new TreeGrower(
+            "red_azalea_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.RED_AZALEA_TREE_KEY),
+            Optional.empty()
+    );
+
+    public static final TreeGrower MAYING_RHODODENDRON_TREE = new TreeGrower(
+            "maying_rhododendron_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.MAYING_RHODODENDRON_TREE_KEY),
+            Optional.empty()
+    );
+
+    public static final TreeGrower DEWDROP_RHODODENDRON_TREE = new TreeGrower(
+            "dewdrop_rhododendron_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.DEWDROP_RHODODENDRON_TREE_KEY),
+            Optional.empty()
+    );
+
+    public static final TreeGrower CHARMING_RHODODENDRON_TREE = new TreeGrower(
+            "charming_rhododendron_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.CHARMING_RHODODENDRON_TREE_KEY),
+            Optional.empty()
+    );
+
+    public static final TreeGrower GREAT_WHITE_RHODODENDRON_TREE = new TreeGrower(
+            "great_white_rhododendron_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.GREAT_WHITE_RHODODENDRON_TREE_KEY),
+            Optional.empty()
+    );
+
+    public static final TreeGrower PURPLE_RHODODENDRON_TREE = new TreeGrower(
+            "purple_rhododendron_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.PURPLE_RHODODENDRON_TREE_KEY),
+            Optional.empty()
+    );
+
+    public static final TreeGrower PINK_RHODODENDRON_TREE = new TreeGrower(
+            "pink_rhododendron_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.PINK_RHODODENDRON_TREE_KEY),
+            Optional.empty()
+    );
+
+    public static final TreeGrower CHINESE_AZALEA_TREE = new TreeGrower(
+            "chinese_azalea_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.CHINESE_AZALEA_TREE_KEY),
+            Optional.empty()
+    );
 }
