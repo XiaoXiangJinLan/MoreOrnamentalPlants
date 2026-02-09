@@ -384,6 +384,51 @@
     "more_orn_plants:red_azalea": {
       "chance": 0.65
     },
+    "more_orn_plants:maying_rhododendron": {
+      "chance": 0.65
+    },
+    "more_orn_plants:dewdrop_rhododendron": {
+      "chance": 0.65
+    },
+    "more_orn_plants:charming_rhododendron": {
+      "chance": 0.65
+    },
+    "more_orn_plants:great_white_rhododendron": {
+      "chance": 0.65
+    },
+    "more_orn_plants:purple_rhododendron": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_rhododendron": {
+      "chance": 0.65
+    },
+    "more_orn_plants:chinese_azalea": {
+      "chance": 0.65
+    },
+    "more_orn_plants:red_azalea_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:maying_rhododendron_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:dewdrop_rhododendron_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:charming_rhododendron_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:great_white_rhododendron_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:purple_rhododendron_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:pink_rhododendron_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:chinese_azalea_leaves": {
+      "chance": 0.3
+    },
     "more_orn_plants:wintersweet": {
       "chance": 0.65
     },

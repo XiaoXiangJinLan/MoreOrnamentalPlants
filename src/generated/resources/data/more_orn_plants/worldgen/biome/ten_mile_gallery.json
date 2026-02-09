@@ -6,7 +6,7 @@
       "minecraft:canyon"
     ]
   },
-  "downfall": 0.4,
+  "downfall": 0.5,
   "effects": {
     "fog_color": 12638463,
     "mood_sound": {
@@ -72,7 +72,9 @@
     ],
     [
       "minecraft:glow_lichen",
-      "more_orn_plants:azalea_tree_placed",
+      "more_orn_plants:golden_osmanthus_placed",
+      "more_orn_plants:orange_osmanthus_placed",
+      "more_orn_plants:white_osmanthus_placed",
       "more_orn_plants:red_azalea_tree_placed",
       "more_orn_plants:maying_rhododendron_tree_placed",
       "more_orn_plants:dewdrop_rhododendron_tree_placed",
@@ -81,15 +83,10 @@
       "more_orn_plants:purple_rhododendron_tree_placed",
       "more_orn_plants:pink_rhododendron_tree_placed",
       "more_orn_plants:chinese_azalea_tree_placed",
-      "more_orn_plants:red_azalea_placed",
-      "more_orn_plants:maying_rhododendron_placed",
-      "more_orn_plants:dewdrop_rhododendron_placed",
-      "more_orn_plants:charming_rhododendron_placed",
-      "more_orn_plants:great_white_rhododendron_placed",
-      "more_orn_plants:purple_rhododendron_placed",
-      "more_orn_plants:pink_rhododendron_placed",
-      "more_orn_plants:chinese_azalea_placed",
-      "more_orn_plants:azalea_placed",
+      "more_orn_plants:chrysanthemum_gallery_placed",
+      "more_orn_plants:pink_camellia_placed",
+      "more_orn_plants:azalea_grove_placed",
+      "more_orn_plants:black_bamboo_gallery_placed",
       "more_orn_plants:grass_highland"
     ],
     [

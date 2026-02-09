@@ -153,6 +153,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> COTTON_ROSE_FOREST = registerKey("cotton_rose_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOTTLED_BAMBOO_KEY = registerKey("mottled_bamboo_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_KEY = registerKey("black_bamboo_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_GALLERY_KEY = registerKey("black_bamboo_gallery_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LOTUS_KEY = registerKey("lotus_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ROSE_BUSH = registerKey("rose_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FOUNTAIN_GRASS = registerKey("fountain_grass");
@@ -559,49 +560,49 @@ public class ModConfiguredFeatures {
         register(context, RED_AZALEA_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
                 new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
-                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.RED_AZALEA_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.RED_AZALEA_LEAVES.get().defaultBlockState(), 2).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 1)),
                 new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, MAYING_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
                 new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
-                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.MAYING_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.MAYING_RHODODENDRON_LEAVES.get().defaultBlockState(), 2).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 1)),
                 new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, DEWDROP_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
                 new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
-                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get().defaultBlockState(), 2).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 1)),
                 new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, CHARMING_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
                 new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
-                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.CHARMING_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.CHARMING_RHODODENDRON_LEAVES.get().defaultBlockState(), 2).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 1)),
                 new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, GREAT_WHITE_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
                 new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
-                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get().defaultBlockState(), 2).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 1)),
                 new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, PURPLE_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
                 new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
-                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.PURPLE_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.PURPLE_RHODODENDRON_LEAVES.get().defaultBlockState(), 2).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 1)),
                 new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, PINK_RHODODENDRON_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
                 new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
-                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.PINK_RHODODENDRON_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.PINK_RHODODENDRON_LEAVES.get().defaultBlockState(), 2).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 1)),
                 new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, CHINESE_AZALEA_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
                 new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
-                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.CHINESE_AZALEA_LEAVES.get().defaultBlockState(), 3).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 2)),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.CHINESE_AZALEA_LEAVES.get().defaultBlockState(), 2).add(Blocks.AZALEA_LEAVES.defaultBlockState(), 1)),
                 new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
 
@@ -1036,6 +1037,9 @@ public class ModConfiguredFeatures {
                 PlacementUtils.onlyWhenEmpty(ModBambooFeatures.MOTTLED_BAMBOO.get(),
                         new ProbabilityFeatureConfiguration(0.0F))));
         register(context, BLACK_BAMBOO_KEY,Feature.RANDOM_PATCH, new RandomPatchConfiguration(100, 9, 4,
+                PlacementUtils.onlyWhenEmpty( ModBambooFeatures.BLACK_BAMBOO.get(),
+                        new ProbabilityFeatureConfiguration(0.0F))));
+        register(context, BLACK_BAMBOO_GALLERY_KEY,Feature.RANDOM_PATCH, new RandomPatchConfiguration(10, 9, 4,
                 PlacementUtils.onlyWhenEmpty( ModBambooFeatures.BLACK_BAMBOO.get(),
                         new ProbabilityFeatureConfiguration(0.0F))));
 

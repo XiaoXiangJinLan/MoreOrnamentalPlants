@@ -669,6 +669,7 @@
   "biome.more_orn_plants.chinaberry_woods": "Chinaberry Woods",
   "biome.more_orn_plants.miscanthus_fields": "Miscanthus Fields",
   "biome.more_orn_plants.crops_green": "Crops Green",
+  "biome.more_orn_plants.ten_mile_gallery": "Ten-Mile Gallery",
 
   "itemGroup.plants": "Ornamental Plants",
 
@@ -797,6 +798,7 @@
   "more_orn_plants.configuration.enableChinaberryWoods": "Enable ChinaberryWoods",
   "more_orn_plants.configuration.enableMiscanthusFields": "Enable MiscanthusFields",
   "more_orn_plants.configuration.enableCropsGreen": "Enable CropsGreen",
+  "more_orn_plants.configuration.enableTenMileGallery": "Enable Ten-MileGallery",
   "more_orn_plants.configuration.overworldBiomesWeight": "Overworld Biomes Weight",
   "more_orn_plants.configuration.secondOverworldBiomesWeight": "Second Overworld Biomes Weight",
   "more_orn_plants.configuration.specialBiomesWeight": "Special Biomes Weight"

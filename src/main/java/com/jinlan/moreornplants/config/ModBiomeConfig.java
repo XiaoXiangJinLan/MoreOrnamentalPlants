@@ -29,6 +29,7 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_CHINABERRY_WOODS;
     public static final ModConfigSpec.BooleanValue ENABLE_MISCANTHUS_FIELDS;
     public static final ModConfigSpec.BooleanValue ENABLE_CROPS_GREEN;
+    public static final ModConfigSpec.BooleanValue ENABLE_TEN_MILE_GALLERY;
 
     // 区域权重配置
     public static final ModConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
@@ -99,8 +100,11 @@ public class ModBiomeConfig {
                 .comment("Enable Miscanthus Fields biome generation")
                 .define("enableMiscanthusFields", true);
         ENABLE_CROPS_GREEN = BUILDER
-                .comment("Enable Crops Green Woods biome generation")
+                .comment("Enable Crops Green biome generation")
                 .define("enableCropsGreen", true);
+        ENABLE_TEN_MILE_GALLERY = BUILDER
+                .comment("Enable Ten-Mile Gallery biome generation")
+                .define("enableTenMileGallery", true);
         BUILDER.pop();
 
         // 区域权重设置

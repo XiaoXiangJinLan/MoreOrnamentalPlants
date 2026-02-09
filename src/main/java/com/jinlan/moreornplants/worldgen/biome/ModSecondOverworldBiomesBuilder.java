@@ -9,8 +9,8 @@ public class ModSecondOverworldBiomesBuilder extends ModOverworldBiomesBuilder{
             {ModBiomes.FRAGRANT_SNOW_SEA,   ModBiomes.FRAGRANT_SNOW_SEA,   ModBiomes.FRAGRANT_SNOW_SEA, ModBiomes.FRAGRANT_SNOW_SEA, null},
             {ModBiomes.CHINESE_ROSE_FIELDS, ModBiomes.CHINESE_ROSE_FIELDS, ModBiomes.MISCANTHUS_FIELDS, ModBiomes.MISCANTHUS_FIELDS, null},
             {ModBiomes.CROPS_GREEN,         ModBiomes.CROPS_GREEN,         ModBiomes.CHINABERRY_WOODS,  ModBiomes.CHINABERRY_WOODS,  null},
-            {null,                    null,                                null,                        null,                        null},
-            {null,                    null,                                null,                        null,                        null}
+            {null,                          null,                          null,                        null,                        null},
+            {null,                          null,                          null,                        null,                        null}
     };
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_VARIANT_MOD = new ResourceKey[][]{
             {null,                          null,                          null,                        null,                        null},
@@ -27,11 +27,11 @@ public class ModSecondOverworldBiomesBuilder extends ModOverworldBiomesBuilder{
             {null,                    null,                    null,                    null,                    null}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_VARIANT_MOD = new ResourceKey[][]{
-            {null, null, null,                    null, null},
-            {null, null, ModBiomes.AZALEA_FOREST, null, null},
-            {null, null, ModBiomes.AZALEA_FOREST, null, null},
-            {null, null, null,                    null, null},
-            {null, null, null,                    null, null}
+            {null, null,                       null,                       null,                       null},
+            {null, ModBiomes.TEN_MILE_GALLERY, ModBiomes.TEN_MILE_GALLERY, ModBiomes.TEN_MILE_GALLERY, null},
+            {null, null,                       ModBiomes.TEN_MILE_GALLERY, ModBiomes.TEN_MILE_GALLERY, null},
+            {null, null,                       null,                       null,                       null},
+            {null, null,                       null,                       null,                       null}
     };
 
     @Override

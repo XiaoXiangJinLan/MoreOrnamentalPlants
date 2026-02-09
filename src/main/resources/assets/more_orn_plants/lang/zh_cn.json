@@ -650,6 +650,7 @@
   "biome.more_orn_plants.chinaberry_woods": "楝花林",
   "biome.more_orn_plants.miscanthus_fields": "芒草田",
   "biome.more_orn_plants.crops_green": "禾青",
+  "biome.more_orn_plants.ten_mile_gallery": "十里画廊",
 
   "itemGroup.plants": "观赏植物",
 
@@ -778,6 +779,7 @@
   "more_orn_plants.configuration.enableChinaberryWoods": "生成楝花林",
   "more_orn_plants.configuration.enableMiscanthusFields": "生成芒草田",
   "more_orn_plants.configuration.enableCropsGreen": "生成禾青",
+  "more_orn_plants.configuration.enableTenMileGallery": "生成十里画廊",
   "more_orn_plants.configuration.overworldBiomesWeight": "主群系权重",
   "more_orn_plants.configuration.secondOverworldBiomesWeight": "次群系权重",
   "more_orn_plants.configuration.specialBiomesWeight": "特殊群系权重（桃花源）"

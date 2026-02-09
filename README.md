@@ -1,6 +1,6 @@
 This mod adds a variety of ornamental plants to Minecraft, most of which are traditional plants from the mysterious 
 East—China. These include famous flowering trees such as Mei (Plum Blossom) and Crabapple, colorful foliage trees like 
-Ginkgo, as well as renowned flowers like Chinese Rose, Herbaceous Peony, and Camellia. The mod also introduces twenty 
+Ginkgo, as well as renowned flowers like Chinese Rose, Herbaceous Peony, and Camellia. The mod also introduces twenty two 
 new biomes and six new structures, awaiting your exploration!
 
 New Trees
@@ -10,7 +10,7 @@ Camphor, Dove Tree, Chinaberry, Desert Poplar.
 
 New Plants 
 ==========
-Herbaceous Peony, Chinese Rose, Chrysanthemum, Cymbidium, Lotus, Camellia, Red Azalea, Wintersweet, Fountain Grass, 
+Herbaceous Peony, Chinese Rose, Chrysanthemum, Cymbidium, Lotus, Camellia, Rhododendron, Wintersweet, Fountain Grass, 
 Miscanthus, Mottled Bamboo, Black Bamboo, and two legendary Peony varieties: Zhao's Pink and Two Qiao.
 
 New Biomes
@@ -38,6 +38,8 @@ covering the ground.
 • Camellia Valley – A valley filled with Camellias and their variants (White Camellia, Versicolor Camellia), accompanied 
 by White Apricot and Camphor trees.  
 • Red Highlands – Highland slopes covered with Red Azaleas, dotted with Red Mei and Ornamental Peach trees.  
+• Azalea Forest – Highland slopes covered with various Azaleas and Rhododendrons, dotted with Azalea and Rhododendron trees.  
+• Ten-Mile Gallery – Highland slopes covered with colorful flowers, dotted with colorful trees.  
 • Peony Meadows – A sea of flowers growing various Peonies and Herbaceous Peonies, accompanied by Upright Crabapple 
 trees. The sky are tinted pale pink-purple.  
 • Chinese Rose Fields – A floral field growing various Chinese Roses and vanilla Rose Bushes.  
@@ -74,13 +76,13 @@ New Fuels
 • Golden Miscanthus – Burns for 600 game ticks.
 
 本模组将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠；彩叶树种：银杏；以及著名花卉月季、芍药、茶花等。
-本模组还添加了二十个全新的生物群系、六个结构，等待你来探索！
+本模组还添加了二十二个全新的生物群系、六个结构，等待你来探索！
 
 ## 新树种
 梅花、海棠、杏花、桃花、梨花、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
 
 ## 新植物
-芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、映山红、腊梅、狼尾草、芒草、湘妃竹、紫竹，以及两大牡丹传奇品种：赵粉和二乔。
+芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、腊梅、狼尾草、芒草、湘妃竹、紫竹，以及两大牡丹传奇品种：赵粉和二乔等。
 
 ## 新群系
 •**白雪红梅**：生长有红梅和腊梅的雪原；  
@@ -97,6 +99,8 @@ New Fuels
 •**梅山**：生长有绿萼梅的高山雪坡；  
 •**茶花谷**：生长有大量山茶及变种白山茶、红白山茶的山谷，伴有白杏和樟树点缀；  
 •**映山红**：生长有大量映山红的高地山坡，伴有红梅和碧桃点缀；  
+•**百里杜鹃**：生长有大量各色杜鹃的高地山坡，伴有各色杜鹃树点缀；  
+•**十里画廊**：生长有大量各色花朵的高地山坡，伴有各色的桂花树和杜鹃树以及紫竹点缀；  
 •**牡丹花海**：生长有多种牡丹和芍药的花海，伴有西府海棠点缀，天空为淡粉紫色；  
 •**月季花海**：生长有多种月季、原版玫瑰丛的花海；  
 •**芒草田**：生长有大量金芒草的平原；  
@@ -135,7 +139,9 @@ more_orn_plants:purple_white_peony more_orn_plants:wu_hua_long_yu_peony more_orn
 more_orn_plants:golden_chrysanthemum more_orn_plants:gold_backed_scarlet_mum more_orn_plants:white_chrysanthemum more_orn_plants:green_chrysanthemum 
 more_orn_plants:purple_chrysanthemum more_orn_plants:violet_pink_chrysanthemum more_orn_plants:pink_chrysanthemum more_orn_plants:spring_cymbidium 
 more_orn_plants:summer_cymbidium more_orn_plants:autumn_cymbidium more_orn_plants:camellia more_orn_plants:pink_camellia 
-more_orn_plants:white_camellia more_orn_plants:versicolor_camellia more_orn_plants:red_azalea
+more_orn_plants:white_camellia more_orn_plants:versicolor_camellia more_orn_plants:red_azalea more_orn_plants:maying_rhododendron 
+more_orn_plants:dewdrop_rhododendron more_orn_plants:charming_rhododendron more_orn_plants:great_white_rhododendron more_orn_plants:purple_rhododendron 
+more_orn_plants:pink_rhododendron more_orn_plants:chinese_azalea
 
 #_petals_#  
 more_orn_plants:peach_pink_petals more_orn_plants:fragrant_snow_petals

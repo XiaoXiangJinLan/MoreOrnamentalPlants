@@ -2,7 +2,6 @@ package com.jinlan.moreornplants.worldgen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
-import com.sun.jna.platform.win32.WinDef;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
@@ -85,6 +84,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> AUTUMN_CYMBIDIUM_PlAIN_PLACED = registerKey("autumn_cymbidium_plain_placed");
     public static final ResourceKey<PlacedFeature> WINTER_CYMBIDIUM_FOREST_PLACED = registerKey("winter_cymbidium_forest_placed");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_FOREST_PLACED = registerKey("chrysanthemum_forest_placed");
+    public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_GALLERY_PLACED = registerKey("chrysanthemum_gallery_placed");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_PLACED = registerKey("chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> GOLDEN_CHRYSANTHEMUM_PLACED = registerKey("golden_chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> WHITE_CHRYSANTHEMUM_PLACED = registerKey("white_chrysanthemum_placed");
@@ -140,6 +140,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> TALL_FLOWERS_GROVE_PLACED = registerKey("tall_flowers_grove_placed");
     public static final ResourceKey<PlacedFeature> MOTTLED_BAMBOO_PLACED =registerKey("mottled_bamboo_placed");
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_PLACED =registerKey("black_bamboo_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_GALLERY_PLACED =registerKey("black_bamboo_gallery_placed");
     public static final ResourceKey<PlacedFeature> LOTUS_PLACED =registerKey("lotus_placed");
     public static final ResourceKey<PlacedFeature> ROSE_BUSH =registerKey("rose_bush");
     public static final ResourceKey<PlacedFeature> FOUNTAIN_GRASS_PLACED =registerKey("fountain_grass_placed");
@@ -578,6 +579,13 @@ public class ModPlacedFeatures {
         register(context, WHITE_APRICOT_PLATEAU_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_APRICOT),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 2),
                         ModBlocks.WHITE_APRICOT_SAPLING.get()));
+
+        register(context, CHRYSANTHEMUM_GALLERY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_FOREST),
+                List.of(RarityFilter.onAverageOnceEvery(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, BLACK_BAMBOO_GALLERY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLACK_BAMBOO_GALLERY_KEY),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, GRASS_VALLY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
                 List.of(CountPlacement.of(18),

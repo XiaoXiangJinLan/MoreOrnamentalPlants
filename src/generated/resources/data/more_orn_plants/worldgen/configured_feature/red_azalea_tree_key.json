@@ -27,7 +27,7 @@
               "waterlogged": "false"
             }
           },
-          "weight": 3
+          "weight": 2
         },
         {
           "data": {
@@ -38,7 +38,7 @@
               "waterlogged": "false"
             }
           },
-          "weight": 2
+          "weight": 1
         }
       ]
     },
