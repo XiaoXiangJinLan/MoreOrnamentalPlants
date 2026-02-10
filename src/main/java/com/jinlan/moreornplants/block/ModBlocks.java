@@ -520,7 +520,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHINABERRY_FENCE_GATE =
             registerBlock("chinaberry_fence_gate", () -> new ModFenceGateBlock(ModWoodTypes.CHINABERRY, BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava()));
     public static final DeferredBlock<Block> DESERT_POPLAR_FENCE_GATE =
-            registerBlock("desert_poplar_fence_gate", () -> new ModFenceGateBlock(ModWoodTypes.DESERT_POPLAR, BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava()));
+            registerBlock("desert_poplar_fence_gate", () -> new ModFenceGateBlock(ModWoodTypes.DESERT_POPLAR, BlockBehaviour.Properties.of().mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava()));
 
     public static final DeferredBlock<Block> RED_MEI_DOOR =
             registerBlock("red_mei_door", () -> new DoorBlock(ModBlockSetType.RED_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(RED_MEI_PLANKS.get().defaultMapColor())));
@@ -597,19 +597,19 @@ public class ModBlocks {
     public static final DeferredBlock<Block> WHITE_MEI_SIGN =
             BLOCKS.register("white_mei_sign", () -> new ModStandingSignBlock(ModWoodTypes.WHITE_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.SNOW)));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_SIGN =
-            BLOCKS.register("green_calyx_mei_sign", () -> new ModStandingSignBlock(ModWoodTypes.GREEN_CALYX_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(GREEN_CALYX_MEI_PLANKS.get().defaultMapColor())));
+            BLOCKS.register("green_calyx_mei_sign", () -> new ModStandingSignBlock(ModWoodTypes.GREEN_CALYX_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.COLOR_LIGHT_GREEN)));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_SIGN =
-            BLOCKS.register("double_pink_mei_sign", () -> new ModStandingSignBlock(ModWoodTypes.DOUBLE_PINK_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(DOUBLE_PINK_MEI_PLANKS.get().defaultMapColor())));
+            BLOCKS.register("double_pink_mei_sign", () -> new ModStandingSignBlock(ModWoodTypes.DOUBLE_PINK_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.COLOR_PINK)));
     public static final DeferredBlock<Block> CRABAPPLE_SIGN =
-            BLOCKS.register("crabapple_sign", () -> new ModStandingSignBlock(ModWoodTypes.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(CRABAPPLE_PLANKS.get().defaultMapColor())));
+            BLOCKS.register("crabapple_sign", () -> new ModStandingSignBlock(ModWoodTypes.CRABAPPLE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.COLOR_MAGENTA)));
     public static final DeferredBlock<Block> APRICOT_SIGN =
-            BLOCKS.register("apricot_sign", () -> new ModStandingSignBlock(ModWoodTypes.APRICOT, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(APRICOT_PLANKS.get().defaultMapColor())));
+            BLOCKS.register("apricot_sign", () -> new ModStandingSignBlock(ModWoodTypes.APRICOT, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.COLOR_PINK)));
     public static final DeferredBlock<Block> PEACH_SIGN =
-            BLOCKS.register("peach_sign", () -> new ModStandingSignBlock(ModWoodTypes.PEACH, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(PEACH_PLANKS.get().defaultMapColor())));
+            BLOCKS.register("peach_sign", () -> new ModStandingSignBlock(ModWoodTypes.PEACH, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.COLOR_PINK)));
     public static final DeferredBlock<Block> PEAR_SIGN =
-            BLOCKS.register("pear_sign", () -> new ModStandingSignBlock(ModWoodTypes.PEAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(PEAR_PLANKS.get().defaultMapColor())));
+            BLOCKS.register("pear_sign", () -> new ModStandingSignBlock(ModWoodTypes.PEAR, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.SAND)));
     public static final DeferredBlock<Block> PURPLE_LEAF_PLUM_SIGN =
-            BLOCKS.register("purple_leaf_plum_sign", () -> new ModStandingSignBlock(ModWoodTypes.PURPLE_LEAF_PLUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(PURPLE_LEAF_PLUM_PLANKS.get().defaultMapColor())));
+            BLOCKS.register("purple_leaf_plum_sign", () -> new ModStandingSignBlock(ModWoodTypes.PURPLE_LEAF_PLUM, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final DeferredBlock<Block> OSMANTHUS_SIGN =
             BLOCKS.register("osmanthus_sign", () -> new ModStandingSignBlock(ModWoodTypes.OSMANTHUS, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN).mapColor(OSMANTHUS_PLANKS.get().defaultMapColor())));
     public static final DeferredBlock<Block> GINKGO_SIGN =
@@ -953,21 +953,21 @@ public class ModBlocks {
     public static final DeferredBlock<Block> VERSICOLOR_CAMELLIA =
             registerBlock("versicolor_camellia", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> RED_AZALEA =
-            registerBlock("red_azalea", () -> new RedAzaleaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("red_azalea", () -> new RedAzaleaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> MAYING_RHODODENDRON =
-            registerBlock("maying_rhododendron", () -> new MayingRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("maying_rhododendron", () -> new MayingRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> DEWDROP_RHODODENDRON =
-            registerBlock("dewdrop_rhododendron", () -> new DewdropRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("dewdrop_rhododendron", () -> new DewdropRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CHARMING_RHODODENDRON =
-            registerBlock("charming_rhododendron", () -> new CharmingRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("charming_rhododendron", () -> new CharmingRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> GREAT_WHITE_RHODODENDRON =
-            registerBlock("great_white_rhododendron", () -> new GreatWhiteRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("great_white_rhododendron", () -> new GreatWhiteRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PURPLE_RHODODENDRON =
-            registerBlock("purple_rhododendron", () -> new PurpleRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("purple_rhododendron", () -> new PurpleRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PINK_RHODODENDRON =
-            registerBlock("pink_rhododendron", () -> new PinkRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("pink_rhododendron", () -> new PinkRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CHINESE_AZALEA =
-            registerBlock("chinese_azalea", () -> new ChineseAzaleaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("chinese_azalea", () -> new ChineseAzaleaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> FOUNTAIN_GRASS =
             registerBlock("fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PURPLE_FOUNTAIN_GRASS =

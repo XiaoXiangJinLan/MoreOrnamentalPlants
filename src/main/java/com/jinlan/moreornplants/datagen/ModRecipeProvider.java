@@ -752,6 +752,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(recipeOutput, ModItems.CHINABERRY_CHEST_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
         chestBoat(recipeOutput, ModItems.DESERT_POPLAR_CHEST_BOAT.get(), ModBlocks.DESERT_POPLAR_PLANKS.get());
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 4)
+                .define('#', ModBlocks.CRAPE_MYRTLE_LOG)
+                .pattern("#")
+                .pattern("#")
+                .group("sticks")
+                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_LOG))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "stick_from_crape_myrtle_log");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 4)
+                .define('#', ModBlocks.CRAPE_MYRTLE_WOOD)
+                .pattern("#")
+                .pattern("#")
+                .group("sticks")
+                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_WOOD))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "stick_from_crape_myrtle_wood");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 2)
                 .define('#', ModItems.MOTTLED_BAMBOO)
                 .pattern("#")
