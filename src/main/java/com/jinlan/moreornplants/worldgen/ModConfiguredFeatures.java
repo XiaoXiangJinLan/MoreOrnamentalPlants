@@ -1039,7 +1039,7 @@ public class ModConfiguredFeatures {
         register(context, BLACK_BAMBOO_KEY,Feature.RANDOM_PATCH, new RandomPatchConfiguration(100, 9, 4,
                 PlacementUtils.onlyWhenEmpty( ModBambooFeatures.BLACK_BAMBOO.get(),
                         new ProbabilityFeatureConfiguration(0.0F))));
-        register(context, BLACK_BAMBOO_GALLERY_KEY,Feature.RANDOM_PATCH, new RandomPatchConfiguration(10, 9, 4,
+        register(context, BLACK_BAMBOO_GALLERY_KEY,Feature.RANDOM_PATCH, new RandomPatchConfiguration(5, 6, 3,
                 PlacementUtils.onlyWhenEmpty( ModBambooFeatures.BLACK_BAMBOO.get(),
                         new ProbabilityFeatureConfiguration(0.0F))));
 

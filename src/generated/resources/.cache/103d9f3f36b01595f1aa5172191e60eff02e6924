@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-09T23:00:02.7744694	Registries
+// 1.21.1	2026-02-11T17:36:34.9261403	Registries
 eff3183bd984b6f94a1ddfe56a3ca0f0aecd8cab data/more_orn_plants/worldgen/biome/azalea_forest.json
 408f941492de8ceb2640d0a69a518890f327518c data/more_orn_plants/worldgen/biome/camellia_valley.json
 2438f59ad4d3ce3b02593de59ae16314ab6a635f data/more_orn_plants/worldgen/biome/chinaberry_woods.json
@@ -33,7 +33,7 @@ c3e008589925fb0ac69cca88ab7b6daefe3cab2b data/more_orn_plants/worldgen/configure
 e32e294a2fbabb32bd05761eb47a5c1b192a616c data/more_orn_plants/worldgen/configured_feature/autumn_cymbidium_plain.json
 30213fd0b28a33dc653e9f59dc6935e255596c9b data/more_orn_plants/worldgen/configured_feature/azalea_grove.json
 0dbea9c9e1e697acf0acaf7bc2374fe1d7301634 data/more_orn_plants/worldgen/configured_feature/azalea_key.json
-0031dcc3c5255aa5046825adebee52ebd54e4c18 data/more_orn_plants/worldgen/configured_feature/black_bamboo_gallery_key.json
+19e0e6826c077f95e207658a15d520b592c33856 data/more_orn_plants/worldgen/configured_feature/black_bamboo_gallery_key.json
 0382a0d3c144a2d04d76e107dcd72a6863209adc data/more_orn_plants/worldgen/configured_feature/black_bamboo_key.json
 19ff6ed546a0b362e652d173a2e0e4ed2438706a data/more_orn_plants/worldgen/configured_feature/blue_orchid_forest.json
 0e82ea3f1bec2993c28fafcbd16b25b0ae034604 data/more_orn_plants/worldgen/configured_feature/camellia_key.json
