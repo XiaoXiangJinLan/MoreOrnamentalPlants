@@ -48,6 +48,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHINABERRY_LEAVES.get());
                         pOutput.accept(ModBlocks.DESERT_POPLAR_LEAVES.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_LEAVES.get());
+                        pOutput.accept(ModBlocks.RED_AZALEA_LEAVES.get());
+                        pOutput.accept(ModBlocks.MAYING_RHODODENDRON_LEAVES.get());
+                        pOutput.accept(ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get());
+                        pOutput.accept(ModBlocks.CHARMING_RHODODENDRON_LEAVES.get());
+                        pOutput.accept(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get());
+                        pOutput.accept(ModBlocks.PURPLE_RHODODENDRON_LEAVES.get());
+                        pOutput.accept(ModBlocks.PINK_RHODODENDRON_LEAVES.get());
+                        pOutput.accept(ModBlocks.CHINESE_AZALEA_LEAVES.get());
                         pOutput.accept(ModBlocks.RED_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.WHITE_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.GREEN_CALYX_MEI_SAPLING.get());
@@ -126,6 +134,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WHITE_CAMELLIA.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_CAMELLIA.get());
                         pOutput.accept(ModBlocks.RED_AZALEA.get());
+                        pOutput.accept(ModBlocks.MAYING_RHODODENDRON.get());
+                        pOutput.accept(ModBlocks.DEWDROP_RHODODENDRON.get());
+                        pOutput.accept(ModBlocks.CHARMING_RHODODENDRON.get());
+                        pOutput.accept(ModBlocks.GREAT_WHITE_RHODODENDRON.get());
+                        pOutput.accept(ModBlocks.PURPLE_RHODODENDRON.get());
+                        pOutput.accept(ModBlocks.PINK_RHODODENDRON.get());
+                        pOutput.accept(ModBlocks.CHINESE_AZALEA.get());
                         pOutput.accept(ModBlocks.FOUNTAIN_GRASS.get());
                         pOutput.accept(ModBlocks.PURPLE_FOUNTAIN_GRASS.get());
                         pOutput.accept(ModBlocks.PINK_FOUNTAIN_GRASS.get());
@@ -149,6 +164,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.VERSICOLOR_WEEPING_MEI.get());
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE.get());
                         pOutput.accept(ModBlocks.WINTER_CYMBIDIUM.get());
+                        pOutput.accept(ModBlocks.ZHAO_PINK_PEONY.get());
                         pOutput.accept(ModBlocks.TWO_QIAO_PEONY.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_PEONY.get());
                         pOutput.accept(ModBlocks.LOTUS.get());

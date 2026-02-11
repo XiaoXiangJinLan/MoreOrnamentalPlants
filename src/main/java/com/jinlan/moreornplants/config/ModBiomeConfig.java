@@ -20,6 +20,7 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_APRICOT_SPRING_PLATEAU;
     public static final ForgeConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_AZALEA_FOREST;
     public static final ForgeConfigSpec.BooleanValue ENABLE_FURONG_GUO;
     public static final ForgeConfigSpec.BooleanValue ENABLE_YUNMENG_MARSH;
     public static final ForgeConfigSpec.BooleanValue ENABLE_DESERT_POPLAR_WOODS;
@@ -27,6 +28,7 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_CHINABERRY_WOODS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_MISCANTHUS_FIELDS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_CROPS_GREEN;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_TEN_MILE_GALLERY;
 
     // 区域权重配置
     public static final ForgeConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
@@ -75,6 +77,9 @@ public class ModBiomeConfig {
         ENABLE_RED_HIGHLANDS = BUILDER
                 .comment("Enable Red Highlands biome generation")
                 .define("enableRedHighlands", true);
+        ENABLE_AZALEA_FOREST = BUILDER
+                .comment("Enable Azalea Forest biome generation")
+                .define("enableAzaleaForest", true);
         ENABLE_FURONG_GUO = BUILDER
                 .comment("Enable Furong Guo biome generation")
                 .define("enableFurongGuo", true);
@@ -96,6 +101,9 @@ public class ModBiomeConfig {
         ENABLE_CROPS_GREEN = BUILDER
                 .comment("Enable Crops Green Woods biome generation")
                 .define("enableCropsGreen", true);
+        ENABLE_TEN_MILE_GALLERY = BUILDER
+                .comment("Enable Ten-Mile Gallery biome generation")
+                .define("enableTenMileGallery", true);
         BUILDER.pop();
 
         // 区域权重设置

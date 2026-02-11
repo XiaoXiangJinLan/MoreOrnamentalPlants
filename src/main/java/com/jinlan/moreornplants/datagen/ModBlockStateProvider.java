@@ -677,9 +677,38 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.VERSICOLOR_CAMELLIA);
         simpleBlock(ModBlocks.POTTED_VERSICOLOR_CAMELLIA.get(), models().singleTexture("potted_versicolor_camellia", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.VERSICOLOR_CAMELLIA.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.RED_AZALEA_LEAVES);
         flowerBlock(ModBlocks.RED_AZALEA);
         simpleBlock(ModBlocks.POTTED_RED_AZALEA.get(), models().singleTexture("potted_red_azalea", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.RED_AZALEA.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.MAYING_RHODODENDRON_LEAVES);
+        flowerBlock(ModBlocks.MAYING_RHODODENDRON);
+        simpleBlock(ModBlocks.POTTED_MAYING_RHODODENDRON.get(), models().singleTexture("potted_maying_rhododendron", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.MAYING_RHODODENDRON.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.DEWDROP_RHODODENDRON_LEAVES);
+        flowerBlock(ModBlocks.DEWDROP_RHODODENDRON);
+        simpleBlock(ModBlocks.POTTED_DEWDROP_RHODODENDRON.get(), models().singleTexture("potted_dewdrop_rhododendron", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.DEWDROP_RHODODENDRON.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.CHARMING_RHODODENDRON_LEAVES);
+        flowerBlock(ModBlocks.CHARMING_RHODODENDRON);
+        simpleBlock(ModBlocks.POTTED_CHARMING_RHODODENDRON.get(), models().singleTexture("potted_charming_rhododendron", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.CHARMING_RHODODENDRON.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES);
+        flowerBlock(ModBlocks.GREAT_WHITE_RHODODENDRON);
+        simpleBlock(ModBlocks.POTTED_GREAT_WHITE_RHODODENDRON.get(), models().singleTexture("potted_great_white_rhododendron", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.GREAT_WHITE_RHODODENDRON.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.PURPLE_RHODODENDRON_LEAVES);
+        flowerBlock(ModBlocks.PURPLE_RHODODENDRON);
+        simpleBlock(ModBlocks.POTTED_PURPLE_RHODODENDRON.get(), models().singleTexture("potted_purple_rhododendron", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.PURPLE_RHODODENDRON.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.PINK_RHODODENDRON_LEAVES);
+        flowerBlock(ModBlocks.PINK_RHODODENDRON);
+        simpleBlock(ModBlocks.POTTED_PINK_RHODODENDRON.get(), models().singleTexture("potted_pink_rhododendron", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.PINK_RHODODENDRON.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.CHINESE_AZALEA_LEAVES);
+        flowerBlock(ModBlocks.CHINESE_AZALEA);
+        simpleBlock(ModBlocks.POTTED_CHINESE_AZALEA.get(), models().singleTexture("potted_chinese_azalea", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.CHINESE_AZALEA.get())).renderType("cutout"));
         flowerBlock(ModBlocks.FOUNTAIN_GRASS);
         simpleBlock(ModBlocks.POTTED_FOUNTAIN_GRASS.get(), models().singleTexture("potted_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_fountain_grass")).renderType("cutout"));
@@ -696,6 +725,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.POTTED_BAMBOO_STICK.get(), models().singleTexture("potted_bamboo_stick", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.BAMBOO_STICK.get())).renderType("cutout"));
 
+        tallCrossBlock(ModBlocks.ZHAO_PINK_PEONY);
         tallCrossBlock(ModBlocks.TWO_QIAO_PEONY);
         tallCrossBlock(ModBlocks.VERSICOLOR_PEONY);
         tallCrossBlock(ModBlocks.WINTER_CYMBIDIUM);

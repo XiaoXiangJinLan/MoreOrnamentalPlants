@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:versicolor_camellia_key",
+  "feature": "more_orn_plants:white_camellia_key",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 15
+      "count": 16
     },
     {
       "type": "minecraft:in_square"

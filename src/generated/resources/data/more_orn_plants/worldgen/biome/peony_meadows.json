@@ -6,18 +6,17 @@
       "minecraft:canyon"
     ]
   },
-  "downfall": 0.6,
+  "downfall": 0.4,
   "effects": {
-    "fog_color": 14798847,
+    "fog_color": 12638463,
     "foliage_color": 11983713,
-    "grass_color": 16765385,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "sky_color": 12299007,
+    "sky_color": 7907327,
     "water_color": 6141935,
     "water_fog_color": 6141935
   },

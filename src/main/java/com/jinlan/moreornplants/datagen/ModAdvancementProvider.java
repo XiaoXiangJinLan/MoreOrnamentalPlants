@@ -86,7 +86,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
             Advancement flowerKing = Advancement.Builder.advancement()
                     .parent(root)
                     .display(new DisplayInfo(
-                            new ItemStack(Blocks.PEONY),
+                            new ItemStack(ModBlocks.ZHAO_PINK_PEONY.get()),
                             Component.translatable("advancement.moreornplants.flower_king.title"),
                             Component.translatable("advancement.moreornplants.flower_king.description"),
                             null,
@@ -324,7 +324,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
             Advancement flowerBeauty = Advancement.Builder.advancement()
                     .parent(root)
                     .display(new DisplayInfo(
-                            new ItemStack(Blocks.FLOWERING_AZALEA),
+                            new ItemStack(ModBlocks.CHARMING_RHODODENDRON.get()),
                             Component.translatable("advancement.moreornplants.flower_beauty.title"),
                             Component.translatable("advancement.moreornplants.flower_beauty.description"),
                             null,
