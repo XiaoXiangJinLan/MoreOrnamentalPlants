@@ -145,11 +145,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_PINK_CAMELLIA.get())
                 .add(ModBlocks.POTTED_WHITE_CAMELLIA.get())
                 .add(ModBlocks.POTTED_VERSICOLOR_CAMELLIA.get())
-                .add(ModBlocks.POTTED_RED_AZALEA.get())
+                .add(ModBlocks.POTTED_RED_AZALEA.get(), ModBlocks.POTTED_MAYING_RHODODENDRON.get(), ModBlocks.POTTED_DEWDROP_RHODODENDRON.get())
+                .add(ModBlocks.POTTED_CHARMING_RHODODENDRON.get(), ModBlocks.POTTED_GREAT_WHITE_RHODODENDRON.get(), ModBlocks.POTTED_PURPLE_RHODODENDRON.get())
+                .add(ModBlocks.POTTED_PINK_RHODODENDRON.get(), ModBlocks.POTTED_CHINESE_AZALEA.get())
                 .add(ModBlocks.POTTED_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.POTTED_PINK_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get());
+                .add(ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.POTTED_MOTTLED_BAMBOO.get(), ModBlocks.POTTED_BLACK_BAMBOO.get(), ModBlocks.POTTED_BAMBOO_STICK.get());
 
         this.tag(BlockTags.FLOWERS)
                 .addTag(BlockTags.SMALL_FLOWERS)
