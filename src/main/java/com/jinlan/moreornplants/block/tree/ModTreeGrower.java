@@ -182,14 +182,14 @@ public class ModTreeGrower {
 
     public static final TreeGrower GOLDEN_GINKGO = new TreeGrower(
             "golden_ginkgo",
-            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.ANCIENT_GOLDEN_GINKGO),
             Optional.of(ModConfiguredFeatures.GOLDEN_GINKGO),
             Optional.empty()
     );
 
     public static final TreeGrower GREEN_GINKGO = new TreeGrower(
             "green_ginkgo",
-            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.ANCIENT_GREEN_GINKGO),
             Optional.of(ModConfiguredFeatures.GREEN_GINKGO),
             Optional.empty()
     );
@@ -217,8 +217,12 @@ public class ModTreeGrower {
 
     public static final TreeGrower CAMPHOR = new TreeGrower(
             "camphor",
+            0.1F,
+            Optional.empty(),
             Optional.empty(),
             Optional.of(ModConfiguredFeatures.CAMPHOR),
+            Optional.of(ModConfiguredFeatures.ANCIENT_CAMPHOR),
+            Optional.empty(),
             Optional.empty()
     );
 

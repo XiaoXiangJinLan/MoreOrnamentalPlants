@@ -15,8 +15,8 @@ Miscanthus, Mottled Bamboo, Black Bamboo, and two legendary Peony varieties: Zha
 
 New Biomes
 ==========
-• Red Mei Forest – A snowy plain dotted with Red Mei and Wintersweet.  
-• Fragrant Snow Sea – A snowy plain dotted with White Mei, Green Calyx Mei, White Weeping Mei and Green Weeping Mei, with
+• Red Mei Forest – A snowy plain dotted with Red Bone Mei and Wintersweet.  
+• Fragrant Snow Sea – A snowy plain dotted with Jiang Mei, Green Calyx Mei, White Weeping Mei and Green Weeping Mei, with
 Fragrant Snow Petals on the ground.  
 • The Peach Blossom Spring – A fairyland growing Ornamental Peach and Wild Peach trees, with Peach Pink Petals on the 
 ground, pale blue-pink water surfaces, and drifting Ornamental Peach Petals and Wild Peach Petals.  
@@ -37,7 +37,7 @@ covering the ground.
 • Mount Mei – A high mountain snow slope growing Green Calyx Mei trees.  
 • Camellia Valley – A valley filled with Camellias and their variants (White Camellia, Versicolor Camellia), accompanied 
 by White Apricot and Camphor trees.  
-• Red Highlands – Highland slopes covered with Red Azaleas, dotted with Red Mei and Ornamental Peach trees.  
+• Red Highlands – Highland slopes covered with Red Azaleas, dotted with Red Bone Mei and Ornamental Peach trees.  
 • Azalea Forest – Highland slopes covered with various Azaleas and Rhododendrons, dotted with Azalea and Rhododendron trees.  
 • Ten-Mile Gallery – Highland slopes covered with colorful flowers, dotted with colorful trees.  
 • Peony Meadows – A sea of flowers growing various Peonies and Herbaceous Peonies, accompanied by Upright Crabapple 
@@ -47,7 +47,7 @@ trees. The sky are tinted pale pink-purple.
 • Crops Green – A plain growing various Fountain Grasses, Miscanthus, Chinese Roses, Autumn Cymbidium, vanilla Alliums, 
 and Dandelions, accompanied by Camphor trees.  
 • Spring River – A river with drifting Ornamental Peach Petals and Wild Peach Petals on its surface. The banks grow 
-White Mei, four types of Cymbidium, and vanilla Orchids.  
+Jiang Mei, four types of Cymbidium, and vanilla Orchids.  
 • Furong Guo – A plain wetland growing abundant Cotton Roses, Mottled Bamboo, and Black Bamboo. The water is 
 filled with Lotus Leaves and Lotus flowers.  
 • Yunmeng Marsh – A wetland swamp growing Double Pink Mei and Camphor trees. The undergrowth features Summer Cymbidium, 
@@ -85,7 +85,7 @@ New Fuels
 芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、腊梅、狼尾草、芒草、湘妃竹、紫竹，以及两大牡丹传奇品种：赵粉和二乔等。
 
 ## 新群系
-•**白雪红梅**：生长有红梅和腊梅的雪原；  
+•**白雪红梅**：生长有朱砂梅和腊梅的雪原；  
 •**香雪海**：生长有江梅、绿萼梅、垂枝白梅以及绿萼垂枝梅的雪原，地面长有香雪花簇；  
 •**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃花花簇，水面为淡蓝粉色，漂浮有流红、浮英；  
 •**高原春杏**：生长有粉杏和白杏的高原；  
@@ -98,7 +98,7 @@ New Fuels
 •**胡杨林**：生长有胡杨树的沙漠；  
 •**梅山**：生长有绿萼梅的高山雪坡；  
 •**茶花谷**：生长有大量山茶及变种白山茶、红白山茶的山谷，伴有白杏和樟树点缀；  
-•**映山红**：生长有大量映山红的高地山坡，伴有红梅和碧桃点缀；  
+•**映山红**：生长有大量映山红的高地山坡，伴有朱砂梅和碧桃点缀；  
 •**百里杜鹃**：生长有大量各色杜鹃的高地山坡，伴有各色杜鹃树点缀；  
 •**十里画廊**：生长有大量各色花朵的高地山坡，伴有各色的桂花树和杜鹃树以及紫竹点缀；  
 •**牡丹花海**：生长有多种牡丹和芍药的花海，伴有西府海棠点缀，天空为淡粉紫色；  
