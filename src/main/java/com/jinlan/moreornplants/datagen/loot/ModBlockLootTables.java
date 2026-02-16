@@ -756,16 +756,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHINESE_AZALEA.get());
         this.add(ModBlocks.POTTED_CHINESE_AZALEA.get(),
                 createPotFlowerItemTable(ModBlocks.CHINESE_AZALEA.get()));
-        this.dropSelf(ModBlocks.FOUNTAIN_GRASS.get());
+        this.add(ModBlocks.FOUNTAIN_GRASS.get(), this::createGrassDrops);
         this.add(ModBlocks.POTTED_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.FOUNTAIN_GRASS.get()));
-        this.dropSelf(ModBlocks.PURPLE_FOUNTAIN_GRASS.get());
+        this.add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get(), this::createGrassDrops);
         this.add(ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.PURPLE_FOUNTAIN_GRASS.get()));
-        this.dropSelf(ModBlocks.PINK_FOUNTAIN_GRASS.get());
+        this.add(ModBlocks.PINK_FOUNTAIN_GRASS.get(), this::createGrassDrops);
         this.add(ModBlocks.POTTED_PINK_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.PINK_FOUNTAIN_GRASS.get()));
-        this.dropSelf(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
+        this.add(ModBlocks.WHITE_FOUNTAIN_GRASS.get(), this::createGrassDrops);
         this.add(ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.WHITE_FOUNTAIN_GRASS.get()));
         this.dropSelf(ModBlocks.BAMBOO_STICK.get());
