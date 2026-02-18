@@ -911,7 +911,8 @@ public class ModConfiguredFeatures {
                                         .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
+                                        .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
@@ -1107,7 +1108,8 @@ public class ModConfiguredFeatures {
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(ModBlocks.CHINESE_ROSE.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.PINK_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
+                                        .add(ModBlocks.PINK_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),

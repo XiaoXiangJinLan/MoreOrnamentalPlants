@@ -787,6 +787,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 createPotFlowerItemTable(ModBlocks.PINK_WHITE_CHINESE_ROSE.get()));
         this.add(ModBlocks.POTTED_YELLOW_WHITE_CHINESE_ROSE.get(),
                 createPotFlowerItemTable(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get()));
+        this.add(ModBlocks.POTTED_BAOHUA_CHINESE_ROSE.get(),
+                createPotFlowerItemTable(ModBlocks.BAOHUA_CHINESE_ROSE.get()));
 
         this.add(ModBlocks.WINTER_CYMBIDIUM.get(), createSinglePropConditionTable(ModBlocks.WINTER_CYMBIDIUM.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
@@ -815,6 +817,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.PINK_WHITE_CHINESE_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.BAOHUA_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.BAOHUA_CHINESE_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.CRAPE_MYRTLE.get(), createSinglePropConditionTable(ModBlocks.CRAPE_MYRTLE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));

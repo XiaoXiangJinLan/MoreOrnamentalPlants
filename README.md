@@ -19,7 +19,7 @@ New Biomes
 • Fragrant Snow Sea – A snowy plain dotted with Jiang Mei, Green Calyx Mei, White Weeping Mei and Green Weeping Mei, with
 Fragrant Snow Petals on the ground.  
 • The Peach Blossom Spring – A fairyland growing Ornamental Peach and Wild Peach trees, with Peach Pink Petals on the 
-ground, pale blue-pink water surfaces, and drifting Ornamental Peach Petals and Wild Peach Petals.  
+ground, pale pink water surfaces and sky, and drifting Ornamental Peach Petals and Wild Peach Petals.  
 • the Apricot Spring Plateau – A Plateau growing Pink Apricot and White Apricot trees.  
 • Penglai – A mystical island over the sea, growing White Weeping Mei, Pink Weeping Mei, Green Weeping Mei, Crabapple, 
 Peony, Herbaceous Peony, and Chinese Rose.  
@@ -41,7 +41,7 @@ by White Apricot and Camphor trees.
 • Azalea Forest – Highland slopes covered with various Azaleas and Rhododendrons, dotted with Azalea and Rhododendron trees.  
 • Ten-Mile Gallery – Highland slopes covered with colorful flowers, dotted with colorful trees.  
 • Peony Meadows – A sea of flowers growing various Peonies and Herbaceous Peonies, accompanied by Upright Crabapple 
-trees. The sky are tinted pale pink-purple.  
+trees.  
 • Chinese Rose Fields – A floral field growing various Chinese Roses and vanilla Rose Bushes.  
 • Miscanthus Fields – A plain covered with Golden Miscanthus.  
 • Crops Green – A plain growing various Fountain Grasses, Miscanthus, Chinese Roses, Autumn Cymbidium, vanilla Alliums, 
@@ -87,7 +87,7 @@ New Fuels
 ## 新群系
 •**白雪红梅**：生长有朱砂梅和蜡梅的雪原；  
 •**香雪海**：生长有江梅、绿萼梅、垂枝白梅以及绿萼垂枝梅的雪原，地面长有香雪花簇；  
-•**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃花花簇，水面为淡蓝粉色，漂浮有流红、浮英；  
+•**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃花花簇，天空和水面为淡粉色，漂浮有流红、浮英；  
 •**高原春杏**：生长有粉杏和白杏的高原；  
 •**蓬莱**：生长有垂枝白梅、宫粉垂枝梅、绿萼垂枝梅、海棠、牡丹、芍药、月季的海上仙山；  
 •**常绿林**：樟树为优势树种的森林，其次为梧桐、银杏、银桂，偶尔出现珙桐，林下生长有四种兰花、原版兰花和铃兰；  
@@ -101,7 +101,7 @@ New Fuels
 •**映山红**：生长有大量映山红的高地山坡，伴有朱砂梅和碧桃点缀；  
 •**百里杜鹃**：生长有大量各色杜鹃的高地山坡，伴有各色杜鹃树点缀；  
 •**十里画廊**：生长有大量各色花朵的高地山坡，伴有各色的桂花树和杜鹃树以及紫竹点缀；  
-•**牡丹花海**：生长有多种牡丹和芍药的花海，伴有西府海棠点缀，天空为淡粉紫色；  
+•**牡丹花海**：生长有多种牡丹和芍药的花海，伴有西府海棠点缀；  
 •**月季花海**：生长有多种月季、原版玫瑰丛的花海；  
 •**芒草田**：生长有大量金芒草的平原；  
 •**禾青**：生长有多种狼尾草、芒草、月季、建兰、原版绒球葱和蒲公英的平原，伴有樟树点缀；  
@@ -137,11 +137,11 @@ more_orn_plants:ink_peony more_orn_plants:blue_peony more_orn_plants:green_peony
 more_orn_plants:ink_colorful_peony more_orn_plants:red_white_peony more_orn_plants:pink_white_peony more_orn_plants:yellow_white_peony 
 more_orn_plants:purple_white_peony more_orn_plants:wu_hua_long_yu_peony more_orn_plants:mauve_peony more_orn_plants:chrysanthemum 
 more_orn_plants:golden_chrysanthemum more_orn_plants:gold_backed_scarlet_mum more_orn_plants:white_chrysanthemum more_orn_plants:green_chrysanthemum 
-more_orn_plants:purple_chrysanthemum more_orn_plants:violet_pink_chrysanthemum more_orn_plants:pink_chrysanthemum more_orn_plants:spring_cymbidium 
-more_orn_plants:summer_cymbidium more_orn_plants:autumn_cymbidium more_orn_plants:camellia more_orn_plants:pink_camellia 
-more_orn_plants:white_camellia more_orn_plants:versicolor_camellia more_orn_plants:red_azalea more_orn_plants:maying_rhododendron 
-more_orn_plants:dewdrop_rhododendron more_orn_plants:charming_rhododendron more_orn_plants:great_white_rhododendron more_orn_plants:purple_rhododendron 
-more_orn_plants:pink_rhododendron more_orn_plants:chinese_azalea
+more_orn_plants:purple_chrysanthemum more_orn_plants:violet_pink_chrysanthemum more_orn_plants:pink_chrysanthemum more_orn_plants:light_pink_chrysanthemum 
+more_orn_plants:spring_cymbidium more_orn_plants:summer_cymbidium more_orn_plants:autumn_cymbidium more_orn_plants:camellia 
+more_orn_plants:pink_camellia more_orn_plants:white_camellia more_orn_plants:versicolor_camellia more_orn_plants:red_azalea 
+more_orn_plants:maying_rhododendron more_orn_plants:dewdrop_rhododendron more_orn_plants:charming_rhododendron more_orn_plants:great_white_rhododendron 
+more_orn_plants:purple_rhododendron more_orn_plants:pink_rhododendron more_orn_plants:chinese_azalea
 
 #_petals_#  
 more_orn_plants:peach_pink_petals more_orn_plants:fragrant_snow_petals
@@ -179,17 +179,19 @@ more_orn_plants:dove_tree_blossom_leaves more_orn_plants:chinaberry_leaves more_
 more_orn_plants:zhao_pink_peony:half=lower more_orn_plants:two_qiao_peony:half=lower more_orn_plants:versicolor_peony:half=lower more_orn_plants:chinese_rose:half=lower 
 more_orn_plants:pink_chinese_rose:half=lower more_orn_plants:yellow_chinese_rose:half=lower more_orn_plants:white_chinese_rose:half=lower 
 more_orn_plants:red_pink_chinese_rose:half=lower more_orn_plants:red_yellow_chinese_rose:half=lower more_orn_plants:red_white_chinese_rose:half=lower 
-more_orn_plants:pink_white_chinese_rose:half=lower more_orn_plants:yellow_white_chinese_rose:half=lower more_orn_plants:cotton_rose:half=lower 
-more_orn_plants:lotus:half=lower more_orn_plants:white_lotus:half=lower more_orn_plants:lotus_leaf:half=lower more_orn_plants:winter_cymbidium:half=lower 
-more_orn_plants:miscanthus:half=lower more_orn_plants:golden_miscanthus:half=lower more_orn_plants:crape_myrtle:half=lower more_orn_plants:wintersweet:half=lower
+more_orn_plants:pink_white_chinese_rose:half=lower more_orn_plants:yellow_white_chinese_rose:half=lower more_orn_plants:baohua_chinese_rose:half=lower 
+more_orn_plants:cotton_rose:half=lower more_orn_plants:lotus:half=lower more_orn_plants:white_lotus:half=lower more_orn_plants:lotus_leaf:half=lower 
+more_orn_plants:winter_cymbidium:half=lower more_orn_plants:miscanthus:half=lower more_orn_plants:golden_miscanthus:half=lower 
+more_orn_plants:crape_myrtle:half=lower more_orn_plants:wintersweet:half=lower
 
 #_tall flowers:half=upper_#  
 more_orn_plants:zhao_pink_peony:half=upper more_orn_plants:two_qiao_peony:half=upper more_orn_plants:versicolor_peony:half=upper more_orn_plants:chinese_rose:half=upper 
 more_orn_plants:pink_chinese_rose:half=upper more_orn_plants:yellow_chinese_rose:half=upper more_orn_plants:white_chinese_rose:half=upper 
 more_orn_plants:red_pink_chinese_rose:half=upper more_orn_plants:red_yellow_chinese_rose:half=upper more_orn_plants:red_white_chinese_rose:half=upper 
-more_orn_plants:pink_white_chinese_rose:half=upper more_orn_plants:yellow_white_chinese_rose:half=upper more_orn_plants:cotton_rose:half=upper 
-more_orn_plants:lotus:half=upper more_orn_plants:white_lotus:half=upper more_orn_plants:lotus_leaf:half=upper more_orn_plants:winter_cymbidium:half=upper 
-more_orn_plants:miscanthus:half=upper more_orn_plants:golden_miscanthus:half=upper more_orn_plants:crape_myrtle:half=upper more_orn_plants:wintersweet:half=upper
+more_orn_plants:pink_white_chinese_rose:half=upper more_orn_plants:yellow_white_chinese_rose:half=upper more_orn_plants:baohua_chinese_rose:half=upper
+more_orn_plants:cotton_rose:half=upper more_orn_plants:lotus:half=upper more_orn_plants:white_lotus:half=upper more_orn_plants:lotus_leaf:half=upper 
+more_orn_plants:winter_cymbidium:half=upper more_orn_plants:miscanthus:half=upper more_orn_plants:golden_miscanthus:half=upper 
+more_orn_plants:crape_myrtle:half=upper more_orn_plants:wintersweet:half=upper
 
 #_vine_#  
 more_orn_plants:red_weeping_mei more_orn_plants:red_weeping_mei_plant more_orn_plants:white_weeping_mei more_orn_plants:white_weeping_mei_plant 
@@ -207,14 +209,14 @@ more_orn_plants:potted_ink_colorful_peony more_orn_plants:potted_red_white_peony
 more_orn_plants:potted_yellow_white_peony more_orn_plants:potted_purple_white_peony more_orn_plants:potted_wu_hua_long_yu_peony 
 more_orn_plants:potted_mauve_peony more_orn_plants:potted_chrysanthemum more_orn_plants:potted_golden_chrysanthemum 
 more_orn_plants:potted_gold_backed_scarlet_mum more_orn_plants:potted_white_chrysanthemum more_orn_plants:potted_green_chrysanthemum 
-more_orn_plants:potted_purple_chrysanthemum more_orn_plants:potted_violet_pink_chrysanthemum more_orn_plants:potted_pink_chrysanthemum 
-more_orn_plants:potted_spring_cymbidium more_orn_plants:potted_summer_cymbidium more_orn_plants:potted_autumn_cymbidium 
-more_orn_plants:potted_winter_cymbidium more_orn_plants:potted_fountain_grass more_orn_plants:potted_purple_fountain_grass 
+more_orn_plants:potted_purple_chrysanthemum more_orn_plants:potted_violet_pink_chrysanthemum more_orn_plants:potted_pink_chrysanthemum
+more_orn_plants:potted_light_pink_chrysanthemum more_orn_plants:potted_spring_cymbidium more_orn_plants:potted_summer_cymbidium 
+more_orn_plants:potted_autumn_cymbidium more_orn_plants:potted_winter_cymbidium more_orn_plants:potted_fountain_grass more_orn_plants:potted_purple_fountain_grass 
 more_orn_plants:potted_pink_fountain_grass more_orn_plants:potted_white_fountain_grass more_orn_plants:potted_chinese_rose 
 more_orn_plants:potted_pink_chinese_rose more_orn_plants:potted_yellow_chinese_rose more_orn_plants:potted_white_chinese_rose 
 more_orn_plants:potted_red_pink_chinese_rose more_orn_plants:potted_red_yellow_chinese_rose more_orn_plants:potted_red_white_chinese_rose 
-more_orn_plants:potted_pink_white_chinese_rose more_orn_plants:potted_yellow_white_chinese_rose more_orn_plants:potted_camellia 
-more_orn_plants:potted_pink_camellia more_orn_plants:potted_white_camellia more_orn_plants:potted_versicolor_camellia 
+more_orn_plants:potted_pink_white_chinese_rose more_orn_plants:potted_yellow_white_chinese_rose more_orn_plants:potted_baohua_chinese_rose 
+more_orn_plants:potted_camellia more_orn_plants:potted_pink_camellia more_orn_plants:potted_white_camellia more_orn_plants:potted_versicolor_camellia 
 more_orn_plants:potted_red_azalea more_orn_plants:potted_maying_rhododendron more_orn_plants:potted_dewdrop_rhododendron 
 more_orn_plants:potted_charming_rhododendron more_orn_plants:potted_great_white_rhododendron more_orn_plants:potted_purple_rhododendron 
 more_orn_plants:potted_pink_rhododendron more_orn_plants:potted_chinese_azalea more_orn_plants:potted_wintersweet more_orn_plants:potted_red_mei_sapling 

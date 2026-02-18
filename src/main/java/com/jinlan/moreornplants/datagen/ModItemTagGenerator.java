@@ -264,46 +264,22 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(Blocks.PEONY.asItem(), ModBlocks.ZHAO_PINK_PEONY.asItem(), ModBlocks.TWO_QIAO_PEONY.asItem(), ModBlocks.VERSICOLOR_PEONY.asItem());
 
         this.tag(CommonTags.Items.HERBACEOUS_PEONY)
-                .add(ModBlocks.PEONY.asItem())
-                .add(ModBlocks.LIGHT_PINK_PEONY.asItem())
-                .add(ModBlocks.VIOLET_PINK_PEONY.asItem())
-                .add(ModBlocks.PINK_PEONY.asItem())
-                .add(ModBlocks.RED_PEONY.asItem())
-                .add(ModBlocks.LIGHT_RED_PEONY.asItem())
-                .add(ModBlocks.INK_RED_PEONY.asItem())
-                .add(ModBlocks.VERMILION_PEONY.asItem())
-                .add(ModBlocks.PURPLE_PEONY.asItem())
-                .add(ModBlocks.LIGHT_PURPLE_PEONY.asItem())
-                .add(ModBlocks.INK_PURPLE_PEONY.asItem())
-                .add(ModBlocks.VIOLET_PEONY.asItem())
-                .add(ModBlocks.YELLOW_PEONY.asItem())
-                .add(ModBlocks.LIGHT_YELLOW_PEONY.asItem())
-                .add(ModBlocks.OCHRE_YELLOW_PEONY.asItem())
-                .add(ModBlocks.GOLDEN_PEONY.asItem())
-                .add(ModBlocks.WHITE_PEONY.asItem())
-                .add(ModBlocks.INK_PEONY.asItem())
-                .add(ModBlocks.BLUE_PEONY.asItem())
-                .add(ModBlocks.GREEN_PEONY.asItem())
-                .add(ModBlocks.COLORFUL_PEONY.asItem())
-                .add(ModBlocks.LIGHT_COLORFUL_PEONY.asItem())
-                .add(ModBlocks.INK_COLORFUL_PEONY.asItem())
-                .add(ModBlocks.RED_WHITE_PEONY.asItem())
-                .add(ModBlocks.PINK_WHITE_PEONY.asItem())
-                .add(ModBlocks.YELLOW_WHITE_PEONY.asItem())
-                .add(ModBlocks.PURPLE_WHITE_PEONY.asItem())
-                .add(ModBlocks.WU_HUA_LONG_YU_PEONY.asItem())
-                .add(ModBlocks.MAUVE_PEONY.asItem());
+                .add(ModBlocks.PEONY.asItem(), ModBlocks.LIGHT_PINK_PEONY.asItem(), ModBlocks.VIOLET_PINK_PEONY.asItem(), ModBlocks.PINK_PEONY.asItem())
+                .add(ModBlocks.RED_PEONY.asItem(), ModBlocks.LIGHT_RED_PEONY.asItem(), ModBlocks.INK_RED_PEONY.asItem(), ModBlocks.VERMILION_PEONY.asItem())
+                .add(ModBlocks.PURPLE_PEONY.asItem(), ModBlocks.LIGHT_PURPLE_PEONY.asItem(), ModBlocks.INK_PURPLE_PEONY.asItem(), ModBlocks.VIOLET_PEONY.asItem())
+                .add(ModBlocks.YELLOW_PEONY.asItem(), ModBlocks.LIGHT_YELLOW_PEONY.asItem(), ModBlocks.OCHRE_YELLOW_PEONY.asItem(), ModBlocks.GOLDEN_PEONY.asItem())
+                .add(ModBlocks.WHITE_PEONY.asItem(), ModBlocks.INK_PEONY.asItem(), ModBlocks.BLUE_PEONY.asItem(), ModBlocks.GREEN_PEONY.asItem())
+                .add(ModBlocks.COLORFUL_PEONY.asItem(), ModBlocks.LIGHT_COLORFUL_PEONY.asItem(), ModBlocks.INK_COLORFUL_PEONY.asItem())
+                .add(ModBlocks.RED_WHITE_PEONY.asItem(), ModBlocks.PINK_WHITE_PEONY.asItem())
+                .add(ModBlocks.YELLOW_WHITE_PEONY.asItem(), ModBlocks.PURPLE_WHITE_PEONY.asItem())
+                .add(ModBlocks.WU_HUA_LONG_YU_PEONY.asItem(), ModBlocks.MAUVE_PEONY.asItem());
 
         this.tag(CommonTags.Items.CHINESE_ROSE)
-                .add(ModBlocks.CHINESE_ROSE.asItem())
-                .add(ModBlocks.PINK_CHINESE_ROSE.asItem())
-                .add(ModBlocks.YELLOW_CHINESE_ROSE.asItem())
-                .add(ModBlocks.WHITE_CHINESE_ROSE.asItem())
-                .add(ModBlocks.RED_PINK_CHINESE_ROSE.asItem())
-                .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.asItem())
-                .add(ModBlocks.RED_WHITE_CHINESE_ROSE.asItem())
-                .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.asItem())
-                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.asItem());
+                .add(ModBlocks.CHINESE_ROSE.asItem(), ModBlocks.PINK_CHINESE_ROSE.asItem())
+                .add(ModBlocks.YELLOW_CHINESE_ROSE.asItem(), ModBlocks.WHITE_CHINESE_ROSE.asItem())
+                .add(ModBlocks.RED_PINK_CHINESE_ROSE.asItem(), ModBlocks.RED_YELLOW_CHINESE_ROSE.asItem())
+                .add(ModBlocks.RED_WHITE_CHINESE_ROSE.asItem(), ModBlocks.PINK_WHITE_CHINESE_ROSE.asItem())
+                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.asItem(), ModBlocks.BAOHUA_CHINESE_ROSE.asItem());
 
         this.tag(CommonTags.Items.CHRYSANTHEMUM)
                 .add(ModBlocks.CHRYSANTHEMUM.asItem())
@@ -392,6 +368,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.WHITE_DYE)
                 .add(ModBlocks.WHITE_CHRYSANTHEMUM.asItem())
                 .add(ModBlocks.WHITE_PEONY.asItem())
+                .add(ModBlocks.WHITE_CHINESE_ROSE.asItem(), ModBlocks.BAOHUA_CHINESE_ROSE.asItem())
                 .add(ModBlocks.WHITE_CAMELLIA.asItem())
                 .add(ModBlocks.WHITE_LOTUS.asItem())
                 .add(ModBlocks.WHITE_FOUNTAIN_GRASS.asItem())
@@ -426,10 +403,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.GREEN_PEONY.asItem());
 
         this.tag(ModTags.Items.GREEN_DYE)
-                .add(ModBlocks.SPRING_CYMBIDIUM.asItem())
-                .add(ModBlocks.SUMMER_CYMBIDIUM.asItem())
-                .add(ModBlocks.AUTUMN_CYMBIDIUM.asItem())
-                .add(ModBlocks.WINTER_CYMBIDIUM.asItem())
+                .add(ModBlocks.SPRING_CYMBIDIUM.asItem(), ModBlocks.SUMMER_CYMBIDIUM.asItem(), ModBlocks.AUTUMN_CYMBIDIUM.asItem())
                 .add(ModBlocks.LOTUS_LEAF.asItem())
                 .add(ModBlocks.MISCANTHUS.asItem());
 
@@ -437,7 +411,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.BLUE_PEONY.asItem());
 
         this.tag(ModTags.Items.BLACK_DYE)
+                .add(ModBlocks.WINTER_CYMBIDIUM.asItem())
                 .add(ModBlocks.INK_PEONY.asItem());
+
+        this.tag(ModTags.Items.FRAGRANT_CHINESE_ROSE)
+                .add(ModBlocks.CHINESE_ROSE.asItem(), ModBlocks.RED_PINK_CHINESE_ROSE.asItem(), ModBlocks.RED_YELLOW_CHINESE_ROSE.asItem())
+                .add(ModBlocks.RED_WHITE_CHINESE_ROSE.asItem(), ModBlocks.BAOHUA_CHINESE_ROSE.asItem());
 
         this.tag(Tags.Items.CROPS)
                 .addTag(CommonTags.Items.CROPS_LOTUS);

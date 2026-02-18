@@ -1124,6 +1124,8 @@ public class ModBlocks {
             registerBlock("pink_white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> YELLOW_WHITE_CHINESE_ROSE =
             registerBlock("yellow_white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> BAOHUA_CHINESE_ROSE =
+            registerBlock("baohua_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CRAPE_MYRTLE =
             registerBlock("crape_myrtle", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> COTTON_ROSE =
@@ -1155,6 +1157,8 @@ public class ModBlocks {
             BLOCKS.register("potted_pink_white_chinese_rose", () -> flowerPot(PINK_WHITE_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_YELLOW_WHITE_CHINESE_ROSE =
             BLOCKS.register("potted_yellow_white_chinese_rose", () -> flowerPot(YELLOW_WHITE_CHINESE_ROSE.get()));
+    public static final DeferredBlock<Block> POTTED_BAOHUA_CHINESE_ROSE =
+            BLOCKS.register("potted_baohua_chinese_rose", () -> flowerPot(BAOHUA_CHINESE_ROSE.get()));
 
     public static final DeferredBlock<Block> PEACH_PINK_PETALS =
             registerBlock("peach_pink_petals", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
