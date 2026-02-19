@@ -1170,8 +1170,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#*#")
                 .pattern(" # ")
                 .define('#', Items.STRING)
-                .define('*', ModTags.Items.FRAGRANT_CHINESE_ROSE)
-                .unlockedBy("has_chinese_rose", has(ModTags.Items.FRAGRANT_CHINESE_ROSE))
+                .define('*', CommonTags.Items.CHINESE_ROSE)
+                .unlockedBy("has_chinese_rose", has(CommonTags.Items.CHINESE_ROSE))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUGOSA_ROSE_XIANGNANG)
                 .pattern(" # ")

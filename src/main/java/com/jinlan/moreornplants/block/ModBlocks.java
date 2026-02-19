@@ -1121,9 +1121,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RED_WHITE_CHINESE_ROSE =
             registerBlock("red_white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PINK_WHITE_CHINESE_ROSE =
-            registerBlock("pink_white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("pink_white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> YELLOW_WHITE_CHINESE_ROSE =
-            registerBlock("yellow_white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("yellow_white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> BAOHUA_CHINESE_ROSE =
             registerBlock("baohua_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CRAPE_MYRTLE =

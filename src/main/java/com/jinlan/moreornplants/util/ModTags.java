@@ -66,8 +66,6 @@ public class ModTags {
         public static final TagKey<Item> LIGHT_BLUE_DYE = tag("light_blue_dye");
         public static final TagKey<Item> BLACK_DYE = tag("black_dye");
 
-        public static final TagKey<Item> FRAGRANT_CHINESE_ROSE = tag("fragrant_chinese_rose");
-
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));
         }

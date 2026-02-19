@@ -399,11 +399,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.CHARMING_RHODODENDRON.asItem());
 
         this.tag(ModTags.Items.LIME_DYE)
+                .add(ModBlocks.SPRING_CYMBIDIUM.asItem())
                 .add(ModBlocks.GREEN_CHRYSANTHEMUM.asItem())
                 .add(ModBlocks.GREEN_PEONY.asItem());
 
         this.tag(ModTags.Items.GREEN_DYE)
-                .add(ModBlocks.SPRING_CYMBIDIUM.asItem(), ModBlocks.SUMMER_CYMBIDIUM.asItem(), ModBlocks.AUTUMN_CYMBIDIUM.asItem())
+                .add(ModBlocks.SUMMER_CYMBIDIUM.asItem(), ModBlocks.AUTUMN_CYMBIDIUM.asItem())
                 .add(ModBlocks.LOTUS_LEAF.asItem())
                 .add(ModBlocks.MISCANTHUS.asItem());
 
@@ -413,10 +414,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.BLACK_DYE)
                 .add(ModBlocks.WINTER_CYMBIDIUM.asItem())
                 .add(ModBlocks.INK_PEONY.asItem());
-
-        this.tag(ModTags.Items.FRAGRANT_CHINESE_ROSE)
-                .add(ModBlocks.CHINESE_ROSE.asItem(), ModBlocks.RED_PINK_CHINESE_ROSE.asItem(), ModBlocks.RED_YELLOW_CHINESE_ROSE.asItem())
-                .add(ModBlocks.RED_WHITE_CHINESE_ROSE.asItem(), ModBlocks.BAOHUA_CHINESE_ROSE.asItem());
 
         this.tag(Tags.Items.CROPS)
                 .addTag(CommonTags.Items.CROPS_LOTUS);

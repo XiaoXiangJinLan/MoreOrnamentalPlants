@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-18T17:40:31.9069045	Recipes
+// 1.21.1	2026-02-19T12:04:07.9573719	Recipes
 a68cbdc6f63860c67f3dc9287300708552b98526 data/minecraft/advancement/recipes/misc/black_dye.json
 7cc611a4a6f86822fab2d57cae07732bf5e5e0f9 data/minecraft/advancement/recipes/misc/green_dye.json
 49383de36bba78b7442c11a223a5f17f3deaad6e data/minecraft/advancement/recipes/misc/light_blue_dye.json
@@ -166,7 +166,7 @@ c779e1151b730789d445c389843a4b3342dbc70d data/more_orn_plants/advancement/recipe
 f4463e7e1c639ac7882f5a4e8d5175199329bd33 data/more_orn_plants/advancement/recipes/food/lotus_seed_soup.json
 1aa2006b73ceeb0332237a6f6ff191686f40215b data/more_orn_plants/advancement/recipes/misc/apricot_xiangnang.json
 269a2f97d51cb7c2a434039f07a8c0e6e5a2bf0f data/more_orn_plants/advancement/recipes/misc/blue_peony.json
-266e03790a1520b661972e2cd539cf23cec9c0fc data/more_orn_plants/advancement/recipes/misc/chinese_rose_xiangnang.json
+d0268484eff99545459f11d67d8ef08b5bddf3e3 data/more_orn_plants/advancement/recipes/misc/chinese_rose_xiangnang.json
 7c7c1a91d757feb64268be217812cc6818dfbc01 data/more_orn_plants/advancement/recipes/misc/colorful_peony.json
 12523d3290361a51e30681350c6cb209f6e1c6d3 data/more_orn_plants/advancement/recipes/misc/crape_myrtle.json
 c3e28768746dc5aded55cbb0be317e76577d22ab data/more_orn_plants/advancement/recipes/misc/crape_myrtle_sapling.json
@@ -393,7 +393,7 @@ e6baa1e4b6adbab4955c7568c422b6f90f4f69cb data/more_orn_plants/recipe/chinese_par
 a15a2bacd5e27d5775c58485aaca439e8a34bb3e data/more_orn_plants/recipe/chinese_parasol_stairs.json
 973065ac31020336c77addfc109b6e034f4b9401 data/more_orn_plants/recipe/chinese_parasol_trapdoor.json
 7abbd5868de0638920652839ff76248fcabe6192 data/more_orn_plants/recipe/chinese_parasol_wood.json
-4590cef52659cb18a7a3b8f909ebd1508a39538f data/more_orn_plants/recipe/chinese_rose_xiangnang.json
+03dfc77cb73e161cfdaccf3589caa29c96552f96 data/more_orn_plants/recipe/chinese_rose_xiangnang.json
 d313c69a6032bc7a8fd645008e2b15fa7784d06a data/more_orn_plants/recipe/colorful_peony.json
 0ae5961c647176f314137a600161eb97dcfe9150 data/more_orn_plants/recipe/crabapple_boat.json
 4b5cad7215c6ed3aa2456e81db44835144ecb20d data/more_orn_plants/recipe/crabapple_button.json

@@ -19,7 +19,7 @@
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:zhao_pink_peony",
+                  "Name": "more_orn_plants:two_qiao_peony",
                   "Properties": {
                     "half": "lower"
                   }
@@ -28,21 +28,12 @@
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:two_qiao_peony",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 1
-              },
-              {
-                "data": {
                   "Name": "more_orn_plants:versicolor_peony",
                   "Properties": {
                     "half": "lower"
                   }
                 },
-                "weight": 1
+                "weight": 2
               }
             ]
           }
