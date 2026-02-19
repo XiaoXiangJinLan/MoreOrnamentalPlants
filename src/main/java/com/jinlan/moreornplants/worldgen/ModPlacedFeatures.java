@@ -134,7 +134,9 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PEONY_TREE_PENGLAI_PLACED = registerKey("peony_tree_penglai_placed");
     public static final ResourceKey<PlacedFeature> PEONY_TREE_GROVE_PLACED = registerKey("peony_tree_grove_placed");
     public static final ResourceKey<PlacedFeature> PEONY_MEADOWS = registerKey("peony_meadows_placed");
+    public static final ResourceKey<PlacedFeature> PEONY_MEADOWS_PINK = registerKey("peony_meadows_pink_placed");
     public static final ResourceKey<PlacedFeature> PEONY_PLACED = registerKey("peony_placed");
+    public static final ResourceKey<PlacedFeature> PEONY_PINK_PLACED = registerKey("peony_pink_placed");
     public static final ResourceKey<PlacedFeature> SMALL_FLOWERS_GROVE_PLACED = registerKey("small_flowers_grove_placed");
     public static final ResourceKey<PlacedFeature> TULIP_GROVE_PLACED = registerKey("tulip_grove_placed");
     public static final ResourceKey<PlacedFeature> TALL_FLOWERS_GROVE_PLACED = registerKey("tall_flowers_grove_placed");
@@ -488,8 +490,14 @@ public class ModPlacedFeatures {
         register(context, PEONY_MEADOWS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS),
                 List.of(CountPlacement.of(24),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PEONY_MEADOWS_PINK, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS_PINK),
+                List.of(CountPlacement.of(14),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_KEY),
                 List.of(CountPlacement.of(12),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PEONY_PINK_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_PINK_KEY),
+                List.of(CountPlacement.of(6),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, COTTON_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COTTON_ROSE_KEY),

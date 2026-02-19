@@ -6,36 +6,13 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:weighted_state_provider",
-            "entries": [
-              {
-                "data": {
-                  "Name": "more_orn_plants:chinese_rose",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:pink_chinese_rose",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:baohua_chinese_rose",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 1
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "more_orn_plants:zhao_pink_peony",
+              "Properties": {
+                "half": "lower"
               }
-            ]
+            }
           }
         }
       },
@@ -76,8 +53,8 @@
         }
       ]
     },
-    "tries": 16,
-    "xz_spread": 10,
+    "tries": 81,
+    "xz_spread": 8,
     "y_spread": 4
   }
 }

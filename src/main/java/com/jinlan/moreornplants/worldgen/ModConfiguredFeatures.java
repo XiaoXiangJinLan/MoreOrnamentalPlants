@@ -104,9 +104,11 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_GROVE = registerKey("chinese_rose_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_PLAIN = registerKey("chinese_rose_plain");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_KEY = registerKey("peony_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_PINK_KEY = registerKey("peony_pink_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_GROVE = registerKey("peony_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_PENGLAI = registerKey("peony_penglai");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_MEADOWS = registerKey("peony_meadows");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_MEADOWS_PINK = registerKey("peony_meadows_pink");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_TREE_GROVE = registerKey("peony_tree_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_TREE_PENGLAI = registerKey("peony_tree_penglai");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMELLIA_KEY = registerKey("camellia_key");
@@ -663,6 +665,7 @@ public class ModConfiguredFeatures {
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_PINK_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
@@ -907,6 +910,7 @@ public class ModConfiguredFeatures {
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_PINK_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
@@ -1005,9 +1009,15 @@ public class ModConfiguredFeatures {
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(Blocks.PEONY.defaultBlockState(), 1)
-                                        .add(ModBlocks.ZHAO_PINK_PEONY.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.TWO_QIAO_PEONY.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.VERSICOLOR_PEONY.get().defaultBlockState(), 1).build())),
+                                        .add(ModBlocks.TWO_QIAO_PEONY.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.VERSICOLOR_PEONY.get().defaultBlockState(), 2).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PEONY_MEADOWS_PINK, Feature.FLOWER, new RandomPatchConfiguration(81, 8, 4,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ZHAO_PINK_PEONY.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
@@ -1016,11 +1026,16 @@ public class ModConfiguredFeatures {
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(ModBlocks.PEONY.get().defaultBlockState(), 4)
                                         .add(ModBlocks.LIGHT_RED_PEONY.get().defaultBlockState(), 2)
                                         .add(ModBlocks.LIGHT_PURPLE_PEONY.get().defaultBlockState(), 2)
                                         .add(ModBlocks.LIGHT_YELLOW_PEONY.get().defaultBlockState(), 1)
                                         .add(ModBlocks.WHITE_PEONY.get().defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PEONY_PINK_KEY, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PEONY.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
@@ -1107,7 +1122,8 @@ public class ModConfiguredFeatures {
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(ModBlocks.CHINESE_ROSE.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.PINK_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
+                                        .add(ModBlocks.PINK_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),

@@ -10,6 +10,15 @@
             "entries": [
               {
                 "data": {
+                  "Name": "more_orn_plants:baohua_chinese_rose",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
                   "Name": "more_orn_plants:red_pink_chinese_rose",
                   "Properties": {
                     "half": "lower"

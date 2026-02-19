@@ -120,6 +120,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.INK_PEONY.get());
                         pOutput.accept(ModBlocks.BLUE_PEONY.get());
                         pOutput.accept(ModBlocks.GREEN_PEONY.get());
+                        pOutput.accept(ModBlocks.WU_HUA_LONG_YU_PEONY.get());
                         pOutput.accept(ModBlocks.COLORFUL_PEONY.get());
                         pOutput.accept(ModBlocks.LIGHT_COLORFUL_PEONY.get());
                         pOutput.accept(ModBlocks.INK_COLORFUL_PEONY.get());
@@ -127,7 +128,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PINK_WHITE_PEONY.get());
                         pOutput.accept(ModBlocks.YELLOW_WHITE_PEONY.get());
                         pOutput.accept(ModBlocks.PURPLE_WHITE_PEONY.get());
-                        pOutput.accept(ModBlocks.WU_HUA_LONG_YU_PEONY.get());
                         pOutput.accept(ModBlocks.MAUVE_PEONY.get());
                         pOutput.accept(ModBlocks.CAMELLIA.get());
                         pOutput.accept(ModBlocks.PINK_CAMELLIA.get());
@@ -171,6 +171,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WHITE_LOTUS.get());
                         pOutput.accept(ModBlocks.LOTUS_LEAF.get());
                         pOutput.accept(ModBlocks.CHINESE_ROSE.get());
+                        pOutput.accept(ModBlocks.BAOHUA_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.PINK_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.YELLOW_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.WHITE_CHINESE_ROSE.get());

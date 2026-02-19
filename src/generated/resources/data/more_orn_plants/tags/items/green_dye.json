@@ -1,6 +1,7 @@
 {
   "values": [
-    "#forge:cymbidium",
+    "more_orn_plants:summer_cymbidium",
+    "more_orn_plants:autumn_cymbidium",
     "more_orn_plants:lotus_leaf",
     "more_orn_plants:miscanthus"
   ]

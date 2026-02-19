@@ -693,7 +693,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
             Advancement flowersAsMatchmakers = Advancement.Builder.advancement()
                     .parent(flowerQueen)
                     .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.PINK_CHINESE_ROSE.get()),
+                            new ItemStack(ModBlocks.PINK_WHITE_CHINESE_ROSE.get()),
                             Component.translatable("advancement.moreornplants.flowers_as_matchmakers.title"),
                             Component.translatable("advancement.moreornplants.flowers_as_matchmakers.description"),
                             null,

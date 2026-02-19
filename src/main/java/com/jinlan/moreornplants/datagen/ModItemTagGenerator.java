@@ -583,7 +583,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().asItem());
+                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().asItem())
+                .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().asItem());
 
         this.tag(ForgeTags.Items.CHRYSANTHEMUM)
                 .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
@@ -702,6 +703,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.WHITE_PEONY.get().asItem())
                 .add(ModBlocks.WHITE_CAMELLIA.get().asItem())
+                .add(ModBlocks.WHITE_CHINESE_ROSE.get().asItem(), ModBlocks.BAOHUA_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.WHITE_LOTUS.get().asItem())
                 .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get().asItem())
                 .add(ModBlocks.DEWDROP_RHODODENDRON.get().asItem(), ModBlocks.GREAT_WHITE_RHODODENDRON.get().asItem())
@@ -738,11 +740,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.CHARMING_RHODODENDRON.get().asItem());
 
         this.tag(ModTags.Items.LIME_DYE)
+                .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
                 .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.GREEN_PEONY.get().asItem());
 
         this.tag(ModTags.Items.GREEN_DYE)
-                .addTag(ForgeTags.Items.CYMBIDIUM)
+                .add(ModBlocks.SUMMER_CYMBIDIUM.get().asItem(), ModBlocks.AUTUMN_CYMBIDIUM.get().asItem())
                 .add(ModBlocks.LOTUS_LEAF.get().asItem())
                 .add(ModBlocks.MISCANTHUS.get().asItem());
 
@@ -750,6 +753,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.BLUE_PEONY.get().asItem());
 
         this.tag(ModTags.Items.BLACK_DYE)
+                .add(ModBlocks.WINTER_CYMBIDIUM.get().asItem())
                 .add(ModBlocks.INK_PEONY.get().asItem());
 
         this.tag(ForgeTags.Items.VEGETABLES)

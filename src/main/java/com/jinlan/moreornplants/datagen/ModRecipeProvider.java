@@ -1164,8 +1164,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("#*#")
                 .pattern(" # ")
                 .define('#', Items.STRING)
-                .define('*', ModBlocks.CHINESE_ROSE.get())
-                .unlockedBy("has_chinese_rose", has(ModBlocks.CHINESE_ROSE.get()))
+                .define('*', ForgeTags.Items.CHINESE_ROSE)
+                .unlockedBy("has_chinese_rose", has(ForgeTags.Items.CHINESE_ROSE))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RUGOSA_ROSE_XIANGNANG.get())
                 .pattern(" # ")

@@ -6,7 +6,7 @@
       "item": "minecraft:string"
     },
     "*": {
-      "item": "more_orn_plants:chinese_rose"
+      "tag": "forge:chinese_rose"
     }
   },
   "pattern": [
