@@ -7,7 +7,6 @@ import com.jinlan.moreornplants.init.*;
 import com.jinlan.moreornplants.item.ModCreativeModeTabs;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.worldgen.biome.ModTerrablender;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
