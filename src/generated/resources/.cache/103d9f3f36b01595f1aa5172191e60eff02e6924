@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-19T20:02:43.3333519	Registries
+// 1.21.1	2026-02-19T20:44:11.626481	Registries
 eff3183bd984b6f94a1ddfe56a3ca0f0aecd8cab data/more_orn_plants/worldgen/biome/azalea_forest.json
 408f941492de8ceb2640d0a69a518890f327518c data/more_orn_plants/worldgen/biome/camellia_valley.json
 2438f59ad4d3ce3b02593de59ae16314ab6a635f data/more_orn_plants/worldgen/biome/chinaberry_woods.json
@@ -47,7 +47,7 @@ c26162ca688a413244f7240a47badd27358ccea3 data/more_orn_plants/worldgen/configure
 fb63200802c0e7688f0f2e035d9934fef819317f data/more_orn_plants/worldgen/configured_feature/chinese_azalea_tree_key.json
 b2d6d62e1712ace164b1ff850b9c639eda6788ae data/more_orn_plants/worldgen/configured_feature/chinese_rose_grove.json
 134cc608741b5fff03bc5d29ef5811900f0fdd11 data/more_orn_plants/worldgen/configured_feature/chinese_rose_key.json
-67cc70fe491a568bc75aa7a958b05559596cb075 data/more_orn_plants/worldgen/configured_feature/chinese_rose_penglai.json
+c8f016b29a13cc66919457eff5517c57abb28414 data/more_orn_plants/worldgen/configured_feature/chinese_rose_penglai.json
 f563c25a1d373ddb0e4966436cfe5a45b03d5245 data/more_orn_plants/worldgen/configured_feature/chinese_rose_plain.json
 eaee9f26b451ce33f438918d26ab72f4ff4b730e data/more_orn_plants/worldgen/configured_feature/chrysanthemum_forest.json
 2281a1caf89319547a8a4e14d19f1edcb7d119ec data/more_orn_plants/worldgen/configured_feature/chrysanthemum_grove.json

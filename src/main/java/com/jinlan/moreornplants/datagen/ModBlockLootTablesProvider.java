@@ -827,14 +827,90 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.MISCANTHUS.get(), block -> createDoublePlantWithSeedDrops(block, ModBlocks.MISCANTHUS.get()));
         this.add(ModBlocks.GOLDEN_MISCANTHUS.get(), block -> createDoublePlantWithSeedDrops(block, ModBlocks.GOLDEN_MISCANTHUS.get()));
 
+        this.dropSelf(ModBlocks.CUT_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_PEONY));
+        this.dropSelf(ModBlocks.CUT_LIGHT_PINK_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_LIGHT_PINK_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_LIGHT_PINK_PEONY));
+        this.dropSelf(ModBlocks.CUT_VIOLET_PINK_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_VIOLET_PINK_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_VIOLET_PINK_PEONY));
+        this.dropSelf(ModBlocks.CUT_RED_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_RED_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_RED_PEONY));
+        this.dropSelf(ModBlocks.CUT_LIGHT_RED_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_LIGHT_RED_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_LIGHT_RED_PEONY));
+        this.dropSelf(ModBlocks.CUT_INK_RED_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_INK_RED_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_INK_RED_PEONY));
+        this.dropSelf(ModBlocks.CUT_PURPLE_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_PURPLE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_PURPLE_PEONY));
+        this.dropSelf(ModBlocks.CUT_LIGHT_PURPLE_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_LIGHT_PURPLE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_LIGHT_PURPLE_PEONY));
+        this.dropSelf(ModBlocks.CUT_INK_PURPLE_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_INK_PURPLE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_INK_PURPLE_PEONY));
+        this.dropSelf(ModBlocks.CUT_YELLOW_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_YELLOW_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_YELLOW_PEONY));
+        this.dropSelf(ModBlocks.CUT_LIGHT_YELLOW_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_LIGHT_YELLOW_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_LIGHT_YELLOW_PEONY));
+        this.dropSelf(ModBlocks.CUT_OCHRE_YELLOW_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_OCHRE_YELLOW_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_OCHRE_YELLOW_PEONY));
+        this.dropSelf(ModBlocks.CUT_WHITE_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_WHITE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_WHITE_PEONY));
+        this.dropSelf(ModBlocks.CUT_INK_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_INK_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_INK_PEONY));
+        this.dropSelf(ModBlocks.CUT_BLUE_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_BLUE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_BLUE_PEONY));
+        this.dropSelf(ModBlocks.CUT_GREEN_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_GREEN_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_GREEN_PEONY));
+        this.dropSelf(ModBlocks.CUT_WU_HUA_LONG_YU_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_WU_HUA_LONG_YU_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_WU_HUA_LONG_YU_PEONY));
+        this.dropSelf(ModBlocks.CUT_MAUVE_PEONY.get());
+        this.add(ModBlocks.POTTED_CUT_MAUVE_PEONY.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_MAUVE_PEONY));
+        this.dropSelf(ModBlocks.CUT_CHINESE_ROSE.get());
+        this.add(ModBlocks.POTTED_CUT_CHINESE_ROSE.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_CHINESE_ROSE));
+        this.dropSelf(ModBlocks.CUT_PINK_ROSE.get());
+        this.add(ModBlocks.POTTED_CUT_PINK_ROSE.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_PINK_ROSE));
+        this.dropSelf(ModBlocks.CUT_YELLOW_ROSE.get());
+        this.add(ModBlocks.POTTED_CUT_YELLOW_ROSE.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_YELLOW_ROSE));
+        this.dropSelf(ModBlocks.CUT_WHITE_ROSE.get());
+        this.add(ModBlocks.POTTED_CUT_WHITE_ROSE.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_WHITE_ROSE));
+        this.dropSelf(ModBlocks.CUT_BAOHUA_CHINESE_ROSE.get());
+        this.add(ModBlocks.POTTED_CUT_BAOHUA_CHINESE_ROSE.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_BAOHUA_CHINESE_ROSE));
+        this.dropSelf(ModBlocks.CUT_WINTERSWEET.get());
+        this.add(ModBlocks.POTTED_CUT_WINTERSWEET.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_WINTERSWEET));
+        this.dropSelf(ModBlocks.CUT_COTTON_ROSE.get());
+        this.add(ModBlocks.POTTED_CUT_COTTON_ROSE.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_COTTON_ROSE));
+
         this.dropSelf(ModBlocks.MOTTLED_BAMBOO.get());
-        this.dropOther(ModBlocks.MOTTLED_BAMBOO_SAPLING.get(), ModItems.PEELED_BAMBOO_SHOOTS.get());
+        this.dropOther(ModBlocks.MOTTLED_BAMBOO_SAPLING.get(), ModItems.PEELED_BAMBOO_SHOOTS);
         this.add(ModBlocks.POTTED_MOTTLED_BAMBOO.get(),
-                createPotFlowerItemTable(ModBlocks.MOTTLED_BAMBOO.get()));
+                createPotFlowerItemTable(ModBlocks.MOTTLED_BAMBOO));
         this.dropSelf(ModBlocks.BLACK_BAMBOO.get());
-        this.dropOther(ModBlocks.BLACK_BAMBOO_SAPLING.get(), ModItems.PEELED_BAMBOO_SHOOTS.get());
+        this.dropOther(ModBlocks.BLACK_BAMBOO_SAPLING.get(), ModItems.PEELED_BAMBOO_SHOOTS);
         this.add(ModBlocks.POTTED_BLACK_BAMBOO.get(),
-                createPotFlowerItemTable(ModBlocks.BLACK_BAMBOO.get()));
+                createPotFlowerItemTable(ModBlocks.BLACK_BAMBOO));
 
         this.add(ModBlocks.LOTUS.get(), block -> createLotusDrops(ModBlocks.LOTUS.get()));
         this.add(ModBlocks.WHITE_LOTUS.get(), block -> createLotusDrops(ModBlocks.WHITE_LOTUS.get()));

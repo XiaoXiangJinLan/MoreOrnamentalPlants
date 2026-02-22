@@ -665,6 +665,7 @@ public class ModConfiguredFeatures {
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_PINK_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)

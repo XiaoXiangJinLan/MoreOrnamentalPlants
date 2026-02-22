@@ -912,7 +912,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.LIGHT_RED_PEONY), has(ModBlocks.LIGHT_RED_PEONY))
                 .unlockedBy(getHasName(ModBlocks.INK_RED_PEONY), has(ModBlocks.INK_RED_PEONY))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PURPLE_PEONY, 3)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VIOLET_PEONY, 3)
                 .requires(ModBlocks.PURPLE_PEONY)
                 .requires(ModBlocks.LIGHT_PURPLE_PEONY)
                 .requires(ModBlocks.INK_PURPLE_PEONY)

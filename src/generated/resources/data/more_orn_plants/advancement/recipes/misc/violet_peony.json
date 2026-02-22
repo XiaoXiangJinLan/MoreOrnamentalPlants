@@ -33,7 +33,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_orn_plants:purple_peony"
+        "recipe": "more_orn_plants:violet_peony"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -48,7 +48,7 @@
   ],
   "rewards": {
     "recipes": [
-      "more_orn_plants:purple_peony"
+      "more_orn_plants:violet_peony"
     ]
   }
 }
