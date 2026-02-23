@@ -100,6 +100,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_CHRYSANTHEMUM_KEY = registerKey("purple_chrysanthemum_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CHRYSANTHEMUM_KEY = registerKey("pink_chrysanthemum_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_KEY = registerKey("chinese_rose_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_WOODS_KEY = registerKey("chinese_rose_woods_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_PENGLAI = registerKey("chinese_rose_penglai");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_GROVE = registerKey("chinese_rose_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_PLAIN = registerKey("chinese_rose_plain");
@@ -145,6 +146,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> AUTUMN_CYMBIDIUM_PLAIN = registerKey("autumn_cymbidium_plain");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WINTER_CYMBIDIUM_FOREST = registerKey("winter_cymbidium_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LILY_OF_THE_VALLEY_FOREST = registerKey("lily_of_the_valley_forest");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LILY_OF_THE_VALLEY_WOODS = registerKey("lily_of_the_valley_woods");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_ORCHID_FOREST = registerKey("blue_orchid_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_KEY = registerKey("pink_camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_GROVE = registerKey("tall_flowers_grove");
@@ -1096,12 +1098,33 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
+        register(context, CHINESE_ROSE_WOODS_KEY, Feature.FLOWER, new RandomPatchConfiguration(64, 6, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.CHINESE_ROSE.get().defaultBlockState(), 5)
+                                        .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.PINK_CHINESE_ROSE.get().defaultBlockState(), 3)
+                                        .add(ModBlocks.YELLOW_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.WHITE_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+
         register(context, FOUNTAIN_GRASS_WOODS, Feature.FLOWER, new RandomPatchConfiguration(32, 6, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(ModBlocks.FOUNTAIN_GRASS.get().defaultBlockState(), 2)
                                         .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get().defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+
+        register(context, LILY_OF_THE_VALLEY_WOODS, Feature.FLOWER, new RandomPatchConfiguration(24, 6, 4,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.LILY_OF_THE_VALLEY)),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));

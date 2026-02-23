@@ -1,5 +1,7 @@
 {
   "values": [
-    "minecraft:old_growth_spruce_taiga"
+    "minecraft:old_growth_spruce_taiga",
+    "more_orn_plants:sweetgum_woods",
+    "more_orn_plants:ginkgo_forest"
   ]
 }

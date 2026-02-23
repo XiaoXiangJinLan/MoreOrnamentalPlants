@@ -1,6 +1,6 @@
 This mod adds a variety of ornamental plants to Minecraft, most of which are traditional plants from the mysterious 
 East—China. These include famous flowering trees such as Mei (Plum Blossom) and Crabapple, colorful foliage trees like 
-Ginkgo, as well as renowned flowers like Chinese Rose, Herbaceous Peony, and Camellia. The mod also introduces twenty-two 
+Ginkgo, as well as renowned flowers like Chinese Rose, Herbaceous Peony, and Camellia. The mod also introduces twenty-seven 
 new biomes and six new structures, awaiting your exploration!
 
 New Trees
@@ -76,7 +76,7 @@ New Fuels
 • Golden Miscanthus – Burns for 600 game ticks.
 
 本模组将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠；彩叶树种：银杏；以及著名花卉月季、芍药、茶花等。
-本模组还添加了二十二个全新的生物群系、六个结构，等待你来探索！
+本模组还添加了二十七个全新的生物群系、六个结构，等待你来探索！
 
 ## 新树种
 梅花、海棠、杏花、桃花、梨花、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。

@@ -13,6 +13,7 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_PENGLAI;
     public static final ModConfigSpec.BooleanValue ENABLE_MOUNT_MEI;
     public static final ModConfigSpec.BooleanValue ENABLE_FRAGRANT_SNOW_SEA;
+    public static final ModConfigSpec.BooleanValue ENABLE_PEONY_SEA;
     public static final ModConfigSpec.BooleanValue ENABLE_PEONY_MEADOWS;
     public static final ModConfigSpec.BooleanValue ENABLE_EVERGREEN_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_FLOWERS_GROVE;
@@ -26,9 +27,13 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_YUNMENG_MARSH;
     public static final ModConfigSpec.BooleanValue ENABLE_DESERT_POPLAR_WOODS;
     public static final ModConfigSpec.BooleanValue ENABLE_CHINESE_ROSE_FIELDS;
+    public static final ModConfigSpec.BooleanValue ENABLE_SWEETGUM_WOODS;
     public static final ModConfigSpec.BooleanValue ENABLE_CHINABERRY_WOODS;
+    public static final ModConfigSpec.BooleanValue ENABLE_SNOW_WOODS;
     public static final ModConfigSpec.BooleanValue ENABLE_MISCANTHUS_FIELDS;
+    public static final ModConfigSpec.BooleanValue ENABLE_GINKGO_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_CROPS_GREEN;
+    public static final ModConfigSpec.BooleanValue ENABLE_PURPLE_CLOUD;
     public static final ModConfigSpec.BooleanValue ENABLE_TEN_MILE_GALLERY;
 
     // 区域权重配置
@@ -54,6 +59,9 @@ public class ModBiomeConfig {
         ENABLE_FRAGRANT_SNOW_SEA = BUILDER
                 .comment("Enable Fragrant Snow Sea biome generation")
                 .define("enableFragrantSnowSea", true);
+        ENABLE_PEONY_SEA = BUILDER
+                .comment("Enable Peony Sea biome generation")
+                .define("enablePeonySea", true);
         ENABLE_PEONY_MEADOWS = BUILDER
                 .comment("Enable Peony Meadows biome generation")
                 .define("enablePeonyMeadows", true);
@@ -93,15 +101,27 @@ public class ModBiomeConfig {
         ENABLE_CHINESE_ROSE_FIELDS = BUILDER
                 .comment("Enable Chinese Rose Fields biome generation")
                 .define("enableChineseRoseFields", true);
+        ENABLE_SWEETGUM_WOODS = BUILDER
+                .comment("Enable Sweetgum Woods biome generation")
+                .define("enableSweetgumWoods", true);
         ENABLE_CHINABERRY_WOODS = BUILDER
                 .comment("Enable Chinaberry Woods biome generation")
                 .define("enableChinaberryWoods", true);
+        ENABLE_SNOW_WOODS = BUILDER
+                .comment("Enable Snow Woods biome generation")
+                .define("enableSnowWoods", true);
         ENABLE_MISCANTHUS_FIELDS = BUILDER
                 .comment("Enable Miscanthus Fields biome generation")
                 .define("enableMiscanthusFields", true);
+        ENABLE_GINKGO_FOREST = BUILDER
+                .comment("Enable Ginkgo Forest biome generation")
+                .define("enableGinkgoForest", true);
         ENABLE_CROPS_GREEN = BUILDER
                 .comment("Enable Crops Green biome generation")
                 .define("enableCropsGreen", true);
+        ENABLE_PURPLE_CLOUD = BUILDER
+                .comment("Enable Purple Cloud biome generation")
+                .define("enablePurpleCloud", true);
         ENABLE_TEN_MILE_GALLERY = BUILDER
                 .comment("Enable Ten-Mile Gallery biome generation")
                 .define("enableTenMileGallery", true);

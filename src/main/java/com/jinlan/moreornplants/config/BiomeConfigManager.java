@@ -4,6 +4,7 @@ public class BiomeConfigManager {
     public static boolean isBiomeEnabled(String biomeName) {
         return switch (biomeName) {
             case "red_mei_forest" -> ModBiomeConfig.ENABLE_RED_MEI_FOREST.get();
+            case "peony_sea" -> ModBiomeConfig.ENABLE_PEONY_SEA.get();
             case "peony_meadows" -> ModBiomeConfig.ENABLE_PEONY_MEADOWS.get();
             case "evergreen_forest" -> ModBiomeConfig.ENABLE_EVERGREEN_FOREST.get();
             case "flowers_grove" -> ModBiomeConfig.ENABLE_FLOWERS_GROVE.get();
@@ -14,9 +15,13 @@ public class BiomeConfigManager {
             case "furong_guo" -> ModBiomeConfig.ENABLE_FURONG_GUO.get();
             case "desert_poplar_woods" -> ModBiomeConfig.ENABLE_DESERT_POPLAR_WOODS.get();
             case "chinese_rose_fields" -> ModBiomeConfig.ENABLE_CHINESE_ROSE_FIELDS.get();
+            case "sweetgum_woods" -> ModBiomeConfig.ENABLE_SWEETGUM_WOODS.get();
             case "chinaberry_woods" -> ModBiomeConfig.ENABLE_CHINABERRY_WOODS.get();
+            case "snow_woods" -> ModBiomeConfig.ENABLE_SNOW_WOODS.get();
             case "miscanthus_fields" -> ModBiomeConfig.ENABLE_MISCANTHUS_FIELDS.get();
+            case "ginkgo_forest" -> ModBiomeConfig.ENABLE_GINKGO_FOREST.get();
             case "crops_green" -> ModBiomeConfig.ENABLE_CROPS_GREEN.get();
+            case "purple_cloud" -> ModBiomeConfig.ENABLE_PURPLE_CLOUD.get();
             case "spring_river" -> ModBiomeConfig.ENABLE_SPRING_RIVER.get();
             case "penglai" -> ModBiomeConfig.ENABLE_PENGLAI.get();
             case "mount_mei" -> ModBiomeConfig.ENABLE_MOUNT_MEI.get();
