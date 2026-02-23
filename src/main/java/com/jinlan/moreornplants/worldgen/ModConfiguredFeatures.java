@@ -1006,7 +1006,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
-        register(context, PEONY_MEADOWS, Feature.FLOWER, new RandomPatchConfiguration(81, 8, 4,
+        register(context, PEONY_MEADOWS, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1017,7 +1017,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, PEONY_MEADOWS_PINK, Feature.FLOWER, new RandomPatchConfiguration(81, 8, 4,
+        register(context, PEONY_MEADOWS_PINK, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ZHAO_PINK_PEONY.get())),
                         BlockPredicate.allOf(
@@ -1098,7 +1098,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
-        register(context, CHINESE_ROSE_WOODS_KEY, Feature.FLOWER, new RandomPatchConfiguration(64, 6, 3,
+        register(context, CHINESE_ROSE_WOODS_KEY, Feature.FLOWER, new RandomPatchConfiguration(56, 6, 3,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()

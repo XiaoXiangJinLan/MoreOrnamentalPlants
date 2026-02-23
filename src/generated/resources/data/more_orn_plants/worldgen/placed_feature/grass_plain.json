@@ -3,8 +3,8 @@
   "placement": [
     {
       "type": "minecraft:noise_threshold_count",
-      "above_noise": 16,
-      "below_noise": 10,
+      "above_noise": 18,
+      "below_noise": 12,
       "noise_level": -0.8
     },
     {
