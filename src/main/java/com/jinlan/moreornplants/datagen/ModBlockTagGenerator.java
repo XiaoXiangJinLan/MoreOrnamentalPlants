@@ -153,7 +153,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.POTTED_PINK_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.POTTED_MOTTLED_BAMBOO.get(), ModBlocks.POTTED_BLACK_BAMBOO.get(), ModBlocks.POTTED_BAMBOO_STICK.get());
+                .add(ModBlocks.POTTED_MOTTLED_BAMBOO.get(), ModBlocks.POTTED_BLACK_BAMBOO.get(), ModBlocks.POTTED_BAMBOO_STICK.get())
+                .add(ModBlocks.POTTED_CUT_PEONY.get(), ModBlocks.POTTED_CUT_LIGHT_PINK_PEONY.get(), ModBlocks.POTTED_CUT_VIOLET_PINK_PEONY.get())
+                .add(ModBlocks.POTTED_CUT_RED_PEONY.get(), ModBlocks.POTTED_CUT_LIGHT_RED_PEONY.get(), ModBlocks.POTTED_CUT_INK_RED_PEONY.get())
+                .add(ModBlocks.POTTED_CUT_PURPLE_PEONY.get(), ModBlocks.POTTED_CUT_LIGHT_PURPLE_PEONY.get(), ModBlocks.POTTED_CUT_INK_PURPLE_PEONY.get())
+                .add(ModBlocks.POTTED_CUT_YELLOW_PEONY.get(), ModBlocks.POTTED_CUT_LIGHT_YELLOW_PEONY.get(), ModBlocks.POTTED_CUT_OCHRE_YELLOW_PEONY.get())
+                .add(ModBlocks.POTTED_CUT_WHITE_PEONY.get(), ModBlocks.POTTED_CUT_INK_PEONY.get(), ModBlocks.POTTED_CUT_BLUE_PEONY.get())
+                .add(ModBlocks.POTTED_CUT_GREEN_PEONY.get(), ModBlocks.POTTED_CUT_WU_HUA_LONG_YU_PEONY.get(), ModBlocks.POTTED_CUT_MAUVE_PEONY.get())
+                .add(ModBlocks.POTTED_CUT_CHINESE_ROSE.get(), ModBlocks.POTTED_CUT_PINK_ROSE.get(), ModBlocks.POTTED_CUT_YELLOW_ROSE.get())
+                .add(ModBlocks.POTTED_CUT_WHITE_ROSE.get(), ModBlocks.POTTED_CUT_BAOHUA_CHINESE_ROSE.get(), ModBlocks.POTTED_CUT_COTTON_ROSE.get())
+                .add(ModBlocks.POTTED_CUT_WINTERSWEET.get());
 
         this.tag(BlockTags.FLOWERS)
                 .addTag(BlockTags.SMALL_FLOWERS)
@@ -783,7 +792,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GREAT_WHITE_RHODODENDRON.get())
                 .add(ModBlocks.PURPLE_RHODODENDRON.get())
                 .add(ModBlocks.PINK_RHODODENDRON.get())
-                .add(ModBlocks.CHINESE_AZALEA.get());
+                .add(ModBlocks.CHINESE_AZALEA.get())
+                .add(ModBlocks.CUT_PEONY.get(), ModBlocks.CUT_LIGHT_PINK_PEONY.get(), ModBlocks.CUT_VIOLET_PINK_PEONY.get())
+                .add(ModBlocks.CUT_RED_PEONY.get(), ModBlocks.CUT_LIGHT_RED_PEONY.get(), ModBlocks.CUT_INK_RED_PEONY.get())
+                .add(ModBlocks.CUT_PURPLE_PEONY.get(), ModBlocks.CUT_LIGHT_PURPLE_PEONY.get(), ModBlocks.CUT_INK_PURPLE_PEONY.get())
+                .add(ModBlocks.CUT_YELLOW_PEONY.get(), ModBlocks.CUT_LIGHT_YELLOW_PEONY.get(), ModBlocks.CUT_OCHRE_YELLOW_PEONY.get())
+                .add(ModBlocks.CUT_WHITE_PEONY.get(), ModBlocks.CUT_INK_PEONY.get(), ModBlocks.CUT_BLUE_PEONY.get())
+                .add(ModBlocks.CUT_GREEN_PEONY.get(), ModBlocks.CUT_WU_HUA_LONG_YU_PEONY.get(), ModBlocks.CUT_MAUVE_PEONY.get())
+                .add(ModBlocks.CUT_CHINESE_ROSE.get(), ModBlocks.CUT_PINK_ROSE.get(), ModBlocks.CUT_YELLOW_ROSE.get())
+                .add(ModBlocks.CUT_WHITE_ROSE.get(), ModBlocks.CUT_BAOHUA_CHINESE_ROSE.get(), ModBlocks.CUT_COTTON_ROSE.get())
+                .add(ModBlocks.CUT_WINTERSWEET.get());
 
         this.tag(BlockTags.TALL_FLOWERS)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get())

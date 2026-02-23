@@ -349,6 +349,32 @@ public class ModItemModelProvider extends ItemModelProvider {
         tallCrossItem(ModBlocks.CRAPE_MYRTLE);
         tallCrossItem(ModBlocks.COTTON_ROSE);
 
+        flowerItem(ModBlocks.CUT_PEONY);
+        flowerItem(ModBlocks.CUT_LIGHT_PINK_PEONY);
+        flowerItem(ModBlocks.CUT_VIOLET_PINK_PEONY);
+        flowerItem(ModBlocks.CUT_RED_PEONY);
+        flowerItem(ModBlocks.CUT_LIGHT_RED_PEONY);
+        flowerItem(ModBlocks.CUT_INK_RED_PEONY);
+        flowerItem(ModBlocks.CUT_PURPLE_PEONY);
+        flowerItem(ModBlocks.CUT_LIGHT_PURPLE_PEONY);
+        flowerItem(ModBlocks.CUT_INK_PURPLE_PEONY);
+        flowerItem(ModBlocks.CUT_YELLOW_PEONY);
+        flowerItem(ModBlocks.CUT_LIGHT_YELLOW_PEONY);
+        flowerItem(ModBlocks.CUT_OCHRE_YELLOW_PEONY);
+        flowerItem(ModBlocks.CUT_WHITE_PEONY);
+        flowerItem(ModBlocks.CUT_INK_PEONY);
+        flowerItem(ModBlocks.CUT_BLUE_PEONY);
+        flowerItem(ModBlocks.CUT_GREEN_PEONY);
+        flowerItem(ModBlocks.CUT_WU_HUA_LONG_YU_PEONY);
+        flowerItem(ModBlocks.CUT_MAUVE_PEONY);
+        flowerItem(ModBlocks.CUT_CHINESE_ROSE);
+        flowerItem(ModBlocks.CUT_PINK_ROSE);
+        flowerItem(ModBlocks.CUT_YELLOW_ROSE);
+        flowerItem(ModBlocks.CUT_WHITE_ROSE);
+        flowerItem(ModBlocks.CUT_BAOHUA_CHINESE_ROSE);
+        flowerItem(ModBlocks.CUT_WINTERSWEET);
+        flowerItem(ModBlocks.CUT_COTTON_ROSE);
+
         simplerBlockItem(ModBlocks.MOTTLED_BAMBOO);
         simplerBlockItem(ModBlocks.BLACK_BAMBOO);
         simpleItem(ModItems.PEELED_BAMBOO_SHOOTS);

@@ -11,5 +11,6 @@ public class ModVillagerTypes {
         VillagerType.BY_BIOME.put(ModBiomes.FRAGRANT_SNOW_SEA, VillagerType.SNOW);
         VillagerType.BY_BIOME.put(ModBiomes.FURONG_GUO, VillagerType.SWAMP);
         VillagerType.BY_BIOME.put(ModBiomes.YUNMENG_MARSH, VillagerType.SWAMP);
+        VillagerType.BY_BIOME.put(ModBiomes.SWEETGUM_WOODS, VillagerType.TAIGA);
     }
 }

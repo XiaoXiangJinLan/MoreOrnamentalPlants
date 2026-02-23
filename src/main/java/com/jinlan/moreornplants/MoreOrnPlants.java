@@ -13,12 +13,19 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -29,6 +36,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+import java.util.Map;
+
 import static com.jinlan.moreornplants.config.ModBiomeConfig.SPEC;
 
 @Mod(MoreOrnPlants.MOD_ID)
@@ -36,6 +45,8 @@ public class MoreOrnPlants
 {
     public static final String MOD_ID = "more_orn_plants";
     public static final Logger LOGGER = LogUtils.getLogger();
+
+    private Map<Item, Item> cuttingMap;
 
     public MoreOrnPlants(FMLJavaModLoadingContext context)
     {
@@ -344,6 +355,8 @@ public class MoreOrnPlants
 
             ComposterBlock.COMPOSTABLES.put(ModBlocks.MISCANTHUS.get().asItem(), 0.85F);
         });
+
+        initCuttingMap();
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
@@ -355,6 +368,71 @@ public class MoreOrnPlants
     public void onServerStarting(ServerStartingEvent event)
     {
         LOGGER.info("HELLO from server starting");
+    }
+
+    private void initCuttingMap() {
+        // 使用 Map.ofEntries 构建不可变映射（或 HashMap 亦可）
+        cuttingMap = Map.ofEntries(
+                Map.entry(ModBlocks.CHINESE_ROSE.get().asItem(), ModBlocks.CUT_CHINESE_ROSE.get().asItem()),
+                Map.entry(ModBlocks.PINK_CHINESE_ROSE.get().asItem(), ModBlocks.CUT_PINK_ROSE.get().asItem()),
+                Map.entry(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem(), ModBlocks.CUT_YELLOW_ROSE.get().asItem()),
+                Map.entry(ModBlocks.WHITE_CHINESE_ROSE.get().asItem(), ModBlocks.CUT_WHITE_ROSE.get().asItem()),
+                Map.entry(ModBlocks.BAOHUA_CHINESE_ROSE.get().asItem(), ModBlocks.CUT_BAOHUA_CHINESE_ROSE.get().asItem()),
+                Map.entry(ModBlocks.COTTON_ROSE.get().asItem(), ModBlocks.CUT_COTTON_ROSE.get().asItem()),
+                Map.entry(ModBlocks.PEONY.get().asItem(), ModBlocks.CUT_PEONY.get().asItem()),
+                Map.entry(ModBlocks.LIGHT_PINK_PEONY.get().asItem(), ModBlocks.CUT_LIGHT_PINK_PEONY.get().asItem()),
+                Map.entry(ModBlocks.VIOLET_PINK_PEONY.get().asItem(), ModBlocks.CUT_VIOLET_PINK_PEONY.get().asItem()),
+                Map.entry(ModBlocks.RED_PEONY.get().asItem(), ModBlocks.CUT_RED_PEONY.get().asItem()),
+                Map.entry(ModBlocks.LIGHT_RED_PEONY.get().asItem(), ModBlocks.CUT_LIGHT_RED_PEONY.get().asItem()),
+                Map.entry(ModBlocks.INK_RED_PEONY.get().asItem(), ModBlocks.CUT_INK_RED_PEONY.get().asItem()),
+                Map.entry(ModBlocks.PURPLE_PEONY.get().asItem(), ModBlocks.CUT_PURPLE_PEONY.get().asItem()),
+                Map.entry(ModBlocks.LIGHT_PURPLE_PEONY.get().asItem(), ModBlocks.CUT_LIGHT_PURPLE_PEONY.get().asItem()),
+                Map.entry(ModBlocks.INK_PURPLE_PEONY.get().asItem(), ModBlocks.CUT_INK_PURPLE_PEONY.get().asItem()),
+                Map.entry(ModBlocks.YELLOW_PEONY.get().asItem(), ModBlocks.CUT_YELLOW_PEONY.get().asItem()),
+                Map.entry(ModBlocks.LIGHT_YELLOW_PEONY.get().asItem(), ModBlocks.CUT_LIGHT_YELLOW_PEONY.get().asItem()),
+                Map.entry(ModBlocks.OCHRE_YELLOW_PEONY.get().asItem(), ModBlocks.CUT_OCHRE_YELLOW_PEONY.get().asItem()),
+                Map.entry(ModBlocks.WHITE_PEONY.get().asItem(), ModBlocks.CUT_WHITE_PEONY.get().asItem()),
+                Map.entry(ModBlocks.INK_PEONY.get().asItem(), ModBlocks.CUT_INK_PEONY.get().asItem()),
+                Map.entry(ModBlocks.BLUE_PEONY.get().asItem(), ModBlocks.CUT_BLUE_PEONY.get().asItem()),
+                Map.entry(ModBlocks.GREEN_PEONY.get().asItem(), ModBlocks.CUT_GREEN_PEONY.get().asItem()),
+                Map.entry(ModBlocks.WU_HUA_LONG_YU_PEONY.get().asItem(), ModBlocks.CUT_WU_HUA_LONG_YU_PEONY.get().asItem()),
+                Map.entry(ModBlocks.MAUVE_PEONY.get().asItem(), ModBlocks.CUT_MAUVE_PEONY.get().asItem()),
+                Map.entry(ModBlocks.WINTERSWEET.get().asItem(), ModBlocks.CUT_WINTERSWEET.get().asItem())
+        );
+    }
+
+    @SubscribeEvent
+    public void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
+        Player player = event.getEntity();
+        Level level = event.getLevel();
+
+        // 只在服务端执行
+        if (level.isClientSide) return;
+
+        ItemStack mainHand = player.getMainHandItem();
+        ItemStack offHand = player.getOffhandItem();
+
+        // 检查主手剪刀，副手粉色月季
+        if (!mainHand.is(Items.SHEARS)) return;
+
+        Item cutItem = cuttingMap.get(offHand.getItem());
+        if (cutItem != null) {
+            ItemStack result = new ItemStack(cutItem, 4);
+            // 非创造模式下消耗物品和耐久
+            if (!player.isCreative()) {
+                offHand.shrink(1);
+                mainHand.hurtAndBreak(1, player, (entity) -> {});
+            }
+
+            // 给予切花月季，背包满则掉落
+            if (!player.getInventory().add(result)) {
+                player.drop(result, false);
+            }
+
+            // 取消事件，防止其他逻辑干扰
+            event.setCanceled(true);
+            event.setCancellationResult(InteractionResult.SUCCESS);
+        }
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

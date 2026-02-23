@@ -1161,6 +1161,108 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_BAOHUA_CHINESE_ROSE =
             BLOCKS.register("potted_baohua_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.BAOHUA_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
+    public static final RegistryObject<Block> CUT_PEONY =
+            registerBlock("cut_peony", () -> cutFlower(ModBlocks.PEONY.get()));
+    public static final RegistryObject<Block> CUT_LIGHT_PINK_PEONY =
+            registerBlock("cut_light_pink_peony", () -> cutFlower(ModBlocks.LIGHT_PINK_PEONY.get()));
+    public static final RegistryObject<Block> CUT_VIOLET_PINK_PEONY =
+            registerBlock("cut_violet_pink_peony", () -> cutFlower(ModBlocks.VIOLET_PINK_PEONY.get()));
+    public static final RegistryObject<Block> CUT_RED_PEONY =
+            registerBlock("cut_red_peony", () -> cutFlower(ModBlocks.RED_PEONY.get()));
+    public static final RegistryObject<Block> CUT_LIGHT_RED_PEONY =
+            registerBlock("cut_light_red_peony", () -> cutFlower(ModBlocks.LIGHT_RED_PEONY.get()));
+    public static final RegistryObject<Block> CUT_INK_RED_PEONY =
+            registerBlock("cut_ink_red_peony", () -> cutFlower(ModBlocks.INK_RED_PEONY.get()));
+    public static final RegistryObject<Block> CUT_PURPLE_PEONY =
+            registerBlock("cut_purple_peony", () -> cutFlower(ModBlocks.PURPLE_PEONY.get()));
+    public static final RegistryObject<Block> CUT_LIGHT_PURPLE_PEONY =
+            registerBlock("cut_light_purple_peony", () -> cutFlower(ModBlocks.LIGHT_PURPLE_PEONY.get()));
+    public static final RegistryObject<Block> CUT_INK_PURPLE_PEONY =
+            registerBlock("cut_ink_purple_peony", () -> cutFlower(ModBlocks.INK_PURPLE_PEONY.get()));
+    public static final RegistryObject<Block> CUT_YELLOW_PEONY =
+            registerBlock("cut_yellow_peony", () -> cutFlower(ModBlocks.YELLOW_PEONY.get()));
+    public static final RegistryObject<Block> CUT_LIGHT_YELLOW_PEONY =
+            registerBlock("cut_light_yellow_peony", () -> cutFlower(ModBlocks.LIGHT_YELLOW_PEONY.get()));
+    public static final RegistryObject<Block> CUT_OCHRE_YELLOW_PEONY =
+            registerBlock("cut_ochre_yellow_peony", () -> cutFlower(ModBlocks.OCHRE_YELLOW_PEONY.get()));
+    public static final RegistryObject<Block> CUT_WHITE_PEONY =
+            registerBlock("cut_white_peony", () -> cutFlower(ModBlocks.WHITE_PEONY.get()));
+    public static final RegistryObject<Block> CUT_INK_PEONY =
+            registerBlock("cut_ink_peony", () -> cutFlower(ModBlocks.INK_PEONY.get()));
+    public static final RegistryObject<Block> CUT_BLUE_PEONY =
+            registerBlock("cut_blue_peony", () -> cutFlower(ModBlocks.BLUE_PEONY.get()));
+    public static final RegistryObject<Block> CUT_GREEN_PEONY =
+            registerBlock("cut_green_peony", () -> cutFlower(ModBlocks.GREEN_PEONY.get()));
+    public static final RegistryObject<Block> CUT_WU_HUA_LONG_YU_PEONY =
+            registerBlock("cut_wu_hua_long_yu_peony", () -> cutFlower(ModBlocks.WU_HUA_LONG_YU_PEONY.get()));
+    public static final RegistryObject<Block> CUT_MAUVE_PEONY =
+            registerBlock("cut_mauve_peony", () -> cutFlower(ModBlocks.MAUVE_PEONY.get()));
+    public static final RegistryObject<Block> CUT_CHINESE_ROSE =
+            registerBlock("cut_chinese_rose", () -> cutFlower(ModBlocks.CHINESE_ROSE.get()));
+    public static final RegistryObject<Block> CUT_PINK_ROSE =
+            registerBlock("cut_pink_rose", () -> cutFlower(ModBlocks.PINK_CHINESE_ROSE.get()));
+    public static final RegistryObject<Block> CUT_YELLOW_ROSE =
+            registerBlock("cut_yellow_rose", () -> cutFlower(ModBlocks.YELLOW_CHINESE_ROSE.get()));
+    public static final RegistryObject<Block> CUT_WHITE_ROSE =
+            registerBlock("cut_white_rose", () -> cutFlower(ModBlocks.WHITE_CHINESE_ROSE.get()));
+    public static final RegistryObject<Block> CUT_BAOHUA_CHINESE_ROSE =
+            registerBlock("cut_baohua_chinese_rose", () -> cutFlower(ModBlocks.BAOHUA_CHINESE_ROSE.get()));
+    public static final RegistryObject<Block> CUT_WINTERSWEET =
+            registerBlock("cut_wintersweet", () -> cutFlower(ModBlocks.WINTERSWEET.get()));
+    public static final RegistryObject<Block> CUT_COTTON_ROSE =
+            registerBlock("cut_cotton_rose", () -> cutFlower(ModBlocks.COTTON_ROSE.get()));
+
+    public static final RegistryObject<Block> POTTED_CUT_PEONY =
+            BLOCKS.register("potted_cut_peony", () -> flowerPot(CUT_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_LIGHT_PINK_PEONY =
+            BLOCKS.register("potted_cut_light_pink_peony", () -> flowerPot(CUT_LIGHT_PINK_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_VIOLET_PINK_PEONY =
+            BLOCKS.register("potted_cut_violet_pink_peony", () -> flowerPot(CUT_VIOLET_PINK_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_RED_PEONY =
+            BLOCKS.register("potted_cut_red_peony", () -> flowerPot(CUT_RED_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_LIGHT_RED_PEONY =
+            BLOCKS.register("potted_cut_light_red_peony", () -> flowerPot(CUT_LIGHT_RED_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_INK_RED_PEONY =
+            BLOCKS.register("potted_cut_ink_red_peony", () -> flowerPot(CUT_INK_RED_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_PURPLE_PEONY =
+            BLOCKS.register("potted_cut_purple_peony", () -> flowerPot(CUT_PURPLE_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_LIGHT_PURPLE_PEONY =
+            BLOCKS.register("potted_cut_light_purple_peony", () -> flowerPot(CUT_LIGHT_PURPLE_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_INK_PURPLE_PEONY =
+            BLOCKS.register("potted_cut_ink_purple_peony", () -> flowerPot(CUT_INK_PURPLE_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_YELLOW_PEONY =
+            BLOCKS.register("potted_cut_yellow_peony", () -> flowerPot(CUT_YELLOW_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_LIGHT_YELLOW_PEONY =
+            BLOCKS.register("potted_cut_light_yellow_peony", () -> flowerPot(CUT_LIGHT_YELLOW_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_OCHRE_YELLOW_PEONY =
+            BLOCKS.register("potted_cut_ochre_yellow_peony", () -> flowerPot(CUT_OCHRE_YELLOW_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_WHITE_PEONY =
+            BLOCKS.register("potted_cut_white_peony", () -> flowerPot(CUT_WHITE_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_INK_PEONY =
+            BLOCKS.register("potted_cut_ink_peony", () -> flowerPot(CUT_INK_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_BLUE_PEONY =
+            BLOCKS.register("potted_cut_blue_peony", () -> flowerPot(CUT_BLUE_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_GREEN_PEONY =
+            BLOCKS.register("potted_cut_green_peony", () -> flowerPot(CUT_GREEN_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_WU_HUA_LONG_YU_PEONY =
+            BLOCKS.register("potted_cut_wu_hua_long_yu_peony", () -> flowerPot(CUT_WU_HUA_LONG_YU_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_MAUVE_PEONY =
+            BLOCKS.register("potted_cut_mauve_peony", () -> flowerPot(CUT_MAUVE_PEONY.get()));
+    public static final RegistryObject<Block> POTTED_CUT_CHINESE_ROSE =
+            BLOCKS.register("potted_cut_chinese_rose", () -> flowerPot(CUT_CHINESE_ROSE.get()));
+    public static final RegistryObject<Block> POTTED_CUT_PINK_ROSE =
+            BLOCKS.register("potted_cut_pink_rose", () -> flowerPot(CUT_PINK_ROSE.get()));
+    public static final RegistryObject<Block> POTTED_CUT_YELLOW_ROSE =
+            BLOCKS.register("potted_cut_yellow_rose", () -> flowerPot(CUT_YELLOW_ROSE.get()));
+    public static final RegistryObject<Block> POTTED_CUT_WHITE_ROSE =
+            BLOCKS.register("potted_cut_white_rose", () -> flowerPot(CUT_WHITE_ROSE.get()));
+    public static final RegistryObject<Block> POTTED_CUT_BAOHUA_CHINESE_ROSE =
+            BLOCKS.register("potted_cut_baohua_chinese_rose", () -> flowerPot(CUT_BAOHUA_CHINESE_ROSE.get()));
+    public static final RegistryObject<Block> POTTED_CUT_WINTERSWEET =
+            BLOCKS.register("potted_cut_wintersweet", () -> flowerPot(CUT_WINTERSWEET.get()));
+    public static final RegistryObject<Block> POTTED_CUT_COTTON_ROSE =
+            BLOCKS.register("potted_cut_cotton_rose", () -> flowerPot(CUT_COTTON_ROSE.get()));
+
     public static final RegistryObject<Block> PEACH_PINK_PETALS =
             registerBlock("peach_pink_petals", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> FRAGRANT_SNOW_PETALS =
@@ -1236,6 +1338,11 @@ public class ModBlocks {
         }
         return new ButtonBlock(blockbehaviour$properties, pSetType, 30, true);
     }
+
+    private static Block cutFlower(Block tallFlower) {
+        return new CutFlowerBlock(tallFlower, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+    }
+
 
     private static Block flowerPot(Block potted) {
         return new FlowerPotBlock(potted, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY));

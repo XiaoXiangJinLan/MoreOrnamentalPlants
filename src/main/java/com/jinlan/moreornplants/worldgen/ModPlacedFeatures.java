@@ -50,21 +50,27 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PEACH_PINK_PETALS_PATCH_PLACED = registerKey("peach_pink_petals_patch_placed");
     public static final ResourceKey<PlacedFeature> ORNAMENTAL_PEACH_GROVE_PLACED = registerKey("ornamental_peach_grove_placed");
     public static final ResourceKey<PlacedFeature> PEAR_PLACED = registerKey("pear_placed");
+    public static final ResourceKey<PlacedFeature> PEAR_WOODS = registerKey("pear_woods");
     public static final ResourceKey<PlacedFeature> FLOWERING_PURPLE_LEAF_PLUM_PLACED = registerKey("flowering_purple_leaf_plum_placed");
     public static final ResourceKey<PlacedFeature> PURPLE_LEAF_PLUM_PLACED = registerKey("purple_leaf_plum_placed");
+    public static final ResourceKey<PlacedFeature> FLOWERING_PURPLE_LEAF_PLUM_CLOUD_PLACED = registerKey("flowering_purple_leaf_plum_cloud_placed");
+    public static final ResourceKey<PlacedFeature> PURPLE_LEAF_PLUM_CLOUD_PLACED = registerKey("purple_leaf_plum_cloud_placed");
     public static final ResourceKey<PlacedFeature> GOLDEN_OSMANTHUS_PLACED = registerKey("golden_osmanthus_placed");
     public static final ResourceKey<PlacedFeature> ORANGE_OSMANTHUS_PLACED = registerKey("orange_osmanthus_placed");
     public static final ResourceKey<PlacedFeature> WHITE_OSMANTHUS_PLACED = registerKey("white_osmanthus_placed");
     public static final ResourceKey<PlacedFeature> GOLDEN_GINKGO_PLACED = registerKey("golden_ginkgo_placed");
+    public static final ResourceKey<PlacedFeature> GOLDEN_GINKGO_FOREST = registerKey("golden_ginkgo_forest");
     public static final ResourceKey<PlacedFeature> GREEN_GINKGO_PLACED = registerKey("green_ginkgo_placed");
     public static final ResourceKey<PlacedFeature> YELLOW_CHINESE_PARASOL_PLACED = registerKey("yellow_chinese_parasol_placed");
     public static final ResourceKey<PlacedFeature> GREEN_CHINESE_PARASOL_PLACED = registerKey("green_chinese_parasol_placed");
     public static final ResourceKey<PlacedFeature> SWEETGUM_PLACED = registerKey("sweetgum_placed");
+    public static final ResourceKey<PlacedFeature> SWEETGUM_ROSE_PLACED = registerKey("sweetgum_rose_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_PLACED = registerKey("camphor_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_YUNMENG_PLACED = registerKey("camphor_yunmeng_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_VALLEY_PLACED = registerKey("camphor_valley_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_PLAIN_PLACED = registerKey("camphor_plain_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_WOODS_PLACED = registerKey("camphor_woods_placed");
+    public static final ResourceKey<PlacedFeature> CAMPHOR_ROSE_PLACED = registerKey("camphor_rose_placed");
     public static final ResourceKey<PlacedFeature> SMALL_CAMPHOR_WOODS_PLACED = registerKey("small_camphor_woods_placed");
     public static final ResourceKey<PlacedFeature> ANCIENT_CAMPHOR_PLACED = registerKey("ancient_camphor_placed");
     public static final ResourceKey<PlacedFeature> DOVE_TREE_PLACED = registerKey("dove_tree_placed");
@@ -89,9 +95,11 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GOLDEN_CHRYSANTHEMUM_PLACED = registerKey("golden_chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> WHITE_CHRYSANTHEMUM_PLACED = registerKey("white_chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> PURPLE_CHRYSANTHEMUM_PLACED = registerKey("purple_chrysanthemum_placed");
+    public static final ResourceKey<PlacedFeature> PURPLE_CHRYSANTHEMUM_WOODS = registerKey("purple_chrysanthemum_woods");
     public static final ResourceKey<PlacedFeature> PINK_CHRYSANTHEMUM_PLACED = registerKey("pink_chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_GROVE_PLACED = registerKey("chrysanthemum_grove_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_PLACED = registerKey("chinese_rose_placed");
+    public static final ResourceKey<PlacedFeature> CHINESE_ROSE_WOODS_PLACED = registerKey("chinese_rose_woods_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_PENGLAI_PLACED = registerKey("chinese_rose_penglai_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_GROVE_PLACED = registerKey("chinese_rose_grove_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_PLAIN_PLACED = registerKey("chinese_rose_plain_placed");
@@ -128,11 +136,16 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> FLOWERS_GROVE_FLOWERS_PLACED = registerKey("flowers_grove_flowers_placed");
     public static final ResourceKey<PlacedFeature> WINTERSWEET_PLACED = registerKey("wintersweet_placed");
     public static final ResourceKey<PlacedFeature> LILY_OF_THE_VALLEY_FOREST_PLACED = registerKey("lily_of_the_valley_forest_placed");
+    public static final ResourceKey<PlacedFeature> LILY_OF_THE_VALLEY_WOODS_PLACED = registerKey("lily_of_the_valley_woods_placed");
     public static final ResourceKey<PlacedFeature> BLUE_ORCHID_FOREST_PLACED = registerKey("blue_orchid_placed");
     public static final ResourceKey<PlacedFeature> PEONY_GROVE_PLACED = registerKey("peony_grove_placed");
     public static final ResourceKey<PlacedFeature> PEONY_PENGLAI_PLACED = registerKey("peony_penglai_placed");
     public static final ResourceKey<PlacedFeature> PEONY_TREE_PENGLAI_PLACED = registerKey("peony_tree_penglai_placed");
     public static final ResourceKey<PlacedFeature> PEONY_TREE_GROVE_PLACED = registerKey("peony_tree_grove_placed");
+    public static final ResourceKey<PlacedFeature> PEONY_SEA = registerKey("peony_sea");
+    public static final ResourceKey<PlacedFeature> PEONY_SEA_PINK = registerKey("peony_sea_pink");
+    public static final ResourceKey<PlacedFeature> PEONY_SEA_PLACED = registerKey("peony_sea_placed");
+    public static final ResourceKey<PlacedFeature> PEONY_PINK_SEA_PLACED = registerKey("peony_pink_sea_placed");
     public static final ResourceKey<PlacedFeature> PEONY_MEADOWS = registerKey("peony_meadows_placed");
     public static final ResourceKey<PlacedFeature> PEONY_MEADOWS_PINK = registerKey("peony_meadows_pink_placed");
     public static final ResourceKey<PlacedFeature> PEONY_PLACED = registerKey("peony_placed");
@@ -140,33 +153,34 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SMALL_FLOWERS_GROVE_PLACED = registerKey("small_flowers_grove_placed");
     public static final ResourceKey<PlacedFeature> TULIP_GROVE_PLACED = registerKey("tulip_grove_placed");
     public static final ResourceKey<PlacedFeature> TALL_FLOWERS_GROVE_PLACED = registerKey("tall_flowers_grove_placed");
-    public static final ResourceKey<PlacedFeature> MOTTLED_BAMBOO_PLACED =registerKey("mottled_bamboo_placed");
-    public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_PLACED =registerKey("black_bamboo_placed");
-    public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_GALLERY_PLACED =registerKey("black_bamboo_gallery_placed");
-    public static final ResourceKey<PlacedFeature> LOTUS_PLACED =registerKey("lotus_placed");
-    public static final ResourceKey<PlacedFeature> ROSE_BUSH =registerKey("rose_bush");
-    public static final ResourceKey<PlacedFeature> FOUNTAIN_GRASS_PLACED =registerKey("fountain_grass_placed");
-    public static final ResourceKey<PlacedFeature> FOUNTAIN_GRASS_GROVE =registerKey("fountain_grass_grove");
-    public static final ResourceKey<PlacedFeature> FOUNTAIN_GRASS_WOODS =registerKey("fountain_grass_woods");
-    public static final ResourceKey<PlacedFeature> MISCANTHUS =registerKey("miscanthus");
-    public static final ResourceKey<PlacedFeature> GOLDEN_MISCANTHUS =registerKey("golden_miscanthus");
-    public static final ResourceKey<PlacedFeature> FLOWERS_PLAIN =registerKey("flowers_plain");
-    public static final ResourceKey<PlacedFeature> GRASS_VALLY =registerKey("grass_vally");
-    public static final ResourceKey<PlacedFeature> GRASS_PLAIN =registerKey("grass_plain");
-    public static final ResourceKey<PlacedFeature> GRASS_HIGHLAND =registerKey("grass_highland");
-    public static final ResourceKey<PlacedFeature> GRASS_GROVE =registerKey("grass_grove");
-    public static final ResourceKey<PlacedFeature> GRASS_WOODS =registerKey("grass_woods");
-    public static final ResourceKey<PlacedFeature> GRASS_FOREST_1 =registerKey("grass_forest_1");
-    public static final ResourceKey<PlacedFeature> GRASS_FOREST_2 =registerKey("grass_forest_2");
-    public static final ResourceKey<PlacedFeature> GRASS_FOREST_3 =registerKey("grass_forest_3");
-    public static final ResourceKey<PlacedFeature> GRASS_FERN =registerKey("grass_fern");
-    public static final ResourceKey<PlacedFeature> GRASS_FERN_1 =registerKey("grass_fern_1");
-    public static final ResourceKey<PlacedFeature> GRASS_FURONG =registerKey("grass_furong");
-    public static final ResourceKey<PlacedFeature> GRASS_FERN_2 =registerKey("grass_fern_2");
-    public static final ResourceKey<PlacedFeature> GRASS_DESERT =registerKey("grass_desert");
-    public static final ResourceKey<PlacedFeature> DEAD_BUSH =registerKey("dead_bush");
-    public static final ResourceKey<PlacedFeature> PEACH_PETALS =registerKey("peach_petals");
-    public static final ResourceKey<PlacedFeature> PEACH_PETALS_RIVER =registerKey("peach_petals_river");
+    public static final ResourceKey<PlacedFeature> MOTTLED_BAMBOO_PLACED = registerKey("mottled_bamboo_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_PLACED = registerKey("black_bamboo_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_GALLERY_PLACED = registerKey("black_bamboo_gallery_placed");
+    public static final ResourceKey<PlacedFeature> LOTUS_PLACED = registerKey("lotus_placed");
+    public static final ResourceKey<PlacedFeature> ROSE_BUSH = registerKey("rose_bush");
+    public static final ResourceKey<PlacedFeature> FOUNTAIN_GRASS_PLACED = registerKey("fountain_grass_placed");
+    public static final ResourceKey<PlacedFeature> FOUNTAIN_GRASS_GROVE = registerKey("fountain_grass_grove");
+    public static final ResourceKey<PlacedFeature> FOUNTAIN_GRASS_WOODS = registerKey("fountain_grass_woods");
+    public static final ResourceKey<PlacedFeature> MISCANTHUS = registerKey("miscanthus");
+    public static final ResourceKey<PlacedFeature> GOLDEN_MISCANTHUS = registerKey("golden_miscanthus");
+    public static final ResourceKey<PlacedFeature> GOLDEN_MISCANTHUS_FOREST = registerKey("golden_miscanthus_forest");
+    public static final ResourceKey<PlacedFeature> FLOWERS_PLAIN = registerKey("flowers_plain");
+    public static final ResourceKey<PlacedFeature> GRASS_VALLY = registerKey("grass_vally");
+    public static final ResourceKey<PlacedFeature> GRASS_PLAIN = registerKey("grass_plain");
+    public static final ResourceKey<PlacedFeature> GRASS_HIGHLAND = registerKey("grass_highland");
+    public static final ResourceKey<PlacedFeature> GRASS_GROVE = registerKey("grass_grove");
+    public static final ResourceKey<PlacedFeature> GRASS_WOODS = registerKey("grass_woods");
+    public static final ResourceKey<PlacedFeature> GRASS_FOREST_1 = registerKey("grass_forest_1");
+    public static final ResourceKey<PlacedFeature> GRASS_FOREST_2 = registerKey("grass_forest_2");
+    public static final ResourceKey<PlacedFeature> GRASS_FOREST_3 = registerKey("grass_forest_3");
+    public static final ResourceKey<PlacedFeature> GRASS_FERN = registerKey("grass_fern");
+    public static final ResourceKey<PlacedFeature> GRASS_FERN_1 = registerKey("grass_fern_1");
+    public static final ResourceKey<PlacedFeature> GRASS_FURONG = registerKey("grass_furong");
+    public static final ResourceKey<PlacedFeature> GRASS_FERN_2 = registerKey("grass_fern_2");
+    public static final ResourceKey<PlacedFeature> GRASS_DESERT = registerKey("grass_desert");
+    public static final ResourceKey<PlacedFeature> DEAD_BUSH = registerKey("dead_bush");
+    public static final ResourceKey<PlacedFeature> PEACH_PETALS = registerKey("peach_petals");
+    public static final ResourceKey<PlacedFeature> PEACH_PETALS_RIVER = registerKey("peach_petals_river");
 
     public static final ResourceKey<PlacedFeature> PINK_APRICOT = registerKey("pink_apricot");
     public static final ResourceKey<PlacedFeature> WHITE_APRICOT = registerKey("white_apricot");
@@ -260,7 +274,7 @@ public class ModPlacedFeatures {
                         ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
         register(context, PEAR_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEAR),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
-                        ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
+                        ModBlocks.PEAR_SAPLING.get()));
         register(context, FLOWERING_PURPLE_LEAF_PLUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.FLOWERING_PURPLE_LEAF_PLUM),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1 ,0.1F, 1),
                         ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get()));
@@ -487,17 +501,30 @@ public class ModPlacedFeatures {
         register(context, UPRIGHT_CRABAPPLE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.UPRIGHT_CRABAPPLE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
-        register(context, PEONY_MEADOWS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS),
-                List.of(CountPlacement.of(24),
+        register(context, PEONY_SEA, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS),
+                List.of(CountPlacement.of(10),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
-        register(context, PEONY_MEADOWS_PINK, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS_PINK),
+        register(context, PEONY_SEA_PINK, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS_PINK),
                 List.of(CountPlacement.of(14),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PEONY_SEA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_KEY),
+                List.of(CountPlacement.of(6),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PEONY_PINK_SEA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_PINK_KEY),
+                List.of(CountPlacement.of(6),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, PEONY_MEADOWS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS),
+                List.of(CountPlacement.of(6),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PEONY_MEADOWS_PINK, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS_PINK),
+                List.of(CountPlacement.of(6),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_KEY),
-                List.of(CountPlacement.of(12),
+                List.of(CountPlacement.of(10),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_PINK_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_PINK_KEY),
-                List.of(CountPlacement.of(6),
+                List.of(CountPlacement.of(14),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, COTTON_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COTTON_ROSE_KEY),
@@ -533,20 +560,37 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(12),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
+        register(context, CHINESE_ROSE_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_ROSE_WOODS_KEY),
+                List.of(CountPlacement.of(6),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, SWEETGUM_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.SWEETGUM_WITH_LEAF_PILE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(4, 0.1f, 1),
+                        ModBlocks.SWEETGUM_SAPLING.get()));
+        register(context, CAMPHOR_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1F, 1),
+                        ModBlocks.CAMPHOR_SAPLING.get()));
+
         register(context, CHINABERRY_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINABERRY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1),
                         ModBlocks.CHINABERRY_SAPLING.get()));
         register(context, CHINABERRY_SMALL_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINABERRY_SMALL),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.2f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(4, 0.2f, 1),
                         ModBlocks.CHINABERRY_SAPLING.get()));
         register(context, CAMPHOR_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.CAMPHOR_SAPLING.get()));
         register(context, SMALL_CAMPHOR_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_CAMPHOR),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 1),
                         ModBlocks.CAMPHOR_SAPLING.get()));
         register(context, FOUNTAIN_GRASS_WOODS, configuredFeatures.getOrThrow(ModConfiguredFeatures.FOUNTAIN_GRASS_WOODS),
                 List.of(CountPlacement.of(18),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, PEAR_WOODS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEAR),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(4, 0.1f, 1),
+                        ModBlocks.PEAR_SAPLING.get()));
+        register(context, LILY_OF_THE_VALLEY_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.LILY_OF_THE_VALLEY_WOODS),
+                List.of(CountPlacement.of(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, CAMPHOR_PLAIN_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
@@ -571,8 +615,25 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
+        register(context, FLOWERING_PURPLE_LEAF_PLUM_CLOUD_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.FLOWERING_PURPLE_LEAF_PLUM),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(5 ,0.1F, 1),
+                        ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get()));
+        register(context, PURPLE_LEAF_PLUM_CLOUD_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_LEAF_PLUM),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(5 ,0.1F, 1),
+                        ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get()));
+        register(context, PURPLE_CHRYSANTHEMUM_WOODS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_CHRYSANTHEMUM_KEY),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
         register(context, GOLDEN_MISCANTHUS, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_MISCANTHUS),
                 List.of(CountPlacement.of(30),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, GOLDEN_GINKGO_FOREST, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_GINKGO_WITH_LEAF_PILE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(12, 0.2f, 1),
+                        ModBlocks.GOLDEN_GINKGO_SAPLING.get()));
+        register(context, GOLDEN_MISCANTHUS_FOREST, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_MISCANTHUS),
+                List.of(CountPlacement.of(6),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, PINK_APRICOT_PLATEAU_1, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_APRICOT),
