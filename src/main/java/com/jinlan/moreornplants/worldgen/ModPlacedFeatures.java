@@ -502,23 +502,23 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
         register(context, PEONY_SEA, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS),
-                List.of(CountPlacement.of(10),
+                List.of(CountPlacement.of(8),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_SEA_PINK, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS_PINK),
-                List.of(CountPlacement.of(14),
+                List.of(CountPlacement.of(12),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_SEA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_KEY),
-                List.of(CountPlacement.of(6),
+                List.of(CountPlacement.of(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_PINK_SEA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_PINK_KEY),
-                List.of(CountPlacement.of(6),
+                List.of(CountPlacement.of(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, PEONY_MEADOWS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS),
-                List.of(CountPlacement.of(6),
+                List.of(CountPlacement.of(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_MEADOWS_PINK, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_MEADOWS_PINK),
-                List.of(CountPlacement.of(6),
+                List.of(CountPlacement.of(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_KEY),
                 List.of(CountPlacement.of(10),
@@ -554,14 +554,14 @@ public class ModPlacedFeatures {
                         ModBlocks.DESERT_POPLAR_SAPLING.get()));
 
         register(context, CHINESE_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_ROSE_KEY),
-                List.of(CountPlacement.of(24),
+                List.of(CountPlacement.of(18),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, ROSE_BUSH, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROSE_BUSH),
-                List.of(CountPlacement.of(12),
+                List.of(CountPlacement.of(9),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, CHINESE_ROSE_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_ROSE_WOODS_KEY),
-                List.of(CountPlacement.of(6),
+                List.of(CountPlacement.of(5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, SWEETGUM_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.SWEETGUM_WITH_LEAF_PILE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(4, 0.1f, 1),
@@ -626,7 +626,7 @@ public class ModPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, GOLDEN_MISCANTHUS, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_MISCANTHUS),
-                List.of(CountPlacement.of(30),
+                List.of(CountPlacement.of(20),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, GOLDEN_GINKGO_FOREST, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_GINKGO_WITH_LEAF_PILE),
@@ -660,7 +660,7 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(18),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_PLAIN, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
-                List.of(NoiseThresholdCountPlacement.of(-0.8D, 10, 16),
+                List.of(NoiseThresholdCountPlacement.of(-0.8D, 12, 18),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_HIGHLAND, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
                 List.of(CountPlacement.of(12),
