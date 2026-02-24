@@ -11,7 +11,9 @@ Camphor, Dove Tree, Chinaberry, Desert Poplar.
 New Plants 
 ==========
 Herbaceous Peony, Chinese Rose, Chrysanthemum, Cymbidium, Lotus, Camellia, Rhododendron, Wintersweet, Fountain Grass, 
-Miscanthus, Mottled Bamboo, Black Bamboo, and two legendary Peony varieties: Zhao's Pink and Two Qiao.
+Miscanthus, Mottled Bamboo, Black Bamboo, and two legendary Peony varieties: Zhao's Pink and Two Qiao.  
+Some plants can be crafted into cut flowers, such as Herbaceous Peony and Chinese Rose. Hold shears in your main hand and a flower in your off-hand, 
+then right-click to obtain the corresponding cut flower.
 
 New Biomes
 ==========
@@ -82,7 +84,8 @@ New Fuels
 梅花、海棠、杏花、桃花、梨花、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
 
 ## 新植物
-芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、蜡梅、狼尾草、芒草、湘妃竹、紫竹，以及两大牡丹传奇品种：赵粉和二乔等。
+芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、蜡梅、狼尾草、芒草、湘妃竹、紫竹，以及两大牡丹传奇品种：赵粉和二乔等。  
+部分植物（例如芍药、月季等）可制作鲜切花，主手持剪刀，副手持花卉，右键鼠标即可获得对应的鲜切花。
 
 ## 新群系
 •**白雪红梅**：生长有朱砂梅和蜡梅的雪原；  
