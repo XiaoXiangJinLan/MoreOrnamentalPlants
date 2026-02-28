@@ -6,7 +6,7 @@
       "minecraft:canyon"
     ]
   },
-  "downfall": 0.5,
+  "downfall": 0.8,
   "effects": {
     "fog_color": 12638463,
     "mood_sound": {
@@ -72,22 +72,10 @@
     ],
     [
       "minecraft:glow_lichen",
-      "more_orn_plants:golden_osmanthus_placed",
-      "more_orn_plants:orange_osmanthus_placed",
-      "more_orn_plants:white_osmanthus_placed",
-      "more_orn_plants:red_azalea_tree_placed",
-      "more_orn_plants:maying_rhododendron_tree_placed",
-      "more_orn_plants:dewdrop_rhododendron_tree_placed",
-      "more_orn_plants:charming_rhododendron_tree_placed",
-      "more_orn_plants:great_white_rhododendron_tree_placed",
-      "more_orn_plants:purple_rhododendron_tree_placed",
-      "more_orn_plants:pink_rhododendron_tree_placed",
-      "more_orn_plants:chinese_azalea_tree_placed",
-      "more_orn_plants:chrysanthemum_gallery_placed",
-      "more_orn_plants:pink_camellia_grove",
-      "more_orn_plants:azalea_grove_placed",
-      "more_orn_plants:black_bamboo_gallery_placed",
-      "more_orn_plants:grass_highland"
+      "more_orn_plants:red_camellia_placed",
+      "more_orn_plants:white_apricot_placed",
+      "more_orn_plants:camphor_valley_placed",
+      "more_orn_plants:grass_vally"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -129,6 +117,12 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 8
+      },
+      {
+        "type": "minecraft:donkey",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 1
       },
       {
         "type": "minecraft:rabbit",
@@ -199,5 +193,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.5
+  "temperature": 0.7
 }

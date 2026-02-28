@@ -112,8 +112,10 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_MEADOWS_PINK = registerKey("peony_meadows_pink");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_TREE_GROVE = registerKey("peony_tree_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_TREE_PENGLAI = registerKey("peony_tree_penglai");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CAMELLIA_KEY = registerKey("camellia_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RED_CAMELLIA_KEY = registerKey("red_camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CAMELLIA_KEY = registerKey("white_camellia_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_KEY = registerKey("pink_camellia_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_GROVE = registerKey("pink_camellia_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_AZALEA_TREE_KEY = registerKey("flowering_azalea_tree_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_AZALEA_TREE_KEY = registerKey("red_azalea_tree_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MAYING_RHODODENDRON_TREE_KEY = registerKey("maying_rhododendron_tree_key");
@@ -148,7 +150,6 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LILY_OF_THE_VALLEY_FOREST = registerKey("lily_of_the_valley_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LILY_OF_THE_VALLEY_WOODS = registerKey("lily_of_the_valley_woods");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_ORCHID_FOREST = registerKey("blue_orchid_forest");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_KEY = registerKey("pink_camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_GROVE = registerKey("tall_flowers_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_KEY = registerKey("crape_myrtle_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_TREE = registerKey("crape_myrtle_tree");
@@ -767,18 +768,21 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
-        register(context, CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(56, 10, 4,
+        register(context, RED_CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(64, 10, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(new WeightedStateProvider(
-                                SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(ModBlocks.CAMELLIA.get().defaultBlockState(), 3)
-                                        .add(ModBlocks.VERSICOLOR_CAMELLIA.get().defaultBlockState(), 2).build())),
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CAMELLIA.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
         register(context, WHITE_CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(64, 10, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_CAMELLIA.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PINK_CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(64, 10, 4,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PINK_CAMELLIA.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
@@ -936,7 +940,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, PINK_CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(32, 4, 2,
+        register(context, PINK_CAMELLIA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(32, 4, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PINK_CAMELLIA.get())),
                         BlockPredicate.allOf(

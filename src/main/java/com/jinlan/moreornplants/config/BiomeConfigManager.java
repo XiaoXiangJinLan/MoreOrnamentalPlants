@@ -8,9 +8,12 @@ public class BiomeConfigManager {
             case "peony_meadows" -> ModBiomeConfig.ENABLE_PEONY_MEADOWS.get();
             case "evergreen_forest" -> ModBiomeConfig.ENABLE_EVERGREEN_FOREST.get();
             case "flowers_grove" -> ModBiomeConfig.ENABLE_FLOWERS_GROVE.get();
+            case "crabapple_grove" -> ModBiomeConfig.ENABLE_CRABAPPLE_GROVE.get();
             case "colored_forest" -> ModBiomeConfig.ENABLE_COLORED_FOREST.get();
             case "the_peach_blossom_spring" -> ModBiomeConfig.ENABLE_PEACH_BLOSSOM_SPRING.get();
             case "camellia_valley" -> ModBiomeConfig.ENABLE_CAMELLIA_VALLEY.get();
+            case "red_camellia_valley" -> ModBiomeConfig.ENABLE_RED_CAMELLIA_VALLEY.get();
+            case "pink_camellia_valley" -> ModBiomeConfig.ENABLE_PINK_CAMELLIA_VALLEY.get();
             case "red_highlands" -> ModBiomeConfig.ENABLE_RED_HIGHLANDS.get();
             case "furong_guo" -> ModBiomeConfig.ENABLE_FURONG_GUO.get();
             case "desert_poplar_woods" -> ModBiomeConfig.ENABLE_DESERT_POPLAR_WOODS.get();

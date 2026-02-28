@@ -17,10 +17,13 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_PEONY_MEADOWS;
     public static final ModConfigSpec.BooleanValue ENABLE_EVERGREEN_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_FLOWERS_GROVE;
+    public static final ModConfigSpec.BooleanValue ENABLE_CRABAPPLE_GROVE;
     public static final ModConfigSpec.BooleanValue ENABLE_COLORED_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_PEACH_BLOSSOM_SPRING;
     public static final ModConfigSpec.BooleanValue ENABLE_APRICOT_SPRING_PLATEAU;
     public static final ModConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
+    public static final ModConfigSpec.BooleanValue ENABLE_RED_CAMELLIA_VALLEY;
+    public static final ModConfigSpec.BooleanValue ENABLE_PINK_CAMELLIA_VALLEY;
     public static final ModConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS;
     public static final ModConfigSpec.BooleanValue ENABLE_AZALEA_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_FURONG_GUO;
@@ -71,6 +74,9 @@ public class ModBiomeConfig {
         ENABLE_FLOWERS_GROVE = BUILDER
                 .comment("Enable Flowers Grove biome generation")
                 .define("enableFlowersGrove", true);
+        ENABLE_CRABAPPLE_GROVE = BUILDER
+                .comment("Enable Crabapple Grove biome generation")
+                .define("enableCrabappleGrove", true);
         ENABLE_COLORED_FOREST = BUILDER
                 .comment("Enable Colored Forest biome generation")
                 .define("enableColoredForest", true);
@@ -83,6 +89,12 @@ public class ModBiomeConfig {
         ENABLE_CAMELLIA_VALLEY = BUILDER
                 .comment("Enable Camellia Valley biome generation")
                 .define("enableCamelliaValley", true);
+        ENABLE_RED_CAMELLIA_VALLEY = BUILDER
+                .comment("Enable Red Camellia Valley biome generation")
+                .define("enableRedCamelliaValley", true);
+        ENABLE_PINK_CAMELLIA_VALLEY = BUILDER
+                .comment("Enable Pink Camellia Valley biome generation")
+                .define("enablePinkCamelliaValley", true);
         ENABLE_RED_HIGHLANDS = BUILDER
                 .comment("Enable Red Highlands biome generation")
                 .define("enableRedHighlands", true);

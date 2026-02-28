@@ -97,11 +97,11 @@ public class ModOverworldBiomesBuilder {
             {null,                     null,                     ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
     };
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_VARIANT_MOD = new ResourceKey[][]{
-            {null,                    ModBiomes.RED_MEI_FOREST, null,                          ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST},
-            {ModBiomes.PEONY_MEADOWS, ModBiomes.PEONY_MEADOWS,  ModBiomes.COLORED_FOREST,      ModBiomes.COLORED_FOREST,      null},
-            {ModBiomes.FLOWERS_GROVE, ModBiomes.FLOWERS_GROVE,  ModBiomes.CAMELLIA_VALLEY,     ModBiomes.CAMELLIA_VALLEY,     null},
-            {null,                    null,                     null,                          null,                          null},
-            {null,                    null,                     ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
+            {null,                      ModBiomes.RED_MEI_FOREST,  null,                           ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST},
+            {ModBiomes.PEONY_MEADOWS,   ModBiomes.PEONY_MEADOWS,   ModBiomes.COLORED_FOREST,       ModBiomes.COLORED_FOREST,      null},
+            {ModBiomes.CRABAPPLE_GROVE, ModBiomes.CRABAPPLE_GROVE, ModBiomes.PINK_CAMELLIA_VALLEY, ModBiomes.RED_CAMELLIA_VALLEY, null},
+            {null,                      null,                      null,                           null,                          null},
+            {null,                      null,                      ModBiomes.DESERT_POPLAR_WOODS,  ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_MOD = new ResourceKey[][]{
             {null,                                 null,                                 null,                       null,                       null},
