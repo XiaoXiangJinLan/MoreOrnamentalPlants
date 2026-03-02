@@ -38,7 +38,6 @@ public class WeepingMeiPlantBlock extends GrowingPlantBodyBlock {
         return 30;
     }
 
-
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);

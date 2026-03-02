@@ -1044,6 +1044,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.CRAPE_MYRTLE.get(), 2)
                 .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE.get()), has(ModBlocks.CRAPE_MYRTLE.get()))
                 .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_CRAPE_MYRTLE.get(), 2)
+                .requires(ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get(), 2)
+                .unlockedBy(getHasName(ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get()), has(ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get(), 2)
+                .requires(ModBlocks.RED_CRAPE_MYRTLE.get(), 2)
+                .unlockedBy(getHasName(ModBlocks.RED_CRAPE_MYRTLE.get()), has(ModBlocks.RED_CRAPE_MYRTLE.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINK_CRAPE_MYRTLE.get(), 2)
+                .requires(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get(), 2)
+                .unlockedBy(getHasName(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get()), has(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get(), 2)
+                .requires(ModBlocks.PINK_CRAPE_MYRTLE.get(), 2)
+                .unlockedBy(getHasName(ModBlocks.PINK_CRAPE_MYRTLE.get()), has(ModBlocks.PINK_CRAPE_MYRTLE.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WHITE_CRAPE_MYRTLE.get(), 2)
+                .requires(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get(), 2)
+                .unlockedBy(getHasName(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get()), has(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get(), 2)
+                .requires(ModBlocks.WHITE_CRAPE_MYRTLE.get(), 2)
+                .unlockedBy(getHasName(ModBlocks.WHITE_CRAPE_MYRTLE.get()), has(ModBlocks.WHITE_CRAPE_MYRTLE.get()))
+                .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.RED_DYE)
                 .requires(ModTags.Items.RED_DYE)
@@ -1206,6 +1230,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', Items.STRING)
                 .define('*', ForgeTags.Items.LOTUS)
                 .unlockedBy("has_lotus", has(ForgeTags.Items.LOTUS))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PEACH_WOODEN_SWORD.get())
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModTags.Items.PEACH_LOGS)
+                .define('/', Items.STICK)
+                .unlockedBy("has_lotus", has(ModTags.Items.PEACH_LOGS))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CAMPHOR_WOODEN_SWORD.get())
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModTags.Items.CAMPHOR_LOGS)
+                .define('/', Items.STICK)
+                .unlockedBy("has_lotus", has(ModTags.Items.CAMPHOR_LOGS))
                 .save(pWriter);
     }
 }

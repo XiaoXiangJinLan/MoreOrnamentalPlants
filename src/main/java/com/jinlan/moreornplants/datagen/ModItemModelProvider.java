@@ -263,6 +263,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.CHINABERRY_SAPLING);
         saplingItem(ModBlocks.DESERT_POPLAR_SAPLING);
         saplingItem(ModBlocks.CRAPE_MYRTLE_SAPLING);
+        saplingItem(ModBlocks.RED_CRAPE_MYRTLE_SAPLING);
+        saplingItem(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING);
+        saplingItem(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING);
 
         flowerItem(ModBlocks.RED_WEEPING_MEI);
         flowerItem(ModBlocks.WHITE_WEEPING_MEI);
@@ -271,6 +274,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.VERSICOLOR_WEEPING_MEI);
 
         flowerItem(ModBlocks.WEEPING_CRABAPPLE);
+        wisteriaItem(ModBlocks.CHINESE_WISTERIA);
 
         flowerItem(ModBlocks.CHRYSANTHEMUM);
         flowerItem(ModBlocks.GOLDEN_CHRYSANTHEMUM);
@@ -347,6 +351,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         tallCrossItem(ModBlocks.YELLOW_WHITE_CHINESE_ROSE);
         tallCrossItem(ModBlocks.BAOHUA_CHINESE_ROSE);
         tallCrossItem(ModBlocks.CRAPE_MYRTLE);
+        tallCrossItem(ModBlocks.RED_CRAPE_MYRTLE);
+        tallCrossItem(ModBlocks.PINK_CRAPE_MYRTLE);
+        tallCrossItem(ModBlocks.WHITE_CRAPE_MYRTLE);
         tallCrossItem(ModBlocks.COTTON_ROSE);
 
         flowerItem(ModBlocks.CUT_PEONY);
@@ -410,6 +417,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PEACH_XIANGNANG);
         simpleItem(ModItems.PEAR_XIANGNANG);
         simpleItem(ModItems.LOTUS_XIANGNANG);
+
+        swordItem(ModItems.PEACH_WOODEN_SWORD);
+        swordItem(ModItems.CAMPHOR_WOODEN_SWORD);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
@@ -421,6 +431,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(MoreOrnPlants.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder swordItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(MoreOrnPlants.MOD_ID,"item/" + item.getId().getPath()));
     }
 
@@ -454,6 +470,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder wisteriaItem(RegistryObject<Block> block) {
+        return withExistingParent(block.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + block.getId().getPath() + "_2"));
     }
 
     private ItemModelBuilder tallCrossItem(RegistryObject<Block> block) {

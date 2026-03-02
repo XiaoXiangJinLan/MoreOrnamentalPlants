@@ -71,6 +71,10 @@
     ],
     [
       "minecraft:glow_lichen",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin",
       "more_orn_plants:golden_osmanthus_placed",
       "more_orn_plants:orange_osmanthus_placed",
       "more_orn_plants:white_osmanthus_placed",
@@ -83,7 +87,7 @@
       "more_orn_plants:pink_rhododendron_tree_placed",
       "more_orn_plants:chinese_azalea_tree_placed",
       "more_orn_plants:chrysanthemum_gallery_placed",
-      "more_orn_plants:pink_camellia_placed",
+      "more_orn_plants:pink_camellia_grove",
       "more_orn_plants:azalea_grove_placed",
       "more_orn_plants:black_bamboo_gallery_placed",
       "more_orn_plants:grass_highland"

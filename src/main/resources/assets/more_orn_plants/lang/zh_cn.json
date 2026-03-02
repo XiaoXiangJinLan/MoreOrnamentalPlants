@@ -359,7 +359,13 @@
   "block.more_orn_plants.desert_poplar_hanging_sign": "悬挂式胡杨木告示牌",
   "block.more_orn_plants.desert_poplar_wall_hanging_sign": "悬挂式胡杨木墙告示牌",
   "block.more_orn_plants.crape_myrtle_leaves": "紫薇树叶",
+  "block.more_orn_plants.red_crape_myrtle_leaves": "红薇树叶",
+  "block.more_orn_plants.pink_crape_myrtle_leaves": "粉薇树叶",
+  "block.more_orn_plants.white_crape_myrtle_leaves": "白薇树叶",
   "block.more_orn_plants.crape_myrtle_sapling": "紫薇树苗",
+  "block.more_orn_plants.red_crape_myrtle_sapling": "红薇树苗",
+  "block.more_orn_plants.pink_crape_myrtle_sapling": "粉薇树苗",
+  "block.more_orn_plants.white_crape_myrtle_sapling": "白薇树苗",
   "block.more_orn_plants.crape_myrtle_log": "紫薇原木",
   "block.more_orn_plants.crape_myrtle_wood": "紫薇木",
   "block.more_orn_plants.red_azalea_leaves": "映山红树叶",
@@ -370,6 +376,7 @@
   "block.more_orn_plants.purple_rhododendron_leaves": "紫花杜鹃树叶",
   "block.more_orn_plants.pink_rhododendron_leaves": "淡粉杜鹃树叶",
   "block.more_orn_plants.chinese_azalea_leaves": "羊踯躅树叶",
+
   "block.more_orn_plants.chrysanthemum": "菊花",
   "block.more_orn_plants.golden_chrysanthemum": "金菊",
   "block.more_orn_plants.gold_backed_scarlet_mum": "金背大红",
@@ -449,6 +456,11 @@
   "block.more_orn_plants.cut_white_rose": "切花纯如月季",
   "block.more_orn_plants.cut_baohua_chinese_rose": "切花宝华月季",
   "block.more_orn_plants.crape_myrtle": "紫薇",
+  "block.more_orn_plants.red_crape_myrtle": "红薇",
+  "block.more_orn_plants.pink_crape_myrtle": "粉薇",
+  "block.more_orn_plants.white_crape_myrtle": "白薇",
+  "block.more_orn_plants.chinese_wisteria": "紫藤",
+  "block.more_orn_plants.chinese_wisteria_plant": "紫藤",
   "block.more_orn_plants.cotton_rose": "芙蓉",
   "block.more_orn_plants.cut_cotton_rose": "切花芙蓉",
   "block.more_orn_plants.camellia": "山茶花",
@@ -532,6 +544,9 @@
   "block.more_orn_plants.potted_chinaberry_sapling": "苦楝树苗盆栽",
   "block.more_orn_plants.potted_desert_poplar_sapling": "胡杨树苗盆栽",
   "block.more_orn_plants.potted_crape_myrtle_sapling": "紫薇树苗盆栽",
+  "block.more_orn_plants.potted_red_crape_myrtle_sapling": "红薇树苗盆栽",
+  "block.more_orn_plants.potted_pink_crape_myrtle_sapling": "粉薇树苗盆栽",
+  "block.more_orn_plants.potted_white_crape_myrtle_sapling": "白薇树苗盆栽",
   "block.more_orn_plants.potted_chrysanthemum": "菊花盆栽",
   "block.more_orn_plants.potted_golden_chrysanthemum": "金菊盆栽",
   "block.more_orn_plants.potted_gold_backed_scarlet_mum": "金背大红盆栽",
@@ -679,6 +694,8 @@
   "item.more_orn_plants.lotus_seed": "莲子",
   "item.more_orn_plants.lotus_seed_pod": "莲蓬",
   "item.more_orn_plants.lotus_seed_soup": "莲子汤",
+  "item.more_orn_plants.peach_wooden_sword": "桃木剑",
+  "item.more_orn_plants.camphor_wooden_sword": "樟木剑",
 
   "biome.more_orn_plants.red_mei_forest": "白雪红梅",
   "biome.more_orn_plants.spring_river": "春江",
@@ -690,7 +707,10 @@
   "biome.more_orn_plants.evergreen_forest": "常绿林",
   "biome.more_orn_plants.colored_forest": "彩叶林",
   "biome.more_orn_plants.flowers_grove": "百花林",
+  "biome.more_orn_plants.crabapple_grove": "海棠林",
   "biome.more_orn_plants.camellia_valley": "茶花谷",
+  "biome.more_orn_plants.red_camellia_valley": "红茶花谷",
+  "biome.more_orn_plants.pink_camellia_valley": "粉茶花谷",
   "biome.more_orn_plants.red_highlands": "映山红",
   "biome.more_orn_plants.azalea_forest": "百里杜鹃",
   "biome.more_orn_plants.peony_sea": "牡丹花海",
@@ -707,6 +727,7 @@
   "biome.more_orn_plants.crops_green": "禾青",
   "biome.more_orn_plants.purple_cloud": "紫云林",
   "biome.more_orn_plants.ten_mile_gallery": "十里画廊",
+  "biome.more_orn_plants.purple_blossom_caves": "紫花洞",
 
   "itemGroup.plants": "观赏植物",
 
@@ -775,6 +796,8 @@
   "advancement.moreornplants.dove_tree.description": "和平与纯洁",
   "advancement.moreornplants.chinaberry_wind.title": "楝花风",
   "advancement.moreornplants.chinaberry_wind.description": "只怪南风吹紫雪，不知屋角楝花飞",
+  "advancement.moreornplants.foremost_of_vines.title": "天下第一藤",
+  "advancement.moreornplants.foremost_of_vines.description": "紫藤挂云木，花蔓宜阳春",
   "advancement.moreornplants.hero_of_desert.title": "沙漠英雄树",
   "advancement.moreornplants.hero_of_desert.description": "生而千年不死，死而千年不倒，倒而千年不朽",
   "advancement.moreornplants.grasses.title": "离离原上草，一岁一枯荣",
@@ -807,6 +830,7 @@
   "advancement.moreornplants.apricot_village.description": "借问酒家何处有？牧童遥指杏花村",
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小乔木，非建材",
-  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7观赏品种，非建材，熊猫不爱吃"
-
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7观赏品种，非建材，熊猫不爱吃",
+  "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7对亡灵生物伤害增加",
+  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7对节肢生物伤害增加"
 }

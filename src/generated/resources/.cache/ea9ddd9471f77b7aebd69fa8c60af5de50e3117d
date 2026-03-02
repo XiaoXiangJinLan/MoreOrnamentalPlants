@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-22T23:50:26.5863688	Tags for minecraft:item mod id more_orn_plants
+// 1.20.1	2026-03-02T18:30:59.8327568	Tags for minecraft:item mod id more_orn_plants
 6fe37a5db97b91f51a0addf9825c60414ee735aa data/forge/tags/items/apricot_leaves.json
 e3bbc6d486cc0792bdcdf6bb2c0da508939151ca data/forge/tags/items/apricot_sapling.json
 3f91e650affbf0dd3681d56a151de1d2b3bb5e35 data/forge/tags/items/azalea.json
@@ -8,7 +8,7 @@ ecf3903a194080819519550f232f10010513f4b1 data/forge/tags/items/bamboo.json
 e3a61179003210d9da1ef7d6617576e7e4274a85 data/forge/tags/items/chinese_rose.json
 087cdef1aba2973ab4407f8a8dfab7910f932d9b data/forge/tags/items/chrysanthemum.json
 e0d5185cf60a7ff236f9d4fa2894180654bd2b77 data/forge/tags/items/crabapple_sapling.json
-e295e9f3aca83d6adfc0355b89965537a97448f5 data/forge/tags/items/crape_myrtle.json
+6daa7c474c4680efdd0c520cf23a4a6d980073c0 data/forge/tags/items/crape_myrtle.json
 edc1aae18a35311be8df5db2dfb84cc1dba6303c data/forge/tags/items/cymbidium.json
 37ea26f5e9711dd112ef5bce6ee738d233ba5734 data/forge/tags/items/ginkgo_sapling.json
 8d86a028bae7eeb0c300ebc49c829a6134f97e28 data/forge/tags/items/herbaceous_peony.json
@@ -20,7 +20,7 @@ a93e8d4e063cb7dc4db2558f4c9a9520378ddde7 data/forge/tags/items/osmanthus_leaves.
 c34752788297cb2989f3bc35049a78ed54eb61fd data/forge/tags/items/osmanthus_sapling.json
 7fa7952271b15ef0b6521425d92ed54c35534737 data/forge/tags/items/peach_leaves.json
 b446eff90bd1cc382f9d111b7e55028bff3c55bb data/forge/tags/items/peach_sapling.json
-31392ea1bc1973a584320f224457e524d1d5181b data/forge/tags/items/plant_in_florilegium.json
+839db45270954841fb84fea0dba44272f15bc604 data/forge/tags/items/plant_in_florilegium.json
 05ee996126afa23df5258b108b49a838c71f437e data/forge/tags/items/plum_sapling.json
 b02d22a28a6efdacc9300a2e7def9932b925a6d5 data/forge/tags/items/tree_peony.json
 4c33efe41cec6592a15799b1315d1aa60431f6d4 data/forge/tags/items/vegetables.json
@@ -32,15 +32,16 @@ c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/forge/tags/items/vegetables/bamboo
 5553cce50166e96a396132b8f5bbc2010b6bbc34 data/minecraft/tags/items/boats.json
 f5877f7cac1b1a10079613e11d66c160a762e701 data/minecraft/tags/items/chest_boats.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/minecraft/tags/items/fence_gates.json
-75f0be0cd8cafa03d1bc7916f647fa9c5d492aea data/minecraft/tags/items/flowers.json
+57937e8418db5235662981ee8e1fbf7c03e27de7 data/minecraft/tags/items/flowers.json
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/items/hanging_signs.json
-d93af428a2c980013b7c67acb09bdb470e61cdd1 data/minecraft/tags/items/leaves.json
+70fd1439a75e7c9bdf0857b81bfb39ee9b8b1a20 data/minecraft/tags/items/leaves.json
 8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/items/logs_that_burn.json
 73c33643918bd977c2ecc0002fa55666390463e5 data/minecraft/tags/items/planks.json
-a5d045e1c5e97b9c0e2fc49bf302b8d3c9b77d63 data/minecraft/tags/items/saplings.json
+a583b19c978349706315ab57a5947134c0ddc124 data/minecraft/tags/items/saplings.json
 e212d8183275fb9c12db833d8ade37009bec90dd data/minecraft/tags/items/signs.json
 dd6f2f915dd13821754a5645bf4ab770f680675e data/minecraft/tags/items/small_flowers.json
-70f48826bd3d37653bee6151b132ba6a9ccced28 data/minecraft/tags/items/tall_flowers.json
+70e928ae34b08eac8ff12bb115c5552f706d587f data/minecraft/tags/items/swords.json
+f043452fa264af02ac7d5c63a787368c40bed283 data/minecraft/tags/items/tall_flowers.json
 642513386a0fa7c2a2ca0bb55e9435fcd28ed916 data/minecraft/tags/items/wooden_buttons.json
 9cccb244033f9bdd546d95f47168d750339d9156 data/minecraft/tags/items/wooden_doors.json
 6bf26f6731cb1f1c270ee74b5f19787094adc568 data/minecraft/tags/items/wooden_fences.json
@@ -62,17 +63,17 @@ bb247fef3cd34749130563305b7387266456fdc2 data/more_orn_plants/tags/items/crabapp
 7aa45b37f5d528f6e8afcd4f7bbac8798429b391 data/more_orn_plants/tags/items/green_dye.json
 351132b4f827c7a690eda46da73faeac2ccb8581 data/more_orn_plants/tags/items/light_blue_dye.json
 591463722e96aa911cd89adfce221472b619bff3 data/more_orn_plants/tags/items/lime_dye.json
-6ad7505bdc265b679fcd47ae7ccde802647e2934 data/more_orn_plants/tags/items/magenta_dye.json
+e658efccd26926ada2226a9f8673f94016603d84 data/more_orn_plants/tags/items/magenta_dye.json
 9c1e680e279eecf59743fb484b442e79af1bfff9 data/more_orn_plants/tags/items/orange_dye.json
 701da93ef5f8565e671eec0af36d0e0b5ea5b925 data/more_orn_plants/tags/items/osmanthus_logs.json
 e698cf2c0cd433c69b8e6e08cd238d850df73b49 data/more_orn_plants/tags/items/peach_logs.json
 127abf6cbad1a4ed7fdf7647cd22da749960e3f8 data/more_orn_plants/tags/items/pear_logs.json
-46ad9ef7e05ff8ce56330ffc32c1d859f0e2a2e0 data/more_orn_plants/tags/items/pink_dye.json
+8e23be2e07d0b62583b224dc65dd18e4e2452a81 data/more_orn_plants/tags/items/pink_dye.json
 a9ac54abaf7cd31b93481e9a3f4ad74fd576b16c data/more_orn_plants/tags/items/purple_dye.json
 bf74ee13cd2129707eef22e6a05e12101e0e4006 data/more_orn_plants/tags/items/purple_leaf_plum_logs.json
 b0128da9c41c47191edd9b3b4bd73c4da625a7cd data/more_orn_plants/tags/items/red_dye.json
 a483d45402126921e04886e0e631c28d6b02b68c data/more_orn_plants/tags/items/red_mei_logs.json
 0bad73ccf3efc9efb82d8e2ddcb5de8be3eb4285 data/more_orn_plants/tags/items/sweetgum_logs.json
-ead3e978de4546fd703cc483e8b72b850451e0bc data/more_orn_plants/tags/items/white_dye.json
+b4a9929d878d1fcee5076636e23787124079be47 data/more_orn_plants/tags/items/white_dye.json
 76d484e5ec22fca0b94937e04a8f97f264e0f5e2 data/more_orn_plants/tags/items/white_mei_logs.json
 c4823a974389198e30e1cd05b0d117eff513add1 data/more_orn_plants/tags/items/yellow_dye.json

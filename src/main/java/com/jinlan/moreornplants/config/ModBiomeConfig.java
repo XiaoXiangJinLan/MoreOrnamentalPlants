@@ -16,10 +16,13 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_PEONY_MEADOWS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_EVERGREEN_FOREST;
     public static final ForgeConfigSpec.BooleanValue ENABLE_FLOWERS_GROVE;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_CRABAPPLE_GROVE;
     public static final ForgeConfigSpec.BooleanValue ENABLE_COLORED_FOREST;
     public static final ForgeConfigSpec.BooleanValue ENABLE_PEACH_BLOSSOM_SPRING;
     public static final ForgeConfigSpec.BooleanValue ENABLE_APRICOT_SPRING_PLATEAU;
     public static final ForgeConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_RED_CAMELLIA_VALLEY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_PINK_CAMELLIA_VALLEY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_AZALEA_FOREST;
     public static final ForgeConfigSpec.BooleanValue ENABLE_FURONG_GUO;
@@ -34,6 +37,7 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_CROPS_GREEN;
     public static final ForgeConfigSpec.BooleanValue ENABLE_PURPLE_CLOUD;
     public static final ForgeConfigSpec.BooleanValue ENABLE_TEN_MILE_GALLERY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_PURPLE_BLOSSOM_CAVES;
 
     // 区域权重配置
     public static final ForgeConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
@@ -70,6 +74,9 @@ public class ModBiomeConfig {
         ENABLE_FLOWERS_GROVE = BUILDER
                 .comment("Enable Flowers Grove biome generation")
                 .define("enableFlowersGrove", true);
+        ENABLE_CRABAPPLE_GROVE = BUILDER
+                .comment("Enable Crabapple Grove biome generation")
+                .define("enableCrabappleGrove", true);
         ENABLE_COLORED_FOREST = BUILDER
                 .comment("Enable Colored Forest biome generation")
                 .define("enableColoredForest", true);
@@ -82,6 +89,12 @@ public class ModBiomeConfig {
         ENABLE_CAMELLIA_VALLEY = BUILDER
                 .comment("Enable Camellia Valley biome generation")
                 .define("enableCamelliaValley", true);
+        ENABLE_RED_CAMELLIA_VALLEY = BUILDER
+                .comment("Enable Red Camellia Valley biome generation")
+                .define("enableRedCamelliaValley", true);
+        ENABLE_PINK_CAMELLIA_VALLEY = BUILDER
+                .comment("Enable Pink Camellia Valley biome generation")
+                .define("enablePinkCamelliaValley", true);
         ENABLE_RED_HIGHLANDS = BUILDER
                 .comment("Enable Red Highlands biome generation")
                 .define("enableRedHighlands", true);
@@ -124,6 +137,9 @@ public class ModBiomeConfig {
         ENABLE_TEN_MILE_GALLERY = BUILDER
                 .comment("Enable Ten-Mile Gallery biome generation")
                 .define("enableTenMileGallery", true);
+        ENABLE_PURPLE_BLOSSOM_CAVES = BUILDER
+                .comment("Enable Purple Blossom Caves biome generation")
+                .define("enablePurpleBlossomCaves", true);
         BUILDER.pop();
 
         // 区域权重设置

@@ -93,6 +93,12 @@ public class ModBlocks {
             registerBlock("desert_poplar_leaves", () -> new DesertPoplarLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final RegistryObject<Block> CRAPE_MYRTLE_LEAVES =
             registerBlock("crape_myrtle_leaves", () -> new CrapeMyrtleLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.COLOR_PURPLE)));
+    public static final RegistryObject<Block> RED_CRAPE_MYRTLE_LEAVES =
+            registerBlock("red_crape_myrtle_leaves", () -> new RedCrapeMyrtleLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.COLOR_PURPLE)));
+    public static final RegistryObject<Block> PINK_CRAPE_MYRTLE_LEAVES =
+            registerBlock("pink_crape_myrtle_leaves", () -> new PinkCrapeMyrtleLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.COLOR_PINK)));
+    public static final RegistryObject<Block> WHITE_CRAPE_MYRTLE_LEAVES =
+            registerBlock("white_crape_myrtle_leaves", () -> new WhiteCrapeMyrtleLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.SNOW)));
     public static final RegistryObject<Block> RED_AZALEA_LEAVES =
             registerBlock("red_azalea_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.COLOR_RED)));
     public static final RegistryObject<Block> MAYING_RHODODENDRON_LEAVES =
@@ -133,6 +139,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> WEEPING_CRABAPPLE =
             registerBlock("weeping_crabapple", () -> new WeepingCrabappleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CHERRY_LEAVES).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+
+    public static final RegistryObject<Block> CHINESE_WISTERIA =
+            registerBlock("chinese_wisteria", () -> new WisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> CHINESE_WISTERIA_PLANT =
+            BLOCKS.register("chinese_wisteria_plant", () -> new WisteriaPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> RED_MEI_LOG =
             registerBlock("red_mei_log", () -> log(MapColor.COLOR_RED, MapColor.COLOR_BROWN));
@@ -797,6 +808,12 @@ public class ModBlocks {
             registerBlock("desert_poplar_sapling", () -> new DesertSaplingBlock(new DesertPoplarTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> CRAPE_MYRTLE_SAPLING =
             registerBlock("crape_myrtle_sapling", () -> new CrapeMyrtleSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> RED_CRAPE_MYRTLE_SAPLING =
+            registerBlock("red_crape_myrtle_sapling", () -> new RedCrapeMyrtleSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> PINK_CRAPE_MYRTLE_SAPLING =
+            registerBlock("pink_crape_myrtle_sapling", () -> new PinkCrapeMyrtleSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> WHITE_CRAPE_MYRTLE_SAPLING =
+            registerBlock("white_crape_myrtle_sapling", () -> new WhiteCrapeMyrtleSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> POTTED_RED_MEI_SAPLING =
             BLOCKS.register("potted_red_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
@@ -862,6 +879,12 @@ public class ModBlocks {
             BLOCKS.register("potted_desert_poplar_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.DESERT_POPLAR_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> POTTED_CRAPE_MYRTLE_SAPLING =
             BLOCKS.register("potted_crape_myrtle_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CRAPE_MYRTLE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> POTTED_RED_CRAPE_MYRTLE_SAPLING =
+            BLOCKS.register("potted_red_crape_myrtle_sapling", () -> flowerPot(RED_CRAPE_MYRTLE_SAPLING.get()));
+    public static final RegistryObject<Block> POTTED_PINK_CRAPE_MYRTLE_SAPLING =
+            BLOCKS.register("potted_pink_crape_myrtle_sapling", () -> flowerPot(PINK_CRAPE_MYRTLE_SAPLING.get()));
+    public static final RegistryObject<Block> POTTED_WHITE_CRAPE_MYRTLE_SAPLING =
+            BLOCKS.register("potted_white_crape_myrtle_sapling", () -> flowerPot(WHITE_CRAPE_MYRTLE_SAPLING.get()));
 
     public static final RegistryObject<Block> CHRYSANTHEMUM =
             registerBlock("chrysanthemum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
@@ -1129,6 +1152,12 @@ public class ModBlocks {
             registerBlock("baohua_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> CRAPE_MYRTLE =
             registerBlock("crape_myrtle", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> RED_CRAPE_MYRTLE =
+            registerBlock("red_crape_myrtle", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> PINK_CRAPE_MYRTLE =
+            registerBlock("pink_crape_myrtle", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> WHITE_CRAPE_MYRTLE =
+            registerBlock("white_crape_myrtle", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> COTTON_ROSE =
             registerBlock("cotton_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> MISCANTHUS =

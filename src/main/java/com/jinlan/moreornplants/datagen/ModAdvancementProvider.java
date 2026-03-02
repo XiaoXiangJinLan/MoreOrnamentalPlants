@@ -542,6 +542,23 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "hero_of_desert"), existingFileHelper);
 
+            Advancement foremostOfVines = Advancement.Builder.advancement()
+                    .parent(root)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.CHINESE_WISTERIA.get()),
+                            Component.translatable("advancement.moreornplants.foremost_of_vines.title"),
+                            Component.translatable("advancement.moreornplants.foremost_of_vines.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("get_wisteria", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ModBlocks.CHINESE_WISTERIA.get()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "foremost_of_vines"), existingFileHelper);
+
             Advancement grasses = Advancement.Builder.advancement()
                     .parent(root)
                     .display(new DisplayInfo(

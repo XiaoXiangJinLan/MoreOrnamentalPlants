@@ -4,10 +4,7 @@ import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.entity.custom.ModBoatEntity;
 import com.jinlan.moreornplants.item.custom.*;
-import net.minecraft.world.item.BowlFoodItem;
-import net.minecraft.world.item.HangingSignItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SignItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -181,6 +178,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> BAMBOO_STICK =
             ITEMS.register("bamboo_stick", () -> new BambooStickItem(ModBlocks.BAMBOO_STICK.get(), new Item.Properties(), 200));
+    public static final RegistryObject<Item> PEACH_WOODEN_SWORD =
+            ITEMS.register("peach_wooden_sword", () -> new PeachWoodenSwordItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> CAMPHOR_WOODEN_SWORD =
+            ITEMS.register("camphor_wooden_sword", () -> new CamphorWoodenSwordItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
 
     public static final RegistryObject<Item> MOTTLED_BAMBOO =
             ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties(), 50));
