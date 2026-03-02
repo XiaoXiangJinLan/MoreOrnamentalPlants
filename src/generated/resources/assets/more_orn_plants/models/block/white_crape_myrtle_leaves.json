@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "more_orn_plants:block/white_crape_myrtle_leaves"
+  }
+}

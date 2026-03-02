@@ -377,7 +377,13 @@
   "block.more_orn_plants.desert_poplar_wall_hanging_sign": "Desert Poplar Wall Hanging Sign",
 
   "block.more_orn_plants.crape_myrtle_leaves": "Crape Myrtle Leaves",
+  "block.more_orn_plants.red_crape_myrtle_leaves": "Red Crape Myrtle Leaves",
+  "block.more_orn_plants.pink_crape_myrtle_leaves": "Pink Crape Myrtle Leaves",
+  "block.more_orn_plants.white_crape_myrtle_leaves": "White Crape Myrtle Leaves",
   "block.more_orn_plants.crape_myrtle_sapling": "Crape Myrtle Sapling",
+  "block.more_orn_plants.red_crape_myrtle_sapling": "Red Crape Myrtle Sapling",
+  "block.more_orn_plants.pink_crape_myrtle_sapling": "Pink Crape Myrtle Sapling",
+  "block.more_orn_plants.white_crape_myrtle_sapling": "White Crape Myrtle Sapling",
   "block.more_orn_plants.crape_myrtle_log": "Crape Myrtle Log",
   "block.more_orn_plants.crape_myrtle_wood": "Crape Myrtle Wood",
   "block.more_orn_plants.red_azalea_leaves": "Red Azalea Leaves",
@@ -468,6 +474,11 @@
   "block.more_orn_plants.cut_white_rose": "Cut White Rose",
   "block.more_orn_plants.cut_baohua_chinese_rose": "Cut Baohua Chinese Rose",
   "block.more_orn_plants.crape_myrtle": "Crape Myrtle",
+  "block.more_orn_plants.red_crape_myrtle": "Red Crape Myrtle",
+  "block.more_orn_plants.pink_crape_myrtle": "Pink Crape Myrtle",
+  "block.more_orn_plants.white_crape_myrtle": "White Crape Myrtle",
+  "block.more_orn_plants.chinese_wisteria": "Chinese Wisteria",
+  "block.more_orn_plants.chinese_wisteria_plant": "Chinese Wisteria",
   "block.more_orn_plants.cotton_rose": "Cotton Rose",
   "block.more_orn_plants.cut_cotton_rose": "Cut Cotton Rose",
   "block.more_orn_plants.camellia": "Camellia",
@@ -551,6 +562,9 @@
   "block.more_orn_plants.potted_chinaberry_sapling": "Potted Chinaberry Sapling",
   "block.more_orn_plants.potted_desert_poplar_sapling": "Potted Desert Poplar Sapling",
   "block.more_orn_plants.potted_crape_myrtle_sapling": "Potted Crape Myrtle Sapling",
+  "block.more_orn_plants.potted_red_crape_myrtle_sapling": "Potted Red Crape Myrtle Sapling",
+  "block.more_orn_plants.potted_pink_crape_myrtle_sapling": "Potted Pink Crape Myrtle Sapling",
+  "block.more_orn_plants.potted_white_crape_myrtle_sapling": "Potted White Crape Myrtle Sapling",
   "block.more_orn_plants.potted_chrysanthemum": "Potted Chrysanthemum",
   "block.more_orn_plants.potted_golden_chrysanthemum": "Potted Golden Chrysanthemum",
   "block.more_orn_plants.potted_gold_backed_scarlet_mum": "Potted Gold-backed Scarlet",
@@ -699,6 +713,8 @@
   "item.more_orn_plants.lotus_seed": "Lotus Seed",
   "item.more_orn_plants.lotus_seed_pod": "Lotus Seed Pod",
   "item.more_orn_plants.lotus_seed_soup": "Lotus Seed Soup",
+  "item.more_orn_plants.peach_wooden_sword": "Peach Wooden Sword",
+  "item.more_orn_plants.camphor_wooden_sword": "Camphor Wooden Sword",
 
   "biome.more_orn_plants.red_mei_forest": "Red Mei Forest",
   "biome.more_orn_plants.spring_river": "Spring River",
@@ -730,6 +746,7 @@
   "biome.more_orn_plants.crops_green": "Crops Green",
   "biome.more_orn_plants.purple_cloud": "Purple Cloud",
   "biome.more_orn_plants.ten_mile_gallery": "Ten-Mile Gallery",
+  "biome.more_orn_plants.purple_blossom_caves": "Purple Blossom Caves",
 
   "itemGroup.plants": "Ornamental Plants",
 
@@ -798,6 +815,8 @@
   "advancement.moreornplants.dove_tree.description": "Peace and Purity.",
   "advancement.moreornplants.chinaberry_wind.title": "The Chinaberry Blossom Wind",
   "advancement.moreornplants.chinaberry_wind.description": "I blamed the south wind for blowing purple snow,\nUnaware ’twas Chinaberry blooms in flight, by the eaves’ side.",
+  "advancement.moreornplants.foremost_of_vines.title": "Foremost of Vines",
+  "advancement.moreornplants.foremost_of_vines.description": "Wisteria hangs on cloud-kissed trees, \nIts blooms adorn the spring with ease.",
   "advancement.moreornplants.hero_of_desert.title": "Hero of the Desert",
   "advancement.moreornplants.hero_of_desert.description": "A thousand years standing alive,\na thousand years standing dead,\na thousand years enduring fallen.",
   "advancement.moreornplants.grasses.title": "Lush and Gone, Year by Year",
@@ -831,6 +850,8 @@
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7Small tree, non-building material",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7Ornamental varieties,\nnon-building material,\npandas don't like to eat",
+  "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7Deals extra damage to the undead.",
+  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7Deals extra damage to the arthropod.",
 
   "more_orn_plants.configuration.title": "More Ornamental Plants Configs",
   "more_orn_plants.configuration.section.moreornplants.common.toml": "More Ornamental Plants Configs",
@@ -867,6 +888,7 @@
   "more_orn_plants.configuration.enableCropsGreen": "Enable CropsGreen",
   "more_orn_plants.configuration.enablePurpleCloud": "Enable PurpleCloud",
   "more_orn_plants.configuration.enableTenMileGallery": "Enable Ten-MileGallery",
+  "more_orn_plants.configuration.enablePurpleBlossomCaves": "Enable PurpleBlossomCaves",
   "more_orn_plants.configuration.overworldBiomesWeight": "Overworld Biomes Weight",
   "more_orn_plants.configuration.secondOverworldBiomesWeight": "Second Overworld Biomes Weight",
   "more_orn_plants.configuration.specialBiomesWeight": "Special Biomes Weight"

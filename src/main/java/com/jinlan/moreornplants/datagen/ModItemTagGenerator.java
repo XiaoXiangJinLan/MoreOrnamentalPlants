@@ -45,7 +45,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.DOVE_TREE_SAPLING.asItem())
                 .add(ModBlocks.CHINABERRY_SAPLING.asItem())
                 .add(ModBlocks.DESERT_POPLAR_SAPLING.asItem())
-                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.asItem())
                 .add(ModBlocks.RED_MEI_LEAVES.asItem(), ModBlocks.WHITE_MEI_LEAVES.asItem())
                 .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.asItem(), ModBlocks.DOUBLE_PINK_MEI_LEAVES.asItem())
                 .add(ModBlocks.VERSICOLOR_MEI_LEAVES.asItem())
@@ -61,53 +62,17 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.asItem())
                 .add(ModBlocks.CHINABERRY_LEAVES.asItem())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.asItem())
-                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.asItem())
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.asItem(), ModBlocks.RED_CRAPE_MYRTLE_LEAVES.asItem())
+                .add(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES.asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.asItem())
                 .add(ModBlocks.RED_AZALEA_LEAVES.asItem(), ModBlocks.MAYING_RHODODENDRON_LEAVES.asItem(), ModBlocks.DEWDROP_RHODODENDRON_LEAVES.asItem(), ModBlocks.CHARMING_RHODODENDRON_LEAVES.asItem())
                 .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.asItem(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.asItem(), ModBlocks.PINK_RHODODENDRON_LEAVES.asItem(), ModBlocks.CHINESE_AZALEA_LEAVES.asItem())
-                .add(ModBlocks.PEACH_PINK_PETALS.asItem())
-                .add(ModBlocks.FRAGRANT_SNOW_PETALS.asItem());
+                .add(ModBlocks.PEACH_PINK_PETALS.asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.asItem())
+                .add(ModBlocks.CHINESE_WISTERIA.asItem());
 
         this.copy(BlockTags.LEAVES, ItemTags.LEAVES);
         this.copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
-
-        this.tag(Tags.Items.STRIPPED_LOGS)
-                .add(ModBlocks.STRIPPED_RED_MEI_LOG.asItem())
-                .add(ModBlocks.STRIPPED_WHITE_MEI_LOG.asItem())
-                .add(ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.asItem())
-                .add(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG.asItem())
-                .add(ModBlocks.STRIPPED_CRABAPPLE_LOG.asItem())
-                .add(ModBlocks.STRIPPED_APRICOT_LOG.asItem())
-                .add(ModBlocks.STRIPPED_PEACH_LOG.asItem())
-                .add(ModBlocks.STRIPPED_PEAR_LOG.asItem())
-                .add(ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_LOG.asItem())
-                .add(ModBlocks.STRIPPED_OSMANTHUS_LOG.asItem())
-                .add(ModBlocks.STRIPPED_GINKGO_LOG.asItem())
-                .add(ModBlocks.STRIPPED_CHINESE_PARASOL_LOG.asItem())
-                .add(ModBlocks.STRIPPED_SWEETGUM_LOG.asItem())
-                .add(ModBlocks.STRIPPED_CAMPHOR_LOG.asItem())
-                .add(ModBlocks.STRIPPED_DOVE_TREE_LOG.asItem())
-                .add(ModBlocks.STRIPPED_CHINABERRY_LOG.asItem())
-                .add(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.asItem());
-
-        this.tag(Tags.Items.STRIPPED_WOODS)
-                .add(ModBlocks.STRIPPED_RED_MEI_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_WHITE_MEI_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_CRABAPPLE_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_APRICOT_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_PEACH_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_PEAR_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_OSMANTHUS_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_GINKGO_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_CHINESE_PARASOL_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_SWEETGUM_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_CAMPHOR_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_DOVE_TREE_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_CHINABERRY_WOOD.asItem())
-                .add(ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.asItem());
-
+        this.copy(Tags.Blocks.STRIPPED_LOGS, Tags.Items.STRIPPED_LOGS);
+        this.copy(Tags.Blocks.STRIPPED_WOODS, Tags.Items.STRIPPED_WOODS);
         this.copy(BlockTags.PLANKS, ItemTags.PLANKS);
         this.copy(BlockTags.WOODEN_STAIRS, ItemTags.WOODEN_STAIRS);
         this.copy(BlockTags.WOODEN_SLABS, ItemTags.WOODEN_SLABS);
@@ -115,26 +80,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.copy(BlockTags.WOODEN_PRESSURE_PLATES, ItemTags.WOODEN_PRESSURE_PLATES);
         this.copy(BlockTags.WOODEN_FENCES, ItemTags.WOODEN_FENCES);
         this.copy(BlockTags.FENCE_GATES, ItemTags.FENCE_GATES);
-
-        this.tag(Tags.Items.FENCE_GATES_WOODEN)
-                .add(ModBlocks.RED_MEI_FENCE_GATE.asItem())
-                .add(ModBlocks.WHITE_MEI_FENCE_GATE.asItem())
-                .add(ModBlocks.GREEN_CALYX_MEI_FENCE_GATE.asItem())
-                .add(ModBlocks.DOUBLE_PINK_MEI_FENCE_GATE.asItem())
-                .add(ModBlocks.CRABAPPLE_FENCE_GATE.asItem())
-                .add(ModBlocks.APRICOT_FENCE_GATE.asItem())
-                .add(ModBlocks.PEACH_FENCE_GATE.asItem())
-                .add(ModBlocks.PEAR_FENCE_GATE.asItem())
-                .add(ModBlocks.PURPLE_LEAF_PLUM_FENCE_GATE.asItem())
-                .add(ModBlocks.OSMANTHUS_FENCE_GATE.asItem())
-                .add(ModBlocks.GINKGO_FENCE_GATE.asItem())
-                .add(ModBlocks.CHINESE_PARASOL_FENCE_GATE.asItem())
-                .add(ModBlocks.SWEETGUM_FENCE_GATE.asItem())
-                .add(ModBlocks.CAMPHOR_FENCE_GATE.asItem())
-                .add(ModBlocks.DOVE_TREE_FENCE_GATE.asItem())
-                .add(ModBlocks.CHINABERRY_FENCE_GATE.asItem())
-                .add(ModBlocks.DESERT_POPLAR_FENCE_GATE.asItem());
-
+        this.copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
         this.copy(BlockTags.WOODEN_DOORS, ItemTags.WOODEN_DOORS);
         this.copy(BlockTags.WOODEN_TRAPDOORS, ItemTags.WOODEN_TRAPDOORS);
         this.copy(BlockTags.STANDING_SIGNS, ItemTags.SIGNS);
@@ -228,6 +174,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(CommonTags.Items.BAMBOO)
                 .addTag(CommonTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.COTTON_ROSE.asItem())
+                .add(ModBlocks.CHINESE_WISTERIA.asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.asItem())
                 .add(ModBlocks.FRAGRANT_SNOW_PETALS.asItem())
                 .add(ModItems.BAMBOO_STICK.get())
@@ -332,7 +279,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.asItem(), ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.asItem());
 
         this.tag(CommonTags.Items.CRAPE_MYRTLE)
-                .add(ModBlocks.CRAPE_MYRTLE.asItem(), ModBlocks.CRAPE_MYRTLE_SAPLING.asItem());
+                .add(ModBlocks.CRAPE_MYRTLE.asItem(), ModBlocks.CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.RED_CRAPE_MYRTLE.asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.PINK_CRAPE_MYRTLE.asItem(), ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.WHITE_CRAPE_MYRTLE.asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.asItem());
 
         this.tag(CommonTags.Items.BAMBOO)
                 .add(Items.BAMBOO, ModItems.MOTTLED_BAMBOO.get(), ModItems.BLACK_BAMBOO.get());
@@ -361,6 +311,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PEACH_PINK_PETALS.asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE.asItem())
                 .add(ModBlocks.COTTON_ROSE.asItem())
+                .add(ModBlocks.PINK_CRAPE_MYRTLE.asItem(), ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.asItem())
                 .add(ModBlocks.LOTUS.asItem())
                 .add(ModItems.ORNAMENTAL_PEACH_PETALS.get(), ModItems.WILD_PEACH_PETALS.get())
                 .add(ModBlocks.PINK_FOUNTAIN_GRASS.asItem());
@@ -373,6 +324,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_LOTUS.asItem())
                 .add(ModBlocks.WHITE_FOUNTAIN_GRASS.asItem())
                 .add(ModBlocks.DEWDROP_RHODODENDRON.asItem(), ModBlocks.GREAT_WHITE_RHODODENDRON.asItem())
+                .add(ModBlocks.WHITE_CRAPE_MYRTLE.asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.asItem())
                 .add(ModBlocks.FRAGRANT_SNOW_PETALS.asItem());
 
         this.tag(ModTags.Items.YELLOW_DYE)
@@ -393,10 +345,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PURPLE_PEONY.asItem(), ModBlocks.LIGHT_PURPLE_PEONY.asItem(), ModBlocks.INK_PURPLE_PEONY.asItem(), ModBlocks.VIOLET_PEONY.asItem())
                 .add(ModBlocks.PURPLE_RHODODENDRON.asItem())
                 .add(ModBlocks.CRAPE_MYRTLE.asItem(), ModBlocks.CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.CHINESE_WISTERIA.asItem())
                 .add(ModBlocks.FOUNTAIN_GRASS.asItem(), ModBlocks.PURPLE_FOUNTAIN_GRASS.asItem());
 
         this.tag(ModTags.Items.MAGENTA_DYE)
-                .add(ModBlocks.CHARMING_RHODODENDRON.asItem());
+                .add(ModBlocks.CHARMING_RHODODENDRON.asItem())
+                .add(ModBlocks.RED_CRAPE_MYRTLE.asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.asItem());
 
         this.tag(ModTags.Items.LIME_DYE)
                 .add(ModBlocks.SPRING_CYMBIDIUM.asItem())
@@ -476,5 +430,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.WOLF_FOOD)
                 .add(ModItems.LOTUS_ROOT_SOUP.get());
+
+        this.tag(ItemTags.SWORDS)
+                .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get());
+
+        this.tag(Tags.Items.MELEE_WEAPON_TOOLS)
+                .add(ModItems.BAMBOO_STICK.get(), ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get());
     }
 }

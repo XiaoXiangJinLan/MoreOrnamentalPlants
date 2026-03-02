@@ -263,6 +263,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.CHINABERRY_SAPLING);
         saplingItem(ModBlocks.DESERT_POPLAR_SAPLING);
         saplingItem(ModBlocks.CRAPE_MYRTLE_SAPLING);
+        saplingItem(ModBlocks.RED_CRAPE_MYRTLE_SAPLING);
+        saplingItem(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING);
+        saplingItem(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING);
 
         flowerItem(ModBlocks.RED_WEEPING_MEI);
         flowerItem(ModBlocks.WHITE_WEEPING_MEI);
@@ -271,6 +274,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.VERSICOLOR_WEEPING_MEI);
 
         flowerItem(ModBlocks.WEEPING_CRABAPPLE);
+        wisteriaItem(ModBlocks.CHINESE_WISTERIA);
 
         flowerItem(ModBlocks.CHRYSANTHEMUM);
         flowerItem(ModBlocks.GOLDEN_CHRYSANTHEMUM);
@@ -347,6 +351,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         tallCrossItem(ModBlocks.YELLOW_WHITE_CHINESE_ROSE);
         tallCrossItem(ModBlocks.BAOHUA_CHINESE_ROSE);
         tallCrossItem(ModBlocks.CRAPE_MYRTLE);
+        tallCrossItem(ModBlocks.RED_CRAPE_MYRTLE);
+        tallCrossItem(ModBlocks.PINK_CRAPE_MYRTLE);
+        tallCrossItem(ModBlocks.WHITE_CRAPE_MYRTLE);
         tallCrossItem(ModBlocks.COTTON_ROSE);
 
         flowerItem(ModBlocks.CUT_PEONY);
@@ -410,6 +417,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PEACH_XIANGNANG);
         simpleItem(ModItems.PEAR_XIANGNANG);
         simpleItem(ModItems.LOTUS_XIANGNANG);
+
+        handheldItem(ModItems.PEACH_WOODEN_SWORD.get());
+        handheldItem(ModItems.CAMPHOR_WOODEN_SWORD.get());
     }
 
     private void saplingItem(DeferredBlock<Block> item) {
@@ -460,6 +470,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(block.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/" + block.getId().getPath() + "_top"));
+    }
+
+    private void wisteriaItem(DeferredBlock<Block> block) {
+        withExistingParent(block.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/" + block.getId().getPath() + "_2"));
     }
 
     private void flowerUsePottedTextureItem(DeferredBlock<Block> block) {

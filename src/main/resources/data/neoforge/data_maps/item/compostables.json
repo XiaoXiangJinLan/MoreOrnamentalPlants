@@ -198,7 +198,25 @@
     "more_orn_plants:crape_myrtle_leaves": {
       "chance": 0.3
     },
+    "more_orn_plants:red_crape_myrtle_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:pink_crape_myrtle_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_crape_myrtle_leaves": {
+      "chance": 0.3
+    },
     "more_orn_plants:crape_myrtle_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:red_crape_myrtle_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:pink_crape_myrtle_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_crape_myrtle_sapling": {
       "chance": 0.3
     },
     "more_orn_plants:chrysanthemum": {
@@ -364,6 +382,18 @@
       "chance": 0.65
     },
     "more_orn_plants:crape_myrtle": {
+      "chance": 0.65
+    },
+    "more_orn_plants:red_crape_myrtle": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_crape_myrtle": {
+      "chance": 0.65
+    },
+    "more_orn_plants:white_crape_myrtle": {
+      "chance": 0.65
+    },
+    "more_orn_plants:chinese_wisteria": {
       "chance": 0.65
     },
     "more_orn_plants:cotton_rose": {

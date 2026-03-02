@@ -377,7 +377,13 @@
   "block.more_orn_plants.desert_poplar_wall_hanging_sign": "胡楊墙懸牌",
 
   "block.more_orn_plants.crape_myrtle_leaves": "紫薇葉",
+  "block.more_orn_plants.red_crape_myrtle_leaves": "紅薇葉",
+  "block.more_orn_plants.pink_crape_myrtle_leaves": "粉薇葉",
+  "block.more_orn_plants.white_crape_myrtle_leaves": "白薇葉",
   "block.more_orn_plants.crape_myrtle_sapling": "紫薇秧",
+  "block.more_orn_plants.red_crape_myrtle_sapling": "紅薇秧",
+  "block.more_orn_plants.pink_crape_myrtle_sapling": "粉薇秧",
+  "block.more_orn_plants.white_crape_myrtle_sapling": "白薇秧",
   "block.more_orn_plants.crape_myrtle_log": "紫薇樁",
   "block.more_orn_plants.crape_myrtle_wood": "紫薇木",
   "block.more_orn_plants.red_azalea_leaves": "映山紅葉",
@@ -468,6 +474,11 @@
   "block.more_orn_plants.cut_white_rose": "切花純如",
   "block.more_orn_plants.cut_baohua_chinese_rose": "切花寶華",
   "block.more_orn_plants.crape_myrtle": "紫薇",
+  "block.more_orn_plants.red_crape_myrtle": "紅薇",
+  "block.more_orn_plants.pink_crape_myrtle": "粉薇",
+  "block.more_orn_plants.white_crape_myrtle": "白薇",
+  "block.more_orn_plants.chinese_wisteria": "紫藤",
+  "block.more_orn_plants.chinese_wisteria_plant": "紫藤",
   "block.more_orn_plants.cotton_rose": "芙蓉",
   "block.more_orn_plants.cut_cotton_rose": "切花芙蓉",
   "block.more_orn_plants.camellia": "山茶",
@@ -551,6 +562,9 @@
   "block.more_orn_plants.potted_chinaberry_sapling": "苦楝盆景",
   "block.more_orn_plants.potted_desert_poplar_sapling": "胡楊盆景",
   "block.more_orn_plants.potted_crape_myrtle_sapling": "紫薇盆景",
+  "block.more_orn_plants.potted_red_crape_myrtle_sapling": "紅薇盆景",
+  "block.more_orn_plants.potted_pink_crape_myrtle_sapling": "粉薇盆景",
+  "block.more_orn_plants.potted_white_crape_myrtle_sapling": "白薇盆景",
   "block.more_orn_plants.potted_chrysanthemum": "菊盆景",
   "block.more_orn_plants.potted_golden_chrysanthemum": "金菊盆景",
   "block.more_orn_plants.potted_gold_backed_scarlet_mum": "金背大紅盆景",
@@ -699,6 +713,8 @@
   "item.more_orn_plants.lotus_seed": "蓮子",
   "item.more_orn_plants.lotus_seed_pod": "蓮蓬",
   "item.more_orn_plants.lotus_seed_soup": "蓮子羹",
+  "item.more_orn_plants.peach_wooden_sword": "桃木劍",
+  "item.more_orn_plants.camphor_wooden_sword": "樟木劍",
 
   "biome.more_orn_plants.red_mei_forest": "白雪紅梅",
   "biome.more_orn_plants.spring_river": "春江",
@@ -730,6 +746,7 @@
   "biome.more_orn_plants.crops_green": "禾青",
   "biome.more_orn_plants.purple_cloud": "紫雲林",
   "biome.more_orn_plants.ten_mile_gallery": "十里畫廊",
+  "biome.more_orn_plants.purple_blossom_caves": "紫花洞",
 
   "itemGroup.plants": "羣芳譜",
 
@@ -798,6 +815,8 @@
   "advancement.moreornplants.dove_tree.description": "和平與純潔",
   "advancement.moreornplants.chinaberry_wind.title": "楝花風",
   "advancement.moreornplants.chinaberry_wind.description": "只怪南風吹紫雪，不知屋角楝花飛",
+  "advancement.moreornplants.foremost_of_vines.title": "藤花王",
+  "advancement.moreornplants.foremost_of_vines.description": "紫藤掛雲木，花蔓宜陽春",
   "advancement.moreornplants.hero_of_desert.title": "沙漠英雄樹",
   "advancement.moreornplants.hero_of_desert.description": "生千年不死，死千年不倒，倒千年不朽",
   "advancement.moreornplants.grasses.title": "離離原上草，一歲一枯榮",
@@ -831,6 +850,8 @@
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小喬木，非建材",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞種，非建材，貓熊不食",
+  "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7對亡靈增傷",
+  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7對蟲增傷",
 
   "more_orn_plants.configuration.title": "羣芳譜",
   "more_orn_plants.configuration.section.moreornplants.common.toml": "群系",
@@ -867,6 +888,7 @@
   "more_orn_plants.configuration.enableCropsGreen": "禾青",
   "more_orn_plants.configuration.enablePurpleCloud": "紫雲林",
   "more_orn_plants.configuration.enableTenMileGallery": "十里畫廊",
+  "more_orn_plants.configuration.enablePurpleBlossomCaves": "紫花洞",
   "more_orn_plants.configuration.overworldBiomesWeight": "主群系",
   "more_orn_plants.configuration.secondOverworldBiomesWeight": "次群系",
   "more_orn_plants.configuration.specialBiomesWeight": "桃花源"

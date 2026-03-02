@@ -1,0 +1,33 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_wisteria": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:chinese_wisteria"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.foremost_of_vines.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:chinese_wisteria"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.foremost_of_vines.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_wisteria"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

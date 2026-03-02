@@ -49,6 +49,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHINABERRY_LEAVES);
                         pOutput.accept(ModBlocks.DESERT_POPLAR_LEAVES);
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_LEAVES);
+                        pOutput.accept(ModBlocks.RED_CRAPE_MYRTLE_LEAVES);
+                        pOutput.accept(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES);
+                        pOutput.accept(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES);
                         pOutput.accept(ModBlocks.RED_AZALEA_LEAVES);
                         pOutput.accept(ModBlocks.MAYING_RHODODENDRON_LEAVES);
                         pOutput.accept(ModBlocks.DEWDROP_RHODODENDRON_LEAVES);
@@ -89,6 +92,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHINABERRY_SAPLING);
                         pOutput.accept(ModBlocks.DESERT_POPLAR_SAPLING);
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_SAPLING);
+                        pOutput.accept(ModBlocks.RED_CRAPE_MYRTLE_SAPLING);
+                        pOutput.accept(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING);
+                        pOutput.accept(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING);
                         pOutput.accept(ModBlocks.SPRING_CYMBIDIUM);
                         pOutput.accept(ModBlocks.SUMMER_CYMBIDIUM);
                         pOutput.accept(ModBlocks.AUTUMN_CYMBIDIUM);
@@ -188,6 +194,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.GREEN_WEEPING_MEI);
                         pOutput.accept(ModBlocks.PINK_WEEPING_MEI);
                         pOutput.accept(ModBlocks.VERSICOLOR_WEEPING_MEI);
+                        pOutput.accept(ModBlocks.CHINESE_WISTERIA);
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE);
                         pOutput.accept(ModBlocks.WINTER_CYMBIDIUM);
                         pOutput.accept(ModBlocks.ZHAO_PINK_PEONY);
@@ -206,8 +213,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RED_WHITE_CHINESE_ROSE);
                         pOutput.accept(ModBlocks.PINK_WHITE_CHINESE_ROSE);
                         pOutput.accept(ModBlocks.YELLOW_WHITE_CHINESE_ROSE);
-                        pOutput.accept(ModBlocks.WINTERSWEET);
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE);
+                        pOutput.accept(ModBlocks.RED_CRAPE_MYRTLE);
+                        pOutput.accept(ModBlocks.PINK_CRAPE_MYRTLE);
+                        pOutput.accept(ModBlocks.WHITE_CRAPE_MYRTLE);
+                        pOutput.accept(ModBlocks.WINTERSWEET);
                         pOutput.accept(ModBlocks.COTTON_ROSE);
                         pOutput.accept(ModBlocks.MISCANTHUS);
                         pOutput.accept(ModBlocks.GOLDEN_MISCANTHUS);
@@ -520,6 +530,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.PEACH_XIANGNANG);
                         pOutput.accept(ModItems.PEAR_XIANGNANG);
                         pOutput.accept(ModItems.LOTUS_XIANGNANG);
+                        pOutput.accept(ModItems.PEACH_WOODEN_SWORD);
+                        pOutput.accept(ModItems.CAMPHOR_WOODEN_SWORD);
                     }).build());
 
     public static void register(IEventBus eventBus) {

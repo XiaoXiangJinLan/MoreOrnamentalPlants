@@ -360,6 +360,12 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.DESERT_POPLAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.CRAPE_MYRTLE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CRAPE_MYRTLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.RED_CRAPE_MYRTLE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.RED_AZALEA_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.RED_AZALEA.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.MAYING_RHODODENDRON_LEAVES.get(), block ->
@@ -589,6 +595,15 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CRAPE_MYRTLE_SAPLING.get());
         this.add(ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
+        this.dropSelf(ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get());
+        this.add(ModBlocks.POTTED_RED_CRAPE_MYRTLE_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get()));
+        this.dropSelf(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get());
+        this.add(ModBlocks.POTTED_PINK_CRAPE_MYRTLE_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get()));
+        this.dropSelf(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get());
+        this.add(ModBlocks.POTTED_WHITE_CRAPE_MYRTLE_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get()));
 
         this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),
@@ -822,6 +837,12 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.CRAPE_MYRTLE.get(), createSinglePropConditionTable(ModBlocks.CRAPE_MYRTLE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.RED_CRAPE_MYRTLE.get(), createSinglePropConditionTable(ModBlocks.RED_CRAPE_MYRTLE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.PINK_CRAPE_MYRTLE.get(), createSinglePropConditionTable(ModBlocks.PINK_CRAPE_MYRTLE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.WHITE_CRAPE_MYRTLE.get(), createSinglePropConditionTable(ModBlocks.WHITE_CRAPE_MYRTLE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.COTTON_ROSE.get(), createSinglePropConditionTable(ModBlocks.COTTON_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.MISCANTHUS.get(), block -> createDoublePlantWithSeedDrops(block, ModBlocks.MISCANTHUS.get()));
@@ -944,6 +965,9 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_0.get());
         this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_1.get());
         this.dropSelf(ModBlocks.GINKGO_LEAF_PILE.get());
+
+        this.dropSelf(ModBlocks.CHINESE_WISTERIA.get());
+        this.dropOther(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.CHINESE_WISTERIA.asItem());
 
         this.dropSelf(ModBlocks.MEI_XIANGNANG.get());
         this.dropSelf(ModBlocks.OSMANTHUS_XIANGNANG.get());

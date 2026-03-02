@@ -3,9 +3,11 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
+import com.jinlan.moreornplants.block.WeepingBlocks.WeepingMeiPlantBlock;
+import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaBlock;
+import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaPlantBlock;
 import com.jinlan.moreornplants.block.xiangnangBlocks.MeiXiangnangBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
-import com.jinlan.moreornplants.block.WeepingBlocks.PinkWeepingMeiPlantBlock;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -526,6 +528,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.CRAPE_MYRTLE_SAPLING);
         simpleBlock(ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING.get(), models().singleTexture("potted_crape_myrtle_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CRAPE_MYRTLE_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.RED_CRAPE_MYRTLE_LEAVES);
+        saplingBlock(ModBlocks.RED_CRAPE_MYRTLE_SAPLING);
+        simpleBlock(ModBlocks.POTTED_RED_CRAPE_MYRTLE_SAPLING.get(), models().singleTexture("potted_red_crape_myrtle_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES);
+        saplingBlock(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING);
+        simpleBlock(ModBlocks.POTTED_PINK_CRAPE_MYRTLE_SAPLING.get(), models().singleTexture("potted_pink_crape_myrtle_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES);
+        saplingBlock(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING);
+        simpleBlock(ModBlocks.POTTED_WHITE_CRAPE_MYRTLE_SAPLING.get(), models().singleTexture("potted_white_crape_myrtle_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get())).renderType("cutout"));
 
         flowerBlock(ModBlocks.RED_WEEPING_MEI);
         weepingMeiPlantBlock(ModBlocks.RED_WEEPING_MEI_PLANT);
@@ -539,6 +553,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         weepingMeiPlantBlock(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT);
 
         flowerBlock(ModBlocks.WEEPING_CRABAPPLE);
+
+        wisteriaBlock();
+        wisteriaPlantBlock();
 
         flowerBlock(ModBlocks.CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_CHRYSANTHEMUM.get(), models().singleTexture("potted_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",
@@ -764,6 +781,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_wintersweet")).renderType("cutout"));
         tallCrossBlock(ModBlocks.COTTON_ROSE);
         tallCrossBlock(ModBlocks.CRAPE_MYRTLE);
+        tallCrossBlock(ModBlocks.RED_CRAPE_MYRTLE);
+        tallCrossBlock(ModBlocks.PINK_CRAPE_MYRTLE);
+        tallCrossBlock(ModBlocks.WHITE_CRAPE_MYRTLE);
 
         flowerBlock(ModBlocks.CUT_PEONY);
         simpleBlock(ModBlocks.POTTED_CUT_PEONY.get(), models().singleTexture("potted_cut_peony", ResourceLocation.parse("flower_pot_cross"), "plant",
@@ -850,7 +870,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         lotusBlock(ModBlocks.LOTUS);
         lotusBlock(ModBlocks.WHITE_LOTUS);
-        lotusLeafBlock(ModBlocks.LOTUS_LEAF);
+        lotusLeafBlock();
 
         leafPileBlock(ModBlocks.ORNAMENTAL_PEACH_PETALS);
         leafPileBlock(ModBlocks.WILD_PEACH_PETALS);
@@ -881,9 +901,35 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ModelFile topModel = models().cross(blockRegistryObject.getId().getPath() + "_top",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/" + baseName + "_2")).renderType("cutout");
         getVariantBuilder(blockRegistryObject.get())
-                .partialState().with(PinkWeepingMeiPlantBlock.TOP, false)
+                .partialState().with(WeepingMeiPlantBlock.TOP, false)
                 .modelForState().modelFile(normalModel).addModel()
-                .partialState().with(PinkWeepingMeiPlantBlock.TOP, true)
+                .partialState().with(WeepingMeiPlantBlock.TOP, true)
+                .modelForState().modelFile(topModel).addModel();
+    }
+
+    private void wisteriaBlock() {
+        String baseName = ModBlocks.CHINESE_WISTERIA.getId().getPath();
+        ModelFile normalModel = models().cross(ModBlocks.CHINESE_WISTERIA.getId().getPath(),
+                blockTexture(ModBlocks.CHINESE_WISTERIA.get())).renderType("cutout");
+        ModelFile topModel = models().cross(ModBlocks.CHINESE_WISTERIA.getId().getPath() + "_top",
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/" + baseName + "_2")).renderType("cutout");
+        getVariantBuilder(ModBlocks.CHINESE_WISTERIA.get())
+                .partialState().with(WisteriaBlock.TOP, false)
+                .modelForState().modelFile(normalModel).addModel()
+                .partialState().with(WisteriaBlock.TOP, true)
+                .modelForState().modelFile(topModel).addModel();
+    }
+
+    private void wisteriaPlantBlock() {
+        String baseName = ModBlocks.CHINESE_WISTERIA_PLANT.getId().getPath();
+        ModelFile normalModel = models().cross(ModBlocks.CHINESE_WISTERIA_PLANT.getId().getPath(),
+                blockTexture(ModBlocks.CHINESE_WISTERIA_PLANT.get())).renderType("cutout");
+        ModelFile topModel = models().cross(ModBlocks.CHINESE_WISTERIA_PLANT.getId().getPath() + "_top",
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/" + baseName + "_2")).renderType("cutout");
+        getVariantBuilder(ModBlocks.CHINESE_WISTERIA_PLANT.get())
+                .partialState().with(WisteriaPlantBlock.TOP, false)
+                .modelForState().modelFile(normalModel).addModel()
+                .partialState().with(WisteriaPlantBlock.TOP, true)
                 .modelForState().modelFile(topModel).addModel();
     }
 
@@ -1027,15 +1073,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         }
     }
 
-    private void lotusLeafBlock(DeferredBlock<Block> blockRegistryObject) {
-        String baseName = blockRegistryObject.getId().getPath();
+    private void lotusLeafBlock() {
+        String baseName = ModBlocks.LOTUS_LEAF.getId().getPath();
         ModelFile bottomModel = models().cross(baseName + "_bottom",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/lotus_bottom")).renderType("cutout");
         ModelFile topModel = models().withExistingParent(baseName + "_top", modLoc("block/lotus_leaf"))
                 .texture("leaf", modLoc("block/" + baseName))
                 .texture("stem", modLoc("block/" + baseName + "_stem"))
                 .renderType("cutout");
-        VariantBlockStateBuilder builder = getVariantBuilder(blockRegistryObject.get());
+        VariantBlockStateBuilder builder = getVariantBuilder(ModBlocks.LOTUS_LEAF.get());
         builder.partialState()
                 .with(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
                 .modelForState().modelFile(bottomModel)

@@ -254,6 +254,27 @@ public class ModTreeGrower {
             Optional.empty()
     );
 
+    public static final TreeGrower RED_CRAPE_MYRTLE = new TreeGrower(
+            "red_crape_myrtle",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.RED_CRAPE_MYRTLE_TREE),
+            Optional.empty()
+    );
+
+    public static final TreeGrower PINK_CRAPE_MYRTLE = new TreeGrower(
+            "pink_crape_myrtle",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.PINK_CRAPE_MYRTLE_TREE),
+            Optional.empty()
+    );
+
+    public static final TreeGrower WHITE_CRAPE_MYRTLE = new TreeGrower(
+            "white_crape_myrtle",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.WHITE_CRAPE_MYRTLE_TREE),
+            Optional.empty()
+    );
+
     public static final TreeGrower RED_AZALEA_TREE = new TreeGrower(
             "red_azalea_tree",
             Optional.empty(),

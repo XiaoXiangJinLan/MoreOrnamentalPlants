@@ -27,6 +27,9 @@
     "more_orn_plants:chinaberry_sapling",
     "more_orn_plants:desert_poplar_sapling",
     "more_orn_plants:crape_myrtle_sapling",
+    "more_orn_plants:red_crape_myrtle_sapling",
+    "more_orn_plants:pink_crape_myrtle_sapling",
+    "more_orn_plants:white_crape_myrtle_sapling",
     "more_orn_plants:red_mei_leaves",
     "more_orn_plants:white_mei_leaves",
     "more_orn_plants:green_calyx_mei_leaves",
@@ -57,6 +60,9 @@
     "more_orn_plants:chinaberry_leaves",
     "more_orn_plants:desert_poplar_leaves",
     "more_orn_plants:crape_myrtle_leaves",
+    "more_orn_plants:red_crape_myrtle_leaves",
+    "more_orn_plants:pink_crape_myrtle_leaves",
+    "more_orn_plants:white_crape_myrtle_leaves",
     "more_orn_plants:red_azalea_leaves",
     "more_orn_plants:maying_rhododendron_leaves",
     "more_orn_plants:dewdrop_rhododendron_leaves",
@@ -66,6 +72,8 @@
     "more_orn_plants:pink_rhododendron_leaves",
     "more_orn_plants:chinese_azalea_leaves",
     "more_orn_plants:peach_pink_petals",
-    "more_orn_plants:fragrant_snow_petals"
+    "more_orn_plants:fragrant_snow_petals",
+    "more_orn_plants:chinese_wisteria",
+    "more_orn_plants:chinese_wisteria_plant"
   ]
 }

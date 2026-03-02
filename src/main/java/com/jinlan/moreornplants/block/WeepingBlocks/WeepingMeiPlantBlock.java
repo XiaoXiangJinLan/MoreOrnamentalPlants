@@ -41,7 +41,6 @@ public class WeepingMeiPlantBlock extends GrowingPlantBodyBlock {
         return 30;
     }
 
-
     @Override
     protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
@@ -59,7 +58,7 @@ public class WeepingMeiPlantBlock extends GrowingPlantBodyBlock {
     }
 
     @Override
-    public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
+    public boolean canSurvive(@NotNull BlockState state, LevelReader level, BlockPos pos) {
         BlockPos abovePos = pos.above();
         BlockState aboveState = level.getBlockState(abovePos);
 
