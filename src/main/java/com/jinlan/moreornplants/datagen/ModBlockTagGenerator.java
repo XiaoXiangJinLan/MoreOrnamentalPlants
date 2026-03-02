@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.datagen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.util.CommonTags;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -28,27 +29,25 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.CROPS)
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.LOTUS_LEAF.get());
+                .addTag(CommonTags.Blocks.LOTUS)
+                .add(ModBlocks.LOTUS_LEAF.get());
 
         this.tag(BlockTags.MAINTAINS_FARMLAND)
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.LOTUS_LEAF.get());
+                .addTag(CommonTags.Blocks.LOTUS)
+                .add(ModBlocks.LOTUS_LEAF.get());
 
         this.tag(BlockTags.REPLACEABLE).add(ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.MOSS_REPLACEABLE)
-                .add(ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.RED_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.WHITE_WEEPING_MEI.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.GREEN_WEEPING_MEI.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.PINK_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
+                .addTag(CommonTags.Blocks.WEEPING_MEI)
+                .add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get(),
+                        ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get());
 
         this.tag(BlockTags.SWORD_EFFICIENT)
-                .add(ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.RED_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.WHITE_WEEPING_MEI.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.GREEN_WEEPING_MEI.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.PINK_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
+                .addTag(CommonTags.Blocks.WEEPING_MEI)
+                .add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get(),
+                        ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get())
                 .add(ModBlocks.FOUNTAIN_GRASS.get(), ModBlocks.PURPLE_FOUNTAIN_GRASS.get(), ModBlocks.PINK_FOUNTAIN_GRASS.get(), ModBlocks.WHITE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.BAMBOO_STICK.get());
@@ -114,100 +113,77 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.FLOWERS)
                 .addTag(BlockTags.SMALL_FLOWERS)
                 .addTag(BlockTags.TALL_FLOWERS)
-                .add(ModBlocks.RED_MEI_SAPLING.get(), ModBlocks.WHITE_MEI_SAPLING.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_SAPLING.get(), ModBlocks.DOUBLE_PINK_MEI_SAPLING.get())
-                .add(ModBlocks.VERSICOLOR_MEI_SAPLING.get())
-                .add(ModBlocks.RED_WEEPING_MEI_SAPLING.get(), ModBlocks.WHITE_WEEPING_MEI_SAPLING.get())
-                .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), ModBlocks.PINK_WEEPING_MEI_SAPLING.get())
-                .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get())
-                .add(ModBlocks.PINK_APRICOT_SAPLING.get(), ModBlocks.WHITE_APRICOT_SAPLING.get())
-                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.WILD_PEACH_SAPLING.get())
+                .addTag(CommonTags.Blocks.MEI_SAPLING)
+                .addTag(CommonTags.Blocks.CRABAPPLE_SAPLING)
+                .addTag(CommonTags.Blocks.APRICOT_SAPLING)
+                .addTag(CommonTags.Blocks.PEACH_SAPLING)
                 .add(ModBlocks.PEAR_SAPLING.get())
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get())
-                .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get(), ModBlocks.ORANGE_OSMANTHUS_SAPLING.get(), ModBlocks.WHITE_OSMANTHUS_SAPLING.get())
+                .addTag(CommonTags.Blocks.OSMANTHUS_SAPLING)
                 .add(ModBlocks.DOVE_TREE_SAPLING.get())
                 .add(ModBlocks.CHINABERRY_SAPLING.get())
                 .add(ModBlocks.DESERT_POPLAR_SAPLING.get())
-                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get())
-                .add(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get())
-                .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get(), ModBlocks.DOUBLE_PINK_MEI_LEAVES.get())
-                .add(ModBlocks.VERSICOLOR_MEI_LEAVES.get())
-                .add(ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.RED_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.WHITE_WEEPING_MEI.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.GREEN_WEEPING_MEI.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.PINK_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
-                .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get())
-                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get())
+                .addTag(CommonTags.Blocks.CRAPE_MYRTLE_SAPLING)
+                .addTag(CommonTags.Blocks.MEI_LEAVES)
+                .addTag(CommonTags.Blocks.CRABAPPLE_LEAVES)
+                .addTag(CommonTags.Blocks.APRICOT_LEAVES)
+                .addTag(CommonTags.Blocks.PEACH_LEAVES)
                 .add(ModBlocks.PEAR_LEAVES.get())
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get())
-                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
+                .addTag(CommonTags.Blocks.OSMANTHUS_LEAVES)
                 .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
-                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get(), ModBlocks.RED_CRAPE_MYRTLE_LEAVES.get())
-                .add(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES.get(), ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get())
-                .add(ModBlocks.RED_AZALEA_LEAVES.get(), ModBlocks.MAYING_RHODODENDRON_LEAVES.get(), ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get(), ModBlocks.CHARMING_RHODODENDRON_LEAVES.get())
-                .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.get(), ModBlocks.PINK_RHODODENDRON_LEAVES.get(), ModBlocks.CHINESE_AZALEA_LEAVES.get())
+                .addTag(CommonTags.Blocks.CRAPE_MYRTLE_LEAVES)
+                .addTag(CommonTags.Blocks.RHODODENDRON_LEAVES)
+                .addTag(CommonTags.Blocks.WEEPING_MEI)
+                .add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get(),
+                        ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.PEACH_PINK_PETALS.get(), ModBlocks.FRAGRANT_SNOW_PETALS.get())
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get());
 
         this.tag(BlockTags.LEAVES)
-                .add(ModBlocks.RED_MEI_LEAVES.get())
-                .add(ModBlocks.WHITE_MEI_LEAVES.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get())
-                .add(ModBlocks.VERSICOLOR_MEI_LEAVES.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
-                .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get())
-                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get())
+                .addTag(CommonTags.Blocks.MEI_LEAVES)
+                .addTag(CommonTags.Blocks.CRABAPPLE_LEAVES)
+                .addTag(CommonTags.Blocks.APRICOT_LEAVES)
+                .addTag(CommonTags.Blocks.PEACH_LEAVES)
                 .add(ModBlocks.PEAR_LEAVES.get())
-                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get(), ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get())
-                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
-                .add(ModBlocks.GOLDEN_GINKGO_LEAVES.get(), ModBlocks.GREEN_GINKGO_LEAVES.get())
-                .add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get(), ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get())
+                .addTag(CommonTags.Blocks.PLUM_LEAVES)
+                .addTag(CommonTags.Blocks.OSMANTHUS_LEAVES)
+                .addTag(CommonTags.Blocks.GINKGO_LEAVES)
+                .addTag(CommonTags.Blocks.CHINESE_PARASOL_LEAVES)
                 .add(ModBlocks.SWEETGUM_LEAVES.get())
-                .add(ModBlocks.CAMPHOR_LEAVES.get(), ModBlocks.NEW_CAMPHOR_LEAVES.get())
-                .add(ModBlocks.DOVE_TREE_LEAVES.get(), ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
+                .addTag(CommonTags.Blocks.CAMPHOR_LEAVES)
+                .addTag(CommonTags.Blocks.DOVE_TREE_LEAVES)
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
-                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get(), ModBlocks.RED_CRAPE_MYRTLE_LEAVES.get())
-                .add(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES.get(), ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get())
-                .add(ModBlocks.RED_AZALEA_LEAVES.get(), ModBlocks.MAYING_RHODODENDRON_LEAVES.get(), ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get(), ModBlocks.CHARMING_RHODODENDRON_LEAVES.get())
-                .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.get(), ModBlocks.PINK_RHODODENDRON_LEAVES.get(), ModBlocks.CHINESE_AZALEA_LEAVES.get());
+                .addTag(CommonTags.Blocks.CRAPE_MYRTLE_LEAVES)
+                .addTag(CommonTags.Blocks.RHODODENDRON_LEAVES);
 
         this.tag(BlockTags.CLIMBABLE)
-                .add(ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.RED_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.WHITE_WEEPING_MEI.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.GREEN_WEEPING_MEI.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.PINK_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
+                .addTag(CommonTags.Blocks.WEEPING_MEI)
+                .add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get(),
+                        ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get());
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.MOTTLED_BAMBOO_SAPLING.get(), ModBlocks.BLACK_BAMBOO_SAPLING.get())
-                .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get(), ModBlocks.GREEN_CALYX_MEI_LEAVES.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), ModBlocks.VERSICOLOR_MEI_LEAVES.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
-                .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get())
-                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get())
+                .addTag(CommonTags.Blocks.MEI_LEAVES)
+                .addTag(CommonTags.Blocks.CRABAPPLE_LEAVES)
+                .addTag(CommonTags.Blocks.APRICOT_LEAVES)
+                .addTag(CommonTags.Blocks.PEACH_LEAVES)
                 .add(ModBlocks.PEAR_LEAVES.get())
-                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get(), ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get())
-                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get())
-                .add(ModBlocks.GOLDEN_GINKGO_LEAVES.get(), ModBlocks.GREEN_GINKGO_LEAVES.get())
-                .add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get(), ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get())
+                .addTag(CommonTags.Blocks.PLUM_LEAVES)
+                .addTag(CommonTags.Blocks.OSMANTHUS_LEAVES)
+                .addTag(CommonTags.Blocks.GINKGO_LEAVES)
+                .addTag(CommonTags.Blocks.CHINESE_PARASOL_LEAVES)
                 .add(ModBlocks.SWEETGUM_LEAVES.get())
-                .add(ModBlocks.CAMPHOR_LEAVES.get(), ModBlocks.NEW_CAMPHOR_LEAVES.get())
-                .add(ModBlocks.DOVE_TREE_LEAVES.get(), ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
+                .addTag(CommonTags.Blocks.CAMPHOR_LEAVES)
+                .addTag(CommonTags.Blocks.DOVE_TREE_LEAVES)
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
-                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get(), ModBlocks.RED_CRAPE_MYRTLE_LEAVES.get())
-                .add(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES.get(), ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get())
-                .add(ModBlocks.RED_AZALEA_LEAVES.get(), ModBlocks.MAYING_RHODODENDRON_LEAVES.get(), ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get(), ModBlocks.CHARMING_RHODODENDRON_LEAVES.get())
-                .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.get(), ModBlocks.PINK_RHODODENDRON_LEAVES.get(), ModBlocks.CHINESE_AZALEA_LEAVES.get())
+                .addTag(CommonTags.Blocks.CRAPE_MYRTLE_LEAVES)
+                .addTag(CommonTags.Blocks.RHODODENDRON_LEAVES)
                 .add(ModBlocks.PEACH_PINK_PETALS.get(), ModBlocks.FRAGRANT_SNOW_PETALS.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
@@ -591,61 +567,40 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.DESERT_POPLAR_LOG.get(), ModBlocks.DESERT_POPLAR_WOOD.get(), ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get(), ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get());
 
         this.tag(BlockTags.SAPLINGS)
-                .add(ModBlocks.RED_MEI_SAPLING.get(), ModBlocks.WHITE_MEI_SAPLING.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_SAPLING.get(), ModBlocks.DOUBLE_PINK_MEI_SAPLING.get(), ModBlocks.VERSICOLOR_MEI_SAPLING.get())
-                .add(ModBlocks.RED_WEEPING_MEI_SAPLING.get(), ModBlocks.WHITE_WEEPING_MEI_SAPLING.get())
-                .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get())
-                .add(ModBlocks.PINK_APRICOT_SAPLING.get(), ModBlocks.WHITE_APRICOT_SAPLING.get())
-                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.WILD_PEACH_SAPLING.get())
+                .addTag(CommonTags.Blocks.MEI_SAPLING)
+                .addTag(CommonTags.Blocks.CRABAPPLE_SAPLING)
+                .addTag(CommonTags.Blocks.APRICOT_SAPLING)
+                .addTag(CommonTags.Blocks.PEACH_SAPLING)
                 .add(ModBlocks.PEAR_SAPLING.get())
-                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get(), ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get())
-                .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get(), ModBlocks.ORANGE_OSMANTHUS_SAPLING.get(), ModBlocks.WHITE_OSMANTHUS_SAPLING.get())
-                .add(ModBlocks.GOLDEN_GINKGO_SAPLING.get(), ModBlocks.GREEN_GINKGO_SAPLING.get())
-                .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get(), ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get())
+                .addTag(CommonTags.Blocks.PLUM_SAPLING)
+                .addTag(CommonTags.Blocks.OSMANTHUS_SAPLING)
+                .addTag(CommonTags.Blocks.GINKGO_SAPLING)
+                .addTag(CommonTags.Blocks.CHINESE_PARASOL_SAPLING)
                 .add(ModBlocks.SWEETGUM_SAPLING.get())
                 .add(ModBlocks.CAMPHOR_SAPLING.get())
                 .add(ModBlocks.DOVE_TREE_SAPLING.get())
                 .add(ModBlocks.CHINABERRY_SAPLING.get())
                 .add(ModBlocks.DESERT_POPLAR_SAPLING.get())
-                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get())
-                .add(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get());
+                .addTag(CommonTags.Blocks.CRAPE_MYRTLE_SAPLING);
 
         this.tag(BlockTags.REPLACEABLE_BY_TREES)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
                 .add(ModBlocks.ZHAO_PINK_PEONY.get(), ModBlocks.TWO_QIAO_PEONY.get(), ModBlocks.VERSICOLOR_PEONY.get())
-                .add(ModBlocks.CHINESE_ROSE.get(), ModBlocks.PINK_CHINESE_ROSE.get(), ModBlocks.YELLOW_CHINESE_ROSE.get(), ModBlocks.WHITE_CHINESE_ROSE.get(),
-                        ModBlocks.RED_PINK_CHINESE_ROSE.get(), ModBlocks.RED_YELLOW_CHINESE_ROSE.get(), ModBlocks.RED_WHITE_CHINESE_ROSE.get(),
-                        ModBlocks.PINK_WHITE_CHINESE_ROSE.get(), ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), ModBlocks.BAOHUA_CHINESE_ROSE.get())
+                .addTag(CommonTags.Blocks.CHINESE_ROSE)
                 .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get())
+                .addTag(CommonTags.Blocks.LOTUS)
                 .add(ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.WEEPING_CRABAPPLE.get())
-                .add(ModBlocks.CHRYSANTHEMUM.get(), ModBlocks.GOLDEN_CHRYSANTHEMUM.get())
-                .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get(), ModBlocks.WHITE_CHRYSANTHEMUM.get())
-                .add(ModBlocks.GREEN_CHRYSANTHEMUM.get(), ModBlocks.PURPLE_CHRYSANTHEMUM.get())
-                .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get(), ModBlocks.PINK_CHRYSANTHEMUM.get())
-                .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get())
+                .addTag(CommonTags.Blocks.CHRYSANTHEMUM)
                 .add(ModBlocks.SPRING_CYMBIDIUM.get(), ModBlocks.SUMMER_CYMBIDIUM.get(), ModBlocks.AUTUMN_CYMBIDIUM.get())
-                .add(ModBlocks.PEONY.get(), ModBlocks.LIGHT_PINK_PEONY.get(), ModBlocks.VIOLET_PINK_PEONY.get(), ModBlocks.PINK_PEONY.get())
-                .add(ModBlocks.RED_PEONY.get(), ModBlocks.LIGHT_RED_PEONY.get(), ModBlocks.INK_RED_PEONY.get(), ModBlocks.VERMILION_PEONY.get())
-                .add(ModBlocks.PURPLE_PEONY.get(), ModBlocks.LIGHT_PURPLE_PEONY.get(), ModBlocks.INK_PURPLE_PEONY.get(), ModBlocks.VIOLET_PEONY.get())
-                .add(ModBlocks.YELLOW_PEONY.get(), ModBlocks.LIGHT_YELLOW_PEONY.get(), ModBlocks.OCHRE_YELLOW_PEONY.get(), ModBlocks.GOLDEN_PEONY.get())
-                .add(ModBlocks.WHITE_PEONY.get(), ModBlocks.INK_PEONY.get(), ModBlocks.BLUE_PEONY.get(), ModBlocks.GREEN_PEONY.get())
-                .add(ModBlocks.COLORFUL_PEONY.get(), ModBlocks.LIGHT_COLORFUL_PEONY.get(), ModBlocks.INK_COLORFUL_PEONY.get())
-                .add(ModBlocks.RED_WHITE_PEONY.get(), ModBlocks.PINK_WHITE_PEONY.get(), ModBlocks.YELLOW_WHITE_PEONY.get(), ModBlocks.PURPLE_WHITE_PEONY.get())
-                .add(ModBlocks.WU_HUA_LONG_YU_PEONY.get(), ModBlocks.MAUVE_PEONY.get())
-                .add(ModBlocks.CAMELLIA.get(), ModBlocks.PINK_CAMELLIA.get())
-                .add(ModBlocks.WHITE_CAMELLIA.get(), ModBlocks.VERSICOLOR_CAMELLIA.get())
-                .add(ModBlocks.RED_AZALEA.get(), ModBlocks.MAYING_RHODODENDRON.get())
-                .add(ModBlocks.DEWDROP_RHODODENDRON.get(), ModBlocks.CHARMING_RHODODENDRON.get())
-                .add(ModBlocks.GREAT_WHITE_RHODODENDRON.get(), ModBlocks.PURPLE_RHODODENDRON.get())
-                .add(ModBlocks.PINK_RHODODENDRON.get(), ModBlocks.CHINESE_AZALEA.get())
+                .addTag(CommonTags.Blocks.HERBACEOUS_PEONY)
+                .addTag(CommonTags.Blocks.CAMELLIA)
+                .addTag(CommonTags.Blocks.RHODODENDRON)
                 .add(ModBlocks.CUT_PEONY.get(), ModBlocks.CUT_LIGHT_PINK_PEONY.get(), ModBlocks.CUT_VIOLET_PINK_PEONY.get())
                 .add(ModBlocks.CUT_RED_PEONY.get(), ModBlocks.CUT_LIGHT_RED_PEONY.get(), ModBlocks.CUT_INK_RED_PEONY.get())
                 .add(ModBlocks.CUT_PURPLE_PEONY.get(), ModBlocks.CUT_LIGHT_PURPLE_PEONY.get(), ModBlocks.CUT_INK_PURPLE_PEONY.get())
@@ -660,16 +615,126 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
                 .add(ModBlocks.ZHAO_PINK_PEONY.get(), ModBlocks.TWO_QIAO_PEONY.get(), ModBlocks.VERSICOLOR_PEONY.get())
+                .addTag(CommonTags.Blocks.CHINESE_ROSE)
+                .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
+                .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
+                .add(ModBlocks.COTTON_ROSE.get())
+                .addTag(CommonTags.Blocks.LOTUS);
+
+        this.tag(CommonTags.Blocks.MEI_SAPLING)
+                .add(ModBlocks.RED_MEI_SAPLING.get(), ModBlocks.RED_WEEPING_MEI_SAPLING.get())
+                .add(ModBlocks.WHITE_MEI_SAPLING.get(), ModBlocks.WHITE_WEEPING_MEI_SAPLING.get())
+                .add(ModBlocks.GREEN_CALYX_MEI_SAPLING.get(), ModBlocks.GREEN_WEEPING_MEI_SAPLING.get())
+                .add(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get(), ModBlocks.PINK_WEEPING_MEI_SAPLING.get())
+                .add(ModBlocks.VERSICOLOR_MEI_SAPLING.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get());
+        this.tag(CommonTags.Blocks.MEI_LEAVES)
+                .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get(), ModBlocks.GREEN_CALYX_MEI_LEAVES.get(),
+                        ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), ModBlocks.VERSICOLOR_MEI_LEAVES.get());
+        this.tag(CommonTags.Blocks.WEEPING_MEI)
+                .add(ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.WHITE_WEEPING_MEI.get(), ModBlocks.GREEN_WEEPING_MEI.get(),
+                        ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI.get());
+
+        this.tag(CommonTags.Blocks.CRABAPPLE_SAPLING)
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get());
+        this.tag(CommonTags.Blocks.CRABAPPLE_LEAVES)
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get());
+
+        this.tag(CommonTags.Blocks.OSMANTHUS_SAPLING)
+                .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get(), ModBlocks.ORANGE_OSMANTHUS_SAPLING.get(), ModBlocks.WHITE_OSMANTHUS_SAPLING.get());
+        this.tag(CommonTags.Blocks.OSMANTHUS_LEAVES)
+                .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get());
+
+        this.tag(CommonTags.Blocks.APRICOT_SAPLING)
+                .add(ModBlocks.PINK_APRICOT_SAPLING.get(), ModBlocks.WHITE_APRICOT_SAPLING.get());
+        this.tag(CommonTags.Blocks.APRICOT_LEAVES)
+                .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get());
+
+        this.tag(CommonTags.Blocks.PEACH_SAPLING)
+                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.WILD_PEACH_SAPLING.get());
+        this.tag(CommonTags.Blocks.PEACH_LEAVES)
+                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get());
+
+        this.tag(CommonTags.Blocks.PLUM_SAPLING)
+                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get(), ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get());
+        this.tag(CommonTags.Blocks.PLUM_LEAVES)
+                .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get(), ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get());
+
+        this.tag(CommonTags.Blocks.GINKGO_SAPLING)
+                .add(ModBlocks.GOLDEN_GINKGO_SAPLING.get(), ModBlocks.GREEN_GINKGO_SAPLING.get());
+        this.tag(CommonTags.Blocks.GINKGO_LEAVES)
+                .add(ModBlocks.GOLDEN_GINKGO_LEAVES.get(), ModBlocks.GREEN_GINKGO_LEAVES.get());
+
+        this.tag(CommonTags.Blocks.CHINESE_PARASOL_SAPLING)
+                .add(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get(), ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get());
+        this.tag(CommonTags.Blocks.CHINESE_PARASOL_LEAVES)
+                .add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get(), ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get());
+
+        this.tag(CommonTags.Blocks.CAMPHOR_LEAVES)
+                .add(ModBlocks.CAMPHOR_LEAVES.get(), ModBlocks.NEW_CAMPHOR_LEAVES.get());
+
+        this.tag(CommonTags.Blocks.DOVE_TREE_LEAVES)
+                .add(ModBlocks.DOVE_TREE_LEAVES.get(), ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get());
+
+        this.tag(CommonTags.Blocks.CRAPE_MYRTLE_SAPLING)
+                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get())
+                .add(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get());
+        this.tag(CommonTags.Blocks.CRAPE_MYRTLE_LEAVES)
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get(), ModBlocks.RED_CRAPE_MYRTLE_LEAVES.get())
+                .add(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES.get(), ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get());
+        this.tag(CommonTags.Blocks.CRAPE_MYRTLE)
+                .addTag(CommonTags.Blocks.CRAPE_MYRTLE_SAPLING)
+                .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get(),
+                        ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get());
+
+        this.tag(CommonTags.Blocks.RHODODENDRON_LEAVES)
+                .add(ModBlocks.RED_AZALEA_LEAVES.get(), ModBlocks.MAYING_RHODODENDRON_LEAVES.get(),
+                        ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get(), ModBlocks.CHARMING_RHODODENDRON_LEAVES.get())
+                .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.get(),
+                        ModBlocks.PINK_RHODODENDRON_LEAVES.get(), ModBlocks.CHINESE_AZALEA_LEAVES.get());
+
+        this.tag(CommonTags.Blocks.CYMBIDIUM)
+                .add(ModBlocks.SPRING_CYMBIDIUM.get(), ModBlocks.SUMMER_CYMBIDIUM.get(),
+                        ModBlocks.AUTUMN_CYMBIDIUM.get(), ModBlocks.WINTER_CYMBIDIUM.get());
+
+        this.tag(CommonTags.Blocks.TREE_PEONY)
+                .add(Blocks.PEONY, ModBlocks.ZHAO_PINK_PEONY.get(), ModBlocks.TWO_QIAO_PEONY.get(), ModBlocks.VERSICOLOR_PEONY.get());
+
+        this.tag(CommonTags.Blocks.HERBACEOUS_PEONY)
+                .add(ModBlocks.PEONY.get(), ModBlocks.LIGHT_PINK_PEONY.get(), ModBlocks.VIOLET_PINK_PEONY.get(), ModBlocks.PINK_PEONY.get())
+                .add(ModBlocks.RED_PEONY.get(), ModBlocks.LIGHT_RED_PEONY.get(), ModBlocks.INK_RED_PEONY.get(), ModBlocks.VERMILION_PEONY.get())
+                .add(ModBlocks.PURPLE_PEONY.get(), ModBlocks.LIGHT_PURPLE_PEONY.get(), ModBlocks.INK_PURPLE_PEONY.get(), ModBlocks.VIOLET_PEONY.get())
+                .add(ModBlocks.YELLOW_PEONY.get(), ModBlocks.LIGHT_YELLOW_PEONY.get(), ModBlocks.OCHRE_YELLOW_PEONY.get(), ModBlocks.GOLDEN_PEONY.get())
+                .add(ModBlocks.WHITE_PEONY.get(), ModBlocks.INK_PEONY.get(), ModBlocks.BLUE_PEONY.get(), ModBlocks.GREEN_PEONY.get())
+                .add(ModBlocks.COLORFUL_PEONY.get(), ModBlocks.LIGHT_COLORFUL_PEONY.get(), ModBlocks.INK_COLORFUL_PEONY.get())
+                .add(ModBlocks.RED_WHITE_PEONY.get(), ModBlocks.PINK_WHITE_PEONY.get())
+                .add(ModBlocks.YELLOW_WHITE_PEONY.get(), ModBlocks.PURPLE_WHITE_PEONY.get())
+                .add(ModBlocks.WU_HUA_LONG_YU_PEONY.get(), ModBlocks.MAUVE_PEONY.get());
+
+        this.tag(CommonTags.Blocks.CHINESE_ROSE)
                 .add(ModBlocks.CHINESE_ROSE.get(), ModBlocks.PINK_CHINESE_ROSE.get())
                 .add(ModBlocks.YELLOW_CHINESE_ROSE.get(), ModBlocks.WHITE_CHINESE_ROSE.get())
                 .add(ModBlocks.RED_PINK_CHINESE_ROSE.get(), ModBlocks.RED_YELLOW_CHINESE_ROSE.get())
                 .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get(), ModBlocks.PINK_WHITE_CHINESE_ROSE.get())
-                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), ModBlocks.BAOHUA_CHINESE_ROSE.get())
-                .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
-                .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
-                .add(ModBlocks.COTTON_ROSE.get())
-                .add(ModBlocks.LOTUS.get())
-                .add(ModBlocks.WHITE_LOTUS.get());
+                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), ModBlocks.BAOHUA_CHINESE_ROSE.get());
+
+        this.tag(CommonTags.Blocks.CHRYSANTHEMUM)
+                .add(ModBlocks.CHRYSANTHEMUM.get(), ModBlocks.GOLDEN_CHRYSANTHEMUM.get(), ModBlocks.GOLD_BACKED_SCARLET_MUM.get())
+                .add(ModBlocks.WHITE_CHRYSANTHEMUM.get(), ModBlocks.GREEN_CHRYSANTHEMUM.get(), ModBlocks.PURPLE_CHRYSANTHEMUM.get())
+                .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get(), ModBlocks.PINK_CHRYSANTHEMUM.get(), ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get());
+
+        this.tag(CommonTags.Blocks.CAMELLIA)
+                .add(ModBlocks.CAMELLIA.get(), ModBlocks.PINK_CAMELLIA.get(), ModBlocks.WHITE_CAMELLIA.get(), ModBlocks.VERSICOLOR_CAMELLIA.get());
+
+        this.tag(CommonTags.Blocks.AZALEA)
+                .add(Blocks.AZALEA, Blocks.FLOWERING_AZALEA)
+                .addTag(CommonTags.Blocks.RHODODENDRON);
+        this.tag(CommonTags.Blocks.RHODODENDRON)
+                .add(ModBlocks.MAYING_RHODODENDRON.get(), ModBlocks.DEWDROP_RHODODENDRON.get(), ModBlocks.CHARMING_RHODODENDRON.get())
+                .add(ModBlocks.GREAT_WHITE_RHODODENDRON.get(), ModBlocks.PURPLE_RHODODENDRON.get(), ModBlocks.PINK_RHODODENDRON.get())
+                .add(ModBlocks.RED_AZALEA.get(), ModBlocks.CHINESE_AZALEA.get());
+
+        this.tag(CommonTags.Blocks.LOTUS)
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get());
 
         this.tag(ModTags.Blocks.MOTTLED_BAMBOO_PLANTABLE_ON)
                 .addTag(BlockTags.SAND)

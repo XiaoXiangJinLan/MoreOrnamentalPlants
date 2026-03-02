@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-02T16:11:10.7695313	Recipes
+// 1.21.1	2026-03-02T22:31:58.8363255	Recipes
 a68cbdc6f63860c67f3dc9287300708552b98526 data/minecraft/advancement/recipes/misc/black_dye.json
 7cc611a4a6f86822fab2d57cae07732bf5e5e0f9 data/minecraft/advancement/recipes/misc/green_dye.json
 49383de36bba78b7442c11a223a5f17f3deaad6e data/minecraft/advancement/recipes/misc/light_blue_dye.json
@@ -184,6 +184,7 @@ cbd880f68757093d6b1fcc19bf8d6468a032f929 data/more_orn_plants/advancement/recipe
 cfa6a4ca2793734044e38fc6825f9213cddb8a4f data/more_orn_plants/advancement/recipes/misc/lilac_xiangnang.json
 cba41ca21f7027a35a0386985805f186306f49b2 data/more_orn_plants/advancement/recipes/misc/lotus_xiangnang.json
 7a6d0e6c28c1308d220e703f9bacd7745b1912b6 data/more_orn_plants/advancement/recipes/misc/mei_xiangnang.json
+bd7f35c9827504cc0369871e17b3cd11eb038be9 data/more_orn_plants/advancement/recipes/misc/mei_xiangnang_from_weeping_mei.json
 25758faed0497eb8b51e05d184b561942d025f16 data/more_orn_plants/advancement/recipes/misc/osmanthus_xiangnang.json
 89a5f400f680f46988cf845701ddbaeb98c5e68c data/more_orn_plants/advancement/recipes/misc/peach_wooden_sword.json
 c5291fb31baf67b7608bf01ab7d1e168fe2b62f2 data/more_orn_plants/advancement/recipes/misc/peach_xiangnang.json
@@ -507,6 +508,7 @@ fe3e7cd60fd3076ca7260fb69152c2ab6ec71a9b data/more_orn_plants/recipe/lotus_seed.
 03f2a16d9987aac94abddca68c92716d6ec3f465 data/more_orn_plants/recipe/lotus_seed_soup.json
 ded84377ac68b410b096e631ee9a85886b596b69 data/more_orn_plants/recipe/lotus_xiangnang.json
 1ca102ed7c0b204de01d5a4e82c04a2036a1ee77 data/more_orn_plants/recipe/mei_xiangnang.json
+65369085f3e0239a594445cc5a5f01c44787d9e6 data/more_orn_plants/recipe/mei_xiangnang_from_weeping_mei.json
 3b7f1c560d44f7c5fffb75272503b023ea1cd4d5 data/more_orn_plants/recipe/osmanthus_boat.json
 30353b1318777de5632a80352b02c2802c190328 data/more_orn_plants/recipe/osmanthus_button.json
 e25f9cdafbf8e1ce1f3513fdbc726436a05e568c data/more_orn_plants/recipe/osmanthus_chest_boat.json

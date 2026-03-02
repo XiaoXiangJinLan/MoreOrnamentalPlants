@@ -1157,6 +1157,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('*', CommonTags.Items.MEI_LEAVES)
                 .unlockedBy("has_mei_leaves", has(CommonTags.Items.MEI_LEAVES))
                 .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MEI_XIANGNANG)
+                .pattern(" # ")
+                .pattern("#*#")
+                .pattern(" # ")
+                .define('#', Items.STRING)
+                .define('*', CommonTags.Items.WEEPING_MEI)
+                .unlockedBy("has_weeping_mei", has(CommonTags.Items.WEEPING_MEI))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "mei_xiangnang_from_weeping_mei");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OSMANTHUS_XIANGNANG)
                 .pattern(" # ")
                 .pattern("#*#")

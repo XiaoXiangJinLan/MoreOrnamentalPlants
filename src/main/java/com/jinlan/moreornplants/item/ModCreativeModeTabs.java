@@ -476,8 +476,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DESERT_POPLAR_BUTTON);
                         pOutput.accept(ModItems.DESERT_POPLAR_SIGN);
                         pOutput.accept(ModItems.DESERT_POPLAR_HANGING_SIGN);
-                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_LOG);
-                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_WOOD);
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_LOG);
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_WOOD);
                         pOutput.accept(ModItems.RED_MEI_BOAT);
                         pOutput.accept(ModItems.RED_MEI_CHEST_BOAT);
                         pOutput.accept(ModItems.WHITE_MEI_BOAT);
