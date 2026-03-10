@@ -114,6 +114,14 @@ public class ModBlocks {
             registerBlock("pink_rhododendron_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.COLOR_PINK)));
     public static final DeferredBlock<Block> CHINESE_AZALEA_LEAVES =
             registerBlock("chinese_azalea_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES).mapColor(MapColor.COLOR_YELLOW)));
+    public static final DeferredBlock<Block> CAMELLIA_LEAVES =
+            registerBlock("camellia_leaves", () -> new CamelliaLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES)));
+    public static final DeferredBlock<Block> WHITE_CAMELLIA_LEAVES =
+            registerBlock("white_camellia_leaves", () -> new WhiteCamelliaLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES)));
+    public static final DeferredBlock<Block> PINK_CAMELLIA_LEAVES =
+            registerBlock("pink_camellia_leaves", () -> new PinkCamelliaLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES)));
+    public static final DeferredBlock<Block> VERSICOLOR_CAMELLIA_LEAVES =
+            registerBlock("versicolor_camellia_leaves", () -> new VersicolorCamelliaLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FLOWERING_AZALEA_LEAVES)));
 
     public static final DeferredBlock<Block> RED_WEEPING_MEI =
             registerBlock("red_weeping_mei", () -> new RedWeepingMeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
@@ -143,6 +151,10 @@ public class ModBlocks {
             registerBlock("chinese_wisteria", () -> new WisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CHINESE_WISTERIA_PLANT =
             BLOCKS.register("chinese_wisteria_plant", () -> new WisteriaPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> WHITE_CHINESE_WISTERIA =
+            registerBlock("white_chinese_wisteria", () -> new WhiteWisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> WHITE_CHINESE_WISTERIA_PLANT =
+            BLOCKS.register("white_chinese_wisteria_plant", () -> new WhiteWisteriaPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> RED_MEI_LOG =
             registerBlock("red_mei_log", () -> log(MapColor.COLOR_RED, MapColor.COLOR_BROWN));
@@ -968,13 +980,13 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MAUVE_PEONY =
             registerBlock("mauve_peony", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CAMELLIA =
-            registerBlock("camellia", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("camellia", () -> new CamelliaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WHITE_CAMELLIA =
-            registerBlock("white_camellia", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("white_camellia", () -> new WhiteCamelliaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PINK_CAMELLIA =
-            registerBlock("pink_camellia", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("pink_camellia", () -> new PinkCamelliaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> VERSICOLOR_CAMELLIA =
-            registerBlock("versicolor_camellia", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("versicolor_camellia", () -> new VersicolorCamelliaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> RED_AZALEA =
             registerBlock("red_azalea", () -> new RedAzaleaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> MAYING_RHODODENDRON =
@@ -1295,6 +1307,8 @@ public class ModBlocks {
             registerBlock("peach_pink_petals", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> FRAGRANT_SNOW_PETALS =
             registerBlock("fragrant_snow_petals", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> SPRING_PETALS =
+            registerBlock("spring_petals", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> MOTTLED_BAMBOO_SAPLING =
             BLOCKS.register("mottled_bamboo_sapling", () -> new MottledBambooSaplingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BAMBOO_SAPLING)));
@@ -1317,9 +1331,9 @@ public class ModBlocks {
             registerBlock("lotus_leaf", () -> new WaterLotusLeafBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
 
     public static final DeferredBlock<Block> ORNAMENTAL_PEACH_PETALS =
-            BLOCKS.register("ornamental_peach_petals", () -> leafPile(MapColor.COLOR_PINK));
+            BLOCKS.register("ornamental_peach_petals", () -> leafPile2(MapColor.COLOR_PINK));
     public static final DeferredBlock<Block> WILD_PEACH_PETALS =
-            BLOCKS.register("wild_peach_petals", () -> leafPile(MapColor.COLOR_PINK));
+            BLOCKS.register("wild_peach_petals", () -> leafPile2(MapColor.COLOR_PINK));
     public static final DeferredBlock<Block> CHINESE_PARASOL_LEAF_0 =
             BLOCKS.register("chinese_parasol_leaf_0", () -> leafPile(MapColor.COLOR_YELLOW));
     public static final DeferredBlock<Block> CHINESE_PARASOL_LEAF_1 =
@@ -1329,7 +1343,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SWEETGUM_LEAF_PILE_1 =
             BLOCKS.register("sweetgum_leaf_pile_1", () -> leafPile(MapColor.COLOR_RED));
     public static final DeferredBlock<Block> GINKGO_LEAF_PILE =
-            BLOCKS.register("ginkgo_leaf_pile", () -> leafPile(MapColor.COLOR_YELLOW));
+            BLOCKS.register("ginkgo_leaf_pile", () -> leafPile2(MapColor.COLOR_YELLOW));
 
     public static final DeferredBlock<Block> MEI_XIANGNANG =
             BLOCKS.register("mei_xiangnang", () -> new MeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
@@ -1377,6 +1391,10 @@ public class ModBlocks {
 
     public static Block leafPile(MapColor color) {
         return new LeafPileBlock(BlockBehaviour.Properties.of().mapColor(color).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY));
+    }
+
+    public static Block leafPile2(MapColor color) {
+        return new PeachPetalsBlock(BlockBehaviour.Properties.of().mapColor(color).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY));
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {

@@ -55,8 +55,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(CommonTags.Items.CRAPE_MYRTLE_LEAVES)
                 .addTag(CommonTags.Items.RHODODENDRON_LEAVES)
                 .addTag(CommonTags.Items.WEEPING_MEI)
-                .add(ModBlocks.PEACH_PINK_PETALS.asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.asItem())
-                .add(ModBlocks.CHINESE_WISTERIA.asItem());
+                .add(ModBlocks.PEACH_PINK_PETALS.asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.asItem(), ModBlocks.SPRING_PETALS.asItem())
+                .addTag(CommonTags.Items.WISTERIA);
 
         this.copy(BlockTags.LEAVES, ItemTags.LEAVES);
         this.copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
@@ -163,9 +163,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(CommonTags.Items.BAMBOO)
                 .addTag(CommonTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.COTTON_ROSE.asItem())
-                .add(ModBlocks.CHINESE_WISTERIA.asItem())
-                .add(ModBlocks.PEACH_PINK_PETALS.asItem())
-                .add(ModBlocks.FRAGRANT_SNOW_PETALS.asItem())
+                .addTag(CommonTags.Items.WISTERIA)
+                .add(ModBlocks.PEACH_PINK_PETALS.asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.asItem(), ModBlocks.SPRING_PETALS.asItem())
                 .add(ModItems.BAMBOO_STICK.get())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
@@ -214,6 +213,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.copy(CommonTags.Blocks.CHRYSANTHEMUM, CommonTags.Items.CHRYSANTHEMUM);
 
+        this.copy(CommonTags.Blocks.CAMELLIA_LEAVES, CommonTags.Items.CAMELLIA_LEAVES);
         this.copy(CommonTags.Blocks.CAMELLIA, CommonTags.Items.CAMELLIA);
 
         this.copy(CommonTags.Blocks.RHODODENDRON_LEAVES, CommonTags.Items.RHODODENDRON_LEAVES);
@@ -224,6 +224,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(Items.BAMBOO, ModItems.MOTTLED_BAMBOO.get(), ModItems.BLACK_BAMBOO.get());
 
         this.copy(CommonTags.Blocks.LOTUS, CommonTags.Items.LOTUS);
+        this.copy(CommonTags.Blocks.WISTERIA, CommonTags.Items.WISTERIA);
 
         this.tag(CommonTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.FOUNTAIN_GRASS.asItem(), ModBlocks.PURPLE_FOUNTAIN_GRASS.asItem(), ModBlocks.PINK_FOUNTAIN_GRASS.asItem(), ModBlocks.WHITE_FOUNTAIN_GRASS.asItem())
@@ -243,7 +244,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_CHINESE_ROSE.asItem())
                 .add(ModBlocks.PINK_CAMELLIA.asItem())
                 .add(ModBlocks.PINK_RHODODENDRON.asItem())
-                .add(ModBlocks.PEACH_PINK_PETALS.asItem())
+                .add(ModBlocks.PEACH_PINK_PETALS.asItem(), ModBlocks.SPRING_PETALS.asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE.asItem())
                 .add(ModBlocks.COTTON_ROSE.asItem())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.asItem(), ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.asItem())
@@ -260,6 +261,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_FOUNTAIN_GRASS.asItem())
                 .add(ModBlocks.DEWDROP_RHODODENDRON.asItem(), ModBlocks.GREAT_WHITE_RHODODENDRON.asItem())
                 .add(ModBlocks.WHITE_CRAPE_MYRTLE.asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.WHITE_CHINESE_WISTERIA.asItem())
                 .add(ModBlocks.FRAGRANT_SNOW_PETALS.asItem());
 
         this.tag(ModTags.Items.YELLOW_DYE)

@@ -5,6 +5,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.NotNull;
 
 public class PinkCrapeMyrtleSaplingBlock extends CrapeMyrtleSaplingBlock {
     public PinkCrapeMyrtleSaplingBlock(Properties properties) {
@@ -12,7 +13,7 @@ public class PinkCrapeMyrtleSaplingBlock extends CrapeMyrtleSaplingBlock {
     }
 
     @Override
-    public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
+    public void performBonemeal(@NotNull ServerLevel level, @NotNull RandomSource random, @NotNull BlockPos pos, @NotNull BlockState state) {
         ModTreeGrower.PINK_CRAPE_MYRTLE.growTree(level, level.getChunkSource().getGenerator(), pos, state, random);
     }
 }

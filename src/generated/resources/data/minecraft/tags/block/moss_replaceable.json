@@ -6,7 +6,8 @@
     "more_orn_plants:green_weeping_mei_plant",
     "more_orn_plants:pink_weeping_mei_plant",
     "more_orn_plants:versicolor_weeping_mei_plant",
-    "more_orn_plants:chinese_wisteria",
-    "more_orn_plants:chinese_wisteria_plant"
+    "#c:wisteria",
+    "more_orn_plants:chinese_wisteria_plant",
+    "more_orn_plants:white_chinese_wisteria_plant"
   ]
 }

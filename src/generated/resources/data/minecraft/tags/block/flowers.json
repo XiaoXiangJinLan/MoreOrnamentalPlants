@@ -20,6 +20,7 @@
     "more_orn_plants:pear_leaves",
     "more_orn_plants:flowering_purple_leaf_plum_leaves",
     "#c:osmanthus_leaves",
+    "#c:camellia_leaves",
     "more_orn_plants:dove_tree_blossom_leaves",
     "more_orn_plants:chinaberry_leaves",
     "more_orn_plants:desert_poplar_leaves",
@@ -33,7 +34,9 @@
     "more_orn_plants:versicolor_weeping_mei_plant",
     "more_orn_plants:peach_pink_petals",
     "more_orn_plants:fragrant_snow_petals",
-    "more_orn_plants:chinese_wisteria",
-    "more_orn_plants:chinese_wisteria_plant"
+    "more_orn_plants:spring_petals",
+    "#c:wisteria",
+    "more_orn_plants:chinese_wisteria_plant",
+    "more_orn_plants:white_chinese_wisteria_plant"
   ]
 }

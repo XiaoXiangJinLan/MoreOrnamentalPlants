@@ -396,6 +396,9 @@
     "more_orn_plants:chinese_wisteria": {
       "chance": 0.65
     },
+    "more_orn_plants:white_chinese_wisteria": {
+      "chance": 0.65
+    },
     "more_orn_plants:cotton_rose": {
       "chance": 0.65
     },
@@ -410,6 +413,18 @@
     },
     "more_orn_plants:versicolor_camellia": {
       "chance": 0.65
+    },
+    "more_orn_plants:camellia_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_camellia_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:pink_camellia_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:versicolor_camellia_leaves": {
+      "chance": 0.3
     },
     "more_orn_plants:red_azalea": {
       "chance": 0.65
@@ -484,6 +499,9 @@
       "chance": 0.3
     },
     "more_orn_plants:fragrant_snow_petals": {
+      "chance": 0.3
+    },
+    "more_orn_plants:spring_petals": {
       "chance": 0.3
     },
     "more_orn_plants:ornamental_peach_petals": {

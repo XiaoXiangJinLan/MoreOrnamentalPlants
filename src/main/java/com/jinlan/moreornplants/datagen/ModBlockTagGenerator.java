@@ -42,13 +42,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(CommonTags.Blocks.WEEPING_MEI)
                 .add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get(),
                         ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get());
+                .addTag(CommonTags.Blocks.WISTERIA)
+                .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get());
 
         this.tag(BlockTags.SWORD_EFFICIENT)
                 .addTag(CommonTags.Blocks.WEEPING_MEI)
                 .add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get(),
                         ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get())
+                .addTag(CommonTags.Blocks.WISTERIA)
+                .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
                 .add(ModBlocks.FOUNTAIN_GRASS.get(), ModBlocks.PURPLE_FOUNTAIN_GRASS.get(), ModBlocks.PINK_FOUNTAIN_GRASS.get(), ModBlocks.WHITE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.BAMBOO_STICK.get());
 
@@ -131,6 +133,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PEAR_LEAVES.get())
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get())
                 .addTag(CommonTags.Blocks.OSMANTHUS_LEAVES)
+                .addTag(CommonTags.Blocks.CAMELLIA_LEAVES)
                 .add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get())
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
@@ -139,8 +142,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(CommonTags.Blocks.WEEPING_MEI)
                 .add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get(),
                         ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.PEACH_PINK_PETALS.get(), ModBlocks.FRAGRANT_SNOW_PETALS.get())
-                .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get());
+                .add(ModBlocks.PEACH_PINK_PETALS.get(), ModBlocks.FRAGRANT_SNOW_PETALS.get(), ModBlocks.SPRING_PETALS.get())
+                .addTag(CommonTags.Blocks.WISTERIA)
+                .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get());
 
         this.tag(BlockTags.LEAVES)
                 .addTag(CommonTags.Blocks.MEI_LEAVES)
@@ -158,13 +162,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CHINABERRY_LEAVES.get())
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
                 .addTag(CommonTags.Blocks.CRAPE_MYRTLE_LEAVES)
-                .addTag(CommonTags.Blocks.RHODODENDRON_LEAVES);
+                .addTag(CommonTags.Blocks.RHODODENDRON_LEAVES)
+                .addTag(CommonTags.Blocks.CAMELLIA_LEAVES);
 
         this.tag(BlockTags.CLIMBABLE)
                 .addTag(CommonTags.Blocks.WEEPING_MEI)
                 .add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get(),
                         ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get());
+                .addTag(CommonTags.Blocks.WISTERIA)
+                .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get());
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.MOTTLED_BAMBOO_SAPLING.get(), ModBlocks.BLACK_BAMBOO_SAPLING.get())
@@ -184,7 +190,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.DESERT_POPLAR_LEAVES.get())
                 .addTag(CommonTags.Blocks.CRAPE_MYRTLE_LEAVES)
                 .addTag(CommonTags.Blocks.RHODODENDRON_LEAVES)
-                .add(ModBlocks.PEACH_PINK_PETALS.get(), ModBlocks.FRAGRANT_SNOW_PETALS.get());
+                .addTag(CommonTags.Blocks.CAMELLIA_LEAVES)
+                .add(ModBlocks.PEACH_PINK_PETALS.get(), ModBlocks.FRAGRANT_SNOW_PETALS.get(), ModBlocks.SPRING_PETALS.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .addTag(ModTags.Blocks.RED_MEI_LOGS)
@@ -692,6 +699,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.get(),
                         ModBlocks.PINK_RHODODENDRON_LEAVES.get(), ModBlocks.CHINESE_AZALEA_LEAVES.get());
 
+        this.tag(CommonTags.Blocks.CAMELLIA_LEAVES)
+                .add(ModBlocks.CAMELLIA_LEAVES.get(), ModBlocks.PINK_CAMELLIA_LEAVES.get(),
+                        ModBlocks.WHITE_CAMELLIA_LEAVES.get(), ModBlocks.VERSICOLOR_CAMELLIA_LEAVES.get());
+
         this.tag(CommonTags.Blocks.CYMBIDIUM)
                 .add(ModBlocks.SPRING_CYMBIDIUM.get(), ModBlocks.SUMMER_CYMBIDIUM.get(),
                         ModBlocks.AUTUMN_CYMBIDIUM.get(), ModBlocks.WINTER_CYMBIDIUM.get());
@@ -735,6 +746,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(CommonTags.Blocks.LOTUS)
                 .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get());
+
+        this.tag(CommonTags.Blocks.WISTERIA)
+                .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA.get());
 
         this.tag(ModTags.Blocks.MOTTLED_BAMBOO_PLANTABLE_ON)
                 .addTag(BlockTags.SAND)

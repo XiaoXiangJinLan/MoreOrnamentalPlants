@@ -31,8 +31,10 @@ public class CommonTags {
         public static final TagKey<Block> DOVE_TREE_LEAVES = tag("dove_tree_leaves");
         public static final TagKey<Block> CRAPE_MYRTLE_LEAVES = tag("crape_myrtle_leaves");
         public static final TagKey<Block> RHODODENDRON_LEAVES = tag("rhododendron_leaves");
+        public static final TagKey<Block> CAMELLIA_LEAVES = tag("camellia_leaves");
 
         public static final TagKey<Block> WEEPING_MEI = tag("weeping_mei");
+        public static final TagKey<Block> WISTERIA = tag("wisteria");
 
         public static final TagKey<Block> TREE_PEONY = tag("tree_peony");
         public static final TagKey<Block> CYMBIDIUM = tag("cymbidium");
@@ -73,8 +75,10 @@ public class CommonTags {
         public static final TagKey<Item> DOVE_TREE_LEAVES = tag("dove_tree_leaves");
         public static final TagKey<Item> CRAPE_MYRTLE_LEAVES = tag("crape_myrtle_leaves");
         public static final TagKey<Item> RHODODENDRON_LEAVES = tag("rhododendron_leaves");
+        public static final TagKey<Item> CAMELLIA_LEAVES = tag("camellia_leaves");
 
         public static final TagKey<Item> WEEPING_MEI = tag("weeping_mei");
+        public static final TagKey<Item> WISTERIA = tag("wisteria");
 
         public static final TagKey<Item> TREE_PEONY = tag("tree_peony");
         public static final TagKey<Item> CYMBIDIUM = tag("cymbidium");

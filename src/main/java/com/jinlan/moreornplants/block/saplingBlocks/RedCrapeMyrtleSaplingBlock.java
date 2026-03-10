@@ -22,7 +22,7 @@ public class RedCrapeMyrtleSaplingBlock extends CrapeMyrtleSaplingBlock {
     }
 
     @Override
-    public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
+    public void performBonemeal(@NotNull ServerLevel level, @NotNull RandomSource random, @NotNull BlockPos pos, @NotNull BlockState state) {
         ModTreeGrower.RED_CRAPE_MYRTLE.growTree(level, level.getChunkSource().getGenerator(), pos, state, random);
     }
 }

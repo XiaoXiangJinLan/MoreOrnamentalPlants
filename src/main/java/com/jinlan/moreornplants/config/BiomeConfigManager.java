@@ -33,7 +33,8 @@ public class BiomeConfigManager {
             case "the_apricot_spring_plateau" -> ModBiomeConfig.ENABLE_APRICOT_SPRING_PLATEAU.get();
             case "azalea_forest" -> ModBiomeConfig.ENABLE_AZALEA_FOREST.get();
             case "ten_mile_gallery" -> ModBiomeConfig.ENABLE_TEN_MILE_GALLERY.get();
-            case "purple_blossom_caves" -> ModBiomeConfig.ENABLE_PURPLE_BLOSSOM_CAVES.get();
+            case "ziying_caves" -> ModBiomeConfig.ENABLE_ZIYING_CAVES.get();
+            case "suyu_caves" -> ModBiomeConfig.ENABLE_SUYU_CAVES.get();
             default -> true;
         };
     }

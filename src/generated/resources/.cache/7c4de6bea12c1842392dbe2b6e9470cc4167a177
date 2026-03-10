@@ -1,8 +1,9 @@
-// 1.21.1	2026-03-02T22:43:21.1729189	Tags for minecraft:block mod id more_orn_plants
+// 1.21.1	2026-03-09T14:15:00.0077849	Tags for minecraft:block mod id more_orn_plants
 6fe37a5db97b91f51a0addf9825c60414ee735aa data/c/tags/block/apricot_leaves.json
 e3bbc6d486cc0792bdcdf6bb2c0da508939151ca data/c/tags/block/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/block/azalea.json
 1c13c7fd7fd5c377eb130bef323e0954a4ac8325 data/c/tags/block/camellia.json
+292a153fdf5a2967db87a6aeae7f44e550105b02 data/c/tags/block/camellia_leaves.json
 def65372d62d7376d7be21388e3b92c3f77fd0b7 data/c/tags/block/camphor_leaves.json
 cbe3e674f36e91461aa7f8b76f952dc75772cbad data/c/tags/block/chinese_parasol_leaves.json
 55aa72c81e238515c1850ac3d7346d310aa765e0 data/c/tags/block/chinese_parasol_sapling.json
@@ -34,18 +35,19 @@ f036e8e9bb851bc53380597797220a1c2181d22d data/c/tags/block/rhododendron_leaves.j
 a7fab72ff624f6e7874d56884f64dce8d2da50c9 data/c/tags/block/stripped_woods.json
 b02d22a28a6efdacc9300a2e7def9932b925a6d5 data/c/tags/block/tree_peony.json
 80a3f461221547e5cff4141012b09533b3ddebb8 data/c/tags/block/weeping_mei.json
+7a584964a0d7e7eb93173134cd3caee7e730c4fc data/c/tags/block/wisteria.json
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/block/ceiling_hanging_signs.json
-873483d96a0b4815f4f5591389a3d075de761c72 data/minecraft/tags/block/climbable.json
+cc2507508575a4a8125dd018f59cec761a5fcf37 data/minecraft/tags/block/climbable.json
 02563b1c740984a58e80cf30252042ce86fe978e data/minecraft/tags/block/crops.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/minecraft/tags/block/fence_gates.json
-9164c2b019f8b4877e519a7045fbe51f1dd28cb7 data/minecraft/tags/block/flowers.json
+c92ed05eeebe70233cd84ac80c35fef1483d6e7f data/minecraft/tags/block/flowers.json
 5ffaa21e3caf2910f8223295bf070a8010d6f969 data/minecraft/tags/block/flower_pots.json
-b478d503168e4fc9fa71373ac7f84762a1d2c01e data/minecraft/tags/block/leaves.json
+5ebb3471942b804523b7974ecec4063fec2b9e19 data/minecraft/tags/block/leaves.json
 8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/block/logs_that_burn.json
 02563b1c740984a58e80cf30252042ce86fe978e data/minecraft/tags/block/maintains_farmland.json
 927da9f89ba561d701339a7f87d8034952c30f91 data/minecraft/tags/block/mineable/axe.json
-3f5a469d5a73efb6fa19a6b316133c181d16b76b data/minecraft/tags/block/mineable/hoe.json
-873483d96a0b4815f4f5591389a3d075de761c72 data/minecraft/tags/block/moss_replaceable.json
+b8e35fd5d136c1dd09cece1197757fe2cf620f83 data/minecraft/tags/block/mineable/hoe.json
+cc2507508575a4a8125dd018f59cec761a5fcf37 data/minecraft/tags/block/moss_replaceable.json
 31dbb2f2f136298e59f2bb57a398fc358867fd43 data/minecraft/tags/block/overworld_natural_logs.json
 73c33643918bd977c2ecc0002fa55666390463e5 data/minecraft/tags/block/planks.json
 71ef24eb58ee22873939020cd0d701d1e6100120 data/minecraft/tags/block/replaceable.json
@@ -53,7 +55,7 @@ b478d503168e4fc9fa71373ac7f84762a1d2c01e data/minecraft/tags/block/leaves.json
 9e019b69fbf700b7c3ed0060587ac31fa36834f2 data/minecraft/tags/block/saplings.json
 bb7193db89fa776fe10c4780fd21f64d971914e6 data/minecraft/tags/block/small_flowers.json
 e212d8183275fb9c12db833d8ade37009bec90dd data/minecraft/tags/block/standing_signs.json
-a3172eab1eb655b575620c1926ee4223f5b999a3 data/minecraft/tags/block/sword_efficient.json
+881f45e1ccd41b89cef914f37eb28deb769a240a data/minecraft/tags/block/sword_efficient.json
 da50dd28bcc56a6f47f062ff05d00d9de621f1ca data/minecraft/tags/block/tall_flowers.json
 22b011177a51f69381e1df31c8daf51a58166552 data/minecraft/tags/block/wall_hanging_signs.json
 439814142e22799e8194fe394bbf0c577f705312 data/minecraft/tags/block/wall_signs.json

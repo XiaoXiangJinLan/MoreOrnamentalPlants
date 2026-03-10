@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": [ { "model": "more_orn_plants:block/pink_camellia_leaves", "weight": 3 },
+      { "model": "more_orn_plants:block/pink_camellia_leaves_0", "weight": 1 } ,
+      { "model": "more_orn_plants:block/pink_camellia_leaves_1", "weight": 1 } ]
+  }
+}

@@ -1,5 +1,6 @@
 package com.jinlan.moreornplants.feature.treedecorators;
 
+import com.jinlan.moreornplants.block.FlowerBlocks.PeachPetalsBlock;
 import com.jinlan.moreornplants.init.ModTreeDecoratorTypes;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
@@ -120,7 +121,7 @@ public class LeafPileDecorator extends TreeDecorator {
             }
         }
 
-        // 如果在垂直半径内没找到，继续向下搜索（不设限制）
+        // 如果在垂直半径内没找到，继续向下搜索
         int minSearchY = Math.max(minY - 10, 0);
         for (int y = minY - 1; y >= minSearchY; y--) {
             BlockPos testPos = new BlockPos(
@@ -152,9 +153,14 @@ public class LeafPileDecorator extends TreeDecorator {
         Direction[] horizontalDirections = Direction.Plane.HORIZONTAL.stream().toArray(Direction[]::new);
         Direction randomDirection = horizontalDirections[random.nextInt(horizontalDirections.length)];
 
+        // 固定随机数量 1~4
+        int amount = random.nextInt(4) + 1;
         // 创建带方向的落叶方块状态
-        BlockState leafPileState = leafPileBlock
-                .setValue(BlockStateProperties.HORIZONTAL_FACING, randomDirection);
+        BlockState leafPileState = leafPileBlock;
+        if (leafPileState.hasProperty(PeachPetalsBlock.AMOUNT)) {
+            leafPileState = leafPileState.setValue(PeachPetalsBlock.AMOUNT, amount);
+        }
+        leafPileState = leafPileState.setValue(BlockStateProperties.HORIZONTAL_FACING, randomDirection);
 
         // 放置落叶方块
         context.setBlock(pos, leafPileState);

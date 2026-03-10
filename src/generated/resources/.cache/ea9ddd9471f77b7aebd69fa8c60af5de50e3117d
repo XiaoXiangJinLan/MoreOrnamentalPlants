@@ -1,9 +1,10 @@
-// 1.21.1	2026-03-02T22:31:58.8310767	Tags for minecraft:item mod id more_orn_plants
+// 1.21.1	2026-03-09T14:15:00.0023922	Tags for minecraft:item mod id more_orn_plants
 6fe37a5db97b91f51a0addf9825c60414ee735aa data/c/tags/item/apricot_leaves.json
 e3bbc6d486cc0792bdcdf6bb2c0da508939151ca data/c/tags/item/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/item/azalea.json
 ecf3903a194080819519550f232f10010513f4b1 data/c/tags/item/bamboo.json
 1c13c7fd7fd5c377eb130bef323e0954a4ac8325 data/c/tags/item/camellia.json
+292a153fdf5a2967db87a6aeae7f44e550105b02 data/c/tags/item/camellia_leaves.json
 def65372d62d7376d7be21388e3b92c3f77fd0b7 data/c/tags/item/camphor_leaves.json
 cbe3e674f36e91461aa7f8b76f952dc75772cbad data/c/tags/item/chinese_parasol_leaves.json
 55aa72c81e238515c1850ac3d7346d310aa765e0 data/c/tags/item/chinese_parasol_sapling.json
@@ -46,17 +47,18 @@ a7fab72ff624f6e7874d56884f64dce8d2da50c9 data/c/tags/item/stripped_woods.json
 af53011c093fb9d929f67252d551e042c6c4053a data/c/tags/item/tools/melee_weapon.json
 b02d22a28a6efdacc9300a2e7def9932b925a6d5 data/c/tags/item/tree_peony.json
 80a3f461221547e5cff4141012b09533b3ddebb8 data/c/tags/item/weeping_mei.json
+7a584964a0d7e7eb93173134cd3caee7e730c4fc data/c/tags/item/wisteria.json
 5553cce50166e96a396132b8f5bbc2010b6bbc34 data/minecraft/tags/item/boats.json
 6995201cf22453ed2d0ee08808a5a64092d6ac4c data/minecraft/tags/item/cat_food.json
 f5877f7cac1b1a10079613e11d66c160a762e701 data/minecraft/tags/item/chest_boats.json
 52ad95f873f9c423365308b7a5a31b3a635906c4 data/minecraft/tags/item/chicken_food.json
 52ad95f873f9c423365308b7a5a31b3a635906c4 data/minecraft/tags/item/cow_food.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/minecraft/tags/item/fence_gates.json
-768467cd358ebdc95d945b71eaf320eb59b8b078 data/minecraft/tags/item/flowers.json
+4665f85c497172bc2eff96cac970c351bf2a3559 data/minecraft/tags/item/flowers.json
 52ad95f873f9c423365308b7a5a31b3a635906c4 data/minecraft/tags/item/goat_food.json
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/item/hanging_signs.json
 00f69cf9fbf2c5367e59c12247826fbdb59f1759 data/minecraft/tags/item/horse_food.json
-b478d503168e4fc9fa71373ac7f84762a1d2c01e data/minecraft/tags/item/leaves.json
+5ebb3471942b804523b7974ecec4063fec2b9e19 data/minecraft/tags/item/leaves.json
 8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/item/logs_that_burn.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/minecraft/tags/item/panda_food.json
 52ad95f873f9c423365308b7a5a31b3a635906c4 data/minecraft/tags/item/pig_food.json
@@ -95,13 +97,13 @@ e658efccd26926ada2226a9f8673f94016603d84 data/more_orn_plants/tags/item/magenta_
 701da93ef5f8565e671eec0af36d0e0b5ea5b925 data/more_orn_plants/tags/item/osmanthus_logs.json
 e698cf2c0cd433c69b8e6e08cd238d850df73b49 data/more_orn_plants/tags/item/peach_logs.json
 127abf6cbad1a4ed7fdf7647cd22da749960e3f8 data/more_orn_plants/tags/item/pear_logs.json
-4a2e1f2d417d3a99e8f1ab6dc0494ee49ad5c1ca data/more_orn_plants/tags/item/pink_dye.json
-9044bd1f98729d36b94f54599da2d2c827d3ec50 data/more_orn_plants/tags/item/plant_in_florilegium.json
+3ab09f005e4997c7d063d348e2a020848da22af0 data/more_orn_plants/tags/item/pink_dye.json
+cc73acf02645be6c26755a4839f02da460da7fd7 data/more_orn_plants/tags/item/plant_in_florilegium.json
 f422455096bbfd77c27aa671fc98c30e1383c168 data/more_orn_plants/tags/item/purple_dye.json
 bf74ee13cd2129707eef22e6a05e12101e0e4006 data/more_orn_plants/tags/item/purple_leaf_plum_logs.json
 b0128da9c41c47191edd9b3b4bd73c4da625a7cd data/more_orn_plants/tags/item/red_dye.json
 a483d45402126921e04886e0e631c28d6b02b68c data/more_orn_plants/tags/item/red_mei_logs.json
 0bad73ccf3efc9efb82d8e2ddcb5de8be3eb4285 data/more_orn_plants/tags/item/sweetgum_logs.json
-0155b0d1b944361e7801fe782e616765b503e489 data/more_orn_plants/tags/item/white_dye.json
+7c696a85f22c797ed9eb64cbae329edba463a221 data/more_orn_plants/tags/item/white_dye.json
 76d484e5ec22fca0b94937e04a8f97f264e0f5e2 data/more_orn_plants/tags/item/white_mei_logs.json
 c4823a974389198e30e1cd05b0d117eff513add1 data/more_orn_plants/tags/item/yellow_dye.json

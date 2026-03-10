@@ -330,4 +330,32 @@ public class ModTreeGrower {
             Optional.of(ModConfiguredFeatures.CHINESE_AZALEA_TREE_KEY),
             Optional.empty()
     );
+
+    public static final TreeGrower CAMELLIA_TREE = new TreeGrower(
+            "camellia_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.CAMELLIA_TREE),
+            Optional.empty()
+    );
+
+    public static final TreeGrower WHITE_CAMELLIA_TREE = new TreeGrower(
+            "white_camellia_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.WHITE_CAMELLIA_TREE),
+            Optional.empty()
+    );
+
+    public static final TreeGrower PINK_CAMELLIA_TREE = new TreeGrower(
+            "pink_camellia_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.PINK_CAMELLIA_TREE),
+            Optional.empty()
+    );
+
+    public static final TreeGrower VERSICOLOR_CAMELLIA_TREE = new TreeGrower(
+            "versicolor_camellia_tree",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.VERSICOLOR_CAMELLIA_TREE),
+            Optional.empty()
+    );
 }
