@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-02T18:30:59.8327568	Tags for minecraft:item mod id more_orn_plants
+// 1.20.1	2026-03-09T16:33:49.1395046	Tags for minecraft:item mod id more_orn_plants
 6fe37a5db97b91f51a0addf9825c60414ee735aa data/forge/tags/items/apricot_leaves.json
 e3bbc6d486cc0792bdcdf6bb2c0da508939151ca data/forge/tags/items/apricot_sapling.json
 3f91e650affbf0dd3681d56a151de1d2b3bb5e35 data/forge/tags/items/azalea.json
@@ -20,7 +20,7 @@ a93e8d4e063cb7dc4db2558f4c9a9520378ddde7 data/forge/tags/items/osmanthus_leaves.
 c34752788297cb2989f3bc35049a78ed54eb61fd data/forge/tags/items/osmanthus_sapling.json
 7fa7952271b15ef0b6521425d92ed54c35534737 data/forge/tags/items/peach_leaves.json
 b446eff90bd1cc382f9d111b7e55028bff3c55bb data/forge/tags/items/peach_sapling.json
-839db45270954841fb84fea0dba44272f15bc604 data/forge/tags/items/plant_in_florilegium.json
+beec7d657c9801e100da47b8b17e92723c831a2a data/forge/tags/items/plant_in_florilegium.json
 05ee996126afa23df5258b108b49a838c71f437e data/forge/tags/items/plum_sapling.json
 b02d22a28a6efdacc9300a2e7def9932b925a6d5 data/forge/tags/items/tree_peony.json
 4c33efe41cec6592a15799b1315d1aa60431f6d4 data/forge/tags/items/vegetables.json
@@ -29,12 +29,13 @@ c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/forge/tags/items/vegetables/bamboo
 67af33a4ef0b3a99a03d4381c505b9466665a48b data/forge/tags/items/vegetables/lotus_nut.json
 00f69cf9fbf2c5367e59c12247826fbdb59f1759 data/forge/tags/items/vegetables/lotus_root.json
 67af33a4ef0b3a99a03d4381c505b9466665a48b data/forge/tags/items/vegetables/lotus_seed.json
+7a584964a0d7e7eb93173134cd3caee7e730c4fc data/forge/tags/items/wisteria.json
 5553cce50166e96a396132b8f5bbc2010b6bbc34 data/minecraft/tags/items/boats.json
 f5877f7cac1b1a10079613e11d66c160a762e701 data/minecraft/tags/items/chest_boats.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/minecraft/tags/items/fence_gates.json
-57937e8418db5235662981ee8e1fbf7c03e27de7 data/minecraft/tags/items/flowers.json
+2d4d64bb4400684f5a93f346b12d87e41a6e7c25 data/minecraft/tags/items/flowers.json
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/items/hanging_signs.json
-70fd1439a75e7c9bdf0857b81bfb39ee9b8b1a20 data/minecraft/tags/items/leaves.json
+cb4ae3daa41f0b67cde9ca1f6442e1b17411e31c data/minecraft/tags/items/leaves.json
 8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/items/logs_that_burn.json
 73c33643918bd977c2ecc0002fa55666390463e5 data/minecraft/tags/items/planks.json
 a583b19c978349706315ab57a5947134c0ddc124 data/minecraft/tags/items/saplings.json

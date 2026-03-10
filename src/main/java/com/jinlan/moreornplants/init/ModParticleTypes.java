@@ -96,6 +96,18 @@ public class ModParticleTypes {
     public static final java.util.function.Supplier<SimpleParticleType> WHITE_CRAPE_MYRTLE_LEAVES =
             registerParticleType("white_crape_myrtle_leaves", () -> new SimpleParticleType(false));
 
+    public static final java.util.function.Supplier<SimpleParticleType> CAMELLIA_LEAVES =
+            registerParticleType("camellia_leaves", () -> new SimpleParticleType(false));
+
+    public static final java.util.function.Supplier<SimpleParticleType> WHITE_CAMELLIA_LEAVES =
+            registerParticleType("white_camellia_leaves", () -> new SimpleParticleType(false));
+
+    public static final java.util.function.Supplier<SimpleParticleType> PINK_CAMELLIA_LEAVES =
+            registerParticleType("pink_camellia_leaves", () -> new SimpleParticleType(false));
+
+    public static final java.util.function.Supplier<SimpleParticleType> VERSICOLOR_CAMELLIA_LEAVES =
+            registerParticleType("versicolor_camellia_leaves", () -> new SimpleParticleType(false));
+
     public static <T extends ParticleType<?>> RegistryObject<T> registerParticleType(String name, Supplier<T> particleType) {
         return ModParticleTypes.PARTICLES.register(name, particleType);
     }

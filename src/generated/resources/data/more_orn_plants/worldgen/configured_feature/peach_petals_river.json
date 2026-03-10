@@ -12,7 +12,18 @@
                 "data": {
                   "Name": "more_orn_plants:ornamental_peach_petals",
                   "Properties": {
-                    "facing": "north"
+                    "facing": "north",
+                    "flower_amount": "1"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "north",
+                    "flower_amount": "1"
                   }
                 },
                 "weight": 1
@@ -21,7 +32,18 @@
                 "data": {
                   "Name": "more_orn_plants:ornamental_peach_petals",
                   "Properties": {
-                    "facing": "east"
+                    "facing": "east",
+                    "flower_amount": "1"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "east",
+                    "flower_amount": "1"
                   }
                 },
                 "weight": 1
@@ -30,7 +52,18 @@
                 "data": {
                   "Name": "more_orn_plants:ornamental_peach_petals",
                   "Properties": {
-                    "facing": "south"
+                    "facing": "south",
+                    "flower_amount": "1"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "south",
+                    "flower_amount": "1"
                   }
                 },
                 "weight": 1
@@ -39,7 +72,8 @@
                 "data": {
                   "Name": "more_orn_plants:ornamental_peach_petals",
                   "Properties": {
-                    "facing": "west"
+                    "facing": "west",
+                    "flower_amount": "1"
                   }
                 },
                 "weight": 1
@@ -48,7 +82,18 @@
                 "data": {
                   "Name": "more_orn_plants:wild_peach_petals",
                   "Properties": {
-                    "facing": "north"
+                    "facing": "west",
+                    "flower_amount": "1"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "north",
+                    "flower_amount": "2"
                   }
                 },
                 "weight": 1
@@ -57,7 +102,18 @@
                 "data": {
                   "Name": "more_orn_plants:wild_peach_petals",
                   "Properties": {
-                    "facing": "east"
+                    "facing": "north",
+                    "flower_amount": "2"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "east",
+                    "flower_amount": "2"
                   }
                 },
                 "weight": 1
@@ -66,7 +122,18 @@
                 "data": {
                   "Name": "more_orn_plants:wild_peach_petals",
                   "Properties": {
-                    "facing": "south"
+                    "facing": "east",
+                    "flower_amount": "2"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "south",
+                    "flower_amount": "2"
                   }
                 },
                 "weight": 1
@@ -75,7 +142,188 @@
                 "data": {
                   "Name": "more_orn_plants:wild_peach_petals",
                   "Properties": {
-                    "facing": "west"
+                    "facing": "south",
+                    "flower_amount": "2"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "west",
+                    "flower_amount": "2"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "west",
+                    "flower_amount": "2"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "north",
+                    "flower_amount": "3"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "north",
+                    "flower_amount": "3"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "east",
+                    "flower_amount": "3"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "east",
+                    "flower_amount": "3"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "south",
+                    "flower_amount": "3"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "south",
+                    "flower_amount": "3"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "west",
+                    "flower_amount": "3"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "west",
+                    "flower_amount": "3"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "north",
+                    "flower_amount": "4"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "north",
+                    "flower_amount": "4"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "east",
+                    "flower_amount": "4"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "east",
+                    "flower_amount": "4"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "south",
+                    "flower_amount": "4"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "south",
+                    "flower_amount": "4"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ornamental_peach_petals",
+                  "Properties": {
+                    "facing": "west",
+                    "flower_amount": "4"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wild_peach_petals",
+                  "Properties": {
+                    "facing": "west",
+                    "flower_amount": "4"
                   }
                 },
                 "weight": 1

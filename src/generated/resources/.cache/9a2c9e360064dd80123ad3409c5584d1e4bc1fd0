@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-02T18:30:59.8378769	Item Models: more_orn_plants
+// 1.20.1	2026-03-09T16:33:49.143455	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -316,6 +316,7 @@ bcb11971d5c31749dfccd2780cc74fdd95afc3f0 assets/more_orn_plants/models/item/red_
 a1f68cf38e255869c1098ffdf807e1f93a3a9eb7 assets/more_orn_plants/models/item/red_yellow_chinese_rose.json
 7d986de6a9480fa78525bda3a200b14fc25eafff assets/more_orn_plants/models/item/rugosa_rose_xiangnang.json
 98b15ddebfcc05139d18cdbc532118711b286348 assets/more_orn_plants/models/item/spring_cymbidium.json
+312cf21f25f30ba76e549650a6d27d107c19ba46 assets/more_orn_plants/models/item/spring_petals.json
 2c87f4fc2952659dfb4123c66a4db406924036a7 assets/more_orn_plants/models/item/summer_cymbidium.json
 2c11743ed97c3d434a365ac926295e02e5605a63 assets/more_orn_plants/models/item/sweetgum_boat.json
 6d22cf4ed610b8556518faf1654e2d363fc86777 assets/more_orn_plants/models/item/sweetgum_button.json
@@ -348,6 +349,7 @@ f016be852eec248eec04196f8b7b7614442c1b98 assets/more_orn_plants/models/item/weep
 f9296a50d905394ab5891c7f80a8fe4fec9aae40 assets/more_orn_plants/models/item/white_apricot_sapling.json
 1f9c0c2566b44eb3635ca6fe04f09907fc0167ee assets/more_orn_plants/models/item/white_camellia.json
 ca789601a360172ebfe038d3c2e96d048be40204 assets/more_orn_plants/models/item/white_chinese_rose.json
+2e4b0f8a9d58fed34a3462f2cae23b45cdedef47 assets/more_orn_plants/models/item/white_chinese_wisteria.json
 f7e2a0f509ac2238973acc35ea3cb830bfac70a6 assets/more_orn_plants/models/item/white_chrysanthemum.json
 ce6b17fa3ddef7c289972bc786e6dcdec9eded2b assets/more_orn_plants/models/item/white_crape_myrtle.json
 d12f2849f9bd19dd8ec64513620235d86fd68987 assets/more_orn_plants/models/item/white_crape_myrtle_sapling.json

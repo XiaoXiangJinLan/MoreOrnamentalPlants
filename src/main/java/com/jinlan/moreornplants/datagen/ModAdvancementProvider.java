@@ -555,7 +555,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             false
                     ))
                     .addCriterion("get_wisteria", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ModBlocks.CHINESE_WISTERIA.get()
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.WISTERIA).build()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "foremost_of_vines"), existingFileHelper);
 

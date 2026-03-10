@@ -37,7 +37,8 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_CROPS_GREEN;
     public static final ForgeConfigSpec.BooleanValue ENABLE_PURPLE_CLOUD;
     public static final ForgeConfigSpec.BooleanValue ENABLE_TEN_MILE_GALLERY;
-    public static final ForgeConfigSpec.BooleanValue ENABLE_PURPLE_BLOSSOM_CAVES;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_ZIYING_CAVES;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_SUYU_CAVES;
 
     // 区域权重配置
     public static final ForgeConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
@@ -137,9 +138,12 @@ public class ModBiomeConfig {
         ENABLE_TEN_MILE_GALLERY = BUILDER
                 .comment("Enable Ten-Mile Gallery biome generation")
                 .define("enableTenMileGallery", true);
-        ENABLE_PURPLE_BLOSSOM_CAVES = BUILDER
-                .comment("Enable Purple Blossom Caves biome generation")
-                .define("enablePurpleBlossomCaves", true);
+        ENABLE_ZIYING_CAVES = BUILDER
+                .comment("Enable Ziying Caves biome generation")
+                .define("enableZiyingCaves", true);
+        ENABLE_SUYU_CAVES = BUILDER
+                .comment("Enable Suyu Caves biome generation")
+                .define("enableSuyuCaves", true);
         BUILDER.pop();
 
         // 区域权重设置

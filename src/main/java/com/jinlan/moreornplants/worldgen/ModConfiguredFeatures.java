@@ -70,6 +70,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE = registerKey("weeping_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_APRICOT = registerKey("pink_apricot");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_APRICOT = registerKey("white_apricot");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SPRING_PETALS_PATCH = registerKey("spring_petals_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORNAMENTAL_PEACH = registerKey("ornamental_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILD_PEACH = registerKey("wild_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEACH_PINK_PETALS_PATCH = registerKey("peach_pink_petals_patch");
@@ -123,6 +124,10 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CAMELLIA_KEY = registerKey("white_camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_KEY = registerKey("pink_camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_GROVE = registerKey("pink_camellia_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CAMELLIA_TREE = registerKey("camellia_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CAMELLIA_TREE = registerKey("white_camellia_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_TREE = registerKey("pink_camellia_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_CAMELLIA_TREE = registerKey("versicolor_camellia_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_AZALEA_TREE_KEY = registerKey("flowering_azalea_tree_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_AZALEA_TREE_KEY = registerKey("red_azalea_tree_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MAYING_RHODODENDRON_TREE_KEY = registerKey("maying_rhododendron_tree_key");
@@ -163,6 +168,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_CRAPE_MYRTLE_TREE = registerKey("red_crape_myrtle_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CRAPE_MYRTLE_TREE = registerKey("pink_crape_myrtle_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRAPE_MYRTLE_TREE = registerKey("white_crape_myrtle_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRAPE_MYRTLE_CAVES_2 = registerKey("white_crape_myrtle_caves_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_CAVES = registerKey("crape_myrtle_caves");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_CRAPE_MYRTLE_CAVES = registerKey("red_crape_myrtle_caves");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CRAPE_MYRTLE_CAVES = registerKey("pink_crape_myrtle_caves");
@@ -175,6 +181,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_GALLERY_KEY = registerKey("black_bamboo_gallery_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LOTUS_KEY = registerKey("lotus_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA = registerKey("wisteria");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_WISTERIA = registerKey("white_wisteria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ROSE_BUSH = registerKey("rose_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FOUNTAIN_GRASS = registerKey("fountain_grass");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FOUNTAIN_GRASS_GROVE = registerKey("fountain_grass_grove");
@@ -197,6 +204,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_2 = registerKey("moss_patch_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_3 = registerKey("moss_patch_3");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_4 = registerKey("moss_patch_4");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_5 = registerKey("moss_patch_5");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         HolderGetter<ConfiguredFeature<?, ?>> holdergetter = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -350,6 +358,17 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.WHITE_APRICOT_LEAVES.get()),
                 new ApricotFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(4), 0.1F),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        SimpleWeightedRandomList.Builder<BlockState> springPetalsBuilder = SimpleWeightedRandomList.builder();
+        for(int i = 1; i <= 4; ++i) {
+            for(Direction direction : Direction.Plane.HORIZONTAL) {
+                springPetalsBuilder.add(ModBlocks.SPRING_PETALS.get().defaultBlockState()
+                        .setValue(ModFlowerPetalsBlock.AMOUNT, i)
+                        .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
+            }
+        }
+        register(context, SPRING_PETALS_PATCH, Feature.FLOWER, new RandomPatchConfiguration(99, 6, 2,
+                PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(springPetalsBuilder)))));
 
         register(context, ORNAMENTAL_PEACH, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
@@ -375,13 +394,15 @@ public class ModConfiguredFeatures {
                 PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(peachPinkPetalsBuilder)))));
         SimpleWeightedRandomList.Builder<BlockState> peachPetalsBuilder = SimpleWeightedRandomList.builder();
-        for(Direction direction : Direction.Plane.HORIZONTAL) {
-            peachPetalsBuilder.add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get().defaultBlockState()
-                    .setValue(ModFlowerPetalsBlock.FACING, direction), 2);
-        }
-        for(Direction direction : Direction.Plane.HORIZONTAL) {
-            peachPetalsBuilder.add(ModBlocks.WILD_PEACH_PETALS.get().defaultBlockState()
-                    .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
+        for(int i = 1; i <= 4; ++i) {
+            for (Direction direction : Direction.Plane.HORIZONTAL) {
+                peachPetalsBuilder.add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get().defaultBlockState()
+                        .setValue(ModFlowerPetalsBlock.AMOUNT, i)
+                        .setValue(ModFlowerPetalsBlock.FACING, direction), 2);
+                peachPetalsBuilder.add(ModBlocks.WILD_PEACH_PETALS.get().defaultBlockState()
+                        .setValue(ModFlowerPetalsBlock.AMOUNT, i)
+                        .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
+            }
         }
         register(context, PEACH_PETALS, Feature.RANDOM_PATCH, new RandomPatchConfiguration(32, 7, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -649,6 +670,31 @@ public class ModConfiguredFeatures {
                 new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
 
+        register(context, CAMELLIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                BlockStateProvider.simple(ModBlocks.CAMELLIA_LEAVES.get()),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, WHITE_CAMELLIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                BlockStateProvider.simple(ModBlocks.WHITE_CAMELLIA_LEAVES.get()),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, PINK_CAMELLIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                BlockStateProvider.simple(ModBlocks.PINK_CAMELLIA_LEAVES.get()),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, VERSICOLOR_CAMELLIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+                BlockStateProvider.simple(ModBlocks.VERSICOLOR_CAMELLIA_LEAVES.get()),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+
         register(context, CYMBIDIUM_RIVER, Feature.FLOWER, new RandomPatchConfiguration(32, 7, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
@@ -662,13 +708,15 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
         SimpleWeightedRandomList.Builder<BlockState> peachPetalsRiverBuilder = SimpleWeightedRandomList.builder();
-        for(Direction direction : Direction.Plane.HORIZONTAL) {
-            peachPetalsRiverBuilder.add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get().defaultBlockState()
-                    .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
-        }
-        for(Direction direction : Direction.Plane.HORIZONTAL) {
-            peachPetalsRiverBuilder.add(ModBlocks.WILD_PEACH_PETALS.get().defaultBlockState()
-                    .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
+        for(int i = 1; i <= 4; ++i) {
+            for (Direction direction : Direction.Plane.HORIZONTAL) {
+                peachPetalsRiverBuilder.add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get().defaultBlockState()
+                        .setValue(ModFlowerPetalsBlock.AMOUNT, i)
+                        .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
+                peachPetalsRiverBuilder.add(ModBlocks.WILD_PEACH_PETALS.get().defaultBlockState()
+                        .setValue(ModFlowerPetalsBlock.AMOUNT, i)
+                        .setValue(ModFlowerPetalsBlock.FACING, direction), 1);
+            }
         }
         register(context, PEACH_PETALS_RIVER, Feature.RANDOM_PATCH, new RandomPatchConfiguration(8, 4, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -1110,7 +1158,7 @@ public class ModConfiguredFeatures {
         SimpleWeightedRandomList.Builder<BlockState> lotusBuilder = SimpleWeightedRandomList.builder();
         for (Direction direction : Direction.Plane.HORIZONTAL) {
             lotusBuilder.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState()
-                            .setValue(WaterLotusLeafBlock.FACING, direction).setValue(WaterLotusBlock.AGE, 3),20);
+                    .setValue(WaterLotusLeafBlock.FACING, direction).setValue(WaterLotusBlock.AGE, 3),20);
         }
         for (int age = 0; age <= 3; age++) {
             int weight = (age <= 1) ? 1 : 2;
@@ -1243,8 +1291,22 @@ public class ModConfiguredFeatures {
                                                 .add(UniformInt.of(0, 12), 3)
                                                 .add(UniformInt.of(0, 6), 10).build()),
                                 new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CHINESE_WISTERIA_PLANT.get())).toPlace()),
-                        BlockColumnConfiguration.layer(ConstantInt.of(1), randomizedintstateprovider)),
-                Direction.DOWN, BlockPredicate.ONLY_IN_AIR_PREDICATE, true));
+                        BlockColumnConfiguration.layer(ConstantInt.of(1), randomizedintstateprovider)), Direction.DOWN, BlockPredicate.ONLY_IN_AIR_PREDICATE, true));
+        RandomizedIntStateProvider randomizedintstateprovider2 = new RandomizedIntStateProvider(
+                BlockStateProvider.simple(ModBlocks.WHITE_CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                WisteriaBlock.AGE, UniformInt.of(23, 25)
+        );
+        register(context, WHITE_WISTERIA, Feature.BLOCK_COLUMN, new BlockColumnConfiguration(
+                List.of(BlockColumnConfiguration.layer(ConstantInt.of(1),
+                                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get().defaultBlockState().setValue(WisteriaPlantBlock.TOP, true))).toPlace()),
+                        BlockColumnConfiguration.layer(
+                                new WeightedListInt(
+                                        SimpleWeightedRandomList.<IntProvider>builder()
+                                                .add(UniformInt.of(0, 18), 2)
+                                                .add(UniformInt.of(0, 12), 3)
+                                                .add(UniformInt.of(0, 6), 10).build()),
+                                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())).toPlace()),
+                        BlockColumnConfiguration.layer(ConstantInt.of(1), randomizedintstateprovider2)), Direction.DOWN, BlockPredicate.ONLY_IN_AIR_PREDICATE, true));
         register(context, CRAPE_MYRTLE_CAVES, Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
                 new WeightedStateProvider(
                         SimpleWeightedRandomList.<BlockState>builder()
@@ -1302,6 +1364,21 @@ public class ModConfiguredFeatures {
         register(context, MOSS_PATCH_4, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
                 BlockTags.MOSS_REPLACEABLE, BlockStateProvider.simple(Blocks.MOSS_BLOCK),
                 PlacementUtils.inlinePlaced(holdergetter.getOrThrow(WHITE_CRAPE_MYRTLE_CAVES)),
+                CaveSurface.FLOOR,
+                ConstantInt.of(1), 0.0F, 5, 0.8F,
+                UniformInt.of(4, 7), 0.3F));
+        register(context, WHITE_CRAPE_MYRTLE_CAVES_2, Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                new WeightedStateProvider(
+                        SimpleWeightedRandomList.<BlockState>builder()
+                                .add(ModBlocks.WHITE_CRAPE_MYRTLE.get().defaultBlockState(), 10)
+                                .add(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get().defaultBlockState(), 50)
+                                .add(Blocks.MOSS_CARPET.defaultBlockState(), 20)
+                                .add(Blocks.GRASS.defaultBlockState(), 10)
+                                .add(Blocks.TALL_GRASS.defaultBlockState(), 4)
+                                .add(Blocks.VERDANT_FROGLIGHT.defaultBlockState(), 1))));
+        register(context, MOSS_PATCH_5, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
+                BlockTags.MOSS_REPLACEABLE, BlockStateProvider.simple(Blocks.MOSS_BLOCK),
+                PlacementUtils.inlinePlaced(holdergetter.getOrThrow(WHITE_CRAPE_MYRTLE_CAVES_2)),
                 CaveSurface.FLOOR,
                 ConstantInt.of(1), 0.0F, 5, 0.8F,
                 UniformInt.of(4, 7), 0.3F));

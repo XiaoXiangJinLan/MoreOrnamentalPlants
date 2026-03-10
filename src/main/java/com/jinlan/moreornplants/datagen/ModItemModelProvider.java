@@ -275,6 +275,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         flowerItem(ModBlocks.WEEPING_CRABAPPLE);
         wisteriaItem(ModBlocks.CHINESE_WISTERIA);
+        wisteriaItem(ModBlocks.WHITE_CHINESE_WISTERIA);
 
         flowerItem(ModBlocks.CHRYSANTHEMUM);
         flowerItem(ModBlocks.GOLDEN_CHRYSANTHEMUM);
@@ -398,6 +399,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
         simplerBlockItem(ModBlocks.FRAGRANT_SNOW_PETALS);
+        simplerBlockItem(ModBlocks.SPRING_PETALS);
         simpleItem(ModItems.ORNAMENTAL_PEACH_PETALS);
         simpleItem(ModItems.WILD_PEACH_PETALS);
         flowerItem(ModBlocks.CHINESE_PARASOL_LEAF_0);

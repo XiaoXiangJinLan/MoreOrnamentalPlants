@@ -78,8 +78,10 @@ public class ModBiomes {
             new ResourceLocation(MoreOrnPlants.MOD_ID, "azalea_forest"));
     public static final ResourceKey<Biome> TEN_MILE_GALLERY = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "ten_mile_gallery"));
-    public static final ResourceKey<Biome> PURPLE_BLOSSOM_CAVES = ResourceKey.create(Registries.BIOME,
-            new ResourceLocation(MoreOrnPlants.MOD_ID, "purple_blossom_caves"));
+    public static final ResourceKey<Biome> ZIYING_CAVES = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "ziying_caves"));
+    public static final ResourceKey<Biome> SUYU_CAVES = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(MoreOrnPlants.MOD_ID + ":" + "suyu_caves"));
 
     public static void bootstrap(BootstapContext<Biome> context) {
         context.register(RED_MEI_FOREST, redMeiForest(context));
@@ -88,9 +90,9 @@ public class ModBiomes {
         context.register(COLORED_FOREST, coloredForest(context));
         context.register(FLOWERS_GROVE, flowersGrove(context, false));
         context.register(CRABAPPLE_GROVE, flowersGrove(context, true));
-        context.register(CAMELLIA_VALLEY, camelliaValley(context, CamelliaType.WHITE));
-        context.register(RED_CAMELLIA_VALLEY, camelliaValley(context, CamelliaType.RED));
-        context.register(PINK_CAMELLIA_VALLEY, camelliaValley(context, CamelliaType.PINK));
+        context.register(CAMELLIA_VALLEY, camelliaValley(context, CamelliaType.WHITE, CamelliaTreeType.WHITE));
+        context.register(RED_CAMELLIA_VALLEY, camelliaValley(context, CamelliaType.RED, CamelliaTreeType.RED));
+        context.register(PINK_CAMELLIA_VALLEY, camelliaValley(context, CamelliaType.PINK, CamelliaTreeType.PINK));
         context.register(RED_HIGHLANDS, redHighlands(context));
         context.register(PEONY_SEA, peonyBiome(context, true));
         context.register(PEONY_MEADOWS, peonyBiome(context, false));
@@ -112,7 +114,8 @@ public class ModBiomes {
         context.register(THE_APRICOT_SPRING_PLATEAU, theApricotSpringPlateau(context));
         context.register(AZALEA_FOREST, azaleaForest(context));
         context.register(TEN_MILE_GALLERY, tenMileGallery(context));
-        context.register(PURPLE_BLOSSOM_CAVES, purpleBlossomCaves(context));
+        context.register(ZIYING_CAVES, cavesBiome(context, false));
+        context.register(SUYU_CAVES, cavesBiome(context, true));
     }
 
     public static void globalOverworldGeneration(BiomeGenerationSettings.Builder builder) {
@@ -314,7 +317,7 @@ public class ModBiomes {
     public enum CamelliaType {
         RED(ModPlacedFeatures.RED_CAMELLIA_PLACED),
         WHITE(ModPlacedFeatures.WHITE_CAMELLIA_PLACED),
-        PINK(ModPlacedFeatures.PINK_CAMELLIA_GROVE);
+        PINK(ModPlacedFeatures.PINK_CAMELLIA_PLACED);
         private final ResourceKey<PlacedFeature> feature;
         CamelliaType(ResourceKey<PlacedFeature> feature) {
             this.feature = feature;
@@ -323,7 +326,19 @@ public class ModBiomes {
             return feature;
         }
     }
-    private static Biome camelliaValley(BootstapContext<Biome> context, CamelliaType type) {
+    public enum CamelliaTreeType {
+        RED(ModPlacedFeatures.CAMELLIA_TREE_PLACED),
+        WHITE(ModPlacedFeatures.WHITE_CAMELLIA_TREE_PLACED),
+        PINK(ModPlacedFeatures.PINK_CAMELLIA_TREE_PLACED);
+        private final ResourceKey<PlacedFeature> feature;
+        CamelliaTreeType(ResourceKey<PlacedFeature> feature) {
+            this.feature = feature;
+        }
+        public ResourceKey<PlacedFeature> getFeature() {
+            return feature;
+        }
+    }
+    private static Biome camelliaValley(BootstapContext<Biome> context, CamelliaType type, CamelliaTreeType tree) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
         BiomeDefaultFeatures.farmAnimals(spawnBuilder);
         BiomeDefaultFeatures.commonSpawns(spawnBuilder);
@@ -336,6 +351,7 @@ public class ModBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
         BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, type.getFeature());
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, tree.getFeature());
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_APRICOT_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CAMPHOR_VALLEY_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_VALLY);
@@ -797,6 +813,7 @@ public class ModBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_APRICOT_PLATEAU_1);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_APRICOT_PLATEAU_2);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_APRICOT_PLATEAU_2);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SPRING_PETALS_PATCH_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_WOODS);
 
         return new Biome.BiomeBuilder()
@@ -884,7 +901,7 @@ public class ModBiomes {
                 .build();
     }
 
-    private static Biome purpleBlossomCaves(BootstapContext<Biome> context) {
+    private static Biome cavesBiome(BootstapContext<Biome> context, boolean isWhite) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
         spawnBuilder.addSpawn(MobCategory.AXOLOTLS, new MobSpawnSettings.SpawnerData(EntityType.AXOLOTL, 10, 4, 6));
         spawnBuilder.addSpawn(MobCategory.WATER_AMBIENT, new MobSpawnSettings.SpawnerData(EntityType.TROPICAL_FISH, 25, 8, 8));
@@ -897,13 +914,20 @@ public class ModBiomes {
         BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WISTERIA_1);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WISTERIA_2);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WISTERIA_3);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CRAPE_MYRTLE_CAVES);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_CRAPE_MYRTLE_CAVES);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_CRAPE_MYRTLE_CAVES);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_CRAPE_MYRTLE_CAVES);
+        if (isWhite) {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_WISTERIA_1);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_WISTERIA_2);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_WISTERIA_3);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_CRAPE_MYRTLE_CAVES_2);
+        } else {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WISTERIA_1);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WISTERIA_2);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WISTERIA_3);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CRAPE_MYRTLE_CAVES);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_CRAPE_MYRTLE_CAVES);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_CRAPE_MYRTLE_CAVES);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_CRAPE_MYRTLE_CAVES);
+        }
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_PLAIN);
         Music music = Musics.createGameMusic(SoundEvents.MUSIC_BIOME_LUSH_CAVES);
         return new Biome.BiomeBuilder()

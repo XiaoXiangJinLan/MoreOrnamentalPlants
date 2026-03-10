@@ -42,7 +42,12 @@
     "more_orn_plants:purple_rhododendron_leaves",
     "more_orn_plants:pink_rhododendron_leaves",
     "more_orn_plants:chinese_azalea_leaves",
+    "more_orn_plants:camellia_leaves",
+    "more_orn_plants:pink_camellia_leaves",
+    "more_orn_plants:white_camellia_leaves",
+    "more_orn_plants:versicolor_camellia_leaves",
     "more_orn_plants:peach_pink_petals",
-    "more_orn_plants:fragrant_snow_petals"
+    "more_orn_plants:fragrant_snow_petals",
+    "more_orn_plants:spring_petals"
   ]
 }

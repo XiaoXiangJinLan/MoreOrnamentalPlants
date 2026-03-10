@@ -5,7 +5,6 @@ import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.FlowerBlocks.ModFlowerPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
-import com.jinlan.moreornplants.block.WeepingBlocks.PinkWeepingMeiPlantBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WeepingMeiPlantBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaPlantBlock;
@@ -22,6 +21,8 @@ import net.minecraftforge.client.model.generators.VariantBlockStateBuilder;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.Objects;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -557,8 +558,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         flowerBlock(ModBlocks.WEEPING_CRABAPPLE);
 
-        wisteriaBlock();
-        wisteriaPlantBlock();
+        wisteriaBlock(ModBlocks.CHINESE_WISTERIA);
+        wisteriaPlantBlock(ModBlocks.CHINESE_WISTERIA_PLANT);
+        wisteriaBlock(ModBlocks.WHITE_CHINESE_WISTERIA);
+        wisteriaPlantBlock(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT);
 
         flowerBlock(ModBlocks.CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_CHRYSANTHEMUM.get(), models().singleTexture("potted_chrysanthemum", new ResourceLocation("flower_pot_cross"), "plant",
@@ -873,17 +876,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         lotusBlock(ModBlocks.LOTUS);
         lotusBlock(ModBlocks.WHITE_LOTUS);
-        lotusLeafBlock(ModBlocks.LOTUS_LEAF);
+        lotusLeafBlock();
 
-        PetalsBlock(ModBlocks.PEACH_PINK_PETALS);
-        PetalsBlock(ModBlocks.FRAGRANT_SNOW_PETALS);
-        leafPileBlock(ModBlocks.ORNAMENTAL_PEACH_PETALS);
-        leafPileBlock(ModBlocks.WILD_PEACH_PETALS);
+        petalsBlock(ModBlocks.PEACH_PINK_PETALS);
+        petalsBlock(ModBlocks.FRAGRANT_SNOW_PETALS);
+        petalsBlock(ModBlocks.SPRING_PETALS);
         leafPileBlock(ModBlocks.CHINESE_PARASOL_LEAF_0);
         leafPileBlock(ModBlocks.CHINESE_PARASOL_LEAF_1);
         leafPileBlock(ModBlocks.SWEETGUM_LEAF_PILE_0);
         leafPileBlock(ModBlocks.SWEETGUM_LEAF_PILE_1);
-        leafPileBlock(ModBlocks.GINKGO_LEAF_PILE);
 
         xiangNangBlock(ModBlocks.MEI_XIANGNANG);
         xiangNangBlock(ModBlocks.OSMANTHUS_XIANGNANG);
@@ -900,11 +901,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void weepingMeiPlantBlock(RegistryObject<Block> blockRegistryObject) {
-        String baseName = blockRegistryObject.getId().getPath();
-        ModelFile normalModel = models().cross(blockRegistryObject.getId().getPath(),
-                blockTexture(blockRegistryObject.get())).renderType("cutout");
-        ModelFile topModel = models().cross(blockRegistryObject.getId().getPath() + "_top",
-                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_2")).renderType("cutout");
+        String baseName = null;
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
+        }
+        ModelFile normalModel = null;
+        if (blockRegistryObject.getId() != null) {
+            normalModel = models().cross(blockRegistryObject.getId().getPath(),
+                    blockTexture(blockRegistryObject.get())).renderType("cutout");
+        }
+        ModelFile topModel = null;
+        if (blockRegistryObject.getId() != null) {
+            topModel = models().cross(blockRegistryObject.getId().getPath() + "_top",
+                    new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_2")).renderType("cutout");
+        }
         getVariantBuilder(blockRegistryObject.get())
                 .partialState().with(WeepingMeiPlantBlock.TOP, false)
                 .modelForState().modelFile(normalModel).addModel()
@@ -912,26 +922,44 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 .modelForState().modelFile(topModel).addModel();
     }
 
-    private void wisteriaBlock() {
-        String baseName = ModBlocks.CHINESE_WISTERIA.getId().getPath();
-        ModelFile normalModel = models().cross(ModBlocks.CHINESE_WISTERIA.getId().getPath(),
-                blockTexture(ModBlocks.CHINESE_WISTERIA.get())).renderType("cutout");
-        ModelFile topModel = models().cross(ModBlocks.CHINESE_WISTERIA.getId().getPath() + "_top",
-                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_2")).renderType("cutout");
-        getVariantBuilder(ModBlocks.CHINESE_WISTERIA.get())
+    private void wisteriaBlock(RegistryObject<Block> blockRegistryObject) {
+        String baseName = null;
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
+        }
+        ModelFile normalModel = null;
+        if (blockRegistryObject.getId() != null) {
+            normalModel = models().cross(blockRegistryObject.getId().getPath(),
+                    blockTexture(blockRegistryObject.get())).renderType("cutout");
+        }
+        ModelFile topModel = null;
+        if (blockRegistryObject.getId() != null) {
+            topModel = models().cross(blockRegistryObject.getId().getPath() + "_top",
+                    new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_2")).renderType("cutout");
+        }
+        getVariantBuilder(blockRegistryObject.get())
                 .partialState().with(WisteriaBlock.TOP, false)
                 .modelForState().modelFile(normalModel).addModel()
                 .partialState().with(WisteriaBlock.TOP, true)
                 .modelForState().modelFile(topModel).addModel();
     }
 
-    private void wisteriaPlantBlock() {
-        String baseName = ModBlocks.CHINESE_WISTERIA_PLANT.getId().getPath();
-        ModelFile normalModel = models().cross(ModBlocks.CHINESE_WISTERIA_PLANT.getId().getPath(),
-                blockTexture(ModBlocks.CHINESE_WISTERIA_PLANT.get())).renderType("cutout");
-        ModelFile topModel = models().cross(ModBlocks.CHINESE_WISTERIA_PLANT.getId().getPath() + "_top",
-                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_2")).renderType("cutout");
-        getVariantBuilder(ModBlocks.CHINESE_WISTERIA_PLANT.get())
+    private void wisteriaPlantBlock(RegistryObject<Block> blockRegistryObject) {
+        String baseName = null;
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
+        }
+        ModelFile normalModel = null;
+        if (blockRegistryObject.getId() != null) {
+            normalModel = models().cross(blockRegistryObject.getId().getPath(),
+                    blockTexture(blockRegistryObject.get())).renderType("cutout");
+        }
+        ModelFile topModel = null;
+        if (blockRegistryObject.getId() != null) {
+            topModel = models().cross(blockRegistryObject.getId().getPath() + "_top",
+                    new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_2")).renderType("cutout");
+        }
+        getVariantBuilder(blockRegistryObject.get())
                 .partialState().with(WisteriaPlantBlock.TOP, false)
                 .modelForState().modelFile(normalModel).addModel()
                 .partialState().with(WisteriaPlantBlock.TOP, true)
@@ -939,7 +967,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void tallCrossBlock(RegistryObject<Block> blockRegistryObject) {
-        String baseName = blockRegistryObject.getId().getPath();
+        String baseName = null;
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
+        }
         ResourceLocation bottomTexture = new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_bottom");
         ResourceLocation topTexture = new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_top");
         ModelFile bottomModel = models().cross(baseName + "_bottom", bottomTexture).renderType("cutout");
@@ -953,16 +984,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject, boolean tinted) {
         if (tinted) {
-            String baseName = blockRegistryObject.getId().getPath();
-            String textureName = baseName.replace("_sapling", "_stage0");
+            String baseName = null;
+            if (blockRegistryObject.getId() != null) {
+                baseName = blockRegistryObject.getId().getPath();
+            }
+            String textureName = null;
+            if (baseName != null) {
+                textureName = baseName.replace("_sapling", "_stage0");
+            }
             simpleBlock(blockRegistryObject.get(),
-                    models().withExistingParent(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),
+                    models().withExistingParent(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath(),
                                     new ResourceLocation("block/tinted_cross"))
                             .texture("cross", modLoc("block/" + textureName))
                             .renderType("cutout"));
         } else {
             simpleBlock(blockRegistryObject.get(),
-                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout"));
+                models().cross(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout"));
         }
     }
 
@@ -972,7 +1009,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void flowerBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(),
-                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout"));
+                models().cross(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
@@ -995,21 +1032,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(),
-                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
+                models().singleTexture(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath(), new ResourceLocation("minecraft:block/leaves"),
                         "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(MoreOrnPlants.MOD_ID +
-                ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
+                ":block/" + Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    private void PetalsBlock(RegistryObject<Block> blockRegistryObject) {
-        String baseName = blockRegistryObject.getId().getPath();
+    private void petalsBlock(RegistryObject<Block> blockRegistryObject) {
+        String baseName = null;
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
+        }
         ResourceLocation flowerbedTexture = modLoc("block/" + baseName);
         ResourceLocation stemTexture = modLoc("block/" + baseName + "_stem");
         ModelFile model1 = models().withExistingParent(baseName + "_1", new ResourceLocation("block/flowerbed_1"))
@@ -1056,7 +1096,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void leafPileBlock(RegistryObject<Block> blockRegistryObject) {
-        String baseName = blockRegistryObject.getId().getPath();
+        String baseName = null;
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
+        }
         String texturePath = "block/" + baseName;
         ModelFile model = models().withExistingParent(baseName, modLoc("block/leaf_pile"))
                 .texture("leaf", modLoc(texturePath))
@@ -1065,7 +1108,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void bambooModelsOnly(RegistryObject<Block> blockRegistryObject) {
-        String baseName = blockRegistryObject.getId().getPath();
+        String baseName = null;
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
+        }
         ResourceLocation stalkTexture = modLoc("block/" + baseName + "_stalk");
         for (int i = 1; i <= 4; i++) {
             models().getBuilder(baseName + i + "_age0")
@@ -1088,17 +1134,26 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void pottedBambooBlock(RegistryObject<Block> pottedBlock) {
-        String baseName = pottedBlock.getId().getPath();
-        String bambooType = baseName.replace("potted_", "");
+        String baseName = null;
+        if (pottedBlock.getId() != null) {
+            baseName = pottedBlock.getId().getPath();
+        }
+        String bambooType = null;
+        if (baseName != null) {
+            bambooType = baseName.replace("potted_", "");
+        }
         ModelFile pottedModel = models().withExistingParent(baseName, new ResourceLocation("minecraft:block/potted_bamboo"))
                 .texture("bamboo", modLoc("block/" + bambooType + "_stalk"))
                 .texture("leaf", modLoc("block/" + bambooType + "_singleleaf"))
                 .renderType("cutout");
-        simpleBlockWithItem(pottedBlock.get(), pottedModel);
+        simpleBlock(pottedBlock.get(), pottedModel);
     }
 
     private void lotusBlock(RegistryObject<Block> blockRegistryObject) {
-        String baseName = blockRegistryObject.getId().getPath();
+        String baseName = null;
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
+        }
         ModelFile bottomModel = models().cross(baseName + "_bottom",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/lotus_bottom")).renderType("cutout");
         for (int age = 0; age <= 3; age++) {
@@ -1125,15 +1180,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
         }
     }
 
-    private void lotusLeafBlock(RegistryObject<Block> blockRegistryObject) {
-        String baseName = blockRegistryObject.getId().getPath();
+    private void lotusLeafBlock() {
+        String baseName = null;
+        if (ModBlocks.LOTUS_LEAF.getId() != null) {
+            baseName = ModBlocks.LOTUS_LEAF.getId().getPath();
+        }
         ModelFile bottomModel = models().cross(baseName + "_bottom",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/lotus_bottom")).renderType("cutout");
         ModelFile topModel = models().withExistingParent(baseName + "_top", modLoc("block/lotus_leaf"))
                 .texture("leaf", modLoc("block/" + baseName))
                 .texture("stem", modLoc("block/" + baseName + "_stem"))
                 .renderType("cutout");
-        VariantBlockStateBuilder builder = getVariantBuilder(blockRegistryObject.get());
+        VariantBlockStateBuilder builder = getVariantBuilder(ModBlocks.LOTUS_LEAF.get());
         builder.partialState()
                 .with(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
                 .modelForState().modelFile(bottomModel)
@@ -1155,7 +1213,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void xiangNangBlock(RegistryObject<Block> blockRegistryObject) {
-        String baseName = blockRegistryObject.getId().getPath();
+        String baseName = null;
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
+        }
         ModelFile baseModel = models().withExistingParent(baseName, modLoc("block/xiangnang"))
                 .texture("front", modLoc("block/" + baseName))
                 .texture("back", modLoc("block/" + baseName))

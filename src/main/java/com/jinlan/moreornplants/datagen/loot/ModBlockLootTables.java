@@ -380,6 +380,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.PINK_RHODODENDRON.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.CHINESE_AZALEA_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CHINESE_AZALEA.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.CAMELLIA_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.CAMELLIA.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WHITE_CAMELLIA_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WHITE_CAMELLIA.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PINK_CAMELLIA_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PINK_CAMELLIA.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.VERSICOLOR_CAMELLIA_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.VERSICOLOR_CAMELLIA.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(ModBlocks.RED_WEEPING_MEI.get(), block ->
                 createLeavesDrops(block, ModBlocks.RED_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -965,16 +973,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.PEACH_PINK_PETALS.get(), createPetalsDrops(ModBlocks.PEACH_PINK_PETALS.get()));
         this.add(ModBlocks.FRAGRANT_SNOW_PETALS.get(), createPetalsDrops(ModBlocks.FRAGRANT_SNOW_PETALS.get()));
-        this.dropSelf(ModBlocks.ORNAMENTAL_PEACH_PETALS.get());
-        this.dropSelf(ModBlocks.WILD_PEACH_PETALS.get());
+        this.add(ModBlocks.SPRING_PETALS.get(), createPetalsDrops(ModBlocks.SPRING_PETALS.get()));
+        this.add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get(), createPetalsDrops(ModBlocks.ORNAMENTAL_PEACH_PETALS.get()));
+        this.add(ModBlocks.WILD_PEACH_PETALS.get(), createPetalsDrops(ModBlocks.WILD_PEACH_PETALS.get()));
         this.dropSelf(ModBlocks.CHINESE_PARASOL_LEAF_0.get());
         this.dropSelf(ModBlocks.CHINESE_PARASOL_LEAF_1.get());
         this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_0.get());
         this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_1.get());
-        this.dropSelf(ModBlocks.GINKGO_LEAF_PILE.get());
+        this.add(ModBlocks.GINKGO_LEAF_PILE.get(), createPetalsDrops(ModBlocks.GINKGO_LEAF_PILE.get()));
 
         this.dropSelf(ModBlocks.CHINESE_WISTERIA.get());
         this.dropOther(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.CHINESE_WISTERIA.get().asItem());
+        this.dropSelf(ModBlocks.WHITE_CHINESE_WISTERIA.get());
+        this.dropOther(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem());
 
         this.dropSelf(ModBlocks.MEI_XIANGNANG.get());
         this.dropSelf(ModBlocks.OSMANTHUS_XIANGNANG.get());

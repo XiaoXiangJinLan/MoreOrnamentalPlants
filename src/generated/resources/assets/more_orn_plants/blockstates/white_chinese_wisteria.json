@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "top=false": {
+      "model": "more_orn_plants:block/white_chinese_wisteria"
+    },
+    "top=true": {
+      "model": "more_orn_plants:block/white_chinese_wisteria_top"
+    }
+  }
+}

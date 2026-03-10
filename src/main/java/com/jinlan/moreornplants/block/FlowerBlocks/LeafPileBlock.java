@@ -19,7 +19,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class LeafPileBlock extends WaterlilyBlock {
-    protected static final VoxelShape AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D);
+    protected static final VoxelShape AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 3.0D, 16.0D);
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public LeafPileBlock(Properties pProperties) {
         super(pProperties);

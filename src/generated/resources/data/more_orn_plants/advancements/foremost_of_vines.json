@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "more_orn_plants:chinese_wisteria"
-            ]
+            "tag": "forge:wisteria"
           }
         ]
       },

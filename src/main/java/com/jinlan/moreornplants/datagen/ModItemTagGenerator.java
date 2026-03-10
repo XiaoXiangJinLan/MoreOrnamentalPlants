@@ -14,6 +14,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -24,7 +25,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider pProvider) {
+    protected void addTags(HolderLookup.@NotNull Provider pProvider) {
         this.tag(ItemTags.FLOWERS)
                 .addTag(ItemTags.SMALL_FLOWERS)
                 .addTag(ItemTags.TALL_FLOWERS)
@@ -83,9 +84,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES.get().asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get().asItem())
                 .add(ModBlocks.RED_AZALEA_LEAVES.get().asItem(), ModBlocks.MAYING_RHODODENDRON_LEAVES.get().asItem(), ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get().asItem(), ModBlocks.CHARMING_RHODODENDRON_LEAVES.get().asItem())
                 .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get().asItem(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.get().asItem(), ModBlocks.PINK_RHODODENDRON_LEAVES.get().asItem(), ModBlocks.CHINESE_AZALEA_LEAVES.get().asItem())
-                .add(ModBlocks.PEACH_PINK_PETALS.get().asItem())
-                .add(ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem())
-                .add(ModBlocks.CHINESE_WISTERIA.get().asItem());
+                .add(ModBlocks.PEACH_PINK_PETALS.get().asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem(), ModBlocks.SPRING_PETALS.get().asItem())
+                .add(ModBlocks.CHINESE_WISTERIA.get().asItem(), ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem());
 
         this.copy(BlockTags.LEAVES, ItemTags.LEAVES);
         this.copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
@@ -189,9 +189,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ForgeTags.Items.BAMBOO)
                 .addTag(ForgeTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
-                .add(ModBlocks.CHINESE_WISTERIA.get().asItem())
-                .add(ModBlocks.PEACH_PINK_PETALS.get().asItem())
-                .add(ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem())
+                .addTag(ForgeTags.Items.WISTERIA)
+                .add(ModBlocks.PEACH_PINK_PETALS.get().asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem(), ModBlocks.SPRING_PETALS.get().asItem())
                 .add(ModItems.BAMBOO_STICK.get())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
@@ -294,6 +293,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.MAYING_RHODODENDRON.get().asItem(), ModBlocks.DEWDROP_RHODODENDRON.get().asItem(), ModBlocks.CHARMING_RHODODENDRON.get().asItem())
                 .add(ModBlocks.GREAT_WHITE_RHODODENDRON.get().asItem(), ModBlocks.PURPLE_RHODODENDRON.get().asItem(), ModBlocks.PINK_RHODODENDRON.get().asItem())
                 .add(ModBlocks.RED_AZALEA.get().asItem(), ModBlocks.CHINESE_AZALEA.get().asItem());
+
+        this.tag(ForgeTags.Items.WISTERIA)
+                .add(ModBlocks.CHINESE_WISTERIA.get().asItem(), ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem());
 
         this.tag(ForgeTags.Items.CRABAPPLE_SAPLING)
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem())

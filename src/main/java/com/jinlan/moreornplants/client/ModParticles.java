@@ -124,5 +124,21 @@ public class ModParticles {
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
+        event.registerSpriteSet(ModParticleTypes.CAMELLIA_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new CamphorParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.WHITE_CAMELLIA_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new CamphorParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.PINK_CAMELLIA_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new CamphorParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.VERSICOLOR_CAMELLIA_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new CamphorParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
     }
 }
