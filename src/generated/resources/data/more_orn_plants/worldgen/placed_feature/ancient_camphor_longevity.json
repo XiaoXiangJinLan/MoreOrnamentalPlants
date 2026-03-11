@@ -1,5 +1,5 @@
 {
-  "feature": "more_orn_plants:purple_leaf_plum",
+  "feature": "more_orn_plants:ancient_camphor",
   "placement": [
     {
       "type": "minecraft:count",
@@ -7,11 +7,11 @@
         "type": "minecraft:weighted_list",
         "distribution": [
           {
-            "data": 1,
-            "weight": 4
+            "data": 2,
+            "weight": 19
           },
           {
-            "data": 2,
+            "data": 3,
             "weight": 1
           }
         ]
@@ -36,7 +36,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "more_orn_plants:purple_leaf_plum_sapling",
+          "Name": "more_orn_plants:camphor_sapling",
           "Properties": {
             "stage": "0"
           }

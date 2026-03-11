@@ -91,7 +91,7 @@ public class ModOverworldBiomesBuilder {
 
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_MOD = new ResourceKey[][]{
             {ModBiomes.RED_MEI_FOREST, ModBiomes.RED_MEI_FOREST, ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST,      null},
-            {ModBiomes.PEONY_SEA,      ModBiomes.PEONY_SEA,      ModBiomes.EVERGREEN_FOREST,    ModBiomes.EVERGREEN_FOREST,    null},
+            {ModBiomes.PEONY_SEA,      ModBiomes.PEONY_SEA,      ModBiomes.EVERGREEN_FOREST,    ModBiomes.EVERGREEN_FOREST,    ModBiomes.LONGEVITY_FOREST},
             {ModBiomes.FLOWERS_GROVE,  ModBiomes.FLOWERS_GROVE,  ModBiomes.CAMELLIA_VALLEY,     ModBiomes.CAMELLIA_VALLEY,     null},
             {null,                     null,                     null,                          null,                          null},
             {null,                     null,                     ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
@@ -112,7 +112,7 @@ public class ModOverworldBiomesBuilder {
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_VARIANT_MOD = new ResourceKey[][]{
             {null, null,                    null,                    null,                    null},
-            {null, ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, null},
+            {null, ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, ModBiomes.LONGEVITY_FOREST},
             {null, null,                    ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, null},
             {null, null,                    null,                    null,                    null},
             {null, null,                    null,                    null,                    null}

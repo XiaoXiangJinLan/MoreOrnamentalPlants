@@ -16,6 +16,7 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_PEONY_SEA;
     public static final ModConfigSpec.BooleanValue ENABLE_PEONY_MEADOWS;
     public static final ModConfigSpec.BooleanValue ENABLE_EVERGREEN_FOREST;
+    public static final ModConfigSpec.BooleanValue ENABLE_LONGEVITY_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_FLOWERS_GROVE;
     public static final ModConfigSpec.BooleanValue ENABLE_CRABAPPLE_GROVE;
     public static final ModConfigSpec.BooleanValue ENABLE_COLORED_FOREST;
@@ -73,6 +74,9 @@ public class ModBiomeConfig {
         ENABLE_EVERGREEN_FOREST = BUILDER
                 .comment("Enable Evergreen Forest biome generation")
                 .define("enableEvergreenForest", true);
+        ENABLE_LONGEVITY_FOREST = BUILDER
+                .comment("Enable Longevity Forest biome generation")
+                .define("enableLongevityForest", true);
         ENABLE_FLOWERS_GROVE = BUILDER
                 .comment("Enable Flowers Grove biome generation")
                 .define("enableFlowersGrove", true);

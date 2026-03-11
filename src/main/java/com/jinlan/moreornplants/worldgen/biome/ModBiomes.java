@@ -24,6 +24,8 @@ public class ModBiomes {
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "the_peach_blossom_spring"));
     public static final ResourceKey<Biome> EVERGREEN_FOREST = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "evergreen_forest"));
+    public static final ResourceKey<Biome> LONGEVITY_FOREST = ResourceKey.create(Registries.BIOME,
+            ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "longevity_forest"));
     public static final ResourceKey<Biome> COLORED_FOREST = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "colored_forest"));
     public static final ResourceKey<Biome> FLOWERS_GROVE = ResourceKey.create(Registries.BIOME,
@@ -86,7 +88,8 @@ public class ModBiomes {
     public static void bootstrap(BootstrapContext<Biome> context) {
         context.register(RED_MEI_FOREST, redMeiForest(context));
         context.register(THE_PEACH_BLOSSOM_SPRING, thePeachBlossomSpring(context));
-        context.register(EVERGREEN_FOREST, evergreenForest(context));
+        context.register(EVERGREEN_FOREST, evergreenForest(context, false));
+        context.register(LONGEVITY_FOREST, evergreenForest(context, true));
         context.register(COLORED_FOREST, coloredForest(context));
         context.register(FLOWERS_GROVE, flowersGrove(context, false));
         context.register(CRABAPPLE_GROVE, flowersGrove(context, true));
@@ -188,13 +191,16 @@ public class ModBiomes {
                 .build();
     }
 
-    private static Biome evergreenForest(BootstrapContext<Biome> context) {
+    private static Biome evergreenForest(BootstrapContext<Biome> context, boolean isLongevity) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
 
         BiomeDefaultFeatures.farmAnimals(spawnBuilder);
         BiomeDefaultFeatures.caveSpawns(spawnBuilder);
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.RABBIT, 4, 2, 3))
                 .addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.WOLF, 5, 4, 4));
+        if (isLongevity) {
+            spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.FOX, 8, 2, 4));
+        }
 
         BiomeGenerationSettings.Builder biomeBuilder =
                 new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
@@ -204,17 +210,24 @@ public class ModBiomes {
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_FOREST_1);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.ANCIENT_CAMPHOR_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CAMPHOR_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GREEN_CHINESE_PARASOL_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GREEN_GINKGO_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_OSMANTHUS_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.DOVE_TREE_PLACED);
+        if (isLongevity) {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.ANCIENT_CAMPHOR_LONGEVITY);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.ANCIENT_GREEN_GINKGO_LONGEVITY);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.MEGA_PINE_LONGEVITY);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHRYSANTHEMUM_FOREST_PLACED);
+        } else {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.ANCIENT_CAMPHOR_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CAMPHOR_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GREEN_CHINESE_PARASOL_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GREEN_GINKGO_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_OSMANTHUS_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.DOVE_TREE_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.LILY_OF_THE_VALLEY_FOREST_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.BLUE_ORCHID_FOREST_PLACED);
+        }
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SPRING_CYMBIDIUM_FOREST_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SUMMER_CYMBIDIUM_FOREST_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WINTER_CYMBIDIUM_FOREST_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.LILY_OF_THE_VALLEY_FOREST_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.BLUE_ORCHID_FOREST_PLACED);
 
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(true).temperature(0.7f).downfall(0.8f)
@@ -245,7 +258,6 @@ public class ModBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SWEETGUM_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GOLDEN_OSMANTHUS_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PURPLE_LEAF_PLUM_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHRYSANTHEMUM_FOREST_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHRYSANTHEMUM_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GOLDEN_CHRYSANTHEMUM_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_CHRYSANTHEMUM_PLACED);
