@@ -38,5 +38,8 @@
       "visit_Furong Guo"
     ]
   ],
+  "rewards": {
+    "experience": 10
+  },
   "sends_telemetry_event": true
 }

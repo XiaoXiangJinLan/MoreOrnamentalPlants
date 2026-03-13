@@ -43,9 +43,9 @@
       "upper_size": 2
     },
     "trunk_placer": {
-      "type": "more_orn_plants:weeping_crabapple_trunk_placer",
+      "type": "more_orn_plants:crabapple_trunk_placer",
       "base_height": 9,
-      "branch_chance": 1.0,
+      "branch_limit": 5,
       "branch_max_length": 5,
       "branch_min_length": 4,
       "branch_start_height": 3,

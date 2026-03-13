@@ -824,7 +824,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.WINTERSWEET.get(), createSinglePropConditionTable(ModBlocks.WINTERSWEET.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.YAO_HUANG_PEONY.get(), createSinglePropConditionTable(ModBlocks.YAO_HUANG_PEONY.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.WEI_ZI_PEONY.get(), createSinglePropConditionTable(ModBlocks.WEI_ZI_PEONY.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.ZHAO_PINK_PEONY.get(), createSinglePropConditionTable(ModBlocks.ZHAO_PINK_PEONY.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.DOU_GREEN_PEONY.get(), createSinglePropConditionTable(ModBlocks.DOU_GREEN_PEONY.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.LUOYANG_RED_PEONY.get(), createSinglePropConditionTable(ModBlocks.LUOYANG_RED_PEONY.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.TWO_QIAO_PEONY.get(), createSinglePropConditionTable(ModBlocks.TWO_QIAO_PEONY.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));

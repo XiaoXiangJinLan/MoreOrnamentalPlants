@@ -12,6 +12,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Consumer;
 
@@ -21,7 +22,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     @Override
-    protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+    protected void buildRecipes(@NotNull Consumer<FinishedRecipe> pWriter) {
         planksFromLogs(pWriter, ModBlocks.RED_MEI_PLANKS.get(), ModTags.Items.RED_MEI_LOGS, 4);
         planksFromLogs(pWriter, ModBlocks.WHITE_MEI_PLANKS.get(), ModTags.Items.WHITE_MEI_LOGS, 4);
         planksFromLogs(pWriter, ModBlocks.GREEN_CALYX_MEI_PLANKS.get(), ModTags.Items.GREEN_CALYX_MEI_LOGS, 4);
@@ -751,17 +752,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(pWriter, ModItems.CHINABERRY_CHEST_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
         chestBoat(pWriter, ModItems.DESERT_POPLAR_CHEST_BOAT.get(), ModBlocks.DESERT_POPLAR_PLANKS.get());
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 6)
-                .define('#', ModBlocks.CRAPE_MYRTLE_LOG.get())
-                .pattern("#")
-                .pattern("#")
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.STICK, 6)
+                .requires(ModBlocks.CRAPE_MYRTLE_LOG.get())
+                .group("sticks")
                 .group("sticks")
                 .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_LOG.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "stick_from_crape_myrtle_log"));
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 6)
-                .define('#', ModBlocks.CRAPE_MYRTLE_WOOD.get())
-                .pattern("#")
-                .pattern("#")
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.STICK, 6)
+                .requires(ModBlocks.CRAPE_MYRTLE_WOOD.get())
                 .group("sticks")
                 .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_WOOD.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "stick_from_crape_myrtle_wood"));
@@ -1021,19 +1019,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TWO_QIAO_PEONY.get(), 2)
-                .requires(Blocks.PEONY)
+                .requires(ModBlocks.WEI_ZI_PEONY.get())
                 .requires(ModBlocks.ZHAO_PINK_PEONY.get())
-                .unlockedBy(getHasName(Blocks.PEONY), has(Blocks.PEONY))
+                .unlockedBy(getHasName(ModBlocks.WEI_ZI_PEONY.get()), has(ModBlocks.WEI_ZI_PEONY.get()))
                 .unlockedBy(getHasName(ModBlocks.ZHAO_PINK_PEONY.get()), has(ModBlocks.ZHAO_PINK_PEONY.get()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VERSICOLOR_PEONY.get(), 1)
-                .pattern(" x ")
-                .pattern("xsx")
-                .pattern(" x ")
-                .define('x', Blocks.PEONY)
-                .define('s', ModBlocks.ZHAO_PINK_PEONY.get())
-                .unlockedBy(getHasName(Blocks.PEONY), has(Blocks.PEONY))
+                .pattern(" d ")
+                .pattern("zly")
+                .pattern(" w ")
+                .define('y', ModBlocks.YAO_HUANG_PEONY.get())
+                .define('w', ModBlocks.WEI_ZI_PEONY.get())
+                .define('z', ModBlocks.ZHAO_PINK_PEONY.get())
+                .define('d', ModBlocks.DOU_GREEN_PEONY.get())
+                .define('l', ModBlocks.LUOYANG_RED_PEONY.get())
+                .unlockedBy(getHasName(ModBlocks.YAO_HUANG_PEONY.get()), has(ModBlocks.YAO_HUANG_PEONY.get()))
+                .unlockedBy(getHasName(ModBlocks.WEI_ZI_PEONY.get()), has(ModBlocks.WEI_ZI_PEONY.get()))
                 .unlockedBy(getHasName(ModBlocks.ZHAO_PINK_PEONY.get()), has(ModBlocks.ZHAO_PINK_PEONY.get()))
+                .unlockedBy(getHasName(ModBlocks.DOU_GREEN_PEONY.get()), has(ModBlocks.DOU_GREEN_PEONY.get()))
+                .unlockedBy(getHasName(ModBlocks.LUOYANG_RED_PEONY.get()), has(ModBlocks.LUOYANG_RED_PEONY.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRAPE_MYRTLE.get(), 2)

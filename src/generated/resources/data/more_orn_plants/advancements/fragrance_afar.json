@@ -32,5 +32,8 @@
       "get_osmanthus"
     ]
   ],
+  "rewards": {
+    "experience": 9
+  },
   "sends_telemetry_event": true
 }

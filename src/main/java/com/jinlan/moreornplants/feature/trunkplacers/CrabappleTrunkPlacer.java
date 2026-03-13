@@ -13,6 +13,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.TreeConfigurati
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -20,49 +21,48 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.BiConsumer;
 
-public class WeepingCrabappleTrunkPlacer extends TrunkPlacer {
-    public static final Codec<WeepingCrabappleTrunkPlacer> CODEC = RecordCodecBuilder.create(
+public class CrabappleTrunkPlacer extends TrunkPlacer {
+    public static final Codec<CrabappleTrunkPlacer> CODEC = RecordCodecBuilder.create(
             instance -> instance.group(
                     Codec.intRange(0, 32).fieldOf("base_height").forGetter(placer -> placer.baseHeight),
                     Codec.intRange(0, 24).fieldOf("height_rand_a").forGetter(placer -> placer.heightRandA),
                     Codec.intRange(0, 24).fieldOf("height_rand_b").forGetter(placer -> placer.heightRandB),
                     Codec.intRange(1, 8).fieldOf("branch_start_height").forGetter(placer -> placer.branchStartHeight),
+                    Codec.intRange(1, 10).fieldOf("branch_limit").forGetter(placer -> placer.branchLimit),
                     Codec.intRange(1, 4).fieldOf("max_branches_per_level").forGetter(placer -> placer.maxBranchesPerLevel),
                     Codec.intRange(2, 8).fieldOf("branch_min_length").forGetter(placer -> placer.branchMinLength),
                     Codec.intRange(3, 12).fieldOf("branch_max_length").forGetter(placer -> placer.branchMaxLength),
-                    Codec.floatRange(0.0F, 1.0F).fieldOf("branch_chance").forGetter(placer -> placer.branchChance),
                     Codec.floatRange(0.0F, 1.0F).fieldOf("branch_upward_bias").forGetter(placer -> placer.branchUpwardBias)
-            ).apply(instance, WeepingCrabappleTrunkPlacer::new)
+            ).apply(instance, CrabappleTrunkPlacer::new)
     );
 
     private final int branchStartHeight;
+    private final int branchLimit;
     private final int maxBranchesPerLevel;
     private final int branchMinLength;
     private final int branchMaxLength;
-    private final float branchChance;
     private final float branchUpwardBias;
 
-    public WeepingCrabappleTrunkPlacer(int baseHeight, int heightRandA, int heightRandB,
-                                       int branchStartHeight, int maxBranchesPerLevel,
-                                       int branchMinLength, int branchMaxLength,
-                                       float branchChance, float branchUpwardBias) {
+    public CrabappleTrunkPlacer(int baseHeight, int heightRandA, int heightRandB,
+                                int branchStartHeight, int branchLimit, int maxBranchesPerLevel,
+                                int branchMinLength, int branchMaxLength, float branchUpwardBias) {
         super(baseHeight, heightRandA, heightRandB);
         this.branchStartHeight = branchStartHeight;
+        this.branchLimit = branchLimit;
         this.maxBranchesPerLevel = maxBranchesPerLevel;
         this.branchMinLength = branchMinLength;
         this.branchMaxLength = branchMaxLength;
-        this.branchChance = branchChance;
         this.branchUpwardBias = branchUpwardBias;
     }
 
     @Override
     protected TrunkPlacerType<?> type() {
-        return ModTrunkPlacerTypes.WEEPING_CRABAPPLE_TRUNK_PLACER.get();
+        return ModTrunkPlacerTypes.CRABAPPLE_TRUNK_PLACER.get();
     }
 
     @Override
-    public List<FoliagePlacer.FoliageAttachment> placeTrunk(LevelSimulatedReader level, BiConsumer<BlockPos, BlockState> blockSetter,
-                                                            RandomSource random, int freeTreeHeight, BlockPos pos, TreeConfiguration config) {
+    public @NotNull List<FoliagePlacer.FoliageAttachment> placeTrunk(@NotNull LevelSimulatedReader level, @NotNull BiConsumer<BlockPos, BlockState> blockSetter,
+                                                                     @NotNull RandomSource random, int freeTreeHeight, @NotNull BlockPos pos, @NotNull TreeConfiguration config) {
         List<FoliagePlacer.FoliageAttachment> foliageAttachments = new ArrayList<>();
 
         BlockPos currentPos = pos;
@@ -73,9 +73,9 @@ public class WeepingCrabappleTrunkPlacer extends TrunkPlacer {
             this.placeLog(level, blockSetter, random, currentPos, config, Direction.Axis.Y);
 
             // 在达到分支起始高度后，开始生成分支
-            if (height >= branchStartHeight && height < freeTreeHeight - 5) {
+            if (height >= branchStartHeight && height < freeTreeHeight - branchLimit) {
                 // 决定是否在这个高度生成分支
-                if (random.nextFloat() < branchChance) {
+                if (random.nextFloat() < 1.0F) {
                     // 生成多个方向的分支
                     generateBranchesAtLevel(level, blockSetter, random, currentPos, freeTreeHeight - height,
                             config, foliageAttachments);

@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> PLANTS_TAB =
             CREATIVE_MODE_TABS.register("plants_tab", () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModBlocks.PEONY.get()))
+                    .icon(() -> new ItemStack(ModBlocks.CUT_PEONY.get()))
                     .title(Component.translatable("itemGroup.plants"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.RED_MEI_LEAVES.get());
@@ -202,7 +202,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WHITE_CHINESE_WISTERIA.get());
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE.get());
                         pOutput.accept(ModBlocks.WINTER_CYMBIDIUM.get());
+                        pOutput.accept(ModBlocks.YAO_HUANG_PEONY.get());
+                        pOutput.accept(ModBlocks.WEI_ZI_PEONY.get());
                         pOutput.accept(ModBlocks.ZHAO_PINK_PEONY.get());
+                        pOutput.accept(ModBlocks.DOU_GREEN_PEONY.get());
+                        pOutput.accept(ModBlocks.LUOYANG_RED_PEONY.get());
                         pOutput.accept(ModBlocks.TWO_QIAO_PEONY.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_PEONY.get());
                         pOutput.accept(ModBlocks.LOTUS.get());

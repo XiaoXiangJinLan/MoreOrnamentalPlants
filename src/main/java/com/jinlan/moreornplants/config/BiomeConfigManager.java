@@ -7,6 +7,7 @@ public class BiomeConfigManager {
             case "peony_sea" -> ModBiomeConfig.ENABLE_PEONY_SEA.get();
             case "peony_meadows" -> ModBiomeConfig.ENABLE_PEONY_MEADOWS.get();
             case "evergreen_forest" -> ModBiomeConfig.ENABLE_EVERGREEN_FOREST.get();
+            case "longevity_forest" -> ModBiomeConfig.ENABLE_LONGEVITY_FOREST.get();
             case "flowers_grove" -> ModBiomeConfig.ENABLE_FLOWERS_GROVE.get();
             case "crabapple_grove" -> ModBiomeConfig.ENABLE_CRABAPPLE_GROVE.get();
             case "colored_forest" -> ModBiomeConfig.ENABLE_COLORED_FOREST.get();

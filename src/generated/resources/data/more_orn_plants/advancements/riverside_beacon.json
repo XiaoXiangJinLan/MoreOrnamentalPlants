@@ -34,5 +34,8 @@
       "get_sweetgum"
     ]
   ],
+  "rewards": {
+    "experience": 4
+  },
   "sends_telemetry_event": true
 }

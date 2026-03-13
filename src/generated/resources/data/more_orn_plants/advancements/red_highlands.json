@@ -38,5 +38,8 @@
       "visit_red_highlands"
     ]
   ],
+  "rewards": {
+    "experience": 10
+  },
   "sends_telemetry_event": true
 }

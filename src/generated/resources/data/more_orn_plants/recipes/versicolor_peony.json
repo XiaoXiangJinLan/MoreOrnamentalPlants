@@ -2,17 +2,26 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "s": {
-      "item": "more_orn_plants:zhao_pink_peony"
+    "d": {
+      "item": "more_orn_plants:dou_green_peony"
     },
-    "x": {
-      "item": "minecraft:peony"
+    "l": {
+      "item": "more_orn_plants:luoyang_red_peony"
+    },
+    "w": {
+      "item": "more_orn_plants:wei_zi_peony"
+    },
+    "y": {
+      "item": "more_orn_plants:yao_huang_peony"
+    },
+    "z": {
+      "item": "more_orn_plants:zhao_pink_peony"
     }
   },
   "pattern": [
-    " x ",
-    "xsx",
-    " x "
+    " d ",
+    "zly",
+    " w "
   ],
   "result": {
     "item": "more_orn_plants:versicolor_peony"

@@ -34,5 +34,8 @@
       "get_wintersweet"
     ]
   ],
+  "rewards": {
+    "experience": 6
+  },
   "sends_telemetry_event": true
 }

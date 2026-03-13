@@ -50,5 +50,8 @@
       "offer_chrysanthemum"
     ]
   ],
+  "rewards": {
+    "experience": 9
+  },
   "sends_telemetry_event": true
 }

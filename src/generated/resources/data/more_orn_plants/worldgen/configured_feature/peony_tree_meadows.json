@@ -10,30 +10,39 @@
             "entries": [
               {
                 "data": {
-                  "Name": "minecraft:peony",
+                  "Name": "more_orn_plants:yao_huang_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 20
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wei_zi_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 20
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:zhao_pink_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 59
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:dou_green_peony",
                   "Properties": {
                     "half": "lower"
                   }
                 },
                 "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:two_qiao_peony",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 2
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:versicolor_peony",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 2
               }
             ]
           }

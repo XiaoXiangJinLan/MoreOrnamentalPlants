@@ -338,7 +338,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         flowerUsePottedTextureItem(ModBlocks.WINTER_CYMBIDIUM);
         tallCrossItem(ModBlocks.WINTERSWEET);
+        tallCrossItem(ModBlocks.YAO_HUANG_PEONY);
+        tallCrossItem(ModBlocks.WEI_ZI_PEONY);
         tallCrossItem(ModBlocks.ZHAO_PINK_PEONY);
+        tallCrossItem(ModBlocks.DOU_GREEN_PEONY);
+        tallCrossItem(ModBlocks.LUOYANG_RED_PEONY);
         tallCrossItem(ModBlocks.TWO_QIAO_PEONY);
         tallCrossItem(ModBlocks.VERSICOLOR_PEONY);
         tallCrossItem(ModBlocks.CHINESE_ROSE);

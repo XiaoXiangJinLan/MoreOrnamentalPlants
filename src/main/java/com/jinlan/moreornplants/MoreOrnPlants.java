@@ -235,6 +235,11 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CHINESE_AZALEA.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WINTER_CYMBIDIUM.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WINTERSWEET.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.YAO_HUANG_PEONY.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WEI_ZI_PEONY.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.ZHAO_PINK_PEONY.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.DOU_GREEN_PEONY.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.LUOYANG_RED_PEONY.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.TWO_QIAO_PEONY.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.VERSICOLOR_PEONY.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CHINESE_ROSE.get().asItem(), 0.65F);

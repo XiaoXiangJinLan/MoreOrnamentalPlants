@@ -223,9 +223,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ForgeTags.Items.TREE_PEONY)
                 .add(Blocks.PEONY.asItem())
-                .add(ModBlocks.ZHAO_PINK_PEONY.get().asItem())
-                .add(ModBlocks.TWO_QIAO_PEONY.get().asItem())
-                .add(ModBlocks.VERSICOLOR_PEONY.get().asItem());
+                .add(ModBlocks.YAO_HUANG_PEONY.get().asItem(), ModBlocks.WEI_ZI_PEONY.get().asItem())
+                .add(ModBlocks.ZHAO_PINK_PEONY.get().asItem(), ModBlocks.DOU_GREEN_PEONY.get().asItem())
+                .add(ModBlocks.LUOYANG_RED_PEONY.get().asItem(), ModBlocks.TWO_QIAO_PEONY.get().asItem(), ModBlocks.VERSICOLOR_PEONY.get().asItem());
 
         this.tag(ForgeTags.Items.HERBACEOUS_PEONY)
                 .add(ModBlocks.PEONY.get().asItem())
@@ -359,10 +359,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.GOLDEN_MISCANTHUS.get());
 
         this.tag(ModTags.Items.RED_DYE)
-                .add(ModBlocks.RED_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_RED_PEONY.get().asItem())
-                .add(ModBlocks.INK_RED_PEONY.get().asItem())
-                .add(ModBlocks.VERMILION_PEONY.get().asItem())
+                .add(ModBlocks.LUOYANG_RED_PEONY.get().asItem())
+                .add(ModBlocks.RED_PEONY.get().asItem(), ModBlocks.LIGHT_RED_PEONY.get().asItem())
+                .add(ModBlocks.INK_RED_PEONY.get().asItem(), ModBlocks.VERMILION_PEONY.get().asItem())
                 .add(ModBlocks.CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.CAMELLIA.get().asItem())
                 .add(ModBlocks.RED_AZALEA.get().asItem(), ModBlocks.MAYING_RHODODENDRON.get().asItem())
@@ -401,12 +400,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem());
 
         this.tag(ModTags.Items.YELLOW_DYE)
+                .add(ModBlocks.YAO_HUANG_PEONY.get().asItem())
                 .add(ModBlocks.WINTERSWEET.get().asItem())
                 .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.OCHRE_YELLOW_PEONY.get().asItem())
-                .add(ModBlocks.GOLDEN_PEONY.get().asItem())
+                .add(ModBlocks.YELLOW_PEONY.get().asItem(), ModBlocks.LIGHT_YELLOW_PEONY.get().asItem())
+                .add(ModBlocks.OCHRE_YELLOW_PEONY.get().asItem(), ModBlocks.GOLDEN_PEONY.get().asItem())
                 .add(ModBlocks.CHINESE_AZALEA.get().asItem())
                 .add(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem())
                 .add(ModItems.GOLDEN_MISCANTHUS.get())
@@ -417,11 +415,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.CHINESE_PARASOL_LEAF_1.get());
 
         this.tag(ModTags.Items.PURPLE_DYE)
+                .add(ModBlocks.WEI_ZI_PEONY.get().asItem())
                 .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.LIGHT_PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.INK_PURPLE_PEONY.get().asItem())
-                .add(ModBlocks.VIOLET_PEONY.get().asItem())
+                .add(ModBlocks.PURPLE_PEONY.get().asItem(), ModBlocks.LIGHT_PURPLE_PEONY.get().asItem())
+                .add(ModBlocks.INK_PURPLE_PEONY.get().asItem(), ModBlocks.VIOLET_PEONY.get().asItem())
                 .add(ModBlocks.PURPLE_RHODODENDRON.get().asItem())
                 .addTag(ForgeTags.Items.CRAPE_MYRTLE)
                 .add(ModBlocks.FOUNTAIN_GRASS.get().asItem())
@@ -434,6 +431,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.LIME_DYE)
                 .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
                 .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.DOU_GREEN_PEONY.get().asItem())
                 .add(ModBlocks.GREEN_PEONY.get().asItem());
 
         this.tag(ModTags.Items.GREEN_DYE)
