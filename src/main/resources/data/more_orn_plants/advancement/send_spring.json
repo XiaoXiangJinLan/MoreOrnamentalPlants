@@ -62,5 +62,8 @@
       "place_mei_sapling_dirt"
     ]
   ],
+  "rewards": {
+    "experience": 11
+  },
   "sends_telemetry_event": true
 }

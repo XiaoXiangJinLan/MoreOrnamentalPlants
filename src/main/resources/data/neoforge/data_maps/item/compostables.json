@@ -345,7 +345,19 @@
     "more_orn_plants:mauve_peony": {
       "chance": 0.65
     },
+    "more_orn_plants:yao_huang_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:wei_zi_peony": {
+      "chance": 0.65
+    },
     "more_orn_plants:zhao_pink_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:dou_green_peony": {
+      "chance": 0.65
+    },
+    "more_orn_plants:luoyang_red_peony": {
       "chance": 0.65
     },
     "more_orn_plants:two_qiao_peony": {

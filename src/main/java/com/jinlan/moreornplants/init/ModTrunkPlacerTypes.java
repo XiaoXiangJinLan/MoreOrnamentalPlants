@@ -22,8 +22,8 @@ public class ModTrunkPlacerTypes {
     public static final Supplier<TrunkPlacerType<WeepingMeiTrunkPlacer>> WEEPING_MEI_TRUNK_PLACER =
             TRUNK_PLACERS.register("weeping_mei_trunk_placer", () -> new TrunkPlacerType<>(WeepingMeiTrunkPlacer.CODEC));
 
-    public static final Supplier<TrunkPlacerType<WeepingCrabappleTrunkPlacer>> WEEPING_CRABAPPLE_TRUNK_PLACER =
-            TRUNK_PLACERS.register("weeping_crabapple_trunk_placer", () -> new TrunkPlacerType<>(WeepingCrabappleTrunkPlacer.CODEC));
+    public static final Supplier<TrunkPlacerType<CrabappleTrunkPlacer>> CRABAPPLE_TRUNK_PLACER =
+            TRUNK_PLACERS.register("crabapple_trunk_placer", () -> new TrunkPlacerType<>(CrabappleTrunkPlacer.CODEC));
 
     public static final Supplier<TrunkPlacerType<ApricotTrunkPlacer>> APRICOT_TRUNK_PLACER =
             TRUNK_PLACERS.register("apricot_trunk_placer", () -> new TrunkPlacerType<>(ApricotTrunkPlacer.CODEC));

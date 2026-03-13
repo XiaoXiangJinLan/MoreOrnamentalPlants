@@ -29,5 +29,8 @@
       "get_cottonrose"
     ]
   ],
+  "rewards": {
+    "experience": 6
+  },
   "sends_telemetry_event": true
 }

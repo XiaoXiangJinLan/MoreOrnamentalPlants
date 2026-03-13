@@ -67,6 +67,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_WEEPING_MEI = registerKey("versicolor_weeping_mei_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FRAGRANT_SNOW_PETALS_PATCH = registerKey("fragrant_snow_petals_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE = registerKey("upright_crabapple");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE_SMALL = registerKey("upright_crabapple_small");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE = registerKey("weeping_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_APRICOT = registerKey("pink_apricot");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_APRICOT = registerKey("white_apricot");
@@ -114,10 +115,23 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_PLAIN = registerKey("chinese_rose_plain");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_KEY = registerKey("peony_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_PINK_KEY = registerKey("peony_pink_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_LIGHT_PINK_KEY = registerKey("peony_light_pink_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_RED_KEY = registerKey("peony_red_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_YELLOW_KEY = registerKey("peony_yellow_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_PURPLE_KEY = registerKey("peony_purple_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_WHITE_KEY = registerKey("peony_white_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_BLUE_KEY = registerKey("peony_blue_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_GREEN_KEY = registerKey("peony_green_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_PINK_GROVE = registerKey("peony_pink_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_GROVE = registerKey("peony_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_PENGLAI = registerKey("peony_penglai");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_MEADOWS = registerKey("peony_meadows");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_MEADOWS_PINK = registerKey("peony_meadows_pink");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> YAO_HUANG_PEONY_KEY = registerKey("yao_huang_peony_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WEI_ZI_PEONY_KEY = registerKey("wei_zi_peony_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ZHAO_PINK_PEONY_KEY = registerKey("zhao_pink_peony_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ZHAO_PINK_PEONY_GROVE = registerKey("zhao_pink_peony_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DOU_GREEN_PEONY_KEY = registerKey("dou_green_peony_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LUOYANG_RED_PEONY_KEY = registerKey("luoyang_red_peony_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_TREE_MEADOWS = registerKey("peony_tree_meadows");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_TREE_GROVE = registerKey("peony_tree_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_TREE_PENGLAI = registerKey("peony_tree_penglai");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_CAMELLIA_KEY = registerKey("red_camellia_key");
@@ -335,13 +349,19 @@ public class ModConfiguredFeatures {
 
         register(context, UPRIGHT_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
+                BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, UPRIGHT_CRABAPPLE_SMALL, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
                 new StraightTrunkPlacer(5, 2, 0),
                 BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
         register(context, WEEPING_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
-                new WeepingCrabappleTrunkPlacer(9, 1, 1, 3, 3, 4, 5, 1.0F, 0.6F),
+                new CrabappleTrunkPlacer(9, 1, 1, 3, 5, 3, 4, 5, 0.6F),
                 BlockStateProvider.simple(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get()),
                 new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new WeepingCrabappleFlowerDecorator(0.9F))).ignoreVines().build());
@@ -974,7 +994,13 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
         register(context, PEONY_TREE_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 5, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ZHAO_PINK_PEONY.get())),
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.YAO_HUANG_PEONY.get().defaultBlockState(), 6)
+                                        .add(ModBlocks.WEI_ZI_PEONY.get().defaultBlockState(), 6)
+                                        .add(ModBlocks.ZHAO_PINK_PEONY.get().defaultBlockState(), 6)
+                                        .add(ModBlocks.DOU_GREEN_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.LUOYANG_RED_PEONY.get().defaultBlockState(), 6).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
@@ -1102,20 +1128,63 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
-        register(context, PEONY_MEADOWS, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
+        register(context, PEONY_PINK_GROVE, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(new WeightedStateProvider(
-                                SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(Blocks.PEONY.defaultBlockState(), 1)
-                                        .add(ModBlocks.TWO_QIAO_PEONY.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.VERSICOLOR_PEONY.get().defaultBlockState(), 2).build())),
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, ZHAO_PINK_PEONY_GROVE, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ZHAO_PINK_PEONY.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, PEONY_MEADOWS_PINK, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
+
+        register(context, YAO_HUANG_PEONY_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.YAO_HUANG_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, WEI_ZI_PEONY_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WEI_ZI_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, ZHAO_PINK_PEONY_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ZHAO_PINK_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, DOU_GREEN_PEONY_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.DOU_GREEN_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, LUOYANG_RED_PEONY_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LUOYANG_RED_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PEONY_TREE_MEADOWS, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.YAO_HUANG_PEONY.get().defaultBlockState(), 20)
+                                        .add(ModBlocks.WEI_ZI_PEONY.get().defaultBlockState(), 20)
+                                        .add(ModBlocks.ZHAO_PINK_PEONY.get().defaultBlockState(), 59)
+                                        .add(ModBlocks.DOU_GREEN_PEONY.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
@@ -1124,16 +1193,58 @@ public class ModConfiguredFeatures {
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.PEONY.get().defaultBlockState(), 5)
                                         .add(ModBlocks.LIGHT_RED_PEONY.get().defaultBlockState(), 2)
                                         .add(ModBlocks.LIGHT_PURPLE_PEONY.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.LIGHT_YELLOW_PEONY.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.WHITE_PEONY.get().defaultBlockState(), 1).build())),
+                                        .add(ModBlocks.LIGHT_YELLOW_PEONY.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, PEONY_PINK_KEY, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
+        register(context, PEONY_PINK_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PEONY_LIGHT_PINK_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LIGHT_PINK_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PEONY_RED_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LIGHT_RED_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PEONY_PURPLE_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LIGHT_PURPLE_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PEONY_YELLOW_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LIGHT_YELLOW_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PEONY_WHITE_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PEONY_BLUE_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLUE_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, PEONY_GREEN_KEY, Feature.FLOWER, new RandomPatchConfiguration(162, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.GREEN_PEONY.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));

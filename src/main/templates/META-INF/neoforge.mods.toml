@@ -9,11 +9,8 @@ displayName="${mod_name}"
 logoFile="icon.png"
 authors="XiaoXiangJinLan"
 description='''
-Adds more plants to decorate your world.
+A biome mod themed around botanical decoration.
 '''
-
-[[mixins]]
-config="${mod_id}.mixins.json"
 
 [[dependencies.${mod_id}]]
     modId="neoforge"

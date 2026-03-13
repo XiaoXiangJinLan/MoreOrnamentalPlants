@@ -62,5 +62,8 @@
       "offer_chrysanthemum_dirt"
     ]
   ],
+  "rewards": {
+    "experience": 9
+  },
   "sends_telemetry_event": true
 }

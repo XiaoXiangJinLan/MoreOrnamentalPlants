@@ -593,7 +593,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.REPLACEABLE_BY_TREES)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
-                .add(ModBlocks.ZHAO_PINK_PEONY.get(), ModBlocks.TWO_QIAO_PEONY.get(), ModBlocks.VERSICOLOR_PEONY.get())
+                .addTag(CommonTags.Blocks.TREE_PEONY)
                 .addTag(CommonTags.Blocks.CHINESE_ROSE)
                 .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
@@ -621,7 +621,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.TALL_FLOWERS)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
-                .add(ModBlocks.ZHAO_PINK_PEONY.get(), ModBlocks.TWO_QIAO_PEONY.get(), ModBlocks.VERSICOLOR_PEONY.get())
+                .addTag(CommonTags.Blocks.TREE_PEONY)
                 .addTag(CommonTags.Blocks.CHINESE_ROSE)
                 .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
@@ -708,7 +708,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.AUTUMN_CYMBIDIUM.get(), ModBlocks.WINTER_CYMBIDIUM.get());
 
         this.tag(CommonTags.Blocks.TREE_PEONY)
-                .add(Blocks.PEONY, ModBlocks.ZHAO_PINK_PEONY.get(), ModBlocks.TWO_QIAO_PEONY.get(), ModBlocks.VERSICOLOR_PEONY.get());
+                .add(ModBlocks.YAO_HUANG_PEONY.get(), ModBlocks.WEI_ZI_PEONY.get(), ModBlocks.ZHAO_PINK_PEONY.get(), ModBlocks.DOU_GREEN_PEONY.get(),
+                        Blocks.PEONY, ModBlocks.LUOYANG_RED_PEONY.get(), ModBlocks.TWO_QIAO_PEONY.get(), ModBlocks.VERSICOLOR_PEONY.get());
 
         this.tag(CommonTags.Blocks.HERBACEOUS_PEONY)
                 .add(ModBlocks.PEONY.get(), ModBlocks.LIGHT_PINK_PEONY.get(), ModBlocks.VIOLET_PINK_PEONY.get(), ModBlocks.PINK_PEONY.get())

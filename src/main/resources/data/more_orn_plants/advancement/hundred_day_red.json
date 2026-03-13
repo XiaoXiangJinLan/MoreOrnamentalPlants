@@ -29,5 +29,8 @@
       "get_crape_myrtle"
     ]
   ],
+  "rewards": {
+    "experience": 6
+  },
   "sends_telemetry_event": true
 }

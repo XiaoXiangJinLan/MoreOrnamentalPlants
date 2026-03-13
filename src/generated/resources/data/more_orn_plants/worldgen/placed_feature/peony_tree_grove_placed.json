@@ -2,8 +2,8 @@
   "feature": "more_orn_plants:peony_tree_grove",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 1
+      "type": "minecraft:count",
+      "count": 2
     },
     {
       "type": "minecraft:in_square"

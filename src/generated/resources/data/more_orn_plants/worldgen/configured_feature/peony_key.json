@@ -10,6 +10,12 @@
             "entries": [
               {
                 "data": {
+                  "Name": "more_orn_plants:peony"
+                },
+                "weight": 5
+              },
+              {
+                "data": {
                   "Name": "more_orn_plants:light_red_peony"
                 },
                 "weight": 2
@@ -23,12 +29,6 @@
               {
                 "data": {
                   "Name": "more_orn_plants:light_yellow_peony"
-                },
-                "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:white_peony"
                 },
                 "weight": 1
               }

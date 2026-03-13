@@ -29,5 +29,8 @@
       "get_dove_tree"
     ]
   ],
+  "rewards": {
+    "experience": 2
+  },
   "sends_telemetry_event": true
 }

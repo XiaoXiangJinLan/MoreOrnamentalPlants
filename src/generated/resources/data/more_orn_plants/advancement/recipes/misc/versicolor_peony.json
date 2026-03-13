@@ -1,11 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_peony": {
+    "has_dou_green_peony": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:peony"
+            "items": "more_orn_plants:dou_green_peony"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_luoyang_red_peony": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:luoyang_red_peony"
           }
         ]
       },
@@ -16,6 +26,26 @@
         "recipe": "more_orn_plants:versicolor_peony"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wei_zi_peony": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:wei_zi_peony"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_yao_huang_peony": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:yao_huang_peony"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     },
     "has_zhao_pink_peony": {
       "conditions": {
@@ -31,8 +61,11 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_peony",
-      "has_zhao_pink_peony"
+      "has_yao_huang_peony",
+      "has_wei_zi_peony",
+      "has_zhao_pink_peony",
+      "has_dou_green_peony",
+      "has_luoyang_red_peony"
     ]
   ],
   "rewards": {

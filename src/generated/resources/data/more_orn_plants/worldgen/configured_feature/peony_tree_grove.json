@@ -6,13 +6,54 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "more_orn_plants:zhao_pink_peony",
-              "Properties": {
-                "half": "lower"
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "more_orn_plants:yao_huang_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 6
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wei_zi_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 6
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:zhao_pink_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 6
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:dou_green_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:luoyang_red_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 6
               }
-            }
+            ]
           }
         }
       },

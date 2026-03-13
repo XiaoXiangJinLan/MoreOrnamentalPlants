@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:peony_meadows",
+  "feature": "more_orn_plants:peony_red_key",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 6
+      "type": "minecraft:rarity_filter",
+      "chance": 3
     },
     {
       "type": "minecraft:in_square"

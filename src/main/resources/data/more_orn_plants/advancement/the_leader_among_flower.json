@@ -29,5 +29,8 @@
       "get_mei"
     ]
   ],
+  "rewards": {
+    "experience": 11
+  },
   "sends_telemetry_event": true
 }

@@ -5,7 +5,7 @@ This mod introduces thirty-three new biomes and six structures, waiting for you 
 
 New Trees
 ============
-Mei , Crabapple, Apricot, Peach, Pear, Purple-leaf Plum, Osmanthus, Ginkgo, Chinese Parasol, Sweetgum, Camphor, Dove Tree, 
+Mei, Crabapple, Apricot, Peach, Pear, Purple-leaf Plum, Osmanthus, Ginkgo, Chinese Parasol, Sweetgum, Camphor, Dove Tree, 
 Chinaberry, Desert Poplar.
 
 New Plants 

@@ -752,17 +752,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(recipeOutput, ModItems.CHINABERRY_CHEST_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
         chestBoat(recipeOutput, ModItems.DESERT_POPLAR_CHEST_BOAT.get(), ModBlocks.DESERT_POPLAR_PLANKS.get());
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 6)
-                .define('#', ModBlocks.CRAPE_MYRTLE_LOG)
-                .pattern("#")
-                .pattern("#")
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.STICK, 6)
+                .requires(ModBlocks.CRAPE_MYRTLE_LOG)
                 .group("sticks")
                 .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_LOG))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":" + "stick_from_crape_myrtle_log");
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 6)
-                .define('#', ModBlocks.CRAPE_MYRTLE_WOOD)
-                .pattern("#")
-                .pattern("#")
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.STICK, 6)
+                .requires(ModBlocks.CRAPE_MYRTLE_WOOD)
                 .group("sticks")
                 .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_WOOD))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":" + "stick_from_crape_myrtle_wood");
@@ -1022,19 +1018,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TWO_QIAO_PEONY, 2)
-                .requires(Blocks.PEONY)
+                .requires(ModBlocks.WEI_ZI_PEONY)
                 .requires(ModBlocks.ZHAO_PINK_PEONY)
-                .unlockedBy(getHasName(Blocks.PEONY), has(Blocks.PEONY))
+                .unlockedBy(getHasName(ModBlocks.WEI_ZI_PEONY), has(ModBlocks.WEI_ZI_PEONY))
                 .unlockedBy(getHasName(ModBlocks.ZHAO_PINK_PEONY), has(ModBlocks.ZHAO_PINK_PEONY))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.VERSICOLOR_PEONY)
-                .pattern(" x ")
-                .pattern("xsx")
-                .pattern(" x ")
-                .define('x', Blocks.PEONY)
-                .define('s', ModBlocks.ZHAO_PINK_PEONY.get())
-                .unlockedBy(getHasName(Blocks.PEONY), has(Blocks.PEONY))
+                .pattern(" d ")
+                .pattern("zly")
+                .pattern(" w ")
+                .define('y', ModBlocks.YAO_HUANG_PEONY)
+                .define('w', ModBlocks.WEI_ZI_PEONY)
+                .define('z', ModBlocks.ZHAO_PINK_PEONY)
+                .define('d', ModBlocks.DOU_GREEN_PEONY)
+                .define('l', ModBlocks.LUOYANG_RED_PEONY)
+                .unlockedBy(getHasName(ModBlocks.YAO_HUANG_PEONY), has(ModBlocks.YAO_HUANG_PEONY))
+                .unlockedBy(getHasName(ModBlocks.WEI_ZI_PEONY), has(ModBlocks.WEI_ZI_PEONY))
                 .unlockedBy(getHasName(ModBlocks.ZHAO_PINK_PEONY), has(ModBlocks.ZHAO_PINK_PEONY))
+                .unlockedBy(getHasName(ModBlocks.DOU_GREEN_PEONY), has(ModBlocks.DOU_GREEN_PEONY))
+                .unlockedBy(getHasName(ModBlocks.LUOYANG_RED_PEONY), has(ModBlocks.LUOYANG_RED_PEONY))
                 .save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRAPE_MYRTLE, 2)

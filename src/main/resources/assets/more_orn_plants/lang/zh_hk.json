@@ -441,7 +441,11 @@
   "block.more_orn_plants.cut_green_peony": "切花綠珠墜玉樓芍藥",
   "block.more_orn_plants.cut_wu_hua_long_yu_peony": "切花五花龍玉芍藥",
   "block.more_orn_plants.cut_mauve_peony": "切花小芍藥",
+  "block.more_orn_plants.yao_huang_peony": "姚黃",
+  "block.more_orn_plants.wei_zi_peony": "魏紫",
   "block.more_orn_plants.zhao_pink_peony": "趙粉",
+  "block.more_orn_plants.dou_green_peony": "豆緑",
+  "block.more_orn_plants.luoyang_red_peony": "洛陽紅",
   "block.more_orn_plants.two_qiao_peony": "二喬",
   "block.more_orn_plants.versicolor_peony": "什樣錦",
   "block.more_orn_plants.chinese_rose": "月季",
@@ -839,8 +843,8 @@
   "advancement.moreornplants.apricot_village.title": "杏花村",
   "advancement.moreornplants.apricot_village.description": "借問酒家何處有？牧童遙指杏花村",
 
-  "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小喬木，非建材",
-  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞品種，非建材，熊貓不愛吃",
+  "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小喬木，無木板",
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞品種，無竹板，熊貓不愛吃",
   "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7對不死生物造成額外傷害",
   "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7對節肢生物造成額外傷害",
 

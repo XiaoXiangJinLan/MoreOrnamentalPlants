@@ -1,7 +1,11 @@
 {
   "values": [
-    "minecraft:peony",
+    "more_orn_plants:yao_huang_peony",
+    "more_orn_plants:wei_zi_peony",
     "more_orn_plants:zhao_pink_peony",
+    "more_orn_plants:dou_green_peony",
+    "minecraft:peony",
+    "more_orn_plants:luoyang_red_peony",
     "more_orn_plants:two_qiao_peony",
     "more_orn_plants:versicolor_peony"
   ]

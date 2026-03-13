@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:peony_pink_key",
+  "feature": "more_orn_plants:luoyang_red_peony_key",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 4
+      "type": "minecraft:rarity_filter",
+      "chance": 3
     },
     {
       "type": "minecraft:in_square"

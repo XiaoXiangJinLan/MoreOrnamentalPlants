@@ -29,5 +29,8 @@
       "get_camphor"
     ]
   ],
+  "rewards": {
+    "experience": 8
+  },
   "sends_telemetry_event": true
 }

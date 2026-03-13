@@ -15,7 +15,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import org.checkerframework.checker.units.qual.C;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -231,6 +230,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.MISCANTHUS.asItem(), ModItems.GOLDEN_MISCANTHUS.get());
 
         this.tag(ModTags.Items.RED_DYE)
+                .add(ModBlocks.LUOYANG_RED_PEONY.asItem())
                 .add(ModBlocks.RED_PEONY.asItem(), ModBlocks.LIGHT_RED_PEONY.asItem(), ModBlocks.INK_RED_PEONY.asItem(), ModBlocks.VERMILION_PEONY.asItem())
                 .add(ModBlocks.CHINESE_ROSE.asItem())
                 .add(ModBlocks.CAMELLIA.asItem())
@@ -265,6 +265,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.FRAGRANT_SNOW_PETALS.asItem());
 
         this.tag(ModTags.Items.YELLOW_DYE)
+                .add(ModBlocks.YAO_HUANG_PEONY.asItem())
                 .add(ModBlocks.WINTERSWEET.asItem())
                 .add(ModBlocks.CHRYSANTHEMUM.asItem())
                 .add(ModBlocks.YELLOW_PEONY.asItem(), ModBlocks.LIGHT_YELLOW_PEONY.asItem(), ModBlocks.OCHRE_YELLOW_PEONY.asItem(), ModBlocks.GOLDEN_PEONY.asItem())
@@ -278,6 +279,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.CHINESE_PARASOL_LEAF_1.get());
 
         this.tag(ModTags.Items.PURPLE_DYE)
+                .add(ModBlocks.WEI_ZI_PEONY.asItem())
                 .add(ModBlocks.PURPLE_CHRYSANTHEMUM.asItem())
                 .add(ModBlocks.PURPLE_PEONY.asItem(), ModBlocks.LIGHT_PURPLE_PEONY.asItem(), ModBlocks.INK_PURPLE_PEONY.asItem(), ModBlocks.VIOLET_PEONY.asItem())
                 .add(ModBlocks.PURPLE_RHODODENDRON.asItem())
@@ -292,6 +294,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.LIME_DYE)
                 .add(ModBlocks.SPRING_CYMBIDIUM.asItem())
                 .add(ModBlocks.GREEN_CHRYSANTHEMUM.asItem())
+                .add(ModBlocks.DOU_GREEN_PEONY.asItem())
                 .add(ModBlocks.GREEN_PEONY.asItem());
 
         this.tag(ModTags.Items.GREEN_DYE)

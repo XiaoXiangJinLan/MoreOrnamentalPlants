@@ -29,5 +29,8 @@
       "get_grasses"
     ]
   ],
+  "rewards": {
+    "experience": 4
+  },
   "sends_telemetry_event": true
 }

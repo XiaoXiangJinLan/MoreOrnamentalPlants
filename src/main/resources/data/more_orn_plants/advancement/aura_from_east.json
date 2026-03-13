@@ -29,5 +29,8 @@
       "get_plum"
     ]
   ],
+  "rewards": {
+    "experience": 4
+  },
   "sends_telemetry_event": true
 }

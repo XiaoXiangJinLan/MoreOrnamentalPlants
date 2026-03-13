@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:peony_meadows_pink",
+  "feature": "more_orn_plants:peony_light_pink_key",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 1
+      "count": 2
     },
     {
       "type": "minecraft:in_square"
