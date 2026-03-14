@@ -56,12 +56,7 @@ public class LanXiangnangBlockEntity extends BlockEntity {
 
         // 创建生命恢复I效果，持续5秒
         MobEffectInstance effect = new MobEffectInstance(
-                MobEffects.REGENERATION,
-                EFFECT_DURATION,
-                1, // 等级：1 = II级
-                false, // 不是环境效果（会显示图标）
-                true   // 显示粒子（仅效果本身的粒子）
-        );
+                MobEffects.REGENERATION, EFFECT_DURATION, 1);
 
         entity.addEffect(effect);
     }

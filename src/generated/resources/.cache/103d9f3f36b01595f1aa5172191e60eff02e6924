@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-14T04:10:58.0288561	Registries
+// 1.20.1	2026-03-14T11:04:49.2059629	Registries
 e36c961b972cdc007bd068c47a72067da61119d6 data/more_orn_plants/worldgen/biome/azalea_forest.json
 688a48533f975a1fa707862121be858e65ce27f3 data/more_orn_plants/worldgen/biome/camellia_valley.json
 65cb9ab625ed106318aec5d04cb413a86e608c2b data/more_orn_plants/worldgen/biome/chinaberry_woods.json
@@ -318,7 +318,7 @@ fe132e31aaf9ba5baffd5bc23724d47efbe952c0 data/more_orn_plants/worldgen/placed_fe
 433604c12f0b1525b074d1a22ce1c73e41828512 data/more_orn_plants/worldgen/placed_feature/peony_meadows_placed.json
 a8bb8bea680accf7f4db4a8e9fd697d5f24cc435 data/more_orn_plants/worldgen/placed_feature/peony_penglai_placed.json
 1d91041b5e5aeccd9817772a61bdd01cd6753364 data/more_orn_plants/worldgen/placed_feature/peony_pink_grove.json
-5e91943a59c72d3e8471d55e32fd7294f034d098 data/more_orn_plants/worldgen/placed_feature/peony_pink_placed.json
+d819d89dd2be19e264c4b65b9db72133bb4b63ce data/more_orn_plants/worldgen/placed_feature/peony_pink_placed.json
 93679c672e5da55a74f37201266d33a3b87a0cbf data/more_orn_plants/worldgen/placed_feature/peony_placed.json
 6287755ff47ae1909140e471de15eaca380d746b data/more_orn_plants/worldgen/placed_feature/peony_purple_placed.json
 373fe8c0fa2e1f856786c15fa442f4c9afd215dc data/more_orn_plants/worldgen/placed_feature/peony_red_placed.json

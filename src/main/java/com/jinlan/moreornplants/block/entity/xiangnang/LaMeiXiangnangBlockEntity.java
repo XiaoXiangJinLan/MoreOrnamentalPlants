@@ -56,12 +56,7 @@ public class LaMeiXiangnangBlockEntity extends BlockEntity {
 
         // 创建生命恢复I效果，持续5秒
         MobEffectInstance effect = new MobEffectInstance(
-                MobEffects.REGENERATION,
-                EFFECT_DURATION,
-                0, // 等级：0 = I级
-                false, // 不是环境效果（会显示图标）
-                true   // 显示粒子（仅效果本身的粒子）
-        );
+                MobEffects.REGENERATION, EFFECT_DURATION, 0);
 
         entity.addEffect(effect);
     }

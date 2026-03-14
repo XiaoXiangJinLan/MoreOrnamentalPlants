@@ -44,26 +44,18 @@ public class ModEventsBusEvents {
             return;
         }
 
-        if (entity.tickCount % 300 != 0) return;
+        if (entity.tickCount % 100 != 0) return;
 
         // 获取实体当前所在的生物群系
         Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
-        boolean isLongevityForest = biomeHolder.is(ModBiomes.LONGEVITY_FOREST);
-
-        MobEffectInstance currentEffect = entity.getEffect(MobEffects.HEALTH_BOOST);
-
-        if (currentEffect != null && currentEffect.getDuration() > 18000) {
-            return;
-        }
-
-        if (isLongevityForest) {
-            entity.addEffect(new MobEffectInstance(
-                    MobEffects.HEALTH_BOOST,
-                    18600,
-                    4,
-                    false,
-                    true
-            ));
+        if (biomeHolder.is(ModBiomes.LONGEVITY_FOREST)) {
+            MobEffectInstance currentEffect = entity.getEffect(MobEffects.HEALTH_BOOST);
+            if (currentEffect == null || currentEffect.getDuration() < 600) {
+                entity.addEffect(new MobEffectInstance(
+                        MobEffects.HEALTH_BOOST, 18600, 4));
+                entity.addEffect(new MobEffectInstance(
+                        MobEffects.HEAL, 1, 4));
+            }
         }
     }
 
@@ -78,39 +70,28 @@ public class ModEventsBusEvents {
         if (entity.tickCount % 40 != 0) return;
 
         Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
-        boolean isPenglai = biomeHolder.is(ModBiomes.PENGLAI);
-
-        MobEffectInstance currentEffect1 = entity.getEffect(MobEffects.FIRE_RESISTANCE);
-        MobEffectInstance currentEffect2 = entity.getEffect(MobEffects.WATER_BREATHING);
-        MobEffectInstance currentEffect3 = entity.getEffect(MobEffects.DAMAGE_BOOST);
-        MobEffectInstance currentEffect4 = entity.getEffect(MobEffects.LUCK);
-
-        if (currentEffect1 != null && currentEffect1.getDuration() > 24000 &&
-                currentEffect2 != null && currentEffect2.getDuration() > 24000 &&
-                currentEffect3 != null && currentEffect3.getDuration() > 24000 &&
-                currentEffect4 != null && currentEffect4.getDuration() > 24000) {
-            return;
-        }
-
-        if (isPenglai) {
-            entity.addEffect(new MobEffectInstance(
-                    MobEffects.SATURATION, 1, 4, false, true
-            ));
-            entity.addEffect(new MobEffectInstance(
-                    MobEffects.HEAL, 1, 4, false, true
-            ));
-            entity.addEffect(new MobEffectInstance(
-                    MobEffects.FIRE_RESISTANCE, 24600, 4, false, true
-            ));
-            entity.addEffect(new MobEffectInstance(
-                    MobEffects.WATER_BREATHING, 24600, 4, false, true
-            ));
-            entity.addEffect(new MobEffectInstance(
-                    MobEffects.DAMAGE_BOOST, 24600, 4, false, true
-            ));
-            entity.addEffect(new MobEffectInstance(
-                    MobEffects.LUCK, 24600, 4, false, true
-            ));
+        if (biomeHolder.is(ModBiomes.PENGLAI)) {
+            MobEffectInstance currentEffect1 = entity.getEffect(MobEffects.FIRE_RESISTANCE);
+            MobEffectInstance currentEffect2 = entity.getEffect(MobEffects.WATER_BREATHING);
+            MobEffectInstance currentEffect3 = entity.getEffect(MobEffects.DAMAGE_BOOST);
+            MobEffectInstance currentEffect4 = entity.getEffect(MobEffects.LUCK);
+            if (currentEffect1 == null || currentEffect1.getDuration() < 24000 ||
+                    currentEffect2 == null || currentEffect2.getDuration() < 24000 ||
+                    currentEffect3 == null || currentEffect3.getDuration() < 24000 ||
+                    currentEffect4 == null || currentEffect4.getDuration() < 24000) {
+                entity.addEffect(new MobEffectInstance(
+                        MobEffects.SATURATION, 1, 4));
+                entity.addEffect(new MobEffectInstance(
+                        MobEffects.HEAL, 1, 4));
+                entity.addEffect(new MobEffectInstance(
+                        MobEffects.FIRE_RESISTANCE, 24600, 4));
+                entity.addEffect(new MobEffectInstance(
+                        MobEffects.WATER_BREATHING, 24600, 4));
+                entity.addEffect(new MobEffectInstance(
+                        MobEffects.DAMAGE_BOOST, 24600, 4));
+                entity.addEffect(new MobEffectInstance(
+                        MobEffects.LUCK, 24600, 4));
+            }
         }
     }
 }
