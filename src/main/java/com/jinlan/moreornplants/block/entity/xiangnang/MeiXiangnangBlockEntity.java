@@ -58,9 +58,7 @@ public class MeiXiangnangBlockEntity extends BlockEntity {
         MobEffectInstance effect = new MobEffectInstance(
                 MobEffects.REGENERATION,
                 EFFECT_DURATION,
-                0, // 等级：0 = I级
-                false, // 不是环境效果（会显示图标）
-                true   // 显示粒子（仅效果本身的粒子）
+                0 // 等级：0 = I级
         );
 
         entity.addEffect(effect);

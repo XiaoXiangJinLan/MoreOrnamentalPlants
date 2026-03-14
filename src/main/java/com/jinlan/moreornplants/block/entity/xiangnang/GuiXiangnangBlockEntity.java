@@ -47,12 +47,7 @@ public class GuiXiangnangBlockEntity extends BlockEntity {
         }
 
         MobEffectInstance effect = new MobEffectInstance(
-                MobEffects.REGENERATION,
-                EFFECT_DURATION,
-                0,
-                false,
-                true
-        );
+                MobEffects.REGENERATION, EFFECT_DURATION, 0);
 
         entity.addEffect(effect);
     }
