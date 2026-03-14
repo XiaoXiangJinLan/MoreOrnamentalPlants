@@ -203,19 +203,19 @@ public class ModItems {
             ITEMS.register("lotus_seed_soup", () -> new Item((new Item.Properties()).food(ModFoods.LOTUS_SEED_SOUP)));
 
     public static final DeferredItem<Item> MEI_XIANGNANG =
-            ITEMS.register("mei_xiangnang", () -> new XiangnangItem(ModBlocks.MEI_XIANGNANG.get(), new Item.Properties(), 300, 0));
+            ITEMS.register("mei_xiangnang", () -> new XiangnangItem(ModBlocks.MEI_XIANGNANG.get(), new Item.Properties(), 300, 1));
     public static final DeferredItem<Item> OSMANTHUS_XIANGNANG =
-            ITEMS.register("osmanthus_xiangnang", () -> new XiangnangItem(ModBlocks.OSMANTHUS_XIANGNANG.get(), new Item.Properties(), 600, 0));
+            ITEMS.register("osmanthus_xiangnang", () -> new XiangnangItem(ModBlocks.OSMANTHUS_XIANGNANG.get(), new Item.Properties(), 600, 1));
     public static final DeferredItem<Item> CYMBIDIUM_XIANGNANG =
-            ITEMS.register("cymbidium_xiangnang", () -> new XiangnangItem(ModBlocks.CYMBIDIUM_XIANGNANG.get(), new Item.Properties(), 300, 1));
+            ITEMS.register("cymbidium_xiangnang", () -> new XiangnangItem(ModBlocks.CYMBIDIUM_XIANGNANG.get(), new Item.Properties(), 300, 2));
     public static final DeferredItem<Item> WINTERSWEET_XIANGNANG =
-            ITEMS.register("wintersweet_xiangnang", () -> new XiangnangItem(ModBlocks.WINTERSWEET_XIANGNANG.get(), new Item.Properties(), 300, 0));
+            ITEMS.register("wintersweet_xiangnang", () -> new XiangnangItem(ModBlocks.WINTERSWEET_XIANGNANG.get(), new Item.Properties(), 300, 1));
     public static final DeferredItem<Item> LILAC_XIANGNANG =
-            ITEMS.register("lilac_xiangnang", () -> new XiangnangItem(ModBlocks.LILAC_XIANGNANG.get(), new Item.Properties(), 300, 0));
+            ITEMS.register("lilac_xiangnang", () -> new XiangnangItem(ModBlocks.LILAC_XIANGNANG.get(), new Item.Properties(), 300, 1));
     public static final DeferredItem<Item> CHINESE_ROSE_XIANGNANG =
-            ITEMS.register("chinese_rose_xiangnang", () -> new XiangnangItem(ModBlocks.CHINESE_ROSE_XIANGNANG.get(), new Item.Properties(), 300, 0));
+            ITEMS.register("chinese_rose_xiangnang", () -> new XiangnangItem(ModBlocks.CHINESE_ROSE_XIANGNANG.get(), new Item.Properties(), 300, 1));
     public static final DeferredItem<Item> RUGOSA_ROSE_XIANGNANG =
-            ITEMS.register("rugosa_rose_xiangnang", () -> new XiangnangItem(ModBlocks.RUGOSA_ROSE_XIANGNANG.get(), new Item.Properties(), 300, 0));
+            ITEMS.register("rugosa_rose_xiangnang", () -> new XiangnangItem(ModBlocks.RUGOSA_ROSE_XIANGNANG.get(), new Item.Properties(), 300, 1));
     public static final DeferredItem<Item> APRICOT_XIANGNANG =
             ITEMS.register("apricot_xiangnang", () -> new XiangnangItem(ModBlocks.APRICOT_XIANGNANG.get(), new Item.Properties(), 300, 0));
     public static final DeferredItem<Item> PEACH_XIANGNANG =

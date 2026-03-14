@@ -42,6 +42,8 @@ public class ModEventsBusEvents {
             return;
         }
 
+        if (entity.level().isClientSide) return;
+
         if (!(entity instanceof Player || entity instanceof Villager || entity instanceof Animal ||
                 entity instanceof AbstractGolem || entity instanceof Allay)) {
             return;
@@ -53,11 +55,11 @@ public class ModEventsBusEvents {
         Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
         if (biomeHolder.is(ModBiomes.LONGEVITY_FOREST)) {
             MobEffectInstance currentEffect = entity.getEffect(MobEffects.HEALTH_BOOST);
-            if (currentEffect == null || currentEffect.getDuration() < 17900) {
+            if (currentEffect == null || currentEffect.getDuration() < 18200) {
                 entity.addEffect(new MobEffectInstance(
                         MobEffects.HEAL, 1, 4));
             }
-            if (currentEffect == null || currentEffect.getDuration() < 18000) {
+            if (currentEffect == null || currentEffect.getDuration() < 18300) {
                 entity.addEffect(new MobEffectInstance(
                     MobEffects.HEALTH_BOOST, 18600, 4));
             }
@@ -69,6 +71,8 @@ public class ModEventsBusEvents {
         if (!(event.getEntity() instanceof LivingEntity entity)) {
             return;
         }
+
+        if (entity.level().isClientSide) return;
 
         if (!(entity instanceof Player || entity instanceof Villager || entity instanceof Animal ||
                 entity instanceof AbstractGolem || entity instanceof Allay)) {
@@ -83,10 +87,10 @@ public class ModEventsBusEvents {
             MobEffectInstance currentEffect2 = entity.getEffect(MobEffects.WATER_BREATHING);
             MobEffectInstance currentEffect3 = entity.getEffect(MobEffects.DAMAGE_BOOST);
             MobEffectInstance currentEffect4 = entity.getEffect(MobEffects.LUCK);
-            if (currentEffect1 == null || currentEffect1.getDuration() < 24000 ||
-                    currentEffect2 == null || currentEffect2.getDuration() < 24000 ||
-                    currentEffect3 == null || currentEffect3.getDuration() < 24000 ||
-                    currentEffect4 == null || currentEffect4.getDuration() < 24000) {
+            if (currentEffect1 == null || currentEffect1.getDuration() < 24300 ||
+                    currentEffect2 == null || currentEffect2.getDuration() < 24300 ||
+                    currentEffect3 == null || currentEffect3.getDuration() < 24300 ||
+                    currentEffect4 == null || currentEffect4.getDuration() < 24300) {
                 entity.addEffect(new MobEffectInstance(
                         MobEffects.SATURATION, 1, 4));
                 entity.addEffect(new MobEffectInstance(

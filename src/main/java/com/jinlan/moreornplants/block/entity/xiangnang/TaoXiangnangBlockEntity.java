@@ -17,21 +17,17 @@ public class TaoXiangnangBlockEntity extends BlockEntity {
     private static final double EFFECT_RANGE = 2.0;
     private static final long CHECK_INTERVAL = 40;
     private static final int EFFECT_DURATION = 300;
+    private final AABB effectArea;
     public TaoXiangnangBlockEntity(BlockPos pos, BlockState blockState) {
         super(ModBlockEntities.TAO_XIANGNANG.get(), pos, blockState);
+        this.effectArea = new AABB(pos).inflate(EFFECT_RANGE);
     }
 
     public static void tick(Level level, BlockPos pos, BlockState state, TaoXiangnangBlockEntity blockEntity) {
-        if (level.isClientSide) {
-            return;
-        }
-        if (level.getGameTime() % CHECK_INTERVAL != 0) {
-            return;
-        }
+        if (level.isClientSide) return;
+        if (level.getGameTime() % CHECK_INTERVAL != 0) return;
 
-        AABB effectArea = new AABB(pos).inflate(EFFECT_RANGE);
-
-        for (LivingEntity entity : level.getEntitiesOfClass(LivingEntity.class, effectArea)) {
+        for (LivingEntity entity : level.getEntitiesOfClass(LivingEntity.class, blockEntity.effectArea)) {
             if (entity instanceof Player || entity instanceof Animal || entity instanceof Villager) {
                 applyRegenerationEffect(entity);
             }
@@ -45,9 +41,7 @@ public class TaoXiangnangBlockEntity extends BlockEntity {
             return;
         }
 
-        MobEffectInstance effect = new MobEffectInstance(
-                MobEffects.REGENERATION, EFFECT_DURATION, 0);
-
-        entity.addEffect(effect);
+        entity.addEffect(new MobEffectInstance(
+                MobEffects.REGENERATION, EFFECT_DURATION, 0));
     }
 }

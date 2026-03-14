@@ -38,20 +38,13 @@ public class XiangnangItem extends BlockItem {
 
                 // 检查玩家是否处于生存/冒险模式
                 if (!player.isSpectator() && isHeld) {
-                    // 给予生命恢复效果
-                    // 设置为持续效果，duration > 0 会每 tick 刷新
+                    // 给予生命恢复效果，设置为持续效果，duration > 0 会每 tick 刷新
                     MobEffectInstance currentEffect = livingEntity.getEffect(MobEffects.REGENERATION);
 
                     // 如果还没有效果，或者效果剩余时间少于13秒，则添加新效果
                     if (currentEffect == null || currentEffect.getDuration() < 260) {
                         livingEntity.addEffect(new MobEffectInstance(
-                                MobEffects.REGENERATION,
-                                effectDuration,
-                                effectAmplifier,
-                                false,
-                                true,
-                                true
-                        ));
+                                MobEffects.REGENERATION, effectDuration, effectAmplifier));
                     }
                 }
             }
