@@ -17,8 +17,10 @@ public class MeiXiangnangBlockEntity extends BlockEntity {
     private static final double EFFECT_RANGE = 3.0;
     private static final long CHECK_INTERVAL = 40;
     private static final int EFFECT_DURATION = 300;
+    private final AABB effectArea;
     public MeiXiangnangBlockEntity(BlockPos pos, BlockState blockState) {
         super(ModBlockEntities.MEI_XIANGNANG.get(), pos, blockState);
+        this.effectArea = new AABB(pos).inflate(EFFECT_RANGE);
     }
 
     public static void tick(Level level, BlockPos pos, BlockState state, MeiXiangnangBlockEntity blockEntity) {
@@ -32,11 +34,7 @@ public class MeiXiangnangBlockEntity extends BlockEntity {
             return;
         }
 
-        // 计算效果区域（以方块为中心的3格半径立方体）
-        AABB effectArea = new AABB(pos).inflate(EFFECT_RANGE);
-
-        // 获取区域内的所有玩家、动物和村民
-        for (LivingEntity entity : level.getEntitiesOfClass(LivingEntity.class, effectArea)) {
+        for (LivingEntity entity : level.getEntitiesOfClass(LivingEntity.class, blockEntity.effectArea)) {
             // 只对玩家、动物和村民生效
             if (entity instanceof Player || entity instanceof Animal || entity instanceof Villager) {
                 applyRegenerationEffect(entity);
@@ -54,12 +52,9 @@ public class MeiXiangnangBlockEntity extends BlockEntity {
             return;
         }
 
-        // 创建生命恢复I效果，持续5秒
+        // 创建生命恢复II效果，持续5秒
         MobEffectInstance effect = new MobEffectInstance(
-                MobEffects.REGENERATION,
-                EFFECT_DURATION,
-                0 // 等级：0 = I级
-        );
+                MobEffects.REGENERATION, EFFECT_DURATION, 1);
 
         entity.addEffect(effect);
     }

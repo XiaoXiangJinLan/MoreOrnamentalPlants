@@ -572,7 +572,7 @@ public class ModPlacedFeatures {
                         ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
 
         register(context, UPRIGHT_CRABAPPLE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.UPRIGHT_CRABAPPLE_SMALL),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 1),
                         ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
         register(context, PEONY_SEA, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_TREE_MEADOWS),
                 List.of(RarityFilter.onAverageOnceEvery(6),

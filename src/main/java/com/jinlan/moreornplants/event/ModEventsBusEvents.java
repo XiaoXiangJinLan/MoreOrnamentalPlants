@@ -75,10 +75,10 @@ public class ModEventsBusEvents {
             MobEffectInstance currentEffect2 = entity.getEffect(MobEffects.WATER_BREATHING);
             MobEffectInstance currentEffect3 = entity.getEffect(MobEffects.DAMAGE_BOOST);
             MobEffectInstance currentEffect4 = entity.getEffect(MobEffects.LUCK);
-            if (currentEffect1 == null || currentEffect1.getDuration() < 24000 ||
-                    currentEffect2 == null || currentEffect2.getDuration() < 24000 ||
-                    currentEffect3 == null || currentEffect3.getDuration() < 24000 ||
-                    currentEffect4 == null || currentEffect4.getDuration() < 24000) {
+            if (currentEffect1 == null || currentEffect1.getDuration() < 24300 ||
+                    currentEffect2 == null || currentEffect2.getDuration() < 24300 ||
+                    currentEffect3 == null || currentEffect3.getDuration() < 24300 ||
+                    currentEffect4 == null || currentEffect4.getDuration() < 24300) {
                 entity.addEffect(new MobEffectInstance(
                         MobEffects.SATURATION, 1, 4));
                 entity.addEffect(new MobEffectInstance(
