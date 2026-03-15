@@ -50,9 +50,9 @@ public class ModEventsBusEvents {
         Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
         if (biomeHolder.is(ModBiomes.LONGEVITY_FOREST)) {
             MobEffectInstance currentEffect = entity.getEffect(MobEffects.HEALTH_BOOST);
-            if (currentEffect == null || currentEffect.getDuration() < 600) {
+            if (currentEffect == null || currentEffect.getDuration() < 1200) {
                 entity.addEffect(new MobEffectInstance(
-                        MobEffects.HEALTH_BOOST, 18600, 4));
+                        MobEffects.HEALTH_BOOST, 36600, 4));
                 entity.addEffect(new MobEffectInstance(
                         MobEffects.HEAL, 1, 4));
             }
@@ -75,22 +75,22 @@ public class ModEventsBusEvents {
             MobEffectInstance currentEffect2 = entity.getEffect(MobEffects.WATER_BREATHING);
             MobEffectInstance currentEffect3 = entity.getEffect(MobEffects.DAMAGE_BOOST);
             MobEffectInstance currentEffect4 = entity.getEffect(MobEffects.LUCK);
-            if (currentEffect1 == null || currentEffect1.getDuration() < 24300 ||
-                    currentEffect2 == null || currentEffect2.getDuration() < 24300 ||
-                    currentEffect3 == null || currentEffect3.getDuration() < 24300 ||
-                    currentEffect4 == null || currentEffect4.getDuration() < 24300) {
+            if (currentEffect1 == null || currentEffect1.getDuration() < 48300 ||
+                    currentEffect2 == null || currentEffect2.getDuration() < 48300 ||
+                    currentEffect3 == null || currentEffect3.getDuration() < 48300 ||
+                    currentEffect4 == null || currentEffect4.getDuration() < 48300) {
                 entity.addEffect(new MobEffectInstance(
                         MobEffects.SATURATION, 1, 4));
                 entity.addEffect(new MobEffectInstance(
                         MobEffects.HEAL, 1, 4));
                 entity.addEffect(new MobEffectInstance(
-                        MobEffects.FIRE_RESISTANCE, 24600, 4));
+                        MobEffects.FIRE_RESISTANCE, 48600, 4));
                 entity.addEffect(new MobEffectInstance(
-                        MobEffects.WATER_BREATHING, 24600, 4));
+                        MobEffects.WATER_BREATHING, 48600, 4));
                 entity.addEffect(new MobEffectInstance(
-                        MobEffects.DAMAGE_BOOST, 24600, 4));
+                        MobEffects.DAMAGE_BOOST, 48600, 4));
                 entity.addEffect(new MobEffectInstance(
-                        MobEffects.LUCK, 24600, 4));
+                        MobEffects.LUCK, 48600, 4));
             }
         }
     }
