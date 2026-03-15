@@ -138,6 +138,12 @@
         "maxCount": 3,
         "minCount": 2,
         "weight": 4
+      },
+      {
+        "type": "minecraft:fox",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 2
       }
     ],
     "misc": [],

@@ -77,11 +77,11 @@
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
       "more_orn_plants:cotton_rose_placed",
-      "more_orn_plants:lotus_placed",
       "more_orn_plants:mottled_bamboo_placed",
       "more_orn_plants:black_bamboo_placed",
-      "more_orn_plants:grass_fern_2",
       "more_orn_plants:grass_furong",
+      "more_orn_plants:lotus_placed",
+      "more_orn_plants:grass_fern_2",
       "minecraft:seagrass_swamp"
     ],
     [
@@ -131,10 +131,16 @@
         "weight": 1
       },
       {
+        "type": "minecraft:fox",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 1
+      },
+      {
         "type": "minecraft:frog",
         "maxCount": 3,
         "minCount": 2,
-        "weight": 3
+        "weight": 6
       }
     ],
     "misc": [],
