@@ -553,6 +553,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         weepingMeiPlantBlock(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT);
 
         flowerBlock(ModBlocks.WEEPING_CRABAPPLE);
+        flowerBlock(ModBlocks.CRABAPPLE);
 
         wisteriaBlock(ModBlocks.CHINESE_WISTERIA);
         wisteriaPlantBlock(ModBlocks.CHINESE_WISTERIA_PLANT);

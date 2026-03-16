@@ -26,7 +26,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.MOTTLED_BAMBOO.get(), ModBlocks.BLACK_BAMBOO.get())
                 .add(ModBlocks.FOUNTAIN_GRASS.get(), ModBlocks.PURPLE_FOUNTAIN_GRASS.get(), ModBlocks.PINK_FOUNTAIN_GRASS.get(), ModBlocks.WHITE_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.BAMBOO_STICK.get());
+                .addTag(CommonTags.Blocks.WEEPING_MEI)
+                .add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get(),
+                        ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
+                .addTag(CommonTags.Blocks.WISTERIA)
+                .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.CRABAPPLE.get(), ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.CROPS)
                 .addTag(CommonTags.Blocks.LOTUS)

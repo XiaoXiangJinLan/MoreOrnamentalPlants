@@ -316,6 +316,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.LOTUS.asItem(), ModBlocks.WHITE_LOTUS.asItem())
                 .add(ModBlocks.LOTUS_LEAF.asItem());
 
+        this.tag(Tags.Items.FOODS_FRUIT)
+                .add(ModItems.CRABAPPLE.get())
+                .add(ModItems.GOLDEN_CRABAPPLE.get())
+                .add(ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get());
+
         this.tag(Tags.Items.FOODS_SOUP)
                 .add(ModItems.LOTUS_ROOT_SOUP.get())
                 .add(ModItems.LOTUS_SEED_SOUP.get())
@@ -342,28 +347,34 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.LOTUS_SEED.get());
 
         this.tag(ItemTags.GOAT_FOOD)
-                .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get());
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get())
+                .add(ModItems.CRABAPPLE.get());
 
         this.tag(ItemTags.PANDA_FOOD)
                 .add(ModItems.PEELED_BAMBOO_SHOOTS.get());
 
-        this.tag(ItemTags.RABBIT_FOOD)
-                .add(ModItems.LOTUS_ROOT.get());
+        this.tag(ItemTags.FOX_FOOD)
+                .add(ModItems.CRABAPPLE.get());
 
         this.tag(ItemTags.HORSE_FOOD)
-                .add(ModItems.LOTUS_ROOT.get());
+                .add(ModItems.LOTUS_ROOT.get())
+                .add(ModItems.CRABAPPLE.get(), ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get());
 
         this.tag(ItemTags.COW_FOOD)
-                .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get());
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get())
+                .add(ModItems.CRABAPPLE.get());
 
         this.tag(ItemTags.CHICKEN_FOOD)
-                .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get());
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get())
+                .add(ModItems.CRABAPPLE.get());
 
         this.tag(ItemTags.SHEEP_FOOD)
-                .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get());
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get())
+                .add(ModItems.CRABAPPLE.get());
 
         this.tag(ItemTags.PIG_FOOD)
-                .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get());
+                .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get())
+                .add(ModItems.CRABAPPLE.get());
 
         this.tag(ItemTags.CAT_FOOD)
                 .add(ModItems.LOTUS_ROOT_SOUP.get());

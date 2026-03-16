@@ -522,6 +522,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CHINABERRY_CHEST_BOAT);
                         pOutput.accept(ModItems.DESERT_POPLAR_BOAT);
                         pOutput.accept(ModItems.DESERT_POPLAR_CHEST_BOAT);
+                        pOutput.accept(ModItems.CRABAPPLE);
+                        pOutput.accept(ModItems.GOLDEN_CRABAPPLE);
+                        pOutput.accept(ModItems.ENCHANTED_GOLDEN_CRABAPPLE);
                         pOutput.accept(ModItems.PEELED_BAMBOO_SHOOTS);
                         pOutput.accept(ModItems.LOTUS_ROOT);
                         pOutput.accept(ModItems.LOTUS_SEED_POD);

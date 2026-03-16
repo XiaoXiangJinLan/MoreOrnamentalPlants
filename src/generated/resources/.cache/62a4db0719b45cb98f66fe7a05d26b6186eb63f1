@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-12T23:11:26.8019415	Block States: more_orn_plants
+// 1.21.1	2026-03-16T16:09:15.3145915	Block States: more_orn_plants
 9f477862195a9ba3921c74ddbff1a8ba77d99aec assets/more_orn_plants/blockstates/apricot_button.json
 444b7fe3ca5cb2ee1608b9d1d29850f787e500f6 assets/more_orn_plants/blockstates/apricot_door.json
 cdbc329471eb85936341f4f3c041e9714c4535ce assets/more_orn_plants/blockstates/apricot_fence.json
@@ -83,6 +83,7 @@ aceeaf4330a5ba71195d36b67c8ac037187b0872 assets/more_orn_plants/blockstates/chin
 9612be4a0910df2e7a3b60c2a626a79ed027d336 assets/more_orn_plants/blockstates/chrysanthemum.json
 4a7bd26e564f455b39da5f03e2c3060c48a084fe assets/more_orn_plants/blockstates/colorful_peony.json
 727c083ab48a3d3ea9c2dd778e753dc923aa1b7f assets/more_orn_plants/blockstates/cotton_rose.json
+9513253c383293bb43a727fb06dec31110e5a5ac assets/more_orn_plants/blockstates/crabapple.json
 39f0e8ea2d6a5fe25a4faca7ded7f872693d14e0 assets/more_orn_plants/blockstates/crabapple_button.json
 dc97ae39232a7a9c915ae760b0b717b4822d6a79 assets/more_orn_plants/blockstates/crabapple_door.json
 2b940dae0cac72940699aeb51100a455b05064d4 assets/more_orn_plants/blockstates/crabapple_fence.json
@@ -812,6 +813,7 @@ c3a492748b04f43bef591c53fde601a8088846f4 assets/more_orn_plants/models/block/chi
 dbcb40143952f798197c346424baa74d8bb4d1d8 assets/more_orn_plants/models/block/colorful_peony.json
 c495b883f5040525bff47f5afb210319ac96cdf6 assets/more_orn_plants/models/block/cotton_rose_bottom.json
 b90e1cffec4d28e49565a3ab6f1403129621572c assets/more_orn_plants/models/block/cotton_rose_top.json
+a2244ec12b09c6fd72bc2a0861b7b6c6a80bc5f7 assets/more_orn_plants/models/block/crabapple.json
 f9334564637fc9d7888278244b46a546056ff9b2 assets/more_orn_plants/models/block/crabapple_button.json
 3d900f2d52c38d1183c1e974fdbd27b4f61233fb assets/more_orn_plants/models/block/crabapple_button_pressed.json
 923876f11f68a85cb4f6572cf80177a67fba9032 assets/more_orn_plants/models/block/crabapple_door_bottom_left.json

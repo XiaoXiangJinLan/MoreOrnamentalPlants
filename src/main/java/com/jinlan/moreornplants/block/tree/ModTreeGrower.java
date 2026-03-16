@@ -99,7 +99,7 @@ public class ModTreeGrower {
     public static final TreeGrower UPRIGHT_CRABAPPLE = new TreeGrower(
             "upright_crabapple",
             Optional.empty(),
-            Optional.of(ModConfiguredFeatures.UPRIGHT_CRABAPPLE),
+            Optional.of(ModConfiguredFeatures.UPRIGHT_CRABAPPLE_WITH_FRUITS),
             Optional.empty()
     );
 

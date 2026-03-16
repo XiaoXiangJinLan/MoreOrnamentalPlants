@@ -8,6 +8,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
@@ -124,7 +125,6 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.DESERT_POPLAR_PLANKS.get());
         this.dropSelf(ModBlocks.CRAPE_MYRTLE_LOG.get());
         this.dropSelf(ModBlocks.CRAPE_MYRTLE_WOOD.get());
-        this.dropSelf(ModBlocks.WEEPING_CRABAPPLE.get());
 
         this.dropSelf(ModBlocks.RED_MEI_STAIRS.get());
         this.dropSelf(ModBlocks.RED_MEI_BUTTON.get());
@@ -310,8 +310,6 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.DOUBLE_PINK_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.VERSICOLOR_MEI_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.PINK_APRICOT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get(), block ->
@@ -612,6 +610,11 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_WHITE_CRAPE_MYRTLE_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get()));
 
+        this.dropSelf(ModBlocks.WEEPING_CRABAPPLE.get());
+        this.add(ModBlocks.CRABAPPLE.get(), block -> LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.CRABAPPLE.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F))))));
         this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),
                 createPotFlowerItemTable(ModBlocks.CHRYSANTHEMUM.get()));

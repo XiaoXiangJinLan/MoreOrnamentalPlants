@@ -115,6 +115,7 @@
   "block.more_orn_plants.crabapple_door": "海棠門",
   "block.more_orn_plants.crabapple_trapdoor": "海棠窖門",
   "block.more_orn_plants.weeping_crabapple": "垂絲海棠花",
+  "block.more_orn_plants.crabapple": "海棠",
   "block.more_orn_plants.crabapple_sign": "海棠牌",
   "block.more_orn_plants.crabapple_wall_sign": "海棠墙牌",
   "block.more_orn_plants.crabapple_hanging_sign": "海棠懸牌",
@@ -726,6 +727,9 @@
   "item.more_orn_plants.lotus_seed_soup": "蓮子羹",
   "item.more_orn_plants.peach_wooden_sword": "桃木劍",
   "item.more_orn_plants.camphor_wooden_sword": "樟木劍",
+  "item.more_orn_plants.crabapple": "海棠",
+  "item.more_orn_plants.golden_crabapple": "金海棠",
+  "item.more_orn_plants.enchanted_golden_crabapple": "淬靈金海棠",
 
   "biome.more_orn_plants.red_mei_forest": "白雪紅梅",
   "biome.more_orn_plants.spring_river": "春江",

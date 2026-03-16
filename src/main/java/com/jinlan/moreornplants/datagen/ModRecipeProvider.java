@@ -794,6 +794,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_bamboo", has(ModItems.BLACK_BAMBOO))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":" + "scaffolding_from_black_bamboo_item");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLDEN_CRABAPPLE)
+                .define('#', Items.GOLD_INGOT)
+                .define('X', ModItems.CRABAPPLE)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .unlockedBy(getHasName(ModItems.CRABAPPLE), has(ModItems.CRABAPPLE))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ENCHANTED_GOLDEN_CRABAPPLE)
+                .define('#', Items.GOLD_BLOCK)
+                .define('X', ModItems.CRABAPPLE)
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .unlockedBy(getHasName(ModItems.CRABAPPLE), has(ModItems.CRABAPPLE))
+                .save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_MEI_SAPLING, 1)
                 .requires(ModBlocks.DOUBLE_PINK_MEI_SAPLING)
                 .requires(ModBlocks.WHITE_MEI_SAPLING)

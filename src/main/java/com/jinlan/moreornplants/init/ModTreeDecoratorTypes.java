@@ -19,8 +19,8 @@ public class ModTreeDecoratorTypes {
     public static final Supplier<TreeDecoratorType<VersicolorWeepingMeiVineDecorator>> VERSICOLOR_WEEPING_MEI_VINE_DECORATOR =
             TREE_DECORATOR.register("versicolor_weeping_mei_vine_decorator", () -> new TreeDecoratorType<>(VersicolorWeepingMeiVineDecorator.CODEC));
 
-    public static final Supplier<TreeDecoratorType<WeepingCrabappleFlowerDecorator>> WEEPING_CRABAPPLE_FLOWER_DECORATOR =
-            TREE_DECORATOR.register("weeping_crabapple_flower_decorator", () -> new TreeDecoratorType<>(WeepingCrabappleFlowerDecorator.CODEC));
+    public static final Supplier<TreeDecoratorType<CrabappleDecorator>> CRABAPPLE_DECORATOR =
+            TREE_DECORATOR.register("crabapple_decorator", () -> new TreeDecoratorType<>(CrabappleDecorator.CODEC));
 
     public static final Supplier<TreeDecoratorType<SnowAroundTrunk>> SNOW_AROUND_TRUNK =
             TREE_DECORATOR.register("snow_around_trunk", () -> new TreeDecoratorType<>(SnowAroundTrunk.CODEC));

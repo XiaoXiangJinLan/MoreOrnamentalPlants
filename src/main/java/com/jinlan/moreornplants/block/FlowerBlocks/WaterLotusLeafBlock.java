@@ -57,8 +57,8 @@ public class WaterLotusLeafBlock extends WaterLotusBlock {
 
     @Override
     @NotNull
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState,
-                                           LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+    public BlockState updateShape(BlockState state, @NotNull Direction direction, @NotNull BlockState neighborState,
+                                  @NotNull LevelAccessor level, @NotNull BlockPos pos, @NotNull BlockPos neighborPos) {
         // 调用父类方法处理含水逻辑
         BlockState updatedState = super.updateShape(state, direction, neighborState, level, pos, neighborPos);
 

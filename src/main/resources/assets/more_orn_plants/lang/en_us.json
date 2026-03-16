@@ -115,6 +115,7 @@
   "block.more_orn_plants.crabapple_door": "Crabapple Door",
   "block.more_orn_plants.crabapple_trapdoor": "Crabapple Trapdoor",
   "block.more_orn_plants.weeping_crabapple": "Weeping Crabapple",
+  "block.more_orn_plants.crabapple": "Crabapple",
   "block.more_orn_plants.crabapple_sign": "Crabapple Sign",
   "block.more_orn_plants.crabapple_wall_sign": "Crabapple Wall Sign",
   "block.more_orn_plants.crabapple_hanging_sign": "Crabapple Hanging Sign",
@@ -726,6 +727,9 @@
   "item.more_orn_plants.lotus_seed_soup": "Lotus Seed Soup",
   "item.more_orn_plants.peach_wooden_sword": "Peach Wooden Sword",
   "item.more_orn_plants.camphor_wooden_sword": "Camphor Wooden Sword",
+  "item.more_orn_plants.crabapple": "Crabapple",
+  "item.more_orn_plants.golden_crabapple": "Golden Crabapple",
+  "item.more_orn_plants.enchanted_golden_crabapple": "Enchanted Golden Crabapple",
 
   "biome.more_orn_plants.red_mei_forest": "Red Mei Forest",
   "biome.more_orn_plants.spring_river": "Spring River",

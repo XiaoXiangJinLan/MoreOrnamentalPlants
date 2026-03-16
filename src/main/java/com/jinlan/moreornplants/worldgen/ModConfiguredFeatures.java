@@ -67,6 +67,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_WEEPING_MEI = registerKey("versicolor_weeping_mei_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FRAGRANT_SNOW_PETALS_PATCH = registerKey("fragrant_snow_petals_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE = registerKey("upright_crabapple");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE_WITH_FRUITS = registerKey("upright_crabapple_fruits");
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE_SMALL = registerKey("upright_crabapple_small");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE = registerKey("weeping_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_APRICOT = registerKey("pink_apricot");
@@ -353,6 +354,12 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, UPRIGHT_CRABAPPLE_WITH_FRUITS, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
+                BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new CrabappleDecorator(ModBlocks.CRABAPPLE.get().defaultBlockState(), 0.6F))).ignoreVines().build());
         register(context, UPRIGHT_CRABAPPLE_SMALL, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
                 new StraightTrunkPlacer(5, 2, 0),
@@ -364,7 +371,7 @@ public class ModConfiguredFeatures {
                 new CrabappleTrunkPlacer(9, 1, 1, 3, 5, 3, 4, 5, 0.6F),
                 BlockStateProvider.simple(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get()),
                 new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
-                new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new WeepingCrabappleFlowerDecorator(0.9F))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new CrabappleDecorator(ModBlocks.WEEPING_CRABAPPLE.get().defaultBlockState(), 0.9F))).ignoreVines().build());
 
         register(context, PINK_APRICOT, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.APRICOT_LOG.get()),

@@ -146,6 +146,8 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> WEEPING_CRABAPPLE =
             registerBlock("weeping_crabapple", () -> new WeepingCrabappleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CHERRY_LEAVES).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CRABAPPLE =
+            BLOCKS.register("crabapple", () -> new CrabappleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.CHERRY_LEAVES).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> CHINESE_WISTERIA =
             registerBlock("chinese_wisteria", () -> new WisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));

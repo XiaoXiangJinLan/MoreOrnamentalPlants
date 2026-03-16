@@ -68,7 +68,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         Vec3 vec3 = state.getOffset(level, pos);
         VoxelShape shape = state.getValue(HALF) == DoubleBlockHalf.LOWER ? LOWER_SHAPE : UPPER_SHAPE;
         return shape.move(vec3.x, vec3.y, vec3.z);
@@ -111,7 +111,8 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+    public void randomTick(@NotNull BlockState state, ServerLevel level, @NotNull BlockPos pos, @NotNull RandomSource random) {
+        if (!level.isAreaLoaded(pos, 1)) return;
         int age = state.getValue(AGE);
         if (age < 3) {
             float growthSpeed = getGrowthSpeed(state, level, pos);
@@ -168,17 +169,17 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {
+    public boolean isValidBonemealTarget(@NotNull LevelReader level, @NotNull BlockPos pos, BlockState state) {
         return state.getValue(AGE) < 3;
     }
 
     @Override
-    public boolean isBonemealSuccess(Level level, RandomSource random, BlockPos pos, BlockState state) {
+    public boolean isBonemealSuccess(@NotNull Level level, @NotNull RandomSource random, @NotNull BlockPos pos, @NotNull BlockState state) {
         return true; // 骨粉总是成功
     }
 
     @Override
-    public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
+    public void performBonemeal(@NotNull ServerLevel level, @NotNull RandomSource random, @NotNull BlockPos pos, BlockState state) {
         int currentAge = state.getValue(AGE);
         if (currentAge < 3) {
             // 骨粉增加1-2个阶段
@@ -191,8 +192,8 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
 
     @Override
     @NotNull
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState,
-                                           LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+    public BlockState updateShape(BlockState state, @NotNull Direction direction, @NotNull BlockState neighborState,
+                                  @NotNull LevelAccessor level, @NotNull BlockPos pos, @NotNull BlockPos neighborPos) {
         // 处理含水逻辑
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));

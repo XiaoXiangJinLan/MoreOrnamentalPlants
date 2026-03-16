@@ -4,6 +4,7 @@ import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.entity.custom.ModBoatEntity;
 import com.jinlan.moreornplants.item.custom.*;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -187,20 +188,27 @@ public class ModItems {
     public static final DeferredItem<Item> BLACK_BAMBOO =
             ITEMS.register("black_bamboo", () -> new modBambooBlockItem(ModBlocks.BLACK_BAMBOO.get(), new Item.Properties(), 50));
     public static final DeferredItem<Item> PEELED_BAMBOO_SHOOTS =
-            ITEMS.register("peeled_bamboo_shoots", () -> new Item((new Item.Properties()).food(ModFoods.PEELED_BAMBOO_SHOOTS)));
+            ITEMS.register("peeled_bamboo_shoots", () -> new Item(new Item.Properties().food(ModFoods.PEELED_BAMBOO_SHOOTS)));
     public static final DeferredItem<Item> BAMBOO_SHOOTS_SOUP =
-            ITEMS.register("bamboo_shoots_soup", () -> new Item((new Item.Properties()).food(ModFoods.BAMBOO_SHOOTS_SOUP)));
+            ITEMS.register("bamboo_shoots_soup", () -> new Item(new Item.Properties().food(ModFoods.BAMBOO_SHOOTS_SOUP)));
 
     public static final DeferredItem<Item> LOTUS_ROOT =
-            ITEMS.register("lotus_root", () -> new Item((new Item.Properties()).food(ModFoods.LOTUS_ROOT)));
+            ITEMS.register("lotus_root", () -> new Item(new Item.Properties().food(ModFoods.LOTUS_ROOT)));
     public static final DeferredItem<Item> LOTUS_ROOT_SOUP =
-            ITEMS.register("lotus_root_soup", () -> new Item((new Item.Properties()).food(ModFoods.LOTUS_ROOT_SOUP)));
+            ITEMS.register("lotus_root_soup", () -> new Item(new Item.Properties().food(ModFoods.LOTUS_ROOT_SOUP)));
     public static final DeferredItem<Item> LOTUS_SEED =
-            ITEMS.register("lotus_seed", () -> new Item((new Item.Properties()).food(ModFoods.LOTUS_SEED)));
+            ITEMS.register("lotus_seed", () -> new Item(new Item.Properties().food(ModFoods.LOTUS_SEED)));
     public static final DeferredItem<Item> LOTUS_SEED_POD =
             ITEMS.register("lotus_seed_pod", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> LOTUS_SEED_SOUP =
-            ITEMS.register("lotus_seed_soup", () -> new Item((new Item.Properties()).food(ModFoods.LOTUS_SEED_SOUP)));
+            ITEMS.register("lotus_seed_soup", () -> new Item(new Item.Properties().food(ModFoods.LOTUS_SEED_SOUP)));
+
+    public static final DeferredItem<Item> CRABAPPLE =
+            ITEMS.register("crabapple", () -> new Item(new Item.Properties().food(ModFoods.CRABAPPLE)));
+    public static final DeferredItem<Item> GOLDEN_CRABAPPLE =
+            ITEMS.register("golden_crabapple", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.GOLDEN_CRABAPPLE)));
+    public static final DeferredItem<Item> ENCHANTED_GOLDEN_CRABAPPLE =
+            ITEMS.register("enchanted_golden_crabapple", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).food(ModFoods.ENCHANTED_GOLDEN_CRABAPPLE).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
 
     public static final DeferredItem<Item> MEI_XIANGNANG =
             ITEMS.register("mei_xiangnang", () -> new XiangnangItem(ModBlocks.MEI_XIANGNANG.get(), new Item.Properties(), 300, 1));

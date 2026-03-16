@@ -400,6 +400,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.LOTUS_SEED_POD);
         simpleItem(ModItems.LOTUS_ROOT_SOUP);
         simpleItem(ModItems.LOTUS_SEED_SOUP);
+        simpleItem(ModItems.CRABAPPLE);
+        goldenCrabapple(ModItems.GOLDEN_CRABAPPLE);
+        goldenCrabapple(ModItems.ENCHANTED_GOLDEN_CRABAPPLE);
 
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
         simplerBlockItem(ModBlocks.FRAGRANT_SNOW_PETALS);
@@ -438,6 +441,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "item/" + item.getId().getPath()));
+    }
+
+    private void goldenCrabapple(DeferredItem<Item> item) {
+        withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "item/golden_crabapple"));
     }
 
     public void evenSimplerBlockItem(DeferredBlock<Block> block) {

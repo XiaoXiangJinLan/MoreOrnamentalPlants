@@ -11,7 +11,7 @@ Chinaberry, Desert Poplar.
 New Plants 
 ==========
 Herbaceous Peony, Chinese Rose, Chrysanthemum, Cymbidium, Lotus, Camellia, Azalea (more varieties), Wintersweet, Cotton Rose, 
-Crape Myrtle, Chinese Wisteria, Fountain Grass, Miscanthus, Mottled Bamboo, Black Bamboo, as well as legendary peony varieties: Zhao's Pink and Two Qiao.  
+Crape Myrtle, Chinese Wisteria, Fountain Grass, Miscanthus, Mottled Bamboo, Black Bamboo, as well as The Four Great Peonies.  
 Some plants can be crafted into cut flowers, such as Herbaceous Peony and Chinese Rose. Hold shears in your main hand and a flower in your off-hand, 
 then right-click to obtain the corresponding cut flower.
 
@@ -75,7 +75,9 @@ fed to pandas!
 • Lotus Root – Obtained by harvesting Lotus flowers and leaves. In version 1.21.1, they can be fed to most 
 farm animals.  
 • Lotus Seeds – Obtained by harvesting Lotus flowers. In version 1.21.1, they can be fed to some farm animals.  
-• Bamboo Shoots Soup, Lotus Root Soup, Lotus Seed Soup – In version 1.21.1, Lotus Root Soup can be fed to wolves and cats.
+• Bamboo Shoots Soup, Lotus Root Soup, Lotus Seed Soup – In version 1.21.1, Lotus Root Soup can be fed to wolves and cats.  
+• Crabapple, Golden Crabapple, Enchanted Golden Crabapple: Function similarly to apples, but restore slightly less hunger 
+and saturation. However, the effects provided by the (Enchanted) Golden Crabapple are slightly stronger than those of the (Enchanted) Golden Apple.
 
 New Fuels
 ==========
@@ -88,7 +90,7 @@ New Fuels
 梅花、海棠、杏花、桃花、梨花、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
 
 ## 新植物
-芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、蜡梅、芙蓉、紫薇、紫藤、狼尾草、芒草、湘妃竹、紫竹，以及牡丹传奇品种：赵粉和二乔等。  
+芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、蜡梅、芙蓉、紫薇、紫藤、狼尾草、芒草、湘妃竹、紫竹，以及牡丹四大名品等。  
 部分植物（例如芍药、月季等）可制作鲜切花，主手持剪刀，副手持花卉，右键鼠标即可获得对应的鲜切花。
 
 ## 新群系
@@ -146,7 +148,8 @@ New Fuels
 **竹笋**：通过挖掘湘妃竹笋和紫竹竹笋获得，食用恢复3饥饿值、1.8饱和度，在1.21.1版本可以喂食熊猫！  
 **莲藕**：通过采集荷花荷叶获得，食用恢复3饥饿值、1.8饱和度，在1.21.1版本可以喂食大部分农场生物；  
 **莲子**：通过采集荷花获得莲蓬，一个莲蓬五个莲子，食用恢复1饥饿值、0.6饱和度，在1.21.1版本可以喂食部分农场生物；  
-**竹笋汤**、**莲藕汤**、**莲子汤**：食用恢复6饥饿值、7.2饱和度，莲藕汤在1.21.1版本可以喂食狼和猫。
+**竹笋汤**、**莲藕汤**、**莲子汤**：食用恢复6饥饿值、7.2饱和度，莲藕汤在1.21.1版本可以喂食狼和猫；  
+**海棠果**、**金海棠果**、**附魔金海棠果**：与苹果类似，但是恢复的饥饿值和饱和度稍低，但是（附魔）金海棠果提供的效果比（附魔）金苹果稍强。
 
 ## 新燃料
 **金芒草**：可以燃烧3个物品。
@@ -209,7 +212,8 @@ more_orn_plants:sweetgum_leaves more_orn_plants:camphor_leaves more_orn_plants:n
 more_orn_plants:dove_tree_blossom_leaves more_orn_plants:chinaberry_leaves more_orn_plants:desert_poplar_leaves
 
 #_tall flowers:half=lower_#  
-more_orn_plants:zhao_pink_peony:half=lower more_orn_plants:two_qiao_peony:half=lower more_orn_plants:versicolor_peony:half=lower 
+more_orn_plants:yao_huang_peony:half=lower more_orn_plants:wei_zi_peony:half=lower more_orn_plants:zhao_pink_peony:half=lower more_orn_plants:dou_green_peony:half=lower
+more_orn_plants:luoyang_red_peony:half=lower more_orn_plants:two_qiao_peony:half=lower more_orn_plants:versicolor_peony:half=lower 
 more_orn_plants:chinese_rose:half=lower more_orn_plants:pink_chinese_rose:half=lower more_orn_plants:yellow_chinese_rose:half=lower 
 more_orn_plants:white_chinese_rose:half=lower more_orn_plants:red_pink_chinese_rose:half=lower more_orn_plants:red_yellow_chinese_rose:half=lower 
 more_orn_plants:red_white_chinese_rose:half=lower more_orn_plants:pink_white_chinese_rose:half=lower more_orn_plants:yellow_white_chinese_rose:half=lower 
@@ -219,7 +223,8 @@ more_orn_plants:golden_miscanthus:half=lower more_orn_plants:crape_myrtle:half=l
 more_orn_plants:pink_crape_myrtle:half=lower more_orn_plants:white_crape_myrtle:half=lower more_orn_plants:wintersweet:half=lower 
 
 #_tall flowers:half=upper_#  
-more_orn_plants:zhao_pink_peony:half=upper more_orn_plants:two_qiao_peony:half=upper more_orn_plants:versicolor_peony:half=upper 
+more_orn_plants:yao_huang_peony:half=upper more_orn_plants:wei_zi_peony:half=upper more_orn_plants:zhao_pink_peony:half=upper more_orn_plants:dou_green_peony:half=upper
+more_orn_plants:luoyang_red_peony:half=upper more_orn_plants:two_qiao_peony:half=upper more_orn_plants:versicolor_peony:half=upper 
 more_orn_plants:chinese_rose:half=upper more_orn_plants:pink_chinese_rose:half=upper more_orn_plants:yellow_chinese_rose:half=upper 
 more_orn_plants:white_chinese_rose:half=upper more_orn_plants:red_pink_chinese_rose:half=upper more_orn_plants:red_yellow_chinese_rose:half=upper 
 more_orn_plants:red_white_chinese_rose:half=upper more_orn_plants:pink_white_chinese_rose:half=upper more_orn_plants:yellow_white_chinese_rose:half=upper 
