@@ -16,14 +16,14 @@ public class ModFoods {
     public static final FoodProperties CRABAPPLE = new FoodProperties.Builder().nutrition(2).saturationModifier(0.3F).build();
     public static final FoodProperties ENCHANTED_GOLDEN_CRABAPPLE = new FoodProperties.Builder().nutrition(2).saturationModifier(1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 400, 2), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 1), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 6000, 0), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 2400, 4), 1.0F).alwaysEdible().build();
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 3000, 1), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3000, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 3000, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 1800, 4), 1.0F).alwaysEdible().build();
     public static final FoodProperties GOLDEN_CRABAPPLE = new FoodProperties.Builder().nutrition(2).saturationModifier(1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 2), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 6000, 0), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 2400, 1), 1.0F).alwaysEdible().build();
+            .effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 3000, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 1800, 1), 1.0F).alwaysEdible().build();
 
     private static FoodProperties.Builder stew() {
         return (new FoodProperties.Builder()).nutrition(6).saturationModifier(0.6F).usingConvertsTo(Items.BOWL);

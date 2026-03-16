@@ -113,28 +113,25 @@ public class ModEventsBusEvents {
     @SubscribeEvent
     public static void onPlayerInteractEntity(PlayerInteractEvent.EntityInteract event) {
         if (event.getLevel().isClientSide) return;
-
-        // 目标必须是僵尸村民
         if (!(event.getTarget() instanceof ZombieVillager zombieVillager)) return;
 
-        Player player = event.getEntity();
         ItemStack stack = event.getItemStack();
+        if (!stack.is(ModItems.GOLDEN_CRABAPPLE.get())) return; // 不是金海棠果，交给其他处理器
+        event.setCanceled(true);
 
-        if (stack.is(ModItems.GOLDEN_CRABAPPLE.get())) {
-            // 僵尸村民必须存活且未开始转化
-            if (!zombieVillager.isAlive() || zombieVillager.isConverting()) return;
+        if (zombieVillager.isConverting()) {
+            event.setCancellationResult(InteractionResult.CONSUME);
+            return;
+        }
 
-            if (zombieVillager.hasEffect(MobEffects.WEAKNESS)) {
-                // 有虚弱效果：消耗物品，开始转化
-                stack.consume(1, player);
-                zombieVillager.startConverting(player.getUUID(), player.getRandom().nextInt(2401) + 3600);
-                event.setCanceled(true);
-                event.setCancellationResult(InteractionResult.SUCCESS);
-            } else {
-                // 无虚弱效果：返回 CONSUME
-                event.setCanceled(true);
-                event.setCancellationResult(InteractionResult.CONSUME);
-            }
+        if (zombieVillager.hasEffect(MobEffects.WEAKNESS)) {
+            // 有虚弱效果：消耗物品，开始转化
+            stack.consume(1, event.getEntity());
+            zombieVillager.startConverting(event.getEntity().getUUID(), zombieVillager.getRandom().nextInt(2401) + 3600);
+            event.setCancellationResult(InteractionResult.SUCCESS);
+        } else {
+            // 无虚弱效果：返回 CONSUME
+            event.setCancellationResult(InteractionResult.CONSUME);
         }
     }
 }

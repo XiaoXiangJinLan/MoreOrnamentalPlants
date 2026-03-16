@@ -614,7 +614,7 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.CRABAPPLE.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModItems.CRABAPPLE.get())
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F))))));
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))))));
         this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),
                 createPotFlowerItemTable(ModBlocks.CHRYSANTHEMUM.get()));
