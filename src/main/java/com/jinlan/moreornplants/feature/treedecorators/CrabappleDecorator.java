@@ -8,27 +8,32 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.LevelSimulatedReader;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class WeepingCrabappleFlowerDecorator extends TreeDecorator {
-    public static final Codec<WeepingCrabappleFlowerDecorator> CODEC = RecordCodecBuilder.create(instance ->
+public class CrabappleDecorator extends TreeDecorator {
+    public static final Codec<CrabappleDecorator> CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
+                    BlockState.CODEC.fieldOf("block").forGetter(decorator -> decorator.blockState),
                     Codec.floatRange(0.0F, 1.0F).fieldOf("probability").forGetter(decorator -> decorator.probability)
-            ).apply(instance, WeepingCrabappleFlowerDecorator::new)
+            ).apply(instance, CrabappleDecorator::new)
     );
 
+    private final BlockState blockState;
     private final float probability;
 
-    public WeepingCrabappleFlowerDecorator(float probability) {
+    public CrabappleDecorator(BlockState blockState, float probability) {
+        this.blockState = blockState;
         this.probability = probability;
     }
 
     @Override
-    protected TreeDecoratorType<?> type() {
-        return ModTreeDecoratorTypes.WEEPING_CRABAPPLE_FLOWER_DECORATOR.get();
+    protected @NotNull TreeDecoratorType<?> type() {
+        return ModTreeDecoratorTypes.CRABAPPLE_DECORATOR.get();
     }
 
     @Override
@@ -45,7 +50,7 @@ public class WeepingCrabappleFlowerDecorator extends TreeDecorator {
             if (level.isStateAtPosition(belowPos, BlockBehaviour.BlockStateBase::isAir) &&
                     random.nextFloat() < this.probability) {
                 // 放置垂丝海棠花朵
-                context.setBlock(belowPos, ModBlocks.WEEPING_CRABAPPLE.get().defaultBlockState());
+                context.setBlock(belowPos, blockState);
             }
         }
     }

@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-14T03:52:27.4699004	Tags for minecraft:block mod id more_orn_plants
+// 1.20.1	2026-03-16T22:02:11.8307988	Tags for minecraft:block mod id more_orn_plants
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/blocks/ceiling_hanging_signs.json
 3e42bdfe9f933e61387fbc884bcebd587aa9691c data/minecraft/tags/blocks/climbable.json
 21725c6c03c5b6dfb49d3424ee057a84716b5322 data/minecraft/tags/blocks/crops.json
@@ -8,7 +8,7 @@
 cb4ae3daa41f0b67cde9ca1f6442e1b17411e31c data/minecraft/tags/blocks/leaves.json
 8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/blocks/logs_that_burn.json
 21725c6c03c5b6dfb49d3424ee057a84716b5322 data/minecraft/tags/blocks/maintains_farmland.json
-5f7895e714b66abe6ef9ea22c27eedb882dc932f data/minecraft/tags/blocks/mineable/axe.json
+7274274363c16153d5bb2e6ef0f095e015ed831e data/minecraft/tags/blocks/mineable/axe.json
 6a91d4a880c73178b130c0b866f2bf2d2a2c2048 data/minecraft/tags/blocks/mineable/hoe.json
 3e42bdfe9f933e61387fbc884bcebd587aa9691c data/minecraft/tags/blocks/moss_replaceable.json
 31dbb2f2f136298e59f2bb57a398fc358867fd43 data/minecraft/tags/blocks/overworld_natural_logs.json

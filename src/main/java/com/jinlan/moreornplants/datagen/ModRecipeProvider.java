@@ -755,7 +755,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.STICK, 6)
                 .requires(ModBlocks.CRAPE_MYRTLE_LOG.get())
                 .group("sticks")
-                .group("sticks")
                 .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_LOG.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "stick_from_crape_myrtle_log"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.STICK, 6)
@@ -794,6 +793,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("I I")
                 .unlockedBy("has_bamboo", has(ModItems.BLACK_BAMBOO.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "scaffolding_from_black_bamboo_item"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLDEN_CRABAPPLE.get())
+                .define('#', Items.GOLD_INGOT)
+                .define('X', ModItems.CRABAPPLE.get())
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .unlockedBy(getHasName(ModItems.CRABAPPLE.get()), has(ModItems.CRABAPPLE.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get())
+                .define('#', Items.GOLD_BLOCK)
+                .define('X', ModItems.CRABAPPLE.get())
+                .pattern("###")
+                .pattern("#X#")
+                .pattern("###")
+                .unlockedBy(getHasName(ModItems.CRABAPPLE.get()), has(ModItems.CRABAPPLE.get()))
+                .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), 1)
                 .requires(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get())

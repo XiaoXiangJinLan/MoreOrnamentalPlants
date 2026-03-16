@@ -400,6 +400,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.LOTUS_SEED_POD);
         simpleItem(ModItems.LOTUS_ROOT_SOUP);
         simpleItem(ModItems.LOTUS_SEED_SOUP);
+        simpleItem(ModItems.CRABAPPLE);
+        goldenCrabapple(ModItems.GOLDEN_CRABAPPLE);
+        goldenCrabapple(ModItems.ENCHANTED_GOLDEN_CRABAPPLE);
 
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
         simplerBlockItem(ModBlocks.FRAGRANT_SNOW_PETALS);
@@ -438,6 +441,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(MoreOrnPlants.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    private void goldenCrabapple(RegistryObject<Item> item) {
+        withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(MoreOrnPlants.MOD_ID + ":" + "item/golden_crabapple"));
     }
 
     private ItemModelBuilder swordItem(RegistryObject<Item> item) {

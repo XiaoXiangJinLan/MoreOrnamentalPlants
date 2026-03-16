@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-14T03:52:27.4679011	Tags for minecraft:item mod id more_orn_plants
+// 1.20.1	2026-03-16T22:02:11.8272723	Tags for minecraft:item mod id more_orn_plants
 6fe37a5db97b91f51a0addf9825c60414ee735aa data/forge/tags/items/apricot_leaves.json
 e3bbc6d486cc0792bdcdf6bb2c0da508939151ca data/forge/tags/items/apricot_sapling.json
 3f91e650affbf0dd3681d56a151de1d2b3bb5e35 data/forge/tags/items/azalea.json
@@ -10,6 +10,8 @@ e3a61179003210d9da1ef7d6617576e7e4274a85 data/forge/tags/items/chinese_rose.json
 e0d5185cf60a7ff236f9d4fa2894180654bd2b77 data/forge/tags/items/crabapple_sapling.json
 6daa7c474c4680efdd0c520cf23a4a6d980073c0 data/forge/tags/items/crape_myrtle.json
 edc1aae18a35311be8df5db2dfb84cc1dba6303c data/forge/tags/items/cymbidium.json
+b04fe29a943908f7a77eb5b251e8eaadfe09aa9e data/forge/tags/items/fruits.json
+e7384908f2d2a0ded8522f2fa546c4f99c848eb3 data/forge/tags/items/fruits/crabapple.json
 37ea26f5e9711dd112ef5bce6ee738d233ba5734 data/forge/tags/items/ginkgo_sapling.json
 8d86a028bae7eeb0c300ebc49c829a6134f97e28 data/forge/tags/items/herbaceous_peony.json
 b34a0407dfa9e2f67cb523a9de35c1d07869f946 data/forge/tags/items/lotus.json

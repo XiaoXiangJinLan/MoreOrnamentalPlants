@@ -24,10 +24,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.MOTTLED_BAMBOO.get())
                 .add(ModBlocks.BLACK_BAMBOO.get())
-                .add(ModBlocks.FOUNTAIN_GRASS.get())
-                .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.PINK_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
+                .add(ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.RED_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.WHITE_WEEPING_MEI.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.GREEN_WEEPING_MEI.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.PINK_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
+                .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.FOUNTAIN_GRASS.get(), ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.PINK_FOUNTAIN_GRASS.get(), ModBlocks.WHITE_FOUNTAIN_GRASS.get())
+                .add(ModBlocks.CRABAPPLE.get(), ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.CROPS)
                 .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get())

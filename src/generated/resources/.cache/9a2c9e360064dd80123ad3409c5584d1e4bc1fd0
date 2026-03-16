@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-14T03:52:27.4719004	Item Models: more_orn_plants
+// 1.20.1	2026-03-16T22:02:11.8307988	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -68,6 +68,7 @@ fb6882d77168d8063ae3a84bf55e345503f71fd6 assets/more_orn_plants/models/item/chin
 2b401a60442d22eb3c447931213f10925f96343a assets/more_orn_plants/models/item/chrysanthemum.json
 bdeaa6a948e66d0595c89f62d6bb4e900361cfc7 assets/more_orn_plants/models/item/colorful_peony.json
 e3bd6cfa1ed443388595764dca7374b6eba2183b assets/more_orn_plants/models/item/cotton_rose.json
+1ae51c8e7f537555f78598f13341e6a86a4dfe26 assets/more_orn_plants/models/item/crabapple.json
 5948c30d7f5d11c41f942a501b3256d09e307bed assets/more_orn_plants/models/item/crabapple_boat.json
 45f10cf905f939d1e70f98d9b6a048d4812ac489 assets/more_orn_plants/models/item/crabapple_button.json
 4e44a25e3e1d92988cb8ba4beb025b6902e00c35 assets/more_orn_plants/models/item/crabapple_chest_boat.json
@@ -149,6 +150,7 @@ f274e04ebe2463270bf6817c8d61e29ebb9f61c6 assets/more_orn_plants/models/item/dove
 ad50b3996efaf3aa9dc19f99ea15ca5df33d816f assets/more_orn_plants/models/item/dove_tree_slab.json
 287a5be227c53a2381208cf8f53d657d5b6242a6 assets/more_orn_plants/models/item/dove_tree_stairs.json
 1672a3bf062d7322637f0e060ddef572dce08b2a assets/more_orn_plants/models/item/dove_tree_trapdoor.json
+047dcf80e766679701a7e764c2c7c84bdbf1aafa assets/more_orn_plants/models/item/enchanted_golden_crabapple.json
 d87d96fd4265a86a4eac5cbf16df0bd1dc61382f assets/more_orn_plants/models/item/flowering_purple_leaf_plum_sapling.json
 edc7c15ea6b635693fd355ae42190ed163a9620b assets/more_orn_plants/models/item/fountain_grass.json
 97420e7f929e2c2515aaaff7c54685696a3501c2 assets/more_orn_plants/models/item/fragrant_snow_petals.json
@@ -166,6 +168,7 @@ b7374e897b1b6e42e81b99b95cadd3c1ec491da2 assets/more_orn_plants/models/item/gink
 101a28a76f4cf435b1d3508dddd50ccf40907d4e assets/more_orn_plants/models/item/ginkgo_stairs.json
 c401e05189a4917b6bd9fcf4ee2da40fbbb6a0ec assets/more_orn_plants/models/item/ginkgo_trapdoor.json
 ce60a61adb982801f2c06f667f60bd230e8509d1 assets/more_orn_plants/models/item/golden_chrysanthemum.json
+047dcf80e766679701a7e764c2c7c84bdbf1aafa assets/more_orn_plants/models/item/golden_crabapple.json
 41209bdc92ae6cc5ab31d65a02df3680d61b9852 assets/more_orn_plants/models/item/golden_ginkgo_sapling.json
 614945bb406d06cc8958feee490828925e7bbe14 assets/more_orn_plants/models/item/golden_osmanthus_sapling.json
 bd2c08563b896e3a561bbd14fb43894fca98873a assets/more_orn_plants/models/item/golden_peony.json

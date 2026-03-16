@@ -309,8 +309,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.VERSICOLOR_MEI_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.PINK_APRICOT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.WEEPING_CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -620,6 +618,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_WHITE_CRAPE_MYRTLE_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get()));
 
+        this.add(ModBlocks.CRABAPPLE.get(), block -> LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.CRABAPPLE.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))))));
         this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),
                 createPotFlowerItemTable(ModBlocks.CHRYSANTHEMUM.get()));
