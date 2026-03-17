@@ -24,6 +24,8 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.common.ForgeHooks;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterloggedBlock, BonemealableBlock {
@@ -39,7 +41,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(WATERLOGGED, AGE);
     }
@@ -96,7 +98,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
+    public void setPlacedBy(Level level, BlockPos pos, BlockState state, @NotNull LivingEntity placer, @NotNull ItemStack stack) {
         // 放置上半部分（强制不含水）
         BlockPos abovePos = pos.above();
         BlockState aboveState = this.defaultBlockState()
@@ -107,14 +109,16 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-        int age = state.getValue(AGE);
-        if (age < 3) {
-            float growthSpeed = getGrowthSpeed(level, pos);
-            if (net.minecraftforge.common.ForgeHooks.onCropsGrowPre(level, pos, state, random.nextInt((int)(25.0F / growthSpeed) + 1) == 0)) {
-                int newAge = age + 1;
-                growPlant(level, pos, state, newAge);
-                net.minecraftforge.common.ForgeHooks.onCropsGrowPost(level, pos, state);
+    public void randomTick(@NotNull BlockState state, ServerLevel pLevel, @NotNull BlockPos pPos, @NotNull RandomSource random) {
+        if (pLevel.isAreaLoaded(pPos, 1)) {
+            int age = state.getValue(AGE);
+            if (age < 3) {
+                float growthSpeed = getGrowthSpeed(pLevel, pPos);
+                if (ForgeHooks.onCropsGrowPre(pLevel, pPos, state, random.nextInt((int)(25.0F / growthSpeed) + 1) == 0)) {
+                    int newAge = age + 1;
+                    growPlant(pLevel, pPos, state, newAge);
+                    ForgeHooks.onCropsGrowPost(pLevel, pPos, state);
+                }
             }
         }
     }
@@ -187,8 +191,8 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState,
-                                  LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+    public @NotNull BlockState updateShape(BlockState state, Direction direction, BlockState neighborState,
+                                           LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
         // 处理含水逻辑
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
