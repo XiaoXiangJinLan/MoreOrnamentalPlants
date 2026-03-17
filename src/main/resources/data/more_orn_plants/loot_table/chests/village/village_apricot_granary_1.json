@@ -33,8 +33,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:potato",
-          "weight": 1
+          "name": "minecraft:potato"
         },
         {
           "type": "minecraft:item",
@@ -65,8 +64,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:carrot",
-          "weight": 1
+          "name": "minecraft:carrot"
         }
       ],
       "rolls": {
