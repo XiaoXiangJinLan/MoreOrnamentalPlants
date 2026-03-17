@@ -1,0 +1,43 @@
+{
+  "values": {
+    "more_orn_plants:golden_miscanthus": {
+      "burn_time": 600
+    },
+    "more_orn_plants:ornamental_peach_petals": {
+      "burn_time": 100
+    },
+    "more_orn_plants:wild_peach_petals": {
+      "burn_time": 100
+    },
+    "more_orn_plants:chinese_parasol_leaf_0": {
+      "burn_time": 120
+    },
+    "more_orn_plants:chinese_parasol_leaf_1": {
+      "burn_time": 120
+    },
+    "more_orn_plants:sweetgum_leaf_0": {
+      "burn_time": 100
+    },
+    "more_orn_plants:sweetgum_leaf_1": {
+      "burn_time": 100
+    },
+    "more_orn_plants:ginkgo_leaf": {
+      "burn_time": 100
+    },
+    "more_orn_plants:bamboo_stick": {
+      "burn_time": 200
+    },
+    "more_orn_plants:mottled_bamboo": {
+      "burn_time": 50
+    },
+    "more_orn_plants:black_bamboo": {
+      "burn_time": 50
+    },
+    "more_orn_plants:peach_wooden_sword": {
+      "burn_time": 200
+    },
+    "more_orn_plants:camphor_wooden_sword": {
+      "burn_time": 200
+    }
+  }
+}

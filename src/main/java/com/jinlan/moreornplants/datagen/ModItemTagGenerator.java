@@ -227,7 +227,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(CommonTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.FOUNTAIN_GRASS.asItem(), ModBlocks.PURPLE_FOUNTAIN_GRASS.asItem(), ModBlocks.PINK_FOUNTAIN_GRASS.asItem(), ModBlocks.WHITE_FOUNTAIN_GRASS.asItem())
-                .add(ModBlocks.MISCANTHUS.asItem(), ModItems.GOLDEN_MISCANTHUS.get());
+                .add(ModBlocks.MISCANTHUS.asItem(), ModBlocks.GOLDEN_MISCANTHUS.asItem());
 
         this.tag(ModTags.Items.RED_DYE)
                 .add(ModBlocks.LUOYANG_RED_PEONY.asItem())
@@ -271,7 +271,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.YELLOW_PEONY.asItem(), ModBlocks.LIGHT_YELLOW_PEONY.asItem(), ModBlocks.OCHRE_YELLOW_PEONY.asItem(), ModBlocks.GOLDEN_PEONY.asItem())
                 .add(ModBlocks.CHINESE_AZALEA.asItem())
                 .add(ModBlocks.YELLOW_CHINESE_ROSE.asItem())
-                .add(ModItems.GOLDEN_MISCANTHUS.get())
+                .add(ModBlocks.GOLDEN_MISCANTHUS.asItem())
                 .add(ModItems.CHINESE_PARASOL_LEAF_0.get())
                 .add(ModItems.GINKGO_LEAF.get());
 

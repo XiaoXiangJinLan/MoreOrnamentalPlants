@@ -79,7 +79,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_DESERT_POPLAR_SAPLING.get())
                 .add(ModBlocks.POTTED_CRAPE_MYRTLE_SAPLING.get(), ModBlocks.POTTED_RED_CRAPE_MYRTLE_SAPLING.get())
                 .add(ModBlocks.POTTED_PINK_CRAPE_MYRTLE_SAPLING.get(), ModBlocks.POTTED_WHITE_CRAPE_MYRTLE_SAPLING.get())
-                .add(ModBlocks.POTTED_CHRYSANTHEMUM.get(), ModBlocks.POTTED_GOLDEN_CHRYSANTHEMUM.get(), ModBlocks.POTTED_GOLD_BACKED_SCARLET_MUM.get())
+                .add(ModBlocks.POTTED_CHRYSANTHEMUM.get(), ModBlocks.POTTED_XIHU_LIUYUE.get(), ModBlocks.POTTED_GOLD_BACKED_SCARLET_MUM.get())
                 .add(ModBlocks.POTTED_WHITE_CHRYSANTHEMUM.get(), ModBlocks.POTTED_GREEN_CHRYSANTHEMUM.get())
                 .add(ModBlocks.POTTED_PURPLE_CHRYSANTHEMUM.get(), ModBlocks.POTTED_VIOLET_PINK_CHRYSANTHEMUM.get())
                 .add(ModBlocks.POTTED_PINK_CHRYSANTHEMUM.get(), ModBlocks.POTTED_LIGHT_PINK_CHRYSANTHEMUM.get())
@@ -735,7 +735,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), ModBlocks.BAOHUA_CHINESE_ROSE.get());
 
         this.tag(CommonTags.Blocks.CHRYSANTHEMUM)
-                .add(ModBlocks.CHRYSANTHEMUM.get(), ModBlocks.GOLDEN_CHRYSANTHEMUM.get(), ModBlocks.GOLD_BACKED_SCARLET_MUM.get())
+                .add(ModBlocks.CHRYSANTHEMUM.get(), ModBlocks.XIHU_LIUYUE.get(), ModBlocks.GOLD_BACKED_SCARLET_MUM.get())
                 .add(ModBlocks.WHITE_CHRYSANTHEMUM.get(), ModBlocks.GREEN_CHRYSANTHEMUM.get(), ModBlocks.PURPLE_CHRYSANTHEMUM.get())
                 .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get(), ModBlocks.PINK_CHRYSANTHEMUM.get(), ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get());
 

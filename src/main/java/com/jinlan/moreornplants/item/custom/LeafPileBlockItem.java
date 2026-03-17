@@ -4,6 +4,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.ClipContext;
@@ -13,9 +14,9 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import org.jetbrains.annotations.NotNull;
 
-public class LeafPileBlockItem extends BurnBlockItem {
-    public LeafPileBlockItem(Block block, Properties properties, int burnTime) {
-        super(block, properties, burnTime);
+public class LeafPileBlockItem extends BlockItem {
+    public LeafPileBlockItem(Block block, Properties properties) {
+        super(block, properties);
     }
 
     @Override
@@ -39,7 +40,7 @@ public class LeafPileBlockItem extends BurnBlockItem {
     }
 
     @Override
-    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, @NotNull Player player, @NotNull InteractionHand hand) {
         // 获取玩家视线击中的方块（只检测水源方块）
         BlockHitResult hitResult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.SOURCE_ONLY);
 

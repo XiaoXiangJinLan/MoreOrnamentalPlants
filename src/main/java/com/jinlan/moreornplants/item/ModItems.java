@@ -158,35 +158,32 @@ public class ModItems {
     public static final DeferredItem<Item> CRAPE_MYRTLE_WOOD =
             ITEMS.register("crape_myrtle_wood", () -> new CrapeMyrtleLogBlockItem(ModBlocks.CRAPE_MYRTLE_WOOD.get(), new Item.Properties()));
 
-    public static final DeferredItem<Item> GOLDEN_MISCANTHUS =
-            ITEMS.register("golden_miscanthus", () -> new BurnBlockItem(ModBlocks.GOLDEN_MISCANTHUS.get(), new Item.Properties(), 600));
-
     public static final DeferredItem<Item> ORNAMENTAL_PEACH_PETALS =
-            ITEMS.register("ornamental_peach_petals", () -> new LeafPileBlockItem(ModBlocks.ORNAMENTAL_PEACH_PETALS.get(), new Item.Properties(), 100));
+            ITEMS.register("ornamental_peach_petals", () -> new LeafPileBlockItem(ModBlocks.ORNAMENTAL_PEACH_PETALS.get(), new Item.Properties()));
     public static final DeferredItem<Item> WILD_PEACH_PETALS =
-            ITEMS.register("wild_peach_petals", () -> new LeafPileBlockItem(ModBlocks.WILD_PEACH_PETALS.get(), new Item.Properties(), 100));
+            ITEMS.register("wild_peach_petals", () -> new LeafPileBlockItem(ModBlocks.WILD_PEACH_PETALS.get(), new Item.Properties()));
     public static final DeferredItem<Item> CHINESE_PARASOL_LEAF_0 =
-            ITEMS.register("chinese_parasol_leaf_0", () -> new LeafPileUseItemNameBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_0.get(), new Item.Properties(), 120));
+            ITEMS.register("chinese_parasol_leaf_0", () -> new LeafPileUseItemNameBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_0.get(), new Item.Properties()));
     public static final DeferredItem<Item> CHINESE_PARASOL_LEAF_1 =
-            ITEMS.register("chinese_parasol_leaf_1", () -> new LeafPileUseItemNameBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_1.get(), new Item.Properties(), 120));
+            ITEMS.register("chinese_parasol_leaf_1", () -> new LeafPileUseItemNameBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_1.get(), new Item.Properties()));
     public static final DeferredItem<Item> SWEETGUM_LEAF_0 =
-            ITEMS.register("sweetgum_leaf_0", () -> new LeafPileUseItemNameBlockItem(ModBlocks.SWEETGUM_LEAF_PILE_0.get(), new Item.Properties(), 100));
+            ITEMS.register("sweetgum_leaf_0", () -> new LeafPileUseItemNameBlockItem(ModBlocks.SWEETGUM_LEAF_PILE_0.get(), new Item.Properties()));
     public static final DeferredItem<Item> SWEETGUM_LEAF_1 =
-            ITEMS.register("sweetgum_leaf_1", () -> new LeafPileUseItemNameBlockItem(ModBlocks.SWEETGUM_LEAF_PILE_1.get(), new Item.Properties(), 100));
+            ITEMS.register("sweetgum_leaf_1", () -> new LeafPileUseItemNameBlockItem(ModBlocks.SWEETGUM_LEAF_PILE_1.get(), new Item.Properties()));
     public static final DeferredItem<Item> GINKGO_LEAF =
-            ITEMS.register("ginkgo_leaf", () -> new LeafPileUseItemNameBlockItem(ModBlocks.GINKGO_LEAF_PILE.get(), new Item.Properties(), 100));
+            ITEMS.register("ginkgo_leaf", () -> new LeafPileUseItemNameBlockItem(ModBlocks.GINKGO_LEAF_PILE.get(), new Item.Properties()));
 
     public static final DeferredItem<Item> BAMBOO_STICK =
-            ITEMS.register("bamboo_stick", () -> new BambooStickItem(ModBlocks.BAMBOO_STICK.get(), new Item.Properties(), 200));
+            ITEMS.register("bamboo_stick", () -> new BambooStickItem(ModBlocks.BAMBOO_STICK.get(), new Item.Properties()));
     public static final DeferredItem<Item> PEACH_WOODEN_SWORD =
             ITEMS.register("peach_wooden_sword", () -> new PeachWoodenSwordItem(Tiers.WOOD, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.WOOD, 3, -2.4F))));
     public static final DeferredItem<Item> CAMPHOR_WOODEN_SWORD =
             ITEMS.register("camphor_wooden_sword", () -> new CamphorWoodenSwordItem(Tiers.WOOD, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.WOOD, 3, -2.4F))));
 
     public static final DeferredItem<Item> MOTTLED_BAMBOO =
-            ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties(), 50));
+            ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties()));
     public static final DeferredItem<Item> BLACK_BAMBOO =
-            ITEMS.register("black_bamboo", () -> new modBambooBlockItem(ModBlocks.BLACK_BAMBOO.get(), new Item.Properties(), 50));
+            ITEMS.register("black_bamboo", () -> new modBambooBlockItem(ModBlocks.BLACK_BAMBOO.get(), new Item.Properties()));
     public static final DeferredItem<Item> PEELED_BAMBOO_SHOOTS =
             ITEMS.register("peeled_bamboo_shoots", () -> new Item(new Item.Properties().food(ModFoods.PEELED_BAMBOO_SHOOTS)));
     public static final DeferredItem<Item> BAMBOO_SHOOTS_SOUP =

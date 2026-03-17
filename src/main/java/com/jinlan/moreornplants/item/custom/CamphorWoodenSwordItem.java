@@ -5,7 +5,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.crafting.RecipeType;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
@@ -21,10 +20,5 @@ public class CamphorWoodenSwordItem extends SwordItem {
         if (pContext != null) {
             super.appendHoverText(pStack, pContext, pTooltipComponents, pIsAdvanced);
         }
-    }
-
-    @Override
-    public int getBurnTime(@NotNull ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-        return 200;
     }
 }

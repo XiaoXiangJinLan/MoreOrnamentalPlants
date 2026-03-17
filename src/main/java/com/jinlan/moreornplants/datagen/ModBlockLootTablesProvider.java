@@ -8,7 +8,6 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
@@ -618,9 +617,9 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),
                 createPotFlowerItemTable(ModBlocks.CHRYSANTHEMUM.get()));
-        this.dropSelf(ModBlocks.GOLDEN_CHRYSANTHEMUM.get());
-        this.add(ModBlocks.POTTED_GOLDEN_CHRYSANTHEMUM.get(),
-                createPotFlowerItemTable(ModBlocks.GOLDEN_CHRYSANTHEMUM.get()));
+        this.dropSelf(ModBlocks.XIHU_LIUYUE.get());
+        this.add(ModBlocks.POTTED_XIHU_LIUYUE.get(),
+                createPotFlowerItemTable(ModBlocks.XIHU_LIUYUE.get()));
         this.dropSelf(ModBlocks.GOLD_BACKED_SCARLET_MUM.get());
         this.add(ModBlocks.POTTED_GOLD_BACKED_SCARLET_MUM.get(),
                 createPotFlowerItemTable(ModBlocks.GOLD_BACKED_SCARLET_MUM.get()));

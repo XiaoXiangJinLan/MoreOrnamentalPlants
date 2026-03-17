@@ -901,8 +901,8 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> CHRYSANTHEMUM =
             registerBlock("chrysanthemum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
-    public static final DeferredBlock<Block> GOLDEN_CHRYSANTHEMUM =
-            registerBlock("golden_chrysanthemum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> XIHU_LIUYUE =
+            registerBlock("xihu_liuyue", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> GOLD_BACKED_SCARLET_MUM =
             registerBlock("gold_backed_scarlet_mum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WHITE_CHRYSANTHEMUM =
@@ -1018,8 +1018,8 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> POTTED_CHRYSANTHEMUM =
             BLOCKS.register("potted_chrysanthemum", () -> flowerPot(CHRYSANTHEMUM.get()));
-    public static final DeferredBlock<Block> POTTED_GOLDEN_CHRYSANTHEMUM =
-            BLOCKS.register("potted_golden_chrysanthemum", () -> flowerPot(GOLDEN_CHRYSANTHEMUM.get()));
+    public static final DeferredBlock<Block> POTTED_XIHU_LIUYUE =
+            BLOCKS.register("potted_xihu_liuyue", () -> flowerPot(XIHU_LIUYUE.get()));
     public static final DeferredBlock<Block> POTTED_GOLD_BACKED_SCARLET_MUM =
             BLOCKS.register("potted_gold_backed_scarlet_mum", () -> flowerPot(GOLD_BACKED_SCARLET_MUM.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_CHRYSANTHEMUM =
@@ -1184,7 +1184,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MISCANTHUS =
             registerBlock("miscanthus", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> GOLDEN_MISCANTHUS =
-            BLOCKS.register("golden_miscanthus", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("golden_miscanthus", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> POTTED_WINTER_CYMBIDIUM =
             BLOCKS.register("potted_winter_cymbidium", () -> flowerPot(WINTER_CYMBIDIUM.get()));

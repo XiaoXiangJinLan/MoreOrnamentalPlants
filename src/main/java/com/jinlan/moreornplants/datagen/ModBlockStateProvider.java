@@ -563,9 +563,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_CHRYSANTHEMUM.get(), models().singleTexture("potted_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CHRYSANTHEMUM.get())).renderType("cutout"));
-        flowerBlock(ModBlocks.GOLDEN_CHRYSANTHEMUM);
-        simpleBlock(ModBlocks.POTTED_GOLDEN_CHRYSANTHEMUM.get(), models().singleTexture("potted_golden_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.GOLDEN_CHRYSANTHEMUM.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.XIHU_LIUYUE);
+        simpleBlock(ModBlocks.POTTED_XIHU_LIUYUE.get(), models().singleTexture("potted_xihu_liuyue", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.XIHU_LIUYUE.get())).renderType("cutout"));
         flowerBlock(ModBlocks.GOLD_BACKED_SCARLET_MUM);
         simpleBlock(ModBlocks.POTTED_GOLD_BACKED_SCARLET_MUM.get(), models().singleTexture("potted_gold_backed_scarlet_mum", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.GOLD_BACKED_SCARLET_MUM.get())).renderType("cutout"));

@@ -7,8 +7,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Objects;
 
 public class LeafPileUseItemNameBlockItem extends LeafPileBlockItem {
-    public LeafPileUseItemNameBlockItem(Block block, Properties properties, int burnTime) {
-        super(block, properties, burnTime);
+    public LeafPileUseItemNameBlockItem(Block block, Properties properties) {
+        super(block, properties);
     }
 
     @Override
