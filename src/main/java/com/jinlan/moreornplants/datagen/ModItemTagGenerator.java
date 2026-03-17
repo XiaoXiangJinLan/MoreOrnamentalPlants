@@ -272,7 +272,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ForgeTags.Items.CHRYSANTHEMUM)
                 .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GOLDEN_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.XIHU_LIUYUE.get().asItem())
                 .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem())
                 .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
@@ -369,7 +369,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SWEETGUM_LEAF_1.get());
 
         this.tag(ModTags.Items.PINK_DYE)
-                .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem(), ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.ZHAO_PINK_PEONY.get().asItem())
                 .add(ModBlocks.PEONY.get().asItem())
                 .add(ModBlocks.LIGHT_PINK_PEONY.get().asItem())
@@ -402,7 +402,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.YELLOW_DYE)
                 .add(ModBlocks.YAO_HUANG_PEONY.get().asItem())
                 .add(ModBlocks.WINTERSWEET.get().asItem())
-                .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.CHRYSANTHEMUM.get().asItem(), ModBlocks.XIHU_LIUYUE.get().asItem())
                 .add(ModBlocks.YELLOW_PEONY.get().asItem(), ModBlocks.LIGHT_YELLOW_PEONY.get().asItem())
                 .add(ModBlocks.OCHRE_YELLOW_PEONY.get().asItem(), ModBlocks.GOLDEN_PEONY.get().asItem())
                 .add(ModBlocks.CHINESE_AZALEA.get().asItem())
@@ -425,6 +425,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get().asItem());
 
         this.tag(ModTags.Items.MAGENTA_DYE)
+                .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.CHARMING_RHODODENDRON.get().asItem())
                 .add(ModBlocks.RED_CRAPE_MYRTLE.get().asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get().asItem());
 

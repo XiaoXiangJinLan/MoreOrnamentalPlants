@@ -902,8 +902,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CHRYSANTHEMUM =
             registerBlock("chrysanthemum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
-    public static final RegistryObject<Block> GOLDEN_CHRYSANTHEMUM =
-            registerBlock("golden_chrysanthemum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> XIHU_LIUYUE =
+            registerBlock("xihu_liuyue", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GOLD_BACKED_SCARLET_MUM =
             registerBlock("gold_backed_scarlet_mum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WHITE_CHRYSANTHEMUM =
@@ -1019,8 +1019,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> POTTED_CHRYSANTHEMUM =
             BLOCKS.register("potted_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
-    public static final RegistryObject<Block> POTTED_GOLDEN_CHRYSANTHEMUM =
-            BLOCKS.register("potted_golden_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLDEN_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> POTTED_XIHU_LIUYUE =
+            BLOCKS.register("potted_xihu_liuyue", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.XIHU_LIUYUE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> POTTED_GOLD_BACKED_SCARLET_MUM =
             BLOCKS.register("potted_gold_backed_scarlet_mum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLD_BACKED_SCARLET_MUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> POTTED_WHITE_CHRYSANTHEMUM =

@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-16T22:02:11.8307988	Item Models: more_orn_plants
+// 1.20.1	2026-03-17T12:51:56.4446488	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -167,7 +167,6 @@ ee68dbddc03d1654530502d92310448e0dc4d990 assets/more_orn_plants/models/item/gink
 b7374e897b1b6e42e81b99b95cadd3c1ec491da2 assets/more_orn_plants/models/item/ginkgo_slab.json
 101a28a76f4cf435b1d3508dddd50ccf40907d4e assets/more_orn_plants/models/item/ginkgo_stairs.json
 c401e05189a4917b6bd9fcf4ee2da40fbbb6a0ec assets/more_orn_plants/models/item/ginkgo_trapdoor.json
-ce60a61adb982801f2c06f667f60bd230e8509d1 assets/more_orn_plants/models/item/golden_chrysanthemum.json
 047dcf80e766679701a7e764c2c7c84bdbf1aafa assets/more_orn_plants/models/item/golden_crabapple.json
 41209bdc92ae6cc5ab31d65a02df3680d61b9852 assets/more_orn_plants/models/item/golden_ginkgo_sapling.json
 614945bb406d06cc8958feee490828925e7bbe14 assets/more_orn_plants/models/item/golden_osmanthus_sapling.json
@@ -384,6 +383,7 @@ c5d19e9c134d278afe22e9c4ee9f7c6e0c93b63d assets/more_orn_plants/models/item/wild
 8023218d9ad7226e037c98913d3dbcca0e3b2dde assets/more_orn_plants/models/item/wintersweet_xiangnang.json
 5f89a57e3616d243ec9d5512334c51d00b83de75 assets/more_orn_plants/models/item/winter_cymbidium.json
 e90f12127d5fbc502235009fb971878dc06ca506 assets/more_orn_plants/models/item/wu_hua_long_yu_peony.json
+11f9783f4bf36c8994f465e0e0dc0343e633d081 assets/more_orn_plants/models/item/xihu_liuyue.json
 286aaa5fd10d517b9d425630961a2d1adc88f7da assets/more_orn_plants/models/item/yao_huang_peony.json
 2ec48cf217b82eb7543fa19d9e0abc6c96c3988a assets/more_orn_plants/models/item/yellow_chinese_parasol_sapling.json
 d1560c95807c24bf19081c54e84d6688a0c8d992 assets/more_orn_plants/models/item/yellow_chinese_rose.json

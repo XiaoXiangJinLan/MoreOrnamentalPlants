@@ -862,20 +862,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLD_BACKED_SCARLET_MUM.get(), 2)
-                .requires(ModBlocks.GOLDEN_CHRYSANTHEMUM.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.GOLDEN_CHRYSANTHEMUM.get()), has(ModBlocks.GOLDEN_CHRYSANTHEMUM.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GREEN_CHRYSANTHEMUM.get(), 2)
-                .requires(ModBlocks.WHITE_CHRYSANTHEMUM.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.WHITE_CHRYSANTHEMUM.get()), has(ModBlocks.WHITE_CHRYSANTHEMUM.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get(), 2)
-                .requires(ModBlocks.PURPLE_CHRYSANTHEMUM.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.PURPLE_CHRYSANTHEMUM.get()), has(ModBlocks.PURPLE_CHRYSANTHEMUM.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get(), 2)
-                .requires(ModBlocks.PINK_CHRYSANTHEMUM.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.PINK_CHRYSANTHEMUM.get()), has(ModBlocks.PINK_CHRYSANTHEMUM.get()))
+                .requires(ModBlocks.CHRYSANTHEMUM.get())
+                .requires(ModBlocks.XIHU_LIUYUE.get())
+                .unlockedBy(getHasName(ModBlocks.CHRYSANTHEMUM.get()), has(ModBlocks.CHRYSANTHEMUM.get()))
+                .unlockedBy(getHasName(ModBlocks.XIHU_LIUYUE.get()), has(ModBlocks.XIHU_LIUYUE.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.RED_PINK_CHINESE_ROSE.get(), 2)
@@ -940,22 +930,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.YELLOW_PEONY.get()), has(ModBlocks.YELLOW_PEONY.get()))
                 .unlockedBy(getHasName(ModBlocks.LIGHT_YELLOW_PEONY.get()), has(ModBlocks.LIGHT_YELLOW_PEONY.get()))
                 .unlockedBy(getHasName(ModBlocks.OCHRE_YELLOW_PEONY.get()), has(ModBlocks.OCHRE_YELLOW_PEONY.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.INK_PEONY.get(), 2)
-                .requires(ModBlocks.INK_RED_PEONY.get())
-                .requires(ModBlocks.INK_PURPLE_PEONY.get())
-                .unlockedBy(getHasName(ModBlocks.INK_RED_PEONY.get()), has(ModBlocks.INK_RED_PEONY.get()))
-                .unlockedBy(getHasName(ModBlocks.INK_PURPLE_PEONY.get()), has(ModBlocks.INK_PURPLE_PEONY.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.BLUE_PEONY.get(), 2)
-                .requires(ModBlocks.PURPLE_PEONY.get())
-                .requires(ModBlocks.LIGHT_PURPLE_PEONY.get())
-                .unlockedBy(getHasName(ModBlocks.PURPLE_PEONY.get()), has(ModBlocks.PURPLE_PEONY.get()))
-                .unlockedBy(getHasName(ModBlocks.LIGHT_PURPLE_PEONY.get()), has(ModBlocks.LIGHT_PURPLE_PEONY.get()))
-                .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GREEN_PEONY.get(), 2)
-                .requires(ModBlocks.WHITE_PEONY.get(), 2)
-                .unlockedBy(getHasName(ModBlocks.WHITE_PEONY.get()), has(ModBlocks.WHITE_PEONY.get()))
                 .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.COLORFUL_PEONY.get(), 4)
                 .requires(ModBlocks.PEONY.get())

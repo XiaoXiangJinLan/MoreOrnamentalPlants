@@ -102,7 +102,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SUMMER_CYMBIDIUM.get());
                         pOutput.accept(ModBlocks.AUTUMN_CYMBIDIUM.get());
                         pOutput.accept(ModBlocks.CHRYSANTHEMUM.get());
-                        pOutput.accept(ModBlocks.GOLDEN_CHRYSANTHEMUM.get());
+                        pOutput.accept(ModBlocks.XIHU_LIUYUE.get());
                         pOutput.accept(ModBlocks.GOLD_BACKED_SCARLET_MUM.get());
                         pOutput.accept(ModBlocks.WHITE_CHRYSANTHEMUM.get());
                         pOutput.accept(ModBlocks.GREEN_CHRYSANTHEMUM.get());

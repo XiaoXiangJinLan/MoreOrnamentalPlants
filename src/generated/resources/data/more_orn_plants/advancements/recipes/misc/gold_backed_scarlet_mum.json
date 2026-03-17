@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_golden_chrysanthemum": {
+    "has_chrysanthemum": {
       "conditions": {
         "items": [
           {
             "items": [
-              "more_orn_plants:golden_chrysanthemum"
+              "more_orn_plants:chrysanthemum"
             ]
           }
         ]
@@ -18,11 +18,24 @@
         "recipe": "more_orn_plants:gold_backed_scarlet_mum"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_xihu_liuyue": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:xihu_liuyue"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_golden_chrysanthemum",
+      "has_chrysanthemum",
+      "has_xihu_liuyue",
       "has_the_recipe"
     ]
   ],

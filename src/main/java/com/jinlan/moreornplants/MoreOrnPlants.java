@@ -181,7 +181,7 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CHINESE_WISTERIA.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CHRYSANTHEMUM.get().asItem(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(ModBlocks.GOLDEN_CHRYSANTHEMUM.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.XIHU_LIUYUE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem(), 0.65F);
@@ -252,6 +252,9 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_WHITE_CHINESE_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CRAPE_MYRTLE.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_CRAPE_MYRTLE.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_CRAPE_MYRTLE.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_CRAPE_MYRTLE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.COTTON_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.LOTUS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_LOTUS.get().asItem(), 0.65F);
@@ -261,6 +264,7 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_FOUNTAIN_GRASS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_FOUNTAIN_GRASS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.LOTUS_LEAF.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.CRABAPPLE.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.LOTUS_ROOT.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.PEELED_BAMBOO_SHOOTS.get(), 0.65F);
 

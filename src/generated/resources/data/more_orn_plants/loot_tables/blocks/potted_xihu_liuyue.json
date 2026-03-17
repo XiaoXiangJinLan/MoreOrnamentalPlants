@@ -26,11 +26,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:golden_chrysanthemum"
+          "name": "more_orn_plants:xihu_liuyue"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "more_orn_plants:blocks/potted_golden_chrysanthemum"
+  "random_sequence": "more_orn_plants:blocks/potted_xihu_liuyue"
 }
