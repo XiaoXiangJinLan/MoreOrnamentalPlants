@@ -89,8 +89,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:peach_wooden_sword",
-          "weight": 1
+          "name": "more_orn_plants:peach_wooden_sword"
         },
         {
           "type": "minecraft:item",

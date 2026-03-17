@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:golden_carrot",
+          "name": "more_orn_plants:golden_crabapple",
           "weight": 6
         },
         {
@@ -81,8 +81,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "more_orn_plants:peeled_bamboo_shoots",
-          "weight": 1
+          "name": "more_orn_plants:peeled_bamboo_shoots"
         },
         {
           "type": "minecraft:item",
@@ -97,8 +96,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "more_orn_plants:lotus_root",
-          "weight": 1
+          "name": "more_orn_plants:lotus_root"
         },
         {
           "type": "minecraft:item",
@@ -113,18 +111,20 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "more_orn_plants:lotus_seed_pod",
-          "weight": 1
+          "name": "more_orn_plants:lotus_seed_pod"
         },
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:lotus_xiangnang",
-          "weight": 1
+          "name": "more_orn_plants:lotus_xiangnang"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:enchanted_golden_crabapple"
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 6.0,
+        "max": 8.0,
         "min": 4.0
       }
     }

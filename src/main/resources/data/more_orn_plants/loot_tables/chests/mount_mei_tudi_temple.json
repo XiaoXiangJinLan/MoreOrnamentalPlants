@@ -38,13 +38,11 @@
         },
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:green_calyx_mei_sapling",
-          "weight": 2
+          "name": "more_orn_plants:green_calyx_mei_sapling"
         },
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:versicolor_mei_sapling",
-          "weight": 2
+          "name": "more_orn_plants:versicolor_mei_sapling"
         },
         {
           "type": "minecraft:item",
@@ -55,7 +53,7 @@
       "rolls": {
         "type": "minecraft:uniform",
         "max": 6.0,
-        "min": 4.0
+        "min": 3.0
       }
     }
   ],

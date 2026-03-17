@@ -33,8 +33,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:chicken",
-          "weight": 1
+          "name": "minecraft:chicken"
         },
         {
           "type": "minecraft:item",
@@ -65,8 +64,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:porkchop",
-          "weight": 1
+          "name": "minecraft:porkchop"
         }
       ],
       "rolls": {

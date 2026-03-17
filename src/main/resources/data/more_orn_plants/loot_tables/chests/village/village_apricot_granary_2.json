@@ -33,8 +33,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:wheat",
-          "weight": 1
+          "name": "minecraft:wheat"
         }
       ],
       "rolls": {

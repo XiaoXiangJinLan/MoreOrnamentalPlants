@@ -27,14 +27,19 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 4.0,
-                "min": 2.0
+                "max": 6.0,
+                "min": 3.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "minecraft:iron_ingot",
           "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -54,18 +59,16 @@
         },
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:mei_xiangnang",
-          "weight": 1
+          "name": "more_orn_plants:mei_xiangnang"
         },
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:versicolor_weeping_mei_sapling",
-          "weight": 1
+          "name": "more_orn_plants:versicolor_weeping_mei_sapling"
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 6.0,
+        "max": 8.0,
         "min": 4.0
       }
     }

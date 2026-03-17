@@ -100,24 +100,21 @@ public class ModEventsBusEvents {
 
     @SubscribeEvent
     public static void onPlayerInteractEntity(PlayerInteractEvent.EntityInteract event) {
-        if (event.getLevel().isClientSide) return;
         if (!(event.getTarget() instanceof ZombieVillager zombieVillager)) return;
 
-        ItemStack stack = event.getItemStack();
-        if (!stack.is(ModItems.GOLDEN_CRABAPPLE.get())) return;
-        event.setCanceled(true);
-
-        if (zombieVillager.isConverting()) {
-            event.setCancellationResult(InteractionResult.CONSUME);
-            return;
-        }
-
-        if (zombieVillager.hasEffect(MobEffects.WEAKNESS)) {
-            stack.shrink(1);
-            zombieVillager.startConverting(event.getEntity().getUUID(), zombieVillager.getRandom().nextInt(2401) + 3600);
-            event.setCancellationResult(InteractionResult.SUCCESS);
-        } else {
-            event.setCancellationResult(InteractionResult.CONSUME);
+        ItemStack itemstack = event.getItemStack();
+        if (itemstack.is(ModItems.GOLDEN_CRABAPPLE.get())) {
+            if (zombieVillager.hasEffect(MobEffects.WEAKNESS)) {
+                if (!event.getEntity().getAbilities().instabuild) {
+                    itemstack.shrink(1);
+                }
+                if (!event.getLevel().isClientSide) {
+                    zombieVillager.startConverting(event.getEntity().getUUID(), zombieVillager.getRandom().nextInt(1201) + 2400);
+                }
+                event.setCancellationResult(InteractionResult.SUCCESS);
+            } else {
+                event.setCancellationResult(InteractionResult.CONSUME);
+            }
         }
     }
 }
