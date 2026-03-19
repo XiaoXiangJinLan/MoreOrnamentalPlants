@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "more_orn_plants:golden_crabapple"
+    },
+    "P": {
+      "item": "more_orn_plants:pink_apricot_sapling"
+    },
+    "W": {
+      "item": "more_orn_plants:white_apricot_sapling"
+    }
+  },
+  "pattern": [
+    " P ",
+    "PCW",
+    " W "
+  ],
+  "result": {
+    "item": "more_orn_plants:cloud_apricot_sapling"
+  },
+  "show_notification": true
+}

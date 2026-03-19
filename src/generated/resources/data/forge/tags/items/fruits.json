@@ -1,5 +1,7 @@
 {
   "values": [
-    "#forge:fruits/crabapple"
+    "#forge:fruits/crabapple",
+    "#forge:fruits/peach",
+    "#forge:fruits/apricot"
   ]
 }

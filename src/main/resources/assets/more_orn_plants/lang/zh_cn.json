@@ -18,6 +18,7 @@
   "block.more_orn_plants.red_mei_wall_sign": "朱砂梅木墙告示牌",
   "block.more_orn_plants.red_mei_hanging_sign": "悬挂式朱砂梅木告示牌",
   "block.more_orn_plants.red_mei_wall_hanging_sign": "悬挂式朱砂梅木墙告示牌",
+
   "block.more_orn_plants.white_mei_leaves": "江梅树叶",
   "block.more_orn_plants.white_mei_sapling": "江梅树苗",
   "block.more_orn_plants.white_mei_log": "江梅原木",
@@ -37,6 +38,7 @@
   "block.more_orn_plants.white_mei_wall_sign": "江梅木墙告示牌",
   "block.more_orn_plants.white_mei_hanging_sign": "悬挂式江梅木告示牌",
   "block.more_orn_plants.white_mei_wall_hanging_sign": "悬挂式江梅木墙告示牌",
+
   "block.more_orn_plants.green_calyx_mei_leaves": "绿萼梅树叶",
   "block.more_orn_plants.green_calyx_mei_sapling": "绿萼梅树苗",
   "block.more_orn_plants.green_calyx_mei_log": "绿萼梅原木",
@@ -56,6 +58,7 @@
   "block.more_orn_plants.green_calyx_mei_wall_sign": "绿萼梅木墙告示牌",
   "block.more_orn_plants.green_calyx_mei_hanging_sign": "悬挂式绿萼梅木告示牌",
   "block.more_orn_plants.green_calyx_mei_wall_hanging_sign": "悬挂式绿萼梅木墙告示牌",
+
   "block.more_orn_plants.double_pink_mei_leaves": "宫粉梅树叶",
   "block.more_orn_plants.double_pink_mei_sapling": "宫粉梅树苗",
   "block.more_orn_plants.double_pink_mei_log": "宫粉梅原木",
@@ -75,6 +78,7 @@
   "block.more_orn_plants.double_pink_mei_wall_sign": "宫粉梅木墙告示牌",
   "block.more_orn_plants.double_pink_mei_hanging_sign": "悬挂式宫粉梅木告示牌",
   "block.more_orn_plants.double_pink_mei_wall_hanging_sign": "悬挂式宫粉梅木墙告示牌",
+
   "block.more_orn_plants.versicolor_mei_leaves": "跳枝梅树叶",
   "block.more_orn_plants.versicolor_mei_sapling": "跳枝梅树苗",
   "block.more_orn_plants.red_weeping_mei": "垂枝红梅",
@@ -92,6 +96,7 @@
   "block.more_orn_plants.green_weeping_mei_sapling": "绿萼垂枝梅树苗",
   "block.more_orn_plants.pink_weeping_mei_sapling": "宫粉垂枝梅树苗",
   "block.more_orn_plants.versicolor_weeping_mei_sapling": "洒金垂枝梅树苗",
+
   "block.more_orn_plants.upright_crabapple_leaves": "西府海棠树叶",
   "block.more_orn_plants.weeping_crabapple_leaves": "垂丝海棠树叶",
   "block.more_orn_plants.upright_crabapple_sapling": "西府海棠树苗",
@@ -115,10 +120,13 @@
   "block.more_orn_plants.crabapple_wall_sign": "海棠木墙告示牌",
   "block.more_orn_plants.crabapple_hanging_sign": "悬挂式海棠木告示牌",
   "block.more_orn_plants.crabapple_wall_hanging_sign": "悬挂式海棠木墙告示牌",
+
   "block.more_orn_plants.pink_apricot_leaves": "粉杏树叶",
   "block.more_orn_plants.white_apricot_leaves": "白杏树叶",
+  "block.more_orn_plants.cloud_apricot_leaves": "云杏树叶",
   "block.more_orn_plants.pink_apricot_sapling": "粉杏树苗",
   "block.more_orn_plants.white_apricot_sapling": "白杏树苗",
+  "block.more_orn_plants.cloud_apricot_sapling": "云杏树苗",
   "block.more_orn_plants.apricot_log": "杏花原木",
   "block.more_orn_plants.apricot_wood": "杏花木",
   "block.more_orn_plants.stripped_apricot_log": "去皮杏花原木",
@@ -132,14 +140,18 @@
   "block.more_orn_plants.apricot_fence_gate": "杏木栅栏门",
   "block.more_orn_plants.apricot_door": "杏木门",
   "block.more_orn_plants.apricot_trapdoor": "杏木活板门",
+  "block.more_orn_plants.cloud_apricot": "云杏",
   "block.more_orn_plants.apricot_sign": "杏木告示牌",
   "block.more_orn_plants.apricot_wall_sign": "杏木墙告示牌",
   "block.more_orn_plants.apricot_hanging_sign": "悬挂式杏木告示牌",
   "block.more_orn_plants.apricot_wall_hanging_sign": "悬挂式杏木墙告示牌",
+
   "block.more_orn_plants.ornamental_peach_leaves": "碧桃树叶",
   "block.more_orn_plants.wild_peach_leaves": "山桃树叶",
+  "block.more_orn_plants.immortal_peach_leaves": "仙桃树叶",
   "block.more_orn_plants.ornamental_peach_sapling": "碧桃树苗",
   "block.more_orn_plants.wild_peach_sapling": "山桃树苗",
+  "block.more_orn_plants.immortal_peach_sapling": "仙桃树苗",
   "block.more_orn_plants.peach_log": "桃花原木",
   "block.more_orn_plants.peach_wood": "桃花木",
   "block.more_orn_plants.stripped_peach_log": "去皮桃花原木",
@@ -153,10 +165,12 @@
   "block.more_orn_plants.peach_fence_gate": "桃木栅栏门",
   "block.more_orn_plants.peach_door": "桃木门",
   "block.more_orn_plants.peach_trapdoor": "桃木活板门",
+  "block.more_orn_plants.immortal_peach": "仙桃",
   "block.more_orn_plants.peach_sign": "桃木告示牌",
   "block.more_orn_plants.peach_wall_sign": "桃木墙告示牌",
   "block.more_orn_plants.peach_hanging_sign": "悬挂式桃木告示牌",
   "block.more_orn_plants.peach_wall_hanging_sign": "悬挂式桃木墙告示牌",
+
   "block.more_orn_plants.pear_leaves": "梨花树叶",
   "block.more_orn_plants.pear_sapling": "梨花树苗",
   "block.more_orn_plants.pear_log": "梨花原木",
@@ -176,6 +190,7 @@
   "block.more_orn_plants.pear_wall_sign": "梨木墙告示牌",
   "block.more_orn_plants.pear_hanging_sign": "悬挂式梨木告示牌",
   "block.more_orn_plants.pear_wall_hanging_sign": "悬挂式梨木墙告示牌",
+
   "block.more_orn_plants.flowering_purple_leaf_plum_leaves": "紫叶李花树叶",
   "block.more_orn_plants.flowering_purple_leaf_plum_sapling": "紫叶李花树苗",
   "block.more_orn_plants.purple_leaf_plum_leaves": "紫叶李树叶",
@@ -197,6 +212,7 @@
   "block.more_orn_plants.purple_leaf_plum_wall_sign": "紫叶李木墙告示牌",
   "block.more_orn_plants.purple_leaf_plum_hanging_sign": "悬挂式紫叶李木告示牌",
   "block.more_orn_plants.purple_leaf_plum_wall_hanging_sign": "悬挂式紫叶李木墙告示牌",
+
   "block.more_orn_plants.golden_osmanthus_leaves": "金桂树叶",
   "block.more_orn_plants.orange_osmanthus_leaves": "丹桂树叶",
   "block.more_orn_plants.white_osmanthus_leaves": "银桂树叶",
@@ -220,6 +236,7 @@
   "block.more_orn_plants.osmanthus_wall_sign": "桂木墙告示牌",
   "block.more_orn_plants.osmanthus_hanging_sign": "悬挂式桂木告示牌",
   "block.more_orn_plants.osmanthus_wall_hanging_sign": "悬挂式桂木墙告示牌",
+
   "block.more_orn_plants.golden_ginkgo_leaves": "金黄银杏树叶",
   "block.more_orn_plants.green_ginkgo_leaves": "翠绿银杏树叶",
   "block.more_orn_plants.golden_ginkgo_sapling": "金黄银杏树苗",
@@ -262,6 +279,7 @@
   "block.more_orn_plants.chinese_parasol_wall_sign": "梧桐木墙告示牌",
   "block.more_orn_plants.chinese_parasol_hanging_sign": "悬挂式梧桐木告示牌",
   "block.more_orn_plants.chinese_parasol_wall_hanging_sign": "悬挂式梧桐木墙告示牌",
+
   "block.more_orn_plants.sweetgum_leaves": "枫香树叶",
   "block.more_orn_plants.sweetgum_sapling": "枫香树苗",
   "block.more_orn_plants.sweetgum_log": "枫香原木",
@@ -281,6 +299,7 @@
   "block.more_orn_plants.sweetgum_wall_sign": "枫香木墙告示牌",
   "block.more_orn_plants.sweetgum_hanging_sign": "悬挂式枫香木告示牌",
   "block.more_orn_plants.sweetgum_wall_hanging_sign": "悬挂式枫香木墙告示牌",
+
   "block.more_orn_plants.camphor_leaves": "香樟树叶",
   "block.more_orn_plants.new_camphor_leaves": "新生香樟树叶",
   "block.more_orn_plants.camphor_sapling": "香樟树苗",
@@ -301,6 +320,7 @@
   "block.more_orn_plants.camphor_wall_sign": "樟木墙告示牌",
   "block.more_orn_plants.camphor_hanging_sign": "悬挂式樟木告示牌",
   "block.more_orn_plants.camphor_wall_hanging_sign": "悬挂式樟木墙告示牌",
+
   "block.more_orn_plants.dove_tree_leaves": "珙桐树叶",
   "block.more_orn_plants.dove_tree_blossom_leaves": "珙桐花树叶",
   "block.more_orn_plants.dove_tree_sapling": "珙桐树苗",
@@ -321,6 +341,7 @@
   "block.more_orn_plants.dove_tree_wall_sign": "珙桐木墙告示牌",
   "block.more_orn_plants.dove_tree_hanging_sign": "悬挂式珙桐木告示牌",
   "block.more_orn_plants.dove_tree_wall_hanging_sign": "悬挂式珙桐木墙告示牌",
+
   "block.more_orn_plants.chinaberry_leaves": "苦楝树叶",
   "block.more_orn_plants.chinaberry_sapling": "苦楝树苗",
   "block.more_orn_plants.chinaberry_log": "楝树原木",
@@ -340,6 +361,7 @@
   "block.more_orn_plants.chinaberry_wall_sign": "楝木墙告示牌",
   "block.more_orn_plants.chinaberry_hanging_sign": "悬挂式楝木告示牌",
   "block.more_orn_plants.chinaberry_wall_hanging_sign": "悬挂式楝木墙告示牌",
+
   "block.more_orn_plants.desert_poplar_leaves": "胡杨树叶",
   "block.more_orn_plants.desert_poplar_sapling": "胡杨树苗",
   "block.more_orn_plants.desert_poplar_log": "胡杨原木",
@@ -359,6 +381,7 @@
   "block.more_orn_plants.desert_poplar_wall_sign": "胡杨木墙告示牌",
   "block.more_orn_plants.desert_poplar_hanging_sign": "悬挂式胡杨木告示牌",
   "block.more_orn_plants.desert_poplar_wall_hanging_sign": "悬挂式胡杨木墙告示牌",
+
   "block.more_orn_plants.crape_myrtle_leaves": "紫薇树叶",
   "block.more_orn_plants.red_crape_myrtle_leaves": "红薇树叶",
   "block.more_orn_plants.pink_crape_myrtle_leaves": "粉薇树叶",
@@ -538,8 +561,10 @@
   "block.more_orn_plants.potted_weeping_crabapple_sapling": "垂丝海棠树苗盆栽",
   "block.more_orn_plants.potted_pink_apricot_sapling": "粉杏树苗盆栽",
   "block.more_orn_plants.potted_white_apricot_sapling": "白杏树苗盆栽",
+  "block.more_orn_plants.potted_cloud_apricot_sapling": "云杏树苗盆栽",
   "block.more_orn_plants.potted_ornamental_peach_sapling": "碧桃树苗盆栽",
   "block.more_orn_plants.potted_wild_peach_sapling": "山桃树苗盆栽",
+  "block.more_orn_plants.potted_immortal_peach_sapling": "仙桃树苗盆栽",
   "block.more_orn_plants.potted_pear_sapling": "梨花树苗盆栽",
   "block.more_orn_plants.potted_flowering_purple_leaf_plum_sapling": "紫叶李花树苗盆栽",
   "block.more_orn_plants.potted_purple_leaf_plum_sapling": "紫叶李树苗盆栽",
@@ -711,6 +736,8 @@
   "item.more_orn_plants.crabapple": "海棠果",
   "item.more_orn_plants.golden_crabapple": "金海棠果",
   "item.more_orn_plants.enchanted_golden_crabapple": "附魔金海棠果",
+  "item.more_orn_plants.cloud_apricot": "云杏",
+  "item.more_orn_plants.immortal_peach": "仙桃",
 
   "biome.more_orn_plants.red_mei_forest": "白雪红梅",
   "biome.more_orn_plants.spring_river": "春江",

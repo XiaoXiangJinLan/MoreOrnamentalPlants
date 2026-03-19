@@ -316,10 +316,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.PINK_APRICOT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.WHITE_APRICOT_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.WHITE_APRICOT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.CLOUD_APRICOT_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.CLOUD_APRICOT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.WILD_PEACH_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.WILD_PEACH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.IMMORTAL_PEACH_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.IMMORTAL_PEACH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.PEAR_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.PEAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get(), block ->
@@ -554,12 +558,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WHITE_APRICOT_SAPLING.get());
         this.add(ModBlocks.POTTED_WHITE_APRICOT_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.WHITE_APRICOT_SAPLING.get()));
+        this.dropSelf(ModBlocks.CLOUD_APRICOT_SAPLING.get());
+        this.add(ModBlocks.POTTED_CLOUD_APRICOT_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.CLOUD_APRICOT_SAPLING.get()));
         this.dropSelf(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get());
         this.add(ModBlocks.POTTED_ORNAMENTAL_PEACH_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
         this.dropSelf(ModBlocks.WILD_PEACH_SAPLING.get());
         this.add(ModBlocks.POTTED_WILD_PEACH_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.WILD_PEACH_SAPLING.get()));
+        this.dropSelf(ModBlocks.IMMORTAL_PEACH_SAPLING.get());
+        this.add(ModBlocks.POTTED_IMMORTAL_PEACH_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.IMMORTAL_PEACH_SAPLING.get()));
         this.dropSelf(ModBlocks.PEAR_SAPLING.get());
         this.add(ModBlocks.POTTED_PEAR_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.PEAR_SAPLING.get()));
@@ -622,6 +632,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModItems.CRABAPPLE.get())
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))))));
+        this.dropOther(ModBlocks.CLOUD_APRICOT.get(), ModItems.CLOUD_APRICOT.get());
+        this.dropOther(ModBlocks.IMMORTAL_PEACH.get(), ModItems.IMMORTAL_PEACH.get());
+
         this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),
                 createPotFlowerItemTable(ModBlocks.CHRYSANTHEMUM.get()));

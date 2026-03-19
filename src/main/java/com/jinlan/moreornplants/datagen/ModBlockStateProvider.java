@@ -458,6 +458,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.WHITE_APRICOT_SAPLING);
         simpleBlock(ModBlocks.POTTED_WHITE_APRICOT_SAPLING.get(), models().singleTexture("potted_white_apricot_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.WHITE_APRICOT_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.CLOUD_APRICOT_LEAVES);
+        saplingBlock(ModBlocks.CLOUD_APRICOT_SAPLING);
+        simpleBlock(ModBlocks.POTTED_CLOUD_APRICOT_SAPLING.get(), models().singleTexture("potted_cloud_apricot_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.CLOUD_APRICOT_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.ORNAMENTAL_PEACH_LEAVES);
         saplingBlock(ModBlocks.ORNAMENTAL_PEACH_SAPLING);
         simpleBlock(ModBlocks.POTTED_ORNAMENTAL_PEACH_SAPLING.get(), models().singleTexture("potted_ornamental_peach_sapling", new ResourceLocation("flower_pot_cross"), "plant",
@@ -466,6 +470,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.WILD_PEACH_SAPLING);
         simpleBlock(ModBlocks.POTTED_WILD_PEACH_SAPLING.get(), models().singleTexture("potted_wild_peach_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.WILD_PEACH_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.IMMORTAL_PEACH_LEAVES);
+        saplingBlock(ModBlocks.IMMORTAL_PEACH_SAPLING);
+        simpleBlock(ModBlocks.POTTED_IMMORTAL_PEACH_SAPLING.get(), models().singleTexture("potted_immortal_peach_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.IMMORTAL_PEACH_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.PEAR_LEAVES);
         saplingBlock(ModBlocks.PEAR_SAPLING);
         simpleBlock(ModBlocks.POTTED_PEAR_SAPLING.get(), models().singleTexture("potted_pear_sapling", new ResourceLocation("flower_pot_cross"), "plant",
@@ -558,6 +566,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         flowerBlock(ModBlocks.WEEPING_CRABAPPLE);
         flowerBlock(ModBlocks.CRABAPPLE);
+        flowerBlock(ModBlocks.CLOUD_APRICOT);
+        flowerBlock(ModBlocks.IMMORTAL_PEACH);
 
         wisteriaBlock(ModBlocks.CHINESE_WISTERIA);
         wisteriaPlantBlock(ModBlocks.CHINESE_WISTERIA_PLANT);

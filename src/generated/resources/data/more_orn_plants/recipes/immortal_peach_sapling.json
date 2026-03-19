@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "more_orn_plants:golden_crabapple"
+    },
+    "O": {
+      "item": "more_orn_plants:ornamental_peach_sapling"
+    },
+    "W": {
+      "item": "more_orn_plants:wild_peach_sapling"
+    }
+  },
+  "pattern": [
+    " O ",
+    "OCW",
+    " W "
+  ],
+  "result": {
+    "item": "more_orn_plants:immortal_peach_sapling"
+  },
+  "show_notification": true
+}

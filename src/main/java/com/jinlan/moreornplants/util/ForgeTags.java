@@ -42,6 +42,8 @@ public class ForgeTags {
         public static final TagKey<Item> VEGETABLES_LOTUS_NUT = tag("vegetables/lotus_nut");
         public static final TagKey<Item> FRUITS = tag("fruits");
         public static final TagKey<Item> FRUITS_CRABAPPLE = tag("fruits/crabapple");
+        public static final TagKey<Item> FRUITS_PEACH = tag("fruits/peach");
+        public static final TagKey<Item> FRUITS_APRICOT = tag("fruits/apricot");
 
         private static TagKey<Item> tag(String path) {
             return ItemTags.create(new ResourceLocation("forge", path));

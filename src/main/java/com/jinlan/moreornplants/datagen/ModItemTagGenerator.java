@@ -455,7 +455,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ForgeTags.Items.VEGETABLES_LOTUS_NUT);
 
         this.tag(ForgeTags.Items.FRUITS)
-                .addTag(ForgeTags.Items.FRUITS_CRABAPPLE);
+                .addTag(ForgeTags.Items.FRUITS_CRABAPPLE)
+                .addTag(ForgeTags.Items.FRUITS_PEACH)
+                .addTag(ForgeTags.Items.FRUITS_APRICOT);
 
         this.tag(ForgeTags.Items.VEGETABLES_BAMBOO_SHOOTS)
                 .add(ModItems.PEELED_BAMBOO_SHOOTS.get());
@@ -476,6 +478,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.CRABAPPLE.get())
                 .add(ModItems.GOLDEN_CRABAPPLE.get())
                 .add(ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get());
+
+        this.tag(ForgeTags.Items.FRUITS_PEACH)
+                .add(ModItems.IMMORTAL_PEACH.get());
+
+        this.tag(ForgeTags.Items.FRUITS_APRICOT)
+                .add(ModItems.CLOUD_APRICOT.get());
 
         this.tag(ItemTags.SWORDS)
                 .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get());

@@ -209,9 +209,13 @@ public class ModItems {
             ITEMS.register("golden_crabapple", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.GOLDEN_CRABAPPLE)));
     public static final RegistryObject<Item> ENCHANTED_GOLDEN_CRABAPPLE =
             ITEMS.register("enchanted_golden_crabapple", () -> new EnchantedGoldenAppleItem(new Item.Properties().rarity(Rarity.EPIC).food(ModFoods.ENCHANTED_GOLDEN_CRABAPPLE)));
+    public static final RegistryObject<Item> CLOUD_APRICOT =
+            ITEMS.register("cloud_apricot", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.APRICOT)));
+    public static final RegistryObject<Item> IMMORTAL_PEACH =
+            ITEMS.register("immortal_peach", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.PEACH)));
 
     public static final RegistryObject<Item> MEI_XIANGNANG =
-            ITEMS.register("mei_xiangnang", () -> new XiangnangItem(ModBlocks.MEI_XIANGNANG.get(), new Item.Properties(), 300, 1));
+            ITEMS.register("mei_xiangnang", () -> new MeiXiangnangItem(ModBlocks.MEI_XIANGNANG.get(), new Item.Properties(), 300, 1));
     public static final RegistryObject<Item> OSMANTHUS_XIANGNANG =
             ITEMS.register("osmanthus_xiangnang", () -> new XiangnangItem(ModBlocks.OSMANTHUS_XIANGNANG.get(), new Item.Properties(), 600, 1));
     public static final RegistryObject<Item> CYMBIDIUM_XIANGNANG =
