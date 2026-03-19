@@ -77,7 +77,9 @@ farm animals.
 • Lotus Seeds – Obtained by harvesting Lotus flowers. In version 1.21.1, they can be fed to some farm animals.  
 • Bamboo Shoots Soup, Lotus Root Soup, Lotus Seed Soup – In version 1.21.1, Lotus Root Soup can be fed to wolves and cats.  
 • Crabapple, Golden Crabapple, Enchanted Golden Crabapple: Function similarly to apples, but restore slightly less hunger 
-and saturation. However, the effects provided by the (Enchanted) Golden Crabapple are slightly stronger than those of the (Enchanted) Golden Apple.
+and saturation. However, the effects provided by the (Enchanted) Golden Crabapple are slightly stronger than those of the (Enchanted) Golden Apple.  
+• Immortal Peach: Grows on Immortal Peach Trees. Increases maximum health by 80 points. The tree bears fruit normally in The Peach Blossom Spring and Penglai, but growth is slowed down in other biomes.  
+• Cloud Apricot: Grows on Cloud Apricot Trees. Increases maximum health by 40 points. The tree bears fruit normally in The Peach Blossom Spring and Penglai, but growth is slowed down in other biomes.
 
 New Fuels
 ==========
@@ -97,9 +99,9 @@ New Fuels
 #### 花林群系
 •**白雪红梅**：朱砂梅为主的雪林，林下生长有蜡梅；  
 •**香雪海**：江梅、绿萼梅、垂枝白梅以及绿萼垂枝梅为主的雪林，地面长有香雪花簇；  
-•**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃红花簇，天空和水面为淡粉色，漂浮有流红、浮英；  
+•**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃红花簇，天空和水面为淡粉色，漂浮有流红、浮英。仙桃和云杏在此群系能够正常结果；  
 •**高原春杏**：生长有粉杏和白杏的高原，地面长有春信花簇；  
-•**蓬莱**：生长有洒金垂枝梅、宫粉垂枝梅、绿萼垂枝梅、海棠、牡丹、芍药、月季的海上仙山。当玩家位于此群系时，会获得诸多正面效果；  
+•**蓬莱**：生长有洒金垂枝梅、宫粉垂枝梅、绿萼垂枝梅、仙桃、云杏、海棠、牡丹、芍药、月季的海上仙山。当玩家位于此群系时，会获得诸多正面效果。仙桃和云杏在此群系能够正常结果，西府海棠只在此群系才会自然结果；  
 •**百花林**：垂丝海棠为优势树种，并伴有其他各种花树的花林，林下生长有月季、牡丹、菊花、兰花、芍药、山茶、杜鹃、紫薇、芙蓉、狼尾草以及部分原版植物；  
 •**烟雨海棠**：百花林的变种，以海棠为主的花林，林下生长有芍药和牡丹；  
 •**楝花林**：苦楝和香樟为优势树种的疏林，林下生长有大量的狼尾草；  
@@ -149,7 +151,9 @@ New Fuels
 **莲藕**：通过采集荷花荷叶获得，食用恢复3饥饿值、1.8饱和度，在1.21.1版本可以喂食大部分农场生物；  
 **莲子**：通过采集荷花获得莲蓬，一个莲蓬五个莲子，食用恢复1饥饿值、0.6饱和度，在1.21.1版本可以喂食部分农场生物；  
 **竹笋汤**、**莲藕汤**、**莲子汤**：食用恢复6饥饿值、7.2饱和度，莲藕汤在1.21.1版本可以喂食狼和猫；  
-**海棠果**、**金海棠果**、**附魔金海棠果**：与苹果类似，但是恢复的饥饿值和饱和度稍低。（附魔）金海棠果提供的效果比（附魔）金苹果稍强，时长稍短。
+**海棠果**、**金海棠果**、**附魔金海棠果**：西府海棠树所结。在蓬莱西府海棠树可以继续结果。海棠果与苹果类似，但是恢复的饥饿值和饱和度稍低。（附魔）金海棠果提供的效果比（附魔）金苹果稍强，时长稍短；  
+**仙桃**：仙桃树所结，能增加80血量。在世外桃源和蓬莱仙桃树可以正常结果，在其他群系结果速度减慢；  
+**云杏**：云杏树所结，能增加40血量。在世外桃源和蓬莱云杏树可以正常结果，在其他群系结果速度减慢。
 
 ## 新燃料
 **金芒草**：可以燃烧3个物品。
@@ -189,13 +193,13 @@ more_orn_plants:red_mei_sapling more_orn_plants:white_mei_sapling more_orn_plant
 more_orn_plants:versicolor_mei_sapling more_orn_plants:red_weeping_mei_sapling more_orn_plants:white_weeping_mei_sapling 
 more_orn_plants:green_weeping_mei_sapling more_orn_plants:pink_weeping_mei_sapling more_orn_plants:versicolor_weeping_mei_sapling 
 more_orn_plants:upright_crabapple_sapling more_orn_plants:weeping_crabapple_sapling more_orn_plants:pink_apricot_sapling 
-more_orn_plants:white_apricot_sapling more_orn_plants:ornamental_peach_sapling more_orn_plants:wild_peach_sapling more_orn_plants:pear_sapling 
-more_orn_plants:flowering_purple_leaf_plum_sapling more_orn_plants:purple_leaf_plum_sapling more_orn_plants:golden_osmanthus_sapling 
-more_orn_plants:orange_osmanthus_sapling more_orn_plants:white_osmanthus_sapling more_orn_plants:crape_myrtle_sapling more_orn_plants:red_crape_myrtle_sapling
-more_orn_plants:pink_crape_myrtle_sapling more_orn_plants:white_crape_myrtle_sapling more_orn_plants:golden_ginkgo_sapling 
-more_orn_plants:green_ginkgo_sapling more_orn_plants:yellow_chinese_parasol_sapling more_orn_plants:green_chinese_parasol_sapling 
-more_orn_plants:sweetgum_sapling more_orn_plants:camphor_sapling more_orn_plants:dove_tree_sapling more_orn_plants:chinaberry_sapling 
-more_orn_plants:desert_poplar_sapling
+more_orn_plants:white_apricot_sapling more_orn_plants:cloud_apricot_sapling more_orn_plants:ornamental_peach_sapling more_orn_plants:wild_peach_sapling
+more_orn_plants:immortal_peach_sapling more_orn_plants:pear_sapling more_orn_plants:flowering_purple_leaf_plum_sapling more_orn_plants:purple_leaf_plum_sapling 
+more_orn_plants:golden_osmanthus_sapling more_orn_plants:orange_osmanthus_sapling more_orn_plants:white_osmanthus_sapling 
+more_orn_plants:crape_myrtle_sapling more_orn_plants:red_crape_myrtle_sapling more_orn_plants:pink_crape_myrtle_sapling 
+more_orn_plants:white_crape_myrtle_sapling more_orn_plants:golden_ginkgo_sapling more_orn_plants:green_ginkgo_sapling more_orn_plants:yellow_chinese_parasol_sapling 
+more_orn_plants:green_chinese_parasol_sapling more_orn_plants:sweetgum_sapling more_orn_plants:camphor_sapling more_orn_plants:dove_tree_sapling 
+more_orn_plants:chinaberry_sapling more_orn_plants:desert_poplar_sapling
 
 #_bamboo_sapling_#  
 more_orn_plants:mottled_bamboo_sapling more_orn_plants:black_bamboo_sapling
@@ -203,13 +207,13 @@ more_orn_plants:mottled_bamboo_sapling more_orn_plants:black_bamboo_sapling
 #_leaves_#  
 more_orn_plants:red_mei_leaves more_orn_plants:white_mei_leaves more_orn_plants:green_calyx_mei_leaves more_orn_plants:double_pink_mei_leaves 
 more_orn_plants:versicolor_mei_leaves more_orn_plants:upright_crabapple_leaves more_orn_plants:weeping_crabapple_leaves 
-more_orn_plants:pink_apricot_leaves more_orn_plants:white_apricot_leaves more_orn_plants:ornamental_peach_leaves more_orn_plants:wild_peach_leaves 
-more_orn_plants:pear_leaves more_orn_plants:flowering_purple_leaf_plum_leaves more_orn_plants:purple_leaf_plum_leaves more_orn_plants:golden_osmanthus_leaves 
-more_orn_plants:orange_osmanthus_leaves more_orn_plants:white_osmanthus_leaves more_orn_plants:crape_myrtle_leaves more_orn_plants:red_crape_myrtle_leaves
-more_orn_plants:pink_crape_myrtle_leaves more_orn_plants:white_crape_myrtle_leaves more_orn_plants:golden_ginkgo_leaves 
-more_orn_plants:green_ginkgo_leaves more_orn_plants:yellow_chinese_parasol_leaves more_orn_plants:green_chinese_parasol_leaves 
-more_orn_plants:sweetgum_leaves more_orn_plants:camphor_leaves more_orn_plants:new_camphor_leaves more_orn_plants:dove_tree_leaves 
-more_orn_plants:dove_tree_blossom_leaves more_orn_plants:chinaberry_leaves more_orn_plants:desert_poplar_leaves
+more_orn_plants:pink_apricot_leaves more_orn_plants:white_apricot_leaves more_orn_plants:cloud_apricot_leaves more_orn_plants:ornamental_peach_leaves 
+more_orn_plants:wild_peach_leaves more_orn_plants:immortal_peach_leaves more_orn_plants:pear_leaves more_orn_plants:flowering_purple_leaf_plum_leaves 
+more_orn_plants:purple_leaf_plum_leaves more_orn_plants:golden_osmanthus_leaves more_orn_plants:orange_osmanthus_leaves 
+more_orn_plants:white_osmanthus_leaves more_orn_plants:crape_myrtle_leaves more_orn_plants:red_crape_myrtle_leaves more_orn_plants:pink_crape_myrtle_leaves 
+more_orn_plants:white_crape_myrtle_leaves more_orn_plants:golden_ginkgo_leaves more_orn_plants:green_ginkgo_leaves more_orn_plants:yellow_chinese_parasol_leaves 
+more_orn_plants:green_chinese_parasol_leaves more_orn_plants:sweetgum_leaves more_orn_plants:camphor_leaves more_orn_plants:new_camphor_leaves 
+more_orn_plants:dove_tree_leaves more_orn_plants:dove_tree_blossom_leaves more_orn_plants:chinaberry_leaves more_orn_plants:desert_poplar_leaves
 
 #_tall flowers:half=lower_#  
 more_orn_plants:yao_huang_peony:half=lower more_orn_plants:wei_zi_peony:half=lower more_orn_plants:zhao_pink_peony:half=lower more_orn_plants:dou_green_peony:half=lower
@@ -265,18 +269,19 @@ more_orn_plants:potted_white_mei_sapling more_orn_plants:potted_green_calyx_mei_
 more_orn_plants:potted_versicolor_mei_sapling more_orn_plants:potted_red_weeping_mei_sapling more_orn_plants:potted_white_weeping_mei_sapling 
 more_orn_plants:potted_green_weeping_mei_sapling more_orn_plants:potted_pink_weeping_mei_sapling more_orn_plants:potted_versicolor_weeping_mei_sapling 
 more_orn_plants:potted_upright_crabapple_sapling more_orn_plants:potted_weeping_crabapple_sapling more_orn_plants:potted_pink_apricot_sapling 
-more_orn_plants:potted_white_apricot_sapling more_orn_plants:potted_ornamental_peach_sapling more_orn_plants:potted_wild_peach_sapling 
-more_orn_plants:potted_pear_sapling more_orn_plants:potted_flowering_purple_leaf_plum_sapling more_orn_plants:potted_purple_leaf_plum_sapling 
-more_orn_plants:potted_golden_osmanthus_sapling more_orn_plants:potted_orange_osmanthus_sapling more_orn_plants:potted_white_osmanthus_sapling 
-more_orn_plants:potted_crape_myrtle_sapling more_orn_plants:potted_red_crape_myrtle_sapling more_orn_plants:potted_pink_crape_myrtle_sapling
-more_orn_plants:potted_white_crape_myrtle_sapling more_orn_plants:potted_golden_ginkgo_sapling more_orn_plants:potted_green_ginkgo_sapling 
-more_orn_plants:potted_yellow_chinese_parasol_sapling more_orn_plants:potted_green_chinese_parasol_sapling more_orn_plants:potted_sweetgum_sapling 
-more_orn_plants:potted_camphor_sapling more_orn_plants:potted_dove_tree_sapling more_orn_plants:potted_chinaberry_sapling 
-more_orn_plants:potted_desert_poplar_sapling more_orn_plants:potted_bamboo_stick more_orn_plants:potted_cut_peony more_orn_plants:potted_cut_light_pink_peony
-more_orn_plants:potted_cut_violet_pink_peony more_orn_plants:potted_cut_red_peony more_orn_plants:potted_cut_light_red_peony
-more_orn_plants:potted_cut_ink_red_peony more_orn_plants:potted_cut_purple_peony more_orn_plants:potted_cut_light_purple_peony 
-more_orn_plants:potted_cut_ink_purple_peony more_orn_plants:potted_cut_yellow_peony more_orn_plants:potted_cut_light_yellow_peony 
-more_orn_plants:potted_cut_ochre_yellow_peony more_orn_plants:potted_cut_white_peony more_orn_plants:potted_cut_ink_peony 
-more_orn_plants:potted_cut_blue_peony more_orn_plants:potted_cut_green_peony more_orn_plants:potted_cut_wu_hua_long_yu_peony
-more_orn_plants:potted_cut_mauve_peony more_orn_plants:potted_cut_chinese_rose more_orn_plants:potted_cut_pink_rose more_orn_plants:potted_cut_yellow_rose
-more_orn_plants:potted_cut_white_rose more_orn_plants:potted_cut_baohua_chinese_rose more_orn_plants:potted_cut_cotton_rose more_orn_plants:potted_cut_wintersweet
+more_orn_plants:potted_white_apricot_sapling more_orn_plants:potted_cloud_apricot_sapling more_orn_plants:potted_ornamental_peach_sapling 
+more_orn_plants:potted_wild_peach_sapling more_orn_plants:potted_immortal_peach_sapling more_orn_plants:potted_pear_sapling 
+more_orn_plants:potted_flowering_purple_leaf_plum_sapling more_orn_plants:potted_purple_leaf_plum_sapling more_orn_plants:potted_golden_osmanthus_sapling 
+more_orn_plants:potted_orange_osmanthus_sapling more_orn_plants:potted_white_osmanthus_sapling more_orn_plants:potted_crape_myrtle_sapling 
+more_orn_plants:potted_red_crape_myrtle_sapling more_orn_plants:potted_pink_crape_myrtle_sapling more_orn_plants:potted_white_crape_myrtle_sapling 
+more_orn_plants:potted_golden_ginkgo_sapling more_orn_plants:potted_green_ginkgo_sapling more_orn_plants:potted_yellow_chinese_parasol_sapling 
+more_orn_plants:potted_green_chinese_parasol_sapling more_orn_plants:potted_sweetgum_sapling more_orn_plants:potted_camphor_sapling 
+more_orn_plants:potted_dove_tree_sapling more_orn_plants:potted_chinaberry_sapling more_orn_plants:potted_desert_poplar_sapling 
+more_orn_plants:potted_bamboo_stick more_orn_plants:potted_cut_peony more_orn_plants:potted_cut_light_pink_peony more_orn_plants:potted_cut_violet_pink_peony 
+more_orn_plants:potted_cut_red_peony more_orn_plants:potted_cut_light_red_peony more_orn_plants:potted_cut_ink_red_peony 
+more_orn_plants:potted_cut_purple_peony more_orn_plants:potted_cut_light_purple_peony more_orn_plants:potted_cut_ink_purple_peony 
+more_orn_plants:potted_cut_yellow_peony more_orn_plants:potted_cut_light_yellow_peony more_orn_plants:potted_cut_ochre_yellow_peony 
+more_orn_plants:potted_cut_white_peony more_orn_plants:potted_cut_ink_peony more_orn_plants:potted_cut_blue_peony more_orn_plants:potted_cut_green_peony 
+more_orn_plants:potted_cut_wu_hua_long_yu_peony more_orn_plants:potted_cut_mauve_peony more_orn_plants:potted_cut_chinese_rose 
+more_orn_plants:potted_cut_pink_rose more_orn_plants:potted_cut_yellow_rose more_orn_plants:potted_cut_white_rose more_orn_plants:potted_cut_baohua_chinese_rose 
+more_orn_plants:potted_cut_cotton_rose more_orn_plants:potted_cut_wintersweet

@@ -393,7 +393,7 @@ public class ModConfiguredFeatures {
                 new ApricotTrunkPlacer(9, 2,2, 3, 3, 3, 6, 0.7F, 0.6F),
                 BlockStateProvider.simple(ModBlocks.CLOUD_APRICOT_LEAVES.get()),
                 new ApricotFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(4), 0.1F),
-                new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new CrabappleDecorator(ModBlocks.CLOUD_APRICOT.get().defaultBlockState().setValue(PeachBlock.AGE, 2), 0.24F))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new CrabappleDecorator(ModBlocks.CLOUD_APRICOT.get().defaultBlockState().setValue(PeachBlock.AGE, 2), 0.18F))).ignoreVines().build());
         SimpleWeightedRandomList.Builder<BlockState> springPetalsBuilder = SimpleWeightedRandomList.builder();
         for(int i = 1; i <= 4; ++i) {
             for(Direction direction : Direction.Plane.HORIZONTAL) {
@@ -423,7 +423,7 @@ public class ModConfiguredFeatures {
                 new PeachTrunkPlacer(7, 2, 2, 2, 4, 4, 5, 0.9F, 0.5F),
                 BlockStateProvider.simple(ModBlocks.IMMORTAL_PEACH_LEAVES.get()),
                 new PeachFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(4)),
-                new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new CrabappleDecorator(ModBlocks.IMMORTAL_PEACH.get().defaultBlockState().setValue(PeachBlock.AGE, 2), 0.18F))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new CrabappleDecorator(ModBlocks.IMMORTAL_PEACH.get().defaultBlockState().setValue(PeachBlock.AGE, 2), 0.12F))).ignoreVines().build());
         SimpleWeightedRandomList.Builder<BlockState> peachPinkPetalsBuilder = SimpleWeightedRandomList.builder();
         for(int i = 1; i <= 4; ++i) {
             for(Direction direction : Direction.Plane.HORIZONTAL) {
