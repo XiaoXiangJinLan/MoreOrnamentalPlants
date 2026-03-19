@@ -1242,5 +1242,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('/', Items.STICK)
                 .unlockedBy("has_lotus", has(ModTags.Items.CAMPHOR_LOGS))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CLOUD_APRICOT_SAPLING.get())
+                .pattern(" P ")
+                .pattern("PCW")
+                .pattern(" W ")
+                .define('P', ModBlocks.PINK_APRICOT_SAPLING.get())
+                .define('W', ModBlocks.WHITE_APRICOT_SAPLING.get())
+                .define('C', ModItems.GOLDEN_CRABAPPLE.get())
+                .unlockedBy(getHasName(ModBlocks.PINK_APRICOT_SAPLING.get()), has(ModBlocks.PINK_APRICOT_SAPLING.get()))
+                .unlockedBy(getHasName(ModBlocks.WHITE_APRICOT_SAPLING.get()), has(ModBlocks.WHITE_APRICOT_SAPLING.get()))
+                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE.get()), has(ModItems.GOLDEN_CRABAPPLE.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.IMMORTAL_PEACH_SAPLING.get())
+                .pattern(" O ")
+                .pattern("OCW")
+                .pattern(" W ")
+                .define('O', ModBlocks.ORNAMENTAL_PEACH_SAPLING.get())
+                .define('W', ModBlocks.WILD_PEACH_SAPLING.get())
+                .define('C', ModItems.GOLDEN_CRABAPPLE.get())
+                .unlockedBy(getHasName(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()), has(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()))
+                .unlockedBy(getHasName(ModBlocks.WILD_PEACH_SAPLING.get()), has(ModBlocks.WILD_PEACH_SAPLING.get()))
+                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE.get()), has(ModItems.GOLDEN_CRABAPPLE.get()))
+                .save(pWriter);
     }
 }

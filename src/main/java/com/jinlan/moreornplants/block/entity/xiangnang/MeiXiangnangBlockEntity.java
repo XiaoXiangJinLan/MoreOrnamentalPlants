@@ -53,9 +53,13 @@ public class MeiXiangnangBlockEntity extends BlockEntity {
         }
 
         // 创建生命恢复II效果，持续5秒
-        MobEffectInstance effect = new MobEffectInstance(
-                MobEffects.REGENERATION, EFFECT_DURATION, 1);
-
-        entity.addEffect(effect);
+        entity.addEffect(new MobEffectInstance(
+                MobEffects.REGENERATION, EFFECT_DURATION, 1));
+        entity.addEffect(new MobEffectInstance(
+                MobEffects.DAMAGE_BOOST, EFFECT_DURATION, 0));
+        entity.addEffect(new MobEffectInstance(
+                MobEffects.DAMAGE_RESISTANCE, EFFECT_DURATION, 0));
+        entity.addEffect(new MobEffectInstance(
+                MobEffects.DIG_SPEED, EFFECT_DURATION, 0));
     }
 }

@@ -100,6 +100,10 @@
           "type": "minecraft:item",
           "name": "more_orn_plants:ornamental_peach_sapling",
           "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:immortal_peach_sapling"
         }
       ],
       "rolls": {

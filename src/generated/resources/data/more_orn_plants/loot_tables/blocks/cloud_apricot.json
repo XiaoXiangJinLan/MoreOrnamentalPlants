@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "more_orn_plants:cloud_apricot",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "2"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:cloud_apricot"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "more_orn_plants:blocks/cloud_apricot"
+}

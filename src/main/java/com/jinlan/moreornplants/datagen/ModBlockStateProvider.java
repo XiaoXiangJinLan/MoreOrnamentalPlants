@@ -5,6 +5,7 @@ import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.FlowerBlocks.ModFlowerPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
+import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WeepingMeiPlantBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaPlantBlock;
@@ -458,6 +459,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.WHITE_APRICOT_SAPLING);
         simpleBlock(ModBlocks.POTTED_WHITE_APRICOT_SAPLING.get(), models().singleTexture("potted_white_apricot_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.WHITE_APRICOT_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.CLOUD_APRICOT_LEAVES);
+        saplingBlock(ModBlocks.CLOUD_APRICOT_SAPLING);
+        simpleBlock(ModBlocks.POTTED_CLOUD_APRICOT_SAPLING.get(), models().singleTexture("potted_cloud_apricot_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.CLOUD_APRICOT_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.ORNAMENTAL_PEACH_LEAVES);
         saplingBlock(ModBlocks.ORNAMENTAL_PEACH_SAPLING);
         simpleBlock(ModBlocks.POTTED_ORNAMENTAL_PEACH_SAPLING.get(), models().singleTexture("potted_ornamental_peach_sapling", new ResourceLocation("flower_pot_cross"), "plant",
@@ -466,6 +471,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.WILD_PEACH_SAPLING);
         simpleBlock(ModBlocks.POTTED_WILD_PEACH_SAPLING.get(), models().singleTexture("potted_wild_peach_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.WILD_PEACH_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.IMMORTAL_PEACH_LEAVES);
+        saplingBlock(ModBlocks.IMMORTAL_PEACH_SAPLING);
+        simpleBlock(ModBlocks.POTTED_IMMORTAL_PEACH_SAPLING.get(), models().singleTexture("potted_immortal_peach_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.IMMORTAL_PEACH_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.PEAR_LEAVES);
         saplingBlock(ModBlocks.PEAR_SAPLING);
         simpleBlock(ModBlocks.POTTED_PEAR_SAPLING.get(), models().singleTexture("potted_pear_sapling", new ResourceLocation("flower_pot_cross"), "plant",
@@ -557,7 +566,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         weepingMeiPlantBlock(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT);
 
         flowerBlock(ModBlocks.WEEPING_CRABAPPLE);
-        flowerBlock(ModBlocks.CRABAPPLE);
+        fruitBlock(ModBlocks.CRABAPPLE);
+        fruitBlock(ModBlocks.CLOUD_APRICOT);
+        fruitBlock(ModBlocks.IMMORTAL_PEACH);
 
         wisteriaBlock(ModBlocks.CHINESE_WISTERIA);
         wisteriaPlantBlock(ModBlocks.CHINESE_WISTERIA_PLANT);
@@ -1015,6 +1026,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void flowerBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(),
                 models().cross(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void fruitBlock(RegistryObject<Block> blockRegistryObject) {
+        VariantBlockStateBuilder builder = getVariantBuilder(blockRegistryObject.get());
+        String baseName = null;
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
+        }
+        for (int age = 0; age <= 2; age++) {
+            ModelFile model = models().cross(baseName + "_age_" + age,
+                    modLoc("block/" + baseName + "_age_" + age)).renderType("cutout");
+            builder.partialState().with(PeachBlock.AGE, age)
+                    .modelForState().modelFile(model).addModel();
+        }
     }
 
     private void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {

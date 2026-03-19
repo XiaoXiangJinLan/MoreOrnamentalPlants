@@ -28,8 +28,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get());
                         pOutput.accept(ModBlocks.PINK_APRICOT_LEAVES.get());
                         pOutput.accept(ModBlocks.WHITE_APRICOT_LEAVES.get());
+                        pOutput.accept(ModBlocks.CLOUD_APRICOT_LEAVES.get());
                         pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get());
                         pOutput.accept(ModBlocks.WILD_PEACH_LEAVES.get());
+                        pOutput.accept(ModBlocks.IMMORTAL_PEACH_LEAVES.get());
                         pOutput.accept(ModBlocks.PEAR_LEAVES.get());
                         pOutput.accept(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get());
                         pOutput.accept(ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get());
@@ -77,8 +79,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get());
                         pOutput.accept(ModBlocks.PINK_APRICOT_SAPLING.get());
                         pOutput.accept(ModBlocks.WHITE_APRICOT_SAPLING.get());
+                        pOutput.accept(ModBlocks.CLOUD_APRICOT_SAPLING.get());
                         pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get());
                         pOutput.accept(ModBlocks.WILD_PEACH_SAPLING.get());
+                        pOutput.accept(ModBlocks.IMMORTAL_PEACH_SAPLING.get());
                         pOutput.accept(ModBlocks.PEAR_SAPLING.get());
                         pOutput.accept(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get());
                         pOutput.accept(ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get());
@@ -524,6 +528,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CRABAPPLE.get());
                         pOutput.accept(ModItems.GOLDEN_CRABAPPLE.get());
                         pOutput.accept(ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get());
+                        pOutput.accept(ModItems.IMMORTAL_PEACH.get());
+                        pOutput.accept(ModItems.CLOUD_APRICOT.get());
                         pOutput.accept(ModItems.PEELED_BAMBOO_SHOOTS.get());
                         pOutput.accept(ModItems.LOTUS_ROOT.get());
                         pOutput.accept(ModItems.LOTUS_SEED_POD.get());

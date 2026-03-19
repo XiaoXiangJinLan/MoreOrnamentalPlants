@@ -39,11 +39,17 @@ public class ModParticleTypes {
     public static final RegistryObject<SimpleParticleType> WHITE_APRICOT_LEAVES =
             registerParticleType("white_apricot_leaves", () -> new SimpleParticleType(false));
 
+    public static final RegistryObject<SimpleParticleType> CLOUD_APRICOT_LEAVES =
+            registerParticleType("cloud_apricot_leaves", () -> new SimpleParticleType(false));
+
     public static final RegistryObject<SimpleParticleType> ORNAMENTAL_PEACH_LEAVES =
             registerParticleType("ornamental_peach_leaves", () -> new SimpleParticleType(false));
 
     public static final RegistryObject<SimpleParticleType> WILD_PEACH_LEAVES =
             registerParticleType("wild_peach_leaves", () -> new SimpleParticleType(false));
+
+    public static final RegistryObject<SimpleParticleType> IMMORTAL_PEACH_LEAVES =
+            registerParticleType("immortal_peach_leaves", () -> new SimpleParticleType(false));
 
     public static final RegistryObject<SimpleParticleType> PEAR_LEAVES =
             registerParticleType("pear_leaves", () -> new SimpleParticleType(false));
@@ -87,13 +93,13 @@ public class ModParticleTypes {
     public static final RegistryObject<SimpleParticleType> CRAPE_MYRTLE_LEAVES =
             registerParticleType("crape_myrtle_leaves", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> RED_CRAPE_MYRTLE_LEAVES =
+    public static final RegistryObject<SimpleParticleType> RED_CRAPE_MYRTLE_LEAVES =
             registerParticleType("red_crape_myrtle_leaves", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> PINK_CRAPE_MYRTLE_LEAVES =
+    public static final RegistryObject<SimpleParticleType> PINK_CRAPE_MYRTLE_LEAVES =
             registerParticleType("pink_crape_myrtle_leaves", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> WHITE_CRAPE_MYRTLE_LEAVES =
+    public static final RegistryObject<SimpleParticleType> WHITE_CRAPE_MYRTLE_LEAVES =
             registerParticleType("white_crape_myrtle_leaves", () -> new SimpleParticleType(false));
 
     public static final java.util.function.Supplier<SimpleParticleType> CAMELLIA_LEAVES =
