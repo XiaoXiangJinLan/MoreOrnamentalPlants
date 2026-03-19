@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.datagen;
 
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
 import com.jinlan.moreornplants.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
@@ -623,9 +624,22 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.CRABAPPLE.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModItems.CRABAPPLE.get())
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))))));
-        this.dropOther(ModBlocks.CLOUD_APRICOT.get(), ModItems.CLOUD_APRICOT);
-        this.dropOther(ModBlocks.IMMORTAL_PEACH.get(), ModItems.IMMORTAL_PEACH);
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.AGE, 2)))));
+        this.add(ModBlocks.CLOUD_APRICOT.get(), block -> LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.CLOUD_APRICOT.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.AGE, 2)))));
+        this.add(ModBlocks.IMMORTAL_PEACH.get(), block -> LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.IMMORTAL_PEACH.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.AGE, 2)))));
 
         this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),

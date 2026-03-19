@@ -5,7 +5,10 @@
       {
         "type": "more_orn_plants:crabapple_decorator",
         "block": {
-          "Name": "more_orn_plants:cloud_apricot"
+          "Name": "more_orn_plants:cloud_apricot",
+          "Properties": {
+            "age": "2"
+          }
         },
         "probability": 0.24
       }

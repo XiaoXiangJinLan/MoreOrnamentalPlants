@@ -1,7 +1,13 @@
 {
   "variants": {
-    "": {
-      "model": "more_orn_plants:block/crabapple"
+    "age=0": {
+      "model": "more_orn_plants:block/crabapple_age_0"
+    },
+    "age=1": {
+      "model": "more_orn_plants:block/crabapple_age_1"
+    },
+    "age=2": {
+      "model": "more_orn_plants:block/crabapple_age_2"
     }
   }
 }

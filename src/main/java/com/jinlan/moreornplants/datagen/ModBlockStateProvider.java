@@ -3,6 +3,7 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
+import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WeepingMeiPlantBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaPlantBlock;
@@ -561,9 +562,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         weepingMeiPlantBlock(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT);
 
         flowerBlock(ModBlocks.WEEPING_CRABAPPLE);
-        flowerBlock(ModBlocks.CRABAPPLE);
-        flowerBlock(ModBlocks.CLOUD_APRICOT);
-        flowerBlock(ModBlocks.IMMORTAL_PEACH);
+        fruitBlock(ModBlocks.CRABAPPLE);
+        fruitBlock(ModBlocks.CLOUD_APRICOT);
+        fruitBlock(ModBlocks.IMMORTAL_PEACH);
 
         wisteriaBlock(ModBlocks.CHINESE_WISTERIA);
         wisteriaPlantBlock(ModBlocks.CHINESE_WISTERIA_PLANT);
@@ -982,6 +983,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void flowerBlock(DeferredBlock<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(),
                 models().cross(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void fruitBlock(DeferredBlock<Block> blockRegistryObject) {
+        VariantBlockStateBuilder builder = getVariantBuilder(blockRegistryObject.get());
+        String baseName = blockRegistryObject.getId().getPath();
+        for (int age = 0; age <= 2; age++) {
+            ModelFile model = models().cross(baseName + "_age_" + age,
+                    modLoc("block/" + baseName + "_age_" + age)).renderType("cutout");
+            builder.partialState().with(PeachBlock.AGE, age)
+                    .modelForState().modelFile(model).addModel();
+        }
     }
 
     private void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
