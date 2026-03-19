@@ -52,10 +52,14 @@ public class ModBlocks {
             registerBlock("pink_apricot_leaves", () -> new PinkApricotLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
     public static final DeferredBlock<Block> WHITE_APRICOT_LEAVES =
             registerBlock("white_apricot_leaves", () -> new WhiteApricotLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
+    public static final DeferredBlock<Block> CLOUD_APRICOT_LEAVES =
+            registerBlock("cloud_apricot_leaves", () -> new CloudApricotLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
     public static final DeferredBlock<Block> ORNAMENTAL_PEACH_LEAVES =
             registerBlock("ornamental_peach_leaves", () -> new OrnPeachLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
     public static final DeferredBlock<Block> WILD_PEACH_LEAVES =
             registerBlock("wild_peach_leaves", () -> new WildPeachLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
+    public static final DeferredBlock<Block> IMMORTAL_PEACH_LEAVES =
+            registerBlock("immortal_peach_leaves", () -> new ImmortalPeachLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
     public static final DeferredBlock<Block> PEAR_LEAVES =
             registerBlock("pear_leaves", () -> new PearLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
     public static final DeferredBlock<Block> FLOWERING_PURPLE_LEAF_PLUM_LEAVES =
@@ -148,6 +152,10 @@ public class ModBlocks {
             registerBlock("weeping_crabapple", () -> new WeepingCrabappleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CHERRY_LEAVES).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CRABAPPLE =
             BLOCKS.register("crabapple", () -> new CrabappleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.CHERRY_LEAVES).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CLOUD_APRICOT =
+            BLOCKS.register("cloud_apricot", () -> new ApricotBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> IMMORTAL_PEACH =
+            BLOCKS.register("immortal_peach", () -> new PeachBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> CHINESE_WISTERIA =
             registerBlock("chinese_wisteria", () -> new WisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
@@ -785,10 +793,14 @@ public class ModBlocks {
             registerBlock("pink_apricot_sapling", () -> new SaplingBlock(ModTreeGrower.PINK_APRICOT, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WHITE_APRICOT_SAPLING =
             registerBlock("white_apricot_sapling", () -> new SaplingBlock(ModTreeGrower.WHITE_APRICOT, BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CLOUD_APRICOT_SAPLING =
+            registerBlock("cloud_apricot_sapling", () -> new SaplingBlock(ModTreeGrower.CLOUD_APRICOT, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> ORNAMENTAL_PEACH_SAPLING =
             registerBlock("ornamental_peach_sapling", () -> new SaplingBlock(ModTreeGrower.ORNAMENTAL_PEACH, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WILD_PEACH_SAPLING =
             registerBlock("wild_peach_sapling", () -> new SaplingBlock(ModTreeGrower.WILD_PEACH, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> IMMORTAL_PEACH_SAPLING =
+            registerBlock("immortal_peach_sapling", () -> new SaplingBlock(ModTreeGrower.IMMORTAL_PEACH, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PEAR_SAPLING =
             registerBlock("pear_sapling", () -> new SaplingBlock(ModTreeGrower.PEAR, BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> FLOWERING_PURPLE_LEAF_PLUM_SAPLING =
@@ -856,10 +868,14 @@ public class ModBlocks {
             BLOCKS.register("potted_pink_apricot_sapling", () -> flowerPot(PINK_APRICOT_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_APRICOT_SAPLING =
             BLOCKS.register("potted_white_apricot_sapling", () -> flowerPot(WHITE_APRICOT_SAPLING.get()));
+    public static final DeferredBlock<Block> POTTED_CLOUD_APRICOT_SAPLING =
+            BLOCKS.register("potted_cloud_apricot_sapling", () -> flowerPot(CLOUD_APRICOT_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_ORNAMENTAL_PEACH_SAPLING =
             BLOCKS.register("potted_ornamental_peach_sapling", () -> flowerPot(ORNAMENTAL_PEACH_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_WILD_PEACH_SAPLING =
             BLOCKS.register("potted_wild_peach_sapling", () -> flowerPot(WILD_PEACH_SAPLING.get()));
+    public static final DeferredBlock<Block> POTTED_IMMORTAL_PEACH_SAPLING =
+            BLOCKS.register("potted_immortal_peach_sapling", () -> flowerPot(IMMORTAL_PEACH_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_PEAR_SAPLING =
             BLOCKS.register("potted_pear_sapling", () -> flowerPot(PEAR_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_FLOWERING_PURPLE_LEAF_PLUM_SAPLING =

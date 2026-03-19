@@ -40,11 +40,17 @@ public class ModParticleTypes {
     public static final Supplier<SimpleParticleType> WHITE_APRICOT_LEAVES =
             registerParticleType("white_apricot_leaves", () -> new SimpleParticleType(false));
 
+    public static final Supplier<SimpleParticleType> CLOUD_APRICOT_LEAVES =
+            registerParticleType("cloud_apricot_leaves", () -> new SimpleParticleType(false));
+
     public static final Supplier<SimpleParticleType> ORNAMENTAL_PEACH_LEAVES =
             registerParticleType("ornamental_peach_leaves", () -> new SimpleParticleType(false));
 
     public static final Supplier<SimpleParticleType> WILD_PEACH_LEAVES =
             registerParticleType("wild_peach_leaves", () -> new SimpleParticleType(false));
+
+    public static final Supplier<SimpleParticleType> IMMORTAL_PEACH_LEAVES =
+            registerParticleType("immortal_peach_leaves", () -> new SimpleParticleType(false));
 
     public static final Supplier<SimpleParticleType> PEAR_LEAVES =
             registerParticleType("pear_leaves", () -> new SimpleParticleType(false));

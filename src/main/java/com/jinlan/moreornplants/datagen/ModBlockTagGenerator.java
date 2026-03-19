@@ -31,7 +31,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
                 .addTag(CommonTags.Blocks.WISTERIA)
                 .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
-                .add(ModBlocks.CRABAPPLE.get(), ModBlocks.BAMBOO_STICK.get());
+                .add(ModBlocks.CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(), ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.CROPS)
                 .addTag(CommonTags.Blocks.LOTUS)
@@ -65,8 +65,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_RED_WEEPING_MEI_SAPLING.get(), ModBlocks.POTTED_WHITE_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_GREEN_WEEPING_MEI_SAPLING.get(), ModBlocks.POTTED_PINK_WEEPING_MEI_SAPLING.get(), ModBlocks.POTTED_VERSICOLOR_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.POTTED_WEEPING_CRABAPPLE_SAPLING.get())
-                .add(ModBlocks.POTTED_PINK_APRICOT_SAPLING.get(), ModBlocks.POTTED_WHITE_APRICOT_SAPLING.get())
-                .add(ModBlocks.POTTED_ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.POTTED_WILD_PEACH_SAPLING.get())
+                .add(ModBlocks.POTTED_PINK_APRICOT_SAPLING.get(), ModBlocks.POTTED_WHITE_APRICOT_SAPLING.get(), ModBlocks.POTTED_CLOUD_APRICOT_SAPLING.get())
+                .add(ModBlocks.POTTED_ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.POTTED_WILD_PEACH_SAPLING.get(), ModBlocks.POTTED_IMMORTAL_PEACH_SAPLING.get())
                 .add(ModBlocks.POTTED_PEAR_SAPLING.get())
                 .add(ModBlocks.POTTED_FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get(), ModBlocks.POTTED_PURPLE_LEAF_PLUM_SAPLING.get())
                 .add(ModBlocks.POTTED_GOLDEN_OSMANTHUS_SAPLING.get(), ModBlocks.POTTED_ORANGE_OSMANTHUS_SAPLING.get(), ModBlocks.POTTED_WHITE_OSMANTHUS_SAPLING.get())
@@ -657,14 +657,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get(), ModBlocks.ORANGE_OSMANTHUS_LEAVES.get(), ModBlocks.WHITE_OSMANTHUS_LEAVES.get());
 
         this.tag(CommonTags.Blocks.APRICOT_SAPLING)
-                .add(ModBlocks.PINK_APRICOT_SAPLING.get(), ModBlocks.WHITE_APRICOT_SAPLING.get());
+                .add(ModBlocks.PINK_APRICOT_SAPLING.get(), ModBlocks.WHITE_APRICOT_SAPLING.get(), ModBlocks.CLOUD_APRICOT_SAPLING.get());
         this.tag(CommonTags.Blocks.APRICOT_LEAVES)
-                .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get());
+                .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get(), ModBlocks.CLOUD_APRICOT_LEAVES.get());
 
         this.tag(CommonTags.Blocks.PEACH_SAPLING)
-                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.WILD_PEACH_SAPLING.get());
+                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.WILD_PEACH_SAPLING.get(), ModBlocks.IMMORTAL_PEACH_SAPLING.get());
         this.tag(CommonTags.Blocks.PEACH_LEAVES)
-                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get());
+                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get(), ModBlocks.IMMORTAL_PEACH_LEAVES.get());
 
         this.tag(CommonTags.Blocks.PLUM_SAPLING)
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get(), ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get());

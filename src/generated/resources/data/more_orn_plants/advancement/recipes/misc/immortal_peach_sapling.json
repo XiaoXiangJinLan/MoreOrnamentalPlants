@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_golden_crabapple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:golden_crabapple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ornamental_peach_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:ornamental_peach_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:immortal_peach_sapling"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wild_peach_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:wild_peach_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ornamental_peach_sapling",
+      "has_wild_peach_sapling",
+      "has_golden_crabapple"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:immortal_peach_sapling"
+    ]
+  }
+}

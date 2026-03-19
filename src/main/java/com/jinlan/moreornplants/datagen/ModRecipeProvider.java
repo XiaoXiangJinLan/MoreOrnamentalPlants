@@ -1245,7 +1245,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("/")
                 .define('#', ModTags.Items.PEACH_LOGS)
                 .define('/', Items.STICK)
-                .unlockedBy("has_lotus", has(ModTags.Items.PEACH_LOGS))
+                .unlockedBy("has_peach_logs", has(ModTags.Items.PEACH_LOGS))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CAMPHOR_WOODEN_SWORD)
                 .pattern("#")
@@ -1253,7 +1253,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("/")
                 .define('#', ModTags.Items.CAMPHOR_LOGS)
                 .define('/', Items.STICK)
-                .unlockedBy("has_lotus", has(ModTags.Items.CAMPHOR_LOGS))
+                .unlockedBy("has_camphor_logs", has(ModTags.Items.CAMPHOR_LOGS))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CLOUD_APRICOT_SAPLING)
+                .pattern(" P ")
+                .pattern("PCW")
+                .pattern(" W ")
+                .define('P', ModBlocks.PINK_APRICOT_SAPLING)
+                .define('W', ModBlocks.WHITE_APRICOT_SAPLING)
+                .define('C', ModItems.GOLDEN_CRABAPPLE)
+                .unlockedBy(getHasName(ModBlocks.PINK_APRICOT_SAPLING), has(ModBlocks.PINK_APRICOT_SAPLING))
+                .unlockedBy(getHasName(ModBlocks.WHITE_APRICOT_SAPLING), has(ModBlocks.WHITE_APRICOT_SAPLING))
+                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE), has(ModItems.GOLDEN_CRABAPPLE))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.IMMORTAL_PEACH_SAPLING)
+                .pattern(" O ")
+                .pattern("OCW")
+                .pattern(" W ")
+                .define('O', ModBlocks.ORNAMENTAL_PEACH_SAPLING)
+                .define('W', ModBlocks.WILD_PEACH_SAPLING)
+                .define('C', ModItems.GOLDEN_CRABAPPLE)
+                .unlockedBy(getHasName(ModBlocks.ORNAMENTAL_PEACH_SAPLING), has(ModBlocks.ORNAMENTAL_PEACH_SAPLING))
+                .unlockedBy(getHasName(ModBlocks.WILD_PEACH_SAPLING), has(ModBlocks.WILD_PEACH_SAPLING))
+                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE), has(ModItems.GOLDEN_CRABAPPLE))
                 .save(recipeOutput);
     }
 }

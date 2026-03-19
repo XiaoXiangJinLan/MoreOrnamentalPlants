@@ -29,8 +29,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE_LEAVES);
                         pOutput.accept(ModBlocks.PINK_APRICOT_LEAVES);
                         pOutput.accept(ModBlocks.WHITE_APRICOT_LEAVES);
+                        pOutput.accept(ModBlocks.CLOUD_APRICOT_LEAVES);
                         pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_LEAVES);
                         pOutput.accept(ModBlocks.WILD_PEACH_LEAVES);
+                        pOutput.accept(ModBlocks.IMMORTAL_PEACH_LEAVES);
                         pOutput.accept(ModBlocks.PEAR_LEAVES);
                         pOutput.accept(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES);
                         pOutput.accept(ModBlocks.PURPLE_LEAF_PLUM_LEAVES);
@@ -78,8 +80,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE_SAPLING);
                         pOutput.accept(ModBlocks.PINK_APRICOT_SAPLING);
                         pOutput.accept(ModBlocks.WHITE_APRICOT_SAPLING);
+                        pOutput.accept(ModBlocks.CLOUD_APRICOT_SAPLING);
                         pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_SAPLING);
                         pOutput.accept(ModBlocks.WILD_PEACH_SAPLING);
+                        pOutput.accept(ModBlocks.IMMORTAL_PEACH_SAPLING);
                         pOutput.accept(ModBlocks.PEAR_SAPLING);
                         pOutput.accept(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING);
                         pOutput.accept(ModBlocks.PURPLE_LEAF_PLUM_SAPLING);
@@ -525,6 +529,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CRABAPPLE);
                         pOutput.accept(ModItems.GOLDEN_CRABAPPLE);
                         pOutput.accept(ModItems.ENCHANTED_GOLDEN_CRABAPPLE);
+                        pOutput.accept(ModItems.IMMORTAL_PEACH);
+                        pOutput.accept(ModItems.CLOUD_APRICOT);
                         pOutput.accept(ModItems.PEELED_BAMBOO_SHOOTS);
                         pOutput.accept(ModItems.LOTUS_ROOT);
                         pOutput.accept(ModItems.LOTUS_SEED_POD);

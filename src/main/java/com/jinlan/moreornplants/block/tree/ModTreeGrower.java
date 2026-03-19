@@ -124,6 +124,13 @@ public class ModTreeGrower {
             Optional.empty()
     );
 
+    public static final TreeGrower CLOUD_APRICOT = new TreeGrower(
+            "cloud_apricot",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.CLOUD_APRICOT),
+            Optional.empty()
+    );
+
     public static final TreeGrower ORNAMENTAL_PEACH = new TreeGrower(
             "ornamental_peach",
             Optional.empty(),
@@ -135,6 +142,13 @@ public class ModTreeGrower {
             "wild_peach",
             Optional.empty(),
             Optional.of(ModConfiguredFeatures.WILD_PEACH),
+            Optional.empty()
+    );
+
+    public static final TreeGrower IMMORTAL_PEACH = new TreeGrower(
+            "immortal_peach",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.IMMORTAL_PEACH),
             Optional.empty()
     );
 

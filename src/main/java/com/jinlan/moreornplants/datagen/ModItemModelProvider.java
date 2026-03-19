@@ -245,8 +245,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.WEEPING_CRABAPPLE_SAPLING);
         saplingItem(ModBlocks.PINK_APRICOT_SAPLING);
         saplingItem(ModBlocks.WHITE_APRICOT_SAPLING);
+        saplingItem(ModBlocks.CLOUD_APRICOT_SAPLING);
         saplingItem(ModBlocks.ORNAMENTAL_PEACH_SAPLING);
         saplingItem(ModBlocks.WILD_PEACH_SAPLING);
+        saplingItem(ModBlocks.IMMORTAL_PEACH_SAPLING);
         saplingItem(ModBlocks.PEAR_SAPLING);
         saplingItem(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING);
         saplingItem(ModBlocks.PURPLE_LEAF_PLUM_SAPLING);
@@ -403,14 +405,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CRABAPPLE);
         goldenCrabapple(ModItems.GOLDEN_CRABAPPLE);
         goldenCrabapple(ModItems.ENCHANTED_GOLDEN_CRABAPPLE);
+        simpleItem(ModItems.CLOUD_APRICOT);
+        simpleItem(ModItems.IMMORTAL_PEACH);
 
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
         simplerBlockItem(ModBlocks.FRAGRANT_SNOW_PETALS);
         simplerBlockItem(ModBlocks.SPRING_PETALS);
         simpleItem(ModItems.ORNAMENTAL_PEACH_PETALS);
         simpleItem(ModItems.WILD_PEACH_PETALS);
-        flowerItem(ModBlocks.CHINESE_PARASOL_LEAF_0);
-        flowerItem(ModBlocks.CHINESE_PARASOL_LEAF_1);
+        simpleItem(ModItems.CHINESE_PARASOL_LEAF_0);
+        simpleItem(ModItems.CHINESE_PARASOL_LEAF_1);
         simpleItem(ModItems.SWEETGUM_LEAF_0);
         simpleItem(ModItems.SWEETGUM_LEAF_1);
         simpleItem(ModItems.GINKGO_LEAF);

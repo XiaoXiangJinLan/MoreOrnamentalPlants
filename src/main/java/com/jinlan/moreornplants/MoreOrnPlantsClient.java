@@ -88,11 +88,19 @@ public class MoreOrnPlantsClient {
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
+        event.registerSpriteSet(ModParticleTypes.CLOUD_APRICOT_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
         event.registerSpriteSet(ModParticleTypes.ORNAMENTAL_PEACH_LEAVES.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new PeachParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
         event.registerSpriteSet(ModParticleTypes.WILD_PEACH_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new PeachParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.IMMORTAL_PEACH_LEAVES.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new PeachParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));

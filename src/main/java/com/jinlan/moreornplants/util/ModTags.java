@@ -1,11 +1,14 @@
 package com.jinlan.moreornplants.util;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 
 public class ModTags {
@@ -68,6 +71,16 @@ public class ModTags {
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));
+        }
+    }
+
+    public static class Biomes {
+        public static final TagKey<Biome> CRABAPPLE_BEARING = tag("crabapple_bearing");
+        public static final TagKey<Biome> PEACH_BEARING = tag("peach_bearing");
+        public static final TagKey<Biome> APRICOT_BEARING = tag("apricot_bearing");
+
+        private static TagKey<Biome> tag(String name) {
+            return TagKey.create(Registries.BIOME, ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));
         }
     }
 }
