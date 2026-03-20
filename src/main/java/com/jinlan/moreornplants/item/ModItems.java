@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.item;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.entity.ModEntities;
 import com.jinlan.moreornplants.entity.custom.ModBoatEntity;
 import com.jinlan.moreornplants.item.custom.*;
 import net.minecraft.core.component.DataComponents;
@@ -152,6 +153,18 @@ public class ModItems {
             ITEMS.register("desert_poplar_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
     public static final DeferredItem<Item> DESERT_POPLAR_CHEST_BOAT =
             ITEMS.register("desert_poplar_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
+
+    public static final DeferredItem<Item> ZIYING_FOX_SPAWN_EGG =
+            ITEMS.register("ziying_fox_spawn_egg", () -> new SpawnEggItem(ModEntities.ZIYING_FOX.get(), 14144467, 13545366, new Item.Properties()));
+    public static final DeferredItem<Item> SUYU_FOX_SPAWN_EGG =
+            ITEMS.register("suyu_fox_spawn_egg", () -> new SpawnEggItem(ModEntities.SUYU_FOX.get(), 14144467, 13545366, new Item.Properties()));
+
+    public static final DeferredItem<Item> ZIYING_BEAD =
+            ITEMS.register("ziying_bead", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SUYU_BEAD =
+            ITEMS.register("suyu_bead", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ZIYU_YUANYANG_BEAD =
+            ITEMS.register("ziyu_yuanyang_bead", () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> CRAPE_MYRTLE_LOG =
             ITEMS.register("crape_myrtle_log", () -> new CrapeMyrtleLogBlockItem(ModBlocks.CRAPE_MYRTLE_LOG.get(), new Item.Properties()));

@@ -547,6 +547,8 @@
   "block.more_orn_plants.peach_xiangnang": "桃香囊",
   "block.more_orn_plants.pear_xiangnang": "梨香囊",
   "block.more_orn_plants.lotus_xiangnang": "蓮香囊",
+  "block.more_orn_plants.ziying_beadlight": "紫英珠燈",
+  "block.more_orn_plants.suyu_beadlight": "素玉珠燈",
 
   "block.more_orn_plants.potted_red_mei_sapling": "硃砂梅盆景",
   "block.more_orn_plants.potted_white_mei_sapling": "江梅盆景",
@@ -685,6 +687,8 @@
 
   "entity.more_orn_plants.mod_boat": "舟",
   "entity.more_orn_plants.mod_chest_boat": "艚",
+  "entity.more_orn_plants.ziying_fox": "紫英狐",
+  "entity.more_orn_plants.suyu_fox": "素玉狐",
 
   "item.more_orn_plants.red_mei_boat": "硃砂梅舟",
   "item.more_orn_plants.red_mei_chest_boat": "硃砂梅艚",
@@ -740,6 +744,11 @@
   "item.more_orn_plants.enchanted_golden_crabapple": "淬靈金海棠",
   "item.more_orn_plants.cloud_apricot": "雲杏",
   "item.more_orn_plants.immortal_peach": "蟠桃",
+  "item.more_orn_plants.ziying_fox_spawn_egg": "孳紫英狐之卵",
+  "item.more_orn_plants.suyu_fox_spawn_egg": "孳素玉狐之卵",
+  "item.more_orn_plants.ziying_bead": "紫英珠",
+  "item.more_orn_plants.suyu_bead": "素玉珠",
+  "item.more_orn_plants.ziyu_yuanyang_bead": "紫玉鸳鸯珠",
 
   "biome.more_orn_plants.red_mei_forest": "白雪紅梅",
   "biome.more_orn_plants.spring_river": "春江",

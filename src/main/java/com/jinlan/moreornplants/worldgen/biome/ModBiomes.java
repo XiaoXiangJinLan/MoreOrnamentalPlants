@@ -1,6 +1,7 @@
 package com.jinlan.moreornplants.worldgen.biome;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import com.jinlan.moreornplants.entity.ModEntities;
 import com.jinlan.moreornplants.worldgen.ModPlacedFeatures;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -889,6 +890,11 @@ public class ModBiomes {
         spawnBuilder.addSpawn(MobCategory.AXOLOTLS, new MobSpawnSettings.SpawnerData(EntityType.AXOLOTL, 10, 4, 6));
         spawnBuilder.addSpawn(MobCategory.WATER_AMBIENT, new MobSpawnSettings.SpawnerData(EntityType.TROPICAL_FISH, 25, 8, 8));
         BiomeDefaultFeatures.caveSpawns(spawnBuilder);
+        if (isWhite) {
+            spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.SUYU_FOX.get(), 5, 1, 2));
+        } else {
+            spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.ZIYING_FOX.get(), 5, 1, 2));
+        }
 
         BiomeGenerationSettings.Builder biomeBuilder =
                 new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));

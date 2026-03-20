@@ -547,6 +547,8 @@
   "block.more_orn_plants.peach_xiangnang": "Peach Xiangnang",
   "block.more_orn_plants.pear_xiangnang": "Pear Xiangnang",
   "block.more_orn_plants.lotus_xiangnang": "Lotus Xiangnang",
+  "block.more_orn_plants.ziying_beadlight": "Ziying Beadlight",
+  "block.more_orn_plants.suyu_beadlight": "Suyu Beadlight",
 
   "block.more_orn_plants.potted_red_mei_sapling": "Potted Red Bone Mei Sapling",
   "block.more_orn_plants.potted_white_mei_sapling": "Potted Jiang Mei Sapling",
@@ -685,6 +687,8 @@
 
   "entity.more_orn_plants.mod_boat": "Boat",
   "entity.more_orn_plants.mod_chest_boat": "Boat with Chest",
+  "entity.more_orn_plants.ziying_fox": "Ziying Fox",
+  "entity.more_orn_plants.suyu_fox": "Suyu Fox",
 
   "item.more_orn_plants.red_mei_boat": "Red Bone Mei Boat",
   "item.more_orn_plants.red_mei_chest_boat": "Red Bone Mei Chest Boat",
@@ -740,6 +744,11 @@
   "item.more_orn_plants.enchanted_golden_crabapple": "Enchanted Golden Crabapple",
   "item.more_orn_plants.cloud_apricot": "Cloud Apricot",
   "item.more_orn_plants.immortal_peach": "Immortal Peach",
+  "item.more_orn_plants.ziying_fox_spawn_egg": "Ziying Fox Spawn Egg",
+  "item.more_orn_plants.suyu_fox_spawn_egg": "Suyu Fox Spawn Egg",
+  "item.more_orn_plants.ziying_bead": "Ziying Bead",
+  "item.more_orn_plants.suyu_bead": "Suyu Bead",
+  "item.more_orn_plants.ziyu_yuanyang_bead": "Ziyingsuyu Yuanyang Bead",
 
   "biome.more_orn_plants.red_mei_forest": "Red Mei Forest",
   "biome.more_orn_plants.spring_river": "Spring River",

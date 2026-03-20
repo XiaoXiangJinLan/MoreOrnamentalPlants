@@ -1443,14 +1443,14 @@ public class ModConfiguredFeatures {
                                 new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())).toPlace()),
                         BlockColumnConfiguration.layer(ConstantInt.of(1), randomizedintstateprovider2)), Direction.DOWN, BlockPredicate.ONLY_IN_AIR_PREDICATE, true));
         register(context, CRAPE_MYRTLE_CAVES, Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
-                        new WeightedStateProvider(
-                                SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(ModBlocks.CRAPE_MYRTLE.get().defaultBlockState(), 10)
-                                        .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().defaultBlockState(), 50)
-                                        .add(Blocks.MOSS_CARPET.defaultBlockState(), 20)
-                                        .add(Blocks.SHORT_GRASS.defaultBlockState(), 10)
-                                        .add(Blocks.TALL_GRASS.defaultBlockState(), 4)
-                                        .add(Blocks.PEARLESCENT_FROGLIGHT.defaultBlockState(), 1))));
+                new WeightedStateProvider(
+                        SimpleWeightedRandomList.<BlockState>builder()
+                                .add(ModBlocks.CRAPE_MYRTLE.get().defaultBlockState(), 10)
+                                .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().defaultBlockState(), 50)
+                                .add(Blocks.MOSS_CARPET.defaultBlockState(), 20)
+                                .add(Blocks.SHORT_GRASS.defaultBlockState(), 10)
+                                .add(Blocks.TALL_GRASS.defaultBlockState(), 4)
+                                .add(ModBlocks.ZIYING_BEADLIGHT.get().defaultBlockState(), 1))));
         register(context, MOSS_PATCH_1, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
                 BlockTags.MOSS_REPLACEABLE, BlockStateProvider.simple(Blocks.MOSS_BLOCK),
                 PlacementUtils.inlinePlaced(holdergetter.getOrThrow(CRAPE_MYRTLE_CAVES)),
@@ -1465,7 +1465,7 @@ public class ModConfiguredFeatures {
                                 .add(Blocks.MOSS_CARPET.defaultBlockState(), 20)
                                 .add(Blocks.SHORT_GRASS.defaultBlockState(), 10)
                                 .add(Blocks.TALL_GRASS.defaultBlockState(), 4)
-                                .add(Blocks.PEARLESCENT_FROGLIGHT.defaultBlockState(), 1))));
+                                .add(ModBlocks.ZIYING_BEADLIGHT.get().defaultBlockState(), 1))));
         register(context, MOSS_PATCH_2, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
                 BlockTags.MOSS_REPLACEABLE, BlockStateProvider.simple(Blocks.MOSS_BLOCK),
                 PlacementUtils.inlinePlaced(holdergetter.getOrThrow(RED_CRAPE_MYRTLE_CAVES)),
@@ -1480,7 +1480,7 @@ public class ModConfiguredFeatures {
                                 .add(Blocks.MOSS_CARPET.defaultBlockState(), 20)
                                 .add(Blocks.SHORT_GRASS.defaultBlockState(), 10)
                                 .add(Blocks.TALL_GRASS.defaultBlockState(), 4)
-                                .add(Blocks.PEARLESCENT_FROGLIGHT.defaultBlockState(), 1))));
+                                .add(ModBlocks.ZIYING_BEADLIGHT.get().defaultBlockState(), 1))));
         register(context, MOSS_PATCH_3, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
                 BlockTags.MOSS_REPLACEABLE, BlockStateProvider.simple(Blocks.MOSS_BLOCK),
                 PlacementUtils.inlinePlaced(holdergetter.getOrThrow(PINK_CRAPE_MYRTLE_CAVES)),
@@ -1495,7 +1495,7 @@ public class ModConfiguredFeatures {
                                 .add(Blocks.MOSS_CARPET.defaultBlockState(), 20)
                                 .add(Blocks.SHORT_GRASS.defaultBlockState(), 10)
                                 .add(Blocks.TALL_GRASS.defaultBlockState(), 4)
-                                .add(Blocks.PEARLESCENT_FROGLIGHT.defaultBlockState(), 1))));
+                                .add(ModBlocks.ZIYING_BEADLIGHT.get().defaultBlockState(), 1))));
         register(context, MOSS_PATCH_4, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
                 BlockTags.MOSS_REPLACEABLE, BlockStateProvider.simple(Blocks.MOSS_BLOCK),
                 PlacementUtils.inlinePlaced(holdergetter.getOrThrow(WHITE_CRAPE_MYRTLE_CAVES)),
@@ -1510,7 +1510,7 @@ public class ModConfiguredFeatures {
                                 .add(Blocks.MOSS_CARPET.defaultBlockState(), 20)
                                 .add(Blocks.SHORT_GRASS.defaultBlockState(), 10)
                                 .add(Blocks.TALL_GRASS.defaultBlockState(), 4)
-                                .add(Blocks.VERDANT_FROGLIGHT.defaultBlockState(), 1))));
+                                .add(ModBlocks.SUYU_BEADLIGHT.get().defaultBlockState(), 1))));
         register(context, MOSS_PATCH_5, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
                 BlockTags.MOSS_REPLACEABLE, BlockStateProvider.simple(Blocks.MOSS_BLOCK),
                 PlacementUtils.inlinePlaced(holdergetter.getOrThrow(WHITE_CRAPE_MYRTLE_CAVES_2)),

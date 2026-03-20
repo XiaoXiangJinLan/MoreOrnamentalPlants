@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-18T20:16:30.477798	Tags for minecraft:block mod id more_orn_plants
+// 1.21.1	2026-03-21T00:15:03.5015349	Tags for minecraft:block mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/block/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/block/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/block/azalea.json
@@ -47,6 +47,7 @@ c92ed05eeebe70233cd84ac80c35fef1483d6e7f data/minecraft/tags/block/flowers.json
 02563b1c740984a58e80cf30252042ce86fe978e data/minecraft/tags/block/maintains_farmland.json
 62b69e6265696380b493baa7442d4e6da8c7ffc2 data/minecraft/tags/block/mineable/axe.json
 b8e35fd5d136c1dd09cece1197757fe2cf620f83 data/minecraft/tags/block/mineable/hoe.json
+b23dc07826c17fe7795f7684efbaa97c5b2b03fd data/minecraft/tags/block/mineable/pickaxe.json
 cc2507508575a4a8125dd018f59cec761a5fcf37 data/minecraft/tags/block/moss_replaceable.json
 31dbb2f2f136298e59f2bb57a398fc358867fd43 data/minecraft/tags/block/overworld_natural_logs.json
 73c33643918bd977c2ecc0002fa55666390463e5 data/minecraft/tags/block/planks.json
@@ -85,3 +86,4 @@ bf74ee13cd2129707eef22e6a05e12101e0e4006 data/more_orn_plants/tags/block/purple_
 a483d45402126921e04886e0e631c28d6b02b68c data/more_orn_plants/tags/block/red_mei_logs.json
 0bad73ccf3efc9efb82d8e2ddcb5de8be3eb4285 data/more_orn_plants/tags/block/sweetgum_logs.json
 76d484e5ec22fca0b94937e04a8f97f264e0f5e2 data/more_orn_plants/tags/block/white_mei_logs.json
+69c396cb051bbe9a130e6979b67065e5041b179d data/more_orn_plants/tags/block/ziying_fox_spawnable_on.json

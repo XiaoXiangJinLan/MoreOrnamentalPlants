@@ -1,6 +1,9 @@
 package com.jinlan.moreornplants.event;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import com.jinlan.moreornplants.entity.ModEntities;
+import com.jinlan.moreornplants.entity.custom.SuyuFox;
+import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.Holder;
@@ -8,10 +11,14 @@ import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.animal.AbstractGolem;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.allay.Allay;
+import net.minecraft.world.entity.monster.Creeper;
+import net.minecraft.world.entity.monster.Phantom;
 import net.minecraft.world.entity.monster.ZombieVillager;
 import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.player.Player;
@@ -19,12 +26,28 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.biome.Biome;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 
 @EventBusSubscriber(modid = MoreOrnPlants.MODID)
 public class ModEventsBusEvents {
+    @SubscribeEvent
+    public static void registerAttributes(EntityAttributeCreationEvent event) {
+        event.put(ModEntities.ZIYING_FOX.get(), ZiyingFox.createAttributes().build());
+        event.put(ModEntities.SUYU_FOX.get(), SuyuFox.createAttributes().build());
+    }
+
+    @SubscribeEvent
+    public static void onEntityJoinLevel(EntityJoinLevelEvent event) {
+        Entity entity = event.getEntity();
+        if (entity instanceof Creeper creeper) {
+            creeper.goalSelector.addGoal(3, new AvoidEntityGoal<>(creeper, ZiyingFox.class, 9.0F, 1.0, 1.2));
+        }
+    }
+
     @SubscribeEvent
     public static void onLivingDamage(LivingIncomingDamageEvent event) {
         if (!(event.getSource().getDirectEntity() instanceof Player player)) return;

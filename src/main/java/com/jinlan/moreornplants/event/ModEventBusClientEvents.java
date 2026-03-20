@@ -5,6 +5,7 @@ import com.jinlan.moreornplants.MoreOrnPlantsClient;
 import com.jinlan.moreornplants.block.ModBlockEntities;
 import net.minecraft.client.model.BoatModel;
 import net.minecraft.client.model.ChestBoatModel;
+import net.minecraft.client.model.FoxModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.neoforged.api.distmarker.Dist;
@@ -18,6 +19,9 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 public class ModEventBusClientEvents {
     @SubscribeEvent
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(MoreOrnPlantsClient.ModModelLayers.ZIYING_FOX_LAYER, FoxModel::createBodyLayer);
+        event.registerLayerDefinition(MoreOrnPlantsClient.ModModelLayers.SUYU_FOX_LAYER, FoxModel::createBodyLayer);
+
         event.registerLayerDefinition(MoreOrnPlantsClient.ModModelLayers.RED_MEI_BOAT_LAYER, BoatModel::createBodyModel);
         event.registerLayerDefinition(MoreOrnPlantsClient.ModModelLayers.RED_MEI_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
         event.registerLayerDefinition(MoreOrnPlantsClient.ModModelLayers.WHITE_MEI_BOAT_LAYER, BoatModel::createBodyModel);

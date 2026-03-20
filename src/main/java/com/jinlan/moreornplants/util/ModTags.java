@@ -3,7 +3,6 @@ package com.jinlan.moreornplants.util;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -32,6 +31,7 @@ public class ModTags {
         public static final TagKey<Block> DESERT_POPLAR_LOGS = tag("desert_poplar_logs");
         public static final TagKey<Block> MOTTLED_BAMBOO_PLANTABLE_ON = tag("mottled_bamboo_plantable_on");
         public static final TagKey<Block> BLACK_BAMBOO_PLANTABLE_ON = tag("black_bamboo_plantable_on");
+        public static final TagKey<Block> ZIYING_FOX_SPAWNABLE_ON = tag("ziying_fox_spawnable_on");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));
@@ -68,6 +68,10 @@ public class ModTags {
         public static final TagKey<Item> MAGENTA_DYE = tag("magenta_dye");
         public static final TagKey<Item> LIGHT_BLUE_DYE = tag("light_blue_dye");
         public static final TagKey<Item> BLACK_DYE = tag("black_dye");
+        public static final TagKey<Item> ZIYING_FOX_FOOD = tag("ziying_fox_food");
+        public static final TagKey<Item> ZIYING_FOX_APPEAL_TO = tag("ziying_fox_appeal_to");
+        public static final TagKey<Item> SUYU_FOX_FOOD = tag("suyu_fox_food");
+        public static final TagKey<Item> SUYU_FOX_APPEAL_TO = tag("suyu_fox_appeal_to");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));

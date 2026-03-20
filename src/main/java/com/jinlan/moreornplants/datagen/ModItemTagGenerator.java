@@ -309,6 +309,28 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WINTER_CYMBIDIUM.asItem())
                 .add(ModBlocks.INK_PEONY.asItem());
 
+        this.tag(ModTags.Items.ZIYING_FOX_FOOD)
+                .addTag(ItemTags.FOX_FOOD)
+                .addTag(CommonTags.Items.WISTERIA)
+                .addTag(CommonTags.Items.CRAPE_MYRTLE)
+                .addTag(CommonTags.Items.CRAPE_MYRTLE_LEAVES);
+
+        this.tag(ModTags.Items.ZIYING_FOX_APPEAL_TO)
+                .addTag(CommonTags.Items.WISTERIA)
+                .addTag(CommonTags.Items.CRAPE_MYRTLE)
+                .addTag(CommonTags.Items.CRAPE_MYRTLE_LEAVES);
+
+        this.tag(ModTags.Items.SUYU_FOX_FOOD)
+                .addTag(ItemTags.FOX_FOOD)
+                .add(ModBlocks.WHITE_CHINESE_WISTERIA.asItem())
+                .add(ModBlocks.WHITE_CRAPE_MYRTLE.asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.asItem());
+
+        this.tag(ModTags.Items.SUYU_FOX_APPEAL_TO)
+                .add(ModBlocks.WHITE_CHINESE_WISTERIA.asItem())
+                .add(ModBlocks.WHITE_CRAPE_MYRTLE.asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.asItem());
+
         this.tag(Tags.Items.CROPS)
                 .addTag(CommonTags.Items.CROPS_LOTUS);
 

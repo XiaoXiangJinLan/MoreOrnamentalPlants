@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-18T20:16:30.4726713	Tags for minecraft:item mod id more_orn_plants
+// 1.21.1	2026-03-20T22:02:19.0215218	Tags for minecraft:item mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/item/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/item/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/item/azalea.json
@@ -104,7 +104,11 @@ cc73acf02645be6c26755a4839f02da460da7fd7 data/more_orn_plants/tags/item/plant_in
 bf74ee13cd2129707eef22e6a05e12101e0e4006 data/more_orn_plants/tags/item/purple_leaf_plum_logs.json
 5a48623ccf1c3c35f7c67d16aaeba6715f6de103 data/more_orn_plants/tags/item/red_dye.json
 a483d45402126921e04886e0e631c28d6b02b68c data/more_orn_plants/tags/item/red_mei_logs.json
+28a40c562836ea0a7ec3ee633ae12fe152103d0f data/more_orn_plants/tags/item/suyu_fox_appeal_to.json
+4c1236250f9f57613cbd129bd489a4ce9433a880 data/more_orn_plants/tags/item/suyu_fox_food.json
 0bad73ccf3efc9efb82d8e2ddcb5de8be3eb4285 data/more_orn_plants/tags/item/sweetgum_logs.json
 7c696a85f22c797ed9eb64cbae329edba463a221 data/more_orn_plants/tags/item/white_dye.json
 76d484e5ec22fca0b94937e04a8f97f264e0f5e2 data/more_orn_plants/tags/item/white_mei_logs.json
 385796ed03f49ac0b0e5fda9add2683ca334d243 data/more_orn_plants/tags/item/yellow_dye.json
+a4a87444e657e6381a55e05edde4fec8222b1870 data/more_orn_plants/tags/item/ziying_fox_appeal_to.json
+7b3e2a5df1959b4974ba4f94d9490f29d603515c data/more_orn_plants/tags/item/ziying_fox_food.json

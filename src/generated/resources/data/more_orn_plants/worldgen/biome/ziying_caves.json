@@ -114,7 +114,14 @@
         "weight": 10
       }
     ],
-    "creature": [],
+    "creature": [
+      {
+        "type": "more_orn_plants:ziying_fox",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 5
+      }
+    ],
     "misc": [],
     "monster": [],
     "underground_water_creature": [

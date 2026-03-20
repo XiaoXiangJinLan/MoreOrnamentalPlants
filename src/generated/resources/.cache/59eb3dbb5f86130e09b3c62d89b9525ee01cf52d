@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-19T18:01:58.7143908	Loot Tables
+// 1.21.1	2026-03-21T00:15:03.5131502	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_table/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_table/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_table/blocks/apricot_fence.json
@@ -569,6 +569,7 @@ b607edff160013fcbdc0eae17bfa906043add10c data/more_orn_plants/loot_table/blocks/
 62a7d541a3902722108d2ecde56bb1aa1e725b45 data/more_orn_plants/loot_table/blocks/stripped_white_mei_log.json
 11b3c08b09f89d15e62890f00112e9996534b733 data/more_orn_plants/loot_table/blocks/stripped_white_mei_wood.json
 9c938e56b81512c65ccaa2b8ed80fe819e0f986a data/more_orn_plants/loot_table/blocks/summer_cymbidium.json
+cf70415e3845a69d09d70641b5f1079851f176da data/more_orn_plants/loot_table/blocks/suyu_beadlight.json
 ddcbcde3ff5e48324ae95a6c74cc9fb331051de7 data/more_orn_plants/loot_table/blocks/sweetgum_button.json
 7d7d9e6319cc18a756d27c7274ae563140a7cddf data/more_orn_plants/loot_table/blocks/sweetgum_door.json
 edbae2c580a114cb23734d2e40522808eb543d24 data/more_orn_plants/loot_table/blocks/sweetgum_fence.json
@@ -657,3 +658,4 @@ ae868f4372755a6be8840770cc2b0a156e187068 data/more_orn_plants/loot_table/blocks/
 ddc0f8352db001d54f11b2fd433a092ffcbaef4e data/more_orn_plants/loot_table/blocks/yellow_white_chinese_rose.json
 26ff85aa6adc565c75b5138578e34979d263868d data/more_orn_plants/loot_table/blocks/yellow_white_peony.json
 5a54f07e7a72baebb27e829ec589684a2c2f9ffd data/more_orn_plants/loot_table/blocks/zhao_pink_peony.json
+8ea3a2770b0432c20bc57a1e929276f3fc7e070d data/more_orn_plants/loot_table/blocks/ziying_beadlight.json

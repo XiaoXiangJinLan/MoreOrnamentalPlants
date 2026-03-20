@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_suyu_bead": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:suyu_bead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:ziyingsuyu_yuanyang_bead"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_ziying_bead": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:ziying_bead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ziying_bead",
+      "has_suyu_bead"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:ziyingsuyu_yuanyang_bead"
+    ]
+  }
+}

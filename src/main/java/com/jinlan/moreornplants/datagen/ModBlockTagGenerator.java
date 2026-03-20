@@ -33,6 +33,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
                 .add(ModBlocks.CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(), ModBlocks.BAMBOO_STICK.get());
 
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.ZIYING_BEADLIGHT.get(), ModBlocks.SUYU_BEADLIGHT.get());
+
         this.tag(BlockTags.CROPS)
                 .addTag(CommonTags.Blocks.LOTUS)
                 .add(ModBlocks.LOTUS_LEAF.get());
@@ -771,5 +774,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.BLACK_BAMBOO_SAPLING.get())
                 .add(Blocks.GRAVEL)
                 .add(Blocks.SUSPICIOUS_GRAVEL);
+
+        this.tag(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON)
+                .addTag(BlockTags.DIRT);
     }
 }

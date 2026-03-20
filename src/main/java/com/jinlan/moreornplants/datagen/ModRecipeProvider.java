@@ -1262,10 +1262,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" W ")
                 .define('P', ModBlocks.PINK_APRICOT_SAPLING)
                 .define('W', ModBlocks.WHITE_APRICOT_SAPLING)
-                .define('C', ModItems.GOLDEN_CRABAPPLE)
+                .define('C', ModItems.ZIYU_YUANYANG_BEAD)
                 .unlockedBy(getHasName(ModBlocks.PINK_APRICOT_SAPLING), has(ModBlocks.PINK_APRICOT_SAPLING))
                 .unlockedBy(getHasName(ModBlocks.WHITE_APRICOT_SAPLING), has(ModBlocks.WHITE_APRICOT_SAPLING))
-                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE), has(ModItems.GOLDEN_CRABAPPLE))
+                .unlockedBy(getHasName(ModItems.ZIYU_YUANYANG_BEAD), has(ModItems.ZIYU_YUANYANG_BEAD))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.IMMORTAL_PEACH_SAPLING)
                 .pattern(" O ")
@@ -1273,10 +1273,41 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" W ")
                 .define('O', ModBlocks.ORNAMENTAL_PEACH_SAPLING)
                 .define('W', ModBlocks.WILD_PEACH_SAPLING)
-                .define('C', ModItems.GOLDEN_CRABAPPLE)
+                .define('C', ModItems.ZIYU_YUANYANG_BEAD)
                 .unlockedBy(getHasName(ModBlocks.ORNAMENTAL_PEACH_SAPLING), has(ModBlocks.ORNAMENTAL_PEACH_SAPLING))
                 .unlockedBy(getHasName(ModBlocks.WILD_PEACH_SAPLING), has(ModBlocks.WILD_PEACH_SAPLING))
-                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE), has(ModItems.GOLDEN_CRABAPPLE))
+                .unlockedBy(getHasName(ModItems.ZIYU_YUANYANG_BEAD), has(ModItems.ZIYU_YUANYANG_BEAD))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZIYU_YUANYANG_BEAD)
+                .requires(ModItems.ZIYING_BEAD)
+                .requires(ModItems.SUYU_BEAD)
+                .unlockedBy(getHasName(ModItems.ZIYING_BEAD), has(ModItems.ZIYING_BEAD))
+                .unlockedBy(getHasName(ModItems.SUYU_BEAD), has(ModItems.SUYU_BEAD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZIYING_BEADLIGHT)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.ZIYING_BEAD)
+                .unlockedBy(getHasName(ModItems.ZIYING_BEAD), has(ModItems.ZIYING_BEAD))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUYU_BEADLIGHT)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.SUYU_BEAD)
+                .unlockedBy(getHasName(ModItems.SUYU_BEAD), has(ModItems.SUYU_BEAD))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZIYING_BEAD, 6)
+                .requires(ModBlocks.ZIYING_BEADLIGHT)
+                .unlockedBy(getHasName(ModBlocks.ZIYING_BEADLIGHT), has(ModBlocks.ZIYING_BEADLIGHT))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SUYU_BEAD, 6)
+                .requires(ModBlocks.SUYU_BEADLIGHT)
+                .unlockedBy(getHasName(ModBlocks.SUYU_BEADLIGHT), has(ModBlocks.SUYU_BEADLIGHT))
                 .save(recipeOutput);
     }
 }

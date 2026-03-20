@@ -42,10 +42,7 @@
         },
         {
           "data": {
-            "Name": "minecraft:verdant_froglight",
-            "Properties": {
-              "axis": "y"
-            }
+            "Name": "more_orn_plants:suyu_beadlight"
           },
           "weight": 1
         }

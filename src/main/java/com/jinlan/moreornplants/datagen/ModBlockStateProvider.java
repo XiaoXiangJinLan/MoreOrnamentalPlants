@@ -907,6 +907,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         xiangNangBlock(ModBlocks.PEAR_XIANGNANG);
         xiangNangBlock(ModBlocks.LOTUS_XIANGNANG);
 
+        blockWithItem(ModBlocks.ZIYING_BEADLIGHT);
+        blockWithItem(ModBlocks.SUYU_BEADLIGHT);
+
     }
 
     private void weepingMeiPlantBlock(DeferredBlock<Block> blockRegistryObject) {
