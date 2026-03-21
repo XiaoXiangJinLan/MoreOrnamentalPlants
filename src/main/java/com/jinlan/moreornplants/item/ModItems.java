@@ -160,11 +160,11 @@ public class ModItems {
             ITEMS.register("suyu_fox_spawn_egg", () -> new SpawnEggItem(ModEntities.SUYU_FOX.get(), 14144467, 13545366, new Item.Properties()));
 
     public static final DeferredItem<Item> ZIYING_BEAD =
-            ITEMS.register("ziying_bead", () -> new Item(new Item.Properties()));
+            ITEMS.register("ziying_bead", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
     public static final DeferredItem<Item> SUYU_BEAD =
-            ITEMS.register("suyu_bead", () -> new Item(new Item.Properties()));
+            ITEMS.register("suyu_bead", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
     public static final DeferredItem<Item> ZIYU_YUANYANG_BEAD =
-            ITEMS.register("ziyu_yuanyang_bead", () -> new Item(new Item.Properties()));
+            ITEMS.register("ziyu_yuanyang_bead", () -> new Item(new Item.Properties().rarity(Rarity.RARE).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
 
     public static final DeferredItem<Item> CRAPE_MYRTLE_LOG =
             ITEMS.register("crape_myrtle_log", () -> new CrapeMyrtleLogBlockItem(ModBlocks.CRAPE_MYRTLE_LOG.get(), new Item.Properties()));

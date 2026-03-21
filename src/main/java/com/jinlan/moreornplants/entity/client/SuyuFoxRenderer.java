@@ -6,7 +6,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 
-public class SuyuFoxRenderer extends ZiyingFoxRenderer{
+public class SuyuFoxRenderer extends ZiyingFoxRenderer {
     private static final ResourceLocation SUYU_FOX_TEXTURE =
             ResourceLocation.fromNamespaceAndPath(MoreOrnPlants.MODID, "textures/entity/suyu_fox/suyu_fox.png");
     private static final ResourceLocation SUYU_FOX_SLEEP_TEXTURE =
@@ -18,6 +18,7 @@ public class SuyuFoxRenderer extends ZiyingFoxRenderer{
 
     public SuyuFoxRenderer(EntityRendererProvider.Context p_174127_) {
         super(p_174127_);
+        this.addLayer(new SuyuFoxEyesLayer(this));
     }
 
     public @NotNull ResourceLocation getTextureLocation(ZiyingFox entity) {

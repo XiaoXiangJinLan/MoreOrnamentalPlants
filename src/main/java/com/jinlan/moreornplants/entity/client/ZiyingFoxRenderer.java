@@ -24,6 +24,7 @@ public class ZiyingFoxRenderer extends MobRenderer<ZiyingFox, ZiyingFoxModel<Ziy
     public ZiyingFoxRenderer(EntityRendererProvider.Context p_174127_) {
         super(p_174127_, new ZiyingFoxModel<>(p_174127_.bakeLayer(ModelLayers.FOX)), 0.4F);
         this.addLayer(new ZiyingFoxHeldItemLayer(this, p_174127_.getItemInHandRenderer()));
+        this.addLayer(new ZiyingFoxEyesLayer(this));
     }
 
     public @NotNull ResourceLocation getTextureLocation(ZiyingFox entity) {

@@ -84,6 +84,7 @@ public class ZiyingFox extends TamableAnimal {
     private Goal landTargetGoal;
     private Goal turtleEggTargetGoal;
     private int produceBeadTimer = 0;
+    private int regenCooldown = 0;
 
     public ZiyingFox(EntityType<? extends ZiyingFox> entityType, Level level) {
         super(entityType, level);
@@ -206,6 +207,7 @@ public class ZiyingFox extends TamableAnimal {
         compound.putBoolean("Crouching", this.isCrouching());
         compound.putBoolean("Wandering", this.isWandering());
         compound.putInt("ProduceBeadTimer", this.produceBeadTimer);
+        compound.putInt("RegenCooldown", this.regenCooldown);
     }
 
     @Override
@@ -216,6 +218,7 @@ public class ZiyingFox extends TamableAnimal {
         this.setIsCrouching(compound.getBoolean("Crouching"));
         this.setWandering(compound.getBoolean("Wandering"));
         this.produceBeadTimer = compound.getInt("ProduceBeadTimer");
+        this.regenCooldown = compound.getInt("RegenCooldown");
     }
 
     // ========== 驯服交互 ==========
@@ -402,6 +405,17 @@ public class ZiyingFox extends TamableAnimal {
                 }
             }
         }
+
+        if (this.getHealth() < this.getMaxHealth()) {
+            if (this.regenCooldown <= 0) {
+                this.addEffect(this.getEffect());
+                this.regenCooldown = 200;
+            } else {
+                this.regenCooldown--;
+            }
+        } else {
+            this.regenCooldown = 0;
+        }
     }
 
     protected void spawnBead() {
@@ -412,6 +426,10 @@ public class ZiyingFox extends TamableAnimal {
 
     protected Item getBeadItem() {
         return ModItems.ZIYING_BEAD.get();
+    }
+
+    protected MobEffectInstance getEffect() {
+        return new MobEffectInstance(MobEffects.REGENERATION, 100, 1);
     }
 
     @Override
@@ -718,6 +736,9 @@ public class ZiyingFox extends TamableAnimal {
 
     @Override
     public boolean hurt(@NotNull DamageSource source, float amount) {
+        if (source == this.level().damageSources().sweetBerryBush()) {
+            return false;
+        }
         boolean hurt = super.hurt(source, amount);
         if (hurt && this.isAlive()) {
             this.onHurt();
@@ -726,7 +747,7 @@ public class ZiyingFox extends TamableAnimal {
     }
 
     protected void onHurt() {
-        this.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1));
+        this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1));
         this.playSound(SoundEvents.FOX_SCREECH, 1.0F, 1.0F);
     }
 

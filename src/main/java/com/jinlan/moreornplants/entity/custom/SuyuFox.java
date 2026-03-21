@@ -61,13 +61,18 @@ public class SuyuFox extends ZiyingFox {
     }
 
     @Override
+    protected MobEffectInstance getEffect() {
+        return new MobEffectInstance(MobEffects.REGENERATION, 100, 0);
+    }
+
+    @Override
     public Predicate<ItemStack> getTemptItem() {
         return stack -> stack.is(ModTags.Items.SUYU_FOX_APPEAL_TO);
     }
 
     @Override
     protected void onHurt() {
-        this.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0));
+        this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, 0));
         this.playSound(SoundEvents.FOX_SCREECH, 1.0F, 1.0F);
     }
 }
