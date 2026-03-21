@@ -1395,6 +1395,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> LOTUS_XIANGNANG =
             BLOCKS.register("lotus_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
 
+    public static final RegistryObject<Block> ZIYING_BEADLIGHT =
+            registerBlock("ziying_beadlight", () -> new Block(BlockBehaviour.Properties.copy(Blocks.PEARLESCENT_FROGLIGHT).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> SUYU_BEADLIGHT =
+            registerBlock("suyu_beadlight", () -> new Block(BlockBehaviour.Properties.copy(Blocks.VERDANT_FROGLIGHT).sound(SoundType.METAL)));
+
     private static ModRotatedPillarBlock log(MapColor pTopMapColor, MapColor pSideMapColor) {
         return new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((p_152624_) ->
                 p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? pTopMapColor : pSideMapColor).instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava());

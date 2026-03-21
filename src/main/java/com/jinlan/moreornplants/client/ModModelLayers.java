@@ -5,6 +5,11 @@ import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.resources.ResourceLocation;
 
 public class ModModelLayers {
+    public static final ModelLayerLocation ZIYING_FOX_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "ziying_fox/ziying_fox"), "main");
+    public static final ModelLayerLocation SUYU_FOX_LAYER = new ModelLayerLocation(
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "suyu_fox/suyu_fox"), "main");
+
     public static final ModelLayerLocation RED_MEI_BOAT_LAYER = new ModelLayerLocation(
             new ResourceLocation(MoreOrnPlants.MOD_ID, "boat/red_mei"), "main");
     public static final ModelLayerLocation RED_MEI_CHEST_BOAT_LAYER = new ModelLayerLocation(

@@ -491,6 +491,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DESERT_POPLAR_HANGING_SIGN.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_LOG.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_WOOD.get());
+                        pOutput.accept(ModBlocks.ZIYING_BEADLIGHT.get());
+                        pOutput.accept(ModBlocks.SUYU_BEADLIGHT.get());
                         pOutput.accept(ModItems.RED_MEI_BOAT.get());
                         pOutput.accept(ModItems.RED_MEI_CHEST_BOAT.get());
                         pOutput.accept(ModItems.WHITE_MEI_BOAT.get());
@@ -550,6 +552,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.LOTUS_XIANGNANG.get());
                         pOutput.accept(ModItems.PEACH_WOODEN_SWORD.get());
                         pOutput.accept(ModItems.CAMPHOR_WOODEN_SWORD.get());
+                        pOutput.accept(ModItems.ZIYING_BEAD.get());
+                        pOutput.accept(ModItems.SUYU_BEAD.get());
+                        pOutput.accept(ModItems.ZIYU_YUANYANG_BEAD.get());
+                        pOutput.accept(ModItems.ZIYING_FOX_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.SUYU_FOX_SPAWN_EGG.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

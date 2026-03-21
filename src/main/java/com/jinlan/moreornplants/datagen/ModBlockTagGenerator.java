@@ -780,5 +780,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.BLACK_BAMBOO_SAPLING.get())
                 .add(Blocks.GRAVEL)
                 .add(Blocks.SUSPICIOUS_GRAVEL);
+
+        this.tag(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON)
+                .addTag(BlockTags.DIRT)
+                .addTag(BlockTags.BASE_STONE_OVERWORLD)
+                .add(ModBlocks.ZIYING_BEADLIGHT.get(), ModBlocks.SUYU_BEADLIGHT.get());
     }
 }

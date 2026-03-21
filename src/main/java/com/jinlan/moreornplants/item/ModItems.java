@@ -2,9 +2,11 @@ package com.jinlan.moreornplants.item;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.entity.ModEntities;
 import com.jinlan.moreornplants.entity.custom.ModBoatEntity;
 import com.jinlan.moreornplants.item.custom.*;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -152,6 +154,18 @@ public class ModItems {
             ITEMS.register("desert_poplar_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
     public static final RegistryObject<Item> DESERT_POPLAR_CHEST_BOAT =
             ITEMS.register("desert_poplar_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIYING_FOX_SPAWN_EGG =
+            ITEMS.register("ziying_fox_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.ZIYING_FOX, 14144467, 13545366, new Item.Properties()));
+    public static final RegistryObject<Item> SUYU_FOX_SPAWN_EGG =
+            ITEMS.register("suyu_fox_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.SUYU_FOX, 14144467, 13545366, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIYING_BEAD =
+            ITEMS.register("ziying_bead", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> SUYU_BEAD =
+            ITEMS.register("suyu_bead", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> ZIYU_YUANYANG_BEAD =
+            ITEMS.register("ziyu_yuanyang_bead", () -> new EnchantedGoldenAppleItem(new Item.Properties().rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> CRAPE_MYRTLE_LOG =
             ITEMS.register("crape_myrtle_log", () -> new crapeMyrtleLogBlockItem(ModBlocks.CRAPE_MYRTLE_LOG.get(), new Item.Properties()));

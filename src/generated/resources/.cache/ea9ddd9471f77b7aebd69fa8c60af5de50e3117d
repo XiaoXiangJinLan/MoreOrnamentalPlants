@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-19T12:55:30.7888598	Tags for minecraft:item mod id more_orn_plants
+// 1.20.1	2026-03-21T23:45:58.7744623	Tags for minecraft:item mod id more_orn_plants
 6fe37a5db97b91f51a0addf9825c60414ee735aa data/forge/tags/items/apricot_leaves.json
 e3bbc6d486cc0792bdcdf6bb2c0da508939151ca data/forge/tags/items/apricot_sapling.json
 3f91e650affbf0dd3681d56a151de1d2b3bb5e35 data/forge/tags/items/azalea.json
@@ -38,6 +38,7 @@ c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/forge/tags/items/vegetables/bamboo
 f5877f7cac1b1a10079613e11d66c160a762e701 data/minecraft/tags/items/chest_boats.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/minecraft/tags/items/fence_gates.json
 2d4d64bb4400684f5a93f346b12d87e41a6e7c25 data/minecraft/tags/items/flowers.json
+75f26a5668b4a0fe62a7c87c8c4c14828c2e4629 data/minecraft/tags/items/fox_food.json
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/items/hanging_signs.json
 b0eb2d3de6c98983dcd45faf52000084e7a914ad data/minecraft/tags/items/leaves.json
 8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/items/logs_that_burn.json
@@ -78,7 +79,11 @@ e698cf2c0cd433c69b8e6e08cd238d850df73b49 data/more_orn_plants/tags/items/peach_l
 bf74ee13cd2129707eef22e6a05e12101e0e4006 data/more_orn_plants/tags/items/purple_leaf_plum_logs.json
 5a48623ccf1c3c35f7c67d16aaeba6715f6de103 data/more_orn_plants/tags/items/red_dye.json
 a483d45402126921e04886e0e631c28d6b02b68c data/more_orn_plants/tags/items/red_mei_logs.json
+28a40c562836ea0a7ec3ee633ae12fe152103d0f data/more_orn_plants/tags/items/suyu_fox_appeal_to.json
+4c1236250f9f57613cbd129bd489a4ce9433a880 data/more_orn_plants/tags/items/suyu_fox_food.json
 0bad73ccf3efc9efb82d8e2ddcb5de8be3eb4285 data/more_orn_plants/tags/items/sweetgum_logs.json
 b4a9929d878d1fcee5076636e23787124079be47 data/more_orn_plants/tags/items/white_dye.json
 76d484e5ec22fca0b94937e04a8f97f264e0f5e2 data/more_orn_plants/tags/items/white_mei_logs.json
 22b6fdc823e1abca7e816a4e7564243f4b6a3e16 data/more_orn_plants/tags/items/yellow_dye.json
+f60151501e234e7421b2cda4ebce2362115ea1fb data/more_orn_plants/tags/items/ziying_fox_appeal_to.json
+71af2c3a622611481118bc520cca3fc4577d21f9 data/more_orn_plants/tags/items/ziying_fox_food.json

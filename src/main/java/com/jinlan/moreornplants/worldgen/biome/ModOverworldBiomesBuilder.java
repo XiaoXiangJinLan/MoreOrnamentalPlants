@@ -350,8 +350,8 @@ public class ModOverworldBiomesBuilder {
 
     protected void addUndergroundBiomes(Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> consume) {
         // 这里可以添加你的模组的地下生物群系
-        this.addUndergroundBiome(consume, Climate.Parameter.span(0.5F, 0.7F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, ModBiomes.ZIYING_CAVES);
-        this.addUndergroundBiome(consume, Climate.Parameter.span(0.2F, 0.4F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, ModBiomes.SUYU_CAVES);
+        this.addUndergroundBiome(consume, Climate.Parameter.span(0.3F, 0.5F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, ModBiomes.ZIYING_CAVES);
+        this.addUndergroundBiome(consume, Climate.Parameter.span(0.0F, 0.2F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, ModBiomes.SUYU_CAVES);
     }
 
     // ========== 生物群系选择器方法 ==========

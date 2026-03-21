@@ -15,10 +15,18 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
 public class PeachBlock extends WeepingCrabappleBlock implements BonemealableBlock {
     public static final IntegerProperty AGE = BlockStateProperties.AGE_2;
+    private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
+            Block.box(5.0, 10.0, 5.0, 11.0, 16.0, 11.0),
+            Block.box(3.0, 6.0, 4.0, 13.0, 16.0, 13.0),
+            Block.box(2.0, 4.0, 2.0, 14.0, 16.0, 14.0)
+    };
     public PeachBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(AGE, 0));
@@ -33,6 +41,20 @@ public class PeachBlock extends WeepingCrabappleBlock implements BonemealableBlo
     protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(AGE);
+    }
+
+    @Override
+    public @NotNull VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
+        Vec3 vec3 = state.getOffset(level, pos);
+        return SHAPE_BY_AGE[this.getAge(state)].move(vec3.x, vec3.y, vec3.z);
+    }
+
+    protected IntegerProperty getAgeProperty() {
+        return AGE;
+    }
+
+    public int getAge(BlockState state) {
+        return state.getValue(this.getAgeProperty());
     }
 
     @Override

@@ -42,10 +42,7 @@
         },
         {
           "data": {
-            "Name": "minecraft:pearlescent_froglight",
-            "Properties": {
-              "axis": "y"
-            }
+            "Name": "more_orn_plants:ziying_beadlight"
           },
           "weight": 1
         }

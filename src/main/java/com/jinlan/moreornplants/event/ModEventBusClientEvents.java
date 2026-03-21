@@ -5,6 +5,7 @@ import com.jinlan.moreornplants.block.ModBlockEntities;
 import com.jinlan.moreornplants.client.ModModelLayers;
 import net.minecraft.client.model.BoatModel;
 import net.minecraft.client.model.ChestBoatModel;
+import net.minecraft.client.model.FoxModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraftforge.api.distmarker.Dist;
@@ -16,6 +17,9 @@ import net.minecraftforge.fml.common.Mod;
 public class ModEventBusClientEvents {
     @SubscribeEvent
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(ModModelLayers.ZIYING_FOX_LAYER, FoxModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.SUYU_FOX_LAYER, FoxModel::createBodyLayer);
+
         event.registerLayerDefinition(ModModelLayers.RED_MEI_BOAT_LAYER, BoatModel::createBodyModel);
         event.registerLayerDefinition(ModModelLayers.RED_MEI_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
         event.registerLayerDefinition(ModModelLayers.WHITE_MEI_BOAT_LAYER, BoatModel::createBodyModel);

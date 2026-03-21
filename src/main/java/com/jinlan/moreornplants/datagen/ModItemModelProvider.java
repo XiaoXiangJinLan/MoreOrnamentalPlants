@@ -431,6 +431,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PEAR_XIANGNANG);
         simpleItem(ModItems.LOTUS_XIANGNANG);
 
+        simpleItem(ModItems.ZIYING_FOX_SPAWN_EGG);
+        simpleItem(ModItems.SUYU_FOX_SPAWN_EGG);
+
+        simpleItem(ModItems.ZIYING_BEAD);
+        simpleItem(ModItems.SUYU_BEAD);
+        simpleItem(ModItems.ZIYU_YUANYANG_BEAD);
+
         swordItem(ModItems.PEACH_WOODEN_SWORD);
         swordItem(ModItems.CAMPHOR_WOODEN_SWORD);
     }

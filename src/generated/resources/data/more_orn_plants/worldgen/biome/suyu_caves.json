@@ -112,7 +112,14 @@
     ],
     "creature": [],
     "misc": [],
-    "monster": [],
+    "monster": [
+      {
+        "type": "more_orn_plants:suyu_fox",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 20
+      }
+    ],
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",
@@ -121,14 +128,7 @@
         "weight": 10
       }
     ],
-    "water_ambient": [
-      {
-        "type": "minecraft:tropical_fish",
-        "maxCount": 8,
-        "minCount": 8,
-        "weight": 25
-      }
-    ],
+    "water_ambient": [],
     "water_creature": []
   },
   "temperature": 0.5

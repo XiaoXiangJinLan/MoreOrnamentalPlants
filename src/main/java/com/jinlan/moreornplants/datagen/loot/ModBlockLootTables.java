@@ -1036,6 +1036,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PEAR_XIANGNANG.get());
         this.dropSelf(ModBlocks.LOTUS_XIANGNANG.get());
 
+        this.dropSelf(ModBlocks.ZIYING_BEADLIGHT.get());
+        this.dropSelf(ModBlocks.SUYU_BEADLIGHT.get());
+
     }
 
     protected LootTable.Builder createWeepingMeiPlantDrops(Block plantBlock, Block flowerBlock, Block saplingBlock, float... saplingChances) {

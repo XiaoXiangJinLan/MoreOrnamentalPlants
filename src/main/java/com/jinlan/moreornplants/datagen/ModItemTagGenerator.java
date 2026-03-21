@@ -447,6 +447,33 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WINTER_CYMBIDIUM.get().asItem())
                 .add(ModBlocks.INK_PEONY.get().asItem());
 
+        this.tag(ModTags.Items.ZIYING_FOX_FOOD)
+                .addTag(ItemTags.FOX_FOOD)
+                .addTag(ForgeTags.Items.WISTERIA)
+                .addTag(ForgeTags.Items.CRAPE_MYRTLE)
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get().asItem(), ModBlocks.RED_CRAPE_MYRTLE_LEAVES.get().asItem())
+                .add(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES.get().asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get().asItem());
+
+        this.tag(ModTags.Items.ZIYING_FOX_APPEAL_TO)
+                .addTag(ForgeTags.Items.WISTERIA)
+                .addTag(ForgeTags.Items.CRAPE_MYRTLE)
+                .add(ModBlocks.CRAPE_MYRTLE_LEAVES.get().asItem(), ModBlocks.RED_CRAPE_MYRTLE_LEAVES.get().asItem())
+                .add(ModBlocks.PINK_CRAPE_MYRTLE_LEAVES.get().asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get().asItem());
+
+        this.tag(ModTags.Items.SUYU_FOX_FOOD)
+                .addTag(ItemTags.FOX_FOOD)
+                .add(ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem())
+                .add(ModBlocks.WHITE_CRAPE_MYRTLE.get().asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get().asItem())
+                .add(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get().asItem());
+
+        this.tag(ModTags.Items.SUYU_FOX_APPEAL_TO)
+                .add(ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem())
+                .add(ModBlocks.WHITE_CRAPE_MYRTLE.get().asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get().asItem())
+                .add(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get().asItem());
+
+        this.tag(ItemTags.FOX_FOOD)
+                .add(ModItems.CRABAPPLE.get(), ModItems.CLOUD_APRICOT.get(), ModItems.IMMORTAL_PEACH.get());
+
         this.tag(ForgeTags.Items.VEGETABLES)
                 .addTag(ForgeTags.Items.VEGETABLES_BAMBOO_SHOOTS)
                 .addTag(ForgeTags.Items.VEGETABLES_BAMBOO_SPROUTS)

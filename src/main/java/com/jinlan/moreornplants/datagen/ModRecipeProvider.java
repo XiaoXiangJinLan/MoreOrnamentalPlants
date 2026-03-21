@@ -1265,5 +1265,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.WILD_PEACH_SAPLING.get()), has(ModBlocks.WILD_PEACH_SAPLING.get()))
                 .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE.get()), has(ModItems.GOLDEN_CRABAPPLE.get()))
                 .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZIYU_YUANYANG_BEAD.get())
+                .requires(ModItems.ZIYING_BEAD.get())
+                .requires(ModItems.SUYU_BEAD.get())
+                .unlockedBy(getHasName(ModItems.ZIYING_BEAD.get()), has(ModItems.ZIYING_BEAD.get()))
+                .unlockedBy(getHasName(ModItems.SUYU_BEAD.get()), has(ModItems.SUYU_BEAD.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZIYING_BEADLIGHT.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.ZIYING_BEAD.get())
+                .unlockedBy(getHasName(ModItems.ZIYING_BEAD.get()), has(ModItems.ZIYING_BEAD.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUYU_BEADLIGHT.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.SUYU_BEAD.get())
+                .unlockedBy(getHasName(ModItems.SUYU_BEAD.get()), has(ModItems.SUYU_BEAD.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZIYING_BEAD.get(), 6)
+                .requires(ModBlocks.ZIYING_BEADLIGHT.get())
+                .unlockedBy(getHasName(ModBlocks.ZIYING_BEADLIGHT.get()), has(ModBlocks.ZIYING_BEADLIGHT.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SUYU_BEAD.get(), 6)
+                .requires(ModBlocks.SUYU_BEADLIGHT.get())
+                .unlockedBy(getHasName(ModBlocks.SUYU_BEADLIGHT.get()), has(ModBlocks.SUYU_BEADLIGHT.get()))
+                .save(pWriter);
     }
 }

@@ -4,6 +4,9 @@ import com.jinlan.moreornplants.block.ModBlockEntities;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.client.ModBoatRenderer;
 import com.jinlan.moreornplants.entity.ModEntities;
+import com.jinlan.moreornplants.entity.client.SuyuFoxRenderer;
+import com.jinlan.moreornplants.entity.client.ZiyingFoxRenderer;
+import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.init.*;
 import com.jinlan.moreornplants.item.ModCreativeModeTabs;
 import com.jinlan.moreornplants.item.ModItems;
@@ -14,12 +17,14 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.ComposterBlock;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -77,6 +82,15 @@ public class MoreOrnPlants
 
         event.enqueueWork(() -> {
             ModTerrablender.registerBiomes();
+
+            SpawnPlacements.register(ModEntities.ZIYING_FOX.get(),
+                    SpawnPlacements.Type.ON_GROUND,
+                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    ZiyingFox::checkZiyingFoxSpawnRules);
+            SpawnPlacements.register(ModEntities.SUYU_FOX.get(),
+                    SpawnPlacements.Type.ON_GROUND,
+                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    ZiyingFox::checkZiyingFoxSpawnRules);
 
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_MEI_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_MEI_SAPLING.get().asItem(), 0.3F);
@@ -376,6 +390,8 @@ public class MoreOrnPlants
 
             EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
             EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+            EntityRenderers.register(ModEntities.ZIYING_FOX.get(), ZiyingFoxRenderer::new);
+            EntityRenderers.register(ModEntities.SUYU_FOX.get(), SuyuFoxRenderer::new);
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
