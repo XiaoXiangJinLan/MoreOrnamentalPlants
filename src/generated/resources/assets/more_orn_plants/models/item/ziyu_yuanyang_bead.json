@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "more_orn_plants:item/ziyingsuyu_yuanyang_bead"
+    "layer0": "more_orn_plants:item/ziyu_yuanyang_bead"
   }
 }

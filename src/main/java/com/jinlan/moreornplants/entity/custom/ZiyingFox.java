@@ -102,15 +102,6 @@ public class ZiyingFox extends TamableAnimal {
         builder.define(DATA_FLAGS_ID, (byte)0);
     }
 
-    public static AttributeSupplier.Builder createAttributes() {
-        return Mob.createMobAttributes()
-                .add(Attributes.MOVEMENT_SPEED, 0.33F)
-                .add(Attributes.MAX_HEALTH, 20.0)
-                .add(Attributes.FOLLOW_RANGE, 32.0)
-                .add(Attributes.ATTACK_DAMAGE, 9.0)
-                .add(Attributes.SAFE_FALL_DISTANCE, 5.0);
-    }
-
     @Override
     protected void registerGoals() {
         // 攻击目标
@@ -157,7 +148,18 @@ public class ZiyingFox extends TamableAnimal {
         this.goalSelector.addGoal(13, new ZiyingFoxPerchAndSearchGoal());
 
         this.goalSelector.addGoal(2, new SitWhenOrderedToGoal(this));
-        this.goalSelector.addGoal(6, new FollowOwnerGoal(this, 1.0, 10.0F, 2.0F));
+        // 游荡或坐下时不跟随
+        FollowOwnerGoal followOwnerGoal = new FollowOwnerGoal(this, 1.0, 10.0F, 2.0F) {
+            @Override
+            public boolean canUse() {
+                // 游荡或坐下时不跟随
+                if (ZiyingFox.this.isWandering() || ZiyingFox.this.isOrderedToSit()) {
+                    return false;
+                }
+                return super.canUse();
+            }
+        };
+        this.goalSelector.addGoal(6, followOwnerGoal);
 
         this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
         this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
@@ -167,6 +169,53 @@ public class ZiyingFox extends TamableAnimal {
         this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, Monster.class, true,
                 target -> !(target instanceof Creeper) && !(target instanceof TamableAnimal && ((TamableAnimal) target).isTame())
         ));
+    }
+
+    public static AttributeSupplier.Builder createAttributes() {
+        return Mob.createMobAttributes()
+                .add(Attributes.MOVEMENT_SPEED, 0.33F)
+                .add(Attributes.MAX_HEALTH, 20.0)
+                .add(Attributes.FOLLOW_RANGE, 32.0)
+                .add(Attributes.ATTACK_DAMAGE, 9.0)
+                .add(Attributes.SAFE_FALL_DISTANCE, 5.0);
+    }
+
+    @Override
+    public ZiyingFox getBreedOffspring(@NotNull ServerLevel level, @NotNull AgeableMob otherParent) {
+        ZiyingFox ziyingFox = ModEntities.ZIYING_FOX.get().create(level);
+        if (ziyingFox != null && otherParent instanceof ZiyingFox) {
+            if (this.isTame()) {
+                ziyingFox.setOwnerUUID(this.getOwnerUUID());
+                ziyingFox.setTame(true, true);
+            }
+        }
+        return ziyingFox;
+    }
+
+    public static boolean checkZiyingFoxSpawnRules(
+            EntityType<? extends ZiyingFox> ziyingFox, LevelAccessor level, MobSpawnType spawnType, BlockPos pos, RandomSource random
+    ) {
+        return level.getBlockState(pos.below()).is(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON);
+    }
+
+    @Override
+    public void addAdditionalSaveData(@NotNull CompoundTag compound) {
+        super.addAdditionalSaveData(compound);
+        compound.putBoolean("Sleeping", this.isSleeping());
+        compound.putBoolean("Sitting", this.isSitting());
+        compound.putBoolean("Crouching", this.isCrouching());
+        compound.putBoolean("Wandering", this.isWandering());
+        compound.putInt("ProduceBeadTimer", this.produceBeadTimer);
+    }
+
+    @Override
+    public void readAdditionalSaveData(@NotNull CompoundTag compound) {
+        super.readAdditionalSaveData(compound);
+        this.setSleeping(compound.getBoolean("Sleeping"));
+        this.setSitting(compound.getBoolean("Sitting"));
+        this.setIsCrouching(compound.getBoolean("Crouching"));
+        this.setWandering(compound.getBoolean("Wandering"));
+        this.produceBeadTimer = compound.getInt("ProduceBeadTimer");
     }
 
     // ========== 驯服交互 ==========
@@ -189,12 +238,25 @@ public class ZiyingFox extends TamableAnimal {
                 if (this.isBeadFood(itemstack) && this.produceBeadTimer == 0) {
                     this.produceBeadTimer = 200;
                     itemstack.consume(1, player);
-                    this.playSound(SoundEvents.PLAYER_LEVELUP, 0.5F, 1.0F);
+                    this.playSound(SoundEvents.FOX_EAT, 0.5F, 1.0F);
                     return InteractionResult.SUCCESS;
                 } else {
                     InteractionResult interactionresult = super.mobInteract(player, hand);
                     if (!interactionresult.consumesAction() && this.isOwnedBy(player)) {
-                        this.setOrderedToSit(!this.isOrderedToSit());
+                        // 循环状态：跟随 -> 坐下 -> 游荡 -> 跟随
+                        if (this.isOrderedToSit()) {
+                            // 当前是坐下，切换到游荡
+                            this.setOrderedToSit(false);
+                            this.setWandering(true);
+                        } else if (this.isWandering()) {
+                            // 当前是游荡，切换到跟随
+                            this.setWandering(false);
+                            this.setOrderedToSit(false); // 确保坐下状态清除
+                        } else {
+                            // 当前是跟随，切换到坐下
+                            this.setOrderedToSit(true);
+                            this.setWandering(false);
+                        }
                         this.jumping = false;
                         this.navigation.stop();
                         this.setTarget(null);
@@ -436,6 +498,20 @@ public class ZiyingFox extends TamableAnimal {
         this.setFlag(1, sitting);
     }
 
+    @Override
+    public void setOrderedToSit(boolean orderedToSit) {
+        super.setOrderedToSit(orderedToSit);
+        this.navigation.stop();
+    }
+
+    public boolean isWandering() {
+        return this.getFlag(2);
+    }
+
+    public void setWandering(boolean wandering) {
+        this.setFlag(2, wandering);
+    }
+
     public boolean isFaceplanted() {
         return this.getFlag(64);
     }
@@ -556,11 +632,6 @@ public class ZiyingFox extends TamableAnimal {
         }
     }
 
-    @Override
-    protected void onOffspringSpawnedFromEgg(@NotNull Player player, @NotNull Mob child) {
-        // 如果是刷怪蛋生成的，可以继承主人？这里留空或实现
-    }
-
     public boolean isPouncing() {
         return this.getFlag(16);
     }
@@ -614,7 +685,7 @@ public class ZiyingFox extends TamableAnimal {
     public boolean wantsToAttack(@NotNull LivingEntity target, @NotNull LivingEntity owner) {
         if (target instanceof Creeper || target instanceof Ghast || target instanceof ArmorStand) {
             return false;
-        } else if (target instanceof ZiyingFox) {
+        } else if (target instanceof ZiyingFox|| target instanceof Fox) {
             return false;
         } else {
             if (target instanceof Player) {
@@ -747,40 +818,6 @@ public class ZiyingFox extends TamableAnimal {
     @Override
     public @NotNull Vec3 getLeashOffset() {
         return new Vec3(0.0, (double)(0.55F * this.getEyeHeight()), (double)(this.getBbWidth() * 0.4F));
-    }
-
-    @Override
-    public void addAdditionalSaveData(@NotNull CompoundTag compound) {
-        super.addAdditionalSaveData(compound);
-        compound.putBoolean("Sleeping", this.isSleeping());
-        compound.putBoolean("Sitting", this.isSitting());
-        compound.putBoolean("Crouching", this.isCrouching());
-        compound.putInt("ProduceBeadTimer", this.produceBeadTimer);
-    }
-
-    @Override
-    public void readAdditionalSaveData(@NotNull CompoundTag compound) {
-        super.readAdditionalSaveData(compound);
-        this.setSleeping(compound.getBoolean("Sleeping"));
-        this.setSitting(compound.getBoolean("Sitting"));
-        this.setIsCrouching(compound.getBoolean("Crouching"));
-        this.produceBeadTimer = compound.getInt("ProduceBeadTimer");
-    }
-
-    @Override
-    public ZiyingFox getBreedOffspring(@NotNull ServerLevel level, @NotNull AgeableMob otherParent) {
-        ZiyingFox ziyingFox = ModEntities.ZIYING_FOX.get().create(level);
-        if (ziyingFox != null && otherParent instanceof ZiyingFox) {
-            if (this.isTame()) {
-                ziyingFox.setOwnerUUID(this.getOwnerUUID());
-                ziyingFox.setTame(true, true);
-            }
-        }
-        return ziyingFox;
-    }
-
-    public static boolean checkFoxSpawnRules(EntityType<ZiyingFox> ziyingFox, LevelAccessor level, MobSpawnType spawnType, BlockPos pos, RandomSource random) {
-        return level.getBlockState(pos.below()).is(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON) && isBrightEnoughToSpawn(level, pos);
     }
 
     // ========== 内部类（全部复制自狐狸，将 Fox 改为 ZiyingFox，并移除变种相关逻辑）==========

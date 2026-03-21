@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_orn_plants:ziyingsuyu_yuanyang_bead"
+        "recipe": "more_orn_plants:ziyu_yuanyang_bead"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "more_orn_plants:ziyingsuyu_yuanyang_bead"
+      "more_orn_plants:ziyu_yuanyang_bead"
     ]
   }
 }

@@ -1395,9 +1395,9 @@ public class ModBlocks {
             BLOCKS.register("lotus_xiangnang", () -> new TaoXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> ZIYING_BEADLIGHT =
-            registerBlock("ziying_beadlight", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PEARLESCENT_FROGLIGHT)));
+            registerBlock("ziying_beadlight", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PEARLESCENT_FROGLIGHT).sound(SoundType.METAL)));
     public static final DeferredBlock<Block> SUYU_BEADLIGHT =
-            registerBlock("suyu_beadlight", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.VERDANT_FROGLIGHT)));
+            registerBlock("suyu_beadlight", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.VERDANT_FROGLIGHT).sound(SoundType.METAL)));
 
     private static Block log(MapColor topMapColor, MapColor sideMapColor) {
         return new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(p_152624_ -> p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)

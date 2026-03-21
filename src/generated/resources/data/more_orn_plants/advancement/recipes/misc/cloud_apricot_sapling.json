@@ -27,11 +27,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_ziyingsuyu_yuanyang_bead": {
+    "has_ziyu_yuanyang_bead": {
       "conditions": {
         "items": [
           {
-            "items": "more_orn_plants:ziyingsuyu_yuanyang_bead"
+            "items": "more_orn_plants:ziyu_yuanyang_bead"
           }
         ]
       },
@@ -43,7 +43,7 @@
       "has_the_recipe",
       "has_pink_apricot_sapling",
       "has_white_apricot_sapling",
-      "has_ziyingsuyu_yuanyang_bead"
+      "has_ziyu_yuanyang_bead"
     ]
   ],
   "rewards": {
