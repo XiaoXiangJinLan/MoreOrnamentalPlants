@@ -27,7 +27,7 @@ public class SuyuFox extends ZiyingFox {
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
                 .add(Attributes.MOVEMENT_SPEED, 0.33F)
-                .add(Attributes.MAX_HEALTH, 20.0)
+                .add(Attributes.MAX_HEALTH, 36.0)
                 .add(Attributes.FOLLOW_RANGE, 32.0)
                 .add(Attributes.ATTACK_DAMAGE, 9.0)
                 .add(Attributes.SAFE_FALL_DISTANCE, 5.0);
