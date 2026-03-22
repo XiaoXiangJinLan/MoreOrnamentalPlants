@@ -59,6 +59,11 @@ public class SuyuFox extends ZiyingFox {
     }
 
     @Override
+    protected MobEffectInstance getEffect() {
+        return new MobEffectInstance(MobEffects.REGENERATION, 100, 0);
+    }
+
+    @Override
     public Ingredient getTemptItem() {
         return Ingredient.of(ModTags.Items.SUYU_FOX_APPEAL_TO);
     }

@@ -18,6 +18,7 @@ public class SuyuFoxRenderer extends ZiyingFoxRenderer {
 
     public SuyuFoxRenderer(EntityRendererProvider.Context p_174127_) {
         super(p_174127_);
+        this.addLayer(new SuyuFoxEyesLayer(this));
     }
 
     public @NotNull ResourceLocation getTextureLocation(ZiyingFox entity) {
