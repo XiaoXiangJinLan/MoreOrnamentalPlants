@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.RenderLayerParent;
 import net.minecraft.client.renderer.entity.layers.EyesLayer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.LightLayer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.NotNull;
@@ -25,11 +26,12 @@ public class ZiyingFoxEyesLayer extends EyesLayer<ZiyingFox, ZiyingFoxModel<Ziyi
     public void render(@NotNull PoseStack poseStack, @NotNull MultiBufferSource buffer, int packedLight, ZiyingFox entity,
                        float limbSwing, float limbSwingAmount, float partialTick, float ageInTicks,
                        float netHeadYaw, float headPitch) {
-        if (entity.isSleeping()) {
-            return;
-        }
-        int light = entity.level().getRawBrightness(entity.blockPosition(), 0);
-        if (light < 5) {
+        long roundedTime = entity.level().getDayTime() % 24000;
+        boolean night = roundedTime >= 13000 && roundedTime <= 22000;
+        int light = night
+                ? entity.level().getBrightness(LightLayer.BLOCK, entity.blockPosition())
+                : entity.level().getRawBrightness(entity.blockPosition(), 0);
+        if (light < 7 && !entity.isSleeping()) {
             super.render(poseStack, buffer, packedLight, entity, limbSwing, limbSwingAmount,
                     partialTick, ageInTicks, netHeadYaw, headPitch);
         }

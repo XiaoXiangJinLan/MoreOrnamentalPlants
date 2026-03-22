@@ -186,7 +186,7 @@ public class ZiyingFox extends TamableAnimal {
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
                 .add(Attributes.MOVEMENT_SPEED, 0.33F)
-                .add(Attributes.MAX_HEALTH, 20.0)
+                .add(Attributes.MAX_HEALTH, 36.0)
                 .add(Attributes.FOLLOW_RANGE, 32.0)
                 .add(Attributes.ATTACK_DAMAGE, 9.0);
     }
@@ -332,12 +332,11 @@ public class ZiyingFox extends TamableAnimal {
         super.setTame(tame);
         // 手动调用驯服效果
         if (tame) {
-            this.getAttribute(Attributes.MAX_HEALTH).setBaseValue(40.0);
-            this.setHealth(40.0F);
+            this.getAttribute(Attributes.MAX_HEALTH).setBaseValue(81.0);
+            this.setHealth(81.0F);
         } else {
-            this.getAttribute(Attributes.MAX_HEALTH).setBaseValue(20.0);
+            this.getAttribute(Attributes.MAX_HEALTH).setBaseValue(36.0);
         }
-        this.reassessTameGoals();
     }
 
     protected void reassessTameGoals() {
