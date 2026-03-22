@@ -115,6 +115,9 @@ public class ModParticleTypes {
     public static final Supplier<SimpleParticleType> VERSICOLOR_CAMELLIA_LEAVES =
             registerParticleType("versicolor_camellia_leaves", () -> new SimpleParticleType(false));
 
+    public static final Supplier<SimpleParticleType> BAIHUA_CAT =
+            registerParticleType("baihua_cat", () -> new SimpleParticleType(false));
+
     public static <T extends ParticleType<?>> java.util.function.Supplier<T> registerParticleType(String name, Supplier<T> particleType) {
         return ModParticleTypes.PARTICLES.register(name, particleType);
     }

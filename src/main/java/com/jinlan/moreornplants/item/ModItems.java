@@ -158,6 +158,8 @@ public class ModItems {
             ITEMS.register("ziying_fox_spawn_egg", () -> new SpawnEggItem(ModEntities.ZIYING_FOX.get(), 14144467, 13545366, new Item.Properties()));
     public static final DeferredItem<Item> SUYU_FOX_SPAWN_EGG =
             ITEMS.register("suyu_fox_spawn_egg", () -> new SpawnEggItem(ModEntities.SUYU_FOX.get(), 14144467, 13545366, new Item.Properties()));
+    public static final DeferredItem<Item> BAIHUA_CAI_SPAWN_EGG =
+            ITEMS.register("baihua_cat_spawn_egg", () -> new SpawnEggItem(ModEntities.BAIHUA_CAT.get(), 14144467, 13545366, new Item.Properties()));
 
     public static final DeferredItem<Item> ZIYING_BEAD =
             ITEMS.register("ziying_bead", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));

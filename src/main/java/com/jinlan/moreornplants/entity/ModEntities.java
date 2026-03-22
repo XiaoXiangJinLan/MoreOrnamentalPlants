@@ -1,10 +1,7 @@
 package com.jinlan.moreornplants.entity;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
-import com.jinlan.moreornplants.entity.custom.ModBoatEntity;
-import com.jinlan.moreornplants.entity.custom.ModChestBoatEntity;
-import com.jinlan.moreornplants.entity.custom.SuyuFox;
-import com.jinlan.moreornplants.entity.custom.ZiyingFox;
+import com.jinlan.moreornplants.entity.custom.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -43,11 +40,18 @@ public class ModEntities {
                     .passengerAttachments(new Vec3(0.0, 0.6375, -0.25))
                     .clientTrackingRange(8)
                     .immuneTo(Blocks.SWEET_BERRY_BUSH).build("suyu_fox"));
+    public static final Supplier<EntityType<BaihuaCat>> BAIHUA_CAT =
+            ENTITY_TYPES.register("baihua_cat", () ->EntityType.Builder.of(BaihuaCat::new, MobCategory.CREATURE)
+                    .sized(0.6F, 0.7F)
+                    .eyeHeight(0.35F)
+                    .passengerAttachments(0.5125F)
+                    .clientTrackingRange(8).build("baihua_cat"));
 
     @SubscribeEvent
     public static void onRegisterAttributes(EntityAttributeCreationEvent event) {
         event.put(ZIYING_FOX.get(), ZiyingFox.createAttributes().build());
         event.put(SUYU_FOX.get(), SuyuFox.createAttributes().build());
+        event.put(BAIHUA_CAT.get(), BaihuaCat.createAttributes().build());
     }
 
     public static void register(IEventBus eventBus) {ENTITY_TYPES.register(eventBus);}

@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.event;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.entity.ModEntities;
+import com.jinlan.moreornplants.entity.custom.BaihuaCat;
 import com.jinlan.moreornplants.entity.custom.SuyuFox;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.item.ModItems;
@@ -40,6 +41,7 @@ public class ModEventsBusEvents {
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.ZIYING_FOX.get(), ZiyingFox.createAttributes().build());
         event.put(ModEntities.SUYU_FOX.get(), SuyuFox.createAttributes().build());
+        event.put(ModEntities.BAIHUA_CAT.get(), BaihuaCat.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -53,6 +55,11 @@ public class ModEventsBusEvents {
                 SpawnPlacementTypes.ON_GROUND,
                 Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 ZiyingFox::checkZiyingFoxSpawnRules,
+                RegisterSpawnPlacementsEvent.Operation.REPLACE);
+        event.register(ModEntities.BAIHUA_CAT.get(),
+                SpawnPlacementTypes.ON_GROUND,
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Animal::checkAnimalSpawnRules,
                 RegisterSpawnPlacementsEvent.Operation.REPLACE);
     }
 

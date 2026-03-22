@@ -558,6 +558,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ZIYU_YUANYANG_BEAD);
                         pOutput.accept(ModItems.ZIYING_FOX_SPAWN_EGG);
                         pOutput.accept(ModItems.SUYU_FOX_SPAWN_EGG);
+                        pOutput.accept(ModItems.BAIHUA_CAI_SPAWN_EGG);
                     }).build());
 
     public static void register(IEventBus eventBus) {

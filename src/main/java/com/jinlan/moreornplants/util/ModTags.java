@@ -32,6 +32,7 @@ public class ModTags {
         public static final TagKey<Block> MOTTLED_BAMBOO_PLANTABLE_ON = tag("mottled_bamboo_plantable_on");
         public static final TagKey<Block> BLACK_BAMBOO_PLANTABLE_ON = tag("black_bamboo_plantable_on");
         public static final TagKey<Block> ZIYING_FOX_SPAWNABLE_ON = tag("ziying_fox_spawnable_on");
+        public static final TagKey<Block> BAIHUA_CAT_WONT_GROW = tag("baihua_cat_wont_grow");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));
@@ -72,6 +73,7 @@ public class ModTags {
         public static final TagKey<Item> ZIYING_FOX_APPEAL_TO = tag("ziying_fox_appeal_to");
         public static final TagKey<Item> SUYU_FOX_FOOD = tag("suyu_fox_food");
         public static final TagKey<Item> SUYU_FOX_APPEAL_TO = tag("suyu_fox_appeal_to");
+        public static final TagKey<Item> BAIHUA_CAT_FOOD = tag("baihua_cat_food");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));

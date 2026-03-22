@@ -331,6 +331,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_CRAPE_MYRTLE.asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.asItem())
                 .add(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.asItem());
 
+        this.tag(ModTags.Items.BAIHUA_CAT_FOOD)
+                .addTag(ItemTags.FLOWERS)
+                .addTag(ItemTags.SAPLINGS)
+                .addTag(ItemTags.LEAVES)
+                .addTag(Tags.Items.FOODS_FRUIT)
+                .addTag(Tags.Items.FOODS_VEGETABLE);
+
         this.tag(Tags.Items.CROPS)
                 .addTag(CommonTags.Items.CROPS_LOTUS);
 

@@ -2,6 +2,7 @@ package com.jinlan.moreornplants;
 
 import com.google.common.collect.ImmutableMap;
 import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.entity.client.BaihuaCatRenderer;
 import com.jinlan.moreornplants.entity.client.SuyuFoxRenderer;
 import com.jinlan.moreornplants.entity.client.ZiyingFoxRenderer;
 import com.jinlan.moreornplants.entity.ModEntities;
@@ -190,6 +191,10 @@ public class MoreOrnPlantsClient {
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new CamphorParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
+        event.registerSpriteSet(ModParticleTypes.BAIHUA_CAT.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
     }
 
     public static class ModBoatRenderer extends BoatRenderer {
@@ -235,11 +240,6 @@ public class MoreOrnPlantsClient {
     }
 
     public static class ModModelLayers {
-        public static final ModelLayerLocation ZIYING_FOX_LAYER = new ModelLayerLocation(
-                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "ziying_fox/ziying_fox"), "main");
-        public static final ModelLayerLocation SUYU_FOX_LAYER = new ModelLayerLocation(
-                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "suyu_fox/suyu_fox"), "main");
-
         public static final ModelLayerLocation RED_MEI_BOAT_LAYER = new ModelLayerLocation(
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "boat/red_mei"), "main");
         public static final ModelLayerLocation RED_MEI_CHEST_BOAT_LAYER = new ModelLayerLocation(
@@ -379,6 +379,7 @@ public class MoreOrnPlantsClient {
         EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
         EntityRenderers.register(ModEntities.ZIYING_FOX.get(), ZiyingFoxRenderer::new);
         EntityRenderers.register(ModEntities.SUYU_FOX.get(), SuyuFoxRenderer::new);
+        EntityRenderers.register(ModEntities.BAIHUA_CAT.get(), BaihuaCatRenderer::new);
 
         // Some client setup code
         MoreOrnPlants.LOGGER.info("HELLO FROM CLIENT SETUP");
