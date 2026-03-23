@@ -1067,52 +1067,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModTags.Items.RED_DYE)
                 .group("red_dye")
                 .unlockedBy("has_red_dye_item", has(ModTags.Items.RED_DYE))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "red_dye_from_flowers"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.PINK_DYE)
                 .requires(ModTags.Items.PINK_DYE)
                 .group("pink_dye")
                 .unlockedBy("has_pink_dye_item", has(ModTags.Items.PINK_DYE))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "pink_dye_from_flowers"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.WHITE_DYE)
                 .requires(ModTags.Items.WHITE_DYE)
                 .group("white_dye")
                 .unlockedBy("has_white_dye_item", has(ModTags.Items.WHITE_DYE))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "white_dye_from_flowers"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.YELLOW_DYE)
                 .requires(ModTags.Items.YELLOW_DYE)
                 .group("yellow_dye")
                 .unlockedBy("has_yellow_dye_item", has(ModTags.Items.YELLOW_DYE))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "yellow_dye_from_flowers"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.ORANGE_DYE)
                 .requires(ModTags.Items.ORANGE_DYE)
                 .group("orange_dye")
                 .unlockedBy("has_orange_dye_item", has(ModTags.Items.ORANGE_DYE))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "orang_dye_from_flowers"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.PURPLE_DYE)
                 .requires(ModTags.Items.PURPLE_DYE)
                 .group("purple_dye")
                 .unlockedBy("has_purple_dye_item", has(ModTags.Items.PURPLE_DYE))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "purple_dye_from_flowers"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.LIME_DYE)
                 .requires(ModTags.Items.LIME_DYE)
                 .group("lime_dye")
                 .unlockedBy("has_lime_dye_item", has(ModTags.Items.LIME_DYE))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "lime_dye_from_flowers"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.GREEN_DYE)
                 .requires(ModTags.Items.GREEN_DYE)
                 .group("green_dye")
                 .unlockedBy("has_green_dye_item", has(ModTags.Items.GREEN_DYE))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "green_dye_from_flowers"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.LIGHT_BLUE_DYE)
                 .requires(ModTags.Items.LIGHT_BLUE_DYE)
                 .group("light_blue_dye")
                 .unlockedBy("has_light_blue_dye_item", has(ModTags.Items.LIGHT_BLUE_DYE))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "light_dye_from_flowers"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BLACK_DYE)
                 .requires(ModTags.Items.BLACK_DYE)
                 .group("black_dye")
                 .unlockedBy("has_black_dye_item", has(ModTags.Items.BLACK_DYE))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "black_dye_from_flowers"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BAMBOO_SHOOTS_SOUP.get())
                 .requires(ModItems.PEELED_BAMBOO_SHOOTS.get())

@@ -1,10 +1,7 @@
 package com.jinlan.moreornplants.entity;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
-import com.jinlan.moreornplants.entity.custom.ModBoatEntity;
-import com.jinlan.moreornplants.entity.custom.ModChestBoatEntity;
-import com.jinlan.moreornplants.entity.custom.SuyuFox;
-import com.jinlan.moreornplants.entity.custom.ZiyingFox;
+import com.jinlan.moreornplants.entity.custom.*;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.block.Blocks;
@@ -14,6 +11,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Supplier;
 
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
@@ -36,11 +35,16 @@ public class ModEntities {
                     .sized(0.6F, 0.7F)
                     .clientTrackingRange(8)
                     .immuneTo(Blocks.SWEET_BERRY_BUSH).build("suyu_fox"));
+    public static final Supplier<EntityType<BaihuaCat>> BAIHUA_CAT =
+            ENTITY_TYPES.register("baihua_cat", () -> EntityType.Builder.of(BaihuaCat::new, MobCategory.CREATURE)
+                    .sized(0.6F, 0.7F)
+                    .clientTrackingRange(8).build("baihua_cat"));
 
     @SubscribeEvent
     public static void onRegisterAttributes(EntityAttributeCreationEvent event) {
         event.put(ZIYING_FOX.get(), ZiyingFox.createAttributes().build());
         event.put(SUYU_FOX.get(), SuyuFox.createAttributes().build());
+        event.put(BAIHUA_CAT.get(), BaihuaCat.createAttributes().build());
     }
 
     public static void register(IEventBus eventBus) {ENTITY_TYPES.register(eventBus);}

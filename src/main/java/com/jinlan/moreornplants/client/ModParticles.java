@@ -148,5 +148,21 @@ public class ModParticles {
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new CamphorParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
+        event.registerSpriteSet(ModParticleTypes.BAIHUA_CAT.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.BAIHUA_CAT_PINK.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.BAIHUA_CAT_BLUE.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.BAIHUA_CAT_PURPLE.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
     }
 }

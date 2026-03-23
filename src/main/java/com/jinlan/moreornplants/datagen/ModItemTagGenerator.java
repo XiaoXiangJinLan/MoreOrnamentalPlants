@@ -474,6 +474,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ItemTags.FOX_FOOD)
                 .add(ModItems.CRABAPPLE.get(), ModItems.CLOUD_APRICOT.get(), ModItems.IMMORTAL_PEACH.get());
 
+        this.tag(ModTags.Items.BAIHUA_CAT_FOOD)
+                .addTag(ItemTags.FLOWERS)
+                .addTag(ItemTags.SAPLINGS)
+                .addTag(ItemTags.LEAVES)
+                .addTag(ForgeTags.Items.FRUITS)
+                .addTag(ForgeTags.Items.VEGETABLES);
+
         this.tag(ForgeTags.Items.VEGETABLES)
                 .addTag(ForgeTags.Items.VEGETABLES_BAMBOO_SHOOTS)
                 .addTag(ForgeTags.Items.VEGETABLES_BAMBOO_SPROUTS)

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pink_dye_item": {
+    "has_purple_dye_item": {
       "conditions": {
         "items": [
           {
-            "tag": "more_orn_plants:pink_dye"
+            "tag": "more_orn_plants:purple_dye"
           }
         ]
       },
@@ -13,20 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:pink_dye"
+        "recipe": "more_orn_plants:purple_dye_from_flowers"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_pink_dye_item",
+      "has_purple_dye_item",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:pink_dye"
+      "more_orn_plants:purple_dye_from_flowers"
     ]
   },
   "sends_telemetry_event": false

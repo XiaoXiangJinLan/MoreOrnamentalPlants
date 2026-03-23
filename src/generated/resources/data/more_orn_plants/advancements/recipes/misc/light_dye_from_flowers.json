@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lime_dye_item": {
+    "has_light_blue_dye_item": {
       "conditions": {
         "items": [
           {
-            "tag": "more_orn_plants:lime_dye"
+            "tag": "more_orn_plants:light_blue_dye"
           }
         ]
       },
@@ -13,20 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:lime_dye"
+        "recipe": "more_orn_plants:light_dye_from_flowers"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_lime_dye_item",
+      "has_light_blue_dye_item",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:lime_dye"
+      "more_orn_plants:light_dye_from_flowers"
     ]
   },
   "sends_telemetry_event": false

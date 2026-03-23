@@ -1,8 +1,6 @@
 package com.jinlan.moreornplants.event;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
-import com.jinlan.moreornplants.entity.ModEntities;
-import com.jinlan.moreornplants.entity.custom.SuyuFox;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
@@ -23,7 +21,6 @@ import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;

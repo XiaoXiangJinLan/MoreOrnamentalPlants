@@ -136,6 +136,12 @@
         "maxCount": 4,
         "minCount": 2,
         "weight": 6
+      },
+      {
+        "type": "more_orn_plants:baihua_cat",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 4
       }
     ],
     "misc": [],

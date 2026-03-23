@@ -156,9 +156,11 @@ public class ModItems {
             ITEMS.register("desert_poplar_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
 
     public static final RegistryObject<Item> ZIYING_FOX_SPAWN_EGG =
-            ITEMS.register("ziying_fox_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.ZIYING_FOX, 14144467, 13545366, new Item.Properties()));
+            ITEMS.register("ziying_fox_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.ZIYING_FOX, 14144467, 12369084, new Item.Properties()));
     public static final RegistryObject<Item> SUYU_FOX_SPAWN_EGG =
-            ITEMS.register("suyu_fox_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.SUYU_FOX, 14144467, 13545366, new Item.Properties()));
+            ITEMS.register("suyu_fox_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.SUYU_FOX, 14144467, 12369084, new Item.Properties()));
+    public static final RegistryObject<Item> BAIHUA_CAI_SPAWN_EGG =
+            ITEMS.register("baihua_cat_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.BAIHUA_CAT, 14144467, 12369084, new Item.Properties()));
 
     public static final RegistryObject<Item> ZIYING_BEAD =
             ITEMS.register("ziying_bead", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));

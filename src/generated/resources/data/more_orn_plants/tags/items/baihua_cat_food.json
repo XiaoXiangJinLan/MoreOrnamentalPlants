@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#minecraft:flowers",
+    "#minecraft:saplings",
+    "#minecraft:leaves",
+    "#forge:fruits",
+    "#forge:vegetables"
+  ]
+}

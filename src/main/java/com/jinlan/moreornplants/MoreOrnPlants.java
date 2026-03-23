@@ -4,6 +4,7 @@ import com.jinlan.moreornplants.block.ModBlockEntities;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.client.ModBoatRenderer;
 import com.jinlan.moreornplants.entity.ModEntities;
+import com.jinlan.moreornplants.entity.client.BaihuaCatRenderer;
 import com.jinlan.moreornplants.entity.client.SuyuFoxRenderer;
 import com.jinlan.moreornplants.entity.client.ZiyingFoxRenderer;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
@@ -18,6 +19,7 @@ import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -91,6 +93,10 @@ public class MoreOrnPlants
                     SpawnPlacements.Type.ON_GROUND,
                     Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     ZiyingFox::checkZiyingFoxSpawnRules);
+            SpawnPlacements.register(ModEntities.BAIHUA_CAT.get(),
+                    SpawnPlacements.Type.ON_GROUND,
+                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Animal::checkAnimalSpawnRules);
 
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_MEI_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_MEI_SAPLING.get().asItem(), 0.3F);
@@ -392,6 +398,7 @@ public class MoreOrnPlants
             EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
             EntityRenderers.register(ModEntities.ZIYING_FOX.get(), ZiyingFoxRenderer::new);
             EntityRenderers.register(ModEntities.SUYU_FOX.get(), SuyuFoxRenderer::new);
+            EntityRenderers.register(ModEntities.BAIHUA_CAT.get(), BaihuaCatRenderer::new);
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());

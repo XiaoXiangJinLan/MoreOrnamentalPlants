@@ -293,6 +293,11 @@ public class ModBiomes {
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.RABBIT, 4, 2, 3))
                 .addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.WOLF, 5, 4, 4))
                 .addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.FOX, 6, 2, 4));
+        if (isCrabapple) {
+            spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.BAIHUA_CAT.get(), 4, 1, 2));
+        } else {
+            spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.BAIHUA_CAT.get(), 8, 1, 2));
+        }
 
         BiomeGenerationSettings.Builder biomeBuilder =
                 new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
@@ -892,9 +897,9 @@ public class ModBiomes {
         spawnBuilder.addSpawn(MobCategory.AXOLOTLS, new MobSpawnSettings.SpawnerData(EntityType.AXOLOTL, 10, 4, 6));
         BiomeDefaultFeatures.caveSpawns(spawnBuilder);
         if (isWhite) {
-            spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.SUYU_FOX.get(), 20, 1, 2));
+            spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.SUYU_FOX.get(), 15, 1, 2));
         } else {
-            spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.ZIYING_FOX.get(), 20, 1, 2));
+            spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.ZIYING_FOX.get(), 15, 1, 2));
         }
 
         BiomeGenerationSettings.Builder biomeBuilder =

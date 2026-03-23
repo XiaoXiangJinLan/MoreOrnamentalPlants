@@ -433,6 +433,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.ZIYING_FOX_SPAWN_EGG);
         simpleItem(ModItems.SUYU_FOX_SPAWN_EGG);
+        simpleItem(ModItems.BAIHUA_CAI_SPAWN_EGG);
 
         simpleItem(ModItems.ZIYING_BEAD);
         simpleItem(ModItems.SUYU_BEAD);
