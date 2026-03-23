@@ -32,7 +32,6 @@ public class ModTags {
         public static final TagKey<Block> MOTTLED_BAMBOO_PLANTABLE_ON = tag("mottled_bamboo_plantable_on");
         public static final TagKey<Block> BLACK_BAMBOO_PLANTABLE_ON = tag("black_bamboo_plantable_on");
         public static final TagKey<Block> ZIYING_FOX_SPAWNABLE_ON = tag("ziying_fox_spawnable_on");
-        public static final TagKey<Block> BAIHUA_CAT_WONT_GROW = tag("baihua_cat_wont_grow");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));

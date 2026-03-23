@@ -118,7 +118,7 @@
         "type": "more_orn_plants:suyu_fox",
         "maxCount": 2,
         "minCount": 1,
-        "weight": 20
+        "weight": 15
       }
     ],
     "underground_water_creature": [

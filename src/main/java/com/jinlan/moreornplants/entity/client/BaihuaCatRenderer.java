@@ -1,6 +1,7 @@
 package com.jinlan.moreornplants.entity.client;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import com.jinlan.moreornplants.entity.custom.BaihuaCat;
 import net.minecraft.client.renderer.entity.CatRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
@@ -17,6 +18,19 @@ public class BaihuaCatRenderer extends CatRenderer {
 
     @Override
     public @NotNull ResourceLocation getTextureLocation(@NotNull Cat entity) {
+        if (entity instanceof BaihuaCat baihuaCat) {
+            String key = baihuaCat.getTextureKey();
+            if (key != null && !key.isEmpty()) {
+                String fileName;
+                if ("standard".equals(key)) {
+                    fileName = "baihua_cat.png";
+                } else {
+                    fileName = "baihua_cat_" + key + ".png";
+                }
+                return ResourceLocation.fromNamespaceAndPath(MoreOrnPlants.MODID,
+                        "textures/entity/baihua_cat/" + fileName);
+            }
+        }
         return TEXTURE;
     }
 }

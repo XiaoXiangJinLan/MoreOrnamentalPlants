@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_red_dye_item": {
+    "has_green_dye_item": {
       "conditions": {
         "items": [
           {
-            "items": "#more_orn_plants:red_dye"
+            "items": "#more_orn_plants:green_dye"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:red_dye"
+        "recipe": "more_orn_plants:green_dye_from_flowers"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_red_dye_item"
+      "has_green_dye_item"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:red_dye"
+      "more_orn_plants:green_dye_from_flowers"
     ]
   }
 }

@@ -7,6 +7,7 @@ import net.minecraft.client.model.CatModel;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.layers.EyesLayer;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.animal.Cat;
 import net.minecraft.world.level.LightLayer;
@@ -24,15 +25,17 @@ public class BaihuaCatEyesLayer extends EyesLayer<Cat, CatModel<Cat>> {
     public void render(@NotNull PoseStack poseStack, @NotNull MultiBufferSource buffer, int packedLight, @NotNull Cat entity,
                        float limbSwing, float limbSwingAmount, float partialTick, float ageInTicks,
                        float netHeadYaw, float headPitch) {
-        if (!(entity instanceof BaihuaCat)) return;
+        if (!(entity instanceof BaihuaCat baihuaCat)) return;
         long roundedTime = entity.level().getDayTime() % 24000;
         boolean night = roundedTime >= 13000 && roundedTime <= 22000;
         int light = night
                 ? entity.level().getBrightness(LightLayer.BLOCK, entity.blockPosition())
                 : entity.level().getRawBrightness(entity.blockPosition(), 0);
         if (light < 7 && !entity.isSleeping()) {
-            super.render(poseStack, buffer, packedLight, entity, limbSwing, limbSwingAmount,
-                    partialTick, ageInTicks, netHeadYaw, headPitch);
+            ResourceLocation eyesTexture = baihuaCat.getEyesTextureLocation();
+            RenderType renderType = RenderType.eyes(eyesTexture);
+            this.getParentModel().renderToBuffer(poseStack, buffer.getBuffer(renderType), packedLight,
+                    OverlayTexture.NO_OVERLAY);
         }
     }
 

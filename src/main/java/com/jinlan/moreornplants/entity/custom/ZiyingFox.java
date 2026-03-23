@@ -368,9 +368,9 @@ public class ZiyingFox extends TamableAnimal {
             ItemStack itemstack = this.getItemBySlot(EquipmentSlot.MAINHAND);
             if (this.canEat(itemstack)) {
                 if (this.ticksSinceEaten > 600) {
-                    ItemStack itemstack1 = itemstack.finishUsingItem(this.level(), this);
-                    if (!itemstack1.isEmpty()) {
-                        this.setItemSlot(EquipmentSlot.MAINHAND, itemstack1);
+                    ItemStack itemStack1 = itemstack.finishUsingItem(this.level(), this);
+                    if (!itemStack1.isEmpty()) {
+                        this.setItemSlot(EquipmentSlot.MAINHAND, itemStack1);
                     }
                     this.ticksSinceEaten = 0;
                 } else if (this.ticksSinceEaten > 560 && this.random.nextFloat() < 0.1F) {
@@ -703,7 +703,7 @@ public class ZiyingFox extends TamableAnimal {
     public boolean wantsToAttack(@NotNull LivingEntity target, @NotNull LivingEntity owner) {
         if (target instanceof Creeper || target instanceof Ghast || target instanceof ArmorStand) {
             return false;
-        } else if (target instanceof ZiyingFox|| target instanceof Fox) {
+        } else if (target instanceof ZiyingFox || target instanceof Fox) {
             return false;
         } else {
             if (target instanceof Player) {

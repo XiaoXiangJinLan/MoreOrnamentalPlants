@@ -118,6 +118,15 @@ public class ModParticleTypes {
     public static final Supplier<SimpleParticleType> BAIHUA_CAT =
             registerParticleType("baihua_cat", () -> new SimpleParticleType(false));
 
+    public static final Supplier<SimpleParticleType> BAIHUA_CAT_PINK =
+            registerParticleType("baihua_cat_pink", () -> new SimpleParticleType(false));
+
+    public static final Supplier<SimpleParticleType> BAIHUA_CAT_BLUE =
+            registerParticleType("baihua_cat_blue", () -> new SimpleParticleType(false));
+
+    public static final Supplier<SimpleParticleType> BAIHUA_CAT_PURPLE =
+            registerParticleType("baihua_cat_purple", () -> new SimpleParticleType(false));
+
     public static <T extends ParticleType<?>> java.util.function.Supplier<T> registerParticleType(String name, Supplier<T> particleType) {
         return ModParticleTypes.PARTICLES.register(name, particleType);
     }

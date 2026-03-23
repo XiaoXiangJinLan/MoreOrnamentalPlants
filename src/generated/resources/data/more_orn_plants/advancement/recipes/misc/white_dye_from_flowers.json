@@ -3,15 +3,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:yellow_dye"
+        "recipe": "more_orn_plants:white_dye_from_flowers"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_yellow_dye_item": {
+    "has_white_dye_item": {
       "conditions": {
         "items": [
           {
-            "items": "#more_orn_plants:yellow_dye"
+            "items": "#more_orn_plants:white_dye"
           }
         ]
       },
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_yellow_dye_item"
+      "has_white_dye_item"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:yellow_dye"
+      "more_orn_plants:white_dye_from_flowers"
     ]
   }
 }

@@ -779,11 +779,5 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(BlockTags.DIRT)
                 .addTag(BlockTags.BASE_STONE_OVERWORLD)
                 .add(ModBlocks.ZIYING_BEADLIGHT.get(), ModBlocks.SUYU_BEADLIGHT.get());
-
-        this.tag(ModTags.Blocks.BAIHUA_CAT_WONT_GROW)
-                .addTag(BlockTags.DIRT)
-                .addTag(CommonTags.Blocks.AZALEA)
-                .addTag(CommonTags.Blocks.CAMELLIA)
-                .add(Blocks.SHORT_GRASS, Blocks.FERN);
     }
 }

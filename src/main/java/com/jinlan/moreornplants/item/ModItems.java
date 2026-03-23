@@ -155,11 +155,11 @@ public class ModItems {
             ITEMS.register("desert_poplar_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
 
     public static final DeferredItem<Item> ZIYING_FOX_SPAWN_EGG =
-            ITEMS.register("ziying_fox_spawn_egg", () -> new SpawnEggItem(ModEntities.ZIYING_FOX.get(), 14144467, 13545366, new Item.Properties()));
+            ITEMS.register("ziying_fox_spawn_egg", () -> new SpawnEggItem(ModEntities.ZIYING_FOX.get(), 14144467, 12369084, new Item.Properties()));
     public static final DeferredItem<Item> SUYU_FOX_SPAWN_EGG =
-            ITEMS.register("suyu_fox_spawn_egg", () -> new SpawnEggItem(ModEntities.SUYU_FOX.get(), 14144467, 13545366, new Item.Properties()));
+            ITEMS.register("suyu_fox_spawn_egg", () -> new SpawnEggItem(ModEntities.SUYU_FOX.get(), 14144467, 12369084, new Item.Properties()));
     public static final DeferredItem<Item> BAIHUA_CAI_SPAWN_EGG =
-            ITEMS.register("baihua_cat_spawn_egg", () -> new SpawnEggItem(ModEntities.BAIHUA_CAT.get(), 14144467, 13545366, new Item.Properties()));
+            ITEMS.register("baihua_cat_spawn_egg", () -> new SpawnEggItem(ModEntities.BAIHUA_CAT.get(), 14144467, 12369084, new Item.Properties()));
 
     public static final DeferredItem<Item> ZIYING_BEAD =
             ITEMS.register("ziying_bead", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
