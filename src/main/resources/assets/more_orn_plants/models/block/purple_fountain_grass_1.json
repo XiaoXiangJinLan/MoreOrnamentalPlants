@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "more_orn_plants:block/purple_fountain_grass_1"
+  },
+  "render_type": "cutout"
+}

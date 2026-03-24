@@ -9,6 +9,7 @@ import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.Holder;
 import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -23,6 +24,7 @@ import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.ZombieVillager;
 import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -73,15 +75,63 @@ public class ModEventsBusEvents {
 
     @SubscribeEvent
     public static void onLivingDamage(LivingIncomingDamageEvent event) {
-        if (!(event.getSource().getDirectEntity() instanceof Player player)) return;
-
-        ItemStack weapon = player.getMainHandItem();
         LivingEntity target = event.getEntity();
+        if (target instanceof Player player) {
+            float originalDamage = event.getAmount();
+            float[] result = applyBeadDamageReduction(player, originalDamage);
+            if (result[0] == 0) {
+                event.setCanceled(true);
+                return;
+            }
+            event.setAmount(result[1]);
+        }
 
-        if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get()) && target.isInvertedHealAndHarm()) {
+        if (!(event.getSource().getDirectEntity() instanceof Player player)) return;
+        ItemStack weapon = player.getMainHandItem();
+        LivingEntity target1 = event.getEntity();
+        if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get()) && target1.isInvertedHealAndHarm()) {
             event.setAmount(event.getAmount() * 9.9F);
-        } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target.getType().is(EntityTypeTags.ARTHROPOD)) {
+        } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getType().is(EntityTypeTags.ARTHROPOD)) {
             event.setAmount(event.getAmount() * 2.2F);
+        }
+    }
+
+    private static boolean hasItemInInventory(Player player, Item item) {
+        for (ItemStack stack : player.getInventory().items) {
+            if (stack.is(item)) return true;
+        }
+        return player.getInventory().offhand.getFirst().is(item);
+    }
+
+    private static float[] applyBeadDamageReduction(Player player, float damage) {
+        boolean immune = false;
+        float reduction = 1.0f;
+        RandomSource random = player.getRandom();
+
+        boolean hasZiying = hasItemInInventory(player, ModItems.ZIYING_BEAD.get());
+        boolean hasSuyu = hasItemInInventory(player, ModItems.SUYU_BEAD.get());
+        boolean hasYuanyang = hasItemInInventory(player, ModItems.ZIYU_YUANYANG_BEAD.get());
+
+        if (hasZiying && random.nextFloat() < 0.25f) {
+            immune = true;
+        }
+
+        if (hasSuyu) {
+            reduction *= 0.75f;
+        }
+
+        if (hasYuanyang) {
+            if (random.nextFloat() < 0.2f) {
+                immune = true;
+            } else {
+                reduction *= 0.8f;
+            }
+        }
+
+        if (immune) {
+            return new float[]{0, 0};
+        } else {
+            return new float[]{1, damage * reduction};
         }
     }
 

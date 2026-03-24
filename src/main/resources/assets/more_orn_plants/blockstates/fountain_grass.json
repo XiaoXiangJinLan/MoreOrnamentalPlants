@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+      { "model": "more_orn_plants:block/fountain_grass", "weight": 2 },
+      { "model": "more_orn_plants:block/fountain_grass_1", "weight": 3 }
+    ]
+  }
+}
