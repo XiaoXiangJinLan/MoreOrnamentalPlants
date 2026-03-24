@@ -414,7 +414,7 @@ public class BaihuaCat extends Cat {
                 this.regenCooldown = 0;
             }
 
-            if (this.tickCount % 50 == 0) {
+            if (this.tickCount % 60 == 0) {
                 this.growNearbyPlants();
             }
         }

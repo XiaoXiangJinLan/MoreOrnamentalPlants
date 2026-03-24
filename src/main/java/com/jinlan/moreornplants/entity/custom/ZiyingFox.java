@@ -1,12 +1,14 @@
 package com.jinlan.moreornplants.entity.custom;
 
 import com.jinlan.moreornplants.entity.ModEntities;
+import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -397,6 +399,16 @@ public class ZiyingFox extends TamableAnimal {
             this.playSound(SoundEvents.FOX_AGGRO, 1.0F, 1.0F);
         }
 
+        if (this.level().isClientSide) {
+            if (this.random.nextInt(10) == 0) {
+                SimpleParticleType particle = this.getParticle();
+                double x = this.getX() + (this.random.nextDouble() - 0.5) * this.getBbWidth() * 0.8 + 0.2;
+                double y = this.getY() + this.random.nextDouble() * this.getBbHeight() * 0.8 + 0.2;
+                double z = this.getZ() + (this.random.nextDouble() - 0.5) * this.getBbWidth() * 0.8 + 0.2;
+                this.level().addParticle(particle, x, y, z, 0.0, 0.05, 0.0);
+            }
+        }
+
         if (!this.level().isClientSide && this.isAlive() && this.isEffectiveAi()) {
             if (this.produceBeadTimer > 0) {
                 this.produceBeadTimer--;
@@ -416,6 +428,10 @@ public class ZiyingFox extends TamableAnimal {
         } else {
             this.regenCooldown = 0;
         }
+    }
+
+    protected SimpleParticleType getParticle() {
+        return ModParticleTypes.ZIYING_FOX.get();
     }
 
     protected void spawnBead() {

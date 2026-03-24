@@ -1,10 +1,10 @@
-// 1.21.1	2026-03-23T19:20:28.4750509	Registries
+// 1.21.1	2026-03-24T16:43:29.0558332	Registries
 d6502dfaf5e448d5862065dd2fe5988cf6d72d41 data/more_orn_plants/worldgen/biome/azalea_forest.json
 7f4aad3808cbe9b5dec9d8887d596d833cde701b data/more_orn_plants/worldgen/biome/camellia_valley.json
 885531a8cc625a0462afc0124b7cfee6f6a354e2 data/more_orn_plants/worldgen/biome/chinaberry_woods.json
 bc9cb81b4ac24fad7406c10470544df8b20a0f10 data/more_orn_plants/worldgen/biome/chinese_rose_fields.json
 3f83376e03b338440b6b4685a22f62bb96f13278 data/more_orn_plants/worldgen/biome/colored_forest.json
-085dc6641414df0445abe56136f18271f3abf1d6 data/more_orn_plants/worldgen/biome/crabapple_grove.json
+0492d2fe51e65a373a249cc5962b0761ed8c1a97 data/more_orn_plants/worldgen/biome/crabapple_grove.json
 1bc230ca2033b689fa648ccf8737f62020c72e7b data/more_orn_plants/worldgen/biome/crops_green.json
 ce014c5555eaa7fe8bfb017f3ca0fe7f4f401d3f data/more_orn_plants/worldgen/biome/desert_poplar_woods.json
 71a86dc5cb1a692e78fa1636c88f5fe2165ff8ae data/more_orn_plants/worldgen/biome/evergreen_forest.json
@@ -15,7 +15,7 @@ a9dd48cd18bed6e0a19a8227ea78814feb05b816 data/more_orn_plants/worldgen/biome/gin
 b635da91cf20d86ee6c870aa19f2190aa389616e data/more_orn_plants/worldgen/biome/longevity_forest.json
 990f0cc0aae471befef4974d3122a74b1a1aa910 data/more_orn_plants/worldgen/biome/miscanthus_fields.json
 23e6c8a08ef14221fe6333e5abc2a2fdacc7e903 data/more_orn_plants/worldgen/biome/mount_mei.json
-c51e43c0860487df699f565bd5c49eddb8e39001 data/more_orn_plants/worldgen/biome/penglai.json
+bcc1a49d2313b7da8fadf35e2766b4c7383aa207 data/more_orn_plants/worldgen/biome/penglai.json
 bd7cc5014121f1e3a081707366d651bbc19a5ced data/more_orn_plants/worldgen/biome/peony_meadows.json
 53a71f59794f88d62ae5841ac54c2a4b40da4b76 data/more_orn_plants/worldgen/biome/peony_sea.json
 ef9e864333fbbe89cdaa5c21e1fb6e57f56a4347 data/more_orn_plants/worldgen/biome/pink_camellia_valley.json

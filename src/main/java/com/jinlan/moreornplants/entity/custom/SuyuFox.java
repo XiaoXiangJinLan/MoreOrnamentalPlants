@@ -1,15 +1,15 @@
 package com.jinlan.moreornplants.entity.custom;
 
 import com.jinlan.moreornplants.entity.ModEntities;
+import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ModTags;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
@@ -53,6 +53,11 @@ public class SuyuFox extends ZiyingFox {
     @Override
     public boolean isBeadFood(ItemStack stack) {
         return stack.is(ModTags.Items.SUYU_FOX_APPEAL_TO);
+    }
+
+    @Override
+    protected SimpleParticleType getParticle() {
+        return ModParticleTypes.SUYU_FOX.get();
     }
 
     @Override
