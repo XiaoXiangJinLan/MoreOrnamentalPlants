@@ -742,16 +742,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.CHINESE_AZALEA);
         simpleBlock(ModBlocks.POTTED_CHINESE_AZALEA.get(), models().singleTexture("potted_chinese_azalea", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CHINESE_AZALEA.get())).renderType("cutout"));
-        flowerBlock(ModBlocks.FOUNTAIN_GRASS);
         simpleBlock(ModBlocks.POTTED_FOUNTAIN_GRASS.get(), models().singleTexture("potted_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_fountain_grass")).renderType("cutout"));
-        flowerBlock(ModBlocks.PURPLE_FOUNTAIN_GRASS);
         simpleBlock(ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get(), models().singleTexture("potted_purple_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_purple_fountain_grass")).renderType("cutout"));
-        flowerBlock(ModBlocks.PINK_FOUNTAIN_GRASS);
         simpleBlock(ModBlocks.POTTED_PINK_FOUNTAIN_GRASS.get(), models().singleTexture("potted_pink_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_pink_fountain_grass")).renderType("cutout"));
-        flowerBlock(ModBlocks.WHITE_FOUNTAIN_GRASS);
         simpleBlock(ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get(), models().singleTexture("potted_white_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_white_fountain_grass")).renderType("cutout"));
         flowerBlock(ModBlocks.BAMBOO_STICK);

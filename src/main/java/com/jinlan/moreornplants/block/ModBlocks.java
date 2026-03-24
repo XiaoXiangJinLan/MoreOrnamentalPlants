@@ -842,73 +842,73 @@ public class ModBlocks {
             registerBlock("white_crape_myrtle_sapling", () -> new WhiteCrapeMyrtleSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> POTTED_RED_MEI_SAPLING =
-            BLOCKS.register("potted_red_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_mei_sapling", () -> flowerPot(RED_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_WHITE_MEI_SAPLING =
-            BLOCKS.register("potted_white_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_mei_sapling", () -> flowerPot(WHITE_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_GREEN_CALYX_MEI_SAPLING =
-            BLOCKS.register("potted_green_calyx_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_CALYX_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_calyx_mei_sapling", () -> flowerPot(GREEN_CALYX_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_DOUBLE_PINK_MEI_SAPLING =
-            BLOCKS.register("potted_double_pink_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.DOUBLE_PINK_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_double_pink_mei_sapling", () -> flowerPot(DOUBLE_PINK_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_VERSICOLOR_MEI_SAPLING =
-            BLOCKS.register("potted_versicolor_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VERSICOLOR_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_versicolor_mei_sapling", () -> flowerPot(VERSICOLOR_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_RED_WEEPING_MEI_SAPLING =
-            BLOCKS.register("potted_red_weeping_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_WEEPING_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_weeping_mei_sapling", () -> flowerPot(RED_WEEPING_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_WHITE_WEEPING_MEI_SAPLING =
-            BLOCKS.register("potted_white_weeping_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_WEEPING_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_weeping_mei_sapling", () -> flowerPot(WHITE_WEEPING_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_GREEN_WEEPING_MEI_SAPLING =
-            BLOCKS.register("potted_green_weeping_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_WEEPING_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_weeping_mei_sapling", () -> flowerPot(GREEN_WEEPING_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_PINK_WEEPING_MEI_SAPLING =
-            BLOCKS.register("potted_pink_weeping_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_WEEPING_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_weeping_mei_sapling", () -> flowerPot(PINK_WEEPING_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_VERSICOLOR_WEEPING_MEI_SAPLING =
-            BLOCKS.register("potted_versicolor_weeping_mei_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_versicolor_weeping_mei_sapling", () -> flowerPot(VERSICOLOR_WEEPING_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_UPRIGHT_CRABAPPLE_SAPLING =
-            BLOCKS.register("potted_upright_crabapple_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.UPRIGHT_CRABAPPLE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_upright_crabapple_sapling", () -> flowerPot(UPRIGHT_CRABAPPLE_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_WEEPING_CRABAPPLE_SAPLING =
-            BLOCKS.register("potted_weeping_crabapple_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WEEPING_CRABAPPLE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_weeping_crabapple_sapling", () -> flowerPot(WEEPING_CRABAPPLE_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_PINK_APRICOT_SAPLING =
-            BLOCKS.register("potted_pink_apricot_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_APRICOT_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_apricot_sapling", () -> flowerPot(PINK_APRICOT_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_WHITE_APRICOT_SAPLING =
-            BLOCKS.register("potted_white_apricot_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_APRICOT_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_apricot_sapling", () -> flowerPot(WHITE_APRICOT_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_CLOUD_APRICOT_SAPLING =
             BLOCKS.register("potted_cloud_apricot_sapling", () -> flowerPot(CLOUD_APRICOT_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_ORNAMENTAL_PEACH_SAPLING =
-            BLOCKS.register("potted_ornamental_peach_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.ORNAMENTAL_PEACH_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ornamental_peach_sapling", () -> flowerPot(ORNAMENTAL_PEACH_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_WILD_PEACH_SAPLING =
-            BLOCKS.register("potted_wild_peach_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WILD_PEACH_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_wild_peach_sapling", () -> flowerPot(WILD_PEACH_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_IMMORTAL_PEACH_SAPLING =
             BLOCKS.register("potted_immortal_peach_sapling", () -> flowerPot(IMMORTAL_PEACH_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_PEAR_SAPLING =
-            BLOCKS.register("potted_pear_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PEAR_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pear_sapling", () -> flowerPot(PEAR_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_FLOWERING_PURPLE_LEAF_PLUM_SAPLING =
-            BLOCKS.register("potted_flowering_purple_leaf_plum_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_flowering_purple_leaf_plum_sapling", () -> flowerPot(FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_PURPLE_LEAF_PLUM_SAPLING =
-            BLOCKS.register("potted_purple_leaf_plum_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PURPLE_LEAF_PLUM_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_purple_leaf_plum_sapling", () -> flowerPot(PURPLE_LEAF_PLUM_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_GOLDEN_OSMANTHUS_SAPLING =
-            BLOCKS.register("potted_golden_osmanthus_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLDEN_OSMANTHUS_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_golden_osmanthus_sapling", () -> flowerPot(GOLDEN_OSMANTHUS_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_ORANGE_OSMANTHUS_SAPLING =
-            BLOCKS.register("potted_orange_osmanthus_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.ORANGE_OSMANTHUS_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_orange_osmanthus_sapling", () -> flowerPot(ORANGE_OSMANTHUS_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_WHITE_OSMANTHUS_SAPLING =
-            BLOCKS.register("potted_white_osmanthus_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_OSMANTHUS_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_osmanthus_sapling", () -> flowerPot(WHITE_OSMANTHUS_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_GOLDEN_GINKGO_SAPLING =
-            BLOCKS.register("potted_golden_ginkgo_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLDEN_GINKGO_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_golden_ginkgo_sapling", () -> flowerPot(GOLDEN_GINKGO_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_GREEN_GINKGO_SAPLING =
-            BLOCKS.register("potted_green_ginkgo_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_GINKGO_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_ginkgo_sapling", () -> flowerPot(GREEN_GINKGO_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_YELLOW_CHINESE_PARASOL_SAPLING =
-            BLOCKS.register("potted_yellow_chinese_parasol_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_yellow_chinese_parasol_sapling", () -> flowerPot(YELLOW_CHINESE_PARASOL_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_GREEN_CHINESE_PARASOL_SAPLING =
-            BLOCKS.register("potted_green_chinese_parasol_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_CHINESE_PARASOL_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_chinese_parasol_sapling", () -> flowerPot(GREEN_CHINESE_PARASOL_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_SWEETGUM_SAPLING =
-            BLOCKS.register("potted_sweetgum_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.SWEETGUM_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_sweetgum_sapling", () -> flowerPot(SWEETGUM_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_CAMPHOR_SAPLING =
-            BLOCKS.register("potted_camphor_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CAMPHOR_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_camphor_sapling", () -> flowerPot(CAMPHOR_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_DOVE_TREE_SAPLING =
-            BLOCKS.register("potted_dove_tree_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.DOVE_TREE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_dove_tree_sapling", () -> flowerPot(DOVE_TREE_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_CHINABERRY_SAPLING =
-            BLOCKS.register("potted_chinaberry_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CHINABERRY_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_chinaberry_sapling", () -> flowerPot(CHINABERRY_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_DESERT_POPLAR_SAPLING =
-            BLOCKS.register("potted_desert_poplar_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.DESERT_POPLAR_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_desert_poplar_sapling", () -> flowerPot(DESERT_POPLAR_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_CRAPE_MYRTLE_SAPLING =
-            BLOCKS.register("potted_crape_myrtle_sapling", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CRAPE_MYRTLE_SAPLING, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_crape_myrtle_sapling", () -> flowerPot(CRAPE_MYRTLE_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_RED_CRAPE_MYRTLE_SAPLING =
             BLOCKS.register("potted_red_crape_myrtle_sapling", () -> flowerPot(RED_CRAPE_MYRTLE_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_PINK_CRAPE_MYRTLE_SAPLING =
@@ -1034,97 +1034,97 @@ public class ModBlocks {
             BLOCKS.register("bamboo_stick", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> POTTED_CHRYSANTHEMUM =
-            BLOCKS.register("potted_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_chrysanthemum", () -> flowerPot(CHRYSANTHEMUM.get()));
     public static final RegistryObject<Block> POTTED_XIHU_LIUYUE =
-            BLOCKS.register("potted_xihu_liuyue", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.XIHU_LIUYUE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_xihu_liuyue", () -> flowerPot(XIHU_LIUYUE.get()));
     public static final RegistryObject<Block> POTTED_GOLD_BACKED_SCARLET_MUM =
-            BLOCKS.register("potted_gold_backed_scarlet_mum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLD_BACKED_SCARLET_MUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_gold_backed_scarlet_mum", () -> flowerPot(GOLD_BACKED_SCARLET_MUM.get()));
     public static final RegistryObject<Block> POTTED_WHITE_CHRYSANTHEMUM =
-            BLOCKS.register("potted_white_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_chrysanthemum", () -> flowerPot(WHITE_CHRYSANTHEMUM.get()));
     public static final RegistryObject<Block> POTTED_GREEN_CHRYSANTHEMUM =
-            BLOCKS.register("potted_green_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_chrysanthemum", () -> flowerPot(GREEN_CHRYSANTHEMUM.get()));
     public static final RegistryObject<Block> POTTED_PURPLE_CHRYSANTHEMUM =
-            BLOCKS.register("potted_purple_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PURPLE_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_purple_chrysanthemum", () -> flowerPot(PURPLE_CHRYSANTHEMUM.get()));
     public static final RegistryObject<Block> POTTED_VIOLET_PINK_CHRYSANTHEMUM =
-            BLOCKS.register("potted_violet_pink_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VIOLET_PINK_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_violet_pink_chrysanthemum", () -> flowerPot(VIOLET_PINK_CHRYSANTHEMUM.get()));
     public static final RegistryObject<Block> POTTED_PINK_CHRYSANTHEMUM =
-            BLOCKS.register("potted_pink_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_chrysanthemum", () -> flowerPot(PINK_CHRYSANTHEMUM.get()));
     public static final RegistryObject<Block> POTTED_LIGHT_PINK_CHRYSANTHEMUM =
-            BLOCKS.register("potted_light_pink_chrysanthemum", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_PINK_CHRYSANTHEMUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_pink_chrysanthemum", () -> flowerPot(LIGHT_PINK_CHRYSANTHEMUM.get()));
     public static final RegistryObject<Block> POTTED_SPRING_CYMBIDIUM =
-            BLOCKS.register("potted_spring_cymbidium", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.SPRING_CYMBIDIUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_spring_cymbidium", () -> flowerPot(SPRING_CYMBIDIUM.get()));
     public static final RegistryObject<Block> POTTED_SUMMER_CYMBIDIUM =
-            BLOCKS.register("potted_summer_cymbidium", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.SUMMER_CYMBIDIUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_summer_cymbidium", () -> flowerPot(SUMMER_CYMBIDIUM.get()));
     public static final RegistryObject<Block> POTTED_AUTUMN_CYMBIDIUM =
-            BLOCKS.register("potted_autumn_cymbidium", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.AUTUMN_CYMBIDIUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_autumn_cymbidium", () -> flowerPot(AUTUMN_CYMBIDIUM.get()));
     public static final RegistryObject<Block> POTTED_PEONY =
-            BLOCKS.register("potted_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_peony", () -> flowerPot(PEONY.get()));
     public static final RegistryObject<Block> POTTED_LIGHT_PINK_PEONY =
-            BLOCKS.register("potted_light_pink_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_PINK_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_pink_peony", () -> flowerPot(LIGHT_PINK_PEONY.get()));
     public static final RegistryObject<Block> POTTED_VIOLET_PINK_PEONY =
-            BLOCKS.register("potted_violet_pink_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VIOLET_PINK_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_violet_pink_peony", () -> flowerPot(VIOLET_PINK_PEONY.get()));
     public static final RegistryObject<Block> POTTED_PINK_PEONY =
-            BLOCKS.register("potted_pink_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_peony", () -> flowerPot(PINK_PEONY.get()));
     public static final RegistryObject<Block> POTTED_RED_PEONY =
-            BLOCKS.register("potted_red_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_peony", () -> flowerPot(RED_PEONY.get()));
     public static final RegistryObject<Block> POTTED_LIGHT_RED_PEONY =
-            BLOCKS.register("potted_light_red_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_RED_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_red_peony", () -> flowerPot(LIGHT_RED_PEONY.get()));
     public static final RegistryObject<Block> POTTED_INK_RED_PEONY =
-            BLOCKS.register("potted_ink_red_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.INK_RED_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ink_red_peony", () -> flowerPot(INK_RED_PEONY.get()));
     public static final RegistryObject<Block> POTTED_VERMILION_PEONY =
-            BLOCKS.register("potted_vermilion_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VERMILION_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_vermilion_peony", () -> flowerPot(VERMILION_PEONY.get()));
     public static final RegistryObject<Block> POTTED_PURPLE_PEONY =
-            BLOCKS.register("potted_purple_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PURPLE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_purple_peony", () -> flowerPot(PURPLE_PEONY.get()));
     public static final RegistryObject<Block> POTTED_LIGHT_PURPLE_PEONY =
-            BLOCKS.register("potted_light_purple_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_PURPLE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_purple_peony", () -> flowerPot(LIGHT_PURPLE_PEONY.get()));
     public static final RegistryObject<Block> POTTED_INK_PURPLE_PEONY =
-            BLOCKS.register("potted_ink_purple_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.INK_PURPLE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ink_purple_peony", () -> flowerPot(INK_PURPLE_PEONY.get()));
     public static final RegistryObject<Block> POTTED_VIOLET_PEONY =
-            BLOCKS.register("potted_violet_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VIOLET_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_violet_peony", () -> flowerPot(VIOLET_PEONY.get()));
     public static final RegistryObject<Block> POTTED_YELLOW_PEONY =
-            BLOCKS.register("potted_yellow_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_yellow_peony", () -> flowerPot(YELLOW_PEONY.get()));
     public static final RegistryObject<Block> POTTED_LIGHT_YELLOW_PEONY =
-            BLOCKS.register("potted_light_yellow_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_YELLOW_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_yellow_peony", () -> flowerPot(LIGHT_YELLOW_PEONY.get()));
     public static final RegistryObject<Block> POTTED_OCHRE_YELLOW_PEONY =
-            BLOCKS.register("potted_ochre_yellow_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.OCHRE_YELLOW_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ochre_yellow_peony", () -> flowerPot(OCHRE_YELLOW_PEONY.get()));
     public static final RegistryObject<Block> POTTED_GOLDEN_PEONY =
-            BLOCKS.register("potted_golden_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GOLDEN_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_golden_peony", () -> flowerPot(GOLDEN_PEONY.get()));
     public static final RegistryObject<Block> POTTED_WHITE_PEONY =
-            BLOCKS.register("potted_white_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_peony", () -> flowerPot(WHITE_PEONY.get()));
     public static final RegistryObject<Block> POTTED_INK_PEONY =
-            BLOCKS.register("potted_ink_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.INK_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ink_peony", () -> flowerPot(INK_PEONY.get()));
     public static final RegistryObject<Block> POTTED_BLUE_PEONY =
-            BLOCKS.register("potted_blue_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.BLUE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_blue_peony", () -> flowerPot(BLUE_PEONY.get()));
     public static final RegistryObject<Block> POTTED_GREEN_PEONY =
-            BLOCKS.register("potted_green_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.GREEN_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_green_peony", () -> flowerPot(GREEN_PEONY.get()));
     public static final RegistryObject<Block> POTTED_COLORFUL_PEONY =
-            BLOCKS.register("potted_colorful_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.COLORFUL_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_colorful_peony", () -> flowerPot(COLORFUL_PEONY.get()));
     public static final RegistryObject<Block> POTTED_LIGHT_COLORFUL_PEONY =
-            BLOCKS.register("potted_light_colorful_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.LIGHT_COLORFUL_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_light_colorful_peony", () -> flowerPot(LIGHT_COLORFUL_PEONY.get()));
     public static final RegistryObject<Block> POTTED_INK_COLORFUL_PEONY =
-            BLOCKS.register("potted_ink_colorful_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.INK_COLORFUL_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_ink_colorful_peony", () -> flowerPot(INK_COLORFUL_PEONY.get()));
     public static final RegistryObject<Block> POTTED_RED_WHITE_PEONY =
-            BLOCKS.register("potted_red_white_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_WHITE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_white_peony", () -> flowerPot(RED_WHITE_PEONY.get()));
     public static final RegistryObject<Block> POTTED_PINK_WHITE_PEONY =
-            BLOCKS.register("potted_pink_white_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_WHITE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_white_peony", () -> flowerPot(PINK_WHITE_PEONY.get()));
     public static final RegistryObject<Block> POTTED_YELLOW_WHITE_PEONY =
-            BLOCKS.register("potted_yellow_white_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_WHITE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_yellow_white_peony", () -> flowerPot(YELLOW_WHITE_PEONY.get()));
     public static final RegistryObject<Block> POTTED_PURPLE_WHITE_PEONY =
-            BLOCKS.register("potted_purple_white_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PURPLE_WHITE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_purple_white_peony", () -> flowerPot(PURPLE_WHITE_PEONY.get()));
     public static final RegistryObject<Block> POTTED_WU_HUA_LONG_YU_PEONY =
-            BLOCKS.register("potted_wu_hua_long_yu_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WU_HUA_LONG_YU_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_wu_hua_long_yu_peony", () -> flowerPot(WU_HUA_LONG_YU_PEONY.get()));
     public static final RegistryObject<Block> POTTED_MAUVE_PEONY =
-            BLOCKS.register("potted_mauve_peony", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MAUVE_PEONY, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_mauve_peony", () -> flowerPot(MAUVE_PEONY.get()));
     public static final RegistryObject<Block> POTTED_CAMELLIA =
-            BLOCKS.register("potted_camellia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CAMELLIA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_camellia", () -> flowerPot(CAMELLIA.get()));
     public static final RegistryObject<Block> POTTED_WHITE_CAMELLIA =
-            BLOCKS.register("potted_white_camellia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_CAMELLIA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_camellia", () -> flowerPot(WHITE_CAMELLIA.get()));
     public static final RegistryObject<Block> POTTED_PINK_CAMELLIA =
-            BLOCKS.register("potted_pink_camellia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_CAMELLIA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_camellia", () -> flowerPot(PINK_CAMELLIA.get()));
     public static final RegistryObject<Block> POTTED_VERSICOLOR_CAMELLIA =
-            BLOCKS.register("potted_versicolor_camellia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VERSICOLOR_CAMELLIA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_versicolor_camellia", () -> flowerPot(VERSICOLOR_CAMELLIA.get()));
     public static final RegistryObject<Block> POTTED_RED_AZALEA =
-            BLOCKS.register("potted_red_azalea", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_AZALEA, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_azalea", () -> flowerPot(RED_AZALEA.get()));
     public static final RegistryObject<Block> POTTED_MAYING_RHODODENDRON =
             BLOCKS.register("potted_maying_rhododendron", () -> flowerPot(MAYING_RHODODENDRON.get()));
     public static final RegistryObject<Block> POTTED_DEWDROP_RHODODENDRON =
@@ -1140,15 +1140,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_CHINESE_AZALEA =
             BLOCKS.register("potted_chinese_azalea", () -> flowerPot(CHINESE_AZALEA.get()));
     public static final RegistryObject<Block> POTTED_FOUNTAIN_GRASS =
-            BLOCKS.register("potted_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_fountain_grass", () -> flowerPot(FOUNTAIN_GRASS.get()));
     public static final RegistryObject<Block> POTTED_PURPLE_FOUNTAIN_GRASS =
-            BLOCKS.register("potted_purple_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PURPLE_FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_purple_fountain_grass", () -> flowerPot(PURPLE_FOUNTAIN_GRASS.get()));
     public static final RegistryObject<Block> POTTED_PINK_FOUNTAIN_GRASS =
-            BLOCKS.register("potted_pink_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_fountain_grass", () -> flowerPot(PINK_FOUNTAIN_GRASS.get()));
     public static final RegistryObject<Block> POTTED_WHITE_FOUNTAIN_GRASS =
-            BLOCKS.register("potted_white_fountain_grass", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_FOUNTAIN_GRASS, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_fountain_grass", () -> flowerPot(WHITE_FOUNTAIN_GRASS.get()));
     public static final RegistryObject<Block> POTTED_BAMBOO_STICK =
-            BLOCKS.register("potted_bamboo_stick", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.BAMBOO_STICK, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_bamboo_stick", () -> flowerPot(BAMBOO_STICK.get()));
 
     public static final RegistryObject<Block> WINTERSWEET =
             registerBlock("wintersweet", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
@@ -1204,29 +1204,29 @@ public class ModBlocks {
             BLOCKS.register("golden_miscanthus", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> POTTED_WINTER_CYMBIDIUM =
-            BLOCKS.register("potted_winter_cymbidium", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WINTER_CYMBIDIUM, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_winter_cymbidium", () -> flowerPot(WINTER_CYMBIDIUM.get()));
     public static final RegistryObject<Block> POTTED_WINTERSWEET =
-            BLOCKS.register("potted_wintersweet", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WINTERSWEET, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_wintersweet", () -> flowerPot(WINTERSWEET.get()));
     public static final RegistryObject<Block> POTTED_CHINESE_ROSE =
-            BLOCKS.register("potted_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_chinese_rose", () -> flowerPot(CHINESE_ROSE.get()));
     public static final RegistryObject<Block> POTTED_PINK_CHINESE_ROSE =
-            BLOCKS.register("potted_pink_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_chinese_rose", () -> flowerPot(PINK_CHINESE_ROSE.get()));
     public static final RegistryObject<Block> POTTED_YELLOW_CHINESE_ROSE =
-            BLOCKS.register("potted_yellow_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_yellow_chinese_rose", () -> flowerPot(YELLOW_CHINESE_ROSE.get()));
     public static final RegistryObject<Block> POTTED_WHITE_CHINESE_ROSE =
-            BLOCKS.register("potted_white_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_white_chinese_rose", () -> flowerPot(WHITE_CHINESE_ROSE.get()));
     public static final RegistryObject<Block> POTTED_RED_PINK_CHINESE_ROSE =
-            BLOCKS.register("potted_red_pink_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_PINK_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_pink_chinese_rose", () -> flowerPot(RED_PINK_CHINESE_ROSE.get()));
     public static final RegistryObject<Block> POTTED_RED_YELLOW_CHINESE_ROSE =
-            BLOCKS.register("potted_red_yellow_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_YELLOW_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_yellow_chinese_rose", () -> flowerPot(RED_YELLOW_CHINESE_ROSE.get()));
     public static final RegistryObject<Block> POTTED_RED_WHITE_CHINESE_ROSE =
-            BLOCKS.register("potted_red_white_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.RED_WHITE_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_red_white_chinese_rose", () -> flowerPot(RED_WHITE_CHINESE_ROSE.get()));
     public static final RegistryObject<Block> POTTED_PINK_WHITE_CHINESE_ROSE =
-            BLOCKS.register("potted_pink_white_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.PINK_WHITE_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_pink_white_chinese_rose", () -> flowerPot(PINK_WHITE_CHINESE_ROSE.get()));
     public static final RegistryObject<Block> POTTED_YELLOW_WHITE_CHINESE_ROSE =
-            BLOCKS.register("potted_yellow_white_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.YELLOW_WHITE_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_yellow_white_chinese_rose", () -> flowerPot(YELLOW_WHITE_CHINESE_ROSE.get()));
     public static final RegistryObject<Block> POTTED_BAOHUA_CHINESE_ROSE =
-            BLOCKS.register("potted_baohua_chinese_rose", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.BAOHUA_CHINESE_ROSE, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_baohua_chinese_rose", () -> flowerPot(BAOHUA_CHINESE_ROSE.get()));
 
     public static final RegistryObject<Block> CUT_PEONY =
             registerBlock("cut_peony", () -> cutFlower(ModBlocks.PEONY.get()));
@@ -1342,13 +1342,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOTTLED_BAMBOO =
             BLOCKS.register("mottled_bamboo", () -> new MottledBambooStalkBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO)));
     public static final RegistryObject<Block> POTTED_MOTTLED_BAMBOO =
-            BLOCKS.register("potted_mottled_bamboo", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MOTTLED_BAMBOO, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_mottled_bamboo", () -> flowerPot(MOTTLED_BAMBOO.get()));
     public static final RegistryObject<Block> BLACK_BAMBOO_SAPLING =
             BLOCKS.register("black_bamboo_sapling", () -> new BlackBambooSaplingBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_SAPLING)));
     public static final RegistryObject<Block> BLACK_BAMBOO =
             BLOCKS.register("black_bamboo", () -> new BlackBambooStalkBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO)));
     public static final RegistryObject<Block> POTTED_BLACK_BAMBOO =
-            BLOCKS.register("potted_black_bamboo", () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.BLACK_BAMBOO, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("potted_black_bamboo", () -> flowerPot(BLACK_BAMBOO.get()));
 
     public static final RegistryObject<Block> LOTUS =
             registerBlock("lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).mapColor(MapColor.COLOR_PINK).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
@@ -1416,7 +1416,6 @@ public class ModBlocks {
     private static Block cutFlower(Block tallFlower) {
         return new CutFlowerBlock(tallFlower, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
     }
-
 
     private static Block flowerPot(Block potted) {
         return new FlowerPotBlock(potted, BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY));
