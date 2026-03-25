@@ -735,7 +735,7 @@ public class ZiyingFox extends TamableAnimal {
     @Override
     public boolean doHurtTarget(@NotNull Entity target) {
         float damage = (float) this.getAttributeValue(Attributes.ATTACK_DAMAGE);
-        if (target instanceof Enemy) {
+        if (target instanceof Enemy || target instanceof NeutralMob) {
             damage *= 5.0F;
         }
         // 造成伤害

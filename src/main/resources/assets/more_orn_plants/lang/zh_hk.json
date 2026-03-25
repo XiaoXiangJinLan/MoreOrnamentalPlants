@@ -883,6 +883,6 @@
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小喬木，無木板",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞品種，無竹板，熊貓不愛吃",
-  "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7對不死生物造成額外傷害",
-  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7對節肢生物造成額外傷害"
+  "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7對不死生物傷害增加999%",
+  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7對節肢生物傷害增加222%"
 }

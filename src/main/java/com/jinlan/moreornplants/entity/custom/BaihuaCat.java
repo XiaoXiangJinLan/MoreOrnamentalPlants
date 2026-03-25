@@ -426,7 +426,7 @@ public class BaihuaCat extends Cat {
     @Override
     public boolean doHurtTarget(@NotNull Entity target) {
         float damage = (float) this.getAttributeValue(Attributes.ATTACK_DAMAGE);
-        if (target instanceof Enemy) {
+        if (target instanceof Enemy || target instanceof NeutralMob) {
             damage *= 9.0F;
         }
         boolean hurt = target.hurt(this.damageSources().mobAttack(this), damage);
