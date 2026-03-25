@@ -197,9 +197,9 @@ public class ModItems {
     public static final DeferredItem<Item> ZIYING_SWORD =
             ITEMS.register("ziying_sword", () -> new SwordItem(ModTiers.ZIYING, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.ZIYING, 3, -2.4F))));
     public static final DeferredItem<Item> SUYU_SWORD =
-            ITEMS.register("suyu_sword", () -> new SwordItem(ModTiers.ZIYING, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.SUYU, 3, -1.6F))));
+            ITEMS.register("suyu_sword", () -> new SwordItem(ModTiers.SUYU, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.SUYU, 3, -1.6F))));
     public static final DeferredItem<Item> ZIYU_YUANYANG_SWORD =
-            ITEMS.register("ziyu_yuanyang_sword", () -> new SwordItem(ModTiers.ZIYING, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.ZIYU_YUANYANG, 3, -2.4F))));
+            ITEMS.register("ziyu_yuanyang_sword", () -> new SwordItem(ModTiers.ZIYU_YUANYANG, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.ZIYU_YUANYANG, 3, -2.4F))));
 
     public static final DeferredItem<Item> MOTTLED_BAMBOO =
             ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties()));
