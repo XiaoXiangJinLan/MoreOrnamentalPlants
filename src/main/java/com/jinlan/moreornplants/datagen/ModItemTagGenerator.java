@@ -412,9 +412,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.LOTUS_ROOT_SOUP.get());
 
         this.tag(ItemTags.SWORDS)
-                .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get());
+                .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get())
+                .add(ModItems.ZIYING_SWORD.get(), ModItems.SUYU_SWORD.get(), ModItems.ZIYU_YUANYANG_SWORD.get());
 
         this.tag(Tags.Items.MELEE_WEAPON_TOOLS)
-                .add(ModItems.BAMBOO_STICK.get(), ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get());
+                .add(ModItems.BAMBOO_STICK.get(), ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get())
+                .add(ModItems.ZIYING_SWORD.get(), ModItems.SUYU_SWORD.get(), ModItems.ZIYU_YUANYANG_SWORD.get());
     }
 }

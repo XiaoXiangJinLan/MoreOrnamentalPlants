@@ -5,9 +5,11 @@ import com.jinlan.moreornplants.entity.ModEntities;
 import com.jinlan.moreornplants.entity.custom.BaihuaCat;
 import com.jinlan.moreornplants.entity.custom.SuyuFox;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
+import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.Holder;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
@@ -21,6 +23,7 @@ import net.minecraft.world.entity.animal.AbstractGolem;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.allay.Allay;
 import net.minecraft.world.entity.monster.Creeper;
+import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.monster.ZombieVillager;
 import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.player.Player;
@@ -34,8 +37,10 @@ import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.neoforge.event.entity.player.AttackEntityEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 @EventBusSubscriber(modid = MoreOrnPlants.MODID)
 public class ModEventsBusEvents {
@@ -93,6 +98,20 @@ public class ModEventsBusEvents {
             event.setAmount(event.getAmount() * 9.9F);
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getType().is(EntityTypeTags.ARTHROPOD)) {
             event.setAmount(event.getAmount() * 2.2F);
+        } else if (weapon.is(ModItems.ZIYING_SWORD.get()) && target1 instanceof Enemy) {
+            if (player.getRandom().nextFloat() < 0.75f) {
+                event.setAmount(event.getAmount() * 3.0f);
+            }
+        } else if (weapon.is(ModItems.SUYU_SWORD.get()) && target1 instanceof Enemy) {
+            event.setAmount(event.getAmount() * 1.5f);
+            target1.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), player);
+        } else if (weapon.is(ModItems.ZIYU_YUANYANG_SWORD.get()) && target1 instanceof Enemy) {
+            float multiplier = 1.25f;
+            if (player.getRandom().nextFloat() < 0.5f) {
+                multiplier *= 3.0f;
+            }
+            event.setAmount(event.getAmount() * multiplier);
+            target1.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), player);
         }
     }
 
@@ -221,6 +240,122 @@ public class ModEventsBusEvents {
             } else {
                 event.setCancellationResult(InteractionResult.CONSUME);
             }
+        }
+    }
+
+    private static void spawnSwordParticle(Player player, SimpleParticleType particleType, int count) {
+        var level = player.level();
+        var lookVec = player.getLookAngle();
+        double startX = player.getX();
+        double startY = player.getY() + player.getEyeHeight() - 0.2;
+        double startZ = player.getZ();
+
+        double rightX = lookVec.z;
+        double rightZ = -lookVec.x;
+        double upX = 0;
+        double upY = 1;
+        double upZ = 0;
+
+        for (int i = 0; i < count; i++) {
+            double distance = 1.2 + level.random.nextDouble() * 0.8;
+            double lateral = (level.random.nextDouble() - 0.5) * 3.2;
+            double vertical = (level.random.nextDouble() - 0.5);
+
+            double x = startX + lookVec.x * distance + rightX * lateral + upX * vertical;
+            double z = startZ + lookVec.z * distance + rightZ * lateral + upZ * vertical;
+            double y = startY + lookVec.y * distance + upY * vertical;
+
+            double vx = (level.random.nextDouble() - 0.5) * 0.2;
+            double vz = (level.random.nextDouble() - 0.5) * 0.2;
+            double vy = level.random.nextDouble() * 0.2;
+
+            level.addParticle(particleType, x, y, z, vx, vy, vz);
+        }
+    }
+
+    @SubscribeEvent
+    public static void onAttackEntity(AttackEntityEvent event) {
+        Player player = event.getEntity();
+        ItemStack weapon = player.getMainHandItem();
+        if (weapon.is(ModItems.ZIYING_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.ZIYING_FOX.get(), 20);
+        } else if (weapon.is(ModItems.SUYU_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.SUYU_FOX.get(), 20);
+        } else if (weapon.is(ModItems.ZIYU_YUANYANG_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.ZIYU_YUANYANG.get(), 24);
+        } else if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get(), 16);
+        } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.CAMPHOR_LEAVES.get(), 16);
+        }
+    }
+
+    @SubscribeEvent
+    public static void onLeftClickEmpty(PlayerInteractEvent.LeftClickEmpty event) {
+        Player player = event.getEntity();
+        ItemStack weapon = player.getMainHandItem();
+        if (weapon.is(ModItems.ZIYING_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.ZIYING_FOX.get(), 20);
+        } else if (weapon.is(ModItems.SUYU_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.SUYU_FOX.get(), 20);
+        } else if (weapon.is(ModItems.ZIYU_YUANYANG_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.ZIYU_YUANYANG.get(), 24);
+        } else if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get(), 16);
+        } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.CAMPHOR_LEAVES.get(), 16);
+        }
+    }
+
+    private static void spawnSwordParticle2(Player player, SimpleParticleType particleType) {
+        var level = player.level();
+        double baseX = player.getX();
+        double baseY = player.getY() + player.getBbHeight() / 2;
+        double baseZ = player.getZ();
+
+        for (int i = 0; i < 1; i++) {
+            double radius = 1.2;
+            double x = baseX + (level.random.nextDouble() - 0.5) * radius * 2;
+            double y = baseY + (level.random.nextDouble() - 0.5) * radius * 1.2;
+            double z = baseZ + (level.random.nextDouble() - 0.5) * radius * 2;
+
+            double vx = (level.random.nextDouble() - 0.5) * 0.6;
+            double vz = (level.random.nextDouble() - 0.5) * 0.6;
+            double vy = level.random.nextDouble() * 0.2 + 0.1;
+
+            level.addParticle(particleType, x, y, z, vx, vy, vz);
+        }
+    }
+
+    @SubscribeEvent
+    public static void onPlayerTick(PlayerTickEvent.Post event) {
+        Player player = event.getEntity();
+        if (!player.level().isClientSide) return;
+        if (player.tickCount % 10 != 0) return;
+
+        ItemStack weapon = player.getMainHandItem();
+        ItemStack offHand = player.getOffhandItem();
+        if (weapon.is(ModItems.ZIYING_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.ZIYING_FOX.get());
+        } else if (weapon.is(ModItems.SUYU_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.SUYU_FOX.get());
+        } else if (weapon.is(ModItems.ZIYU_YUANYANG_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.ZIYU_YUANYANG.get());
+        } else if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
+        } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.CAMPHOR_LEAVES.get());
+        }
+        if (offHand.is(ModItems.ZIYING_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.ZIYING_FOX.get());
+        } else if (offHand.is(ModItems.SUYU_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.SUYU_FOX.get());
+        } else if (offHand.is(ModItems.ZIYU_YUANYANG_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.ZIYU_YUANYANG.get());
+        } else if (offHand.is(ModItems.PEACH_WOODEN_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
+        } else if (offHand.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.CAMPHOR_LEAVES.get());
         }
     }
 }

@@ -441,6 +441,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         handheldItem(ModItems.PEACH_WOODEN_SWORD.get());
         handheldItem(ModItems.CAMPHOR_WOODEN_SWORD.get());
+        handheldItem(ModItems.ZIYING_SWORD.get());
+        handheldItem(ModItems.SUYU_SWORD.get());
+        handheldItem(ModItems.ZIYU_YUANYANG_SWORD.get());
     }
 
     private void saplingItem(DeferredBlock<Block> item) {

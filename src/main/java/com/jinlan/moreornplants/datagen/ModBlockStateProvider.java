@@ -573,31 +573,31 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         flowerBlock(ModBlocks.CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_CHRYSANTHEMUM.get(), models().singleTexture("potted_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.CHRYSANTHEMUM.get())).renderType("cutout"));
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_chrysanthemum")).renderType("cutout"));
         flowerBlock(ModBlocks.XIHU_LIUYUE);
         simpleBlock(ModBlocks.POTTED_XIHU_LIUYUE.get(), models().singleTexture("potted_xihu_liuyue", ResourceLocation.parse("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.XIHU_LIUYUE.get())).renderType("cutout"));
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_xihu_liuyue")).renderType("cutout"));
         flowerBlock(ModBlocks.GOLD_BACKED_SCARLET_MUM);
         simpleBlock(ModBlocks.POTTED_GOLD_BACKED_SCARLET_MUM.get(), models().singleTexture("potted_gold_backed_scarlet_mum", ResourceLocation.parse("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.GOLD_BACKED_SCARLET_MUM.get())).renderType("cutout"));
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_gold_backed_scarlet_mum")).renderType("cutout"));
         flowerBlock(ModBlocks.WHITE_CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_WHITE_CHRYSANTHEMUM.get(), models().singleTexture("potted_white_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.WHITE_CHRYSANTHEMUM.get())).renderType("cutout"));
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_white_chrysanthemum")).renderType("cutout"));
         flowerBlock(ModBlocks.GREEN_CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_GREEN_CHRYSANTHEMUM.get(), models().singleTexture("potted_green_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.GREEN_CHRYSANTHEMUM.get())).renderType("cutout"));
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_green_chrysanthemum")).renderType("cutout"));
         flowerBlock(ModBlocks.PURPLE_CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_PURPLE_CHRYSANTHEMUM.get(), models().singleTexture("potted_purple_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.PURPLE_CHRYSANTHEMUM.get())).renderType("cutout"));
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_purple_chrysanthemum")).renderType("cutout"));
         flowerBlock(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_VIOLET_PINK_CHRYSANTHEMUM.get(), models().singleTexture("potted_violet_pink_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get())).renderType("cutout"));
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_violet_pink_chrysanthemum")).renderType("cutout"));
         flowerBlock(ModBlocks.PINK_CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_PINK_CHRYSANTHEMUM.get(), models().singleTexture("potted_pink_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.PINK_CHRYSANTHEMUM.get())).renderType("cutout"));
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_pink_chrysanthemum")).renderType("cutout"));
         flowerBlock(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_LIGHT_PINK_CHRYSANTHEMUM.get(), models().singleTexture("potted_light_pink_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",
-                blockTexture(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get())).renderType("cutout"));
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_light_pink_chrysanthemum")).renderType("cutout"));
         flowerBlock(ModBlocks.SPRING_CYMBIDIUM);
         simpleBlock(ModBlocks.POTTED_SPRING_CYMBIDIUM.get(), models().singleTexture("potted_spring_cymbidium", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.SPRING_CYMBIDIUM.get())).renderType("cutout"));

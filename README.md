@@ -85,6 +85,12 @@ New Fuels
 ==========
 • Golden Miscanthus – Can smelt 3 items.
 
+New Mobs
+==========
+• Ziying Fox: Spawns in Ziying Caves. Can be tamed with Golden Crabapple. When fed Crape Myrtle or Chinese Wisteria, it produces Ziying Beads.  
+• Suyu Fox: Spawns in Suyu Caves. Can be tamed with Golden Crabapple. When fed White Crape Myrtle or White Chinese Wisteria, it produces Suyu Beads.  
+• Baihua Cat: Spawns in Flowers Grove, Crabapple Grove, and Penglai. Can be tamed with flowers. When fed Immortal Peach, Cloud Apricot, or Crabapple, it produces the corresponding fruit tree sapling. It also accelerates the growth of crops, cut flowers, and other plants within a 1-block radius.
+
 《观赏植物》是一个以植物装饰为主题的群系模组，将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠；
 彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了三十三个全新的生物群系、六个结构，等待你来探索！
 
@@ -99,9 +105,9 @@ New Fuels
 #### 花林群系
 •**白雪红梅**：朱砂梅为主的雪林，林下生长有蜡梅；  
 •**香雪海**：江梅、绿萼梅、垂枝白梅以及绿萼垂枝梅为主的雪林，地面长有香雪花簇；  
-•**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃红花簇，天空和水面为淡粉色，漂浮有流红、浮英。仙桃和云杏在此群系能够正常结果；  
+•**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃红花簇，天空和水面为淡粉色，漂浮有流红、浮英；  
 •**高原春杏**：生长有粉杏和白杏的高原，地面长有春信花簇；  
-•**蓬莱**：生长有洒金垂枝梅、宫粉垂枝梅、绿萼垂枝梅、仙桃、云杏、海棠、牡丹、芍药、月季的海上仙山。当玩家位于此群系时，会获得诸多正面效果。仙桃和云杏在此群系能够正常结果，西府海棠只在此群系才会自然结果；  
+•**蓬莱**：生长有洒金垂枝梅、宫粉垂枝梅、绿萼垂枝梅、仙桃、云杏、海棠、牡丹、芍药、月季的海上仙山。当玩家位于此群系时，会获得诸多正面效果；  
 •**百花林**：垂丝海棠为优势树种，并伴有其他各种花树的花林，林下生长有月季、牡丹、菊花、兰花、芍药、山茶、杜鹃、紫薇、芙蓉、狼尾草以及部分原版植物；  
 •**烟雨海棠**：百花林的变种，以海棠为主的花林，林下生长有芍药和牡丹；  
 •**楝花林**：苦楝和香樟为优势树种的疏林，林下生长有大量的狼尾草；  
@@ -157,6 +163,11 @@ New Fuels
 
 ## 新燃料
 **金芒草**：可以燃烧3个物品。
+
+## 新生物
+**紫英狐**：生成在紫英洞，用金海棠果驯服，喂食紫薇或者紫藤可以产出紫英珠；  
+**素玉狐**：生成在素玉洞，用金海棠果驯服，喂食白薇或者银藤可以产出素玉珠；  
+**百花猫**：生成在百花林、烟雨海棠和蓬莱，用花朵驯服，喂食仙桃、云杏或者海棠果可以产出对应的果树，会催熟附近1格范围内的作物、切花等植物。
 
 The block id for some of the plant blocks in this mod
 ==========

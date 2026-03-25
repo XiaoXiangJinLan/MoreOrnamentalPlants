@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-22T21:46:32.6345437	Tags for minecraft:item mod id more_orn_plants
+// 1.21.1	2026-03-25T08:34:55.7780432	Tags for minecraft:item mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/item/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/item/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/item/azalea.json
@@ -45,7 +45,7 @@ c34752788297cb2989f3bc35049a78ed54eb61fd data/c/tags/item/osmanthus_sapling.json
 f036e8e9bb851bc53380597797220a1c2181d22d data/c/tags/item/rhododendron_leaves.json
 03b0f5a11ed9ffe99eeaa7b86840233f2320f7e5 data/c/tags/item/stripped_logs.json
 a7fab72ff624f6e7874d56884f64dce8d2da50c9 data/c/tags/item/stripped_woods.json
-af53011c093fb9d929f67252d551e042c6c4053a data/c/tags/item/tools/melee_weapon.json
+83a903599ed8463eb9e3185596c0a7d778a4d7d2 data/c/tags/item/tools/melee_weapon.json
 68597dc32155bdacbc8a7edb2b6084b3ce0f3511 data/c/tags/item/tree_peony.json
 80a3f461221547e5cff4141012b09533b3ddebb8 data/c/tags/item/weeping_mei.json
 7a584964a0d7e7eb93173134cd3caee7e730c4fc data/c/tags/item/wisteria.json
@@ -69,7 +69,7 @@ c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/minecraft/tags/item/panda_food.jso
 8be1aa4fe90dbc5a1d7ee11fe7233bd9671eea5b data/minecraft/tags/item/sheep_food.json
 e212d8183275fb9c12db833d8ade37009bec90dd data/minecraft/tags/item/signs.json
 bb7193db89fa776fe10c4780fd21f64d971914e6 data/minecraft/tags/item/small_flowers.json
-70e928ae34b08eac8ff12bb115c5552f706d587f data/minecraft/tags/item/swords.json
+116e4ef24ebb5b2f12efee0e511db20e28293fdf data/minecraft/tags/item/swords.json
 a28ca1eed4686f743e3cdf425c9cfcdd7b66ba61 data/minecraft/tags/item/tall_flowers.json
 6995201cf22453ed2d0ee08808a5a64092d6ac4c data/minecraft/tags/item/wolf_food.json
 642513386a0fa7c2a2ca0bb55e9435fcd28ed916 data/minecraft/tags/item/wooden_buttons.json

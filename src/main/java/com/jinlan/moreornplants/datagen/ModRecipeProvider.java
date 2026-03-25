@@ -1255,6 +1255,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('/', Items.STICK)
                 .unlockedBy("has_camphor_logs", has(ModTags.Items.CAMPHOR_LOGS))
                 .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIYING_SWORD)
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModItems.ZIYING_BEAD)
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZIYING_BEAD), has(ModItems.ZIYING_BEAD))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUYU_SWORD)
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModItems.SUYU_BEAD)
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SUYU_BEAD), has(ModItems.SUYU_BEAD))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIYU_YUANYANG_SWORD)
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModItems.ZIYU_YUANYANG_BEAD)
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZIYU_YUANYANG_BEAD), has(ModItems.ZIYU_YUANYANG_BEAD))
+                .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CLOUD_APRICOT_SAPLING)
                 .pattern(" P ")

@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-22T21:46:32.6462044	Item Models: more_orn_plants
+// 1.21.1	2026-03-25T08:34:55.7838221	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -329,6 +329,7 @@ a1f68cf38e255869c1098ffdf807e1f93a3a9eb7 assets/more_orn_plants/models/item/red_
 2c87f4fc2952659dfb4123c66a4db406924036a7 assets/more_orn_plants/models/item/summer_cymbidium.json
 79f30f5a1f011eb3a1c2df29513d54fb7ca1bde5 assets/more_orn_plants/models/item/suyu_bead.json
 3dfaa64f6339bac13773ce8fe5bf721be1b1e6c0 assets/more_orn_plants/models/item/suyu_fox_spawn_egg.json
+d9d7332b08982477c095832afd3e790776644c19 assets/more_orn_plants/models/item/suyu_sword.json
 2c11743ed97c3d434a365ac926295e02e5605a63 assets/more_orn_plants/models/item/sweetgum_boat.json
 6d22cf4ed610b8556518faf1654e2d363fc86777 assets/more_orn_plants/models/item/sweetgum_button.json
 bb6f172c87c03a22f425ccaf6783537e6ba6af15 assets/more_orn_plants/models/item/sweetgum_chest_boat.json
@@ -400,4 +401,6 @@ d1560c95807c24bf19081c54e84d6688a0c8d992 assets/more_orn_plants/models/item/yell
 563a58ebd02294cb79f9417a5fe1a11fe7d65f7b assets/more_orn_plants/models/item/zhao_pink_peony.json
 de8d85cdce6ef51e734d36be556e0b64b4ea0c04 assets/more_orn_plants/models/item/ziying_bead.json
 358fe8f8924223b5dc3294351d449cb3ecd0d5bb assets/more_orn_plants/models/item/ziying_fox_spawn_egg.json
+2021582b6d45aaf94a88995c8dcfd37dd4a885b5 assets/more_orn_plants/models/item/ziying_sword.json
 6ef45fb4d5b5b2d8641a90c1c8f226c61a0c110a assets/more_orn_plants/models/item/ziyu_yuanyang_bead.json
+3e1fa972faba637d3810b783c7c4ae8dbae8f725 assets/more_orn_plants/models/item/ziyu_yuanyang_sword.json
