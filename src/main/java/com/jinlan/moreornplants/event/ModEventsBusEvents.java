@@ -7,6 +7,7 @@ import com.jinlan.moreornplants.entity.custom.SuyuFox;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
+import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.SimpleParticleType;
@@ -15,9 +16,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.animal.AbstractGolem;
 import net.minecraft.world.entity.animal.Animal;
@@ -37,6 +36,7 @@ import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.neoforge.event.entity.living.MobSpawnEvent;
 import net.neoforged.neoforge.event.entity.player.AttackEntityEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
@@ -95,17 +95,19 @@ public class ModEventsBusEvents {
         ItemStack weapon = player.getMainHandItem();
         LivingEntity target1 = event.getEntity();
         if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get()) && target1.isInvertedHealAndHarm()) {
-            event.setAmount(event.getAmount() * 9.9F);
+            event.setAmount(event.getAmount() * 9.99f);
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getType().is(EntityTypeTags.ARTHROPOD)) {
-            event.setAmount(event.getAmount() * 2.2F);
-        } else if (weapon.is(ModItems.ZIYING_SWORD.get()) && target1 instanceof Enemy) {
+            event.setAmount(event.getAmount() * 2.22f);
+        } else if (weapon.is(ModItems.ZIYING_SWORD.get()) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
             if (player.getRandom().nextFloat() < 0.75f) {
                 event.setAmount(event.getAmount() * 3.0f);
             }
-        } else if (weapon.is(ModItems.SUYU_SWORD.get()) && target1 instanceof Enemy) {
+        }
+        else if (weapon.is(ModItems.SUYU_SWORD.get()) && (target1 instanceof Enemy  || target1 instanceof NeutralMob)) {
             event.setAmount(event.getAmount() * 1.5f);
             target1.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), player);
-        } else if (weapon.is(ModItems.ZIYU_YUANYANG_SWORD.get()) && target1 instanceof Enemy) {
+        }
+        else if (weapon.is(ModItems.ZIYU_YUANYANG_SWORD.get()) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
             float multiplier = 1.25f;
             if (player.getRandom().nextFloat() < 0.5f) {
                 multiplier *= 3.0f;
@@ -202,6 +204,19 @@ public class ModEventsBusEvents {
                     entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 48600, 4));
                     entity.addEffect(new MobEffectInstance(MobEffects.LUCK, 48600, 4));
                 }
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onMobSpawnPositionCheck(MobSpawnEvent.PositionCheck event) {
+        var level = event.getLevel();
+        var mob = event.getEntity();
+        var biome = level.getBiome(mob.blockPosition());
+
+        if (biome.is(ModTags.Biomes.NO_ENEMY)) {
+            if (mob instanceof Enemy || mob.getType().getCategory() == MobCategory.MONSTER) {
+                event.setResult(MobSpawnEvent.PositionCheck.Result.FAIL);
             }
         }
     }
