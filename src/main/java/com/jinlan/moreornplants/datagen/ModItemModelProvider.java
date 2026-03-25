@@ -441,6 +441,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         swordItem(ModItems.PEACH_WOODEN_SWORD);
         swordItem(ModItems.CAMPHOR_WOODEN_SWORD);
+        swordItem(ModItems.ZIYING_SWORD);
+        swordItem(ModItems.SUYU_SWORD);
+        swordItem(ModItems.ZIYU_YUANYANG_SWORD);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

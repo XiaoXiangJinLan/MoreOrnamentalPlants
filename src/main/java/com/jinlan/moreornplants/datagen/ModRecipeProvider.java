@@ -1242,6 +1242,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('/', Items.STICK)
                 .unlockedBy("has_lotus", has(ModTags.Items.CAMPHOR_LOGS))
                 .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIYING_SWORD.get())
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModItems.ZIYING_BEAD.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZIYING_BEAD.get()), has(ModItems.ZIYING_BEAD.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUYU_SWORD.get())
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModItems.SUYU_BEAD.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SUYU_BEAD.get()), has(ModItems.SUYU_BEAD.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIYU_YUANYANG_SWORD.get())
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModItems.ZIYU_YUANYANG_BEAD.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZIYU_YUANYANG_BEAD.get()), has(ModItems.ZIYU_YUANYANG_BEAD.get()))
+                .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CLOUD_APRICOT_SAPLING.get())
                 .pattern(" P ")

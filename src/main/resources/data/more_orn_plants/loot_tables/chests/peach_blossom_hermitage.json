@@ -103,13 +103,13 @@
         },
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:immortal_peach_sapling"
+          "name": "more_orn_plants:immortal_peach"
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 6.0,
-        "min": 3.0
+        "max": 8.0,
+        "min": 4.0
       }
     }
   ],

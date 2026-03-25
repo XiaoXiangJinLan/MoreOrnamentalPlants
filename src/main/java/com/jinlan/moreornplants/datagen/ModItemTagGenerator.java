@@ -520,6 +520,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.CLOUD_APRICOT.get());
 
         this.tag(ItemTags.SWORDS)
-                .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get());
+                .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get())
+                .add(ModItems.ZIYING_SWORD.get(), ModItems.SUYU_SWORD.get(), ModItems.ZIYU_YUANYANG_SWORD.get());
     }
 }

@@ -42,13 +42,13 @@
         },
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:cloud_apricot_sapling"
+          "name": "more_orn_plants:cloud_apricot"
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 5.0,
-        "min": 3.0
+        "max": 8.0,
+        "min": 4.0
       }
     }
   ],

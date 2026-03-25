@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "more_orn_plants:ziying_bead"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "/"
+  ],
+  "result": {
+    "item": "more_orn_plants:ziying_sword"
+  },
+  "show_notification": true
+}

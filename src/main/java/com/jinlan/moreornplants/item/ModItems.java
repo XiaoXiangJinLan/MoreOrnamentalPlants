@@ -198,6 +198,12 @@ public class ModItems {
             ITEMS.register("peach_wooden_sword", () -> new PeachWoodenSwordItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> CAMPHOR_WOODEN_SWORD =
             ITEMS.register("camphor_wooden_sword", () -> new CamphorWoodenSwordItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> ZIYING_SWORD =
+            ITEMS.register("ziying_sword", () -> new SwordItem(ModTiers.ZIYING, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> SUYU_SWORD =
+            ITEMS.register("suyu_sword", () -> new SwordItem(ModTiers.SUYU, 3, -1.6F, new Item.Properties()));
+    public static final RegistryObject<Item> ZIYU_YUANYANG_SWORD =
+            ITEMS.register("ziyu_yuanyang_sword", () -> new SwordItem(ModTiers.ZIYU_YUANYANG, 3, -2.4F, new Item.Properties()));
 
     public static final RegistryObject<Item> MOTTLED_BAMBOO =
             ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties(), 50));

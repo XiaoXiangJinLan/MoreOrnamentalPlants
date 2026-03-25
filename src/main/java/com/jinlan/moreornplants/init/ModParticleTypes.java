@@ -132,6 +132,9 @@ public class ModParticleTypes {
     public static final java.util.function.Supplier<SimpleParticleType> SUYU_FOX =
             registerParticleType("suyu_fox", () -> new SimpleParticleType(false));
 
+    public static final java.util.function.Supplier<SimpleParticleType> ZIYU_YUANYANG =
+            registerParticleType("ziyu_yuanyang", () -> new SimpleParticleType(false));
+
     public static <T extends ParticleType<?>> RegistryObject<T> registerParticleType(String name, Supplier<T> particleType) {
         return ModParticleTypes.PARTICLES.register(name, particleType);
     }

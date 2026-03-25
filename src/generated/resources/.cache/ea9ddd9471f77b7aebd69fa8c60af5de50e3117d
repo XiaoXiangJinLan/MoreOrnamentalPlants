@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-23T22:57:17.651669	Tags for minecraft:item mod id more_orn_plants
+// 1.20.1	2026-03-25T10:44:30.906097	Tags for minecraft:item mod id more_orn_plants
 6fe37a5db97b91f51a0addf9825c60414ee735aa data/forge/tags/items/apricot_leaves.json
 e3bbc6d486cc0792bdcdf6bb2c0da508939151ca data/forge/tags/items/apricot_sapling.json
 3f91e650affbf0dd3681d56a151de1d2b3bb5e35 data/forge/tags/items/azalea.json
@@ -46,7 +46,7 @@ b0eb2d3de6c98983dcd45faf52000084e7a914ad data/minecraft/tags/items/leaves.json
 8bb48c99394993f7bd09a62743cd83d4f238d7d8 data/minecraft/tags/items/saplings.json
 e212d8183275fb9c12db833d8ade37009bec90dd data/minecraft/tags/items/signs.json
 51f948eae1af93901800bf97aa7af51e30691847 data/minecraft/tags/items/small_flowers.json
-70e928ae34b08eac8ff12bb115c5552f706d587f data/minecraft/tags/items/swords.json
+116e4ef24ebb5b2f12efee0e511db20e28293fdf data/minecraft/tags/items/swords.json
 8d6fdf6b27d3b1cb73c0e324b51e554f01285f61 data/minecraft/tags/items/tall_flowers.json
 642513386a0fa7c2a2ca0bb55e9435fcd28ed916 data/minecraft/tags/items/wooden_buttons.json
 9cccb244033f9bdd546d95f47168d750339d9156 data/minecraft/tags/items/wooden_doors.json
