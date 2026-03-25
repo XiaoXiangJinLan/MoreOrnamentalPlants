@@ -284,13 +284,13 @@ public class BaihuaCat extends Cat {
                 if (this.isOwnedBy(player)) {
                     if (this.isOrderedToSit()) {
                         this.setOrderedToSit(false);
-                        this.setWandering(true);
-                    } else if (this.isWandering()) {
                         this.setWandering(false);
+                    } else if (this.isWandering()) {
+                        this.setWandering(true);
                         this.setOrderedToSit(false);
                     } else {
-                        this.setOrderedToSit(true);
-                        this.setWandering(false);
+                        this.setOrderedToSit(false);
+                        this.setWandering(true);
                     }
                     this.jumping = false;
                     this.navigation.stop();
