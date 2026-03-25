@@ -1273,10 +1273,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" W ")
                 .define('P', ModBlocks.PINK_APRICOT_SAPLING.get())
                 .define('W', ModBlocks.WHITE_APRICOT_SAPLING.get())
-                .define('C', ModItems.GOLDEN_CRABAPPLE.get())
+                .define('C', ModItems.ZIYU_YUANYANG_BEAD.get())
                 .unlockedBy(getHasName(ModBlocks.PINK_APRICOT_SAPLING.get()), has(ModBlocks.PINK_APRICOT_SAPLING.get()))
                 .unlockedBy(getHasName(ModBlocks.WHITE_APRICOT_SAPLING.get()), has(ModBlocks.WHITE_APRICOT_SAPLING.get()))
-                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE.get()), has(ModItems.GOLDEN_CRABAPPLE.get()))
+                .unlockedBy(getHasName(ModItems.ZIYU_YUANYANG_BEAD.get()), has(ModItems.ZIYU_YUANYANG_BEAD.get()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.IMMORTAL_PEACH_SAPLING.get())
                 .pattern(" O ")
@@ -1284,10 +1284,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" W ")
                 .define('O', ModBlocks.ORNAMENTAL_PEACH_SAPLING.get())
                 .define('W', ModBlocks.WILD_PEACH_SAPLING.get())
-                .define('C', ModItems.GOLDEN_CRABAPPLE.get())
+                .define('C', ModItems.ZIYU_YUANYANG_BEAD.get())
                 .unlockedBy(getHasName(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()), has(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()))
                 .unlockedBy(getHasName(ModBlocks.WILD_PEACH_SAPLING.get()), has(ModBlocks.WILD_PEACH_SAPLING.get()))
-                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE.get()), has(ModItems.GOLDEN_CRABAPPLE.get()))
+                .unlockedBy(getHasName(ModItems.ZIYU_YUANYANG_BEAD.get()), has(ModItems.ZIYU_YUANYANG_BEAD.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZIYU_YUANYANG_BEAD.get())
