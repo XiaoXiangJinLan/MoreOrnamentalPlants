@@ -260,19 +260,19 @@ public class ZiyingFox extends TamableAnimal {
                 } else {
                     InteractionResult interactionresult = super.mobInteract(player, hand);
                     if (!interactionresult.consumesAction() && this.isOwnedBy(player)) {
-                        // 循环状态：跟随 -> 坐下 -> 游荡 -> 跟随
+                        // 循环状态：坐下 -> 跟随 -> 游荡 -> 坐下
                         if (this.isOrderedToSit()) {
-                            // 当前是坐下，切换到游荡
+                            // 当前是坐下，切换到跟随
                             this.setOrderedToSit(false);
-                            this.setWandering(true);
-                        } else if (this.isWandering()) {
-                            // 当前是游荡，切换到跟随
                             this.setWandering(false);
-                            this.setOrderedToSit(false); // 确保坐下状态清除
-                        } else {
-                            // 当前是跟随，切换到坐下
+                        } else if (this.isWandering()) {
+                            // 当前是游荡，切换到坐下
                             this.setOrderedToSit(true);
                             this.setWandering(false);
+                        } else {
+                            // 当前是跟随，切换到游荡
+                            this.setOrderedToSit(false);
+                            this.setWandering(true);
                         }
                         this.jumping = false;
                         this.navigation.stop();
