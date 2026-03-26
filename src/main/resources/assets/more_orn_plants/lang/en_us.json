@@ -754,6 +754,12 @@
   "item.more_orn_plants.ziying_sword": "Ziying Sword",
   "item.more_orn_plants.suyu_sword": "Suyu Sword",
   "item.more_orn_plants.ziyu_yuanyang_sword": "Ziyu Yuanyang Sword",
+  "item.more_orn_plants.ziying_axe": "Ziying Axe",
+  "item.more_orn_plants.suyu_axe": "Suyu Axe",
+  "item.more_orn_plants.ziyu_yuanyang_axe": "Ziyu Yuanyang Axe",
+  "item.more_orn_plants.ziying_pickaxe": "Ziying Pickaxe",
+  "item.more_orn_plants.suyu_pickaxe": "Suyu Pickaxe",
+  "item.more_orn_plants.ziyu_yuanyang_pickaxe": "Ziyu Yuanyang Pickaxe",
 
   "biome.more_orn_plants.red_mei_forest": "Red Mei Forest",
   "biome.more_orn_plants.spring_river": "Spring River",
@@ -890,7 +896,10 @@
   "advancement.moreornplants.apricot_village.description": "“Where might an inn be?” A question thrown. \nA cowherd points afar where apricots have grown.",
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7Small tree, non-building material",
-  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7Ornamental varieties,\nnon-building material,\npandas don't like to eat",
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7Ornamental varieties,non-building material",
   "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7Deals extra damage to the undead.",
-  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7Deals extra damage to the arthropod."
+  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7Deals extra damage to the arthropod.",
+  "tooltip.more_orn_plants.ziying_bead.tooltip": "§7When held or in inventory, grants a 25% chance to avoid damage.",
+  "tooltip.more_orn_plants.suyu_bead.tooltip": "§7When held or in inventory, reduces incoming damage by 25%.",
+  "tooltip.more_orn_plants.ziyu_bead.tooltip": "§7When held or in inventory, reduces incoming damage by 20% \nand grants a 20% chance to avoid damage."
 }

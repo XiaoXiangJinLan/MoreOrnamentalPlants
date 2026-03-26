@@ -163,11 +163,11 @@ public class ModItems {
             ITEMS.register("baihua_cat_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.BAIHUA_CAT, 14144467, 12369084, new Item.Properties()));
 
     public static final RegistryObject<Item> ZIYING_BEAD =
-            ITEMS.register("ziying_bead", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+            ITEMS.register("ziying_bead", () -> new ZiyingBeadItem(new Item.Properties().rarity(Rarity.RARE)));
     public static final RegistryObject<Item> SUYU_BEAD =
-            ITEMS.register("suyu_bead", () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+            ITEMS.register("suyu_bead", () -> new SuyuBeadItem(new Item.Properties().rarity(Rarity.RARE)));
     public static final RegistryObject<Item> ZIYU_YUANYANG_BEAD =
-            ITEMS.register("ziyu_yuanyang_bead", () -> new EnchantedGoldenAppleItem(new Item.Properties().rarity(Rarity.RARE)));
+            ITEMS.register("ziyu_yuanyang_bead", () -> new ZiyuBeadItem(new Item.Properties().rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> CRAPE_MYRTLE_LOG =
             ITEMS.register("crape_myrtle_log", () -> new crapeMyrtleLogBlockItem(ModBlocks.CRAPE_MYRTLE_LOG.get(), new Item.Properties()));
@@ -204,6 +204,18 @@ public class ModItems {
             ITEMS.register("suyu_sword", () -> new SwordItem(ModTiers.SUYU, 3, -1.6F, new Item.Properties()));
     public static final RegistryObject<Item> ZIYU_YUANYANG_SWORD =
             ITEMS.register("ziyu_yuanyang_sword", () -> new SwordItem(ModTiers.ZIYU_YUANYANG, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> ZIYING_AXE =
+            ITEMS.register("ziying_axe", () -> new AxeItem(ModTiers.ZIYING, 6.0F, -3.0F, new Item.Properties()));
+    public static final RegistryObject<Item> SUYU_AXE =
+            ITEMS.register("suyu_axe", () -> new AxeItem(ModTiers.SUYU, 6.0F, -2.6F, new Item.Properties()));
+    public static final RegistryObject<Item> ZIYU_YUANYANG_AXE =
+            ITEMS.register("ziyu_yuanyang_axe", () -> new AxeItem(ModTiers.ZIYU_YUANYANG, 6.0F, -3.0F, new Item.Properties()));
+    public static final RegistryObject<Item> ZIYING_PICKAXE =
+            ITEMS.register("ziying_pickaxe", () -> new PickaxeItem(ModTiers.ZIYING, 1, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> SUYU_PICKAXE =
+            ITEMS.register("suyu_pickaxe", () -> new PickaxeItem(ModTiers.SUYU, 1, -2.0F, new Item.Properties()));
+    public static final RegistryObject<Item> ZIYU_YUANYANG_PICKAXE =
+            ITEMS.register("ziyu_yuanyang_pickaxe", () -> new PickaxeItem(ModTiers.ZIYU_YUANYANG, 1, -2.8F, new Item.Properties()));
 
     public static final RegistryObject<Item> MOTTLED_BAMBOO =
             ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties(), 50));

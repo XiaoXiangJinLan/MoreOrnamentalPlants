@@ -746,6 +746,12 @@
   "item.more_orn_plants.ziying_sword": "紫英劍",
   "item.more_orn_plants.suyu_sword": "素玉劍",
   "item.more_orn_plants.ziyu_yuanyang_sword": "紫玉鸳鸯劍",
+  "item.more_orn_plants.ziying_axe": "紫英斧頭",
+  "item.more_orn_plants.suyu_axe": "素玉斧頭",
+  "item.more_orn_plants.ziyu_yuanyang_axe": "紫玉鸳鸯斧頭",
+  "item.more_orn_plants.ziying_pickaxe": "紫英鎬",
+  "item.more_orn_plants.suyu_pickaxe": "素玉鎬",
+  "item.more_orn_plants.ziyu_yuanyang_pickaxe": "紫玉鸳鸯鎬",
 
   "biome.more_orn_plants.red_mei_forest": "白雪紅梅",
   "biome.more_orn_plants.spring_river": "春江",
@@ -882,7 +888,10 @@
   "advancement.moreornplants.apricot_village.description": "借問酒家何處有？牧童遙指杏花村",
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小喬木，無木板",
-  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞品種，無竹板，熊貓不愛吃",
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞品種，無竹板",
   "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7對不死生物傷害增加999%",
-  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7對節肢生物傷害增加222%"
+  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7對節肢生物傷害增加222%",
+  "tooltip.more_orn_plants.ziying_bead.tooltip": "§7手持或放在背包中時，有25%的機率不會受傷",
+  "tooltip.more_orn_plants.suyu_bead.tooltip": "§7手持或放在背包中時，降低25%受到的傷害",
+  "tooltip.more_orn_plants.ziyu_bead.tooltip": "§7手持或放在背包中時，降低20%受到的傷害，\n並有20%的機率不會受傷"
 }
