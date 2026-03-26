@@ -286,8 +286,8 @@ public class BaihuaCat extends Cat {
                         this.setOrderedToSit(false);
                         this.setWandering(false);
                     } else if (this.isWandering()) {
-                        this.setWandering(true);
-                        this.setOrderedToSit(false);
+                        this.setOrderedToSit(true);
+                        this.setWandering(false);
                     } else {
                         this.setOrderedToSit(false);
                         this.setWandering(true);

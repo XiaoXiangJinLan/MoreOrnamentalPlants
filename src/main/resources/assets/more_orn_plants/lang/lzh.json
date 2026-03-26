@@ -754,6 +754,12 @@
   "item.more_orn_plants.ziying_sword": "紫英劍",
   "item.more_orn_plants.suyu_sword": "素玉劍",
   "item.more_orn_plants.ziyu_yuanyang_sword": "紫玉鸳鸯劍",
+  "item.more_orn_plants.ziying_axe": "紫英斧",
+  "item.more_orn_plants.suyu_axe": "素玉斧",
+  "item.more_orn_plants.ziyu_yuanyang_axe": "紫玉鸳鸯斧",
+  "item.more_orn_plants.ziying_pickaxe": "紫英鎬",
+  "item.more_orn_plants.suyu_pickaxe": "素玉鎬",
+  "item.more_orn_plants.ziyu_yuanyang_pickaxe": "紫玉鸳鸯鎬",
 
   "biome.more_orn_plants.red_mei_forest": "白雪紅梅",
   "biome.more_orn_plants.spring_river": "春江",
@@ -890,9 +896,12 @@
   "advancement.moreornplants.apricot_village.description": "借問酒家何處有？牧童遙指杏花村",
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小喬木，非建材",
-  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞種，非建材，貓熊不食",
+  "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞種，非建材",
   "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7對亡靈增傷",
   "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7對蟲增傷",
+  "tooltip.more_orn_plants.ziying_bead.tooltip": "§7持之或置囊中，有四分之一之機免傷",
+  "tooltip.more_orn_plants.suyu_bead.tooltip": "§7持之或置囊中，所受之傷減免四分之一",
+  "tooltip.more_orn_plants.ziyu_bead.tooltip": "§7持之或置囊中，所受之傷減免五分之一，\n且有兩成之機全然無傷",
 
   "more_orn_plants.configuration.title": "羣芳譜",
   "more_orn_plants.configuration.section.moreornplants.common.toml": "群系",

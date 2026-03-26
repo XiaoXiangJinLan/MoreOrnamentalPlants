@@ -53,15 +53,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(CommonTags.Blocks.WISTERIA)
                 .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get());
 
-        this.tag(BlockTags.SWORD_EFFICIENT)
-                .addTag(CommonTags.Blocks.WEEPING_MEI)
-                .add(ModBlocks.RED_WEEPING_MEI_PLANT.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get(),
-                        ModBlocks.PINK_WEEPING_MEI_PLANT.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
-                .addTag(CommonTags.Blocks.WISTERIA)
-                .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
-                .add(ModBlocks.FOUNTAIN_GRASS.get(), ModBlocks.PURPLE_FOUNTAIN_GRASS.get(), ModBlocks.PINK_FOUNTAIN_GRASS.get(), ModBlocks.WHITE_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.BAMBOO_STICK.get());
-
         this.tag(BlockTags.FLOWER_POTS)
                 .add(ModBlocks.POTTED_RED_MEI_SAPLING.get(), ModBlocks.POTTED_WHITE_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_GREEN_CALYX_MEI_SAPLING.get(), ModBlocks.POTTED_DOUBLE_PINK_MEI_SAPLING.get(), ModBlocks.POTTED_VERSICOLOR_MEI_SAPLING.get())

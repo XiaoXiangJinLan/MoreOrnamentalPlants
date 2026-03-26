@@ -1,9 +1,6 @@
 {
   "values": [
     "#minecraft:fox_food",
-    "more_orn_plants:white_chinese_wisteria",
-    "more_orn_plants:white_crape_myrtle",
-    "more_orn_plants:white_crape_myrtle_sapling",
-    "more_orn_plants:white_crape_myrtle_leaves"
+    "#more_orn_plants:suyu_fox_appeal_to"
   ]
 }

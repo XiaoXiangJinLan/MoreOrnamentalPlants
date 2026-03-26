@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:ziying_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_ziying_bead": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:ziying_bead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ziying_bead"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:ziying_axe"
+    ]
+  }
+}

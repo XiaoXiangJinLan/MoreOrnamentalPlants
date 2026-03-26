@@ -311,9 +311,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.ZIYING_FOX_FOOD)
                 .addTag(ItemTags.FOX_FOOD)
-                .addTag(CommonTags.Items.WISTERIA)
-                .addTag(CommonTags.Items.CRAPE_MYRTLE)
-                .addTag(CommonTags.Items.CRAPE_MYRTLE_LEAVES);
+                .addTag(ModTags.Items.ZIYING_FOX_APPEAL_TO);
 
         this.tag(ModTags.Items.ZIYING_FOX_APPEAL_TO)
                 .addTag(CommonTags.Items.WISTERIA)
@@ -322,9 +320,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.SUYU_FOX_FOOD)
                 .addTag(ItemTags.FOX_FOOD)
-                .add(ModBlocks.WHITE_CHINESE_WISTERIA.asItem())
-                .add(ModBlocks.WHITE_CRAPE_MYRTLE.asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.asItem())
-                .add(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.asItem());
+                .addTag(ModTags.Items.SUYU_FOX_APPEAL_TO);
 
         this.tag(ModTags.Items.SUYU_FOX_APPEAL_TO)
                 .add(ModBlocks.WHITE_CHINESE_WISTERIA.asItem())
@@ -384,11 +380,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ItemTags.FOX_FOOD)
                 .add(ModItems.CRABAPPLE.get(), ModItems.CLOUD_APRICOT.get(), ModItems.IMMORTAL_PEACH.get());
 
-        this.tag(ItemTags.HORSE_FOOD)
-                .add(ModItems.LOTUS_ROOT.get())
-                .add(ModItems.CRABAPPLE.get(), ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get())
-                .add(ModItems.CLOUD_APRICOT.get(), ModItems.IMMORTAL_PEACH.get());
-
         this.tag(ItemTags.COW_FOOD)
                 .add(ModItems.PEELED_BAMBOO_SHOOTS.get(), ModItems.LOTUS_ROOT.get(), ModItems.LOTUS_SEED.get())
                 .add(ModItems.CRABAPPLE.get(), ModItems.CLOUD_APRICOT.get(), ModItems.IMMORTAL_PEACH.get());
@@ -411,12 +402,31 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ItemTags.WOLF_FOOD)
                 .add(ModItems.LOTUS_ROOT_SOUP.get());
 
+        this.tag(ModTags.Items.ZIYING_TOOLS)
+                .add(ModItems.ZIYING_SWORD.get(), ModItems.ZIYING_AXE.get(), ModItems.ZIYING_PICKAXE.get());
+
+        this.tag(ModTags.Items.SUYU_TOOLS)
+                .add(ModItems.SUYU_SWORD.get(), ModItems.SUYU_AXE.get(), ModItems.SUYU_PICKAXE.get());
+
+        this.tag(ModTags.Items.ZIYU_YUANYANG_TOOLS)
+                .add(ModItems.ZIYU_YUANYANG_SWORD.get(), ModItems.ZIYU_YUANYANG_AXE.get(), ModItems.ZIYU_YUANYANG_PICKAXE.get());
+
         this.tag(ItemTags.SWORDS)
                 .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get())
                 .add(ModItems.ZIYING_SWORD.get(), ModItems.SUYU_SWORD.get(), ModItems.ZIYU_YUANYANG_SWORD.get());
 
+        this.tag(ItemTags.AXES)
+                .add(ModItems.ZIYING_AXE.get(), ModItems.SUYU_AXE.get(), ModItems.ZIYU_YUANYANG_AXE.get());
+
+        this.tag(ItemTags.PICKAXES)
+                .add(ModItems.ZIYING_PICKAXE.get(), ModItems.SUYU_PICKAXE.get(), ModItems.ZIYU_YUANYANG_PICKAXE.get());
+
         this.tag(Tags.Items.MELEE_WEAPON_TOOLS)
                 .add(ModItems.BAMBOO_STICK.get(), ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get())
-                .add(ModItems.ZIYING_SWORD.get(), ModItems.SUYU_SWORD.get(), ModItems.ZIYU_YUANYANG_SWORD.get());
+                .add(ModItems.ZIYING_SWORD.get(), ModItems.SUYU_SWORD.get(), ModItems.ZIYU_YUANYANG_SWORD.get())
+                .add(ModItems.ZIYING_AXE.get(), ModItems.SUYU_AXE.get(), ModItems.ZIYU_YUANYANG_AXE.get());
+
+        this.tag(Tags.Items.MINING_TOOL_TOOLS)
+                .add(ModItems.ZIYING_PICKAXE.get(), ModItems.SUYU_PICKAXE.get(), ModItems.ZIYU_YUANYANG_PICKAXE.get());
     }
 }

@@ -657,7 +657,7 @@ public class ModPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, CHINESE_ROSE_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_ROSE_WOODS_KEY),
-                List.of(CountPlacement.of(5),
+                List.of(CountPlacement.of(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, SWEETGUM_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.SWEETGUM_WITH_LEAF_PILE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(4, 0.1f, 1),
@@ -729,7 +729,7 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(12, 0.2f, 1),
                         ModBlocks.GOLDEN_GINKGO_SAPLING.get()));
         register(context, GOLDEN_MISCANTHUS_FOREST, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_MISCANTHUS),
-                List.of(CountPlacement.of(6),
+                List.of(CountPlacement.of(5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, PINK_APRICOT_PLATEAU_1, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_APRICOT),

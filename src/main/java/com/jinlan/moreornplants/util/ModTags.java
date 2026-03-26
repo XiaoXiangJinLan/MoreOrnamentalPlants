@@ -73,6 +73,9 @@ public class ModTags {
         public static final TagKey<Item> SUYU_FOX_FOOD = tag("suyu_fox_food");
         public static final TagKey<Item> SUYU_FOX_APPEAL_TO = tag("suyu_fox_appeal_to");
         public static final TagKey<Item> BAIHUA_CAT_FOOD = tag("baihua_cat_food");
+        public static final TagKey<Item> ZIYING_TOOLS = tag("ziying_tools");
+        public static final TagKey<Item> SUYU_TOOLS = tag("suyu_tools");
+        public static final TagKey<Item> ZIYU_YUANYANG_TOOLS = tag("ziyu_yuanyang_tools");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(ResourceLocation.parse(MoreOrnPlants.MODID + ":" + name));

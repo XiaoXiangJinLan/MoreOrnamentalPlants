@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-23T21:54:48.5983524	Tags for minecraft:block mod id more_orn_plants
+// 1.21.1	2026-03-26T11:36:00.0452212	Tags for minecraft:block mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/block/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/block/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/block/azalea.json
@@ -56,7 +56,6 @@ cc2507508575a4a8125dd018f59cec761a5fcf37 data/minecraft/tags/block/moss_replacea
 9e019b69fbf700b7c3ed0060587ac31fa36834f2 data/minecraft/tags/block/saplings.json
 bb7193db89fa776fe10c4780fd21f64d971914e6 data/minecraft/tags/block/small_flowers.json
 e212d8183275fb9c12db833d8ade37009bec90dd data/minecraft/tags/block/standing_signs.json
-881f45e1ccd41b89cef914f37eb28deb769a240a data/minecraft/tags/block/sword_efficient.json
 a28ca1eed4686f743e3cdf425c9cfcdd7b66ba61 data/minecraft/tags/block/tall_flowers.json
 22b011177a51f69381e1df31c8daf51a58166552 data/minecraft/tags/block/wall_hanging_signs.json
 439814142e22799e8194fe394bbf0c577f705312 data/minecraft/tags/block/wall_signs.json

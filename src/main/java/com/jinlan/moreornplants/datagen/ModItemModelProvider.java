@@ -444,6 +444,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ZIYING_SWORD.get());
         handheldItem(ModItems.SUYU_SWORD.get());
         handheldItem(ModItems.ZIYU_YUANYANG_SWORD.get());
+        handheldItem(ModItems.ZIYING_AXE.get());
+        handheldItem(ModItems.SUYU_AXE.get());
+        handheldItem(ModItems.ZIYU_YUANYANG_AXE.get());
+        handheldItem(ModItems.ZIYING_PICKAXE.get());
+        handheldItem(ModItems.SUYU_PICKAXE.get());
+        handheldItem(ModItems.ZIYU_YUANYANG_PICKAXE.get());
     }
 
     private void saplingItem(DeferredBlock<Block> item) {
