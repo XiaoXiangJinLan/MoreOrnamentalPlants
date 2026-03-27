@@ -216,6 +216,8 @@ public class ModItems {
             ITEMS.register("suyu_pickaxe", () -> new PickaxeItem(ModTiers.SUYU, 1, -2.0F, new Item.Properties()));
     public static final RegistryObject<Item> ZIYU_YUANYANG_PICKAXE =
             ITEMS.register("ziyu_yuanyang_pickaxe", () -> new PickaxeItem(ModTiers.ZIYU_YUANYANG, 1, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> ZHUIYUE_SWORD =
+            ITEMS.register("zhuiyue_sword", () -> new ZhuiyueSwordItem(new Item.Properties().durability(1561)));
 
     public static final RegistryObject<Item> MOTTLED_BAMBOO =
             ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties(), 50));

@@ -1,6 +1,7 @@
 package com.jinlan.moreornplants.event;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import com.jinlan.moreornplants.advancement.ModCriteriaTriggers;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
@@ -8,6 +9,7 @@ import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -24,6 +26,7 @@ import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
@@ -37,6 +40,15 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = MoreOrnPlants.MOD_ID)
 public class ModEvents {
+    @SubscribeEvent
+    public static void onServerTick(TickEvent.ServerTickEvent event) {
+        if (event.phase == TickEvent.Phase.END && event.getServer().getTickCount() % 20 == 0) {
+            for (ServerPlayer player : event.getServer().getPlayerList().getPlayers()) {
+                ModCriteriaTriggers.MOONLIGHT_TRIGGER.trigger(player);
+            }
+        }
+    }
+
     @SubscribeEvent
     public static void onEntityJoinLevel(EntityJoinLevelEvent event) {
         Entity entity = event.getEntity();
@@ -79,6 +91,21 @@ public class ModEvents {
             }
             event.setAmount(event.getAmount() * multiplier);
             target1.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), player);
+        } else if (weapon.is(ModItems.ZHUIYUE_SWORD.get())) {
+            float multiplier;
+            Level level = player.level();
+            boolean isClearFullMoonNight = level.isNight() &&
+                    level.getMoonPhase() == 0 &&
+                    !level.isRaining() &&
+                    !level.isThundering();
+            if (isClearFullMoonNight) {
+                multiplier = 2.0F;
+            } else {
+                int moonPhase = level.getMoonPhase();
+                int distToFull = Math.min(moonPhase, 8 - moonPhase);
+                multiplier = 1.0F + (4 - distToFull) / 4.0F;
+            }
+            event.setAmount(event.getAmount() * multiplier);
         }
     }
 
@@ -162,6 +189,20 @@ public class ModEvents {
                     entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 48600, 0));
                     entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 48600, 4));
                     entity.addEffect(new MobEffectInstance(MobEffects.LUCK, 48600, 4));
+                }
+            }
+
+            Holder<Biome> biomeHolder2 = entity.level().getBiome(entity.blockPosition());
+            if (biomeHolder2.is(ModTags.Biomes.FLOWERS_AND_MOON)) {
+                Level level = entity.level();
+                if (level.isNight() && level.getMoonPhase() == 0 && !level.isRaining() && !level.isThundering()) {
+                    MobEffectInstance currentRegen1 = entity.getEffect(MobEffects.REGENERATION);
+                    MobEffectInstance currentRegen2 = entity.getEffect(MobEffects.NIGHT_VISION);
+                    if (currentRegen1 == null || currentRegen1.getDuration() < 520 ||
+                            currentRegen2 == null || currentRegen2.getDuration() < 520) {
+                        entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0));
+                        entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 600, 0));
+                    }
                 }
             }
         }

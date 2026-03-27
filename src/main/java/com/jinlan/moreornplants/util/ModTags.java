@@ -86,6 +86,7 @@ public class ModTags {
         public static final TagKey<Biome> PEACH_BEARING = tag("peach_bearing");
         public static final TagKey<Biome> APRICOT_BEARING = tag("apricot_bearing");
         public static final TagKey<Biome> NO_ENEMY = tag("no_enemy");
+        public static final TagKey<Biome> FLOWERS_AND_MOON = tag("flowers_and_moon");
 
         private static TagKey<Biome> tag(String name) {
             return TagKey.create(Registries.BIOME, new ResourceLocation(MoreOrnPlants.MOD_ID + ":" + name));

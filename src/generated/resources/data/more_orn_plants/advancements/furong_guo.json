@@ -1,7 +1,7 @@
 {
   "parent": "more_orn_plants:the_frost_defiant",
   "criteria": {
-    "visit_Furong Guo": {
+    "visit_furong_guo": {
       "conditions": {
         "player": [
           {
@@ -35,7 +35,7 @@
   },
   "requirements": [
     [
-      "visit_Furong Guo"
+      "visit_furong_guo"
     ]
   ],
   "rewards": {

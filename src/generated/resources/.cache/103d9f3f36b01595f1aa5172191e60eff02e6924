@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-26T11:52:10.8559408	Registries
+// 1.20.1	2026-03-27T00:33:32.4924645	Registries
 4496b994b885bbf7aca6aedef2e38ba1b6fd17de data/more_orn_plants/worldgen/biome/azalea_forest.json
 688a48533f975a1fa707862121be858e65ce27f3 data/more_orn_plants/worldgen/biome/camellia_valley.json
 41cfc5be4b1ec09ee79723da9e26e80f33690491 data/more_orn_plants/worldgen/biome/chinaberry_woods.json
@@ -8,7 +8,7 @@
 37651f4f0e2dce80de02119ef523a8aad93695b3 data/more_orn_plants/worldgen/biome/crops_green.json
 1bdffacbd1a55179e6b5a9f2c195d6a00a4c55d5 data/more_orn_plants/worldgen/biome/desert_poplar_woods.json
 07fd6b8cd0cc4b098c608a5fc42a9621564d2bae data/more_orn_plants/worldgen/biome/evergreen_forest.json
-ed922d4f5a5eb31f8c470b4db32c0907b3ed41bb data/more_orn_plants/worldgen/biome/flowers_grove.json
+21cb239f489c4c30d4839f83511588427db2a59b data/more_orn_plants/worldgen/biome/flowers_grove.json
 1481886eea14a09fcda58fcd2babdfe51d67ce73 data/more_orn_plants/worldgen/biome/fragrant_snow_sea.json
 6244af6593a7f3079eb4c686cf869e36781f8a3c data/more_orn_plants/worldgen/biome/furong_guo.json
 4918a85816462d30fc631cbbe9d7b686fd1761d7 data/more_orn_plants/worldgen/biome/ginkgo_forest.json
@@ -25,11 +25,11 @@ e4eb235b220686ce923b7a3851cc81c13c35bc4a data/more_orn_plants/worldgen/biome/peo
 770e646cbf090e2527da6390799c00d7253b0a2f data/more_orn_plants/worldgen/biome/red_mei_forest.json
 bc99040aada6db9e7317742d344cbbe46db0c73c data/more_orn_plants/worldgen/biome/snow_woods.json
 9c8ab89f9514f12f87f60066ba9def6a19e6999b data/more_orn_plants/worldgen/biome/spring_river.json
-f47a36f7954786a82aeca85c3b8466bd8f1f64d8 data/more_orn_plants/worldgen/biome/suyu_caves.json
+22da03b3ce4198e7bc8cf1766e9fbe406d6bd79c data/more_orn_plants/worldgen/biome/suyu_caves.json
 db4264d15a002ddc99dfbe15754f8eb7f0043889 data/more_orn_plants/worldgen/biome/sweetgum_woods.json
 acaf3ceb13b524811f8c81fc488e555d006042fa data/more_orn_plants/worldgen/biome/ten_mile_gallery.json
 25df65a7110345e1a185c03da03d6cb7136b83a8 data/more_orn_plants/worldgen/biome/the_apricot_spring_plateau.json
-4be2b2a6ca83a2bcbef76e1d441a74119a700587 data/more_orn_plants/worldgen/biome/the_peach_blossom_spring.json
+6d52b284b88d63235d795118a7ecf881e2114b66 data/more_orn_plants/worldgen/biome/the_peach_blossom_spring.json
 6346b9257b342cb2ed1963b90b07a47f8bb38e8d data/more_orn_plants/worldgen/biome/yunmeng_marsh.json
 4132d6e39fc5cf02da562e0ff886585a0af83196 data/more_orn_plants/worldgen/biome/ziying_caves.json
 0321d91081f53e87aa2fa97b95a0455350465b7d data/more_orn_plants/worldgen/configured_feature/ancient_camphor.json

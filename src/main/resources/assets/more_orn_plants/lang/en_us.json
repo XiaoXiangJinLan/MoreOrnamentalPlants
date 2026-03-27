@@ -760,6 +760,7 @@
   "item.more_orn_plants.ziying_pickaxe": "Ziying Pickaxe",
   "item.more_orn_plants.suyu_pickaxe": "Suyu Pickaxe",
   "item.more_orn_plants.ziyu_yuanyang_pickaxe": "Ziyu Yuanyang Pickaxe",
+  "item.more_orn_plants.zhuiyue_sword": "Zhuiyue Sword",
 
   "biome.more_orn_plants.red_mei_forest": "Red Mei Forest",
   "biome.more_orn_plants.spring_river": "Spring River",
@@ -894,6 +895,8 @@
   "advancement.moreornplants.peach_blossom_hermitage.description": "In the Cove of Peach Blooms stands the Hermitage fair;\nIn the Hermitage dwells an immortal, free from care.",
   "advancement.moreornplants.apricot_village.title": "Apricot Blossom Village",
   "advancement.moreornplants.apricot_village.description": "“Where might an inn be?” A question thrown. \nA cowherd points afar where apricots have grown.",
+  "advancement.moreornplants.flowers_and_moon.title": "Blooming Flowers And Full Moon",
+  "advancement.moreornplants.flowers_and_moon.description": "Colorful cloud chasing the moon.",
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7Small tree, non-building material",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7Ornamental varieties,non-building material",

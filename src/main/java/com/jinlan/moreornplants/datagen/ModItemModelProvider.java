@@ -450,6 +450,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         swordItem(ModItems.ZIYING_PICKAXE);
         swordItem(ModItems.SUYU_PICKAXE);
         swordItem(ModItems.ZIYU_YUANYANG_PICKAXE);
+        swordItem(ModItems.ZHUIYUE_SWORD);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
