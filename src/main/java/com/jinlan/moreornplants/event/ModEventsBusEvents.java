@@ -112,12 +112,10 @@ public class ModEventsBusEvents {
             if (player.getRandom().nextFloat() < 0.75f) {
                 event.setAmount(event.getAmount() * 3.0f);
             }
-        }
-        else if (weapon.is(ModTags.Items.SUYU_TOOLS) && (target1 instanceof Enemy  || target1 instanceof NeutralMob)) {
+        } else if (weapon.is(ModTags.Items.SUYU_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
             event.setAmount(event.getAmount() * 1.5f);
             target1.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), player);
-        }
-        else if (weapon.is(ModTags.Items.ZIYU_YUANYANG_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
+        } else if (weapon.is(ModTags.Items.ZIYU_YUANYANG_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
             float multiplier = 1.25f;
             if (player.getRandom().nextFloat() < 0.5f) {
                 multiplier *= 3.0f;
@@ -127,16 +125,29 @@ public class ModEventsBusEvents {
         } else if (weapon.is(ModItems.ZHUIYUE_SWORD.get())) {
             float multiplier;
             Level level = player.level();
-            boolean isClearFullMoonNight = level.isNight() &&
-                    level.getMoonPhase() == 0 &&
-                    !level.isRaining() &&
-                    !level.isThundering();
-            if (isClearFullMoonNight) {
+            if (level.getMoonPhase() == 0) {
                 multiplier = 2.0F;
             } else {
                 int moonPhase = level.getMoonPhase();
                 int distToFull = Math.min(moonPhase, 8 - moonPhase);
                 multiplier = 1.0F + (4 - distToFull) / 4.0F;
+            }
+            if (hasItemInInventory(player, ModItems.CAIYUN_SWORD.get())) {
+                multiplier *= 1.2F;
+            }
+            event.setAmount(event.getAmount() * multiplier);
+        } else if (weapon.is(ModItems.CAIYUN_SWORD.get())) {
+            float multiplier;
+            Level level = player.level();
+            if (level.isThundering()) {
+                multiplier = 0.5F;
+            } else if (!level.isRaining() && !level.isThundering()) {
+                multiplier = 1.5F;
+            } else {
+                multiplier = 1.0F;
+            }
+            if (hasItemInInventory(player, ModItems.ZHUIYUE_SWORD.get())) {
+                multiplier *= 1.2F;
             }
             event.setAmount(event.getAmount() * multiplier);
         }

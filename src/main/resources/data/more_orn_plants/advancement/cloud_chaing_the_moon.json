@@ -1,0 +1,38 @@
+{
+  "parent": "more_orn_plants:flowers_and_moon",
+  "criteria": {
+    "get_zhuiyue_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:zhuiyue_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.cloud_chasing_moon.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:zhuiyue_sword"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.cloud_chasing_moon.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_zhuiyue_sword"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "more_orn_plants:advancement/caiyun_sword"
+    ]
+  },
+  "sends_telemetry_event": true
+}

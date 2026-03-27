@@ -24,8 +24,7 @@ import java.util.List;
 
 public class ZhuiyueSwordItem extends Item {
     public ZhuiyueSwordItem(Properties properties) {
-        super(properties.component(DataComponents.TOOL, createToolProperties())
-                .durability(9999));
+        super(properties.component(DataComponents.TOOL, createToolProperties()));
     }
 
     public static Tool createToolProperties() {
@@ -59,11 +58,7 @@ public class ZhuiyueSwordItem extends Item {
     public void postHurtEnemy(ItemStack stack, @NotNull LivingEntity target, @NotNull LivingEntity attacker) {
         stack.hurtAndBreak(1, attacker, EquipmentSlot.MAINHAND);
 
-        if (attacker.level().isNight() &&
-                attacker.level().getMoonPhase() == 0 &&
-                !attacker.level().isRaining() &&
-                !attacker.level().isThundering()) {
-            stack.getMaxDamage();
+        if (attacker.level().isNight() && attacker.level().getMoonPhase() == 0) {
             int currentDamage = stack.getDamageValue();
             int newDamage = Math.max(0, currentDamage - 99);
             stack.setDamageValue(newDamage);

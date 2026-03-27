@@ -751,6 +751,7 @@
   "item.more_orn_plants.suyu_pickaxe": "素玉鎬",
   "item.more_orn_plants.ziyu_yuanyang_pickaxe": "紫玉鸳鸯鎬",
   "item.more_orn_plants.zhuiyue_sword": "追月劍",
+  "item.more_orn_plants.caiyun_sword": "彩云劍",
 
   "biome.more_orn_plants.red_mei_forest": "白雪紅梅",
   "biome.more_orn_plants.spring_river": "春江",
@@ -885,8 +886,10 @@
   "advancement.moreornplants.peach_blossom_hermitage.description": "桃花塢裏桃花庵，桃花庵裏桃花仙",
   "advancement.moreornplants.apricot_village.title": "杏花村",
   "advancement.moreornplants.apricot_village.description": "借問酒家何處有？牧童遙指杏花村",
-  "advancement.moreornplants.flowers_and_moon.title": "花好月圆",
-  "advancement.moreornplants.flowers_and_moon.description": "彩雲追月",
+  "advancement.moreornplants.flowers_and_moon.title": "花好月圓",
+  "advancement.moreornplants.flowers_and_moon.description": "江流宛轉繞芳甸，月照花林皆似霰",
+  "advancement.moreornplants.cloud_chasing_moon.title": "彩雲追月",
+  "advancement.moreornplants.cloud_chasing_moon.description": "人有悲歡離合，月有陰晴圓缺，此事古難全。\n但願人長久，千里共嬋娟",
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小喬木，無木材",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞品種，無竹材",

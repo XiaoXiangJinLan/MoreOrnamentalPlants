@@ -551,6 +551,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SUYU_SWORD);
                         pOutput.accept(ModItems.ZIYU_YUANYANG_SWORD);
                         pOutput.accept(ModItems.ZHUIYUE_SWORD);
+                        pOutput.accept(ModItems.CAIYUN_SWORD);
                         pOutput.accept(ModItems.CRABAPPLE);
                         pOutput.accept(ModItems.GOLDEN_CRABAPPLE);
                         pOutput.accept(ModItems.ENCHANTED_GOLDEN_CRABAPPLE);
