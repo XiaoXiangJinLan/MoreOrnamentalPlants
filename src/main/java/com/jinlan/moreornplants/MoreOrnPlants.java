@@ -1,5 +1,6 @@
 package com.jinlan.moreornplants;
 
+import com.jinlan.moreornplants.advancement.ModCriteriaTriggers;
 import com.jinlan.moreornplants.block.ModBlockEntities;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.entity.ModEntities;
@@ -53,6 +54,7 @@ public class MoreOrnPlants {
         ModFoliagePlacerTypes.register(modEventBus);
         ModTreeDecoratorTypes.register(modEventBus);
         ModBambooFeatures.register(modEventBus);
+        ModCriteriaTriggers.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);

@@ -207,7 +207,8 @@ public class BaihuaCat extends Cat {
                                         @NotNull MobSpawnType spawnType, @Nullable SpawnGroupData spawnGroupData) {
         spawnGroupData = super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
         if (!level.isClientSide()) {
-            if (level.getBiome(this.blockPosition()).is(ModBiomes.CRABAPPLE_GROVE)) {
+            if (level.getBiome(this.blockPosition()).is(ModBiomes.CRABAPPLE_GROVE) ||
+                    level.getBiome(this.blockPosition()).is(ModBiomes.THE_PEACH_BLOSSOM_SPRING)) {
                 this.setTextureKey("pink");
             } else {
                 String[] variants = {"standard", "pink", "blue", "purple"};

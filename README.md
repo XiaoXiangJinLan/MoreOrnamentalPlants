@@ -89,7 +89,7 @@ New Mobs
 ==========
 • Ziying Fox: Spawns in Ziying Caves. Can be tamed with Golden Crabapple. When fed Crape Myrtle or Chinese Wisteria, it produces Ziying Beads.  
 • Suyu Fox: Spawns in Suyu Caves. Can be tamed with Golden Crabapple. When fed White Crape Myrtle or White Chinese Wisteria, it produces Suyu Beads.  
-• Baihua Cat: Spawns in Flowers Grove, Crabapple Grove, and Penglai. Can be tamed with flowers. When fed Immortal Peach, Cloud Apricot, or Crabapple, it produces the corresponding fruit tree sapling. It also accelerates the growth of crops, cut flowers, and other plants within a 1-block radius.
+• Baihua Cat: Spawns in Flowers Grove, Crabapple Grove, The Peach Blossom Spring, and Penglai. Can be tamed with flowers. When fed Immortal Peach, Cloud Apricot, or Crabapple, it produces the corresponding fruit tree sapling. It also accelerates the growth of crops, cut flowers, and other plants within a 1-block radius.
 
 《观赏植物》是一个以植物装饰为主题的群系模组，将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠；
 彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了三十三个全新的生物群系、六个结构，等待你来探索！
@@ -167,7 +167,7 @@ New Mobs
 ## 新生物
 **紫英狐**：生成在紫英洞，用金海棠果驯服，喂食紫薇或者紫藤可以产出紫英珠；  
 **素玉狐**：生成在素玉洞，用金海棠果驯服，喂食白薇或者银藤可以产出素玉珠；  
-**百花猫**：生成在百花林、烟雨海棠和蓬莱，用花朵驯服，喂食仙桃、云杏或者海棠果可以产出对应的果树，会催熟附近1格范围内的作物、切花等植物。
+**百花猫**：生成在百花林、烟雨海棠、世外桃源和蓬莱，用花朵驯服，喂食仙桃、云杏或者海棠果可以产出对应的果树，会催熟附近1格范围内的作物、切花等植物。
 
 The block id for some of the plant blocks in this mod
 ==========

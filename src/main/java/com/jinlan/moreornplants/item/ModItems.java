@@ -212,6 +212,8 @@ public class ModItems {
             ITEMS.register("suyu_pickaxe", () -> new PickaxeItem(ModTiers.SUYU, new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.SUYU, 1.0F, -2.0F))));
     public static final DeferredItem<Item> ZIYU_YUANYANG_PICKAXE =
             ITEMS.register("ziyu_yuanyang_pickaxe", () -> new PickaxeItem(ModTiers.ZIYU_YUANYANG, new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.ZIYU_YUANYANG, 1.0F, -2.8F))));
+    public static final DeferredItem<Item> ZHUIYUE_SWORD =
+            ITEMS.register("zhuiyue_sword", () -> new ZhuiyueSwordItem(new Item.Properties()));
 
     public static final DeferredItem<Item> MOTTLED_BAMBOO =
             ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties()));

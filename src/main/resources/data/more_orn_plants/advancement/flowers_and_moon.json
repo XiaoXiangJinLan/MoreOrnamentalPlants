@@ -1,8 +1,8 @@
 {
-  "parent": "more_orn_plants:wuling_vista",
+  "parent": "more_orn_plants:flower_king",
   "criteria": {
-    "visit_peach_blossom_spring": {
-      "trigger": "minecraft:location",
+    "visit_flowers_biome_at_night": {
+      "trigger": "more_orn_plants:flowers_and_moon",
       "conditions": {
         "player": [
           {
@@ -10,7 +10,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biomes": "more_orn_plants:the_peach_blossom_spring"
+                "biomes": "#more_orn_plants:flowers_and_moon"
               }
             }
           }
@@ -20,26 +20,25 @@
   },
   "display": {
     "description": {
-      "translate": "advancement.moreornplants.peach_blossom_spring.description"
+      "translate": "advancement.moreornplants.flowers_and_moon.description"
     },
     "icon": {
       "count": 1,
-      "id": "more_orn_plants:wild_peach_sapling"
+      "id": "more_orn_plants:yao_huang_peony"
     },
     "title": {
-      "translate": "advancement.moreornplants.peach_blossom_spring.title"
+      "translate": "advancement.moreornplants.flowers_and_moon.title"
     }
   },
   "requirements": [
     [
-      "visit_peach_blossom_spring"
+      "visit_flowers_biome_at_night"
     ]
   ],
   "rewards": {
     "loot": [
-      "more_orn_plants:advancement/peach"
-    ],
-    "experience": 10
+      "more_orn_plants:advancement/zhuiyue_sword"
+    ]
   },
   "sends_telemetry_event": true
 }

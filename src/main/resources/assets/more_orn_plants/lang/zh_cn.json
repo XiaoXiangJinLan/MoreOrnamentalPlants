@@ -750,6 +750,7 @@
   "item.more_orn_plants.ziying_pickaxe": "紫英镐",
   "item.more_orn_plants.suyu_pickaxe": "素玉镐",
   "item.more_orn_plants.ziyu_yuanyang_pickaxe": "紫玉鸳鸯镐",
+  "item.more_orn_plants.zhuiyue_sword": "追月剑",
 
   "biome.more_orn_plants.red_mei_forest": "白雪红梅",
   "biome.more_orn_plants.spring_river": "春江",
@@ -884,6 +885,8 @@
   "advancement.moreornplants.peach_blossom_hermitage.description": "桃花坞里桃花庵，桃花庵里桃花仙",
   "advancement.moreornplants.apricot_village.title": "杏花村",
   "advancement.moreornplants.apricot_village.description": "借问酒家何处有？牧童遥指杏花村",
+  "advancement.moreornplants.flowers_and_moon.title": "花好月圆",
+  "advancement.moreornplants.flowers_and_moon.description": "彩云追月",
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小乔木，无木板",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7观赏品种，无竹板",

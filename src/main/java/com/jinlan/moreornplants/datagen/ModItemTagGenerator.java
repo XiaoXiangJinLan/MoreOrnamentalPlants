@@ -412,7 +412,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.ZIYU_YUANYANG_SWORD.get(), ModItems.ZIYU_YUANYANG_AXE.get(), ModItems.ZIYU_YUANYANG_PICKAXE.get());
 
         this.tag(ItemTags.SWORDS)
-                .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get())
+                .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get(), ModItems.ZHUIYUE_SWORD.asItem())
                 .add(ModItems.ZIYING_SWORD.get(), ModItems.SUYU_SWORD.get(), ModItems.ZIYU_YUANYANG_SWORD.get());
 
         this.tag(ItemTags.AXES)
@@ -422,7 +422,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.ZIYING_PICKAXE.get(), ModItems.SUYU_PICKAXE.get(), ModItems.ZIYU_YUANYANG_PICKAXE.get());
 
         this.tag(Tags.Items.MELEE_WEAPON_TOOLS)
-                .add(ModItems.BAMBOO_STICK.get(), ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get())
+                .add(ModItems.BAMBOO_STICK.get(), ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get(), ModItems.ZHUIYUE_SWORD.asItem())
                 .add(ModItems.ZIYING_SWORD.get(), ModItems.SUYU_SWORD.get(), ModItems.ZIYU_YUANYANG_SWORD.get())
                 .add(ModItems.ZIYING_AXE.get(), ModItems.SUYU_AXE.get(), ModItems.ZIYU_YUANYANG_AXE.get());
 

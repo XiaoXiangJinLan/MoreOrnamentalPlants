@@ -176,6 +176,7 @@ public class ModBiomes {
                 .addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.WOLF, 5, 4, 4))
                 .addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.FOX, 6, 2, 4))
                 .addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.FROG, 3, 2, 3))
+                .addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.BAIHUA_CAT.get(), 8, 2, 3))
                 .addSpawn(MobCategory.WATER_CREATURE, new MobSpawnSettings.SpawnerData(EntityType.SQUID, 2, 1, 4))
                 .addSpawn(MobCategory.WATER_AMBIENT, new MobSpawnSettings.SpawnerData(EntityType.SALMON, 5, 1, 5));
 
@@ -297,7 +298,7 @@ public class ModBiomes {
         if (isCrabapple) {
             spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.BAIHUA_CAT.get(), 6, 1, 2));
         } else {
-            spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.BAIHUA_CAT.get(), 8, 1, 2));
+            spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.BAIHUA_CAT.get(), 10, 1, 2));
         }
 
         BiomeGenerationSettings.Builder biomeBuilder =
@@ -930,8 +931,9 @@ public class ModBiomes {
         }
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_PLAIN);
         Music music = Musics.createGameMusic(SoundEvents.MUSIC_BIOME_LUSH_CAVES);
+        float f = isWhite ? 0.3f : 0.5f;
         return new Biome.BiomeBuilder()
-                .hasPrecipitation(true).temperature(0.5f).downfall(0.5f)
+                .hasPrecipitation(true).temperature(f).downfall(0.5f)
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .waterColor(4159204).waterFogColor(329011).skyColor(8103167).fogColor(12638463).backgroundMusic(music).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
