@@ -42,8 +42,8 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             Component.translatable("advancement.moreornplants.root.description"),
                             new ResourceLocation("more_orn_plants:textures/gui/advancement/florilegium.png"),
                             FrameType.TASK,
-                            false,
-                            false,
+                            true,
+                            true,
                             false
                     ))
                     .addCriterion("get_florilegium", InventoryChangeTrigger.TriggerInstance.hasItems(

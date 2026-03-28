@@ -12,7 +12,7 @@
     }
   },
   "display": {
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "background": "more_orn_plants:textures/gui/advancement/florilegium.png",
     "description": {
       "translate": "advancement.moreornplants.root.description"
@@ -22,7 +22,7 @@
     "icon": {
       "item": "more_orn_plants:two_qiao_peony"
     },
-    "show_toast": false,
+    "show_toast": true,
     "title": {
       "translate": "advancement.moreornplants.root.title"
     }
