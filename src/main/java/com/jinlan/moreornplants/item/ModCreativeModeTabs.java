@@ -547,9 +547,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DESERT_POPLAR_CHEST_BOAT);
                         pOutput.accept(ModItems.PEACH_WOODEN_SWORD);
                         pOutput.accept(ModItems.CAMPHOR_WOODEN_SWORD);
+                        pOutput.accept(ModItems.CHINESE_PARASOL_WOODEN_SWORD);
                         pOutput.accept(ModItems.ZIYING_SWORD);
                         pOutput.accept(ModItems.SUYU_SWORD);
                         pOutput.accept(ModItems.ZIYU_YUANYANG_SWORD);
+                        pOutput.accept(ModItems.BAIHUA_SWORD);
                         pOutput.accept(ModItems.ZHUIYUE_SWORD);
                         pOutput.accept(ModItems.CAIYUN_SWORD);
                         pOutput.accept(ModItems.CRABAPPLE);

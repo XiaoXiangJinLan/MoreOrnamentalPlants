@@ -441,6 +441,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         handheldItem(ModItems.PEACH_WOODEN_SWORD.get());
         handheldItem(ModItems.CAMPHOR_WOODEN_SWORD.get());
+        handheldItem(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get());
         handheldItem(ModItems.ZIYING_SWORD.get());
         handheldItem(ModItems.SUYU_SWORD.get());
         handheldItem(ModItems.ZIYU_YUANYANG_SWORD.get());
@@ -452,6 +453,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ZIYU_YUANYANG_PICKAXE.get());
         handheldItem(ModItems.ZHUIYUE_SWORD.get());
         handheldItem(ModItems.CAIYUN_SWORD.get());
+        handheldItem(ModItems.BAIHUA_SWORD.get());
     }
 
     private void saplingItem(DeferredBlock<Block> item) {

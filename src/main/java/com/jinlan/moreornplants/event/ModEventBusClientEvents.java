@@ -114,6 +114,10 @@ public class ModEventBusClientEvents {
             spawnSwordParticle(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get(), 16);
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
             spawnSwordParticle(player, ModParticleTypes.CAMPHOR_LEAVES.get(), 16);
+        } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get(), 12);
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.BAIHUA_CAT.get(), 24);
         }
     }
 
@@ -132,6 +136,10 @@ public class ModEventBusClientEvents {
             spawnSwordParticle(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get(), 16);
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
             spawnSwordParticle(player, ModParticleTypes.CAMPHOR_LEAVES.get(), 16);
+        } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get(), 12);
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.BAIHUA_CAT.get(), 24);
         }
     }
 
@@ -173,6 +181,10 @@ public class ModEventBusClientEvents {
             spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
             spawnSwordParticle2(player, ModParticleTypes.CAMPHOR_LEAVES.get());
+        } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get());
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
         }
         if (offHand.is(ModTags.Items.ZIYING_TOOLS) || offHand.is(ModItems.ZIYING_BEAD)) {
             spawnSwordParticle2(player, ModParticleTypes.ZIYING_FOX.get());
@@ -184,6 +196,10 @@ public class ModEventBusClientEvents {
             spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
         } else if (offHand.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
             spawnSwordParticle2(player, ModParticleTypes.CAMPHOR_LEAVES.get());
+        } else if (offHand.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get());
+        } else if (offHand.is(ModItems.BAIHUA_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
         }
     }
 }

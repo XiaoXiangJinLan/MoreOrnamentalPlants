@@ -12,6 +12,7 @@ import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.Holder;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -21,18 +22,17 @@ import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.animal.AbstractGolem;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.allay.Allay;
-import net.minecraft.world.entity.monster.Creeper;
-import net.minecraft.world.entity.monster.Enemy;
-import net.minecraft.world.entity.monster.ZombieVillager;
+import net.minecraft.world.entity.monster.*;
 import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.raid.Raider;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
@@ -93,7 +93,9 @@ public class ModEventsBusEvents {
         LivingEntity target = event.getEntity();
         if (target instanceof Player player) {
             float originalDamage = event.getAmount();
-            float[] result = applyBeadDamageReduction(player, originalDamage);
+            InventoryState state = getInventoryState(player);
+            float[] result = applyBeadDamageReduction(player, originalDamage,
+                    state.hasZiyingBead(), state.hasSuyuBead(), state.hasYuanyangBead());
             if (result[0] == 0) {
                 event.setCanceled(true);
                 return;
@@ -104,10 +106,18 @@ public class ModEventsBusEvents {
         if (!(event.getSource().getDirectEntity() instanceof Player player)) return;
         ItemStack weapon = player.getMainHandItem();
         LivingEntity target1 = event.getEntity();
+        InventoryState state = getInventoryState(player);
         if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get()) && target1.isInvertedHealAndHarm()) {
             event.setAmount(event.getAmount() * 9.99f);
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getType().is(EntityTypeTags.ARTHROPOD)) {
             event.setAmount(event.getAmount() * 2.22f);
+        } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
+            if (target1.getType().is(EntityTypeTags.UNDEAD)) {
+                target1.igniteForSeconds(20);
+            }
+            if (target1 instanceof Raider) {
+                event.setAmount(event.getAmount() * 3.33f);
+            }
         } else if (weapon.is(ModTags.Items.ZIYING_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
             if (player.getRandom().nextFloat() < 0.75f) {
                 event.setAmount(event.getAmount() * 3.0f);
@@ -132,7 +142,7 @@ public class ModEventsBusEvents {
                 int distToFull = Math.min(moonPhase, 8 - moonPhase);
                 multiplier = 1.0F + (4 - distToFull) / 4.0F;
             }
-            if (hasItemInInventory(player, ModItems.CAIYUN_SWORD.get())) {
+            if (state.hasCaiyunSword()) {
                 multiplier *= 1.2F;
             }
             event.setAmount(event.getAmount() * multiplier);
@@ -146,37 +156,36 @@ public class ModEventsBusEvents {
             } else {
                 multiplier = 1.0F;
             }
-            if (hasItemInInventory(player, ModItems.ZHUIYUE_SWORD.get())) {
+            if (state.hasZhuiyueSword()) {
                 multiplier *= 1.2F;
+            }
+            event.setAmount(event.getAmount() * multiplier);
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+            float multiplier = 1.0F;
+            if (state.hasFlower()) {
+                multiplier *= 5.0F;
+            }
+            Level level = player.level();
+            Holder<Biome> biome = level.getBiome(player.blockPosition());
+            if (biome.is(Tags.Biomes.IS_FLORAL)) {
+                multiplier *= 9.0F;
             }
             event.setAmount(event.getAmount() * multiplier);
         }
     }
 
-    private static boolean hasItemInInventory(Player player, Item item) {
-        for (ItemStack stack : player.getInventory().items) {
-            if (stack.is(item)) return true;
-        }
-        return player.getInventory().offhand.getFirst().is(item);
-    }
-
-    private static float[] applyBeadDamageReduction(Player player, float damage) {
+    private static float[] applyBeadDamageReduction(Player player, float damage,
+                                                    boolean hasZiying, boolean hasSuyu, boolean hasYuanyang) {
         boolean immune = false;
         float reduction = 1.0f;
         RandomSource random = player.getRandom();
 
-        boolean hasZiying = hasItemInInventory(player, ModItems.ZIYING_BEAD.get());
-        boolean hasSuyu = hasItemInInventory(player, ModItems.SUYU_BEAD.get());
-        boolean hasYuanyang = hasItemInInventory(player, ModItems.ZIYU_YUANYANG_BEAD.get());
-
         if (hasZiying && random.nextFloat() < 0.25f) {
             immune = true;
         }
-
         if (hasSuyu) {
             reduction *= 0.75f;
         }
-
         if (hasYuanyang) {
             if (random.nextFloat() < 0.2f) {
                 immune = true;
@@ -184,7 +193,6 @@ public class ModEventsBusEvents {
                 reduction *= 0.8f;
             }
         }
-
         if (immune) {
             return new float[]{0, 0};
         } else {
@@ -192,21 +200,49 @@ public class ModEventsBusEvents {
         }
     }
 
+    private static InventoryState getInventoryState(Player player) {
+        boolean hasZiyingBead = false;
+        boolean hasSuyuBead = false;
+        boolean hasYuanyangBead = false;
+        boolean hasZhuiyueSword = false;
+        boolean hasCaiyunSword = false;
+        boolean hasFlower = false;
+
+        for (ItemStack stack : player.getInventory().items) {
+            if (stack.is(ModItems.ZIYING_BEAD.get())) hasZiyingBead = true;
+            if (stack.is(ModItems.SUYU_BEAD.get())) hasSuyuBead = true;
+            if (stack.is(ModItems.ZIYU_YUANYANG_BEAD.get())) hasYuanyangBead = true;
+            if (stack.is(ModItems.ZHUIYUE_SWORD.get())) hasZhuiyueSword = true;
+            if (stack.is(ModItems.CAIYUN_SWORD.get())) hasCaiyunSword = true;
+            if (stack.is(ItemTags.FLOWERS)) hasFlower = true;
+        }
+
+        ItemStack offhand = player.getInventory().offhand.getFirst();
+        if (offhand.is(ModItems.ZIYING_BEAD.get())) hasZiyingBead = true;
+        if (offhand.is(ModItems.SUYU_BEAD.get())) hasSuyuBead = true;
+        if (offhand.is(ModItems.ZIYU_YUANYANG_BEAD.get())) hasYuanyangBead = true;
+        if (offhand.is(ModItems.ZHUIYUE_SWORD.get())) hasZhuiyueSword = true;
+        if (offhand.is(ModItems.CAIYUN_SWORD.get())) hasCaiyunSword = true;
+        if (offhand.is(ItemTags.FLOWERS)) hasFlower = true;
+
+        return new InventoryState(hasZiyingBead, hasSuyuBead, hasYuanyangBead,
+                hasZhuiyueSword, hasCaiyunSword, hasFlower);
+    }
+
+    private record InventoryState(boolean hasZiyingBead, boolean hasSuyuBead, boolean hasYuanyangBead,
+                                  boolean hasZhuiyueSword, boolean hasCaiyunSword, boolean hasFlower) {}
+
     @SubscribeEvent
     public static void onEntityTick(EntityTickEvent.Post event) {
         if (!(event.getEntity() instanceof LivingEntity entity)) {
             return;
         }
-
         if (entity.level().isClientSide) return;
-
         if (!(entity instanceof Player || entity instanceof Villager || entity instanceof Animal ||
                 entity instanceof AbstractGolem || entity instanceof Allay)) {
             return;
         }
-
         int tick = entity.tickCount;
-
         if (tick % 100 == 0) {
             Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
             if (biomeHolder.is(ModBiomes.LONGEVITY_FOREST)) {
@@ -221,7 +257,6 @@ public class ModEventsBusEvents {
                 }
             }
         }
-
         if (tick % 40 == 0) {
             Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
             if (biomeHolder.is(ModBiomes.PENGLAI)) {
@@ -241,7 +276,6 @@ public class ModEventsBusEvents {
                     entity.addEffect(new MobEffectInstance(MobEffects.LUCK, 48600, 4));
                 }
             }
-
             Holder<Biome> biomeHolder2 = entity.level().getBiome(entity.blockPosition());
             if (biomeHolder2.is(ModTags.Biomes.FLOWERS_AND_MOON)) {
                 Level level = entity.level();

@@ -194,12 +194,14 @@ public class ModItems {
             ITEMS.register("peach_wooden_sword", () -> new PeachWoodenSwordItem(Tiers.WOOD, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.WOOD, 3, -2.4F))));
     public static final DeferredItem<Item> CAMPHOR_WOODEN_SWORD =
             ITEMS.register("camphor_wooden_sword", () -> new CamphorWoodenSwordItem(Tiers.WOOD, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.WOOD, 3, -2.4F))));
+    public static final DeferredItem<Item> CHINESE_PARASOL_WOODEN_SWORD =
+            ITEMS.register("chinese_parasol_wooden_sword", () -> new ChineseParasolWoodenSwordItem(Tiers.WOOD, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.WOOD, 3, -2.4F))));
     public static final DeferredItem<Item> ZIYING_SWORD =
-            ITEMS.register("ziying_sword", () -> new ModRangeSwordItem(ModTiers.ZIYING, new Item.Properties().attributes(ModRangeSwordItem.createAttributes(ModTiers.ZIYING, 3, -2.4F, 1.0F))));
+            ITEMS.register("ziying_sword", () -> new ZiyingSwordItem(ModTiers.ZIYING, new Item.Properties().attributes(ModRangeSwordItem.createAttributes(ModTiers.ZIYING, 3, -2.4F, 1.0F))));
     public static final DeferredItem<Item> SUYU_SWORD =
-            ITEMS.register("suyu_sword", () -> new ModRangeSwordItem(ModTiers.SUYU, new Item.Properties().attributes(ModRangeSwordItem.createAttributes(ModTiers.SUYU, 3, -1.6F, 1.0F))));
+            ITEMS.register("suyu_sword", () -> new SuyuSwordItem(ModTiers.SUYU, new Item.Properties().attributes(ModRangeSwordItem.createAttributes(ModTiers.SUYU, 3, -1.6F, 1.0F))));
     public static final DeferredItem<Item> ZIYU_YUANYANG_SWORD =
-            ITEMS.register("ziyu_yuanyang_sword", () -> new ModRangeSwordItem(ModTiers.ZIYU_YUANYANG, new Item.Properties().attributes(ModRangeSwordItem.createAttributes(ModTiers.ZIYU_YUANYANG, 3, -2.4F, 1.0F))));
+            ITEMS.register("ziyu_yuanyang_sword", () -> new ZiyuSwordItem(ModTiers.ZIYU_YUANYANG, new Item.Properties().attributes(ModRangeSwordItem.createAttributes(ModTiers.ZIYU_YUANYANG, 3, -2.4F, 1.0F))));
     public static final DeferredItem<Item> ZIYING_AXE =
             ITEMS.register("ziying_axe", () -> new AxeItem(ModTiers.ZIYING, new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.ZIYING, 6.0F, -3.0F))));
     public static final DeferredItem<Item> SUYU_AXE =
@@ -216,6 +218,8 @@ public class ModItems {
             ITEMS.register("zhuiyue_sword", () -> new ZhuiyueSwordItem(new Item.Properties().durability(9999)));
     public static final DeferredItem<Item> CAIYUN_SWORD =
             ITEMS.register("caiyun_sword", () -> new CaiyunSwordItem(new Item.Properties().durability(5555)));
+    public static final DeferredItem<Item> BAIHUA_SWORD =
+            ITEMS.register("baihua_sword", () -> new BaihuaSwordItem(ModTiers.BAIHUA, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.BAIHUA, 3, -2.0F))));
 
     public static final DeferredItem<Item> MOTTLED_BAMBOO =
             ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties()));

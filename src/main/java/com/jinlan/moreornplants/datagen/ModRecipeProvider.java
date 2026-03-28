@@ -1255,6 +1255,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('/', Items.STICK)
                 .unlockedBy("has_camphor_logs", has(ModTags.Items.CAMPHOR_LOGS))
                 .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHINESE_PARASOL_WOODEN_SWORD)
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModTags.Items.CHINESE_PARASOL_LOGS)
+                .define('/', Items.STICK)
+                .unlockedBy("has_chinese_parasol_logs", has(ModTags.Items.CHINESE_PARASOL_LOGS))
+                .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIYING_SWORD)
                 .pattern("#")
                 .pattern("#")
