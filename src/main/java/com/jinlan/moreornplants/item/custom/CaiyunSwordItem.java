@@ -30,6 +30,5 @@ public class CaiyunSwordItem extends ZhuiyueSwordItem{
     @Override
     public void appendHoverText(@NotNull ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.more_orn_plants.caiyun_sword.tooltip"));
-        super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 }
