@@ -1,5 +1,5 @@
 {
-  "parent": "more_orn_plants:flower_king",
+  "parent": "more_orn_plants:flowers_and_moon",
   "criteria": {
     "get_zhuiyue_sword": {
       "conditions": {

@@ -547,10 +547,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.PEACH_WOODEN_SWORD.get());
                         pOutput.accept(ModItems.CAMPHOR_WOODEN_SWORD.get());
                         pOutput.accept(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get());
-                        pOutput.accept(ModItems.BAIHUA_SWORD.get());
                         pOutput.accept(ModItems.ZIYING_SWORD.get());
                         pOutput.accept(ModItems.SUYU_SWORD.get());
                         pOutput.accept(ModItems.ZIYU_YUANYANG_SWORD.get());
+                        pOutput.accept(ModItems.BAIHUA_SWORD.get());
                         pOutput.accept(ModItems.ZHUIYUE_SWORD.get());
                         pOutput.accept(ModItems.CAIYUN_SWORD.get());
                         pOutput.accept(ModItems.CRABAPPLE.get());

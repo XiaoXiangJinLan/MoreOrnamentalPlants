@@ -835,7 +835,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "flowers_and_moon"), existingFileHelper);
 
             Advancement cloudChasingMoon = Advancement.Builder.advancement()
-                    .parent(flowerKing)
+                    .parent(flowersAndMoon)
                     .display(new DisplayInfo(
                             new ItemStack(ModItems.ZHUIYUE_SWORD.get()),
                             Component.translatable("advancement.moreornplants.cloud_chasing_moon.title"),
