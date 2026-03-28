@@ -12,7 +12,6 @@
     }
   },
   "display": {
-    "announce_to_chat": false,
     "background": "more_orn_plants:textures/gui/advancement/florilegium.png",
     "description": {
       "translate": "advancement.moreornplants.root.description"
@@ -21,7 +20,6 @@
       "count": 1,
       "id": "more_orn_plants:two_qiao_peony"
     },
-    "show_toast": false,
     "title": {
       "translate": "advancement.moreornplants.root.title"
     }
