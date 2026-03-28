@@ -113,7 +113,7 @@
         "type": "more_orn_plants:ziying_fox",
         "maxCount": 2,
         "minCount": 1,
-        "weight": 15
+        "weight": 12
       }
     ],
     "underground_water_creature": [

@@ -1,7 +1,6 @@
 package com.jinlan.moreornplants.event;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
-import com.jinlan.moreornplants.advancement.ModCriteriaTriggers;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
@@ -9,7 +8,7 @@ import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -24,7 +23,7 @@ import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.monster.ZombieVillager;
 import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.raid.Raider;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
@@ -41,15 +40,6 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = MoreOrnPlants.MOD_ID)
 public class ModEvents {
     @SubscribeEvent
-    public static void onServerTick(TickEvent.ServerTickEvent event) {
-        if (event.phase == TickEvent.Phase.END && event.getServer().getTickCount() % 20 == 0) {
-            for (ServerPlayer player : event.getServer().getPlayerList().getPlayers()) {
-                ModCriteriaTriggers.MOONLIGHT_TRIGGER.trigger(player);
-            }
-        }
-    }
-
-    @SubscribeEvent
     public static void onEntityJoinLevel(EntityJoinLevelEvent event) {
         Entity entity = event.getEntity();
         if (entity instanceof Creeper creeper) {
@@ -62,7 +52,9 @@ public class ModEvents {
         LivingEntity target = event.getEntity();
         if (target instanceof Player player) {
             float originalDamage = event.getAmount();
-            float[] result = applyBeadDamageReduction(player, originalDamage);
+            InventoryState state = getInventoryState(player);
+            float[] result = applyBeadDamageReduction(player, originalDamage,
+                    state.hasZiyingBead(), state.hasSuyuBead(), state.hasYuanyangBead());
             if (result[0] == 0) {
                 event.setCanceled(true);
                 return;
@@ -73,10 +65,18 @@ public class ModEvents {
         if (!(event.getSource().getDirectEntity() instanceof Player player)) return;
         ItemStack weapon = player.getMainHandItem();
         LivingEntity target1 = event.getEntity();
+        InventoryState state = getInventoryState(player);
         if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get()) && target1.isInvertedHealAndHarm()) {
             event.setAmount(event.getAmount() * 9.99f);
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getMobType() == MobType.ARTHROPOD) {
             event.setAmount(event.getAmount() * 2.22f);
+        } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
+            if (target1.isInvertedHealAndHarm()) {
+                target1.setSecondsOnFire(20);
+            }
+            if (target1 instanceof Raider) {
+                event.setAmount(event.getAmount() * 3.33f);
+            }
         } else if (weapon.is(ModTags.Items.ZIYING_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
             if (player.getRandom().nextFloat() < 0.75f) {
                 event.setAmount(event.getAmount() * 3.0f);
@@ -94,36 +94,50 @@ public class ModEvents {
         } else if (weapon.is(ModItems.ZHUIYUE_SWORD.get())) {
             float multiplier;
             Level level = player.level();
-            boolean isClearFullMoonNight = level.isNight() &&
-                    level.getMoonPhase() == 0 &&
-                    !level.isRaining() &&
-                    !level.isThundering();
-            if (isClearFullMoonNight) {
+            if (level.getMoonPhase() == 0) {
                 multiplier = 2.0F;
             } else {
                 int moonPhase = level.getMoonPhase();
                 int distToFull = Math.min(moonPhase, 8 - moonPhase);
                 multiplier = 1.0F + (4 - distToFull) / 4.0F;
             }
+            if (state.hasCaiyunSword()) {
+                multiplier *= 1.2F;
+            }
+            event.setAmount(event.getAmount() * multiplier);
+        }else if (weapon.is(ModItems.CAIYUN_SWORD.get())) {
+            float multiplier;
+            Level level = player.level();
+            if (level.isThundering()) {
+                multiplier = 0.5F;
+            } else if (!level.isRaining() && !level.isThundering()) {
+                multiplier = 1.5F;
+            } else {
+                multiplier = 1.0F;
+            }
+            if (state.hasZhuiyueSword()) {
+                multiplier *= 1.2F;
+            }
+            event.setAmount(event.getAmount() * multiplier);
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+            float multiplier = 1.0F;
+            if (state.hasFlower()) {
+                multiplier *= 5.0F;
+            }
+            Level level = player.level();
+            Holder<Biome> biome = level.getBiome(player.blockPosition());
+            if (biome.is(ModTags.Biomes.FLOWERS_AND_MOON)) {
+                multiplier *= 9.0F;
+            }
             event.setAmount(event.getAmount() * multiplier);
         }
     }
 
-    private static boolean hasItemInInventory(Player player, Item item) {
-        for (ItemStack stack : player.getInventory().items) {
-            if (stack.is(item)) return true;
-        }
-        return player.getInventory().offhand.get(0).is(item);
-    }
-
-    private static float[] applyBeadDamageReduction(Player player, float damage) {
+    private static float[] applyBeadDamageReduction(Player player, float damage,
+                                                    boolean hasZiying, boolean hasSuyu, boolean hasYuanyang) {
         boolean immune = false;
         float reduction = 1.0f;
         RandomSource random = player.getRandom();
-
-        boolean hasZiying = hasItemInInventory(player, ModItems.ZIYING_BEAD.get());
-        boolean hasSuyu = hasItemInInventory(player, ModItems.SUYU_BEAD.get());
-        boolean hasYuanyang = hasItemInInventory(player, ModItems.ZIYU_YUANYANG_BEAD.get());
 
         if (hasZiying && random.nextFloat() < 0.25f) {
             immune = true;
@@ -147,6 +161,39 @@ public class ModEvents {
             return new float[]{1, damage * reduction};
         }
     }
+
+    private static InventoryState getInventoryState(Player player) {
+        boolean hasZiyingBead = false;
+        boolean hasSuyuBead = false;
+        boolean hasYuanyangBead = false;
+        boolean hasZhuiyueSword = false;
+        boolean hasCaiyunSword = false;
+        boolean hasFlower = false;
+
+        for (ItemStack stack : player.getInventory().items) {
+            if (stack.is(ModItems.ZIYING_BEAD.get())) hasZiyingBead = true;
+            if (stack.is(ModItems.SUYU_BEAD.get())) hasSuyuBead = true;
+            if (stack.is(ModItems.ZIYU_YUANYANG_BEAD.get())) hasYuanyangBead = true;
+            if (stack.is(ModItems.ZHUIYUE_SWORD.get())) hasZhuiyueSword = true;
+            if (stack.is(ModItems.CAIYUN_SWORD.get())) hasCaiyunSword = true;
+            if (stack.is(ItemTags.FLOWERS)) hasFlower = true;
+        }
+
+        ItemStack offhand = player.getInventory().offhand.get(0);
+        if (offhand.is(ModItems.ZIYING_BEAD.get())) hasZiyingBead = true;
+        if (offhand.is(ModItems.SUYU_BEAD.get())) hasSuyuBead = true;
+        if (offhand.is(ModItems.ZIYU_YUANYANG_BEAD.get())) hasYuanyangBead = true;
+        if (offhand.is(ModItems.ZHUIYUE_SWORD.get())) hasZhuiyueSword = true;
+        if (offhand.is(ModItems.CAIYUN_SWORD.get())) hasCaiyunSword = true;
+        if (offhand.is(ItemTags.FLOWERS)) hasFlower = true;
+
+        return new InventoryState(hasZiyingBead, hasSuyuBead, hasYuanyangBead,
+                hasZhuiyueSword, hasCaiyunSword, hasFlower);
+    }
+
+    private record InventoryState(boolean hasZiyingBead, boolean hasSuyuBead, boolean hasYuanyangBead,
+                                  boolean hasZhuiyueSword, boolean hasCaiyunSword, boolean hasFlower) {}
+
 
     @SubscribeEvent
     public static void onLivingTick(LivingEvent.LivingTickEvent event) {
@@ -197,11 +244,8 @@ public class ModEvents {
                 Level level = entity.level();
                 if (level.isNight() && level.getMoonPhase() == 0 && !level.isRaining() && !level.isThundering()) {
                     MobEffectInstance currentRegen1 = entity.getEffect(MobEffects.REGENERATION);
-                    MobEffectInstance currentRegen2 = entity.getEffect(MobEffects.NIGHT_VISION);
-                    if (currentRegen1 == null || currentRegen1.getDuration() < 520 ||
-                            currentRegen2 == null || currentRegen2.getDuration() < 520) {
+                    if (currentRegen1 == null || currentRegen1.getDuration() < 520) {
                         entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0));
-                        entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 600, 0));
                     }
                 }
             }
@@ -285,6 +329,10 @@ public class ModEvents {
             spawnSwordParticle(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get(), 16);
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
             spawnSwordParticle(player, ModParticleTypes.CAMPHOR_LEAVES.get(), 16);
+        } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get(), 12);
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.BAIHUA_CAT.get(), 24);
         }
     }
 
@@ -302,6 +350,10 @@ public class ModEvents {
             spawnSwordParticle(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get(), 16);
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
             spawnSwordParticle(player, ModParticleTypes.CAMPHOR_LEAVES.get(), 16);
+        } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get(), 12);
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+            spawnSwordParticle(player, ModParticleTypes.BAIHUA_CAT.get(), 24);
         }
     }
 
@@ -343,6 +395,10 @@ public class ModEvents {
             spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
             spawnSwordParticle2(player, ModParticleTypes.CAMPHOR_LEAVES.get());
+        } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get());
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
         }
         if (offHand.is(ModTags.Items.ZIYING_TOOLS) || offHand.is(ModItems.ZIYING_BEAD.get())) {
             spawnSwordParticle2(player, ModParticleTypes.ZIYING_FOX.get());
@@ -354,6 +410,10 @@ public class ModEvents {
             spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
         } else if (offHand.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
             spawnSwordParticle2(player, ModParticleTypes.CAMPHOR_LEAVES.get());
+        } else if (offHand.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get());
+        } else if (offHand.is(ModItems.BAIHUA_SWORD.get())) {
+            spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
         }
     }
 }

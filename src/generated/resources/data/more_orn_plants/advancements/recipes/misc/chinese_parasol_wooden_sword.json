@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_camphor_logs": {
+    "has_chinese_parasol_logs": {
       "conditions": {
         "items": [
           {
-            "tag": "more_orn_plants:camphor_logs"
+            "tag": "more_orn_plants:chinese_parasol_logs"
           }
         ]
       },
@@ -13,20 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_orn_plants:camphor_wooden_sword"
+        "recipe": "more_orn_plants:chinese_parasol_wooden_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_camphor_logs",
+      "has_chinese_parasol_logs",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "more_orn_plants:camphor_wooden_sword"
+      "more_orn_plants:chinese_parasol_wooden_sword"
     ]
   },
   "sends_telemetry_event": false

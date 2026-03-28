@@ -198,12 +198,14 @@ public class ModItems {
             ITEMS.register("peach_wooden_sword", () -> new PeachWoodenSwordItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> CAMPHOR_WOODEN_SWORD =
             ITEMS.register("camphor_wooden_sword", () -> new CamphorWoodenSwordItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> CHINESE_PARASOL_WOODEN_SWORD =
+            ITEMS.register("chinese_parasol_wooden_sword", () -> new ChineseParasolWoodenSwordItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> ZIYING_SWORD =
-            ITEMS.register("ziying_sword", () -> new SwordItem(ModTiers.ZIYING, 3, -2.4F, new Item.Properties()));
+            ITEMS.register("ziying_sword", () -> new ZiyingSwordItem(ModTiers.ZIYING, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> SUYU_SWORD =
-            ITEMS.register("suyu_sword", () -> new SwordItem(ModTiers.SUYU, 3, -1.6F, new Item.Properties()));
+            ITEMS.register("suyu_sword", () -> new SuyuSwordItem(ModTiers.SUYU, 3, -1.6F, new Item.Properties()));
     public static final RegistryObject<Item> ZIYU_YUANYANG_SWORD =
-            ITEMS.register("ziyu_yuanyang_sword", () -> new SwordItem(ModTiers.ZIYU_YUANYANG, 3, -2.4F, new Item.Properties()));
+            ITEMS.register("ziyu_yuanyang_sword", () -> new ZiyuSwordItem(ModTiers.ZIYU_YUANYANG, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> ZIYING_AXE =
             ITEMS.register("ziying_axe", () -> new AxeItem(ModTiers.ZIYING, 6.0F, -3.0F, new Item.Properties()));
     public static final RegistryObject<Item> SUYU_AXE =
@@ -217,7 +219,11 @@ public class ModItems {
     public static final RegistryObject<Item> ZIYU_YUANYANG_PICKAXE =
             ITEMS.register("ziyu_yuanyang_pickaxe", () -> new PickaxeItem(ModTiers.ZIYU_YUANYANG, 1, -2.8F, new Item.Properties()));
     public static final RegistryObject<Item> ZHUIYUE_SWORD =
-            ITEMS.register("zhuiyue_sword", () -> new ZhuiyueSwordItem(new Item.Properties().durability(1561)));
+            ITEMS.register("zhuiyue_sword", () -> new ZhuiyueSwordItem(new Item.Properties().durability(9999)));
+    public static final RegistryObject<Item> CAIYUN_SWORD =
+            ITEMS.register("caiyun_sword", () -> new CaiyunSwordItem(new Item.Properties().durability(5555)));
+    public static final RegistryObject<Item> BAIHUA_SWORD =
+            ITEMS.register("baihua_sword", () -> new BaihuaSwordItem(ModTiers.BAIHUA, 3, -2.0F, new Item.Properties()));
 
     public static final RegistryObject<Item> MOTTLED_BAMBOO =
             ITEMS.register("mottled_bamboo", () -> new modBambooBlockItem(ModBlocks.MOTTLED_BAMBOO.get(), new Item.Properties(), 50));

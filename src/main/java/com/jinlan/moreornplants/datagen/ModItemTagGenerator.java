@@ -524,8 +524,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.ZIYU_YUANYANG_SWORD.get(), ModItems.ZIYU_YUANYANG_AXE.get(), ModItems.ZIYU_YUANYANG_PICKAXE.get());
 
         this.tag(ItemTags.SWORDS)
-                .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get(), ModItems.ZHUIYUE_SWORD.get())
-                .add(ModItems.ZIYING_SWORD.get(), ModItems.SUYU_SWORD.get(), ModItems.ZIYU_YUANYANG_SWORD.get());
+                .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get(), ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())
+                .add(ModItems.ZIYING_SWORD.get(), ModItems.SUYU_SWORD.get(), ModItems.ZIYU_YUANYANG_SWORD.get())
+                .add(ModItems.ZHUIYUE_SWORD.get(), ModItems.CAIYUN_SWORD.get(), ModItems.BAIHUA_SWORD.get());
 
         this.tag(ItemTags.AXES)
                 .add(ModItems.ZIYING_AXE.get(), ModItems.SUYU_AXE.get(), ModItems.ZIYU_YUANYANG_AXE.get());

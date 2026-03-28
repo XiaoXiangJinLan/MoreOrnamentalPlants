@@ -1232,7 +1232,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("/")
                 .define('#', ModTags.Items.PEACH_LOGS)
                 .define('/', Items.STICK)
-                .unlockedBy("has_lotus", has(ModTags.Items.PEACH_LOGS))
+                .unlockedBy("has_peach_logs", has(ModTags.Items.PEACH_LOGS))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CAMPHOR_WOODEN_SWORD.get())
                 .pattern("#")
@@ -1240,7 +1240,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("/")
                 .define('#', ModTags.Items.CAMPHOR_LOGS)
                 .define('/', Items.STICK)
-                .unlockedBy("has_lotus", has(ModTags.Items.CAMPHOR_LOGS))
+                .unlockedBy("has_camphor_logs", has(ModTags.Items.CAMPHOR_LOGS))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .define('#', ModTags.Items.CHINESE_PARASOL_LOGS)
+                .define('/', Items.STICK)
+                .unlockedBy("has_chinese_parasol_logs", has(ModTags.Items.CHINESE_PARASOL_LOGS))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIYING_SWORD.get())
                 .pattern("#")

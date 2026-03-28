@@ -32,5 +32,10 @@
       "get_florilegium"
     ]
   ],
+  "rewards": {
+    "loot": [
+      "more_orn_plants:advancements/baihua_sword"
+    ]
+  },
   "sends_telemetry_event": true
 }
