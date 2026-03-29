@@ -59,7 +59,11 @@ public class ModEvents {
                 event.setCanceled(true);
                 return;
             }
-            event.setAmount(result[1]);
+            float damage = result[1];
+            if (state.hasBaihuaSword() && state.hasFlower()) {
+                damage = Math.min(damage / 2.0f, 4.0f);
+            }
+            event.setAmount(damage);
         }
 
         if (!(event.getSource().getDirectEntity() instanceof Player player)) return;
@@ -169,6 +173,7 @@ public class ModEvents {
         boolean hasZhuiyueSword = false;
         boolean hasCaiyunSword = false;
         boolean hasFlower = false;
+        boolean hasBaihuaSword = false;
 
         for (ItemStack stack : player.getInventory().items) {
             if (stack.is(ModItems.ZIYING_BEAD.get())) hasZiyingBead = true;
@@ -177,6 +182,7 @@ public class ModEvents {
             if (stack.is(ModItems.ZHUIYUE_SWORD.get())) hasZhuiyueSword = true;
             if (stack.is(ModItems.CAIYUN_SWORD.get())) hasCaiyunSword = true;
             if (stack.is(ItemTags.FLOWERS)) hasFlower = true;
+            if (stack.is(ModItems.BAIHUA_SWORD.get())) hasBaihuaSword = true;
         }
 
         ItemStack offhand = player.getInventory().offhand.get(0);
@@ -186,13 +192,14 @@ public class ModEvents {
         if (offhand.is(ModItems.ZHUIYUE_SWORD.get())) hasZhuiyueSword = true;
         if (offhand.is(ModItems.CAIYUN_SWORD.get())) hasCaiyunSword = true;
         if (offhand.is(ItemTags.FLOWERS)) hasFlower = true;
+        if (offhand.is(ModItems.BAIHUA_SWORD.get())) hasBaihuaSword = true;
 
         return new InventoryState(hasZiyingBead, hasSuyuBead, hasYuanyangBead,
-                hasZhuiyueSword, hasCaiyunSword, hasFlower);
+                hasZhuiyueSword, hasCaiyunSword, hasFlower, hasBaihuaSword);
     }
 
     private record InventoryState(boolean hasZiyingBead, boolean hasSuyuBead, boolean hasYuanyangBead,
-                                  boolean hasZhuiyueSword, boolean hasCaiyunSword, boolean hasFlower) {}
+                                  boolean hasZhuiyueSword, boolean hasCaiyunSword, boolean hasFlower, boolean hasBaihuaSword) {}
 
 
     @SubscribeEvent
