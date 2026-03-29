@@ -322,7 +322,7 @@ public class ModConfiguredFeatures {
 
         register(context, ANCIENT_RED_MEI_WITH_SNOW, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.RED_MEI_LOG.get()),
-                new AncientMeiTrunkPlacer(20, 4, 4, 3, 8, 10, 0.5F, 60, 4, 3),
+                new AncientMeiTrunkPlacer(16, 2, 4, 3, 6, 8, 0.5F, 60, 4, 3),
                 BlockStateProvider.simple(ModBlocks.RED_MEI_LEAVES.get()),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).decorators(List.of(new SnowAroundTrunk(10, 0.9F, 10))).ignoreVines().build());

@@ -1,4 +1,4 @@
-More Ornamental Plants is a biome mod themed around botanical decoration, bringing the beauty of Eastern gardens into Minecraft. 
+Ornamental Plants is a biome mod themed around botanical decoration, bringing the beauty of Eastern gardens into Minecraft. 
 It adds a variety of classic ornamental plants native to China, such as famous flowering trees: Mei Blossom, Crabapple; 
 colorful foliage trees: Ginkgo, Chinese Parasol; and renowned flowers: Chinese Rose, Herbaceous Peony, Camellia, and more. 
 This mod introduces thirty-three new biomes and six structures, waiting for you to explore!

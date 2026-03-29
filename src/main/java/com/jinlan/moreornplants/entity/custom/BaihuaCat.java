@@ -210,6 +210,10 @@ public class BaihuaCat extends Cat {
             if (level.getBiome(this.blockPosition()).is(ModBiomes.CRABAPPLE_GROVE) ||
                     level.getBiome(this.blockPosition()).is(ModBiomes.THE_PEACH_BLOSSOM_SPRING)) {
                 this.setTextureKey("pink");
+            } else if (level.getBiome(this.blockPosition()).is(ModBiomes.CHINABERRY_WOODS)) {
+                this.setTextureKey("blue");
+            } else if (level.getBiome(this.blockPosition()).is(ModBiomes.PURPLE_CLOUD)) {
+                this.setTextureKey("purple");
             } else {
                 String[] variants = {"standard", "pink", "blue", "purple"};
                 String chosen = variants[this.random.nextInt(variants.length)];
