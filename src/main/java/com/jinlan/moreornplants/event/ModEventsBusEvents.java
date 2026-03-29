@@ -102,7 +102,7 @@ public class ModEventsBusEvents {
             }
             float damage = result[1];
             if (state.hasBaihuaSword() && state.hasFlower()) {
-                damage = Math.min(damage / 2.0f, 4.0f);
+                damage = Math.min(damage / 2.0f, 2.0f);
             }
             event.setAmount(damage);
         }
