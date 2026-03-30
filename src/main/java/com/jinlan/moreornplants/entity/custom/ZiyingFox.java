@@ -60,6 +60,7 @@ import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.pathfinder.PathType;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.EventHooks;
@@ -199,6 +200,11 @@ public class ZiyingFox extends TamableAnimal {
             EntityType<? extends ZiyingFox> ziyingFox, LevelAccessor level, MobSpawnType spawnType, BlockPos pos, RandomSource random
     ) {
         return level.getBlockState(pos.below()).is(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON);
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return !this.isTame();
     }
 
     @Override
@@ -854,7 +860,7 @@ public class ZiyingFox extends TamableAnimal {
 
     @Override
     public @NotNull Vec3 getLeashOffset() {
-        return new Vec3(0.0, (double)(0.55F * this.getEyeHeight()), (double)(this.getBbWidth() * 0.4F));
+        return new Vec3(0.0, 0.55F * this.getEyeHeight(), this.getBbWidth() * 0.4F);
     }
 
     // ========== 内部类（全部复制自狐狸，将 Fox 改为 ZiyingFox，并移除变种相关逻辑）==========

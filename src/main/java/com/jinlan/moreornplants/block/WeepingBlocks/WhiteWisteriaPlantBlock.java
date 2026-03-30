@@ -1,7 +1,6 @@
 package com.jinlan.moreornplants.block.WeepingBlocks;
 
 import com.jinlan.moreornplants.block.ModBlocks;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.GrowingPlantHeadBlock;
 import org.jetbrains.annotations.NotNull;
 

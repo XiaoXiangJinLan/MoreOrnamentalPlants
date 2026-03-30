@@ -1113,6 +1113,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("light_blue_dye")
                 .unlockedBy("has_light_blue_dye_item", has(ModTags.Items.LIGHT_BLUE_DYE))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":" + "light_blue_dye_from_flowers");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BLUE_DYE)
+                .requires(ModTags.Items.BLUE_DYE)
+                .group("blue_dye")
+                .unlockedBy("has_blue_dye_item", has(ModTags.Items.BLUE_DYE))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "blue_dye_from_flowers");
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BLACK_DYE)
                 .requires(ModTags.Items.BLACK_DYE)
                 .group("black_dye")

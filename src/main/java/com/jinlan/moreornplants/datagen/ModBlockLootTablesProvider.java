@@ -1014,6 +1014,12 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropOther(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.CHINESE_WISTERIA.asItem());
         this.dropSelf(ModBlocks.WHITE_CHINESE_WISTERIA.get());
         this.dropOther(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA.asItem());
+        this.dropSelf(ModBlocks.BLUE_CHINESE_WISTERIA.get());
+        this.dropOther(ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get(), ModBlocks.BLUE_CHINESE_WISTERIA.asItem());
+        this.dropSelf(ModBlocks.RED_CHINESE_WISTERIA.get());
+        this.dropOther(ModBlocks.RED_CHINESE_WISTERIA_PLANT.get(), ModBlocks.RED_CHINESE_WISTERIA.asItem());
+        this.dropSelf(ModBlocks.NANJING_WISTERIA.get());
+        this.dropOther(ModBlocks.NANJING_WISTERIA_PLANT.get(), ModBlocks.NANJING_WISTERIA.asItem());
 
         this.dropSelf(ModBlocks.MEI_XIANGNANG.get());
         this.dropSelf(ModBlocks.OSMANTHUS_XIANGNANG.get());

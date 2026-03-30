@@ -1,7 +1,6 @@
 {
   "values": [
-    "#minecraft:dirt",
-    "#minecraft:base_stone_overworld",
+    "minecraft:moss_block",
     "more_orn_plants:ziying_beadlight",
     "more_orn_plants:suyu_beadlight"
   ]

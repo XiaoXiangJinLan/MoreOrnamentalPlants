@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-28T14:50:12.966848	Recipes
+// 1.21.1	2026-03-30T14:56:40.2430133	Recipes
 8db850eefb95e33b6e0dfe6a2331f713119d6296 data/more_orn_plants/advancement/recipes/building_blocks/apricot_planks.json
 8e771fc999b0a71cd8d230b6fbb7f94aa2454964 data/more_orn_plants/advancement/recipes/building_blocks/apricot_slab.json
 b624b3150b91ab82e3c93f15a0d9fa7b6077daa7 data/more_orn_plants/advancement/recipes/building_blocks/apricot_stairs.json
@@ -146,6 +146,7 @@ c779e1151b730789d445c389843a4b3342dbc70d data/more_orn_plants/advancement/recipe
 f4463e7e1c639ac7882f5a4e8d5175199329bd33 data/more_orn_plants/advancement/recipes/food/lotus_seed_soup.json
 1aa2006b73ceeb0332237a6f6ff191686f40215b data/more_orn_plants/advancement/recipes/misc/apricot_xiangnang.json
 d46cd8d9297ebcb5d67ecaf51017848b7093187c data/more_orn_plants/advancement/recipes/misc/black_dye_from_flowers.json
+43f85d4ac3a9ec27e84174d0560f1abdec58768e data/more_orn_plants/advancement/recipes/misc/blue_dye_from_flowers.json
 2fe29c3099ad288b331481ad9418214d84df41f2 data/more_orn_plants/advancement/recipes/misc/camphor_wooden_sword.json
 f4ee0f941bdb951020b85e57d35bd8bfdec2b796 data/more_orn_plants/advancement/recipes/misc/chinese_parasol_wooden_sword.json
 d0268484eff99545459f11d67d8ef08b5bddf3e3 data/more_orn_plants/advancement/recipes/misc/chinese_rose_xiangnang.json
@@ -362,6 +363,7 @@ ef1c1bb3ff855f25631d55c7726829a11bfb8acf data/more_orn_plants/recipe/apricot_sta
 3828457aeb5d69158dc9005e986bdea1dd92bc3c data/more_orn_plants/recipe/apricot_xiangnang.json
 017a22922e16d849b11da3c63ee8ce600b57a902 data/more_orn_plants/recipe/bamboo_shoots_soup.json
 04c2686a089bed3fd91619b5e8e0d2254f99fd75 data/more_orn_plants/recipe/black_dye_from_flowers.json
+974743bc3ef1c57b9dba28eab8b1d96cb67ddc13 data/more_orn_plants/recipe/blue_dye_from_flowers.json
 70ea2ac13f6ec9c32037cfc2b255b36ce91f0423 data/more_orn_plants/recipe/camphor_boat.json
 86b6d6f9e4c7745d36948bf002fa359b2c072220 data/more_orn_plants/recipe/camphor_button.json
 5717f3782ebfaccc8f6f3c81567505cc95b3f6c3 data/more_orn_plants/recipe/camphor_chest_boat.json

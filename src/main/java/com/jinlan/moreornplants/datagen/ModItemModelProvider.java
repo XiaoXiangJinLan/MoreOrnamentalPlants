@@ -278,6 +278,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.WEEPING_CRABAPPLE);
         wisteriaItem(ModBlocks.CHINESE_WISTERIA);
         wisteriaItem(ModBlocks.WHITE_CHINESE_WISTERIA);
+        wisteriaItem(ModBlocks.NANJING_WISTERIA);
+        wisteriaItem(ModBlocks.BLUE_CHINESE_WISTERIA);
+        wisteriaItem(ModBlocks.RED_CHINESE_WISTERIA);
 
         flowerItem(ModBlocks.CHRYSANTHEMUM);
         flowerItem(ModBlocks.XIHU_LIUYUE);

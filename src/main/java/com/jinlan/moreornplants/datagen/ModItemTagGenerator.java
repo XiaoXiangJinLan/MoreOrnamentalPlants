@@ -284,12 +284,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PURPLE_PEONY.asItem(), ModBlocks.LIGHT_PURPLE_PEONY.asItem(), ModBlocks.INK_PURPLE_PEONY.asItem(), ModBlocks.VIOLET_PEONY.asItem())
                 .add(ModBlocks.PURPLE_RHODODENDRON.asItem())
                 .add(ModBlocks.CRAPE_MYRTLE.asItem(), ModBlocks.CRAPE_MYRTLE_SAPLING.asItem())
-                .add(ModBlocks.CHINESE_WISTERIA.asItem())
+                .add(ModBlocks.CHINESE_WISTERIA.asItem(), ModBlocks.NANJING_WISTERIA.asItem())
                 .add(ModBlocks.FOUNTAIN_GRASS.asItem(), ModBlocks.PURPLE_FOUNTAIN_GRASS.asItem());
 
         this.tag(ModTags.Items.MAGENTA_DYE)
                 .add(ModBlocks.CHARMING_RHODODENDRON.asItem())
-                .add(ModBlocks.RED_CRAPE_MYRTLE.asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.asItem());
+                .add(ModBlocks.RED_CRAPE_MYRTLE.asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.asItem())
+                .add(ModBlocks.RED_CHINESE_WISTERIA.asItem());
 
         this.tag(ModTags.Items.LIME_DYE)
                 .add(ModBlocks.SPRING_CYMBIDIUM.asItem())
@@ -304,6 +305,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.LIGHT_BLUE_DYE)
                 .add(ModBlocks.BLUE_PEONY.asItem());
+
+        this.tag(ModTags.Items.BLUE_DYE)
+                .add(ModBlocks.BLUE_CHINESE_WISTERIA.asItem());
 
         this.tag(ModTags.Items.BLACK_DYE)
                 .add(ModBlocks.WINTER_CYMBIDIUM.asItem())

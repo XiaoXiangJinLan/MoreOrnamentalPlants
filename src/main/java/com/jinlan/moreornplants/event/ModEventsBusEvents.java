@@ -92,8 +92,15 @@ public class ModEventsBusEvents {
     public static void onLivingDamage(LivingIncomingDamageEvent event) {
         LivingEntity target = event.getEntity();
         if (target instanceof Player player) {
-            float originalDamage = event.getAmount();
             InventoryState state = getInventoryState(player);
+            Level level = player.level();
+            if (state.hasZhuiyueSword() && state.hasCaiyunSword()
+                    && !level.isRaining() && !level.isThundering()
+                    && level.getMoonPhase() == 0) {
+                event.setCanceled(true);
+                return;
+            }
+            float originalDamage = event.getAmount();
             float[] result = applyBeadDamageReduction(player, originalDamage,
                     state.hasZiyingBead(), state.hasSuyuBead(), state.hasYuanyangBead());
             if (result[0] == 0) {

@@ -187,6 +187,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WISTERIA_1 = registerKey("wisteria_1");
     public static final ResourceKey<PlacedFeature> WISTERIA_2 = registerKey("wisteria_2");
     public static final ResourceKey<PlacedFeature> WISTERIA_3 = registerKey("wisteria_3");
+    public static final ResourceKey<PlacedFeature> WISTERIA_4 = registerKey("wisteria_4");
+    public static final ResourceKey<PlacedFeature> WISTERIA_5 = registerKey("wisteria_5");
     public static final ResourceKey<PlacedFeature> WHITE_WISTERIA_1 = registerKey("white_wisteria_1");
     public static final ResourceKey<PlacedFeature> WHITE_WISTERIA_2 = registerKey("white_wisteria_2");
     public static final ResourceKey<PlacedFeature> WHITE_WISTERIA_3 = registerKey("white_wisteria_3");
@@ -765,8 +767,18 @@ public class ModPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
                         EnvironmentScanPlacement.scanningFor(Direction.UP, BlockPredicate.hasSturdyFace(Direction.DOWN), BlockPredicate.ONLY_IN_AIR_PREDICATE, 12),
                         RandomOffsetPlacement.vertical(ConstantInt.of(-1)), BiomeFilter.biome()));
-        register(context, WISTERIA_3, configuredFeatures.getOrThrow(ModConfiguredFeatures.WISTERIA),
-                List.of(CountPlacement.of(188),
+        register(context, WISTERIA_3, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLUE_WISTERIA),
+                List.of(CountPlacement.of(128),
+                        InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
+                        EnvironmentScanPlacement.scanningFor(Direction.UP, BlockPredicate.hasSturdyFace(Direction.DOWN), BlockPredicate.ONLY_IN_AIR_PREDICATE, 12),
+                        RandomOffsetPlacement.vertical(ConstantInt.of(-1)), BiomeFilter.biome()));
+        register(context, WISTERIA_4, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_WISTERIA),
+                List.of(CountPlacement.of(128),
+                        InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
+                        EnvironmentScanPlacement.scanningFor(Direction.UP, BlockPredicate.hasSturdyFace(Direction.DOWN), BlockPredicate.ONLY_IN_AIR_PREDICATE, 12),
+                        RandomOffsetPlacement.vertical(ConstantInt.of(-1)), BiomeFilter.biome()));
+        register(context, WISTERIA_5, configuredFeatures.getOrThrow(ModConfiguredFeatures.NANJING_WISTERIA),
+                List.of(CountPlacement.of(128),
                         InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
                         EnvironmentScanPlacement.scanningFor(Direction.UP, BlockPredicate.hasSturdyFace(Direction.DOWN), BlockPredicate.ONLY_IN_AIR_PREDICATE, 12),
                         RandomOffsetPlacement.vertical(ConstantInt.of(-1)), BiomeFilter.biome()));

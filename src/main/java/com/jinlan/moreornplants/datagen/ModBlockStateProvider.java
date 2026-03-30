@@ -570,6 +570,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         wisteriaPlantBlock(ModBlocks.CHINESE_WISTERIA_PLANT);
         wisteriaBlock(ModBlocks.WHITE_CHINESE_WISTERIA);
         wisteriaPlantBlock(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT);
+        wisteriaBlock(ModBlocks.BLUE_CHINESE_WISTERIA);
+        wisteriaPlantBlock(ModBlocks.BLUE_CHINESE_WISTERIA_PLANT);
+        wisteriaBlock(ModBlocks.RED_CHINESE_WISTERIA);
+        wisteriaPlantBlock(ModBlocks.RED_CHINESE_WISTERIA_PLANT);
+        wisteriaBlock(ModBlocks.NANJING_WISTERIA);
+        wisteriaPlantBlock(ModBlocks.NANJING_WISTERIA_PLANT);
 
         flowerBlock(ModBlocks.CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_CHRYSANTHEMUM.get(), models().singleTexture("potted_chrysanthemum", ResourceLocation.parse("flower_pot_cross"), "plant",

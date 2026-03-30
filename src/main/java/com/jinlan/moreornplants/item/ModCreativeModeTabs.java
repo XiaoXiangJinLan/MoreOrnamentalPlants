@@ -205,6 +205,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.VERSICOLOR_WEEPING_MEI);
                         pOutput.accept(ModBlocks.CHINESE_WISTERIA);
                         pOutput.accept(ModBlocks.WHITE_CHINESE_WISTERIA);
+                        pOutput.accept(ModBlocks.RED_CHINESE_WISTERIA);
+                        pOutput.accept(ModBlocks.NANJING_WISTERIA);
+                        pOutput.accept(ModBlocks.BLUE_CHINESE_WISTERIA);
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE);
                         pOutput.accept(ModBlocks.WINTER_CYMBIDIUM);
                         pOutput.accept(ModBlocks.YAO_HUANG_PEONY);
