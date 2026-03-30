@@ -200,6 +200,9 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LOTUS_KEY = registerKey("lotus_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA = registerKey("wisteria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_WISTERIA = registerKey("white_wisteria");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_WISTERIA = registerKey("blue_wisteria");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RED_WISTERIA = registerKey("red_wisteria");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NANJING_WISTERIA = registerKey("nanjing_wisteria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ROSE_BUSH = registerKey("rose_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FOUNTAIN_GRASS = registerKey("fountain_grass");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FOUNTAIN_GRASS_GROVE = registerKey("fountain_grass_grove");
@@ -1443,6 +1446,51 @@ public class ModConfiguredFeatures {
                                                 .add(UniformInt.of(0, 6), 10).build()),
                                 new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())).toPlace()),
                         BlockColumnConfiguration.layer(ConstantInt.of(1), randomizedintstateprovider2)), Direction.DOWN, BlockPredicate.ONLY_IN_AIR_PREDICATE, true));
+        RandomizedIntStateProvider randomizedintstateprovider3 = new RandomizedIntStateProvider(
+                BlockStateProvider.simple(ModBlocks.BLUE_CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                WisteriaBlock.AGE, UniformInt.of(23, 25)
+        );
+        register(context, BLUE_WISTERIA, Feature.BLOCK_COLUMN, new BlockColumnConfiguration(
+                List.of(BlockColumnConfiguration.layer(ConstantInt.of(1),
+                                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get().defaultBlockState().setValue(WisteriaPlantBlock.TOP, true))).toPlace()),
+                        BlockColumnConfiguration.layer(
+                                new WeightedListInt(
+                                        SimpleWeightedRandomList.<IntProvider>builder()
+                                                .add(UniformInt.of(0, 18), 2)
+                                                .add(UniformInt.of(0, 12), 3)
+                                                .add(UniformInt.of(0, 6), 10).build()),
+                                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get())).toPlace()),
+                        BlockColumnConfiguration.layer(ConstantInt.of(1), randomizedintstateprovider3)), Direction.DOWN, BlockPredicate.ONLY_IN_AIR_PREDICATE, true));
+        RandomizedIntStateProvider randomizedintstateprovider4 = new RandomizedIntStateProvider(
+                BlockStateProvider.simple(ModBlocks.RED_CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                WisteriaBlock.AGE, UniformInt.of(23, 25)
+        );
+        register(context, RED_WISTERIA, Feature.BLOCK_COLUMN, new BlockColumnConfiguration(
+                List.of(BlockColumnConfiguration.layer(ConstantInt.of(1),
+                                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RED_CHINESE_WISTERIA_PLANT.get().defaultBlockState().setValue(WisteriaPlantBlock.TOP, true))).toPlace()),
+                        BlockColumnConfiguration.layer(
+                                new WeightedListInt(
+                                        SimpleWeightedRandomList.<IntProvider>builder()
+                                                .add(UniformInt.of(0, 18), 2)
+                                                .add(UniformInt.of(0, 12), 3)
+                                                .add(UniformInt.of(0, 6), 10).build()),
+                                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RED_CHINESE_WISTERIA_PLANT.get())).toPlace()),
+                        BlockColumnConfiguration.layer(ConstantInt.of(1), randomizedintstateprovider4)), Direction.DOWN, BlockPredicate.ONLY_IN_AIR_PREDICATE, true));
+        RandomizedIntStateProvider randomizedintstateprovider5 = new RandomizedIntStateProvider(
+                BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                WisteriaBlock.AGE, UniformInt.of(23, 25)
+        );
+        register(context, NANJING_WISTERIA, Feature.BLOCK_COLUMN, new BlockColumnConfiguration(
+                List.of(BlockColumnConfiguration.layer(ConstantInt.of(1),
+                                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA_PLANT.get().defaultBlockState().setValue(WisteriaPlantBlock.TOP, true))).toPlace()),
+                        BlockColumnConfiguration.layer(
+                                new WeightedListInt(
+                                        SimpleWeightedRandomList.<IntProvider>builder()
+                                                .add(UniformInt.of(0, 18), 2)
+                                                .add(UniformInt.of(0, 12), 3)
+                                                .add(UniformInt.of(0, 6), 10).build()),
+                                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA_PLANT.get())).toPlace()),
+                        BlockColumnConfiguration.layer(ConstantInt.of(1), randomizedintstateprovider5)), Direction.DOWN, BlockPredicate.ONLY_IN_AIR_PREDICATE, true));
         register(context, CRAPE_MYRTLE_CAVES, Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
                 new WeightedStateProvider(
                         SimpleWeightedRandomList.<BlockState>builder()

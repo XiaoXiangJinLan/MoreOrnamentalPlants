@@ -66,6 +66,7 @@ public class ModTags {
         public static final TagKey<Item> GREEN_DYE = tag("green_dye");
         public static final TagKey<Item> PURPLE_DYE = tag("purple_dye");
         public static final TagKey<Item> LIGHT_BLUE_DYE = tag("light_blue_dye");
+        public static final TagKey<Item> BLUE_DYE = tag("blue_dye");
         public static final TagKey<Item> BLACK_DYE = tag("black_dye");
         public static final TagKey<Item> ZIYING_FOX_FOOD = tag("ziying_fox_food");
         public static final TagKey<Item> ZIYING_FOX_APPEAL_TO = tag("ziying_fox_appeal_to");

@@ -204,6 +204,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.VERSICOLOR_WEEPING_MEI.get());
                         pOutput.accept(ModBlocks.CHINESE_WISTERIA.get());
                         pOutput.accept(ModBlocks.WHITE_CHINESE_WISTERIA.get());
+                        pOutput.accept(ModBlocks.RED_CHINESE_WISTERIA.get());
+                        pOutput.accept(ModBlocks.NANJING_WISTERIA.get());
+                        pOutput.accept(ModBlocks.BLUE_CHINESE_WISTERIA.get());
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE.get());
                         pOutput.accept(ModBlocks.WINTER_CYMBIDIUM.get());
                         pOutput.accept(ModBlocks.YAO_HUANG_PEONY.get());

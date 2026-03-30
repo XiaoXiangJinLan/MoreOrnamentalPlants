@@ -31,6 +31,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get())
                 .add(ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.BLUE_CHINESE_WISTERIA.get(), ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.RED_CHINESE_WISTERIA.get(), ModBlocks.RED_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.NANJING_WISTERIA.get(), ModBlocks.NANJING_WISTERIA_PLANT.get())
                 .add(ModBlocks.FOUNTAIN_GRASS.get(), ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.PINK_FOUNTAIN_GRASS.get(), ModBlocks.WHITE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(), ModBlocks.BAMBOO_STICK.get());
@@ -52,7 +55,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.PINK_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get())
-                .add(ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get());
+                .add(ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.BLUE_CHINESE_WISTERIA.get(), ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.RED_CHINESE_WISTERIA.get(), ModBlocks.RED_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.NANJING_WISTERIA.get(), ModBlocks.NANJING_WISTERIA_PLANT.get());
 
         this.tag(BlockTags.SWORD_EFFICIENT)
                 .add(ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.RED_WEEPING_MEI_PLANT.get())
@@ -62,6 +68,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get())
                 .add(ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.BLUE_CHINESE_WISTERIA.get(), ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.RED_CHINESE_WISTERIA.get(), ModBlocks.RED_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.NANJING_WISTERIA.get(), ModBlocks.NANJING_WISTERIA_PLANT.get())
                 .add(ModBlocks.FOUNTAIN_GRASS.get())
                 .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.PINK_FOUNTAIN_GRASS.get())
@@ -187,7 +196,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WHITE_CAMELLIA_LEAVES.get(), ModBlocks.VERSICOLOR_CAMELLIA_LEAVES.get())
                 .add(ModBlocks.PEACH_PINK_PETALS.get(), ModBlocks.FRAGRANT_SNOW_PETALS.get(), ModBlocks.SPRING_PETALS.get())
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get())
-                .add(ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get());
+                .add(ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.BLUE_CHINESE_WISTERIA.get(), ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.RED_CHINESE_WISTERIA.get(), ModBlocks.RED_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.NANJING_WISTERIA.get(), ModBlocks.NANJING_WISTERIA_PLANT.get());
 
         this.tag(BlockTags.LEAVES)
                 .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get())
@@ -219,7 +231,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.PINK_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.CHINESE_WISTERIA_PLANT.get())
-                .add(ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get());
+                .add(ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.BLUE_CHINESE_WISTERIA.get(), ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.RED_CHINESE_WISTERIA.get(), ModBlocks.RED_CHINESE_WISTERIA_PLANT.get())
+                .add(ModBlocks.NANJING_WISTERIA.get(), ModBlocks.NANJING_WISTERIA_PLANT.get());
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.MOTTLED_BAMBOO_SAPLING.get())
@@ -782,8 +797,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(Blocks.SUSPICIOUS_GRAVEL);
 
         this.tag(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON)
-                .addTag(BlockTags.DIRT)
-                .addTag(BlockTags.BASE_STONE_OVERWORLD)
+                .add(Blocks.MOSS_BLOCK)
                 .add(ModBlocks.ZIYING_BEADLIGHT.get(), ModBlocks.SUYU_BEADLIGHT.get());
     }
 }

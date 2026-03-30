@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_orn_plants:light_dye_from_flowers"
+        "recipe": "more_orn_plants:light_blue_dye_from_flowers"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "more_orn_plants:light_dye_from_flowers"
+      "more_orn_plants:light_blue_dye_from_flowers"
     ]
   },
   "sends_telemetry_event": false

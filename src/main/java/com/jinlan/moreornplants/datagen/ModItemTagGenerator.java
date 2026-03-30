@@ -85,7 +85,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.RED_AZALEA_LEAVES.get().asItem(), ModBlocks.MAYING_RHODODENDRON_LEAVES.get().asItem(), ModBlocks.DEWDROP_RHODODENDRON_LEAVES.get().asItem(), ModBlocks.CHARMING_RHODODENDRON_LEAVES.get().asItem())
                 .add(ModBlocks.GREAT_WHITE_RHODODENDRON_LEAVES.get().asItem(), ModBlocks.PURPLE_RHODODENDRON_LEAVES.get().asItem(), ModBlocks.PINK_RHODODENDRON_LEAVES.get().asItem(), ModBlocks.CHINESE_AZALEA_LEAVES.get().asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.get().asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem(), ModBlocks.SPRING_PETALS.get().asItem())
-                .add(ModBlocks.CHINESE_WISTERIA.get().asItem(), ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem());
+                .add(ModBlocks.CHINESE_WISTERIA.get().asItem(), ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem(), ModBlocks.NANJING_WISTERIA.get().asItem())
+                .add(ModBlocks.BLUE_CHINESE_WISTERIA.get().asItem(), ModBlocks.RED_CHINESE_WISTERIA.get().asItem());
 
         this.copy(BlockTags.LEAVES, ItemTags.LEAVES);
         this.copy(BlockTags.LOGS_THAT_BURN, ItemTags.LOGS_THAT_BURN);
@@ -295,7 +296,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.RED_AZALEA.get().asItem(), ModBlocks.CHINESE_AZALEA.get().asItem());
 
         this.tag(ForgeTags.Items.WISTERIA)
-                .add(ModBlocks.CHINESE_WISTERIA.get().asItem(), ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem());
+                .add(ModBlocks.CHINESE_WISTERIA.get().asItem(), ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem(), ModBlocks.NANJING_WISTERIA.get().asItem())
+                .add(ModBlocks.BLUE_CHINESE_WISTERIA.get().asItem(), ModBlocks.RED_CHINESE_WISTERIA.get().asItem());
 
         this.tag(ForgeTags.Items.CRABAPPLE_SAPLING)
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem())
@@ -397,6 +399,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_CRAPE_MYRTLE.get().asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get().asItem())
                 .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get().asItem())
                 .add(ModBlocks.DEWDROP_RHODODENDRON.get().asItem(), ModBlocks.GREAT_WHITE_RHODODENDRON.get().asItem())
+                .add(ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem())
                 .add(ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem());
 
         this.tag(ModTags.Items.YELLOW_DYE)
@@ -420,14 +423,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PURPLE_PEONY.get().asItem(), ModBlocks.LIGHT_PURPLE_PEONY.get().asItem())
                 .add(ModBlocks.INK_PURPLE_PEONY.get().asItem(), ModBlocks.VIOLET_PEONY.get().asItem())
                 .add(ModBlocks.PURPLE_RHODODENDRON.get().asItem())
-                .addTag(ForgeTags.Items.CRAPE_MYRTLE)
+                .add(ModBlocks.CHINESE_WISTERIA.get().asItem(), ModBlocks.NANJING_WISTERIA.get().asItem())
+                .add(ModBlocks.CRAPE_MYRTLE.get().asItem(), ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem())
                 .add(ModBlocks.FOUNTAIN_GRASS.get().asItem())
                 .add(ModBlocks.PURPLE_FOUNTAIN_GRASS.get().asItem());
 
         this.tag(ModTags.Items.MAGENTA_DYE)
                 .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.CHARMING_RHODODENDRON.get().asItem())
-                .add(ModBlocks.RED_CRAPE_MYRTLE.get().asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get().asItem());
+                .add(ModBlocks.RED_CRAPE_MYRTLE.get().asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get().asItem())
+                .add(ModBlocks.RED_CHINESE_WISTERIA.get().asItem());
 
         this.tag(ModTags.Items.LIME_DYE)
                 .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
@@ -442,6 +447,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.LIGHT_BLUE_DYE)
                 .add(ModBlocks.BLUE_PEONY.get().asItem());
+
+        this.tag(ModTags.Items.BLUE_DYE)
+                .add(ModBlocks.BLUE_CHINESE_WISTERIA.get().asItem());
 
         this.tag(ModTags.Items.BLACK_DYE)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get().asItem())

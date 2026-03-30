@@ -84,6 +84,8 @@
       "more_orn_plants:wisteria_1",
       "more_orn_plants:wisteria_2",
       "more_orn_plants:wisteria_3",
+      "more_orn_plants:wisteria_4",
+      "more_orn_plants:wisteria_5",
       "more_orn_plants:crape_myrtle_caves",
       "more_orn_plants:red_crape_myrtle_caves",
       "more_orn_plants:pink_crape_myrtle_caves",
@@ -113,7 +115,7 @@
         "type": "more_orn_plants:ziying_fox",
         "maxCount": 2,
         "minCount": 1,
-        "weight": 12
+        "weight": 6
       }
     ],
     "underground_water_creature": [

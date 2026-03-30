@@ -159,13 +159,25 @@ public class ModBlocks {
             BLOCKS.register("immortal_peach", () -> new PeachBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> CHINESE_WISTERIA =
-            registerBlock("chinese_wisteria", () -> new WisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+            registerBlock("chinese_wisteria", () -> new WisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> CHINESE_WISTERIA_PLANT =
-            BLOCKS.register("chinese_wisteria_plant", () -> new WisteriaPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("chinese_wisteria_plant", () -> new WisteriaPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WHITE_CHINESE_WISTERIA =
             registerBlock("white_chinese_wisteria", () -> new WhiteWisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WHITE_CHINESE_WISTERIA_PLANT =
             BLOCKS.register("white_chinese_wisteria_plant", () -> new WhiteWisteriaPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> BLUE_CHINESE_WISTERIA =
+            registerBlock("blue_chinese_wisteria", () -> new BlueWisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> BLUE_CHINESE_WISTERIA_PLANT =
+            BLOCKS.register("blue_chinese_wisteria_plant", () -> new BlueWisteriaPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> RED_CHINESE_WISTERIA =
+            registerBlock("red_chinese_wisteria", () -> new RedWisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> RED_CHINESE_WISTERIA_PLANT =
+            BLOCKS.register("red_chinese_wisteria_plant", () -> new RedWisteriaPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> NANJING_WISTERIA =
+            registerBlock("nanjing_wisteria", () -> new NanjingWisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> NANJING_WISTERIA_PLANT =
+            BLOCKS.register("nanjing_wisteria_plant", () -> new NanjingWisteriaPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> RED_MEI_LOG =
             registerBlock("red_mei_log", () -> log(MapColor.COLOR_RED, MapColor.COLOR_BROWN));
