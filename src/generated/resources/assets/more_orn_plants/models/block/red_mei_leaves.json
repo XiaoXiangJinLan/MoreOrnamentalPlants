@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/leaves",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "all": "more_orn_plants:block/red_mei_leaves"
-  }
-}
