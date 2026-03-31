@@ -404,7 +404,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         hangingSignBlock(ModBlocks.CHINABERRY_HANGING_SIGN.get(), ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_CHINABERRY_LOG.get()));
         hangingSignBlock(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get()));
 
-        leavesBlock(ModBlocks.RED_MEI_LEAVES);
         saplingBlock(ModBlocks.RED_MEI_SAPLING);
         simpleBlock(ModBlocks.POTTED_RED_MEI_SAPLING.get(), models().singleTexture("potted_red_mei_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.RED_MEI_SAPLING.get())).renderType("cutout"));
