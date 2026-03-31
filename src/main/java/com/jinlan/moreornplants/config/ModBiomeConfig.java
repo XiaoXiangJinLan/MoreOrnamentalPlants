@@ -47,6 +47,21 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.IntValue SECOND_OVERWORLD_BIOMES_WEIGHT;
     public static final ModConfigSpec.IntValue SPECIAL_BIOMES_WEIGHT;
 
+    // 武器伤害配置
+    public static final ModConfigSpec.ConfigValue<Double> PEACH_SWORD_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> CAMPHOR_SWORD_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> CHINESE_PARASOL_SWORD_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> ZIYING_TOOLS_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> SUYU_TOOLS_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> ZIYU_YUANYANG_TOOLS_BASE_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> ZIYU_YUANYANG_TOOLS_CRIT_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> ZHUIYUE_SWORD_FULL_MOON_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> CAIYUN_SWORD_CLEAR_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> CAIYUN_SWORD_RAIN_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> CAIYUN_SWORD_THUNDER_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> BAIHUA_SWORD_FLOWER_MULTIPLIER;
+    public static final ModConfigSpec.ConfigValue<Double> BAIHUA_SWORD_FLORAL_BIOME_MULTIPLIER;
+
     static {
         // 生物群系启用设置
         BUILDER.push("Biome Enable Settings");
@@ -162,6 +177,52 @@ public class ModBiomeConfig {
         SPECIAL_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for special biomes region")
                 .defineInRange("specialBiomesWeight", 1, 1, 20);
+        BUILDER.pop();
+
+        // 武器伤害配置
+        BUILDER.push("Weapon Config");
+        PEACH_SWORD_MULTIPLIER = BUILDER
+                .comment("Damage multiplier for Peach Wooden Sword")
+                .define("peachSwordMultiplier", 9.99);
+        CAMPHOR_SWORD_MULTIPLIER = BUILDER
+                .comment("Damage multiplier for Camphor Wooden Sword")
+                .define("camphorSwordMultiplier", 2.22);
+        CHINESE_PARASOL_SWORD_MULTIPLIER = BUILDER
+                .comment("Damage multiplier for Chinese Parasol Wooden Sword")
+                .define("chineseParasolSwordMultiplier", 3.33);
+
+        ZIYING_TOOLS_MULTIPLIER = BUILDER
+                .comment("Critical hit damage multiplier for Ziying tools")
+                .define("ziyingToolsMultiplier", 3.0);
+        SUYU_TOOLS_MULTIPLIER = BUILDER
+                .comment("Damage multiplier for Suyu tools")
+                .define("suyuToolsMultiplier", 1.5);
+        ZIYU_YUANYANG_TOOLS_BASE_MULTIPLIER = BUILDER
+                .comment("Base damage multiplier for Ziyu Yuanyang tools")
+                .define("ziyuYuanyangToolsBaseMultiplier", 1.25);
+        ZIYU_YUANYANG_TOOLS_CRIT_MULTIPLIER = BUILDER
+                .comment("Critical hit damage multiplier for Ziyu Yuanyang tools")
+                .define("ziyuYuanyangToolsCritMultiplier", 3.0);
+
+        ZHUIYUE_SWORD_FULL_MOON_MULTIPLIER = BUILDER
+                .comment("Damage multiplier for Zhuiyue Sword during full moon")
+                .define("zhuiyueSwordFullMoonMultiplier", 2.0);
+        CAIYUN_SWORD_CLEAR_MULTIPLIER = BUILDER
+                .comment("Damage multiplier for Caiyun Sword in clear weather")
+                .define("caiyunSwordClearMultiplier", 1.5);
+        CAIYUN_SWORD_RAIN_MULTIPLIER = BUILDER
+                .comment("Damage multiplier for Caiyun Sword in rain (no thunder)")
+                .define("caiyunSwordRainMultiplier", 1.0);
+        CAIYUN_SWORD_THUNDER_MULTIPLIER = BUILDER
+                .comment("Damage multiplier for Caiyun Sword in thunderstorm")
+                .define("caiyunSwordThunderMultiplier", 0.5);
+
+        BAIHUA_SWORD_FLOWER_MULTIPLIER = BUILDER
+                .comment("Damage multiplier for Baihua Sword when player has a flower")
+                .define("baihuaSwordFlowerMultiplier", 5.0);
+        BAIHUA_SWORD_FLORAL_BIOME_MULTIPLIER = BUILDER
+                .comment("Damage multiplier for Baihua Sword in floral biomes")
+                .define("baihuaSwordFloralBiomeMultiplier", 9.0);
         BUILDER.pop();
 
         SPEC = BUILDER.build();

@@ -954,5 +954,20 @@
   "more_orn_plants.configuration.enableSuyuCaves": "生成素玉洞",
   "more_orn_plants.configuration.overworldBiomesWeight": "主羣系權重",
   "more_orn_plants.configuration.secondOverworldBiomesWeight": "次羣系權重",
-  "more_orn_plants.configuration.specialBiomesWeight": "特殊羣系权重（桃花源）"
+  "more_orn_plants.configuration.specialBiomesWeight": "特殊羣系权重（桃花源）",
+
+  "more_orn_plants.configuration.Weapon Config": "武器傷害倍率",
+  "more_orn_plants.configuration.peachSwordMultiplier": "桃木劍傷害倍率",
+  "more_orn_plants.configuration.camphorSwordMultiplier": "樟木劍傷害倍率",
+  "more_orn_plants.configuration.chineseParasolSwordMultiplier": "梧桐劍傷害倍率",
+  "more_orn_plants.configuration.ziyingToolsMultiplier": "紫英工具傷害倍率",
+  "more_orn_plants.configuration.suyuToolsMultiplier": "素玉工具傷害倍率",
+  "more_orn_plants.configuration.ziyuYuanyangToolsBaseMultiplier": "紫玉鴛鴦工具基礎傷害倍率",
+  "more_orn_plants.configuration.ziyuYuanyangToolsCritMultiplier": "紫玉鴛鴦工具額外暴擊倍率",
+  "more_orn_plants.configuration.zhuiyueSwordFullMoonMultiplier": "追月劍滿月傷害倍率",
+  "more_orn_plants.configuration.caiyunSwordClearMultiplier": "彩雲劍晴天傷害倍率",
+  "more_orn_plants.configuration.caiyunSwordRainMultiplier": "彩雲劍雨天傷害倍率",
+  "more_orn_plants.configuration.caiyunSwordThunderMultiplier": "彩雲劍雷雨傷害倍率",
+  "more_orn_plants.configuration.baihuaSwordFlowerMultiplier": "百花劍花朵增傷倍率",
+  "more_orn_plants.configuration.baihuaSwordFloralBiomeMultiplier": "百花劍群系增傷倍率"
 }

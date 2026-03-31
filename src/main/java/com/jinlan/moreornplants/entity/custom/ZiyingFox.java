@@ -203,11 +203,6 @@ public class ZiyingFox extends TamableAnimal {
     }
 
     @Override
-    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-        return !this.isTame();
-    }
-
-    @Override
     public void addAdditionalSaveData(@NotNull CompoundTag compound) {
         super.addAdditionalSaveData(compound);
         compound.putBoolean("Sleeping", this.isSleeping());

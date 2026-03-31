@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.event;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.advancement.ModCriteriaTriggers;
+import com.jinlan.moreornplants.config.ModBiomeConfig;
 import com.jinlan.moreornplants.entity.ModEntities;
 import com.jinlan.moreornplants.entity.custom.BaihuaCat;
 import com.jinlan.moreornplants.entity.custom.SuyuFox;
@@ -119,27 +120,27 @@ public class ModEventsBusEvents {
         LivingEntity target1 = event.getEntity();
         InventoryState state = getInventoryState(player);
         if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get()) && target1.isInvertedHealAndHarm()) {
-            event.setAmount(event.getAmount() * 9.99f);
+            event.setAmount(event.getAmount() * ModBiomeConfig.PEACH_SWORD_MULTIPLIER.get().floatValue());
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getType().is(EntityTypeTags.ARTHROPOD)) {
-            event.setAmount(event.getAmount() * 2.22f);
+            event.setAmount(event.getAmount() * ModBiomeConfig.CAMPHOR_SWORD_MULTIPLIER.get().floatValue());
         } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
             if (target1.getType().is(EntityTypeTags.UNDEAD)) {
                 target1.igniteForSeconds(20);
             }
             if (target1 instanceof Raider) {
-                event.setAmount(event.getAmount() * 3.33f);
+                event.setAmount(event.getAmount() * ModBiomeConfig.CHINESE_PARASOL_SWORD_MULTIPLIER.get().floatValue());
             }
         } else if (weapon.is(ModTags.Items.ZIYING_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
             if (player.getRandom().nextFloat() < 0.75f) {
-                event.setAmount(event.getAmount() * 3.0f);
+                event.setAmount(event.getAmount() * ModBiomeConfig.ZIYING_TOOLS_MULTIPLIER.get().floatValue());
             }
         } else if (weapon.is(ModTags.Items.SUYU_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
-            event.setAmount(event.getAmount() * 1.5f);
+            event.setAmount(event.getAmount() * ModBiomeConfig.SUYU_TOOLS_MULTIPLIER.get().floatValue());
             target1.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), player);
         } else if (weapon.is(ModTags.Items.ZIYU_YUANYANG_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
-            float multiplier = 1.25f;
+            float multiplier = ModBiomeConfig.ZIYU_YUANYANG_TOOLS_BASE_MULTIPLIER.get().floatValue();
             if (player.getRandom().nextFloat() < 0.5f) {
-                multiplier *= 3.0f;
+                multiplier *= ModBiomeConfig.ZIYU_YUANYANG_TOOLS_CRIT_MULTIPLIER.get().floatValue();
             }
             event.setAmount(event.getAmount() * multiplier);
             target1.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), player);
@@ -147,7 +148,7 @@ public class ModEventsBusEvents {
             float multiplier;
             Level level = player.level();
             if (level.getMoonPhase() == 0) {
-                multiplier = 2.0F;
+                multiplier = ModBiomeConfig.ZHUIYUE_SWORD_FULL_MOON_MULTIPLIER.get().floatValue();
             } else {
                 int moonPhase = level.getMoonPhase();
                 int distToFull = Math.min(moonPhase, 8 - moonPhase);
@@ -161,11 +162,11 @@ public class ModEventsBusEvents {
             float multiplier;
             Level level = player.level();
             if (level.isThundering()) {
-                multiplier = 0.5F;
+                multiplier = ModBiomeConfig.CAIYUN_SWORD_THUNDER_MULTIPLIER.get().floatValue();
             } else if (!level.isRaining() && !level.isThundering()) {
-                multiplier = 1.5F;
+                multiplier = ModBiomeConfig.CAIYUN_SWORD_CLEAR_MULTIPLIER.get().floatValue();
             } else {
-                multiplier = 1.0F;
+                multiplier = ModBiomeConfig.CAIYUN_SWORD_RAIN_MULTIPLIER.get().floatValue();
             }
             if (state.hasZhuiyueSword()) {
                 multiplier *= 1.2F;
@@ -174,12 +175,12 @@ public class ModEventsBusEvents {
         } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
             float multiplier = 1.0F;
             if (state.hasFlower()) {
-                multiplier *= 5.0F;
+                multiplier *= ModBiomeConfig.BAIHUA_SWORD_FLOWER_MULTIPLIER.get().floatValue();
             }
             Level level = player.level();
             Holder<Biome> biome = level.getBiome(player.blockPosition());
             if (biome.is(Tags.Biomes.IS_FLORAL)) {
-                multiplier *= 9.0F;
+                multiplier *= ModBiomeConfig.BAIHUA_SWORD_FLORAL_BIOME_MULTIPLIER.get().floatValue();
             }
             event.setAmount(event.getAmount() * multiplier);
         }

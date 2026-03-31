@@ -964,5 +964,20 @@
   "more_orn_plants.configuration.enableSuyuCaves": "素玉洞",
   "more_orn_plants.configuration.overworldBiomesWeight": "主群系",
   "more_orn_plants.configuration.secondOverworldBiomesWeight": "次群系",
-  "more_orn_plants.configuration.specialBiomesWeight": "桃花源"
+  "more_orn_plants.configuration.specialBiomesWeight": "桃花源",
+
+  "more_orn_plants.configuration.Weapon Config": "武器",
+  "more_orn_plants.configuration.peachSwordMultiplier": "桃木劍",
+  "more_orn_plants.configuration.camphorSwordMultiplier": "樟木劍",
+  "more_orn_plants.configuration.chineseParasolSwordMultiplier": "梧桐劍",
+  "more_orn_plants.configuration.ziyingToolsMultiplier": "紫英工具",
+  "more_orn_plants.configuration.suyuToolsMultiplier": "素玉工具",
+  "more_orn_plants.configuration.ziyuYuanyangToolsBaseMultiplier": "紫玉鸳鸯工具基础",
+  "more_orn_plants.configuration.ziyuYuanyangToolsCritMultiplier": "紫玉鸳鸯工具暴击",
+  "more_orn_plants.configuration.zhuiyueSwordFullMoonMultiplier": "追月劍满月",
+  "more_orn_plants.configuration.caiyunSwordClearMultiplier": "彩云劍晴",
+  "more_orn_plants.configuration.caiyunSwordRainMultiplier": "彩云劍雨",
+  "more_orn_plants.configuration.caiyunSwordThunderMultiplier": "彩云劍雷雨",
+  "more_orn_plants.configuration.baihuaSwordFlowerMultiplier": "百花劍花朵",
+  "more_orn_plants.configuration.baihuaSwordFloralBiomeMultiplier": "百花劍群系"
 }
