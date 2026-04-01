@@ -7,7 +7,7 @@
         "body_block": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "more_orn_plants:chinese_wisteria_plant",
+            "Name": "more_orn_plants:nanjing_wisteria_plant",
             "Properties": {
               "top": "true"
             }
@@ -17,7 +17,7 @@
         "head_block": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "more_orn_plants:chinese_wisteria",
+            "Name": "more_orn_plants:nanjing_wisteria",
             "Properties": {
               "age": "0",
               "top": "false"
