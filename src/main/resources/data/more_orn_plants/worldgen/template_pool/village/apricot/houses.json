@@ -113,6 +113,17 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
+        "location": "more_orn_plants:village/apricot/houses/smithy",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
         "location": "more_orn_plants:village/apricot/houses/apricot_granary",
         "processors": {
           "processors": []
