@@ -20,9 +20,12 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("itemGroup.plants"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.RED_MEI_LEAVES.get());
+                        pOutput.accept(ModBlocks.PINK_MEI_LEAVES.get());
                         pOutput.accept(ModBlocks.WHITE_MEI_LEAVES.get());
-                        pOutput.accept(ModBlocks.GREEN_CALYX_MEI_LEAVES.get());
                         pOutput.accept(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get());
+                        pOutput.accept(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get());
+                        pOutput.accept(ModBlocks.GREEN_CALYX_MEI_LEAVES.get());
+                        pOutput.accept(ModBlocks.FLAVESCENS_MEI_LEAVES.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_MEI_LEAVES.get());
                         pOutput.accept(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get());
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get());
@@ -66,9 +69,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PINK_RHODODENDRON_LEAVES.get());
                         pOutput.accept(ModBlocks.CHINESE_AZALEA_LEAVES.get());
                         pOutput.accept(ModBlocks.RED_MEI_SAPLING.get());
+                        pOutput.accept(ModBlocks.PINK_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.WHITE_MEI_SAPLING.get());
-                        pOutput.accept(ModBlocks.GREEN_CALYX_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get());
+                        pOutput.accept(ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get());
+                        pOutput.accept(ModBlocks.FLAVESCENS_MEI_SAPLING.get());
+                        pOutput.accept(ModBlocks.GREEN_CALYX_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.RED_WEEPING_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get());
