@@ -39,10 +39,16 @@ public class ModBlocks {
             registerBlock("red_mei_leaves", () -> new RedMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_RED)));
     public static final RegistryObject<Block> WHITE_MEI_LEAVES =
             registerBlock("white_mei_leaves", () -> new WhiteMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
+    public static final RegistryObject<Block> PINK_MEI_LEAVES =
+            registerBlock("pink_mei_leaves", () -> new PinkMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES)));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_LEAVES =
             registerBlock("green_calyx_mei_leaves", () -> new GreenCalyxMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_LIGHT_GREEN)));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_LEAVES =
             registerBlock("double_pink_mei_leaves", () -> new DoublePinkMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES)));
+    public static final RegistryObject<Block> DOUBLE_WHITE_MEI_LEAVES =
+            registerBlock("double_white_mei_leaves", () -> new DoubleWhiteMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
+    public static final RegistryObject<Block> FLAVESCENS_MEI_LEAVES =
+            registerBlock("flavescens_mei_leaves", () -> new FlavescensMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_YELLOW)));
     public static final RegistryObject<Block> VERSICOLOR_MEI_LEAVES =
             registerBlock("versicolor_mei_leaves", () -> new VersicolorMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES)));
     public static final RegistryObject<Block> UPRIGHT_CRABAPPLE_LEAVES =
@@ -782,10 +788,16 @@ public class ModBlocks {
             registerBlock("red_mei_sapling", () -> new SaplingBlock(new RedMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WHITE_MEI_SAPLING =
             registerBlock("white_mei_sapling", () -> new SaplingBlock(new WhiteMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> PINK_MEI_SAPLING =
+            registerBlock("pink_mei_sapling", () -> new SaplingBlock(new PinkMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_SAPLING =
             registerBlock("green_calyx_mei_sapling", () -> new SaplingBlock(new GreenCalyxMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_SAPLING =
             registerBlock("double_pink_mei_sapling", () -> new SaplingBlock(new DoublePinkMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> DOUBLE_WHITE_MEI_SAPLING =
+            registerBlock("double_white_mei_sapling", () -> new SaplingBlock(new DoubleWhiteMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> FLAVESCENS_MEI_SAPLING =
+            registerBlock("flavescens_mei_sapling", () -> new SaplingBlock(new FlavescensMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> VERSICOLOR_MEI_SAPLING =
             registerBlock("versicolor_mei_sapling", () -> new SaplingBlock(new VersicolorMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> RED_WEEPING_MEI_SAPLING =
@@ -857,10 +869,16 @@ public class ModBlocks {
             BLOCKS.register("potted_red_mei_sapling", () -> flowerPot(RED_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_WHITE_MEI_SAPLING =
             BLOCKS.register("potted_white_mei_sapling", () -> flowerPot(WHITE_MEI_SAPLING.get()));
+    public static final RegistryObject<Block> POTTED_PINK_MEI_SAPLING =
+            BLOCKS.register("potted_pink_mei_sapling", () -> flowerPot(PINK_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_GREEN_CALYX_MEI_SAPLING =
             BLOCKS.register("potted_green_calyx_mei_sapling", () -> flowerPot(GREEN_CALYX_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_DOUBLE_PINK_MEI_SAPLING =
             BLOCKS.register("potted_double_pink_mei_sapling", () -> flowerPot(DOUBLE_PINK_MEI_SAPLING.get()));
+    public static final RegistryObject<Block> POTTED_DOUBLE_WHITE_MEI_SAPLING =
+            BLOCKS.register("potted_double_white_mei_sapling", () -> flowerPot(DOUBLE_WHITE_MEI_SAPLING.get()));
+    public static final RegistryObject<Block> POTTED_FLAVESCENS_MEI_SAPLING =
+            BLOCKS.register("potted_flavescens_mei_sapling", () -> flowerPot(FLAVESCENS_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_VERSICOLOR_MEI_SAPLING =
             BLOCKS.register("potted_versicolor_mei_sapling", () -> flowerPot(VERSICOLOR_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_RED_WEEPING_MEI_SAPLING =

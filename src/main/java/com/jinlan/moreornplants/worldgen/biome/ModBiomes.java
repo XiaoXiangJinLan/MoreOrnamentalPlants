@@ -152,7 +152,7 @@ public class ModBiomes {
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_FERN);
         } else {
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_FERN_1);
-            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_MEI_SNOW);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.DOUBLE_WHITE_MEI_SNOW);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GREEN_CALYX_MEI_SNOW);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_WEEPING_MEI_SNOW);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GREEN_WEEPING_MEI_SNOW);
@@ -321,7 +321,7 @@ public class ModBiomes {
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PEAR_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWERING_PURPLE_LEAF_PLUM_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHINABERRY_PLACED);
-            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CRAPE_MYRTLE_TREE_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WISTERIA_TREE_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHERRY_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWERS_GROVE_FLOWERS_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHRYSANTHEMUM_GROVE_PLACED);
@@ -722,6 +722,7 @@ public class ModBiomes {
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_MEI_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_MEI_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CYMBIDIUM_RIVER_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_PLAIN);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, AquaticPlacements.SEAGRASS_RIVER);
@@ -786,7 +787,8 @@ public class ModBiomes {
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
         BiomeDefaultFeatures.addExtraEmeralds(biomeBuilder);
         BiomeDefaultFeatures.addInfestedStone(biomeBuilder);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GREEN_CALYX_MEI_RED_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GREEN_CALYX_MEI_PLACED);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLAVESCENS_MEI_PLACED);
 
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(true).temperature(-0.1f).downfall(0.8f)

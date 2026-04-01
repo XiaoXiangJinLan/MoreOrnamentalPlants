@@ -29,18 +29,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ItemTags.FLOWERS)
                 .addTag(ItemTags.SMALL_FLOWERS)
                 .addTag(ItemTags.TALL_FLOWERS)
-                .add(ModBlocks.RED_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.WHITE_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.GREEN_CALYX_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.VERSICOLOR_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.RED_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem())
-                .add(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem())
+                .addTag(ForgeTags.Items.MEI_SAPLING)
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem())
                 .add(ModBlocks.PINK_APRICOT_SAPLING.get().asItem())
                 .add(ModBlocks.WHITE_APRICOT_SAPLING.get().asItem())
                 .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get().asItem())
@@ -55,16 +45,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.DESERT_POPLAR_SAPLING.get().asItem())
                 .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get().asItem())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get().asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get().asItem())
-                .add(ModBlocks.RED_MEI_LEAVES.get().asItem())
-                .add(ModBlocks.WHITE_MEI_LEAVES.get().asItem())
-                .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get().asItem())
-                .add(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get().asItem())
-                .add(ModBlocks.VERSICOLOR_MEI_LEAVES.get().asItem())
-                .add(ModBlocks.PINK_WEEPING_MEI.get().asItem())
-                .add(ModBlocks.RED_WEEPING_MEI.get().asItem())
-                .add(ModBlocks.WHITE_WEEPING_MEI.get().asItem())
-                .add(ModBlocks.GREEN_WEEPING_MEI.get().asItem())
-                .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get().asItem())
+                .addTag(ForgeTags.Items.MEI_LEAVES)
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE.get().asItem())
@@ -214,11 +195,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get().asItem())
                 .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get().asItem())
                 .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.get().asItem())
-                .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get().asItem());
+                .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get().asItem())
+                .add(ModBlocks.PINK_MEI_SAPLING.get().asItem(), ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get().asItem(), ModBlocks.FLAVESCENS_MEI_SAPLING.get().asItem());
 
         this.tag(ForgeTags.Items.MEI_LEAVES)
                 .add(ModBlocks.RED_MEI_LEAVES.get().asItem(), ModBlocks.WHITE_MEI_LEAVES.get().asItem(), ModBlocks.GREEN_CALYX_MEI_LEAVES.get().asItem(),
                         ModBlocks.DOUBLE_PINK_MEI_LEAVES.get().asItem(), ModBlocks.VERSICOLOR_MEI_LEAVES.get().asItem())
+                .add(ModBlocks.PINK_MEI_LEAVES.get().asItem(), ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get().asItem(), ModBlocks.FLAVESCENS_MEI_LEAVES.get().asItem())
                 .add(ModBlocks.RED_WEEPING_MEI.get().asItem(), ModBlocks.WHITE_WEEPING_MEI.get().asItem(), ModBlocks.GREEN_WEEPING_MEI.get().asItem(),
                         ModBlocks.PINK_WEEPING_MEI.get().asItem(), ModBlocks.VERSICOLOR_WEEPING_MEI.get().asItem());
 

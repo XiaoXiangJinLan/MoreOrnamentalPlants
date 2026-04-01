@@ -38,10 +38,7 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.RandomizedIntStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.GiantTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.*;
 import net.minecraft.world.level.levelgen.placement.CaveSurface;
 
 import java.util.List;
@@ -54,11 +51,18 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_MEI_WITH_SNOW = registerKey("red_mei_with_snow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_WHITE_MEI = registerKey("ancient_white_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_MEI = registerKey("white_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_PINK_MEI = registerKey("ancient_pink_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_MEI = registerKey("pink_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_GREEN_CALYX_MEI = registerKey("ancient_green_calyx_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_CALYX_MEI = registerKey("green_calyx_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_CALYX_MEI_WITH_SNOW = registerKey("green_calyx_mei_with_snow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_DOUBLE_PINK_MEI = registerKey("ancient_double_pink_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DOUBLE_PINK_MEI = registerKey("double_pink_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_DOUBLE_WHITE_MEI = registerKey("ancient_double_white_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DOUBLE_WHITE_MEI = registerKey("double_white_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_FLAVESCENS_MEI = registerKey("ancient_flavescens_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FLAVESCENS_MEI = registerKey("flavescens_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FLAVESCENS_MEI_WITH_SNOW = registerKey("flavescens_meii_with_snow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_VERSICOLOR_MEI = registerKey("ancient_versicolor_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_MEI = registerKey("versicolor_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_WEEPING_MEI = registerKey("red_weeping_mei_key");
@@ -198,6 +202,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_KEY = registerKey("black_bamboo_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_GALLERY_KEY = registerKey("black_bamboo_gallery_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LOTUS_KEY = registerKey("lotus_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA_TREE = registerKey("wisteria_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA = registerKey("wisteria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_WISTERIA = registerKey("white_wisteria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_WISTERIA = registerKey("blue_wisteria");
@@ -242,6 +247,12 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.WHITE_MEI_LEAVES.get()),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).ignoreVines().build());
+        register(context, ANCIENT_PINK_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
+                new AncientMeiTrunkPlacer(16, 2, 4, 2, 6, 8, 0.5F, 60, 4, 3),
+                BlockStateProvider.simple(ModBlocks.PINK_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).ignoreVines().build());
         register(context, ANCIENT_GREEN_CALYX_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GREEN_CALYX_MEI_LOG.get()),
                 new AncientMeiTrunkPlacer(16, 2, 4, 2, 6, 8, 0.5F, 60, 4, 3),
@@ -252,6 +263,18 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
                 new AncientMeiTrunkPlacer(16, 2, 4, 2, 6, 8, 0.5F, 60, 4, 3),
                 BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).ignoreVines().build());
+        register(context, ANCIENT_DOUBLE_WHITE_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.WHITE_MEI_LOG.get()),
+                new AncientMeiTrunkPlacer(16, 2, 4, 2, 6, 8, 0.5F, 60, 4, 3),
+                BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).ignoreVines().build());
+        register(context, ANCIENT_FLAVESCENS_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.WHITE_MEI_LOG.get()),
+                new AncientMeiTrunkPlacer(16, 2, 4, 2, 6, 8, 0.5F, 60, 4, 3),
+                BlockStateProvider.simple(ModBlocks.FLAVESCENS_MEI_LEAVES.get()),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).ignoreVines().build());
         register(context, ANCIENT_VERSICOLOR_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -273,6 +296,12 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.WHITE_MEI_LEAVES.get()),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, PINK_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 2, 3, 4, 6, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.PINK_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
         register(context, GREEN_CALYX_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GREEN_CALYX_MEI_LOG.get()),
                 new MeiTrunkPlacer(7, 2, 2, 3, 4, 6, 0.4F, 60),
@@ -283,6 +312,18 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
                 new MeiTrunkPlacer(7, 2, 2, 3, 4, 6, 0.4F, 60),
                 BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, DOUBLE_WHITE_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.WHITE_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 2, 3, 4, 6, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+        register(context, FLAVESCENS_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.WHITE_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 2, 3, 4, 6, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.FLAVESCENS_MEI_LEAVES.get()),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
         register(context, VERSICOLOR_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -339,6 +380,12 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.GREEN_CALYX_MEI_LOG.get()),
                 new MeiTrunkPlacer(7, 2, 2, 3, 4, 6, 0.4F, 60),
                 BlockStateProvider.simple(ModBlocks.GREEN_CALYX_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new SnowAroundTrunk(8, 0.9F, 6))).ignoreVines().build());
+        register(context, FLAVESCENS_MEI_WITH_SNOW, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.WHITE_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 2, 3, 4, 6, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.FLAVESCENS_MEI_LEAVES.get()),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 2)).decorators(List.of(new SnowAroundTrunk(8, 0.9F, 6))).ignoreVines().build());
 
@@ -634,6 +681,15 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.DESERT_POPLAR_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+
+        register(context, WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new ForkingTrunkPlacer(5, 2, 2),
+                BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LEAVES.get()),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 2)).decorators(
+                List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.CHINESE_WISTERIA_PLANT.get().defaultBlockState().setValue(WisteriaPlantBlock.TOP, true)), 0.9f, 72, 2, 2))).ignoreVines().build());
 
         register(context, CRAPE_MYRTLE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LOG.get()),

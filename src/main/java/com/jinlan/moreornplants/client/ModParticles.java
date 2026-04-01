@@ -20,11 +20,23 @@ public class ModParticles {
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
+        event.registerSpriteSet(ModParticleTypes.PINK_MEI_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
         event.registerSpriteSet(ModParticleTypes.GREEN_CALYX_MEI_LEAVES.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
         event.registerSpriteSet(ModParticleTypes.DOUBLE_PINK_MEI_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.DOUBLE_WHITE_MEI_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.FLAVESCENS_MEI_LEAVES.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));

@@ -303,10 +303,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.RED_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.WHITE_MEI_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.WHITE_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.PINK_MEI_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PINK_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.GREEN_CALYX_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.DOUBLE_PINK_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.FLAVESCENS_MEI_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.FLAVESCENS_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.VERSICOLOR_MEI_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), block ->
@@ -523,12 +529,21 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WHITE_MEI_SAPLING.get());
         this.add(ModBlocks.POTTED_WHITE_MEI_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.WHITE_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.PINK_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_PINK_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_MEI_SAPLING.get()));
         this.dropSelf(ModBlocks.GREEN_CALYX_MEI_SAPLING.get());
         this.add(ModBlocks.POTTED_GREEN_CALYX_MEI_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.GREEN_CALYX_MEI_SAPLING.get()));
         this.dropSelf(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get());
         this.add(ModBlocks.POTTED_DOUBLE_PINK_MEI_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_DOUBLE_WHITE_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.FLAVESCENS_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_FLAVESCENS_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.FLAVESCENS_MEI_SAPLING.get()));
         this.dropSelf(ModBlocks.VERSICOLOR_MEI_SAPLING.get());
         this.add(ModBlocks.POTTED_VERSICOLOR_MEI_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.VERSICOLOR_MEI_SAPLING.get()));

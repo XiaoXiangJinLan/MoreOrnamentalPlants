@@ -159,6 +159,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(BlockTags.TALL_FLOWERS)
                 .add(ModBlocks.RED_MEI_SAPLING.get(), ModBlocks.WHITE_MEI_SAPLING.get())
                 .add(ModBlocks.GREEN_CALYX_MEI_SAPLING.get(), ModBlocks.DOUBLE_PINK_MEI_SAPLING.get(), ModBlocks.VERSICOLOR_MEI_SAPLING.get())
+                .add(ModBlocks.PINK_MEI_SAPLING.get(), ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get(), ModBlocks.FLAVESCENS_MEI_SAPLING.get())
                 .add(ModBlocks.RED_WEEPING_MEI_SAPLING.get(), ModBlocks.WHITE_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get())
@@ -172,7 +173,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.DESERT_POPLAR_SAPLING.get())
                 .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get())
-                .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get())
+                .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get(),
+                        ModBlocks.PINK_MEI_LEAVES.get(), ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get(), ModBlocks.FLAVESCENS_MEI_LEAVES.get())
                 .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get(), ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), ModBlocks.VERSICOLOR_MEI_LEAVES.get())
                 .add(ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.RED_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.WHITE_WEEPING_MEI.get(), ModBlocks.WHITE_WEEPING_MEI_PLANT.get())
@@ -202,7 +204,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NANJING_WISTERIA.get(), ModBlocks.NANJING_WISTERIA_PLANT.get());
 
         this.tag(BlockTags.LEAVES)
-                .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get())
+                .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get(),
+                        ModBlocks.PINK_MEI_LEAVES.get(), ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get(), ModBlocks.FLAVESCENS_MEI_LEAVES.get())
                 .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get(), ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), ModBlocks.VERSICOLOR_MEI_LEAVES.get())
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
                 .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get(), ModBlocks.CLOUD_APRICOT_LEAVES.get())
@@ -239,11 +242,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.MOTTLED_BAMBOO_SAPLING.get())
                 .add(ModBlocks.BLACK_BAMBOO_SAPLING.get())
-                .add(ModBlocks.RED_MEI_LEAVES.get())
-                .add(ModBlocks.WHITE_MEI_LEAVES.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get())
-                .add(ModBlocks.VERSICOLOR_MEI_LEAVES.get())
+                .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get())
+                .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get(), ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), ModBlocks.VERSICOLOR_MEI_LEAVES.get(),
+                        ModBlocks.PINK_MEI_LEAVES.get(), ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get(), ModBlocks.FLAVESCENS_MEI_LEAVES.get())
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
                 .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get(), ModBlocks.CLOUD_APRICOT_LEAVES.get())
                 .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get(), ModBlocks.IMMORTAL_PEACH_LEAVES.get())
@@ -655,6 +656,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get())
+                .add(ModBlocks.PINK_MEI_SAPLING.get(), ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get(), ModBlocks.FLAVESCENS_MEI_SAPLING.get())
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get())
                 .add(ModBlocks.PINK_APRICOT_SAPLING.get(), ModBlocks.WHITE_APRICOT_SAPLING.get(), ModBlocks.CLOUD_APRICOT_SAPLING.get())
                 .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.WILD_PEACH_SAPLING.get(), ModBlocks.IMMORTAL_PEACH_SAPLING.get())

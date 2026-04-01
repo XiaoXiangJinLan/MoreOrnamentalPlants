@@ -79,6 +79,12 @@
   "block.more_orn_plants.double_pink_mei_hanging_sign": "悬挂式宫粉梅木告示牌",
   "block.more_orn_plants.double_pink_mei_wall_hanging_sign": "悬挂式宫粉梅木墙告示牌",
 
+  "block.more_orn_plants.pink_mei_leaves": "红梅树叶",
+  "block.more_orn_plants.pink_mei_sapling": "红梅树苗",
+  "block.more_orn_plants.double_white_mei_leaves": "玉蝶梅树叶",
+  "block.more_orn_plants.double_white_mei_sapling": "玉蝶梅树苗",
+  "block.more_orn_plants.flavescens_mei_leaves": "黄香梅树叶",
+  "block.more_orn_plants.flavescens_mei_sapling": "黄香梅树苗",
   "block.more_orn_plants.versicolor_mei_leaves": "跳枝梅树叶",
   "block.more_orn_plants.versicolor_mei_sapling": "跳枝梅树苗",
   "block.more_orn_plants.red_weeping_mei": "垂枝红梅",
@@ -557,6 +563,9 @@
 
   "block.more_orn_plants.potted_red_mei_sapling": "朱砂梅树苗盆栽",
   "block.more_orn_plants.potted_white_mei_sapling": "江梅树苗盆栽",
+  "block.more_orn_plants.potted_pink_mei_sapling": "红梅树苗盆栽",
+  "block.more_orn_plants.potted_double_white_mei_sapling": "玉蝶梅树苗盆栽",
+  "block.more_orn_plants.potted_flavescens_mei_sapling": "黄香梅树苗盆栽",
   "block.more_orn_plants.potted_green_calyx_mei_sapling": "绿萼梅树苗盆栽",
   "block.more_orn_plants.potted_double_pink_mei_sapling": "宫粉梅树苗盆栽",
   "block.more_orn_plants.potted_versicolor_mei_sapling": "跳枝梅树苗盆栽",

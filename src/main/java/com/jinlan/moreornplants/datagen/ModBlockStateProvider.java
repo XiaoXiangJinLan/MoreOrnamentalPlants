@@ -415,6 +415,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.WHITE_MEI_SAPLING);
         simpleBlock(ModBlocks.POTTED_WHITE_MEI_SAPLING.get(), models().singleTexture("potted_white_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.WHITE_MEI_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.PINK_MEI_LEAVES);
+        saplingBlock(ModBlocks.PINK_MEI_SAPLING);
+        simpleBlock(ModBlocks.POTTED_PINK_MEI_SAPLING.get(), models().singleTexture("potted_pink_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.PINK_MEI_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.GREEN_CALYX_MEI_LEAVES);
         saplingBlock(ModBlocks.GREEN_CALYX_MEI_SAPLING);
         simpleBlock(ModBlocks.POTTED_GREEN_CALYX_MEI_SAPLING.get(), models().singleTexture("potted_green_calyx_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",
@@ -423,6 +427,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.DOUBLE_PINK_MEI_SAPLING);
         simpleBlock(ModBlocks.POTTED_DOUBLE_PINK_MEI_SAPLING.get(), models().singleTexture("potted_double_pink_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.DOUBLE_WHITE_MEI_LEAVES);
+        saplingBlock(ModBlocks.DOUBLE_WHITE_MEI_SAPLING);
+        simpleBlock(ModBlocks.POTTED_DOUBLE_WHITE_MEI_SAPLING.get(), models().singleTexture("potted_double_white_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.FLAVESCENS_MEI_LEAVES);
+        saplingBlock(ModBlocks.FLAVESCENS_MEI_SAPLING);
+        simpleBlock(ModBlocks.POTTED_FLAVESCENS_MEI_SAPLING.get(), models().singleTexture("potted_flavescens_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.FLAVESCENS_MEI_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.VERSICOLOR_MEI_LEAVES);
         saplingBlock(ModBlocks.VERSICOLOR_MEI_SAPLING);
         simpleBlock(ModBlocks.POTTED_VERSICOLOR_MEI_SAPLING.get(), models().singleTexture("potted_versicolor_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",
