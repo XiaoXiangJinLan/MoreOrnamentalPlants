@@ -15,24 +15,6 @@ public class ModFoliagePlacerTypes {
     public static final RegistryObject<FoliagePlacerType<MeiFoliagePlacer>> MEI_FOLIAGE_PLACER =
             FOLIAGE_PLACERS.register("mei_foliage_placer", () -> new FoliagePlacerType<>(MeiFoliagePlacer.CODEC));
 
-    public static final RegistryObject<FoliagePlacerType<RedWeepingMeiFoliagePlacer>> RED_WEEPING_MEI_FOLIAGE_PLACER =
-            FOLIAGE_PLACERS.register("red_weeping_mei_foliage_placer", () -> new FoliagePlacerType<>(RedWeepingMeiFoliagePlacer.CODEC));
-
-    public static final RegistryObject<FoliagePlacerType<WhiteWeepingMeiFoliagePlacer>> WHITE_WEEPING_MEI_FOLIAGE_PLACER =
-            FOLIAGE_PLACERS.register("white_weeping_mei_foliage_placer", () -> new FoliagePlacerType<>(WhiteWeepingMeiFoliagePlacer.CODEC));
-
-    public static final RegistryObject<FoliagePlacerType<GreenWeepingMeiFoliagePlacer>> GREEN_WEEPING_MEI_FOLIAGE_PLACER =
-            FOLIAGE_PLACERS.register("green_weeping_mei_foliage_placer", () -> new FoliagePlacerType<>(GreenWeepingMeiFoliagePlacer.CODEC));
-
-    public static final RegistryObject<FoliagePlacerType<PinkWeepingMeiFoliagePlacer>> PINK_WEEPING_MEI_FOLIAGE_PLACER =
-            FOLIAGE_PLACERS.register("pink_weeping_mei_foliage_placer", () -> new FoliagePlacerType<>(PinkWeepingMeiFoliagePlacer.CODEC));
-
-    public static final RegistryObject<FoliagePlacerType<VersicolorWeepingMeiFoliagePlacer>> VERSICOLOR_WEEPING_MEI_FOLIAGE_PLACER =
-            FOLIAGE_PLACERS.register("versicolor_weeping_mei_foliage_placer", () -> new FoliagePlacerType<>(VersicolorWeepingMeiFoliagePlacer.CODEC));
-
-    public static final RegistryObject<FoliagePlacerType<UprightCrabappleFoliagePlacer>> UPRIGHT_CRABAPPLE_FOLIAGE_PLACER =
-            FOLIAGE_PLACERS.register("upright_crabapple_foliage_placer", () -> new FoliagePlacerType<>(UprightCrabappleFoliagePlacer.CODEC));
-
     public static final RegistryObject<FoliagePlacerType<ApricotFoliagePlacer>> APRICOT_FOLIAGE_PLACER =
             FOLIAGE_PLACERS.register("apricot_foliage_placer", () -> new FoliagePlacerType<>(ApricotFoliagePlacer.CODEC));
 
