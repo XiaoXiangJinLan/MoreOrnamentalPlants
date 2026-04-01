@@ -79,6 +79,12 @@
   "block.more_orn_plants.double_pink_mei_hanging_sign": "Double Pink Mei Hanging Sign",
   "block.more_orn_plants.double_pink_mei_wall_hanging_sign": "Double Pink Mei Wall Hanging Sign",
 
+  "block.more_orn_plants.pink_mei_leaves": "Pink Mei Leaves",
+  "block.more_orn_plants.pink_mei_sapling": "Pink Mei Sapling",
+  "block.more_orn_plants.double_white_mei_leaves": "Double White Mei Leaves",
+  "block.more_orn_plants.double_white_mei_sapling": "Double White Mei Sapling",
+  "block.more_orn_plants.flavescens_mei_leaves": "Flavescens Mei Leaves",
+  "block.more_orn_plants.flavescens_mei_sapling": "Flavescens Mei Sapling",
   "block.more_orn_plants.versicolor_mei_leaves": "Versicolor Mei Leaves",
   "block.more_orn_plants.versicolor_mei_sapling": "Versicolor Mei Sapling",
   "block.more_orn_plants.red_weeping_mei": "Red Weeping Mei",
@@ -558,6 +564,9 @@
 
   "block.more_orn_plants.potted_red_mei_sapling": "Potted Red Bone Mei Sapling",
   "block.more_orn_plants.potted_white_mei_sapling": "Potted Jiang Mei Sapling",
+  "block.more_orn_plants.potted_pink_mei_sapling": "Potted Pink Mei Sapling",
+  "block.more_orn_plants.potted_double_white_mei_sapling": "Potted Double White Mei Sapling",
+  "block.more_orn_plants.potted_flavescens_mei_sapling": "Potted Flavescens Mei Sapling",
   "block.more_orn_plants.potted_green_calyx_mei_sapling": "Potted Green Calyx Mei Sapling",
   "block.more_orn_plants.potted_double_pink_mei_sapling": "Potted Double Pink Mei Sapling",
   "block.more_orn_plants.potted_versicolor_mei_sapling": "Potted Versicolor Mei Sapling",

@@ -57,6 +57,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.FLOWER_POTS)
                 .add(ModBlocks.POTTED_RED_MEI_SAPLING.get(), ModBlocks.POTTED_WHITE_MEI_SAPLING.get())
+                .add(ModBlocks.POTTED_PINK_MEI_SAPLING.get(), ModBlocks.POTTED_DOUBLE_WHITE_MEI_SAPLING.get(), ModBlocks.POTTED_FLAVESCENS_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_GREEN_CALYX_MEI_SAPLING.get(), ModBlocks.POTTED_DOUBLE_PINK_MEI_SAPLING.get(), ModBlocks.POTTED_VERSICOLOR_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_RED_WEEPING_MEI_SAPLING.get(), ModBlocks.POTTED_WHITE_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_GREEN_WEEPING_MEI_SAPLING.get(), ModBlocks.POTTED_PINK_WEEPING_MEI_SAPLING.get(), ModBlocks.POTTED_VERSICOLOR_WEEPING_MEI_SAPLING.get())
@@ -636,10 +637,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WHITE_MEI_SAPLING.get(), ModBlocks.WHITE_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.GREEN_CALYX_MEI_SAPLING.get(), ModBlocks.GREEN_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get(), ModBlocks.PINK_WEEPING_MEI_SAPLING.get())
-                .add(ModBlocks.VERSICOLOR_MEI_SAPLING.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get());
+                .add(ModBlocks.VERSICOLOR_MEI_SAPLING.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get())
+                .add(ModBlocks.PINK_MEI_SAPLING.get(), ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get(), ModBlocks.FLAVESCENS_MEI_SAPLING.get());
         this.tag(CommonTags.Blocks.MEI_LEAVES)
                 .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get(), ModBlocks.GREEN_CALYX_MEI_LEAVES.get(),
-                        ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), ModBlocks.VERSICOLOR_MEI_LEAVES.get());
+                        ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), ModBlocks.VERSICOLOR_MEI_LEAVES.get(),
+                        ModBlocks.PINK_MEI_LEAVES.get(), ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get(), ModBlocks.FLAVESCENS_MEI_LEAVES.get());
         this.tag(CommonTags.Blocks.WEEPING_MEI)
                 .add(ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.WHITE_WEEPING_MEI.get(), ModBlocks.GREEN_WEEPING_MEI.get(),
                         ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI.get());

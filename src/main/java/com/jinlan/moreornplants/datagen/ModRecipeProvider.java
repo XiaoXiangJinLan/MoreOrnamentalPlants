@@ -813,9 +813,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_MEI_SAPLING, 1)
                 .requires(ModBlocks.DOUBLE_PINK_MEI_SAPLING)
-                .requires(ModBlocks.WHITE_MEI_SAPLING)
+                .requires(ModBlocks.DOUBLE_WHITE_MEI_SAPLING)
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_SAPLING), has(ModBlocks.DOUBLE_PINK_MEI_SAPLING))
-                .unlockedBy(getHasName(ModBlocks.WHITE_MEI_SAPLING), has(ModBlocks.WHITE_MEI_SAPLING))
+                .unlockedBy(getHasName(ModBlocks.DOUBLE_WHITE_MEI_SAPLING), has(ModBlocks.DOUBLE_WHITE_MEI_SAPLING))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RED_WEEPING_MEI_SAPLING, 1)
                 .pattern(" # ")
@@ -826,8 +826,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WHITE_WEEPING_MEI_SAPLING, 1)
                 .pattern(" # ")
                 .pattern("# #")
-                .define('#', ModBlocks.WHITE_MEI_SAPLING)
-                .unlockedBy(getHasName(ModBlocks.WHITE_MEI_SAPLING), has(ModBlocks.WHITE_MEI_SAPLING))
+                .define('#', ModBlocks.DOUBLE_WHITE_MEI_SAPLING)
+                .unlockedBy(getHasName(ModBlocks.DOUBLE_WHITE_MEI_SAPLING), has(ModBlocks.DOUBLE_WHITE_MEI_SAPLING))
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GREEN_WEEPING_MEI_SAPLING, 1)
                 .pattern(" # ")

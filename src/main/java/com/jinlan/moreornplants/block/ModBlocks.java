@@ -38,10 +38,16 @@ public class ModBlocks {
             registerBlock("red_mei_leaves", () -> new RedMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_RED)));
     public static final DeferredBlock<Block> WHITE_MEI_LEAVES =
             registerBlock("white_mei_leaves", () -> new WhiteMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
+    public static final DeferredBlock<Block> PINK_MEI_LEAVES =
+            registerBlock("pink_mei_leaves", () -> new PinkMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_LEAVES =
             registerBlock("green_calyx_mei_leaves", () -> new GreenCalyxMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_LIGHT_GREEN)));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_LEAVES =
             registerBlock("double_pink_mei_leaves", () -> new DoublePinkMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
+    public static final DeferredBlock<Block> DOUBLE_WHITE_MEI_LEAVES =
+            registerBlock("double_white_mei_leaves", () -> new DoubleWhiteMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
+    public static final DeferredBlock<Block> FLAVESCENS_MEI_LEAVES =
+            registerBlock("flavescens_mei_leaves", () -> new FlavescensMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_YELLOW)));
     public static final DeferredBlock<Block> VERSICOLOR_MEI_LEAVES =
             registerBlock("versicolor_mei_leaves", () -> new VersicolorMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
     public static final DeferredBlock<Block> UPRIGHT_CRABAPPLE_LEAVES =
@@ -781,10 +787,16 @@ public class ModBlocks {
             registerBlock("red_mei_sapling", () -> new SaplingBlock(ModTreeGrower.RED_MEI, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WHITE_MEI_SAPLING =
             registerBlock("white_mei_sapling", () -> new SaplingBlock(ModTreeGrower.WHITE_MEI, BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> PINK_MEI_SAPLING =
+            registerBlock("pink_mei_sapling", () -> new SaplingBlock(ModTreeGrower.PINK_MEI, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> GREEN_CALYX_MEI_SAPLING =
             registerBlock("green_calyx_mei_sapling", () -> new SaplingBlock(ModTreeGrower.GREEN_CALYX_MEI, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> DOUBLE_PINK_MEI_SAPLING =
             registerBlock("double_pink_mei_sapling", () -> new SaplingBlock(ModTreeGrower.DOUBLE_PINK_MEI, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> DOUBLE_WHITE_MEI_SAPLING =
+            registerBlock("double_white_mei_sapling", () -> new SaplingBlock(ModTreeGrower.DOUBLE_WHITE_MEI, BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> FLAVESCENS_MEI_SAPLING =
+            registerBlock("flavescens_mei_sapling", () -> new SaplingBlock(ModTreeGrower.FLAVESCENS_MEI, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> VERSICOLOR_MEI_SAPLING =
             registerBlock("versicolor_mei_sapling", () -> new SaplingBlock(ModTreeGrower.VERSICOLOR_MEI, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> RED_WEEPING_MEI_SAPLING =
@@ -856,10 +868,16 @@ public class ModBlocks {
             BLOCKS.register("potted_red_mei_sapling", () -> flowerPot(RED_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_MEI_SAPLING =
             BLOCKS.register("potted_white_mei_sapling", () -> flowerPot(WHITE_MEI_SAPLING.get()));
+    public static final DeferredBlock<Block> POTTED_PINK_MEI_SAPLING =
+            BLOCKS.register("potted_pink_mei_sapling", () -> flowerPot(PINK_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_GREEN_CALYX_MEI_SAPLING =
             BLOCKS.register("potted_green_calyx_mei_sapling", () -> flowerPot(GREEN_CALYX_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_DOUBLE_PINK_MEI_SAPLING =
             BLOCKS.register("potted_double_pink_mei_sapling", () -> flowerPot(DOUBLE_PINK_MEI_SAPLING.get()));
+    public static final DeferredBlock<Block> POTTED_DOUBLE_WHITE_MEI_SAPLING =
+            BLOCKS.register("potted_double_white_mei_sapling", () -> flowerPot(DOUBLE_WHITE_MEI_SAPLING.get()));
+    public static final DeferredBlock<Block> POTTED_FLAVESCENS_MEI_SAPLING =
+            BLOCKS.register("potted_flavescens_mei_sapling", () -> flowerPot(FLAVESCENS_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_VERSICOLOR_MEI_SAPLING =
             BLOCKS.register("potted_versicolor_mei_sapling", () -> flowerPot(VERSICOLOR_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_RED_WEEPING_MEI_SAPLING =

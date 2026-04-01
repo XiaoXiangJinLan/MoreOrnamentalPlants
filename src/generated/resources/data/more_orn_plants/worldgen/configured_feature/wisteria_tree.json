@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [
+      {
+        "type": "more_orn_plants:weeping_mei_vine_decorator",
+        "body_block": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "more_orn_plants:chinese_wisteria_plant",
+            "Properties": {
+              "top": "true"
+            }
+          }
+        },
+        "generation_chance": 0.9,
+        "head_block": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "more_orn_plants:chinese_wisteria",
+            "Properties": {
+              "age": "0",
+              "top": "false"
+            }
+          }
+        },
+        "max_length": 2,
+        "max_vines": 72,
+        "min_length": 2
+      }
+    ],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "foliage_placer": {
+      "type": "minecraft:acacia_foliage_placer",
+      "offset": 0,
+      "radius": 2
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "more_orn_plants:crape_myrtle_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 2
+    },
+    "trunk_placer": {
+      "type": "minecraft:forking_trunk_placer",
+      "base_height": 5,
+      "height_rand_a": 2,
+      "height_rand_b": 2
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "more_orn_plants:camphor_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

@@ -26,12 +26,14 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> RED_MEI_PLACED = registerKey("red_mei_placed");
     public static final ResourceKey<PlacedFeature> RED_MEI_RED_PLACED = registerKey("red_mei_red_placed");
     public static final ResourceKey<PlacedFeature> WHITE_MEI_PLACED = registerKey("white_mei_placed");
+    public static final ResourceKey<PlacedFeature> PINK_MEI_PLACED = registerKey("pink_mei_placed");
     public static final ResourceKey<PlacedFeature> DOUBLE_PINK_MEI_PLACED = registerKey("double_pink_mei_placed");
+    public static final ResourceKey<PlacedFeature> FLAVESCENS_MEI_PLACED = registerKey("flavescens_mei_placed");
     public static final ResourceKey<PlacedFeature> GREEN_CALYX_MEI_PLACED = registerKey("green_calyx_mei_placed");
     public static final ResourceKey<PlacedFeature> PINK_WEEPING_MEI_PLACED = registerKey("pink_weeping_mei_placed");
     public static final ResourceKey<PlacedFeature> GREEN_WEEPING_MEI_PLACED = registerKey("green_weeping_mei_placed");
     public static final ResourceKey<PlacedFeature> VERSICOLOR_WEEPING_MEI_PLACED = registerKey("versicolor_weeping_mei_placed");
-    public static final ResourceKey<PlacedFeature> WHITE_MEI_SNOW = registerKey("white_mei_snow");
+    public static final ResourceKey<PlacedFeature> DOUBLE_WHITE_MEI_SNOW = registerKey("double_white_mei_snow");
     public static final ResourceKey<PlacedFeature> GREEN_CALYX_MEI_SNOW = registerKey("green_calyx_mei_snow");
     public static final ResourceKey<PlacedFeature> WHITE_WEEPING_MEI_SNOW = registerKey("white_weeping_mei_snow");
     public static final ResourceKey<PlacedFeature> GREEN_WEEPING_MEI_SNOW = registerKey("green_weeping_mei_snow");
@@ -141,7 +143,6 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PINK_CAMELLIA_PLACED = registerKey("pink_camellia_placed");
     public static final ResourceKey<PlacedFeature> PINK_CAMELLIA_GROVE = registerKey("pink_camellia_grove");
     public static final ResourceKey<PlacedFeature> CRAPE_MYRTLE_PLACED = registerKey("crape_myrtle_placed");
-    public static final ResourceKey<PlacedFeature> CRAPE_MYRTLE_TREE_PLACED = registerKey("crape_myrtle_tree_placed");
     public static final ResourceKey<PlacedFeature> CRAPE_MYRTLE_CAVES = registerKey("crape_myrtle_caves");
     public static final ResourceKey<PlacedFeature> RED_CRAPE_MYRTLE_CAVES = registerKey("red_crape_myrtle_caves");
     public static final ResourceKey<PlacedFeature> PINK_CRAPE_MYRTLE_CAVES = registerKey("pink_crape_myrtle_caves");
@@ -184,6 +185,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_PLACED = registerKey("black_bamboo_placed");
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_GALLERY_PLACED = registerKey("black_bamboo_gallery_placed");
     public static final ResourceKey<PlacedFeature> LOTUS_PLACED = registerKey("lotus_placed");
+    public static final ResourceKey<PlacedFeature> WISTERIA_TREE_PLACED = registerKey("wisteria_tree_placed");
     public static final ResourceKey<PlacedFeature> WISTERIA_1 = registerKey("wisteria_1");
     public static final ResourceKey<PlacedFeature> WISTERIA_2 = registerKey("wisteria_2");
     public static final ResourceKey<PlacedFeature> WISTERIA_3 = registerKey("wisteria_3");
@@ -235,8 +237,11 @@ public class ModPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, WHITE_MEI_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_MEI),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(5, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 1),
                         ModBlocks.WHITE_MEI_SAPLING.get()));
+        register(context, PINK_MEI_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_MEI),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 1),
+                        ModBlocks.PINK_MEI_SAPLING.get()));
         register(context, CYMBIDIUM_RIVER_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CYMBIDIUM_RIVER),
                 List.of(CountPlacement.of(5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
@@ -255,8 +260,11 @@ public class ModPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, GREEN_CALYX_MEI_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GREEN_CALYX_MEI_WITH_SNOW),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(5, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 1),
                         ModBlocks.GREEN_CALYX_MEI_SAPLING.get()));
+        register(context, FLAVESCENS_MEI_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.FLAVESCENS_MEI_WITH_SNOW),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1F, 1),
+                        ModBlocks.FLAVESCENS_MEI_SAPLING.get()));
 
         register(context, PINK_WEEPING_MEI_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_WEEPING_MEI),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2F, 1),
@@ -289,9 +297,9 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
-        register(context, WHITE_MEI_SNOW, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_MEI),
+        register(context, DOUBLE_WHITE_MEI_SNOW, configuredFeatures.getOrThrow(ModConfiguredFeatures.DOUBLE_WHITE_MEI),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
-                        ModBlocks.WHITE_MEI_SAPLING.get()));
+                        ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get()));
         register(context, GREEN_CALYX_MEI_SNOW, configuredFeatures.getOrThrow(ModConfiguredFeatures.GREEN_CALYX_MEI),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.GREEN_CALYX_MEI_SAPLING.get()));
@@ -306,7 +314,7 @@ public class ModPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, WEEPING_CRABAPPLE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WEEPING_CRABAPPLE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.05f, 1),
                         ModBlocks.WEEPING_CRABAPPLE_SAPLING.get()));
         register(context, PINK_APRICOT_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_APRICOT),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
@@ -326,8 +334,8 @@ public class ModPlacedFeatures {
         register(context, CHINABERRY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINABERRY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.CHINABERRY_SAPLING.get()));
-        register(context, CRAPE_MYRTLE_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRAPE_MYRTLE_TREE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1),
+        register(context, WISTERIA_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WISTERIA_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
         register(context, CHERRY_PLACED, configuredFeatures.getOrThrow(TreeFeatures.CHERRY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),

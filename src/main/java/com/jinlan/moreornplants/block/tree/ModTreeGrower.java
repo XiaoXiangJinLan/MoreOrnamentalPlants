@@ -28,6 +28,17 @@ public class ModTreeGrower {
             Optional.empty()
     );
 
+    public static final TreeGrower PINK_MEI = new TreeGrower(
+            "pink_mei",
+            0.1F,
+            Optional.empty(),
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.PINK_MEI),
+            Optional.of(ModConfiguredFeatures.ANCIENT_PINK_MEI),
+            Optional.empty(),
+            Optional.empty()
+    );
+
     public static final TreeGrower GREEN_CALYX_MEI = new TreeGrower(
             "green_calyx_mei",
             0.1F,
@@ -46,6 +57,28 @@ public class ModTreeGrower {
             Optional.empty(),
             Optional.of(ModConfiguredFeatures.DOUBLE_PINK_MEI),
             Optional.of(ModConfiguredFeatures.ANCIENT_DOUBLE_PINK_MEI),
+            Optional.empty(),
+            Optional.empty()
+    );
+
+    public static final TreeGrower DOUBLE_WHITE_MEI = new TreeGrower(
+            "double_white_mei",
+            0.1F,
+            Optional.empty(),
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.DOUBLE_WHITE_MEI),
+            Optional.of(ModConfiguredFeatures.ANCIENT_DOUBLE_WHITE_MEI),
+            Optional.empty(),
+            Optional.empty()
+    );
+
+    public static final TreeGrower FLAVESCENS_MEI = new TreeGrower(
+            "flavescens_mei",
+            0.1F,
+            Optional.empty(),
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.FLAVESCENS_MEI),
+            Optional.of(ModConfiguredFeatures.ANCIENT_FLAVESCENS_MEI),
             Optional.empty(),
             Optional.empty()
     );

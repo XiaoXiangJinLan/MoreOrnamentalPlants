@@ -19,11 +19,20 @@ public class ModParticleTypes {
     public static final Supplier<SimpleParticleType> WHITE_MEI_LEAVES =
             registerParticleType("white_mei_leaves", () -> new SimpleParticleType(false));
 
+    public static final Supplier<SimpleParticleType> PINK_MEI_LEAVES =
+            registerParticleType("pink_mei_leaves", () -> new SimpleParticleType(false));
+
     public static final Supplier<SimpleParticleType> GREEN_CALYX_MEI_LEAVES =
             registerParticleType("green_calyx_mei_leaves", () -> new SimpleParticleType(false));
 
     public static final Supplier<SimpleParticleType> DOUBLE_PINK_MEI_LEAVES =
             registerParticleType("double_pink_mei_leaves", () -> new SimpleParticleType(false));
+
+    public static final Supplier<SimpleParticleType> DOUBLE_WHITE_MEI_LEAVES =
+            registerParticleType("double_white_mei_leaves", () -> new SimpleParticleType(false));
+
+    public static final Supplier<SimpleParticleType> FLAVESCENS_MEI_LEAVES =
+            registerParticleType("flavescens_mei_leaves", () -> new SimpleParticleType(false));
 
     public static final Supplier<SimpleParticleType> VERSICOLOR_MEI_LEAVES =
             registerParticleType("versicolor_mei_leaves", () -> new SimpleParticleType(false));
