@@ -34,7 +34,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GREEN_WEEPING_MEI_RED_PLACED = registerKey("green_weeping_mei_red_placed");
     public static final ResourceKey<PlacedFeature> VERSICOLOR_WEEPING_MEI_PLACED = registerKey("versicolor_weeping_mei_placed");
     public static final ResourceKey<PlacedFeature> DOUBLE_WHITE_MEI_SNOW = registerKey("double_white_mei_snow");
-    public static final ResourceKey<PlacedFeature> GREEN_CALYX_MEI_SNOW = registerKey("green_calyx_mei_snow");
+    public static final ResourceKey<PlacedFeature> WHITE_MEI_SNOW = registerKey("white_mei_snow");
     public static final ResourceKey<PlacedFeature> WHITE_WEEPING_MEI_SNOW = registerKey("white_weeping_mei_snow");
     public static final ResourceKey<PlacedFeature> GREEN_WEEPING_MEI_SNOW = registerKey("green_weeping_mei_snow");
     public static final ResourceKey<PlacedFeature> FRAGRANT_SNOW_PETALS_PATCH_PLACED = registerKey("fragrant_snow_petals_patch_placed");
@@ -303,7 +303,7 @@ public class ModPlacedFeatures {
         register(context, DOUBLE_WHITE_MEI_SNOW, configuredFeatures.getOrThrow(ModConfiguredFeatures.DOUBLE_WHITE_MEI),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get()));
-        register(context, GREEN_CALYX_MEI_SNOW, configuredFeatures.getOrThrow(ModConfiguredFeatures.GREEN_CALYX_MEI),
+        register(context, WHITE_MEI_SNOW, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_MEI),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.GREEN_CALYX_MEI_SAPLING.get()));
         register(context, WHITE_WEEPING_MEI_SNOW, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_WEEPING_MEI),
