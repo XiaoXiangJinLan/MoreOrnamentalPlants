@@ -2,8 +2,10 @@
   "feature": "more_orn_plants:rose_bush",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 9
+      "type": "minecraft:noise_threshold_count",
+      "above_noise": 9,
+      "below_noise": 1,
+      "noise_level": -0.9
     },
     {
       "type": "minecraft:in_square"
