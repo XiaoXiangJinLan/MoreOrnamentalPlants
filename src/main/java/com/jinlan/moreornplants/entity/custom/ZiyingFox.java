@@ -48,11 +48,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.level.GameRules;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CaveVines;
@@ -60,7 +56,6 @@ import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.pathfinder.PathType;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.EventHooks;
@@ -199,7 +194,7 @@ public class ZiyingFox extends TamableAnimal {
     public static boolean checkZiyingFoxSpawnRules(
             EntityType<? extends ZiyingFox> ziyingFox, LevelAccessor level, MobSpawnType spawnType, BlockPos pos, RandomSource random
     ) {
-        return level.getBlockState(pos.below()).is(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON);
+        return level.getBlockState(pos.below()).is(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON) && level.getBrightness(LightLayer.BLOCK, pos) >= 7;
     }
 
     @Override
