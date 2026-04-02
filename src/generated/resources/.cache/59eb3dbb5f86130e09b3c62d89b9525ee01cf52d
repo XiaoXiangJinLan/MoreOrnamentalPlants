@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-01T13:23:02.2498788	Loot Tables
+// 1.21.1	2026-04-02T13:22:39.250553	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_table/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_table/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_table/blocks/apricot_fence.json
@@ -271,6 +271,7 @@ d0228263aa2d77d3c4899bb7df3f4874221ab007 data/more_orn_plants/loot_table/blocks/
 a2e80dd2d38b53d528a66147a6837d5b39360569 data/more_orn_plants/loot_table/blocks/mauve_peony.json
 32ba091693ffe5a608f698b886966b3bdc81dd7c data/more_orn_plants/loot_table/blocks/maying_rhododendron.json
 579fe87b15a47004e2ba66a6a288c1ba3d4e43b1 data/more_orn_plants/loot_table/blocks/maying_rhododendron_leaves.json
+02995679cffe3fdc86a3716261ece9f0ed55c783 data/more_orn_plants/loot_table/blocks/mei.json
 dbea56b8bc30053c07ffd4596a7d2e222aaec02e data/more_orn_plants/loot_table/blocks/mei_xiangnang.json
 f3afb2219818ed3821493d8382a6655f900e55bd data/more_orn_plants/loot_table/blocks/miscanthus.json
 b28a8dd01334ca0804941a5f106e16208eee8640 data/more_orn_plants/loot_table/blocks/mottled_bamboo.json

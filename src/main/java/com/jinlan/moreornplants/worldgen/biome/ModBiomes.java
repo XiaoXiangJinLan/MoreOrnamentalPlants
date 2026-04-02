@@ -907,11 +907,11 @@ public class ModBiomes {
 
     private static Biome cavesBiome(BootstrapContext<Biome> context, boolean isWhite) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
-        BiomeDefaultFeatures.caveSpawns(spawnBuilder);
+        BiomeDefaultFeatures.commonSpawns(spawnBuilder);
         if (isWhite) {
-            spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.SUYU_FOX.get(), 2, 1, 2));
+            spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.SUYU_FOX.get(), 20, 1, 2));
         } else {
-            spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.ZIYING_FOX.get(), 2, 1, 2));
+            spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.ZIYING_FOX.get(), 20, 1, 2));
         }
 
         BiomeGenerationSettings.Builder biomeBuilder =

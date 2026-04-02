@@ -194,7 +194,7 @@ public class ZiyingFox extends TamableAnimal {
     public static boolean checkZiyingFoxSpawnRules(
             EntityType<? extends ZiyingFox> ziyingFox, LevelAccessor level, MobSpawnType spawnType, BlockPos pos, RandomSource random
     ) {
-        return level.getBlockState(pos.below()).is(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON) && level.getBrightness(LightLayer.BLOCK, pos) >= 7;
+        return level.getBlockState(pos.below()).is(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON);
     }
 
     @Override

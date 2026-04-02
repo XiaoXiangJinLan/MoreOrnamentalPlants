@@ -347,7 +347,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(Tags.Items.FOODS_FRUIT)
                 .add(ModItems.CRABAPPLE.get(), ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get())
-                .add(ModItems.CLOUD_APRICOT.get(), ModItems.IMMORTAL_PEACH.get());
+                .add(ModItems.CLOUD_APRICOT.get(), ModItems.IMMORTAL_PEACH.get(), ModItems.MEI.get());
 
         this.tag(Tags.Items.FOODS_SOUP)
                 .add(ModItems.LOTUS_ROOT_SOUP.get())

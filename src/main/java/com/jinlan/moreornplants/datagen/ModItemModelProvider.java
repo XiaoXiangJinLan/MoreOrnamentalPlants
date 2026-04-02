@@ -413,6 +413,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         goldenCrabapple(ModItems.ENCHANTED_GOLDEN_CRABAPPLE);
         simpleItem(ModItems.CLOUD_APRICOT);
         simpleItem(ModItems.IMMORTAL_PEACH);
+        simpleItem(ModItems.MEI);
 
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
         simplerBlockItem(ModBlocks.FRAGRANT_SNOW_PETALS);

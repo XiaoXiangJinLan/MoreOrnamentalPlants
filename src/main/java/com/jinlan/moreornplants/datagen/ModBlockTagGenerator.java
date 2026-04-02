@@ -32,7 +32,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(CommonTags.Blocks.WISTERIA)
                 .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get(), ModBlocks.NANJING_WISTERIA_PLANT.get(),
                         ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get(), ModBlocks.RED_CHINESE_WISTERIA_PLANT.get())
-                .add(ModBlocks.CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(), ModBlocks.BAMBOO_STICK.get());
+                .add(ModBlocks.CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(), ModBlocks.MEI.get(), ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ZIYING_BEADLIGHT.get(), ModBlocks.SUYU_BEADLIGHT.get());

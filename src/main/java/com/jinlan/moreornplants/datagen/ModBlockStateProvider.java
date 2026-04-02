@@ -576,6 +576,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fruitBlock(ModBlocks.CRABAPPLE);
         fruitBlock(ModBlocks.CLOUD_APRICOT);
         fruitBlock(ModBlocks.IMMORTAL_PEACH);
+        fruitBlock(ModBlocks.MEI);
 
         wisteriaBlock(ModBlocks.CHINESE_WISTERIA);
         wisteriaPlantBlock(ModBlocks.CHINESE_WISTERIA_PLANT);

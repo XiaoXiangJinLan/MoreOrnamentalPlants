@@ -6,6 +6,12 @@
     "more_orn_plants:red_mei_sapling": {
       "chance": 0.3
     },
+    "more_orn_plants:pink_mei_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:pink_mei_sapling": {
+      "chance": 0.3
+    },
     "more_orn_plants:white_mei_leaves": {
       "chance": 0.3
     },
@@ -22,6 +28,18 @@
       "chance": 0.3
     },
     "more_orn_plants:double_pink_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:double_white_mei_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:double_white_mei_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:flavescens_mei_leaves": {
+      "chance": 0.3
+    },
+    "more_orn_plants:flavescens_mei_sapling": {
       "chance": 0.3
     },
     "more_orn_plants:versicolor_mei_leaves": {
@@ -411,6 +429,15 @@
     "more_orn_plants:white_chinese_wisteria": {
       "chance": 0.65
     },
+    "more_orn_plants:blue_chinese_wisteria": {
+      "chance": 0.65
+    },
+    "more_orn_plants:red_chinese_wisteria": {
+      "chance": 0.65
+    },
+    "more_orn_plants:nanjing_wisteria": {
+      "chance": 0.65
+    },
     "more_orn_plants:cotton_rose": {
       "chance": 0.65
     },
@@ -547,6 +574,9 @@
       "chance": 0.65
     },
     "more_orn_plants:crabapple": {
+      "chance": 0.65
+    },
+    "more_orn_plants:mei": {
       "chance": 0.65
     },
     "more_orn_plants:peeled_bamboo_shoots": {
