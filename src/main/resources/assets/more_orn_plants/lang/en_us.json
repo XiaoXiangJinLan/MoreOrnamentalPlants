@@ -933,9 +933,9 @@
   "tooltip.more_orn_plants.suyu_bead.tooltip": "§7When held or in inventory, reduces incoming damage by 25%.",
   "tooltip.more_orn_plants.ziyu_bead.tooltip": "§7When held or in inventory, reduces incoming damage by 20% \nand grants a 20% chance to avoid damage.",
 
-  "more_orn_plants.configuration.title": "More Ornamental Plants Configs",
-  "more_orn_plants.configuration.section.moreornplants.common.toml": "More Ornamental Plants Configs",
-  "more_orn_plants.configuration.section.moreornplants.common.toml.title": "More Ornamental Plants Configs",
+  "more_orn_plants.configuration.title": "Ornamental Plants Configs",
+  "more_orn_plants.configuration.section.moreornplants.common.toml": "Ornamental Plants Configs",
+  "more_orn_plants.configuration.section.moreornplants.common.toml.title": "Ornamental Plants Configs",
   "more_orn_plants.configuration.Biome Enable Settings": "Biome Enable Settings",
   "more_orn_plants.configuration.Region Weight Settings": "Region Weight Settings",
   "more_orn_plants.configuration.enableRedMeiForest": "Enable RedMeiForest",

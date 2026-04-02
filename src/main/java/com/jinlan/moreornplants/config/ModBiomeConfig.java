@@ -66,103 +66,70 @@ public class ModBiomeConfig {
         // 生物群系启用设置
         BUILDER.push("Biome Enable Settings");
         ENABLE_RED_MEI_FOREST = BUILDER
-                .comment("Enable Red Mei Forest biome generation")
                 .define("enableRedMeiForest", true);
         ENABLE_SPRING_RIVER = BUILDER
-                .comment("Enable Spring River biome generation")
                 .define("enableSpringRiver", true);
         ENABLE_PENGLAI = BUILDER
-                .comment("Enable Penglai biome generation")
                 .define("enablePenglai", true);
         ENABLE_MOUNT_MEI = BUILDER
-                .comment("Enable Mount Mei biome generation")
                 .define("enableMountMei", true);
         ENABLE_FRAGRANT_SNOW_SEA = BUILDER
-                .comment("Enable Fragrant Snow Sea biome generation")
                 .define("enableFragrantSnowSea", true);
         ENABLE_PEONY_SEA = BUILDER
-                .comment("Enable Peony Sea biome generation")
                 .define("enablePeonySea", true);
         ENABLE_PEONY_MEADOWS = BUILDER
-                .comment("Enable Peony Meadows biome generation")
                 .define("enablePeonyMeadows", true);
         ENABLE_EVERGREEN_FOREST = BUILDER
-                .comment("Enable Evergreen Forest biome generation")
                 .define("enableEvergreenForest", true);
         ENABLE_LONGEVITY_FOREST = BUILDER
-                .comment("Enable Longevity Forest biome generation")
                 .define("enableLongevityForest", true);
         ENABLE_FLOWERS_GROVE = BUILDER
-                .comment("Enable Flowers Grove biome generation")
                 .define("enableFlowersGrove", true);
         ENABLE_CRABAPPLE_GROVE = BUILDER
-                .comment("Enable Crabapple Grove biome generation")
                 .define("enableCrabappleGrove", true);
         ENABLE_COLORED_FOREST = BUILDER
-                .comment("Enable Colored Forest biome generation")
                 .define("enableColoredForest", true);
         ENABLE_PEACH_BLOSSOM_SPRING = BUILDER
-                .comment("Enable The Peach Blossom Spring biome generation")
                 .define("enablePeachBlossomSpring", true);
         ENABLE_APRICOT_SPRING_PLATEAU = BUILDER
-                .comment("Enable The Apricot Spring Plateau biome generation")
                 .define("enableApricotSpringPlateau", true);
         ENABLE_CAMELLIA_VALLEY = BUILDER
-                .comment("Enable Camellia Valley biome generation")
                 .define("enableCamelliaValley", true);
         ENABLE_RED_CAMELLIA_VALLEY = BUILDER
-                .comment("Enable Red Camellia Valley biome generation")
                 .define("enableRedCamelliaValley", true);
         ENABLE_PINK_CAMELLIA_VALLEY = BUILDER
-                .comment("Enable Pink Camellia Valley biome generation")
                 .define("enablePinkCamelliaValley", true);
         ENABLE_RED_HIGHLANDS = BUILDER
-                .comment("Enable Red Highlands biome generation")
                 .define("enableRedHighlands", true);
         ENABLE_AZALEA_FOREST = BUILDER
-                .comment("Enable Azalea Forest biome generation")
                 .define("enableAzaleaForest", true);
         ENABLE_FURONG_GUO = BUILDER
-                .comment("Enable Furong Guo biome generation")
                 .define("enableFurongGuo", true);
         ENABLE_YUNMENG_MARSH = BUILDER
-                .comment("Enable Yunmeng Marsh biome generation")
                 .define("enableYunmengMarsh", true);
         ENABLE_DESERT_POPLAR_WOODS = BUILDER
-                .comment("Enable Desert Poplar Woods biome generation")
                 .define("enableDesertPoplarWoods", true);
         ENABLE_CHINESE_ROSE_FIELDS = BUILDER
-                .comment("Enable Chinese Rose Fields biome generation")
                 .define("enableChineseRoseFields", true);
         ENABLE_SWEETGUM_WOODS = BUILDER
-                .comment("Enable Sweetgum Woods biome generation")
                 .define("enableSweetgumWoods", true);
         ENABLE_CHINABERRY_WOODS = BUILDER
-                .comment("Enable Chinaberry Woods biome generation")
                 .define("enableChinaberryWoods", true);
         ENABLE_SNOW_WOODS = BUILDER
-                .comment("Enable Snow Woods biome generation")
                 .define("enableSnowWoods", true);
         ENABLE_MISCANTHUS_FIELDS = BUILDER
-                .comment("Enable Miscanthus Fields biome generation")
                 .define("enableMiscanthusFields", true);
         ENABLE_GINKGO_FOREST = BUILDER
-                .comment("Enable Ginkgo Forest biome generation")
                 .define("enableGinkgoForest", true);
         ENABLE_CROPS_GREEN = BUILDER
-                .comment("Enable Crops Green biome generation")
                 .define("enableCropsGreen", true);
         ENABLE_PURPLE_CLOUD = BUILDER
-                .comment("Enable Purple Cloud biome generation")
                 .define("enablePurpleCloud", true);
         ENABLE_TEN_MILE_GALLERY = BUILDER
-                .comment("Enable Ten-Mile Gallery biome generation")
                 .define("enableTenMileGallery", true);
         ENABLE_ZIYING_CAVES = BUILDER
-                .comment("Enable Ziying Caves biome generation")
                 .define("enableZiyingCaves", true);
         ENABLE_SUYU_CAVES = BUILDER
-                .comment("Enable Suyu Caves biome generation")
                 .define("enableSuyuCaves", true);
         BUILDER.pop();
 

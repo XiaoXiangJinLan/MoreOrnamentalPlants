@@ -26,7 +26,7 @@ public class VersicolorWeepingMeiVineDecorator extends TreeDecorator {
     public static final MapCodec<VersicolorWeepingMeiVineDecorator> CODEC = RecordCodecBuilder.mapCodec(instance ->
             instance.group(
                     Codec.floatRange(0.0F, 1.0F).fieldOf("generation_chance").forGetter((decorator) -> decorator.generationChance),
-                    Codec.intRange(1, 50).fieldOf("max_vines").forGetter((decorator) -> decorator.maxVines),
+                    Codec.intRange(1, 100).fieldOf("max_vines").forGetter((decorator) -> decorator.maxVines),
                     Codec.intRange(1, 10).fieldOf("min_length").forGetter((decorator) -> decorator.minLength),
                     Codec.intRange(1, 10).fieldOf("max_length").forGetter((decorator) -> decorator.maxLength),
                     Codec.floatRange(0.0F, 1.0F).fieldOf("versicolor_chance").forGetter((decorator) -> decorator.versicolorChance),
