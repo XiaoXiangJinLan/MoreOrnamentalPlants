@@ -11,10 +11,12 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.LevelSimulatedReader;
 import net.minecraft.world.level.block.GrowingPlantHeadBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +25,7 @@ public class VersicolorWeepingMeiVineDecorator extends TreeDecorator {
     public static final Codec<VersicolorWeepingMeiVineDecorator> CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
                     Codec.floatRange(0.0F, 1.0F).fieldOf("generation_chance").forGetter((decorator) -> decorator.generationChance),
-                    Codec.intRange(1, 50).fieldOf("max_vines").forGetter((decorator) -> decorator.maxVines),
+                    Codec.intRange(1, 100).fieldOf("max_vines").forGetter((decorator) -> decorator.maxVines),
                     Codec.intRange(1, 10).fieldOf("min_length").forGetter((decorator) -> decorator.minLength),
                     Codec.intRange(1, 10).fieldOf("max_length").forGetter((decorator) -> decorator.maxLength),
                     Codec.floatRange(0.0F, 1.0F).fieldOf("versicolor_chance").forGetter((decorator) -> decorator.versicolorChance),
@@ -52,7 +54,7 @@ public class VersicolorWeepingMeiVineDecorator extends TreeDecorator {
     }
 
     @Override
-    protected TreeDecoratorType<?> type() {
+    protected @NotNull TreeDecoratorType<?> type() {
         return ModTreeDecoratorTypes.VERSICOLOR_WEEPING_MEI_VINE_DECORATOR.get();
     }
 
@@ -68,7 +70,7 @@ public class VersicolorWeepingMeiVineDecorator extends TreeDecorator {
         for (BlockPos leafPos : leavesPositions) {
             // 检查树叶正下方是否可以放置藤蔓
             BlockPos belowPos = leafPos.below();
-            if (level.isStateAtPosition(belowPos, state -> state.isAir())) {
+            if (level.isStateAtPosition(belowPos, BlockBehaviour.BlockStateBase::isAir)) {
                 candidatePositions.add(belowPos);
             }
         }
@@ -101,7 +103,7 @@ public class VersicolorWeepingMeiVineDecorator extends TreeDecorator {
         int maxVineLength = random.nextInt(maxLength - minLength + 1) + minLength;
 
         // 检查起始位置是否可以放置藤蔓
-        if (!level.isStateAtPosition(startPos, state -> state.isAir())) {
+        if (!level.isStateAtPosition(startPos, BlockBehaviour.BlockStateBase::isAir)) {
             return;
         }
 
@@ -111,7 +113,7 @@ public class VersicolorWeepingMeiVineDecorator extends TreeDecorator {
         // 检查下方位置，确定实际长度
         for (int i = 1; i < maxVineLength; i++) {
             BlockPos checkPos = startPos.below(i);
-            if (level.isStateAtPosition(checkPos, state -> state.isAir())) {
+            if (level.isStateAtPosition(checkPos, BlockBehaviour.BlockStateBase::isAir)) {
                 actualVineLength++;
             } else {
                 // 遇到障碍，停止检查
