@@ -36,7 +36,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NANJING_WISTERIA.get(), ModBlocks.NANJING_WISTERIA_PLANT.get())
                 .add(ModBlocks.FOUNTAIN_GRASS.get(), ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.PINK_FOUNTAIN_GRASS.get(), ModBlocks.WHITE_FOUNTAIN_GRASS.get())
-                .add(ModBlocks.CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(), ModBlocks.BAMBOO_STICK.get());
+                .add(ModBlocks.CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(), ModBlocks.MEI.get(), ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.CROPS)
                 .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get())

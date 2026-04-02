@@ -100,12 +100,18 @@ public class MoreOrnPlants
 
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_MEI_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_MEI_SAPLING.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_MEI_LEAVES.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_MEI_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_MEI_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_MEI_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.GREEN_CALYX_MEI_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.GREEN_CALYX_MEI_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.FLAVESCENS_MEI_LEAVES.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.FLAVESCENS_MEI_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.VERSICOLOR_MEI_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.VERSICOLOR_MEI_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_WEEPING_MEI_SAPLING.get().asItem(), 0.3F);
@@ -200,6 +206,9 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WEEPING_CRABAPPLE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CHINESE_WISTERIA.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_CHINESE_WISTERIA.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.BLUE_CHINESE_WISTERIA.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_CHINESE_WISTERIA.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.NANJING_WISTERIA.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CHRYSANTHEMUM.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.XIHU_LIUYUE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem(), 0.65F);
@@ -285,6 +294,7 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_FOUNTAIN_GRASS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.LOTUS_LEAF.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.CRABAPPLE.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.MEI.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.LOTUS_ROOT.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.PEELED_BAMBOO_SHOOTS.get(), 0.65F);
 

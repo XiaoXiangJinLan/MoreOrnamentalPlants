@@ -477,7 +477,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ForgeTags.Items.FRUITS)
                 .addTag(ForgeTags.Items.FRUITS_CRABAPPLE)
                 .addTag(ForgeTags.Items.FRUITS_PEACH)
-                .addTag(ForgeTags.Items.FRUITS_APRICOT);
+                .addTag(ForgeTags.Items.FRUITS_APRICOT)
+                .addTag(ForgeTags.Items.FRUITS_MEI);
 
         this.tag(ForgeTags.Items.VEGETABLES_BAMBOO_SHOOTS)
                 .add(ModItems.PEELED_BAMBOO_SHOOTS.get());
@@ -504,6 +505,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ForgeTags.Items.FRUITS_APRICOT)
                 .add(ModItems.CLOUD_APRICOT.get());
+
+        this.tag(ForgeTags.Items.FRUITS_MEI)
+                .add(ModItems.MEI.get());
 
         this.tag(ModTags.Items.ZIYING_TOOLS)
                 .add(ModItems.ZIYING_SWORD.get(), ModItems.ZIYING_AXE.get(), ModItems.ZIYING_PICKAXE.get());
