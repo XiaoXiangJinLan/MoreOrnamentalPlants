@@ -279,11 +279,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.VERSICOLOR_WEEPING_MEI);
 
         flowerItem(ModBlocks.WEEPING_CRABAPPLE);
-        wisteriaItem(ModBlocks.CHINESE_WISTERIA);
-        wisteriaItem(ModBlocks.WHITE_CHINESE_WISTERIA);
-        wisteriaItem(ModBlocks.NANJING_WISTERIA);
-        wisteriaItem(ModBlocks.BLUE_CHINESE_WISTERIA);
-        wisteriaItem(ModBlocks.RED_CHINESE_WISTERIA);
+        flowerItem(ModBlocks.CHINESE_WISTERIA);
+        flowerItem(ModBlocks.WHITE_CHINESE_WISTERIA);
+        flowerItem(ModBlocks.NANJING_WISTERIA);
+        flowerItem(ModBlocks.BLUE_CHINESE_WISTERIA);
+        flowerItem(ModBlocks.RED_CHINESE_WISTERIA);
 
         flowerItem(ModBlocks.CHRYSANTHEMUM);
         flowerItem(ModBlocks.XIHU_LIUYUE);
@@ -517,12 +517,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(block.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/" + block.getId().getPath() + "_top"));
-    }
-
-    private void wisteriaItem(DeferredBlock<Block> block) {
-        withExistingParent(block.getId().getPath(),
-                ResourceLocation.parse("item/generated")).texture("layer0",
-                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/" + block.getId().getPath() + "_2"));
     }
 
     private void flowerUsePottedTextureItem() {
