@@ -279,11 +279,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.VERSICOLOR_WEEPING_MEI);
 
         flowerItem(ModBlocks.WEEPING_CRABAPPLE);
-        wisteriaItem(ModBlocks.CHINESE_WISTERIA);
-        wisteriaItem(ModBlocks.WHITE_CHINESE_WISTERIA);
-        wisteriaItem(ModBlocks.NANJING_WISTERIA);
-        wisteriaItem(ModBlocks.BLUE_CHINESE_WISTERIA);
-        wisteriaItem(ModBlocks.RED_CHINESE_WISTERIA);
+        flowerItem(ModBlocks.CHINESE_WISTERIA);
+        flowerItem(ModBlocks.WHITE_CHINESE_WISTERIA);
+        flowerItem(ModBlocks.NANJING_WISTERIA);
+        flowerItem(ModBlocks.BLUE_CHINESE_WISTERIA);
+        flowerItem(ModBlocks.RED_CHINESE_WISTERIA);
 
         flowerItem(ModBlocks.CHRYSANTHEMUM);
         flowerItem(ModBlocks.XIHU_LIUYUE);
@@ -517,12 +517,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + item.getId().getPath()));
-    }
-
-    private ItemModelBuilder wisteriaItem(RegistryObject<Block> block) {
-        return withExistingParent(block.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + block.getId().getPath() + "_2"));
     }
 
     private ItemModelBuilder tallCrossItem(RegistryObject<Block> block) {
