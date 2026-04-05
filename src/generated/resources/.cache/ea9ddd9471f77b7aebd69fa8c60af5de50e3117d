@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-02T13:22:39.2360159	Tags for minecraft:item mod id more_orn_plants
+// 1.21.1	2026-04-05T19:57:46.8780598	Tags for minecraft:item mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/item/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/item/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/item/azalea.json
@@ -22,7 +22,7 @@ edc1aae18a35311be8df5db2dfb84cc1dba6303c data/c/tags/item/cymbidium.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/c/tags/item/fence_gates/wooden.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/c/tags/item/foods/bamboo_shoots.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/c/tags/item/foods/bamboo_sprouts.json
-6850e53c9a83e1f9823838edcb616c02dc7d3ff3 data/c/tags/item/foods/fruit.json
+ed562274fe55cda51552895cd71a6f60e2f993a1 data/c/tags/item/foods/fruit.json
 67af33a4ef0b3a99a03d4381c505b9466665a48b data/c/tags/item/foods/lotus_nut.json
 00f69cf9fbf2c5367e59c12247826fbdb59f1759 data/c/tags/item/foods/lotus_root.json
 67af33a4ef0b3a99a03d4381c505b9466665a48b data/c/tags/item/foods/lotus_seed.json
@@ -65,6 +65,7 @@ f5877f7cac1b1a10079613e11d66c160a762e701 data/minecraft/tags/item/chest_boats.js
 8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/item/logs_that_burn.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/minecraft/tags/item/panda_food.json
 d9ea0b070df9f1a21b3e8c4ce888674b075edbfa data/minecraft/tags/item/pickaxes.json
+ee9351ba2febb44661dee5754f9487bca7a038b0 data/minecraft/tags/item/piglin_loved.json
 8be1aa4fe90dbc5a1d7ee11fe7233bd9671eea5b data/minecraft/tags/item/pig_food.json
 73c33643918bd977c2ecc0002fa55666390463e5 data/minecraft/tags/item/planks.json
 9e019b69fbf700b7c3ed0060587ac31fa36834f2 data/minecraft/tags/item/saplings.json

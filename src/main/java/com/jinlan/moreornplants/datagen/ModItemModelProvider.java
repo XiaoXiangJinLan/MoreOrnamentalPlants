@@ -414,6 +414,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CLOUD_APRICOT);
         simpleItem(ModItems.IMMORTAL_PEACH);
         simpleItem(ModItems.MEI);
+        simpleItem(ModItems.GOLDEN_MEI);
 
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
         simplerBlockItem(ModBlocks.FRAGRANT_SNOW_PETALS);

@@ -347,7 +347,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(Tags.Items.FOODS_FRUIT)
                 .add(ModItems.CRABAPPLE.get(), ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get())
-                .add(ModItems.CLOUD_APRICOT.get(), ModItems.IMMORTAL_PEACH.get(), ModItems.MEI.get());
+                .add(ModItems.CLOUD_APRICOT.get(), ModItems.IMMORTAL_PEACH.get(), ModItems.MEI.get(), ModItems.GOLDEN_MEI.get());
 
         this.tag(Tags.Items.FOODS_SOUP)
                 .add(ModItems.LOTUS_ROOT_SOUP.get())
@@ -425,6 +425,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.PICKAXES)
                 .add(ModItems.ZIYING_PICKAXE.get(), ModItems.SUYU_PICKAXE.get(), ModItems.ZIYU_YUANYANG_PICKAXE.get());
+
+        this.tag(ItemTags.PIGLIN_LOVED)
+                .add(ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get(), ModItems.GOLDEN_MEI.get());
 
         this.tag(Tags.Items.MELEE_WEAPON_TOOLS)
                 .add(ModItems.BAMBOO_STICK.get())

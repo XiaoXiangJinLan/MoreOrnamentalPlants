@@ -253,6 +253,8 @@ public class ModItems {
             ITEMS.register("immortal_peach", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.PEACH)));
     public static final DeferredItem<Item> MEI =
             ITEMS.register("mei", () -> new Item(new Item.Properties().food(ModFoods.MEI)));
+    public static final DeferredItem<Item> GOLDEN_MEI =
+            ITEMS.register("golden_mei", () -> new Item(new Item.Properties().food(ModFoods.GOLDEN_MEI)));
 
     public static final DeferredItem<Item> MEI_XIANGNANG =
             ITEMS.register("mei_xiangnang", () -> new MeiXiangnangItem(ModBlocks.MEI_XIANGNANG.get(), new Item.Properties(), 300, 1));
