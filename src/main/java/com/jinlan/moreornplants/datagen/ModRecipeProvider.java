@@ -810,6 +810,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .unlockedBy(getHasName(ModItems.CRABAPPLE.get()), has(ModItems.CRABAPPLE.get()))
                 .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GOLDEN_MEI.get())
+                .requires(Items.GOLD_NUGGET, 4)
+                .requires(ModItems.MEI.get())
+                .unlockedBy(getHasName(ModItems.MEI.get()), has(ModItems.MEI.get()))
+                .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), 1)
                 .requires(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get())

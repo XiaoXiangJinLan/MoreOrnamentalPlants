@@ -48,6 +48,22 @@
           "type": "minecraft:item",
           "name": "minecraft:diamond",
           "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "more_orn_plants:golden_mei",
+          "weight": 3
         }
       ],
       "rolls": {

@@ -568,6 +568,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.IMMORTAL_PEACH.get());
                         pOutput.accept(ModItems.CLOUD_APRICOT.get());
                         pOutput.accept(ModItems.MEI.get());
+                        pOutput.accept(ModItems.GOLDEN_MEI.get());
                         pOutput.accept(ModItems.PEELED_BAMBOO_SHOOTS.get());
                         pOutput.accept(ModItems.LOTUS_ROOT.get());
                         pOutput.accept(ModItems.LOTUS_SEED_POD.get());

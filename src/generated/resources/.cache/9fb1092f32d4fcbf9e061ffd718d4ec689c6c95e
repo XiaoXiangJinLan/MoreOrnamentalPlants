@@ -1,4 +1,4 @@
-// 1.20.1	2026-04-01T16:19:48.3847643	Recipes
+// 1.20.1	2026-04-05T22:03:50.5509179	Recipes
 10907db77dcd3f4354b04ba787bd91e9544fae63 data/more_orn_plants/advancements/recipes/building_blocks/apricot_planks.json
 7f1749a44c4250e9a0eeba80a7d27f17672e0cf9 data/more_orn_plants/advancements/recipes/building_blocks/apricot_slab.json
 1e5904507d8c2e0acedb15e99495980092f58f40 data/more_orn_plants/advancements/recipes/building_blocks/apricot_stairs.json
@@ -157,6 +157,7 @@ b74cd03ece8d848bdf9845a0bde5b07ae369dff2 data/more_orn_plants/advancements/recip
 ed180f457d8d92c395428cb947827fb40038a510 data/more_orn_plants/advancements/recipes/misc/cymbidium_xiangnang.json
 5d47fedb6d69108c02593e45ed83f9aa6cbcdcff data/more_orn_plants/advancements/recipes/misc/enchanted_golden_crabapple.json
 4e952e636ddfa2007da62499ca950d4f06387257 data/more_orn_plants/advancements/recipes/misc/golden_crabapple.json
+7597d31a2e5a4b35e5ccef3f4ca4b4ca45e03e93 data/more_orn_plants/advancements/recipes/misc/golden_mei.json
 69779f65367bd7774da624ec69d2ed48c0d69e95 data/more_orn_plants/advancements/recipes/misc/golden_peony.json
 fa0a9048fe062d32667a3a28e9d2a9ef2b7b638b data/more_orn_plants/advancements/recipes/misc/gold_backed_scarlet_mum.json
 af260096462f991cef484eedb041bb3a7ca9e775 data/more_orn_plants/advancements/recipes/misc/green_dye_from_flowers.json
@@ -485,6 +486,7 @@ ad25614907f748be6abb3682145fe21805f612d7 data/more_orn_plants/recipes/ginkgo_sta
 a45a7d11c8ba328612e89b41be0cb50629463ee2 data/more_orn_plants/recipes/ginkgo_trapdoor.json
 a2501d86fd41e4ee3baba9c68ed41fc0f05034f7 data/more_orn_plants/recipes/ginkgo_wood.json
 cbff6aca080d96c76a6a3f45213b0dbb1ef41101 data/more_orn_plants/recipes/golden_crabapple.json
+d23b87a3cbf6a3fec2d6a89f55170cac9ac41eb5 data/more_orn_plants/recipes/golden_mei.json
 e7140a5b90a139b821df5bc7c62c925795566449 data/more_orn_plants/recipes/golden_peony.json
 79a944f1a56449ae6392bab0e54053761d8e263d data/more_orn_plants/recipes/gold_backed_scarlet_mum.json
 0f272b1ee7b13bc1a6efbd8bc1ab40b7ff035895 data/more_orn_plants/recipes/green_calyx_mei_boat.json
