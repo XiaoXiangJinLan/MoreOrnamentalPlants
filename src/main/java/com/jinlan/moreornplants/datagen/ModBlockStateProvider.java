@@ -798,6 +798,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_yellow_white_chinese_rose")).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_BAOHUA_CHINESE_ROSE.get(), models().singleTexture("potted_baohua_chinese_rose", ResourceLocation.parse("flower_pot_cross"), "plant",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_baohua_chinese_rose")).renderType("cutout"));
+        tallCrossBlock(ModBlocks.WINTERSWEET);
         simpleBlock(ModBlocks.POTTED_WINTERSWEET.get(), models().singleTexture("potted_wintersweet", ResourceLocation.parse("flower_pot_cross"), "plant",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_wintersweet")).renderType("cutout"));
         tallCrossBlock(ModBlocks.COTTON_ROSE);

@@ -407,13 +407,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.LOTUS_ROOT_SOUP.get());
 
         this.tag(ModTags.Items.ZIYING_TOOLS)
-                .add(ModItems.ZIYING_SWORD.get(), ModItems.ZIYING_AXE.get(), ModItems.ZIYING_PICKAXE.get());
+                .add(ModItems.ZIYING_SWORD.get(), ModItems.ZIYING_AXE.get(), ModItems.ZIYING_PICKAXE.get(),
+                        ModItems.ZIYING_HOE.get(), ModItems.ZIYING_SHOVEL.get());
 
         this.tag(ModTags.Items.SUYU_TOOLS)
-                .add(ModItems.SUYU_SWORD.get(), ModItems.SUYU_AXE.get(), ModItems.SUYU_PICKAXE.get());
+                .add(ModItems.SUYU_SWORD.get(), ModItems.SUYU_AXE.get(), ModItems.SUYU_PICKAXE.get(),
+                        ModItems.SUYU_HOE.get(), ModItems.SUYU_SHOVEL.get());
 
         this.tag(ModTags.Items.ZIYU_YUANYANG_TOOLS)
-                .add(ModItems.ZIYU_YUANYANG_SWORD.get(), ModItems.ZIYU_YUANYANG_AXE.get(), ModItems.ZIYU_YUANYANG_PICKAXE.get());
+                .add(ModItems.ZIYU_YUANYANG_SWORD.get(), ModItems.ZIYU_YUANYANG_AXE.get(), ModItems.ZIYU_YUANYANG_PICKAXE.get(),
+                        ModItems.ZIYU_YUANYANG_HOE.get(), ModItems.ZIYU_YUANYANG_SHOVEL.get());
 
         this.tag(ItemTags.SWORDS)
                 .add(ModItems.PEACH_WOODEN_SWORD.get(), ModItems.CAMPHOR_WOODEN_SWORD.get(), ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())
@@ -425,6 +428,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.PICKAXES)
                 .add(ModItems.ZIYING_PICKAXE.get(), ModItems.SUYU_PICKAXE.get(), ModItems.ZIYU_YUANYANG_PICKAXE.get());
+
+        this.tag(ItemTags.HOES)
+                .add(ModItems.ZIYING_HOE.get(), ModItems.SUYU_HOE.get(), ModItems.ZIYU_YUANYANG_HOE.get());
+
+        this.tag(ItemTags.SHOVELS)
+                .add(ModItems.ZIYING_SHOVEL.get(), ModItems.SUYU_SHOVEL.get(), ModItems.ZIYU_YUANYANG_SHOVEL.get());
 
         this.tag(ItemTags.PIGLIN_LOVED)
                 .add(ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get(), ModItems.GOLDEN_MEI.get());

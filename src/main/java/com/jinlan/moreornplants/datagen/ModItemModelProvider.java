@@ -459,6 +459,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ZIYING_PICKAXE.get());
         handheldItem(ModItems.SUYU_PICKAXE.get());
         handheldItem(ModItems.ZIYU_YUANYANG_PICKAXE.get());
+        handheldItem(ModItems.ZIYING_HOE.get());
+        handheldItem(ModItems.SUYU_HOE.get());
+        handheldItem(ModItems.ZIYU_YUANYANG_HOE.get());
+        handheldItem(ModItems.ZIYING_SHOVEL.get());
+        handheldItem(ModItems.SUYU_SHOVEL.get());
+        handheldItem(ModItems.ZIYU_YUANYANG_SHOVEL.get());
         handheldItem(ModItems.ZHUIYUE_SWORD.get());
         handheldItem(ModItems.CAIYUN_SWORD.get());
         handheldItem(ModItems.BAIHUA_SWORD.get());
