@@ -33,9 +33,9 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 3000, 9), 1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 4), 1.0F).alwaysEat().build();
     public static final FoodProperties MEI = new FoodProperties.Builder().nutrition(1).saturationMod(0.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 60, 0), 0.2F).build();
+            .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 60, 0), 0.2F).fast().build();
     public static final FoodProperties GOLDEN_MEI = new FoodProperties.Builder().nutrition(4).saturationMod(1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1800, 0), 1.0F).build();
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400, 0), 1.0F).fast().build();
 
     private static FoodProperties.Builder stew() {
         return (new FoodProperties.Builder()).nutrition(6).saturationMod(0.6F);
