@@ -62,6 +62,7 @@ public class BaihuaCat extends Cat {
     private int producePeachTimer = 0;
     private int produceApricotTimer = 0;
     private int produceCrabappleTimer = 0;
+    private int produceMeiTimer = 0;
     private int regenCooldown = 0;
 
     public BaihuaCat(EntityType<? extends Cat> entityType, Level level) {
@@ -149,6 +150,7 @@ public class BaihuaCat extends Cat {
         compound.putInt("ProducePeachTimer", this.producePeachTimer);
         compound.putInt("ProduceApricotTimer", this.produceApricotTimer);
         compound.putInt("ProduceCrabappleTimer", this.produceCrabappleTimer);
+        compound.putInt("ProduceMeiTimer", this.produceMeiTimer);
         compound.putInt("RegenCooldown", this.regenCooldown);
     }
 
@@ -165,6 +167,7 @@ public class BaihuaCat extends Cat {
         this.producePeachTimer = compound.getInt("ProducePeachTimer");
         this.produceApricotTimer = compound.getInt("ProduceApricotTimer");
         this.produceCrabappleTimer = compound.getInt("ProduceCrabappleTimer");
+        this.produceMeiTimer = compound.getInt("ProduceMeiTimer");
         this.regenCooldown = compound.getInt("RegenCooldown");
     }
 
@@ -262,22 +265,26 @@ public class BaihuaCat extends Cat {
                     }
                     if (this.getAge() == 0 && !this.isInLove()) {
                         this.setInLove(player);
-                        if (this.isPeachSapling(itemstack) && producePeachTimer == 0) producePeachTimer = 200;
-                        else if (this.isApricotSapling(itemstack) && produceApricotTimer == 0) produceApricotTimer = 100;
-                        else if (this.isCrabappleSapling(itemstack) && produceCrabappleTimer == 0) produceCrabappleTimer = 100;
+                        if (this.isPeach(itemstack) && producePeachTimer == 0) producePeachTimer = 200;
+                        else if (this.isApricot(itemstack) && produceApricotTimer == 0) produceApricotTimer = 100;
+                        else if (this.isCrabapple(itemstack) && produceCrabappleTimer == 0) produceCrabappleTimer = 100;
+                        else if (this.isMei(itemstack) && produceMeiTimer == 0) produceMeiTimer = 100;
                         itemstack.consume(1, player);
                         this.playSound(SoundEvents.CAT_EAT, 0.5F, 1.0F);
                         return InteractionResult.SUCCESS;
                     }
                     boolean produced = false;
-                    if (this.isPeachSapling(itemstack) && producePeachTimer == 0) {
+                    if (this.isPeach(itemstack) && producePeachTimer == 0) {
                         producePeachTimer = 200;
                         produced = true;
-                    } else if (this.isApricotSapling(itemstack) && produceApricotTimer == 0) {
+                    } else if (this.isApricot(itemstack) && produceApricotTimer == 0) {
                         produceApricotTimer = 100;
                         produced = true;
-                    } else if (this.isCrabappleSapling(itemstack) && produceCrabappleTimer == 0) {
+                    } else if (this.isCrabapple(itemstack) && produceCrabappleTimer == 0) {
                         produceCrabappleTimer = 100;
+                        produced = true;
+                    } else if (this.isMei(itemstack) && produceMeiTimer == 0) {
+                        produceMeiTimer = 100;
                         produced = true;
                     }
                     if (produced) {
@@ -328,14 +335,17 @@ public class BaihuaCat extends Cat {
         return stack.is(ModTags.Items.BAIHUA_CAT_FOOD);
     }
 
-    public boolean isPeachSapling(ItemStack stack) {
+    public boolean isPeach(ItemStack stack) {
         return stack.is(ModItems.IMMORTAL_PEACH);
     }
-    public boolean isApricotSapling(ItemStack stack) {
+    public boolean isApricot(ItemStack stack) {
         return stack.is(ModItems.CLOUD_APRICOT);
     }
-    public boolean isCrabappleSapling(ItemStack stack) {
+    public boolean isCrabapple(ItemStack stack) {
         return stack.is(ModItems.CRABAPPLE);
+    }
+    public boolean isMei(ItemStack stack) {
+        return stack.is(ModItems.MEI);
     }
 
     public boolean isWandering() {
@@ -391,19 +401,25 @@ public class BaihuaCat extends Cat {
             if (this.producePeachTimer > 0) {
                 this.producePeachTimer--;
                 if (this.producePeachTimer == 0) {
-                    this.givePeach();
+                    this.givePeachSapling();
                 }
             }
             if (this.produceApricotTimer > 0) {
                 this.produceApricotTimer--;
                 if (this.produceApricotTimer == 0) {
-                    this.giveApricot();
+                    this.giveApricotSapling();
                 }
             }
             if (this.produceCrabappleTimer > 0) {
                 this.produceCrabappleTimer--;
                 if (this.produceCrabappleTimer == 0) {
-                    this.giveCrabapple();
+                    this.giveCrabappleSapling();
+                }
+            }
+            if (this.produceMeiTimer > 0) {
+                this.produceMeiTimer--;
+                if (this.produceMeiTimer == 0) {
+                    this.giveMeiSaplings();
                 }
             }
 
@@ -425,19 +441,26 @@ public class BaihuaCat extends Cat {
         }
     }
 
-    protected void givePeach() {
+    protected void givePeachSapling() {
         ItemStack stack = new ItemStack(ModBlocks.IMMORTAL_PEACH_SAPLING.get());
         this.spawnAtLocation(stack);
         this.playSound(SoundEvents.CAT_PURR, 1.0F, 1.0F);
     }
-    protected void giveApricot() {
+    protected void giveApricotSapling() {
         ItemStack stack = new ItemStack(ModBlocks.CLOUD_APRICOT_SAPLING.get());
         this.spawnAtLocation(stack);
         this.playSound(SoundEvents.CAT_PURR, 1.0F, 1.0F);
     }
-    protected void giveCrabapple() {
+    protected void giveCrabappleSapling() {
         ItemStack stack = new ItemStack(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get());
         this.spawnAtLocation(stack);
+        this.playSound(SoundEvents.CAT_PURR, 1.0F, 1.0F);
+    }
+    protected void giveMeiSaplings() {
+        ItemStack whiteMei = new ItemStack(ModBlocks.WHITE_MEI_SAPLING.get());
+        ItemStack pinkMei = new ItemStack(ModBlocks.PINK_MEI_SAPLING.get());
+        this.spawnAtLocation(whiteMei);
+        this.spawnAtLocation(pinkMei);
         this.playSound(SoundEvents.CAT_PURR, 1.0F, 1.0F);
     }
 
