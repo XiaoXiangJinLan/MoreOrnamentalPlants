@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:ziying_hoe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_ziying_bead": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:ziying_bead"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_ziying_bead",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:ziying_hoe"
+    ]
+  },
+  "sends_telemetry_event": false
+}

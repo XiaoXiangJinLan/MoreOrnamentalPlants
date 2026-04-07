@@ -459,6 +459,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         swordItem(ModItems.ZIYING_PICKAXE);
         swordItem(ModItems.SUYU_PICKAXE);
         swordItem(ModItems.ZIYU_YUANYANG_PICKAXE);
+        swordItem(ModItems.ZIYING_HOE);
+        swordItem(ModItems.SUYU_HOE);
+        swordItem(ModItems.ZIYU_YUANYANG_HOE);
+        swordItem(ModItems.ZIYING_SHOVEL);
+        swordItem(ModItems.SUYU_SHOVEL);
+        swordItem(ModItems.ZIYU_YUANYANG_SHOVEL);
         swordItem(ModItems.ZHUIYUE_SWORD);
         swordItem(ModItems.CAIYUN_SWORD);
         swordItem(ModItems.BAIHUA_SWORD);

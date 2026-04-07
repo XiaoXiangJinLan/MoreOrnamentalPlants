@@ -513,12 +513,18 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.PEACH_XIANGNANG.get());
                         pOutput.accept(ModItems.PEAR_XIANGNANG.get());
                         pOutput.accept(ModItems.LOTUS_XIANGNANG.get());
+                        pOutput.accept(ModItems.ZIYING_SHOVEL.get());
                         pOutput.accept(ModItems.ZIYING_PICKAXE.get());
                         pOutput.accept(ModItems.ZIYING_AXE.get());
+                        pOutput.accept(ModItems.ZIYING_HOE.get());
+                        pOutput.accept(ModItems.SUYU_SHOVEL.get());
                         pOutput.accept(ModItems.SUYU_PICKAXE.get());
                         pOutput.accept(ModItems.SUYU_AXE.get());
+                        pOutput.accept(ModItems.SUYU_HOE.get());
+                        pOutput.accept(ModItems.ZIYU_YUANYANG_SHOVEL.get());
                         pOutput.accept(ModItems.ZIYU_YUANYANG_PICKAXE.get());
                         pOutput.accept(ModItems.ZIYU_YUANYANG_AXE.get());
+                        pOutput.accept(ModItems.ZIYU_YUANYANG_HOE.get());
                         pOutput.accept(ModItems.RED_MEI_BOAT.get());
                         pOutput.accept(ModItems.RED_MEI_CHEST_BOAT.get());
                         pOutput.accept(ModItems.WHITE_MEI_BOAT.get());
