@@ -43,9 +43,9 @@
       "bend_factor": 0.4,
       "fork_chance": 3,
       "height_rand_a": 2,
-      "height_rand_b": 2,
+      "height_rand_b": 0,
       "max_fork_angle": 60,
-      "max_fork_length": 6,
+      "max_fork_length": 5,
       "min_fork_length": 4
     },
     "trunk_provider": {

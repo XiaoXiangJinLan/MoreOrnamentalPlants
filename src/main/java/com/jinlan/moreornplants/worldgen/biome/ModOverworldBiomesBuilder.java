@@ -119,17 +119,17 @@ public class ModOverworldBiomesBuilder {
     };
     private final ResourceKey<Biome>[][] SLOPE_BIOMES_MOD = new ResourceKey[][]{
             {null,                null,                null,                null,                null},
-            {null,                null,                null,                null,                null},
             {null,                ModBiomes.MOUNT_MEI, ModBiomes.MOUNT_MEI, ModBiomes.MOUNT_MEI, null},
             {ModBiomes.MOUNT_MEI, ModBiomes.MOUNT_MEI, ModBiomes.MOUNT_MEI, ModBiomes.MOUNT_MEI, ModBiomes.MOUNT_MEI},
+            {null,                null,                null,                null,                null},
             {null,                null,                null,                null,                null}
     };
     private final ResourceKey<Biome>[][] RIVER_BIOMES_MOD = new ResourceKey[][]{
-            {null, null,                   null,                   null,                   null},
-            {null, null,                   null,                   null,                   null},
-            {null, ModBiomes.SPRING_RIVER, ModBiomes.SPRING_RIVER, ModBiomes.SPRING_RIVER, null},
-            {null, ModBiomes.SPRING_RIVER, ModBiomes.SPRING_RIVER, ModBiomes.SPRING_RIVER, null},
-            {null, null,                   null,                   null,                   null}
+            {ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE},
+            {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    null,                      null,                      null},
+            {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    null},
+            {null,                      null,                      null,                      null,                      null},
+            {null,                      null,                      null,                      null,                      null}
     };
     private final ResourceKey<Biome>[][] SWAMP_BIOMES_MOD = new ResourceKey[][]{
             {null,                    null,                    null,                    null,                    null},

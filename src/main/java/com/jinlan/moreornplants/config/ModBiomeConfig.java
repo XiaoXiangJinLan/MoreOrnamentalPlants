@@ -9,6 +9,7 @@ public class ModBiomeConfig {
     // 生物群系启用配置
     public static final ForgeConfigSpec.BooleanValue ENABLE_RED_MEI_FOREST;
     public static final ForgeConfigSpec.BooleanValue ENABLE_SPRING_RIVER;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_JIANGTIAN_MUXUE;
     public static final ForgeConfigSpec.BooleanValue ENABLE_PENGLAI;
     public static final ForgeConfigSpec.BooleanValue ENABLE_MOUNT_MEI;
     public static final ForgeConfigSpec.BooleanValue ENABLE_FRAGRANT_SNOW_SEA;
@@ -68,6 +69,8 @@ public class ModBiomeConfig {
                 .define("enableRedMeiForest", true);
         ENABLE_SPRING_RIVER = BUILDER
                 .define("enableSpringRiver", true);
+        ENABLE_JIANGTIAN_MUXUE = BUILDER
+                .define("enableJiangtianMuxue", true);
         ENABLE_PENGLAI = BUILDER
                 .define("enablePenglai", true);
         ENABLE_MOUNT_MEI = BUILDER
