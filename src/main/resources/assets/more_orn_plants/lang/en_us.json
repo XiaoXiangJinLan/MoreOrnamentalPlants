@@ -791,6 +791,7 @@
 
   "biome.more_orn_plants.red_mei_forest": "Red Mei Forest",
   "biome.more_orn_plants.spring_river": "Spring River",
+  "biome.more_orn_plants.jiangtian_muxue": "Jiangtian Muxue",
   "biome.more_orn_plants.penglai": "Penglai",
   "biome.more_orn_plants.mount_mei": "Mount Mei",
   "biome.more_orn_plants.fragrant_snow_sea": "Fragrant Snow Sea",
@@ -949,6 +950,7 @@
   "more_orn_plants.configuration.Region Weight Settings": "Region Weight Settings",
   "more_orn_plants.configuration.enableRedMeiForest": "Enable RedMeiForest",
   "more_orn_plants.configuration.enableSpringRiver": "Enable SpringRiver",
+  "more_orn_plants.configuration.enableJiangtianMuxue": "Enable JiangtianMuxue",
   "more_orn_plants.configuration.enablePenglai": "Enable Penglai",
   "more_orn_plants.configuration.enableMountMei": "Enable MountMei",
   "more_orn_plants.configuration.enableFragrantSnowSea": "Enable FragrantSnowSea",

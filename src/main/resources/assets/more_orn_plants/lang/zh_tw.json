@@ -781,6 +781,7 @@
 
   "biome.more_orn_plants.red_mei_forest": "白雪紅梅",
   "biome.more_orn_plants.spring_river": "春江",
+  "biome.more_orn_plants.jiangtian_muxue": "江天暮雪",
   "biome.more_orn_plants.penglai": "蓬萊",
   "biome.more_orn_plants.mount_mei": "梅山",
   "biome.more_orn_plants.fragrant_snow_sea": "香雪海",
@@ -939,6 +940,7 @@
   "more_orn_plants.configuration.Region Weight Settings": "區域權重设置",
   "more_orn_plants.configuration.enableRedMeiForest": "生成白雪紅梅",
   "more_orn_plants.configuration.enableSpringRiver": "生成春江",
+  "more_orn_plants.configuration.enableJiangtianMuxue": "生成江天暮雪",
   "more_orn_plants.configuration.enablePenglai": "生成蓬萊",
   "more_orn_plants.configuration.enableMountMei": "生成梅山",
   "more_orn_plants.configuration.enableFragrantSnowSea": "生成香雪海",

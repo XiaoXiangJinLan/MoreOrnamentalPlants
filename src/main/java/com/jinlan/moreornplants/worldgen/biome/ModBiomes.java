@@ -71,6 +71,8 @@ public class ModBiomes {
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "purple_cloud"));
     public static final ResourceKey<Biome> SPRING_RIVER = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "spring_river"));
+    public static final ResourceKey<Biome> JIANGTIAN_MUXUE = ResourceKey.create(Registries.BIOME,
+            ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "jiangtian_muxue"));
     public static final ResourceKey<Biome> PENGLAI = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "penglai"));
     public static final ResourceKey<Biome> MOUNT_MEI = ResourceKey.create(Registries.BIOME,
@@ -112,7 +114,8 @@ public class ModBiomes {
         context.register(GINKGO_FOREST, miscanthusFields(context, true));
         context.register(CROPS_GREEN, cropsGreen(context));
         context.register(PURPLE_CLOUD, purpleCloud(context));
-        context.register(SPRING_RIVER, springRiver(context));
+        context.register(SPRING_RIVER, riverBiome(context, false));
+        context.register(JIANGTIAN_MUXUE, riverBiome(context, true));
         context.register(PENGLAI, penglai(context));
         context.register(MOUNT_MEI, mountMei(context));
         context.register(THE_APRICOT_SPRING_PLATEAU, theApricotSpringPlateau(context));
@@ -705,7 +708,7 @@ public class ModBiomes {
                 .build();
     }
 
-    private static Biome springRiver(BootstrapContext<Biome> context) {
+    private static Biome riverBiome(BootstrapContext<Biome> context, boolean isSnow) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
 
         spawnBuilder.addSpawn(MobCategory.WATER_CREATURE, new MobSpawnSettings.SpawnerData(EntityType.SQUID, 2, 1, 4))
@@ -719,18 +722,21 @@ public class ModBiomes {
         BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_MEI_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_MEI_PLACED);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CYMBIDIUM_RIVER_PLACED);
+        if (!isSnow) {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CYMBIDIUM_RIVER_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, AquaticPlacements.SEAGRASS_RIVER);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PEACH_PETALS_RIVER);
+        }
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_PLAIN);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, AquaticPlacements.SEAGRASS_RIVER);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PEACH_PETALS_RIVER);
 
+        float f = isSnow ? 0.0f : 0.5f;
         return new Biome.BiomeBuilder()
-                .hasPrecipitation(true).temperature(0.5f).downfall(0.6f)
+                .hasPrecipitation(true).temperature(f).downfall(0.6f)
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(4159204).waterFogColor(329011).skyColor(8103167).fogColor(12638463).build())
+                        .waterColor(isSnow ? 3750089 : 4159204).waterFogColor(329011).skyColor(isSnow ? 0xA3C0FF : 8103167).fogColor(12638463).build())
                 .build();
     }
 

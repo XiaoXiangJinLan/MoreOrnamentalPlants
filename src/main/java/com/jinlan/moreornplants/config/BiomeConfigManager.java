@@ -27,6 +27,7 @@ public class BiomeConfigManager {
             case "crops_green" -> ModBiomeConfig.ENABLE_CROPS_GREEN.get();
             case "purple_cloud" -> ModBiomeConfig.ENABLE_PURPLE_CLOUD.get();
             case "spring_river" -> ModBiomeConfig.ENABLE_SPRING_RIVER.get();
+            case "jiangtian_muxue" -> ModBiomeConfig.ENABLE_JIANGTIAN_MUXUE.get();
             case "penglai" -> ModBiomeConfig.ENABLE_PENGLAI.get();
             case "mount_mei" -> ModBiomeConfig.ENABLE_MOUNT_MEI.get();
             case "yunmeng_marsh" -> ModBiomeConfig.ENABLE_YUNMENG_MARSH.get();
