@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-02T13:22:39.250553	Loot Tables
+// 1.21.1	2026-04-09T19:26:10.1257198	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_table/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_table/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_table/blocks/apricot_fence.json
@@ -276,6 +276,7 @@ dbea56b8bc30053c07ffd4596a7d2e222aaec02e data/more_orn_plants/loot_table/blocks/
 f3afb2219818ed3821493d8382a6655f900e55bd data/more_orn_plants/loot_table/blocks/miscanthus.json
 b28a8dd01334ca0804941a5f106e16208eee8640 data/more_orn_plants/loot_table/blocks/mottled_bamboo.json
 57cfbabd4f56e68b176d31f8874edf9337156d07 data/more_orn_plants/loot_table/blocks/mottled_bamboo_sapling.json
+0bca0ccade4aa378352cb10aaca2c33bec6ef7ae data/more_orn_plants/loot_table/blocks/muxue_grass.json
 350f375b6199d92eada75dc55366d0e5f4d94353 data/more_orn_plants/loot_table/blocks/nanjing_wisteria.json
 fcf4adf02a00561f15ea7e12a474a3a625e5efd4 data/more_orn_plants/loot_table/blocks/nanjing_wisteria_plant.json
 797a06a00c3ffdce98fa14202478ef780ae17678 data/more_orn_plants/loot_table/blocks/new_camphor_leaves.json
@@ -605,6 +606,7 @@ e1161b9fe2cb1c11aeb9702128d88e85f33d03b0 data/more_orn_plants/loot_table/blocks/
 7dd4670492fe1ecf3162621bbbe78aca9e4f77f8 data/more_orn_plants/loot_table/blocks/sweetgum_wall_hanging_sign.json
 fb67133ca1ae543c40d07f8c603fb5d3464baeb9 data/more_orn_plants/loot_table/blocks/sweetgum_wall_sign.json
 624c11d905d9442231a50b48a6911f5936ae400c data/more_orn_plants/loot_table/blocks/sweetgum_wood.json
+e4646272a4fc73a538ce1eeec381959cb753f1bb data/more_orn_plants/loot_table/blocks/tall_muxue_grass.json
 c8dfee0bec5fbd098d7694d15086ac388ecb16ba data/more_orn_plants/loot_table/blocks/two_qiao_peony.json
 b42f4884a0c3c9fd4b7f670f3796414437f2e6b7 data/more_orn_plants/loot_table/blocks/upright_crabapple_leaves.json
 2624f97e7355e14d1c2cade859e83ddeb2e68337 data/more_orn_plants/loot_table/blocks/upright_crabapple_sapling.json

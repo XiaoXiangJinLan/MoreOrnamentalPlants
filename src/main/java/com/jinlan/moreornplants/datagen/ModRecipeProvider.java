@@ -1133,13 +1133,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.PEELED_BAMBOO_SHOOTS)
                 .requires(Items.BOWL)
                 .unlockedBy(getHasName(ModItems.PEELED_BAMBOO_SHOOTS), has(ModItems.PEELED_BAMBOO_SHOOTS))
-                .unlockedBy("has_bowl", has(Items.BOWL))
                 .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.LOTUS_ROOT_SOUP)
                 .requires(ModItems.LOTUS_ROOT)
                 .requires(Items.BOWL)
                 .unlockedBy(getHasName(ModItems.LOTUS_ROOT), has(ModItems.LOTUS_ROOT))
-                .unlockedBy("has_bowl", has(Items.BOWL))
                 .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.LOTUS_SEED, 5)
                 .requires(ModItems.LOTUS_SEED_POD)
@@ -1149,7 +1147,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.LOTUS_SEED, 5)
                 .requires(Items.BOWL)
                 .unlockedBy(getHasName(ModItems.LOTUS_SEED), has(ModItems.LOTUS_SEED))
-                .unlockedBy("has_bowl", has(Items.BOWL))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.MUXUE_SOUP)
+                .requires(ModBlocks.MUXUE_GRASS, 2)
+                .requires(Items.BOWL)
+                .unlockedBy(getHasName(ModBlocks.MUXUE_GRASS), has(ModBlocks.MUXUE_GRASS))
                 .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MEI_XIANGNANG)

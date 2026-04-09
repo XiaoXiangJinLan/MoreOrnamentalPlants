@@ -45,7 +45,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(CommonTags.Blocks.LOTUS)
                 .add(ModBlocks.LOTUS_LEAF.get());
 
-        this.tag(BlockTags.REPLACEABLE).add(ModBlocks.BAMBOO_STICK.get());
+        this.tag(BlockTags.REPLACEABLE)
+                .add(ModBlocks.BAMBOO_STICK.get())
+                .add(ModBlocks.MUXUE_GRASS.get(), ModBlocks.TALL_MUXUE_GRASS.get());
 
         this.tag(BlockTags.MOSS_REPLACEABLE)
                 .addTag(CommonTags.Blocks.WEEPING_MEI)
@@ -603,7 +605,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
                 .addTag(CommonTags.Blocks.LOTUS)
-                .add(ModBlocks.BAMBOO_STICK.get());
+                .add(ModBlocks.BAMBOO_STICK.get())
+                .add(ModBlocks.MUXUE_GRASS.get(), ModBlocks.TALL_MUXUE_GRASS.get());
 
         this.tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.WEEPING_CRABAPPLE.get())

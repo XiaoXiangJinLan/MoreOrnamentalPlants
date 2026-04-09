@@ -253,6 +253,9 @@ public class ModItems {
     public static final DeferredItem<Item> LOTUS_SEED_SOUP =
             ITEMS.register("lotus_seed_soup", () -> new Item(new Item.Properties().food(ModFoods.LOTUS_SEED_SOUP)));
 
+    public static final DeferredItem<Item> MUXUE_SOUP =
+            ITEMS.register("muxue_soup", () -> new MuxueSoupItem(new Item.Properties().food(ModFoods.MUXUE_GRASS)));
+
     public static final DeferredItem<Item> CRABAPPLE =
             ITEMS.register("crabapple", () -> new Item(new Item.Properties().food(ModFoods.CRABAPPLE)));
     public static final DeferredItem<Item> GOLDEN_CRABAPPLE =

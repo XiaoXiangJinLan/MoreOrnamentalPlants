@@ -593,6 +593,9 @@
     },
     "more_orn_plants:bamboo_stick": {
       "chance": 0.3
+    },
+    "more_orn_plants:muxue_grass": {
+      "chance": 0.65
     }
   }
 }

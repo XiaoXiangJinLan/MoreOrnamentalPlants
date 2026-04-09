@@ -164,7 +164,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.COTTON_ROSE.asItem())
                 .addTag(CommonTags.Items.WISTERIA)
                 .add(ModBlocks.PEACH_PINK_PETALS.asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.asItem(), ModBlocks.SPRING_PETALS.asItem())
-                .add(ModItems.BAMBOO_STICK.get())
+                .add(ModItems.BAMBOO_STICK.get(), ModBlocks.MUXUE_GRASS.asItem())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
                 .add(Blocks.SUNFLOWER.asItem())
@@ -352,7 +352,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(Tags.Items.FOODS_SOUP)
                 .add(ModItems.LOTUS_ROOT_SOUP.get())
                 .add(ModItems.LOTUS_SEED_SOUP.get())
-                .add(ModItems.BAMBOO_SHOOTS_SOUP.get());
+                .add(ModItems.BAMBOO_SHOOTS_SOUP.get())
+                .add(ModItems.MUXUE_SOUP.get());
 
         this.tag(Tags.Items.FOODS_VEGETABLE)
                 .add(ModItems.PEELED_BAMBOO_SHOOTS.get())
@@ -405,6 +406,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.WOLF_FOOD)
                 .add(ModItems.LOTUS_ROOT_SOUP.get());
+
+        this.tag(ItemTags.AXOLOTL_FOOD)
+                .add(ModBlocks.MUXUE_GRASS.asItem());
+
+        this.tag(ItemTags.TURTLE_FOOD)
+                .add(ModBlocks.MUXUE_GRASS.asItem());
 
         this.tag(ModTags.Items.ZIYING_TOOLS)
                 .add(ModItems.ZIYING_SWORD.get(), ModItems.ZIYING_AXE.get(), ModItems.ZIYING_PICKAXE.get(),

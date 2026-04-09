@@ -11,7 +11,7 @@ public class ModFoods {
     public static final FoodProperties BAMBOO_SHOOTS_SOUP = stew().build();
     public static final FoodProperties LOTUS_ROOT = new FoodProperties.Builder().nutrition(3).saturationModifier(0.3F).build();
     public static final FoodProperties LOTUS_ROOT_SOUP = stew().build();
-    public static final FoodProperties LOTUS_SEED = new FoodProperties.Builder().nutrition(1).saturationModifier(0.3F).build();
+    public static final FoodProperties LOTUS_SEED = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1F).build();
     public static final FoodProperties LOTUS_SEED_SOUP = stew().build();
     public static final FoodProperties CRABAPPLE = new FoodProperties.Builder().nutrition(2).saturationModifier(0.3F).build();
     public static final FoodProperties ENCHANTED_GOLDEN_CRABAPPLE = new FoodProperties.Builder().nutrition(2).saturationModifier(1.0F)
@@ -38,6 +38,8 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 60, 0), 0.2F).fast().build();
     public static final FoodProperties GOLDEN_MEI = new FoodProperties.Builder().nutrition(4).saturationModifier(1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400, 0), 1.0F).fast().build();
+    public static final FoodProperties MUXUE_GRASS = new FoodProperties.Builder().nutrition(2).saturationModifier(0.4F).usingConvertsTo(Items.BOWL)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1800, 0), 1.0F).build();
 
     private static FoodProperties.Builder stew() {
         return (new FoodProperties.Builder()).nutrition(6).saturationModifier(0.6F).usingConvertsTo(Items.BOWL);
