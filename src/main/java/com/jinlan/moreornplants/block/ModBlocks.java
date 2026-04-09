@@ -7,6 +7,8 @@ import com.jinlan.moreornplants.block.BambooBlocks.MottledBambooSaplingBlock;
 import com.jinlan.moreornplants.block.BambooBlocks.MottledBambooStalkBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.*;
 import com.jinlan.moreornplants.block.LeavesBlocks.*;
+import com.jinlan.moreornplants.block.WaterPlantsBlock.MuxueGrassBlock;
+import com.jinlan.moreornplants.block.WaterPlantsBlock.TallMuxueGrassBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.*;
 import com.jinlan.moreornplants.block.saplingBlocks.*;
 import com.jinlan.moreornplants.block.xiangnangBlocks.*;
@@ -1388,6 +1390,10 @@ public class ModBlocks {
             registerBlock("white_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).mapColor(MapColor.SNOW).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final RegistryObject<Block> LOTUS_LEAF =
             registerBlock("lotus_leaf", () -> new WaterLotusLeafBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
+    public static final RegistryObject<Block> MUXUE_GRASS =
+            registerBlock("muxue_grass", () -> new MuxueGrassBlock(BlockBehaviour.Properties.copy(Blocks.SEAGRASS).lightLevel(p_220867_ -> 10)));
+    public static final RegistryObject<Block> TALL_MUXUE_GRASS =
+            BLOCKS.register("tall_muxue_grass", () -> new TallMuxueGrassBlock(BlockBehaviour.Properties.copy(Blocks.TALL_SEAGRASS).lightLevel(p_220867_ -> 10)));
 
     public static final RegistryObject<Block> ORNAMENTAL_PEACH_PETALS =
             BLOCKS.register("ornamental_peach_petals", () -> leafPile2(MapColor.COLOR_PINK));

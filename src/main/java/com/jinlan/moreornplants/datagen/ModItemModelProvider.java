@@ -403,6 +403,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simplerBlockItem(ModBlocks.LOTUS);
         simplerBlockItem(ModBlocks.WHITE_LOTUS);
         simplerBlockItem(ModBlocks.LOTUS_LEAF);
+        simplerBlockItem(ModBlocks.MUXUE_GRASS);
         simpleItem(ModItems.LOTUS_ROOT);
         simpleItem(ModItems.LOTUS_SEED);
         simpleItem(ModItems.LOTUS_SEED_POD);
@@ -415,6 +416,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.IMMORTAL_PEACH);
         simpleItem(ModItems.MEI);
         simpleItem(ModItems.GOLDEN_MEI);
+        simpleItem(ModItems.MUXUE_SOUP);
 
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
         simplerBlockItem(ModBlocks.FRAGRANT_SNOW_PETALS);

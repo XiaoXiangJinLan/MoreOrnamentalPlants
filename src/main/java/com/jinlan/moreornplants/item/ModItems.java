@@ -257,6 +257,9 @@ public class ModItems {
     public static final RegistryObject<Item> LOTUS_SEED_SOUP =
             ITEMS.register("lotus_seed_soup", () -> new BowlFoodItem((new Item.Properties()).food(ModFoods.LOTUS_SEED_SOUP)));
 
+    public static final RegistryObject<Item> MUXUE_SOUP =
+            ITEMS.register("muxue_soup", () -> new MuxueSoupItem(new Item.Properties().food(ModFoods.MUXUE_GRASS)));
+
     public static final RegistryObject<Item> CRABAPPLE =
             ITEMS.register("crabapple", () -> new Item(new Item.Properties().food(ModFoods.CRABAPPLE)));
     public static final RegistryObject<Item> GOLDEN_CRABAPPLE =

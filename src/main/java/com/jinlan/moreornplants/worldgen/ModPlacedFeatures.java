@@ -188,6 +188,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_PLACED = registerKey("black_bamboo_placed");
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_GALLERY_PLACED = registerKey("black_bamboo_gallery_placed");
     public static final ResourceKey<PlacedFeature> LOTUS_PLACED = registerKey("lotus_placed");
+    public static final ResourceKey<PlacedFeature> MUXUE_GRASS_PLACED = registerKey("muxue_grass_placed");
     public static final ResourceKey<PlacedFeature> WISTERIA_TREE_PLACED = registerKey("wisteria_tree_placed");
     public static final ResourceKey<PlacedFeature> WISTERIA_1 = registerKey("wisteria_1");
     public static final ResourceKey<PlacedFeature> WISTERIA_2 = registerKey("wisteria_2");
@@ -251,6 +252,10 @@ public class ModPlacedFeatures {
         register(context, PEACH_PETALS_RIVER, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEACH_PETALS_RIVER),
                 List.of(CountPlacement.of(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, MUXUE_GRASS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.MUXUE_GRASS_KEY),
+                List.of(CountPlacement.of(3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_TOP_SOLID, BiomeFilter.biome()));
 
         register(context, DOUBLE_PINK_MEI_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.DOUBLE_PINK_MEI),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1F, 1),
@@ -862,7 +867,7 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(11),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_FOREST_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_FOREST_2),
-                List.of(CountPlacement.of(11),
+                List.of(CountPlacement.of(15),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_FOREST_3, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
                 List.of(NoiseThresholdCountPlacement.of(-0.8D, 6, 9),

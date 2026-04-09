@@ -243,6 +243,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.COTTON_ROSE.get());
                         pOutput.accept(ModBlocks.MISCANTHUS.get());
                         pOutput.accept(ModBlocks.GOLDEN_MISCANTHUS.get());
+                        pOutput.accept(ModBlocks.MUXUE_GRASS.get());
                         pOutput.accept(ModBlocks.RED_MEI_LOG.get());
                         pOutput.accept(ModBlocks.WHITE_MEI_LOG.get());
                         pOutput.accept(ModBlocks.GREEN_CALYX_MEI_LOG.get());
@@ -582,6 +583,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BAMBOO_SHOOTS_SOUP.get());
                         pOutput.accept(ModItems.LOTUS_ROOT_SOUP.get());
                         pOutput.accept(ModItems.LOTUS_SEED_SOUP.get());
+                        pOutput.accept(ModItems.MUXUE_SOUP.get());
                         pOutput.accept(ModItems.ZIYING_BEAD.get());
                         pOutput.accept(ModItems.SUYU_BEAD.get());
                         pOutput.accept(ModItems.ZIYU_YUANYANG_BEAD.get());

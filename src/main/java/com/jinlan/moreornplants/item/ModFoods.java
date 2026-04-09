@@ -3,6 +3,7 @@ package com.jinlan.moreornplants.item;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Items;
 
 public class ModFoods {
     public static final FoodProperties PEELED_BAMBOO_SHOOTS = new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).effect(() -> new MobEffectInstance(MobEffects.HUNGER, 300, 0), 0.8F).build();
@@ -36,6 +37,8 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 60, 0), 0.2F).fast().build();
     public static final FoodProperties GOLDEN_MEI = new FoodProperties.Builder().nutrition(4).saturationMod(1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400, 0), 1.0F).fast().build();
+    public static final FoodProperties MUXUE_GRASS = new FoodProperties.Builder().nutrition(2).saturationMod(0.4F)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1800, 0), 1.0F).build();
 
     private static FoodProperties.Builder stew() {
         return (new FoodProperties.Builder()).nutrition(6).saturationMod(0.6F);

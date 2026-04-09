@@ -293,6 +293,7 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_FOUNTAIN_GRASS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_FOUNTAIN_GRASS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.LOTUS_LEAF.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.MUXUE_GRASS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.CRABAPPLE.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.MEI.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.LOTUS_ROOT.get(), 0.65F);

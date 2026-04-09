@@ -62,7 +62,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> DOUBLE_WHITE_MEI = registerKey("double_white_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_FLAVESCENS_MEI = registerKey("ancient_flavescens_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLAVESCENS_MEI = registerKey("flavescens_mei");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FLAVESCENS_MEI_WITH_SNOW = registerKey("flavescens_meii_with_snow");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FLAVESCENS_MEI_WITH_SNOW = registerKey("flavescens_mei_with_snow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_VERSICOLOR_MEI = registerKey("ancient_versicolor_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_MEI = registerKey("versicolor_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_WEEPING_MEI = registerKey("red_weeping_mei_key");
@@ -202,6 +202,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_KEY = registerKey("black_bamboo_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_GALLERY_KEY = registerKey("black_bamboo_gallery_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LOTUS_KEY = registerKey("lotus_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MUXUE_GRASS_KEY = registerKey("muxue_grass_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA_TREE = registerKey("wisteria_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA = registerKey("wisteria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_WISTERIA = registerKey("white_wisteria");
@@ -1367,6 +1368,13 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.WATER),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, -1, 0), Blocks.DIRT, Blocks.SAND, Blocks.CLAY, Blocks.MUD)))));
+
+        register(context, MUXUE_GRASS_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(36, 3, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MUXUE_GRASS.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.WATER),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.DIRT, Blocks.SAND, Blocks.GRAVEL, Blocks.CLAY)))));
 
         register(context, CHINESE_ROSE_KEY, Feature.FLOWER, new RandomPatchConfiguration(64, 8, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,

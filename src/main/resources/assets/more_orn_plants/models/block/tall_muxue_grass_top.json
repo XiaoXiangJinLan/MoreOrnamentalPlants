@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_seagrass",
+  "textures": {
+    "texture": "more_orn_plants:block/tall_muxue_grass_top"
+  },
+  "render_type": "cutout"
+}

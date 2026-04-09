@@ -173,7 +173,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
                 .addTag(ForgeTags.Items.WISTERIA)
                 .add(ModBlocks.PEACH_PINK_PETALS.get().asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem(), ModBlocks.SPRING_PETALS.get().asItem())
-                .add(ModItems.BAMBOO_STICK.get())
+                .add(ModItems.BAMBOO_STICK.get(), ModBlocks.MUXUE_GRASS.get().asItem())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
                 .add(Blocks.SUNFLOWER.asItem())
