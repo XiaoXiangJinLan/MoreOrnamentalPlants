@@ -1,7 +1,7 @@
 Ornamental Plants is a biome mod themed around botanical decoration, bringing the beauty of Eastern gardens into Minecraft. 
 It adds a variety of classic ornamental plants native to China, such as famous flowering trees: Mei Blossom, Crabapple; 
 colorful foliage trees: Ginkgo, Chinese Parasol; and renowned flowers: Chinese Rose, Herbaceous Peony, Camellia, and more. 
-This mod introduces thirty-three new biomes and six structures, waiting for you to explore!
+This mod introduces thirty-four new biomes and six structures, waiting for you to explore!
 
 New Trees
 ============
@@ -55,6 +55,7 @@ New Biomes
 • Yunmeng Marsh: A wetland swamp where Double Pink Mei and Camphor trees grow. Summer Cymbidium grows on the forest floor, and Lotus leaves and flowers are abundant in the water.
 #### River Biomes
 • Spring River: A river with Floating Blossoms (Ornamental/Wild Peach Petals) on its surface, and Jiang Mei, Orchids, and vanilla orchids growing on its banks.
+• Jiangtian Muxue: A cold river.
 #### Cave Biomes
 • Ziying Caves: Caves where Crape Myrtle and Chinese Wisteria grow.  
 • Suyu Caves: Caves where White Crape Myrtle and White Chinese Wisteria grow.
@@ -92,7 +93,7 @@ New Mobs
 • Baihua Cat: Spawns in Flowers Grove, Crabapple Grove, The Peach Blossom Spring, and Penglai. Can be tamed with flowers. When fed Immortal Peach, Cloud Apricot, or Crabapple, it produces the corresponding fruit tree sapling. It also accelerates the growth of crops, cut flowers, and other plants within a 1-block radius.
 
 《观赏植物》是一个以植物装饰为主题的群系模组，将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠；
-彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了三十三个全新的生物群系、六个结构，等待你来探索！
+彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了三十四个全新的生物群系、六个结构，等待你来探索！
 
 ## 新树种
 梅花、海棠、杏花、桃花、梨花、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
@@ -140,6 +141,7 @@ New Mobs
 •**云梦泽**：生长有宫粉梅和樟树的湿地沼泽，林下生长有蕙兰，水里生长有大量荷叶荷花；
 #### 河流群系
 •**春江**：水面漂浮有流红、浮英的河流，岸边生长有江梅、兰花、原版兰花；
+•**江天暮雪**：水面结冰的冷河，水底生长有暮雪草；
 #### 洞穴群系
 •**紫英洞**：生长有紫薇和紫藤的洞穴；  
 •**素玉洞**：生长有白薇和银薇的洞穴；
