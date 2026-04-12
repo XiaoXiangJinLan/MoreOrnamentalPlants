@@ -330,10 +330,14 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.WILD_PEACH_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.WILD_PEACH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WHITE_PEACH_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WHITE_PEACH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.IMMORTAL_PEACH_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.IMMORTAL_PEACH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.PEAR_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.PEAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.TAIWAN_CHERRY_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.TAIWAN_CHERRY_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get(), block ->
@@ -574,12 +578,18 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WILD_PEACH_SAPLING.get());
         this.add(ModBlocks.POTTED_WILD_PEACH_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.WILD_PEACH_SAPLING.get()));
+        this.dropSelf(ModBlocks.WHITE_PEACH_SAPLING.get());
+        this.add(ModBlocks.POTTED_WHITE_PEACH_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_PEACH_SAPLING.get()));
         this.dropSelf(ModBlocks.IMMORTAL_PEACH_SAPLING.get());
         this.add(ModBlocks.POTTED_IMMORTAL_PEACH_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.IMMORTAL_PEACH_SAPLING.get()));
         this.dropSelf(ModBlocks.PEAR_SAPLING.get());
         this.add(ModBlocks.POTTED_PEAR_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.PEAR_SAPLING.get()));
+        this.dropSelf(ModBlocks.TAIWAN_CHERRY_SAPLING.get());
+        this.add(ModBlocks.POTTED_TAIWAN_CHERRY_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.TAIWAN_CHERRY_SAPLING.get()));
         this.dropSelf(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get());
         this.add(ModBlocks.POTTED_FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get()));

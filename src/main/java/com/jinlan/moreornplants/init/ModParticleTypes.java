@@ -58,6 +58,9 @@ public class ModParticleTypes {
     public static final Supplier<SimpleParticleType> WILD_PEACH_LEAVES =
             registerParticleType("wild_peach_leaves", () -> new SimpleParticleType(false));
 
+    public static final Supplier<SimpleParticleType> WHITE_PEACH_LEAVES =
+            registerParticleType("white_peach_leaves", () -> new SimpleParticleType(false));
+
     public static final Supplier<SimpleParticleType> IMMORTAL_PEACH_LEAVES =
             registerParticleType("immortal_peach_leaves", () -> new SimpleParticleType(false));
 
@@ -123,6 +126,9 @@ public class ModParticleTypes {
 
     public static final Supplier<SimpleParticleType> VERSICOLOR_CAMELLIA_LEAVES =
             registerParticleType("versicolor_camellia_leaves", () -> new SimpleParticleType(false));
+
+    public static final Supplier<SimpleParticleType> TAIWAN_CHERRY_LEAVES =
+            registerParticleType("taiwan_cherry_leaves", () -> new SimpleParticleType(false));
 
     public static final Supplier<SimpleParticleType> BAIHUA_CAT =
             registerParticleType("baihua_cat", () -> new SimpleParticleType(false));

@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:cherry",
+  "feature": "more_orn_plants:white_peach",
   "placement": [
     {
       "type": "minecraft:count",
@@ -36,7 +36,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "minecraft:cherry_sapling",
+          "Name": "more_orn_plants:white_peach_sapling",
           "Properties": {
             "stage": "0"
           }

@@ -1409,13 +1409,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.IMMORTAL_PEACH_SAPLING)
                 .pattern(" O ")
-                .pattern("OCW")
-                .pattern(" W ")
+                .pattern("WCB")
+                .pattern(" O ")
                 .define('O', ModBlocks.ORNAMENTAL_PEACH_SAPLING)
                 .define('W', ModBlocks.WILD_PEACH_SAPLING)
+                .define('B', ModBlocks.WHITE_PEACH_SAPLING)
                 .define('C', ModItems.ZIYU_YUANYANG_BEAD)
                 .unlockedBy(getHasName(ModBlocks.ORNAMENTAL_PEACH_SAPLING), has(ModBlocks.ORNAMENTAL_PEACH_SAPLING))
                 .unlockedBy(getHasName(ModBlocks.WILD_PEACH_SAPLING), has(ModBlocks.WILD_PEACH_SAPLING))
+                .unlockedBy(getHasName(ModBlocks.WHITE_PEACH_SAPLING), has(ModBlocks.WHITE_PEACH_SAPLING))
                 .unlockedBy(getHasName(ModItems.ZIYU_YUANYANG_BEAD), has(ModItems.ZIYU_YUANYANG_BEAD))
                 .save(recipeOutput);
 

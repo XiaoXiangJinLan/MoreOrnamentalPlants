@@ -478,6 +478,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.WILD_PEACH_SAPLING);
         simpleBlock(ModBlocks.POTTED_WILD_PEACH_SAPLING.get(), models().singleTexture("potted_wild_peach_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.WILD_PEACH_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.WHITE_PEACH_LEAVES);
+        saplingBlock(ModBlocks.WHITE_PEACH_SAPLING);
+        simpleBlock(ModBlocks.POTTED_WHITE_PEACH_SAPLING.get(), models().singleTexture("potted_white_peach_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.WHITE_PEACH_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.IMMORTAL_PEACH_LEAVES);
         saplingBlock(ModBlocks.IMMORTAL_PEACH_SAPLING);
         simpleBlock(ModBlocks.POTTED_IMMORTAL_PEACH_SAPLING.get(), models().singleTexture("potted_immortal_peach_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
@@ -486,6 +490,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.PEAR_SAPLING);
         simpleBlock(ModBlocks.POTTED_PEAR_SAPLING.get(), models().singleTexture("potted_pear_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.PEAR_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.TAIWAN_CHERRY_LEAVES);
+        saplingBlock(ModBlocks.TAIWAN_CHERRY_SAPLING);
+        simpleBlock(ModBlocks.POTTED_TAIWAN_CHERRY_SAPLING.get(), models().singleTexture("potted_taiwan_cherry_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.TAIWAN_CHERRY_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES);
         saplingBlock(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING);
         simpleBlock(ModBlocks.POTTED_FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get(), models().singleTexture("potted_flowering_purple_leaf_plum_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",

@@ -178,6 +178,13 @@ public class ModTreeGrower {
             Optional.empty()
     );
 
+    public static final TreeGrower WHITE_PEACH = new TreeGrower(
+            "white_peach",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.WHITE_PEACH),
+            Optional.empty()
+    );
+
     public static final TreeGrower IMMORTAL_PEACH = new TreeGrower(
             "immortal_peach",
             Optional.empty(),
@@ -189,6 +196,13 @@ public class ModTreeGrower {
             "pear",
             Optional.empty(),
             Optional.of(ModConfiguredFeatures.PEAR),
+            Optional.empty()
+    );
+
+    public static final TreeGrower TAIWAN_CHERRY = new TreeGrower(
+            "taiwan_cherry",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.TAIWAN_CHERRY),
             Optional.empty()
     );
 

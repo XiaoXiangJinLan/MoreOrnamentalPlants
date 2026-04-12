@@ -35,8 +35,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CLOUD_APRICOT_LEAVES);
                         pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_LEAVES);
                         pOutput.accept(ModBlocks.WILD_PEACH_LEAVES);
+                        pOutput.accept(ModBlocks.WHITE_PEACH_LEAVES);
                         pOutput.accept(ModBlocks.IMMORTAL_PEACH_LEAVES);
                         pOutput.accept(ModBlocks.PEAR_LEAVES);
+                        pOutput.accept(ModBlocks.TAIWAN_CHERRY_LEAVES);
                         pOutput.accept(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES);
                         pOutput.accept(ModBlocks.PURPLE_LEAF_PLUM_LEAVES);
                         pOutput.accept(ModBlocks.GOLDEN_OSMANTHUS_LEAVES);
@@ -89,8 +91,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CLOUD_APRICOT_SAPLING);
                         pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_SAPLING);
                         pOutput.accept(ModBlocks.WILD_PEACH_SAPLING);
+                        pOutput.accept(ModBlocks.WHITE_PEACH_SAPLING);
                         pOutput.accept(ModBlocks.IMMORTAL_PEACH_SAPLING);
                         pOutput.accept(ModBlocks.PEAR_SAPLING);
+                        pOutput.accept(ModBlocks.TAIWAN_CHERRY_SAPLING);
                         pOutput.accept(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING);
                         pOutput.accept(ModBlocks.PURPLE_LEAF_PLUM_SAPLING);
                         pOutput.accept(ModBlocks.GOLDEN_OSMANTHUS_SAPLING);

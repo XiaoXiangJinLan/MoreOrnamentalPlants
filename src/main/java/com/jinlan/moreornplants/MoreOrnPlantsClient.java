@@ -115,6 +115,10 @@ public class MoreOrnPlantsClient {
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new PeachParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
+        event.registerSpriteSet(ModParticleTypes.WHITE_PEACH_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new PeachParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
         event.registerSpriteSet(ModParticleTypes.IMMORTAL_PEACH_LEAVES.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new PeachParticle(pLevel, pX, pY, pZ, spriteProvider)
@@ -202,6 +206,10 @@ public class MoreOrnPlantsClient {
         event.registerSpriteSet(ModParticleTypes.VERSICOLOR_CAMELLIA_LEAVES.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new CamphorParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.TAIWAN_CHERRY_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
         event.registerSpriteSet(ModParticleTypes.BAIHUA_CAT.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
