@@ -739,7 +739,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), ModBlocks.BAOHUA_CHINESE_ROSE.get());
 
         this.tag(CommonTags.Blocks.CHRYSANTHEMUM)
-                .add(ModBlocks.CHRYSANTHEMUM.get(), ModBlocks.XIHU_LIUYUE.get(), ModBlocks.GOLD_BACKED_SCARLET_MUM.get())
+                .add(ModBlocks.CHRYSANTHEMUM.get(), ModBlocks.XIHU_LIUYUE.get(), ModBlocks.GOLD_BACKED_SCARLET_MUM.get(), ModBlocks.BLACK_CHRYSANTHEMUM.get())
                 .add(ModBlocks.WHITE_CHRYSANTHEMUM.get(), ModBlocks.GREEN_CHRYSANTHEMUM.get(), ModBlocks.PURPLE_CHRYSANTHEMUM.get())
                 .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get(), ModBlocks.PINK_CHRYSANTHEMUM.get(), ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get());
 

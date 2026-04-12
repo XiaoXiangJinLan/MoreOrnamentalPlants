@@ -1,5 +1,5 @@
 {
-  "feature": "more_orn_plants:upright_crabapple_small",
+  "feature": "more_orn_plants:upright_crabapple",
   "placement": [
     {
       "type": "minecraft:count",
@@ -7,11 +7,11 @@
         "type": "minecraft:weighted_list",
         "distribution": [
           {
-            "data": 1,
-            "weight": 19
+            "data": 0,
+            "weight": 4
           },
           {
-            "data": 2,
+            "data": 1,
             "weight": 1
           }
         ]

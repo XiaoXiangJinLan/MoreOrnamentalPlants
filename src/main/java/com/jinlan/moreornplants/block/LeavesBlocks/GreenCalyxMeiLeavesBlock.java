@@ -7,6 +7,7 @@ import net.minecraft.util.ParticleUtils;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.NotNull;
 
 public class GreenCalyxMeiLeavesBlock extends ModLeavesBlock {
     public GreenCalyxMeiLeavesBlock(Properties properties) {
@@ -14,9 +15,9 @@ public class GreenCalyxMeiLeavesBlock extends ModLeavesBlock {
     }
 
     @Override
-    public void animateTick(BlockState state, Level world, BlockPos pos, RandomSource random) {
+    public void animateTick(@NotNull BlockState state, @NotNull Level world, @NotNull BlockPos pos, @NotNull RandomSource random) {
         super.animateTick(state, world, pos, random);
-        if (random.nextInt(20) ==0) {
+        if (random.nextInt(15) ==0) {
             BlockPos blockPos = pos.below();
             BlockState blockState = world.getBlockState(blockPos);
             if (!isFaceFull(blockState.getCollisionShape(world, blockPos), Direction.UP)) {

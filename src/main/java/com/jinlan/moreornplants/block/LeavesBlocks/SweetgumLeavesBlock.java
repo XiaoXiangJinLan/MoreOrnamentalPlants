@@ -7,6 +7,7 @@ import net.minecraft.util.ParticleUtils;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.NotNull;
 
 public class SweetgumLeavesBlock extends ModLeavesBlock {
     public SweetgumLeavesBlock(Properties properties) {
@@ -14,9 +15,9 @@ public class SweetgumLeavesBlock extends ModLeavesBlock {
     }
 
     @Override
-    public void animateTick(BlockState state, Level world, BlockPos pos, RandomSource random) {
+    public void animateTick(@NotNull BlockState state, @NotNull Level world, @NotNull BlockPos pos, @NotNull RandomSource random) {
         super.animateTick(state, world, pos, random);
-        if (random.nextInt(80) ==0) {
+        if (random.nextInt(60) ==0) {
             BlockPos blockPos = pos.below();
             BlockState blockState = world.getBlockState(blockPos);
             if (!isFaceFull(blockState.getCollisionShape(world, blockPos), Direction.UP)) {

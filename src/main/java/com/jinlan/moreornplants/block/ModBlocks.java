@@ -37,7 +37,7 @@ public class ModBlocks {
             DeferredRegister.createBlocks(MoreOrnPlants.MODID);
 
     public static final DeferredBlock<Block> RED_MEI_LEAVES =
-            registerBlock("red_mei_leaves", () -> new RedMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_RED)));
+            registerBlock("red_mei_leaves", () -> new RedBoneMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_RED)));
     public static final DeferredBlock<Block> WHITE_MEI_LEAVES =
             registerBlock("white_mei_leaves", () -> new WhiteMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
     public static final DeferredBlock<Block> PINK_MEI_LEAVES =
@@ -957,6 +957,8 @@ public class ModBlocks {
             registerBlock("gold_backed_scarlet_mum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WHITE_CHRYSANTHEMUM =
             registerBlock("white_chrysanthemum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> BLACK_CHRYSANTHEMUM =
+            registerBlock("black_chrysanthemum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> GREEN_CHRYSANTHEMUM =
             registerBlock("green_chrysanthemum", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PURPLE_CHRYSANTHEMUM =
@@ -1074,6 +1076,8 @@ public class ModBlocks {
             BLOCKS.register("potted_gold_backed_scarlet_mum", () -> flowerPot(GOLD_BACKED_SCARLET_MUM.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_CHRYSANTHEMUM =
             BLOCKS.register("potted_white_chrysanthemum", () -> flowerPot(WHITE_CHRYSANTHEMUM.get()));
+    public static final DeferredBlock<Block> POTTED_BLACK_CHRYSANTHEMUM =
+            BLOCKS.register("potted_black_chrysanthemum", () -> flowerPot(BLACK_CHRYSANTHEMUM.get()));
     public static final DeferredBlock<Block> POTTED_GREEN_CHRYSANTHEMUM =
             BLOCKS.register("potted_green_chrysanthemum", () -> flowerPot(GREEN_CHRYSANTHEMUM.get()));
     public static final DeferredBlock<Block> POTTED_PURPLE_CHRYSANTHEMUM =

@@ -116,6 +116,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.XIHU_LIUYUE);
                         pOutput.accept(ModBlocks.GOLD_BACKED_SCARLET_MUM);
                         pOutput.accept(ModBlocks.WHITE_CHRYSANTHEMUM);
+                        pOutput.accept(ModBlocks.BLACK_CHRYSANTHEMUM);
                         pOutput.accept(ModBlocks.GREEN_CHRYSANTHEMUM);
                         pOutput.accept(ModBlocks.PURPLE_CHRYSANTHEMUM);
                         pOutput.accept(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM);

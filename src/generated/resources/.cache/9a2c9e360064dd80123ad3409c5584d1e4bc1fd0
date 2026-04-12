@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-09T16:45:43.0829136	Item Models: more_orn_plants
+// 1.21.1	2026-04-12T16:34:33.6752086	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -19,6 +19,7 @@ b2f04d57ce01d85df613f2fc659fd83e06e6c484 assets/more_orn_plants/models/item/baih
 427e4617acac7e25f51a48509914f14f743bd116 assets/more_orn_plants/models/item/bamboo_stick.json
 97c5ae48a11f88faf5a6bcfd3c69efbfc7311a11 assets/more_orn_plants/models/item/baohua_chinese_rose.json
 7fc4851906b16c6858c66591235a814c6243fecf assets/more_orn_plants/models/item/black_bamboo.json
+4f4a8d6db72b51df83629ad9d3c60c16618dffae assets/more_orn_plants/models/item/black_chrysanthemum.json
 aa2d9351400fc26842c8847052b0d8c418da31a3 assets/more_orn_plants/models/item/blue_chinese_wisteria.json
 222e7aee9360450873041b06fa86a5b39ca9858d assets/more_orn_plants/models/item/blue_peony.json
 aa550a38a82ae9df2ae0abbcc32c3c0371626f49 assets/more_orn_plants/models/item/caiyun_sword.json

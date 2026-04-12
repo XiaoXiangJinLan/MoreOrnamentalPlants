@@ -311,6 +311,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.BLACK_DYE)
                 .add(ModBlocks.WINTER_CYMBIDIUM.asItem())
+                .add(ModBlocks.BLACK_CHRYSANTHEMUM.asItem())
                 .add(ModBlocks.INK_PEONY.asItem());
 
         this.tag(ModTags.Items.ZIYING_FOX_FOOD)

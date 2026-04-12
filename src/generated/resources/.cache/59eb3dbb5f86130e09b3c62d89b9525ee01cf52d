@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-09T19:26:10.1257198	Loot Tables
+// 1.21.1	2026-04-12T16:34:33.678593	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_table/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_table/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_table/blocks/apricot_fence.json
@@ -20,6 +20,7 @@ e642b04125ea29046f8cb70b2b26c476ef36ddf8 data/more_orn_plants/loot_table/blocks/
 235409a582d46f60666c03efc1bbec8333b601cd data/more_orn_plants/loot_table/blocks/baohua_chinese_rose.json
 1b29850b1d0dd31332a4476eda900e3914bf710d data/more_orn_plants/loot_table/blocks/black_bamboo.json
 fb2517ffe1470e2ee21bc44fdf8bbb193150bd30 data/more_orn_plants/loot_table/blocks/black_bamboo_sapling.json
+8ed70b12bf1002077697eda168c30b43955b1ab2 data/more_orn_plants/loot_table/blocks/black_chrysanthemum.json
 11c17ad65cbe85d36a4c31e6f61f182fec841d16 data/more_orn_plants/loot_table/blocks/blue_chinese_wisteria.json
 8216a88d7384082341120bcc3d1806de40164a17 data/more_orn_plants/loot_table/blocks/blue_chinese_wisteria_plant.json
 36e600f303974a55f8612197060c530d527ee6c2 data/more_orn_plants/loot_table/blocks/blue_peony.json
@@ -361,6 +362,7 @@ dc55dc7e13297e130866e84892f39c0ada97fc9e data/more_orn_plants/loot_table/blocks/
 03bca2a20b4f7c6ae374eaa5bf291b3fbca0877f data/more_orn_plants/loot_table/blocks/potted_bamboo_stick.json
 9240bd8b2e8e98d03086e34fc2bab7af998b1194 data/more_orn_plants/loot_table/blocks/potted_baohua_chinese_rose.json
 86c45057d1f0f48be1af0fa5eeee5410140e6e6f data/more_orn_plants/loot_table/blocks/potted_black_bamboo.json
+6d93cafba7b5834bec35a7ef445c0ae2f90099c0 data/more_orn_plants/loot_table/blocks/potted_black_chrysanthemum.json
 ce189510e4dbb8769d194545390d0c2fbff97128 data/more_orn_plants/loot_table/blocks/potted_blue_peony.json
 bc3ec115c29f21a3fca98478fe07021ec4b0e656 data/more_orn_plants/loot_table/blocks/potted_camellia.json
 58c5a04da72cf6cfaeb0187957d14e79f9989e53 data/more_orn_plants/loot_table/blocks/potted_camphor_sapling.json
