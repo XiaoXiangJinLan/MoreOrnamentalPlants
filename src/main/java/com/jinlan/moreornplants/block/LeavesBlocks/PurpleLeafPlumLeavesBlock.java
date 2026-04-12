@@ -16,7 +16,7 @@ public class PurpleLeafPlumLeavesBlock extends ModLeavesBlock {
     @Override
     public void animateTick(BlockState state, Level world, BlockPos pos, RandomSource random) {
         super.animateTick(state, world, pos, random);
-        if (random.nextInt(80) ==0) {
+        if (random.nextInt(60) ==0) {
             BlockPos blockPos = pos.below();
             BlockState blockState = world.getBlockState(blockPos);
             if (!isFaceFull(blockState.getCollisionShape(world, blockPos), Direction.UP)) {

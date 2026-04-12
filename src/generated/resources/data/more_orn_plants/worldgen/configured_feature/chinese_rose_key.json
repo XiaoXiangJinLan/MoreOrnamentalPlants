@@ -15,29 +15,11 @@
                     "half": "lower"
                   }
                 },
-                "weight": 5
+                "weight": 9
               },
               {
                 "data": {
                   "Name": "more_orn_plants:pink_chinese_rose",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 3
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:yellow_chinese_rose",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:white_chinese_rose",
                   "Properties": {
                     "half": "lower"
                   }
@@ -85,8 +67,8 @@
         }
       ]
     },
-    "tries": 64,
-    "xz_spread": 8,
-    "y_spread": 4
+    "tries": 172,
+    "xz_spread": 6,
+    "y_spread": 2
   }
 }

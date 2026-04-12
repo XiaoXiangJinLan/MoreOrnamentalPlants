@@ -255,15 +255,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().asItem());
 
         this.tag(ForgeTags.Items.CHRYSANTHEMUM)
-                .add(ModBlocks.CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.XIHU_LIUYUE.get().asItem())
-                .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem())
-                .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get().asItem());
+                .add(ModBlocks.CHRYSANTHEMUM.get().asItem(), ModBlocks.XIHU_LIUYUE.get().asItem(), ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem())
+                .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem(), ModBlocks.BLACK_CHRYSANTHEMUM.get().asItem(), ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem(), ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.PINK_CHRYSANTHEMUM.get().asItem(), ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get().asItem());
 
         this.tag(ForgeTags.Items.CAMELLIA)
                 .add(ModBlocks.CAMELLIA.get().asItem())
@@ -436,6 +431,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.BLACK_DYE)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get().asItem())
+                .add(ModBlocks.BLACK_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.INK_PEONY.get().asItem());
 
         this.tag(ModTags.Items.ZIYING_FOX_FOOD)

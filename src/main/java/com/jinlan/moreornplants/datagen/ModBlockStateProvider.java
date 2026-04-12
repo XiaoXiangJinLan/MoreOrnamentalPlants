@@ -605,6 +605,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.WHITE_CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_WHITE_CHRYSANTHEMUM.get(), models().singleTexture("potted_white_chrysanthemum", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_white_chrysanthemum")).renderType("cutout"));
+        flowerBlock(ModBlocks.BLACK_CHRYSANTHEMUM);
+        simpleBlock(ModBlocks.POTTED_BLACK_CHRYSANTHEMUM.get(), models().singleTexture("potted_black_chrysanthemum", new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_black_chrysanthemum")).renderType("cutout"));
         flowerBlock(ModBlocks.GREEN_CHRYSANTHEMUM);
         simpleBlock(ModBlocks.POTTED_GREEN_CHRYSANTHEMUM.get(), models().singleTexture("potted_green_chrysanthemum", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_green_chrysanthemum")).renderType("cutout"));

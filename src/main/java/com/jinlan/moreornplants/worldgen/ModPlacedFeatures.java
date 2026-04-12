@@ -106,11 +106,15 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_PLACED = registerKey("chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> XIHU_LIUYUE_PLACED = registerKey("xihu_liuyue_placed");
     public static final ResourceKey<PlacedFeature> WHITE_CHRYSANTHEMUM_PLACED = registerKey("white_chrysanthemum_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_CHRYSANTHEMUM_PLACED = registerKey("black_chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> PURPLE_CHRYSANTHEMUM_PLACED = registerKey("purple_chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> PURPLE_CHRYSANTHEMUM_WOODS = registerKey("purple_chrysanthemum_woods");
     public static final ResourceKey<PlacedFeature> PINK_CHRYSANTHEMUM_PLACED = registerKey("pink_chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_GROVE_PLACED = registerKey("chrysanthemum_grove_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_PLACED = registerKey("chinese_rose_placed");
+    public static final ResourceKey<PlacedFeature> PINK_CHINESE_ROSE_PLACED = registerKey("pink_chinese_rose_placed");
+    public static final ResourceKey<PlacedFeature> YELLOW_CHINESE_ROSE_PLACED = registerKey("yellow_chinese_rose_placed");
+    public static final ResourceKey<PlacedFeature> WHITE_CHINESE_ROSE_PLACED = registerKey("white_chinese_rose_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_WOODS_PLACED = registerKey("chinese_rose_woods_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_PENGLAI_PLACED = registerKey("chinese_rose_penglai_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_GROVE_PLACED = registerKey("chinese_rose_grove_placed");
@@ -444,6 +448,9 @@ public class ModPlacedFeatures {
         register(context, WHITE_CHRYSANTHEMUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_CHRYSANTHEMUM_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, BLACK_CHRYSANTHEMUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLACK_CHRYSANTHEMUM_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(5),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PURPLE_CHRYSANTHEMUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_CHRYSANTHEMUM_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
@@ -594,8 +601,8 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1),
                         ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
 
-        register(context, UPRIGHT_CRABAPPLE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.UPRIGHT_CRABAPPLE_SMALL),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 1),
+        register(context, UPRIGHT_CRABAPPLE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.UPRIGHT_CRABAPPLE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1),
                         ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
         register(context, PEONY_SEA, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_TREE_MEADOWS),
                 List.of(RarityFilter.onAverageOnceEvery(6),
@@ -677,10 +684,19 @@ public class ModPlacedFeatures {
                         ModBlocks.DESERT_POPLAR_SAPLING.get()));
 
         register(context, CHINESE_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_ROSE_KEY),
-                List.of(NoiseThresholdCountPlacement.of(-0.9D, 2, 18),
+                List.of(NoiseThresholdCountPlacement.of(-0.1D, 0, 5),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PINK_CHINESE_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_CHINESE_ROSE_KEY),
+                List.of(NoiseThresholdCountPlacement.of(-0.1D, 1, 3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, YELLOW_CHINESE_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.YELLOW_CHINESE_ROSE_KEY),
+                List.of(NoiseThresholdCountPlacement.of(-0.1D, 3, 0),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, WHITE_CHINESE_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_CHINESE_ROSE_KEY),
+                List.of(NoiseThresholdCountPlacement.of(-0.1D, 3, 0),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, ROSE_BUSH, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROSE_BUSH),
-                List.of(NoiseThresholdCountPlacement.of(-0.9D, 1, 9),
+                List.of(NoiseThresholdCountPlacement.of(-0.9D, 0, 1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, CHINESE_ROSE_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_ROSE_WOODS_KEY),
@@ -717,10 +733,10 @@ public class ModPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, CAMPHOR_PLAIN_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 2),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 5),
                         ModBlocks.CAMPHOR_SAPLING.get()));
         register(context, CHINABERRY_PLAIN_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINABERRY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 4),
                         ModBlocks.CHINABERRY_SAPLING.get()));
         register(context, FOUNTAIN_GRASS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.FOUNTAIN_GRASS),
                 List.of(CountPlacement.of(2),

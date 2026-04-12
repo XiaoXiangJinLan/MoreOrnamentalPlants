@@ -289,6 +289,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.XIHU_LIUYUE);
         flowerItem(ModBlocks.GOLD_BACKED_SCARLET_MUM);
         flowerItem(ModBlocks.WHITE_CHRYSANTHEMUM);
+        flowerItem(ModBlocks.BLACK_CHRYSANTHEMUM);
         flowerItem(ModBlocks.GREEN_CHRYSANTHEMUM);
         flowerItem(ModBlocks.PURPLE_CHRYSANTHEMUM);
         flowerItem(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM);

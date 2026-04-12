@@ -682,6 +682,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WHITE_CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_WHITE_CHRYSANTHEMUM.get(),
                 createPotFlowerItemTable(ModBlocks.WHITE_CHRYSANTHEMUM.get()));
+        this.dropSelf(ModBlocks.BLACK_CHRYSANTHEMUM.get());
+        this.add(ModBlocks.POTTED_BLACK_CHRYSANTHEMUM.get(),
+                createPotFlowerItemTable(ModBlocks.BLACK_CHRYSANTHEMUM.get()));
         this.dropSelf(ModBlocks.GREEN_CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_GREEN_CHRYSANTHEMUM.get(),
                 createPotFlowerItemTable(ModBlocks.GREEN_CHRYSANTHEMUM.get()));

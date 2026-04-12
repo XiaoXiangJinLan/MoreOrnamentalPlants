@@ -17,7 +17,7 @@ public class DoubleWhiteMeiLeavesBlock extends ModLeavesBlock {
     @Override
     public void animateTick(@NotNull BlockState state, @NotNull Level world, @NotNull BlockPos pos, @NotNull RandomSource random) {
         super.animateTick(state, world, pos, random);
-        if (random.nextInt(20) ==0) {
+        if (random.nextInt(15) ==0) {
             BlockPos blockPos = pos.below();
             BlockState blockState = world.getBlockState(blockPos);
             if (!isFaceFull(blockState.getCollisionShape(world, blockPos), Direction.UP)) {
