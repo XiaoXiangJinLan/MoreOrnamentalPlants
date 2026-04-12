@@ -72,7 +72,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> PEAR_LEAVES =
             registerBlock("pear_leaves", () -> new PearLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
     public static final RegistryObject<Block> FLOWERING_PURPLE_LEAF_PLUM_LEAVES =
-            registerBlock("flowering_purple_leaf_plum_leaves", () -> new FloweringPurpleLeafPlumLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_PURPLE)));
+            registerBlock("flowering_purple_leaf_plum_leaves", () -> new FloweringPurpleLeafPlumLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
     public static final RegistryObject<Block> PURPLE_LEAF_PLUM_LEAVES =
             registerBlock("purple_leaf_plum_leaves", () -> new PurpleLeafPlumLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.COLOR_PURPLE)));
     public static final RegistryObject<Block> GOLDEN_OSMANTHUS_LEAVES =
