@@ -253,7 +253,19 @@ public class ModEvents {
                     entity.addEffect(new MobEffectInstance(MobEffects.LUCK, 48600, 4));
                 }
             }
-
+            Holder<Biome> biomeHolder3 = entity.level().getBiome(entity.blockPosition());
+            if (biomeHolder3.is(ModBiomes.RED_HIGHLANDS)) {
+                MobEffectInstance currentRegen = entity.getEffect(MobEffects.DAMAGE_BOOST);
+                MobEffectInstance currentEffect2 = entity.getEffect(MobEffects.DAMAGE_RESISTANCE);
+                MobEffectInstance currentEffect3 = entity.getEffect(MobEffects.DIG_SPEED);
+                if (currentRegen == null || currentRegen.getDuration() < 12000 ||
+                        currentEffect2 == null || currentEffect2.getDuration() < 12000 ||
+                        currentEffect3 == null || currentEffect3.getDuration() < 12000) {
+                    entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 12300, 2));
+                    entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 12300, 2));
+                    entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 12300, 2));
+                }
+            }
             Holder<Biome> biomeHolder2 = entity.level().getBiome(entity.blockPosition());
             if (biomeHolder2.is(ModTags.Biomes.FLOWERS_AND_MOON)) {
                 Level level = entity.level();
