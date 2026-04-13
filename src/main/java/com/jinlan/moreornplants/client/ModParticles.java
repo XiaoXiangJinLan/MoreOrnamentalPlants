@@ -72,11 +72,19 @@ public class ModParticles {
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new PeachParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
+        event.registerSpriteSet(ModParticleTypes.WHITE_PEACH_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new PeachParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
         event.registerSpriteSet(ModParticleTypes.IMMORTAL_PEACH_LEAVES.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new PeachParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
         event.registerSpriteSet(ModParticleTypes.PEAR_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.TAIWAN_CHERRY_LEAVES.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));

@@ -57,11 +57,17 @@ public class ModParticleTypes {
     public static final RegistryObject<SimpleParticleType> WILD_PEACH_LEAVES =
             registerParticleType("wild_peach_leaves", () -> new SimpleParticleType(false));
 
+    public static final RegistryObject<SimpleParticleType> WHITE_PEACH_LEAVES =
+            registerParticleType("white_peach_leaves", () -> new SimpleParticleType(false));
+
     public static final RegistryObject<SimpleParticleType> IMMORTAL_PEACH_LEAVES =
             registerParticleType("immortal_peach_leaves", () -> new SimpleParticleType(false));
 
     public static final RegistryObject<SimpleParticleType> PEAR_LEAVES =
             registerParticleType("pear_leaves", () -> new SimpleParticleType(false));
+
+    public static final RegistryObject<SimpleParticleType> TAIWAN_CHERRY_LEAVES =
+            registerParticleType("taiwan_cherry_leaves", () -> new SimpleParticleType(false));
 
     public static final RegistryObject<SimpleParticleType> FLOWERING_PURPLE_LEAF_PLUM_LEAVES =
             registerParticleType("flowering_purple_leaf_plum_leaves", () -> new SimpleParticleType(false));

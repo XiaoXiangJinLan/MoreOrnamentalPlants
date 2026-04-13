@@ -1,4 +1,4 @@
-// 1.20.1	2026-04-12T17:29:00.0337073	Item Models: more_orn_plants
+// 1.20.1	2026-04-12T23:30:34.6832592	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -363,6 +363,7 @@ ce72b82bdee2c6269eb6775575ba55ffa91415ac assets/more_orn_plants/models/item/swee
 4dbd2bc5d12b1767b0de6b79536f3ea55c65d019 assets/more_orn_plants/models/item/sweetgum_slab.json
 afa4bca4aa7022fed8eb82f2dbdc9a913a89ed07 assets/more_orn_plants/models/item/sweetgum_stairs.json
 d12a57a131745d4b6d01e00c10c070854cd7f02b assets/more_orn_plants/models/item/sweetgum_trapdoor.json
+3b93bc53cc81fbd8c707be0bd98985020eae1808 assets/more_orn_plants/models/item/taiwan_cherry_sapling.json
 2822db6d403c6806e65e09288830357f7ca1c87f assets/more_orn_plants/models/item/two_qiao_peony.json
 518ac9a0bfc318aad33b19c6fffcd4e51d6f4011 assets/more_orn_plants/models/item/upright_crabapple_sapling.json
 13a5572f1d06f28e5be5747e88c186fb04ffaed9 assets/more_orn_plants/models/item/vermilion_peony.json
@@ -400,6 +401,7 @@ e6a5feb45260d70b12f442d700a17f42abf0f70b assets/more_orn_plants/models/item/whit
 f6f5034699f58264cc9b763b1ea4c20fb987f323 assets/more_orn_plants/models/item/white_mei_stairs.json
 9d2307876c0816e061d2beaf8d72350de86ee820 assets/more_orn_plants/models/item/white_mei_trapdoor.json
 b7f1d6af0594ada7fb62805a0c0dc6ffbd6b99d6 assets/more_orn_plants/models/item/white_osmanthus_sapling.json
+3f24f02105e1071cb05306fd681fce7b6418abe0 assets/more_orn_plants/models/item/white_peach_sapling.json
 3a3c998253a0eb3057d10dafdf90ae72817ba96f assets/more_orn_plants/models/item/white_peony.json
 4d669e4e3553a9a85250683f2820a50a34b8da83 assets/more_orn_plants/models/item/white_weeping_mei.json
 2cab24c57b15bd48155c4b413deb0ce6d1528c12 assets/more_orn_plants/models/item/white_weeping_mei_sapling.json

@@ -80,9 +80,11 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> SPRING_PETALS_PATCH = registerKey("spring_petals_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORNAMENTAL_PEACH = registerKey("ornamental_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILD_PEACH = registerKey("wild_peach");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_PEACH = registerKey("white_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> IMMORTAL_PEACH = registerKey("immortal_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEACH_PINK_PETALS_PATCH = registerKey("peach_pink_petals_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEAR = registerKey("pear");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TAIWAN_CHERRY = registerKey("taiwan_cherry");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_PURPLE_LEAF_PLUM = registerKey("flowering_purple_leaf_plum");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_LEAF_PLUM = registerKey("purple_leaf_plum");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_OSMANTHUS = registerKey("golden_osmanthus");
@@ -466,6 +468,12 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.WILD_PEACH_LEAVES.get()),
                 new PeachFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(4)),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, WHITE_PEACH, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
+                new PeachTrunkPlacer(6, 2, 2, 2, 4, 3, 4, 0.9F, 0.4F),
+                BlockStateProvider.simple(ModBlocks.WHITE_PEACH_LEAVES.get()),
+                new PeachFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(3)),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, IMMORTAL_PEACH, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
                 new PeachTrunkPlacer(7, 2, 2, 2, 4, 4, 5, 0.9F, 0.5F),
@@ -506,6 +514,15 @@ public class ModConfiguredFeatures {
                 new FancyTrunkPlacer(12, 4, 0),
                 BlockStateProvider.simple(ModBlocks.PEAR_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+
+        register(context, TAIWAN_CHERRY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.CHERRY_LOG),
+                new CherryTrunkPlacer(7, 1, 0,
+                        new WeightedListInt(SimpleWeightedRandomList.<IntProvider>builder().add(ConstantInt.of(1), 1).add(ConstantInt.of(2), 1).add(ConstantInt.of(3), 1).build()),
+                        UniformInt.of(2, 4), UniformInt.of(-4, -3), UniformInt.of(-1, 0)),
+                BlockStateProvider.simple(ModBlocks.TAIWAN_CHERRY_LEAVES.get()),
+                new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
 
         register(context, FLOWERING_PURPLE_LEAF_PLUM, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(

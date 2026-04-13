@@ -19,6 +19,18 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
+    "has_white_peach_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:white_peach_sapling"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_wild_peach_sapling": {
       "conditions": {
         "items": [
@@ -48,6 +60,7 @@
     [
       "has_ornamental_peach_sapling",
       "has_wild_peach_sapling",
+      "has_white_peach_sapling",
       "has_ziyu_yuanyang_bead",
       "has_the_recipe"
     ]

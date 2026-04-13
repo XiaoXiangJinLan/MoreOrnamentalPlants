@@ -131,8 +131,12 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WILD_PEACH_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WILD_PEACH_SAPLING.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_PEACH_LEAVES.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_PEACH_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PEAR_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PEAR_SAPLING.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.TAIWAN_CHERRY_LEAVES.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.TAIWAN_CHERRY_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get().asItem(), 0.3F);
@@ -213,6 +217,7 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.XIHU_LIUYUE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_CHRYSANTHEMUM.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.BLACK_CHRYSANTHEMUM.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get().asItem(), 0.65F);

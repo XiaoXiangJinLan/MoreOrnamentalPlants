@@ -31,11 +31,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ItemTags.TALL_FLOWERS)
                 .addTag(ForgeTags.Items.MEI_SAPLING)
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem())
-                .add(ModBlocks.PINK_APRICOT_SAPLING.get().asItem())
-                .add(ModBlocks.WHITE_APRICOT_SAPLING.get().asItem())
-                .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get().asItem())
-                .add(ModBlocks.WILD_PEACH_SAPLING.get().asItem())
+                .addTag(ForgeTags.Items.APRICOT_SAPLING)
+                .addTag(ForgeTags.Items.PEACH_SAPLING)
                 .add(ModBlocks.PEAR_SAPLING.get().asItem())
+                .add(ModBlocks.TAIWAN_CHERRY_SAPLING.get().asItem())
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get().asItem())
                 .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get().asItem())
                 .add(ModBlocks.ORANGE_OSMANTHUS_SAPLING.get().asItem())
@@ -49,11 +48,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE.get().asItem())
-                .add(ModBlocks.PINK_APRICOT_LEAVES.get().asItem())
-                .add(ModBlocks.WHITE_APRICOT_LEAVES.get().asItem())
-                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get().asItem())
-                .add(ModBlocks.WILD_PEACH_LEAVES.get().asItem())
+                .addTag(ForgeTags.Items.APRICOT_LEAVES)
+                .addTag(ForgeTags.Items.PEACH_LEAVES)
                 .add(ModBlocks.PEAR_LEAVES.get().asItem())
+                .add(ModBlocks.TAIWAN_CHERRY_LEAVES.get().asItem())
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get().asItem())
                 .add(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get().asItem())
                 .add(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get().asItem())
@@ -149,6 +147,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ForgeTags.Items.APRICOT_SAPLING)
                 .addTag(ForgeTags.Items.PEACH_SAPLING)
                 .add(ModBlocks.PEAR_SAPLING.get().asItem())
+                .add(ModBlocks.TAIWAN_CHERRY_SAPLING.get().asItem())
                 .addTag(ForgeTags.Items.PLUM_SAPLING)
                 .addTag(ForgeTags.Items.OSMANTHUS_SAPLING)
                 .addTag(ForgeTags.Items.GINKGO_SAPLING)
@@ -291,17 +290,21 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ForgeTags.Items.APRICOT_SAPLING)
                 .add(ModBlocks.PINK_APRICOT_SAPLING.get().asItem())
-                .add(ModBlocks.WHITE_APRICOT_SAPLING.get().asItem());
+                .add(ModBlocks.WHITE_APRICOT_SAPLING.get().asItem())
+                .add(ModBlocks.CLOUD_APRICOT_SAPLING.get().asItem());
 
         this.tag(ForgeTags.Items.APRICOT_LEAVES)
-                .add(ModBlocks.PINK_APRICOT_LEAVES.get().asItem(), ModBlocks.WHITE_APRICOT_LEAVES.get().asItem());
+                .add(ModBlocks.PINK_APRICOT_LEAVES.get().asItem(), ModBlocks.WHITE_APRICOT_LEAVES.get().asItem(), ModBlocks.CLOUD_APRICOT_LEAVES.get().asItem());
 
         this.tag(ForgeTags.Items.PEACH_SAPLING)
                 .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get().asItem())
-                .add(ModBlocks.WILD_PEACH_SAPLING.get().asItem());
+                .add(ModBlocks.WILD_PEACH_SAPLING.get().asItem())
+                .add(ModBlocks.WHITE_PEACH_SAPLING.get().asItem())
+                .add(ModBlocks.IMMORTAL_PEACH_SAPLING.get().asItem());
 
         this.tag(ForgeTags.Items.PEACH_LEAVES)
-                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get().asItem(), ModBlocks.WILD_PEACH_LEAVES.get().asItem());
+                .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get().asItem(), ModBlocks.WILD_PEACH_LEAVES.get().asItem())
+                .add(ModBlocks.WHITE_PEACH_LEAVES.get().asItem(), ModBlocks.IMMORTAL_PEACH_LEAVES.get().asItem());
 
         this.tag(ForgeTags.Items.PLUM_SAPLING)
                 .add(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get().asItem())

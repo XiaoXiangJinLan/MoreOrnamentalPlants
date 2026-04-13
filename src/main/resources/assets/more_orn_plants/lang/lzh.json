@@ -155,9 +155,11 @@
 
   "block.more_orn_plants.ornamental_peach_leaves": "碧桃葉",
   "block.more_orn_plants.wild_peach_leaves": "山桃葉",
+  "block.more_orn_plants.white_peach_leaves": "白桃葉",
   "block.more_orn_plants.immortal_peach_leaves": "§e蟠桃葉",
   "block.more_orn_plants.ornamental_peach_sapling": "碧桃秧",
   "block.more_orn_plants.wild_peach_sapling": "山桃秧",
+  "block.more_orn_plants.white_peach_sapling": "白桃秧",
   "block.more_orn_plants.immortal_peach_sapling": "§e蟠桃秧",
   "block.more_orn_plants.peach_log": "桃樁",
   "block.more_orn_plants.peach_wood": "桃木",
@@ -412,6 +414,8 @@
   "block.more_orn_plants.white_camellia_leaves": "白山茶葉",
   "block.more_orn_plants.pink_camellia_leaves": "粉山茶葉",
   "block.more_orn_plants.versicolor_camellia_leaves": "二色山茶葉",
+  "block.more_orn_plants.taiwan_cherry_leaves": "钟花櫻葉",
+  "block.more_orn_plants.taiwan_cherry_sapling": "钟花櫻秧",
 
   "block.more_orn_plants.chrysanthemum": "菊",
   "block.more_orn_plants.xihu_liuyue": "西湖柳月",

@@ -67,10 +67,14 @@ public class ModBlocks {
             registerBlock("ornamental_peach_leaves", () -> new OrnPeachLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES)));
     public static final RegistryObject<Block> WILD_PEACH_LEAVES =
             registerBlock("wild_peach_leaves", () -> new WildPeachLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES)));
+    public static final RegistryObject<Block> WHITE_PEACH_LEAVES =
+            registerBlock("white_peach_leaves", () -> new WhitePeachLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
     public static final RegistryObject<Block> IMMORTAL_PEACH_LEAVES =
             registerBlock("immortal_peach_leaves", () -> new ImmortalPeachLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES)));
     public static final RegistryObject<Block> PEAR_LEAVES =
             registerBlock("pear_leaves", () -> new PearLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
+    public static final RegistryObject<Block> TAIWAN_CHERRY_LEAVES =
+            registerBlock("taiwan_cherry_leaves", () -> new TaiwanCherryLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_RED)));
     public static final RegistryObject<Block> FLOWERING_PURPLE_LEAF_PLUM_LEAVES =
             registerBlock("flowering_purple_leaf_plum_leaves", () -> new FloweringPurpleLeafPlumLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
     public static final RegistryObject<Block> PURPLE_LEAF_PLUM_LEAVES =
@@ -828,10 +832,14 @@ public class ModBlocks {
             registerBlock("ornamental_peach_sapling", () -> new SaplingBlock(new OrnPeachTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WILD_PEACH_SAPLING =
             registerBlock("wild_peach_sapling", () -> new SaplingBlock(new WildPeachTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> WHITE_PEACH_SAPLING =
+            registerBlock("white_peach_sapling", () -> new SaplingBlock(new WhitePeachTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> IMMORTAL_PEACH_SAPLING =
             registerBlock("immortal_peach_sapling", () -> new SaplingBlock(new ImmortalPeachTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PEAR_SAPLING =
             registerBlock("pear_sapling", () -> new SaplingBlock(new PearTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> TAIWAN_CHERRY_SAPLING =
+            registerBlock("taiwan_cherry_sapling", () -> new SaplingBlock(new TaiwanCherryTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> FLOWERING_PURPLE_LEAF_PLUM_SAPLING =
             registerBlock("flowering_purple_leaf_plum_sapling", () -> new SaplingBlock(new FloweringPurplePlumTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PURPLE).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PURPLE_LEAF_PLUM_SAPLING =
@@ -909,10 +917,14 @@ public class ModBlocks {
             BLOCKS.register("potted_ornamental_peach_sapling", () -> flowerPot(ORNAMENTAL_PEACH_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_WILD_PEACH_SAPLING =
             BLOCKS.register("potted_wild_peach_sapling", () -> flowerPot(WILD_PEACH_SAPLING.get()));
+    public static final RegistryObject<Block> POTTED_WHITE_PEACH_SAPLING =
+            BLOCKS.register("potted_white_peach_sapling", () -> flowerPot(WHITE_PEACH_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_IMMORTAL_PEACH_SAPLING =
             BLOCKS.register("potted_immortal_peach_sapling", () -> flowerPot(IMMORTAL_PEACH_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_PEAR_SAPLING =
             BLOCKS.register("potted_pear_sapling", () -> flowerPot(PEAR_SAPLING.get()));
+    public static final RegistryObject<Block> POTTED_TAIWAN_CHERRY_SAPLING =
+            BLOCKS.register("potted_taiwan_cherry_sapling", () -> flowerPot(TAIWAN_CHERRY_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_FLOWERING_PURPLE_LEAF_PLUM_SAPLING =
             BLOCKS.register("potted_flowering_purple_leaf_plum_sapling", () -> flowerPot(FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_PURPLE_LEAF_PLUM_SAPLING =

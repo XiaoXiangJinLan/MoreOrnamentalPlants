@@ -34,8 +34,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CLOUD_APRICOT_LEAVES.get());
                         pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get());
                         pOutput.accept(ModBlocks.WILD_PEACH_LEAVES.get());
+                        pOutput.accept(ModBlocks.WHITE_PEACH_LEAVES.get());
                         pOutput.accept(ModBlocks.IMMORTAL_PEACH_LEAVES.get());
                         pOutput.accept(ModBlocks.PEAR_LEAVES.get());
+                        pOutput.accept(ModBlocks.TAIWAN_CHERRY_LEAVES.get());
                         pOutput.accept(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get());
                         pOutput.accept(ModBlocks.PURPLE_LEAF_PLUM_LEAVES.get());
                         pOutput.accept(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get());
@@ -88,8 +90,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CLOUD_APRICOT_SAPLING.get());
                         pOutput.accept(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get());
                         pOutput.accept(ModBlocks.WILD_PEACH_SAPLING.get());
+                        pOutput.accept(ModBlocks.WHITE_PEACH_SAPLING.get());
                         pOutput.accept(ModBlocks.IMMORTAL_PEACH_SAPLING.get());
                         pOutput.accept(ModBlocks.PEAR_SAPLING.get());
+                        pOutput.accept(ModBlocks.TAIWAN_CHERRY_SAPLING.get());
                         pOutput.accept(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING.get());
                         pOutput.accept(ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get());
                         pOutput.accept(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get());

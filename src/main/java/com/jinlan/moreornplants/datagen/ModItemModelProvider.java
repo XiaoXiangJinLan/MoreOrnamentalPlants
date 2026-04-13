@@ -251,8 +251,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.CLOUD_APRICOT_SAPLING);
         saplingItem(ModBlocks.ORNAMENTAL_PEACH_SAPLING);
         saplingItem(ModBlocks.WILD_PEACH_SAPLING);
+        saplingItem(ModBlocks.WHITE_PEACH_SAPLING);
         saplingItem(ModBlocks.IMMORTAL_PEACH_SAPLING);
         saplingItem(ModBlocks.PEAR_SAPLING);
+        saplingItem(ModBlocks.TAIWAN_CHERRY_SAPLING);
         saplingItem(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_SAPLING);
         saplingItem(ModBlocks.PURPLE_LEAF_PLUM_SAPLING);
         saplingItem(ModBlocks.GOLDEN_OSMANTHUS_SAPLING);

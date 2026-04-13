@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "B": {
+      "item": "more_orn_plants:white_peach_sapling"
+    },
     "C": {
       "item": "more_orn_plants:ziyu_yuanyang_bead"
     },
@@ -14,8 +17,8 @@
   },
   "pattern": [
     " O ",
-    "OCW",
-    " W "
+    "WCB",
+    " O "
   ],
   "result": {
     "item": "more_orn_plants:immortal_peach_sapling"
