@@ -940,7 +940,7 @@
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小乔木，无木板",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7观赏品种，无竹板",
-  "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7对亡灵生物伤害乘以999%",
+  "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7对亡灵生物有特殊伤害",
   "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7对节肢生物伤害乘以222%",
   "tooltip.more_orn_plants.chinese_parasol_wooden_sword.tooltip": "§7对灾厄村民伤害乘以333%，对亡灵生物造成火焰伤害",
   "tooltip.more_orn_plants.ziying_sword.tooltip": "§7对敌对生物和中立生物有75%的概率伤害增加200%",

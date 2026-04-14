@@ -48,7 +48,6 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.IntValue SPECIAL_BIOMES_WEIGHT;
 
     // 武器伤害配置
-    public static final ForgeConfigSpec.ConfigValue<Double> PEACH_SWORD_MULTIPLIER;
     public static final ForgeConfigSpec.ConfigValue<Double> CAMPHOR_SWORD_MULTIPLIER;
     public static final ForgeConfigSpec.ConfigValue<Double> CHINESE_PARASOL_SWORD_MULTIPLIER;
     public static final ForgeConfigSpec.ConfigValue<Double> ZIYING_TOOLS_MULTIPLIER;
@@ -150,9 +149,6 @@ public class ModBiomeConfig {
 
         // 武器伤害配置
         BUILDER.push("Weapon Config");
-        PEACH_SWORD_MULTIPLIER = BUILDER
-                .comment("Damage multiplier for Peach Wooden Sword")
-                .define("peachSwordMultiplier", 9.99);
         CAMPHOR_SWORD_MULTIPLIER = BUILDER
                 .comment("Damage multiplier for Camphor Wooden Sword")
                 .define("camphorSwordMultiplier", 2.22);
