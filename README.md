@@ -5,7 +5,7 @@ This mod introduces thirty-four new biomes and six structures, waiting for you t
 
 New Trees
 ============
-Mei, Crabapple, Apricot, Peach, Pear, Purple-leaf Plum, Osmanthus, Ginkgo, Chinese Parasol, Sweetgum, Camphor, Dove Tree, 
+Mei, Crabapple, Apricot, Peach, Pear, Taiwan CHerry, Purple-leaf Plum, Osmanthus, Ginkgo, Chinese Parasol, Sweetgum, Camphor, Dove Tree, 
 Chinaberry, Desert Poplar.
 
 New Plants 
@@ -96,7 +96,7 @@ New Mobs
 彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了三十四个全新的生物群系、六个结构，等待你来探索！
 
 ## 新树种
-梅花、海棠、杏花、桃花、梨花、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
+梅花、海棠、杏花、桃花、梨花、钟花樱、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
 
 ## 新植物
 芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、蜡梅、芙蓉、紫薇、紫藤、狼尾草、芒草、湘妃竹、紫竹，以及牡丹四大名品等。  

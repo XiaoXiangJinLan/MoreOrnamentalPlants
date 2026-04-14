@@ -120,7 +120,12 @@ public class ModEventsBusEvents {
         LivingEntity target1 = event.getEntity();
         InventoryState state = getInventoryState(player);
         if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get()) && target1.isInvertedHealAndHarm()) {
-            event.setAmount(event.getAmount() * ModBiomeConfig.PEACH_SWORD_MULTIPLIER.get().floatValue());
+            float multiplier = 1.0f;
+            float maxHealth = target1.getMaxHealth();
+            if (maxHealth > 5.0f) {
+                multiplier = maxHealth / 5.0f;
+            }
+            event.setAmount(multiplier * (event.getAmount() + 1));
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getType().is(EntityTypeTags.ARTHROPOD)) {
             event.setAmount(event.getAmount() * ModBiomeConfig.CAMPHOR_SWORD_MULTIPLIER.get().floatValue());
         } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {

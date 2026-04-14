@@ -941,7 +941,7 @@
 
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7Small tree, non-building material",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7Ornamental varieties,non-building material",
-  "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7Deals 999% more damage to undead mobs",
+  "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7Deals special damage to undead",
   "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7Deals 222% more damage to arthropods",
   "tooltip.more_orn_plants.chinese_parasol_wooden_sword.tooltip": "§7Deals 333% more damage to illagers, sets undead mobs on fire",
   "tooltip.more_orn_plants.ziying_sword.tooltip": "§7Against enemies and neutral mobs, 75% chance to deal 200% more damage",
