@@ -42,6 +42,8 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_ZIYING_CAVES;
     public static final ForgeConfigSpec.BooleanValue ENABLE_SUYU_CAVES;
 
+    public static final ForgeConfigSpec.BooleanValue ENABLE_BIOME_EFFECTS;
+
     // 区域权重配置
     public static final ForgeConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
     public static final ForgeConfigSpec.IntValue SECOND_OVERWORLD_BIOMES_WEIGHT;
@@ -132,6 +134,12 @@ public class ModBiomeConfig {
                 .define("enableZiyingCaves", true);
         ENABLE_SUYU_CAVES = BUILDER
                 .define("enableSuyuCaves", true);
+        BUILDER.pop();
+
+        // 生物群系提供效果设置
+        BUILDER.push("Biome Effects Settings");
+        ENABLE_BIOME_EFFECTS = BUILDER
+                .define("enableBiomeEffects", true);
         BUILDER.pop();
 
         // 区域权重设置
