@@ -997,22 +997,20 @@
   "more_orn_plants.configuration.secondOverworldBiomesWeight": "Second Overworld Biomes Weight",
   "more_orn_plants.configuration.specialBiomesWeight": "Special Biomes Weight",
 
-  "more_orn_plants.configuration.Weapon Config": "Weapon Multiplier Config",
+  "more_orn_plants.configuration.Biome Effects Settings": "Biome Effects Settings",
+  "more_orn_plants.configuration.enableBiomeEffects": "Enable Biome Effects",
 
-  "more_orn_plants.configuration.peachSwordMultiplier": "Peach Sword Multiplier",
+  "more_orn_plants.configuration.Weapon Config": "Weapon Multiplier Config",
   "more_orn_plants.configuration.camphorSwordMultiplier": "Camphor Sword Multiplier",
   "more_orn_plants.configuration.chineseParasolSwordMultiplier": "Chinese Parasol Sword Multiplier",
-
   "more_orn_plants.configuration.ziyingToolsMultiplier": "Ziying Tools Multiplier",
   "more_orn_plants.configuration.suyuToolsMultiplier": "Suyu Tools Multiplier",
   "more_orn_plants.configuration.ziyuYuanyangToolsBaseMultiplier": "Ziyu Yuanyang Tools Base Multiplier",
   "more_orn_plants.configuration.ziyuYuanyangToolsCritMultiplier": "Ziyu Yuanyang Tools Crit Multiplier",
-
   "more_orn_plants.configuration.zhuiyueSwordFullMoonMultiplier": "Zhuiyue Sword Full Moon Multiplier",
   "more_orn_plants.configuration.caiyunSwordClearMultiplier": "Caiyun Sword Clear Multiplier",
   "more_orn_plants.configuration.caiyunSwordRainMultiplier": "Caiyun Sword Rain Multiplier",
   "more_orn_plants.configuration.caiyunSwordThunderMultiplier": "Caiyun Sword Thunder Multiplier",
-
   "more_orn_plants.configuration.baihuaSwordFlowerMultiplier": "Baihua Sword Flower Multiplier",
   "more_orn_plants.configuration.baihuaSwordFloralBiomeMultiplier": "Baihua Sword Floral Biome Multiplier"
 }

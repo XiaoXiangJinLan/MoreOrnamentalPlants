@@ -48,6 +48,8 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.IntValue SECOND_OVERWORLD_BIOMES_WEIGHT;
     public static final ModConfigSpec.IntValue SPECIAL_BIOMES_WEIGHT;
 
+    public static final ModConfigSpec.BooleanValue ENABLE_BIOME_EFFECTS;
+
     // 武器伤害配置
     public static final ModConfigSpec.ConfigValue<Double> CAMPHOR_SWORD_MULTIPLIER;
     public static final ModConfigSpec.ConfigValue<Double> CHINESE_PARASOL_SWORD_MULTIPLIER;
@@ -146,6 +148,12 @@ public class ModBiomeConfig {
         SPECIAL_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for special biomes region")
                 .defineInRange("specialBiomesWeight", 1, 1, 20);
+        BUILDER.pop();
+
+        // 生物群系提供效果设置
+        BUILDER.push("Biome Effects Settings");
+        ENABLE_BIOME_EFFECTS = BUILDER
+                .define("enableBiomeEffects", true);
         BUILDER.pop();
 
         // 武器伤害配置

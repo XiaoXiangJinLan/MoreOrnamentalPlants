@@ -933,14 +933,14 @@
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小喬木，無木材",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞品種，無竹材",
   "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7對不死生物有特殊傷害",
-  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7對節肢生物傷害乘以222%",
-  "tooltip.more_orn_plants.chinese_parasol_wooden_sword.tooltip": "§7對災厄村民傷害乘以333%，對不死生物造成火焰傷害",
-  "tooltip.more_orn_plants.ziying_sword.tooltip": "§7對敵對生物和中立生物有75%的機率傷害增加200%",
-  "tooltip.more_orn_plants.suyu_sword.tooltip": "§7對敵對生物和中立生物傷害增加50%，並施加减速效果",
-  "tooltip.more_orn_plants.ziyu_sword.tooltip": "§7對敵對生物和中立生物傷害增加25%，並施加减速效果，\n同時有50%的機率傷害增加200%",
-  "tooltip.more_orn_plants.zhuiyue_sword.tooltip": "§7傷害隨月相變化，滿月傷害增加100%，新月無加成。\n當副手或背包有彩雲劍時，傷害增加20%",
-  "tooltip.more_orn_plants.caiyun_sword.tooltip": "§7傷害隨天氣變化，晴天傷害增加50%，\n雨天無加成，雷雨傷害減少50%。\n當副手或背包有追月劍時，傷害增加20%",
-  "tooltip.more_orn_plants.baihua_sword.tooltip": "§7當副手或背包裡有花朵時，傷害乘以500%，\n當位於花林群系時，傷害乘以900%",
+  "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7對節肢生物傷害提高",
+  "tooltip.more_orn_plants.chinese_parasol_wooden_sword.tooltip": "§7對災厄村民傷害提高，對不死生物造成火焰傷害",
+  "tooltip.more_orn_plants.ziying_sword.tooltip": "§7對敵對生物和中立生物有75%的機率傷害提高",
+  "tooltip.more_orn_plants.suyu_sword.tooltip": "§7對敵對生物和中立生物傷害提高，並施加减速效果",
+  "tooltip.more_orn_plants.ziyu_sword.tooltip": "§7對敵對生物和中立生物傷害提高，並施加减速效果，\n同時有50%的機率傷害再度提高",
+  "tooltip.more_orn_plants.zhuiyue_sword.tooltip": "§7傷害隨月相變化，滿月傷害最高，新月傷害最低。\n當副手或背包有彩雲劍時，傷害增加20%",
+  "tooltip.more_orn_plants.caiyun_sword.tooltip": "§7傷害隨天氣變化，晴天傷害最高，\n雨天傷害不變，雷雨傷害最低。\n當副手或背包有追月劍時，傷害增加20%",
+  "tooltip.more_orn_plants.baihua_sword.tooltip": "§7當副手或背包裡有花朵，以及位於花林羣系時，傷害提高",
   "tooltip.more_orn_plants.ziying_bead.tooltip": "§7手持或在背包中時，有25%的機率不會受傷",
   "tooltip.more_orn_plants.suyu_bead.tooltip": "§7手持或在背包中時，降低25%受到的傷害",
   "tooltip.more_orn_plants.ziyu_bead.tooltip": "§7手持或在背包中時，降低20%受到的傷害，\n並有20%的機率不會受傷",
@@ -988,8 +988,10 @@
   "more_orn_plants.configuration.secondOverworldBiomesWeight": "次羣系權重",
   "more_orn_plants.configuration.specialBiomesWeight": "特殊羣系权重（桃花源）",
 
+  "more_orn_plants.configuration.Biome Effects Settings": "羣系效果",
+  "more_orn_plants.configuration.enableBiomeEffects": "是否譲羣系提供效果",
+
   "more_orn_plants.configuration.Weapon Config": "武器傷害倍率",
-  "more_orn_plants.configuration.peachSwordMultiplier": "桃木劍傷害倍率",
   "more_orn_plants.configuration.camphorSwordMultiplier": "樟木劍傷害倍率",
   "more_orn_plants.configuration.chineseParasolSwordMultiplier": "梧桐劍傷害倍率",
   "more_orn_plants.configuration.ziyingToolsMultiplier": "紫英工具傷害倍率",
@@ -1001,5 +1003,5 @@
   "more_orn_plants.configuration.caiyunSwordRainMultiplier": "彩雲劍雨天傷害倍率",
   "more_orn_plants.configuration.caiyunSwordThunderMultiplier": "彩雲劍雷雨傷害倍率",
   "more_orn_plants.configuration.baihuaSwordFlowerMultiplier": "百花劍花朵增傷倍率",
-  "more_orn_plants.configuration.baihuaSwordFloralBiomeMultiplier": "百花劍群系增傷倍率"
+  "more_orn_plants.configuration.baihuaSwordFloralBiomeMultiplier": "百花劍羣系增傷倍率"
 }

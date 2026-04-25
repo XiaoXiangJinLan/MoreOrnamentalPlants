@@ -262,6 +262,7 @@ public class ModEventsBusEvents {
                 entity instanceof AbstractGolem || entity instanceof Allay)) {
             return;
         }
+        if (!ModBiomeConfig.ENABLE_BIOME_EFFECTS.get()) return;
         int tick = entity.tickCount;
         if (tick % 100 == 0) {
             Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());

@@ -206,6 +206,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOTTLED_BAMBOO_KEY = registerKey("mottled_bamboo_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_KEY = registerKey("black_bamboo_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_GALLERY_KEY = registerKey("black_bamboo_gallery_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_SAPLING_KEY = registerKey("black_bamboo_sapling_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LOTUS_KEY = registerKey("lotus_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MUXUE_GRASS_KEY = registerKey("muxue_grass_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA_TREE = registerKey("wisteria_tree");
@@ -1364,11 +1365,17 @@ public class ModConfiguredFeatures {
                 PlacementUtils.onlyWhenEmpty(ModBambooFeatures.MOTTLED_BAMBOO.get(),
                         new ProbabilityFeatureConfiguration(0.0F))));
         register(context, BLACK_BAMBOO_KEY,Feature.RANDOM_PATCH, new RandomPatchConfiguration(100, 9, 4,
-                PlacementUtils.onlyWhenEmpty( ModBambooFeatures.BLACK_BAMBOO.get(),
+                PlacementUtils.onlyWhenEmpty(ModBambooFeatures.BLACK_BAMBOO.get(),
                         new ProbabilityFeatureConfiguration(0.0F))));
-        register(context, BLACK_BAMBOO_GALLERY_KEY,Feature.RANDOM_PATCH, new RandomPatchConfiguration(5, 6, 3,
-                PlacementUtils.onlyWhenEmpty( ModBambooFeatures.BLACK_BAMBOO.get(),
+        register(context, BLACK_BAMBOO_GALLERY_KEY,Feature.RANDOM_PATCH, new RandomPatchConfiguration(25, 5, 2,
+                PlacementUtils.onlyWhenEmpty(ModBambooFeatures.BLACK_BAMBOO.get(),
                         new ProbabilityFeatureConfiguration(0.0F))));
+        register(context, BLACK_BAMBOO_SAPLING_KEY, Feature.FLOWER, new RandomPatchConfiguration(20, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLACK_BAMBOO_SAPLING.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
         SimpleWeightedRandomList.Builder<BlockState> lotusBuilder = SimpleWeightedRandomList.builder();
         for (Direction direction : Direction.Plane.HORIZONTAL) {
