@@ -73,11 +73,11 @@
     ],
     [
       "minecraft:glow_lichen",
-      "more_orn_plants:grass_grove",
       "more_orn_plants:upright_crabapple_grove",
       "more_orn_plants:weeping_crabapple_grove",
       "more_orn_plants:peony_pink_grove",
-      "more_orn_plants:peony_tree_pink_grove"
+      "more_orn_plants:peony_tree_pink_grove",
+      "more_orn_plants:grass_grove"
     ],
     [
       "minecraft:freeze_top_layer"

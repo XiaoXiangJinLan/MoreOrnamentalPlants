@@ -49,8 +49,4 @@ public class BiomeConfigManager {
         return ModBiomeConfig.SECOND_OVERWORLD_BIOMES_WEIGHT.get();
     }
 
-    public static int getSpecialBiomesWeight() {
-        return ModBiomeConfig.SPECIAL_BIOMES_WEIGHT.get();
-    }
-
 }

@@ -989,7 +989,6 @@
   "more_orn_plants.configuration.enableSuyuCaves": "生成素玉洞",
   "more_orn_plants.configuration.overworldBiomesWeight": "主群系权重",
   "more_orn_plants.configuration.secondOverworldBiomesWeight": "次群系权重",
-  "more_orn_plants.configuration.specialBiomesWeight": "特殊群系权重（桃花源）",
 
   "more_orn_plants.configuration.Biome Effects Settings": "群系效果",
   "more_orn_plants.configuration.enableBiomeEffects": "是否让群系提供效果",

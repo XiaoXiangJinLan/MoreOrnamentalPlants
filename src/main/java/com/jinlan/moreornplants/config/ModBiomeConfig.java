@@ -46,7 +46,6 @@ public class ModBiomeConfig {
     // 区域权重配置
     public static final ModConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
     public static final ModConfigSpec.IntValue SECOND_OVERWORLD_BIOMES_WEIGHT;
-    public static final ModConfigSpec.IntValue SPECIAL_BIOMES_WEIGHT;
 
     public static final ModConfigSpec.BooleanValue ENABLE_BIOME_EFFECTS;
 
@@ -145,9 +144,6 @@ public class ModBiomeConfig {
         SECOND_OVERWORLD_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for second overworld biomes region")
                 .defineInRange("secondOverworldBiomesWeight", 4, 1, 20);
-        SPECIAL_BIOMES_WEIGHT = BUILDER
-                .comment("Weight for special biomes region")
-                .defineInRange("specialBiomesWeight", 1, 1, 20);
         BUILDER.pop();
 
         // 生物群系提供效果设置

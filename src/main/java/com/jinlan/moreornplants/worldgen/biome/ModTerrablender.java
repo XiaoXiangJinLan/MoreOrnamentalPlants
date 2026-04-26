@@ -11,12 +11,8 @@ import terrablender.api.SurfaceRuleManager;
 public class ModTerrablender {
     public static void registerBiomes() {
         // 使用配置管理器获取权重
-        int specialWeight = BiomeConfigManager.getSpecialBiomesWeight();
         int overworldWeight = BiomeConfigManager.getOverworldBiomesWeight();
         int secondOverworldWeight = BiomeConfigManager.getSecondOverworldBiomesWeight();
-
-        Regions.register(new thePeachBlossomSpringRegion(
-                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "the_peach_blossom_spring"), specialWeight));
 
         // 注册主要生物群系区域
         Regions.register(new OverworldBiomesRegion(

@@ -16,22 +16,61 @@
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:summer_cymbidium"
+                  "Name": "more_orn_plants:chrysanthemum"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:autumn_cymbidium"
+                  "Name": "more_orn_plants:white_chrysanthemum"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:winter_cymbidium",
-                  "Properties": {
-                    "half": "lower"
-                  }
+                  "Name": "more_orn_plants:purple_chrysanthemum"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:peony"
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:blue_peony"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:purple_peony"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:charming_rhododendron"
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:chinese_azalea"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:camellia"
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:white_camellia"
                 },
                 "weight": 1
               },
@@ -39,7 +78,7 @@
                 "data": {
                   "Name": "more_orn_plants:pink_camellia"
                 },
-                "weight": 6
+                "weight": 1
               }
             ]
           }
@@ -73,8 +112,8 @@
         }
       ]
     },
-    "tries": 24,
-    "xz_spread": 6,
-    "y_spread": 4
+    "tries": 54,
+    "xz_spread": 8,
+    "y_spread": 2
   }
 }

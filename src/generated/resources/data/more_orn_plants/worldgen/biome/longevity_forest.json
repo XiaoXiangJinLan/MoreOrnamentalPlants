@@ -76,14 +76,14 @@
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
-      "more_orn_plants:grass_forest_1",
       "more_orn_plants:ancient_camphor_longevity",
       "more_orn_plants:ancient_green_ginkgo_longevity",
       "more_orn_plants:mega_pine_longevity",
       "more_orn_plants:chrysanthemum_forest_placed",
       "more_orn_plants:spring_cymbidium_forest_placed",
       "more_orn_plants:summer_cymbidium_forest_placed",
-      "more_orn_plants:winter_cymbidium_forest_placed"
+      "more_orn_plants:winter_cymbidium_forest_placed",
+      "more_orn_plants:grass_forest_1"
     ],
     [
       "minecraft:freeze_top_layer"

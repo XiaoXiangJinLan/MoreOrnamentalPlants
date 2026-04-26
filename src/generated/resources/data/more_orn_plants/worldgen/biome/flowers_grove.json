@@ -73,7 +73,6 @@
     ],
     [
       "minecraft:glow_lichen",
-      "more_orn_plants:grass_grove",
       "more_orn_plants:weeping_crabapple_placed",
       "more_orn_plants:pink_apricot_placed",
       "more_orn_plants:ornamental_peach_grove_placed",
@@ -83,7 +82,6 @@
       "more_orn_plants:chinaberry_placed",
       "more_orn_plants:wisteria_tree_placed",
       "more_orn_plants:taiwan_cherry_placed",
-      "more_orn_plants:flowers_grove_flowers_placed",
       "more_orn_plants:chrysanthemum_grove_placed",
       "more_orn_plants:cymbidium_placed",
       "more_orn_plants:peony_tree_grove_placed",
@@ -96,7 +94,8 @@
       "more_orn_plants:fountain_grass_grove",
       "more_orn_plants:small_flowers_grove_placed",
       "more_orn_plants:tulip_grove_placed",
-      "more_orn_plants:tall_flowers_grove_placed"
+      "more_orn_plants:tall_flowers_grove_placed",
+      "more_orn_plants:grass_grove"
     ],
     [
       "minecraft:freeze_top_layer"

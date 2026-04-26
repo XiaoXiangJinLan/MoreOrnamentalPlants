@@ -58,6 +58,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WHITE_PEACH_PLACED = registerKey("white_peach_placed");
     public static final ResourceKey<PlacedFeature> IMMORTAL_PEACH_PLACED = registerKey("immortal_peach_placed");
     public static final ResourceKey<PlacedFeature> PEACH_PINK_PETALS_PATCH_PLACED = registerKey("peach_pink_petals_patch_placed");
+    public static final ResourceKey<PlacedFeature> SMALL_FLOWERS_PEACH_PLACED = registerKey("small_flowers_peach_placed");
+    public static final ResourceKey<PlacedFeature> TALL_FLOWERS_PEACH_PLACED = registerKey("tall_flowers_peach_placed");
     public static final ResourceKey<PlacedFeature> ORNAMENTAL_PEACH_GROVE_PLACED = registerKey("ornamental_peach_grove_placed");
     public static final ResourceKey<PlacedFeature> PEAR_PLACED = registerKey("pear_placed");
     public static final ResourceKey<PlacedFeature> PEAR_WOODS = registerKey("pear_woods");
@@ -77,6 +79,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SWEETGUM_PLACED = registerKey("sweetgum_placed");
     public static final ResourceKey<PlacedFeature> SWEETGUM_ROSE_PLACED = registerKey("sweetgum_rose_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_PLACED = registerKey("camphor_placed");
+    public static final ResourceKey<PlacedFeature> CAMPHOR_PEACH_PLACED = registerKey("camphor_peach_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_YUNMENG_PLACED = registerKey("camphor_yunmeng_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_VALLEY_PLACED = registerKey("camphor_valley_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_PLAIN_PLACED = registerKey("camphor_plain_placed");
@@ -84,6 +87,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CAMPHOR_ROSE_PLACED = registerKey("camphor_rose_placed");
     public static final ResourceKey<PlacedFeature> SMALL_CAMPHOR_WOODS_PLACED = registerKey("small_camphor_woods_placed");
     public static final ResourceKey<PlacedFeature> ANCIENT_CAMPHOR_PLACED = registerKey("ancient_camphor_placed");
+    public static final ResourceKey<PlacedFeature> ANCIENT_CAMPHOR_PEACH_PLACED = registerKey("ancient_camphor_peach_placed");
     public static final ResourceKey<PlacedFeature> ANCIENT_CAMPHOR_LONGEVITY = registerKey("ancient_camphor_longevity");
     public static final ResourceKey<PlacedFeature> DOVE_TREE_PLACED = registerKey("dove_tree_placed");
     public static final ResourceKey<PlacedFeature> CHINABERRY_PLACED = registerKey("chinaberry_placed");
@@ -157,7 +161,6 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> COTTON_ROSE_GROVE_PLACED = registerKey("cotton_rose_grove_placed");
     public static final ResourceKey<PlacedFeature> COTTON_ROSE_FOREST_PLACED = registerKey("cotton_rose_forest_placed");
     public static final ResourceKey<PlacedFeature> TAIWAN_CHERRY_PLACED =registerKey("taiwan_cherry_placed");
-    public static final ResourceKey<PlacedFeature> FLOWERS_GROVE_FLOWERS_PLACED = registerKey("flowers_grove_flowers_placed");
     public static final ResourceKey<PlacedFeature> WINTERSWEET_PLACED = registerKey("wintersweet_placed");
     public static final ResourceKey<PlacedFeature> LILY_OF_THE_VALLEY_FOREST_PLACED = registerKey("lily_of_the_valley_forest_placed");
     public static final ResourceKey<PlacedFeature> LILY_OF_THE_VALLEY_WOODS_PLACED = registerKey("lily_of_the_valley_woods_placed");
@@ -351,9 +354,6 @@ public class ModPlacedFeatures {
         register(context, TAIWAN_CHERRY_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.TAIWAN_CHERRY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.TAIWAN_CHERRY_SAPLING.get()));
-        register(context, FLOWERS_GROVE_FLOWERS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.FLOWERS_GROVE_FLOWERS),
-                List.of(RarityFilter.onAverageOnceEvery(1),
-                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, CHRYSANTHEMUM_GROVE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_GROVE),
                 List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
@@ -408,16 +408,28 @@ public class ModPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, ORNAMENTAL_PEACH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORNAMENTAL_PEACH),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.2f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1),
                         ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
         register(context, WILD_PEACH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WILD_PEACH),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.2f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.2f, 1),
                         ModBlocks.WILD_PEACH_SAPLING.get()));
         register(context, WHITE_PEACH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_PEACH),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.WHITE_PEACH_SAPLING.get()));
+        register(context, CAMPHOR_PEACH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5F, 3),
+                        ModBlocks.CAMPHOR_SAPLING.get()));
+        register(context, ANCIENT_CAMPHOR_PEACH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_CAMPHOR),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05F, 1),
+                        ModBlocks.CAMPHOR_SAPLING.get()));
         register(context, PEACH_PINK_PETALS_PATCH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEACH_PINK_PETALS_PATCH),
-                List.of(NoiseThresholdCountPlacement.of(-0.8, 5, 10),
+                List.of(NoiseThresholdCountPlacement.of(-0.8, 4, 8),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, SMALL_FLOWERS_PEACH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_FLOWERS_PEACH),
+                List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, TALL_FLOWERS_PEACH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.TALL_FLOWERS_PEACH),
+                List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEACH_PETALS, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEACH_PETALS),
                 List.of(CountPlacement.of(3),

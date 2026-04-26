@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:flowers_grove_flowers",
+  "feature": "more_orn_plants:tall_flowers_peach",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 1
+      "chance": 2
     },
     {
       "type": "minecraft:in_square"
