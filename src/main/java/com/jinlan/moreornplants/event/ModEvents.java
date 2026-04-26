@@ -214,7 +214,6 @@ public class ModEvents {
     private record InventoryState(boolean hasZiyingBead, boolean hasSuyuBead, boolean hasYuanyangBead,
                                   boolean hasZhuiyueSword, boolean hasCaiyunSword, boolean hasFlower, boolean hasBaihuaSword) {}
 
-
     @SubscribeEvent
     public static void onLivingTick(LivingEvent.LivingTickEvent event) {
         LivingEntity entity = event.getEntity();

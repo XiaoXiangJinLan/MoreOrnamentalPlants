@@ -39,7 +39,9 @@
     ]
   ],
   "rewards": {
-    "experience": 10
+    "loot": [
+      "more_orn_plants:advancements/peach"
+    ]
   },
   "sends_telemetry_event": true
 }

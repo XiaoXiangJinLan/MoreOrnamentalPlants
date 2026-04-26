@@ -47,7 +47,6 @@ public class ModBiomeConfig {
     // 区域权重配置
     public static final ForgeConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
     public static final ForgeConfigSpec.IntValue SECOND_OVERWORLD_BIOMES_WEIGHT;
-    public static final ForgeConfigSpec.IntValue SPECIAL_BIOMES_WEIGHT;
 
     // 武器伤害配置
     public static final ForgeConfigSpec.ConfigValue<Double> CAMPHOR_SWORD_MULTIPLIER;
@@ -150,9 +149,6 @@ public class ModBiomeConfig {
         SECOND_OVERWORLD_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for second overworld biomes region")
                 .defineInRange("secondOverworldBiomesWeight", 4, 1, 20);
-        SPECIAL_BIOMES_WEIGHT = BUILDER
-                .comment("Weight for special biomes region")
-                .defineInRange("specialBiomesWeight", 1, 1, 20);
         BUILDER.pop();
 
         // 武器伤害配置

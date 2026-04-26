@@ -744,7 +744,6 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             LocationPredicate.Builder.location().setBiome(ModBiomes.THE_PEACH_BLOSSOM_SPRING).build()
                     ))
                     .rewards(AdvancementRewards.Builder.loot(new ResourceLocation(MoreOrnPlants.MOD_ID, "advancements/peach")))
-                    .rewards(AdvancementRewards.Builder.experience(10))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "peach_blossom_spring"), existingFileHelper);
 
             Advancement flowersAsMatchmakers = Advancement.Builder.advancement()

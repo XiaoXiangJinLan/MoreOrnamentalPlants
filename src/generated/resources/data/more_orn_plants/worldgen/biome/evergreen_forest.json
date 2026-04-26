@@ -75,7 +75,6 @@
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
-      "more_orn_plants:grass_forest_1",
       "more_orn_plants:ancient_camphor_placed",
       "more_orn_plants:camphor_placed",
       "more_orn_plants:green_chinese_parasol_placed",
@@ -86,7 +85,8 @@
       "more_orn_plants:blue_orchid_placed",
       "more_orn_plants:spring_cymbidium_forest_placed",
       "more_orn_plants:summer_cymbidium_forest_placed",
-      "more_orn_plants:winter_cymbidium_forest_placed"
+      "more_orn_plants:winter_cymbidium_forest_placed",
+      "more_orn_plants:grass_forest_1"
     ],
     [
       "minecraft:freeze_top_layer"

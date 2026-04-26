@@ -99,7 +99,7 @@ public class ModOverworldBiomesBuilder {
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_VARIANT_MOD = new ResourceKey[][]{
             {null,                      null,                      null,                           null,                          ModBiomes.RED_MEI_FOREST},
             {ModBiomes.PEONY_MEADOWS,   ModBiomes.PEONY_MEADOWS,   ModBiomes.COLORED_FOREST,       ModBiomes.COLORED_FOREST,      null},
-            {ModBiomes.CRABAPPLE_GROVE, ModBiomes.CRABAPPLE_GROVE, ModBiomes.PINK_CAMELLIA_VALLEY, ModBiomes.RED_CAMELLIA_VALLEY, null},
+            {ModBiomes.CRABAPPLE_GROVE, ModBiomes.CRABAPPLE_GROVE, ModBiomes.PINK_CAMELLIA_VALLEY, ModBiomes.RED_CAMELLIA_VALLEY, ModBiomes.THE_PEACH_BLOSSOM_SPRING},
             {null,                      null,                      null,                           null,                          null},
             {null,                      null,                      ModBiomes.DESERT_POPLAR_WOODS,  ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
     };
@@ -113,7 +113,7 @@ public class ModOverworldBiomesBuilder {
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_VARIANT_MOD = new ResourceKey[][]{
             {null, null,                    null,                    null,                    null},
             {null, ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, ModBiomes.LONGEVITY_FOREST},
-            {null, null,                    ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, null},
+            {null, null,                    ModBiomes.RED_HIGHLANDS, ModBiomes.RED_HIGHLANDS, ModBiomes.THE_PEACH_BLOSSOM_SPRING},
             {null, null,                    null,                    null,                    null},
             {null, null,                    null,                    null,                    null}
     };
@@ -127,7 +127,7 @@ public class ModOverworldBiomesBuilder {
     private final ResourceKey<Biome>[][] RIVER_BIOMES_MOD = new ResourceKey[][]{
             {ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE},
             {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    null,                      null,                      null},
-            {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    null},
+            {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.THE_PEACH_BLOSSOM_SPRING},
             {null,                      null,                      null,                      null,                      null},
             {null,                      null,                      null,                      null,                      null}
     };
