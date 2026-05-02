@@ -1,0 +1,36 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_narcissus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:narcissus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.the_nymph_of_lingbo.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:chinese_narcissus"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.the_nymph_of_lingbo.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_narcissus"
+    ]
+  ],
+  "rewards": {
+    "experience": 6
+  },
+  "sends_telemetry_event": true
+}

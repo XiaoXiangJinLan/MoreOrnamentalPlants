@@ -1,9 +1,11 @@
 {
-  "feature": "more_orn_plants:blue_orchid_forest",
+  "feature": "more_orn_plants:chinese_narcissus_woods",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 3
+      "type": "minecraft:noise_threshold_count",
+      "above_noise": 4,
+      "below_noise": 0,
+      "noise_level": 0.1
     },
     {
       "type": "minecraft:in_square"

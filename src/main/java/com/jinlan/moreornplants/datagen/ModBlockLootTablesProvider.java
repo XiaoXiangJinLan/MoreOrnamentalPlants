@@ -834,6 +834,24 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHINESE_AZALEA.get());
         this.add(ModBlocks.POTTED_CHINESE_AZALEA.get(),
                 createPotFlowerItemTable(ModBlocks.CHINESE_AZALEA.get()));
+        this.dropSelf(ModBlocks.CHINESE_NARCISSUS.get());
+        this.add(ModBlocks.POTTED_CHINESE_NARCISSUS.get(),
+                createPotFlowerItemTable(ModBlocks.CHINESE_NARCISSUS.get()));
+        this.dropSelf(ModBlocks.GOLDEN_CHINESE_NARCISSUS.get());
+        this.add(ModBlocks.POTTED_GOLDEN_CHINESE_NARCISSUS.get(),
+                createPotFlowerItemTable(ModBlocks.GOLDEN_CHINESE_NARCISSUS.get()));
+        this.dropSelf(ModBlocks.WHITE_MOTH_ORCHID.get());
+        this.add(ModBlocks.POTTED_WHITE_MOTH_ORCHID.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_MOTH_ORCHID.get()));
+        this.dropSelf(ModBlocks.PINK_MOTH_ORCHID.get());
+        this.add(ModBlocks.POTTED_PINK_MOTH_ORCHID.get(),
+                createPotFlowerItemTable(ModBlocks.PINK_MOTH_ORCHID.get()));
+        this.dropSelf(ModBlocks.PURPLE_MOTH_ORCHID.get());
+        this.add(ModBlocks.POTTED_PURPLE_MOTH_ORCHID.get(),
+                createPotFlowerItemTable(ModBlocks.PURPLE_MOTH_ORCHID.get()));
+        this.dropSelf(ModBlocks.GOLDEN_MOTH_ORCHID.get());
+        this.add(ModBlocks.POTTED_GOLDEN_MOTH_ORCHID.get(),
+                createPotFlowerItemTable(ModBlocks.GOLDEN_MOTH_ORCHID.get()));
         this.add(ModBlocks.FOUNTAIN_GRASS.get(), this::createGrassDrops);
         this.add(ModBlocks.POTTED_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.FOUNTAIN_GRASS.get()));

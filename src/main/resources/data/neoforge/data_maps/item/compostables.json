@@ -531,6 +531,24 @@
     "more_orn_plants:wintersweet": {
       "chance": 0.65
     },
+    "more_orn_plants:chinese_narcissus": {
+      "chance": 0.65
+    },
+    "more_orn_plants:golden_chinese_narcissus": {
+      "chance": 0.65
+    },
+    "more_orn_plants:white_moth_orchid": {
+      "chance": 0.65
+    },
+    "more_orn_plants:pink_moth_orchid": {
+      "chance": 0.65
+    },
+    "more_orn_plants:purple_moth_orchid": {
+      "chance": 0.65
+    },
+    "more_orn_plants:golden_moth_orchid": {
+      "chance": 0.65
+    },
     "more_orn_plants:miscanthus": {
       "chance": 0.85
     },

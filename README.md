@@ -10,8 +10,8 @@ Chinaberry, Desert Poplar.
 
 New Plants 
 ==========
-Herbaceous Peony, Chinese Rose, Chrysanthemum, Cymbidium, Lotus, Camellia, Azalea (more varieties), Wintersweet, Cotton Rose, 
-Crape Myrtle, Chinese Wisteria, Fountain Grass, Miscanthus, Mottled Bamboo, Black Bamboo, as well as The Four Great Peonies.  
+Herbaceous Peony, Chinese Rose, Chrysanthemum, Cymbidium, Lotus, Camellia, Azalea (more varieties), Chinese Narcissus, Moth Orchid, 
+Wintersweet, Cotton Rose, Crape Myrtle, Chinese Wisteria, Fountain Grass, Miscanthus, Mottled Bamboo, Black Bamboo, as well as The Four Great Peonies.  
 Some plants can be crafted into cut flowers, such as Herbaceous Peony and Chinese Rose. Hold shears in your main hand and a flower in your off-hand, 
 then right-click to obtain the corresponding cut flower.
 
@@ -99,7 +99,7 @@ New Mobs
 梅花、海棠、杏花、桃花、梨花、钟花樱、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
 
 ## 新植物
-芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、蜡梅、芙蓉、紫薇、紫藤、狼尾草、芒草、湘妃竹、紫竹，以及牡丹四大名品等。  
+芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、水仙、蝴蝶兰、蜡梅、芙蓉、紫薇、紫藤、狼尾草、芒草、湘妃竹、紫竹，以及牡丹四大名品等。  
 部分植物（例如芍药、月季等）可制作鲜切花，主手持剪刀，副手持花卉，右键鼠标即可获得对应的鲜切花。
 
 ## 新群系
@@ -187,6 +187,7 @@ more_orn_plants:light_pink_chrysanthemum more_orn_plants:spring_cymbidium more_o
 more_orn_plants:camellia more_orn_plants:pink_camellia more_orn_plants:white_camellia more_orn_plants:versicolor_camellia 
 more_orn_plants:red_azalea more_orn_plants:maying_rhododendron more_orn_plants:dewdrop_rhododendron more_orn_plants:charming_rhododendron 
 more_orn_plants:great_white_rhododendron more_orn_plants:purple_rhododendron more_orn_plants:pink_rhododendron more_orn_plants:chinese_azalea 
+more_orn_plants:chinese_narcissus more_orn_plants:white_moth_orchid more_orn_plants:pink_moth_orchid more_orn_plants:purple_moth_orchid 
 more_orn_plants:cut_peony more_orn_plants:cut_light_pink_peony more_orn_plants:cut_violet_pink_peony more_orn_plants:cut_red_peony 
 more_orn_plants:cut_light_red_peony more_orn_plants:cut_ink_red_peony more_orn_plants:cut_purple_peony more_orn_plants:cut_light_purple_peony 
 more_orn_plants:cut_ink_purple_peony more_orn_plants:cut_yellow_peony more_orn_plants:cut_light_yellow_peony more_orn_plants:cut_ochre_yellow_peony 
@@ -203,7 +204,8 @@ more_orn_plants:fountain_grass more_orn_plants:purple_fountain_grass more_orn_pl
 more_orn_plants:bamboo_stick
 
 #_sapling_#  
-more_orn_plants:red_mei_sapling more_orn_plants:white_mei_sapling more_orn_plants:green_calyx_mei_sapling more_orn_plants:double_pink_mei_sapling 
+more_orn_plants:red_mei_sapling more_orn_plants:white_mei_sapling more_orn_plants:pink_mei_sapling more_orn_plants:green_calyx_mei_sapling 
+more_orn_plants:double_pink_mei_sapling more_orn_plants:double_white_mei_sapling more_orn_plants:flavescens_mei_sapling 
 more_orn_plants:versicolor_mei_sapling more_orn_plants:red_weeping_mei_sapling more_orn_plants:white_weeping_mei_sapling 
 more_orn_plants:green_weeping_mei_sapling more_orn_plants:pink_weeping_mei_sapling more_orn_plants:versicolor_weeping_mei_sapling 
 more_orn_plants:upright_crabapple_sapling more_orn_plants:weeping_crabapple_sapling more_orn_plants:pink_apricot_sapling 
@@ -279,8 +281,10 @@ more_orn_plants:potted_pink_white_chinese_rose more_orn_plants:potted_yellow_whi
 more_orn_plants:potted_camellia more_orn_plants:potted_pink_camellia more_orn_plants:potted_white_camellia more_orn_plants:potted_versicolor_camellia 
 more_orn_plants:potted_red_azalea more_orn_plants:potted_maying_rhododendron more_orn_plants:potted_dewdrop_rhododendron 
 more_orn_plants:potted_charming_rhododendron more_orn_plants:potted_great_white_rhododendron more_orn_plants:potted_purple_rhododendron 
-more_orn_plants:potted_pink_rhododendron more_orn_plants:potted_chinese_azalea more_orn_plants:potted_wintersweet more_orn_plants:potted_red_mei_sapling 
-more_orn_plants:potted_white_mei_sapling more_orn_plants:potted_green_calyx_mei_sapling more_orn_plants:potted_double_pink_mei_sapling 
+more_orn_plants:potted_pink_rhododendron more_orn_plants:potted_chinese_azalea more_orn_plants:potted_wintersweet more_orn_plants:potted_chinese_narcissus 
+more_orn_plants:potted_white_moth_orchid more_orn_plants:potted_pink_moth_orchid more_orn_plants:potted_purple_moth_orchid
+more_orn_plants:potted_red_mei_sapling more_orn_plants:potted_white_mei_sapling more_orn_plants:potted_green_calyx_mei_sapling 
+more_orn_plants:potted_double_pink_mei_sapling more_orn_plants:potted_pink_mei_sapling more_orn_plants:potted_double_white_mei_sapling
 more_orn_plants:potted_versicolor_mei_sapling more_orn_plants:potted_red_weeping_mei_sapling more_orn_plants:potted_white_weeping_mei_sapling 
 more_orn_plants:potted_green_weeping_mei_sapling more_orn_plants:potted_pink_weeping_mei_sapling more_orn_plants:potted_versicolor_weeping_mei_sapling 
 more_orn_plants:potted_upright_crabapple_sapling more_orn_plants:potted_weeping_crabapple_sapling more_orn_plants:potted_pink_apricot_sapling 

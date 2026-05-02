@@ -767,6 +767,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.CHINESE_AZALEA);
         simpleBlock(ModBlocks.POTTED_CHINESE_AZALEA.get(), models().singleTexture("potted_chinese_azalea", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CHINESE_AZALEA.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.CHINESE_NARCISSUS);
+        simpleBlock(ModBlocks.POTTED_CHINESE_NARCISSUS.get(), models().singleTexture("potted_chinese_narcissus", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.CHINESE_NARCISSUS.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.GOLDEN_CHINESE_NARCISSUS);
+        simpleBlock(ModBlocks.POTTED_GOLDEN_CHINESE_NARCISSUS.get(), models().singleTexture("potted_golden_chinese_narcissus", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.GOLDEN_CHINESE_NARCISSUS.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.WHITE_MOTH_ORCHID);
+        simpleBlock(ModBlocks.POTTED_WHITE_MOTH_ORCHID.get(), models().singleTexture("potted_white_moth_orchid", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.WHITE_MOTH_ORCHID.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.PINK_MOTH_ORCHID);
+        simpleBlock(ModBlocks.POTTED_PINK_MOTH_ORCHID.get(), models().singleTexture("potted_pink_moth_orchid", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.PINK_MOTH_ORCHID.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.PURPLE_MOTH_ORCHID);
+        simpleBlock(ModBlocks.POTTED_PURPLE_MOTH_ORCHID.get(), models().singleTexture("potted_purple_moth_orchid", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.PURPLE_MOTH_ORCHID.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.GOLDEN_MOTH_ORCHID);
+        simpleBlock(ModBlocks.POTTED_GOLDEN_MOTH_ORCHID.get(), models().singleTexture("potted_golden_moth_orchid", ResourceLocation.parse("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.GOLDEN_MOTH_ORCHID.get())).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_FOUNTAIN_GRASS.get(), models().singleTexture("potted_fountain_grass", ResourceLocation.parse("flower_pot_cross"), "plant",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_fountain_grass")).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get(), models().singleTexture("potted_purple_fountain_grass", ResourceLocation.parse("flower_pot_cross"), "plant",

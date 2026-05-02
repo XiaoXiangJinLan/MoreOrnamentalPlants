@@ -6,10 +6,39 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "minecraft:blue_orchid"
-            }
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "minecraft:blue_orchid"
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:white_moth_orchid"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:pink_moth_orchid"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:purple_moth_orchid"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:golden_moth_orchid"
+                },
+                "weight": 1
+              }
+            ]
           }
         }
       },
@@ -41,7 +70,7 @@
         }
       ]
     },
-    "tries": 4,
+    "tries": 8,
     "xz_spread": 8,
     "y_spread": 6
   }

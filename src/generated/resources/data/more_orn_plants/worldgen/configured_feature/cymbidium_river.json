@@ -12,7 +12,7 @@
                 "data": {
                   "Name": "more_orn_plants:spring_cymbidium"
                 },
-                "weight": 1
+                "weight": 2
               },
               {
                 "data": {
@@ -32,6 +32,42 @@
                   "Properties": {
                     "half": "lower"
                   }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:chinese_narcissus"
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:golden_chinese_narcissus"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:white_moth_orchid"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:pink_moth_orchid"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:purple_moth_orchid"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:golden_moth_orchid"
                 },
                 "weight": 1
               },

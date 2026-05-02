@@ -105,6 +105,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_RED_AZALEA.get(), ModBlocks.POTTED_MAYING_RHODODENDRON.get(), ModBlocks.POTTED_DEWDROP_RHODODENDRON.get())
                 .add(ModBlocks.POTTED_CHARMING_RHODODENDRON.get(), ModBlocks.POTTED_GREAT_WHITE_RHODODENDRON.get(), ModBlocks.POTTED_PURPLE_RHODODENDRON.get())
                 .add(ModBlocks.POTTED_PINK_RHODODENDRON.get(), ModBlocks.POTTED_CHINESE_AZALEA.get())
+                .add(ModBlocks.POTTED_CHINESE_NARCISSUS.get(), ModBlocks.POTTED_GOLDEN_CHINESE_NARCISSUS.get())
+                .add(ModBlocks.POTTED_WHITE_MOTH_ORCHID.get(), ModBlocks.POTTED_PINK_MOTH_ORCHID.get(), ModBlocks.POTTED_PURPLE_MOTH_ORCHID.get(), ModBlocks.POTTED_GOLDEN_MOTH_ORCHID.get())
                 .add(ModBlocks.POTTED_FOUNTAIN_GRASS.get(), ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.POTTED_PINK_FOUNTAIN_GRASS.get(), ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.POTTED_MOTTLED_BAMBOO.get(), ModBlocks.POTTED_BLACK_BAMBOO.get(), ModBlocks.POTTED_BAMBOO_STICK.get())
@@ -622,6 +624,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(CommonTags.Blocks.HERBACEOUS_PEONY)
                 .addTag(CommonTags.Blocks.CAMELLIA)
                 .addTag(CommonTags.Blocks.RHODODENDRON)
+                .addTag(CommonTags.Blocks.NARCISSUS)
+                .add(ModBlocks.WHITE_MOTH_ORCHID.get(), ModBlocks.PINK_MOTH_ORCHID.get(), ModBlocks.PURPLE_MOTH_ORCHID.get(), ModBlocks.GOLDEN_MOTH_ORCHID.get())
                 .add(ModBlocks.CUT_PEONY.get(), ModBlocks.CUT_LIGHT_PINK_PEONY.get(), ModBlocks.CUT_VIOLET_PINK_PEONY.get())
                 .add(ModBlocks.CUT_RED_PEONY.get(), ModBlocks.CUT_LIGHT_RED_PEONY.get(), ModBlocks.CUT_INK_RED_PEONY.get())
                 .add(ModBlocks.CUT_PURPLE_PEONY.get(), ModBlocks.CUT_LIGHT_PURPLE_PEONY.get(), ModBlocks.CUT_INK_PURPLE_PEONY.get())
@@ -765,6 +769,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(CommonTags.Blocks.LOTUS)
                 .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get());
+
+        this.tag(CommonTags.Blocks.NARCISSUS)
+                .add(ModBlocks.CHINESE_NARCISSUS.get(), ModBlocks.GOLDEN_CHINESE_NARCISSUS.get());
 
         this.tag(CommonTags.Blocks.WISTERIA)
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.NANJING_WISTERIA.get())

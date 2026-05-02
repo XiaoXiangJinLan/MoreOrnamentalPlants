@@ -18,7 +18,7 @@
                 "data": {
                   "Name": "more_orn_plants:chrysanthemum"
                 },
-                "weight": 1
+                "weight": 2
               },
               {
                 "data": {
@@ -77,6 +77,18 @@
               {
                 "data": {
                   "Name": "more_orn_plants:pink_camellia"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:chinese_narcissus"
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:golden_chinese_narcissus"
                 },
                 "weight": 1
               }
