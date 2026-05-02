@@ -1070,6 +1070,18 @@ public class ModBlocks {
             registerBlock("pink_rhododendron", () -> new PinkRhododendronSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> CHINESE_AZALEA =
             registerBlock("chinese_azalea", () -> new ChineseAzaleaSaplingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> CHINESE_NARCISSUS =
+            registerBlock("chinese_narcissus", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> GOLDEN_CHINESE_NARCISSUS =
+            registerBlock("golden_chinese_narcissus", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> WHITE_MOTH_ORCHID =
+            registerBlock("white_moth_orchid", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> PINK_MOTH_ORCHID =
+            registerBlock("pink_moth_orchid", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> PURPLE_MOTH_ORCHID =
+            registerBlock("purple_moth_orchid", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> GOLDEN_MOTH_ORCHID =
+            registerBlock("golden_moth_orchid", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> FOUNTAIN_GRASS =
             registerBlock("fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PURPLE_FOUNTAIN_GRASS =
@@ -1189,6 +1201,18 @@ public class ModBlocks {
             BLOCKS.register("potted_pink_rhododendron", () -> flowerPot(PINK_RHODODENDRON.get()));
     public static final RegistryObject<Block> POTTED_CHINESE_AZALEA =
             BLOCKS.register("potted_chinese_azalea", () -> flowerPot(CHINESE_AZALEA.get()));
+    public static final RegistryObject<Block> POTTED_CHINESE_NARCISSUS =
+            BLOCKS.register("potted_chinese_narcissus", () -> flowerPot(CHINESE_NARCISSUS.get()));
+    public static final RegistryObject<Block> POTTED_GOLDEN_CHINESE_NARCISSUS =
+            BLOCKS.register("potted_golden_chinese_narcissus", () -> flowerPot(GOLDEN_CHINESE_NARCISSUS.get()));
+    public static final RegistryObject<Block> POTTED_WHITE_MOTH_ORCHID =
+            BLOCKS.register("potted_white_moth_orchid", () -> flowerPot(WHITE_MOTH_ORCHID.get()));
+    public static final RegistryObject<Block> POTTED_PINK_MOTH_ORCHID =
+            BLOCKS.register("potted_pink_moth_orchid", () -> flowerPot(PINK_MOTH_ORCHID.get()));
+    public static final RegistryObject<Block> POTTED_PURPLE_MOTH_ORCHID =
+            BLOCKS.register("potted_purple_moth_orchid", () -> flowerPot(PURPLE_MOTH_ORCHID.get()));
+    public static final RegistryObject<Block> POTTED_GOLDEN_MOTH_ORCHID =
+            BLOCKS.register("potted_golden_moth_orchid", () -> flowerPot(GOLDEN_MOTH_ORCHID.get()));
     public static final RegistryObject<Block> POTTED_FOUNTAIN_GRASS =
             BLOCKS.register("potted_fountain_grass", () -> flowerPot(FOUNTAIN_GRASS.get()));
     public static final RegistryObject<Block> POTTED_PURPLE_FOUNTAIN_GRASS =

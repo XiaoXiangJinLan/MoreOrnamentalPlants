@@ -267,6 +267,12 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PURPLE_RHODODENDRON.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_RHODODENDRON.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CHINESE_AZALEA.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.CHINESE_NARCISSUS.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.GOLDEN_CHINESE_NARCISSUS.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_MOTH_ORCHID.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_MOTH_ORCHID.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PURPLE_MOTH_ORCHID.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.GOLDEN_MOTH_ORCHID.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WINTER_CYMBIDIUM.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WINTERSWEET.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.YAO_HUANG_PEONY.get().asItem(), 0.65F);

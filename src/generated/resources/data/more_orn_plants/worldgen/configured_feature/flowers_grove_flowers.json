@@ -10,36 +10,21 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:spring_cymbidium"
+                  "Name": "more_orn_plants:chinese_narcissus"
                 },
-                "weight": 1
+                "weight": 3
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:summer_cymbidium"
+                  "Name": "more_orn_plants:golden_chinese_narcissus"
                 },
-                "weight": 1
+                "weight": 2
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:autumn_cymbidium"
+                  "Name": "more_orn_plants:pink_moth_orchid"
                 },
-                "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:winter_cymbidium",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:pink_camellia"
-                },
-                "weight": 6
+                "weight": 2
               }
             ]
           }

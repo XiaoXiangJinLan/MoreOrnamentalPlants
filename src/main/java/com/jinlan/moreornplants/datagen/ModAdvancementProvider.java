@@ -358,6 +358,24 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .rewards(AdvancementRewards.Builder.experience(6))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "flower_beauty"), existingFileHelper);
 
+            Advancement TheNymphOfLingbo = Advancement.Builder.advancement()
+                    .parent(root)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.CHINESE_NARCISSUS.get()),
+                            Component.translatable("advancement.moreornplants.the_nymph_of_lingbo.title"),
+                            Component.translatable("advancement.moreornplants.the_nymph_of_lingbo.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("get_narcissus", InventoryChangeTrigger.TriggerInstance.hasItems(
+                            ItemPredicate.Builder.item().of(ForgeTags.Items.NARCISSUS).build()
+                    ))
+                    .rewards(AdvancementRewards.Builder.experience(6))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "the_nymph_of_lingbo"), existingFileHelper);
+
             Advancement frostDefiant = Advancement.Builder.advancement()
                     .parent(root)
                     .display(new DisplayInfo(

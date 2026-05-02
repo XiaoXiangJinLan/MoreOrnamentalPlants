@@ -1,0 +1,39 @@
+{
+  "parent": "more_orn_plants:root",
+  "criteria": {
+    "get_narcissus": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:narcissus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.the_nymph_of_lingbo.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "more_orn_plants:chinese_narcissus"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.the_nymph_of_lingbo.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_narcissus"
+    ]
+  ],
+  "rewards": {
+    "experience": 6
+  },
+  "sends_telemetry_event": true
+}
