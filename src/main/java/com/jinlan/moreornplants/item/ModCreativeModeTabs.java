@@ -167,9 +167,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PINK_RHODODENDRON.get());
                         pOutput.accept(ModBlocks.CHINESE_AZALEA.get());
                         pOutput.accept(ModBlocks.CHINESE_NARCISSUS.get());
+                        pOutput.accept(ModBlocks.GOLDEN_CHINESE_NARCISSUS.get());
                         pOutput.accept(ModBlocks.WHITE_MOTH_ORCHID.get());
                         pOutput.accept(ModBlocks.PINK_MOTH_ORCHID.get());
                         pOutput.accept(ModBlocks.PURPLE_MOTH_ORCHID.get());
+                        pOutput.accept(ModBlocks.GOLDEN_MOTH_ORCHID.get());
                         pOutput.accept(ModBlocks.CUT_PEONY.get());
                         pOutput.accept(ModBlocks.CUT_LIGHT_PINK_PEONY.get());
                         pOutput.accept(ModBlocks.CUT_VIOLET_PINK_PEONY.get());
