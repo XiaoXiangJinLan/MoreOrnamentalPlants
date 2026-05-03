@@ -92,7 +92,7 @@ public class ModOverworldBiomesBuilder {
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_MOD = new ResourceKey[][]{
             {ModBiomes.RED_MEI_FOREST, ModBiomes.RED_MEI_FOREST, ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST,      null},
             {ModBiomes.PEONY_SEA,      ModBiomes.PEONY_SEA,      ModBiomes.EVERGREEN_FOREST,    ModBiomes.EVERGREEN_FOREST,    ModBiomes.LONGEVITY_FOREST},
-            {ModBiomes.FLOWERS_GROVE,  ModBiomes.FLOWERS_GROVE,  ModBiomes.CAMELLIA_VALLEY,     ModBiomes.CAMELLIA_VALLEY,     null},
+            {ModBiomes.FLOWERS_GROVE,  ModBiomes.FLOWERS_GROVE,  ModBiomes.CAMELLIA_VALLEY,     ModBiomes.CAMELLIA_VALLEY,     ModBiomes.THE_PEACH_BLOSSOM_SPRING},
             {null,                     null,                     null,                          null,                          null},
             {null,                     null,                     ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
     };
@@ -106,7 +106,7 @@ public class ModOverworldBiomesBuilder {
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_MOD = new ResourceKey[][]{
             {null,                                 null,                                 null,                       null,                       null},
             {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.COLORED_FOREST,   ModBiomes.COLORED_FOREST,   null},
-            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.EVERGREEN_FOREST, ModBiomes.EVERGREEN_FOREST, null},
+            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.EVERGREEN_FOREST, ModBiomes.EVERGREEN_FOREST, ModBiomes.THE_PEACH_BLOSSOM_SPRING},
             {null,                                 null,                                 null,                       null,                       null},
             {null,                                 null,                                 null,                       null,                       null}
     };
