@@ -90,7 +90,7 @@ public class ModTags {
         public static final TagKey<Biome> FLOWERS_AND_MOON = tag("flowers_and_moon");
 
         private static TagKey<Biome> tag(String name) {
-            return TagKey.create(Registries.BIOME, new ResourceLocation(MoreOrnPlants.MOD_ID + ":" + name));
+            return TagKey.create(Registries.BIOME, new ResourceLocation(MoreOrnPlants.MOD_ID, name));
         }
     }
 }

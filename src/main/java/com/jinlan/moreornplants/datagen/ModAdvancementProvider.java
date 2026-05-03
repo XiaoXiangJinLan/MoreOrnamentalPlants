@@ -1,6 +1,7 @@
 package com.jinlan.moreornplants.datagen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import com.jinlan.moreornplants.advancement.MoonlightTrigger;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ForgeTags;
@@ -837,17 +838,74 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             LocationPredicate.Builder.location().setBiome(ModBiomes.SPRING_RIVER).build()
                     ))
                     .addCriterion("visit_3", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiome(ModBiomes.CRABAPPLE_GROVE).build()
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.RED_MEI_FOREST).build()
                     ))
                     .addCriterion("visit_4", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiome(ModBiomes.CHINABERRY_WOODS).build()
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.FRAGRANT_SNOW_SEA).build()
                     ))
                     .addCriterion("visit_5", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiome(ModBiomes.SNOW_WOODS).build()
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.CAMELLIA_VALLEY).build()
                     ))
                     .addCriterion("visit_6", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.RED_CAMELLIA_VALLEY).build()
+                    ))
+                    .addCriterion("visit_7", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.PINK_CAMELLIA_VALLEY).build()
+                    ))
+                    .addCriterion("visit_8", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.CRABAPPLE_GROVE).build()
+                    ))
+                    .addCriterion("visit_9", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.CHINABERRY_WOODS).build()
+                    ))
+                    .addCriterion("visit_10", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.SNOW_WOODS).build()
+                    ))
+                    .addCriterion("visit_11", PlayerTrigger.TriggerInstance.located(
                             LocationPredicate.Builder.location().setBiome(ModBiomes.PURPLE_CLOUD).build()
                     ))
+                    .addCriterion("visit_12", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.PEONY_SEA).build()
+                    ))
+                    .addCriterion("visit_13", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.PEONY_MEADOWS).build()
+                    ))
+                    .addCriterion("visit_14", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.FURONG_GUO).build()
+                    ))
+                    .addCriterion("visit_15", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.CHINESE_ROSE_FIELDS).build()
+                    ))
+                    .addCriterion("visit_16", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.AZALEA_FOREST).build()
+                    ))
+                    .addCriterion("visit_17", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.TEN_MILE_GALLERY).build()
+                    ))
+                    .addCriterion("visit_18", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.THE_PEACH_BLOSSOM_SPRING).build()
+                    ))
+                    .addCriterion("visit_19", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.THE_APRICOT_SPRING_PLATEAU).build()
+                    ))
+                    .addCriterion("visit_20", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.SWEETGUM_WOODS).build()
+                    ))
+                    .addCriterion("visit_21", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.PENGLAI).build()
+                    ))
+                    .addCriterion("visit_22", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.YUNMENG_MARSH).build()
+                    ))
+                    .addCriterion("visit_23", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.MOUNT_MEI).build()
+                    ))
+                    .addCriterion("moonlight", new MoonlightTrigger.Instance(ContextAwarePredicate.ANY))
+                    .requirements(new String[][] {
+                            {"visit_1", "visit_2", "visit_3", "visit_4", "visit_5", "visit_6", "visit_7", "visit_8", "visit_9", "visit_10", "visit_11", "visit_12",
+                                    "visit_13", "visit_14", "visit_15", "visit_16", "visit_17", "visit_18", "visit_19", "visit_20", "visit_21", "visit_22", "visit_23"},
+                            {"moonlight"}
+                    })
                     .rewards(AdvancementRewards.Builder.loot(new ResourceLocation(MoreOrnPlants.MOD_ID, "advancements/zhuiyue_sword")))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "flowers_and_moon"), existingFileHelper);
 

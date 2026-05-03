@@ -1,5 +1,6 @@
 package com.jinlan.moreornplants;
 
+import com.jinlan.moreornplants.advancement.ModCriteriaTriggers;
 import com.jinlan.moreornplants.block.ModBlockEntities;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.client.ModBoatRenderer;
@@ -69,6 +70,7 @@ public class MoreOrnPlants
         ModFoliagePlacerTypes.register(modEventBus);
         ModTreeDecoratorTypes.register(modEventBus);
         ModFeatures.register(modEventBus);
+        ModCriteriaTriggers.register();
 
         context.registerConfig(ModConfig.Type.COMMON, SPEC, "moreornplants-common.toml");
 

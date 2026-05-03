@@ -1,6 +1,7 @@
 package com.jinlan.moreornplants.event;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import com.jinlan.moreornplants.advancement.ModCriteriaTriggers;
 import com.jinlan.moreornplants.config.ModBiomeConfig;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.init.ModParticleTypes;
@@ -9,6 +10,7 @@ import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
@@ -81,8 +83,8 @@ public class ModEvents {
         if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get()) && target1.isInvertedHealAndHarm()) {
             float multiplier = 1.0f;
             float maxHealth = target1.getMaxHealth();
-            if (maxHealth > 5.0f) {
-                multiplier = maxHealth / 5.0f;
+            if (maxHealth > 4.0f) {
+                multiplier = maxHealth / 4.0f;
             }
             event.setAmount(multiplier * (event.getAmount() + 1));
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getMobType() == MobType.ARTHROPOD) {
@@ -445,6 +447,16 @@ public class ModEvents {
             spawnSwordParticle2(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get());
         } else if (offHand.is(ModItems.BAIHUA_SWORD.get())) {
             spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
+        }
+    }
+
+    @SubscribeEvent
+    public static void onPlayerTick2(TickEvent.PlayerTickEvent event) {
+        // 只在服务端执行，且只在 tick 结束时触发一次（避免重复）
+        if (event.phase == TickEvent.Phase.END && !event.player.level().isClientSide) {
+            ServerPlayer player = (ServerPlayer) event.player;
+            // 调用你的自定义触发器
+            ModCriteriaTriggers.FLOWERS_AND_MOON.trigger(player);
         }
     }
 }

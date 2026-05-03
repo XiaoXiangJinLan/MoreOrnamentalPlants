@@ -1,6 +1,9 @@
 {
   "parent": "more_orn_plants:flower_king",
   "criteria": {
+    "moonlight": {
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
     "visit_1": {
       "conditions": {
         "player": [
@@ -10,6 +13,166 @@
             "predicate": {
               "location": {
                 "biome": "more_orn_plants:flowers_grove"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_10": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:snow_woods"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_11": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:purple_cloud"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_12": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:peony_sea"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_13": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:peony_meadows"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_14": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:furong_guo"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_15": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:chinese_rose_fields"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_16": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:azalea_forest"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_17": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:ten_mile_gallery"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_18": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:the_peach_blossom_spring"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_19": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:the_apricot_spring_plateau"
               }
             }
           }
@@ -33,6 +196,70 @@
       },
       "trigger": "minecraft:location"
     },
+    "visit_20": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:sweetgum_woods"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_21": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:penglai"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_22": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:yunmeng_marsh"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_23": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:mount_mei"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
     "visit_3": {
       "conditions": {
         "player": [
@@ -41,7 +268,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "more_orn_plants:crabapple_grove"
+                "biome": "more_orn_plants:red_mei_forest"
               }
             }
           }
@@ -57,7 +284,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "more_orn_plants:chinaberry_woods"
+                "biome": "more_orn_plants:fragrant_snow_sea"
               }
             }
           }
@@ -73,7 +300,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "more_orn_plants:snow_woods"
+                "biome": "more_orn_plants:camellia_valley"
               }
             }
           }
@@ -89,7 +316,55 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "more_orn_plants:purple_cloud"
+                "biome": "more_orn_plants:red_camellia_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_7": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:pink_camellia_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_8": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:crabapple_grove"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "visit_9": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:chinaberry_woods"
               }
             }
           }
@@ -115,22 +390,32 @@
   },
   "requirements": [
     [
-      "visit_1"
+      "visit_1",
+      "visit_2",
+      "visit_3",
+      "visit_4",
+      "visit_5",
+      "visit_6",
+      "visit_7",
+      "visit_8",
+      "visit_9",
+      "visit_10",
+      "visit_11",
+      "visit_12",
+      "visit_13",
+      "visit_14",
+      "visit_15",
+      "visit_16",
+      "visit_17",
+      "visit_18",
+      "visit_19",
+      "visit_20",
+      "visit_21",
+      "visit_22",
+      "visit_23"
     ],
     [
-      "visit_2"
-    ],
-    [
-      "visit_3"
-    ],
-    [
-      "visit_4"
-    ],
-    [
-      "visit_5"
-    ],
-    [
-      "visit_6"
+      "moonlight"
     ]
   ],
   "rewards": {
