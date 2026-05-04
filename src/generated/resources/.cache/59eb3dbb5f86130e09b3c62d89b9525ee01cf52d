@@ -1,4 +1,4 @@
-// 1.20.1	2026-05-03T00:00:08.6852676	Loot Tables
+// 1.20.1	2026-05-04T13:41:50.9775209	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_tables/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_tables/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_tables/blocks/apricot_fence.json
@@ -690,7 +690,7 @@ c30e9ca46b1aa00f4827a82c159a33b29ab17ce9 data/more_orn_plants/loot_tables/blocks
 947688f4b9c056e6e6eab55388baae4dae0c591d data/more_orn_plants/loot_tables/blocks/wild_peach_sapling.json
 873a217a6b3aabd3f40967beb8bee5a819312b60 data/more_orn_plants/loot_tables/blocks/wintersweet.json
 e08fe2341f123b574e00c57dd613b19ff958ca5f data/more_orn_plants/loot_tables/blocks/wintersweet_xiangnang.json
-a8869bd4c7614356a6ef7d3bec10a3a2a4d32eab data/more_orn_plants/loot_tables/blocks/winter_cymbidium.json
+ee77ba587460057f1ff8d7f88769c272c79cfbd2 data/more_orn_plants/loot_tables/blocks/winter_cymbidium.json
 420f7a4e4f4d98d52cd1dfce10f4ff31a48caeb0 data/more_orn_plants/loot_tables/blocks/wu_hua_long_yu_peony.json
 303229c82a65c151e9ac824768722db129a8b49e data/more_orn_plants/loot_tables/blocks/xihu_liuyue.json
 af3d39e81545f12b4465ba629b03e8f4a4d4a4e0 data/more_orn_plants/loot_tables/blocks/yao_huang_peony.json

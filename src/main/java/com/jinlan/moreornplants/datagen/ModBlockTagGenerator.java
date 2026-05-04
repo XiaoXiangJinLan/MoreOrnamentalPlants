@@ -686,7 +686,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get());
 
         this.tag(BlockTags.REPLACEABLE_BY_TREES)
-                .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
                 .add(ModBlocks.YAO_HUANG_PEONY.get(), ModBlocks.WEI_ZI_PEONY.get())
                 .add(ModBlocks.ZHAO_PINK_PEONY.get(), ModBlocks.DOU_GREEN_PEONY.get())
@@ -714,7 +713,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WHITE_CHRYSANTHEMUM.get(), ModBlocks.BLACK_CHRYSANTHEMUM.get(), ModBlocks.GREEN_CHRYSANTHEMUM.get())
                 .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get(), ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get())
                 .add(ModBlocks.PINK_CHRYSANTHEMUM.get(), ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get())
-                .add(ModBlocks.SPRING_CYMBIDIUM.get(), ModBlocks.SUMMER_CYMBIDIUM.get(), ModBlocks.AUTUMN_CYMBIDIUM.get())
+                .add(ModBlocks.SPRING_CYMBIDIUM.get(), ModBlocks.SUMMER_CYMBIDIUM.get(), ModBlocks.AUTUMN_CYMBIDIUM.get(), ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.PEONY.get())
                 .add(ModBlocks.LIGHT_PINK_PEONY.get())
                 .add(ModBlocks.VIOLET_PINK_PEONY.get())
@@ -763,7 +762,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CUT_WINTERSWEET.get());
 
         this.tag(BlockTags.TALL_FLOWERS)
-                .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
                 .add(ModBlocks.YAO_HUANG_PEONY.get(), ModBlocks.WEI_ZI_PEONY.get())
                 .add(ModBlocks.ZHAO_PINK_PEONY.get(), ModBlocks.DOU_GREEN_PEONY.get())

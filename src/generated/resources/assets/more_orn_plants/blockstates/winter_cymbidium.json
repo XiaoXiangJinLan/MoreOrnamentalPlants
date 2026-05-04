@@ -1,10 +1,7 @@
 {
   "variants": {
-    "half=lower": {
-      "model": "more_orn_plants:block/winter_cymbidium_bottom"
-    },
-    "half=upper": {
-      "model": "more_orn_plants:block/winter_cymbidium_top"
+    "": {
+      "model": "more_orn_plants:block/winter_cymbidium"
     }
   }
 }
