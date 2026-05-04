@@ -199,6 +199,7 @@
   "block.more_orn_plants.pear_wall_sign": "梨木牆指示牌",
   "block.more_orn_plants.pear_hanging_sign": "梨木吊牌",
   "block.more_orn_plants.pear_wall_hanging_sign": "梨木牆吊牌",
+
   "block.more_orn_plants.flowering_purple_leaf_plum_leaves": "紫葉李花樹葉",
   "block.more_orn_plants.flowering_purple_leaf_plum_sapling": "紫葉李花樹苗",
   "block.more_orn_plants.purple_leaf_plum_leaves": "紫葉李樹葉",
@@ -220,6 +221,7 @@
   "block.more_orn_plants.purple_leaf_plum_wall_sign": "紫葉李木牆指示牌",
   "block.more_orn_plants.purple_leaf_plum_hanging_sign": "紫葉李木吊牌",
   "block.more_orn_plants.purple_leaf_plum_wall_hanging_sign": "紫葉李木牆吊牌",
+
   "block.more_orn_plants.golden_osmanthus_leaves": "金桂樹葉",
   "block.more_orn_plants.orange_osmanthus_leaves": "丹桂樹葉",
   "block.more_orn_plants.white_osmanthus_leaves": "銀桂樹葉",
@@ -243,10 +245,11 @@
   "block.more_orn_plants.osmanthus_wall_sign": "桂木牆指示牌",
   "block.more_orn_plants.osmanthus_hanging_sign": "桂木吊牌",
   "block.more_orn_plants.osmanthus_wall_hanging_sign": "桂木牆吊牌",
-  "block.more_orn_plants.golden_ginkgo_leaves": "金黃銀杏樹葉",
-  "block.more_orn_plants.green_ginkgo_leaves": "翠綠銀杏樹葉",
-  "block.more_orn_plants.golden_ginkgo_sapling": "金黃銀杏樹苗",
-  "block.more_orn_plants.green_ginkgo_sapling": "翠綠銀杏樹苗",
+
+  "block.more_orn_plants.golden_ginkgo_leaves": "銀杏樹葉",
+  "block.more_orn_plants.green_ginkgo_leaves": "長青銀杏樹葉",
+  "block.more_orn_plants.golden_ginkgo_sapling": "銀杏樹苗",
+  "block.more_orn_plants.green_ginkgo_sapling": "長青銀杏樹苗",
   "block.more_orn_plants.ginkgo_log": "銀杏原木",
   "block.more_orn_plants.ginkgo_wood": "銀杏木",
   "block.more_orn_plants.stripped_ginkgo_log": "剝皮銀杏原木",
@@ -264,9 +267,10 @@
   "block.more_orn_plants.ginkgo_wall_sign": "銀杏木牆指示牌",
   "block.more_orn_plants.ginkgo_hanging_sign": "銀杏木吊牌",
   "block.more_orn_plants.ginkgo_wall_hanging_sign": "銀杏木牆吊牌",
-  "block.more_orn_plants.yellow_chinese_parasol_leaves": "秋葉梧桐",
-  "block.more_orn_plants.green_chinese_parasol_leaves": "青綠梧桐樹葉",
-  "block.more_orn_plants.yellow_chinese_parasol_sapling": "秋色梧桐樹苗",
+
+  "block.more_orn_plants.yellow_chinese_parasol_leaves": "梧桐樹葉",
+  "block.more_orn_plants.green_chinese_parasol_leaves": "長青梧桐樹葉",
+  "block.more_orn_plants.yellow_chinese_parasol_sapling": "梧桐樹苗",
   "block.more_orn_plants.green_chinese_parasol_sapling": "長青梧桐樹苗",
   "block.more_orn_plants.chinese_parasol_log": "梧桐原木",
   "block.more_orn_plants.chinese_parasol_wood": "梧桐木",
@@ -285,6 +289,7 @@
   "block.more_orn_plants.chinese_parasol_wall_sign": "梧桐木牆指示牌",
   "block.more_orn_plants.chinese_parasol_hanging_sign": "梧桐木吊牌",
   "block.more_orn_plants.chinese_parasol_wall_hanging_sign": "梧桐木牆吊牌",
+
   "block.more_orn_plants.sweetgum_leaves": "楓香樹葉",
   "block.more_orn_plants.sweetgum_sapling": "楓香樹苗",
   "block.more_orn_plants.sweetgum_log": "楓香原木",

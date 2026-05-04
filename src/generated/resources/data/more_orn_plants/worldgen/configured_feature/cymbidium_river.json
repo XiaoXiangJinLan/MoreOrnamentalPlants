@@ -28,10 +28,7 @@
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:winter_cymbidium",
-                  "Properties": {
-                    "half": "lower"
-                  }
+                  "Name": "more_orn_plants:winter_cymbidium"
                 },
                 "weight": 1
               },

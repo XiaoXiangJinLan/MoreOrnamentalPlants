@@ -116,6 +116,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SPRING_CYMBIDIUM);
                         pOutput.accept(ModBlocks.SUMMER_CYMBIDIUM);
                         pOutput.accept(ModBlocks.AUTUMN_CYMBIDIUM);
+                        pOutput.accept(ModBlocks.WINTER_CYMBIDIUM);
                         pOutput.accept(ModBlocks.CHRYSANTHEMUM);
                         pOutput.accept(ModBlocks.XIHU_LIUYUE);
                         pOutput.accept(ModBlocks.GOLD_BACKED_SCARLET_MUM);
@@ -226,7 +227,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.NANJING_WISTERIA);
                         pOutput.accept(ModBlocks.BLUE_CHINESE_WISTERIA);
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE);
-                        pOutput.accept(ModBlocks.WINTER_CYMBIDIUM);
                         pOutput.accept(ModBlocks.YAO_HUANG_PEONY);
                         pOutput.accept(ModBlocks.WEI_ZI_PEONY);
                         pOutput.accept(ModBlocks.ZHAO_PINK_PEONY);

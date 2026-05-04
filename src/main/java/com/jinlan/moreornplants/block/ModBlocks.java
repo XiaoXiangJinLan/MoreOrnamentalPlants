@@ -984,9 +984,11 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SPRING_CYMBIDIUM =
             registerBlock("spring_cymbidium", () -> new FlowerBlock(MobEffects.LUCK, 7, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> SUMMER_CYMBIDIUM =
-            registerBlock("summer_cymbidium", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("summer_cymbidium", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> AUTUMN_CYMBIDIUM =
-            registerBlock("autumn_cymbidium", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            registerBlock("autumn_cymbidium", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> WINTER_CYMBIDIUM =
+            registerBlock("winter_cymbidium", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PEONY =
             registerBlock("peony", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> LIGHT_PINK_PEONY =
@@ -1118,6 +1120,8 @@ public class ModBlocks {
             BLOCKS.register("potted_summer_cymbidium", () -> flowerPot(SUMMER_CYMBIDIUM.get()));
     public static final DeferredBlock<Block> POTTED_AUTUMN_CYMBIDIUM =
             BLOCKS.register("potted_autumn_cymbidium", () -> flowerPot(AUTUMN_CYMBIDIUM.get()));
+    public static final DeferredBlock<Block> POTTED_WINTER_CYMBIDIUM =
+            BLOCKS.register("potted_winter_cymbidium", () -> flowerPot(WINTER_CYMBIDIUM.get()));
     public static final DeferredBlock<Block> POTTED_PEONY =
             BLOCKS.register("potted_peony", () -> flowerPot(PEONY.get()));
     public static final DeferredBlock<Block> POTTED_LIGHT_PINK_PEONY =
@@ -1239,8 +1243,6 @@ public class ModBlocks {
             registerBlock("two_qiao_peony", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> VERSICOLOR_PEONY =
             registerBlock("versicolor_peony", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
-    public static final DeferredBlock<Block> WINTER_CYMBIDIUM =
-            registerBlock("winter_cymbidium", () -> new WinterCymbidiumBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CHINESE_ROSE =
             registerBlock("chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> PINK_CHINESE_ROSE =
@@ -1276,8 +1278,6 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GOLDEN_MISCANTHUS =
             registerBlock("golden_miscanthus", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
-    public static final DeferredBlock<Block> POTTED_WINTER_CYMBIDIUM =
-            BLOCKS.register("potted_winter_cymbidium", () -> flowerPot(WINTER_CYMBIDIUM.get()));
     public static final DeferredBlock<Block> POTTED_WINTERSWEET =
             BLOCKS.register("potted_wintersweet", () -> flowerPot(WINTERSWEET.get()));
     public static final DeferredBlock<Block> POTTED_CHINESE_ROSE =

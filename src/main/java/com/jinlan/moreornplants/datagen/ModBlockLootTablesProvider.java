@@ -711,6 +711,9 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.AUTUMN_CYMBIDIUM.get());
         this.add(ModBlocks.POTTED_AUTUMN_CYMBIDIUM.get(),
                 createPotFlowerItemTable(ModBlocks.AUTUMN_CYMBIDIUM.get()));
+        this.dropSelf(ModBlocks.WINTER_CYMBIDIUM.get());
+        this.add(ModBlocks.POTTED_WINTER_CYMBIDIUM.get(),
+                createPotFlowerItemTable(ModBlocks.WINTER_CYMBIDIUM.get()));
         this.dropSelf(ModBlocks.PEONY.get());
         this.add(ModBlocks.POTTED_PEONY.get(),
                 createPotFlowerItemTable(ModBlocks.PEONY.get()));
@@ -868,8 +871,6 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_BAMBOO_STICK.get(),
                 createPotFlowerItemTable(ModBlocks.BAMBOO_STICK.get()));
 
-        this.add(ModBlocks.POTTED_WINTER_CYMBIDIUM.get(),
-                createPotFlowerItemTable(ModBlocks.WINTER_CYMBIDIUM.get()));
         this.add(ModBlocks.POTTED_WINTERSWEET.get(),
                 createPotFlowerItemTable(ModBlocks.WINTERSWEET.get()));
         this.add(ModBlocks.POTTED_CHINESE_ROSE.get(),
@@ -893,8 +894,6 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.POTTED_BAOHUA_CHINESE_ROSE.get(),
                 createPotFlowerItemTable(ModBlocks.BAOHUA_CHINESE_ROSE.get()));
 
-        this.add(ModBlocks.WINTER_CYMBIDIUM.get(), createSinglePropConditionTable(ModBlocks.WINTER_CYMBIDIUM.get(),
-                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.WINTERSWEET.get(), createSinglePropConditionTable(ModBlocks.WINTERSWEET.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.YAO_HUANG_PEONY.get(), createSinglePropConditionTable(ModBlocks.YAO_HUANG_PEONY.get(),

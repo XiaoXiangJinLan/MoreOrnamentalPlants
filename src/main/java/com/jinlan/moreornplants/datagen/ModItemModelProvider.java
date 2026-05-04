@@ -300,6 +300,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.SPRING_CYMBIDIUM);
         flowerItem(ModBlocks.SUMMER_CYMBIDIUM);
         flowerItem(ModBlocks.AUTUMN_CYMBIDIUM);
+        flowerItem(ModBlocks.WINTER_CYMBIDIUM);
         flowerItem(ModBlocks.PEONY);
         flowerItem(ModBlocks.LIGHT_PINK_PEONY);
         flowerItem(ModBlocks.VIOLET_PINK_PEONY);
@@ -353,7 +354,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.WHITE_FOUNTAIN_GRASS);
         flowerItem(ModBlocks.BAMBOO_STICK);
 
-        flowerUsePottedTextureItem();
         tallCrossItem(ModBlocks.WINTERSWEET);
         tallCrossItem(ModBlocks.YAO_HUANG_PEONY);
         tallCrossItem(ModBlocks.WEI_ZI_PEONY);
@@ -536,11 +536,4 @@ public class ModItemModelProvider extends ItemModelProvider {
                 ResourceLocation.parse("item/generated")).texture("layer0",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/" + block.getId().getPath() + "_top"));
     }
-
-    private void flowerUsePottedTextureItem() {
-        withExistingParent(ModBlocks.WINTER_CYMBIDIUM.getId().getPath(),
-                ResourceLocation.parse("item/generated")).texture("layer0",
-                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_" + ModBlocks.WINTER_CYMBIDIUM.getId().getPath()));
-    }
-
 }

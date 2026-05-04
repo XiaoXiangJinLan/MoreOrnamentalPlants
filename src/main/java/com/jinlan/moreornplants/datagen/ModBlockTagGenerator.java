@@ -606,7 +606,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(CommonTags.Blocks.CRAPE_MYRTLE_SAPLING);
 
         this.tag(BlockTags.REPLACEABLE_BY_TREES)
-                .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
                 .addTag(CommonTags.Blocks.TREE_PEONY)
                 .addTag(CommonTags.Blocks.CHINESE_ROSE)
@@ -620,7 +619,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.WEEPING_CRABAPPLE.get())
                 .addTag(CommonTags.Blocks.CHRYSANTHEMUM)
-                .add(ModBlocks.SPRING_CYMBIDIUM.get(), ModBlocks.SUMMER_CYMBIDIUM.get(), ModBlocks.AUTUMN_CYMBIDIUM.get())
+                .addTag(CommonTags.Blocks.CYMBIDIUM)
                 .addTag(CommonTags.Blocks.HERBACEOUS_PEONY)
                 .addTag(CommonTags.Blocks.CAMELLIA)
                 .addTag(CommonTags.Blocks.RHODODENDRON)
@@ -637,7 +636,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CUT_WINTERSWEET.get());
 
         this.tag(BlockTags.TALL_FLOWERS)
-                .add(ModBlocks.WINTER_CYMBIDIUM.get())
                 .add(ModBlocks.WINTERSWEET.get())
                 .addTag(CommonTags.Blocks.TREE_PEONY)
                 .addTag(CommonTags.Blocks.CHINESE_ROSE)

@@ -2,9 +2,7 @@
   "values": [
     "more_orn_plants:weeping_crabapple",
     "#c:chrysanthemum",
-    "more_orn_plants:spring_cymbidium",
-    "more_orn_plants:summer_cymbidium",
-    "more_orn_plants:autumn_cymbidium",
+    "#c:cymbidium",
     "#c:herbaceous_peony",
     "#c:camellia",
     "#c:rhododendron",
