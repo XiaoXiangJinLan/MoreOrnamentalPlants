@@ -1,7 +1,7 @@
 {
   "parent": "more_orn_plants:wuling_vista",
   "criteria": {
-    "visit_peach_blossom_spring": {
+    "found_peach_village": {
       "trigger": "minecraft:location",
       "conditions": {
         "player": [
@@ -10,7 +10,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biomes": "more_orn_plants:the_peach_blossom_spring"
+                "structures": "more_orn_plants:village_peach"
               }
             }
           }
@@ -20,19 +20,19 @@
   },
   "display": {
     "description": {
-      "translate": "advancement.moreornplants.peach_blossom_spring.description"
+      "translate": "advancement.moreornplants.peach_blossom_village.description"
     },
     "icon": {
       "count": 1,
       "id": "more_orn_plants:wild_peach_sapling"
     },
     "title": {
-      "translate": "advancement.moreornplants.peach_blossom_spring.title"
+      "translate": "advancement.moreornplants.peach_blossom_village.title"
     }
   },
   "requirements": [
     [
-      "visit_peach_blossom_spring"
+      "found_peach_village"
     ]
   ],
   "rewards": {

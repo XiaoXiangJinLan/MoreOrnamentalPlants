@@ -851,6 +851,7 @@
 
   "structure.more_orn_plants.little_iron_threshold_temple": "Little Iron Threshold Temple",
   "structure.more_orn_plants.peach_blossom_hermitage": "Peach Blossom Hermitage",
+  "structure.more_orn_plants.village_peach": "Village Peach",
   "structure.more_orn_plants.village_apricot": "Village Apricot",
   "structure.more_orn_plants.bamboo_garden": "Bamboo Garden",
   "structure.more_orn_plants.mount_mei_tudi_temple": "Mount Mei Tudi Temple",
@@ -934,8 +935,8 @@
   "advancement.moreornplants.white_snow_red_mei.description": "A Crystal World of Snow and Blossoms",
   "advancement.moreornplants.fragrant_snow_sea.title": "Fragrant Snow Sea",
   "advancement.moreornplants.fragrant_snow_sea.description": "Afar, I see a gleam of snow? Nay, not quite,\nFor a hidden fragrance steals upon the night.",
-  "advancement.moreornplants.peach_blossom_spring.title": "The Peach Blossom Spring",
-  "advancement.moreornplants.peach_blossom_spring.description": "Through the grove, a sudden sight,\nPeach blossoms adrift, pure and bright.",
+  "advancement.moreornplants.peach_blossom_village.title": "Peach Blossom Village",
+  "advancement.moreornplants.peach_blossom_village.description": "Through the grove, a sudden sight,\nPeach blossoms adrift, pure and bright.",
   "advancement.moreornplants.flowers_as_matchmakers.title": "The Flowers as Matchmaker",
   "advancement.moreornplants.flowers_as_matchmakers.description": "The garden stirs with spring's delight,\nAll blossoms pale when you're in view.",
   "advancement.moreornplants.red_highlands.title": "Ying Shan Hong",

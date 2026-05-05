@@ -1,5 +1,5 @@
 {
-  "parent": "more_orn_plants:peach_blossom_spring",
+  "parent": "more_orn_plants:wuling_vista",
   "criteria": {
     "found_peach_hermitage": {
       "trigger": "minecraft:location",
@@ -24,7 +24,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "more_orn_plants:peach_pink_petals"
+      "id": "more_orn_plants:white_peach_sapling"
     },
     "title": {
       "translate": "advancement.moreornplants.peach_blossom_hermitage.title"
