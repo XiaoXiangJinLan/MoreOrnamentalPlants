@@ -35,7 +35,7 @@
       "secondary_leaves": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "more_orn_plants:white_mei_leaves",
+          "Name": "more_orn_plants:double_white_mei_leaves",
           "Properties": {
             "distance": "7",
             "persistent": "false",
@@ -73,7 +73,7 @@
       "fork_chance": 2,
       "height_rand_a": 2,
       "height_rand_b": 4,
-      "max_fork_angle": 60,
+      "max_fork_angle": 45,
       "max_fork_length": 8,
       "min_fork_length": 6,
       "top_branch_count": 4,

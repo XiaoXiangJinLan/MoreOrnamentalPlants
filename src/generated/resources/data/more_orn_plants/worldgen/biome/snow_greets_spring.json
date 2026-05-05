@@ -72,10 +72,16 @@
     ],
     [
       "minecraft:glow_lichen",
-      "more_orn_plants:ancient_red_mei_snow_placed",
-      "more_orn_plants:red_mei_placed",
-      "more_orn_plants:wintersweet_placed",
-      "more_orn_plants:grass_fern"
+      "more_orn_plants:snow_red_mei_placed",
+      "more_orn_plants:snow_double_pink_mei_placed",
+      "more_orn_plants:snow_double_white_mei_placed",
+      "more_orn_plants:snow_pink_mei_placed",
+      "more_orn_plants:snow_white_mei_placed",
+      "more_orn_plants:snow_green_calyx_mei_placed",
+      "more_orn_plants:snow_flavescens_mei_placed",
+      "more_orn_plants:snow_versicolor_mei_placed",
+      "more_orn_plants:flower_snow_spring_placed",
+      "more_orn_plants:grass_fern_3"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -150,5 +156,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": -0.05
+  "temperature": 0.0
 }

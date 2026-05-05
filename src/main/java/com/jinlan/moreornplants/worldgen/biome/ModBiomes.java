@@ -23,6 +23,8 @@ public class ModBiomes {
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "red_mei_forest"));
     public static final ResourceKey<Biome> FRAGRANT_SNOW_SEA = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "fragrant_snow_sea"));
+    public static final ResourceKey<Biome> SNOW_GREETS_SPRING = ResourceKey.create(Registries.BIOME,
+            ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "snow_greets_spring"));
     public static final ResourceKey<Biome> THE_PEACH_BLOSSOM_SPRING = ResourceKey.create(Registries.BIOME,
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "the_peach_blossom_spring"));
     public static final ResourceKey<Biome> EVERGREEN_FOREST = ResourceKey.create(Registries.BIOME,
@@ -89,8 +91,9 @@ public class ModBiomes {
             ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "suyu_caves"));
 
     public static void bootstrap(BootstrapContext<Biome> context) {
-        context.register(RED_MEI_FOREST, meiForest(context, true));
-        context.register(FRAGRANT_SNOW_SEA, meiForest(context, false));
+        context.register(RED_MEI_FOREST, meiForest(context, true, false));
+        context.register(FRAGRANT_SNOW_SEA, meiForest(context, false, false));
+        context.register(SNOW_GREETS_SPRING, meiForest(context, false, true));
         context.register(THE_PEACH_BLOSSOM_SPRING, thePeachBlossomSpring(context));
         context.register(EVERGREEN_FOREST, evergreenForest(context, false));
         context.register(LONGEVITY_FOREST, evergreenForest(context, true));
@@ -134,7 +137,7 @@ public class ModBiomes {
         BiomeDefaultFeatures.addSurfaceFreezing(builder);
     }
 
-    private static Biome meiForest(BootstrapContext<Biome> context, boolean isRed) {
+    private static Biome meiForest(BootstrapContext<Biome> context, boolean isRed, boolean isSpring) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
 
         BiomeDefaultFeatures.farmAnimals(spawnBuilder);
@@ -149,10 +152,21 @@ public class ModBiomes {
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
         BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
         if (isRed) {
-            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.ANCIENT_RED_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.ANCIENT_RED_MEI_SNOW_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_MEI_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WINTERSWEET_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_FERN);
+        } else if (isSpring) {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SNOW_RED_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SNOW_DOUBLE_PINK_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SNOW_DOUBLE_WHITE_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SNOW_PINK_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SNOW_WHITE_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SNOW_GREEN_CALYX_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SNOW_FLAVESCENS_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SNOW_VERSICOLOR_MEI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FLOWER_SNOW_SPRING_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_FERN_3);
         } else {
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.DOUBLE_WHITE_MEI_SNOW);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_MEI_SNOW);
@@ -161,9 +175,9 @@ public class ModBiomes {
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FRAGRANT_SNOW_PETALS_PATCH_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_FERN_1);
         }
-
+        float f = isSpring ? 0.0f : -0.05f;
         return new Biome.BiomeBuilder()
-                .hasPrecipitation(true).temperature(-0.05f).downfall(0.8f)
+                .hasPrecipitation(true).temperature(f).downfall(0.8f)
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .waterColor(4159204).waterFogColor(329011).skyColor(8560639).fogColor(12638463).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())

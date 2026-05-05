@@ -46,7 +46,7 @@
       "secondary_leaves": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "more_orn_plants:white_mei_leaves",
+          "Name": "more_orn_plants:double_white_mei_leaves",
           "Properties": {
             "distance": "7",
             "persistent": "false",
