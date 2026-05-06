@@ -9,6 +9,10 @@
     {
       "structure": "more_orn_plants:village_apricot",
       "weight": 1
+    },
+    {
+      "structure": "more_orn_plants:village_peach",
+      "weight": 1
     }
   ]
 }

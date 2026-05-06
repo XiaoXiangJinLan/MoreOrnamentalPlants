@@ -6,7 +6,7 @@
         "type": "more_orn_plants:leaf_pile_decorator",
         "horizontal_radius": 6,
         "leaf_pile_block": {
-          "Name": "more_orn_plants:ginkgo_leaf_pile",
+          "Name": "more_orn_plants:ginkgo_leaf",
           "Properties": {
             "facing": "north",
             "flower_amount": "1"

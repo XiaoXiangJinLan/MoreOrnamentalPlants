@@ -182,15 +182,15 @@ public class ModItems {
     public static final RegistryObject<Item> WILD_PEACH_PETALS =
             ITEMS.register("wild_peach_petals", () -> new LeafPileBlockItem(ModBlocks.WILD_PEACH_PETALS.get(), new Item.Properties(), 100));
     public static final RegistryObject<Item> CHINESE_PARASOL_LEAF_0 =
-            ITEMS.register("chinese_parasol_leaf_0", () -> new LeafPileUseItemNameBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_0.get(), new Item.Properties(), 120));
+            ITEMS.register("chinese_parasol_leaf_0", () -> new LeafPileBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_0.get(), new Item.Properties(), 120));
     public static final RegistryObject<Item> CHINESE_PARASOL_LEAF_1 =
-            ITEMS.register("chinese_parasol_leaf_1", () -> new LeafPileUseItemNameBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_1.get(), new Item.Properties(), 120));
+            ITEMS.register("chinese_parasol_leaf_1", () -> new LeafPileBlockItem(ModBlocks.CHINESE_PARASOL_LEAF_1.get(), new Item.Properties(), 120));
     public static final RegistryObject<Item> SWEETGUM_LEAF_0 =
-            ITEMS.register("sweetgum_leaf_0", () -> new LeafPileUseItemNameBlockItem(ModBlocks.SWEETGUM_LEAF_PILE_0.get(), new Item.Properties(), 100));
+            ITEMS.register("sweetgum_leaf_0", () -> new LeafPileBlockItem(ModBlocks.SWEETGUM_LEAF_0.get(), new Item.Properties(), 100));
     public static final RegistryObject<Item> SWEETGUM_LEAF_1 =
-            ITEMS.register("sweetgum_leaf_1", () -> new LeafPileUseItemNameBlockItem(ModBlocks.SWEETGUM_LEAF_PILE_1.get(), new Item.Properties(), 100));
+            ITEMS.register("sweetgum_leaf_1", () -> new LeafPileBlockItem(ModBlocks.SWEETGUM_LEAF_1.get(), new Item.Properties(), 100));
     public static final RegistryObject<Item> GINKGO_LEAF =
-            ITEMS.register("ginkgo_leaf", () -> new LeafPileUseItemNameBlockItem(ModBlocks.GINKGO_LEAF_PILE.get(), new Item.Properties(), 100));
+            ITEMS.register("ginkgo_leaf", () -> new LeafPileBlockItem(ModBlocks.GINKGO_LEAF.get(), new Item.Properties(), 100));
 
     public static final RegistryObject<Item> BAMBOO_STICK =
             ITEMS.register("bamboo_stick", () -> new BambooStickItem(ModBlocks.BAMBOO_STICK.get(), new Item.Properties(), 200));

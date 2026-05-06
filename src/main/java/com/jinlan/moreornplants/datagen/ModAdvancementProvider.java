@@ -689,8 +689,25 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .rewards(AdvancementRewards.Builder.experience(9))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "offer_chrysanthemum"), existingFileHelper);
 
-            Advancement treadSnowSeekMei = Advancement.Builder.advancement()
+            Advancement fragrantSnowSea = Advancement.Builder.advancement()
                     .parent(flowerLeader)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.fragrant_snow_sea.title"),
+                            Component.translatable("advancement.moreornplants.fragrant_snow_sea.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("visit_fragrant_snow_sea", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.FRAGRANT_SNOW_SEA).build()
+                    ))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "fragrant_snow_sea"), existingFileHelper);
+
+            Advancement treadSnowSeekMei = Advancement.Builder.advancement()
+                    .parent(fragrantSnowSea)
                     .display(new DisplayInfo(
                             new ItemStack(ModBlocks.VERSICOLOR_MEI_SAPLING.get()),
                             Component.translatable("advancement.moreornplants.tread_snow_seek_mei.title"),
@@ -710,60 +727,11 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .addCriterion("visit_mount_mei", PlayerTrigger.TriggerInstance.located(
                             LocationPredicate.Builder.location().setBiome(ModBiomes.MOUNT_MEI).build()
                     ))
-                    .rewards(AdvancementRewards.Builder.experience(36))
+                    .addCriterion("visit_snow_greets_spring", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.SNOW_GREETS_SPRING).build()
+                    ))
+                    .rewards(AdvancementRewards.Builder.experience(54))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "tread_snow_seek_mei"), existingFileHelper);
-
-            Advancement whiteSnowRedMei = Advancement.Builder.advancement()
-                    .parent(flowerLeader)
-                    .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.RED_MEI_SAPLING.get()),
-                            Component.translatable("advancement.moreornplants.white_snow_red_mei.title"),
-                            Component.translatable("advancement.moreornplants.white_snow_red_mei.description"),
-                            null,
-                            FrameType.TASK,
-                            true,
-                            true,
-                            false
-                    ))
-                    .addCriterion("visit_red_mei_forest", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiome(ModBiomes.RED_MEI_FOREST).build()
-                    ))
-                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "white_snow_red_mei"), existingFileHelper);
-
-            Advancement FragrantSnowSea = Advancement.Builder.advancement()
-                    .parent(flowerLeader)
-                    .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get()),
-                            Component.translatable("advancement.moreornplants.fragrant_snow_sea.title"),
-                            Component.translatable("advancement.moreornplants.fragrant_snow_sea.description"),
-                            null,
-                            FrameType.TASK,
-                            true,
-                            true,
-                            false
-                    ))
-                    .addCriterion("visit_fragrant_snow_sea", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiome(ModBiomes.FRAGRANT_SNOW_SEA).build()
-                    ))
-                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "fragrant_snow_sea"), existingFileHelper);
-
-            Advancement peachBlossomSpring = Advancement.Builder.advancement()
-                    .parent(wulingVista)
-                    .display(new DisplayInfo(
-                            new ItemStack(ModBlocks.WILD_PEACH_SAPLING.get()),
-                            Component.translatable("advancement.moreornplants.peach_blossom_spring.title"),
-                            Component.translatable("advancement.moreornplants.peach_blossom_spring.description"),
-                            null,
-                            FrameType.TASK,
-                            true,
-                            true,
-                            false
-                    ))
-                    .addCriterion("visit_peach_blossom_spring", PlayerTrigger.TriggerInstance.located(
-                            LocationPredicate.Builder.location().setBiome(ModBiomes.THE_PEACH_BLOSSOM_SPRING).build()
-                    ))
-                    .rewards(AdvancementRewards.Builder.loot(new ResourceLocation(MoreOrnPlants.MOD_ID, "advancements/peach")))
-                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "peach_blossom_spring"), existingFileHelper);
 
             Advancement flowersAsMatchmakers = Advancement.Builder.advancement()
                     .parent(flowerQueen)
@@ -900,10 +868,13 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .addCriterion("visit_23", PlayerTrigger.TriggerInstance.located(
                             LocationPredicate.Builder.location().setBiome(ModBiomes.MOUNT_MEI).build()
                     ))
+                    .addCriterion("visit_24", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setBiome(ModBiomes.SNOW_GREETS_SPRING).build()
+                    ))
                     .addCriterion("moonlight", new MoonlightTrigger.Instance(ContextAwarePredicate.ANY))
                     .requirements(new String[][] {
-                            {"visit_1", "visit_2", "visit_3", "visit_4", "visit_5", "visit_6", "visit_7", "visit_8", "visit_9", "visit_10", "visit_11", "visit_12",
-                                    "visit_13", "visit_14", "visit_15", "visit_16", "visit_17", "visit_18", "visit_19", "visit_20", "visit_21", "visit_22", "visit_23"},
+                            {"visit_1", "visit_2", "visit_3", "visit_4", "visit_5", "visit_6", "visit_7", "visit_8", "visit_9", "visit_10", "visit_11", "visit_12", "visit_13",
+                                    "visit_14", "visit_15", "visit_16", "visit_17", "visit_18", "visit_19", "visit_20", "visit_21", "visit_22", "visit_23", "visit_24"},
                             {"moonlight"}
                     })
                     .rewards(AdvancementRewards.Builder.loot(new ResourceLocation(MoreOrnPlants.MOD_ID, "advancements/zhuiyue_sword")))
@@ -928,7 +899,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "cloud_chasing_moon"), existingFileHelper);
 
             Advancement ironThresholdTemple = Advancement.Builder.advancement()
-                    .parent(whiteSnowRedMei)
+                    .parent(flowerLeader)
                     .display(new DisplayInfo(
                             new ItemStack(ModBlocks.RED_WEEPING_MEI_SAPLING.get()),
                             Component.translatable("advancement.moreornplants.little_iron_threshold_temple.title"),
@@ -945,7 +916,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "little_iron_threshold_temple"), existingFileHelper);
             Advancement peachHermitage = Advancement.Builder.advancement()
-                    .parent(peachBlossomSpring)
+                    .parent(wulingVista)
                     .display(new DisplayInfo(
                             new ItemStack(ModBlocks.PEACH_PINK_PETALS.get()),
                             Component.translatable("advancement.moreornplants.peach_blossom_hermitage.title"),
@@ -961,6 +932,24 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                                     new ResourceLocation(MoreOrnPlants.MOD_ID, "peach_blossom_hermitage"))).build()
                     ))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "peach_blossom_hermitage"), existingFileHelper);
+            Advancement peachVillage = Advancement.Builder.advancement()
+                    .parent(wulingVista)
+                    .display(new DisplayInfo(
+                            new ItemStack(ModBlocks.WILD_PEACH_SAPLING.get()),
+                            Component.translatable("advancement.moreornplants.peach_village.title"),
+                            Component.translatable("advancement.moreornplants.peach_village.description"),
+                            null,
+                            FrameType.TASK,
+                            true,
+                            true,
+                            false
+                    ))
+                    .addCriterion("found_peach_village", PlayerTrigger.TriggerInstance.located(
+                            LocationPredicate.Builder.location().setStructure(ResourceKey.create(Registries.STRUCTURE,
+                                    new ResourceLocation(MoreOrnPlants.MOD_ID, "village_peach"))).build()
+                    ))
+                    .rewards(AdvancementRewards.Builder.loot(new ResourceLocation(MoreOrnPlants.MOD_ID, "advancements/peach")))
+                    .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "peach_village"), existingFileHelper);
             Advancement apricotVillage = Advancement.Builder.advancement()
                     .parent(flowerScholar)
                     .display(new DisplayInfo(

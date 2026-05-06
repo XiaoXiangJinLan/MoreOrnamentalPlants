@@ -6,7 +6,7 @@
         "type": "more_orn_plants:leaf_pile_decorator",
         "horizontal_radius": 6,
         "leaf_pile_block": {
-          "Name": "more_orn_plants:sweetgum_leaf_pile_0",
+          "Name": "more_orn_plants:sweetgum_leaf_0",
           "Properties": {
             "facing": "north"
           }
@@ -18,7 +18,7 @@
         "type": "more_orn_plants:leaf_pile_decorator",
         "horizontal_radius": 6,
         "leaf_pile_block": {
-          "Name": "more_orn_plants:sweetgum_leaf_pile_1",
+          "Name": "more_orn_plants:sweetgum_leaf_1",
           "Properties": {
             "facing": "north"
           }

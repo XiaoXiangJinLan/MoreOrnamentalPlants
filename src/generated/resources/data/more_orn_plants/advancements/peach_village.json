@@ -1,7 +1,7 @@
 {
   "parent": "more_orn_plants:wuling_vista",
   "criteria": {
-    "visit_peach_blossom_spring": {
+    "found_peach_village": {
       "conditions": {
         "player": [
           {
@@ -9,7 +9,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "more_orn_plants:the_peach_blossom_spring"
+                "structure": "more_orn_plants:village_peach"
               }
             }
           }
@@ -21,7 +21,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.moreornplants.peach_blossom_spring.description"
+      "translate": "advancement.moreornplants.peach_village.description"
     },
     "frame": "task",
     "hidden": false,
@@ -30,12 +30,12 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.moreornplants.peach_blossom_spring.title"
+      "translate": "advancement.moreornplants.peach_village.title"
     }
   },
   "requirements": [
     [
-      "visit_peach_blossom_spring"
+      "found_peach_village"
     ]
   ],
   "rewards": {

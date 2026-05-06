@@ -1,5 +1,5 @@
 {
-  "parent": "more_orn_plants:peach_blossom_spring",
+  "parent": "more_orn_plants:wuling_vista",
   "criteria": {
     "found_peach_hermitage": {
       "conditions": {

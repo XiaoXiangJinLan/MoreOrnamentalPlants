@@ -1,5 +1,5 @@
 {
-  "parent": "more_orn_plants:white_snow_red_mei",
+  "parent": "more_orn_plants:the_leader_among_flower",
   "criteria": {
     "found_iron_threshold_temple": {
       "conditions": {

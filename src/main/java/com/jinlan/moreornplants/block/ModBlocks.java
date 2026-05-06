@@ -1431,9 +1431,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> LOTUS_LEAF =
             registerBlock("lotus_leaf", () -> new WaterLotusLeafBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final RegistryObject<Block> MUXUE_GRASS =
-            registerBlock("muxue_grass", () -> new MuxueGrassBlock(BlockBehaviour.Properties.copy(Blocks.SEAGRASS).lightLevel(p_220867_ -> 15)));
+            registerBlock("muxue_grass", () -> new MuxueGrassBlock(BlockBehaviour.Properties.copy(Blocks.SEAGRASS).lightLevel(p_220867_ -> 12)));
     public static final RegistryObject<Block> TALL_MUXUE_GRASS =
-            BLOCKS.register("tall_muxue_grass", () -> new TallMuxueGrassBlock(BlockBehaviour.Properties.copy(Blocks.TALL_SEAGRASS).lightLevel(p_220867_ -> 15)));
+            BLOCKS.register("tall_muxue_grass", () -> new TallMuxueGrassBlock(BlockBehaviour.Properties.copy(Blocks.TALL_SEAGRASS).lightLevel(p_220867_ -> 12)));
 
     public static final RegistryObject<Block> ORNAMENTAL_PEACH_PETALS =
             BLOCKS.register("ornamental_peach_petals", () -> leafPile2(MapColor.COLOR_PINK));
@@ -1443,12 +1443,12 @@ public class ModBlocks {
             BLOCKS.register("chinese_parasol_leaf_0", () -> leafPile(MapColor.COLOR_YELLOW));
     public static final RegistryObject<Block> CHINESE_PARASOL_LEAF_1 =
             BLOCKS.register("chinese_parasol_leaf_1", () -> leafPile(MapColor.COLOR_ORANGE));
-    public static final RegistryObject<Block> SWEETGUM_LEAF_PILE_0 =
-            BLOCKS.register("sweetgum_leaf_pile_0", () -> leafPile(MapColor.COLOR_RED));
-    public static final RegistryObject<Block> SWEETGUM_LEAF_PILE_1 =
-            BLOCKS.register("sweetgum_leaf_pile_1", () -> leafPile(MapColor.COLOR_RED));
-    public static final RegistryObject<Block> GINKGO_LEAF_PILE =
-            BLOCKS.register("ginkgo_leaf_pile", () -> leafPile2(MapColor.COLOR_YELLOW));
+    public static final RegistryObject<Block> SWEETGUM_LEAF_0 =
+            BLOCKS.register("sweetgum_leaf_0", () -> leafPile(MapColor.COLOR_RED));
+    public static final RegistryObject<Block> SWEETGUM_LEAF_1 =
+            BLOCKS.register("sweetgum_leaf_1", () -> leafPile(MapColor.COLOR_RED));
+    public static final RegistryObject<Block> GINKGO_LEAF =
+            BLOCKS.register("ginkgo_leaf", () -> leafPile2(MapColor.COLOR_YELLOW));
 
     public static final RegistryObject<Block> MEI_XIANGNANG =
             BLOCKS.register("mei_xiangnang", () -> new MeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));

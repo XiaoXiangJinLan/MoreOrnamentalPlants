@@ -260,6 +260,22 @@
       },
       "trigger": "minecraft:location"
     },
+    "visit_24": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:snow_greets_spring"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
     "visit_3": {
       "conditions": {
         "player": [
@@ -412,7 +428,8 @@
       "visit_20",
       "visit_21",
       "visit_22",
-      "visit_23"
+      "visit_23",
+      "visit_24"
     ],
     [
       "moonlight"
