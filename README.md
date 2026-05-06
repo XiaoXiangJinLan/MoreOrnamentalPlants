@@ -1,7 +1,7 @@
 Ornamental Plants is a biome mod themed around botanical decoration, bringing the beauty of Eastern gardens into Minecraft. 
 It adds a variety of classic ornamental plants native to China, such as famous flowering trees: Mei Blossom, Crabapple; 
 colorful foliage trees: Ginkgo, Chinese Parasol; and renowned flowers: Chinese Rose, Herbaceous Peony, Camellia, and more. 
-This mod introduces thirty-four new biomes and six structures, waiting for you to explore!
+This mod introduces thirty-five new biomes and seven structures, waiting for you to explore!
 
 New Trees
 ============
@@ -18,8 +18,9 @@ then right-click to obtain the corresponding cut flower.
 New Biomes
 ==========
 #### Flower Forest Biomes
-• Red Mei Forest: A snowy forest dominated by Red Bone Mei, with Wintersweet growing on the forest floor.  
+• White Snow Red Mei: A snowy forest dominated by Red Bone Mei, with Wintersweet growing on the forest floor.  
 • Fragrant Snow Sea: A snowy forest dominated by Jiang Mei, Green Calyx Mei, White Weeping Mei, and Green Weeping Mei, with Fragrant Snow Petals on the ground.  
+• Snow Greets Spring: A snowy forest dominated by Mei blossom, with early spring flowers on the forest floor.  
 • The Peach Blossom Spring: A fairyland where Ornamental Peach and Wild Peach grow, with Peach Pink Petals on the ground. The sky and water have a light pink tint, and Floating Blossoms (Ornamental/Wild Peach Petals) drift in the air.  
 • The Apricot Spring Plateau: A plateau where Pink Apricot and White Apricot grow, with Spring Petals on the ground.  
 • Penglai: A mythical island mountain in the sea, home to Versicolor Weeping Mei, Pink Weeping Mei, Green Weeping Mei, Crabapple, Peony, Herbaceous Peony, and Chinese Rose.  
@@ -63,7 +64,8 @@ New Biomes
 New Structures
 ==========
 • Little Iron Threshold Temple – A small temple generated in the Red Mei Forest.  
-• Peach Blossom Hermitage – A small temple generated in The Peach Blossom Spring.  
+• Peach Blossom Hermitage – A small temple generated in the Peach Blossom Spring.  
+• Apricot Peach – A traditional style village generated in the Peach Blossom Spring.  
 • Apricot Village – A traditional style village generated in the Camellia Valley and the Apricot Spring Plateau.  
 • Bamboo Garden - A small garden generated in the Furong Guo.  
 • Mount Mei Tudi Temple – A small folk temple generated in the Mount Mei.  
@@ -93,7 +95,7 @@ New Mobs
 • Baihua Cat: Spawns in Flowers Grove, Crabapple Grove, The Peach Blossom Spring, and Penglai. Can be tamed with flowers. When fed Immortal Peach, Cloud Apricot, or Crabapple, it produces the corresponding fruit tree sapling. It also accelerates the growth of crops, cut flowers, and other plants within a 1-block radius.
 
 《观赏植物》是一个以植物装饰为主题的群系模组，将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠；
-彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了三十四个全新的生物群系、六个结构，等待你来探索！
+彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了三十五个全新的生物群系、七个结构，等待你来探索！
 
 ## 新树种
 梅花、海棠、杏花、桃花、梨花、钟花樱、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
@@ -106,6 +108,7 @@ New Mobs
 #### 花林群系
 •**白雪红梅**：朱砂梅为主的雪林，林下生长有蜡梅；  
 •**香雪海**：江梅、绿萼梅、垂枝白梅以及绿萼垂枝梅为主的雪林，地面长有香雪花簇；  
+•**飞雪迎春**：各大梅花为主的雪林，林下生长有许多早春花卉；  
 •**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃红花簇，天空和水面为淡粉色，漂浮有流红、浮英；  
 •**高原春杏**：生长有粉杏和白杏的高原，地面长有春信花簇；  
 •**蓬莱**：生长有洒金垂枝梅、宫粉垂枝梅、绿萼垂枝梅、仙桃、云杏、海棠、牡丹、芍药、月季的海上仙山。当玩家位于此群系时，会获得诸多正面效果；  
@@ -149,7 +152,8 @@ New Mobs
 ## 新结构
 **小铁槛寺**：小型寺庙，生成在白雪红梅；  
 **桃花庵**：小型寺庙，生成在世外桃源；  
-**杏花村**：传统乡村风格的村庄，生成在茶花谷和高原春杏；  
+**杏花村**：传统村庄，生成在世外桃源；  
+**杏花村**：传统村庄，生成在茶花谷和高原春杏；  
 **竹园**：小型园林，生成在芙蓉国；  
 **梅山土地庙**：民间小庙，生成在梅山；  
 **香雪亭**：传统风亭子，生成在香雪海；
@@ -160,8 +164,8 @@ New Mobs
 **莲子**：通过采集荷花获得莲蓬，一个莲蓬五个莲子，食用恢复1饥饿值、0.6饱和度，在1.21.1版本可以喂食部分农场生物；  
 **竹笋汤**、**莲藕汤**、**莲子汤**：食用恢复6饥饿值、7.2饱和度，莲藕汤在1.21.1版本可以喂食狼和猫；  
 **海棠果**、**金海棠果**、**附魔金海棠果**：西府海棠树所结。在蓬莱西府海棠树可以继续结果。海棠果与苹果类似，但是恢复的饥饿值和饱和度稍低。（附魔）金海棠果提供的效果比（附魔）金苹果稍强，时长稍短；  
-**仙桃**：仙桃树所结，能增加80血量。在世外桃源和蓬莱仙桃树可以正常结果，在其他群系结果速度减慢；  
-**云杏**：云杏树所结，能增加40血量。在世外桃源和蓬莱云杏树可以正常结果，在其他群系结果速度减慢。
+**仙桃**：仙桃树所结，能增加血量。在世外桃源和蓬莱仙桃树可以正常结果，在其他群系结果速度减慢；  
+**云杏**：云杏树所结，能增加血量。在世外桃源和蓬莱云杏树可以正常结果，在其他群系结果速度减慢。
 
 ## 新燃料
 **金芒草**：可以燃烧3个物品。
