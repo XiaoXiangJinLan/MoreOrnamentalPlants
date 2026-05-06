@@ -1442,12 +1442,12 @@ public class ModBlocks {
             BLOCKS.register("chinese_parasol_leaf_0", () -> leafPile(MapColor.COLOR_YELLOW));
     public static final DeferredBlock<Block> CHINESE_PARASOL_LEAF_1 =
             BLOCKS.register("chinese_parasol_leaf_1", () -> leafPile(MapColor.COLOR_ORANGE));
-    public static final DeferredBlock<Block> SWEETGUM_LEAF_PILE_0 =
-            BLOCKS.register("sweetgum_leaf_pile_0", () -> leafPile(MapColor.COLOR_RED));
-    public static final DeferredBlock<Block> SWEETGUM_LEAF_PILE_1 =
-            BLOCKS.register("sweetgum_leaf_pile_1", () -> leafPile(MapColor.COLOR_RED));
-    public static final DeferredBlock<Block> GINKGO_LEAF_PILE =
-            BLOCKS.register("ginkgo_leaf_pile", () -> leafPile2(MapColor.COLOR_YELLOW));
+    public static final DeferredBlock<Block> SWEETGUM_LEAF_0 =
+            BLOCKS.register("sweetgum_leaf_0", () -> leafPile(MapColor.COLOR_RED));
+    public static final DeferredBlock<Block> SWEETGUM_LEAF_1 =
+            BLOCKS.register("sweetgum_leaf_1", () -> leafPile(MapColor.COLOR_RED));
+    public static final DeferredBlock<Block> GINKGO_LEAF =
+            BLOCKS.register("ginkgo_leaf", () -> leafPile2(MapColor.COLOR_YELLOW));
 
     public static final DeferredBlock<Block> MEI_XIANGNANG =
             BLOCKS.register("mei_xiangnang", () -> new MeiXiangnangBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noOcclusion().instabreak().sound(SoundType.WOOL).pushReaction(PushReaction.DESTROY)));

@@ -925,8 +925,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         leafPileBlock(ModBlocks.CHINESE_PARASOL_LEAF_0);
         leafPileBlock(ModBlocks.CHINESE_PARASOL_LEAF_1);
-        leafPileBlock(ModBlocks.SWEETGUM_LEAF_PILE_0);
-        leafPileBlock(ModBlocks.SWEETGUM_LEAF_PILE_1);
+        leafPileBlock(ModBlocks.SWEETGUM_LEAF_0);
+        leafPileBlock(ModBlocks.SWEETGUM_LEAF_1);
 
         xiangNangBlock(ModBlocks.MEI_XIANGNANG);
         xiangNangBlock(ModBlocks.OSMANTHUS_XIANGNANG);

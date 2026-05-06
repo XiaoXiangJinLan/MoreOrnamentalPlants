@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:sweetgum_leaf_1"
+          "name": "more_orn_plants:sweetgum_leaf_0"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "more_orn_plants:blocks/sweetgum_leaf_pile_1"
+  "random_sequence": "more_orn_plants:blocks/sweetgum_leaf_0"
 }

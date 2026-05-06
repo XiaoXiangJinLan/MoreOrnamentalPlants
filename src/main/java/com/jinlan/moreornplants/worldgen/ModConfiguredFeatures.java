@@ -613,7 +613,7 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(12, 3, 0),
                 BlockStateProvider.simple(ModBlocks.GOLDEN_GINKGO_LEAVES.get()),
                 new GinkgoFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(6)),
-                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new LeafPileDecorator(ModBlocks.GINKGO_LEAF_PILE.get().defaultBlockState(), 6, 2, 0.1F))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new LeafPileDecorator(ModBlocks.GINKGO_LEAF.get().defaultBlockState(), 6, 2, 0.1F))).ignoreVines().build());
         register(context, GREEN_GINKGO, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
                 new StraightTrunkPlacer(12, 3, 0),
@@ -669,8 +669,8 @@ public class ModConfiguredFeatures {
                 new SweetgumFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), ConstantInt.of(6)),
                 new TwoLayersFeatureSize(1, 0, 1))
                 .decorators(List.of(
-                        new LeafPileDecorator(ModBlocks.SWEETGUM_LEAF_PILE_0.get().defaultBlockState(), 6, 2, 0.05F),
-                        new LeafPileDecorator(ModBlocks.SWEETGUM_LEAF_PILE_1.get().defaultBlockState(), 6, 2, 0.05F))).ignoreVines().build());
+                        new LeafPileDecorator(ModBlocks.SWEETGUM_LEAF_0.get().defaultBlockState(), 6, 2, 0.05F),
+                        new LeafPileDecorator(ModBlocks.SWEETGUM_LEAF_1.get().defaultBlockState(), 6, 2, 0.05F))).ignoreVines().build());
 
         register(context, CAMPHOR, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),

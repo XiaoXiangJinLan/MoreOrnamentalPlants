@@ -1065,9 +1065,9 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.WILD_PEACH_PETALS.get(), createPetalsDrops(ModBlocks.WILD_PEACH_PETALS.get()));
         this.dropSelf(ModBlocks.CHINESE_PARASOL_LEAF_0.get());
         this.dropSelf(ModBlocks.CHINESE_PARASOL_LEAF_1.get());
-        this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_0.get());
-        this.dropSelf(ModBlocks.SWEETGUM_LEAF_PILE_1.get());
-        this.add(ModBlocks.GINKGO_LEAF_PILE.get(), createPetalsDrops(ModBlocks.GINKGO_LEAF_PILE.get()));
+        this.dropSelf(ModBlocks.SWEETGUM_LEAF_0.get());
+        this.dropSelf(ModBlocks.SWEETGUM_LEAF_1.get());
+        this.add(ModBlocks.GINKGO_LEAF.get(), createPetalsDrops(ModBlocks.GINKGO_LEAF.get()));
 
         this.dropSelf(ModBlocks.CHINESE_WISTERIA.get());
         this.dropOther(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.CHINESE_WISTERIA.asItem());

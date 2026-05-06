@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "more_orn_plants:ginkgo_leaf_pile",
+                  "block": "more_orn_plants:ginkgo_leaf",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "flower_amount": "1"
@@ -25,7 +25,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "more_orn_plants:ginkgo_leaf_pile",
+                  "block": "more_orn_plants:ginkgo_leaf",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "flower_amount": "2"
@@ -39,7 +39,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "more_orn_plants:ginkgo_leaf_pile",
+                  "block": "more_orn_plants:ginkgo_leaf",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "flower_amount": "3"
@@ -53,7 +53,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "more_orn_plants:ginkgo_leaf_pile",
+                  "block": "more_orn_plants:ginkgo_leaf",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "flower_amount": "4"
@@ -73,5 +73,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "more_orn_plants:blocks/ginkgo_leaf_pile"
+  "random_sequence": "more_orn_plants:blocks/ginkgo_leaf"
 }

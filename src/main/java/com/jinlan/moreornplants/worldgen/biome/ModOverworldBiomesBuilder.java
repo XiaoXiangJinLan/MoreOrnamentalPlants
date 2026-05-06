@@ -97,11 +97,11 @@ public class ModOverworldBiomesBuilder {
             {null,                     null,                     ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
     };
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_VARIANT_MOD = new ResourceKey[][]{
-            {null,                      ModBiomes.SNOW_GREETS_SPRING, ModBiomes.SNOW_GREETS_SPRING,   ModBiomes.SNOW_GREETS_SPRING,  ModBiomes.SNOW_GREETS_SPRING},
-            {ModBiomes.PEONY_MEADOWS,   ModBiomes.PEONY_MEADOWS,      ModBiomes.COLORED_FOREST,       ModBiomes.COLORED_FOREST,      null},
-            {ModBiomes.CRABAPPLE_GROVE, ModBiomes.CRABAPPLE_GROVE,    ModBiomes.PINK_CAMELLIA_VALLEY, ModBiomes.RED_CAMELLIA_VALLEY, ModBiomes.THE_PEACH_BLOSSOM_SPRING},
-            {null,                      null,                         null,                           null,                          null},
-            {null,                      null,                         ModBiomes.DESERT_POPLAR_WOODS,  ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
+            {ModBiomes.SNOW_GREETS_SPRING, ModBiomes.SNOW_GREETS_SPRING, ModBiomes.SNOW_GREETS_SPRING,   ModBiomes.SNOW_GREETS_SPRING,  null},
+            {ModBiomes.PEONY_MEADOWS,      ModBiomes.PEONY_MEADOWS,      ModBiomes.COLORED_FOREST,       ModBiomes.COLORED_FOREST,      null},
+            {ModBiomes.CRABAPPLE_GROVE,    ModBiomes.CRABAPPLE_GROVE,    ModBiomes.PINK_CAMELLIA_VALLEY, ModBiomes.RED_CAMELLIA_VALLEY, ModBiomes.THE_PEACH_BLOSSOM_SPRING},
+            {null,                         null,                         null,                           null,                          null},
+            {null,                         null,                         ModBiomes.DESERT_POPLAR_WOODS,  ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_MOD = new ResourceKey[][]{
             {null,                                 null,                                 null,                       null,                       null},
@@ -350,8 +350,8 @@ public class ModOverworldBiomesBuilder {
 
     protected void addUndergroundBiomes(Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> consume) {
         // 这里可以添加你的模组的地下生物群系
-        this.addUndergroundBiome(consume, Climate.Parameter.span(0.3F, 0.5F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, ModBiomes.ZIYING_CAVES);
-        this.addUndergroundBiome(consume, Climate.Parameter.span(0.0F, 0.2F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, ModBiomes.SUYU_CAVES);
+        this.addUndergroundBiome(consume, Climate.Parameter.span(-0.5F, -0.3F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, ModBiomes.SUYU_CAVES);
+        this.addUndergroundBiome(consume, Climate.Parameter.span(-0.2F, 0.0F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, ModBiomes.ZIYING_CAVES);
     }
 
     // ========== 生物群系选择器方法 ==========
