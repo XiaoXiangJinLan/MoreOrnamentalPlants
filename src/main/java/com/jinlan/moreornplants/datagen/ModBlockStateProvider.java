@@ -981,12 +981,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         }
         ModelFile normalModel = null;
         if (blockRegistryObject.getId() != null) {
-            normalModel = models().cross(blockRegistryObject.getId().getPath(),
+            normalModel = models().crop(blockRegistryObject.getId().getPath(),
                     blockTexture(blockRegistryObject.get())).renderType("cutout");
         }
         ModelFile topModel = null;
         if (blockRegistryObject.getId() != null) {
-            topModel = models().cross(blockRegistryObject.getId().getPath() + "_top",
+            topModel = models().crop(blockRegistryObject.getId().getPath() + "_top",
                     new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_2")).renderType("cutout");
         }
         getVariantBuilder(blockRegistryObject.get())
@@ -1003,12 +1003,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         }
         ModelFile normalModel = null;
         if (blockRegistryObject.getId() != null) {
-            normalModel = models().cross(blockRegistryObject.getId().getPath(),
+            normalModel = models().crop(blockRegistryObject.getId().getPath(),
                     blockTexture(blockRegistryObject.get())).renderType("cutout");
         }
         ModelFile topModel = null;
         if (blockRegistryObject.getId() != null) {
-            topModel = models().cross(blockRegistryObject.getId().getPath() + "_top",
+            topModel = models().crop(blockRegistryObject.getId().getPath() + "_top",
                     new ResourceLocation(MoreOrnPlants.MOD_ID, "block/" + baseName + "_2")).renderType("cutout");
         }
         getVariantBuilder(blockRegistryObject.get())
