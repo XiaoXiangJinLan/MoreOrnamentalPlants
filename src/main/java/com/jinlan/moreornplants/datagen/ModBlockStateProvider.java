@@ -960,9 +960,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void wisteriaBlock(DeferredBlock<Block> blockRegistryObject) {
         String baseName = blockRegistryObject.getId().getPath();
-        ModelFile normalModel = models().cross(blockRegistryObject.getId().getPath(),
+        ModelFile normalModel = models().crop(blockRegistryObject.getId().getPath(),
                 blockTexture(blockRegistryObject.get())).renderType("cutout");
-        ModelFile topModel = models().cross(blockRegistryObject.getId().getPath() + "_top",
+        ModelFile topModel = models().crop(blockRegistryObject.getId().getPath() + "_top",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/" + baseName + "_2")).renderType("cutout");
         getVariantBuilder(blockRegistryObject.get())
                 .partialState().with(WisteriaBlock.TOP, false)
@@ -973,9 +973,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void wisteriaPlantBlock(DeferredBlock<Block> blockRegistryObject) {
         String baseName = blockRegistryObject.getId().getPath();
-        ModelFile normalModel = models().cross(blockRegistryObject.getId().getPath(),
+        ModelFile normalModel = models().crop(blockRegistryObject.getId().getPath(),
                 blockTexture(blockRegistryObject.get())).renderType("cutout");
-        ModelFile topModel = models().cross(blockRegistryObject.getId().getPath() + "_top",
+        ModelFile topModel = models().crop(blockRegistryObject.getId().getPath() + "_top",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/" + baseName + "_2")).renderType("cutout");
         getVariantBuilder(blockRegistryObject.get())
                 .partialState().with(WisteriaPlantBlock.TOP, false)

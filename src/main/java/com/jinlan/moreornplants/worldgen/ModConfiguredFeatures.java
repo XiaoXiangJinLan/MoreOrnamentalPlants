@@ -1583,7 +1583,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
-        register(context, FOUNTAIN_GRASS, Feature.FLOWER, new RandomPatchConfiguration(36, 6, 4,
+        register(context, FOUNTAIN_GRASS, Feature.FLOWER, new RandomPatchConfiguration(36, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1594,7 +1594,7 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, CHINESE_ROSE_PLAIN, Feature.FLOWER, new RandomPatchConfiguration(16, 10, 4,
+        register(context, CHINESE_ROSE_PLAIN, Feature.FLOWER, new RandomPatchConfiguration(12, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1605,7 +1605,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, MISCANTHUS, Feature.FLOWER, new RandomPatchConfiguration(64, 5, 3,
+        register(context, MISCANTHUS, Feature.FLOWER, new RandomPatchConfiguration(72, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MISCANTHUS.get())),
                         BlockPredicate.allOf(
