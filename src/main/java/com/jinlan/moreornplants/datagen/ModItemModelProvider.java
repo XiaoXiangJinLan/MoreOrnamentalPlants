@@ -412,6 +412,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simplerBlockItem(ModBlocks.LOTUS);
         simplerBlockItem(ModBlocks.WHITE_LOTUS);
         simplerBlockItem(ModBlocks.LOTUS_LEAF);
+        simplerBlockItem(ModBlocks.HARDY_BANANA);
         simplerBlockItem(ModBlocks.MUXUE_GRASS);
         simpleItem(ModItems.LOTUS_ROOT);
         simpleItem(ModItems.LOTUS_SEED);

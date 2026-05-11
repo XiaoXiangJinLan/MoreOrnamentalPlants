@@ -1276,6 +1276,8 @@ public class ModBlocks {
             registerBlock("miscanthus", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GOLDEN_MISCANTHUS =
             BLOCKS.register("golden_miscanthus", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> HARDY_BANANA =
+            registerBlock("hardy_banana", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> POTTED_WINTER_CYMBIDIUM =
             BLOCKS.register("potted_winter_cymbidium", () -> flowerPot(WINTER_CYMBIDIUM.get()));

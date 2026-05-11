@@ -170,6 +170,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ForgeTags.Items.BAMBOO)
                 .addTag(ForgeTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
+                .add(ModBlocks.HARDY_BANANA.get().asItem())
                 .addTag(ForgeTags.Items.WISTERIA)
                 .addTag(ForgeTags.Items.NARCISSUS)
                 .add(ModBlocks.WHITE_MOTH_ORCHID.get().asItem(), ModBlocks.PINK_MOTH_ORCHID.get().asItem(), ModBlocks.PURPLE_MOTH_ORCHID.get().asItem(), ModBlocks.GOLDEN_MOTH_ORCHID.get().asItem())

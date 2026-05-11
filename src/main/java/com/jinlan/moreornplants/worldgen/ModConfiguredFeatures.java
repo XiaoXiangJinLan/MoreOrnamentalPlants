@@ -215,6 +215,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_GALLERY_KEY = registerKey("black_bamboo_gallery_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_SAPLING_KEY = registerKey("black_bamboo_sapling_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LOTUS_KEY = registerKey("lotus_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> HARDY_BANANA_KEY = registerKey("hardy_banana_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MUXUE_GRASS_KEY = registerKey("muxue_grass_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA_TREE = registerKey("wisteria_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA = registerKey("wisteria");
@@ -953,6 +954,12 @@ public class ModConfiguredFeatures {
         register(context, WINTER_CYMBIDIUM_FOREST, Feature.FLOWER, new RandomPatchConfiguration(8, 8, 6,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WINTER_CYMBIDIUM.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, HARDY_BANANA_KEY, Feature.FLOWER, new RandomPatchConfiguration(8, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.HARDY_BANANA.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),

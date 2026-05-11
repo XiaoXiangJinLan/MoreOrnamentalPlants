@@ -555,6 +555,7 @@
   "block.more_orn_plants.lotus": "荷花",
   "block.more_orn_plants.white_lotus": "白蓮",
   "block.more_orn_plants.lotus_leaf": "荷葉",
+  "block.more_orn_plants.hardy_banana": "芭蕉",
   "block.more_orn_plants.muxue_grass": "暮雪草",
   "block.more_orn_plants.tall_muxue_grass": "暮雪草",
   "block.more_orn_plants.bamboo_stick": "竹筍炒肉",
@@ -760,7 +761,7 @@
   "item.more_orn_plants.desert_poplar_boat": "胡楊木船",
   "item.more_orn_plants.desert_poplar_chest_boat": "儲物箱胡楊木船",
 
-  "item.more_orn_plants.peeled_bamboo_shoots": "剝皮的竹筍",
+  "item.more_orn_plants.peeled_bamboo_shoots": "竹筍",
   "item.more_orn_plants.bamboo_shoots_soup": "竹筍湯",
   "item.more_orn_plants.lotus_root": "蓮藕",
   "item.more_orn_plants.lotus_root_soup": "蓮藕湯",

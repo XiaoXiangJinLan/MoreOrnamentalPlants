@@ -211,6 +211,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_GALLERY_PLACED = registerKey("black_bamboo_gallery_placed");
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_SAPLING_PLACED = registerKey("black_bamboo_sapling_placed");
     public static final ResourceKey<PlacedFeature> LOTUS_PLACED = registerKey("lotus_placed");
+    public static final ResourceKey<PlacedFeature> HARDY_BANANA_PLACED = registerKey("hardy_banana_placed");
     public static final ResourceKey<PlacedFeature> MUXUE_GRASS_PLACED = registerKey("muxue_grass_placed");
     public static final ResourceKey<PlacedFeature> WISTERIA_TREE_PLACED = registerKey("wisteria_tree_placed");
     public static final ResourceKey<PlacedFeature> WISTERIA_1 = registerKey("wisteria_1");
@@ -549,6 +550,9 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, WINTER_CYMBIDIUM_FOREST_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WINTER_CYMBIDIUM_FOREST),
+                List.of(RarityFilter.onAverageOnceEvery(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, HARDY_BANANA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.HARDY_BANANA_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, LILY_OF_THE_VALLEY_FOREST_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.LILY_OF_THE_VALLEY_FOREST),
