@@ -613,6 +613,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
                 .addTag(CommonTags.Blocks.LOTUS)
+                .add(ModBlocks.HARDY_BANANA.get())
+                .add(ModBlocks.MISCANTHUS.get(), ModBlocks.GOLDEN_MISCANTHUS.get())
                 .add(ModBlocks.BAMBOO_STICK.get())
                 .add(ModBlocks.MUXUE_GRASS.get(), ModBlocks.TALL_MUXUE_GRASS.get());
 

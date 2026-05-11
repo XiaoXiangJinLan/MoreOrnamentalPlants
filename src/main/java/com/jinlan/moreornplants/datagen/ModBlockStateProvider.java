@@ -835,6 +835,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         tallCrossBlock(ModBlocks.RED_CRAPE_MYRTLE);
         tallCrossBlock(ModBlocks.PINK_CRAPE_MYRTLE);
         tallCrossBlock(ModBlocks.WHITE_CRAPE_MYRTLE);
+        hardyBananaBlock();
 
         flowerBlock(ModBlocks.CUT_PEONY);
         simpleBlock(ModBlocks.POTTED_CUT_PEONY.get(), models().singleTexture("potted_cut_peony", ResourceLocation.parse("flower_pot_cross"), "plant",
@@ -1105,6 +1106,25 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 .texture("leaf", modLoc("block/" + bambooType + "_singleleaf"))
                 .renderType("cutout");
         simpleBlock(pottedBlock.get(), pottedModel);
+    }
+
+    private void hardyBananaBlock() {
+        String baseName = ModBlocks.HARDY_BANANA.getId().getPath();
+        ModelFile bottomModel = models().withExistingParent(baseName + "_bottom", modLoc("block/banana_bottom"))
+                .texture("leaf", modLoc("block/" + baseName + "_bottom_leaf"))
+                .texture("stem", modLoc("block/" + baseName + "_bottom_stem"))
+                .renderType("cutout");
+        ModelFile topModel = models().withExistingParent(baseName + "_top", modLoc("block/banana_top"))
+                .texture("leaf", modLoc("block/" + baseName + "_top_leaf"))
+                .texture("leaf_1", modLoc("block/" + baseName + "_top_leaf_1"))
+                .texture("leaf_2", modLoc("block/" + baseName + "_top_leaf_2"))
+                .texture("stem", modLoc("block/" + baseName + "_top_stem"))
+                .renderType("cutout");
+        getVariantBuilder(ModBlocks.HARDY_BANANA.get())
+                .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)
+                .modelForState().modelFile(bottomModel).addModel()
+                .partialState().with(DoublePlantBlock.HALF, DoubleBlockHalf.UPPER)
+                .modelForState().modelFile(topModel).addModel();
     }
 
     private void lotusBlock(DeferredBlock<Block> blockRegistryObject) {

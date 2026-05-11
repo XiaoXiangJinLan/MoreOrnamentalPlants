@@ -1,0 +1,10 @@
+{
+  "parent": "more_orn_plants:block/banana_top",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "leaf": "more_orn_plants:block/hardy_banana_top_leaf",
+    "leaf_1": "more_orn_plants:block/hardy_banana_top_leaf_1",
+    "leaf_2": "more_orn_plants:block/hardy_banana_top_leaf_2",
+    "stem": "more_orn_plants:block/hardy_banana_top_stem"
+  }
+}

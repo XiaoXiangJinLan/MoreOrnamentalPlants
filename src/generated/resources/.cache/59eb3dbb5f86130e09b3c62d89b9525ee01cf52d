@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-06T15:27:12.8504662	Loot Tables
+// 1.21.1	2026-05-11T20:49:55.2004091	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_table/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_table/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_table/blocks/apricot_fence.json
@@ -254,6 +254,7 @@ d154900788f5676167ac6192f125abb77c85c669 data/more_orn_plants/loot_table/blocks/
 eb6ebffd198bf953401637053b55a1982f242335 data/more_orn_plants/loot_table/blocks/green_peony.json
 bf74492b51c6c4e8acdb87856346b59501bf4bb1 data/more_orn_plants/loot_table/blocks/green_weeping_mei.json
 49d268cc8e26aa34351756ae6b2894aa784511f2 data/more_orn_plants/loot_table/blocks/green_weeping_mei_sapling.json
+9c11c3914f464df341b181d92c9bde26c118c0a5 data/more_orn_plants/loot_table/blocks/hardy_banana.json
 de32720dd31ac07e803fc5d15d59402a99b2c6cc data/more_orn_plants/loot_table/blocks/immortal_peach.json
 45f3c12983b5ad59c1da65c74a7d9a24f33ef543 data/more_orn_plants/loot_table/blocks/immortal_peach_leaves.json
 aaf06e51f4c79a61e0575192f4d48ae524264291 data/more_orn_plants/loot_table/blocks/immortal_peach_sapling.json

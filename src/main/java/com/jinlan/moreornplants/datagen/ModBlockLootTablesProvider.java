@@ -942,6 +942,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.MISCANTHUS.get(), block -> createDoublePlantWithSeedDrops(block, ModBlocks.MISCANTHUS.get()));
         this.add(ModBlocks.GOLDEN_MISCANTHUS.get(), block -> createDoublePlantWithSeedDrops(block, ModBlocks.GOLDEN_MISCANTHUS.get()));
+        this.add(ModBlocks.HARDY_BANANA.get(), createSinglePropConditionTable(ModBlocks.HARDY_BANANA.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
 
         this.dropSelf(ModBlocks.CUT_PEONY.get());
         this.add(ModBlocks.POTTED_CUT_PEONY.get(),

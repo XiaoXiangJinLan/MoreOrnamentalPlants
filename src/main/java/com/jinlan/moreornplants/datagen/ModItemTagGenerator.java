@@ -165,6 +165,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(CommonTags.Items.BAMBOO)
                 .addTag(CommonTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.COTTON_ROSE.asItem())
+                .add(ModBlocks.HARDY_BANANA.asItem())
                 .addTag(CommonTags.Items.WISTERIA)
                 .addTag(CommonTags.Items.NARCISSUS)
                 .add(ModBlocks.WHITE_MOTH_ORCHID.asItem(), ModBlocks.PINK_MOTH_ORCHID.asItem(), ModBlocks.PURPLE_MOTH_ORCHID.asItem(), ModBlocks.GOLDEN_MOTH_ORCHID.asItem())
@@ -313,7 +314,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.GREEN_DYE)
                 .add(ModBlocks.SUMMER_CYMBIDIUM.asItem(), ModBlocks.AUTUMN_CYMBIDIUM.asItem())
                 .add(ModBlocks.LOTUS_LEAF.asItem())
-                .add(ModBlocks.MISCANTHUS.asItem());
+                .add(ModBlocks.MISCANTHUS.asItem())
+                .add(ModBlocks.HARDY_BANANA.asItem());
 
         this.tag(ModTags.Items.LIGHT_BLUE_DYE)
                 .add(ModBlocks.BLUE_PEONY.asItem());

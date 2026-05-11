@@ -8,7 +8,10 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "more_orn_plants:winter_cymbidium"
+              "Name": "more_orn_plants:hardy_banana",
+              "Properties": {
+                "half": "lower"
+              }
             }
           }
         }
@@ -22,6 +25,15 @@
               {
                 "type": "minecraft:matching_blocks",
                 "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -42,7 +54,7 @@
       ]
     },
     "tries": 8,
-    "xz_spread": 8,
-    "y_spread": 6
+    "xz_spread": 7,
+    "y_spread": 3
   }
 }
