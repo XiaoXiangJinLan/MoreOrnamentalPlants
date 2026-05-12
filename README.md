@@ -11,7 +11,7 @@ Chinaberry, Desert Poplar.
 New Plants 
 ==========
 Herbaceous Peony, Chinese Rose, Chrysanthemum, Cymbidium, Lotus, Camellia, Azalea (more varieties), Chinese Narcissus, Wintersweet, 
-Cotton Rose, Crape Myrtle, Chinese Wisteria, Moth Orchid, Fountain Grass, Miscanthus, Mottled Bamboo, Black Bamboo, as well as The Four Great Peonies.  
+Cotton Rose, Crape Myrtle, Chinese Wisteria, Hardy Banana, Moth Orchid, Fountain Grass, Miscanthus, Mottled Bamboo, Black Bamboo, as well as The Four Great Peonies.  
 Some plants can be crafted into cut flowers, such as Herbaceous Peony and Chinese Rose. Hold shears in your main hand and a flower in your off-hand, 
 then right-click to obtain the corresponding cut flower.
 
@@ -39,7 +39,7 @@ New Biomes
 • Purple Cloud: A forest dominated by Purple-leaf Plum, with Purple Chrysanthemum on the forest floor.  
 • Desert Poplar Woods: A desert where Desert Poplar trees grow.
 #### Other Forest Biomes
-• Evergreen Forest: A forest dominated by Camphor, followed by Chinese Parasol, Ginkgo, and White Osmanthus, with occasional Dove Trees. Orchids, vanilla orchids, and Lily of the Valley grow on the forest floor.  
+• Evergreen Forest: A forest dominated by Camphor, followed by Chinese Parasol, Ginkgo, and White Osmanthus, with occasional Dove Trees. Cymbidium, Hardy Banana, Moth Orchids, vanilla orchids, and Lily of the Valley grow on the forest floor.  
 • Longevity Forest: A variant of the Evergreen Forest, an ancient forest featuring old-growth Camphor, Ginkgo, and Pine trees, with Chrysanthemums and Orchids growing beneath.
 #### Plain Biomes
 • Peony Sea: A sea of flowers dominated by Peony with a few Herbaceous Peonies, interspersed with Upright Crabapple.  
@@ -101,7 +101,7 @@ New Mobs
 梅花、海棠、杏花、桃花、梨花、钟花樱、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
 
 ## 新植物
-芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、水仙、蜡梅、芙蓉、紫薇、紫藤、蝴蝶兰、狼尾草、芒草、湘妃竹、紫竹，以及牡丹四大名品等。  
+芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、水仙、蜡梅、芙蓉、紫薇、紫藤、芭蕉、蝴蝶兰、狼尾草、芒草、湘妃竹、紫竹，以及牡丹四大名品等。  
 部分植物（例如芍药、月季等）可制作鲜切花，主手持剪刀，副手持花卉，右键鼠标即可获得对应的鲜切花。
 
 ## 新群系
@@ -127,7 +127,7 @@ New Mobs
 •**紫云林**：紫叶李为主的森林，林下生长有紫菊；  
 •**胡杨林**：生长有胡杨树的沙漠；
 #### 其他森林群系
-•**常绿林**：樟树为优势树种的森林，其次为梧桐、银杏、银桂，偶尔出现珙桐，林下生长有兰花、原版兰花和铃兰；  
+•**常绿林**：樟树为优势树种的森林，其次为梧桐、银杏、银桂，偶尔出现珙桐，林下生长有兰花、芭蕉、蝴蝶兰、原版兰花和铃兰；  
 •**长寿林**：常绿林的变种，生长有古樟树、古银杏、古松树的森林，林下生长有菊花和兰花。当玩家位于此群系时，会获得生命提升的效果；
 #### 平原群系
 •**牡丹花海**：生长有牡丹和少量芍药的花海，伴有西府海棠点缀；  
@@ -245,7 +245,8 @@ more_orn_plants:red_white_chinese_rose:half=lower more_orn_plants:pink_white_chi
 more_orn_plants:baohua_chinese_rose:half=lower more_orn_plants:cotton_rose:half=lower more_orn_plants:lotus:half=lower more_orn_plants:white_lotus:half=lower 
 more_orn_plants:lotus_leaf:half=lower more_orn_plants:winter_cymbidium:half=lower more_orn_plants:miscanthus:half=lower 
 more_orn_plants:golden_miscanthus:half=lower more_orn_plants:crape_myrtle:half=lower more_orn_plants:red_crape_myrtle:half=lower 
-more_orn_plants:pink_crape_myrtle:half=lower more_orn_plants:white_crape_myrtle:half=lower more_orn_plants:wintersweet:half=lower 
+more_orn_plants:pink_crape_myrtle:half=lower more_orn_plants:white_crape_myrtle:half=lower more_orn_plants:wintersweet:half=lower
+more_orn_plants:hardy_banana:half=lower
 
 #_tall flowers:half=upper_#  
 more_orn_plants:yao_huang_peony:half=upper more_orn_plants:wei_zi_peony:half=upper more_orn_plants:zhao_pink_peony:half=upper more_orn_plants:dou_green_peony:half=upper
@@ -256,7 +257,8 @@ more_orn_plants:red_white_chinese_rose:half=upper more_orn_plants:pink_white_chi
 more_orn_plants:baohua_chinese_rose:half=upper more_orn_plants:cotton_rose:half=upper more_orn_plants:lotus:half=upper more_orn_plants:white_lotus:half=upper 
 more_orn_plants:lotus_leaf:half=upper more_orn_plants:winter_cymbidium:half=upper more_orn_plants:miscanthus:half=upper 
 more_orn_plants:golden_miscanthus:half=upper more_orn_plants:crape_myrtle:half=upper more_orn_plants:red_crape_myrtle:half=upper 
-more_orn_plants:pink_crape_myrtle:half=upper more_orn_plants:white_crape_myrtle:half=upper more_orn_plants:wintersweet:half=upper 
+more_orn_plants:pink_crape_myrtle:half=upper more_orn_plants:white_crape_myrtle:half=upper more_orn_plants:wintersweet:half=upper
+more_orn_plants:hardy_banana:half=upper
 
 #_vine_#  
 more_orn_plants:red_weeping_mei more_orn_plants:red_weeping_mei_plant more_orn_plants:white_weeping_mei more_orn_plants:white_weeping_mei_plant 
