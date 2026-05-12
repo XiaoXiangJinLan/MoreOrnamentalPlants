@@ -585,10 +585,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         weepingMeiPlantBlock(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT);
 
         flowerBlock(ModBlocks.WEEPING_CRABAPPLE);
-        fruitBlock(ModBlocks.CRABAPPLE);
-        fruitBlock(ModBlocks.CLOUD_APRICOT);
-        fruitBlock(ModBlocks.IMMORTAL_PEACH);
-        fruitBlock(ModBlocks.MEI);
+        crossFruitBlock();
+        fruitBlock(ModBlocks.CLOUD_APRICOT, "apricot", "apricot");
+        fruitBlock(ModBlocks.IMMORTAL_PEACH, "peach", "peach");
+        fruitBlock(ModBlocks.MEI, "mei_fruit", "mei");
 
         wisteriaBlock(ModBlocks.CHINESE_WISTERIA);
         wisteriaPlantBlock(ModBlocks.CHINESE_WISTERIA_PLANT);
@@ -1065,18 +1065,35 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 models().cross(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
-    private void fruitBlock(RegistryObject<Block> blockRegistryObject) {
-        VariantBlockStateBuilder builder = getVariantBuilder(blockRegistryObject.get());
+    private void crossFruitBlock() {
+        VariantBlockStateBuilder builder = getVariantBuilder(ModBlocks.CRABAPPLE.get());
         String baseName = null;
-        if (blockRegistryObject.getId() != null) {
-            baseName = blockRegistryObject.getId().getPath();
+        if (ModBlocks.CRABAPPLE.getId() != null) {
+            baseName = ModBlocks.CRABAPPLE.getId().getPath();
         }
-        for (int age = 0; age <= 2; age++) {
+        for (int age = 0; age <= 1; age++) {
             ModelFile model = models().cross(baseName + "_age_" + age,
                     modLoc("block/" + baseName + "_age_" + age)).renderType("cutout");
             builder.partialState().with(PeachBlock.AGE, age)
                     .modelForState().modelFile(model).addModel();
         }
+    }
+
+    private void fruitBlock(RegistryObject<Block> block, String parentModelPath, String textureKey) {
+        String baseName = null;
+        if (block.getId() != null) {
+            baseName = block.getId().getPath();
+        }
+        ModelFile age0Model = models().cross(baseName + "_age_0", modLoc("block/" + baseName + "_age_0"))
+                .renderType("cutout");
+        ModelFile age1Model = models().withExistingParent(baseName + "_age_1", modLoc("block/" + parentModelPath))
+                .texture(textureKey, modLoc("block/" + baseName + "_age_1"))
+                .renderType("cutout");
+        getVariantBuilder(block.get())
+                .partialState().with(PeachBlock.AGE, 0)
+                .modelForState().modelFile(age0Model).addModel()
+                .partialState().with(PeachBlock.AGE, 1)
+                .modelForState().modelFile(age1Model).addModel();
     }
 
     private void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {

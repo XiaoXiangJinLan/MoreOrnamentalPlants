@@ -5,9 +5,6 @@
     },
     "age=1": {
       "model": "more_orn_plants:block/immortal_peach_age_1"
-    },
-    "age=2": {
-      "model": "more_orn_plants:block/immortal_peach_age_2"
     }
   }
 }

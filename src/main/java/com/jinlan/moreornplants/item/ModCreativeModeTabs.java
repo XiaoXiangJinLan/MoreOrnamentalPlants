@@ -252,6 +252,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WHITE_CRAPE_MYRTLE.get());
                         pOutput.accept(ModBlocks.WINTERSWEET.get());
                         pOutput.accept(ModBlocks.COTTON_ROSE.get());
+                        pOutput.accept(ModBlocks.HARDY_BANANA.get());
                         pOutput.accept(ModBlocks.MISCANTHUS.get());
                         pOutput.accept(ModBlocks.GOLDEN_MISCANTHUS.get());
                         pOutput.accept(ModBlocks.MUXUE_GRASS.get());

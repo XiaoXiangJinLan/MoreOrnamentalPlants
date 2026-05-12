@@ -21,11 +21,10 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
 public class PeachBlock extends WeepingCrabappleBlock implements BonemealableBlock {
-    public static final IntegerProperty AGE = BlockStateProperties.AGE_2;
+    public static final IntegerProperty AGE = BlockStateProperties.AGE_1;
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
             Block.box(5.0, 10.0, 5.0, 11.0, 16.0, 11.0),
-            Block.box(3.0, 6.0, 4.0, 13.0, 16.0, 13.0),
-            Block.box(2.0, 4.0, 2.0, 14.0, 16.0, 14.0)
+            Block.box(3.0, 6.0, 4.0, 13.0, 16.0, 13.0)
     };
     public PeachBlock(Properties properties) {
         super(properties);
@@ -59,7 +58,7 @@ public class PeachBlock extends WeepingCrabappleBlock implements BonemealableBlo
 
     @Override
     public boolean isRandomlyTicking(@NotNull BlockState state) {
-        return state.getValue(AGE) < 2;
+        return state.getValue(AGE) < 1;
     }
 
     @Override
@@ -68,7 +67,7 @@ public class PeachBlock extends WeepingCrabappleBlock implements BonemealableBlo
 
         int age = state.getValue(AGE);
         boolean isCorrectBiome = level.getBiome(pos).is(ModTags.Biomes.PEACH_BEARING);
-        if (age < 2) {
+        if (age < 1) {
             int growthChance = isCorrectBiome ? 5 : 1;
             if (random.nextInt(20) < growthChance) {
                 level.setBlock(pos, state.setValue(AGE, age + 1), 3);
@@ -78,7 +77,7 @@ public class PeachBlock extends WeepingCrabappleBlock implements BonemealableBlo
 
     @Override
     public boolean isValidBonemealTarget(@NotNull LevelReader level, @NotNull BlockPos pos, BlockState state, boolean isClient) {
-        return state.getValue(AGE) < 2;
+        return state.getValue(AGE) < 1;
     }
 
     @Override
@@ -89,7 +88,7 @@ public class PeachBlock extends WeepingCrabappleBlock implements BonemealableBlo
     @Override
     public void performBonemeal(@NotNull ServerLevel level, @NotNull RandomSource random, @NotNull BlockPos pos, BlockState state) {
         int currentAge = state.getValue(AGE);
-        if (currentAge < 2) {
+        if (currentAge < 1) {
             level.setBlock(pos, state.setValue(AGE, currentAge + 1), 3);
         }
     }

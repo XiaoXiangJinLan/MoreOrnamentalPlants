@@ -17,8 +17,7 @@ import org.jetbrains.annotations.NotNull;
 public class ApricotBlock extends PeachBlock {
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
             Block.box(6.0, 12.0, 6.0, 10.0, 16.0, 10.0),
-            Block.box(4.0, 8.0, 4.0, 12.0, 16.0, 12.0),
-            Block.box(3.0, 6.0, 3.0, 13.0, 16.0, 13.0)
+            Block.box(4.0, 8.0, 4.0, 12.0, 16.0, 12.0)
     };
     public ApricotBlock(Properties properties) {
         super(properties);
@@ -41,7 +40,7 @@ public class ApricotBlock extends PeachBlock {
 
         int age = state.getValue(AGE);
         boolean isCorrectBiome = level.getBiome(pos).is(ModTags.Biomes.APRICOT_BEARING);
-        if (age < 2) {
+        if (age < 1) {
             int growthChance = isCorrectBiome ? 5 : 1;
             if (random.nextInt(12) < growthChance) {
                 level.setBlock(pos, state.setValue(AGE, age + 1), 3);

@@ -24,7 +24,7 @@ public class CrabappleBlock extends PeachBlock {
         super.randomTick(state, level, pos, random);
 
         int age = state.getValue(AGE);
-        if (age < 2) {
+        if (age < 1) {
             if (random.nextInt(10) == 0) {
                 level.setBlock(pos, state.setValue(AGE, age + 1), 3);
             }

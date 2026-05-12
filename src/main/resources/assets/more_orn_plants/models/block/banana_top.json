@@ -1,13 +1,7 @@
 {
-	"format_version": "1.21.11",
-	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "blockbench:plantain/plantain_top_leaf",
-		"leaf": "blockbench:plantain/plantain_top_leaf",
-		"stem": "blockbench:plantain/plantain_top_stem",
-		"leaf_1": "blockbench:plantain/plantain_top_leaf_1",
-		"leaf_2": "blockbench:plantain/plantain_top_leaf_2"
+		"particle": "#leaf"
 	},
 	"elements": [
 		{
