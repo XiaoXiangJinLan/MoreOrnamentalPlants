@@ -652,25 +652,25 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))))
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
-                                        .hasProperty(PeachBlock.AGE, 2)))));
+                                        .hasProperty(PeachBlock.AGE, 1)))));
         this.add(ModBlocks.CLOUD_APRICOT.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModItems.CLOUD_APRICOT.get()))
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
-                                        .hasProperty(PeachBlock.AGE, 2)))));
+                                        .hasProperty(PeachBlock.AGE, 1)))));
         this.add(ModBlocks.IMMORTAL_PEACH.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModItems.IMMORTAL_PEACH.get()))
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
-                                        .hasProperty(PeachBlock.AGE, 2)))));
+                                        .hasProperty(PeachBlock.AGE, 1)))));
         this.add(ModBlocks.MEI.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModItems.MEI.get()))
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
-                                        .hasProperty(PeachBlock.AGE, 2)))));
+                                        .hasProperty(PeachBlock.AGE, 1)))));
 
         this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),

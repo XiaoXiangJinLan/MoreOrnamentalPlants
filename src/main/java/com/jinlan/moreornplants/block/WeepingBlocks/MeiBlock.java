@@ -26,7 +26,7 @@ public class MeiBlock extends ApricotBlock {
 
         int age = state.getValue(AGE);
         boolean isCorrectBiome = level.getBiome(pos).is(ModTags.Biomes.APRICOT_BEARING);
-        if (age < 2) {
+        if (age < 1) {
             int growthChance = isCorrectBiome ? 3 : 1;
             if (random.nextInt(5) < growthChance) {
                 level.setBlock(pos, state.setValue(AGE, age + 1), 3);

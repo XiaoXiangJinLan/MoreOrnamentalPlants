@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/cross",
+  "parent": "more_orn_plants:block/peach",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "more_orn_plants:block/immortal_peach_age_1"
+    "peach": "more_orn_plants:block/immortal_peach_age_1"
   }
 }

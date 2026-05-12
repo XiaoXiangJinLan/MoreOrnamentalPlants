@@ -8,7 +8,7 @@
           "block": "more_orn_plants:mei",
           "condition": "minecraft:block_state_property",
           "properties": {
-            "age": "2"
+            "age": "1"
           }
         }
       ],
