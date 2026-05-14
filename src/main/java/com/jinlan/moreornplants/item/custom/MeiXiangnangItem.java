@@ -35,8 +35,14 @@ public class MeiXiangnangItem extends BlockItem {
 
                 if (!player.isSpectator() && isHeld) {
                     MobEffectInstance currentEffect = livingEntity.getEffect(MobEffects.REGENERATION);
+                    MobEffectInstance currentEffect2 = livingEntity.getEffect(MobEffects.DAMAGE_BOOST);
+                    MobEffectInstance currentEffect3 = livingEntity.getEffect(MobEffects.DAMAGE_RESISTANCE);
+                    MobEffectInstance currentEffect4 = livingEntity.getEffect(MobEffects.DIG_SPEED);
 
-                    if (currentEffect == null || currentEffect.getDuration() < 260) {
+                    if (currentEffect == null || currentEffect.getDuration() < 260 ||
+                            currentEffect2 == null || currentEffect2.getDuration() < 260 ||
+                            currentEffect3 == null || currentEffect3.getDuration() < 260 ||
+                            currentEffect4 == null || currentEffect4.getDuration() < 260) {
                         livingEntity.addEffect(new MobEffectInstance(
                                 MobEffects.REGENERATION, effectDuration, effectAmplifier));
                         livingEntity.addEffect(new MobEffectInstance(
