@@ -40,22 +40,23 @@ public class MeiXiangnangBlockEntity extends BlockEntity {
 
     // 应用生命恢复效果
     private static void applyRegenerationEffect(LivingEntity entity) {
-        // 检查是否已经有生命恢复效果
         MobEffectInstance existingEffect = entity.getEffect(MobEffects.REGENERATION);
+        MobEffectInstance existingEffect2 = entity.getEffect(MobEffects.DAMAGE_BOOST);
+        MobEffectInstance existingEffect3 = entity.getEffect(MobEffects.DAMAGE_RESISTANCE);
+        MobEffectInstance existingEffect4 = entity.getEffect(MobEffects.DIG_SPEED);
 
-        // 如果已经有持续时间大于13秒的效果，就不重复应用
-        if (existingEffect != null && existingEffect.getDuration() > 260) {
-            return;
+        if (existingEffect == null || existingEffect.getDuration() < 260 ||
+                existingEffect2 == null || existingEffect2.getDuration() < 260 ||
+                existingEffect3 == null || existingEffect3.getDuration() < 260 ||
+                existingEffect4 == null || existingEffect4.getDuration() < 260) {
+            entity.addEffect(new MobEffectInstance(
+                    MobEffects.REGENERATION, EFFECT_DURATION, 1));
+            entity.addEffect(new MobEffectInstance(
+                    MobEffects.DAMAGE_BOOST, EFFECT_DURATION, 0));
+            entity.addEffect(new MobEffectInstance(
+                    MobEffects.DAMAGE_RESISTANCE, EFFECT_DURATION, 0));
+            entity.addEffect(new MobEffectInstance(
+                    MobEffects.DIG_SPEED, EFFECT_DURATION, 0));
         }
-
-        // 创建生命恢复II效果，持续5秒
-        entity.addEffect(new MobEffectInstance(
-                MobEffects.REGENERATION, EFFECT_DURATION, 1));
-        entity.addEffect(new MobEffectInstance(
-                MobEffects.DAMAGE_BOOST, EFFECT_DURATION, 0));
-        entity.addEffect(new MobEffectInstance(
-                MobEffects.DAMAGE_RESISTANCE, EFFECT_DURATION, 0));
-        entity.addEffect(new MobEffectInstance(
-                MobEffects.DIG_SPEED, EFFECT_DURATION, 0));
     }
 }

@@ -160,7 +160,7 @@ public class ModEventsBusEvents {
                 multiplier = 1.0F + (4 - distToFull) / 4.0F;
             }
             if (state.hasCaiyunSword()) {
-                multiplier *= 1.2F;
+                multiplier *= 1.5F;
             }
             event.setAmount(event.getAmount() * multiplier);
         } else if (weapon.is(ModItems.CAIYUN_SWORD.get())) {
@@ -174,7 +174,7 @@ public class ModEventsBusEvents {
                 multiplier = ModBiomeConfig.CAIYUN_SWORD_RAIN_MULTIPLIER.get().floatValue();
             }
             if (state.hasZhuiyueSword()) {
-                multiplier *= 1.2F;
+                multiplier *= 1.5F;
             }
             event.setAmount(event.getAmount() * multiplier);
         } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
