@@ -159,10 +159,10 @@ public class ModBiomeConfig {
         BUILDER.push("Weapon Config");
         CAMPHOR_SWORD_MULTIPLIER = BUILDER
                 .comment("Damage multiplier for Camphor Wooden Sword")
-                .define("camphorSwordMultiplier", 2.22);
+                .define("camphorSwordMultiplier", 5.5);
         CHINESE_PARASOL_SWORD_MULTIPLIER = BUILDER
                 .comment("Damage multiplier for Chinese Parasol Wooden Sword")
-                .define("chineseParasolSwordMultiplier", 3.33);
+                .define("chineseParasolSwordMultiplier", 6.6);
 
         ZIYING_TOOLS_MULTIPLIER = BUILDER
                 .comment("Critical hit damage multiplier for Ziying tools")
