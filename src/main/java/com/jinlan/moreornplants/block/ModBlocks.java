@@ -1251,6 +1251,8 @@ public class ModBlocks {
             registerBlock("yellow_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WHITE_CHINESE_ROSE =
             registerBlock("white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> PURPLE_CHINESE_ROSE =
+            registerBlock("purple_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> RED_PINK_CHINESE_ROSE =
             registerBlock("red_pink_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> RED_YELLOW_CHINESE_ROSE =
@@ -1261,6 +1263,8 @@ public class ModBlocks {
             registerBlock("pink_white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> YELLOW_WHITE_CHINESE_ROSE =
             registerBlock("yellow_white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> PURPLE_WHITE_CHINESE_ROSE =
+            registerBlock("purple_white_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> BAOHUA_CHINESE_ROSE =
             registerBlock("baohua_chinese_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> CRAPE_MYRTLE =
@@ -1290,6 +1294,8 @@ public class ModBlocks {
             BLOCKS.register("potted_yellow_chinese_rose", () -> flowerPot(YELLOW_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_WHITE_CHINESE_ROSE =
             BLOCKS.register("potted_white_chinese_rose", () -> flowerPot(WHITE_CHINESE_ROSE.get()));
+    public static final DeferredBlock<Block> POTTED_PURPLE_CHINESE_ROSE =
+            BLOCKS.register("potted_purple_chinese_rose", () -> flowerPot(PURPLE_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_RED_PINK_CHINESE_ROSE =
             BLOCKS.register("potted_red_pink_chinese_rose", () -> flowerPot(RED_PINK_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_RED_YELLOW_CHINESE_ROSE =
@@ -1300,6 +1306,8 @@ public class ModBlocks {
             BLOCKS.register("potted_pink_white_chinese_rose", () -> flowerPot(PINK_WHITE_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_YELLOW_WHITE_CHINESE_ROSE =
             BLOCKS.register("potted_yellow_white_chinese_rose", () -> flowerPot(YELLOW_WHITE_CHINESE_ROSE.get()));
+    public static final DeferredBlock<Block> POTTED_PURPLE_WHITE_CHINESE_ROSE =
+            BLOCKS.register("potted_purple_white_chinese_rose", () -> flowerPot(PURPLE_WHITE_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_BAOHUA_CHINESE_ROSE =
             BLOCKS.register("potted_baohua_chinese_rose", () -> flowerPot(BAOHUA_CHINESE_ROSE.get()));
 
@@ -1347,6 +1355,8 @@ public class ModBlocks {
             registerBlock("cut_yellow_rose", () -> cutFlower(ModBlocks.YELLOW_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> CUT_WHITE_ROSE =
             registerBlock("cut_white_rose", () -> cutFlower(ModBlocks.WHITE_CHINESE_ROSE.get()));
+    public static final DeferredBlock<Block> CUT_PURPLE_ROSE =
+            registerBlock("cut_purple_rose", () -> cutFlower(ModBlocks.PURPLE_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> CUT_BAOHUA_CHINESE_ROSE =
             registerBlock("cut_baohua_chinese_rose", () -> cutFlower(ModBlocks.BAOHUA_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> CUT_WINTERSWEET =
@@ -1398,6 +1408,8 @@ public class ModBlocks {
             BLOCKS.register("potted_cut_yellow_rose", () -> flowerPot(CUT_YELLOW_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_CUT_WHITE_ROSE =
             BLOCKS.register("potted_cut_white_rose", () -> flowerPot(CUT_WHITE_ROSE.get()));
+    public static final DeferredBlock<Block> POTTED_CUT_PURPLE_ROSE =
+            BLOCKS.register("potted_cut_purple_rose", () -> flowerPot(CUT_PURPLE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_CUT_BAOHUA_CHINESE_ROSE =
             BLOCKS.register("potted_cut_baohua_chinese_rose", () -> flowerPot(CUT_BAOHUA_CHINESE_ROSE.get()));
     public static final DeferredBlock<Block> POTTED_CUT_WINTERSWEET =

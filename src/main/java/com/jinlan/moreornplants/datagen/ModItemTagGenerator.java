@@ -292,6 +292,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.PURPLE_DYE)
                 .add(ModBlocks.WEI_ZI_PEONY.asItem())
+                .add(ModBlocks.PURPLE_CHINESE_ROSE.asItem())
                 .add(ModBlocks.PURPLE_CHRYSANTHEMUM.asItem())
                 .add(ModBlocks.PURPLE_PEONY.asItem(), ModBlocks.LIGHT_PURPLE_PEONY.asItem(), ModBlocks.INK_PURPLE_PEONY.asItem(), ModBlocks.VIOLET_PEONY.asItem())
                 .add(ModBlocks.PURPLE_RHODODENDRON.asItem())

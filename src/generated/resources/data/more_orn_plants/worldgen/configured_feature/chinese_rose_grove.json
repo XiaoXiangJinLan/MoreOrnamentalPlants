@@ -10,7 +10,7 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:red_pink_chinese_rose",
+                  "Name": "more_orn_plants:chinese_rose",
                   "Properties": {
                     "half": "lower"
                   }
@@ -19,7 +19,7 @@
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:red_yellow_chinese_rose",
+                  "Name": "more_orn_plants:pink_chinese_rose",
                   "Properties": {
                     "half": "lower"
                   }
@@ -28,7 +28,7 @@
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:red_white_chinese_rose",
+                  "Name": "more_orn_plants:yellow_chinese_rose",
                   "Properties": {
                     "half": "lower"
                   }
@@ -37,7 +37,7 @@
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:pink_white_chinese_rose",
+                  "Name": "more_orn_plants:white_chinese_rose",
                   "Properties": {
                     "half": "lower"
                   }
@@ -46,7 +46,7 @@
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:yellow_white_chinese_rose",
+                  "Name": "more_orn_plants:purple_chinese_rose",
                   "Properties": {
                     "half": "lower"
                   }

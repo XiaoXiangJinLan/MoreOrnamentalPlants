@@ -87,6 +87,7 @@ public class MoreOrnPlants {
                 Map.entry(ModBlocks.PINK_CHINESE_ROSE.asItem(), ModBlocks.CUT_PINK_ROSE.asItem()),
                 Map.entry(ModBlocks.YELLOW_CHINESE_ROSE.asItem(), ModBlocks.CUT_YELLOW_ROSE.asItem()),
                 Map.entry(ModBlocks.WHITE_CHINESE_ROSE.asItem(), ModBlocks.CUT_WHITE_ROSE.asItem()),
+                Map.entry(ModBlocks.PURPLE_CHINESE_ROSE.asItem(), ModBlocks.CUT_PURPLE_ROSE.asItem()),
                 Map.entry(ModBlocks.BAOHUA_CHINESE_ROSE.asItem(), ModBlocks.CUT_BAOHUA_CHINESE_ROSE.asItem()),
                 Map.entry(ModBlocks.COTTON_ROSE.asItem(), ModBlocks.CUT_COTTON_ROSE.asItem()),
                 Map.entry(ModBlocks.PEONY.asItem(), ModBlocks.CUT_PEONY.asItem()),

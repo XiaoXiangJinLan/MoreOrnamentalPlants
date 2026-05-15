@@ -94,6 +94,8 @@
     "more_orn_plants:potted_pink_white_chinese_rose",
     "more_orn_plants:potted_yellow_white_chinese_rose",
     "more_orn_plants:potted_baohua_chinese_rose",
+    "more_orn_plants:potted_purple_white_chinese_rose",
+    "more_orn_plants:potted_purple_chinese_rose",
     "more_orn_plants:potted_wintersweet",
     "more_orn_plants:potted_camellia",
     "more_orn_plants:potted_pink_camellia",
@@ -144,6 +146,7 @@
     "more_orn_plants:potted_cut_white_rose",
     "more_orn_plants:potted_cut_baohua_chinese_rose",
     "more_orn_plants:potted_cut_cotton_rose",
+    "more_orn_plants:potted_cut_purple_rose",
     "more_orn_plants:potted_cut_wintersweet"
   ]
 }

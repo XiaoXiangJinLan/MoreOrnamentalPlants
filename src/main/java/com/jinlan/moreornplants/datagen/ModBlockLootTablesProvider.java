@@ -881,6 +881,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 createPotFlowerItemTable(ModBlocks.YELLOW_CHINESE_ROSE.get()));
         this.add(ModBlocks.POTTED_WHITE_CHINESE_ROSE.get(),
                 createPotFlowerItemTable(ModBlocks.WHITE_CHINESE_ROSE.get()));
+        this.add(ModBlocks.POTTED_PURPLE_CHINESE_ROSE.get(),
+                createPotFlowerItemTable(ModBlocks.PURPLE_CHINESE_ROSE.get()));
         this.add(ModBlocks.POTTED_RED_PINK_CHINESE_ROSE.get(),
                 createPotFlowerItemTable(ModBlocks.RED_PINK_CHINESE_ROSE.get()));
         this.add(ModBlocks.POTTED_RED_YELLOW_CHINESE_ROSE.get(),
@@ -891,6 +893,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 createPotFlowerItemTable(ModBlocks.PINK_WHITE_CHINESE_ROSE.get()));
         this.add(ModBlocks.POTTED_YELLOW_WHITE_CHINESE_ROSE.get(),
                 createPotFlowerItemTable(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get()));
+        this.add(ModBlocks.POTTED_PURPLE_WHITE_CHINESE_ROSE.get(),
+                createPotFlowerItemTable(ModBlocks.PURPLE_WHITE_CHINESE_ROSE.get()));
         this.add(ModBlocks.POTTED_BAOHUA_CHINESE_ROSE.get(),
                 createPotFlowerItemTable(ModBlocks.BAOHUA_CHINESE_ROSE.get()));
 
@@ -918,6 +922,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.WHITE_CHINESE_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.PURPLE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.PURPLE_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.RED_PINK_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.RED_PINK_CHINESE_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.RED_YELLOW_CHINESE_ROSE.get(),
@@ -927,6 +933,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.PINK_WHITE_CHINESE_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.PURPLE_WHITE_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.PURPLE_WHITE_CHINESE_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.BAOHUA_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.BAOHUA_CHINESE_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
@@ -1011,6 +1019,9 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CUT_WHITE_ROSE.get());
         this.add(ModBlocks.POTTED_CUT_WHITE_ROSE.get(),
                 createPotFlowerItemTable(ModBlocks.CUT_WHITE_ROSE));
+        this.dropSelf(ModBlocks.CUT_PURPLE_ROSE.get());
+        this.add(ModBlocks.POTTED_CUT_PURPLE_ROSE.get(),
+                createPotFlowerItemTable(ModBlocks.CUT_PURPLE_ROSE));
         this.dropSelf(ModBlocks.CUT_BAOHUA_CHINESE_ROSE.get());
         this.add(ModBlocks.POTTED_CUT_BAOHUA_CHINESE_ROSE.get(),
                 createPotFlowerItemTable(ModBlocks.CUT_BAOHUA_CHINESE_ROSE));

@@ -123,6 +123,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_GROVE = registerKey("chrysanthemum_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_KEY = registerKey("chinese_rose_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CHINESE_ROSE_KEY = registerKey("pink_chinese_rose_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_CHINESE_ROSE_KEY = registerKey("purple_chinese_rose_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW_CHINESE_ROSE_KEY = registerKey("yellow_chinese_rose_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CHINESE_ROSE_KEY = registerKey("white_chinese_rose_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_WOODS_KEY = registerKey("chinese_rose_woods_key");
@@ -927,7 +928,8 @@ public class ModConfiguredFeatures {
                                         .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
+                                        .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.PURPLE_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
@@ -1199,11 +1201,11 @@ public class ModConfiguredFeatures {
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(ModBlocks.RED_PINK_CHINESE_ROSE.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.PINK_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.YELLOW_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.PURPLE_CHINESE_ROSE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
@@ -1495,7 +1497,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.WATER),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.DIRT, Blocks.SAND, Blocks.GRAVEL, Blocks.CLAY)))));
 
-        register(context, CHINESE_ROSE_KEY, Feature.FLOWER, new RandomPatchConfiguration(172, 6, 2,
+        register(context, CHINESE_ROSE_KEY, Feature.FLOWER, new RandomPatchConfiguration(172, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1505,14 +1507,24 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, PINK_CHINESE_ROSE_KEY, Feature.FLOWER, new RandomPatchConfiguration(172, 6, 2,
+        register(context, PINK_CHINESE_ROSE_KEY, Feature.FLOWER, new RandomPatchConfiguration(172, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PINK_CHINESE_ROSE.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, YELLOW_CHINESE_ROSE_KEY, Feature.FLOWER, new RandomPatchConfiguration(172, 6, 2,
+        register(context, PURPLE_CHINESE_ROSE_KEY, Feature.FLOWER, new RandomPatchConfiguration(172, 5, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.PURPLE_CHINESE_ROSE.get().defaultBlockState(), 9)
+                                        .add(ModBlocks.WHITE_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, YELLOW_CHINESE_ROSE_KEY, Feature.FLOWER, new RandomPatchConfiguration(172, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1522,12 +1534,13 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, WHITE_CHINESE_ROSE_KEY, Feature.FLOWER, new RandomPatchConfiguration(172, 6, 2,
+        register(context, WHITE_CHINESE_ROSE_KEY, Feature.FLOWER, new RandomPatchConfiguration(172, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(ModBlocks.YELLOW_CHINESE_ROSE.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.WHITE_CHINESE_ROSE.get().defaultBlockState(), 9).build())),
+                                        .add(ModBlocks.PURPLE_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.WHITE_CHINESE_ROSE.get().defaultBlockState(), 8).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
@@ -1548,7 +1561,8 @@ public class ModConfiguredFeatures {
                                         .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().defaultBlockState(), 2)
                                         .add(ModBlocks.PINK_CHINESE_ROSE.get().defaultBlockState(), 3)
                                         .add(ModBlocks.YELLOW_CHINESE_ROSE.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.WHITE_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
+                                        .add(ModBlocks.WHITE_CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.PURPLE_CHINESE_ROSE.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),

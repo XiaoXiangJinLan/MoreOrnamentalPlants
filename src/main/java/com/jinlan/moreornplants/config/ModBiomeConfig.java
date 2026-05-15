@@ -179,10 +179,10 @@ public class ModBiomeConfig {
 
         ZHUIYUE_SWORD_FULL_MOON_MULTIPLIER = BUILDER
                 .comment("Damage multiplier for Zhuiyue Sword during full moon")
-                .define("zhuiyueSwordFullMoonMultiplier", 2.0);
+                .define("zhuiyueSwordFullMoonMultiplier", 3.0);
         CAIYUN_SWORD_CLEAR_MULTIPLIER = BUILDER
                 .comment("Damage multiplier for Caiyun Sword in clear weather")
-                .define("caiyunSwordClearMultiplier", 1.5);
+                .define("caiyunSwordClearMultiplier", 2.0);
         CAIYUN_SWORD_RAIN_MULTIPLIER = BUILDER
                 .comment("Damage multiplier for Caiyun Sword in rain (no thunder)")
                 .define("caiyunSwordRainMultiplier", 1.0);

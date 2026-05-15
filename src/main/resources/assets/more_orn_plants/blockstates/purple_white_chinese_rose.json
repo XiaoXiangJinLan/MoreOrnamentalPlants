@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "half=lower": [
+      { "model": "more_orn_plants:block/purple_white_chinese_rose_bottom", "weight": 1 },
+      { "model": "more_orn_plants:block/purple_white_chinese_rose_bottom_2", "weight": 3 }
+    ],
+    "half=upper": [
+      { "model": "more_orn_plants:block/purple_white_chinese_rose_top", "weight": 1 },
+      { "model": "more_orn_plants:block/purple_white_chinese_rose_top_2", "weight": 3 }
+    ]
+  }
+}

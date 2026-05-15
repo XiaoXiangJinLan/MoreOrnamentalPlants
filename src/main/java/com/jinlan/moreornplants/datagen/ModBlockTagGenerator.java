@@ -99,6 +99,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_RED_PINK_CHINESE_ROSE.get(), ModBlocks.POTTED_RED_YELLOW_CHINESE_ROSE.get())
                 .add(ModBlocks.POTTED_RED_WHITE_CHINESE_ROSE.get(), ModBlocks.POTTED_PINK_WHITE_CHINESE_ROSE.get())
                 .add(ModBlocks.POTTED_YELLOW_WHITE_CHINESE_ROSE.get(), ModBlocks.POTTED_BAOHUA_CHINESE_ROSE.get())
+                .add(ModBlocks.POTTED_PURPLE_WHITE_CHINESE_ROSE.get(), ModBlocks.POTTED_PURPLE_CHINESE_ROSE.get())
                 .add(ModBlocks.POTTED_WINTERSWEET.get())
                 .add(ModBlocks.POTTED_CAMELLIA.get(), ModBlocks.POTTED_PINK_CAMELLIA.get())
                 .add(ModBlocks.POTTED_WHITE_CAMELLIA.get(), ModBlocks.POTTED_VERSICOLOR_CAMELLIA.get())
@@ -118,7 +119,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_CUT_GREEN_PEONY.get(), ModBlocks.POTTED_CUT_WU_HUA_LONG_YU_PEONY.get(), ModBlocks.POTTED_CUT_MAUVE_PEONY.get())
                 .add(ModBlocks.POTTED_CUT_CHINESE_ROSE.get(), ModBlocks.POTTED_CUT_PINK_ROSE.get(), ModBlocks.POTTED_CUT_YELLOW_ROSE.get())
                 .add(ModBlocks.POTTED_CUT_WHITE_ROSE.get(), ModBlocks.POTTED_CUT_BAOHUA_CHINESE_ROSE.get(), ModBlocks.POTTED_CUT_COTTON_ROSE.get())
-                .add(ModBlocks.POTTED_CUT_WINTERSWEET.get());
+                .add(ModBlocks.POTTED_CUT_PURPLE_ROSE.get(), ModBlocks.POTTED_CUT_WINTERSWEET.get());
 
         this.tag(BlockTags.FLOWERS)
                 .addTag(BlockTags.SMALL_FLOWERS)
@@ -634,8 +635,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CUT_WHITE_PEONY.get(), ModBlocks.CUT_INK_PEONY.get(), ModBlocks.CUT_BLUE_PEONY.get())
                 .add(ModBlocks.CUT_GREEN_PEONY.get(), ModBlocks.CUT_WU_HUA_LONG_YU_PEONY.get(), ModBlocks.CUT_MAUVE_PEONY.get())
                 .add(ModBlocks.CUT_CHINESE_ROSE.get(), ModBlocks.CUT_PINK_ROSE.get(), ModBlocks.CUT_YELLOW_ROSE.get())
-                .add(ModBlocks.CUT_WHITE_ROSE.get(), ModBlocks.CUT_BAOHUA_CHINESE_ROSE.get(), ModBlocks.CUT_COTTON_ROSE.get())
-                .add(ModBlocks.CUT_WINTERSWEET.get());
+                .add(ModBlocks.CUT_WHITE_ROSE.get(), ModBlocks.CUT_BAOHUA_CHINESE_ROSE.get(), ModBlocks.CUT_PURPLE_ROSE.get())
+                .add(ModBlocks.CUT_WINTERSWEET.get(), ModBlocks.CUT_COTTON_ROSE.get());
 
         this.tag(BlockTags.TALL_FLOWERS)
                 .add(ModBlocks.WINTERSWEET.get())
@@ -749,7 +750,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.YELLOW_CHINESE_ROSE.get(), ModBlocks.WHITE_CHINESE_ROSE.get())
                 .add(ModBlocks.RED_PINK_CHINESE_ROSE.get(), ModBlocks.RED_YELLOW_CHINESE_ROSE.get())
                 .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get(), ModBlocks.PINK_WHITE_CHINESE_ROSE.get())
-                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), ModBlocks.BAOHUA_CHINESE_ROSE.get());
+                .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get(), ModBlocks.BAOHUA_CHINESE_ROSE.get())
+                .add(ModBlocks.PURPLE_WHITE_CHINESE_ROSE.get(), ModBlocks.PURPLE_CHINESE_ROSE.get());
 
         this.tag(CommonTags.Blocks.CHRYSANTHEMUM)
                 .add(ModBlocks.CHRYSANTHEMUM.get(), ModBlocks.XIHU_LIUYUE.get(), ModBlocks.GOLD_BACKED_SCARLET_MUM.get(), ModBlocks.BLACK_CHRYSANTHEMUM.get())
