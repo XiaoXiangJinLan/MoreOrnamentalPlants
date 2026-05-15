@@ -126,6 +126,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_GROVE_PLACED = registerKey("chrysanthemum_grove_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_PLACED = registerKey("chinese_rose_placed");
     public static final ResourceKey<PlacedFeature> PINK_CHINESE_ROSE_PLACED = registerKey("pink_chinese_rose_placed");
+    public static final ResourceKey<PlacedFeature> PURPLE_CHINESE_ROSE_PLACED = registerKey("purple_chinese_rose_placed");
     public static final ResourceKey<PlacedFeature> YELLOW_CHINESE_ROSE_PLACED = registerKey("yellow_chinese_rose_placed");
     public static final ResourceKey<PlacedFeature> WHITE_CHINESE_ROSE_PLACED = registerKey("white_chinese_rose_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_WOODS_PLACED = registerKey("chinese_rose_woods_placed");
@@ -754,7 +755,10 @@ public class ModPlacedFeatures {
                 List.of(NoiseThresholdCountPlacement.of(-0.1D, 0, 5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PINK_CHINESE_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_CHINESE_ROSE_KEY),
-                List.of(NoiseThresholdCountPlacement.of(-0.1D, 1, 3),
+                List.of(NoiseThresholdCountPlacement.of(-0.1D, 0, 3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PURPLE_CHINESE_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_CHINESE_ROSE_KEY),
+                List.of(NoiseThresholdCountPlacement.of(-0.1D, 3, 0),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, YELLOW_CHINESE_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.YELLOW_CHINESE_ROSE_KEY),
                 List.of(NoiseThresholdCountPlacement.of(-0.1D, 3, 0),

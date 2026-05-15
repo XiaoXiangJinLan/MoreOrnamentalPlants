@@ -118,7 +118,7 @@ public class ModEvents {
             } else {
                 int moonPhase = level.getMoonPhase();
                 int distToFull = Math.min(moonPhase, 8 - moonPhase);
-                multiplier = 1.0F + (4 - distToFull) / 4.0F;
+                multiplier = 1.0F + (4 - distToFull) / 2.0F;
             }
             if (state.hasCaiyunSword()) {
                 multiplier *= 1.5F;

@@ -55,6 +55,15 @@
                   "Name": "more_orn_plants:wu_hua_long_yu_peony"
                 },
                 "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:purple_white_chinese_rose",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
               }
             ]
           }

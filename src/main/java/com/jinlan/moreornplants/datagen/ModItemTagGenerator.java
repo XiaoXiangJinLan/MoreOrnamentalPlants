@@ -245,15 +245,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.MAUVE_PEONY.get().asItem());
 
         this.tag(ForgeTags.Items.CHINESE_ROSE)
-                .add(ModBlocks.CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.PINK_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.WHITE_CHINESE_ROSE.get().asItem())
+                .add(ModBlocks.CHINESE_ROSE.get().asItem(), ModBlocks.PINK_CHINESE_ROSE.get().asItem())
+                .add(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem(), ModBlocks.WHITE_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.RED_PINK_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.RED_WHITE_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.PINK_WHITE_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().asItem())
+                .add(ModBlocks.PURPLE_CHINESE_ROSE.get().asItem(), ModBlocks.PURPLE_WHITE_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.BAOHUA_CHINESE_ROSE.get().asItem());
 
         this.tag(ForgeTags.Items.CHRYSANTHEMUM)
@@ -413,6 +412,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.PURPLE_DYE)
                 .add(ModBlocks.WEI_ZI_PEONY.get().asItem())
                 .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().asItem())
+                .add(ModBlocks.PURPLE_CHINESE_ROSE.get().asItem())
                 .add(ModBlocks.PURPLE_PEONY.get().asItem(), ModBlocks.LIGHT_PURPLE_PEONY.get().asItem())
                 .add(ModBlocks.INK_PURPLE_PEONY.get().asItem(), ModBlocks.VIOLET_PEONY.get().asItem())
                 .add(ModBlocks.PURPLE_RHODODENDRON.get().asItem())

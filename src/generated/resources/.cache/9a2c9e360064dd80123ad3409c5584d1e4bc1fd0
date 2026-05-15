@@ -1,4 +1,4 @@
-// 1.20.1	2026-05-11T23:21:08.5307052	Item Models: more_orn_plants
+// 1.20.1	2026-05-15T18:51:32.6336972	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -109,6 +109,7 @@ cf80c50473bc776630c7640ac2453d2d652a2a96 assets/more_orn_plants/models/item/cut_
 e209bbed54ac17654345cd97a91de0bc3fd4f5e4 assets/more_orn_plants/models/item/cut_peony.json
 5218a4d84c44283521e44ef86174b55821495071 assets/more_orn_plants/models/item/cut_pink_rose.json
 e0ab1609dd814c68e87d97a2624260268e97f972 assets/more_orn_plants/models/item/cut_purple_peony.json
+166332e2d380aec2a71aebda3999804431a9d45f assets/more_orn_plants/models/item/cut_purple_rose.json
 decf3745556b8afb085dd40ce34fc34ad4696d98 assets/more_orn_plants/models/item/cut_red_peony.json
 ab57f55420a95259ad6954f19dbdc2281f9dda2b assets/more_orn_plants/models/item/cut_violet_pink_peony.json
 dece9c049358f3acd249ea65869f3c9cd3538984 assets/more_orn_plants/models/item/cut_white_peony.json
@@ -300,6 +301,7 @@ a6f9a2ce73aa98b59fe4112de40ed1dbe8e62ec5 assets/more_orn_plants/models/item/pink
 111bf479e2eb7ba9eb3b103ab4981b15a703af23 assets/more_orn_plants/models/item/pink_weeping_mei_sapling.json
 36563f3afbdbb1b09d8819bcf78449674f2de4c4 assets/more_orn_plants/models/item/pink_white_chinese_rose.json
 b765ee11b022b83e8c0a7b05c057ecf8b21183b3 assets/more_orn_plants/models/item/pink_white_peony.json
+fd6d9a2b5294d269484fba7b68bc977a4334240b assets/more_orn_plants/models/item/purple_chinese_rose.json
 81b04ff18e94cbc413f0e3eadb5e85c2f80d5111 assets/more_orn_plants/models/item/purple_chrysanthemum.json
 f4c0c1aef5aa4e0b63c397a4a9d3deff71eb5c2b assets/more_orn_plants/models/item/purple_fountain_grass.json
 8ca05ebcd9d2fdf9162e6c30ebfab2a1e0b28d92 assets/more_orn_plants/models/item/purple_leaf_plum_boat.json
@@ -318,6 +320,7 @@ f935b03734cb95ec5b6f61f179ac9cd9b4d08b05 assets/more_orn_plants/models/item/purp
 6a4f90b64250e835675a127d663e17055618ee61 assets/more_orn_plants/models/item/purple_moth_orchid.json
 45008f909976af8bd36c54897765f48287f8af99 assets/more_orn_plants/models/item/purple_peony.json
 eaeee13944df8aaa89be1f9d7a5934c323a0a857 assets/more_orn_plants/models/item/purple_rhododendron.json
+2d16bbc4001a13fc0388e0ff42bf7f83c6c37564 assets/more_orn_plants/models/item/purple_white_chinese_rose.json
 7472445ef3860dd956ec780895b2445b8af1d377 assets/more_orn_plants/models/item/purple_white_peony.json
 ec2cc181651492201813f3afab72f34536f284a0 assets/more_orn_plants/models/item/red_azalea.json
 259d0b9fe2e98cd27a438273139fa90371aa6659 assets/more_orn_plants/models/item/red_chinese_wisteria.json

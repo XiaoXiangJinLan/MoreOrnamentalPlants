@@ -288,11 +288,13 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_CHINESE_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_CHINESE_ROSE.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PURPLE_CHINESE_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_PINK_CHINESE_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_YELLOW_CHINESE_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_WHITE_CHINESE_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_WHITE_CHINESE_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PURPLE_WHITE_CHINESE_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CRAPE_MYRTLE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_CRAPE_MYRTLE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_CRAPE_MYRTLE.get().asItem(), 0.65F);
@@ -337,6 +339,7 @@ public class MoreOrnPlants
                 Map.entry(ModBlocks.PINK_CHINESE_ROSE.get().asItem(), ModBlocks.CUT_PINK_ROSE.get().asItem()),
                 Map.entry(ModBlocks.YELLOW_CHINESE_ROSE.get().asItem(), ModBlocks.CUT_YELLOW_ROSE.get().asItem()),
                 Map.entry(ModBlocks.WHITE_CHINESE_ROSE.get().asItem(), ModBlocks.CUT_WHITE_ROSE.get().asItem()),
+                Map.entry(ModBlocks.PURPLE_CHINESE_ROSE.get().asItem(), ModBlocks.CUT_PURPLE_ROSE.get().asItem()),
                 Map.entry(ModBlocks.BAOHUA_CHINESE_ROSE.get().asItem(), ModBlocks.CUT_BAOHUA_CHINESE_ROSE.get().asItem()),
                 Map.entry(ModBlocks.COTTON_ROSE.get().asItem(), ModBlocks.CUT_COTTON_ROSE.get().asItem()),
                 Map.entry(ModBlocks.PEONY.get().asItem(), ModBlocks.CUT_PEONY.get().asItem()),

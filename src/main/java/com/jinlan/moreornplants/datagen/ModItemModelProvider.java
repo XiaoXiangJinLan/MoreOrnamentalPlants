@@ -366,11 +366,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         tallCrossItem(ModBlocks.PINK_CHINESE_ROSE);
         tallCrossItem(ModBlocks.YELLOW_CHINESE_ROSE);
         tallCrossItem(ModBlocks.WHITE_CHINESE_ROSE);
+        tallCrossItem(ModBlocks.PURPLE_CHINESE_ROSE);
         tallCrossItem(ModBlocks.RED_PINK_CHINESE_ROSE);
         tallCrossItem(ModBlocks.RED_YELLOW_CHINESE_ROSE);
         tallCrossItem(ModBlocks.RED_WHITE_CHINESE_ROSE);
         tallCrossItem(ModBlocks.PINK_WHITE_CHINESE_ROSE);
         tallCrossItem(ModBlocks.YELLOW_WHITE_CHINESE_ROSE);
+        tallCrossItem(ModBlocks.PURPLE_WHITE_CHINESE_ROSE);
         tallCrossItem(ModBlocks.BAOHUA_CHINESE_ROSE);
         tallCrossItem(ModBlocks.CRAPE_MYRTLE);
         tallCrossItem(ModBlocks.RED_CRAPE_MYRTLE);
@@ -400,6 +402,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.CUT_PINK_ROSE);
         flowerItem(ModBlocks.CUT_YELLOW_ROSE);
         flowerItem(ModBlocks.CUT_WHITE_ROSE);
+        flowerItem(ModBlocks.CUT_PURPLE_ROSE);
         flowerItem(ModBlocks.CUT_BAOHUA_CHINESE_ROSE);
         flowerItem(ModBlocks.CUT_WINTERSWEET);
         flowerItem(ModBlocks.CUT_COTTON_ROSE);

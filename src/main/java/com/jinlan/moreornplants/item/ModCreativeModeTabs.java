@@ -196,6 +196,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CUT_PINK_ROSE.get());
                         pOutput.accept(ModBlocks.CUT_YELLOW_ROSE.get());
                         pOutput.accept(ModBlocks.CUT_WHITE_ROSE.get());
+                        pOutput.accept(ModBlocks.CUT_PURPLE_ROSE.get());
                         pOutput.accept(ModBlocks.CUT_WINTERSWEET.get());
                         pOutput.accept(ModBlocks.CUT_COTTON_ROSE.get());
                         pOutput.accept(ModBlocks.FOUNTAIN_GRASS.get());
@@ -241,11 +242,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PINK_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.YELLOW_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.WHITE_CHINESE_ROSE.get());
+                        pOutput.accept(ModBlocks.PURPLE_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.RED_PINK_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.RED_YELLOW_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.RED_WHITE_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.PINK_WHITE_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get());
+                        pOutput.accept(ModBlocks.PURPLE_WHITE_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE.get());
                         pOutput.accept(ModBlocks.RED_CRAPE_MYRTLE.get());
                         pOutput.accept(ModBlocks.PINK_CRAPE_MYRTLE.get());

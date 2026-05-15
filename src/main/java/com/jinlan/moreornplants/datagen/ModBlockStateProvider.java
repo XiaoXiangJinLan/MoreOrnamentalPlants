@@ -819,6 +819,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_yellow_chinese_rose")).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_WHITE_CHINESE_ROSE.get(), models().singleTexture("potted_white_chinese_rose", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_white_chinese_rose")).renderType("cutout"));
+        simpleBlock(ModBlocks.POTTED_PURPLE_CHINESE_ROSE.get(), models().singleTexture("potted_purple_chinese_rose", new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_purple_chinese_rose")).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_RED_PINK_CHINESE_ROSE.get(), models().singleTexture("potted_red_pink_chinese_rose", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_red_pink_chinese_rose")).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_RED_YELLOW_CHINESE_ROSE.get(), models().singleTexture("potted_red_yellow_chinese_rose", new ResourceLocation("flower_pot_cross"), "plant",
@@ -829,6 +831,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_pink_white_chinese_rose")).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_YELLOW_WHITE_CHINESE_ROSE.get(), models().singleTexture("potted_yellow_white_chinese_rose", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_yellow_white_chinese_rose")).renderType("cutout"));
+        simpleBlock(ModBlocks.POTTED_PURPLE_WHITE_CHINESE_ROSE.get(), models().singleTexture("potted_purple_white_chinese_rose", new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_purple_white_chinese_rose")).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_BAOHUA_CHINESE_ROSE.get(), models().singleTexture("potted_baohua_chinese_rose", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_baohua_chinese_rose")).renderType("cutout"));
         tallCrossBlock(ModBlocks.WINTERSWEET);
@@ -907,6 +911,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.CUT_WHITE_ROSE);
         simpleBlock(ModBlocks.POTTED_CUT_WHITE_ROSE.get(), models().singleTexture("potted_cut_white_rose", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CUT_WHITE_ROSE.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.CUT_PURPLE_ROSE);
+        simpleBlock(ModBlocks.POTTED_CUT_PURPLE_ROSE.get(), models().singleTexture("potted_cut_purple_rose", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.CUT_PURPLE_ROSE.get())).renderType("cutout"));
         flowerBlock(ModBlocks.CUT_BAOHUA_CHINESE_ROSE);
         simpleBlock(ModBlocks.POTTED_CUT_BAOHUA_CHINESE_ROSE.get(), models().singleTexture("potted_cut_baohua_chinese_rose", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CUT_BAOHUA_CHINESE_ROSE.get())).renderType("cutout"));
