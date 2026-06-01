@@ -474,6 +474,18 @@
     "more_orn_plants:versicolor_camellia": {
       "chance": 0.65
     },
+    "more_orn_plants:tall_camellia": {
+      "chance": 0.65
+    },
+    "more_orn_plants:tall_white_camellia": {
+      "chance": 0.65
+    },
+    "more_orn_plants:tall_pink_camellia": {
+      "chance": 0.65
+    },
+    "more_orn_plants:tall_versicolor_camellia": {
+      "chance": 0.65
+    },
     "more_orn_plants:camellia_leaves": {
       "chance": 0.3
     },

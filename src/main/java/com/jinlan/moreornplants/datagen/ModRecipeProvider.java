@@ -877,7 +877,45 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.WHITE_CAMELLIA)
                 .unlockedBy(getHasName(ModBlocks.CAMELLIA), has(ModBlocks.CAMELLIA))
                 .unlockedBy(getHasName(ModBlocks.WHITE_CAMELLIA), has(ModBlocks.WHITE_CAMELLIA))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "versicolor_camellia_from_camellia");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TALL_VERSICOLOR_CAMELLIA, 2)
+                .requires(ModBlocks.TALL_CAMELLIA)
+                .requires(ModBlocks.TALL_WHITE_CAMELLIA)
+                .unlockedBy(getHasName(ModBlocks.TALL_CAMELLIA), has(ModBlocks.TALL_CAMELLIA))
+                .unlockedBy(getHasName(ModBlocks.TALL_WHITE_CAMELLIA), has(ModBlocks.TALL_WHITE_CAMELLIA))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "tall_versicolor_camellia_from_tall_camellia");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TALL_CAMELLIA, 2)
+                .requires(ModBlocks.CAMELLIA, 2)
+                .unlockedBy(getHasName(ModBlocks.CAMELLIA), has(ModBlocks.CAMELLIA))
                 .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CAMELLIA, 2)
+                .requires(ModBlocks.TALL_CAMELLIA, 2)
+                .unlockedBy(getHasName(ModBlocks.TALL_CAMELLIA), has(ModBlocks.TALL_CAMELLIA))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TALL_WHITE_CAMELLIA, 2)
+                .requires(ModBlocks.WHITE_CAMELLIA, 2)
+                .unlockedBy(getHasName(ModBlocks.WHITE_CAMELLIA), has(ModBlocks.WHITE_CAMELLIA))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.WHITE_CAMELLIA, 2)
+                .requires(ModBlocks.TALL_WHITE_CAMELLIA, 2)
+                .unlockedBy(getHasName(ModBlocks.TALL_WHITE_CAMELLIA), has(ModBlocks.TALL_WHITE_CAMELLIA))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TALL_PINK_CAMELLIA, 2)
+                .requires(ModBlocks.PINK_CAMELLIA, 2)
+                .unlockedBy(getHasName(ModBlocks.PINK_CAMELLIA), has(ModBlocks.PINK_CAMELLIA))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PINK_CAMELLIA, 2)
+                .requires(ModBlocks.TALL_PINK_CAMELLIA, 2)
+                .unlockedBy(getHasName(ModBlocks.TALL_PINK_CAMELLIA), has(ModBlocks.TALL_PINK_CAMELLIA))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.TALL_VERSICOLOR_CAMELLIA, 2)
+                .requires(ModBlocks.VERSICOLOR_CAMELLIA, 2)
+                .unlockedBy(getHasName(ModBlocks.VERSICOLOR_CAMELLIA), has(ModBlocks.VERSICOLOR_CAMELLIA))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "tall_versicolor_camellia_from_versicolor_camellia");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_CAMELLIA, 2)
+                .requires(ModBlocks.TALL_VERSICOLOR_CAMELLIA, 2)
+                .unlockedBy(getHasName(ModBlocks.TALL_VERSICOLOR_CAMELLIA), has(ModBlocks.TALL_VERSICOLOR_CAMELLIA))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "versicolor_camellia_from_tall_versicolor_camellia");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLD_BACKED_SCARLET_MUM, 2)
                 .requires(ModBlocks.CHRYSANTHEMUM)

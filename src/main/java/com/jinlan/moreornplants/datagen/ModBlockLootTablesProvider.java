@@ -938,6 +938,14 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.BAOHUA_CHINESE_ROSE.get(), createSinglePropConditionTable(ModBlocks.BAOHUA_CHINESE_ROSE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.TALL_CAMELLIA.get(), createSinglePropConditionTable(ModBlocks.TALL_CAMELLIA.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.TALL_WHITE_CAMELLIA.get(), createSinglePropConditionTable(ModBlocks.TALL_WHITE_CAMELLIA.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.TALL_PINK_CAMELLIA.get(), createSinglePropConditionTable(ModBlocks.TALL_PINK_CAMELLIA.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.TALL_VERSICOLOR_CAMELLIA.get(), createSinglePropConditionTable(ModBlocks.TALL_VERSICOLOR_CAMELLIA.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.CRAPE_MYRTLE.get(), createSinglePropConditionTable(ModBlocks.CRAPE_MYRTLE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.RED_CRAPE_MYRTLE.get(), createSinglePropConditionTable(ModBlocks.RED_CRAPE_MYRTLE.get(),

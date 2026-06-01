@@ -250,6 +250,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PINK_WHITE_CHINESE_ROSE);
                         pOutput.accept(ModBlocks.YELLOW_WHITE_CHINESE_ROSE);
                         pOutput.accept(ModBlocks.PURPLE_WHITE_CHINESE_ROSE);
+                        pOutput.accept(ModBlocks.TALL_CAMELLIA);
+                        pOutput.accept(ModBlocks.TALL_PINK_CAMELLIA);
+                        pOutput.accept(ModBlocks.TALL_WHITE_CAMELLIA);
+                        pOutput.accept(ModBlocks.TALL_VERSICOLOR_CAMELLIA);
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE);
                         pOutput.accept(ModBlocks.RED_CRAPE_MYRTLE);
                         pOutput.accept(ModBlocks.PINK_CRAPE_MYRTLE);

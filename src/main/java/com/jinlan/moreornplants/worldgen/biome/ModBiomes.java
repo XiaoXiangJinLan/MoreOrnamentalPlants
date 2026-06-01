@@ -16,7 +16,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.biome.*;
 import net.minecraft.world.level.levelgen.GenerationStep;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 public class ModBiomes {
     public static final ResourceKey<Biome> RED_MEI_FOREST = ResourceKey.create(Registries.BIOME,
@@ -100,9 +99,9 @@ public class ModBiomes {
         context.register(COLORED_FOREST, coloredForest(context));
         context.register(FLOWERS_GROVE, flowersGrove(context, false));
         context.register(CRABAPPLE_GROVE, flowersGrove(context, true));
-        context.register(CAMELLIA_VALLEY, camelliaValley(context, CamelliaType.WHITE, CamelliaTreeType.WHITE));
-        context.register(RED_CAMELLIA_VALLEY, camelliaValley(context, CamelliaType.RED, CamelliaTreeType.RED));
-        context.register(PINK_CAMELLIA_VALLEY, camelliaValley(context, CamelliaType.PINK, CamelliaTreeType.PINK));
+        context.register(CAMELLIA_VALLEY, camelliaValley(context, false, false));
+        context.register(RED_CAMELLIA_VALLEY, camelliaValley(context, true, false));
+        context.register(PINK_CAMELLIA_VALLEY, camelliaValley(context, false, true));
         context.register(RED_HIGHLANDS, redHighlands(context));
         context.register(PEONY_SEA, peonyBiome(context, true));
         context.register(PEONY_MEADOWS, peonyBiome(context, false));
@@ -372,31 +371,7 @@ public class ModBiomes {
                 .build();
     }
 
-    public enum CamelliaType {
-        RED(ModPlacedFeatures.RED_CAMELLIA_PLACED),
-        WHITE(ModPlacedFeatures.WHITE_CAMELLIA_PLACED),
-        PINK(ModPlacedFeatures.PINK_CAMELLIA_PLACED);
-        private final ResourceKey<PlacedFeature> feature;
-        CamelliaType(ResourceKey<PlacedFeature> feature) {
-            this.feature = feature;
-        }
-        public ResourceKey<PlacedFeature> getFeature() {
-            return feature;
-        }
-    }
-    public enum CamelliaTreeType {
-        RED(ModPlacedFeatures.CAMELLIA_TREE_PLACED),
-        WHITE(ModPlacedFeatures.WHITE_CAMELLIA_TREE_PLACED),
-        PINK(ModPlacedFeatures.PINK_CAMELLIA_TREE_PLACED);
-        private final ResourceKey<PlacedFeature> feature;
-        CamelliaTreeType(ResourceKey<PlacedFeature> feature) {
-            this.feature = feature;
-        }
-        public ResourceKey<PlacedFeature> getFeature() {
-            return feature;
-        }
-    }
-    private static Biome camelliaValley(BootstrapContext<Biome> context, CamelliaType type, CamelliaTreeType tree) {
+    private static Biome camelliaValley(BootstrapContext<Biome> context, boolean isRed, boolean isPink) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
         BiomeDefaultFeatures.farmAnimals(spawnBuilder);
         BiomeDefaultFeatures.commonSpawns(spawnBuilder);
@@ -408,8 +383,19 @@ public class ModBiomes {
         globalOverworldGeneration(biomeBuilder);
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
         BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, type.getFeature());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, tree.getFeature());
+        if (isRed) {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_CAMELLIA_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_RED_CAMELLIA_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CAMELLIA_TREE_PLACED);
+        } else if (isPink) {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_CAMELLIA_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_PINK_CAMELLIA_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_CAMELLIA_TREE_PLACED);
+        } else {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_CAMELLIA_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_WHITE_CAMELLIA_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_CAMELLIA_TREE_PLACED);
+        }
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_APRICOT_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CAMPHOR_VALLEY_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.LOTUS_PLACED);

@@ -10,6 +10,7 @@ import net.minecraft.util.ParticleUtils;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import org.jetbrains.annotations.NotNull;
 
 public class CloudApricotLeavesBlock extends ModLeavesBlock {
@@ -41,11 +42,13 @@ public class CloudApricotLeavesBlock extends ModLeavesBlock {
 
         if (!level.isAreaLoaded(pos, 1)) return;
 
-        BlockPos belowPos = pos.below();
-        if (level.isEmptyBlock(belowPos)) {
-            int chance = level.getBiome(pos).is(ModTags.Biomes.APRICOT_BEARING) ? 12 : 60;
-            if (random.nextInt(chance) == 0) {
-                level.setBlock(belowPos, ModBlocks.CLOUD_APRICOT.get().defaultBlockState(), 2);
+        if (!state.getValue(BlockStateProperties.PERSISTENT)) {
+            BlockPos belowPos = pos.below();
+            if (level.isEmptyBlock(belowPos)) {
+                int chance = level.getBiome(pos).is(ModTags.Biomes.APRICOT_BEARING) ? 12 : 60;
+                if (random.nextInt(chance) == 0) {
+                    level.setBlock(belowPos, ModBlocks.CLOUD_APRICOT.get().defaultBlockState(), 2);
+                }
             }
         }
     }

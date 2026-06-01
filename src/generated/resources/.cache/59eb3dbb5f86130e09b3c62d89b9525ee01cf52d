@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-15T13:44:26.4374369	Loot Tables
+// 1.21.1	2026-06-01T19:56:48.7238778	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_table/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_table/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_table/blocks/apricot_fence.json
@@ -630,7 +630,11 @@ fb67133ca1ae543c40d07f8c603fb5d3464baeb9 data/more_orn_plants/loot_table/blocks/
 624c11d905d9442231a50b48a6911f5936ae400c data/more_orn_plants/loot_table/blocks/sweetgum_wood.json
 6671cc8c65bc46733ea509f3bf0be30573b4b68b data/more_orn_plants/loot_table/blocks/taiwan_cherry_leaves.json
 60f75323c77e78f5b67cb2bfb1cdf22ef47c0f6c data/more_orn_plants/loot_table/blocks/taiwan_cherry_sapling.json
+88fb40d8a4e2fc35513202db7f80cf19a2f302d4 data/more_orn_plants/loot_table/blocks/tall_camellia.json
 e4646272a4fc73a538ce1eeec381959cb753f1bb data/more_orn_plants/loot_table/blocks/tall_muxue_grass.json
+faeb97287474799e9f8e8bb375e7a7d2b952c5c4 data/more_orn_plants/loot_table/blocks/tall_pink_camellia.json
+50254843931275b89f0de5c5e2043acfe9bfe03f data/more_orn_plants/loot_table/blocks/tall_versicolor_camellia.json
+677a12912e0c914356dafddcd62bada4b1ef138f data/more_orn_plants/loot_table/blocks/tall_white_camellia.json
 c8dfee0bec5fbd098d7694d15086ac388ecb16ba data/more_orn_plants/loot_table/blocks/two_qiao_peony.json
 b42f4884a0c3c9fd4b7f670f3796414437f2e6b7 data/more_orn_plants/loot_table/blocks/upright_crabapple_leaves.json
 2624f97e7355e14d1c2cade859e83ddeb2e68337 data/more_orn_plants/loot_table/blocks/upright_crabapple_sapling.json

@@ -834,6 +834,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         tallCrossBlock(ModBlocks.WINTERSWEET);
         simpleBlock(ModBlocks.POTTED_WINTERSWEET.get(), models().singleTexture("potted_wintersweet", ResourceLocation.parse("flower_pot_cross"), "plant",
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "block/potted_wintersweet")).renderType("cutout"));
+        tallCrossBlock(ModBlocks.TALL_CAMELLIA);
+        tallCrossBlock(ModBlocks.TALL_WHITE_CAMELLIA);
+        tallCrossBlock(ModBlocks.TALL_PINK_CAMELLIA);
+        tallCrossBlock(ModBlocks.TALL_VERSICOLOR_CAMELLIA);
         tallCrossBlock(ModBlocks.COTTON_ROSE);
         tallCrossBlock(ModBlocks.CRAPE_MYRTLE);
         tallCrossBlock(ModBlocks.RED_CRAPE_MYRTLE);

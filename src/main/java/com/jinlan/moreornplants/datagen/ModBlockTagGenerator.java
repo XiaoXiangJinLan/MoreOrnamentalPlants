@@ -624,9 +624,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(CommonTags.Blocks.CHRYSANTHEMUM)
                 .addTag(CommonTags.Blocks.CYMBIDIUM)
                 .addTag(CommonTags.Blocks.HERBACEOUS_PEONY)
-                .addTag(CommonTags.Blocks.CAMELLIA)
                 .addTag(CommonTags.Blocks.RHODODENDRON)
                 .addTag(CommonTags.Blocks.NARCISSUS)
+                .add(ModBlocks.CAMELLIA.get(), ModBlocks.PINK_CAMELLIA.get(), ModBlocks.WHITE_CAMELLIA.get(), ModBlocks.VERSICOLOR_CAMELLIA.get())
                 .add(ModBlocks.WHITE_MOTH_ORCHID.get(), ModBlocks.PINK_MOTH_ORCHID.get(), ModBlocks.PURPLE_MOTH_ORCHID.get(), ModBlocks.GOLDEN_MOTH_ORCHID.get())
                 .add(ModBlocks.CUT_PEONY.get(), ModBlocks.CUT_LIGHT_PINK_PEONY.get(), ModBlocks.CUT_VIOLET_PINK_PEONY.get())
                 .add(ModBlocks.CUT_RED_PEONY.get(), ModBlocks.CUT_LIGHT_RED_PEONY.get(), ModBlocks.CUT_INK_RED_PEONY.get())
@@ -642,6 +642,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WINTERSWEET.get())
                 .addTag(CommonTags.Blocks.TREE_PEONY)
                 .addTag(CommonTags.Blocks.CHINESE_ROSE)
+                .add(ModBlocks.TALL_CAMELLIA.get(), ModBlocks.TALL_PINK_CAMELLIA.get(), ModBlocks.TALL_WHITE_CAMELLIA.get(), ModBlocks.TALL_VERSICOLOR_CAMELLIA.get())
                 .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
@@ -759,7 +760,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get(), ModBlocks.PINK_CHRYSANTHEMUM.get(), ModBlocks.LIGHT_PINK_CHRYSANTHEMUM.get());
 
         this.tag(CommonTags.Blocks.CAMELLIA)
-                .add(ModBlocks.CAMELLIA.get(), ModBlocks.PINK_CAMELLIA.get(), ModBlocks.WHITE_CAMELLIA.get(), ModBlocks.VERSICOLOR_CAMELLIA.get());
+                .add(ModBlocks.CAMELLIA.get(), ModBlocks.PINK_CAMELLIA.get(), ModBlocks.WHITE_CAMELLIA.get(), ModBlocks.VERSICOLOR_CAMELLIA.get())
+                .add(ModBlocks.TALL_CAMELLIA.get(), ModBlocks.TALL_PINK_CAMELLIA.get(), ModBlocks.TALL_WHITE_CAMELLIA.get(), ModBlocks.TALL_VERSICOLOR_CAMELLIA.get());
 
         this.tag(CommonTags.Blocks.AZALEA)
                 .add(Blocks.AZALEA, Blocks.FLOWERING_AZALEA)

@@ -12,13 +12,13 @@
                 "data": {
                   "Name": "more_orn_plants:spring_cymbidium"
                 },
-                "weight": 2
+                "weight": 3
               },
               {
                 "data": {
                   "Name": "more_orn_plants:camellia"
                 },
-                "weight": 2
+                "weight": 1
               },
               {
                 "data": {
@@ -30,13 +30,40 @@
                 "data": {
                   "Name": "more_orn_plants:pink_camellia"
                 },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:tall_camellia",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:tall_white_camellia",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:tall_pink_camellia",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
                 "weight": 2
               },
               {
                 "data": {
                   "Name": "more_orn_plants:chinese_narcissus"
                 },
-                "weight": 2
+                "weight": 3
               },
               {
                 "data": {

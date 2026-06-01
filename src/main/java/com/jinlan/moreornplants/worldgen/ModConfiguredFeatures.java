@@ -154,6 +154,9 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_CAMELLIA_KEY = registerKey("red_camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CAMELLIA_KEY = registerKey("white_camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_KEY = registerKey("pink_camellia_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_RED_CAMELLIA_KEY = registerKey("tall_red_camellia_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_WHITE_CAMELLIA_KEY = registerKey("tall_white_camellia_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_PINK_CAMELLIA_KEY = registerKey("tall_pink_camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_GROVE = registerKey("pink_camellia_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMELLIA_TREE = registerKey("camellia_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CAMELLIA_TREE = registerKey("white_camellia_tree");
@@ -549,6 +552,9 @@ public class ModConfiguredFeatures {
                                         .add(ModBlocks.ZHAO_PINK_PEONY.get().defaultBlockState(), 1)
                                         .add(ModBlocks.DOU_GREEN_PEONY.get().defaultBlockState(), 1)
                                         .add(ModBlocks.CHINESE_ROSE.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.TALL_CAMELLIA.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.TALL_WHITE_CAMELLIA.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.TALL_PINK_CAMELLIA.get().defaultBlockState(), 1)
                                         .add(ModBlocks.COTTON_ROSE.get().defaultBlockState(), 2)
                                         .add(ModBlocks.CRAPE_MYRTLE.get().defaultBlockState(), 2).build())),
                         BlockPredicate.allOf(
@@ -1061,6 +1067,27 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, TALL_RED_CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(64, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.TALL_CAMELLIA.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, TALL_WHITE_CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(64, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.TALL_WHITE_CAMELLIA.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, TALL_PINK_CAMELLIA_KEY, Feature.FLOWER, new RandomPatchConfiguration(64, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.TALL_PINK_CAMELLIA.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
         register(context, RED_AZALEA_KEY, Feature.FLOWER, new RandomPatchConfiguration(99, 6, 3,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -1129,16 +1156,18 @@ public class ModConfiguredFeatures {
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(ModBlocks.SPRING_CYMBIDIUM.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.CAMELLIA.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.SPRING_CYMBIDIUM.get().defaultBlockState(), 3)
+                                        .add(ModBlocks.CAMELLIA.get().defaultBlockState(), 1)
                                         .add(ModBlocks.WHITE_CAMELLIA.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.PINK_CAMELLIA.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.CHINESE_NARCISSUS.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.PINK_CAMELLIA.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.TALL_CAMELLIA.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.TALL_WHITE_CAMELLIA.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.TALL_PINK_CAMELLIA.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.CHINESE_NARCISSUS.get().defaultBlockState(), 3)
                                         .add(ModBlocks.GOLDEN_CHINESE_NARCISSUS.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-
 
         register(context, CHRYSANTHEMUM_GROVE, Feature.FLOWER, new RandomPatchConfiguration(26, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -1232,9 +1261,13 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
         register(context, PINK_CAMELLIA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(22, 4, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PINK_CAMELLIA.get())),
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.PINK_CAMELLIA.get().defaultBlockState(), 4)
+                                        .add(ModBlocks.TALL_PINK_CAMELLIA.get().defaultBlockState(), 5).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
         register(context, AZALEA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(22, 4, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,

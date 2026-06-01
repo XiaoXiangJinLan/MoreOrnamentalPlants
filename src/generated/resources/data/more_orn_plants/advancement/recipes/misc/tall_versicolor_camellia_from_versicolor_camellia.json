@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:tall_versicolor_camellia_from_versicolor_camellia"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_versicolor_camellia": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:versicolor_camellia"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_versicolor_camellia"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:tall_versicolor_camellia_from_versicolor_camellia"
+    ]
+  }
+}

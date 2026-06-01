@@ -240,7 +240,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.LUOYANG_RED_PEONY.asItem())
                 .add(ModBlocks.RED_PEONY.asItem(), ModBlocks.LIGHT_RED_PEONY.asItem(), ModBlocks.INK_RED_PEONY.asItem(), ModBlocks.VERMILION_PEONY.asItem())
                 .add(ModBlocks.CHINESE_ROSE.asItem())
-                .add(ModBlocks.CAMELLIA.asItem())
+                .add(ModBlocks.CAMELLIA.asItem(), ModBlocks.TALL_CAMELLIA.asItem())
                 .add(ModBlocks.RED_AZALEA.asItem(), ModBlocks.MAYING_RHODODENDRON.asItem())
                 .add(ModItems.SWEETGUM_LEAF_0.get(), ModItems.SWEETGUM_LEAF_1.get());
 
@@ -249,7 +249,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.ZHAO_PINK_PEONY.asItem())
                 .add(ModBlocks.PEONY.asItem(), ModBlocks.LIGHT_PINK_PEONY.asItem(), ModBlocks.VIOLET_PINK_PEONY.asItem(), ModBlocks.PINK_PEONY.asItem(), ModBlocks.MAUVE_PEONY.asItem())
                 .add(ModBlocks.PINK_CHINESE_ROSE.asItem())
-                .add(ModBlocks.PINK_CAMELLIA.asItem())
+                .add(ModBlocks.PINK_CAMELLIA.asItem(), ModBlocks.TALL_PINK_CAMELLIA.asItem())
                 .add(ModBlocks.PINK_RHODODENDRON.asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.asItem(), ModBlocks.SPRING_PETALS.asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE.asItem())
@@ -264,7 +264,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_CHRYSANTHEMUM.asItem())
                 .add(ModBlocks.WHITE_PEONY.asItem())
                 .add(ModBlocks.WHITE_CHINESE_ROSE.asItem(), ModBlocks.BAOHUA_CHINESE_ROSE.asItem())
-                .add(ModBlocks.WHITE_CAMELLIA.asItem())
+                .add(ModBlocks.WHITE_CAMELLIA.asItem(), ModBlocks.TALL_WHITE_CAMELLIA.asItem())
                 .add(ModBlocks.WHITE_LOTUS.asItem())
                 .add(ModBlocks.WHITE_FOUNTAIN_GRASS.asItem())
                 .add(ModBlocks.DEWDROP_RHODODENDRON.asItem(), ModBlocks.GREAT_WHITE_RHODODENDRON.asItem())
