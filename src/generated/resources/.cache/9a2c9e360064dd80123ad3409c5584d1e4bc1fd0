@@ -1,4 +1,4 @@
-// 1.20.1	2026-05-15T18:51:32.6336972	Item Models: more_orn_plants
+// 1.20.1	2026-06-01T21:16:12.1094131	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -373,6 +373,10 @@ ce72b82bdee2c6269eb6775575ba55ffa91415ac assets/more_orn_plants/models/item/swee
 afa4bca4aa7022fed8eb82f2dbdc9a913a89ed07 assets/more_orn_plants/models/item/sweetgum_stairs.json
 d12a57a131745d4b6d01e00c10c070854cd7f02b assets/more_orn_plants/models/item/sweetgum_trapdoor.json
 3b93bc53cc81fbd8c707be0bd98985020eae1808 assets/more_orn_plants/models/item/taiwan_cherry_sapling.json
+3a4475dbc82d316bdc17a194e90b21eaeb0f3196 assets/more_orn_plants/models/item/tall_camellia.json
+d2ad6f8ba4e23af057794b20c191097334248aa0 assets/more_orn_plants/models/item/tall_pink_camellia.json
+5ea081c1a175d401b5a14b2e925bf844a8577cb8 assets/more_orn_plants/models/item/tall_versicolor_camellia.json
+880f609b1e7beaef1eb821d884748d1094a6f840 assets/more_orn_plants/models/item/tall_white_camellia.json
 2822db6d403c6806e65e09288830357f7ca1c87f assets/more_orn_plants/models/item/two_qiao_peony.json
 518ac9a0bfc318aad33b19c6fffcd4e51d6f4011 assets/more_orn_plants/models/item/upright_crabapple_sapling.json
 13a5572f1d06f28e5be5747e88c186fb04ffaed9 assets/more_orn_plants/models/item/vermilion_peony.json

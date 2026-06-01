@@ -249,6 +249,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PINK_WHITE_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.PURPLE_WHITE_CHINESE_ROSE.get());
+                        pOutput.accept(ModBlocks.TALL_CAMELLIA.get());
+                        pOutput.accept(ModBlocks.TALL_PINK_CAMELLIA.get());
+                        pOutput.accept(ModBlocks.TALL_WHITE_CAMELLIA.get());
+                        pOutput.accept(ModBlocks.TALL_VERSICOLOR_CAMELLIA.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE.get());
                         pOutput.accept(ModBlocks.RED_CRAPE_MYRTLE.get());
                         pOutput.accept(ModBlocks.PINK_CRAPE_MYRTLE.get());

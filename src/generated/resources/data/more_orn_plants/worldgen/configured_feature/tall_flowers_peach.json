@@ -55,6 +55,33 @@
               },
               {
                 "data": {
+                  "Name": "more_orn_plants:tall_camellia",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:tall_white_camellia",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:tall_pink_camellia",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
                   "Name": "more_orn_plants:cotton_rose",
                   "Properties": {
                     "half": "lower"

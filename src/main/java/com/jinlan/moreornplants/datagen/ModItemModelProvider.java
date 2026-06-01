@@ -374,6 +374,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         tallCrossItem(ModBlocks.YELLOW_WHITE_CHINESE_ROSE);
         tallCrossItem(ModBlocks.PURPLE_WHITE_CHINESE_ROSE);
         tallCrossItem(ModBlocks.BAOHUA_CHINESE_ROSE);
+        tallCrossItem(ModBlocks.TALL_CAMELLIA);
+        tallCrossItem(ModBlocks.TALL_WHITE_CAMELLIA);
+        tallCrossItem(ModBlocks.TALL_PINK_CAMELLIA);
+        tallCrossItem(ModBlocks.TALL_VERSICOLOR_CAMELLIA);
         tallCrossItem(ModBlocks.CRAPE_MYRTLE);
         tallCrossItem(ModBlocks.RED_CRAPE_MYRTLE);
         tallCrossItem(ModBlocks.PINK_CRAPE_MYRTLE);

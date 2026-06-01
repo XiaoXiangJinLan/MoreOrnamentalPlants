@@ -783,6 +783,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.YELLOW_WHITE_CHINESE_ROSE.get())
                 .add(ModBlocks.PURPLE_WHITE_CHINESE_ROSE.get())
                 .add(ModBlocks.BAOHUA_CHINESE_ROSE.get())
+                .add(ModBlocks.TALL_CAMELLIA.get(), ModBlocks.TALL_PINK_CAMELLIA.get())
+                .add(ModBlocks.TALL_WHITE_CAMELLIA.get(), ModBlocks.TALL_VERSICOLOR_CAMELLIA.get())
                 .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())

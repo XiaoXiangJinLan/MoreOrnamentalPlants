@@ -261,6 +261,10 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_CAMELLIA.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_CAMELLIA.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.VERSICOLOR_CAMELLIA.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.TALL_CAMELLIA.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.TALL_PINK_CAMELLIA.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.TALL_WHITE_CAMELLIA.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.TALL_VERSICOLOR_CAMELLIA.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_AZALEA.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.MAYING_RHODODENDRON.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.DEWDROP_RHODODENDRON.get().asItem(), 0.65F);

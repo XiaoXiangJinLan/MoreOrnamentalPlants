@@ -6,10 +6,24 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "more_orn_plants:pink_camellia"
-            }
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "more_orn_plants:pink_camellia"
+                },
+                "weight": 4
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:tall_pink_camellia",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 5
+              }
+            ]
           }
         }
       },
@@ -22,6 +36,15 @@
               {
                 "type": "minecraft:matching_blocks",
                 "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
