@@ -243,10 +243,11 @@ more_orn_plants:chinese_rose:half=lower more_orn_plants:pink_chinese_rose:half=l
 more_orn_plants:white_chinese_rose:half=lower more_orn_plants:red_pink_chinese_rose:half=lower more_orn_plants:red_yellow_chinese_rose:half=lower 
 more_orn_plants:red_white_chinese_rose:half=lower more_orn_plants:pink_white_chinese_rose:half=lower more_orn_plants:yellow_white_chinese_rose:half=lower 
 more_orn_plants:baohua_chinese_rose:half=lower more_orn_plants:cotton_rose:half=lower more_orn_plants:lotus:half=lower more_orn_plants:white_lotus:half=lower 
-more_orn_plants:lotus_leaf:half=lower more_orn_plants:winter_cymbidium:half=lower more_orn_plants:miscanthus:half=lower 
-more_orn_plants:golden_miscanthus:half=lower more_orn_plants:crape_myrtle:half=lower more_orn_plants:red_crape_myrtle:half=lower 
-more_orn_plants:pink_crape_myrtle:half=lower more_orn_plants:white_crape_myrtle:half=lower more_orn_plants:wintersweet:half=lower
-more_orn_plants:hardy_banana:half=lower
+more_orn_plants:tall_camellia:half=lower more_orn_plants:tall_pink_camellia:half=lower more_orn_plants:tall_white_camellia:half=lower 
+more_orn_plants:tall_versicolor_camellia:half=lower more_orn_plants:lotus_leaf:half=lower more_orn_plants:winter_cymbidium:half=lower 
+more_orn_plants:miscanthus:half=lower more_orn_plants:golden_miscanthus:half=lower more_orn_plants:crape_myrtle:half=lower 
+more_orn_plants:red_crape_myrtle:half=lower more_orn_plants:pink_crape_myrtle:half=lower more_orn_plants:white_crape_myrtle:half=lower 
+more_orn_plants:wintersweet:half=lower more_orn_plants:hardy_banana:half=lower
 
 #_tall flowers:half=upper_#  
 more_orn_plants:yao_huang_peony:half=upper more_orn_plants:wei_zi_peony:half=upper more_orn_plants:zhao_pink_peony:half=upper more_orn_plants:dou_green_peony:half=upper
@@ -255,10 +256,11 @@ more_orn_plants:chinese_rose:half=upper more_orn_plants:pink_chinese_rose:half=u
 more_orn_plants:white_chinese_rose:half=upper more_orn_plants:red_pink_chinese_rose:half=upper more_orn_plants:red_yellow_chinese_rose:half=upper 
 more_orn_plants:red_white_chinese_rose:half=upper more_orn_plants:pink_white_chinese_rose:half=upper more_orn_plants:yellow_white_chinese_rose:half=upper 
 more_orn_plants:baohua_chinese_rose:half=upper more_orn_plants:cotton_rose:half=upper more_orn_plants:lotus:half=upper more_orn_plants:white_lotus:half=upper 
-more_orn_plants:lotus_leaf:half=upper more_orn_plants:winter_cymbidium:half=upper more_orn_plants:miscanthus:half=upper 
-more_orn_plants:golden_miscanthus:half=upper more_orn_plants:crape_myrtle:half=upper more_orn_plants:red_crape_myrtle:half=upper 
-more_orn_plants:pink_crape_myrtle:half=upper more_orn_plants:white_crape_myrtle:half=upper more_orn_plants:wintersweet:half=upper
-more_orn_plants:hardy_banana:half=upper
+more_orn_plants:tall_camellia:half=upper more_orn_plants:tall_pink_camellia:half=upper more_orn_plants:tall_white_camellia:half=upper 
+more_orn_plants:tall_versicolor_camellia:half=upper more_orn_plants:lotus_leaf:half=upper more_orn_plants:winter_cymbidium:half=upper 
+more_orn_plants:miscanthus:half=upper more_orn_plants:golden_miscanthus:half=upper more_orn_plants:crape_myrtle:half=upper 
+more_orn_plants:red_crape_myrtle:half=upper more_orn_plants:pink_crape_myrtle:half=upper more_orn_plants:white_crape_myrtle:half=upper 
+more_orn_plants:wintersweet:half=upper more_orn_plants:hardy_banana:half=upper
 
 #_vine_#  
 more_orn_plants:red_weeping_mei more_orn_plants:red_weeping_mei_plant more_orn_plants:white_weeping_mei more_orn_plants:white_weeping_mei_plant 
