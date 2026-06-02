@@ -586,7 +586,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         flowerBlock(ModBlocks.WEEPING_CRABAPPLE);
         crossFruitBlock();
-        fruitBlock(ModBlocks.CLOUD_APRICOT, "apricot", "apricot");
+        fruitBlock(ModBlocks.CLOUD_APRICOT, "peach", "peach");
         fruitBlock(ModBlocks.IMMORTAL_PEACH, "peach", "peach");
         fruitBlock(ModBlocks.MEI, "mei_fruit", "mei");
 

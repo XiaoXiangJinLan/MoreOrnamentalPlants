@@ -1,7 +1,7 @@
 {
-  "parent": "more_orn_plants:block/apricot",
+  "parent": "more_orn_plants:block/peach",
   "render_type": "minecraft:cutout",
   "textures": {
-    "apricot": "more_orn_plants:block/cloud_apricot_age_1"
+    "peach": "more_orn_plants:block/cloud_apricot_age_1"
   }
 }
