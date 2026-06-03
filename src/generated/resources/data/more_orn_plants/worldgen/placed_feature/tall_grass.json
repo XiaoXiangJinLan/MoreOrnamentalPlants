@@ -1,9 +1,11 @@
 {
-  "feature": "more_orn_plants:golden_miscanthus",
+  "feature": "more_orn_plants:tall_grass",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 16
+      "type": "minecraft:noise_threshold_count",
+      "above_noise": 1,
+      "below_noise": 2,
+      "noise_level": -0.8
     },
     {
       "type": "minecraft:in_square"

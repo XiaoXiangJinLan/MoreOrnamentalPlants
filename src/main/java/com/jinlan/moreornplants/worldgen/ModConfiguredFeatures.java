@@ -243,6 +243,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FERN_1 = registerKey("grass_fern_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FERN_2 = registerKey("grass_fern_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_0 = registerKey("grass_0");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_GRASS = registerKey("tall_grass");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DEAD_BUSH = registerKey("dead_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEACH_PETALS = registerKey("peach_petals");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEACH_PETALS_RIVER = registerKey("peach_petals_river");
@@ -1913,6 +1914,13 @@ public class ModConfiguredFeatures {
                         new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.SHORT_GRASS)),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+        register(context, TALL_GRASS, Feature.RANDOM_PATCH, new RandomPatchConfiguration(36, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.TALL_GRASS)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
         register(context, DEAD_BUSH, Feature.RANDOM_PATCH, new RandomPatchConfiguration(4, 6, 3,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
