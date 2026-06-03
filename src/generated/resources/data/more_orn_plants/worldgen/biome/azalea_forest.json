@@ -89,7 +89,8 @@
       "more_orn_plants:pink_rhododendron_placed",
       "more_orn_plants:chinese_azalea_placed",
       "more_orn_plants:azalea_placed",
-      "more_orn_plants:grass_highland"
+      "more_orn_plants:grass_highland",
+      "more_orn_plants:tall_grass"
     ],
     [
       "minecraft:freeze_top_layer"
