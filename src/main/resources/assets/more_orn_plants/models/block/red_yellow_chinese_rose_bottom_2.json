@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "more_orn_plants:block/red_yellow_chinese_rose_bottom_2"
+    "cross": "more_orn_plants:block/red_yellow_chinese_rose_bottom"
   },
   "render_type": "cutout"
 }
