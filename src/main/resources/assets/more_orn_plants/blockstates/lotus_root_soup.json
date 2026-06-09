@@ -1,7 +1,8 @@
 {
   "variants": {
     "": {
-      "model": "more_orn_plants:block/lotus_root_soup"
+      "model": "more_orn_plants:block/lotus_root_soup",
+      "y": 90
     }
   }
 }
