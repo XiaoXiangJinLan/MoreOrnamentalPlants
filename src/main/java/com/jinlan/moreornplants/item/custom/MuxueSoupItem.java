@@ -2,14 +2,14 @@ package com.jinlan.moreornplants.item.custom;
 
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.BowlFoodItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.NotNull;
 
-public class MuxueSoupItem extends BowlFoodItem {
-    public MuxueSoupItem(Properties properties) {
-        super(properties);
+public class MuxueSoupItem extends BowlFoodBlockItem {
+    public MuxueSoupItem(Block block, Properties properties) {
+        super(block, properties);
     }
 
     @Override

@@ -7,11 +7,10 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
-public class MeiBlock extends ApricotBlock {
+public class MeiBlock extends PeachBlock {
     public MeiBlock(Properties properties) {
         super(properties);
     }

@@ -1,0 +1,7 @@
+{
+  "parent": "more_orn_plants:block/mei_fruit",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "mei": "more_orn_plants:block/mei_age_1"
+  }
+}

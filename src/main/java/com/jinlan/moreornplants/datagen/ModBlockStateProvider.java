@@ -1097,14 +1097,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
         }
         ModelFile age0Model = models().cross(baseName + "_age_0", modLoc("block/" + baseName + "_age_0"))
                 .renderType("cutout");
-        ModelFile age1Model = models().withExistingParent(baseName + "_age_1", modLoc("block/" + parentModelPath))
+        ModelFile age1Model = models().withExistingParent(baseName + "_age_1", modLoc("block/" + parentModelPath + "_hanging"))
+                .texture(textureKey, modLoc("block/" + baseName + "_age_1"))
+                .renderType("cutout");
+        ModelFile standingModel = models().withExistingParent(baseName + "_standing", modLoc("block/" + parentModelPath))
                 .texture(textureKey, modLoc("block/" + baseName + "_age_1"))
                 .renderType("cutout");
         getVariantBuilder(block.get())
-                .partialState().with(PeachBlock.AGE, 0)
+                .partialState().with(PeachBlock.HANGING, true).with(PeachBlock.AGE, 0)
                 .modelForState().modelFile(age0Model).addModel()
-                .partialState().with(PeachBlock.AGE, 1)
-                .modelForState().modelFile(age1Model).addModel();
+                .partialState().with(PeachBlock.HANGING, true).with(PeachBlock.AGE, 1)
+                .modelForState().modelFile(age1Model).addModel()
+                .partialState().with(PeachBlock.HANGING, false)
+                .modelForState().modelFile(standingModel).addModel();
     }
 
     private void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
