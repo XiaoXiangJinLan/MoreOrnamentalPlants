@@ -10,7 +10,7 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
-public class MeiBlock extends ApricotBlock {
+public class MeiBlock extends PeachBlock {
     public MeiBlock(Properties properties) {
         super(properties);
     }

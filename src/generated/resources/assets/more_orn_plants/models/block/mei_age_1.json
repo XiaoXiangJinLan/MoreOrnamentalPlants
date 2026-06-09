@@ -1,5 +1,5 @@
 {
-  "parent": "more_orn_plants:block/mei_fruit",
+  "parent": "more_orn_plants:block/mei_fruit_hanging",
   "render_type": "minecraft:cutout",
   "textures": {
     "mei": "more_orn_plants:block/mei_age_1"

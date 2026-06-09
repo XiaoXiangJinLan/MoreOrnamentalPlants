@@ -7,7 +7,9 @@
         "block": {
           "Name": "more_orn_plants:crabapple",
           "Properties": {
-            "age": "1"
+            "age": "1",
+            "hanging": "true",
+            "waterlogged": "false"
           }
         },
         "probability": 0.6

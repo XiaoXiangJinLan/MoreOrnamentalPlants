@@ -658,19 +658,37 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                         .add(LootItem.lootTableItem(ModItems.CLOUD_APRICOT.get()))
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
-                                        .hasProperty(PeachBlock.AGE, 1)))));
+                                        .hasProperty(PeachBlock.HANGING, true)
+                                        .hasProperty(PeachBlock.AGE, 1))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.CLOUD_APRICOT.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.HANGING, false)))));
         this.add(ModBlocks.IMMORTAL_PEACH.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModItems.IMMORTAL_PEACH.get()))
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
-                                        .hasProperty(PeachBlock.AGE, 1)))));
+                                        .hasProperty(PeachBlock.HANGING, true)
+                                        .hasProperty(PeachBlock.AGE, 1))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.IMMORTAL_PEACH.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.HANGING, false)))));
         this.add(ModBlocks.MEI.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModItems.MEI.get()))
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
-                                        .hasProperty(PeachBlock.AGE, 1)))));
+                                        .hasProperty(PeachBlock.HANGING, true)
+                                        .hasProperty(PeachBlock.AGE, 1))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.MEI.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.HANGING, false)))));
 
         this.dropSelf(ModBlocks.CHRYSANTHEMUM.get());
         this.add(ModBlocks.POTTED_CHRYSANTHEMUM.get(),
@@ -1116,6 +1134,10 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ZIYING_BEADLIGHT.get());
         this.dropSelf(ModBlocks.SUYU_BEADLIGHT.get());
 
+        this.dropSelf(ModBlocks.BAMBOO_SHOOTS_SOUP.get());
+        this.dropSelf(ModBlocks.LOTUS_ROOT_SOUP.get());
+        this.dropSelf(ModBlocks.LOTUS_SEED_SOUP.get());
+        this.dropSelf(ModBlocks.MUXUE_SOUP.get());
     }
 
     private LootTable.Builder createLotusDrops(Block lotusBlock) {

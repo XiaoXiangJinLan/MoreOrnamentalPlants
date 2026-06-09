@@ -1,0 +1,7 @@
+{
+  "parent": "more_orn_plants:block/soup",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "soup": "more_orn_plants:block/lotus_root_soup"
+  }
+}

@@ -9,6 +9,7 @@ import com.jinlan.moreornplants.block.FlowerBlocks.*;
 import com.jinlan.moreornplants.block.LeavesBlocks.*;
 import com.jinlan.moreornplants.block.WaterPlantsBlock.MuxueGrassBlock;
 import com.jinlan.moreornplants.block.WaterPlantsBlock.TallMuxueGrassBlock;
+import com.jinlan.moreornplants.block.foodBlock.SoupBlock;
 import com.jinlan.moreornplants.block.saplingBlocks.*;
 import com.jinlan.moreornplants.block.tree.ModTreeGrower;
 import com.jinlan.moreornplants.block.WeepingBlocks.*;
@@ -1498,6 +1499,15 @@ public class ModBlocks {
             registerBlock("ziying_beadlight", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PEARLESCENT_FROGLIGHT).sound(SoundType.METAL)));
     public static final DeferredBlock<Block> SUYU_BEADLIGHT =
             registerBlock("suyu_beadlight", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.VERDANT_FROGLIGHT).sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> BAMBOO_SHOOTS_SOUP =
+            BLOCKS.register("bamboo_shoots_soup", () -> new SoupBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> LOTUS_ROOT_SOUP =
+            BLOCKS.register("lotus_root_soup", () -> new SoupBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> LOTUS_SEED_SOUP =
+            BLOCKS.register("lotus_seed_soup", () -> new SoupBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> MUXUE_SOUP =
+            BLOCKS.register("muxue_soup", () -> new SoupBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
 
     private static Block log(MapColor topMapColor, MapColor sideMapColor) {
         return new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(p_152624_ -> p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)
