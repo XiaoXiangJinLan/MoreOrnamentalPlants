@@ -267,11 +267,11 @@ public class ModItems {
     public static final RegistryObject<Item> ENCHANTED_GOLDEN_CRABAPPLE =
             ITEMS.register("enchanted_golden_crabapple", () -> new EnchantedGoldenAppleItem(new Item.Properties().rarity(Rarity.EPIC).food(ModFoods.ENCHANTED_GOLDEN_CRABAPPLE)));
     public static final RegistryObject<Item> CLOUD_APRICOT =
-            ITEMS.register("cloud_apricot", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.APRICOT)));
+            ITEMS.register("cloud_apricot", () -> new FoodBlockItem(ModBlocks.CLOUD_APRICOT.get(), new Item.Properties().rarity(Rarity.RARE).food(ModFoods.APRICOT)));
     public static final RegistryObject<Item> IMMORTAL_PEACH =
-            ITEMS.register("immortal_peach", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.PEACH)));
+            ITEMS.register("immortal_peach", () -> new FoodBlockItem(ModBlocks.IMMORTAL_PEACH.get(), new Item.Properties().rarity(Rarity.RARE).food(ModFoods.PEACH)));
     public static final RegistryObject<Item> MEI =
-            ITEMS.register("mei", () -> new Item(new Item.Properties().food(ModFoods.MEI)));
+            ITEMS.register("mei", () -> new FoodBlockItem(ModBlocks.MEI.get(), new Item.Properties().food(ModFoods.MEI)));
     public static final RegistryObject<Item> GOLDEN_MEI =
             ITEMS.register("golden_mei", () -> new Item(new Item.Properties().food(ModFoods.GOLDEN_MEI)));
 
