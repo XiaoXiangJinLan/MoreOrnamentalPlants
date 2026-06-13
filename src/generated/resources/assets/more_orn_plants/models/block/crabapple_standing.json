@@ -1,0 +1,7 @@
+{
+  "parent": "more_orn_plants:block/crabapple",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "crabapple": "more_orn_plants:block/crabapple"
+  }
+}

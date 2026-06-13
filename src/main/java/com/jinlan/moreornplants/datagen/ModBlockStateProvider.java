@@ -3,10 +3,7 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
-import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
-import com.jinlan.moreornplants.block.WeepingBlocks.WeepingMeiPlantBlock;
-import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaBlock;
-import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaPlantBlock;
+import com.jinlan.moreornplants.block.WeepingBlocks.*;
 import com.jinlan.moreornplants.block.xiangnangBlocks.MeiXiangnangBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
 import net.minecraft.core.Direction;
@@ -1039,8 +1036,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         for (int age = 0; age <= 1; age++) {
             ModelFile model = models().cross(baseName + "_age_" + age,
                     modLoc("block/" + baseName + "_age_" + age)).renderType("cutout");
-            builder.partialState().with(PeachBlock.AGE, age)
-                    .modelForState().modelFile(model).addModel();
+            ModelFile standingModel = models().withExistingParent(baseName + "_standing", modLoc("block/crabapple"))
+                    .texture("crabapple", modLoc("block/" + baseName))
+                    .renderType("cutout");
+            for (Direction direction : Direction.Plane.HORIZONTAL) {
+                int rotationY;
+                switch (direction) {
+                    case EAST -> rotationY = 90;
+                    case SOUTH -> rotationY = 180;
+                    case WEST -> rotationY = 270;
+                    default -> rotationY = 0;
+                }
+                builder.partialState().with(PeachBlock.HANGING, true).with(PeachBlock.AGE, age).with(CrabappleBlock.FACING, direction)
+                        .modelForState().modelFile(model).rotationY(rotationY).addModel()
+                        .partialState().with(PeachBlock.HANGING, false).with(PeachBlock.AGE, age).with(CrabappleBlock.FACING, direction)
+                        .modelForState().modelFile(standingModel).rotationY(rotationY).addModel();
+            }
         }
     }
 
