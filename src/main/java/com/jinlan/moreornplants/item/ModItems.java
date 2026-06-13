@@ -261,7 +261,7 @@ public class ModItems {
             ITEMS.register("muxue_soup", () -> new MuxueSoupItem(ModBlocks.MUXUE_SOUP.get(), new Item.Properties().food(ModFoods.MUXUE_GRASS)));
 
     public static final RegistryObject<Item> CRABAPPLE =
-            ITEMS.register("crabapple", () -> new Item(new Item.Properties().food(ModFoods.CRABAPPLE)));
+            ITEMS.register("crabapple", () -> new FoodBlockItem(ModBlocks.CRABAPPLE.get(), new Item.Properties().food(ModFoods.CRABAPPLE)));
     public static final RegistryObject<Item> GOLDEN_CRABAPPLE =
             ITEMS.register("golden_crabapple", () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.GOLDEN_CRABAPPLE)));
     public static final RegistryObject<Item> ENCHANTED_GOLDEN_CRABAPPLE =

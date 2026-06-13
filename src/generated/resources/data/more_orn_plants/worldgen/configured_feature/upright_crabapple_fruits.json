@@ -8,6 +8,7 @@
           "Name": "more_orn_plants:crabapple",
           "Properties": {
             "age": "1",
+            "facing": "north",
             "hanging": "true",
             "waterlogged": "false"
           }

@@ -8,7 +8,8 @@
           "block": "more_orn_plants:crabapple",
           "condition": "minecraft:block_state_property",
           "properties": {
-            "age": "1"
+            "age": "1",
+            "hanging": "true"
           }
         }
       ],
@@ -26,6 +27,25 @@
               "function": "minecraft:set_count"
             }
           ],
+          "name": "more_orn_plants:crabapple"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "more_orn_plants:crabapple",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "hanging": "false"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
           "name": "more_orn_plants:crabapple"
         }
       ],

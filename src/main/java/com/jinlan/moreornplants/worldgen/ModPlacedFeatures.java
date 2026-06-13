@@ -714,7 +714,7 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(6),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_PINK_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_PINK_KEY),
-                List.of(CountPlacement.of(4),
+                List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_LIGHT_PINK_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_LIGHT_PINK_KEY),
                 List.of(CountPlacement.of(2),
