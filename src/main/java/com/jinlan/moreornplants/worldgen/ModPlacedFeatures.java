@@ -712,22 +712,22 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_RED_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_RED_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(3),
+                List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_PURPLE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_PURPLE_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(3),
+                List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_YELLOW_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_YELLOW_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(3),
+                List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_WHITE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_WHITE_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(3),
+                List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_BLUE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_BLUE_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(4),
+                List.of(RarityFilter.onAverageOnceEvery(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_GREEN_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_GREEN_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(6),
+                List.of(RarityFilter.onAverageOnceEvery(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, COTTON_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COTTON_ROSE_KEY),
@@ -959,7 +959,7 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(18),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_PLAIN, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
-                List.of(NoiseThresholdCountPlacement.of(-0.8D, 16, 18),
+                List.of(NoiseThresholdCountPlacement.of(-0.8D, 18, 20),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GRASS_HIGHLAND, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRASS_0),
                 List.of(CountPlacement.of(12),

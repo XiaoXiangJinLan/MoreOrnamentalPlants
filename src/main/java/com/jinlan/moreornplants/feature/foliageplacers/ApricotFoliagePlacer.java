@@ -1,7 +1,6 @@
 package com.jinlan.moreornplants.feature.foliageplacers;
 
 import com.jinlan.moreornplants.init.ModFoliagePlacerTypes;
-import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
@@ -15,19 +14,16 @@ import org.jetbrains.annotations.NotNull;
 
 public class ApricotFoliagePlacer extends FoliagePlacer {
     public static final MapCodec<ApricotFoliagePlacer> CODEC = RecordCodecBuilder.mapCodec(instance ->
-            foliagePlacerParts(instance).and(instance.group(
-                    IntProvider.codec(0, 24).fieldOf("height").forGetter((placer) -> placer.height),
-                    Codec.floatRange(0.0F, 1.0F).fieldOf("outer_layer_hole_chance").forGetter((placer) -> placer.outerLayerHoleChance)
-            )).apply(instance, ApricotFoliagePlacer::new)
+            foliagePlacerParts(instance).and(
+                    IntProvider.codec(0, 24).fieldOf("height").forGetter(placer -> placer.height)
+            ).apply(instance, ApricotFoliagePlacer::new)
     );
 
     private final IntProvider height;
-    private final float outerLayerHoleChance;
 
-    public ApricotFoliagePlacer(IntProvider radius, IntProvider offset, IntProvider height, float outerLayerHoleChance) {
+    public ApricotFoliagePlacer(IntProvider radius, IntProvider offset, IntProvider height) {
         super(radius, offset);
         this.height = height;
-        this.outerLayerHoleChance = outerLayerHoleChance;
     }
 
     @Override
@@ -37,8 +33,8 @@ public class ApricotFoliagePlacer extends FoliagePlacer {
     }
 
     @Override
-    protected void createFoliage(LevelSimulatedReader level, FoliageSetter foliageSetter, RandomSource random,
-                                 TreeConfiguration config, int maxFreeTreeHeight, FoliageAttachment attachment,
+    protected void createFoliage(@NotNull LevelSimulatedReader level, @NotNull FoliageSetter foliageSetter, @NotNull RandomSource random,
+                                 @NotNull TreeConfiguration config, int maxFreeTreeHeight, FoliageAttachment attachment,
                                  int foliageHeight, int foliageRadius, int offset) {
         BlockPos centerPos = attachment.pos().above(offset);
         int radius = foliageRadius + attachment.radiusOffset();
@@ -48,17 +44,17 @@ public class ApricotFoliagePlacer extends FoliagePlacer {
             int layerRadius;
 
             // 根据层数设置不同的半径（现在有5层：0-4）
-            if (layer == 4) {
+            if (layer == 3) {
                 // 第1层（最上层）：半径1格
                 layerRadius = Math.max(1, radius - 2);
-            } else if (layer == 3) {
+            } else if (layer == 2) {
                 // 第2层：半径2格
                 layerRadius = Math.max(1, radius - 1);
-            } else if (layer == 2 || layer == 1) {
-                // 第3、4层（中层）：半径3格
+            } else if (layer == 1) {
+                // 第3层：半径3格
                 layerRadius = radius;
             } else {
-                // 第5层（最底层）：半径2格
+                // 第4层（最底层）：半径2格
                 layerRadius = Math.max(1, radius - 1);
             }
 
@@ -74,8 +70,7 @@ public class ApricotFoliagePlacer extends FoliagePlacer {
     @Override
     protected boolean shouldSkipLocation(@NotNull RandomSource random, int localX, int localY, int localZ, int range, boolean large) {
         final var isAbsoluteCorner = Math.abs(localX) == range && Math.abs(localZ) == range;
-        if (localY >= 3) { // 第1、2层对应的localY值
-            // 只跳过绝对角落位置
+        if (localY >= 3) { // 第1层对应的localY值
             return isAbsoluteCorner;
         }
 
@@ -84,13 +79,13 @@ public class ApricotFoliagePlacer extends FoliagePlacer {
                 isAbsoluteCorner || // 绝对角落
                         (Math.abs(localX) == range - 1 && Math.abs(localZ) == range) || // 靠近角落
                         (Math.abs(localX) == range && Math.abs(localZ) == range - 1); // 靠近角落
-
-        if (isCorner) {
-            return true;
+        if (localY == 2) {
+            return isCorner;
         }
 
-        // 在外圈位置随机跳过（小概率不生成树叶）
-        boolean isOuterLayer = Math.abs(localX) == range || Math.abs(localZ) == range;
-        return isOuterLayer && random.nextFloat() < this.outerLayerHoleChance;
+        return isCorner ||
+                (Math.abs(localX) == range - 2 && Math.abs(localZ) == range) ||
+                (Math.abs(localX) == range && Math.abs(localZ) == range - 2) ||
+                (Math.abs(localX) == range - 1 && Math.abs(localZ) == range - 1);
     }
 }
