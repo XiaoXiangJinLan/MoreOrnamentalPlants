@@ -656,8 +656,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.CRABAPPLE.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(ModItems.CRABAPPLE.get())
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))))
+                        .add(LootItem.lootTableItem(ModItems.CRABAPPLE.get()))
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
                                         .hasProperty(PeachBlock.HANGING, true)

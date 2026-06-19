@@ -1,63 +1,48 @@
 {
   "variants": {
-    "age=0,facing=east,hanging=false": {
-      "model": "more_orn_plants:block/crabapple_standing",
-      "y": 90
-    },
     "age=0,facing=east,hanging=true": {
       "model": "more_orn_plants:block/crabapple_age_0",
       "y": 90
     },
-    "age=0,facing=north,hanging=false": {
-      "model": "more_orn_plants:block/crabapple_standing"
-    },
     "age=0,facing=north,hanging=true": {
       "model": "more_orn_plants:block/crabapple_age_0"
-    },
-    "age=0,facing=south,hanging=false": {
-      "model": "more_orn_plants:block/crabapple_standing",
-      "y": 180
     },
     "age=0,facing=south,hanging=true": {
       "model": "more_orn_plants:block/crabapple_age_0",
       "y": 180
     },
-    "age=0,facing=west,hanging=false": {
-      "model": "more_orn_plants:block/crabapple_standing",
-      "y": 270
-    },
     "age=0,facing=west,hanging=true": {
       "model": "more_orn_plants:block/crabapple_age_0",
       "y": 270
-    },
-    "age=1,facing=east,hanging=false": {
-      "model": "more_orn_plants:block/crabapple_standing",
-      "y": 90
     },
     "age=1,facing=east,hanging=true": {
       "model": "more_orn_plants:block/crabapple_age_1",
       "y": 90
     },
-    "age=1,facing=north,hanging=false": {
-      "model": "more_orn_plants:block/crabapple_standing"
-    },
     "age=1,facing=north,hanging=true": {
       "model": "more_orn_plants:block/crabapple_age_1"
-    },
-    "age=1,facing=south,hanging=false": {
-      "model": "more_orn_plants:block/crabapple_standing",
-      "y": 180
     },
     "age=1,facing=south,hanging=true": {
       "model": "more_orn_plants:block/crabapple_age_1",
       "y": 180
     },
-    "age=1,facing=west,hanging=false": {
-      "model": "more_orn_plants:block/crabapple_standing",
-      "y": 270
-    },
     "age=1,facing=west,hanging=true": {
       "model": "more_orn_plants:block/crabapple_age_1",
+      "y": 270
+    },
+    "facing=east,hanging=false": {
+      "model": "more_orn_plants:block/crabapple_standing",
+      "y": 90
+    },
+    "facing=north,hanging=false": {
+      "model": "more_orn_plants:block/crabapple_standing"
+    },
+    "facing=south,hanging=false": {
+      "model": "more_orn_plants:block/crabapple_standing",
+      "y": 180
+    },
+    "facing=west,hanging=false": {
+      "model": "more_orn_plants:block/crabapple_standing",
       "y": 270
     }
   }

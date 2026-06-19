@@ -1,6 +1,7 @@
 package com.jinlan.moreornplants.block.LeavesBlocks;
 
 import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.block.WeepingBlocks.CrabappleBlock;
 import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.BlockPos;
@@ -47,7 +48,9 @@ public class UprightCrabappleLeavesBlock extends ModLeavesBlock {
             if (level.getBiome(pos).is(ModTags.Biomes.CRABAPPLE_BEARING)) {
                 if (level.isEmptyBlock(belowPos)) {
                     if (random.nextInt(10) == 0) {
-                        level.setBlock(belowPos, ModBlocks.CRABAPPLE.get().defaultBlockState(), 2);
+                        Direction randomDirection = Direction.Plane.HORIZONTAL.getRandomDirection(random);
+                        level.setBlock(belowPos, ModBlocks.CRABAPPLE.get().defaultBlockState()
+                                .setValue(CrabappleBlock.FACING, randomDirection), 2);
                     }
                 }
             }

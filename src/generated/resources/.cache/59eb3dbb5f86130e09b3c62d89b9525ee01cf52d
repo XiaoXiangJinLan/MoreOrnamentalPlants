@@ -1,4 +1,4 @@
-// 1.20.1	2026-06-14T00:51:51.5063129	Loot Tables
+// 1.20.1	2026-06-14T13:36:35.289491	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_tables/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_tables/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_tables/blocks/apricot_fence.json
@@ -93,7 +93,7 @@ a4c9bff6903af02051da37ac25edb818d8f9b256 data/more_orn_plants/loot_tables/blocks
 4bc23ebebbf6f310e304f577ec9e4fc1ef36fbba data/more_orn_plants/loot_tables/blocks/cloud_apricot_sapling.json
 4382b727dd416c339de8a40fef5c4cd357e452f2 data/more_orn_plants/loot_tables/blocks/colorful_peony.json
 7293e30f0d70c6787448a0cb4c0302fea45a5b06 data/more_orn_plants/loot_tables/blocks/cotton_rose.json
-f334634046afed2d505f279b8f4545a30b2fbf1b data/more_orn_plants/loot_tables/blocks/crabapple.json
+0f8071e6f9dadd140fa7a8178dec888a598c7b19 data/more_orn_plants/loot_tables/blocks/crabapple.json
 711b1fdbda501a4ca0a29e4f0be22008b17e09ed data/more_orn_plants/loot_tables/blocks/crabapple_button.json
 f7eb1698f4da53f7e43298d9e2ac8ea927772cae data/more_orn_plants/loot_tables/blocks/crabapple_door.json
 2fcbe2ca5b1576b0c9d0a0135c2f64d592a3503a data/more_orn_plants/loot_tables/blocks/crabapple_fence.json

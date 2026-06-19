@@ -117,38 +117,41 @@ public class ModParticleTypes {
     public static final RegistryObject<SimpleParticleType> WHITE_CRAPE_MYRTLE_LEAVES =
             registerParticleType("white_crape_myrtle_leaves", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> CAMELLIA_LEAVES =
+    public static final RegistryObject<SimpleParticleType> CAMELLIA_LEAVES =
             registerParticleType("camellia_leaves", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> WHITE_CAMELLIA_LEAVES =
+    public static final RegistryObject<SimpleParticleType> WHITE_CAMELLIA_LEAVES =
             registerParticleType("white_camellia_leaves", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> PINK_CAMELLIA_LEAVES =
+    public static final RegistryObject<SimpleParticleType> PINK_CAMELLIA_LEAVES =
             registerParticleType("pink_camellia_leaves", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> VERSICOLOR_CAMELLIA_LEAVES =
+    public static final RegistryObject<SimpleParticleType> VERSICOLOR_CAMELLIA_LEAVES =
             registerParticleType("versicolor_camellia_leaves", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> BAIHUA_CAT =
+    public static final RegistryObject<SimpleParticleType> BAIHUA_CAT =
             registerParticleType("baihua_cat", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> BAIHUA_CAT_PINK =
+    public static final RegistryObject<SimpleParticleType> BAIHUA_CAT_PINK =
             registerParticleType("baihua_cat_pink", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> BAIHUA_CAT_BLUE =
+    public static final RegistryObject<SimpleParticleType> BAIHUA_CAT_BLUE =
             registerParticleType("baihua_cat_blue", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> BAIHUA_CAT_PURPLE =
+    public static final RegistryObject<SimpleParticleType> BAIHUA_CAT_PURPLE =
             registerParticleType("baihua_cat_purple", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> ZIYING_FOX =
+    public static final RegistryObject<SimpleParticleType> ZIYING_FOX =
             registerParticleType("ziying_fox", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> SUYU_FOX =
+    public static final RegistryObject<SimpleParticleType> SUYU_FOX =
             registerParticleType("suyu_fox", () -> new SimpleParticleType(false));
 
-    public static final java.util.function.Supplier<SimpleParticleType> ZIYU_YUANYANG =
+    public static final RegistryObject<SimpleParticleType> ZIYU_YUANYANG =
             registerParticleType("ziyu_yuanyang", () -> new SimpleParticleType(false));
+
+    public static final RegistryObject<SimpleParticleType> MUXUE =
+            registerParticleType("muxue", () -> new SimpleParticleType(false));
 
     public static <T extends ParticleType<?>> RegistryObject<T> registerParticleType(String name, Supplier<T> particleType) {
         return ModParticleTypes.PARTICLES.register(name, particleType);

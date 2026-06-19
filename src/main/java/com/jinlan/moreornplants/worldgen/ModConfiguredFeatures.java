@@ -5,6 +5,7 @@ import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.FlowerBlocks.ModFlowerPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
+import com.jinlan.moreornplants.block.WeepingBlocks.CrabappleBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaPlantBlock;
@@ -427,12 +428,19 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        SimpleWeightedRandomList.Builder<BlockState> crabappleBuilder = SimpleWeightedRandomList.builder();
+        for(Direction direction : Direction.Plane.HORIZONTAL) {
+            crabappleBuilder.add(ModBlocks.CRABAPPLE.get().defaultBlockState()
+                    .setValue(PeachBlock.AGE, 1)
+                    .setValue(CrabappleBlock.FACING, direction), 1);
+        }
+        WeightedStateProvider provider = new WeightedStateProvider(crabappleBuilder.build());
         register(context, UPRIGHT_CRABAPPLE_WITH_FRUITS, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
                 new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
                 BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
-                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(ModBlocks.CRABAPPLE.get().defaultBlockState().setValue(PeachBlock.AGE, 1), 0.6F))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(provider, 0.6F))).ignoreVines().build());
         register(context, WEEPING_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
                 new CrabappleTrunkPlacer(9, 1, 1, 3, 5, 3, 4, 5, 0.6F),
