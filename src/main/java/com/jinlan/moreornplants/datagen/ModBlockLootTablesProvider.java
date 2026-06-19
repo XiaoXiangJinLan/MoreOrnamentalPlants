@@ -648,8 +648,7 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WEEPING_CRABAPPLE.get());
         this.add(ModBlocks.CRABAPPLE.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(ModItems.CRABAPPLE.get())
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))))
+                        .add(LootItem.lootTableItem(ModItems.CRABAPPLE.get()))
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
                                         .hasProperty(PeachBlock.HANGING, true)

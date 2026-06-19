@@ -9,10 +9,7 @@ import com.jinlan.moreornplants.entity.ModEntities;
 import com.jinlan.moreornplants.entity.custom.ModBoatEntity;
 import com.jinlan.moreornplants.entity.custom.ModChestBoatEntity;
 import com.jinlan.moreornplants.init.ModParticleTypes;
-import com.jinlan.moreornplants.particle.BlossomParticle;
-import com.jinlan.moreornplants.particle.CamphorParticle;
-import com.jinlan.moreornplants.particle.ChineseParasolParticle;
-import com.jinlan.moreornplants.particle.PeachParticle;
+import com.jinlan.moreornplants.particle.*;
 import com.jinlan.moreornplants.util.ModWoodTypes;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.client.Minecraft;
@@ -238,6 +235,10 @@ public class MoreOrnPlantsClient {
         event.registerSpriteSet(ModParticleTypes.ZIYU_YUANYANG.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
+        event.registerSpriteSet(ModParticleTypes.MUXUE.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new SnowParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
     }
 

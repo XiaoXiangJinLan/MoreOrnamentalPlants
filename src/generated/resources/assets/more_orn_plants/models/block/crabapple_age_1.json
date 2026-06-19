@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/cross",
+  "parent": "more_orn_plants:block/crabapple_hanging",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "more_orn_plants:block/crabapple_age_1"
+    "crabapple": "more_orn_plants:block/crabapple_age_1"
   }
 }

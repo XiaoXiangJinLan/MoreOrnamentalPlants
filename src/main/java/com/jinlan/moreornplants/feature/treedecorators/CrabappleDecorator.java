@@ -9,6 +9,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.LevelSimulatedReader;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 import org.jetbrains.annotations.NotNull;
@@ -18,17 +19,21 @@ import java.util.List;
 public class CrabappleDecorator extends TreeDecorator {
     public static final MapCodec<CrabappleDecorator> CODEC = RecordCodecBuilder.mapCodec(instance ->
             instance.group(
-                    BlockState.CODEC.fieldOf("block").forGetter(decorator -> decorator.blockState),
+                    BlockStateProvider.CODEC.fieldOf("block_provider").forGetter(decorator -> decorator.stateProvider),
                     Codec.floatRange(0.0F, 1.0F).fieldOf("probability").forGetter(decorator -> decorator.probability)
             ).apply(instance, CrabappleDecorator::new)
     );
 
-    private final BlockState blockState;
+    private final BlockStateProvider stateProvider;
     private final float probability;
 
-    public CrabappleDecorator(BlockState blockState, float probability) {
-        this.blockState = blockState;
+    public CrabappleDecorator(BlockStateProvider stateProvider, float probability) {
+        this.stateProvider = stateProvider;
         this.probability = probability;
+    }
+
+    public CrabappleDecorator(BlockState state, float probability) {
+        this(BlockStateProvider.simple(state), probability);
     }
 
     @Override
@@ -51,7 +56,8 @@ public class CrabappleDecorator extends TreeDecorator {
             if (level.isStateAtPosition(belowPos, BlockBehaviour.BlockStateBase::isAir) &&
                     random.nextFloat() < this.probability) {
                 // 放置海棠
-                context.setBlock(belowPos, blockState);
+                BlockState stateToPlace = stateProvider.getState(random, belowPos);
+                context.setBlock(belowPos, stateToPlace);
             }
         }
     }

@@ -37,7 +37,6 @@ public class CrabappleBlock extends PeachBlock {
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         BlockState state = super.getStateForPlacement(context);
         if (state != null) {
-            state = state.setValue(HANGING, false);
             return state.setValue(FACING, context.getHorizontalDirection().getOpposite());
         }
         return null;

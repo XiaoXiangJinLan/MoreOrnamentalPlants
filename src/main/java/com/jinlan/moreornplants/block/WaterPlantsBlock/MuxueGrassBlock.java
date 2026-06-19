@@ -1,9 +1,13 @@
 package com.jinlan.moreornplants.block.WaterPlantsBlock;
 
 import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.init.ModParticleTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.ParticleUtils;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SeagrassBlock;
 import net.minecraft.world.level.block.TallSeagrassBlock;
@@ -24,6 +28,17 @@ public class MuxueGrassBlock extends SeagrassBlock {
         if (p_222423_.getBlockState(blockpos).is(Blocks.WATER)) {
             p_222423_.setBlock(p_222425_, blockstate, 2);
             p_222423_.setBlock(blockpos, blockstate1, 2);
+        }
+    }
+
+    @Override
+    public void animateTick(@NotNull BlockState state, @NotNull Level world, @NotNull BlockPos pos, @NotNull RandomSource random) {
+        super.animateTick(state, world, pos, random);
+        if (random.nextInt(10) == 0) {
+            double x = pos.getX() + random.nextDouble();
+            double y = pos.getY() + random.nextDouble();
+            double z = pos.getZ() + random.nextDouble();
+            world.addParticle(ModParticleTypes.MUXUE.get(), x, y, z, 0.0, 0.0, 0.0);
         }
     }
 }

@@ -4,12 +4,15 @@
     "decorators": [
       {
         "type": "more_orn_plants:crabapple_decorator",
-        "block": {
-          "Name": "more_orn_plants:cloud_apricot",
-          "Properties": {
-            "age": "1",
-            "hanging": "true",
-            "waterlogged": "false"
+        "block_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "more_orn_plants:cloud_apricot",
+            "Properties": {
+              "age": "1",
+              "hanging": "true",
+              "waterlogged": "false"
+            }
           }
         },
         "probability": 0.18

@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/template_seagrass",
+  "parent": "minecraft:block/cross",
   "textures": {
-    "texture": "more_orn_plants:block/tall_muxue_grass_bottom"
+    "cross": "more_orn_plants:block/tall_muxue_grass_bottom"
   },
   "render_type": "cutout"
 }

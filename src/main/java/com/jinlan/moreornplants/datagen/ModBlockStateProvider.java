@@ -578,7 +578,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         weepingMeiPlantBlock(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT);
 
         flowerBlock(ModBlocks.WEEPING_CRABAPPLE);
-        crossFruitBlock();
+        facingFruitBlock();
         fruitBlock(ModBlocks.CLOUD_APRICOT, "peach", "peach");
         fruitBlock(ModBlocks.IMMORTAL_PEACH, "peach", "peach");
         fruitBlock(ModBlocks.MEI, "mei_fruit", "mei");
@@ -1030,28 +1030,31 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 models().cross(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
-    private void crossFruitBlock() {
+    private void facingFruitBlock() {
         VariantBlockStateBuilder builder = getVariantBuilder(ModBlocks.CRABAPPLE.get());
         String baseName = ModBlocks.CRABAPPLE.getId().getPath();
-        for (int age = 0; age <= 1; age++) {
-            ModelFile model = models().cross(baseName + "_age_" + age,
-                    modLoc("block/" + baseName + "_age_" + age)).renderType("cutout");
-            ModelFile standingModel = models().withExistingParent(baseName + "_standing", modLoc("block/crabapple"))
-                    .texture("crabapple", modLoc("block/" + baseName))
-                    .renderType("cutout");
-            for (Direction direction : Direction.Plane.HORIZONTAL) {
-                int rotationY;
-                switch (direction) {
-                    case EAST -> rotationY = 90;
-                    case SOUTH -> rotationY = 180;
-                    case WEST -> rotationY = 270;
-                    default -> rotationY = 0;
-                }
-                builder.partialState().with(PeachBlock.HANGING, true).with(PeachBlock.AGE, age).with(CrabappleBlock.FACING, direction)
-                        .modelForState().modelFile(model).rotationY(rotationY).addModel()
-                        .partialState().with(PeachBlock.HANGING, false).with(PeachBlock.AGE, age).with(CrabappleBlock.FACING, direction)
-                        .modelForState().modelFile(standingModel).rotationY(rotationY).addModel();
+        ModelFile age0Model = models().cross(baseName + "_age_0", modLoc("block/" + baseName + "_age_0"))
+                .renderType("cutout");
+        ModelFile age1Model = models().withExistingParent(baseName + "_age_1", modLoc("block/crabapple_hanging"))
+                .texture("crabapple", modLoc("block/" + baseName + "_age_1"))
+                .renderType("cutout");
+        ModelFile standingModel = models().withExistingParent(baseName + "_standing", modLoc("block/crabapple"))
+                .texture("crabapple", modLoc("block/" + baseName + "_age_1"))
+                .renderType("cutout");
+        for (Direction direction : Direction.Plane.HORIZONTAL) {
+            int rotationY;
+            switch (direction) {
+                case EAST -> rotationY = 90;
+                case SOUTH -> rotationY = 180;
+                case WEST -> rotationY = 270;
+                default -> rotationY = 0;
             }
+            builder.partialState().with(PeachBlock.HANGING, true).with(PeachBlock.AGE, 0).with(CrabappleBlock.FACING, direction)
+                    .modelForState().modelFile(age0Model).rotationY(rotationY).addModel()
+                    .partialState().with(PeachBlock.HANGING, true).with(PeachBlock.AGE, 1).with(CrabappleBlock.FACING, direction)
+                    .modelForState().modelFile(age1Model).rotationY(rotationY).addModel()
+                    .partialState().with(PeachBlock.HANGING, false).with(CrabappleBlock.FACING, direction)
+                    .modelForState().modelFile(standingModel).rotationY(rotationY).addModel();
         }
     }
 
