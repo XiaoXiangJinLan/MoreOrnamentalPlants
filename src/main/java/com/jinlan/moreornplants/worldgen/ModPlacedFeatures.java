@@ -456,7 +456,7 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.05f, 1),
                         ModBlocks.WEEPING_CRABAPPLE_SAPLING.get()));
         register(context, PEONY_PINK_GROVE, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEONY_PINK_GROVE),
-                List.of(CountPlacement.of(5),
+                List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_TREE_PINK_GROVE, configuredFeatures.getOrThrow(ModConfiguredFeatures.ZHAO_PINK_PEONY_GROVE),
                 List.of(CountPlacement.of(1),
@@ -491,7 +491,7 @@ public class ModPlacedFeatures {
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, GOLDEN_GINKGO_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_GINKGO_WITH_LEAF_PILE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(4, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 1),
                         ModBlocks.GOLDEN_GINKGO_SAPLING.get()));
         register(context, YELLOW_CHINESE_PARASOL_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.YELLOW_CHINESE_PARASOL_WITH_LEAF_PILE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
@@ -500,10 +500,10 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1f, 1),
                         ModBlocks.SWEETGUM_SAPLING.get()));
         register(context, GOLDEN_OSMANTHUS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_OSMANTHUS),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1),
                         ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get()));
         register(context, PURPLE_LEAF_PLUM_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_LEAF_PLUM),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1 ,0.1F, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2 ,0.1F, 1),
                         ModBlocks.PURPLE_LEAF_PLUM_SAPLING.get()));
         register(context, CHRYSANTHEMUM_FOREST_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_FOREST),
                 List.of(RarityFilter.onAverageOnceEvery(6),
@@ -581,22 +581,22 @@ public class ModPlacedFeatures {
                         ModBlocks.CAMPHOR_SAPLING.get()));
 
         register(context, RED_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_CAMELLIA_KEY),
-                List.of(CountPlacement.of(12),
+                List.of(CountPlacement.of(9),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, WHITE_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_CAMELLIA_KEY),
-                List.of(CountPlacement.of(12),
+                List.of(CountPlacement.of(9),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PINK_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_CAMELLIA_KEY),
-                List.of(CountPlacement.of(12),
+                List.of(CountPlacement.of(9),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, TALL_RED_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.TALL_RED_CAMELLIA_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(2),
+                List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, TALL_WHITE_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.TALL_WHITE_CAMELLIA_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(2),
+                List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, TALL_PINK_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.TALL_PINK_CAMELLIA_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(2),
+                List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, CAMELLIA_TREE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMELLIA_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1),
@@ -829,7 +829,7 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 4),
                         ModBlocks.CHINABERRY_SAPLING.get()));
         register(context, FOUNTAIN_GRASS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.FOUNTAIN_GRASS),
-                List.of(CountPlacement.of(2),
+                List.of(NoiseThresholdCountPlacement.of(0.6D, 1, 2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, CHINESE_ROSE_PLAIN_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_ROSE_PLAIN),
                 List.of(RarityFilter.onAverageOnceEvery(1),

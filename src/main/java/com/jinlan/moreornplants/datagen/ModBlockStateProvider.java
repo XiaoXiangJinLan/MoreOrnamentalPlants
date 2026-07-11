@@ -535,8 +535,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.SWEETGUM_SAPLING);
         simpleBlock(ModBlocks.POTTED_SWEETGUM_SAPLING.get(), models().singleTexture("potted_sweetgum_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.SWEETGUM_SAPLING.get())).renderType("cutout"));
-        leavesBlock(ModBlocks.CAMPHOR_LEAVES);
-        leavesBlock(ModBlocks.NEW_CAMPHOR_LEAVES);
         saplingBlock(ModBlocks.CAMPHOR_SAPLING);
         simpleBlock(ModBlocks.POTTED_CAMPHOR_SAPLING.get(), models().singleTexture("potted_camphor_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CAMPHOR_SAPLING.get())).renderType("cutout"));
@@ -1230,10 +1228,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         for (int i = 1; i <= 4; i++) {
             models().getBuilder(baseName + i + "_age0")
                     .parent(new ModelFile.UncheckedModelFile("block/bamboo" + i + "_age0"))
-                    .texture("all", stalkTexture);
+                    .texture("all", stalkTexture).renderType("cutout");
             models().getBuilder(baseName + i + "_age1")
                     .parent(new ModelFile.UncheckedModelFile("block/bamboo" + i + "_age1"))
-                    .texture("all", stalkTexture);
+                    .texture("all", stalkTexture).renderType("cutout");
         }
         models().getBuilder(baseName + "_small_leaves")
                 .parent(new ModelFile.UncheckedModelFile("block/bamboo_small_leaves"))

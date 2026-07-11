@@ -13,9 +13,9 @@
     }
   },
   "display": {
-    "announce_to_chat": true,
+    "announce_to_chat": false,
     "description": {
-      "translate": "advancement.moreornplants.phoenix_roost.description"
+      "translate": "advancement.moreornplants.fenghuang_roost.description"
     },
     "frame": "task",
     "hidden": false,
@@ -24,7 +24,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.moreornplants.phoenix_roost.title"
+      "translate": "advancement.moreornplants.fenghuang_roost.title"
     }
   },
   "requirements": [

@@ -160,7 +160,6 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.SWEETGUM_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.SWEETGUM_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CAMPHOR_LEAVES.get().asItem(), 0.3F);
-            ComposterBlock.COMPOSTABLES.put(ModBlocks.NEW_CAMPHOR_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.CAMPHOR_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.DOVE_TREE_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get().asItem(), 0.3F);

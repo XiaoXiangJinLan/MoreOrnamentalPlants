@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [ { "model": "more_orn_plants:block/camphor_leaves", "weight": 30 },
+      { "model": "more_orn_plants:block/camphor_leaves_0", "weight": 5 },
+      { "model": "more_orn_plants:block/camphor_leaves_1", "weight": 4 },
+      { "model": "more_orn_plants:block/camphor_leaves_2", "weight": 1 } ]
+  }
+}

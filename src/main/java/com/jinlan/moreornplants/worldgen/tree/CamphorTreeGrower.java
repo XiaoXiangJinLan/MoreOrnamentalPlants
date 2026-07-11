@@ -14,7 +14,7 @@ public class CamphorTreeGrower extends AbstractTreeGrower {
         if (pRandom.nextInt(10) == 0) {
             return ModConfiguredFeatures.ANCIENT_CAMPHOR;
         } else {
-            return pRandom.nextBoolean() ? ModConfiguredFeatures.CAMPHOR : ModConfiguredFeatures.CAMPHOR_WITH_NEW_LEAVES;
+            return ModConfiguredFeatures.CAMPHOR;
         }
     }
 }

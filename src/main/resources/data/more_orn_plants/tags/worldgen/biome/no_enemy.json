@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "more_orn_plants:red_mei_forest",
+    "more_orn_plants:fragrant_snow_sea",
+    "more_orn_plants:snow_greets_spring",
+    "more_orn_plants:mount_mei",
     "more_orn_plants:the_peach_blossom_spring",
     "more_orn_plants:longevity_forest",
     "more_orn_plants:flowers_grove",
@@ -9,7 +12,12 @@
     "more_orn_plants:red_highlands",
     "more_orn_plants:furong_guo",
     "more_orn_plants:penglai",
-    "more_orn_plants:fragrant_snow_sea",
-    "more_orn_plants:snow_greets_spring"
+    "more_orn_plants:peony_sea",
+    "more_orn_plants:peony_meadows",
+    "more_orn_plants:chinese_rose_fields",
+    "more_orn_plants:miscanthus_fields",
+    "more_orn_plants:crops_green",
+    "more_orn_plants:ziying_caves",
+    "more_orn_plants:suyu_caves"
   ]
 }

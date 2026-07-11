@@ -1,4 +1,4 @@
-// 1.20.1	2026-06-14T13:36:35.289491	Loot Tables
+// 1.20.1	2026-07-11T22:05:41.5280051	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_tables/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_tables/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_tables/blocks/apricot_fence.json
@@ -290,7 +290,6 @@ b28a8dd01334ca0804941a5f106e16208eee8640 data/more_orn_plants/loot_tables/blocks
 e3ee65db5a4d7142c89c0903a70f91834cbe63a8 data/more_orn_plants/loot_tables/blocks/muxue_soup.json
 350f375b6199d92eada75dc55366d0e5f4d94353 data/more_orn_plants/loot_tables/blocks/nanjing_wisteria.json
 fcf4adf02a00561f15ea7e12a474a3a625e5efd4 data/more_orn_plants/loot_tables/blocks/nanjing_wisteria_plant.json
-520b077a992b32a1eea887002aed98cbcb9431ce data/more_orn_plants/loot_tables/blocks/new_camphor_leaves.json
 851651d60bdaa6a6cea1e9413604a0d49fbc4052 data/more_orn_plants/loot_tables/blocks/ochre_yellow_peony.json
 d9e60133315d9c8e362912d8dd70f2b5ddcb038f data/more_orn_plants/loot_tables/blocks/orange_osmanthus_leaves.json
 97f3c55b83269c0849c58aa0d13cd6461932bad1 data/more_orn_plants/loot_tables/blocks/orange_osmanthus_sapling.json

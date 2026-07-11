@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "more_orn_plants:block/camphor_leaves_2"
+  }
+}

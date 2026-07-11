@@ -62,7 +62,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_mei", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -80,7 +80,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_wintersweet", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -98,7 +98,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_tree_peony", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -116,7 +116,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_herbaceous_peony", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -134,7 +134,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_chinese_rose", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -152,7 +152,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_cymbidium", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -170,7 +170,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_chrysanthemum", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -188,7 +188,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_crabapple", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -206,7 +206,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_osmanthus", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -224,7 +224,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_apricot", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -242,7 +242,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_peach", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -260,7 +260,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_pear", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -278,7 +278,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_plum", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -296,7 +296,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_lotus", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -314,7 +314,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_crape_myrtle", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -332,7 +332,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_camellia", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -350,7 +350,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_azalea", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -368,7 +368,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_narcissus", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -386,7 +386,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_cottonrose", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -404,7 +404,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_rose_bush", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -422,7 +422,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_poppy", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -440,7 +440,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_lilac", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -458,7 +458,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_sunflower", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -476,7 +476,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_ginkgo", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -494,7 +494,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_camphor", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -507,12 +507,12 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                     .parent(root)
                     .display(new DisplayInfo(
                             new ItemStack(ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get()),
-                            Component.translatable("advancement.moreornplants.phoenix_roost.title"),
-                            Component.translatable("advancement.moreornplants.phoenix_roost.description"),
+                            Component.translatable("advancement.moreornplants.fenghuang_roost.title"),
+                            Component.translatable("advancement.moreornplants.fenghuang_roost.description"),
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_chinese_parasol", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -530,7 +530,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_sweetgum", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -548,7 +548,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_dove_tree", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -566,7 +566,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_chinaberry", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -584,7 +584,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_desert_poplar", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -602,7 +602,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_wisteria", InventoryChangeTrigger.TriggerInstance.hasItems(
@@ -620,7 +620,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             null,
                             FrameType.TASK,
                             true,
-                            true,
+                            false,
                             false
                     ))
                     .addCriterion("get_grasses", InventoryChangeTrigger.TriggerInstance.hasItems(

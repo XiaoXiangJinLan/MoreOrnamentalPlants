@@ -19,7 +19,7 @@ public class CaiyunSwordItem extends ZhuiyueSwordItem{
     @Override
     public boolean hurtEnemy(ItemStack pStack, @NotNull LivingEntity pTarget, @NotNull LivingEntity pAttacker) {
         pStack.hurtAndBreak(1, pAttacker, (p_43296_) -> p_43296_.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-        if (pAttacker.level().isNight() && !pAttacker.level().isRaining() && !pAttacker.level().isThundering()) {
+        if (!pAttacker.level().isRaining() && !pAttacker.level().isThundering()) {
             int currentDamage = pStack.getDamageValue();
             int newDamage = Math.max(0, currentDamage - 55);
             pStack.setDamageValue(newDamage);

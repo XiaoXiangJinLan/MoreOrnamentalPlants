@@ -95,12 +95,6 @@
         "maxCount": 8,
         "minCount": 8,
         "weight": 10
-      },
-      {
-        "type": "minecraft:bat",
-        "maxCount": 8,
-        "minCount": 8,
-        "weight": 10
       }
     ],
     "axolotls": [],
@@ -212,12 +206,6 @@
       }
     ],
     "underground_water_creature": [
-      {
-        "type": "minecraft:glow_squid",
-        "maxCount": 6,
-        "minCount": 4,
-        "weight": 10
-      },
       {
         "type": "minecraft:glow_squid",
         "maxCount": 6,
