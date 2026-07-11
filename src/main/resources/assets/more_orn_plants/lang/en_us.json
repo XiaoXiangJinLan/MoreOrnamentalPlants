@@ -311,7 +311,6 @@
   "block.more_orn_plants.sweetgum_wall_hanging_sign": "Sweetgum Wall Hanging Sign",
 
   "block.more_orn_plants.camphor_leaves": "Camphor Leaves",
-  "block.more_orn_plants.new_camphor_leaves": "New Camphor Leaves",
   "block.more_orn_plants.camphor_sapling": "Camphor Sapling",
   "block.more_orn_plants.camphor_log": "Camphor Log",
   "block.more_orn_plants.camphor_wood": "Camphor Wood",
@@ -892,8 +891,8 @@
   "advancement.moreornplants.pear_in_rain.description": "A jade-like face, with lonely tears bespread, A pear blossom weeping in the spring rain.",
   "advancement.moreornplants.aura_from_east.title": "The Aura from the East",
   "advancement.moreornplants.aura_from_east.description": " You throw a peach to me; I give a plum in glee.",
-  "advancement.moreornplants.phoenix_roost.title": "The Phoenix's Roost",
-  "advancement.moreornplants.phoenix_roost.description": "The phoenix sings, on peak so high, The tree bathes in morning's dye.",
+  "advancement.moreornplants.fenghuang_roost.title": "The Fenghuang's Roost",
+  "advancement.moreornplants.fenghuang_roost.description": "The Fenghuang sings, on peak so high, The tree bathes in morning's dye.",
   "advancement.moreornplants.lotus_sage.title": "The Lotus Sage",
   "advancement.moreornplants.lotus_sage.description": "Leaves merge with skies in endless jade expanse; Blooms bathed in sun gain a transcendent glance.",
   "advancement.moreornplants.hundred_day_red.title": "Hundred-Day Red",

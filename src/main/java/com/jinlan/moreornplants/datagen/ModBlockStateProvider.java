@@ -531,8 +531,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.SWEETGUM_SAPLING);
         simpleBlock(ModBlocks.POTTED_SWEETGUM_SAPLING.get(), models().singleTexture("potted_sweetgum_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.SWEETGUM_SAPLING.get())).renderType("cutout"));
-        leavesBlock(ModBlocks.CAMPHOR_LEAVES);
-        leavesBlock(ModBlocks.NEW_CAMPHOR_LEAVES);
         saplingBlock(ModBlocks.CAMPHOR_SAPLING);
         simpleBlock(ModBlocks.POTTED_CAMPHOR_SAPLING.get(), models().singleTexture("potted_camphor_sapling", ResourceLocation.parse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.CAMPHOR_SAPLING.get())).renderType("cutout"));

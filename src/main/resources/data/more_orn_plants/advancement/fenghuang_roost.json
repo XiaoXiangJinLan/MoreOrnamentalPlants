@@ -13,15 +13,16 @@
     }
   },
   "display": {
+    "announce_to_chat": false,
     "description": {
-      "translate": "advancement.moreornplants.phoenix_roost.description"
+      "translate": "advancement.moreornplants.fenghuang_roost.description"
     },
     "icon": {
       "count": 1,
       "id": "more_orn_plants:yellow_chinese_parasol_sapling"
     },
     "title": {
-      "translate": "advancement.moreornplants.phoenix_roost.title"
+      "translate": "advancement.moreornplants.fenghuang_roost.title"
     }
   },
   "requirements": [

@@ -2,8 +2,10 @@
   "feature": "more_orn_plants:fountain_grass",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 2
+      "type": "minecraft:noise_threshold_count",
+      "above_noise": 2,
+      "below_noise": 1,
+      "noise_level": 0.6
     },
     {
       "type": "minecraft:in_square"

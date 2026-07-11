@@ -104,7 +104,6 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> SWEETGUM = registerKey("sweetgum");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SWEETGUM_WITH_LEAF_PILE = registerKey("sweetgum_with_leaf_pile");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMPHOR = registerKey("camphor");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> CAMPHOR_WITH_NEW_LEAVES = registerKey("camphor_with_new_leaves");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_CAMPHOR = registerKey("ancient_camphor");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_CAMPHOR = registerKey("small_camphor");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DOVE_TREE = registerKey("dove_tree");
@@ -693,12 +692,6 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
                 new CamphorTrunkPlacer(9, 4, 2, 3, 2, 4, 0.7F, 3),
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LEAVES.get()),
-                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
-        register(context, CAMPHOR_WITH_NEW_LEAVES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
-                new CamphorTrunkPlacer(8, 4, 2, 3, 2, 4, 0.7F, 3),
-                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.CAMPHOR_LEAVES.get().defaultBlockState(), 7).add(ModBlocks.NEW_CAMPHOR_LEAVES.get().defaultBlockState(), 1)),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, ANCIENT_CAMPHOR, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -1358,13 +1351,13 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
-        register(context, PEONY_PINK_GROVE, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
+        register(context, PEONY_PINK_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 6, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PEONY.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
-        register(context, ZHAO_PINK_PEONY_GROVE, Feature.FLOWER, new RandomPatchConfiguration(72, 8, 4,
+        register(context, ZHAO_PINK_PEONY_GROVE, Feature.FLOWER, new RandomPatchConfiguration(18, 6, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ZHAO_PINK_PEONY.get())),
                         BlockPredicate.allOf(

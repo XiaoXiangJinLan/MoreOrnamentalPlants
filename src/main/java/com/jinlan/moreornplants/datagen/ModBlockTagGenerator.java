@@ -701,7 +701,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get(), ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get());
 
         this.tag(CommonTags.Blocks.CAMPHOR_LEAVES)
-                .add(ModBlocks.CAMPHOR_LEAVES.get(), ModBlocks.NEW_CAMPHOR_LEAVES.get());
+                .add(ModBlocks.CAMPHOR_LEAVES.get());
 
         this.tag(CommonTags.Blocks.DOVE_TREE_LEAVES)
                 .add(ModBlocks.DOVE_TREE_LEAVES.get(), ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get());

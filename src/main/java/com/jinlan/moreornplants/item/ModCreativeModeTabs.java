@@ -50,7 +50,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.GREEN_CHINESE_PARASOL_LEAVES);
                         pOutput.accept(ModBlocks.SWEETGUM_LEAVES);
                         pOutput.accept(ModBlocks.CAMPHOR_LEAVES);
-                        pOutput.accept(ModBlocks.NEW_CAMPHOR_LEAVES);
                         pOutput.accept(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES);
                         pOutput.accept(ModBlocks.DOVE_TREE_LEAVES);
                         pOutput.accept(ModBlocks.CHINABERRY_LEAVES);

@@ -360,8 +360,6 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.SWEETGUM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.CAMPHOR_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CAMPHOR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-        this.add(ModBlocks.NEW_CAMPHOR_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.CAMPHOR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.DOVE_TREE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.DOVE_TREE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get(), block ->
