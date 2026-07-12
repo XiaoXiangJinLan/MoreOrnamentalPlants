@@ -106,6 +106,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> DESERT_POPLAR_1_PLACED = registerKey("desert_poplar_1_placed");
     public static final ResourceKey<PlacedFeature> DESERT_POPLAR_2_PLACED = registerKey("desert_poplar_2_placed");
     public static final ResourceKey<PlacedFeature> DESERT_POPLAR_3_PLACED = registerKey("desert_poplar_3_placed");
+    //flower
     public static final ResourceKey<PlacedFeature> CYMBIDIUM_PLACED = registerKey("cymbidium_placed");
     public static final ResourceKey<PlacedFeature> CYMBIDIUM_RIVER_PLACED = registerKey("cymbidium_river_placed");
     public static final ResourceKey<PlacedFeature> SUMMER_CYMBIDIUM_YUNMENG_PLACED = registerKey("summer_cymbidium_yunmeng_placed");
@@ -233,6 +234,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GOLDEN_MISCANTHUS_FOREST = registerKey("golden_miscanthus_forest");
     public static final ResourceKey<PlacedFeature> MEGA_PINE_LONGEVITY = registerKey("mega_pine_longevity");
     public static final ResourceKey<PlacedFeature> FLOWERS_PLAIN = registerKey("flowers_plain");
+    //grass
     public static final ResourceKey<PlacedFeature> GRASS_VALLY = registerKey("grass_vally");
     public static final ResourceKey<PlacedFeature> GRASS_PLAIN = registerKey("grass_plain");
     public static final ResourceKey<PlacedFeature> GRASS_HIGHLAND = registerKey("grass_highland");
@@ -251,6 +253,10 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> DEAD_BUSH = registerKey("dead_bush");
     public static final ResourceKey<PlacedFeature> PEACH_PETALS = registerKey("peach_petals");
     public static final ResourceKey<PlacedFeature> PEACH_PETALS_RIVER = registerKey("peach_petals_river");
+    public static final ResourceKey<PlacedFeature> LEAF_RIVER_0 = registerKey("leaf_river_0");
+    public static final ResourceKey<PlacedFeature> LEAF_RIVER_1 = registerKey("leaf_river_1");
+    public static final ResourceKey<PlacedFeature> LEAF_RIVER_2 = registerKey("leaf_river_2");
+    public static final ResourceKey<PlacedFeature> WATERLILY_RIVER = registerKey("waterlily_river");
 
     public static final ResourceKey<PlacedFeature> PINK_APRICOT = registerKey("pink_apricot");
     public static final ResourceKey<PlacedFeature> WHITE_APRICOT = registerKey("white_apricot");
@@ -527,6 +533,18 @@ public class ModPlacedFeatures {
         register(context, COTTON_ROSE_FOREST_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COTTON_ROSE_FOREST),
                 List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, LEAF_RIVER_0, configuredFeatures.getOrThrow(ModConfiguredFeatures.LEAF_RIVER_0),
+                List.of(NoiseThresholdCountPlacement.of(-0.1D, 1, 2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, LEAF_RIVER_1, configuredFeatures.getOrThrow(ModConfiguredFeatures.LEAF_RIVER_1),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, LEAF_RIVER_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.LEAF_RIVER_2),
+                List.of(NoiseThresholdCountPlacement.of(0.1D, 2, 1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, WATERLILY_RIVER, configuredFeatures.getOrThrow(ModConfiguredFeatures.WATERLILY_RIVER),
+                List.of(RarityFilter.onAverageOnceEvery(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, CAMPHOR_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1F, 1),
@@ -556,7 +574,7 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, HARDY_BANANA_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.HARDY_BANANA_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(2),
+                List.of(RarityFilter.onAverageOnceEvery(4),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, LILY_OF_THE_VALLEY_FOREST_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.LILY_OF_THE_VALLEY_FOREST),
                 List.of(RarityFilter.onAverageOnceEvery(2),
@@ -690,10 +708,10 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_SEA_PINK, configuredFeatures.getOrThrow(ModConfiguredFeatures.ZHAO_PINK_PEONY_KEY),
-                List.of(CountPlacement.of(5),
+                List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_SEA_GREEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.DOU_GREEN_PEONY_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(6),
+                List.of(RarityFilter.onAverageOnceEvery(5),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEONY_SEA_RED, configuredFeatures.getOrThrow(ModConfiguredFeatures.LUOYANG_RED_PEONY_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(3),

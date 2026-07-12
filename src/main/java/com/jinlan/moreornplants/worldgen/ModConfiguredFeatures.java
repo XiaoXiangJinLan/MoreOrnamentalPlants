@@ -1,6 +1,7 @@
 package com.jinlan.moreornplants.worldgen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import com.jinlan.moreornplants.block.FlowerBlocks.LeafPileBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.ModFlowerPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
@@ -113,6 +114,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_1 = registerKey("desert_poplar_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_2 = registerKey("desert_poplar_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_3 = registerKey("desert_poplar_3");
+    //flower
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_FOREST = registerKey("chrysanthemum_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_KEY = registerKey("chrysanthemum_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> XIHU_LIUYUE_KEY = registerKey("xihu_liuyue_key");
@@ -229,12 +231,13 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_WISTERIA = registerKey("red_wisteria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NANJING_WISTERIA = registerKey("nanjing_wisteria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ROSE_BUSH = registerKey("rose_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERS_PLAIN = registerKey("flowers_plain");
+    //grass
     public static final ResourceKey<ConfiguredFeature<?, ?>> FOUNTAIN_GRASS = registerKey("fountain_grass");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FOUNTAIN_GRASS_GROVE = registerKey("fountain_grass_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FOUNTAIN_GRASS_WOODS = registerKey("fountain_grass_woods");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MISCANTHUS = registerKey("miscanthus");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_MISCANTHUS = registerKey("golden_miscanthus");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERS_PLAIN = registerKey("flowers_plain");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_GROVE = registerKey("grass_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_WOODS = registerKey("grass_woods");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRASS_FOREST_1 = registerKey("grass_forest_1");
@@ -247,6 +250,10 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> DEAD_BUSH = registerKey("dead_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEACH_PETALS = registerKey("peach_petals");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEACH_PETALS_RIVER = registerKey("peach_petals_river");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LEAF_RIVER_0 = registerKey("leaf_river_0");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LEAF_RIVER_1 = registerKey("leaf_river_1");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LEAF_RIVER_2 = registerKey("leaf_river_2");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WATERLILY_RIVER = registerKey("waterlily_river");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_1 = registerKey("moss_patch_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_2 = registerKey("moss_patch_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_3 = registerKey("moss_patch_3");
@@ -898,6 +905,52 @@ public class ModConfiguredFeatures {
         register(context, PEACH_PETALS_RIVER, Feature.RANDOM_PATCH, new RandomPatchConfiguration(8, 4, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(peachPetalsRiverBuilder)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.WATER)))));
+        SimpleWeightedRandomList.Builder<BlockState> leaf0RiverBuilder = SimpleWeightedRandomList.builder();
+        for (Direction direction : Direction.Plane.HORIZONTAL) {
+            leaf0RiverBuilder.add(ModBlocks.CHINESE_PARASOL_LEAF_1.get().defaultBlockState()
+                    .setValue(LeafPileBlock.FACING, direction), 1);
+            leaf0RiverBuilder.add(ModBlocks.CHINESE_PARASOL_LEAF_0.get().defaultBlockState()
+                    .setValue(LeafPileBlock.FACING, direction), 1);
+        }
+        register(context, LEAF_RIVER_0, Feature.RANDOM_PATCH, new RandomPatchConfiguration(8, 4, 1,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(leaf0RiverBuilder)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.WATER)))));
+        SimpleWeightedRandomList.Builder<BlockState> leaf1RiverBuilder = SimpleWeightedRandomList.builder();
+        for (Direction direction : Direction.Plane.HORIZONTAL) {
+            leaf1RiverBuilder.add(ModBlocks.SWEETGUM_LEAF_0.get().defaultBlockState()
+                    .setValue(LeafPileBlock.FACING, direction), 1);
+            leaf1RiverBuilder.add(ModBlocks.SWEETGUM_LEAF_0.get().defaultBlockState()
+                    .setValue(LeafPileBlock.FACING, direction), 1);
+        }
+        register(context, LEAF_RIVER_1, Feature.RANDOM_PATCH, new RandomPatchConfiguration(6, 4, 1,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(leaf1RiverBuilder)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.WATER)))));
+        SimpleWeightedRandomList.Builder<BlockState> leaf2RiverBuilder = SimpleWeightedRandomList.builder();
+        for(int i = 1; i <= 4; ++i) {
+            for (Direction direction : Direction.Plane.HORIZONTAL) {
+                leaf2RiverBuilder.add(ModBlocks.GINKGO_LEAF.get().defaultBlockState()
+                        .setValue(ModFlowerPetalsBlock.AMOUNT, i)
+                        .setValue(ModFlowerPetalsBlock.FACING, direction));
+            }
+        }
+        register(context, LEAF_RIVER_2, Feature.RANDOM_PATCH, new RandomPatchConfiguration(8, 4, 1,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(leaf2RiverBuilder)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.WATER)))));
+        register(context, WATERLILY_RIVER, Feature.RANDOM_PATCH, new RandomPatchConfiguration(10, 6, 1,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.LILY_PAD)),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.WATER)))));

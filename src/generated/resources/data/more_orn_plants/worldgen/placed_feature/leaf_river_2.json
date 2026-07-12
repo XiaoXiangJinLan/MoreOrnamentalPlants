@@ -1,0 +1,21 @@
+{
+  "feature": "more_orn_plants:leaf_river_2",
+  "placement": [
+    {
+      "type": "minecraft:noise_threshold_count",
+      "above_noise": 1,
+      "below_noise": 2,
+      "noise_level": 0.1
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}
