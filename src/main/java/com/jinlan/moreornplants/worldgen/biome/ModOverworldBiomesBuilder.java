@@ -126,7 +126,7 @@ public class ModOverworldBiomesBuilder {
     };
     private final ResourceKey<Biome>[][] RIVER_BIOMES_MOD = new ResourceKey[][]{
             {ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE},
-            {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    null,                      null,                      null},
+            {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.AUTUMN_RIVER,    ModBiomes.LOTUS_RIVER,     ModBiomes.LOTUS_RIVER},
             {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.THE_PEACH_BLOSSOM_SPRING},
             {null,                      null,                      null,                      null,                      null},
             {null,                      null,                      null,                      null,                      null}

@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=east": [ {"model": "more_orn_plants:block/sweetgum_leaf_1", "y": 90, "weight": 3 },
+      {"model": "more_orn_plants:block/sweetgum_leaf_1_1", "y": 90, "weight": 1 } ],
+    "facing=north": [ {"model": "more_orn_plants:block/sweetgum_leaf_1", "weight": 3 },
+      {"model": "more_orn_plants:block/sweetgum_leaf_1_1", "weight": 1 } ],
+    "facing=south": [ {"model": "more_orn_plants:block/sweetgum_leaf_1", "y": 180, "weight": 3 },
+      {"model": "more_orn_plants:block/sweetgum_leaf_1_1", "y": 180, "weight": 1 } ],
+    "facing=west": [ {"model": "more_orn_plants:block/sweetgum_leaf_1", "y": 270, "weight": 3 },
+      {"model": "more_orn_plants:block/sweetgum_leaf_1_1", "y": 270, "weight": 1 } ]
+  }
+}

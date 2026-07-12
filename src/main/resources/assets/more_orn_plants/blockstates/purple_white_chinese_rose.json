@@ -2,13 +2,13 @@
   "variants": {
     "half=lower": [
       { "model": "more_orn_plants:block/purple_white_chinese_rose_bottom", "weight": 1 },
-      { "model": "more_orn_plants:block/purple_white_chinese_rose_bottom_2", "weight": 4 },
-      { "model": "more_orn_plants:block/purple_white_chinese_rose_bottom_3", "weight": 3 }
+      { "model": "more_orn_plants:block/purple_white_chinese_rose_bottom_2", "weight": 5 },
+      { "model": "more_orn_plants:block/purple_white_chinese_rose_bottom_3", "weight": 4 }
     ],
     "half=upper": [
       { "model": "more_orn_plants:block/purple_white_chinese_rose_top", "weight": 1 },
-      { "model": "more_orn_plants:block/purple_white_chinese_rose_top_2", "weight": 4 },
-      { "model": "more_orn_plants:block/purple_white_chinese_rose_top_3", "weight": 3 }
+      { "model": "more_orn_plants:block/purple_white_chinese_rose_top_2", "weight": 5 },
+      { "model": "more_orn_plants:block/purple_white_chinese_rose_top_3", "weight": 4 }
     ]
   }
 }
