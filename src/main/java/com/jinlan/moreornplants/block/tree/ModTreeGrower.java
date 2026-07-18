@@ -39,6 +39,17 @@ public class ModTreeGrower {
             Optional.empty()
     );
 
+    public static final TreeGrower GOLDEN_MEI = new TreeGrower(
+            "golden_mei",
+            0.1F,
+            Optional.empty(),
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.GOLDEN_MEI),
+            Optional.of(ModConfiguredFeatures.ANCIENT_GOLDEN_MEI),
+            Optional.empty(),
+            Optional.empty()
+    );
+
     public static final TreeGrower GREEN_CALYX_MEI = new TreeGrower(
             "green_calyx_mei",
             0.1F,
@@ -133,6 +144,13 @@ public class ModTreeGrower {
             "upright_crabapple",
             Optional.empty(),
             Optional.of(ModConfiguredFeatures.UPRIGHT_CRABAPPLE_WITH_FRUITS),
+            Optional.empty()
+    );
+
+    public static final TreeGrower GOLDEN_CRABAPPLE = new TreeGrower(
+            "golden_crabapple",
+            Optional.empty(),
+            Optional.of(ModConfiguredFeatures.GOLDEN_CRABAPPLE_WITH_FRUITS),
             Optional.empty()
     );
 
@@ -281,10 +299,10 @@ public class ModTreeGrower {
             0.1F,
             Optional.empty(),
             Optional.empty(),
+            Optional.of(ModConfiguredFeatures.NEW_CAMPHOR),
+            Optional.of(ModConfiguredFeatures.NEW_ANCIENT_CAMPHOR),
             Optional.of(ModConfiguredFeatures.CAMPHOR),
-            Optional.of(ModConfiguredFeatures.ANCIENT_CAMPHOR),
-            Optional.empty(),
-            Optional.empty()
+            Optional.of(ModConfiguredFeatures.ANCIENT_CAMPHOR)
     );
 
     public static final TreeGrower DOVE_TREE = new TreeGrower(

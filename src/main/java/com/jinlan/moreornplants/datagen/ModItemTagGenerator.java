@@ -137,8 +137,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
 
         this.tag(ModTags.Items.PLANT_IN_FLORILEGIUM)
-                .addTag(CommonTags.Items.MEI_SAPLING)
-                .addTag(CommonTags.Items.CRABAPPLE_SAPLING)
+                .addTag(ModTags.Items.MEI_SAPLING)
+                .addTag(ModTags.Items.CRABAPPLE_SAPLING)
                 .addTag(CommonTags.Items.APRICOT_SAPLING)
                 .addTag(CommonTags.Items.PEACH_SAPLING)
                 .add(ModBlocks.PEAR_SAPLING.asItem())
@@ -177,10 +177,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(Blocks.LILAC.asItem());
 
         this.copy(CommonTags.Blocks.MEI_SAPLING, CommonTags.Items.MEI_SAPLING);
+        this.tag(ModTags.Items.MEI_SAPLING)
+                .addTag(CommonTags.Items.MEI_SAPLING)
+                .add(ModBlocks.GOLDEN_MEI_SAPLING.asItem());
         this.copy(CommonTags.Blocks.MEI_LEAVES, CommonTags.Items.MEI_LEAVES);
         this.copy(CommonTags.Blocks.WEEPING_MEI, CommonTags.Items.WEEPING_MEI);
 
         this.copy(CommonTags.Blocks.CRABAPPLE_SAPLING, CommonTags.Items.CRABAPPLE_SAPLING);
+        this.tag(ModTags.Items.CRABAPPLE_SAPLING)
+                .addTag(CommonTags.Items.CRABAPPLE_SAPLING)
+                .add(ModBlocks.GOLDEN_CRABAPPLE_SAPLING.asItem());
         this.copy(CommonTags.Blocks.CRABAPPLE_LEAVES, CommonTags.Items.CRABAPPLE_LEAVES);
 
         this.copy(CommonTags.Blocks.OSMANTHUS_SAPLING, CommonTags.Items.OSMANTHUS_SAPLING);

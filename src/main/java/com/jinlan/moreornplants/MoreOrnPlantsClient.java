@@ -25,6 +25,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.vehicle.Boat;
+import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.GrassColor;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
@@ -387,15 +388,17 @@ public class MoreOrnPlantsClient {
             }
             return GrassColor.getDefaultColor();
         }, ModBlocks.MISCANTHUS.get());
+        event.register((state, level, pos, tintIndex) -> level != null && pos != null
+                        ? BiomeColors.getAverageFoliageColor(level, pos)
+                        : FoliageColor.getDefaultColor(),
+                ModBlocks.GREEN_GINKGO_LEAVES.get());
     }
 
     @SubscribeEvent
     public static void registerItemColors(RegisterColorHandlersEvent.Item event) {
-        // 为芒草物品注册颜色处理器
-        event.register((stack, tintIndex) -> {
-            // 使用默认的草颜色
-            return GrassColor.getDefaultColor();
-        }, ModBlocks.MISCANTHUS.get().asItem());
+        // 为物品注册颜色处理器
+        event.register((stack, tintIndex) -> GrassColor.getDefaultColor(), ModBlocks.MISCANTHUS.get().asItem());
+        event.register((stack, tintIndex) -> FoliageColor.getDefaultColor(), ModBlocks.GREEN_GINKGO_LEAVES.get().asItem());
     }
 
     @SubscribeEvent

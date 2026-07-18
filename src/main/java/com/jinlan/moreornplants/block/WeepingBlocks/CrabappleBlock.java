@@ -1,13 +1,10 @@
 package com.jinlan.moreornplants.block.WeepingBlocks;
 
-import com.jinlan.moreornplants.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -40,11 +37,6 @@ public class CrabappleBlock extends PeachBlock {
             return state.setValue(FACING, context.getHorizontalDirection().getOpposite());
         }
         return null;
-    }
-
-    @Override
-    public @NotNull ItemStack getCloneItemStack(@NotNull LevelReader level, @NotNull BlockPos pos, @NotNull BlockState state) {
-        return new ItemStack(ModItems.CRABAPPLE.get());
     }
 
     @Override

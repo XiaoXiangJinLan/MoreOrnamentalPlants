@@ -835,6 +835,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_SAPLING), has(ModBlocks.DOUBLE_PINK_MEI_SAPLING))
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_WHITE_MEI_SAPLING), has(ModBlocks.DOUBLE_WHITE_MEI_SAPLING))
                 .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLDEN_MEI_SAPLING, 1)
+                .requires(CommonTags.Items.MEI_SAPLING)
+                .requires(ModItems.GOLDEN_MEI)
+                .unlockedBy(getHasName(ModItems.GOLDEN_MEI), has(ModItems.GOLDEN_MEI))
+                .save(recipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RED_WEEPING_MEI_SAPLING, 1)
                 .pattern(" # ")
                 .pattern("# #")
@@ -871,6 +876,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModBlocks.VERSICOLOR_MEI_SAPLING)
                 .unlockedBy(getHasName(ModBlocks.VERSICOLOR_MEI_SAPLING), has(ModBlocks.VERSICOLOR_MEI_SAPLING))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":" + "versicolor_weeping_mei_sapling_from_versicolor_mei_sapling");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLDEN_CRABAPPLE_SAPLING, 1)
+                .requires(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING)
+                .requires(ModItems.GOLDEN_CRABAPPLE)
+                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE), has(ModItems.GOLDEN_CRABAPPLE))
+                .save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_CAMELLIA, 2)
                 .requires(ModBlocks.CAMELLIA)

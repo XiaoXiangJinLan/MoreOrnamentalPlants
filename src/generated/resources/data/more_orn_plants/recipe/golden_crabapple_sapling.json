@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:upright_crabapple_sapling"
+    },
+    {
+      "item": "more_orn_plants:golden_crabapple"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_orn_plants:golden_crabapple_sapling"
+  }
+}

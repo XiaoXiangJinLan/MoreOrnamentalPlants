@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-01T19:56:48.6541149	Item Models: more_orn_plants
+// 1.21.1	2026-07-16T21:57:31.3530277	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -181,8 +181,10 @@ b7374e897b1b6e42e81b99b95cadd3c1ec491da2 assets/more_orn_plants/models/item/gink
 c401e05189a4917b6bd9fcf4ee2da40fbbb6a0ec assets/more_orn_plants/models/item/ginkgo_trapdoor.json
 3376e67868a0f8b6715eec9c882ff30ead5c7ce0 assets/more_orn_plants/models/item/golden_chinese_narcissus.json
 047dcf80e766679701a7e764c2c7c84bdbf1aafa assets/more_orn_plants/models/item/golden_crabapple.json
+5a6406e877713f988d5e0797c6c453479233dc2b assets/more_orn_plants/models/item/golden_crabapple_sapling.json
 41209bdc92ae6cc5ab31d65a02df3680d61b9852 assets/more_orn_plants/models/item/golden_ginkgo_sapling.json
 f444c9513541ccb18e9462863e971576a82e15fc assets/more_orn_plants/models/item/golden_mei.json
+8ac0283c6bc43ee6218ab200c75a32aa6f8a9b94 assets/more_orn_plants/models/item/golden_mei_sapling.json
 e5af61893a4d34c248dd3c7cea91d4513424bf25 assets/more_orn_plants/models/item/golden_moth_orchid.json
 614945bb406d06cc8958feee490828925e7bbe14 assets/more_orn_plants/models/item/golden_osmanthus_sapling.json
 bd2c08563b896e3a561bbd14fb43894fca98873a assets/more_orn_plants/models/item/golden_peony.json

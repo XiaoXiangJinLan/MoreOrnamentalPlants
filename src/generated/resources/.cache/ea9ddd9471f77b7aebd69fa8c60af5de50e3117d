@@ -1,11 +1,11 @@
-// 1.21.1	2026-07-11T21:40:27.7862885	Tags for minecraft:item mod id more_orn_plants
+// 1.21.1	2026-07-18T15:26:41.9298985	Tags for minecraft:item mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/item/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/item/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/item/azalea.json
 ecf3903a194080819519550f232f10010513f4b1 data/c/tags/item/bamboo.json
 1bf2bea548c11b2579a74139c61342c914f0a054 data/c/tags/item/camellia.json
 292a153fdf5a2967db87a6aeae7f44e550105b02 data/c/tags/item/camellia_leaves.json
-38a4a45c2e884a2bf185570b48abf4c698b9c794 data/c/tags/item/camphor_leaves.json
+def65372d62d7376d7be21388e3b92c3f77fd0b7 data/c/tags/item/camphor_leaves.json
 cbe3e674f36e91461aa7f8b76f952dc75772cbad data/c/tags/item/chinese_parasol_leaves.json
 55aa72c81e238515c1850ac3d7346d310aa765e0 data/c/tags/item/chinese_parasol_sapling.json
 eae1762d269a0248cc31924e8a169260ff520db5 data/c/tags/item/chinese_rose.json
@@ -64,14 +64,14 @@ f5877f7cac1b1a10079613e11d66c160a762e701 data/minecraft/tags/item/chest_boats.js
 8be1aa4fe90dbc5a1d7ee11fe7233bd9671eea5b data/minecraft/tags/item/goat_food.json
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/item/hanging_signs.json
 f4b15c7bf46f35ca7822538bbc3a2d56a801a15f data/minecraft/tags/item/hoes.json
-f08a722d1498169be7456f7aacb7b21ae190c90a data/minecraft/tags/item/leaves.json
+6f2a600ab79986fee6995717d799c45b2d249d38 data/minecraft/tags/item/leaves.json
 8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/item/logs_that_burn.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/minecraft/tags/item/panda_food.json
 d9ea0b070df9f1a21b3e8c4ce888674b075edbfa data/minecraft/tags/item/pickaxes.json
 ee9351ba2febb44661dee5754f9487bca7a038b0 data/minecraft/tags/item/piglin_loved.json
 8be1aa4fe90dbc5a1d7ee11fe7233bd9671eea5b data/minecraft/tags/item/pig_food.json
 73c33643918bd977c2ecc0002fa55666390463e5 data/minecraft/tags/item/planks.json
-8bb4e76a70de2a937cc82b5b6e305a393120e589 data/minecraft/tags/item/saplings.json
+a47d4738ffafd47491db6eef95b4e180b36879b1 data/minecraft/tags/item/saplings.json
 8be1aa4fe90dbc5a1d7ee11fe7233bd9671eea5b data/minecraft/tags/item/sheep_food.json
 fe1f51273d04cf9b5252133d8921fa45846e2516 data/minecraft/tags/item/shovels.json
 e212d8183275fb9c12db833d8ade37009bec90dd data/minecraft/tags/item/signs.json
@@ -95,6 +95,7 @@ fbfcb1bbbff2166e4513912bdba4592b33899a29 data/more_orn_plants/tags/item/blue_dye
 bbc2c8b21249b87c5cd617c1d84990d2b6b86f7c data/more_orn_plants/tags/item/chinaberry_logs.json
 317cd23c8ed3572bf67b51a3c3ece2f9a9591268 data/more_orn_plants/tags/item/chinese_parasol_logs.json
 bb247fef3cd34749130563305b7387266456fdc2 data/more_orn_plants/tags/item/crabapple_logs.json
+a3d9f1e725a8c73123bd95245ed6055e6144c41e data/more_orn_plants/tags/item/crabapple_sapling.json
 977d3d4d7d3ff80c0306ce751ced14fab411ebeb data/more_orn_plants/tags/item/desert_poplar_logs.json
 4da5ef66f42438f537d28e33610c73b01ad81576 data/more_orn_plants/tags/item/double_pink_mei_logs.json
 23740ae277c1ee580e5aab436e2b860a732ce30a data/more_orn_plants/tags/item/dove_tree_logs.json
@@ -104,12 +105,13 @@ d8dbd7b889b33c0ff72d69d59be1615ebd92d14b data/more_orn_plants/tags/item/green_dy
 351132b4f827c7a690eda46da73faeac2ccb8581 data/more_orn_plants/tags/item/light_blue_dye.json
 dbdddc68003191f5bdbdfedf44648d3704c48e5e data/more_orn_plants/tags/item/lime_dye.json
 e05416e0d8fcb57872bd9c368e2983ad0f6d3108 data/more_orn_plants/tags/item/magenta_dye.json
+a2dd8a71332f6fcf68d9c6ba63ddd65b6edd3c92 data/more_orn_plants/tags/item/mei_sapling.json
 9c1e680e279eecf59743fb484b442e79af1bfff9 data/more_orn_plants/tags/item/orange_dye.json
 701da93ef5f8565e671eec0af36d0e0b5ea5b925 data/more_orn_plants/tags/item/osmanthus_logs.json
 e698cf2c0cd433c69b8e6e08cd238d850df73b49 data/more_orn_plants/tags/item/peach_logs.json
 127abf6cbad1a4ed7fdf7647cd22da749960e3f8 data/more_orn_plants/tags/item/pear_logs.json
 f9975d2938dbc25237ba8a88eb42c22d38e33b44 data/more_orn_plants/tags/item/pink_dye.json
-1a2ea22278cce3b5a7f5ffb89fed1700b5e7a32e data/more_orn_plants/tags/item/plant_in_florilegium.json
+6e30ec3fd752157dfc28e1af9b9c523a36255df1 data/more_orn_plants/tags/item/plant_in_florilegium.json
 a1fb90826da4976ac8b2a1209f4994f26e2ae8fc data/more_orn_plants/tags/item/purple_dye.json
 bf74ee13cd2129707eef22e6a05e12101e0e4006 data/more_orn_plants/tags/item/purple_leaf_plum_logs.json
 6c13029aebd77faf3081e01d9e5e11592d499935 data/more_orn_plants/tags/item/red_dye.json

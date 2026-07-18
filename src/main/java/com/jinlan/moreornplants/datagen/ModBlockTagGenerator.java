@@ -32,7 +32,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(CommonTags.Blocks.WISTERIA)
                 .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get(), ModBlocks.NANJING_WISTERIA_PLANT.get(),
                         ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get(), ModBlocks.RED_CHINESE_WISTERIA_PLANT.get())
-                .add(ModBlocks.CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(), ModBlocks.MEI.get(), ModBlocks.BAMBOO_STICK.get());
+                .add(ModBlocks.CRABAPPLE.get(), ModBlocks.GOLDEN_CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(),
+                        ModBlocks.MEI.get(), ModBlocks.GOLDEN_MEI.get(), ModBlocks.BAMBOO_STICK.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ZIYING_BEADLIGHT.get(), ModBlocks.SUYU_BEADLIGHT.get());
@@ -160,7 +161,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.LEAVES)
                 .addTag(CommonTags.Blocks.MEI_LEAVES)
+                .add(ModBlocks.GOLDEN_MEI_LEAVES.get())
                 .addTag(CommonTags.Blocks.CRABAPPLE_LEAVES)
+                .add(ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get())
                 .addTag(CommonTags.Blocks.APRICOT_LEAVES)
                 .addTag(CommonTags.Blocks.PEACH_LEAVES)
                 .add(ModBlocks.PEAR_LEAVES.get())
@@ -189,7 +192,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.MOTTLED_BAMBOO_SAPLING.get(), ModBlocks.BLACK_BAMBOO_SAPLING.get())
                 .addTag(CommonTags.Blocks.MEI_LEAVES)
+                .add(ModBlocks.GOLDEN_MEI_LEAVES.get())
                 .addTag(CommonTags.Blocks.CRABAPPLE_LEAVES)
+                .add(ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get())
                 .addTag(CommonTags.Blocks.APRICOT_LEAVES)
                 .addTag(CommonTags.Blocks.PEACH_LEAVES)
                 .add(ModBlocks.PEAR_LEAVES.get())
@@ -590,7 +595,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.SAPLINGS)
                 .addTag(CommonTags.Blocks.MEI_SAPLING)
+                .add(ModBlocks.GOLDEN_MEI_SAPLING.get())
                 .addTag(CommonTags.Blocks.CRABAPPLE_SAPLING)
+                .add(ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get())
                 .addTag(CommonTags.Blocks.APRICOT_SAPLING)
                 .addTag(CommonTags.Blocks.PEACH_SAPLING)
                 .add(ModBlocks.PEAR_SAPLING.get())
@@ -701,7 +708,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.YELLOW_CHINESE_PARASOL_LEAVES.get(), ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get());
 
         this.tag(CommonTags.Blocks.CAMPHOR_LEAVES)
-                .add(ModBlocks.CAMPHOR_LEAVES.get());
+                .add(ModBlocks.CAMPHOR_LEAVES.get(), ModBlocks.NEW_CAMPHOR_LEAVES.get());
 
         this.tag(CommonTags.Blocks.DOVE_TREE_LEAVES)
                 .add(ModBlocks.DOVE_TREE_LEAVES.get(), ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get());

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0,hanging=true": {
+      "model": "more_orn_plants:block/golden_mei_age_0"
+    },
+    "age=1,hanging=true": {
+      "model": "more_orn_plants:block/golden_mei_age_1"
+    },
+    "hanging=false": {
+      "model": "more_orn_plants:block/golden_mei_standing"
+    }
+  }
+}
