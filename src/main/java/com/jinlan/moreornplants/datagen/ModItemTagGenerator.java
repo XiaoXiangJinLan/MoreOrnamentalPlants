@@ -142,8 +142,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.copy(BlockTags.TALL_FLOWERS, ItemTags.TALL_FLOWERS);
 
         this.tag(ForgeTags.Items.PLANT_IN_FLORILEGIUM)
-                .addTag(ForgeTags.Items.MEI_SAPLING)
-                .addTag(ForgeTags.Items.CRABAPPLE_SAPLING)
+                .addTag(ModTags.Items.MEI_SAPLING)
+                .addTag(ModTags.Items.CRABAPPLE_SAPLING)
                 .addTag(ForgeTags.Items.APRICOT_SAPLING)
                 .addTag(ForgeTags.Items.PEACH_SAPLING)
                 .add(ModBlocks.PEAR_SAPLING.get().asItem())
@@ -199,6 +199,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.get().asItem())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get().asItem())
                 .add(ModBlocks.PINK_MEI_SAPLING.get().asItem(), ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get().asItem(), ModBlocks.FLAVESCENS_MEI_SAPLING.get().asItem());
+        this.tag(ModTags.Items.MEI_SAPLING)
+                .addTag(ForgeTags.Items.MEI_SAPLING)
+                .add(ModBlocks.GOLDEN_MEI_SAPLING.get().asItem());
 
         this.tag(ForgeTags.Items.MEI_LEAVES)
                 .add(ModBlocks.RED_MEI_LEAVES.get().asItem(), ModBlocks.WHITE_MEI_LEAVES.get().asItem(), ModBlocks.GREEN_CALYX_MEI_LEAVES.get().asItem(),
@@ -279,6 +282,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ForgeTags.Items.CRABAPPLE_SAPLING)
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem());
+        this.tag(ModTags.Items.CRABAPPLE_SAPLING)
+                .addTag(ForgeTags.Items.CRABAPPLE_SAPLING)
+                .add(ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get().asItem());
 
         this.tag(ForgeTags.Items.OSMANTHUS_SAPLING)
                 .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get().asItem())

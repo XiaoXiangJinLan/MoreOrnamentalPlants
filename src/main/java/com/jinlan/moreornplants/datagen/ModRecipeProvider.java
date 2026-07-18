@@ -829,6 +829,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.MEI.get()), has(ModItems.MEI.get()))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get(), 1)
+                .requires(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get())
+                .requires(ModItems.GOLDEN_CRABAPPLE.get())
+                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE.get()), has(ModItems.GOLDEN_CRABAPPLE.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), 1)
                 .requires(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get())
                 .requires(ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get())
@@ -871,6 +877,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModBlocks.VERSICOLOR_MEI_SAPLING.get())
                 .unlockedBy(getHasName(ModBlocks.VERSICOLOR_MEI_SAPLING.get()), has(ModBlocks.VERSICOLOR_MEI_SAPLING.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "versicolor_weeping_mei_sapling_from_versicolor_mei_sapling"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLDEN_MEI_SAPLING.get(), 1)
+                .requires(ForgeTags.Items.MEI_SAPLING)
+                .requires(ModItems.GOLDEN_MEI.get())
+                .unlockedBy(getHasName(ModItems.GOLDEN_MEI.get()), has(ModItems.GOLDEN_MEI.get()))
+                .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_CAMELLIA.get(), 2)
                 .requires(ModBlocks.CAMELLIA.get())

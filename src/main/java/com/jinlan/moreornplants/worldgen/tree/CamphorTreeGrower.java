@@ -12,9 +12,9 @@ public class CamphorTreeGrower extends AbstractTreeGrower {
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
         if (pRandom.nextInt(10) == 0) {
-            return ModConfiguredFeatures.ANCIENT_CAMPHOR;
+            return pHasFlowers ? ModConfiguredFeatures.ANCIENT_CAMPHOR : ModConfiguredFeatures.NEW_ANCIENT_CAMPHOR;
         } else {
-            return ModConfiguredFeatures.CAMPHOR;
+            return pHasFlowers ? ModConfiguredFeatures.CAMPHOR : ModConfiguredFeatures.NEW_CAMPHOR;
         }
     }
 }

@@ -5,6 +5,7 @@ import com.jinlan.moreornplants.advancement.MoonlightTrigger;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ForgeTags;
+import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.advancements.*;
 import net.minecraft.advancements.critereon.*;
@@ -66,7 +67,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             false
                     ))
                     .addCriterion("get_mei", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.MEI_SAPLING).build()
+                            ItemPredicate.Builder.item().of(ModTags.Items.MEI_SAPLING).build()
                     ))
                     .rewards(AdvancementRewards.Builder.experience(11))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "the_leader_among_flower"), existingFileHelper);
@@ -192,7 +193,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
                             false
                     ))
                     .addCriterion("get_crabapple", InventoryChangeTrigger.TriggerInstance.hasItems(
-                            ItemPredicate.Builder.item().of(ForgeTags.Items.CRABAPPLE_SAPLING).build()
+                            ItemPredicate.Builder.item().of(ModTags.Items.CRABAPPLE_SAPLING).build()
                     ))
                     .rewards(AdvancementRewards.Builder.experience(8))
                     .save(saver, new ResourceLocation(MoreOrnPlants.MOD_ID, "celestial_consort"), existingFileHelper);

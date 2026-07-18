@@ -416,6 +416,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.PINK_MEI_SAPLING);
         simpleBlock(ModBlocks.POTTED_PINK_MEI_SAPLING.get(), models().singleTexture("potted_pink_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.PINK_MEI_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.GOLDEN_MEI_LEAVES);
+        saplingBlock(ModBlocks.GOLDEN_MEI_SAPLING);
+        simpleBlock(ModBlocks.POTTED_GOLDEN_MEI_SAPLING.get(), models().singleTexture("potted_golden_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.GOLDEN_MEI_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.GREEN_CALYX_MEI_LEAVES);
         saplingBlock(ModBlocks.GREEN_CALYX_MEI_SAPLING);
         simpleBlock(ModBlocks.POTTED_GREEN_CALYX_MEI_SAPLING.get(), models().singleTexture("potted_green_calyx_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",
@@ -455,6 +459,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING);
         simpleBlock(ModBlocks.POTTED_UPRIGHT_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_upright_crabapple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.GOLDEN_CRABAPPLE_LEAVES);
+        saplingBlock(ModBlocks.GOLDEN_CRABAPPLE_SAPLING);
+        simpleBlock(ModBlocks.POTTED_GOLDEN_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_golden_crabapple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.WEEPING_CRABAPPLE_LEAVES);
         saplingBlock(ModBlocks.WEEPING_CRABAPPLE_SAPLING);
         simpleBlock(ModBlocks.POTTED_WEEPING_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_weeping_crabapple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
@@ -580,10 +588,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         weepingMeiPlantBlock(ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT);
 
         flowerBlock(ModBlocks.WEEPING_CRABAPPLE);
-        facingFruitBlock();
+        facingFruitBlock(ModBlocks.CRABAPPLE);
+        facingFruitBlock(ModBlocks.GOLDEN_CRABAPPLE);
         fruitBlock(ModBlocks.CLOUD_APRICOT, "peach", "peach");
         fruitBlock(ModBlocks.IMMORTAL_PEACH, "peach", "peach");
-        fruitBlock(ModBlocks.MEI, "mei_fruit", "mei");
+        fruitBlock(ModBlocks.GOLDEN_MEI, "mei_fruit", "mei");
 
         wisteriaBlock(ModBlocks.CHINESE_WISTERIA);
         wisteriaPlantBlock(ModBlocks.CHINESE_WISTERIA_PLANT);
@@ -1069,11 +1078,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 models().cross(Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get())).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
-    private void facingFruitBlock() {
-        VariantBlockStateBuilder builder = getVariantBuilder(ModBlocks.CRABAPPLE.get());
+    private void facingFruitBlock(RegistryObject<Block> blockRegistryObject) {
+        VariantBlockStateBuilder builder = getVariantBuilder(blockRegistryObject.get());
         String baseName = null;
-        if (ModBlocks.CRABAPPLE.getId() != null) {
-            baseName = ModBlocks.CRABAPPLE.getId().getPath();
+        if (blockRegistryObject.getId() != null) {
+            baseName = blockRegistryObject.getId().getPath();
         }
         ModelFile age0Model = models().cross(baseName + "_age_0", modLoc("block/" + baseName + "_age_0"))
                 .renderType("cutout");

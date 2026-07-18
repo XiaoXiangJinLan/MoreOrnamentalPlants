@@ -3,6 +3,7 @@ package com.jinlan.moreornplants.client;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.GrassColor;
 import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
@@ -28,6 +29,10 @@ public class ModColorHandler {
             }
             return GrassColor.getDefaultColor();
         }, ModBlocks.MISCANTHUS.get());
+        event.register((state, level, pos, tintIndex) -> level != null && pos != null
+                        ? BiomeColors.getAverageFoliageColor(level, pos)
+                        : FoliageColor.getDefaultColor(),
+                ModBlocks.GREEN_GINKGO_LEAVES.get());
     }
 
     @SubscribeEvent
@@ -37,5 +42,6 @@ public class ModColorHandler {
             // 使用默认的草颜色
             return GrassColor.getDefaultColor();
         }, ModBlocks.MISCANTHUS.get().asItem());
+        event.register((stack, tintIndex) -> FoliageColor.getDefaultColor(), ModBlocks.GREEN_GINKGO_LEAVES.get().asItem());
     }
 }

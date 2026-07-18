@@ -1,13 +1,11 @@
 package com.jinlan.moreornplants.block.WeepingBlocks;
 
-import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -65,11 +63,6 @@ public class PeachBlock extends Block implements BonemealableBlock {
         }
 
         return null;
-    }
-
-    @Override
-    public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull BlockState state) {
-        return new ItemStack(ModItems.IMMORTAL_PEACH.get());
     }
 
     @Override

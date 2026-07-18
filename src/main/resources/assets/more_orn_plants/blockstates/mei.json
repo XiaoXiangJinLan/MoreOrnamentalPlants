@@ -1,6 +1,9 @@
 {
   "variants": {
-    "age=0,hanging=true": {
+    "age=0,hanging=true,pink=true": {
+      "model": "more_orn_plants:block/mei_age_0_pink"
+    },
+    "age=0,hanging=true,pink=false": {
       "model": "more_orn_plants:block/mei_age_0"
     },
     "age=1,hanging=true": {

@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.RED_MEI_LEAVES.get());
                         pOutput.accept(ModBlocks.PINK_MEI_LEAVES.get());
+                        pOutput.accept(ModBlocks.GOLDEN_MEI_LEAVES.get());
                         pOutput.accept(ModBlocks.WHITE_MEI_LEAVES.get());
                         pOutput.accept(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get());
                         pOutput.accept(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get());
@@ -28,6 +29,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.FLAVESCENS_MEI_LEAVES.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_MEI_LEAVES.get());
                         pOutput.accept(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get());
+                        pOutput.accept(ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get());
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get());
                         pOutput.accept(ModBlocks.PINK_APRICOT_LEAVES.get());
                         pOutput.accept(ModBlocks.WHITE_APRICOT_LEAVES.get());
@@ -49,6 +51,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.GREEN_CHINESE_PARASOL_LEAVES.get());
                         pOutput.accept(ModBlocks.SWEETGUM_LEAVES.get());
                         pOutput.accept(ModBlocks.CAMPHOR_LEAVES.get());
+                        pOutput.accept(ModBlocks.NEW_CAMPHOR_LEAVES.get());
                         pOutput.accept(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get());
                         pOutput.accept(ModBlocks.DOVE_TREE_LEAVES.get());
                         pOutput.accept(ModBlocks.CHINABERRY_LEAVES.get());
@@ -71,6 +74,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHINESE_AZALEA_LEAVES.get());
                         pOutput.accept(ModBlocks.RED_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.PINK_MEI_SAPLING.get());
+                        pOutput.accept(ModBlocks.GOLDEN_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.WHITE_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get());
@@ -83,6 +87,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PINK_WEEPING_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get());
                         pOutput.accept(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get());
+                        pOutput.accept(ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get());
                         pOutput.accept(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get());
                         pOutput.accept(ModBlocks.PINK_APRICOT_SAPLING.get());
                         pOutput.accept(ModBlocks.WHITE_APRICOT_SAPLING.get());

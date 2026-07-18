@@ -22,16 +22,21 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
     private static final LootItemCondition.Builder HAS_SHEARS_OR_SILK_TOUCH = HAS_SHEARS.or(HAS_SILK_TOUCH);
     private static final LootItemCondition.Builder HAS_NO_SHEARS_OR_SILK_TOUCH = HAS_SHEARS_OR_SILK_TOUCH.invert();
     private static final float[] NORMAL_LEAVES_STICK_CHANCES = new float[]{0.02F, 0.022222223F, 0.025F, 0.033333335F, 0.1F};
+    private final Set<Block> excludedBlocks = new HashSet<>();
 
     public ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+        excludedBlocks.add(ModBlocks.GOLDEN_MEI_LEAVES.get());
+        excludedBlocks.add(ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get());
     }
 
     @Override
@@ -359,6 +364,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.SWEETGUM_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.CAMPHOR_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.CAMPHOR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.NEW_CAMPHOR_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.CAMPHOR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.DOVE_TREE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.DOVE_TREE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get(), block ->
@@ -534,6 +541,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PINK_MEI_SAPLING.get());
         this.add(ModBlocks.POTTED_PINK_MEI_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.PINK_MEI_SAPLING.get()));
+        this.dropSelf(ModBlocks.GOLDEN_MEI_SAPLING.get());
+        this.add(ModBlocks.POTTED_GOLDEN_MEI_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.GOLDEN_MEI_SAPLING.get()));
         this.dropSelf(ModBlocks.GREEN_CALYX_MEI_SAPLING.get());
         this.add(ModBlocks.POTTED_GREEN_CALYX_MEI_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.GREEN_CALYX_MEI_SAPLING.get()));
@@ -567,6 +577,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get());
         this.add(ModBlocks.POTTED_UPRIGHT_CRABAPPLE_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
+        this.dropSelf(ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get());
+        this.add(ModBlocks.POTTED_GOLDEN_CRABAPPLE_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get()));
         this.dropSelf(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get());
         this.add(ModBlocks.POTTED_WEEPING_CRABAPPLE_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get()));
@@ -697,6 +710,44 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                                         .hasProperty(PeachBlock.AGE, 1))))
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModItems.MEI.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.HANGING, false)))));
+        this.add(ModBlocks.GOLDEN_MEI.get(), block -> LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.GOLDEN_MEI.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.HANGING, true)
+                                        .hasProperty(PeachBlock.AGE, 1))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.GOLD_NUGGET))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(3, 4)))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.HANGING, true)
+                                        .hasProperty(PeachBlock.AGE, 1))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.GOLDEN_MEI.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.HANGING, false)))));
+        this.add(ModBlocks.GOLDEN_CRABAPPLE.get(), block -> LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.GOLDEN_CRABAPPLE.get()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.HANGING, true)
+                                        .hasProperty(PeachBlock.AGE, 1))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.GOLD_NUGGET))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2, 3)))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachBlock.HANGING, true)
+                                        .hasProperty(PeachBlock.AGE, 1))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(ModItems.GOLDEN_CRABAPPLE.get()))
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
                                         .hasProperty(PeachBlock.HANGING, false)))));
@@ -1205,7 +1256,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     }
 
     @Override
-    protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    protected @NotNull Iterable<Block> getKnownBlocks() {
+        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get).filter(block -> !excludedBlocks.contains(block))::iterator;
     }
 }

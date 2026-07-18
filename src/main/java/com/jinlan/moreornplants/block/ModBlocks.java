@@ -44,6 +44,8 @@ public class ModBlocks {
             registerBlock("white_mei_leaves", () -> new WhiteMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
     public static final RegistryObject<Block> PINK_MEI_LEAVES =
             registerBlock("pink_mei_leaves", () -> new PinkMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES)));
+    public static final RegistryObject<Block> GOLDEN_MEI_LEAVES =
+            registerBlock("golden_mei_leaves", () -> new GoldenMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.GOLD)));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_LEAVES =
             registerBlock("green_calyx_mei_leaves", () -> new GreenCalyxMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_LIGHT_GREEN)));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_LEAVES =
@@ -56,6 +58,8 @@ public class ModBlocks {
             registerBlock("versicolor_mei_leaves", () -> new VersicolorMeiLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES)));
     public static final RegistryObject<Block> UPRIGHT_CRABAPPLE_LEAVES =
             registerBlock("upright_crabapple_leaves", () -> new UprightCrabappleLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES)));
+    public static final RegistryObject<Block> GOLDEN_CRABAPPLE_LEAVES =
+            registerBlock("golden_crabapple_leaves", () -> new GoldenCrabappleLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.GOLD)));
     public static final RegistryObject<Block> WEEPING_CRABAPPLE_LEAVES =
             registerBlock("weeping_crabapple_leaves", () -> new WeepingCrabappleLeavesBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_LEAVES).mapColor(MapColor.COLOR_MAGENTA)));
     public static final RegistryObject<Block> PINK_APRICOT_LEAVES =
@@ -98,6 +102,8 @@ public class ModBlocks {
             registerBlock("sweetgum_leaves", () -> new SweetgumLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.COLOR_RED)));
     public static final RegistryObject<Block> CAMPHOR_LEAVES =
             registerBlock("camphor_leaves", () -> new CamphorLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<Block> NEW_CAMPHOR_LEAVES =
+            registerBlock("new_camphor_leaves", () -> new CamphorLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
     public static final RegistryObject<Block> DOVE_TREE_LEAVES =
             registerBlock("dove_tree_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
     public static final RegistryObject<Block> DOVE_TREE_BLOSSOM_LEAVES =
@@ -164,12 +170,16 @@ public class ModBlocks {
             registerBlock("weeping_crabapple", () -> new WeepingCrabappleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.CHERRY_LEAVES).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> CRABAPPLE =
             BLOCKS.register("crabapple", () -> new CrabappleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.CHERRY_LEAVES).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> GOLDEN_CRABAPPLE =
+            BLOCKS.register("golden_crabapple", () -> new CrabappleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.CHERRY_LEAVES).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 10)));
     public static final RegistryObject<Block> CLOUD_APRICOT =
-            BLOCKS.register("cloud_apricot", () -> new ApricotBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("cloud_apricot", () -> new ApricotBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> IMMORTAL_PEACH =
             BLOCKS.register("immortal_peach", () -> new PeachBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> MEI =
             BLOCKS.register("mei", () -> new MeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> GOLDEN_MEI =
+            BLOCKS.register("golden_mei", () -> new MeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 10)));
 
     public static final RegistryObject<Block> CHINESE_WISTERIA =
             registerBlock("chinese_wisteria", () -> new WisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
@@ -797,6 +807,8 @@ public class ModBlocks {
             registerBlock("white_mei_sapling", () -> new SaplingBlock(new WhiteMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PINK_MEI_SAPLING =
             registerBlock("pink_mei_sapling", () -> new SaplingBlock(new PinkMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> GOLDEN_MEI_SAPLING =
+            registerBlock("golden_mei_sapling", () -> new SaplingBlock(new GoldenMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_SAPLING =
             registerBlock("green_calyx_mei_sapling", () -> new SaplingBlock(new GreenCalyxMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_SAPLING =
@@ -819,6 +831,8 @@ public class ModBlocks {
             registerBlock("versicolor_weeping_mei_sapling", () -> new SaplingBlock(new VersicolorWeepingMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> UPRIGHT_CRABAPPLE_SAPLING =
             registerBlock("upright_crabapple_sapling", () -> new SaplingBlock(new UprightCrabappleTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> GOLDEN_CRABAPPLE_SAPLING =
+            registerBlock("golden_crabapple_sapling", () -> new SaplingBlock(new GoldenCrabappleTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WEEPING_CRABAPPLE_SAPLING =
             registerBlock("weeping_crabapple_sapling", () -> new SaplingBlock(new WeepingCrabappleTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PINK_APRICOT_SAPLING =
@@ -882,6 +896,8 @@ public class ModBlocks {
             BLOCKS.register("potted_white_mei_sapling", () -> flowerPot(WHITE_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_PINK_MEI_SAPLING =
             BLOCKS.register("potted_pink_mei_sapling", () -> flowerPot(PINK_MEI_SAPLING.get()));
+    public static final RegistryObject<Block> POTTED_GOLDEN_MEI_SAPLING =
+            BLOCKS.register("potted_golden_mei_sapling", () -> flowerPot(GOLDEN_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_GREEN_CALYX_MEI_SAPLING =
             BLOCKS.register("potted_green_calyx_mei_sapling", () -> flowerPot(GREEN_CALYX_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_DOUBLE_PINK_MEI_SAPLING =
@@ -904,6 +920,8 @@ public class ModBlocks {
             BLOCKS.register("potted_versicolor_weeping_mei_sapling", () -> flowerPot(VERSICOLOR_WEEPING_MEI_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_UPRIGHT_CRABAPPLE_SAPLING =
             BLOCKS.register("potted_upright_crabapple_sapling", () -> flowerPot(UPRIGHT_CRABAPPLE_SAPLING.get()));
+    public static final RegistryObject<Block> POTTED_GOLDEN_CRABAPPLE_SAPLING =
+            BLOCKS.register("potted_golden_crabapple_sapling", () -> flowerPot(GOLDEN_CRABAPPLE_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_WEEPING_CRABAPPLE_SAPLING =
             BLOCKS.register("potted_weeping_crabapple_sapling", () -> flowerPot(WEEPING_CRABAPPLE_SAPLING.get()));
     public static final RegistryObject<Block> POTTED_PINK_APRICOT_SAPLING =
