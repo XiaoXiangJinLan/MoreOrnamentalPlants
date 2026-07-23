@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "more_orn_plants:block/gold_sand"
+      },
+      {
+        "model": "more_orn_plants:block/gold_sand",
+        "y": 90
+      },
+      {
+        "model": "more_orn_plants:block/gold_sand",
+        "y": 180
+      },
+      {
+        "model": "more_orn_plants:block/gold_sand",
+        "y": 270
+      }
+    ]
+  }
+}

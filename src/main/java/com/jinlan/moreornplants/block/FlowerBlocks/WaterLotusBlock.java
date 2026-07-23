@@ -3,7 +3,6 @@ package com.jinlan.moreornplants.block.FlowerBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -66,27 +65,18 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+    public VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         Vec3 vec3 = state.getOffset(level, pos);
         VoxelShape shape = state.getValue(HALF) == DoubleBlockHalf.LOWER ? LOWER_SHAPE : UPPER_SHAPE;
         return shape.move(vec3.x, vec3.y, vec3.z);
     }
 
     @Override
-    public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
+    public boolean canSurvive(BlockState state, @NotNull LevelReader level, @NotNull BlockPos pos) {
         if (state.getValue(HALF) == DoubleBlockHalf.LOWER) {
             BlockState existingState = level.getBlockState(pos);
-            BlockPos belowPos = pos.below();
-            BlockState belowState = level.getBlockState(belowPos);
-
             return (existingState.getBlock() == this || existingState.getFluidState().is(Fluids.WATER))
-                    && this.isExposed(level, pos.above())
-                    && (belowState.is(BlockTags.DIRT)
-                    || belowState.is(BlockTags.SAND)
-                    || belowState.is(Blocks.CLAY)
-                    || belowState.is(Blocks.GRAVEL)
-                    || belowState.is(Blocks.SUSPICIOUS_GRAVEL)
-                    || belowState.is(Blocks.FARMLAND));
+                    && this.isExposed(level, pos.above());
         } else {
             // 上半部分：检查下方是否是荷花的下半部分且含水
             BlockState belowState = level.getBlockState(pos.below());
@@ -169,12 +159,12 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state, boolean isClient) {
+    public boolean isValidBonemealTarget(@NotNull LevelReader level, @NotNull BlockPos pos, BlockState state, boolean isClient) {
         return state.getValue(AGE) < 3;
     }
 
     @Override
-    public boolean isBonemealSuccess(Level level, RandomSource random, BlockPos pos, BlockState state) {
+    public boolean isBonemealSuccess(@NotNull Level level, @NotNull RandomSource random, @NotNull BlockPos pos, @NotNull BlockState state) {
         return true; // 骨粉总是成功
     }
 

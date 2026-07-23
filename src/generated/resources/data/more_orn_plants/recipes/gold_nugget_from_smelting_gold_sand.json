@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 160,
+  "experience": 1.5,
+  "group": "gold_sand",
+  "ingredient": {
+    "item": "more_orn_plants:gold_sand"
+  },
+  "result": "minecraft:gold_nugget"
+}

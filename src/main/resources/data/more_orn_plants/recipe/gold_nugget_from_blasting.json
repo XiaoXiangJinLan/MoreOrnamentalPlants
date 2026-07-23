@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 60,
+  "experience": 0.5,
+  "ingredient": [
+    {
+      "item": "more_orn_plants:golden_mei_sapling"
+    },
+    {
+      "item": "more_orn_plants:golden_mei_leaves"
+    },
+    {
+      "item": "more_orn_plants:golden_mei"
+    },
+    {
+      "item": "more_orn_plants:golden_crabapple_sapling"
+    },
+    {
+      "item": "more_orn_plants:golden_crabapple_leaves"
+    },
+    {
+      "item": "more_orn_plants:golden_crabapple"
+    },
+    {
+      "item": "more_orn_plants:golden_chinese_tamarisk"
+    }
+  ],
+  "result": {
+    "id": "minecraft:gold_nugget"
+  }
+}

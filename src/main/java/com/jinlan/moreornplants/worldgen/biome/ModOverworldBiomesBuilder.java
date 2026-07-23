@@ -90,25 +90,25 @@ public class ModOverworldBiomesBuilder {
     };
 
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_MOD = new ResourceKey[][]{
-            {ModBiomes.RED_MEI_FOREST, ModBiomes.RED_MEI_FOREST, ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST,      null},
-            {ModBiomes.PEONY_SEA,      ModBiomes.PEONY_SEA,      ModBiomes.EVERGREEN_FOREST,    ModBiomes.EVERGREEN_FOREST,    ModBiomes.LONGEVITY_FOREST},
-            {ModBiomes.FLOWERS_GROVE,  ModBiomes.FLOWERS_GROVE,  ModBiomes.CAMELLIA_VALLEY,     ModBiomes.CAMELLIA_VALLEY,     ModBiomes.THE_PEACH_BLOSSOM_SPRING},
-            {null,                     null,                     null,                          null,                          null},
-            {null,                     null,                     ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
+            {ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST,      null},
+            {ModBiomes.PEONY_SEA,           ModBiomes.PEONY_SEA,           ModBiomes.COLORED_FOREST,      ModBiomes.COLORED_FOREST,      ModBiomes.LONGEVITY_FOREST},
+            {ModBiomes.FLOWERS_GROVE,       ModBiomes.FLOWERS_GROVE,       ModBiomes.CAMELLIA_VALLEY,     ModBiomes.CAMELLIA_VALLEY,     ModBiomes.THE_PEACH_BLOSSOM_SPRING},
+            {null,                          null,                          null,                          null,                          null},
+            {ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
     };
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_VARIANT_MOD = new ResourceKey[][]{
             {ModBiomes.SNOW_GREETS_SPRING, ModBiomes.SNOW_GREETS_SPRING, ModBiomes.SNOW_GREETS_SPRING,   ModBiomes.SNOW_GREETS_SPRING,  null},
-            {ModBiomes.PEONY_MEADOWS,      ModBiomes.PEONY_MEADOWS,      ModBiomes.COLORED_FOREST,       ModBiomes.COLORED_FOREST,      null},
+            {ModBiomes.PEONY_MEADOWS,      ModBiomes.PEONY_MEADOWS,      ModBiomes.WUTONG_FOREST,        ModBiomes.WUTONG_FOREST,       null},
             {ModBiomes.CRABAPPLE_GROVE,    ModBiomes.CRABAPPLE_GROVE,    ModBiomes.PINK_CAMELLIA_VALLEY, ModBiomes.RED_CAMELLIA_VALLEY, ModBiomes.THE_PEACH_BLOSSOM_SPRING},
             {null,                         null,                         null,                           null,                          null},
-            {null,                         null,                         ModBiomes.DESERT_POPLAR_WOODS,  ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
+            {ModBiomes.GOLD_COUNTRY,       ModBiomes.GOLD_COUNTRY,       ModBiomes.GOLD_COUNTRY,         ModBiomes.GOLD_COUNTRY,        ModBiomes.GOLD_COUNTRY}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_MOD = new ResourceKey[][]{
-            {null,                                 null,                                 null,                       null,                       null},
-            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.COLORED_FOREST,   ModBiomes.COLORED_FOREST,   null},
-            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.EVERGREEN_FOREST, ModBiomes.EVERGREEN_FOREST, ModBiomes.THE_PEACH_BLOSSOM_SPRING},
-            {null,                                 null,                                 null,                       null,                       null},
-            {null,                                 null,                                 null,                       null,                       null}
+            {null,                                 null,                                 null,                     null,                     null},
+            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.COLORED_FOREST, ModBiomes.COLORED_FOREST, null},
+            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.PURPLE_CLOUD,   ModBiomes.PURPLE_CLOUD,   ModBiomes.THE_PEACH_BLOSSOM_SPRING},
+            {null,                                 null,                                 null,                     null,                     null},
+            {null,                                 null,                                 null,                     null,                     null}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_VARIANT_MOD = new ResourceKey[][]{
             {null, null,                    null,                    null,                    null},
@@ -126,8 +126,8 @@ public class ModOverworldBiomesBuilder {
     };
     private final ResourceKey<Biome>[][] RIVER_BIOMES_MOD = new ResourceKey[][]{
             {ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE, ModBiomes.JIANGTIAN_MUXUE},
-            {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.AUTUMN_RIVER,    ModBiomes.LOTUS_RIVER,     ModBiomes.LOTUS_RIVER},
-            {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.THE_PEACH_BLOSSOM_SPRING},
+            {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.AUTUMN_RIVER,    ModBiomes.AUTUMN_RIVER,    ModBiomes.LOTUS_RIVER},
+            {ModBiomes.SPRING_RIVER,    ModBiomes.SPRING_RIVER,    ModBiomes.LOTUS_RIVER,     ModBiomes.LOTUS_RIVER,     ModBiomes.THE_PEACH_BLOSSOM_SPRING},
             {null,                      null,                      null,                      null,                      null},
             {null,                      null,                      null,                      null,                      null}
     };

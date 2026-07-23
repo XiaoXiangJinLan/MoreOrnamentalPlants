@@ -8,16 +8,16 @@ public class ModSecondOverworldBiomesBuilder extends ModOverworldBiomesBuilder{
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_MOD = new ResourceKey[][]{
             {ModBiomes.FRAGRANT_SNOW_SEA,   ModBiomes.FRAGRANT_SNOW_SEA,   ModBiomes.FRAGRANT_SNOW_SEA, ModBiomes.FRAGRANT_SNOW_SEA, null},
             {ModBiomes.CHINESE_ROSE_FIELDS, ModBiomes.CHINESE_ROSE_FIELDS, ModBiomes.MISCANTHUS_FIELDS, ModBiomes.MISCANTHUS_FIELDS, null},
-            {ModBiomes.CROPS_GREEN,         ModBiomes.CROPS_GREEN,         ModBiomes.CHINABERRY_WOODS,  ModBiomes.CHINABERRY_WOODS,  null},
-            {null,                    null,                                null,                        null,                        null},
-            {null,                    null,                                null,                        null,                        null}
+            {ModBiomes.CROPS_GREEN,         ModBiomes.CROPS_GREEN,         ModBiomes.EVERGREEN_FOREST,  ModBiomes.EVERGREEN_FOREST,  null},
+            {null,                          null,                          null,                        null,                        null},
+            {ModBiomes.TAMARISK_FIELDS,     ModBiomes.TAMARISK_FIELDS,     ModBiomes.TAMARISK_FIELDS,   ModBiomes.TAMARISK_FIELDS,   ModBiomes.TAMARISK_FIELDS}
     };
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_VARIANT_MOD = new ResourceKey[][]{
-            {null,                     null,                     null,                    null,                    null},
-            {ModBiomes.SWEETGUM_WOODS, ModBiomes.SWEETGUM_WOODS, ModBiomes.GINKGO_FOREST, ModBiomes.GINKGO_FOREST, null},
-            {ModBiomes.SNOW_WOODS,     ModBiomes.SNOW_WOODS,     ModBiomes.PURPLE_CLOUD,  ModBiomes.PURPLE_CLOUD,  null},
-            {null,                     null,                     null,                    null,                    null},
-            {null,                     null,                     null,                    null,                    null}
+            {null,                       null,                       null,                    null,                    null},
+            {ModBiomes.SWEETGUM_WOODS,   ModBiomes.SWEETGUM_WOODS,   ModBiomes.GINKGO_FOREST, ModBiomes.GINKGO_FOREST, null},
+            {ModBiomes.CHINABERRY_WOODS, ModBiomes.CHINABERRY_WOODS, ModBiomes.SNOW_WOODS,    ModBiomes.SNOW_WOODS,    null},
+            {null,                       null,                       null,                    null,                    null},
+            {null,                       null,                       null,                    null,                    null}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_MOD = new ResourceKey[][]{
             {null,                    null,                    null,                    null,                    null},

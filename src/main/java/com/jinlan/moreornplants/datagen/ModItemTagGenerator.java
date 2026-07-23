@@ -174,6 +174,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ForgeTags.Items.WISTERIA)
                 .addTag(ForgeTags.Items.NARCISSUS)
                 .add(ModBlocks.WHITE_MOTH_ORCHID.get().asItem(), ModBlocks.PINK_MOTH_ORCHID.get().asItem(), ModBlocks.PURPLE_MOTH_ORCHID.get().asItem(), ModBlocks.GOLDEN_MOTH_ORCHID.get().asItem())
+                .add(ModBlocks.CHINESE_TAMARISK.get().asItem(), ModBlocks.GOLDEN_CHINESE_TAMARISK.get().asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.get().asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem(), ModBlocks.SPRING_PETALS.get().asItem())
                 .add(ModItems.BAMBOO_STICK.get(), ModBlocks.MUXUE_GRASS.get().asItem())
                 .add(Blocks.POPPY.asItem())
@@ -430,7 +431,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.VIOLET_PINK_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.CHARMING_RHODODENDRON.get().asItem())
                 .add(ModBlocks.RED_CRAPE_MYRTLE.get().asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get().asItem())
-                .add(ModBlocks.RED_CHINESE_WISTERIA.get().asItem());
+                .add(ModBlocks.RED_CHINESE_WISTERIA.get().asItem())
+                .add(ModBlocks.CHINESE_TAMARISK.get().asItem());
 
         this.tag(ModTags.Items.LIME_DYE)
                 .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
@@ -477,7 +479,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.CRABAPPLE.get(), ModItems.CLOUD_APRICOT.get(), ModItems.IMMORTAL_PEACH.get());
 
         this.tag(ItemTags.PIGLIN_LOVED)
-                .add(ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get(), ModItems.GOLDEN_MEI.get());
+                .add(ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get(), ModItems.GOLDEN_MEI.get())
+                .add(ModBlocks.GOLD_SAND.get().asItem())
+                .add(ModBlocks.GOLDEN_MEI_LEAVES.get().asItem(), ModBlocks.GOLDEN_MEI_SAPLING.get().asItem())
+                .add(ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get().asItem(), ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get().asItem())
+                .add(ModBlocks.GOLDEN_CHINESE_TAMARISK.get().asItem());
 
         this.tag(ModTags.Items.BAIHUA_CAT_FOOD)
                 .addTag(ItemTags.FLOWERS)

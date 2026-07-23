@@ -21,6 +21,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
+        this.tag(BlockTags.ENDERMAN_HOLDABLE)
+                .add(ModBlocks.GOLD_SAND.get());
+
+        this.tag(BlockTags.SAND)
+                .add(ModBlocks.GOLD_SAND.get());
+
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.MOTTLED_BAMBOO.get())
                 .add(ModBlocks.BLACK_BAMBOO.get())
@@ -39,6 +45,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRABAPPLE.get(), ModBlocks.GOLDEN_CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(),
                         ModBlocks.MEI.get(), ModBlocks.GOLDEN_MEI.get(), ModBlocks.BAMBOO_STICK.get());
 
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.GOLD_SAND.get());
+
         this.tag(BlockTags.CROPS)
                 .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get())
                 .add(ModBlocks.LOTUS_LEAF.get());
@@ -50,6 +59,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.REPLACEABLE)
                 .add(ModBlocks.BAMBOO_STICK.get())
                 .add(ModBlocks.MUXUE_GRASS.get(), ModBlocks.TALL_MUXUE_GRASS.get());
+
+        this.tag(BlockTags.LUSH_GROUND_REPLACEABLE)
+                .add(ModBlocks.GOLD_SAND.get());
+
+        this.tag(BlockTags.AZALEA_ROOT_REPLACEABLE)
+                .add(ModBlocks.GOLD_SAND.get());
+
+        this.tag(BlockTags.SCULK_REPLACEABLE)
+                .add(ModBlocks.GOLD_SAND.get());
 
         this.tag(BlockTags.MOSS_REPLACEABLE)
                 .add(ModBlocks.RED_WEEPING_MEI.get(), ModBlocks.RED_WEEPING_MEI_PLANT.get())
@@ -148,6 +166,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_PINK_RHODODENDRON.get(), ModBlocks.POTTED_CHINESE_AZALEA.get())
                 .add(ModBlocks.POTTED_CHINESE_NARCISSUS.get(), ModBlocks.POTTED_GOLDEN_CHINESE_NARCISSUS.get())
                 .add(ModBlocks.POTTED_WHITE_MOTH_ORCHID.get(), ModBlocks.POTTED_PINK_MOTH_ORCHID.get(), ModBlocks.POTTED_PURPLE_MOTH_ORCHID.get(), ModBlocks.POTTED_GOLDEN_MOTH_ORCHID.get())
+                .add(ModBlocks.POTTED_CHINESE_TAMARISK.get(), ModBlocks.POTTED_GOLDEN_CHINESE_TAMARISK.get())
                 .add(ModBlocks.POTTED_FOUNTAIN_GRASS.get(), ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.POTTED_PINK_FOUNTAIN_GRASS.get(), ModBlocks.POTTED_WHITE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.POTTED_MOTTLED_BAMBOO.get(), ModBlocks.POTTED_BLACK_BAMBOO.get(), ModBlocks.POTTED_BAMBOO_STICK.get())
@@ -752,6 +771,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_RHODODENDRON.get(), ModBlocks.CHINESE_AZALEA.get())
                 .add(ModBlocks.CHINESE_NARCISSUS.get(), ModBlocks.GOLDEN_CHINESE_NARCISSUS.get())
                 .add(ModBlocks.WHITE_MOTH_ORCHID.get(), ModBlocks.PINK_MOTH_ORCHID.get(), ModBlocks.PURPLE_MOTH_ORCHID.get())
+                .add(ModBlocks.CHINESE_TAMARISK.get())
                 .add(ModBlocks.CUT_PEONY.get(), ModBlocks.CUT_LIGHT_PINK_PEONY.get(), ModBlocks.CUT_VIOLET_PINK_PEONY.get())
                 .add(ModBlocks.CUT_RED_PEONY.get(), ModBlocks.CUT_LIGHT_RED_PEONY.get(), ModBlocks.CUT_INK_RED_PEONY.get())
                 .add(ModBlocks.CUT_PURPLE_PEONY.get(), ModBlocks.CUT_LIGHT_PURPLE_PEONY.get(), ModBlocks.CUT_INK_PURPLE_PEONY.get())
@@ -806,5 +826,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON)
                 .add(Blocks.MOSS_BLOCK)
                 .add(ModBlocks.ZIYING_BEADLIGHT.get(), ModBlocks.SUYU_BEADLIGHT.get());
+
+        this.tag(BlockTags.RABBITS_SPAWNABLE_ON)
+                .add(ModBlocks.GOLD_SAND.get());
     }
 }

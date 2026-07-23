@@ -12,6 +12,7 @@ public class BiomeConfigManager {
             case "flowers_grove" -> ModBiomeConfig.ENABLE_FLOWERS_GROVE.get();
             case "crabapple_grove" -> ModBiomeConfig.ENABLE_CRABAPPLE_GROVE.get();
             case "colored_forest" -> ModBiomeConfig.ENABLE_COLORED_FOREST.get();
+            case "wutong_forest" -> ModBiomeConfig.ENABLE_WUTONG_FOREST.get();
             case "the_peach_blossom_spring" -> ModBiomeConfig.ENABLE_PEACH_BLOSSOM_SPRING.get();
             case "camellia_valley" -> ModBiomeConfig.ENABLE_CAMELLIA_VALLEY.get();
             case "red_camellia_valley" -> ModBiomeConfig.ENABLE_RED_CAMELLIA_VALLEY.get();
@@ -19,6 +20,8 @@ public class BiomeConfigManager {
             case "red_highlands" -> ModBiomeConfig.ENABLE_RED_HIGHLANDS.get();
             case "furong_guo" -> ModBiomeConfig.ENABLE_FURONG_GUO.get();
             case "desert_poplar_woods" -> ModBiomeConfig.ENABLE_DESERT_POPLAR_WOODS.get();
+            case "tamarisk_fields" -> ModBiomeConfig.ENABLE_TAMARISK_FIELDS.get();
+            case "gold_country" -> ModBiomeConfig.ENABLE_GOLD_COUNTRY.get();
             case "chinese_rose_fields" -> ModBiomeConfig.ENABLE_CHINESE_ROSE_FIELDS.get();
             case "sweetgum_woods" -> ModBiomeConfig.ENABLE_SWEETGUM_WOODS.get();
             case "chinaberry_woods" -> ModBiomeConfig.ENABLE_CHINABERRY_WOODS.get();
@@ -28,6 +31,8 @@ public class BiomeConfigManager {
             case "crops_green" -> ModBiomeConfig.ENABLE_CROPS_GREEN.get();
             case "purple_cloud" -> ModBiomeConfig.ENABLE_PURPLE_CLOUD.get();
             case "spring_river" -> ModBiomeConfig.ENABLE_SPRING_RIVER.get();
+            case "lotus_river" -> ModBiomeConfig.ENABLE_LOTUS_RIVER.get();
+            case "autumn_river" -> ModBiomeConfig.ENABLE_AUTUMN_RIVER.get();
             case "jiangtian_muxue" -> ModBiomeConfig.ENABLE_JIANGTIAN_MUXUE.get();
             case "penglai" -> ModBiomeConfig.ENABLE_PENGLAI.get();
             case "mount_mei" -> ModBiomeConfig.ENABLE_MOUNT_MEI.get();

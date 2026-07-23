@@ -207,6 +207,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PURPLE_FOUNTAIN_GRASS.get());
                         pOutput.accept(ModBlocks.PINK_FOUNTAIN_GRASS.get());
                         pOutput.accept(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
+                        pOutput.accept(ModBlocks.CHINESE_TAMARISK.get());
+                        pOutput.accept(ModBlocks.GOLDEN_CHINESE_TAMARISK.get());
                         pOutput.accept(ModItems.BAMBOO_STICK.get());
                         pOutput.accept(ModBlocks.PEACH_PINK_PETALS.get());
                         pOutput.accept(ModBlocks.FRAGRANT_SNOW_PETALS.get());
@@ -524,6 +526,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DESERT_POPLAR_HANGING_SIGN.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_LOG.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_WOOD.get());
+                        pOutput.accept(ModBlocks.GOLD_SAND.get());
                         pOutput.accept(ModBlocks.ZIYING_BEADLIGHT.get());
                         pOutput.accept(ModBlocks.SUYU_BEADLIGHT.get());
                         pOutput.accept(ModItems.CYMBIDIUM_XIANGNANG.get());

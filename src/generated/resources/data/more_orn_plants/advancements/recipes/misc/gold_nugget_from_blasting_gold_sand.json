@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gold_sand": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:gold_sand"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:gold_nugget_from_blasting_gold_sand"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_gold_sand",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:gold_nugget_from_blasting_gold_sand"
+    ]
+  },
+  "sends_telemetry_event": false
+}

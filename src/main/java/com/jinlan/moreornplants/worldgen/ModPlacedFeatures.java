@@ -28,6 +28,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WHITE_MEI_PLACED = registerKey("white_mei_placed");
     public static final ResourceKey<PlacedFeature> PINK_MEI_PLACED = registerKey("pink_mei_placed");
     public static final ResourceKey<PlacedFeature> GOLDEN_MEI_PLACED = registerKey("golden_mei_placed");
+    public static final ResourceKey<PlacedFeature> GOLDEN_MEI_GOLD_PLACED = registerKey("golden_mei_gold_placed");
     public static final ResourceKey<PlacedFeature> DOUBLE_PINK_MEI_PLACED = registerKey("double_pink_mei_placed");
     public static final ResourceKey<PlacedFeature> FLAVESCENS_MEI_PLACED = registerKey("flavescens_mei_placed");
     public static final ResourceKey<PlacedFeature> GREEN_CALYX_MEI_PLACED = registerKey("green_calyx_mei_placed");
@@ -49,6 +50,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SNOW_VERSICOLOR_MEI_PLACED = registerKey("snow_versicolor_mei_placed");
     public static final ResourceKey<PlacedFeature> UPRIGHT_CRABAPPLE_PLACED = registerKey("upright_crabapple_placed");
     public static final ResourceKey<PlacedFeature> GOLDEN_CRABAPPLE_PLACED = registerKey("golden_crabapple_placed");
+    public static final ResourceKey<PlacedFeature> GOLDEN_CRABAPPLE_GOLD_PLACED = registerKey("golden_crabapple_gold_placed");
     public static final ResourceKey<PlacedFeature> WEEPING_CRABAPPLE_PLACED = registerKey("weeping_crabapple_placed");
     public static final ResourceKey<PlacedFeature> UPRIGHT_CRABAPPLE_GROVE = registerKey("upright_crabapple_grove");
     public static final ResourceKey<PlacedFeature> WEEPING_CRABAPPLE_GROVE = registerKey("weeping_crabapple_grove");
@@ -85,7 +87,9 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GREEN_GINKGO_PLACED = registerKey("green_ginkgo_placed");
     public static final ResourceKey<PlacedFeature> ANCIENT_GREEN_GINKGO_LONGEVITY = registerKey("ancient_green_ginkgo_longevity");
     public static final ResourceKey<PlacedFeature> YELLOW_CHINESE_PARASOL_PLACED = registerKey("yellow_chinese_parasol_placed");
+    public static final ResourceKey<PlacedFeature> YELLOW_CHINESE_PARASOL_PLACED2 = registerKey("yellow_chinese_parasol_placed2");
     public static final ResourceKey<PlacedFeature> GREEN_CHINESE_PARASOL_PLACED = registerKey("green_chinese_parasol_placed");
+    public static final ResourceKey<PlacedFeature> GREEN_CHINESE_PARASOL_PLACED2 = registerKey("green_chinese_parasol_placed2");
     public static final ResourceKey<PlacedFeature> SWEETGUM_PLACED = registerKey("sweetgum_placed");
     public static final ResourceKey<PlacedFeature> SWEETGUM_ROSE_PLACED = registerKey("sweetgum_rose_placed");
     public static final ResourceKey<PlacedFeature> CAMPHOR_PLACED = registerKey("camphor_placed");
@@ -218,6 +222,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_GALLERY_PLACED = registerKey("black_bamboo_gallery_placed");
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_SAPLING_PLACED = registerKey("black_bamboo_sapling_placed");
     public static final ResourceKey<PlacedFeature> LOTUS_PLACED = registerKey("lotus_placed");
+    public static final ResourceKey<PlacedFeature> LOTUS_RIVER_PLACED = registerKey("lotus_river_placed");
     public static final ResourceKey<PlacedFeature> HARDY_BANANA_PLACED = registerKey("hardy_banana_placed");
     public static final ResourceKey<PlacedFeature> MUXUE_GRASS_PLACED = registerKey("muxue_grass_placed");
     public static final ResourceKey<PlacedFeature> WISTERIA_TREE_PLACED = registerKey("wisteria_tree_placed");
@@ -230,6 +235,10 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WHITE_WISTERIA_2 = registerKey("white_wisteria_2");
     public static final ResourceKey<PlacedFeature> WHITE_WISTERIA_3 = registerKey("white_wisteria_3");
     public static final ResourceKey<PlacedFeature> ROSE_BUSH = registerKey("rose_bush");
+    public static final ResourceKey<PlacedFeature> CHINESE_TAMARISK_PLACED = registerKey("chinese_tamarisk_placed");
+    public static final ResourceKey<PlacedFeature> CHINESE_TAMARISK_PLACED_2 = registerKey("chinese_tamarisk_placed_2");
+    public static final ResourceKey<PlacedFeature> CHINESE_TAMARISK_PLACED_3 = registerKey("chinese_tamarisk_placed_3");
+    public static final ResourceKey<PlacedFeature> GOLDEN_CHINESE_TAMARISK_PLACED = registerKey("golden_chinese_tamarisk_placed");
     public static final ResourceKey<PlacedFeature> FOUNTAIN_GRASS_PLACED = registerKey("fountain_grass_placed");
     public static final ResourceKey<PlacedFeature> FOUNTAIN_GRASS_GROVE = registerKey("fountain_grass_grove");
     public static final ResourceKey<PlacedFeature> FOUNTAIN_GRASS_WOODS = registerKey("fountain_grass_woods");
@@ -552,9 +561,19 @@ public class ModPlacedFeatures {
         register(context, LEAF_RIVER_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.LEAF_RIVER_2),
                 List.of(NoiseThresholdCountPlacement.of(0.1D, 2, 1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, LOTUS_RIVER_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.LOTUS_RIVER),
+                List.of(RarityFilter.onAverageOnceEvery(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, WATERLILY_RIVER, configuredFeatures.getOrThrow(ModConfiguredFeatures.WATERLILY_RIVER),
                 List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, YELLOW_CHINESE_PARASOL_PLACED2, configuredFeatures.getOrThrow(ModConfiguredFeatures.YELLOW_CHINESE_PARASOL_WITH_LEAF_PILE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.2f, 1),
+                        ModBlocks.YELLOW_CHINESE_PARASOL_SAPLING.get()));
+        register(context, GREEN_CHINESE_PARASOL_PLACED2, configuredFeatures.getOrThrow(ModConfiguredFeatures.GREEN_CHINESE_PARASOL),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1),
+                        ModBlocks.GREEN_CHINESE_PARASOL_SAPLING.get()));
 
         register(context, CAMPHOR_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1F, 1),
@@ -789,6 +808,25 @@ public class ModPlacedFeatures {
         register(context, DESERT_POPLAR_3_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.DESERT_POPLAR_3),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 3),
                         ModBlocks.DESERT_POPLAR_SAPLING.get()));
+        register(context, CHINESE_TAMARISK_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_TAMARISK_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, CHINESE_TAMARISK_PLACED_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_TAMARISK_KEY),
+                List.of(NoiseThresholdCountPlacement.of(0.1D, 3, 0),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, CHINESE_TAMARISK_PLACED_3, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_TAMARISK_KEY_2),
+                List.of(RarityFilter.onAverageOnceEvery(3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, GOLDEN_MEI_GOLD_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_MEI),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 2),
+                        ModBlocks.DESERT_POPLAR_SAPLING.get()));
+        register(context, GOLDEN_CRABAPPLE_GOLD_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_CRABAPPLE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 2),
+                        ModBlocks.DESERT_POPLAR_SAPLING.get()));
+        register(context, GOLDEN_CHINESE_TAMARISK_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.GOLDEN_CHINESE_TAMARISK_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, CHINESE_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINESE_ROSE_KEY),
                 List.of(NoiseThresholdCountPlacement.of(-0.1D, 0, 4),

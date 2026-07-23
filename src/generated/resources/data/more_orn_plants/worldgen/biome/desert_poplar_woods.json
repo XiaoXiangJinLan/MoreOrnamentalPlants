@@ -75,12 +75,12 @@
       "minecraft:glow_lichen",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "more_orn_plants:grass_desert",
-      "more_orn_plants:dead_bush",
       "more_orn_plants:desert_poplar_0_placed",
       "more_orn_plants:desert_poplar_1_placed",
       "more_orn_plants:desert_poplar_2_placed",
-      "more_orn_plants:desert_poplar_3_placed"
+      "more_orn_plants:dead_bush",
+      "more_orn_plants:desert_poplar_3_placed",
+      "more_orn_plants:chinese_tamarisk_placed_3"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -174,5 +174,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 1.5
+  "temperature": 2.0
 }

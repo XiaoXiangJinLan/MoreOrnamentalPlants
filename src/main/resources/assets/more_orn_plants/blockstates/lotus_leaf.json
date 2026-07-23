@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "half=upper": [
+      {"model": "more_orn_plants:block/lotus_leaf", "weight": 10},
+      {"model": "more_orn_plants:block/lotus_leaf_0", "weight": 9},
+      {"model": "more_orn_plants:block/lotus_leaf_1", "weight": 9},
+      {"model": "more_orn_plants:block/lotus_leaf_2", "weight": 9},
+      {"model": "more_orn_plants:block/lotus_leaf_3", "weight": 9},
+      {"model": "more_orn_plants:block/lotus_leaf_4", "weight": 9},
+      {"model": "more_orn_plants:block/lotus_leaf_5", "weight": 9},
+      {"model": "more_orn_plants:block/lotus_leaf_6", "weight": 9},
+      {"model": "more_orn_plants:block/lotus_leaf_7", "weight": 9},
+      {"model": "more_orn_plants:block/lotus_leaf_8", "weight": 9},
+      {"model": "more_orn_plants:block/lotus_leaf_9", "weight": 9},
+      {"model": "more_orn_plants:block/lotus_leaf_10", "weight": 9}
+    ],
+    "half=lower": {
+      "model": "more_orn_plants:block/lotus_stem"
+    }
+  }
+}

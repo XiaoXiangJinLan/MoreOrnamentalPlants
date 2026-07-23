@@ -808,7 +808,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> PINK_MEI_SAPLING =
             registerBlock("pink_mei_sapling", () -> new SaplingBlock(new PinkMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GOLDEN_MEI_SAPLING =
-            registerBlock("golden_mei_sapling", () -> new SaplingBlock(new GoldenMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+            registerBlock("golden_mei_sapling", () -> new DesertSaplingBlock(new GoldenMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GREEN_CALYX_MEI_SAPLING =
             registerBlock("green_calyx_mei_sapling", () -> new SaplingBlock(new GreenCalyxMeiTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> DOUBLE_PINK_MEI_SAPLING =
@@ -832,7 +832,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> UPRIGHT_CRABAPPLE_SAPLING =
             registerBlock("upright_crabapple_sapling", () -> new SaplingBlock(new UprightCrabappleTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GOLDEN_CRABAPPLE_SAPLING =
-            registerBlock("golden_crabapple_sapling", () -> new SaplingBlock(new GoldenCrabappleTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+            registerBlock("golden_crabapple_sapling", () -> new DesertSaplingBlock(new GoldenCrabappleTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> WEEPING_CRABAPPLE_SAPLING =
             registerBlock("weeping_crabapple_sapling", () -> new SaplingBlock(new WeepingCrabappleTreeGrower(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PINK_APRICOT_SAPLING =
@@ -1101,6 +1101,10 @@ public class ModBlocks {
             registerBlock("purple_moth_orchid", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GOLDEN_MOTH_ORCHID =
             registerBlock("golden_moth_orchid", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> CHINESE_TAMARISK =
+            registerBlock("chinese_tamarisk", () -> new DesertPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> GOLDEN_CHINESE_TAMARISK =
+            registerBlock("golden_chinese_tamarisk", () -> new DeadBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 2)));
     public static final RegistryObject<Block> FOUNTAIN_GRASS =
             registerBlock("fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PURPLE_FOUNTAIN_GRASS =
@@ -1232,6 +1236,10 @@ public class ModBlocks {
             BLOCKS.register("potted_purple_moth_orchid", () -> flowerPot(PURPLE_MOTH_ORCHID.get()));
     public static final RegistryObject<Block> POTTED_GOLDEN_MOTH_ORCHID =
             BLOCKS.register("potted_golden_moth_orchid", () -> flowerPot(GOLDEN_MOTH_ORCHID.get()));
+    public static final RegistryObject<Block> POTTED_CHINESE_TAMARISK =
+            BLOCKS.register("potted_chinese_tamarisk", () -> flowerPot(CHINESE_TAMARISK.get()));
+    public static final RegistryObject<Block> POTTED_GOLDEN_CHINESE_TAMARISK =
+            BLOCKS.register("potted_golden_chinese_tamarisk", () -> flowerPot(GOLDEN_CHINESE_TAMARISK.get()));
     public static final RegistryObject<Block> POTTED_FOUNTAIN_GRASS =
             BLOCKS.register("potted_fountain_grass", () -> flowerPot(FOUNTAIN_GRASS.get()));
     public static final RegistryObject<Block> POTTED_PURPLE_FOUNTAIN_GRASS =
@@ -1464,11 +1472,11 @@ public class ModBlocks {
             BLOCKS.register("potted_black_bamboo", () -> flowerPot(BLACK_BAMBOO.get()));
 
     public static final RegistryObject<Block> LOTUS =
-            registerBlock("lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).mapColor(MapColor.COLOR_PINK).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
+            BLOCKS.register("lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).mapColor(MapColor.COLOR_PINK).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final RegistryObject<Block> WHITE_LOTUS =
-            registerBlock("white_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).mapColor(MapColor.SNOW).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
+            BLOCKS.register("white_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).mapColor(MapColor.SNOW).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final RegistryObject<Block> LOTUS_LEAF =
-            registerBlock("lotus_leaf", () -> new WaterLotusLeafBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
+            BLOCKS.register("lotus_leaf", () -> new WaterLotusBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final RegistryObject<Block> MUXUE_GRASS =
             registerBlock("muxue_grass", () -> new MuxueGrassBlock(BlockBehaviour.Properties.copy(Blocks.SEAGRASS).lightLevel(p_220867_ -> 12)));
     public static final RegistryObject<Block> TALL_MUXUE_GRASS =
@@ -1516,6 +1524,8 @@ public class ModBlocks {
             registerBlock("ziying_beadlight", () -> new Block(BlockBehaviour.Properties.copy(Blocks.PEARLESCENT_FROGLIGHT).sound(SoundType.METAL)));
     public static final RegistryObject<Block> SUYU_BEADLIGHT =
             registerBlock("suyu_beadlight", () -> new Block(BlockBehaviour.Properties.copy(Blocks.VERDANT_FROGLIGHT).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> GOLD_SAND =
+            registerBlock("gold_sand", () -> new SandBlock(16766720, BlockBehaviour.Properties.copy(Blocks.SAND).mapColor(MapColor.GOLD)));
 
     public static final RegistryObject<Block> BAMBOO_SHOOTS_SOUP =
             BLOCKS.register("bamboo_shoots_soup", () -> new SoupBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));

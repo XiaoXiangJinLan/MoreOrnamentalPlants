@@ -1,0 +1,41 @@
+{
+  "ambientocclusion": false,
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "leaf": "more_orn_plants:block/lotus_leaf",
+    "stem": "more_orn_plants:block/lotus_leaf_stem",
+    "particle": "#leaf"
+  },
+  "elements": [
+    {
+      "from": [0.8, 0, 8],
+      "to": [15.2, 14, 8],
+      "shade": false,
+      "rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+      "faces": {
+        "north": {"uv": [0, 2, 16, 16], "texture": "#stem"},
+        "south": {"uv": [0, 2, 16, 16], "texture": "#stem"}
+      }
+    },
+    {
+      "from": [8, 0, 0.8],
+      "to": [8, 14, 15.2],
+      "shade": false,
+      "rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+      "faces": {
+        "east": {"uv": [0, 2, 16, 16], "texture": "#stem"},
+        "west": {"uv": [0, 2, 16, 16], "texture": "#stem"}
+      }
+    },
+    {
+      "from": [0, 14, 0],
+      "to": [16, 14, 16],
+      "shade": false,
+      "rotation": {"angle": 0, "axis": "x", "origin": [8, 7, 8]},
+      "faces": {
+        "up": {"uv": [0, 0, 16, 16], "texture": "#leaf"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#leaf"}
+      }
+    }
+  ]
+}

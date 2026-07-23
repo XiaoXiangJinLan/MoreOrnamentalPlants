@@ -246,6 +246,12 @@ public class ModItems {
     public static final RegistryObject<Item> BAMBOO_SHOOTS_SOUP =
             ITEMS.register("bamboo_shoots_soup", () -> new BowlFoodBlockItem(ModBlocks.BAMBOO_SHOOTS_SOUP.get(), new Item.Properties().food(ModFoods.BAMBOO_SHOOTS_SOUP)));
 
+    public static final RegistryObject<Item> LOTUS =
+            ITEMS.register("lotus", () -> new PlaceInWaterBlockItem(ModBlocks.LOTUS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_LOTUS =
+            ITEMS.register("white_lotus", () -> new PlaceInWaterBlockItem(ModBlocks.WHITE_LOTUS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> LOTUS_LEAF =
+            ITEMS.register("lotus_leaf", () -> new PlaceInWaterBlockItem(ModBlocks.LOTUS_LEAF.get(), new Item.Properties()));
     public static final RegistryObject<Item> LOTUS_ROOT =
             ITEMS.register("lotus_root", () -> new Item((new Item.Properties()).food(ModFoods.LOTUS_ROOT)));
     public static final RegistryObject<Item> LOTUS_ROOT_SOUP =
