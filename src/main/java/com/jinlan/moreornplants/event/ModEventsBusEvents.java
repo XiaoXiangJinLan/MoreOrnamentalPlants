@@ -123,9 +123,11 @@ public class ModEventsBusEvents {
             float multiplier = 1.0f;
             float maxHealth = target1.getMaxHealth();
             if (maxHealth > 4.0f) {
-                multiplier = maxHealth / 4.0f;
+                multiplier = maxHealth / 2.0f;
+                event.setAmount(multiplier * (event.getAmount() - 1));
+            } else {
+                event.setAmount(multiplier * (event.getAmount() + maxHealth));
             }
-            event.setAmount(multiplier * (event.getAmount() + 1));
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getType().is(EntityTypeTags.ARTHROPOD)) {
             event.setAmount(event.getAmount() * ModBiomeConfig.CAMPHOR_SWORD_MULTIPLIER.get().floatValue() * 2);
         } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
@@ -157,7 +159,7 @@ public class ModEventsBusEvents {
             } else {
                 int moonPhase = level.getMoonPhase();
                 int distToFull = Math.min(moonPhase, 8 - moonPhase);
-                multiplier = 1.0F + (4 - distToFull) / 2.0F;
+                multiplier = 1.0F + (4 - distToFull);
             }
             if (state.hasCaiyunSword()) {
                 multiplier *= 1.5F;
@@ -258,12 +260,40 @@ public class ModEventsBusEvents {
             return;
         }
         if (entity.level().isClientSide) return;
+        int tick = entity.tickCount;
+        if (ModBiomeConfig.ENABLE_BIOME_HURT_ENEMY.get() && entity instanceof Enemy && tick % 40 == 0) {
+            Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
+            if (biomeHolder.is(ModBiomes.WUTONG_FOREST) || biomeHolder.is(ModBiomes.COLORED_FOREST)) {
+                if (!(entity instanceof ZombieVillager && entity.getHealth() <= 10.0F)) {
+                    entity.igniteForSeconds(2);
+                    if (entity.fireImmune() || entity.hasEffect(MobEffects.FIRE_RESISTANCE)) {
+                        entity.invulnerableTime = 0;
+                        entity.hurt(entity.level().damageSources().magic(), 9.0F);
+                        entity.invulnerableTime = 0;
+                        entity.hurt(entity.level().damageSources().generic(), 9.0F);
+                        entity.invulnerableTime = 0;
+                        entity.hurt(entity.level().damageSources().drown(), 9.0F);
+                        entity.invulnerableTime = 0;
+                        entity.hurt(entity.level().damageSources().wither(), 9.0F);
+                    } else {
+                        entity.hurt(entity.level().damageSources().inFire(), 9.0F);
+                    }
+                }
+            }
+            if (biomeHolder.is(ModBiomes.ZIYING_CAVES)) {
+                entity.hurt(entity.level().damageSources().wither(), 3.0F);
+                entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 3));
+            }
+            if (biomeHolder.is(ModBiomes.SUYU_CAVES)) {
+                entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 2));
+                entity.addEffect(new MobEffectInstance(MobEffects.POISON, 600, 2));
+            }
+        }
         if (!(entity instanceof Player || entity instanceof Villager || entity instanceof Animal ||
                 entity instanceof AbstractGolem || entity instanceof Allay)) {
             return;
         }
         if (!ModBiomeConfig.ENABLE_BIOME_EFFECTS.get()) return;
-        int tick = entity.tickCount;
         if (tick % 100 == 0) {
             Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
             if (biomeHolder.is(ModBiomes.LONGEVITY_FOREST)) {
@@ -329,7 +359,7 @@ public class ModEventsBusEvents {
         var mob = event.getEntity();
         var biome = level.getBiome(mob.blockPosition());
 
-        if (biome.is(ModTags.Biomes.NO_ENEMY)) {
+        if (ModBiomeConfig.ENABLE_BIOME_NO_ENEMY.get() && biome.is(ModTags.Biomes.NO_ENEMY)) {
             if (mob instanceof Enemy || mob.getType().getCategory() == MobCategory.MONSTER) {
                 event.setResult(MobSpawnEvent.PositionCheck.Result.FAIL);
             }

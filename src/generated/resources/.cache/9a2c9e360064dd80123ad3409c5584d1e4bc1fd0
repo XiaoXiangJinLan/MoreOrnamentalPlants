@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-16T21:57:31.3530277	Item Models: more_orn_plants
+// 1.21.1	2026-07-21T21:53:46.2551495	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -71,6 +71,7 @@ ba7225f490383c88c7cefb9287a7db375cc74527 assets/more_orn_plants/models/item/chin
 92715e4318e6935108f70146e4d9667cf5020bf4 assets/more_orn_plants/models/item/chinese_parasol_wooden_sword.json
 7926a1f49cf832cd662111f0b0f1671886251c8e assets/more_orn_plants/models/item/chinese_rose.json
 b096d1310901705977731d5aa1a9a08b58031183 assets/more_orn_plants/models/item/chinese_rose_xiangnang.json
+5d0bfdb7eb8d5a912594ff65c3a1fd4721cb6162 assets/more_orn_plants/models/item/chinese_tamarisk.json
 76a2dc9ee65e9825013f82d60ae50c31b49ff382 assets/more_orn_plants/models/item/chinese_wisteria.json
 2b401a60442d22eb3c447931213f10925f96343a assets/more_orn_plants/models/item/chrysanthemum.json
 e3bbc7460edc6a12ba22b76a7c29f24c3e383a8b assets/more_orn_plants/models/item/cloud_apricot.json
@@ -180,6 +181,7 @@ b7374e897b1b6e42e81b99b95cadd3c1ec491da2 assets/more_orn_plants/models/item/gink
 101a28a76f4cf435b1d3508dddd50ccf40907d4e assets/more_orn_plants/models/item/ginkgo_stairs.json
 c401e05189a4917b6bd9fcf4ee2da40fbbb6a0ec assets/more_orn_plants/models/item/ginkgo_trapdoor.json
 3376e67868a0f8b6715eec9c882ff30ead5c7ce0 assets/more_orn_plants/models/item/golden_chinese_narcissus.json
+066a6cdd14d04080786ade080d8898beeff688eb assets/more_orn_plants/models/item/golden_chinese_tamarisk.json
 047dcf80e766679701a7e764c2c7c84bdbf1aafa assets/more_orn_plants/models/item/golden_crabapple.json
 5a6406e877713f988d5e0797c6c453479233dc2b assets/more_orn_plants/models/item/golden_crabapple_sapling.json
 41209bdc92ae6cc5ab31d65a02df3680d61b9852 assets/more_orn_plants/models/item/golden_ginkgo_sapling.json

@@ -1,7 +1,7 @@
 Ornamental Plants is a biome mod themed around botanical decoration, bringing the beauty of Eastern gardens into Minecraft. 
 It adds a variety of classic ornamental plants native to China, such as famous flowering trees: Mei Blossom, Crabapple; 
 colorful foliage trees: Ginkgo, Chinese Parasol; and renowned flowers: Chinese Rose, Herbaceous Peony, Camellia, and more. 
-This mod introduces thirty-five new biomes and seven structures, waiting for you to explore!
+This mod introduces forty new biomes and seven structures, waiting for you to explore!
 
 New Trees
 ============
@@ -95,13 +95,13 @@ New Mobs
 • Baihua Cat: Spawns in Flowers Grove, Crabapple Grove, The Peach Blossom Spring, and Penglai. Can be tamed with flowers. When fed Immortal Peach, Cloud Apricot, or Crabapple, it produces the corresponding fruit tree sapling. It also accelerates the growth of crops, cut flowers, and other plants within a 1-block radius.
 
 《观赏植物》是一个以植物装饰为主题的群系模组，将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠；
-彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了三十五个全新的生物群系、七个结构，等待你来探索！
+彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了四十个全新的生物群系、七个结构，等待你来探索！
 
 ## 新树种
 梅花、海棠、杏花、桃花、梨花、钟花樱、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
 
 ## 新植物
-芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、水仙、蜡梅、芙蓉、紫薇、紫藤、芭蕉、蝴蝶兰、狼尾草、芒草、湘妃竹、紫竹，以及牡丹四大名品等。  
+芍药、月季、菊、兰（春兰、蕙兰、建兰、墨兰）、莲、山茶、杜鹃（更多品种）、水仙、蜡梅、芙蓉、紫薇、紫藤、芭蕉、柽柳、蝴蝶兰、狼尾草、芒草、湘妃竹、紫竹，以及牡丹四大名品等。  
 部分植物（例如芍药、月季等）可制作鲜切花，主手持剪刀，副手持花卉，右键鼠标即可获得对应的鲜切花。
 
 ## 新群系
@@ -121,11 +121,11 @@ New Mobs
 •**粉茶花谷**：茶花谷的变种，生长有大量粉茶花；  
 •**红茶花谷**：茶花谷的变种，生长有大量红茶花；
 #### 落叶林群系
-•**彩叶林**：银杏和梧桐为优势树种的彩林，其次为枫香、金桂、紫叶李，地面为亮黄色，林下生长有菊花、芙蓉；  
+•**彩叶林**：银杏和梧桐为优势树种的彩林，其次为枫香、金桂、紫叶李，地面为亮黄色，林下生长有菊花、木芙蓉；  
+•**梧桐林**：彩叶林的变种，梧桐为主的森林，朝阳之地；  
 •**银杏林**：银杏为主的森林，林下生长有金芒草；  
 •**枫香林**：枫香和樟树为主的森林，林下生长有月季；  
-•**紫云林**：紫叶李为主的森林，林下生长有紫菊、紫蝴蝶兰；  
-•**胡杨林**：生长有胡杨树的沙漠；
+•**紫云林**：紫叶李为主的森林，林下生长有紫菊、紫蝴蝶兰；
 #### 其他森林群系
 •**常绿林**：樟树为优势树种的森林，其次为梧桐、银杏，偶尔出现珙桐，林下生长有兰花、芭蕉、蝴蝶兰、原版兰花和铃兰；  
 •**长寿林**：常绿林的变种，生长有古樟树、古银杏、古松树的森林，林下生长有菊花和兰花。当玩家位于此群系时，会获得生命提升的效果；
@@ -142,8 +142,14 @@ New Mobs
 #### 湿地群系
 •**芙蓉国**：生长有大量芙蓉、湘妃竹、紫竹的平原湿地，水里生长有大量荷叶荷花；  
 •**云梦泽**：生长有宫粉梅和樟树的湿地沼泽，林下生长有蕙兰，水里生长有大量荷叶荷花；
+#### 沙漠群系
+•**胡杨林**：生长有胡杨树的沙漠；
+•**柽柳田**：生长有柽柳的沙漠；  
+•**黄金乡**：遍地黄金之地；
 #### 河流群系
 •**春江**：水面漂浮有流红、浮英的河流，岸边生长有江梅、兰花、原版兰花；
+•**莲水**：生长莲与睡莲的的河流；
+•**秋水**：水面漂浮有各种落叶河流，岸边生长有菊、木芙蓉等；
 •**江天暮雪**：水面结冰的冷河，水底生长有暮雪草；
 #### 洞穴群系
 •**紫英洞**：生长有紫薇和紫藤的洞穴；  

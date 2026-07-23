@@ -3,7 +3,6 @@ package com.jinlan.moreornplants.block.FlowerBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -25,7 +24,6 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.neoforge.common.CommonHooks;
-import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.util.TriState;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -78,17 +76,8 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     public boolean canSurvive(BlockState state, @NotNull LevelReader level, @NotNull BlockPos pos) {
         if (state.getValue(HALF) == DoubleBlockHalf.LOWER) {
             BlockState existingState = level.getBlockState(pos);
-            BlockPos belowPos = pos.below();
-            BlockState belowState = level.getBlockState(belowPos);
-
             return (existingState.getBlock() == this || existingState.getFluidState().is(Fluids.WATER))
-                    && this.isExposed(level, pos.above())
-                    && (belowState.is(BlockTags.DIRT)
-                    || belowState.is(BlockTags.SAND)
-                    || belowState.is(Blocks.CLAY)
-                    || belowState.is(Blocks.GRAVEL)
-                    || belowState.is(Blocks.SUSPICIOUS_GRAVEL)
-                    || belowState.is(Tags.Blocks.VILLAGER_FARMLANDS));
+                    && this.isExposed(level, pos.above());
         } else {
             // 上半部分：检查下方是否是荷花的下半部分且含水
             BlockState belowState = level.getBlockState(pos.below());

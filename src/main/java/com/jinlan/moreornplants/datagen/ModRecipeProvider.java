@@ -8,6 +8,7 @@ import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
@@ -23,6 +24,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.GOLD_SAND.get()),
+                        RecipeCategory.MISC,
+                        new ItemStack(Items.GOLD_NUGGET, 3),
+                        1.5f,
+                        160)
+                .group("gold_sand")
+                .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":gold_nugget_from_smelting_gold_sand");
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.GOLD_SAND.get()),
+                        RecipeCategory.MISC,
+                        new ItemStack(Items.GOLD_NUGGET, 3),
+                        1.5f,
+                        80)
+                .group("gold_sand")
+                .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":gold_nugget_from_blasting_gold_sand");
+
         planksFromLogs(recipeOutput, ModBlocks.RED_MEI_PLANKS.get(), ModTags.Items.RED_MEI_LOGS, 4);
         planksFromLogs(recipeOutput, ModBlocks.WHITE_MEI_PLANKS.get(), ModTags.Items.WHITE_MEI_LOGS, 4);
         planksFromLogs(recipeOutput, ModBlocks.GREEN_CALYX_MEI_PLANKS.get(), ModTags.Items.GREEN_CALYX_MEI_LOGS, 4);

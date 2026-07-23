@@ -627,6 +627,9 @@
     "more_orn_plants:hardy_banana": {
       "chance": 0.65
     },
+    "more_orn_plants:chinese_tamarisk": {
+      "chance": 0.65
+    },
     "more_orn_plants:crabapple": {
       "chance": 0.65
     },

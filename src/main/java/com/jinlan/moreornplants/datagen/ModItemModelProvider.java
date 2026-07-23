@@ -350,6 +350,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.PINK_MOTH_ORCHID);
         flowerItem(ModBlocks.PURPLE_MOTH_ORCHID);
         flowerItem(ModBlocks.GOLDEN_MOTH_ORCHID);
+        flowerItem(ModBlocks.CHINESE_TAMARISK);
+        flowerItem(ModBlocks.GOLDEN_CHINESE_TAMARISK);
         flowerItem(ModBlocks.FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PURPLE_FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PINK_FOUNTAIN_GRASS);
@@ -418,9 +420,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PEELED_BAMBOO_SHOOTS);
         simpleItem(ModItems.BAMBOO_SHOOTS_SOUP);
 
-        simplerBlockItem(ModBlocks.LOTUS);
-        simplerBlockItem(ModBlocks.WHITE_LOTUS);
-        simplerBlockItem(ModBlocks.LOTUS_LEAF);
+        simpleItem(ModItems.LOTUS);
+        simpleItem(ModItems.WHITE_LOTUS);
+        simpleItem(ModItems.LOTUS_LEAF);
         simplerBlockItem(ModBlocks.MUXUE_GRASS);
         simplerBlockItem(ModBlocks.HARDY_BANANA);
         simpleItem(ModItems.LOTUS_ROOT);

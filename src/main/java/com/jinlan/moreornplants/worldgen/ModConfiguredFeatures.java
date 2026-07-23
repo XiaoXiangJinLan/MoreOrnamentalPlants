@@ -4,7 +4,6 @@ import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.FlowerBlocks.LeafPileBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.ModFlowerPetalsBlock;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
-import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusLeafBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.WeepingBlocks.CrabappleBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
@@ -228,7 +227,11 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_GALLERY_KEY = registerKey("black_bamboo_gallery_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_BAMBOO_SAPLING_KEY = registerKey("black_bamboo_sapling_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LOTUS_KEY = registerKey("lotus_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LOTUS_RIVER = registerKey("lotus_river");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HARDY_BANANA_KEY = registerKey("hardy_banana_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_TAMARISK_KEY = registerKey("chinese_tamarisk");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_TAMARISK_KEY_2 = registerKey("chinese_tamarisk_2");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CHINESE_TAMARISK_KEY = registerKey("golden_chinese_tamarisk");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MUXUE_GRASS_KEY = registerKey("muxue_grass_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA_TREE = registerKey("wisteria_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA = registerKey("wisteria");
@@ -1610,22 +1613,25 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
 
         SimpleWeightedRandomList.Builder<BlockState> lotusBuilder = SimpleWeightedRandomList.builder();
-        for (Direction direction : Direction.Plane.HORIZONTAL) {
-            lotusBuilder.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState()
-                    .setValue(WaterLotusLeafBlock.FACING, direction).setValue(WaterLotusBlock.AGE, 3),20);
-        }
+        lotusBuilder.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState().setValue(WaterLotusBlock.AGE, 3),82);
         for (int age = 0; age <= 3; age++) {
             int weight = (age <= 1) ? 1 : 2;
             lotusBuilder.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*2);
             lotusBuilder.add(ModBlocks.WHITE_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
         }
-        register(context, LOTUS_KEY, Feature.FLOWER, new RandomPatchConfiguration(256, 14, 2,
+        register(context, LOTUS_KEY, Feature.FLOWER, new RandomPatchConfiguration(256, 14, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(lotusBuilder.build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.WATER),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, -1, 0), Blocks.DIRT, Blocks.SAND, Blocks.CLAY, Blocks.MUD)))));
+        register(context, LOTUS_RIVER, Feature.FLOWER, new RandomPatchConfiguration(256, 14, 1,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(lotusBuilder.build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.WATER),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR)))));
 
         register(context, MUXUE_GRASS_KEY, Feature.RANDOM_PATCH, new RandomPatchConfiguration(36, 3, 3,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -1793,6 +1799,25 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.PODZOL)))));
+
+        register(context, CHINESE_TAMARISK_KEY, Feature.FLOWER, new RandomPatchConfiguration(100, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CHINESE_TAMARISK.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.SAND)))));
+        register(context, CHINESE_TAMARISK_KEY_2, Feature.FLOWER, new RandomPatchConfiguration(50, 4, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CHINESE_TAMARISK.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK, Blocks.DIRT, Blocks.SAND)))));
+        register(context, GOLDEN_CHINESE_TAMARISK_KEY, Feature.FLOWER, new RandomPatchConfiguration(100, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.GOLDEN_CHINESE_TAMARISK.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DEAD_BUSH_MAY_PLACE_ON)))));
 
         RandomizedIntStateProvider randomizedintstateprovider = new RandomizedIntStateProvider(
                 BlockStateProvider.simple(ModBlocks.CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
@@ -2030,7 +2055,7 @@ public class ModConfiguredFeatures {
                         new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.DEAD_BUSH)),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
-                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.SAND)))));
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DEAD_BUSH_MAY_PLACE_ON)))));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

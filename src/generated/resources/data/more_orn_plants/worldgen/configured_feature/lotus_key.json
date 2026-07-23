@@ -13,48 +13,11 @@
                   "Name": "more_orn_plants:lotus_leaf",
                   "Properties": {
                     "age": "3",
-                    "facing": "north",
                     "half": "lower",
                     "waterlogged": "true"
                   }
                 },
-                "weight": 20
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:lotus_leaf",
-                  "Properties": {
-                    "age": "3",
-                    "facing": "east",
-                    "half": "lower",
-                    "waterlogged": "true"
-                  }
-                },
-                "weight": 20
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:lotus_leaf",
-                  "Properties": {
-                    "age": "3",
-                    "facing": "south",
-                    "half": "lower",
-                    "waterlogged": "true"
-                  }
-                },
-                "weight": 20
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:lotus_leaf",
-                  "Properties": {
-                    "age": "3",
-                    "facing": "west",
-                    "half": "lower",
-                    "waterlogged": "true"
-                  }
-                },
-                "weight": 20
+                "weight": 82
               },
               {
                 "data": {
@@ -188,6 +151,6 @@
     },
     "tries": 256,
     "xz_spread": 14,
-    "y_spread": 2
+    "y_spread": 1
   }
 }

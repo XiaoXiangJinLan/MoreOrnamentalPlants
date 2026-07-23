@@ -208,6 +208,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.PURPLE_FOUNTAIN_GRASS);
                         pOutput.accept(ModBlocks.PINK_FOUNTAIN_GRASS);
                         pOutput.accept(ModBlocks.WHITE_FOUNTAIN_GRASS);
+                        pOutput.accept(ModBlocks.CHINESE_TAMARISK);
+                        pOutput.accept(ModBlocks.GOLDEN_CHINESE_TAMARISK);
                         pOutput.accept(ModItems.BAMBOO_STICK);
                         pOutput.accept(ModBlocks.PEACH_PINK_PETALS);
                         pOutput.accept(ModBlocks.FRAGRANT_SNOW_PETALS);
@@ -525,6 +527,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DESERT_POPLAR_HANGING_SIGN);
                         pOutput.accept(ModItems.CRAPE_MYRTLE_LOG);
                         pOutput.accept(ModItems.CRAPE_MYRTLE_WOOD);
+                        pOutput.accept(ModBlocks.GOLD_SAND);
                         pOutput.accept(ModBlocks.ZIYING_BEADLIGHT);
                         pOutput.accept(ModBlocks.SUYU_BEADLIGHT);
                         pOutput.accept(ModItems.CYMBIDIUM_XIANGNANG);

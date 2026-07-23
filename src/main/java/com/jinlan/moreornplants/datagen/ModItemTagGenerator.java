@@ -171,6 +171,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_MOTH_ORCHID.asItem(), ModBlocks.PINK_MOTH_ORCHID.asItem(), ModBlocks.PURPLE_MOTH_ORCHID.asItem(), ModBlocks.GOLDEN_MOTH_ORCHID.asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.asItem(), ModBlocks.SPRING_PETALS.asItem())
                 .add(ModItems.BAMBOO_STICK.get(), ModBlocks.MUXUE_GRASS.asItem())
+                .add(ModBlocks.CHINESE_TAMARISK.asItem(), ModBlocks.GOLDEN_CHINESE_TAMARISK.asItem())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
                 .add(Blocks.SUNFLOWER.asItem())
@@ -310,7 +311,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.MAGENTA_DYE)
                 .add(ModBlocks.CHARMING_RHODODENDRON.asItem())
                 .add(ModBlocks.RED_CRAPE_MYRTLE.asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.asItem())
-                .add(ModBlocks.RED_CHINESE_WISTERIA.asItem());
+                .add(ModBlocks.RED_CHINESE_WISTERIA.asItem())
+                .add(ModBlocks.CHINESE_TAMARISK.asItem());
 
         this.tag(ModTags.Items.LIME_DYE)
                 .add(ModBlocks.SPRING_CYMBIDIUM.asItem())
@@ -465,7 +467,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.ZIYING_SHOVEL.get(), ModItems.SUYU_SHOVEL.get(), ModItems.ZIYU_YUANYANG_SHOVEL.get());
 
         this.tag(ItemTags.PIGLIN_LOVED)
-                .add(ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get(), ModItems.GOLDEN_MEI.get());
+                .add(ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get(), ModItems.GOLDEN_MEI.get())
+                .add(ModBlocks.GOLD_SAND.asItem())
+                .add(ModBlocks.GOLDEN_MEI_LEAVES.asItem(), ModBlocks.GOLDEN_MEI_SAPLING.asItem())
+                .add(ModBlocks.GOLDEN_CRABAPPLE_LEAVES.asItem(), ModBlocks.GOLDEN_CRABAPPLE_SAPLING.asItem())
+                .add(ModBlocks.GOLDEN_CHINESE_TAMARISK.asItem());
 
         this.tag(Tags.Items.MELEE_WEAPON_TOOLS)
                 .add(ModItems.BAMBOO_STICK.get())

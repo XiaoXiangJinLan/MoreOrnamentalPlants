@@ -1,9 +1,10 @@
 {
   "variants": {
-    "": [ { "model": "more_orn_plants:block/camphor_leaves", "weight": 30 },
+    "": [ { "model": "more_orn_plants:block/camphor_leaves", "weight": 25 },
       { "model": "more_orn_plants:block/camphor_leaves_0", "weight": 7 },
       { "model": "more_orn_plants:block/camphor_leaves_1", "weight": 7 },
-      { "model": "more_orn_plants:block/camphor_leaves_2", "weight": 3 },
-      { "model": "more_orn_plants:block/camphor_leaves_3", "weight": 3 } ]
+      { "model": "more_orn_plants:block/camphor_leaves_2", "weight": 5 },
+      { "model": "more_orn_plants:block/camphor_leaves_3", "weight": 3 },
+      { "model": "more_orn_plants:block/camphor_leaves_4", "weight": 3 }]
   }
 }

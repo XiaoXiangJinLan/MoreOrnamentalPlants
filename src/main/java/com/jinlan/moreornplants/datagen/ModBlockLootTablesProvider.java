@@ -925,6 +925,12 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GOLDEN_MOTH_ORCHID.get());
         this.add(ModBlocks.POTTED_GOLDEN_MOTH_ORCHID.get(),
                 createPotFlowerItemTable(ModBlocks.GOLDEN_MOTH_ORCHID.get()));
+        this.dropSelf(ModBlocks.CHINESE_TAMARISK.get());
+        this.add(ModBlocks.POTTED_CHINESE_TAMARISK.get(),
+                createPotFlowerItemTable(ModBlocks.CHINESE_TAMARISK.get()));
+        this.dropSelf(ModBlocks.GOLDEN_CHINESE_TAMARISK.get());
+        this.add(ModBlocks.POTTED_GOLDEN_CHINESE_TAMARISK.get(),
+                createPotFlowerItemTable(ModBlocks.GOLDEN_CHINESE_TAMARISK.get()));
         this.add(ModBlocks.FOUNTAIN_GRASS.get(), this::createGrassDrops);
         this.add(ModBlocks.POTTED_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.FOUNTAIN_GRASS.get()));
@@ -1185,6 +1191,7 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.ZIYING_BEADLIGHT.get());
         this.dropSelf(ModBlocks.SUYU_BEADLIGHT.get());
+        this.dropSelf(ModBlocks.GOLD_SAND.get());
 
         this.dropSelf(ModBlocks.BAMBOO_SHOOTS_SOUP.get());
         this.dropSelf(ModBlocks.LOTUS_ROOT_SOUP.get());

@@ -11,6 +11,8 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_RED_MEI_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_SNOW_GREETS_SPRING;
     public static final ModConfigSpec.BooleanValue ENABLE_SPRING_RIVER;
+    public static final ModConfigSpec.BooleanValue ENABLE_LOTUS_RIVER;
+    public static final ModConfigSpec.BooleanValue ENABLE_AUTUMN_RIVER;
     public static final ModConfigSpec.BooleanValue ENABLE_JIANGTIAN_MUXUE;
     public static final ModConfigSpec.BooleanValue ENABLE_PENGLAI;
     public static final ModConfigSpec.BooleanValue ENABLE_MOUNT_MEI;
@@ -22,6 +24,7 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_FLOWERS_GROVE;
     public static final ModConfigSpec.BooleanValue ENABLE_CRABAPPLE_GROVE;
     public static final ModConfigSpec.BooleanValue ENABLE_COLORED_FOREST;
+    public static final ModConfigSpec.BooleanValue ENABLE_WUTONG_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_PEACH_BLOSSOM_SPRING;
     public static final ModConfigSpec.BooleanValue ENABLE_APRICOT_SPRING_PLATEAU;
     public static final ModConfigSpec.BooleanValue ENABLE_CAMELLIA_VALLEY;
@@ -32,6 +35,8 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_FURONG_GUO;
     public static final ModConfigSpec.BooleanValue ENABLE_YUNMENG_MARSH;
     public static final ModConfigSpec.BooleanValue ENABLE_DESERT_POPLAR_WOODS;
+    public static final ModConfigSpec.BooleanValue ENABLE_TAMARISK_FIELDS;
+    public static final ModConfigSpec.BooleanValue ENABLE_GOLD_COUNTRY;
     public static final ModConfigSpec.BooleanValue ENABLE_CHINESE_ROSE_FIELDS;
     public static final ModConfigSpec.BooleanValue ENABLE_SWEETGUM_WOODS;
     public static final ModConfigSpec.BooleanValue ENABLE_CHINABERRY_WOODS;
@@ -49,6 +54,9 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.IntValue SECOND_OVERWORLD_BIOMES_WEIGHT;
 
     public static final ModConfigSpec.BooleanValue ENABLE_BIOME_EFFECTS;
+    public static final ModConfigSpec.BooleanValue ENABLE_BIOME_HURT_ENEMY;
+    public static final ModConfigSpec.BooleanValue ENABLE_BIOME_NO_ENEMY;
+    public static final ModConfigSpec.BooleanValue ENABLE_MOD_FOX_SPAWN;
 
     // 武器伤害配置
     public static final ModConfigSpec.ConfigValue<Double> CAMPHOR_SWORD_MULTIPLIER;
@@ -73,6 +81,10 @@ public class ModBiomeConfig {
                 .define("enableSnowGreetsSpring", true);
         ENABLE_SPRING_RIVER = BUILDER
                 .define("enableSpringRiver", true);
+        ENABLE_LOTUS_RIVER = BUILDER
+                .define("enableLotusRiver", true);
+        ENABLE_AUTUMN_RIVER = BUILDER
+                .define("enableAutumnRiver", true);
         ENABLE_JIANGTIAN_MUXUE = BUILDER
                 .define("enableJiangtianMuxue", true);
         ENABLE_PENGLAI = BUILDER
@@ -95,6 +107,8 @@ public class ModBiomeConfig {
                 .define("enableCrabappleGrove", true);
         ENABLE_COLORED_FOREST = BUILDER
                 .define("enableColoredForest", true);
+        ENABLE_WUTONG_FOREST = BUILDER
+                .define("enableWutongForest", true);
         ENABLE_PEACH_BLOSSOM_SPRING = BUILDER
                 .define("enablePeachBlossomSpring", true);
         ENABLE_APRICOT_SPRING_PLATEAU = BUILDER
@@ -115,6 +129,10 @@ public class ModBiomeConfig {
                 .define("enableYunmengMarsh", true);
         ENABLE_DESERT_POPLAR_WOODS = BUILDER
                 .define("enableDesertPoplarWoods", true);
+        ENABLE_TAMARISK_FIELDS = BUILDER
+                .define("enableTamariskFields", true);
+        ENABLE_GOLD_COUNTRY = BUILDER
+                .define("enableGoldCountry", true);
         ENABLE_CHINESE_ROSE_FIELDS = BUILDER
                 .define("enableChineseRoseFields", true);
         ENABLE_SWEETGUM_WOODS = BUILDER
@@ -153,6 +171,12 @@ public class ModBiomeConfig {
         BUILDER.push("Biome Effects Settings");
         ENABLE_BIOME_EFFECTS = BUILDER
                 .define("enableBiomeEffects", true);
+        ENABLE_BIOME_HURT_ENEMY = BUILDER
+                .define("enableBiomeHurtEnemy", true);
+        ENABLE_BIOME_NO_ENEMY = BUILDER
+                .define("enableBiomeNoEnemy", true);
+        ENABLE_MOD_FOX_SPAWN = BUILDER
+                .define("enableModFoxSpawn", true);
         BUILDER.pop();
 
         // 武器伤害配置

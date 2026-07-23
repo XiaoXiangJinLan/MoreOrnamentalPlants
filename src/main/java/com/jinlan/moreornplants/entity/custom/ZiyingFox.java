@@ -1,5 +1,6 @@
 package com.jinlan.moreornplants.entity.custom;
 
+import com.jinlan.moreornplants.config.ModBiomeConfig;
 import com.jinlan.moreornplants.entity.ModEntities;
 import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
@@ -21,6 +22,7 @@ import net.minecraft.tags.FluidTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -194,6 +196,12 @@ public class ZiyingFox extends TamableAnimal {
     public static boolean checkZiyingFoxSpawnRules(
             EntityType<? extends ZiyingFox> ziyingFox, LevelAccessor level, MobSpawnType spawnType, BlockPos pos, RandomSource random
     ) {
+        if (!ModBiomeConfig.ENABLE_MOD_FOX_SPAWN.get()) {
+            return false;
+        }
+        if (level.getDifficulty() == Difficulty.PEACEFUL && spawnType == MobSpawnType.NATURAL) {
+            return false;
+        }
         return level.getBlockState(pos.below()).is(ModTags.Blocks.ZIYING_FOX_SPAWNABLE_ON);
     }
 
