@@ -24,7 +24,7 @@
                 "data": {
                   "Name": "more_orn_plants:pink_moth_orchid"
                 },
-                "weight": 2
+                "weight": 1
               }
             ]
           }
@@ -41,17 +41,13 @@
                 "blocks": "minecraft:air"
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:dirt",
-                  "minecraft:podzol"
-                ],
+                "type": "minecraft:matching_block_tag",
                 "offset": [
                   0,
                   -1,
                   0
-                ]
+                ],
+                "tag": "minecraft:dirt"
               }
             ]
           }

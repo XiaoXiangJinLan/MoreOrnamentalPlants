@@ -67,7 +67,7 @@ public class SuyuFox extends ZiyingFox {
 
     @Override
     protected MobEffectInstance getEffect() {
-        return new MobEffectInstance(MobEffects.REGENERATION, 100, 0);
+        return new MobEffectInstance(MobEffects.REGENERATION, 120, 0);
     }
 
     @Override
@@ -77,7 +77,7 @@ public class SuyuFox extends ZiyingFox {
 
     @Override
     protected void onHurt() {
-        this.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0));
+        this.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 240, 0));
         this.playSound(SoundEvents.FOX_SCREECH, 1.0F, 1.0F);
     }
 }

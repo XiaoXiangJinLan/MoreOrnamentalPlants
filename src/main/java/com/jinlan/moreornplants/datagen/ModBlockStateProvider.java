@@ -792,12 +792,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.GOLDEN_MOTH_ORCHID);
         simpleBlock(ModBlocks.POTTED_GOLDEN_MOTH_ORCHID.get(), models().singleTexture("potted_golden_moth_orchid", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.GOLDEN_MOTH_ORCHID.get())).renderType("cutout"));
-        flowerBlock(ModBlocks.CHINESE_TAMARISK);
-        simpleBlock(ModBlocks.POTTED_CHINESE_TAMARISK.get(), models().singleTexture("potted_chinese_tamarisk", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_chinese_tamarisk")).renderType("cutout"));
-        flowerBlock(ModBlocks.GOLDEN_CHINESE_TAMARISK);
-        simpleBlock(ModBlocks.POTTED_GOLDEN_CHINESE_TAMARISK.get(), models().singleTexture("potted_golden_chinese_tamarisk", new ResourceLocation("flower_pot_cross"), "plant",
-                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_golden_chinese_tamarisk")).renderType("cutout"));
+        flowerBlock(ModBlocks.BRANCHY_TAMARISK);
+        simpleBlock(ModBlocks.POTTED_BRANCHY_TAMARISK.get(), models().singleTexture("potted_branchy_tamarisk", new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_branchy_tamarisk")).renderType("cutout"));
+        flowerBlock(ModBlocks.GOLDEN_BRANCHY_TAMARISK);
+        simpleBlock(ModBlocks.POTTED_GOLDEN_BRANCHY_TAMARISK.get(), models().singleTexture("potted_golden_branchy_tamarisk", new ResourceLocation("flower_pot_cross"), "plant",
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_golden_branchy_tamarisk")).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_FOUNTAIN_GRASS.get(), models().singleTexture("potted_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "block/potted_fountain_grass")).renderType("cutout"));
         simpleBlock(ModBlocks.POTTED_PURPLE_FOUNTAIN_GRASS.get(), models().singleTexture("potted_purple_fountain_grass", new ResourceLocation("flower_pot_cross"), "plant",
@@ -853,6 +853,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         tallCrossBlock(ModBlocks.RED_CRAPE_MYRTLE);
         tallCrossBlock(ModBlocks.PINK_CRAPE_MYRTLE);
         tallCrossBlock(ModBlocks.WHITE_CRAPE_MYRTLE);
+        tallCrossBlock(ModBlocks.HOLLYHOCK);
+        tallCrossBlock(ModBlocks.PINK_HOLLYHOCK);
+        tallCrossBlock(ModBlocks.ORANGE_HOLLYHOCK);
+        tallCrossBlock(ModBlocks.WHITE_HOLLYHOCK);
         hardyBananaBlock();
 
         flowerBlock(ModBlocks.CUT_PEONY);

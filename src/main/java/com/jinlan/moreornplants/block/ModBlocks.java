@@ -1101,10 +1101,10 @@ public class ModBlocks {
             registerBlock("purple_moth_orchid", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GOLDEN_MOTH_ORCHID =
             registerBlock("golden_moth_orchid", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
-    public static final RegistryObject<Block> CHINESE_TAMARISK =
-            registerBlock("chinese_tamarisk", () -> new DesertPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
-    public static final RegistryObject<Block> GOLDEN_CHINESE_TAMARISK =
-            registerBlock("golden_chinese_tamarisk", () -> new DeadBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 2)));
+    public static final RegistryObject<Block> BRANCHY_TAMARISK =
+            registerBlock("branchy_tamarisk", () -> new DesertPlantBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> GOLDEN_BRANCHY_TAMARISK =
+            registerBlock("golden_branchy_tamarisk", () -> new DeadBushBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 2)));
     public static final RegistryObject<Block> FOUNTAIN_GRASS =
             registerBlock("fountain_grass", () -> new ModFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XYZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> PURPLE_FOUNTAIN_GRASS =
@@ -1236,10 +1236,10 @@ public class ModBlocks {
             BLOCKS.register("potted_purple_moth_orchid", () -> flowerPot(PURPLE_MOTH_ORCHID.get()));
     public static final RegistryObject<Block> POTTED_GOLDEN_MOTH_ORCHID =
             BLOCKS.register("potted_golden_moth_orchid", () -> flowerPot(GOLDEN_MOTH_ORCHID.get()));
-    public static final RegistryObject<Block> POTTED_CHINESE_TAMARISK =
-            BLOCKS.register("potted_chinese_tamarisk", () -> flowerPot(CHINESE_TAMARISK.get()));
-    public static final RegistryObject<Block> POTTED_GOLDEN_CHINESE_TAMARISK =
-            BLOCKS.register("potted_golden_chinese_tamarisk", () -> flowerPot(GOLDEN_CHINESE_TAMARISK.get()));
+    public static final RegistryObject<Block> POTTED_BRANCHY_TAMARISK =
+            BLOCKS.register("potted_branchy_tamarisk", () -> flowerPot(BRANCHY_TAMARISK.get()));
+    public static final RegistryObject<Block> POTTED_GOLDEN_BRANCHY_TAMARISK =
+            BLOCKS.register("potted_golden_branchy_tamarisk", () -> flowerPot(GOLDEN_BRANCHY_TAMARISK.get()));
     public static final RegistryObject<Block> POTTED_FOUNTAIN_GRASS =
             BLOCKS.register("potted_fountain_grass", () -> flowerPot(FOUNTAIN_GRASS.get()));
     public static final RegistryObject<Block> POTTED_PURPLE_FOUNTAIN_GRASS =
@@ -1309,6 +1309,14 @@ public class ModBlocks {
             registerBlock("white_crape_myrtle", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> COTTON_ROSE =
             registerBlock("cotton_rose", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> HOLLYHOCK =
+            registerBlock("hollyhock", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> PINK_HOLLYHOCK =
+            registerBlock("pink_hollyhock", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> ORANGE_HOLLYHOCK =
+            registerBlock("orange_hollyhock", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> WHITE_HOLLYHOCK =
+            registerBlock("white_hollyhock", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> MISCANTHUS =
             registerBlock("miscanthus", () -> new ModTallFlowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GOLDEN_MISCANTHUS =
@@ -1457,6 +1465,14 @@ public class ModBlocks {
             registerBlock("fragrant_snow_petals", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> SPRING_PETALS =
             registerBlock("spring_petals", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> WOOD_SORREL =
+            registerBlock("wood_sorrel", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> PINK_WOOD_SORREL =
+            registerBlock("pink_wood_sorrel", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> WHITE_WOOD_SORREL =
+            registerBlock("white_wood_sorrel", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> ORANGE_WOOD_SORREL =
+            registerBlock("orange_wood_sorrel", () -> new ModFlowerPetalsBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().sound(SoundType.PINK_PETALS).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> MOTTLED_BAMBOO_SAPLING =
             BLOCKS.register("mottled_bamboo_sapling", () -> new MottledBambooSaplingBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_SAPLING)));

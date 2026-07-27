@@ -350,8 +350,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.PINK_MOTH_ORCHID);
         flowerItem(ModBlocks.PURPLE_MOTH_ORCHID);
         flowerItem(ModBlocks.GOLDEN_MOTH_ORCHID);
-        flowerItem(ModBlocks.CHINESE_TAMARISK);
-        flowerItem(ModBlocks.GOLDEN_CHINESE_TAMARISK);
+        flowerItem(ModBlocks.BRANCHY_TAMARISK);
+        flowerItem(ModBlocks.GOLDEN_BRANCHY_TAMARISK);
         flowerItem(ModBlocks.FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PURPLE_FOUNTAIN_GRASS);
         flowerItem(ModBlocks.PINK_FOUNTAIN_GRASS);
@@ -387,6 +387,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         tallCrossItem(ModBlocks.PINK_CRAPE_MYRTLE);
         tallCrossItem(ModBlocks.WHITE_CRAPE_MYRTLE);
         tallCrossItem(ModBlocks.COTTON_ROSE);
+        tallCrossItem(ModBlocks.HOLLYHOCK);
+        tallCrossItem(ModBlocks.PINK_HOLLYHOCK);
+        tallCrossItem(ModBlocks.ORANGE_HOLLYHOCK);
+        tallCrossItem(ModBlocks.WHITE_HOLLYHOCK);
 
         flowerItem(ModBlocks.CUT_PEONY);
         flowerItem(ModBlocks.CUT_LIGHT_PINK_PEONY);
@@ -442,6 +446,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
         simplerBlockItem(ModBlocks.FRAGRANT_SNOW_PETALS);
         simplerBlockItem(ModBlocks.SPRING_PETALS);
+        simplerBlockItem(ModBlocks.WOOD_SORREL);
+        simplerBlockItem(ModBlocks.PINK_WOOD_SORREL);
+        simplerBlockItem(ModBlocks.WHITE_WOOD_SORREL);
+        simplerBlockItem(ModBlocks.ORANGE_WOOD_SORREL);
         simpleItem(ModItems.ORNAMENTAL_PEACH_PETALS);
         simpleItem(ModItems.WILD_PEACH_PETALS);
         simpleItem(ModItems.CHINESE_PARASOL_LEAF_0);

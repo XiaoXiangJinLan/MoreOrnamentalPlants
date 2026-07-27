@@ -10,6 +10,7 @@ public class BiomeConfigManager {
             case "evergreen_forest" -> ModBiomeConfig.ENABLE_EVERGREEN_FOREST.get();
             case "longevity_forest" -> ModBiomeConfig.ENABLE_LONGEVITY_FOREST.get();
             case "flowers_grove" -> ModBiomeConfig.ENABLE_FLOWERS_GROVE.get();
+            case "flowers_fields" -> ModBiomeConfig.ENABLE_FLOWERS_FIELDS.get();
             case "crabapple_grove" -> ModBiomeConfig.ENABLE_CRABAPPLE_GROVE.get();
             case "colored_forest" -> ModBiomeConfig.ENABLE_COLORED_FOREST.get();
             case "wutong_forest" -> ModBiomeConfig.ENABLE_WUTONG_FOREST.get();
@@ -29,6 +30,11 @@ public class BiomeConfigManager {
             case "miscanthus_fields" -> ModBiomeConfig.ENABLE_MISCANTHUS_FIELDS.get();
             case "ginkgo_forest" -> ModBiomeConfig.ENABLE_GINKGO_FOREST.get();
             case "crops_green" -> ModBiomeConfig.ENABLE_CROPS_GREEN.get();
+            case "the_land_of_abundance" -> ModBiomeConfig.ENABLE_LAND_OF_ABUNDANCE.get();
+            case "pink_land" -> ModBiomeConfig.ENABLE_PINK_LAND.get();
+            case "purple_land" -> ModBiomeConfig.ENABLE_PURPLE_LAND.get();
+            case "white_land" -> ModBiomeConfig.ENABLE_WHITE_LAND.get();
+            case "yellow_land" -> ModBiomeConfig.ENABLE_YELLOW_LAND.get();
             case "purple_cloud" -> ModBiomeConfig.ENABLE_PURPLE_CLOUD.get();
             case "spring_river" -> ModBiomeConfig.ENABLE_SPRING_RIVER.get();
             case "lotus_river" -> ModBiomeConfig.ENABLE_LOTUS_RIVER.get();
@@ -55,4 +61,7 @@ public class BiomeConfigManager {
         return ModBiomeConfig.SECOND_OVERWORLD_BIOMES_WEIGHT.get();
     }
 
+    public static int getThirdOverworldBiomesWeight() {
+        return ModBiomeConfig.THIRD_OVERWORLD_BIOMES_WEIGHT.get();
+    }
 }

@@ -13,6 +13,7 @@ public class ModTerrablender {
         // 使用配置管理器获取权重
         int overworldWeight = BiomeConfigManager.getOverworldBiomesWeight();
         int secondOverworldWeight = BiomeConfigManager.getSecondOverworldBiomesWeight();
+        int thirdOverworldWeight = BiomeConfigManager.getThirdOverworldBiomesWeight();
 
         // 注册主要生物群系区域
         Regions.register(new OverworldBiomesRegion(
@@ -20,6 +21,9 @@ public class ModTerrablender {
 
         Regions.register(new SecondOverworldBiomesRegion(
                 new ResourceLocation(MoreOrnPlants.MOD_ID, "second_overworld_biomes"), secondOverworldWeight));
+
+        Regions.register(new ThirdOverworldBiomesRegion(
+                new ResourceLocation(MoreOrnPlants.MOD_ID, "third_overworld_biomes"), thirdOverworldWeight));
 
         SurfaceRuleManager.addSurfaceRules(
                 SurfaceRuleManager.RuleCategory.OVERWORLD,

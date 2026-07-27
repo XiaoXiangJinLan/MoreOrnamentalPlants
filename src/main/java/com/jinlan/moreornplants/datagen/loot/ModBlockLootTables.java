@@ -935,12 +935,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GOLDEN_MOTH_ORCHID.get());
         this.add(ModBlocks.POTTED_GOLDEN_MOTH_ORCHID.get(),
                 createPotFlowerItemTable(ModBlocks.GOLDEN_MOTH_ORCHID.get()));
-        this.dropSelf(ModBlocks.CHINESE_TAMARISK.get());
-        this.add(ModBlocks.POTTED_CHINESE_TAMARISK.get(),
-                createPotFlowerItemTable(ModBlocks.CHINESE_TAMARISK.get()));
-        this.dropSelf(ModBlocks.GOLDEN_CHINESE_TAMARISK.get());
-        this.add(ModBlocks.POTTED_GOLDEN_CHINESE_TAMARISK.get(),
-                createPotFlowerItemTable(ModBlocks.GOLDEN_CHINESE_TAMARISK.get()));
+        this.dropSelf(ModBlocks.BRANCHY_TAMARISK.get());
+        this.add(ModBlocks.POTTED_BRANCHY_TAMARISK.get(),
+                createPotFlowerItemTable(ModBlocks.BRANCHY_TAMARISK.get()));
+        this.dropSelf(ModBlocks.GOLDEN_BRANCHY_TAMARISK.get());
+        this.add(ModBlocks.POTTED_GOLDEN_BRANCHY_TAMARISK.get(),
+                createPotFlowerItemTable(ModBlocks.GOLDEN_BRANCHY_TAMARISK.get()));
         this.add(ModBlocks.FOUNTAIN_GRASS.get(), this::createGrassDrops);
         this.add(ModBlocks.POTTED_FOUNTAIN_GRASS.get(),
                 createPotFlowerItemTable(ModBlocks.FOUNTAIN_GRASS.get()));
@@ -1041,6 +1041,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.WHITE_CRAPE_MYRTLE.get(), createSinglePropConditionTable(ModBlocks.WHITE_CRAPE_MYRTLE.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.COTTON_ROSE.get(), createSinglePropConditionTable(ModBlocks.COTTON_ROSE.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.HOLLYHOCK.get(), createSinglePropConditionTable(ModBlocks.HOLLYHOCK.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.PINK_HOLLYHOCK.get(), createSinglePropConditionTable(ModBlocks.PINK_HOLLYHOCK.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.ORANGE_HOLLYHOCK.get(), createSinglePropConditionTable(ModBlocks.ORANGE_HOLLYHOCK.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.WHITE_HOLLYHOCK.get(), createSinglePropConditionTable(ModBlocks.WHITE_HOLLYHOCK.get(),
                 DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
         this.add(ModBlocks.MISCANTHUS.get(), block -> createDoublePlantWithSeedDrops(block, ModBlocks.MISCANTHUS.get()));
         this.add(ModBlocks.GOLDEN_MISCANTHUS.get(), block -> createDoublePlantWithSeedDrops(block, ModBlocks.GOLDEN_MISCANTHUS.get()));
@@ -1168,6 +1176,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.PEACH_PINK_PETALS.get(), createPetalsDrops(ModBlocks.PEACH_PINK_PETALS.get()));
         this.add(ModBlocks.FRAGRANT_SNOW_PETALS.get(), createPetalsDrops(ModBlocks.FRAGRANT_SNOW_PETALS.get()));
         this.add(ModBlocks.SPRING_PETALS.get(), createPetalsDrops(ModBlocks.SPRING_PETALS.get()));
+        this.add(ModBlocks.WOOD_SORREL.get(), createPetalsDrops(ModBlocks.WOOD_SORREL.get()));
+        this.add(ModBlocks.PINK_WOOD_SORREL.get(), createPetalsDrops(ModBlocks.PINK_WOOD_SORREL.get()));
+        this.add(ModBlocks.WHITE_WOOD_SORREL.get(), createPetalsDrops(ModBlocks.WHITE_WOOD_SORREL.get()));
+        this.add(ModBlocks.ORANGE_WOOD_SORREL.get(), createPetalsDrops(ModBlocks.ORANGE_WOOD_SORREL.get()));
         this.add(ModBlocks.ORNAMENTAL_PEACH_PETALS.get(), createPetalsDrops(ModBlocks.ORNAMENTAL_PEACH_PETALS.get()));
         this.add(ModBlocks.WILD_PEACH_PETALS.get(), createPetalsDrops(ModBlocks.WILD_PEACH_PETALS.get()));
         this.dropSelf(ModBlocks.CHINESE_PARASOL_LEAF_0.get());

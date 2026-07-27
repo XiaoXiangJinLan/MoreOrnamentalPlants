@@ -192,6 +192,10 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PEACH_PINK_PETALS.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.SPRING_PETALS.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WOOD_SORREL.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_WOOD_SORREL.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.ORANGE_WOOD_SORREL.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_WOOD_SORREL.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModItems.ORNAMENTAL_PEACH_PETALS.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModItems.WILD_PEACH_PETALS.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModItems.CHINESE_PARASOL_LEAF_0.get(), 0.3F);
@@ -306,8 +310,12 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.COTTON_ROSE.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.LOTUS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_LOTUS.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.HOLLYHOCK.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_HOLLYHOCK.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.ORANGE_HOLLYHOCK.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_HOLLYHOCK.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.GOLDEN_MISCANTHUS.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(ModBlocks.CHINESE_TAMARISK.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.BRANCHY_TAMARISK.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.FOUNTAIN_GRASS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PURPLE_FOUNTAIN_GRASS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_FOUNTAIN_GRASS.get().asItem(), 0.65F);

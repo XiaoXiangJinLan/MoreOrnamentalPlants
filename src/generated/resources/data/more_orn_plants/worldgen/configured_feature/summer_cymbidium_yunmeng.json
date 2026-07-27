@@ -24,16 +24,13 @@
                 "blocks": "minecraft:air"
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:dirt",
-                  "minecraft:mud"
-                ],
+                "type": "minecraft:matching_block_tag",
                 "offset": [
                   0,
                   -1,
                   0
-                ]
+                ],
+                "tag": "minecraft:dirt"
               }
             ]
           }
