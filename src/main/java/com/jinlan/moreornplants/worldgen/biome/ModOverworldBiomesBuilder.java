@@ -104,11 +104,11 @@ public class ModOverworldBiomesBuilder {
             {ModBiomes.GOLD_COUNTRY,       ModBiomes.GOLD_COUNTRY,       ModBiomes.GOLD_COUNTRY,         ModBiomes.GOLD_COUNTRY,        ModBiomes.GOLD_COUNTRY}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_MOD = new ResourceKey[][]{
-            {null,                                 null,                                 null,                     null,                     null},
-            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.COLORED_FOREST, ModBiomes.COLORED_FOREST, null},
-            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.PURPLE_CLOUD,   ModBiomes.PURPLE_CLOUD,   ModBiomes.THE_PEACH_BLOSSOM_SPRING},
-            {null,                                 null,                                 null,                     null,                     null},
-            {null,                                 null,                                 null,                     null,                     null}
+            {null,                                 null,                                 null,                   null,                   null},
+            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.PURPLE_CLOUD, ModBiomes.PURPLE_CLOUD, null},
+            {ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.THE_APRICOT_SPRING_PLATEAU, ModBiomes.PURPLE_CLOUD, ModBiomes.PURPLE_CLOUD, ModBiomes.THE_PEACH_BLOSSOM_SPRING},
+            {null,                                 null,                                 null,                   null,                   null},
+            {null,                                 null,                                 null,                   null,                   null}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_VARIANT_MOD = new ResourceKey[][]{
             {null, null,                    null,                    null,                    null},

@@ -98,7 +98,12 @@
     ]
   ],
   "has_precipitation": true,
-  "spawn_costs": {},
+  "spawn_costs": {
+    "more_orn_plants:ziying_fox": {
+      "charge": 0.25,
+      "energy_budget": 1.0
+    }
+  },
   "spawners": {
     "ambient": [
       {

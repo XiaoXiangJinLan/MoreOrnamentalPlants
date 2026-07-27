@@ -22,6 +22,7 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_EVERGREEN_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_LONGEVITY_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_FLOWERS_GROVE;
+    public static final ModConfigSpec.BooleanValue ENABLE_FLOWERS_FIELDS;
     public static final ModConfigSpec.BooleanValue ENABLE_CRABAPPLE_GROVE;
     public static final ModConfigSpec.BooleanValue ENABLE_COLORED_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_WUTONG_FOREST;
@@ -44,6 +45,11 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_MISCANTHUS_FIELDS;
     public static final ModConfigSpec.BooleanValue ENABLE_GINKGO_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_CROPS_GREEN;
+    public static final ModConfigSpec.BooleanValue ENABLE_LAND_OF_ABUNDANCE;
+    public static final ModConfigSpec.BooleanValue ENABLE_PINK_LAND;
+    public static final ModConfigSpec.BooleanValue ENABLE_PURPLE_LAND;
+    public static final ModConfigSpec.BooleanValue ENABLE_WHITE_LAND;
+    public static final ModConfigSpec.BooleanValue ENABLE_YELLOW_LAND;
     public static final ModConfigSpec.BooleanValue ENABLE_PURPLE_CLOUD;
     public static final ModConfigSpec.BooleanValue ENABLE_TEN_MILE_GALLERY;
     public static final ModConfigSpec.BooleanValue ENABLE_ZIYING_CAVES;
@@ -52,6 +58,7 @@ public class ModBiomeConfig {
     // 区域权重配置
     public static final ModConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
     public static final ModConfigSpec.IntValue SECOND_OVERWORLD_BIOMES_WEIGHT;
+    public static final ModConfigSpec.IntValue THIRD_OVERWORLD_BIOMES_WEIGHT;
 
     public static final ModConfigSpec.BooleanValue ENABLE_BIOME_EFFECTS;
     public static final ModConfigSpec.BooleanValue ENABLE_BIOME_HURT_ENEMY;
@@ -103,6 +110,8 @@ public class ModBiomeConfig {
                 .define("enableLongevityForest", true);
         ENABLE_FLOWERS_GROVE = BUILDER
                 .define("enableFlowersGrove", true);
+        ENABLE_FLOWERS_FIELDS = BUILDER
+                .define("enableFlowersFields", true);
         ENABLE_CRABAPPLE_GROVE = BUILDER
                 .define("enableCrabappleGrove", true);
         ENABLE_COLORED_FOREST = BUILDER
@@ -147,6 +156,16 @@ public class ModBiomeConfig {
                 .define("enableGinkgoForest", true);
         ENABLE_CROPS_GREEN = BUILDER
                 .define("enableCropsGreen", true);
+        ENABLE_LAND_OF_ABUNDANCE = BUILDER
+                .define("enableLandOfAbundance", true);
+        ENABLE_PINK_LAND = BUILDER
+                .define("enablePinkLand", true);
+        ENABLE_PURPLE_LAND = BUILDER
+                .define("enablePurpleLand", true);
+        ENABLE_WHITE_LAND = BUILDER
+                .define("enableWhiteLand", true);
+        ENABLE_YELLOW_LAND = BUILDER
+                .define("enableYellowLand", true);
         ENABLE_PURPLE_CLOUD = BUILDER
                 .define("enablePurpleCloud", true);
         ENABLE_TEN_MILE_GALLERY = BUILDER
@@ -161,10 +180,13 @@ public class ModBiomeConfig {
         BUILDER.push("Region Weight Settings");
         OVERWORLD_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for main overworld biomes region")
-                .defineInRange("overworldBiomesWeight", 5, 1, 20);
+                .defineInRange("overworldBiomesWeight", 6, 1, 20);
         SECOND_OVERWORLD_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for second overworld biomes region")
-                .defineInRange("secondOverworldBiomesWeight", 4, 1, 20);
+                .defineInRange("secondOverworldBiomesWeight", 5, 1, 20);
+        THIRD_OVERWORLD_BIOMES_WEIGHT = BUILDER
+                .comment("Weight for third overworld biomes region")
+                .defineInRange("thirdOverworldBiomesWeight", 4, 1, 20);
         BUILDER.pop();
 
         // 生物群系提供效果设置

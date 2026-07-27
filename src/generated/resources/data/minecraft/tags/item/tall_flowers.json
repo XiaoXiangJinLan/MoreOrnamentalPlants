@@ -12,6 +12,10 @@
     "more_orn_plants:pink_crape_myrtle",
     "more_orn_plants:white_crape_myrtle",
     "more_orn_plants:cotton_rose",
-    "#c:lotus"
+    "#c:lotus",
+    "more_orn_plants:hollyhock",
+    "more_orn_plants:pink_hollyhock",
+    "more_orn_plants:orange_hollyhock",
+    "more_orn_plants:white_hollyhock"
   ]
 }
