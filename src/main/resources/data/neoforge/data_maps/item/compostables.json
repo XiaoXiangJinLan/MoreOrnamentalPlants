@@ -630,13 +630,13 @@
     "more_orn_plants:chinese_parasol_leaf_1": {
       "chance": 0.3
     },
-    "more_orn_plants:sweetgum_leaf_pile_0": {
+    "more_orn_plants:sweetgum_leaf_0": {
       "chance": 0.3
     },
-    "more_orn_plants:sweetgum_leaf_pile_1": {
+    "more_orn_plants:sweetgum_leaf_1": {
       "chance": 0.3
     },
-    "more_orn_plants:ginkgo_leaf_pile": {
+    "more_orn_plants:ginkgo_leaf": {
       "chance": 0.3
     },
     "more_orn_plants:lotus": {

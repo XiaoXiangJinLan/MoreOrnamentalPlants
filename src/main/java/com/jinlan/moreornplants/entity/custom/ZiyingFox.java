@@ -206,6 +206,14 @@ public class ZiyingFox extends TamableAnimal {
     }
 
     @Override
+    public void checkDespawn() {
+        if (this.level().getDifficulty() == Difficulty.PEACEFUL) {
+            return;
+        }
+        super.checkDespawn();
+    }
+
+    @Override
     public void addAdditionalSaveData(@NotNull CompoundTag compound) {
         super.addAdditionalSaveData(compound);
         compound.putBoolean("Sleeping", this.isSleeping());

@@ -1098,10 +1098,10 @@ public class ModBiomes {
         BiomeDefaultFeatures.commonSpawns(spawnBuilder);
         if (isWhite) {
             spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.SUYU_FOX.get(), 20, 1, 2));
-            spawnBuilder.addMobCharge(ModEntities.SUYU_FOX.get(), 0.25, 1.0);
+            spawnBuilder.addMobCharge(ModEntities.SUYU_FOX.get(), 0.5, 1.0);
         } else {
             spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.ZIYING_FOX.get(), 20, 1, 2));
-            spawnBuilder.addMobCharge(ModEntities.ZIYING_FOX.get(), 0.25, 1.0);
+            spawnBuilder.addMobCharge(ModEntities.ZIYING_FOX.get(), 0.5, 1.0);
         }
 
         BiomeGenerationSettings.Builder biomeBuilder =
