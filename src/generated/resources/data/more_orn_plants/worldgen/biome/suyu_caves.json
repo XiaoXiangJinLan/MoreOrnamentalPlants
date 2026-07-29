@@ -94,7 +94,7 @@
   "has_precipitation": true,
   "spawn_costs": {
     "more_orn_plants:suyu_fox": {
-      "charge": 0.25,
+      "charge": 0.5,
       "energy_budget": 1.0
     }
   },

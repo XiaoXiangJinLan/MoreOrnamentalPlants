@@ -1,4 +1,4 @@
-// 1.20.1	2026-07-28T00:11:46.4974455	Registries
+// 1.20.1	2026-07-28T23:10:24.9616604	Registries
 bea241a9b9822d440fc2bb92d2e67591c46030ae data/more_orn_plants/worldgen/biome/autumn_river.json
 2f9c649c944f2750cc363a5e60ebee66bcea9d44 data/more_orn_plants/worldgen/biome/azalea_forest.json
 e639936abf8abd103561022b862bcae645553e4e data/more_orn_plants/worldgen/biome/camellia_valley.json
@@ -33,7 +33,7 @@ b1fc114f002fed04c58b81ada63e312a2f322f75 data/more_orn_plants/worldgen/biome/red
 0151713414244b8f85ee996c85b5d9c63cce9732 data/more_orn_plants/worldgen/biome/snow_greets_spring.json
 87f9a6d27185b7e5263165e4a8b24398b7b41ef1 data/more_orn_plants/worldgen/biome/snow_woods.json
 b3d33d8b3dfc90702b37ff06178ef0588485786e data/more_orn_plants/worldgen/biome/spring_river.json
-548777ecda9af4715d9edb6890373c8bdc6ac73f data/more_orn_plants/worldgen/biome/suyu_caves.json
+6ff3dbe32c0fdb2cdda26604bbb2188bb60886d8 data/more_orn_plants/worldgen/biome/suyu_caves.json
 31b982d1ceed704c9816382abd896ea634117476 data/more_orn_plants/worldgen/biome/sweetgum_woods.json
 3e5469e2d5567cc7e446df4078260fc51cee296b data/more_orn_plants/worldgen/biome/tamarisk_fields.json
 ccf6a0001327e6de17790d583ee16ec5abf93aba data/more_orn_plants/worldgen/biome/ten_mile_gallery.json
@@ -44,7 +44,7 @@ fde9cc40ace3efedb3ff25663bd2e568451ed7f8 data/more_orn_plants/worldgen/biome/whi
 d71e5303f3ea8a052abc11b2203fab937911d20b data/more_orn_plants/worldgen/biome/wutong_forest.json
 966c454509e3b004112c60e629a6d0ec358ce48b data/more_orn_plants/worldgen/biome/yellow_land.json
 d87f5f6b9bd1466227a29bc67cc693f214c9ff93 data/more_orn_plants/worldgen/biome/yunmeng_marsh.json
-b4f0f12c269bcf5a7b28ab8dec2deebd5aca9d5e data/more_orn_plants/worldgen/biome/ziying_caves.json
+733e1cffd2159651b3bb87dc458b50f9ab0f5950 data/more_orn_plants/worldgen/biome/ziying_caves.json
 299b8e516e3410b6daa923adf48ff2e7e3cd45fd data/more_orn_plants/worldgen/configured_feature/allium.json
 0321d91081f53e87aa2fa97b95a0455350465b7d data/more_orn_plants/worldgen/configured_feature/ancient_camphor.json
 e3b487dc8b12c6e0ce316a0407cfbcb5fb039f70 data/more_orn_plants/worldgen/configured_feature/ancient_double_pink_mei.json
