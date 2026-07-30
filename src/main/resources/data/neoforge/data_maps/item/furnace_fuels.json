@@ -1,7 +1,7 @@
 {
   "values": {
     "more_orn_plants:golden_miscanthus": {
-      "burn_time": 600
+      "burn_time": 3600
     },
     "more_orn_plants:ornamental_peach_petals": {
       "burn_time": 100
