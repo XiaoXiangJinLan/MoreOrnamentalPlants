@@ -175,7 +175,7 @@ public class ModItems {
             ITEMS.register("crape_myrtle_wood", () -> new crapeMyrtleLogBlockItem(ModBlocks.CRAPE_MYRTLE_WOOD.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> GOLDEN_MISCANTHUS =
-            ITEMS.register("golden_miscanthus", () -> new BurnBlockItem(ModBlocks.GOLDEN_MISCANTHUS.get(), new Item.Properties(), 600));
+            ITEMS.register("golden_miscanthus", () -> new BurnBlockItem(ModBlocks.GOLDEN_MISCANTHUS.get(), new Item.Properties(), 3600));
 
     public static final RegistryObject<Item> ORNAMENTAL_PEACH_PETALS =
             ITEMS.register("ornamental_peach_petals", () -> new LeafPileBlockItem(ModBlocks.ORNAMENTAL_PEACH_PETALS.get(), new Item.Properties(), 100));
