@@ -100,15 +100,15 @@ public class ModEvents {
             }
         } else if (weapon.is(ModTags.Items.ZIYING_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
             if (player.getRandom().nextFloat() < 0.75f) {
-                event.setAmount(event.getAmount() * ModBiomeConfig.ZIYING_TOOLS_MULTIPLIER.get().floatValue() * 2);
+                event.setAmount(event.getAmount() * ModBiomeConfig.ZIYING_TOOLS_MULTIPLIER.get().floatValue());
             }
         } else if (weapon.is(ModTags.Items.SUYU_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
-            event.setAmount(event.getAmount() * ModBiomeConfig.SUYU_TOOLS_MULTIPLIER.get().floatValue() * 2);
+            event.setAmount(event.getAmount() * ModBiomeConfig.SUYU_TOOLS_MULTIPLIER.get().floatValue());
             target1.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), player);
         } else if (weapon.is(ModTags.Items.ZIYU_YUANYANG_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
-            float multiplier = ModBiomeConfig.ZIYU_YUANYANG_TOOLS_BASE_MULTIPLIER.get().floatValue() * 2;
-            if (player.getRandom().nextFloat() < 0.5f) {
-                multiplier *= ModBiomeConfig.ZIYU_YUANYANG_TOOLS_CRIT_MULTIPLIER.get().floatValue() * 2;
+            float multiplier = ModBiomeConfig.ZIYU_YUANYANG_TOOLS_BASE_MULTIPLIER.get().floatValue();
+            if (player.getRandom().nextFloat() < 0.55f) {
+                multiplier *= ModBiomeConfig.ZIYU_YUANYANG_TOOLS_CRIT_MULTIPLIER.get().floatValue();
             }
             event.setAmount(event.getAmount() * multiplier);
             target1.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), player);
