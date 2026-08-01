@@ -38,6 +38,29 @@
         },
         {
           "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:bane_of_arthropods": 5
+              }
+            }
+          ],
+          "name": "minecraft:enchanted_book",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:enchanted_book",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
           "name": "more_orn_plants:camphor_wooden_sword"
         },
         {
@@ -48,7 +71,7 @@
       "rolls": {
         "type": "minecraft:uniform",
         "max": 8.0,
-        "min": 4.0
+        "min": 6.0
       }
     }
   ],
