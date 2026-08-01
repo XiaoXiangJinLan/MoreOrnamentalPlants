@@ -83,6 +83,7 @@ public class ZiyingFox extends TamableAnimal {
     private Goal panicGoalTamed;
     private Goal landTargetGoal;
     private Goal turtleEggTargetGoal;
+    private Goal fishTargetGoal;
     private int produceBeadTimer = 0;
     private int regenCooldown = 0;
     private int alertableCooldown = 0;
@@ -117,7 +118,7 @@ public class ZiyingFox extends TamableAnimal {
                 p_28604_ -> p_28604_ instanceof Chicken || p_28604_ instanceof Rabbit
         );
         this.turtleEggTargetGoal = new NearestAttackableTargetGoal<>(this, Turtle.class, 10, false, false, Turtle.BABY_ON_LAND_SELECTOR);
-        Goal fishTargetGoal = new NearestAttackableTargetGoal<>(
+        this.fishTargetGoal = new NearestAttackableTargetGoal<>(
                 this, AbstractFish.class, 20, false, false,
                 p_28600_ -> p_28600_ instanceof AbstractSchoolingFish
         );
@@ -138,8 +139,6 @@ public class ZiyingFox extends TamableAnimal {
         );
         this.goalSelector.addGoal(4, new AvoidEntityGoal<>(this, Wolf.class, 8.0F, 1.6, 1.4,
                 p -> !((Wolf)p).isTame() && !this.isDefending()));
-        this.goalSelector.addGoal(4, new AvoidEntityGoal<>(this, PolarBear.class, 8.0F, 1.6, 1.4,
-                p -> !this.isDefending()));
         this.goalSelector.addGoal(5, new ZiyingFoxStalkPreyGoal());
         this.goalSelector.addGoal(6, new ZiyingFoxPounceGoal());
         this.goalSelector.addGoal(6, new ZiyingFoxSeekShelterGoal(1.25));
@@ -171,7 +170,6 @@ public class ZiyingFox extends TamableAnimal {
         this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
         this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
         this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setAlertOthers());
-        this.targetSelector.addGoal(6, fishTargetGoal);
 
         this.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(this, Monster.class, true,
                 target -> !(target instanceof Creeper) && !(target instanceof TamableAnimal && ((TamableAnimal) target).isTame())
@@ -343,10 +341,14 @@ public class ZiyingFox extends TamableAnimal {
         if (this.turtleEggTargetGoal != null) {
             this.targetSelector.removeGoal(this.turtleEggTargetGoal);
         }
+        if (this.fishTargetGoal != null) {
+            this.targetSelector.removeGoal(this.fishTargetGoal);
+        }
         // 如果未驯服，则添加这些攻击目标
         if (!this.isTame()) {
             this.targetSelector.addGoal(4, this.landTargetGoal);
             this.targetSelector.addGoal(4, this.turtleEggTargetGoal);
+            this.targetSelector.addGoal(6, this.fishTargetGoal);
         }
 
         if (this.panicGoalWild != null) {
