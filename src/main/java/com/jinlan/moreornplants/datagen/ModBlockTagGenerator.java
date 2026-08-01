@@ -427,6 +427,25 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CHINABERRY_FENCE.get())
                 .add(ModBlocks.DESERT_POPLAR_FENCE.get());
 
+        this.tag(Tags.Blocks.FENCES_WOODEN)
+                .add(ModBlocks.RED_MEI_FENCE.get())
+                .add(ModBlocks.WHITE_MEI_FENCE.get())
+                .add(ModBlocks.GREEN_CALYX_MEI_FENCE.get())
+                .add(ModBlocks.DOUBLE_PINK_MEI_FENCE.get())
+                .add(ModBlocks.CRABAPPLE_FENCE.get())
+                .add(ModBlocks.APRICOT_FENCE.get())
+                .add(ModBlocks.PEACH_FENCE.get())
+                .add(ModBlocks.PEAR_FENCE.get())
+                .add(ModBlocks.PURPLE_LEAF_PLUM_FENCE.get())
+                .add(ModBlocks.OSMANTHUS_FENCE.get())
+                .add(ModBlocks.GINKGO_FENCE.get())
+                .add(ModBlocks.CHINESE_PARASOL_FENCE.get())
+                .add(ModBlocks.SWEETGUM_FENCE.get())
+                .add(ModBlocks.CAMPHOR_FENCE.get())
+                .add(ModBlocks.DOVE_TREE_FENCE.get())
+                .add(ModBlocks.CHINABERRY_FENCE.get())
+                .add(ModBlocks.DESERT_POPLAR_FENCE.get());
+
         this.tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.RED_MEI_FENCE_GATE.get())
                 .add(ModBlocks.WHITE_MEI_FENCE_GATE.get())

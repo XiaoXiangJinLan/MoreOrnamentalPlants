@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-26T20:41:43.0459381	Tags for minecraft:item mod id more_orn_plants
+// 1.21.1	2026-08-01T09:05:24.4241313	Tags for minecraft:item mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/item/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/item/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/item/azalea.json
@@ -19,6 +19,7 @@ b4c20bad58f0e4ecede95af04498b90396ba2943 data/c/tags/item/crops.json
 21725c6c03c5b6dfb49d3424ee057a84716b5322 data/c/tags/item/crops/lotus.json
 edc1aae18a35311be8df5db2dfb84cc1dba6303c data/c/tags/item/cymbidium.json
 7bc3f6bb3d7e4fcf50c3dec2105c8d0be4ce6b2c data/c/tags/item/dove_tree_leaves.json
+6bf26f6731cb1f1c270ee74b5f19787094adc568 data/c/tags/item/fences/wooden.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/c/tags/item/fence_gates/wooden.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/c/tags/item/foods/bamboo_shoots.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/c/tags/item/foods/bamboo_sprouts.json

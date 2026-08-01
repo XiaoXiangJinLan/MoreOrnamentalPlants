@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-26T20:41:43.0550721	Tags for minecraft:block mod id more_orn_plants
+// 1.21.1	2026-07-31T21:56:28.1111188	Tags for minecraft:block mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/block/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/block/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/block/azalea.json
@@ -16,6 +16,7 @@ cfafca40eaa0a4f29b2ecf0358dad783eedc7960 data/c/tags/block/crape_myrtle_leaves.j
 1d26ee48ee0b3a3790656ba5c261326c6f33c64f data/c/tags/block/crape_myrtle_sapling.json
 edc1aae18a35311be8df5db2dfb84cc1dba6303c data/c/tags/block/cymbidium.json
 7bc3f6bb3d7e4fcf50c3dec2105c8d0be4ce6b2c data/c/tags/block/dove_tree_leaves.json
+6bf26f6731cb1f1c270ee74b5f19787094adc568 data/c/tags/block/fences/wooden.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/c/tags/block/fence_gates/wooden.json
 987fab3810bebda4ce6d3f95869e3c3570e715ca data/c/tags/block/ginkgo_leaves.json
 37ea26f5e9711dd112ef5bce6ee738d233ba5734 data/c/tags/block/ginkgo_sapling.json
