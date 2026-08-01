@@ -5,6 +5,6 @@
       { "model": "more_orn_plants:block/new_camphor_leaves_1", "weight": 3 },
       { "model": "more_orn_plants:block/new_camphor_leaves_2", "weight": 3 },
       { "model": "more_orn_plants:block/new_camphor_leaves_3", "weight": 4 },
-      { "model": "more_orn_plants:block/camphor_leaves", "weight": 7 }]
+      { "model": "more_orn_plants:block/new_camphor_leaves_4", "weight": 7 }]
   }
 }
