@@ -515,7 +515,7 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(provider2, 0.6F))).ignoreVines().build());
         register(context, WEEPING_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
-                new CrabappleTrunkPlacer(9, 1, 1, 3, 5, 3, 4, 5, 0.6F),
+                new CrabappleTrunkPlacer(10, 1, 1, 5, 4, 3, 3, 4, 0.6F),
                 BlockStateProvider.simple(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get()),
                 new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(ModBlocks.WEEPING_CRABAPPLE.get().defaultBlockState(), 0.9F))).ignoreVines().build());

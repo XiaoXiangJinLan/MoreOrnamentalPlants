@@ -1,4 +1,8 @@
-// 1.20.1	2026-07-28T00:11:46.4771104	Tags for minecraft:block mod id more_orn_plants
+// 1.20.1	2026-07-31T22:08:55.357249	Tags for minecraft:block mod id more_orn_plants
+6bf26f6731cb1f1c270ee74b5f19787094adc568 data/forge/tags/blocks/fences/wooden.json
+9d51ebf161664dd8984d5cb2009cb7f724043d47 data/forge/tags/blocks/fence_gates/wooden.json
+03b0f5a11ed9ffe99eeaa7b86840233f2320f7e5 data/forge/tags/blocks/stripped_logs.json
+a7fab72ff624f6e7874d56884f64dce8d2da50c9 data/forge/tags/blocks/stripped_woods.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/blocks/azalea_root_replaceable.json
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/blocks/ceiling_hanging_signs.json
 ad8f13ff44756682b3fb20a0ed2c52f6b4dc401a data/minecraft/tags/blocks/climbable.json

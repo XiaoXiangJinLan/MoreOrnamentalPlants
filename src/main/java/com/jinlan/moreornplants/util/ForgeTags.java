@@ -1,12 +1,26 @@
 package com.jinlan.moreornplants.util;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
 public class ForgeTags {
+    public static class Blocks {
+        public static final TagKey<Block> STRIPPED_LOGS = tag("stripped_logs");
+        public static final TagKey<Block> STRIPPED_WOODS = tag("stripped_woods");
+
+        private static TagKey<Block> tag(String path) {
+            return BlockTags.create(new ResourceLocation("forge", path));
+        }
+    }
+
     public static class Items {
+        public static final TagKey<Item> STRIPPED_LOGS = tag("stripped_logs");
+        public static final TagKey<Item> STRIPPED_WOODS = tag("stripped_woods");
+
         public static final TagKey<Item> MEI_SAPLING = tag("mei_sapling");
         public static final TagKey<Item> TREE_PEONY = tag("tree_peony");
         public static final TagKey<Item> CYMBIDIUM = tag("cymbidium");

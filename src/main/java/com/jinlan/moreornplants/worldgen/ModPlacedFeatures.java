@@ -552,7 +552,7 @@ public class ModPlacedFeatures {
                         ModBlocks.TAIWAN_CHERRY_SAPLING.get()));
 
         register(context, UPRIGHT_CRABAPPLE_GROVE, configuredFeatures.getOrThrow(ModConfiguredFeatures.UPRIGHT_CRABAPPLE),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.05f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.05f, 1),
                         ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
         register(context, WEEPING_CRABAPPLE_GROVE, configuredFeatures.getOrThrow(ModConfiguredFeatures.WEEPING_CRABAPPLE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.05f, 1),

@@ -1,4 +1,4 @@
-// 1.20.1	2026-07-28T00:11:46.4771104	Tags for minecraft:item mod id more_orn_plants
+// 1.20.1	2026-08-01T09:11:10.247464	Tags for minecraft:item mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/forge/tags/items/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/forge/tags/items/apricot_sapling.json
 3f91e650affbf0dd3681d56a151de1d2b3bb5e35 data/forge/tags/items/azalea.json
@@ -10,6 +10,8 @@ ecf3903a194080819519550f232f10010513f4b1 data/forge/tags/items/bamboo.json
 e0d5185cf60a7ff236f9d4fa2894180654bd2b77 data/forge/tags/items/crabapple_sapling.json
 6daa7c474c4680efdd0c520cf23a4a6d980073c0 data/forge/tags/items/crape_myrtle.json
 edc1aae18a35311be8df5db2dfb84cc1dba6303c data/forge/tags/items/cymbidium.json
+6bf26f6731cb1f1c270ee74b5f19787094adc568 data/forge/tags/items/fences/wooden.json
+9d51ebf161664dd8984d5cb2009cb7f724043d47 data/forge/tags/items/fence_gates/wooden.json
 37b08f6bd3e96eea5b37449405d7c609ec4f9b3e data/forge/tags/items/fruits.json
 87d778f1a2d6b872ca6c75eca336d6593797be71 data/forge/tags/items/fruits/apricot.json
 e7384908f2d2a0ded8522f2fa546c4f99c848eb3 data/forge/tags/items/fruits/crabapple.json
@@ -28,6 +30,8 @@ c34752788297cb2989f3bc35049a78ed54eb61fd data/forge/tags/items/osmanthus_sapling
 d2f227cb07d552724083bba559a00fcb5854b235 data/forge/tags/items/peach_sapling.json
 841151a9b19ae44ee1562df97d1cfd6534eced52 data/forge/tags/items/plant_in_florilegium.json
 05ee996126afa23df5258b108b49a838c71f437e data/forge/tags/items/plum_sapling.json
+03b0f5a11ed9ffe99eeaa7b86840233f2320f7e5 data/forge/tags/items/stripped_logs.json
+a7fab72ff624f6e7874d56884f64dce8d2da50c9 data/forge/tags/items/stripped_woods.json
 227c1f355a78000cb5113ff95a218c71b7335904 data/forge/tags/items/tree_peony.json
 4c33efe41cec6592a15799b1315d1aa60431f6d4 data/forge/tags/items/vegetables.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/forge/tags/items/vegetables/bamboo_shoots.json

@@ -2,11 +2,13 @@ package com.jinlan.moreornplants.datagen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.util.ForgeTags;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -835,5 +837,81 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.RABBITS_SPAWNABLE_ON)
                 .add(ModBlocks.GOLD_SAND.get());
+
+        this.tag(Tags.Blocks.FENCES_WOODEN)
+                .add(ModBlocks.RED_MEI_FENCE.get())
+                .add(ModBlocks.WHITE_MEI_FENCE.get())
+                .add(ModBlocks.GREEN_CALYX_MEI_FENCE.get())
+                .add(ModBlocks.DOUBLE_PINK_MEI_FENCE.get())
+                .add(ModBlocks.CRABAPPLE_FENCE.get())
+                .add(ModBlocks.APRICOT_FENCE.get())
+                .add(ModBlocks.PEACH_FENCE.get())
+                .add(ModBlocks.PEAR_FENCE.get())
+                .add(ModBlocks.PURPLE_LEAF_PLUM_FENCE.get())
+                .add(ModBlocks.OSMANTHUS_FENCE.get())
+                .add(ModBlocks.GINKGO_FENCE.get())
+                .add(ModBlocks.CHINESE_PARASOL_FENCE.get())
+                .add(ModBlocks.SWEETGUM_FENCE.get())
+                .add(ModBlocks.CAMPHOR_FENCE.get())
+                .add(ModBlocks.DOVE_TREE_FENCE.get())
+                .add(ModBlocks.CHINABERRY_FENCE.get())
+                .add(ModBlocks.DESERT_POPLAR_FENCE.get());
+
+        this.tag(Tags.Blocks.FENCE_GATES_WOODEN)
+                .add(ModBlocks.RED_MEI_FENCE_GATE.get())
+                .add(ModBlocks.WHITE_MEI_FENCE_GATE.get())
+                .add(ModBlocks.GREEN_CALYX_MEI_FENCE_GATE.get())
+                .add(ModBlocks.DOUBLE_PINK_MEI_FENCE_GATE.get())
+                .add(ModBlocks.CRABAPPLE_FENCE_GATE.get())
+                .add(ModBlocks.APRICOT_FENCE_GATE.get())
+                .add(ModBlocks.PEACH_FENCE_GATE.get())
+                .add(ModBlocks.PEAR_FENCE_GATE.get())
+                .add(ModBlocks.PURPLE_LEAF_PLUM_FENCE_GATE.get())
+                .add(ModBlocks.OSMANTHUS_FENCE_GATE.get())
+                .add(ModBlocks.GINKGO_FENCE_GATE.get())
+                .add(ModBlocks.CHINESE_PARASOL_FENCE_GATE.get())
+                .add(ModBlocks.SWEETGUM_FENCE_GATE.get())
+                .add(ModBlocks.CAMPHOR_FENCE_GATE.get())
+                .add(ModBlocks.DOVE_TREE_FENCE_GATE.get())
+                .add(ModBlocks.CHINABERRY_FENCE_GATE.get())
+                .add(ModBlocks.DESERT_POPLAR_FENCE_GATE.get());
+
+        this.tag(ForgeTags.Blocks.STRIPPED_LOGS)
+                .add(ModBlocks.STRIPPED_RED_MEI_LOG.get())
+                .add(ModBlocks.STRIPPED_WHITE_MEI_LOG.get())
+                .add(ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.get())
+                .add(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG.get())
+                .add(ModBlocks.STRIPPED_CRABAPPLE_LOG.get())
+                .add(ModBlocks.STRIPPED_APRICOT_LOG.get())
+                .add(ModBlocks.STRIPPED_PEACH_LOG.get())
+                .add(ModBlocks.STRIPPED_PEAR_LOG.get())
+                .add(ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_LOG.get())
+                .add(ModBlocks.STRIPPED_OSMANTHUS_LOG.get())
+                .add(ModBlocks.STRIPPED_GINKGO_LOG.get())
+                .add(ModBlocks.STRIPPED_CHINESE_PARASOL_LOG.get())
+                .add(ModBlocks.STRIPPED_SWEETGUM_LOG.get())
+                .add(ModBlocks.STRIPPED_CAMPHOR_LOG.get())
+                .add(ModBlocks.STRIPPED_DOVE_TREE_LOG.get())
+                .add(ModBlocks.STRIPPED_CHINABERRY_LOG.get())
+                .add(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get());
+
+        this.tag(ForgeTags.Blocks.STRIPPED_WOODS)
+                .add(ModBlocks.STRIPPED_RED_MEI_WOOD.get())
+                .add(ModBlocks.STRIPPED_WHITE_MEI_WOOD.get())
+                .add(ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.get())
+                .add(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD.get())
+                .add(ModBlocks.STRIPPED_CRABAPPLE_WOOD.get())
+                .add(ModBlocks.STRIPPED_APRICOT_WOOD.get())
+                .add(ModBlocks.STRIPPED_PEACH_WOOD.get())
+                .add(ModBlocks.STRIPPED_PEAR_WOOD.get())
+                .add(ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_WOOD.get())
+                .add(ModBlocks.STRIPPED_OSMANTHUS_WOOD.get())
+                .add(ModBlocks.STRIPPED_GINKGO_WOOD.get())
+                .add(ModBlocks.STRIPPED_CHINESE_PARASOL_WOOD.get())
+                .add(ModBlocks.STRIPPED_SWEETGUM_WOOD.get())
+                .add(ModBlocks.STRIPPED_CAMPHOR_WOOD.get())
+                .add(ModBlocks.STRIPPED_DOVE_TREE_WOOD.get())
+                .add(ModBlocks.STRIPPED_CHINABERRY_WOOD.get())
+                .add(ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get());
     }
 }

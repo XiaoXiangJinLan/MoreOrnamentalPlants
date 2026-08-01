@@ -13,6 +13,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -573,5 +574,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.SHOVELS)
                 .add(ModItems.ZIYING_SHOVEL.get(), ModItems.SUYU_SHOVEL.get(), ModItems.ZIYU_YUANYANG_SHOVEL.get());
+
+        this.copy(Tags.Blocks.FENCES_WOODEN, Tags.Items.FENCES_WOODEN);
+        this.copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
+        this.copy(ForgeTags.Blocks.STRIPPED_LOGS, ForgeTags.Items.STRIPPED_LOGS);
+        this.copy(ForgeTags.Blocks.STRIPPED_WOODS, ForgeTags.Items.STRIPPED_WOODS);
     }
 }
