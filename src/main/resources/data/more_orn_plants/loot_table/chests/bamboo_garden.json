@@ -18,7 +18,7 @@
             }
           ],
           "name": "more_orn_plants:golden_crabapple",
-          "weight": 6
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -34,38 +34,6 @@
             }
           ],
           "name": "minecraft:gold_ingot",
-          "weight": 6
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "more_orn_plants:mottled_bamboo",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "more_orn_plants:black_bamboo",
           "weight": 3
         },
         {
@@ -76,16 +44,6 @@
               "enchantments": {
                 "minecraft:mending": 1
               }
-            }
-          ],
-          "name": "minecraft:enchanted_book",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly"
             }
           ],
           "name": "minecraft:enchanted_book",
