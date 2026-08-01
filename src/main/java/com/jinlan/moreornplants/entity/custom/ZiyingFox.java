@@ -85,6 +85,12 @@ public class ZiyingFox extends TamableAnimal {
     private Goal turtleEggTargetGoal;
     private int produceBeadTimer = 0;
     private int regenCooldown = 0;
+    private int alertableCooldown = 0;
+    private boolean cachedAlertableResult = false;
+    private final TargetingConditions alertableTargeting = TargetingConditions.forCombat()
+            .range(12.0)
+            .ignoreLineOfSight()
+            .selector(new ZiyingFoxAlertableEntitiesSelector());
 
     public ZiyingFox(EntityType<? extends ZiyingFox> entityType, Level level) {
         super(entityType, level);
@@ -919,21 +925,25 @@ public class ZiyingFox extends TamableAnimal {
         }
     }
 
-    abstract class ZiyingFoxBehaviorGoal extends Goal {
-        private final TargetingConditions alertableTargeting = TargetingConditions.forCombat()
-                .range(12.0)
-                .ignoreLineOfSight()
-                .selector(new ZiyingFoxAlertableEntitiesSelector());
+    public boolean isAlertableCached() {
+        if (this.alertableCooldown-- <= 0) {
+            this.alertableCooldown = 10; // 每 0.5 秒刷新一次
+            this.cachedAlertableResult = this.level()
+                    .getNearbyEntities(LivingEntity.class, alertableTargeting, this,
+                            this.getBoundingBox().inflate(12.0, 6.0, 12.0))
+                    .isEmpty();
+        }
+        return this.cachedAlertableResult;
+    }
 
+    abstract class ZiyingFoxBehaviorGoal extends Goal {
         protected boolean hasShelter() {
             BlockPos blockpos = BlockPos.containing(ZiyingFox.this.getX(), ZiyingFox.this.getBoundingBox().maxY, ZiyingFox.this.getZ());
             return !ZiyingFox.this.level().canSeeSky(blockpos) && ZiyingFox.this.getWalkTargetValue(blockpos) >= 0.0F;
         }
 
         protected boolean alertable() {
-            return ZiyingFox.this.level()
-                    .getNearbyEntities(LivingEntity.class, this.alertableTargeting, ZiyingFox.this, ZiyingFox.this.getBoundingBox().inflate(12.0, 6.0, 12.0))
-                    .isEmpty();
+            return ZiyingFox.this.isAlertableCached();
         }
     }
 
