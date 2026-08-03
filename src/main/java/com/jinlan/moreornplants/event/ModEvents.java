@@ -18,6 +18,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.animal.AbstractGolem;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.allay.Allay;
@@ -98,14 +99,14 @@ public class ModEvents {
             if (target1 instanceof Raider) {
                 event.setAmount(event.getAmount() * ModBiomeConfig.CHINESE_PARASOL_SWORD_MULTIPLIER.get().floatValue() * 2);
             }
-        } else if (weapon.is(ModTags.Items.ZIYING_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
+        } else if (weapon.is(ModTags.Items.ZIYING_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob || hasMeleeAttackGoal(target1))) {
             if (player.getRandom().nextFloat() < 0.75f) {
                 event.setAmount(event.getAmount() * ModBiomeConfig.ZIYING_TOOLS_MULTIPLIER.get().floatValue());
             }
-        } else if (weapon.is(ModTags.Items.SUYU_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
+        } else if (weapon.is(ModTags.Items.SUYU_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob || hasMeleeAttackGoal(target1))) {
             event.setAmount(event.getAmount() * ModBiomeConfig.SUYU_TOOLS_MULTIPLIER.get().floatValue());
             target1.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), player);
-        } else if (weapon.is(ModTags.Items.ZIYU_YUANYANG_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob)) {
+        } else if (weapon.is(ModTags.Items.ZIYU_YUANYANG_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob || hasMeleeAttackGoal(target1))) {
             float multiplier = ModBiomeConfig.ZIYU_YUANYANG_TOOLS_BASE_MULTIPLIER.get().floatValue();
             if (player.getRandom().nextFloat() < 0.55f) {
                 multiplier *= ModBiomeConfig.ZIYU_YUANYANG_TOOLS_CRIT_MULTIPLIER.get().floatValue();
@@ -152,6 +153,14 @@ public class ModEvents {
             }
             event.setAmount(event.getAmount() * multiplier);
         }
+    }
+
+    private static boolean hasMeleeAttackGoal(LivingEntity entity) {
+        if (!(entity instanceof Mob mob)) {
+            return false;
+        }
+        return mob.goalSelector.getAvailableGoals().stream()
+                .anyMatch(wrapped -> wrapped.getGoal() instanceof MeleeAttackGoal);
     }
 
     private static float[] applyBeadDamageReduction(Player player, float damage,

@@ -10,37 +10,19 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 2
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:red_crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
+                  "Name": "minecraft:oxeye_daisy"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:pink_crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
+                  "Name": "minecraft:lily_of_the_valley"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:white_crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
+                  "Name": "minecraft:azure_bluet"
                 },
                 "weight": 1
               }
@@ -59,15 +41,6 @@
                 "blocks": "minecraft:air"
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:air",
-                "offset": [
-                  0,
-                  1,
-                  0
-                ]
-              },
-              {
                 "type": "minecraft:matching_block_tag",
                 "offset": [
                   0,
@@ -81,8 +54,8 @@
         }
       ]
     },
-    "tries": 106,
-    "xz_spread": 3,
+    "tries": 36,
+    "xz_spread": 5,
     "y_spread": 2
   }
 }

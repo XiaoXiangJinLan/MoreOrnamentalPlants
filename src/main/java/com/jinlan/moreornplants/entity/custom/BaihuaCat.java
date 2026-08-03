@@ -6,6 +6,7 @@ import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
 import com.jinlan.moreornplants.entity.ModEntities;
+import com.jinlan.moreornplants.entity.ai.goal.BaihuaCatAttackGoal;
 import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ModTags;
@@ -28,16 +29,14 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.GoalSelector;
-import net.minecraft.world.entity.ai.goal.TemptGoal;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.NonTameRandomTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
 import net.minecraft.world.entity.animal.Cat;
 import net.minecraft.world.entity.animal.horse.AbstractHorse;
 import net.minecraft.world.entity.decoration.ArmorStand;
-import net.minecraft.world.entity.monster.Creeper;
-import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.monster.Ghast;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeColor;
@@ -73,25 +72,35 @@ public class BaihuaCat extends Cat {
     @Override
     protected void registerGoals() {
         super.registerGoals();
-        removeGoals(goalSelector);
+        removeGoals(goalSelector, TemptGoal.class);
+        removeGoals(goalSelector, PanicGoal.class);
+        removeGoals(targetSelector, NonTameRandomTargetGoal.class);
+        removeGoals(goalSelector, OcelotAttackGoal.class);
 
+        this.goalSelector.addGoal(1, new PanicGoal(this, 1.5D) {
+            @Override
+            protected boolean shouldPanic() {
+                return this.mob.isFreezing() || this.mob.isOnFire();
+            }
+        });
         this.baihuaTemptGoal = new TemptGoal(this, 1.1D, TEMPT_INGREDIENT, false);
         this.goalSelector.addGoal(4, this.baihuaTemptGoal);
 
         this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
         this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
         this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setAlertOthers());
+        this.goalSelector.addGoal(9, new BaihuaCatAttackGoal(this));
     }
 
-    private void removeGoals(GoalSelector selector) {
-        selector.getAvailableGoals().removeIf(wrapped -> wrapped.getGoal() instanceof TemptGoal);
+    private void removeGoals(GoalSelector selector, Class<? extends Goal> goalClass) {
+        selector.getAvailableGoals().removeIf(wrapped -> wrapped != null && goalClass.isInstance(wrapped.getGoal()));
     }
 
     public static AttributeSupplier.@NotNull Builder createAttributes() {
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 20.0)
                 .add(Attributes.MOVEMENT_SPEED, 0.3)
-                .add(Attributes.ATTACK_DAMAGE, 5.0);
+                .add(Attributes.ATTACK_DAMAGE, 9.0);
     }
 
     @Override
@@ -329,6 +338,14 @@ public class BaihuaCat extends Cat {
         }
 
         if (!this.level().isClientSide && this.isAlive() && this.isEffectiveAi()) {
+            LivingEntity target = this.getTarget();
+            if (target != null && target.isAlive() && this.canAttack(target)) {
+                MobEffectInstance current = this.getEffect(MobEffects.DAMAGE_BOOST);
+                if (current == null || current.getDuration() < 1700) {
+                    this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1800, 2));
+                }
+            }
+
             if (this.producePeachTimer > 0) {
                 this.producePeachTimer--;
                 if (this.producePeachTimer == 0) {
@@ -356,9 +373,9 @@ public class BaihuaCat extends Cat {
 
             if (this.getHealth() < this.getMaxHealth()) {
                 if (this.regenCooldown <= 0) {
-                    this.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 180, 2));
-                    this.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 0));
-                    this.regenCooldown = 200;
+                    this.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 80, 2));
+                    this.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 2));
+                    this.regenCooldown = 100;
                 } else {
                     this.regenCooldown--;
                 }
@@ -445,21 +462,24 @@ public class BaihuaCat extends Cat {
 
     @Override
     public boolean wantsToAttack(@NotNull LivingEntity target, @NotNull LivingEntity owner) {
-        if (target instanceof Creeper || target instanceof Ghast || target instanceof ArmorStand) {
+        if (target instanceof Ghast || target instanceof ArmorStand) {
             return false;
         } else {
             if (target instanceof Player) {
                 return false;
             }
-            return !(target instanceof AbstractHorse) && !(target instanceof TamableAnimal);
+            return !(target instanceof Cat) && !(target instanceof AbstractHorse) && !(target instanceof TamableAnimal && ((TamableAnimal) target).isTame());
         }
     }
 
     @Override
     public boolean doHurtTarget(@NotNull Entity target) {
         float damage = (float) this.getAttributeValue(Attributes.ATTACK_DAMAGE);
-        if (target instanceof Enemy || target instanceof NeutralMob) {
-            damage *= 9.0F;
+        if (this.isTame()) {
+            damage *= 5.0F;
+        }
+        if (this.level().getBiome(this.blockPosition()).is(ModTags.Biomes.FLOWERS_AND_MOON)) {
+            damage *= 2.0F;
         }
         boolean hurt = target.hurt(this.damageSources().mobAttack(this), damage);
         if (hurt) {
@@ -473,8 +493,7 @@ public class BaihuaCat extends Cat {
     public boolean hurt(@NotNull DamageSource source, float amount) {
         boolean hurt = super.hurt(source, amount);
         if (hurt && this.isAlive()) {
-            this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1800, 2));
-            this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1800, 0));
+            this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1800, 2));
         }
         return hurt;
     }

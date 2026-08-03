@@ -10,39 +10,18 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
+                  "Name": "more_orn_plants:camellia"
                 },
-                "weight": 2
+                "weight": 4
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:red_crape_myrtle",
+                  "Name": "more_orn_plants:tall_camellia",
                   "Properties": {
                     "half": "lower"
                   }
                 },
-                "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:pink_crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:white_crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 1
+                "weight": 5
               }
             ]
           }

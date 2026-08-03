@@ -6,10 +6,21 @@
         "type": "minecraft:simple_block",
         "config": {
           "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "more_orn_plants:branchy_tamarisk"
-            }
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "more_orn_plants:chinese_narcissus"
+                },
+                "weight": 3
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:golden_chinese_narcissus"
+                },
+                "weight": 2
+              }
+            ]
           }
         }
       },

@@ -10,37 +10,25 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 2
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:red_crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
+                  "Name": "more_orn_plants:violet_pink_peony"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:pink_crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
+                  "Name": "more_orn_plants:ink_red_peony"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:white_crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
+                  "Name": "more_orn_plants:ink_purple_peony"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:ochre_yellow_peony"
                 },
                 "weight": 1
               }
@@ -57,15 +45,6 @@
               {
                 "type": "minecraft:matching_blocks",
                 "blocks": "minecraft:air"
-              },
-              {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:air",
-                "offset": [
-                  0,
-                  1,
-                  0
-                ]
               },
               {
                 "type": "minecraft:matching_block_tag",

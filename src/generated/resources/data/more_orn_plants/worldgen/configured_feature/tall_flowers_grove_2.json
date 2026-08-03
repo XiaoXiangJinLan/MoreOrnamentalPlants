@@ -10,16 +10,7 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 2
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:red_crape_myrtle",
+                  "Name": "minecraft:lilac",
                   "Properties": {
                     "half": "lower"
                   }
@@ -28,16 +19,7 @@
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:pink_crape_myrtle",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                },
-                "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:white_crape_myrtle",
+                  "Name": "minecraft:sunflower",
                   "Properties": {
                     "half": "lower"
                   }
