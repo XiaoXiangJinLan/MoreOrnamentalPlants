@@ -18,48 +18,25 @@ then right-click to obtain the corresponding cut flower.
 New Biomes
 ==========
 #### Flower Forest Biomes
-• White Snow Red Mei: A snowy forest dominated by Red Bone Mei, with Wintersweet growing on the forest floor.  
-• Fragrant Snow Sea: A snowy forest dominated by Jiang Mei, Green Calyx Mei, White Weeping Mei, and Green Weeping Mei, with Fragrant Snow Petals on the ground.  
-• Snow Greets Spring: A snowy forest dominated by Mei blossom, with early spring flowers on the forest floor.  
-• The Peach Blossom Spring: A fairyland where Ornamental Peach and Wild Peach grow, with Peach Pink Petals on the ground. The sky and water have a light pink tint, and Floating Blossoms (Ornamental/Wild Peach Petals) drift in the air.  
-• The Apricot Spring Plateau: A plateau where Pink Apricot and White Apricot grow, with Spring Petals on the ground.  
-• Penglai: A mythical island mountain in the sea, home to Versicolor Weeping Mei, Pink Weeping Mei, Green Weeping Mei, Crabapple, Peony, Herbaceous Peony, and Chinese Rose.  
-• Flowers Grove: A flowering forest dominated by Weeping Crabapple, mixed with various other flowering trees. The understory features Chinese Rose, Peony, Chrysanthemum, Orchid, Herbaceous Peony, Camellia, Azalea, Crape Myrtle, Cotton Rose, Fountain Grass, and some vanilla plants.  
-• Crabapple Grove: A variant of the Flowers Grove, a flowering forest primarily composed of Crabapple, with Herbaceous Peony and Peony growing beneath.  
-• Chinaberry Woods: An open forest dominated by Chinaberry and Camphor, with an abundance of Fountain Grass on the ground.  
-• Snow Woods: A flowering forest where Pear and Camphor trees grow, with Lily of the Valley on the forest floor.  
-• Mount Mei: A snowy mountain slope where Green Calyx Mei grows.  
-• Camellia Valley: A valley abundant with White Camellia, interspersed with White Apricot and Camphor trees.  
-• Pink Camellia Valley: A variant of Camellia Valley, abundant with Pink Camellia.  
-• Red Camellia Valley: A variant of Camellia Valley, abundant with Red Camellia.
+White Snow Red Mei, Fragrant Snow Sea, Snow Greets Spring, The Peach Blossom Spring, The Apricot Spring Plateau, Penglai, 
+Flowers Grove, Crabapple Grove, Chinaberry Woods, Snow Woods, Mount Mei, Camellia Valley, Pink Camellia Valley, Red Camellia Valley.
 #### Deciduous Forest Biomes
-• Colored Forest: A colorful forest dominated by Ginkgo, followed by Chinese Parasol, Sweetgum, Orange Osmanthus, and Purple-leaf Plum. The ground has a bright yellow tint, with Chrysanthemum and Cotton Rose growing beneath.  
-• Ginkgo Forest: A forest dominated by Ginkgo, with Golden Miscanthus on the forest floor.  
-• Sweetgum Woods: A forest dominated by Sweetgum and Camphor, with Chinese Rose growing beneath.  
-• Purple Cloud: A forest dominated by Purple-leaf Plum, with Purple Chrysanthemum on the forest floor.  
-• Desert Poplar Woods: A desert where Desert Poplar trees grow.
+Colored Forest, Wutong Forest, Ginkgo Forest, Sweetgum Woods, Purple Cloud.
 #### Other Forest Biomes
-• Evergreen Forest: A forest dominated by Camphor, followed by Chinese Parasol, Ginkgo, and White Osmanthus, with occasional Dove Trees. Cymbidium, Hardy Banana, Moth Orchids, vanilla orchids, and Lily of the Valley grow on the forest floor.  
-• Longevity Forest: A variant of the Evergreen Forest, an ancient forest featuring old-growth Camphor, Ginkgo, and Pine trees, with Chrysanthemums and Orchids growing beneath.
+Evergreen Forest, Longevity Forest.
 #### Plain Biomes
-• Peony Sea: A sea of flowers dominated by Peony with a few Herbaceous Peonies, interspersed with Upright Crabapple.  
-• Peony Meadows: A sea of flowers dominated by Herbaceous Peony with a few Peonies, interspersed with Upright Crabapple.  
-• Chinese Rose Fields: A sea of flowers dominated by Chinese Rose with a few vanilla Rose Bushes.  
-• Miscanthus Fields: A plain abundant with Golden Miscanthus.  
-• Crops Green: A plain featuring Fountain Grass, Miscanthus, Chinese Rose, Autumn Cymbidium, and vanilla Alliums and Dandelions, with occasional Camphor and Chinaberry trees.
+Flowers Fields, Peony Sea, Peony Meadows, Chinese Rose Fields, Fendai Land, Jizi Land, Haoyue Land, Ehuang Land, Miscanthus Fields, 
+Crops Green, The Land of Abundance.
 #### Plateau Biomes
-• Red Highlands: Highland slopes abundant with Red Azalea, with occasional Red Bone Mei and Ornamental Peach.  
-• Azalea Forest: Highland slopes abundant with various Azaleas and Rhododendrons, interspersed with various Azalea trees.  
-• Ten-Mile Gallery: Highland slopes abundant with a wide variety of flowers, interspersed with colorful Osmanthus, Azalea trees, and Black Bamboo.
+Red Highlands, Azalea Forest, Ten-Mile Gallery.
 #### Wetland Biomes
-• Furong Guo: A plain wetland abundant with Cotton Rose, Mottled Bamboo, and Black Bamboo. Lotus leaves and flowers grow plentifully in the water.  
-• Yunmeng Marsh: A wetland swamp where Double Pink Mei and Camphor trees grow. Summer Cymbidium grows on the forest floor, and Lotus leaves and flowers are abundant in the water.
+Furong Guo, Yunmeng Marsh.
+#### Desert Biomes
+Desert Poplar Woods, Tamarisk Fields, Gold Country.
 #### River Biomes
-• Spring River: A river with Floating Blossoms (Ornamental/Wild Peach Petals) on its surface, and Jiang Mei, Orchids, and vanilla orchids growing on its banks.
-• Jiangtian Muxue: A cold river.
+Spring River, Lotus River, Autumn River, Jiangtian Muxue.
 #### Cave Biomes
-• Ziying Caves: Caves where Crape Myrtle and Chinese Wisteria grow.  
-• Suyu Caves: Caves where White Crape Myrtle and White Chinese Wisteria grow.
+Ziying Caves, Suyu Caves.
 
 New Structures
 ==========
@@ -110,10 +87,10 @@ New Mobs
 •**香雪海**：江梅、绿萼梅、垂枝白梅以及绿萼垂枝梅为主的雪林，地面长有香雪花簇；  
 •**飞雪迎春**：各大梅花为主的雪林，林下生长有许多早春花卉；  
 •**梅山**：生长有绿萼梅的高山雪坡；  
-•**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃红花簇，天空和水面为淡粉色，漂浮有流红、浮英；  
+•**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃红花簇，天空和水面为淡粉色；  
 •**高原春杏**：生长有粉杏和白杏的高原，地面长有春信花簇；  
-•**蓬莱**：生长有洒金垂枝梅、宫粉垂枝梅、绿萼垂枝梅、仙桃、云杏、海棠、牡丹、芍药、月季的海上仙山。当玩家位于此群系时，会获得诸多正面效果；  
-•**百花林**：垂丝海棠为优势树种，并伴有其他各种花树的花林，林下生长有月季、牡丹、菊花、兰花、芍药、山茶、杜鹃、紫薇、芙蓉、狼尾草以及部分原版植物；  
+•**蓬莱**：海上仙山，祥瑞之地；  
+•**百花林**：生长有多种花树的花林，林下生长有多种灌木或草本花卉；  
 •**烟雨海棠**：百花林的变种，以海棠为主的花林，林下生长有芍药和牡丹；  
 •**楝花林**：苦楝和香樟为优势树种的疏林，林下生长有大量的狼尾草；  
 •**晴雪林**：生长有梨花和樟树的花林，林下生长有铃兰；  
@@ -121,21 +98,21 @@ New Mobs
 •**粉茶花谷**：茶花谷的变种，生长有大量粉茶花；  
 •**红茶花谷**：茶花谷的变种，生长有大量红茶花；
 #### 落叶林群系
-•**彩叶林**：银杏和梧桐为优势树种的彩林，其次为枫香、金桂、紫叶李，地面为亮黄色，林下生长有菊花、木芙蓉；  
+•**彩叶林**：银杏和梧桐为优势树种的彩林，地面为亮黄色，林下生长有菊花、木芙蓉；  
 •**梧桐林**：彩叶林的变种，梧桐为主的森林，朝阳之地；  
 •**银杏林**：银杏为主的森林，林下生长有金芒草；  
 •**枫香林**：枫香和樟树为主的森林，林下生长有月季；  
 •**紫云林**：紫叶李为主的森林，林下生长有紫菊、紫蝴蝶兰；
 #### 其他森林群系
-•**常绿林**：樟树为优势树种的森林，其次为梧桐、银杏，偶尔出现珙桐，林下生长有兰花、芭蕉、蝴蝶兰、原版兰花和铃兰；  
-•**长寿林**：常绿林的变种，生长有古樟树、古银杏、古松树的森林，林下生长有菊花和兰花。当玩家位于此群系时，会获得生命提升的效果；
+•**常绿林**：樟树为优势树种的森林，林下生长有兰花、芭蕉、蝴蝶兰等植物；  
+•**长寿林**：常绿林的变种，生长有多种古树的森林，长寿之地；
 #### 平原群系
 •**百花田**：生长有多种花卉，并伴有其他各种花树的花海；  
 •**牡丹花海**：生长有牡丹和少量芍药的花海，伴有西府海棠点缀；  
 •**芍药花海**：生长有芍药和少量牡丹的花海；  
 •**月季花海**：生长有月季和少量原版玫瑰丛的花海；  
 •**芒草田**：生长有大量金芒草的平原；  
-•**禾青**：生长有狼尾草、芒草、月季、建兰、原版绒球葱和蒲公英的平原，偶尔出现香樟和苦楝；  
+•**禾青**：生长有狼尾草、芒草、月季、建兰等植物的平原，偶尔出现香樟和苦楝；  
 •**天府国**：生长有木芙蓉、蜀葵、竹子的平原，并伴有珙桐；  
 •**粉黛花地**：生长有粉色花朵的平原；  
 •**霁紫花地**：生长有紫色花朵的平原；  
@@ -147,15 +124,15 @@ New Mobs
 •**十里画廊**：生长有大量各色花朵的高地山坡，伴有各色的桂花树和杜鹃树以及紫竹点缀；
 #### 湿地群系
 •**芙蓉国**：生长有大量木芙蓉、湘妃竹、紫竹的平原湿地，水里生长有大量荷叶荷花；  
-•**云梦泽**：生长有宫粉梅和樟树的湿地沼泽，林下生长有蕙兰，水里生长有大量荷叶荷花；
+•**云梦泽**：生长有宫粉梅和樟树的湿地沼泽，水里生长有大量荷叶荷花；
 #### 沙漠群系
 •**胡杨林**：生长有胡杨树的沙漠；  
-•**柽柳田**：生长有红柳的沙漠；    
+•**柽柳田**：生长有红柳的沙漠；  
 •**黄金乡**：遍地黄金之地；
 #### 河流群系
-•**春江**：水面漂浮有流红、浮英的河流，岸边生长有江梅、兰花、原版兰花；  
+•**春江**：水面漂浮有花瓣的河流，岸边生长有江梅、兰花等；  
 •**莲水**：生长莲与睡莲的的河流；  
-•**秋水**：水面漂浮有各种落叶河流，岸边生长有菊、木芙蓉等；  
+•**秋水**：水面漂浮有落叶的河流，岸边生长有菊、木芙蓉等；  
 •**江天暮雪**：水面结冰的冷河，水底生长有暮雪草；
 #### 洞穴群系
 •**紫英洞**：生长有紫薇和紫藤的洞穴；  

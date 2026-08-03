@@ -10,15 +10,21 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:chinese_narcissus"
+                  "Name": "minecraft:lilac",
+                  "Properties": {
+                    "half": "lower"
+                  }
                 },
-                "weight": 3
+                "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:golden_chinese_narcissus"
+                  "Name": "minecraft:sunflower",
+                  "Properties": {
+                    "half": "lower"
+                  }
                 },
-                "weight": 2
+                "weight": 1
               }
             ]
           }
@@ -35,6 +41,15 @@
                 "blocks": "minecraft:air"
               },
               {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
                 "type": "minecraft:matching_block_tag",
                 "offset": [
                   0,
@@ -48,8 +63,8 @@
         }
       ]
     },
-    "tries": 36,
-    "xz_spread": 5,
+    "tries": 106,
+    "xz_spread": 3,
     "y_spread": 2
   }
 }

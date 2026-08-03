@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:branchy_tamarisk_grove",
+  "feature": "more_orn_plants:pink_camellia_grove",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 2
+      "chance": 3
     },
     {
       "type": "minecraft:in_square"

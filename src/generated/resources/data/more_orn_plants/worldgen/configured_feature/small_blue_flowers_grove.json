@@ -10,15 +10,15 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:chinese_narcissus"
+                  "Name": "minecraft:blue_orchid"
                 },
-                "weight": 3
+                "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:golden_chinese_narcissus"
+                  "Name": "minecraft:cornflower"
                 },
-                "weight": 2
+                "weight": 1
               }
             ]
           }
@@ -48,8 +48,8 @@
         }
       ]
     },
-    "tries": 36,
-    "xz_spread": 5,
+    "tries": 106,
+    "xz_spread": 3,
     "y_spread": 2
   }
 }

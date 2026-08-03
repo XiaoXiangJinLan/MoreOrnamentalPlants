@@ -755,7 +755,7 @@ public class ZiyingFox extends TamableAnimal {
     @Override
     public boolean doHurtTarget(@NotNull Entity target) {
         float damage = (float) this.getAttributeValue(Attributes.ATTACK_DAMAGE);
-        if (target instanceof Enemy || target instanceof NeutralMob) {
+        if (target instanceof Enemy || target instanceof NeutralMob || hasMeleeAttackGoal(target)) {
             damage *= 5.0F;
         }
         // 造成伤害
@@ -768,6 +768,14 @@ public class ZiyingFox extends TamableAnimal {
             }
         }
         return hurt;
+    }
+
+    private static boolean hasMeleeAttackGoal(Entity entity) {
+        if (!(entity instanceof Mob mob)) {
+            return false;
+        }
+        return mob.goalSelector.getAvailableGoals().stream()
+                .anyMatch(wrapped -> wrapped.getGoal() instanceof MeleeAttackGoal);
     }
 
     @Override
@@ -1186,6 +1194,13 @@ public class ZiyingFox extends TamableAnimal {
         }
     }
 
+    @Override
+    public boolean isWithinMeleeAttackRange(LivingEntity target) {
+        double d0 = this.distanceToSqr(target.getX(), target.getBoundingBox().minY, target.getZ());
+        double d1 = this.getBbWidth() * 4.0F * this.getBbWidth() * 4.0F + target.getBbWidth();
+        return d0 <= d1;
+    }
+
     class ZiyingFoxMoveControl extends MoveControl {
         public ZiyingFoxMoveControl() {
             super(ZiyingFox.this);
@@ -1301,7 +1316,7 @@ public class ZiyingFox extends TamableAnimal {
                     ZiyingFox.this.setXRot((float)d1);
                 }
             }
-            if (livingentity != null && ZiyingFox.this.distanceTo(livingentity) <= 2.0F) {
+            if (livingentity != null && ZiyingFox.this.distanceTo(livingentity) <= 4.5F) {
                 ZiyingFox.this.doHurtTarget(livingentity);
             } else if (ZiyingFox.this.getXRot() > 0.0F
                     && ZiyingFox.this.onGround()

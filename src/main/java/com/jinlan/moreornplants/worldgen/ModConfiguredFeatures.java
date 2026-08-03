@@ -152,6 +152,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_GREEN_KEY = registerKey("peony_green_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_PINK_GROVE = registerKey("peony_pink_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_GROVE = registerKey("peony_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LIGHT_PEONY_GROVE = registerKey("light_peony_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> INK_PEONY_GROVE = registerKey("ink_peony_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_PENGLAI = registerKey("peony_penglai");
     public static final ResourceKey<ConfiguredFeature<?, ?>> YAO_HUANG_PEONY_KEY = registerKey("yao_huang_peony_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEI_ZI_PEONY_KEY = registerKey("wei_zi_peony_key");
@@ -168,7 +170,9 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_RED_CAMELLIA_KEY = registerKey("tall_red_camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_WHITE_CAMELLIA_KEY = registerKey("tall_white_camellia_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_PINK_CAMELLIA_KEY = registerKey("tall_pink_camellia_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CAMELLIA_GROVE = registerKey("camellia_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_GROVE = registerKey("pink_camellia_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CAMELLIA_GROVE = registerKey("white_camellia_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CAMELLIA_TREE = registerKey("camellia_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CAMELLIA_TREE = registerKey("white_camellia_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CAMELLIA_TREE = registerKey("pink_camellia_tree");
@@ -194,8 +198,6 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> AZALEA_GROVE = registerKey("azalea_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WINTERSWEET = registerKey("wintersweet");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWER_SNOW_SPRING = registerKey("flower_snow_spring");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_FLOWERS_GROVE = registerKey("small_flowers_grove");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> TULIP_GROVE = registerKey("tulip_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CYMBIDIUM = registerKey("cymbidium");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CYMBIDIUM_RIVER = registerKey("cymbidium_river");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SUMMER_CYMBIDIUM_YUNMENG = registerKey("summer_cymbidium_yunmeng");
@@ -217,7 +219,6 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_MOTH_ORCHID_CLOUD = registerKey("purple_moth_orchid_cloud");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_MOTH_ORCHID_LAND = registerKey("purple_moth_orchid_land");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOTH_ORCHID_TEM_MILE = registerKey("moth_orchid_ten_mile");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_GROVE = registerKey("tall_flowers_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_KEY = registerKey("crape_myrtle_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_TREE = registerKey("crape_myrtle_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_CRAPE_MYRTLE_TREE = registerKey("red_crape_myrtle_tree");
@@ -258,6 +259,12 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_WOOD_SORREL_PATCH = registerKey("pink_wood_sorrel_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW_WOOD_SORREL_PATCH = registerKey("yellow_wood_sorrel_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_WOOD_SORREL_PATCH = registerKey("white_wood_sorrel_patch");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_FLOWERS_GROVE = registerKey("small_flowers_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_BLUE_FLOWERS_GROVE = registerKey("small_blue_flowers_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_WHITE_FLOWERS_GROVE = registerKey("small_white_flowers_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TULIP_GROVE = registerKey("tulip_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_GROVE = registerKey("tall_flowers_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_GROVE_2 = registerKey("tall_flowers_grove_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ROSE_BUSH = registerKey("rose_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DANDELION = registerKey("dandelion");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ALLIUM = registerKey("allium");
@@ -1301,7 +1308,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
 
-        register(context, CHRYSANTHEMUM_GROVE, Feature.FLOWER, new RandomPatchConfiguration(26, 3, 2,
+        register(context, CHRYSANTHEMUM_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1313,7 +1320,7 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, CYMBIDIUM, Feature.FLOWER, new RandomPatchConfiguration(6, 4, 2,
+        register(context, CYMBIDIUM, Feature.FLOWER, new RandomPatchConfiguration(16, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1324,20 +1331,22 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, PEONY_TREE_GROVE, Feature.FLOWER, new RandomPatchConfiguration(22, 3, 2,
+        register(context, PEONY_TREE_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(ModBlocks.YAO_HUANG_PEONY.get().defaultBlockState(), 6)
-                                        .add(ModBlocks.WEI_ZI_PEONY.get().defaultBlockState(), 6)
-                                        .add(ModBlocks.ZHAO_PINK_PEONY.get().defaultBlockState(), 6)
+                                        .add(ModBlocks.YAO_HUANG_PEONY.get().defaultBlockState(), 3)
+                                        .add(ModBlocks.WEI_ZI_PEONY.get().defaultBlockState(), 3)
+                                        .add(ModBlocks.ZHAO_PINK_PEONY.get().defaultBlockState(), 3)
                                         .add(ModBlocks.DOU_GREEN_PEONY.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.LUOYANG_RED_PEONY.get().defaultBlockState(), 6).build())),
+                                        .add(ModBlocks.LUOYANG_RED_PEONY.get().defaultBlockState(), 3)
+                                        .add(ModBlocks.VERSICOLOR_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.TWO_QIAO_PEONY.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, PEONY_GROVE, Feature.FLOWER, new RandomPatchConfiguration(32, 4, 2,
+        register(context, PEONY_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1345,19 +1354,37 @@ public class ModConfiguredFeatures {
                                         .add(ModBlocks.RED_PEONY.get().defaultBlockState(), 2)
                                         .add(ModBlocks.PURPLE_PEONY.get().defaultBlockState(), 2)
                                         .add(ModBlocks.YELLOW_PEONY.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.LIGHT_PINK_PEONY.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.LIGHT_RED_PEONY.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.LIGHT_PURPLE_PEONY.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.LIGHT_YELLOW_PEONY.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.VIOLET_PINK_PEONY.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.INK_RED_PEONY.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.INK_PURPLE_PEONY.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.OCHRE_YELLOW_PEONY.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.WHITE_PEONY.get().defaultBlockState(), 2).build())),
+                                        .add(ModBlocks.BLUE_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.GREEN_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.INK_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.WHITE_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.WU_HUA_LONG_YU_PEONY.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, CHINESE_ROSE_GROVE, Feature.FLOWER, new RandomPatchConfiguration(22, 3, 2,
+        register(context, LIGHT_PEONY_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.LIGHT_PINK_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.LIGHT_RED_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.LIGHT_PURPLE_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.LIGHT_YELLOW_PEONY.get().defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, INK_PEONY_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.VIOLET_PINK_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.INK_RED_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.INK_PURPLE_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.OCHRE_YELLOW_PEONY.get().defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, CHINESE_ROSE_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1371,7 +1398,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, CRAPE_MYRTLE_KEY, Feature.FLOWER, new RandomPatchConfiguration(9, 6, 2,
+        register(context, CRAPE_MYRTLE_KEY, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1383,14 +1410,24 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, COTTON_ROSE_GROVE, Feature.FLOWER, new RandomPatchConfiguration(12, 6, 2,
+        register(context, COTTON_ROSE_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.COTTON_ROSE.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, PINK_CAMELLIA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(22, 4, 2,
+        register(context, CAMELLIA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.CAMELLIA.get().defaultBlockState(), 4)
+                                        .add(ModBlocks.TALL_CAMELLIA.get().defaultBlockState(), 5).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, PINK_CAMELLIA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1400,7 +1437,17 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, AZALEA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(22, 4, 2,
+        register(context, WHITE_CAMELLIA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.WHITE_CAMELLIA.get().defaultBlockState(), 4)
+                                        .add(ModBlocks.TALL_WHITE_CAMELLIA.get().defaultBlockState(), 5).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, AZALEA_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1415,7 +1462,7 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, CHINESE_NARCISSUS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(18, 4, 2,
+        register(context, CHINESE_NARCISSUS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1424,7 +1471,7 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, HOLLYHOCK_GROVE, Feature.FLOWER, new RandomPatchConfiguration(9, 6, 2,
+        register(context, HOLLYHOCK_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1436,7 +1483,7 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, MOTH_ORCHID_GROVE, Feature.FLOWER, new RandomPatchConfiguration(18, 4, 2,
+        register(context, MOTH_ORCHID_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1447,13 +1494,13 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, BRANCHY_TAMARISK_GROVE, Feature.FLOWER, new RandomPatchConfiguration(18, 4, 2,
+        register(context, BRANCHY_TAMARISK_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BRANCHY_TAMARISK.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, FOUNTAIN_GRASS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(22, 4, 2,
+        register(context, FOUNTAIN_GRASS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
@@ -1464,34 +1511,56 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, TALL_FLOWERS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(22, 4, 2,
+        register(context, TALL_FLOWERS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(Blocks.ROSE_BUSH.defaultBlockState(), 1)
-                                        .add(Blocks.PEONY.defaultBlockState(), 1)
+                                        .add(Blocks.PEONY.defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, TALL_FLOWERS_GROVE_2, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
                                         .add(Blocks.LILAC.defaultBlockState(), 1)
                                         .add(Blocks.SUNFLOWER.defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, SMALL_FLOWERS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(32, 4, 2,
+        register(context, SMALL_FLOWERS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 5, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(Blocks.DANDELION.defaultBlockState(), 1)
                                         .add(Blocks.POPPY.defaultBlockState(), 1)
+                                        .add(Blocks.ALLIUM.defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, SMALL_BLUE_FLOWERS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
                                         .add(Blocks.BLUE_ORCHID.defaultBlockState(), 1)
-                                        .add(Blocks.ALLIUM.defaultBlockState(), 1)
+                                        .add(Blocks.CORNFLOWER.defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, SMALL_WHITE_FLOWERS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 5, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
                                         .add(Blocks.OXEYE_DAISY.defaultBlockState(), 1)
-                                        .add(Blocks.CORNFLOWER.defaultBlockState(), 1)
                                         .add(Blocks.LILY_OF_THE_VALLEY.defaultBlockState(), 1)
                                         .add(Blocks.AZURE_BLUET.defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, TULIP_GROVE, Feature.FLOWER, new RandomPatchConfiguration(32, 4, 2,
+        register(context, TULIP_GROVE, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()

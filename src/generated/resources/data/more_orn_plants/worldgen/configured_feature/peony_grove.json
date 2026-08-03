@@ -34,49 +34,19 @@
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:light_pink_peony"
-                },
-                "weight": 2
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:light_red_peony"
-                },
-                "weight": 2
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:light_purple_peony"
-                },
-                "weight": 2
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:light_yellow_peony"
-                },
-                "weight": 2
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:violet_pink_peony"
+                  "Name": "more_orn_plants:blue_peony"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:ink_red_peony"
+                  "Name": "more_orn_plants:green_peony"
                 },
                 "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:ink_purple_peony"
-                },
-                "weight": 1
-              },
-              {
-                "data": {
-                  "Name": "more_orn_plants:ochre_yellow_peony"
+                  "Name": "more_orn_plants:ink_peony"
                 },
                 "weight": 1
               },
@@ -84,7 +54,13 @@
                 "data": {
                   "Name": "more_orn_plants:white_peony"
                 },
-                "weight": 2
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:wu_hua_long_yu_peony"
+                },
+                "weight": 1
               }
             ]
           }
@@ -114,8 +90,8 @@
         }
       ]
     },
-    "tries": 32,
-    "xz_spread": 4,
+    "tries": 106,
+    "xz_spread": 3,
     "y_spread": 2
   }
 }

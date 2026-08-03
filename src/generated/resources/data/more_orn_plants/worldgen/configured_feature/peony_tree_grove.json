@@ -15,7 +15,7 @@
                     "half": "lower"
                   }
                 },
-                "weight": 6
+                "weight": 3
               },
               {
                 "data": {
@@ -24,7 +24,7 @@
                     "half": "lower"
                   }
                 },
-                "weight": 6
+                "weight": 3
               },
               {
                 "data": {
@@ -33,7 +33,7 @@
                     "half": "lower"
                   }
                 },
-                "weight": 6
+                "weight": 3
               },
               {
                 "data": {
@@ -51,7 +51,25 @@
                     "half": "lower"
                   }
                 },
-                "weight": 6
+                "weight": 3
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:versicolor_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:two_qiao_peony",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
               }
             ]
           }
@@ -90,7 +108,7 @@
         }
       ]
     },
-    "tries": 22,
+    "tries": 106,
     "xz_spread": 3,
     "y_spread": 2
   }

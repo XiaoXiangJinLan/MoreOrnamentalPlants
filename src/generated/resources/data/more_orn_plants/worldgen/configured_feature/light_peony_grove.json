@@ -10,15 +10,27 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:chinese_narcissus"
+                  "Name": "more_orn_plants:light_pink_peony"
                 },
-                "weight": 3
+                "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:golden_chinese_narcissus"
+                  "Name": "more_orn_plants:light_red_peony"
                 },
-                "weight": 2
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:light_purple_peony"
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:light_yellow_peony"
+                },
+                "weight": 1
               }
             ]
           }
@@ -48,8 +60,8 @@
         }
       ]
     },
-    "tries": 36,
-    "xz_spread": 5,
+    "tries": 106,
+    "xz_spread": 3,
     "y_spread": 2
   }
 }

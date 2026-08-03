@@ -10,15 +10,21 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:chinese_narcissus"
+                  "Name": "minecraft:oxeye_daisy"
                 },
-                "weight": 3
+                "weight": 1
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:golden_chinese_narcissus"
+                  "Name": "minecraft:lily_of_the_valley"
                 },
-                "weight": 2
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "minecraft:azure_bluet"
+                },
+                "weight": 1
               }
             ]
           }

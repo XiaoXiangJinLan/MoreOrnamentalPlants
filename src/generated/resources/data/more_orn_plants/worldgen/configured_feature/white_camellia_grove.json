@@ -10,15 +10,18 @@
             "entries": [
               {
                 "data": {
-                  "Name": "more_orn_plants:chinese_narcissus"
+                  "Name": "more_orn_plants:white_camellia"
                 },
-                "weight": 3
+                "weight": 4
               },
               {
                 "data": {
-                  "Name": "more_orn_plants:golden_chinese_narcissus"
+                  "Name": "more_orn_plants:tall_white_camellia",
+                  "Properties": {
+                    "half": "lower"
+                  }
                 },
-                "weight": 2
+                "weight": 5
               }
             ]
           }
@@ -35,6 +38,15 @@
                 "blocks": "minecraft:air"
               },
               {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ]
+              },
+              {
                 "type": "minecraft:matching_block_tag",
                 "offset": [
                   0,
@@ -48,8 +60,8 @@
         }
       ]
     },
-    "tries": 36,
-    "xz_spread": 5,
+    "tries": 106,
+    "xz_spread": 3,
     "y_spread": 2
   }
 }
