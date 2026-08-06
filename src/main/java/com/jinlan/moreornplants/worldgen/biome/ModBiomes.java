@@ -60,6 +60,10 @@ public class ModBiomes {
             new ResourceLocation(MoreOrnPlants.MOD_ID, "gold_country"));
     public static final ResourceKey<Biome> CHINESE_ROSE_FIELDS = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "chinese_rose_fields"));
+    public static final ResourceKey<Biome> DONGLI_SCENERY = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "dongli_scenery"));
+    public static final ResourceKey<Biome> CRAPE_MYRTLE_GARDEN = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "crape_myrtle_garden"));
     public static final ResourceKey<Biome> SWEETGUM_WOODS = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "sweetgum_woods"));
     public static final ResourceKey<Biome> CHINABERRY_WOODS = ResourceKey.create(Registries.BIOME,
@@ -136,8 +140,10 @@ public class ModBiomes {
         context.register(GOLD_COUNTRY, desertBiome(context, true, false));
         context.register(CHINESE_ROSE_FIELDS, roseFields(context, false));
         context.register(SWEETGUM_WOODS, roseFields(context, true));
-        context.register(CHINABERRY_WOODS, flowerWoods(context, false));
-        context.register(SNOW_WOODS, flowerWoods(context, true));
+        context.register(DONGLI_SCENERY, flowersFields(context, false));
+        context.register(CRAPE_MYRTLE_GARDEN, flowersFields(context, true));
+        context.register(CHINABERRY_WOODS, flowersWoods(context, false));
+        context.register(SNOW_WOODS, flowersWoods(context, true));
         context.register(MISCANTHUS_FIELDS, miscanthusFields(context, false));
         context.register(GINKGO_FOREST, miscanthusFields(context, true));
         context.register(CROPS_GREEN, plainBiome(context, true));
@@ -432,6 +438,10 @@ public class ModBiomes {
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TULIP_GROVE_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_FLOWERS_GROVE_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_FLOWERS_GROVE_2_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PEACH_PINK_PETALS_GROVE_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.FRAGRANT_SNOW_PETALS_GROVE_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SPRING_PETALS_GROVE_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_PETALS_GROVE_PLACED);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.LOTUS_PLACED);
         }
         if (isFields) {
@@ -729,7 +739,49 @@ public class ModBiomes {
                 .build();
     }
 
-    private static Biome flowerWoods(BootstapContext<Biome> context, boolean isPear) {
+    private static Biome flowersFields(BootstapContext<Biome> context, boolean isCrapeMyrtle) {
+        MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
+
+        BiomeDefaultFeatures.farmAnimals(spawnBuilder);
+        BiomeDefaultFeatures.commonSpawns(spawnBuilder);
+        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.FOX, 6, 2, 4))
+                .addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.RABBIT, 4, 2, 3));
+
+        BiomeGenerationSettings.Builder biomeBuilder =
+                new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+        globalOverworldGeneration(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
+        if (isCrapeMyrtle) {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CRAPE_MYRTLE_TREE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_CRAPE_MYRTLE_TREE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_CRAPE_MYRTLE_TREE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_CRAPE_MYRTLE_TREE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SMALL_CRAPE_MYRTLE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SMALL_RED_CRAPE_MYRTLE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SMALL_PINK_CRAPE_MYRTLE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SMALL_WHITE_CRAPE_MYRTLE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CRAPE_MYRTLE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.RED_CRAPE_MYRTLE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PINK_CRAPE_MYRTLE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_CRAPE_MYRTLE_GARDEN);
+        } else {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHRYSANTHEMUM_DONGLI_PLACED);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHRYSANTHEMUM_DONGLI_PLACED_2);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CHRYSANTHEMUM_DONGLI_PLACED_3);
+        }
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_GRASS);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_PLAIN);
+
+        return new Biome.BiomeBuilder()
+                .hasPrecipitation(true).temperature(0.7f).downfall(0.4f)
+                .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
+                .specialEffects((new BiomeSpecialEffects.Builder())
+                        .waterColor(4159204).waterFogColor(329011).skyColor(7907327).fogColor(12638463).grassColorOverride(11983713).foliageColorOverride(11983713).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                .build();
+    }
+
+    private static Biome flowersWoods(BootstapContext<Biome> context, boolean isPear) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
 
         BiomeDefaultFeatures.farmAnimals(spawnBuilder);

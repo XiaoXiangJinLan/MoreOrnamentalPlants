@@ -6,19 +6,20 @@
       "minecraft:canyon"
     ]
   },
-  "downfall": 0.8,
+  "downfall": 0.4,
   "effects": {
     "fog_color": 12638463,
-    "foliage_color": 16756912,
+    "foliage_color": 11983713,
+    "grass_color": 11983713,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "sky_color": 8103167,
-    "water_color": 6141935,
-    "water_fog_color": 6141935
+    "sky_color": 7907327,
+    "water_color": 4159204,
+    "water_fog_color": 329011
   },
   "features": [
     [],
@@ -72,48 +73,11 @@
     ],
     [
       "minecraft:glow_lichen",
-      "more_orn_plants:golden_crabapple_placed",
-      "more_orn_plants:weeping_crabapple_placed",
-      "more_orn_plants:pink_apricot_placed",
-      "more_orn_plants:ornamental_peach_grove_placed",
-      "more_orn_plants:orange_osmanthus_placed",
-      "more_orn_plants:pear_placed",
-      "more_orn_plants:flowering_purple_leaf_plum_placed",
-      "more_orn_plants:chinaberry_placed",
-      "more_orn_plants:wisteria_tree_placed",
-      "more_orn_plants:taiwan_cherry_placed",
-      "more_orn_plants:chrysanthemum_grove_placed",
-      "more_orn_plants:cymbidium_placed",
-      "more_orn_plants:peony_grove_placed",
-      "more_orn_plants:light_peony_grove_placed",
-      "more_orn_plants:ink_peony_grove_placed",
-      "more_orn_plants:azalea_grove_placed",
-      "more_orn_plants:chinese_narcissus_grove_placed",
-      "more_orn_plants:moth_orchid_grove_placed",
-      "more_orn_plants:fountain_grass_grove",
-      "more_orn_plants:branchy_tamarisk_grove_placed",
-      "more_orn_plants:peony_tree_grove_placed",
-      "more_orn_plants:chinese_rose_grove_placed",
-      "more_orn_plants:camellia_grove_placed",
-      "more_orn_plants:pink_camellia_grove_placed",
-      "more_orn_plants:white_camellia_grove_placed",
-      "more_orn_plants:crape_myrtle_placed",
-      "more_orn_plants:cotton_rose_grove_placed",
-      "more_orn_plants:hollyhock_grove_placed",
-      "more_orn_plants:wintersweet_grove",
-      "more_orn_plants:wood_sorrel_patch_placed",
-      "more_orn_plants:small_flowers_grove_placed",
-      "more_orn_plants:small_blue_flowers_grove_placed",
-      "more_orn_plants:small_white_flowers_grove_placed",
-      "more_orn_plants:tulip_grove_placed",
-      "more_orn_plants:tall_flowers_grove_placed",
-      "more_orn_plants:tall_flowers_grove_2_placed",
-      "more_orn_plants:peach_pink_petals_grove_placed",
-      "more_orn_plants:fragrant_snow_grove_patch_placed",
-      "more_orn_plants:spring_petals_grove_placed",
-      "more_orn_plants:pink_petals_grove_placed",
-      "more_orn_plants:lotus_placed",
-      "more_orn_plants:grass_grove"
+      "more_orn_plants:chrysanthemum_dongli_placed",
+      "more_orn_plants:chrysanthemum_dongli_placed_2",
+      "more_orn_plants:chrysanthemum_dongli_placed_3",
+      "more_orn_plants:tall_grass",
+      "more_orn_plants:grass_plain"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -157,32 +121,69 @@
         "weight": 8
       },
       {
-        "type": "minecraft:rabbit",
-        "maxCount": 3,
-        "minCount": 2,
-        "weight": 4
-      },
-      {
-        "type": "minecraft:wolf",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 5
-      },
-      {
         "type": "minecraft:fox",
         "maxCount": 4,
         "minCount": 2,
         "weight": 6
       },
       {
-        "type": "more_orn_plants:baihua_cat",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 10
+        "type": "minecraft:rabbit",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 4
       }
     ],
     "misc": [],
-    "monster": [],
+    "monster": [
+      {
+        "type": "minecraft:spider",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:zombie",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 95
+      },
+      {
+        "type": "minecraft:zombie_villager",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "minecraft:skeleton",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:creeper",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:slime",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:enderman",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:witch",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      }
+    ],
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",
