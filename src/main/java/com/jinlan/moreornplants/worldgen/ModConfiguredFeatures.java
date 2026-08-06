@@ -29,6 +29,7 @@ import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.WeightedListInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.PinkPetalsBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -73,7 +74,6 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_WEEPING_MEI = registerKey("green_weeping_mei_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_WEEPING_MEI = registerKey("pink_weeping_mei_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_WEEPING_MEI = registerKey("versicolor_weeping_mei_key");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> FRAGRANT_SNOW_PETALS_PATCH = registerKey("fragrant_snow_petals_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE = registerKey("upright_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE_WITH_FRUITS = registerKey("upright_crabapple_fruits");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CRABAPPLE = registerKey("golden_crabapple");
@@ -82,14 +82,10 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_APRICOT = registerKey("pink_apricot");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_APRICOT = registerKey("white_apricot");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CLOUD_APRICOT = registerKey("cloud_apricot");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> SPRING_PETALS_PATCH = registerKey("spring_petals_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORNAMENTAL_PEACH = registerKey("ornamental_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILD_PEACH = registerKey("wild_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_PEACH = registerKey("white_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> IMMORTAL_PEACH = registerKey("immortal_peach");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PEACH_PINK_PETALS_PATCH = registerKey("peach_pink_petals_patch");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_FLOWERS_PEACH = registerKey("small_flowers_peach");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_PEACH = registerKey("tall_flowers_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEAR = registerKey("pear");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TAIWAN_CHERRY = registerKey("taiwan_cherry");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_PURPLE_LEAF_PLUM = registerKey("flowering_purple_leaf_plum");
@@ -132,6 +128,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CHRYSANTHEMUM_KEY = registerKey("pink_chrysanthemum_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CHRYSANTHEMUM_LAND = registerKey("pink_chrysanthemum_land");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_GROVE = registerKey("chrysanthemum_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_DONGLI = registerKey("chrysanthemum_dongli");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_KEY = registerKey("chinese_rose_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CHINESE_ROSE_KEY = registerKey("pink_chinese_rose_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_CHINESE_ROSE_KEY = registerKey("purple_chinese_rose_key");
@@ -224,6 +221,14 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_CRAPE_MYRTLE_TREE = registerKey("red_crape_myrtle_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CRAPE_MYRTLE_TREE = registerKey("pink_crape_myrtle_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRAPE_MYRTLE_TREE = registerKey("white_crape_myrtle_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_CRAPE_MYRTLE_GARDEN = registerKey("small_crape_myrtle_garden");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_RED_CRAPE_MYRTLE_GARDEN = registerKey("small_red_crape_myrtle_garden");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_PINK_CRAPE_MYRTLE_GARDEN = registerKey("small_pink_crape_myrtle_garden");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_WHITE_CRAPE_MYRTLE_GARDEN = registerKey("small_white_crape_myrtle_garden");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_GARDEN = registerKey("crape_myrtle_garden");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RED_CRAPE_MYRTLE_GARDEN = registerKey("red_crape_myrtle_garden");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CRAPE_MYRTLE_GARDEN = registerKey("pink_crape_myrtle_garden");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRAPE_MYRTLE_GARDEN = registerKey("white_crape_myrtle_garden");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_CAVES = registerKey("crape_myrtle_caves");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_CRAPE_MYRTLE_CAVES = registerKey("red_crape_myrtle_caves");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CRAPE_MYRTLE_CAVES = registerKey("pink_crape_myrtle_caves");
@@ -259,6 +264,15 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_WOOD_SORREL_PATCH = registerKey("pink_wood_sorrel_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW_WOOD_SORREL_PATCH = registerKey("yellow_wood_sorrel_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_WOOD_SORREL_PATCH = registerKey("white_wood_sorrel_patch");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEACH_PINK_PETALS_PATCH = registerKey("peach_pink_petals_patch");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEACH_PINK_PETALS_GROVE = registerKey("peach_pink_petals_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_FLOWERS_PEACH = registerKey("small_flowers_peach");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_PEACH = registerKey("tall_flowers_peach");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FRAGRANT_SNOW_PETALS_PATCH = registerKey("fragrant_snow_petals_patch");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FRAGRANT_SNOW_PETALS_GROVE = registerKey("fragrant_snow_petals_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SPRING_PETALS_PATCH = registerKey("spring_petals_patch");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SPRING_PETALS_GROVE = registerKey("spring_petals_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_PETALS_GROVE = registerKey("pink_petals_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_FLOWERS_GROVE = registerKey("small_flowers_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_BLUE_FLOWERS_GROVE = registerKey("small_blue_flowers_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_WHITE_FLOWERS_GROVE = registerKey("small_white_flowers_grove");
@@ -295,6 +309,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LEAF_RIVER_1 = registerKey("leaf_river_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LEAF_RIVER_2 = registerKey("leaf_river_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WATERLILY_RIVER = registerKey("waterlily_river");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> STONE = registerKey("stone");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_1 = registerKey("moss_patch_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_2 = registerKey("moss_patch_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_3 = registerKey("moss_patch_3");
@@ -1291,6 +1306,13 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR), // 上方一格也是空气
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT))))); // 指定可以放置在哪些方块之上
 
+        register(context, STONE, Feature.RANDOM_PATCH, new RandomPatchConfiguration(16, 0, 0,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.STONE)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+
         register(context, FLOWER_SNOW_SPRING, Feature.FLOWER, new RandomPatchConfiguration(62, 7, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
@@ -1591,6 +1613,26 @@ public class ModConfiguredFeatures {
         register(context, WOOD_SORREL_PATCH, Feature.FLOWER, new RandomPatchConfiguration(16, 7, 2,
                 PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(oxalisBuilder)))));
+        register(context, PEACH_PINK_PETALS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(16, 7, 2,
+                PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(peachPinkPetalsBuilder)))));
+        register(context, FRAGRANT_SNOW_PETALS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(16, 7, 2,
+                PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(fragrantSnowPetalsBuilder)))));
+        register(context, SPRING_PETALS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(16, 7, 2,
+                PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(springPetalsBuilder)))));
+        SimpleWeightedRandomList.Builder<BlockState> pinkPetalsBuilder = SimpleWeightedRandomList.builder();
+        for(int i = 1; i <= 4; ++i) {
+            for(Direction direction : Direction.Plane.HORIZONTAL) {
+                pinkPetalsBuilder.add(Blocks.PINK_PETALS.defaultBlockState()
+                        .setValue(PinkPetalsBlock.AMOUNT, i)
+                        .setValue(PinkPetalsBlock.FACING, direction), 1);
+            }
+        }
+        register(context, PINK_PETALS_GROVE, Feature.FLOWER, new RandomPatchConfiguration(16, 7, 2,
+                PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(pinkPetalsBuilder)))));
 
         register(context, PEONY_PINK_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 6, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -1845,6 +1887,72 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+
+        register(context, SMALL_CRAPE_MYRTLE_GARDEN, Feature.FLOWER, new RandomPatchConfiguration(10, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_SAPLING.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, SMALL_RED_CRAPE_MYRTLE_GARDEN, Feature.FLOWER, new RandomPatchConfiguration(10, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, SMALL_PINK_CRAPE_MYRTLE_GARDEN, Feature.FLOWER, new RandomPatchConfiguration(10, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, SMALL_WHITE_CRAPE_MYRTLE_GARDEN, Feature.FLOWER, new RandomPatchConfiguration(10, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, CRAPE_MYRTLE_GARDEN, Feature.FLOWER, new RandomPatchConfiguration(10, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, RED_CRAPE_MYRTLE_GARDEN, Feature.FLOWER, new RandomPatchConfiguration(10, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.RED_CRAPE_MYRTLE.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, PINK_CRAPE_MYRTLE_GARDEN, Feature.FLOWER, new RandomPatchConfiguration(10, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PINK_CRAPE_MYRTLE.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, WHITE_CRAPE_MYRTLE_GARDEN, Feature.FLOWER, new RandomPatchConfiguration(10, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_CRAPE_MYRTLE.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+
+        register(context, CHRYSANTHEMUM_DONGLI, Feature.FLOWER, new RandomPatchConfiguration(106, 3, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.CHRYSANTHEMUM.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.BLACK_CHRYSANTHEMUM.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.PINK_CHRYSANTHEMUM.get().defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
 
         register(context, FOUNTAIN_GRASS_WOODS, Feature.FLOWER, new RandomPatchConfiguration(32, 6, 4,

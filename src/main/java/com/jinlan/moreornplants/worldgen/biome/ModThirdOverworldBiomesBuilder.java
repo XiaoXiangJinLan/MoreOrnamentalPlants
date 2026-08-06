@@ -6,18 +6,18 @@ import net.minecraft.world.level.biome.Climate;
 
 public class ModThirdOverworldBiomesBuilder extends ModOverworldBiomesBuilder {
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_MOD = new ResourceKey[][]{
-            {null,                       null,                       null,                       null,                       null},
+            {ModBiomes.HANDONG_LAYUE,    ModBiomes.HANDONG_LAYUE,    ModBiomes.HANDONG_LAYUE,    ModBiomes.HANDONG_LAYUE,    null},
             {ModBiomes.CHINABERRY_WOODS, ModBiomes.CHINABERRY_WOODS, ModBiomes.GINKGO_FOREST,    ModBiomes.GINKGO_FOREST,    null},
             {ModBiomes.CROPS_GREEN,      ModBiomes.CROPS_GREEN,      ModBiomes.EVERGREEN_FOREST, ModBiomes.EVERGREEN_FOREST, null},
             {null,                       null,                       null,                       null,                       null},
             {null,                       null,                       null,                       null,                       null},
     };
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_VARIANT_MOD = new ResourceKey[][]{
-            {null,                            null,                            null,                            null,                            null},
-            {ModBiomes.SWEETGUM_WOODS,        ModBiomes.SWEETGUM_WOODS,        ModBiomes.SWEETGUM_WOODS,        ModBiomes.SWEETGUM_WOODS,        null},
-            {ModBiomes.THE_LAND_OF_ABUNDANCE, ModBiomes.THE_LAND_OF_ABUNDANCE, ModBiomes.THE_LAND_OF_ABUNDANCE, ModBiomes.THE_LAND_OF_ABUNDANCE, null},
-            {null,                            null,                            null,                            null,                            null},
-            {null,                            null,                            null,                            null,                            null}
+            {null,                  null,                  null,                            null,                            null},
+            {ModBiomes.YELLOW_LAND, ModBiomes.YELLOW_LAND, ModBiomes.SWEETGUM_WOODS,        ModBiomes.SWEETGUM_WOODS,        null},
+            {ModBiomes.WHITE_LAND,  ModBiomes.WHITE_LAND,  ModBiomes.THE_LAND_OF_ABUNDANCE, ModBiomes.THE_LAND_OF_ABUNDANCE, null},
+            {null,                  null,                  null,                            null,                            null},
+            {null,                  null,                  null,                            null,                            null}
     };
 
     @Override

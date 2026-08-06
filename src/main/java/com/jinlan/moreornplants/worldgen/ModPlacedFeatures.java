@@ -39,7 +39,6 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WHITE_MEI_SNOW = registerKey("white_mei_snow");
     public static final ResourceKey<PlacedFeature> WHITE_WEEPING_MEI_SNOW = registerKey("white_weeping_mei_snow");
     public static final ResourceKey<PlacedFeature> GREEN_WEEPING_MEI_SNOW = registerKey("green_weeping_mei_snow");
-    public static final ResourceKey<PlacedFeature> FRAGRANT_SNOW_PETALS_PATCH_PLACED = registerKey("fragrant_snow_petals_patch_placed");
     public static final ResourceKey<PlacedFeature> SNOW_RED_MEI_PLACED = registerKey("snow_red_mei_placed");
     public static final ResourceKey<PlacedFeature> SNOW_WHITE_MEI_PLACED = registerKey("snow_white_mei_placed");
     public static final ResourceKey<PlacedFeature> SNOW_PINK_MEI_PLACED = registerKey("snow_pink_mei_placed");
@@ -66,7 +65,6 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WHITE_APRICOT_PLATEAU_1 = registerKey("white_apricot_plateau_1");
     public static final ResourceKey<PlacedFeature> PINK_APRICOT_PLATEAU_2 = registerKey("pink_apricot_plateau_2");
     public static final ResourceKey<PlacedFeature> WHITE_APRICOT_PLATEAU_2 = registerKey("white_apricot_plateau_2");
-    public static final ResourceKey<PlacedFeature> SPRING_PETALS_PATCH_PLACED = registerKey("spring_petals_patch_placed");
     public static final ResourceKey<PlacedFeature> ORNAMENTAL_PEACH_PLACED = registerKey("ornamental_peach_placed");
     public static final ResourceKey<PlacedFeature> ORNAMENTAL_PEACH_RED_PLACED = registerKey("ornamental_peach_red_placed");
     public static final ResourceKey<PlacedFeature> ORNAMENTAL_PEACH_GROVE_PLACED = registerKey("ornamental_peach_grove_placed");
@@ -74,9 +72,6 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WILD_PEACH_PLACED = registerKey("wild_peach_placed");
     public static final ResourceKey<PlacedFeature> WHITE_PEACH_PLACED = registerKey("white_peach_placed");
     public static final ResourceKey<PlacedFeature> IMMORTAL_PEACH_PLACED = registerKey("immortal_peach_placed");
-    public static final ResourceKey<PlacedFeature> PEACH_PINK_PETALS_PATCH_PLACED = registerKey("peach_pink_petals_patch_placed");
-    public static final ResourceKey<PlacedFeature> SMALL_FLOWERS_PEACH_PLACED = registerKey("small_flowers_peach_placed");
-    public static final ResourceKey<PlacedFeature> TALL_FLOWERS_PEACH_PLACED = registerKey("tall_flowers_peach_placed");
     public static final ResourceKey<PlacedFeature> PEAR_PLACED = registerKey("pear_placed");
     public static final ResourceKey<PlacedFeature> PEAR_FIELDS = registerKey("pear_fields");
     public static final ResourceKey<PlacedFeature> PEAR_WOODS = registerKey("pear_woods");
@@ -146,6 +141,9 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PINK_CHRYSANTHEMUM_PLACED = registerKey("pink_chrysanthemum_placed");
     public static final ResourceKey<PlacedFeature> PINK_CHRYSANTHEMUM_LAND = registerKey("pink_chrysanthemum_land");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_GROVE_PLACED = registerKey("chrysanthemum_grove_placed");
+    public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_DONGLI_PLACED = registerKey("chrysanthemum_dongli_placed");
+    public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_DONGLI_PLACED_2 = registerKey("chrysanthemum_dongli_placed_2");
+    public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_DONGLI_PLACED_3 = registerKey("chrysanthemum_dongli_placed_3");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_PLACED = registerKey("chinese_rose_placed");
     public static final ResourceKey<PlacedFeature> PINK_CHINESE_ROSE_PLACED = registerKey("pink_chinese_rose_placed");
     public static final ResourceKey<PlacedFeature> PURPLE_CHINESE_ROSE_PLACED = registerKey("purple_chinese_rose_placed");
@@ -191,6 +189,18 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> WHITE_CAMELLIA_GROVE_PLACED = registerKey("white_camellia_grove_placed");
     public static final ResourceKey<PlacedFeature> PINK_CAMELLIA_GALLERY = registerKey("pink_camellia_gallery");
     public static final ResourceKey<PlacedFeature> CRAPE_MYRTLE_PLACED = registerKey("crape_myrtle_placed");
+    public static final ResourceKey<PlacedFeature> SMALL_CRAPE_MYRTLE_GARDEN = registerKey("small_crape_myrtle_garden");
+    public static final ResourceKey<PlacedFeature> SMALL_RED_CRAPE_MYRTLE_GARDEN = registerKey("small_red_crape_myrtle_garden");
+    public static final ResourceKey<PlacedFeature> SMALL_PINK_CRAPE_MYRTLE_GARDEN = registerKey("small_pink_crape_myrtle_garden");
+    public static final ResourceKey<PlacedFeature> SMALL_WHITE_CRAPE_MYRTLE_GARDEN = registerKey("small_white_crape_myrtle_garden");
+    public static final ResourceKey<PlacedFeature> CRAPE_MYRTLE_GARDEN = registerKey("crape_myrtle_garden");
+    public static final ResourceKey<PlacedFeature> RED_CRAPE_MYRTLE_GARDEN = registerKey("red_crape_myrtle_garden");
+    public static final ResourceKey<PlacedFeature> PINK_CRAPE_MYRTLE_GARDEN = registerKey("pink_crape_myrtle_garden");
+    public static final ResourceKey<PlacedFeature> WHITE_CRAPE_MYRTLE_GARDEN = registerKey("white_crape_myrtle_garden");
+    public static final ResourceKey<PlacedFeature> CRAPE_MYRTLE_TREE_GARDEN = registerKey("crape_myrtle_tree_garden");
+    public static final ResourceKey<PlacedFeature> RED_CRAPE_MYRTLE_TREE_GARDEN = registerKey("red_crape_myrtle_tree_garden");
+    public static final ResourceKey<PlacedFeature> PINK_CRAPE_MYRTLE_TREE_GARDEN = registerKey("pink_crape_myrtle_tree_garden");
+    public static final ResourceKey<PlacedFeature> WHITE_CRAPE_MYRTLE_TREE_GARDEN = registerKey("white_crape_myrtle_tree_garden");
     public static final ResourceKey<PlacedFeature> CRAPE_MYRTLE_CAVES = registerKey("crape_myrtle_caves");
     public static final ResourceKey<PlacedFeature> RED_CRAPE_MYRTLE_CAVES = registerKey("red_crape_myrtle_caves");
     public static final ResourceKey<PlacedFeature> PINK_CRAPE_MYRTLE_CAVES = registerKey("pink_crape_myrtle_caves");
@@ -202,6 +212,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> COTTON_ROSE_TIANFU_PLACED = registerKey("cotton_rose_tianfu_placed");
     public static final ResourceKey<PlacedFeature> WINTERSWEET_PLACED = registerKey("wintersweet_placed");
     public static final ResourceKey<PlacedFeature> WINTERSWEET_GROVE = registerKey("wintersweet_grove");
+    public static final ResourceKey<PlacedFeature> WINTERSWEET_COLD = registerKey("wintersweet_cold");
     public static final ResourceKey<PlacedFeature> FLOWER_SNOW_SPRING_PLACED = registerKey("flower_snow_spring_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_NARCISSUS_GROVE_PLACED = registerKey("chinese_narcissus_grove_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_NARCISSUS_WOODS_PLACED = registerKey("chinese_narcissus_woods_placed");
@@ -271,6 +282,15 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PINK_WOOD_SORREL_PATCH_PLACED = registerKey("pink_wood_sorrel_patch_placed");
     public static final ResourceKey<PlacedFeature> YELLOW_WOOD_SORREL_PATCH_PLACED = registerKey("yellow_wood_sorrel_patch_placed");
     public static final ResourceKey<PlacedFeature> WHITE_WOOD_SORREL_PATCH_PLACED = registerKey("white_wood_sorrel_patch_placed");
+    public static final ResourceKey<PlacedFeature> PEACH_PINK_PETALS_PATCH_PLACED = registerKey("peach_pink_petals_patch_placed");
+    public static final ResourceKey<PlacedFeature> PEACH_PINK_PETALS_GROVE_PLACED = registerKey("peach_pink_petals_grove_placed");
+    public static final ResourceKey<PlacedFeature> SMALL_FLOWERS_PEACH_PLACED = registerKey("small_flowers_peach_placed");
+    public static final ResourceKey<PlacedFeature> TALL_FLOWERS_PEACH_PLACED = registerKey("tall_flowers_peach_placed");
+    public static final ResourceKey<PlacedFeature> FRAGRANT_SNOW_PETALS_PATCH_PLACED = registerKey("fragrant_snow_petals_patch_placed");
+    public static final ResourceKey<PlacedFeature> FRAGRANT_SNOW_PETALS_GROVE_PLACED = registerKey("fragrant_snow_grove_patch_placed");
+    public static final ResourceKey<PlacedFeature> SPRING_PETALS_PATCH_PLACED = registerKey("spring_petals_patch_placed");
+    public static final ResourceKey<PlacedFeature> SPRING_PETALS_GROVE_PLACED = registerKey("spring_petals_grove_placed");
+    public static final ResourceKey<PlacedFeature> PINK_PETALS_GROVE_PLACED = registerKey("pink_petals_grove_placed");
     public static final ResourceKey<PlacedFeature> SMALL_FLOWERS_GROVE_PLACED = registerKey("small_flowers_grove_placed");
     public static final ResourceKey<PlacedFeature> SMALL_BLUE_FLOWERS_GROVE_PLACED = registerKey("small_blue_flowers_grove_placed");
     public static final ResourceKey<PlacedFeature> SMALL_WHITE_FLOWERS_GROVE_PLACED = registerKey("small_white_flowers_grove_placed");
@@ -314,6 +334,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> LEAF_RIVER_1 = registerKey("leaf_river_1");
     public static final ResourceKey<PlacedFeature> LEAF_RIVER_2 = registerKey("leaf_river_2");
     public static final ResourceKey<PlacedFeature> WATERLILY_RIVER = registerKey("waterlily_river");
+    public static final ResourceKey<PlacedFeature> STONE_PLACED = registerKey("stone_placed");
 
     public static final ResourceKey<PlacedFeature> PINK_APRICOT = registerKey("pink_apricot");
     public static final ResourceKey<PlacedFeature> WHITE_APRICOT = registerKey("white_apricot");
@@ -329,6 +350,13 @@ public class ModPlacedFeatures {
                         ModBlocks.RED_MEI_SAPLING.get()));
         register(context, WINTERSWEET_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WINTERSWEET),
                 List.of(RarityFilter.onAverageOnceEvery(3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, WINTERSWEET_COLD, configuredFeatures.getOrThrow(ModConfiguredFeatures.WINTERSWEET),
+                List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, STONE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.STONE),
+                List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, WHITE_MEI_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_MEI),
@@ -531,6 +559,18 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, WOOD_SORREL_PATCH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WOOD_SORREL_PATCH),
+                List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PEACH_PINK_PETALS_GROVE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PEACH_PINK_PETALS_GROVE),
+                List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, FRAGRANT_SNOW_PETALS_GROVE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.FRAGRANT_SNOW_PETALS_GROVE),
+                List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, SPRING_PETALS_GROVE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.SPRING_PETALS_GROVE),
+                List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PINK_PETALS_GROVE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_PETALS_GROVE),
                 List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, SMALL_FLOWERS_GROVE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_FLOWERS_GROVE),
@@ -957,6 +997,53 @@ public class ModPlacedFeatures {
         register(context, CAMPHOR_ROSE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.NEW_CAMPHOR),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.1F, 1),
                         ModBlocks.CAMPHOR_SAPLING.get()));
+
+        register(context, CRAPE_MYRTLE_TREE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRAPE_MYRTLE_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.25f, 1),
+                        ModBlocks.IMMORTAL_PEACH_SAPLING.get()));
+        register(context, RED_CRAPE_MYRTLE_TREE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_CRAPE_MYRTLE_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.25f, 1),
+                        ModBlocks.IMMORTAL_PEACH_SAPLING.get()));
+        register(context, PINK_CRAPE_MYRTLE_TREE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_CRAPE_MYRTLE_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.25f, 1),
+                        ModBlocks.IMMORTAL_PEACH_SAPLING.get()));
+        register(context, WHITE_CRAPE_MYRTLE_TREE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_CRAPE_MYRTLE_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.25f, 1),
+                        ModBlocks.IMMORTAL_PEACH_SAPLING.get()));
+        register(context, SMALL_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_CRAPE_MYRTLE_GARDEN),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, SMALL_RED_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_RED_CRAPE_MYRTLE_GARDEN),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, SMALL_PINK_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_PINK_CRAPE_MYRTLE_GARDEN),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, SMALL_WHITE_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_WHITE_CRAPE_MYRTLE_GARDEN),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRAPE_MYRTLE_GARDEN),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, RED_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.RED_CRAPE_MYRTLE_GARDEN),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, PINK_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_CRAPE_MYRTLE_GARDEN),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, WHITE_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_CRAPE_MYRTLE_GARDEN),
+                List.of(CountPlacement.of(2),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, CHRYSANTHEMUM_DONGLI_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_DONGLI),
+                List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, CHRYSANTHEMUM_DONGLI_PLACED_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_GROVE),
+                List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, CHRYSANTHEMUM_DONGLI_PLACED_3, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_FOREST),
+                List.of(CountPlacement.of(3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, CHINABERRY_WOODS_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHINABERRY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1),

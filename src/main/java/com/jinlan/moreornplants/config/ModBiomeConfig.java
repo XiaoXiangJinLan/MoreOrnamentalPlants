@@ -10,6 +10,7 @@ public class ModBiomeConfig {
     // 生物群系启用配置
     public static final ModConfigSpec.BooleanValue ENABLE_RED_MEI_FOREST;
     public static final ModConfigSpec.BooleanValue ENABLE_SNOW_GREETS_SPRING;
+    public static final ModConfigSpec.BooleanValue ENABLE_HANDONG_LAYUE;
     public static final ModConfigSpec.BooleanValue ENABLE_SPRING_RIVER;
     public static final ModConfigSpec.BooleanValue ENABLE_LOTUS_RIVER;
     public static final ModConfigSpec.BooleanValue ENABLE_AUTUMN_RIVER;
@@ -39,6 +40,8 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_TAMARISK_FIELDS;
     public static final ModConfigSpec.BooleanValue ENABLE_GOLD_COUNTRY;
     public static final ModConfigSpec.BooleanValue ENABLE_CHINESE_ROSE_FIELDS;
+    public static final ModConfigSpec.BooleanValue ENABLE_CRAPE_MYRTLE_GARDEN;
+    public static final ModConfigSpec.BooleanValue ENABLE_DONGLI_SCENERY;
     public static final ModConfigSpec.BooleanValue ENABLE_SWEETGUM_WOODS;
     public static final ModConfigSpec.BooleanValue ENABLE_CHINABERRY_WOODS;
     public static final ModConfigSpec.BooleanValue ENABLE_SNOW_WOODS;
@@ -86,6 +89,8 @@ public class ModBiomeConfig {
                 .define("enableRedMeiForest", true);
         ENABLE_SNOW_GREETS_SPRING = BUILDER
                 .define("enableSnowGreetsSpring", true);
+        ENABLE_HANDONG_LAYUE = BUILDER
+                .define("enableHandongLayue", true);
         ENABLE_SPRING_RIVER = BUILDER
                 .define("enableSpringRiver", true);
         ENABLE_LOTUS_RIVER = BUILDER
@@ -144,6 +149,10 @@ public class ModBiomeConfig {
                 .define("enableGoldCountry", true);
         ENABLE_CHINESE_ROSE_FIELDS = BUILDER
                 .define("enableChineseRoseFields", true);
+        ENABLE_CRAPE_MYRTLE_GARDEN = BUILDER
+                .define("enableCrapeMyrtleGarden", true);
+        ENABLE_DONGLI_SCENERY = BUILDER
+                .define("enableDongliScenery", true);
         ENABLE_SWEETGUM_WOODS = BUILDER
                 .define("enableSweetgumWoods", true);
         ENABLE_CHINABERRY_WOODS = BUILDER

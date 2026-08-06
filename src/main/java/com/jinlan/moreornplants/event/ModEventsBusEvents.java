@@ -11,6 +11,7 @@ import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.Holder;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.tags.ItemTags;
@@ -19,6 +20,9 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.animal.AbstractGolem;
@@ -46,6 +50,9 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 @EventBusSubscriber(modid = MoreOrnPlants.MODID)
 public class ModEventsBusEvents {
+    private static final ResourceLocation LONGEVITY_MODIFIER_ID = ResourceLocation.fromNamespaceAndPath(MoreOrnPlants.MODID, "longevity_health_boost");
+    private static final float LONGEVITY_EXTRA_HEALTH = 10.0F;
+
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.ZIYING_FOX.get(), ZiyingFox.createAttributes().build());
@@ -110,7 +117,7 @@ public class ModEventsBusEvents {
             }
             float damage = result[1];
             Holder<Biome> biome = level.getBiome(player.blockPosition());
-            if (state.hasBaihuaSword() && state.hasFlower() || biome.is(Tags.Biomes.IS_FLORAL)) {
+            if (state.hasBaihuaSword() && (state.hasFlower() || biome.is(Tags.Biomes.IS_FLORAL))) {
                 damage = Math.min(damage / 2.0f, 2.0f);
             }
             event.setAmount(damage);
@@ -306,14 +313,20 @@ public class ModEventsBusEvents {
         if (tick % 100 == 0) {
             Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
             if (biomeHolder.is(ModBiomes.LONGEVITY_FOREST)) {
-                MobEffectInstance currentEffect = entity.getEffect(MobEffects.HEALTH_BOOST);
-                if (currentEffect == null || currentEffect.getDuration() < 36200) {
-                    entity.addEffect(new MobEffectInstance(
-                            MobEffects.HEAL, 1, 4));
+                AttributeInstance attribute = entity.getAttribute(Attributes.MAX_HEALTH);
+                if (attribute != null && attribute.getModifier(LONGEVITY_MODIFIER_ID) == null) {
+                    AttributeModifier modifier = new AttributeModifier(
+                            LONGEVITY_MODIFIER_ID,
+                            LONGEVITY_EXTRA_HEALTH,
+                            AttributeModifier.Operation.ADD_VALUE
+                    );
+                    attribute.addPermanentModifier(modifier);
+                    entity.setHealth(entity.getHealth() + LONGEVITY_EXTRA_HEALTH);
                 }
-                if (currentEffect == null || currentEffect.getDuration() < 36300) {
+                MobEffectInstance currentEffect = entity.getEffect(MobEffects.REGENERATION);
+                if (currentEffect == null || currentEffect.getDuration() < 12200) {
                     entity.addEffect(new MobEffectInstance(
-                            MobEffects.HEALTH_BOOST, 36600, 4));
+                            MobEffects.REGENERATION, 12600, 4));
                 }
             }
         }
