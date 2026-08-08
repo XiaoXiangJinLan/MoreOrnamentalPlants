@@ -213,6 +213,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> COTTON_ROSE_TIANFU_PLACED = registerKey("cotton_rose_tianfu_placed");
     public static final ResourceKey<PlacedFeature> WINTERSWEET_PLACED = registerKey("wintersweet_placed");
     public static final ResourceKey<PlacedFeature> WINTERSWEET_GROVE = registerKey("wintersweet_grove");
+    public static final ResourceKey<PlacedFeature> WINTERSWEET_COLD = registerKey("wintersweet_cold");
     public static final ResourceKey<PlacedFeature> FLOWER_SNOW_SPRING_PLACED = registerKey("flower_snow_spring_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_NARCISSUS_GROVE_PLACED = registerKey("chinese_narcissus_grove_placed");
     public static final ResourceKey<PlacedFeature> CHINESE_NARCISSUS_WOODS_PLACED = registerKey("chinese_narcissus_woods_placed");
@@ -336,6 +337,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> LEAF_RIVER_1 = registerKey("leaf_river_1");
     public static final ResourceKey<PlacedFeature> LEAF_RIVER_2 = registerKey("leaf_river_2");
     public static final ResourceKey<PlacedFeature> WATERLILY_RIVER = registerKey("waterlily_river");
+    public static final ResourceKey<PlacedFeature> STONE_PLACED = registerKey("stone_placed");
 
     public static final ResourceKey<PlacedFeature> PINK_APRICOT = registerKey("pink_apricot");
     public static final ResourceKey<PlacedFeature> WHITE_APRICOT = registerKey("white_apricot");
@@ -351,6 +353,13 @@ public class ModPlacedFeatures {
                         ModBlocks.RED_MEI_SAPLING.get()));
         register(context, WINTERSWEET_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WINTERSWEET),
                 List.of(RarityFilter.onAverageOnceEvery(3),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, WINTERSWEET_COLD, configuredFeatures.getOrThrow(ModConfiguredFeatures.WINTERSWEET),
+                List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, STONE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.STONE),
+                List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, WHITE_MEI_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.WHITE_MEI),

@@ -1,0 +1,39 @@
+{
+  "parent": "more_orn_plants:flowers_as_matchmakers",
+  "criteria": {
+    "tamed_baihua_cat": {
+      "conditions": {
+        "entity": {
+          "type": "more_orn_plants:baihua_cat"
+        }
+      },
+      "trigger": "minecraft:tame_animal"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.moreornplants.tame_baihua_cat.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "more_orn_plants:baihua_sword"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.moreornplants.tame_baihua_cat.title"
+    }
+  },
+  "requirements": [
+    [
+      "tamed_baihua_cat"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "more_orn_plants:advancements/baihua_sword"
+    ]
+  },
+  "sends_telemetry_event": true
+}

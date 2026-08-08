@@ -1,10 +1,12 @@
 package com.jinlan.moreornplants.util;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 
 public class ForgeTags {
@@ -63,6 +65,15 @@ public class ForgeTags {
 
         private static TagKey<Item> tag(String path) {
             return ItemTags.create(new ResourceLocation("forge", path));
+        }
+    }
+
+    public static class Biomes {
+        public static final TagKey<Biome> IS_FLORAL = tag("is_floral");
+        public static final TagKey<Biome> IS_FLOWER_FOREST = tag("is_flower_forest");
+
+        private static TagKey<Biome> tag(String path) {
+            return TagKey.create(Registries.BIOME, new ResourceLocation("forge", path));
         }
     }
 }

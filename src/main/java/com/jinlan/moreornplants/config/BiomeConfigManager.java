@@ -5,6 +5,7 @@ public class BiomeConfigManager {
         return switch (biomeName) {
             case "red_mei_forest" -> ModBiomeConfig.ENABLE_RED_MEI_FOREST.get();
             case "snow_greets_spring" -> ModBiomeConfig.ENABLE_SNOW_GREETS_SPRING.get();
+            case "handong_layue" -> ModBiomeConfig.ENABLE_HANDONG_LAYUE.get();
             case "peony_sea" -> ModBiomeConfig.ENABLE_PEONY_SEA.get();
             case "peony_meadows" -> ModBiomeConfig.ENABLE_PEONY_MEADOWS.get();
             case "evergreen_forest" -> ModBiomeConfig.ENABLE_EVERGREEN_FOREST.get();

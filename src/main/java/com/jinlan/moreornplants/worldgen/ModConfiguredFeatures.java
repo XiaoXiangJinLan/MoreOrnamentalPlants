@@ -309,6 +309,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LEAF_RIVER_1 = registerKey("leaf_river_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LEAF_RIVER_2 = registerKey("leaf_river_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WATERLILY_RIVER = registerKey("waterlily_river");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> STONE = registerKey("stone");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_1 = registerKey("moss_patch_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_2 = registerKey("moss_patch_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_3 = registerKey("moss_patch_3");
@@ -1303,6 +1304,13 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR), // 当前位置是空气
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR), // 上方一格也是空气
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT))))); // 指定可以放置在哪些方块之上
+
+        register(context, STONE, Feature.RANDOM_PATCH, new RandomPatchConfiguration(16, 0, 0,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.STONE)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
 
         register(context, FLOWER_SNOW_SPRING, Feature.FLOWER, new RandomPatchConfiguration(62, 7, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,

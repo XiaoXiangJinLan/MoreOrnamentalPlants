@@ -20,8 +20,12 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 public class ModBiomes {
     public static final ResourceKey<Biome> RED_MEI_FOREST = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "red_mei_forest"));
+    public static final ResourceKey<Biome> FRAGRANT_SNOW_SEA = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "fragrant_snow_sea"));
     public static final ResourceKey<Biome> SNOW_GREETS_SPRING = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "snow_greets_spring"));
+    public static final ResourceKey<Biome> HANDONG_LAYUE = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "handong_layue"));
     public static final ResourceKey<Biome> THE_PEACH_BLOSSOM_SPRING = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "the_peach_blossom_spring"));
     public static final ResourceKey<Biome> EVERGREEN_FOREST = ResourceKey.create(Registries.BIOME,
@@ -102,8 +106,6 @@ public class ModBiomes {
             new ResourceLocation(MoreOrnPlants.MOD_ID, "mount_mei"));
     public static final ResourceKey<Biome> YUNMENG_MARSH = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "yunmeng_marsh"));
-    public static final ResourceKey<Biome> FRAGRANT_SNOW_SEA = ResourceKey.create(Registries.BIOME,
-            new ResourceLocation(MoreOrnPlants.MOD_ID, "fragrant_snow_sea"));
     public static final ResourceKey<Biome> THE_APRICOT_SPRING_PLATEAU = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "the_apricot_spring_plateau"));
     public static final ResourceKey<Biome> AZALEA_FOREST = ResourceKey.create(Registries.BIOME,
@@ -119,6 +121,7 @@ public class ModBiomes {
         context.register(RED_MEI_FOREST, meiForest(context, true, false));
         context.register(FRAGRANT_SNOW_SEA, meiForest(context, false, false));
         context.register(SNOW_GREETS_SPRING, meiForest(context, false, true));
+        context.register(HANDONG_LAYUE, coldBiome(context));
         context.register(THE_PEACH_BLOSSOM_SPRING, thePeachBlossomSpring(context));
         context.register(EVERGREEN_FOREST, evergreenForest(context, false));
         context.register(LONGEVITY_FOREST, evergreenForest(context, true));
@@ -217,6 +220,32 @@ public class ModBiomes {
         float f = isSpring ? 0.0f : -0.05f;
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(true).temperature(f).downfall(0.8f)
+                .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
+                .specialEffects((new BiomeSpecialEffects.Builder())
+                        .waterColor(4159204).waterFogColor(329011).skyColor(8560639).fogColor(12638463).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                .build();
+    }
+
+    private static Biome coldBiome(BootstapContext<Biome> context) {
+        MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
+
+        BiomeDefaultFeatures.caveSpawns(spawnBuilder);
+        BiomeDefaultFeatures.monsters(spawnBuilder, 95, 5, 20, false);
+        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.RABBIT, 10, 2, 3))
+                .addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.WOLF, 2, 2, 4))
+                .addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.STRAY, 80, 4, 4));
+
+        BiomeGenerationSettings.Builder biomeBuilder =
+                new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+        globalOverworldGeneration(biomeBuilder);
+        BiomeDefaultFeatures.addMossyStoneBlock(biomeBuilder);
+        biomeBuilder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, ModPlacedFeatures.STONE_PLACED);
+        BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WINTERSWEET_COLD);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_FERN_1);
+        return new Biome.BiomeBuilder()
+                .hasPrecipitation(true).temperature(-0.4f).downfall(0.4f)
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .waterColor(4159204).waterFogColor(329011).skyColor(8560639).fogColor(12638463).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())

@@ -6,6 +6,7 @@ import com.jinlan.moreornplants.config.ModBiomeConfig;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
+import com.jinlan.moreornplants.util.ForgeTags;
 import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.Holder;
@@ -17,6 +18,9 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.animal.AbstractGolem;
@@ -41,8 +45,13 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.UUID;
+
 @Mod.EventBusSubscriber(modid = MoreOrnPlants.MOD_ID)
 public class ModEvents {
+    private static final UUID LONGEVITY_BOOST_UUID = UUID.nameUUIDFromBytes("more_orn_plants:longevity_health".getBytes(java.nio.charset.StandardCharsets.UTF_8));
+    private static final float LONGEVITY_EXTRA_HEALTH = 10.0F;
+
     @SubscribeEvent
     public static void onEntityJoinLevel(EntityJoinLevelEvent event) {
         Entity entity = event.getEntity();
@@ -71,7 +80,7 @@ public class ModEvents {
             }
             float damage = result[1];
             Holder<Biome> biome = level.getBiome(player.blockPosition());
-            if (state.hasBaihuaSword() && state.hasFlower() || biome.is(ModTags.Biomes.FLOWERS_AND_MOON)) {
+            if (state.hasBaihuaSword() && (state.hasFlower() || biome.is(ForgeTags.Biomes.IS_FLORAL))) {
                 damage = Math.min(damage / 2.0f, 2.0f);
             }
             event.setAmount(damage);
@@ -148,7 +157,7 @@ public class ModEvents {
             }
             Level level = player.level();
             Holder<Biome> biome = level.getBiome(player.blockPosition());
-            if (biome.is(ModTags.Biomes.FLOWERS_AND_MOON)) {
+            if (biome.is(ForgeTags.Biomes.IS_FLORAL)) {
                 multiplier *= ModBiomeConfig.BAIHUA_SWORD_FLORAL_BIOME_MULTIPLIER.get().floatValue() * 2;
             }
             event.setAmount(event.getAmount() * multiplier);
@@ -268,12 +277,21 @@ public class ModEvents {
         if (tick % 100 != 0) {
             Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
             if (biomeHolder.is(ModBiomes.LONGEVITY_FOREST)) {
-                MobEffectInstance currentEffect = entity.getEffect(MobEffects.HEALTH_BOOST);
-                if (currentEffect == null || currentEffect.getDuration() < 1200) {
+                AttributeInstance attribute = entity.getAttribute(Attributes.MAX_HEALTH);
+                if (attribute != null && attribute.getModifier(LONGEVITY_BOOST_UUID) == null) {
+                    AttributeModifier modifier = new AttributeModifier(
+                            LONGEVITY_BOOST_UUID,
+                            "longevity_boost",
+                            LONGEVITY_EXTRA_HEALTH,
+                            AttributeModifier.Operation.ADDITION
+                    );
+                    attribute.addPermanentModifier(modifier);
+                    entity.setHealth(entity.getHealth() + LONGEVITY_EXTRA_HEALTH);
+                }
+                MobEffectInstance currentEffect = entity.getEffect(MobEffects.REGENERATION);
+                if (currentEffect == null || currentEffect.getDuration() < 12200) {
                     entity.addEffect(new MobEffectInstance(
-                            MobEffects.HEALTH_BOOST, 36600, 4));
-                    entity.addEffect(new MobEffectInstance(
-                            MobEffects.HEAL, 1, 4));
+                            MobEffects.REGENERATION, 12600, 4));
                 }
             }
         }
