@@ -1023,16 +1023,16 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.25f, 1),
                         ModBlocks.IMMORTAL_PEACH_SAPLING.get()));
         register(context, SMALL_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_CRAPE_MYRTLE_GARDEN),
-                List.of(CountPlacement.of(2),
+                List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, SMALL_RED_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_RED_CRAPE_MYRTLE_GARDEN),
-                List.of(CountPlacement.of(2),
+                List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, SMALL_PINK_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_PINK_CRAPE_MYRTLE_GARDEN),
-                List.of(CountPlacement.of(2),
+                List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, SMALL_WHITE_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.SMALL_WHITE_CRAPE_MYRTLE_GARDEN),
-                List.of(CountPlacement.of(2),
+                List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRAPE_MYRTLE_GARDEN),
                 List.of(CountPlacement.of(2),

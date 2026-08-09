@@ -9,6 +9,7 @@ import com.jinlan.moreornplants.entity.ModEntities;
 import com.jinlan.moreornplants.entity.ai.goal.BaihuaCatAttackGoal;
 import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
+import com.jinlan.moreornplants.util.ForgeTags;
 import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.BlockPos;
@@ -204,17 +205,20 @@ public class BaihuaCat extends Cat {
                                         @NotNull MobSpawnType spawnType, @Nullable SpawnGroupData spawnGroupData, @javax.annotation.Nullable CompoundTag pDataTag) {
         spawnGroupData = super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData, pDataTag);
         if (!level.isClientSide()) {
-            if (level.getBiome(this.blockPosition()).is(ModBiomes.CRABAPPLE_GROVE) ||
-                    level.getBiome(this.blockPosition()).is(ModBiomes.THE_PEACH_BLOSSOM_SPRING)) {
+            if (level.getBiome(this.blockPosition()).is(ModTags.Biomes.PINK_BAIHUA_CAT)) {
                 this.setTextureKey("pink");
-            } else if (level.getBiome(this.blockPosition()).is(ModBiomes.CHINABERRY_WOODS)) {
+            } else if (level.getBiome(this.blockPosition()).is(ModTags.Biomes.BLUE_BAIHUA_CAT)) {
                 this.setTextureKey("blue");
-            } else if (level.getBiome(this.blockPosition()).is(ModBiomes.PURPLE_CLOUD)) {
+            } else if (level.getBiome(this.blockPosition()).is(ModTags.Biomes.PURPLE_BAIHUA_CAT)) {
                 this.setTextureKey("purple");
-            } else {
+            } else if (level.getBiome(this.blockPosition()).is(ModBiomes.FLOWERS_GROVE) ||
+                    level.getBiome(this.blockPosition()).is(ModBiomes.FLOWERS_FIELDS) ||
+                    level.getBiome(this.blockPosition()).is(ModBiomes.PENGLAI)) {
                 String[] variants = {"standard", "pink", "blue", "purple"};
                 String chosen = variants[this.random.nextInt(variants.length)];
                 this.setTextureKey(chosen);
+            } else {
+                this.setTextureKey("standard");
             }
         }
         return spawnGroupData;
@@ -478,7 +482,7 @@ public class BaihuaCat extends Cat {
         if (this.isTame()) {
             damage *= 5.0F;
         }
-        if (this.level().getBiome(this.blockPosition()).is(ModTags.Biomes.FLOWERS_AND_MOON)) {
+        if (this.level().getBiome(this.blockPosition()).is(ForgeTags.Biomes.IS_FLORAL)) {
             damage *= 2.0F;
         }
         boolean hurt = target.hurt(this.damageSources().mobAttack(this), damage);
