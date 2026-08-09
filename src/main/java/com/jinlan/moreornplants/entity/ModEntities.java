@@ -27,7 +27,7 @@ public class ModEntities {
                     .sized(1.375f, 0.5625f).build("mod_chest_boat"));
 
     public static final Supplier<EntityType<ZiyingFox>> ZIYING_FOX =
-            ENTITY_TYPES.register("ziying_fox", () -> EntityType.Builder.of(ZiyingFox::new, MobCategory.CREATURE)
+            ENTITY_TYPES.register("ziying_fox", () -> EntityType.Builder.of(ZiyingFox::new, MobCategory.MONSTER)
                     .sized(0.6F, 0.7F)
                     .eyeHeight(0.4F)
                     .passengerAttachments(new Vec3(0.0, 0.6375, -0.25))
@@ -41,7 +41,7 @@ public class ModEntities {
                     .clientTrackingRange(8)
                     .immuneTo(Blocks.SWEET_BERRY_BUSH).build("suyu_fox"));
     public static final Supplier<EntityType<BaihuaCat>> BAIHUA_CAT =
-            ENTITY_TYPES.register("baihua_cat", () -> EntityType.Builder.of(BaihuaCat::new, MobCategory.MONSTER)
+            ENTITY_TYPES.register("baihua_cat", () -> EntityType.Builder.of(BaihuaCat::new, MobCategory.CREATURE)
                     .sized(0.6F, 0.7F)
                     .eyeHeight(0.35F)
                     .passengerAttachments(0.5125F)

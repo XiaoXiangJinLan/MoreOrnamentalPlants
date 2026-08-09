@@ -645,7 +645,7 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1),
                         ModBlocks.WHITE_PEACH_SAPLING.get()));
         register(context, CAMPHOR_PEACH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMPHOR),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5F, 3),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5F, 1),
                         ModBlocks.CAMPHOR_SAPLING.get()));
         register(context, ANCIENT_CAMPHOR_PEACH_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_CAMPHOR),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05F, 1),
