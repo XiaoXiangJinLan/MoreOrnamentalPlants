@@ -26,12 +26,12 @@ public class ModEntities {
                     .sized(1.375f, 0.5625f).build("mod_chest_boat"));
 
     public static final RegistryObject<EntityType<ZiyingFox>> ZIYING_FOX =
-            ENTITY_TYPES.register("ziying_fox", () -> EntityType.Builder.of(ZiyingFox::new, MobCategory.CREATURE)
+            ENTITY_TYPES.register("ziying_fox", () -> EntityType.Builder.of(ZiyingFox::new, MobCategory.MONSTER)
                     .sized(0.6F, 0.7F)
                     .clientTrackingRange(8)
                     .immuneTo(Blocks.SWEET_BERRY_BUSH).build("ziying_fox"));
     public static final RegistryObject<EntityType<SuyuFox>> SUYU_FOX =
-            ENTITY_TYPES.register("suyu_fox", () -> EntityType.Builder.of(SuyuFox::new, MobCategory.CREATURE)
+            ENTITY_TYPES.register("suyu_fox", () -> EntityType.Builder.of(SuyuFox::new, MobCategory.MONSTER)
                     .sized(0.6F, 0.7F)
                     .clientTrackingRange(8)
                     .immuneTo(Blocks.SWEET_BERRY_BUSH).build("suyu_fox"));

@@ -1,4 +1,4 @@
-// 1.20.1	2026-08-08T18:41:04.6189154	Registries
+// 1.20.1	2026-08-09T12:09:48.4839196	Registries
 bea241a9b9822d440fc2bb92d2e67591c46030ae data/more_orn_plants/worldgen/biome/autumn_river.json
 2f9c649c944f2750cc363a5e60ebee66bcea9d44 data/more_orn_plants/worldgen/biome/azalea_forest.json
 e639936abf8abd103561022b862bcae645553e4e data/more_orn_plants/worldgen/biome/camellia_valley.json
@@ -337,7 +337,7 @@ d056c4071b40492f882d9a198ba51b63669dd10e data/more_orn_plants/worldgen/placed_fe
 cce9f7217e168dc0318acbc814b7082416004070 data/more_orn_plants/worldgen/placed_feature/branchy_tamarisk_placed_3.json
 e5f7d45d1dbe42b3d7ee2a03af55b7f3e471b027 data/more_orn_plants/worldgen/placed_feature/camellia_grove_placed.json
 cb5906944d27b50e23a07b37e97adf1a5b90659c data/more_orn_plants/worldgen/placed_feature/camellia_tree_placed.json
-101b559421df77b04650b6f0f85d89b3d9747bf4 data/more_orn_plants/worldgen/placed_feature/camphor_peach_placed.json
+d883cd6999ec627e9f3febca7c9a60de8c5e8dcf data/more_orn_plants/worldgen/placed_feature/camphor_peach_placed.json
 574b125f35b1ac792ab93817bb908dd6dc2467e0 data/more_orn_plants/worldgen/placed_feature/camphor_placed.json
 5a23310e1fb5391f17cc951c272bdfaf3a20b76a data/more_orn_plants/worldgen/placed_feature/camphor_plain_placed.json
 fb9eae48af64b3ada406d4239299ccadcccefae8 data/more_orn_plants/worldgen/placed_feature/camphor_rose_placed.json
