@@ -2,6 +2,7 @@ package com.jinlan.moreornplants.item.custom;
 
 import com.google.common.base.Suppliers;
 import com.jinlan.moreornplants.item.ModItems;
+import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -10,6 +11,9 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 public enum ModTiers implements Tier {
+    PEACH(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.of(ModTags.Items.PEACH_LOGS)),
+    CAMPHOR(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.of(ModTags.Items.CAMPHOR_LOGS)),
+    CHINESE_PARASOL(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.of(ModTags.Items.CHINESE_PARASOL_LOGS)),
     ZIYING(4, 1695, 5.0F, 2.0F, 13, () -> Ingredient.of(ModItems.ZIYING_BEAD.get())),
     SUYU(4, 1695, 6.0F, 2.0F, 12, () -> Ingredient.of(ModItems.SUYU_BEAD.get())),
     ZIYU_YUANYANG(4, 1695, 5.0F, 3.0F, 12, () -> Ingredient.of(ModItems.ZIYU_YUANYANG_BEAD.get())),

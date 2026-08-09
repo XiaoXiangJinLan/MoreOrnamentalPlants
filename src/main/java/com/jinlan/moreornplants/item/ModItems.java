@@ -195,11 +195,11 @@ public class ModItems {
     public static final RegistryObject<Item> BAMBOO_STICK =
             ITEMS.register("bamboo_stick", () -> new BambooStickItem(ModBlocks.BAMBOO_STICK.get(), new Item.Properties(), 200));
     public static final RegistryObject<Item> PEACH_WOODEN_SWORD =
-            ITEMS.register("peach_wooden_sword", () -> new PeachWoodenSwordItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
+            ITEMS.register("peach_wooden_sword", () -> new PeachWoodenSwordItem(ModTiers.PEACH, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> CAMPHOR_WOODEN_SWORD =
-            ITEMS.register("camphor_wooden_sword", () -> new CamphorWoodenSwordItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
+            ITEMS.register("camphor_wooden_sword", () -> new CamphorWoodenSwordItem(ModTiers.CAMPHOR, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> CHINESE_PARASOL_WOODEN_SWORD =
-            ITEMS.register("chinese_parasol_wooden_sword", () -> new ChineseParasolWoodenSwordItem(Tiers.WOOD, 3, -2.4F, new Item.Properties()));
+            ITEMS.register("chinese_parasol_wooden_sword", () -> new ChineseParasolWoodenSwordItem(ModTiers.CHINESE_PARASOL, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> ZIYING_SWORD =
             ITEMS.register("ziying_sword", () -> new ZiyingSwordItem(ModTiers.ZIYING, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> ZIYING_AXE =
