@@ -191,11 +191,11 @@ public class ModItems {
     public static final DeferredItem<Item> BAMBOO_STICK =
             ITEMS.register("bamboo_stick", () -> new BambooStickItem(ModBlocks.BAMBOO_STICK.get(), new Item.Properties()));
     public static final DeferredItem<Item> PEACH_WOODEN_SWORD =
-            ITEMS.register("peach_wooden_sword", () -> new PeachWoodenSwordItem(Tiers.WOOD, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.WOOD, 3, -2.4F))));
+            ITEMS.register("peach_wooden_sword", () -> new PeachWoodenSwordItem(ModTiers.PEACH, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.PEACH, 3, -2.4F))));
     public static final DeferredItem<Item> CAMPHOR_WOODEN_SWORD =
-            ITEMS.register("camphor_wooden_sword", () -> new CamphorWoodenSwordItem(Tiers.WOOD, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.WOOD, 3, -2.4F))));
+            ITEMS.register("camphor_wooden_sword", () -> new CamphorWoodenSwordItem(ModTiers.CAMPHOR, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.CAMPHOR, 3, -2.4F))));
     public static final DeferredItem<Item> CHINESE_PARASOL_WOODEN_SWORD =
-            ITEMS.register("chinese_parasol_wooden_sword", () -> new ChineseParasolWoodenSwordItem(Tiers.WOOD, new Item.Properties().attributes(SwordItem.createAttributes(Tiers.WOOD, 3, -2.4F))));
+            ITEMS.register("chinese_parasol_wooden_sword", () -> new ChineseParasolWoodenSwordItem(ModTiers.CHINESE_PARASOL, new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.CHINESE_PARASOL, 3, -2.4F))));
     public static final DeferredItem<Item> ZIYING_SWORD =
             ITEMS.register("ziying_sword", () -> new ZiyingSwordItem(ModTiers.ZIYING, new Item.Properties().attributes(ModRangeSwordItem.createAttributes(ModTiers.ZIYING, 3, -2.4F, 1.0F))));
     public static final DeferredItem<Item> ZIYING_AXE =
