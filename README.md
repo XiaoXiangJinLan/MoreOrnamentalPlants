@@ -18,7 +18,7 @@ then right-click to obtain the corresponding cut flower.
 New Biomes
 ==========
 #### Flower Forest Biomes
-White Snow Red Mei, Fragrant Snow Sea, Snow Greets Spring, The Peach Blossom Spring, The Apricot Spring Plateau, Penglai, 
+The Peach Blossom Spring, The Apricot Spring Plateau, Penglai, 
 Flowers Grove, Crabapple Grove, Chinaberry Woods, Snow Woods, Mount Mei, Camellia Valley, Pink Camellia Valley, Red Camellia Valley.
 #### Deciduous Forest Biomes
 Colored Forest, Wutong Forest, Ginkgo Forest, Sweetgum Woods, Purple Cloud.
@@ -26,11 +26,13 @@ Colored Forest, Wutong Forest, Ginkgo Forest, Sweetgum Woods, Purple Cloud.
 Evergreen Forest, Longevity Forest.
 #### Plain Biomes
 Flowers Fields, Peony Sea, Peony Meadows, Chinese Rose Fields, Fendai Land, Jizi Land, Haoyue Land, Ehuang Land, Miscanthus Fields, 
-Crops Green, The Land of Abundance.
+Crops Green, The Land of Abundance, Crape Myrtle Garden, Dongli Scenery, Handong Layue.
 #### Plateau Biomes
 Red Highlands, Azalea Forest, Ten-Mile Gallery.
 #### Wetland Biomes
 Furong Guo, Yunmeng Marsh.
+#### Snowy Biomes
+White Snow Red Mei, Fragrant Snow Sea, Snow Greets Spring, Handong Layue.
 #### Desert Biomes
 Desert Poplar Woods, Tamarisk Fields, Gold Country.
 #### River Biomes
@@ -72,7 +74,7 @@ New Mobs
 • Baihua Cat: Spawns in Flowers Grove, Crabapple Grove, The Peach Blossom Spring, and Penglai. Can be tamed with flowers. When fed Immortal Peach, Cloud Apricot, or Crabapple, it produces the corresponding fruit tree sapling. It also accelerates the growth of crops, cut flowers, and other plants within a 1-block radius.
 
 《观赏植物》是一个以植物装饰为主题的群系模组，将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠；
-彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了四十个全新的生物群系、七个结构，等待你来探索！
+彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了四十九个全新的生物群系、七个结构，等待你来探索！
 
 ## 新树种
 梅花、海棠、杏花、桃花、梨花、钟花樱、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
@@ -83,13 +85,10 @@ New Mobs
 
 ## 新群系
 #### 花林群系
-•**白雪红梅**：朱砂梅为主的雪林，林下生长有蜡梅；  
-•**香雪海**：江梅、绿萼梅、垂枝白梅以及绿萼垂枝梅为主的雪林，地面长有香雪花簇；  
-•**飞雪迎春**：各大梅花为主的雪林，林下生长有许多早春花卉；  
-•**梅山**：生长有绿萼梅的高山雪坡；  
 •**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃红花簇，天空和水面为淡粉色；  
 •**高原春杏**：生长有粉杏和白杏的高原，地面长有春信花簇；  
 •**蓬莱**：海上仙山，祥瑞之地；  
+•**梅山**：生长有绿萼梅的高山雪坡；  
 •**百花林**：生长有多种花树的花林，林下生长有多种灌木或草本花卉；  
 •**烟雨海棠**：百花林的变种，以海棠为主的花林，林下生长有芍药和牡丹；  
 •**楝花林**：苦楝和香樟为优势树种的疏林，林下生长有大量的狼尾草；  
@@ -114,6 +113,8 @@ New Mobs
 •**芒草田**：生长有大量金芒草的平原；  
 •**禾青**：生长有狼尾草、芒草、月季、建兰等植物的平原，偶尔出现香樟和苦楝；  
 •**天府国**：生长有木芙蓉、蜀葵、竹子的平原，并伴有珙桐；  
+•**东篱菊景**：生长有各种菊花的平原；  
+•**紫薇夏园**：生长有各种紫薇的平原；  
 •**粉黛花地**：生长有粉色花朵的平原；  
 •**霁紫花地**：生长有紫色花朵的平原；  
 •**皓月花地**：生长有白色花朵的平原；  
@@ -125,6 +126,11 @@ New Mobs
 #### 湿地群系
 •**芙蓉国**：生长有大量木芙蓉、湘妃竹、紫竹的平原湿地，水里生长有大量荷叶荷花；  
 •**云梦泽**：生长有宫粉梅和樟树的湿地沼泽，水里生长有大量荷叶荷花；
+#### 雪地群系
+•**白雪红梅**：朱砂梅为主的雪林，林下生长有蜡梅；  
+•**香雪海**：江梅、绿萼梅、垂枝白梅以及绿萼垂枝梅为主的雪林，地面长有香雪花簇；  
+•**飞雪迎春**：各大梅花为主的雪林，林下生长有许多早春花卉；  
+•**寒冬腊月**：生长有零星蜡梅的雪原；
 #### 沙漠群系
 •**胡杨林**：生长有胡杨树的沙漠；  
 •**柽柳田**：生长有红柳的沙漠；  

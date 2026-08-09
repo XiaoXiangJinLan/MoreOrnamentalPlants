@@ -212,17 +212,20 @@ public class BaihuaCat extends Cat {
                                         @NotNull MobSpawnType spawnType, @Nullable SpawnGroupData spawnGroupData) {
         spawnGroupData = super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
         if (!level.isClientSide()) {
-            if (level.getBiome(this.blockPosition()).is(ModBiomes.CRABAPPLE_GROVE) ||
-                    level.getBiome(this.blockPosition()).is(ModBiomes.THE_PEACH_BLOSSOM_SPRING)) {
+            if (level.getBiome(this.blockPosition()).is(ModTags.Biomes.PINK_BAIHUA_CAT)) {
                 this.setTextureKey("pink");
-            } else if (level.getBiome(this.blockPosition()).is(ModBiomes.CHINABERRY_WOODS)) {
+            } else if (level.getBiome(this.blockPosition()).is(ModTags.Biomes.BLUE_BAIHUA_CAT)) {
                 this.setTextureKey("blue");
-            } else if (level.getBiome(this.blockPosition()).is(ModBiomes.PURPLE_CLOUD)) {
+            } else if (level.getBiome(this.blockPosition()).is(ModTags.Biomes.PURPLE_BAIHUA_CAT)) {
                 this.setTextureKey("purple");
-            } else {
+            } else if (level.getBiome(this.blockPosition()).is(ModBiomes.FLOWERS_GROVE) ||
+                    level.getBiome(this.blockPosition()).is(ModBiomes.FLOWERS_FIELDS) ||
+                    level.getBiome(this.blockPosition()).is(ModBiomes.PENGLAI)) {
                 String[] variants = {"standard", "pink", "blue", "purple"};
                 String chosen = variants[this.random.nextInt(variants.length)];
                 this.setTextureKey(chosen);
+            } else {
+                this.setTextureKey("standard");
             }
         }
         return spawnGroupData;
