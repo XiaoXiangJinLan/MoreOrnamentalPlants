@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crape_myrtle_logs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:crape_myrtle_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:crafting_table_from_crape_myrtle_log"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_crape_myrtle_logs",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:crafting_table_from_crape_myrtle_log"
+    ]
+  },
+  "sends_telemetry_event": false
+}

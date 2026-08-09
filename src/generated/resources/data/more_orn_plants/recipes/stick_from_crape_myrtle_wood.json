@@ -1,14 +1,19 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
   "group": "sticks",
-  "ingredients": [
-    {
+  "key": {
+    "#": {
       "item": "more_orn_plants:crape_myrtle_wood"
     }
+  },
+  "pattern": [
+    "#",
+    "#"
   ],
   "result": {
-    "count": 6,
+    "count": 12,
     "item": "minecraft:stick"
-  }
+  },
+  "show_notification": true
 }

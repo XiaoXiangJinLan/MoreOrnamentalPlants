@@ -770,16 +770,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(pWriter, ModItems.CHINABERRY_CHEST_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
         chestBoat(pWriter, ModItems.DESERT_POPLAR_CHEST_BOAT.get(), ModBlocks.DESERT_POPLAR_PLANKS.get());
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.STICK, 6)
-                .requires(ModBlocks.CRAPE_MYRTLE_LOG.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 12)
+                .define('#', ModBlocks.CRAPE_MYRTLE_LOG.get())
+                .pattern("#")
+                .pattern("#")
                 .group("sticks")
                 .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_LOG.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "stick_from_crape_myrtle_log"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.STICK, 6)
-                .requires(ModBlocks.CRAPE_MYRTLE_WOOD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 12)
+                .define('#', ModBlocks.CRAPE_MYRTLE_WOOD.get())
+                .pattern("#")
+                .pattern("#")
                 .group("sticks")
                 .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_WOOD.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "stick_from_crape_myrtle_wood"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CRAFTING_TABLE)
+                .requires(ModBlocks.CRAPE_MYRTLE_LOG.get())
+                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_LOG.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "crafting_table_from_crape_myrtle_log"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CRAFTING_TABLE)
+                .requires(ModBlocks.CRAPE_MYRTLE_WOOD.get())
+                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_WOOD.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "crafting_table_from_crape_myrtle_wood"));
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 2)
                 .define('#', ModItems.MOTTLED_BAMBOO.get())
                 .pattern("#")
