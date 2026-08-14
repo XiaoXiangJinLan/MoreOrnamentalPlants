@@ -47,8 +47,7 @@ public class WeepingCrabappleBlock extends Block {
         BlockPos abovePos = pos.above();
         BlockState aboveState = level.getBlockState(abovePos);
 
-        // 只能放置在树叶方块下方
-        return aboveState.is(BlockTags.LEAVES);
+        return isSupportedBlock(aboveState, level, pos);
     }
 
     @Override
@@ -58,5 +57,10 @@ public class WeepingCrabappleBlock extends Block {
             return Blocks.AIR.defaultBlockState();
         }
         return super.updateShape(state, direction, neighborState, level, pos, neighborPos);
+    }
+
+    private boolean isSupportedBlock(BlockState state, BlockGetter level, @NotNull BlockPos pos) {
+        return state.isFaceSturdy(level, pos, Direction.DOWN) ||
+                state.is(BlockTags.LEAVES);
     }
 }

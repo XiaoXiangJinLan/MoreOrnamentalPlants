@@ -22,17 +22,17 @@ public class WeepingMeiBlock extends GrowingPlantHeadBlock {
     }
 
     @Override
-    public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
         return true;
     }
 
     @Override
-    public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
         return 60;
     }
 
     @Override
-    public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
         return 30;
     }
 
@@ -57,19 +57,17 @@ public class WeepingMeiBlock extends GrowingPlantHeadBlock {
     }
 
     @Override
-    public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
+    public boolean canSurvive(@NotNull BlockState state, LevelReader level, BlockPos pos) {
         BlockPos abovePos = pos.above();
         BlockState aboveState = level.getBlockState(abovePos);
 
-        // 只能生长在树叶或原木上
-        return isSupportedBlock(aboveState) ||
+        return isSupportedBlock(aboveState, level, pos) ||
                 aboveState.is(this.getBodyBlock()) ||
                 aboveState.is(this);
     }
 
-    // 检查方块是否是树叶或原木
-    private boolean isSupportedBlock(BlockState state) {
+    private boolean isSupportedBlock(BlockState state, BlockGetter level, @NotNull BlockPos pos) {
         return state.is(BlockTags.LEAVES) ||
-                state.is(BlockTags.LOGS);
+                state.isFaceSturdy(level, pos, Direction.DOWN);
     }
 }

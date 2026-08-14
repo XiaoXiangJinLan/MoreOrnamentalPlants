@@ -93,15 +93,15 @@ public class ModOverworldBiomesBuilder {
             {ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST,      ModBiomes.RED_MEI_FOREST,      null},
             {ModBiomes.PEONY_SEA,           ModBiomes.PEONY_SEA,           ModBiomes.COLORED_FOREST,      ModBiomes.COLORED_FOREST,      ModBiomes.LONGEVITY_FOREST},
             {ModBiomes.FLOWERS_GROVE,       ModBiomes.FLOWERS_GROVE,       ModBiomes.CAMELLIA_VALLEY,     ModBiomes.CAMELLIA_VALLEY,     ModBiomes.THE_PEACH_BLOSSOM_SPRING},
-            {null,                          null,                          null,                          null,                          null},
+            {null,                          null,                          null,                          ModBiomes.WISTERIA_VALLEY,     ModBiomes.WISTERIA_VALLEY},
             {ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS, ModBiomes.DESERT_POPLAR_WOODS}
     };
     private final ResourceKey<Biome>[][] MIDDLE_BIOMES_VARIANT_MOD = new ResourceKey[][]{
-            {ModBiomes.SNOW_GREETS_SPRING, ModBiomes.SNOW_GREETS_SPRING, ModBiomes.SNOW_GREETS_SPRING,   ModBiomes.SNOW_GREETS_SPRING,  null},
-            {ModBiomes.PEONY_MEADOWS,      ModBiomes.PEONY_MEADOWS,      ModBiomes.WUTONG_FOREST,        ModBiomes.WUTONG_FOREST,       null},
-            {ModBiomes.CRABAPPLE_GROVE,    ModBiomes.CRABAPPLE_GROVE,    ModBiomes.PINK_CAMELLIA_VALLEY, ModBiomes.RED_CAMELLIA_VALLEY, ModBiomes.THE_PEACH_BLOSSOM_SPRING},
-            {null,                         null,                         null,                           null,                          null},
-            {ModBiomes.GOLD_COUNTRY,       ModBiomes.GOLD_COUNTRY,       ModBiomes.GOLD_COUNTRY,         ModBiomes.GOLD_COUNTRY,        ModBiomes.GOLD_COUNTRY}
+            {ModBiomes.SNOW_GREETS_SPRING, ModBiomes.SNOW_GREETS_SPRING, ModBiomes.SNOW_GREETS_SPRING,   ModBiomes.SNOW_GREETS_SPRING,    null},
+            {ModBiomes.PEONY_MEADOWS,      ModBiomes.PEONY_MEADOWS,      ModBiomes.WUTONG_FOREST,        ModBiomes.WUTONG_FOREST,         null},
+            {ModBiomes.CRABAPPLE_GROVE,    ModBiomes.CRABAPPLE_GROVE,    ModBiomes.PINK_CAMELLIA_VALLEY, ModBiomes.RED_CAMELLIA_VALLEY,   ModBiomes.THE_PEACH_BLOSSOM_SPRING},
+            {null,                         null,                         null,                           ModBiomes.WHITE_WISTERIA_VALLEY, ModBiomes.BLUE_WISTERIA_VALLEY},
+            {ModBiomes.GOLD_COUNTRY,       ModBiomes.GOLD_COUNTRY,       ModBiomes.GOLD_COUNTRY,         ModBiomes.GOLD_COUNTRY,          ModBiomes.GOLD_COUNTRY}
     };
     private final ResourceKey<Biome>[][] PLATEAU_BIOMES_MOD = new ResourceKey[][]{
             {null,                                 null,                                 null,                   null,                   null},

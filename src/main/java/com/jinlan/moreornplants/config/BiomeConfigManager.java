@@ -50,6 +50,9 @@ public class BiomeConfigManager {
             case "the_apricot_spring_plateau" -> ModBiomeConfig.ENABLE_APRICOT_SPRING_PLATEAU.get();
             case "azalea_forest" -> ModBiomeConfig.ENABLE_AZALEA_FOREST.get();
             case "ten_mile_gallery" -> ModBiomeConfig.ENABLE_TEN_MILE_GALLERY.get();
+            case "wisteria_valley" -> ModBiomeConfig.ENABLE_WISTERIA_VALLEY.get();
+            case "white_wisteria_valley" -> ModBiomeConfig.ENABLE_WHITE_WISTERIA_VALLEY.get();
+            case "blue_wisteria_valley" -> ModBiomeConfig.ENABLE_BLUE_WISTERIA_VALLEY.get();
             case "ziying_caves" -> ModBiomeConfig.ENABLE_ZIYING_CAVES.get();
             case "suyu_caves" -> ModBiomeConfig.ENABLE_SUYU_CAVES.get();
             default -> true;

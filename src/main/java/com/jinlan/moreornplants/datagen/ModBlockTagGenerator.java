@@ -824,7 +824,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RED_AZALEA.get(), ModBlocks.CHINESE_AZALEA.get());
 
         this.tag(CommonTags.Blocks.LOTUS)
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get());
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get());
 
         this.tag(CommonTags.Blocks.NARCISSUS)
                 .add(ModBlocks.CHINESE_NARCISSUS.get(), ModBlocks.GOLDEN_CHINESE_NARCISSUS.get());

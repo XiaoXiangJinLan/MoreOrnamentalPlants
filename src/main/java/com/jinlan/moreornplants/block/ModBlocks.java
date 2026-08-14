@@ -1491,6 +1491,8 @@ public class ModBlocks {
             BLOCKS.register("lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.COLOR_PINK).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final DeferredBlock<Block> WHITE_LOTUS =
             BLOCKS.register("white_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.SNOW).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
+    public static final DeferredBlock<Block> RED_LOTUS =
+            BLOCKS.register("red_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.COLOR_RED).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final DeferredBlock<Block> LOTUS_LEAF =
             BLOCKS.register("lotus_leaf", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final DeferredBlock<Block> MUXUE_GRASS =

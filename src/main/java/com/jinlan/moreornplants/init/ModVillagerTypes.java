@@ -9,12 +9,19 @@ public class ModVillagerTypes {
         VillagerType.BY_BIOME.put(ModBiomes.TAMARISK_FIELDS, VillagerType.DESERT);
         VillagerType.BY_BIOME.put(ModBiomes.GOLD_COUNTRY, VillagerType.DESERT);
         VillagerType.BY_BIOME.put(ModBiomes.RED_MEI_FOREST, VillagerType.SNOW);
-        VillagerType.BY_BIOME.put(ModBiomes.MOUNT_MEI, VillagerType.SNOW);
         VillagerType.BY_BIOME.put(ModBiomes.FRAGRANT_SNOW_SEA, VillagerType.SNOW);
         VillagerType.BY_BIOME.put(ModBiomes.SNOW_GREETS_SPRING, VillagerType.SNOW);
+        VillagerType.BY_BIOME.put(ModBiomes.HANDONG_LAYUE, VillagerType.SNOW);
+        VillagerType.BY_BIOME.put(ModBiomes.MOUNT_MEI, VillagerType.SNOW);
         VillagerType.BY_BIOME.put(ModBiomes.JIANGTIAN_MUXUE, VillagerType.SNOW);
         VillagerType.BY_BIOME.put(ModBiomes.FURONG_GUO, VillagerType.SWAMP);
         VillagerType.BY_BIOME.put(ModBiomes.YUNMENG_MARSH, VillagerType.SWAMP);
+        VillagerType.BY_BIOME.put(ModBiomes.WISTERIA_VALLEY, VillagerType.SWAMP);
+        VillagerType.BY_BIOME.put(ModBiomes.WHITE_WISTERIA_VALLEY, VillagerType.SWAMP);
+        VillagerType.BY_BIOME.put(ModBiomes.BLUE_WISTERIA_VALLEY, VillagerType.SWAMP);
         VillagerType.BY_BIOME.put(ModBiomes.SWEETGUM_WOODS, VillagerType.TAIGA);
+        VillagerType.BY_BIOME.put(ModBiomes.GINKGO_FOREST, VillagerType.TAIGA);
+        VillagerType.BY_BIOME.put(ModBiomes.COLORED_FOREST, VillagerType.TAIGA);
+        VillagerType.BY_BIOME.put(ModBiomes.WUTONG_FOREST, VillagerType.TAIGA);
     }
 }

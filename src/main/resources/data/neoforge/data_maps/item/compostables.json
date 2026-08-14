@@ -645,6 +645,9 @@
     "more_orn_plants:white_lotus": {
       "chance": 0.65
     },
+    "more_orn_plants:red_lotus": {
+      "chance": 0.65
+    },
     "more_orn_plants:lotus_leaf": {
       "chance": 0.65
     },

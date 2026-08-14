@@ -245,8 +245,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.LUOYANG_RED_PEONY);
                         pOutput.accept(ModBlocks.TWO_QIAO_PEONY);
                         pOutput.accept(ModBlocks.VERSICOLOR_PEONY);
-                        pOutput.accept(ModBlocks.LOTUS);
-                        pOutput.accept(ModBlocks.WHITE_LOTUS);
+                        pOutput.accept(ModItems.LOTUS);
+                        pOutput.accept(ModItems.WHITE_LOTUS);
+                        pOutput.accept(ModItems.RED_LOTUS);
                         pOutput.accept(ModBlocks.LOTUS_LEAF);
                         pOutput.accept(ModBlocks.CHINESE_ROSE);
                         pOutput.accept(ModBlocks.BAOHUA_CHINESE_ROSE);

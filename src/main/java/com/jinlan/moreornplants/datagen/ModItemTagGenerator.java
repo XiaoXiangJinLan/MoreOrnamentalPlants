@@ -251,6 +251,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.LUOYANG_RED_PEONY.asItem())
                 .add(ModBlocks.RED_PEONY.asItem(), ModBlocks.LIGHT_RED_PEONY.asItem(), ModBlocks.INK_RED_PEONY.asItem(), ModBlocks.VERMILION_PEONY.asItem())
                 .add(ModBlocks.CHINESE_ROSE.asItem())
+                .add(ModItems.RED_LOTUS.get())
                 .add(ModBlocks.CAMELLIA.asItem(), ModBlocks.TALL_CAMELLIA.asItem())
                 .add(ModBlocks.RED_AZALEA.asItem(), ModBlocks.MAYING_RHODODENDRON.asItem())
                 .add(ModBlocks.HOLLYHOCK.asItem())
@@ -268,7 +269,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WEEPING_CRABAPPLE.asItem())
                 .add(ModBlocks.COTTON_ROSE.asItem())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.asItem(), ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.asItem())
-                .add(ModBlocks.LOTUS.asItem())
+                .add(ModItems.LOTUS.get())
                 .add(ModBlocks.PINK_HOLLYHOCK.asItem())
                 .add(ModBlocks.PINK_MOTH_ORCHID.asItem())
                 .add(ModItems.ORNAMENTAL_PEACH_PETALS.get(), ModItems.WILD_PEACH_PETALS.get())
@@ -279,7 +280,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_PEONY.asItem())
                 .add(ModBlocks.WHITE_CHINESE_ROSE.asItem(), ModBlocks.BAOHUA_CHINESE_ROSE.asItem())
                 .add(ModBlocks.WHITE_CAMELLIA.asItem(), ModBlocks.TALL_WHITE_CAMELLIA.asItem())
-                .add(ModBlocks.WHITE_LOTUS.asItem())
+                .add(ModItems.WHITE_LOTUS.get())
                 .add(ModBlocks.WHITE_FOUNTAIN_GRASS.asItem())
                 .add(ModBlocks.DEWDROP_RHODODENDRON.asItem(), ModBlocks.GREAT_WHITE_RHODODENDRON.asItem())
                 .add(ModBlocks.WHITE_CRAPE_MYRTLE.asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.asItem())
@@ -334,7 +335,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ModTags.Items.GREEN_DYE)
                 .add(ModBlocks.SUMMER_CYMBIDIUM.asItem(), ModBlocks.AUTUMN_CYMBIDIUM.asItem())
-                .add(ModBlocks.LOTUS_LEAF.asItem())
+                .add(ModItems.LOTUS_LEAF.get())
                 .add(ModBlocks.MISCANTHUS.asItem())
                 .add(ModBlocks.HARDY_BANANA.asItem());
 
@@ -378,8 +379,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(CommonTags.Items.CROPS_LOTUS);
 
         this.tag(CommonTags.Items.CROPS_LOTUS)
-                .add(ModBlocks.LOTUS.asItem(), ModBlocks.WHITE_LOTUS.asItem())
-                .add(ModBlocks.LOTUS_LEAF.asItem());
+                .add(ModItems.LOTUS.get(), ModItems.WHITE_LOTUS.get(), ModItems.RED_LOTUS.get())
+                .add(ModItems.LOTUS_LEAF.get());
 
         this.tag(Tags.Items.FOODS_FRUIT)
                 .add(ModItems.CRABAPPLE.get(), ModItems.GOLDEN_CRABAPPLE.get(), ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get())

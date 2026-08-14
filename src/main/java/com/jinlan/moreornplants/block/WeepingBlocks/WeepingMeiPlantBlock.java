@@ -27,17 +27,17 @@ public class WeepingMeiPlantBlock extends GrowingPlantBodyBlock {
     }
 
     @Override
-    public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
         return true;
     }
 
     @Override
-    public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
         return 60;
     }
 
     @Override
-    public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
         return 30;
     }
 
@@ -62,7 +62,7 @@ public class WeepingMeiPlantBlock extends GrowingPlantBodyBlock {
         BlockPos abovePos = pos.above();
         BlockState aboveState = level.getBlockState(abovePos);
 
-        boolean canSurvive = isSupportedBlock(aboveState) ||
+        boolean canSurvive = isSupportedBlock(aboveState, level, pos) ||
                 aboveState.is(this.getHeadBlock()) ||
                 aboveState.is(this);
 
@@ -76,7 +76,7 @@ public class WeepingMeiPlantBlock extends GrowingPlantBodyBlock {
     private void updateTopState(Level level, BlockPos pos, BlockState state) {
         BlockPos abovePos = pos.above();
         BlockState aboveState = level.getBlockState(abovePos);
-        boolean isTop = isSupportedBlock(aboveState);
+        boolean isTop = isSupportedBlock(aboveState, level, pos);
 
         if (state.getValue(TOP) != isTop) {
             level.setBlock(pos, state.setValue(TOP, isTop), 3);
@@ -84,21 +84,21 @@ public class WeepingMeiPlantBlock extends GrowingPlantBodyBlock {
     }
 
     @Override
-    public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
+    public void onPlace(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState oldState, boolean isMoving) {
         super.onPlace(state, level, pos, oldState, isMoving);
         updateTopState(level, pos, state);
     }
 
     @Override
-    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
+    public void neighborChanged(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Block block, @NotNull BlockPos fromPos, boolean isMoving) {
         super.neighborChanged(state, level, pos, block, fromPos, isMoving);
         if (fromPos.equals(pos.above())) {
             updateTopState(level, pos, state);
         }
     }
 
-    private boolean isSupportedBlock(BlockState state) {
+    private boolean isSupportedBlock(BlockState state, BlockGetter level, @NotNull BlockPos pos) {
         return state.is(BlockTags.LEAVES) ||
-                state.is(BlockTags.LOGS);
+                state.isFaceSturdy(level, pos, Direction.DOWN);
     }
 }
