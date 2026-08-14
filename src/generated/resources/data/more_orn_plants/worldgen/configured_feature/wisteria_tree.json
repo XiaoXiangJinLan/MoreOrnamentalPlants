@@ -9,7 +9,7 @@
           "state": {
             "Name": "more_orn_plants:nanjing_wisteria_plant",
             "Properties": {
-              "top": "true"
+              "top": "false"
             }
           }
         },
@@ -24,7 +24,7 @@
             }
           }
         },
-        "max_length": 2,
+        "max_length": 3,
         "max_vines": 72,
         "min_length": 2
       }

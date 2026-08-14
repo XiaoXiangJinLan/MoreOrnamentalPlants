@@ -244,9 +244,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.LUOYANG_RED_PEONY.get());
                         pOutput.accept(ModBlocks.TWO_QIAO_PEONY.get());
                         pOutput.accept(ModBlocks.VERSICOLOR_PEONY.get());
-                        pOutput.accept(ModBlocks.LOTUS.get());
-                        pOutput.accept(ModBlocks.WHITE_LOTUS.get());
-                        pOutput.accept(ModBlocks.LOTUS_LEAF.get());
+                        pOutput.accept(ModItems.LOTUS.get());
+                        pOutput.accept(ModItems.WHITE_LOTUS.get());
+                        pOutput.accept(ModItems.RED_LOTUS.get());
+                        pOutput.accept(ModItems.LOTUS_LEAF.get());
                         pOutput.accept(ModBlocks.CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.BAOHUA_CHINESE_ROSE.get());
                         pOutput.accept(ModBlocks.PINK_CHINESE_ROSE.get());

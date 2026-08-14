@@ -947,6 +947,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         lotusBlock(ModBlocks.LOTUS);
         lotusBlock(ModBlocks.WHITE_LOTUS);
+        lotusBlock(ModBlocks.RED_LOTUS);
 
         petalsBlock(ModBlocks.PEACH_PINK_PETALS);
         petalsBlock(ModBlocks.FRAGRANT_SNOW_PETALS);
@@ -1314,11 +1315,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         }
         ModelFile bottomModel = models().getExistingFile(modLoc("block/lotus_stem"));
         for (int age = 0; age <= 3; age++) {
-            String stemTexture = baseName + "_stem_age_" + age;
-            String petalTexture = (age <= 1) ? baseName + "_petal_none" : baseName + "_petal";
+            String stemTexture = (age <= 1) ? baseName + "_stem_age_" + age : "lotus_stem_age_" + age;
+            String petalTexture = (age <= 1) ? "lotus_petal_none" : baseName + "_petal";
             String petalSmallTexture;
             if (age == 0) {
-                petalSmallTexture = baseName + "_petal_none";
+                petalSmallTexture = "lotus_petal_none";
             } else if (age == 1) {
                 petalSmallTexture = baseName + "_petal";
             } else {

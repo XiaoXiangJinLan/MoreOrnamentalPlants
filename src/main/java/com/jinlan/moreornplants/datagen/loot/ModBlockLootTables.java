@@ -1145,6 +1145,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.LOTUS.get(), block -> createLotusDrops(ModBlocks.LOTUS.get()));
         this.add(ModBlocks.WHITE_LOTUS.get(), block -> createLotusDrops(ModBlocks.WHITE_LOTUS.get()));
+        this.add(ModBlocks.RED_LOTUS.get(), block -> createLotusDrops(ModBlocks.RED_LOTUS.get()));
         this.add(ModBlocks.LOTUS_LEAF.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModBlocks.LOTUS_LEAF.get().asItem()))

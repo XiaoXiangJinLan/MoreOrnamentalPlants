@@ -51,11 +51,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GOLD_SAND.get());
 
         this.tag(BlockTags.CROPS)
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get())
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get())
                 .add(ModBlocks.LOTUS_LEAF.get());
 
         this.tag(BlockTags.MAINTAINS_FARMLAND)
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get())
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get())
                 .add(ModBlocks.LOTUS_LEAF.get());
 
         this.tag(BlockTags.REPLACEABLE)
@@ -725,7 +725,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get())
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get())
                 .add(ModBlocks.HOLLYHOCK.get(), ModBlocks.PINK_HOLLYHOCK.get())
                 .add(ModBlocks.ORANGE_HOLLYHOCK.get(), ModBlocks.WHITE_HOLLYHOCK.get())
                 .add(ModBlocks.HARDY_BANANA.get())
@@ -810,8 +810,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
-                .add(ModBlocks.LOTUS.get())
-                .add(ModBlocks.WHITE_LOTUS.get())
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get())
                 .add(ModBlocks.HOLLYHOCK.get(), ModBlocks.PINK_HOLLYHOCK.get())
                 .add(ModBlocks.ORANGE_HOLLYHOCK.get(), ModBlocks.WHITE_HOLLYHOCK.get());
 

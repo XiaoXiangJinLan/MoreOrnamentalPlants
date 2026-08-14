@@ -52,6 +52,9 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_YELLOW_LAND;
     public static final ForgeConfigSpec.BooleanValue ENABLE_PURPLE_CLOUD;
     public static final ForgeConfigSpec.BooleanValue ENABLE_TEN_MILE_GALLERY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_WISTERIA_VALLEY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_WHITE_WISTERIA_VALLEY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_BLUE_WISTERIA_VALLEY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_ZIYING_CAVES;
     public static final ForgeConfigSpec.BooleanValue ENABLE_SUYU_CAVES;
 
@@ -172,6 +175,12 @@ public class ModBiomeConfig {
                 .define("enablePurpleCloud", true);
         ENABLE_TEN_MILE_GALLERY = BUILDER
                 .define("enableTenMileGallery", true);
+        ENABLE_WISTERIA_VALLEY = BUILDER
+                .define("enableWisteriaValley", true);
+        ENABLE_WHITE_WISTERIA_VALLEY = BUILDER
+                .define("enableWhiteWisteriaValley", true);
+        ENABLE_BLUE_WISTERIA_VALLEY = BUILDER
+                .define("enableBlueWisteriaValley", true);
         ENABLE_ZIYING_CAVES = BUILDER
                 .define("enableZiyingCaves", true);
         ENABLE_SUYU_CAVES = BUILDER

@@ -112,6 +112,12 @@ public class ModBiomes {
             new ResourceLocation(MoreOrnPlants.MOD_ID, "azalea_forest"));
     public static final ResourceKey<Biome> TEN_MILE_GALLERY = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "ten_mile_gallery"));
+    public static final ResourceKey<Biome> WISTERIA_VALLEY = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "wisteria_valley"));
+    public static final ResourceKey<Biome> WHITE_WISTERIA_VALLEY = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "white_wisteria_valley"));
+    public static final ResourceKey<Biome> BLUE_WISTERIA_VALLEY = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(MoreOrnPlants.MOD_ID, "blue_wisteria_valley"));
     public static final ResourceKey<Biome> ZIYING_CAVES = ResourceKey.create(Registries.BIOME,
             new ResourceLocation(MoreOrnPlants.MOD_ID, "ziying_caves"));
     public static final ResourceKey<Biome> SUYU_CAVES = ResourceKey.create(Registries.BIOME,
@@ -165,6 +171,9 @@ public class ModBiomes {
         context.register(THE_APRICOT_SPRING_PLATEAU, theApricotSpringPlateau(context));
         context.register(AZALEA_FOREST, azaleaForest(context));
         context.register(TEN_MILE_GALLERY, tenMileGallery(context));
+        context.register(WISTERIA_VALLEY, wisteriaBiome(context, false, false));
+        context.register(WHITE_WISTERIA_VALLEY, wisteriaBiome(context, true, false));
+        context.register(BLUE_WISTERIA_VALLEY, wisteriaBiome(context, false, true));
         context.register(ZIYING_CAVES, cavesBiome(context, false));
         context.register(SUYU_CAVES, cavesBiome(context, true));
     }
@@ -879,7 +888,7 @@ public class ModBiomes {
         } else {
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GOLDEN_MISCANTHUS);
         }
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_VALLY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_PLAIN);
 
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(true).temperature(0.7f).downfall(0.7f)
@@ -930,6 +939,52 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .waterColor(4159204).waterFogColor(329011).skyColor(7907327).fogColor(12638463).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                .build();
+    }
+
+    private static Biome wisteriaBiome(BootstapContext<Biome> context, boolean isWhite, boolean isBlue) {
+        MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
+
+        BiomeDefaultFeatures.farmAnimals(spawnBuilder);
+        BiomeDefaultFeatures.commonSpawns(spawnBuilder);
+        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.PARROT, 40, 1, 2))
+                .addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.BAIHUA_CAT.get(), 6, 1, 2));
+
+        BiomeGenerationSettings.Builder biomeBuilder =
+                new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+        globalOverworldGeneration(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
+        BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
+        if (isWhite) {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_WHITE_WISTERIA_TREE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WHITE_MOTH_ORCHID_VALLEY_PLACED);
+        } else if (isBlue) {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_BLUE_WISTERIA_TREE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.BLUE_ORCHID_VALLEY);
+        } else {
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_WISTERIA_TREE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_PURPLE_WISTERIA_TREE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_RED_WISTERIA_TREE_GARDEN);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.PURPLE_MOTH_ORCHID_VALLEY_PLACED);
+        }
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_VALLY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.TALL_GRASS);
+        biomeBuilder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, ModPlacedFeatures.GLOWSTONE_LOGS);
+        biomeBuilder.addFeature(GenerationStep.Decoration.LOCAL_MODIFICATIONS, ModPlacedFeatures.GLOWSTONE_GRASS);
+
+        BiomeSpecialEffects.Builder effectsBuilder = new BiomeSpecialEffects.Builder()
+                .waterColor(4159204).waterFogColor(329011).skyColor(7842047).fogColor(12638463).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS);
+        if (isBlue) {
+            effectsBuilder.foliageColorOverride(0xA7A7E9);
+        } else if (!isWhite) {
+            effectsBuilder.foliageColorOverride(0xAF8EDA);
+        }
+        return new Biome.BiomeBuilder()
+                .hasPrecipitation(true).temperature(0.9f).downfall(0.9f)
+                .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
+                .specialEffects(effectsBuilder.build())
                 .build();
     }
 

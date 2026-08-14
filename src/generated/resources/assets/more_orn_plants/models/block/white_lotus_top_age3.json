@@ -4,6 +4,6 @@
   "textures": {
     "petal": "more_orn_plants:block/white_lotus_petal",
     "petal_small": "more_orn_plants:block/white_lotus_petal_small",
-    "stem": "more_orn_plants:block/white_lotus_stem_age_3"
+    "stem": "more_orn_plants:block/lotus_stem_age_3"
   }
 }

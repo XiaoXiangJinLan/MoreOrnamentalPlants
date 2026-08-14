@@ -250,6 +250,8 @@ public class ModItems {
             ITEMS.register("lotus", () -> new PlaceInWaterBlockItem(ModBlocks.LOTUS.get(), new Item.Properties()));
     public static final RegistryObject<Item> WHITE_LOTUS =
             ITEMS.register("white_lotus", () -> new PlaceInWaterBlockItem(ModBlocks.WHITE_LOTUS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RED_LOTUS =
+            ITEMS.register("red_lotus", () -> new PlaceInWaterBlockItem(ModBlocks.RED_LOTUS.get(), new Item.Properties()));
     public static final RegistryObject<Item> LOTUS_LEAF =
             ITEMS.register("lotus_leaf", () -> new PlaceInWaterBlockItem(ModBlocks.LOTUS_LEAF.get(), new Item.Properties()));
     public static final RegistryObject<Item> LOTUS_ROOT =

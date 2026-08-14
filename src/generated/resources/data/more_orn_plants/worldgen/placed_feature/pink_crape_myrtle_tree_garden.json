@@ -36,10 +36,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "more_orn_plants:immortal_peach_sapling",
-          "Properties": {
-            "stage": "0"
-          }
+          "Name": "more_orn_plants:pink_crape_myrtle_sapling"
         }
       }
     }

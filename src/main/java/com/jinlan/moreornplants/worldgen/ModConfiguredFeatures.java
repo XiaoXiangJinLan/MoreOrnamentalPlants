@@ -115,6 +115,12 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_1 = registerKey("desert_poplar_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_2 = registerKey("desert_poplar_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_3 = registerKey("desert_poplar_3");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA_TREE = registerKey("wisteria_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_WISTERIA_TREE = registerKey("tall_wisteria_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_PURPLE_WISTERIA_TREE = registerKey("tall_purple_wisteria_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_WHITE_WISTERIA_TREE = registerKey("tall_white_wisteria_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_RED_WISTERIA_TREE = registerKey("tall_red_wisteria_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_BLUE_WISTERIA_TREE = registerKey("tall_blue_wisteria_tree");
     //flower
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_FOREST = registerKey("chrysanthemum_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_KEY = registerKey("chrysanthemum_key");
@@ -210,11 +216,13 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORCHID_FOREST = registerKey("orchid_forest");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_MOTH_ORCHID_WOODS = registerKey("white_moth_orchid_woods");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_MOTH_ORCHID_LAND = registerKey("white_moth_orchid_land");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_MOTH_ORCHID_VALLEY = registerKey("white_moth_orchid_valley");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_MOTH_ORCHID_LAND = registerKey("golden_moth_orchid_land");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOTH_ORCHID_GROVE = registerKey("moth_orchid_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_MOTH_ORCHID_LAND = registerKey("pink_moth_orchid_land");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_MOTH_ORCHID_CLOUD = registerKey("purple_moth_orchid_cloud");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_MOTH_ORCHID_LAND = registerKey("purple_moth_orchid_land");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_MOTH_ORCHID_VALLEY = registerKey("purple_moth_orchid_valley");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOTH_ORCHID_TEM_MILE = registerKey("moth_orchid_ten_mile");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_KEY = registerKey("crape_myrtle_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRAPE_MYRTLE_TREE = registerKey("crape_myrtle_tree");
@@ -254,7 +262,6 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BRANCHY_TAMARISK_LAND = registerKey("branchy_tamarisk_land");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_BRANCHY_TAMARISK_KEY = registerKey("golden_branchy_tamarisk");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MUXUE_GRASS_KEY = registerKey("muxue_grass_key");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA_TREE = registerKey("wisteria_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA = registerKey("wisteria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_WISTERIA = registerKey("white_wisteria");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_WISTERIA = registerKey("blue_wisteria");
@@ -279,6 +286,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> TULIP_GROVE = registerKey("tulip_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_GROVE = registerKey("tall_flowers_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_FLOWERS_GROVE_2 = registerKey("tall_flowers_grove_2");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_ORCHID_VALLEY = registerKey("blue_orchid_valley");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ROSE_BUSH = registerKey("rose_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DANDELION = registerKey("dandelion");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ALLIUM = registerKey("allium");
@@ -310,6 +318,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LEAF_RIVER_2 = registerKey("leaf_river_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WATERLILY_RIVER = registerKey("waterlily_river");
     public static final ResourceKey<ConfiguredFeature<?, ?>> STONE = registerKey("stone");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GLOWSTONE_1 = registerKey("glowstone_1");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GLOWSTONE_2 = registerKey("glowstone_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_1 = registerKey("moss_patch_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_2 = registerKey("moss_patch_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MOSS_PATCH_3 = registerKey("moss_patch_3");
@@ -865,7 +875,47 @@ public class ModConfiguredFeatures {
                 new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(
                 List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
-                        BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA_PLANT.get().defaultBlockState().setValue(WisteriaPlantBlock.TOP, true)), 0.9f, 72, 2, 2))).ignoreVines().build());
+                        BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA_PLANT.get().defaultBlockState()), 0.9f, 72, 2, 3))).ignoreVines().build());
+        register(context, TALL_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new AncientCamphorTrunkPlacer(16, 4, 4, 5, 4, 4, 0.95F, 5),
+                BlockStateProvider.simple(Blocks.ACACIA_LEAVES),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(
+                List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
+        register(context, TALL_PURPLE_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new AncientCamphorTrunkPlacer(16, 4, 4, 5, 4, 4, 0.95F, 5),
+                BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LEAVES.get()),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(
+                List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
+        register(context, TALL_WHITE_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new AncientCamphorTrunkPlacer(16, 4, 4, 5, 4, 4, 0.95F, 5),
+                BlockStateProvider.simple(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get()),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(
+                List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.WHITE_CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
+        register(context, TALL_RED_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new AncientCamphorTrunkPlacer(16, 4, 4, 5, 4, 4, 0.95F, 5),
+                BlockStateProvider.simple(ModBlocks.RED_CRAPE_MYRTLE_LEAVES.get()),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(
+                List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.RED_CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.RED_CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
+        register(context, TALL_BLUE_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new AncientCamphorTrunkPlacer(16, 4, 4, 5, 4, 4, 0.95F, 5),
+                BlockStateProvider.simple(Blocks.ACACIA_LEAVES),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(
+                List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.BLUE_CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
 
         register(context, CRAPE_MYRTLE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LOG.get()),
@@ -1311,6 +1361,18 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, GLOWSTONE_1, Feature.RANDOM_PATCH, new RandomPatchConfiguration(186, 5, 10,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.GLOWSTONE)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), ModBlocks.CAMPHOR_LOG.get())))));
+        register(context, GLOWSTONE_2, Feature.RANDOM_PATCH, new RandomPatchConfiguration(16, 7, 4,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.GLOWSTONE)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), Blocks.GRASS_BLOCK)))));
 
         register(context, FLOWER_SNOW_SPRING, Feature.FLOWER, new RandomPatchConfiguration(62, 7, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -1791,11 +1853,12 @@ public class ModConfiguredFeatures {
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
 
         SimpleWeightedRandomList.Builder<BlockState> lotusBuilder = SimpleWeightedRandomList.builder();
-        lotusBuilder.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState().setValue(WaterLotusBlock.AGE, 3),82);
+        lotusBuilder.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState().setValue(WaterLotusBlock.AGE, 3),164);
         for (int age = 0; age <= 3; age++) {
             int weight = (age <= 1) ? 1 : 2;
-            lotusBuilder.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*2);
-            lotusBuilder.add(ModBlocks.WHITE_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
+            lotusBuilder.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*3);
+            lotusBuilder.add(ModBlocks.WHITE_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*2);
+            lotusBuilder.add(ModBlocks.RED_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
         }
         register(context, LOTUS_KEY, Feature.FLOWER, new RandomPatchConfiguration(256, 14, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -2217,6 +2280,25 @@ public class ModConfiguredFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DEAD_BUSH_MAY_PLACE_ON)))));
+
+        register(context, PURPLE_MOTH_ORCHID_VALLEY, Feature.FLOWER, new RandomPatchConfiguration(21, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PURPLE_MOTH_ORCHID.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, WHITE_MOTH_ORCHID_VALLEY, Feature.FLOWER, new RandomPatchConfiguration(21, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_MOTH_ORCHID.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, BLUE_ORCHID_VALLEY, Feature.FLOWER, new RandomPatchConfiguration(21, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.BLUE_ORCHID)),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
 
         RandomizedIntStateProvider randomizedintstateprovider = new RandomizedIntStateProvider(
                 BlockStateProvider.simple(ModBlocks.CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),

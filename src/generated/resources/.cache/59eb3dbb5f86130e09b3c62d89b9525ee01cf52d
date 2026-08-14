@@ -1,4 +1,4 @@
-// 1.20.1	2026-07-28T00:11:46.484435	Loot Tables
+// 1.20.1	2026-08-12T23:24:05.191255	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_tables/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_tables/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_tables/blocks/apricot_fence.json
@@ -568,6 +568,7 @@ bb26c537f35d114ba8f8cca9006f32d0ffb6d0c7 data/more_orn_plants/loot_tables/blocks
 2c69a77729cc7bb7c958e1c102f8e898d50d20ba data/more_orn_plants/loot_tables/blocks/red_crape_myrtle.json
 9d1d2e5dd6368dc536c6976f256cd5f1de258cea data/more_orn_plants/loot_tables/blocks/red_crape_myrtle_leaves.json
 565753115f4d6ab3e4223a3aa34479eccd4102f0 data/more_orn_plants/loot_tables/blocks/red_crape_myrtle_sapling.json
+8212a26ff26d7fdac4b4da78285380b47b1f6283 data/more_orn_plants/loot_tables/blocks/red_lotus.json
 ea37b75a3e2330ba9d7acbe2c9a7c0b14d9f821e data/more_orn_plants/loot_tables/blocks/red_mei_button.json
 b7319a7ba22d9a749244cc0aeb789522f02e831b data/more_orn_plants/loot_tables/blocks/red_mei_door.json
 6b1c9796cbe6bb71928f30a016b834cd256f1509 data/more_orn_plants/loot_tables/blocks/red_mei_fence.json

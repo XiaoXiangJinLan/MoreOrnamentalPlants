@@ -341,8 +341,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.BLACK_BAMBOO.get());
 
         this.tag(ForgeTags.Items.LOTUS)
-                .add(ModBlocks.LOTUS.get().asItem())
-                .add(ModBlocks.WHITE_LOTUS.get().asItem());
+                .add(ModItems.LOTUS.get(), ModItems.WHITE_LOTUS.get(), ModItems.RED_LOTUS.get());
 
         this.tag(ForgeTags.Items.NARCISSUS)
                 .add(ModBlocks.CHINESE_NARCISSUS.get().asItem())
@@ -361,6 +360,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.RED_PEONY.get().asItem(), ModBlocks.LIGHT_RED_PEONY.get().asItem())
                 .add(ModBlocks.INK_RED_PEONY.get().asItem(), ModBlocks.VERMILION_PEONY.get().asItem())
                 .add(ModBlocks.CHINESE_ROSE.get().asItem())
+                .add(ModItems.RED_LOTUS.get())
                 .add(ModBlocks.CAMELLIA.get().asItem(), ModBlocks.TALL_CAMELLIA.get().asItem())
                 .add(ModBlocks.RED_AZALEA.get().asItem(), ModBlocks.MAYING_RHODODENDRON.get().asItem())
                 .add(ModBlocks.HOLLYHOCK.get().asItem())
@@ -382,7 +382,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINK_WOOD_SORREL.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE.get().asItem())
                 .add(ModBlocks.COTTON_ROSE.get().asItem())
-                .add(ModBlocks.LOTUS.get().asItem())
+                .add(ModItems.LOTUS.get())
                 .add(ModBlocks.PINK_MOTH_ORCHID.get().asItem())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get().asItem(), ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get().asItem())
                 .add(ModBlocks.PINK_HOLLYHOCK.get().asItem())
@@ -395,7 +395,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_PEONY.get().asItem())
                 .add(ModBlocks.WHITE_CAMELLIA.get().asItem(), ModBlocks.TALL_WHITE_CAMELLIA.get().asItem())
                 .add(ModBlocks.WHITE_CHINESE_ROSE.get().asItem(), ModBlocks.BAOHUA_CHINESE_ROSE.get().asItem())
-                .add(ModBlocks.WHITE_LOTUS.get().asItem())
+                .add(ModItems.WHITE_LOTUS.get())
                 .add(ModBlocks.WHITE_CRAPE_MYRTLE.get().asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get().asItem())
                 .add(ModBlocks.WHITE_FOUNTAIN_GRASS.get().asItem())
                 .add(ModBlocks.DEWDROP_RHODODENDRON.get().asItem(), ModBlocks.GREAT_WHITE_RHODODENDRON.get().asItem())
