@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-12T20:29:23.3092122	Tags for minecraft:block mod id more_orn_plants
+// 1.21.1	2026-08-15T10:54:54.1564926	Tags for minecraft:block mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/block/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/block/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/block/azalea.json
@@ -21,6 +21,7 @@ edc1aae18a35311be8df5db2dfb84cc1dba6303c data/c/tags/block/cymbidium.json
 987fab3810bebda4ce6d3f95869e3c3570e715ca data/c/tags/block/ginkgo_leaves.json
 37ea26f5e9711dd112ef5bce6ee738d233ba5734 data/c/tags/block/ginkgo_sapling.json
 8d86a028bae7eeb0c300ebc49c829a6134f97e28 data/c/tags/block/herbaceous_peony.json
+1a9cc60553fff40aa2623a7892348386c0c1062a data/c/tags/block/hollyhock.json
 c00048d22e4475b7fd6daa315418e2a3465b8cf7 data/c/tags/block/lotus.json
 a8bec61c63a7789094252327a9e73546e9f0df26 data/c/tags/block/mei_leaves.json
 b80637844a042d40f6b1df361e37bdede79efe38 data/c/tags/block/mei_sapling.json
@@ -59,13 +60,13 @@ b23dc07826c17fe7795f7684efbaa97c5b2b03fd data/minecraft/tags/block/mineable/pick
 73c33643918bd977c2ecc0002fa55666390463e5 data/minecraft/tags/block/planks.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/block/rabbits_spawnable_on.json
 954ed770331ddf1f9d9be9dbd16335440a544bd6 data/minecraft/tags/block/replaceable.json
-262cbfe72a0b740c65df5be739b8455dc440ea1a data/minecraft/tags/block/replaceable_by_trees.json
+5e5d69e79c4b3567459c4361a0f96ddb965e6421 data/minecraft/tags/block/replaceable_by_trees.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/block/sand.json
 a47d4738ffafd47491db6eef95b4e180b36879b1 data/minecraft/tags/block/saplings.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/block/sculk_replaceable.json
 9a640c04031179d41e2a7b7f217340e7b5c47f2e data/minecraft/tags/block/small_flowers.json
 e212d8183275fb9c12db833d8ade37009bec90dd data/minecraft/tags/block/standing_signs.json
-4625a55b293da1487f2efd73ec641c22360a650c data/minecraft/tags/block/tall_flowers.json
+475f4cbe5aa449112bd4d2fa4459b9e73cb221a5 data/minecraft/tags/block/tall_flowers.json
 22b011177a51f69381e1df31c8daf51a58166552 data/minecraft/tags/block/wall_hanging_signs.json
 439814142e22799e8194fe394bbf0c577f705312 data/minecraft/tags/block/wall_signs.json
 642513386a0fa7c2a2ca0bb55e9435fcd28ed916 data/minecraft/tags/block/wooden_buttons.json

@@ -47,6 +47,7 @@ public class CommonTags {
         public static final TagKey<Block> CRAPE_MYRTLE = tag("crape_myrtle");
         public static final TagKey<Block> LOTUS = tag("lotus");
         public static final TagKey<Block> NARCISSUS = tag("narcissus");
+        public static final TagKey<Block> HOLLYHOCK = tag("hollyhock");
 
         private static TagKey<Block> tag(String path) {
             return BlockTags.create(ResourceLocation.parse("c" + ":" + path));
@@ -93,6 +94,7 @@ public class CommonTags {
         public static final TagKey<Item> BAMBOO = tag("bamboo");
         public static final TagKey<Item> LOTUS = tag("lotus");
         public static final TagKey<Item> NARCISSUS = tag("narcissus");
+        public static final TagKey<Item> HOLLYHOCK = tag("hollyhock");
         public static final TagKey<Item> ORNAMENTAL_GRASS = tag("ornamental_grass");
 
         public static final TagKey<Item> CROPS_LOTUS = tag("crops/lotus");

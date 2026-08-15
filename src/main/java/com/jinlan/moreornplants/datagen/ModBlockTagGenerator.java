@@ -661,8 +661,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
                 .addTag(CommonTags.Blocks.LOTUS)
-                .add(ModBlocks.HOLLYHOCK.get(), ModBlocks.PINK_HOLLYHOCK.get())
-                .add(ModBlocks.ORANGE_HOLLYHOCK.get(), ModBlocks.WHITE_HOLLYHOCK.get())
+                .addTag(CommonTags.Blocks.HOLLYHOCK)
                 .add(ModBlocks.HARDY_BANANA.get())
                 .add(ModBlocks.MISCANTHUS.get(), ModBlocks.GOLDEN_MISCANTHUS.get())
                 .add(ModBlocks.BAMBOO_STICK.get())
@@ -697,8 +696,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
                 .addTag(CommonTags.Blocks.LOTUS)
-                .add(ModBlocks.HOLLYHOCK.get(), ModBlocks.PINK_HOLLYHOCK.get())
-                .add(ModBlocks.ORANGE_HOLLYHOCK.get(), ModBlocks.WHITE_HOLLYHOCK.get());
+                .addTag(CommonTags.Blocks.HOLLYHOCK);
 
         this.tag(CommonTags.Blocks.MEI_SAPLING)
                 .add(ModBlocks.RED_MEI_SAPLING.get(), ModBlocks.RED_WEEPING_MEI_SAPLING.get())
@@ -828,6 +826,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(CommonTags.Blocks.NARCISSUS)
                 .add(ModBlocks.CHINESE_NARCISSUS.get(), ModBlocks.GOLDEN_CHINESE_NARCISSUS.get());
+
+        this.tag(CommonTags.Blocks.HOLLYHOCK)
+                .add(ModBlocks.HOLLYHOCK.get(), ModBlocks.PINK_HOLLYHOCK.get(), ModBlocks.ORANGE_HOLLYHOCK.get(), ModBlocks.WHITE_HOLLYHOCK.get());
 
         this.tag(CommonTags.Blocks.WISTERIA)
                 .add(ModBlocks.CHINESE_WISTERIA.get(), ModBlocks.WHITE_CHINESE_WISTERIA.get(), ModBlocks.NANJING_WISTERIA.get())

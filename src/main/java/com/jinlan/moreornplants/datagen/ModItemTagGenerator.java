@@ -170,9 +170,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.HARDY_BANANA.asItem())
                 .addTag(CommonTags.Items.WISTERIA)
                 .addTag(CommonTags.Items.NARCISSUS)
+                .addTag(CommonTags.Items.HOLLYHOCK)
                 .add(ModBlocks.WHITE_MOTH_ORCHID.asItem(), ModBlocks.PINK_MOTH_ORCHID.asItem(), ModBlocks.PURPLE_MOTH_ORCHID.asItem(), ModBlocks.GOLDEN_MOTH_ORCHID.asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.asItem(), ModBlocks.SPRING_PETALS.asItem())
-                .add(ModBlocks.HOLLYHOCK.asItem(), ModBlocks.PINK_HOLLYHOCK.asItem(), ModBlocks.ORANGE_HOLLYHOCK.asItem(), ModBlocks.WHITE_HOLLYHOCK.asItem())
                 .add(ModBlocks.WOOD_SORREL.asItem(), ModBlocks.PINK_WOOD_SORREL.asItem(), ModBlocks.WHITE_WOOD_SORREL.asItem(), ModBlocks.ORANGE_WOOD_SORREL.asItem())
                 .add(ModItems.BAMBOO_STICK.get(), ModBlocks.MUXUE_GRASS.asItem())
                 .add(ModBlocks.BRANCHY_TAMARISK.asItem(), ModBlocks.GOLDEN_BRANCHY_TAMARISK.asItem())
@@ -241,6 +241,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.copy(CommonTags.Blocks.LOTUS, CommonTags.Items.LOTUS);
         this.copy(CommonTags.Blocks.NARCISSUS, CommonTags.Items.NARCISSUS);
+        this.copy(CommonTags.Blocks.HOLLYHOCK, CommonTags.Items.HOLLYHOCK);
         this.copy(CommonTags.Blocks.WISTERIA, CommonTags.Items.WISTERIA);
 
         this.tag(CommonTags.Items.ORNAMENTAL_GRASS)
