@@ -175,7 +175,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.HARDY_BANANA.get().asItem())
                 .addTag(ForgeTags.Items.WISTERIA)
                 .addTag(ForgeTags.Items.NARCISSUS)
-                .add(ModBlocks.HOLLYHOCK.get().asItem(), ModBlocks.PINK_HOLLYHOCK.get().asItem(), ModBlocks.ORANGE_HOLLYHOCK.get().asItem(), ModBlocks.WHITE_HOLLYHOCK.get().asItem())
+                .addTag(ForgeTags.Items.HOLLYHOCK)
                 .add(ModBlocks.WOOD_SORREL.get().asItem(), ModBlocks.PINK_WOOD_SORREL.get().asItem(), ModBlocks.WHITE_WOOD_SORREL.get().asItem(), ModBlocks.ORANGE_WOOD_SORREL.get().asItem())
                 .add(ModBlocks.WHITE_MOTH_ORCHID.get().asItem(), ModBlocks.PINK_MOTH_ORCHID.get().asItem(), ModBlocks.PURPLE_MOTH_ORCHID.get().asItem(), ModBlocks.GOLDEN_MOTH_ORCHID.get().asItem())
                 .add(ModBlocks.BRANCHY_TAMARISK.get().asItem(), ModBlocks.GOLDEN_BRANCHY_TAMARISK.get().asItem())
@@ -346,6 +346,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ForgeTags.Items.NARCISSUS)
                 .add(ModBlocks.CHINESE_NARCISSUS.get().asItem())
                 .add(ModBlocks.GOLDEN_CHINESE_NARCISSUS.get().asItem());
+
+        this.tag(ForgeTags.Items.HOLLYHOCK)
+                .add(ModBlocks.HOLLYHOCK.get().asItem(), ModBlocks.PINK_HOLLYHOCK.get().asItem(), ModBlocks.ORANGE_HOLLYHOCK.get().asItem(), ModBlocks.WHITE_HOLLYHOCK.get().asItem());
 
         this.tag(ForgeTags.Items.ORNAMENTAL_GRASS)
                 .add(ModBlocks.FOUNTAIN_GRASS.get().asItem())

@@ -31,13 +31,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "get_spring_cymbidium": {
+    "get_cymbidium": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "more_orn_plants:spring_cymbidium"
-            ]
+            "tag": "forge:cymbidium"
           }
         ]
       },
@@ -64,7 +62,7 @@
       "get_mei"
     ],
     [
-      "get_spring_cymbidium"
+      "get_cymbidium"
     ],
     [
       "get_bamboo"

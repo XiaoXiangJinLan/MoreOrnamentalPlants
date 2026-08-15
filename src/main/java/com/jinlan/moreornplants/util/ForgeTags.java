@@ -43,6 +43,7 @@ public class ForgeTags {
         public static final TagKey<Item> BAMBOO = tag("bamboo");
         public static final TagKey<Item> LOTUS = tag("lotus");
         public static final TagKey<Item> NARCISSUS = tag("narcissus");
+        public static final TagKey<Item> HOLLYHOCK = tag("hollyhock");
         public static final TagKey<Item> WISTERIA = tag("wisteria");
         public static final TagKey<Item> ORNAMENTAL_GRASS = tag("ornamental_grass");
 

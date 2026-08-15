@@ -1,4 +1,4 @@
-// 1.20.1	2026-08-12T23:24:05.1752631	Tags for minecraft:item mod id more_orn_plants
+// 1.20.1	2026-08-15T10:58:04.705934	Tags for minecraft:item mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/forge/tags/items/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/forge/tags/items/apricot_sapling.json
 3f91e650affbf0dd3681d56a151de1d2b3bb5e35 data/forge/tags/items/azalea.json
@@ -19,6 +19,7 @@ f654c35b9e135b36f2a035a4c2be72593c48dc64 data/forge/tags/items/fruits/mei.json
 c52012d64de60ce6ba838043e335a5adcecccb29 data/forge/tags/items/fruits/peach.json
 37ea26f5e9711dd112ef5bce6ee738d233ba5734 data/forge/tags/items/ginkgo_sapling.json
 8d86a028bae7eeb0c300ebc49c829a6134f97e28 data/forge/tags/items/herbaceous_peony.json
+1a9cc60553fff40aa2623a7892348386c0c1062a data/forge/tags/items/hollyhock.json
 c00048d22e4475b7fd6daa315418e2a3465b8cf7 data/forge/tags/items/lotus.json
 146ddf7fdf66f208976510a8d7c44cce306007f6 data/forge/tags/items/mei_leaves.json
 2b2addcb8f638fcc0c40b50ed46cf14376e7a05f data/forge/tags/items/mei_sapling.json
@@ -28,7 +29,7 @@ a93e8d4e063cb7dc4db2558f4c9a9520378ddde7 data/forge/tags/items/osmanthus_leaves.
 c34752788297cb2989f3bc35049a78ed54eb61fd data/forge/tags/items/osmanthus_sapling.json
 960b1549927e56672e88e874ac5d93574b12f3d7 data/forge/tags/items/peach_leaves.json
 d2f227cb07d552724083bba559a00fcb5854b235 data/forge/tags/items/peach_sapling.json
-841151a9b19ae44ee1562df97d1cfd6534eced52 data/forge/tags/items/plant_in_florilegium.json
+2a23dc2f397fa6b60bc7cfb626ac4959d6dce2b5 data/forge/tags/items/plant_in_florilegium.json
 05ee996126afa23df5258b108b49a838c71f437e data/forge/tags/items/plum_sapling.json
 03b0f5a11ed9ffe99eeaa7b86840233f2320f7e5 data/forge/tags/items/stripped_logs.json
 a7fab72ff624f6e7874d56884f64dce8d2da50c9 data/forge/tags/items/stripped_woods.json

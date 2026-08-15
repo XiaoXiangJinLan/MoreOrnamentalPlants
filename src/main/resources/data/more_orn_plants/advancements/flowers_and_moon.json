@@ -592,6 +592,54 @@
         ]
       },
       "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_38": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:wisteria_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_39": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:white_wisteria_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_40": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:blue_wisteria_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
     }
   },
   "display": {
@@ -647,7 +695,10 @@
       "visit_34",
       "visit_35",
       "visit_36",
-      "visit_37"
+      "visit_37",
+      "visit_38",
+      "visit_39",
+      "visit_40"
     ]
   ],
   "rewards": {
