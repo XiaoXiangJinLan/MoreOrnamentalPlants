@@ -18,8 +18,8 @@ then right-click to obtain the corresponding cut flower.
 New Biomes
 ==========
 #### Flower Forest Biomes
-The Peach Blossom Spring, The Apricot Spring Plateau, Penglai, 
-Flowers Grove, Crabapple Grove, Chinaberry Woods, Snow Woods, Mount Mei, Camellia Valley, Pink Camellia Valley, Red Camellia Valley.
+The Peach Blossom Spring, The Apricot Spring Plateau, Penglai, Flowers Grove, Crabapple Grove, Chinaberry Woods, Snow Woods, Mount Mei, 
+Camellia Valley, Pink Camellia Valley, Red Camellia Valley, Wisteria Valley, White Wisteria Valley, Blue Wisteria Valley.
 #### Deciduous Forest Biomes
 Colored Forest, Wutong Forest, Ginkgo Forest, Sweetgum Woods, Purple Cloud.
 #### Other Forest Biomes
@@ -94,7 +94,10 @@ New Mobs
 •**晴雪林**：生长有梨花和樟树的花林，林下生长有铃兰；  
 •**茶花谷**：生长有大量白茶花的山谷，伴有白杏和樟树点缀；  
 •**粉茶花谷**：茶花谷的变种，生长有大量粉茶花；  
-•**红茶花谷**：茶花谷的变种，生长有大量红茶花；
+•**红茶花谷**：茶花谷的变种，生长有大量红茶花；  
+•**紫藤花谷**：生长有古老紫藤树的山谷，伴有萤石点缀；  
+•**银藤花谷**：紫藤花谷的变种，生长有大量古老银藤树；  
+•**蓝藤花谷**：紫藤花谷的变种，生长有大量古老蓝藤树；
 #### 落叶林群系
 •**彩叶林**：银杏和梧桐为优势树种的彩林，地面为亮黄色，林下生长有菊花、木芙蓉；  
 •**梧桐林**：彩叶林的变种，梧桐为主的森林，朝阳之地；  
