@@ -1,7 +1,7 @@
 Ornamental Plants is a biome mod themed around botanical decoration, bringing the beauty of Eastern gardens into Minecraft. 
 It adds a variety of classic ornamental plants native to China, such as famous flowering trees: Mei Blossom, Crabapple; 
 colorful foliage trees: Ginkgo, Chinese Parasol; and renowned flowers: Chinese Rose, Herbaceous Peony, Camellia, and more. 
-This mod introduces forty new biomes and seven structures, waiting for you to explore!
+This mod introduces fifty-two new biomes and seven structures, waiting for you to explore!
 
 New Trees
 ============
@@ -18,7 +18,7 @@ then right-click to obtain the corresponding cut flower.
 New Biomes
 ==========
 #### Flower Forest Biomes
-The Peach Blossom Spring, The Apricot Spring Plateau, Penglai, Flowers Grove, Crabapple Grove, Chinaberry Woods, Snow Woods, Mount Mei, 
+The Peach Blossom Spring, The Apricot Spring Plateau, Penglai, Flowers Grove, Crabapple Grove, Chinaberry Woods, Snow Woods, 
 Camellia Valley, Pink Camellia Valley, Red Camellia Valley, Wisteria Valley, White Wisteria Valley, Blue Wisteria Valley.
 #### Deciduous Forest Biomes
 Colored Forest, Wutong Forest, Ginkgo Forest, Sweetgum Woods, Purple Cloud.
@@ -26,13 +26,13 @@ Colored Forest, Wutong Forest, Ginkgo Forest, Sweetgum Woods, Purple Cloud.
 Evergreen Forest, Longevity Forest.
 #### Plain Biomes
 Flowers Fields, Peony Sea, Peony Meadows, Chinese Rose Fields, Fendai Land, Jizi Land, Haoyue Land, Ehuang Land, Miscanthus Fields, 
-Crops Green, The Land of Abundance, Crape Myrtle Garden, Dongli Scenery, Handong Layue.
+Crops Green, The Land of Abundance, Dongli Scenery, Crape Myrtle Garden.
 #### Plateau Biomes
 Red Highlands, Azalea Forest, Ten-Mile Gallery.
 #### Wetland Biomes
 Furong Guo, Yunmeng Marsh.
 #### Snowy Biomes
-White Snow Red Mei, Fragrant Snow Sea, Snow Greets Spring, Handong Layue.
+White Snow Red Mei, Fragrant Snow Sea, Snow Greets Spring, Handong Layue, Mount Mei.
 #### Desert Biomes
 Desert Poplar Woods, Tamarisk Fields, Gold Country.
 #### River Biomes
@@ -74,7 +74,7 @@ New Mobs
 • Baihua Cat: Spawns in Flowers Grove, Crabapple Grove, The Peach Blossom Spring, and Penglai. Can be tamed with flowers. When fed Immortal Peach, Cloud Apricot, or Crabapple, it produces the corresponding fruit tree sapling. It also accelerates the growth of crops, cut flowers, and other plants within a 1-block radius.
 
 《观赏植物》是一个以植物装饰为主题的群系模组，将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠；
-彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了四十九个全新的生物群系、七个结构，等待你来探索！
+彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了五十二个新生物群系、七个新结构，等待你来探索！
 
 ## 新树种
 梅花、海棠、杏花、桃花、梨花、钟花樱、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
@@ -85,8 +85,8 @@ New Mobs
 
 ## 新群系
 #### 花林群系
-•**世外桃源**：生长有碧桃和山桃的仙境，地面长有桃红花簇，天空和水面为淡粉色；  
-•**高原春杏**：生长有粉杏和白杏的高原，地面长有春信花簇；  
+•**世外桃源**：生长有碧桃和山桃的仙境，天空和水面为淡粉色；  
+•**高原春杏**：生长有粉杏和白杏的高原；  
 •**蓬莱**：海上仙山，祥瑞之地；  
 •**百花林**：生长有多种花树的花林，林下生长有多种灌木或草本花卉；  
 •**烟雨海棠**：百花林的变种，以海棠为主的花林，林下生长有芍药和牡丹；  
@@ -105,7 +105,7 @@ New Mobs
 •**枫香林**：枫香和樟树为主的森林，林下生长有月季；  
 •**紫云林**：紫叶李为主的森林，林下生长有紫菊、紫蝴蝶兰；
 #### 其他森林群系
-•**常绿林**：樟树为优势树种的森林，林下生长有兰花、芭蕉、蝴蝶兰等植物；  
+•**常绿林**：樟树为优势树种的森林；  
 •**长寿林**：常绿林的变种，生长有多种古树的森林，长寿之地；
 #### 平原群系
 •**百花田**：生长有多种花卉，并伴有其他各种花树的花海；  
