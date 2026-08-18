@@ -36,9 +36,7 @@
     ]
   ],
   "rewards": {
-    "loot": [
-      "more_orn_plants:advancement/zhuiyue_sword"
-    ]
+    "experience": 520
   },
   "sends_telemetry_event": true
 }

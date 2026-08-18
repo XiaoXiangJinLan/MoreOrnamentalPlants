@@ -103,22 +103,41 @@ public class ModEventsBusEvents {
         if (target instanceof Player player) {
             InventoryState state = getInventoryState(player);
             Level level = player.level();
-            if (state.hasZhuiyueSword() && state.hasCaiyunSword()
-                    && level.getMoonPhase() == 0) {
+            if (state.hasZhuiyueSword() && level.getMoonPhase() == 0) {
                 event.setCanceled(true);
                 return;
             }
-            float originalDamage = event.getAmount();
-            float[] result = applyBeadDamageReduction(player, originalDamage,
+            float damage = event.getAmount();
+            if (state.hasBaihuaSword() && (state.hasFlower())) {
+                damage = Math.min(damage / 2.0f, 2.0f);
+            }
+            Holder<Biome> biome = level.getBiome(player.blockPosition());
+            if (biome.is(Tags.Biomes.IS_FLORAL)) {
+                damage = Math.min(damage / 2.0f, 2.0f);
+            }
+            float[] result = applyBeadDamageReduction(player, damage,
                     state.hasZiyingBead(), state.hasSuyuBead(), state.hasYuanyangBead());
             if (result[0] == 0) {
                 event.setCanceled(true);
                 return;
             }
-            float damage = result[1];
-            Holder<Biome> biome = level.getBiome(player.blockPosition());
-            if (state.hasBaihuaSword() && (state.hasFlower() || biome.is(Tags.Biomes.IS_FLORAL))) {
-                damage = Math.min(damage / 2.0f, 2.0f);
+            damage = result[1];
+            if (state.hasZhuiyueSword()) {
+                int moonPhase = level.getMoonPhase();
+                float multiplier = 1.0f;
+                if (moonPhase == 1 || moonPhase == 7) {
+                    multiplier = 0.25f;
+                } else if (moonPhase == 2 || moonPhase == 6) {
+                    multiplier = 0.5f;
+                } else if (moonPhase == 3 || moonPhase == 5) {
+                    multiplier = 0.75f;
+                }
+                damage *= multiplier;
+            }
+            if (state.hasCaiyunSword()) {
+                if (!level.isRaining() && !level.isThundering()) {
+                    damage *= 0.5f;
+                }
             }
             event.setAmount(damage);
         }
@@ -337,16 +356,16 @@ public class ModEventsBusEvents {
                 MobEffectInstance currentEffect2 = entity.getEffect(MobEffects.WATER_BREATHING);
                 MobEffectInstance currentEffect3 = entity.getEffect(MobEffects.DAMAGE_BOOST);
                 MobEffectInstance currentEffect4 = entity.getEffect(MobEffects.LUCK);
-                if (currentEffect1 == null || currentEffect1.getDuration() < 48300 ||
-                        currentEffect2 == null || currentEffect2.getDuration() < 48300 ||
-                        currentEffect3 == null || currentEffect3.getDuration() < 48300 ||
-                        currentEffect4 == null || currentEffect4.getDuration() < 48300) {
+                if (currentEffect1 == null || currentEffect1.getDuration() < 120300 ||
+                        currentEffect2 == null || currentEffect2.getDuration() < 120300 ||
+                        currentEffect3 == null || currentEffect3.getDuration() < 120300 ||
+                        currentEffect4 == null || currentEffect4.getDuration() < 120300) {
                     entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 1, 4));
                     entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 4));
-                    entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 48600, 0));
-                    entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 48600, 0));
-                    entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 48600, 4));
-                    entity.addEffect(new MobEffectInstance(MobEffects.LUCK, 48600, 4));
+                    entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 120600, 0));
+                    entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 120600, 0));
+                    entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 120600, 4));
+                    entity.addEffect(new MobEffectInstance(MobEffects.LUCK, 120600, 4));
                 }
             }
             Holder<Biome> biomeHolder3 = entity.level().getBiome(entity.blockPosition());

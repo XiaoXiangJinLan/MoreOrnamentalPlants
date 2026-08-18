@@ -149,6 +149,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PINK_CHRYSANTHEMUM_LAND = registerKey("pink_chrysanthemum_land");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_GROVE_PLACED = registerKey("chrysanthemum_grove_placed");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_DONGLI_PLACED = registerKey("chrysanthemum_dongli_placed");
+    public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_DONGLI_PLACED_1 = registerKey("chrysanthemum_dongli_placed_1");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_DONGLI_PLACED_2 = registerKey("chrysanthemum_dongli_placed_2");
     public static final ResourceKey<PlacedFeature> CHRYSANTHEMUM_DONGLI_PLACED_3 = registerKey("chrysanthemum_dongli_placed_3");
     public static final ResourceKey<PlacedFeature> CHINESE_ROSE_PLACED = registerKey("chinese_rose_placed");
@@ -1078,6 +1079,9 @@ public class ModPlacedFeatures {
 
         register(context, CHRYSANTHEMUM_DONGLI_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_DONGLI),
                 List.of(RarityFilter.onAverageOnceEvery(1),
+                        InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, CHRYSANTHEMUM_DONGLI_PLACED_1, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_DONGLI_2),
+                List.of(CountPlacement.of(3),
                         InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, CHRYSANTHEMUM_DONGLI_PLACED_2, configuredFeatures.getOrThrow(ModConfiguredFeatures.CHRYSANTHEMUM_GROVE),
                 List.of(RarityFilter.onAverageOnceEvery(1),
