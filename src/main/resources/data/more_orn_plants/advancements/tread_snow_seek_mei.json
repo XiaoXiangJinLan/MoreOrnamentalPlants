@@ -96,7 +96,10 @@
     ]
   ],
   "rewards": {
-    "experience": 54
+    "experience": 54,
+    "loot": [
+      "more_orn_plants:advancement/golden_mei_sapling"
+    ]
   },
   "sends_telemetry_event": true
 }

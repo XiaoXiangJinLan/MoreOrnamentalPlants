@@ -698,13 +698,13 @@
       "visit_37",
       "visit_38",
       "visit_39",
-      "visit_40"
+      "visit_40",
+      "visit_41",
+      "visit_42"
     ]
   ],
   "rewards": {
-    "loot": [
-      "more_orn_plants:advancements/zhuiyue_sword"
-    ]
+    "experience": 520
   },
   "sends_telemetry_event": true
 }

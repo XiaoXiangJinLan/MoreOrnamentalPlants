@@ -135,6 +135,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CHRYSANTHEMUM_LAND = registerKey("pink_chrysanthemum_land");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_GROVE = registerKey("chrysanthemum_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_DONGLI = registerKey("chrysanthemum_dongli");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHRYSANTHEMUM_DONGLI_2 = registerKey("chrysanthemum_dongli_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINESE_ROSE_KEY = registerKey("chinese_rose_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_CHINESE_ROSE_KEY = registerKey("pink_chinese_rose_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_CHINESE_ROSE_KEY = registerKey("purple_chinese_rose_key");
@@ -2013,6 +2014,16 @@ public class ModConfiguredFeatures {
                                         .add(ModBlocks.BLACK_CHRYSANTHEMUM.get().defaultBlockState(), 1)
                                         .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().defaultBlockState(), 1)
                                         .add(ModBlocks.PINK_CHRYSANTHEMUM.get().defaultBlockState(), 1).build())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, CHRYSANTHEMUM_DONGLI_2, Feature.FLOWER, new RandomPatchConfiguration(24, 7, 3,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(new WeightedStateProvider(
+                                SimpleWeightedRandomList.<BlockState>builder()
+                                        .add(ModBlocks.CHRYSANTHEMUM.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.XIHU_LIUYUE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.GOLD_BACKED_SCARLET_MUM.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));

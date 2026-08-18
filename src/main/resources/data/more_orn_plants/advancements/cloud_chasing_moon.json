@@ -1,17 +1,677 @@
 {
   "parent": "more_orn_plants:flowers_and_moon",
   "criteria": {
-    "get_zhuiyue_sword": {
+    "visit_1": {
       "conditions": {
-        "items": [
+        "player": [
           {
-            "items": [
-              "more_orn_plants:zhuiyue_sword"
-            ]
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:red_mei_forest"
+              }
+            }
           }
         ]
       },
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_2": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:fragrant_snow_sea"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_3": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:snow_greets_spring"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_4": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:colored_forest"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_5": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:wutong_forest"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_6": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:camellia_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_7": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:red_camellia_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_8": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:pink_camellia_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_9": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:peony_sea"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_10": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:peony_meadows"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_11": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:furong_guo"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_12": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:crops_green"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_13": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:the_land_of_abundance"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_14": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:pink_land"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_15": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:purple_land"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_16": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:white_land"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_17": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:yellow_land"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_18": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:chinese_rose_fields"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_19": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:crape_myrtle_garden"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_20": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:dongli_scenery"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_21": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:spring_river"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_22": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:lotus_river"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_23": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:autumn_river"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_24": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:azalea_forest"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_25": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:ten_mile_gallery"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_26": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:the_peach_blossom_spring"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_27": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:flowers_grove"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_28": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:flowers_fields"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_29": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:crabapple_grove"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_30": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:chinaberry_woods"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_31": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:sweetgum_woods"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_32": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:snow_woods"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_33": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:purple_cloud"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_34": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:penglai"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_35": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:yunmeng_marsh"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_36": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:mount_mei"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_37": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:the_apricot_spring_plateau"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_38": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:wisteria_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_39": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:white_wisteria_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_40": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:blue_wisteria_valley"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_41": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:red_highlands"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_42": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:longevity_forest"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
     }
   },
   "display": {
@@ -32,11 +692,135 @@
   },
   "requirements": [
     [
-      "get_zhuiyue_sword"
+      "visit_1"
+    ],
+    [
+      "visit_2"
+    ],
+    [
+      "visit_3"
+    ],
+    [
+      "visit_4"
+    ],
+    [
+      "visit_5"
+    ],
+    [
+      "visit_6"
+    ],
+    [
+      "visit_7"
+    ],
+    [
+      "visit_8"
+    ],
+    [
+      "visit_9"
+    ],
+    [
+      "visit_10"
+    ],
+    [
+      "visit_11"
+    ],
+    [
+      "visit_12"
+    ],
+    [
+      "visit_13"
+    ],
+    [
+      "visit_14"
+    ],
+    [
+      "visit_15"
+    ],
+    [
+      "visit_16"
+    ],
+    [
+      "visit_17"
+    ],
+    [
+      "visit_18"
+    ],
+    [
+      "visit_19"
+    ],
+    [
+      "visit_20"
+    ],
+    [
+      "visit_21"
+    ],
+    [
+      "visit_22"
+    ],
+    [
+      "visit_23"
+    ],
+    [
+      "visit_24"
+    ],
+    [
+      "visit_25"
+    ],
+    [
+      "visit_26"
+    ],
+    [
+      "visit_27"
+    ],
+    [
+      "visit_28"
+    ],
+    [
+      "visit_29"
+    ],
+    [
+      "visit_30"
+    ],
+    [
+      "visit_31"
+    ],
+    [
+      "visit_32"
+    ],
+    [
+      "visit_33"
+    ],
+    [
+      "visit_34"
+    ],
+    [
+      "visit_35"
+    ],
+    [
+      "visit_36"
+    ],
+    [
+      "visit_37"
+    ],
+    [
+      "visit_38"
+    ],
+    [
+      "visit_39"
+    ],
+    [
+      "visit_40"
+    ],
+    [
+      "visit_41"
+    ],
+    [
+      "visit_42"
     ]
   ],
   "rewards": {
     "loot": [
+      "more_orn_plants:advancement/zhuiyue_sword",
       "more_orn_plants:advancements/caiyun_sword"
     ]
   },
