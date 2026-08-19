@@ -71,11 +71,11 @@ public class ModEvents {
                 return;
             }
             float damage = event.getAmount();
-            if (state.hasBaihuaSword() && (state.hasFlower())) {
+            if (state.hasBaihuaSword() && state.hasFlower()) {
                 damage = Math.min(damage / 2.0f, 2.0f);
             }
             Holder<Biome> biome = level.getBiome(player.blockPosition());
-            if (biome.is(ForgeTags.Biomes.IS_FLORAL)) {
+            if (state.hasBaihuaSword() && biome.is(ForgeTags.Biomes.IS_FLORAL)) {
                 damage = Math.min(damage / 2.0f, 2.0f);
             }
             float[] result = applyBeadDamageReduction(player, damage,

@@ -640,6 +640,38 @@
         ]
       },
       "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_41": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:red_highlands"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
+    },
+    "visit_42": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "more_orn_plants:longevity_forest"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "more_orn_plants:flowers_and_moon"
     }
   },
   "display": {
