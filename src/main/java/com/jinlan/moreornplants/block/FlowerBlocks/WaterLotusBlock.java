@@ -30,19 +30,23 @@ import org.jetbrains.annotations.Nullable;
 public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterloggedBlock, BonemealableBlock {
     private static final VoxelShape LOWER_SHAPE = Block.box(2.0D, 0.0D, 2.0D, 14.0D, 16.0D, 14.0D);
     private static final VoxelShape UPPER_SHAPE = Block.box(2.0D, 0.0D, 2.0D, 14.0D, 16.0D, 14.0D);
+    public static final BooleanProperty ON_FARMLAND = BooleanProperty.create("on_farmland");
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
 
     public WaterLotusBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
-                .setValue(HALF, DoubleBlockHalf.LOWER).setValue(WATERLOGGED, true).setValue(AGE, 0));
+                .setValue(HALF, DoubleBlockHalf.LOWER)
+                .setValue(ON_FARMLAND, false)
+                .setValue(WATERLOGGED, true)
+                .setValue(AGE, 0));
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
-        builder.add(WATERLOGGED, AGE);
+        builder.add(ON_FARMLAND, WATERLOGGED, AGE);
     }
 
     @Nullable
@@ -56,8 +60,10 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
                 fluidState.is(Fluids.WATER) &&
                 fluidState.getAmount() == 8 &&
                 context.getLevel().getBlockState(pos.above()).canBeReplaced(context)) {
+            boolean onFarmland = context.getLevel().getBlockState(pos.below()).getBlock() instanceof FarmBlock;
             return this.defaultBlockState()
                     .setValue(HALF, DoubleBlockHalf.LOWER)
+                    .setValue(ON_FARMLAND, onFarmland)
                     .setValue(WATERLOGGED, true)
                     .setValue(AGE, 0);
         }
@@ -93,6 +99,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
         BlockPos abovePos = pos.above();
         BlockState aboveState = this.defaultBlockState()
                 .setValue(HALF, DoubleBlockHalf.UPPER)
+                .setValue(ON_FARMLAND, state.getValue(ON_FARMLAND))
                 .setValue(WATERLOGGED, false)
                 .setValue(AGE, state.getValue(AGE));
         level.setBlock(abovePos, aboveState, 3);
@@ -169,7 +176,7 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
+    public void performBonemeal(@NotNull ServerLevel level, @NotNull RandomSource random, @NotNull BlockPos pos, BlockState state) {
         int currentAge = state.getValue(AGE);
         if (currentAge < 3) {
             // 骨粉增加1-2个阶段
@@ -181,11 +188,23 @@ public class WaterLotusBlock extends DoublePlantBlock implements SimpleWaterlogg
     }
 
     @Override
-    public @NotNull BlockState updateShape(BlockState state, Direction direction, BlockState neighborState,
-                                           LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+    public @NotNull BlockState updateShape(BlockState state, @NotNull Direction direction, @NotNull BlockState neighborState,
+                                           @NotNull LevelAccessor level, @NotNull BlockPos pos, @NotNull BlockPos neighborPos) {
         // 处理含水逻辑
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+        }
+
+        if (state.getValue(HALF) == DoubleBlockHalf.LOWER && direction == Direction.DOWN) {
+            boolean onFarmland = level.getBlockState(pos.below()).getBlock() instanceof FarmBlock;
+            if (state.getValue(ON_FARMLAND) != onFarmland) {
+                level.setBlock(pos, state.setValue(ON_FARMLAND, onFarmland), 3);
+                BlockPos abovePos = pos.above();
+                BlockState aboveState = level.getBlockState(abovePos);
+                if (aboveState.is(this)) {
+                    level.setBlock(abovePos, aboveState.setValue(ON_FARMLAND, onFarmland), 3);
+                }
+            }
         }
 
         // 如果无法存活，返回空气

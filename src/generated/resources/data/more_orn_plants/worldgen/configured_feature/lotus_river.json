@@ -14,6 +14,7 @@
                   "Properties": {
                     "age": "3",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -25,6 +26,7 @@
                   "Properties": {
                     "age": "0",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -36,6 +38,7 @@
                   "Properties": {
                     "age": "0",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -47,6 +50,7 @@
                   "Properties": {
                     "age": "0",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -58,6 +62,7 @@
                   "Properties": {
                     "age": "1",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -69,6 +74,7 @@
                   "Properties": {
                     "age": "1",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -80,6 +86,7 @@
                   "Properties": {
                     "age": "1",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -91,6 +98,7 @@
                   "Properties": {
                     "age": "2",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -102,6 +110,7 @@
                   "Properties": {
                     "age": "2",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -113,6 +122,7 @@
                   "Properties": {
                     "age": "2",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -124,6 +134,7 @@
                   "Properties": {
                     "age": "3",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -135,6 +146,7 @@
                   "Properties": {
                     "age": "3",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },
@@ -146,6 +158,7 @@
                   "Properties": {
                     "age": "3",
                     "half": "lower",
+                    "on_farmland": "false",
                     "waterlogged": "true"
                   }
                 },

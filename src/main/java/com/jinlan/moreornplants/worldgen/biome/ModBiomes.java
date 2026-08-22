@@ -301,7 +301,7 @@ public class ModBiomes {
                 .hasPrecipitation(true).temperature(0.6f).downfall(0.8f)
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(0x93A0F3).waterFogColor(0x925F9B).skyColor(0xBBAAFF).fogColor(0xE1CFFF).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                        .waterColor(0x93A0F3).waterFogColor(0x925F9B).skyColor(0xFFCCDD).fogColor(0xFFE5EA).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
                 .build();
     }
 
@@ -1015,7 +1015,7 @@ public class ModBiomes {
                 .hasPrecipitation(true).temperature(0.7f).downfall(0.6f)
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(4159204).waterFogColor(329011).skyColor(8103167).fogColor(12638463).foliageColorOverride(0xD06E96).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                        .waterColor(4159204).waterFogColor(329011).skyColor(0xCAA8E5).fogColor(0xD06E96).foliageColorOverride(0xD06E96).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
                 .build();
     }
 

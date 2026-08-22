@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "more_orn_plants:muxue_grass"
+    },
+    {
+      "item": "more_orn_plants:muxue_grass"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "more_orn_plants:muxue_soup"
+  }
+}
