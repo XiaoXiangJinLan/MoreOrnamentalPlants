@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [
+      {
+        "type": "more_orn_plants:fallen_log_decorator",
+        "decorator_chance": 0.5,
+        "decorator_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:moss_carpet"
+          }
+        },
+        "log_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "more_orn_plants:purple_leaf_plum_log",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        "probability": 0.5
+      }
+    ],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "foliage_placer": {
+      "type": "minecraft:fancy_foliage_placer",
+      "height": 5,
+      "offset": 4,
+      "radius": 2
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "more_orn_plants:purple_leaf_plum_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 1
+    },
+    "trunk_placer": {
+      "type": "minecraft:fancy_trunk_placer",
+      "base_height": 7,
+      "height_rand_a": 2,
+      "height_rand_b": 0
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "more_orn_plants:purple_leaf_plum_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

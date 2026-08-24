@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:tall_muxue_grass"
+    },
+    {
+      "item": "more_orn_plants:tall_muxue_grass"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_orn_plants:muxue_grass_bale"
+  }
+}
