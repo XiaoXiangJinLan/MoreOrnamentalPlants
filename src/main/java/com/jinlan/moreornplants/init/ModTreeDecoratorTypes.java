@@ -28,6 +28,9 @@ public class ModTreeDecoratorTypes {
     public static final Supplier<TreeDecoratorType<LeafPileDecorator>> LEAF_PILE_DECORATOR =
             TREE_DECORATOR.register("leaf_pile_decorator", () -> new TreeDecoratorType<>(LeafPileDecorator.CODEC));
 
+    public static final Supplier<TreeDecoratorType<FallenLogDecorator>> FALLEN_LOG_DECORATOR =
+            TREE_DECORATOR.register("fallen_log_decorator", () -> new TreeDecoratorType<>(FallenLogDecorator.CODEC));
+
     public static void register(IEventBus eventBus){
         TREE_DECORATOR.register(eventBus);
     }

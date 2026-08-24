@@ -1247,10 +1247,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.LOTUS_SEED), has(ModItems.LOTUS_SEED))
                 .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.MUXUE_SOUP)
-                .requires(ModBlocks.MUXUE_GRASS, 2)
+                .requires(ModItems.MUXUE_GRASS_BALE, 2)
                 .requires(Items.BOWL)
-                .unlockedBy(getHasName(ModBlocks.MUXUE_GRASS), has(ModBlocks.MUXUE_GRASS))
+                .unlockedBy(getHasName(ModItems.MUXUE_GRASS_BALE), has(ModItems.MUXUE_GRASS_BALE))
                 .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MUXUE_GRASS_BALE)
+                .requires(ModBlocks.MUXUE_GRASS, 4)
+                .unlockedBy(getHasName(ModBlocks.MUXUE_GRASS), has(ModBlocks.MUXUE_GRASS))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "muxue_grass_bale_from_muxue_grass");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MUXUE_GRASS_BALE)
+                .requires(ModBlocks.TALL_MUXUE_GRASS, 2)
+                .unlockedBy(getHasName(ModBlocks.TALL_MUXUE_GRASS), has(ModBlocks.TALL_MUXUE_GRASS))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "muxue_grass_bale_from_tall_muxue_grass");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MEI_XIANGNANG)
                 .pattern(" # ")

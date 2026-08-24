@@ -680,6 +680,12 @@
     },
     "more_orn_plants:muxue_grass": {
       "chance": 0.65
+    },
+    "more_orn_plants:tall_muxue_grass": {
+      "chance": 0.65
+    },
+    "more_orn_plants:muxue_grass_bale": {
+      "chance": 0.85
     }
   }
 }

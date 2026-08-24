@@ -174,7 +174,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_MOTH_ORCHID.asItem(), ModBlocks.PINK_MOTH_ORCHID.asItem(), ModBlocks.PURPLE_MOTH_ORCHID.asItem(), ModBlocks.GOLDEN_MOTH_ORCHID.asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.asItem(), ModBlocks.SPRING_PETALS.asItem())
                 .add(ModBlocks.WOOD_SORREL.asItem(), ModBlocks.PINK_WOOD_SORREL.asItem(), ModBlocks.WHITE_WOOD_SORREL.asItem(), ModBlocks.ORANGE_WOOD_SORREL.asItem())
-                .add(ModItems.BAMBOO_STICK.get(), ModBlocks.MUXUE_GRASS.asItem())
+                .add(ModItems.BAMBOO_STICK.get(), ModBlocks.MUXUE_GRASS.asItem(), ModBlocks.TALL_MUXUE_GRASS.asItem())
                 .add(ModBlocks.BRANCHY_TAMARISK.asItem(), ModBlocks.GOLDEN_BRANCHY_TAMARISK.asItem())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
@@ -446,10 +446,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.LOTUS_ROOT_SOUP.get());
 
         this.tag(ItemTags.AXOLOTL_FOOD)
-                .add(ModBlocks.MUXUE_GRASS.asItem());
+                .add(ModBlocks.MUXUE_GRASS.asItem(), ModBlocks.TALL_MUXUE_GRASS.asItem(), ModItems.MUXUE_GRASS_BALE.get());
 
         this.tag(ItemTags.TURTLE_FOOD)
-                .add(ModBlocks.MUXUE_GRASS.asItem());
+                .add(ModBlocks.MUXUE_GRASS.asItem(), ModBlocks.TALL_MUXUE_GRASS.asItem(), ModItems.MUXUE_GRASS_BALE.get());
 
         this.tag(ModTags.Items.ZIYING_TOOLS)
                 .add(ModItems.ZIYING_SWORD.get(), ModItems.ZIYING_AXE.get(), ModItems.ZIYING_PICKAXE.get(),

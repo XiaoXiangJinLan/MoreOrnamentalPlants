@@ -261,6 +261,8 @@ public class ModItems {
     public static final DeferredItem<Item> LOTUS_SEED_SOUP =
             ITEMS.register("lotus_seed_soup", () -> new FoodBlockItem(ModBlocks.LOTUS_SEED_SOUP.get(), new Item.Properties().food(ModFoods.LOTUS_SEED_SOUP)));
 
+    public static final DeferredItem<Item> MUXUE_GRASS_BALE =
+            ITEMS.register("muxue_grass_bale", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MUXUE_SOUP =
             ITEMS.register("muxue_soup", () -> new MuxueSoupItem(ModBlocks.MUXUE_SOUP.get(), new Item.Properties().food(ModFoods.MUXUE_GRASS)));
 

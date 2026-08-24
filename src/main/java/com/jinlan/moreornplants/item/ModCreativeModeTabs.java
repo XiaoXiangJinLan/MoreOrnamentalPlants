@@ -210,6 +210,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WHITE_FOUNTAIN_GRASS);
                         pOutput.accept(ModBlocks.BRANCHY_TAMARISK);
                         pOutput.accept(ModBlocks.GOLDEN_BRANCHY_TAMARISK);
+                        pOutput.accept(ModBlocks.MUXUE_GRASS);
                         pOutput.accept(ModItems.BAMBOO_STICK);
                         pOutput.accept(ModBlocks.PEACH_PINK_PETALS);
                         pOutput.accept(ModBlocks.FRAGRANT_SNOW_PETALS);
@@ -278,7 +279,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.HARDY_BANANA);
                         pOutput.accept(ModBlocks.MISCANTHUS);
                         pOutput.accept(ModBlocks.GOLDEN_MISCANTHUS);
-                        pOutput.accept(ModBlocks.MUXUE_GRASS);
+                        pOutput.accept(ModBlocks.TALL_MUXUE_GRASS);
                         pOutput.accept(ModBlocks.RED_MEI_LOG);
                         pOutput.accept(ModBlocks.WHITE_MEI_LOG);
                         pOutput.accept(ModBlocks.GREEN_CALYX_MEI_LOG);
@@ -616,6 +617,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.LOTUS_ROOT);
                         pOutput.accept(ModItems.LOTUS_SEED_POD);
                         pOutput.accept(ModItems.LOTUS_SEED);
+                        pOutput.accept(ModItems.MUXUE_GRASS_BALE);
                         pOutput.accept(ModItems.BAMBOO_SHOOTS_SOUP);
                         pOutput.accept(ModItems.LOTUS_ROOT_SOUP);
                         pOutput.accept(ModItems.LOTUS_SEED_SOUP);

@@ -1498,7 +1498,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MUXUE_GRASS =
             registerBlock("muxue_grass", () -> new MuxueGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SEAGRASS).lightLevel(p_220867_ -> 12)));
     public static final DeferredBlock<Block> TALL_MUXUE_GRASS =
-            BLOCKS.register("tall_muxue_grass", () -> new TallMuxueGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_SEAGRASS).lightLevel(p_220867_ -> 12)));
+            registerBlock("tall_muxue_grass", () -> new TallMuxueGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_SEAGRASS).lightLevel(p_220867_ -> 12)));
 
     public static final DeferredBlock<Block> ORNAMENTAL_PEACH_PETALS =
             BLOCKS.register("ornamental_peach_petals", () -> leafPile2(MapColor.COLOR_PINK));
