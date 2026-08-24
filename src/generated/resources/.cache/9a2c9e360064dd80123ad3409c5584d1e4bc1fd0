@@ -1,4 +1,4 @@
-// 1.20.1	2026-08-12T23:24:05.1785032	Item Models: more_orn_plants
+// 1.20.1	2026-08-23T22:37:48.2585785	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -240,7 +240,8 @@ d8245a08c5a9f13674a5cdd2c6c28f2dccb7d817 assets/more_orn_plants/models/item/mayi
 3b8cfc4a100d929711cabbfa82ae32ddd411a310 assets/more_orn_plants/models/item/mei.json
 3b2e9f0a19fa597baaeb0cbde02a4079271563b6 assets/more_orn_plants/models/item/mei_xiangnang.json
 c8dd95d8f382dd745659f51c1eb07a18b4f965dc assets/more_orn_plants/models/item/mottled_bamboo.json
-2568046f0b8118930f90b77a231b599c3280dc68 assets/more_orn_plants/models/item/muxue_grass.json
+0242d0029c1a73b333ad6300af76e9b60a203e76 assets/more_orn_plants/models/item/muxue_grass.json
+8feae5d6f5e07153b9757b7910fd8086ac0d4390 assets/more_orn_plants/models/item/muxue_grass_bale.json
 90d3b53e303cd05757a94df4d89019ae42fc85b9 assets/more_orn_plants/models/item/muxue_soup.json
 d9512b5ee86f29985512c77d3c3aefa4559efd2f assets/more_orn_plants/models/item/nanjing_wisteria.json
 dd702884fcb105def37fa9ac8df611cef07d24c5 assets/more_orn_plants/models/item/ochre_yellow_peony.json
@@ -384,6 +385,7 @@ afa4bca4aa7022fed8eb82f2dbdc9a913a89ed07 assets/more_orn_plants/models/item/swee
 d12a57a131745d4b6d01e00c10c070854cd7f02b assets/more_orn_plants/models/item/sweetgum_trapdoor.json
 3b93bc53cc81fbd8c707be0bd98985020eae1808 assets/more_orn_plants/models/item/taiwan_cherry_sapling.json
 3a4475dbc82d316bdc17a194e90b21eaeb0f3196 assets/more_orn_plants/models/item/tall_camellia.json
+59927d0a7dd950810866b46ce2b833fd83780142 assets/more_orn_plants/models/item/tall_muxue_grass.json
 d2ad6f8ba4e23af057794b20c191097334248aa0 assets/more_orn_plants/models/item/tall_pink_camellia.json
 5ea081c1a175d401b5a14b2e925bf844a8577cb8 assets/more_orn_plants/models/item/tall_versicolor_camellia.json
 880f609b1e7beaef1eb821d884748d1094a6f840 assets/more_orn_plants/models/item/tall_white_camellia.json

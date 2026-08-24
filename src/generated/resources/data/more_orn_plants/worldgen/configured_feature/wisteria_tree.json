@@ -26,7 +26,7 @@
         },
         "max_length": 3,
         "max_vines": 72,
-        "min_length": 2
+        "min_length": 1
       }
     ],
     "dirt_provider": {

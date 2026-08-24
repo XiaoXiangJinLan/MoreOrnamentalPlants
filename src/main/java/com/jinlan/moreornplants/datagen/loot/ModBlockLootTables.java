@@ -1175,13 +1175,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                                         .hasProperty(WaterLotusBlock.AGE, 3)
                                         .hasProperty(WaterLotusBlock.ON_FARMLAND, true)))));
         this.dropSelf(ModBlocks.MUXUE_GRASS.get());
-        this.add(ModBlocks.TALL_MUXUE_GRASS.get(), block -> LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                        .add(LootItem.lootTableItem(ModBlocks.MUXUE_GRASS.get().asItem())
-                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2))))
-                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                .setProperties(StatePropertiesPredicate.Builder.properties()
-                                        .hasProperty(DoublePlantBlock.HALF, DoubleBlockHalf.LOWER)))));
+        this.add(ModBlocks.TALL_MUXUE_GRASS.get(), createSinglePropConditionTable(ModBlocks.TALL_MUXUE_GRASS.get(),
+                DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
 
         this.add(ModBlocks.PEACH_PINK_PETALS.get(), createPetalsDrops(ModBlocks.PEACH_PINK_PETALS.get()));
         this.add(ModBlocks.FRAGRANT_SNOW_PETALS.get(), createPetalsDrops(ModBlocks.FRAGRANT_SNOW_PETALS.get()));

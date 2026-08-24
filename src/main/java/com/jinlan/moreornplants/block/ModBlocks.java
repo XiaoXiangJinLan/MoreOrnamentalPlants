@@ -1498,7 +1498,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> MUXUE_GRASS =
             registerBlock("muxue_grass", () -> new MuxueGrassBlock(BlockBehaviour.Properties.copy(Blocks.SEAGRASS).lightLevel(p_220867_ -> 12)));
     public static final RegistryObject<Block> TALL_MUXUE_GRASS =
-            BLOCKS.register("tall_muxue_grass", () -> new TallMuxueGrassBlock(BlockBehaviour.Properties.copy(Blocks.TALL_SEAGRASS).lightLevel(p_220867_ -> 12)));
+            registerBlock("tall_muxue_grass", () -> new TallMuxueGrassBlock(BlockBehaviour.Properties.copy(Blocks.TALL_SEAGRASS).lightLevel(p_220867_ -> 12)));
 
     public static final RegistryObject<Block> ORNAMENTAL_PEACH_PETALS =
             BLOCKS.register("ornamental_peach_petals", () -> leafPile2(MapColor.COLOR_PINK));

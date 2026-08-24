@@ -1,6 +1,6 @@
 package com.jinlan.moreornplants.worldgen.tree;
 
-import com.jinlan.moreornplants.worldgen.ModConfiguredFeatures;
+import com.jinlan.moreornplants.worldgen.features.ModTreeFeatures;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
@@ -12,9 +12,9 @@ public class GoldenMeiTreeGrower extends AbstractTreeGrower {
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
         if (pRandom.nextInt(10) == 0) {
-            return ModConfiguredFeatures.ANCIENT_GOLDEN_MEI;
+            return ModTreeFeatures.ANCIENT_GOLDEN_MEI;
         } else {
-            return ModConfiguredFeatures.GOLDEN_MEI;
+            return ModTreeFeatures.GOLDEN_MEI;
         }
     }
 }

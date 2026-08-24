@@ -52,6 +52,15 @@
                   }
                 },
                 "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:purple_chinese_rose",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
               }
             ]
           }

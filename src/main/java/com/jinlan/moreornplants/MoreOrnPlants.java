@@ -69,7 +69,7 @@ public class MoreOrnPlants
         ModTrunkPlacerTypes.register(modEventBus);
         ModFoliagePlacerTypes.register(modEventBus);
         ModTreeDecoratorTypes.register(modEventBus);
-        ModFeatures.register(modEventBus);
+        ModBambooFeatures.register(modEventBus);
         ModCriteriaTriggers.register();
 
         context.registerConfig(ModConfig.Type.COMMON, SPEC, "moreornplants-common.toml");

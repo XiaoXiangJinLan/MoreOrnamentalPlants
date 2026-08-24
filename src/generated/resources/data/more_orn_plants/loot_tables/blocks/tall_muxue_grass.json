@@ -5,24 +5,22 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "more_orn_plants:tall_muxue_grass",
-          "condition": "minecraft:block_state_property",
-          "properties": {
-            "half": "lower"
-          }
+          "condition": "minecraft:survives_explosion"
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "conditions": [
             {
-              "add": false,
-              "count": 2.0,
-              "function": "minecraft:set_count"
+              "block": "more_orn_plants:tall_muxue_grass",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
             }
           ],
-          "name": "more_orn_plants:muxue_grass"
+          "name": "more_orn_plants:tall_muxue_grass"
         }
       ],
       "rolls": 1.0

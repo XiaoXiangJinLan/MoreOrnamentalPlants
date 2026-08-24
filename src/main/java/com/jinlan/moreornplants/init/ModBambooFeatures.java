@@ -10,7 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModFeatures {
+public class ModBambooFeatures {
     public static final DeferredRegister<Feature<?>> FEATURES =
         DeferredRegister.create(ForgeRegistries.FEATURES, MoreOrnPlants.MOD_ID);
 

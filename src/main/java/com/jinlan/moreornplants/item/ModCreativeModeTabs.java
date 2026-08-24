@@ -209,6 +209,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WHITE_FOUNTAIN_GRASS.get());
                         pOutput.accept(ModBlocks.BRANCHY_TAMARISK.get());
                         pOutput.accept(ModBlocks.GOLDEN_BRANCHY_TAMARISK.get());
+                        pOutput.accept(ModBlocks.MUXUE_GRASS.get());
                         pOutput.accept(ModItems.BAMBOO_STICK.get());
                         pOutput.accept(ModBlocks.PEACH_PINK_PETALS.get());
                         pOutput.accept(ModBlocks.FRAGRANT_SNOW_PETALS.get());
@@ -277,7 +278,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.HARDY_BANANA.get());
                         pOutput.accept(ModBlocks.MISCANTHUS.get());
                         pOutput.accept(ModBlocks.GOLDEN_MISCANTHUS.get());
-                        pOutput.accept(ModBlocks.MUXUE_GRASS.get());
+                        pOutput.accept(ModBlocks.TALL_MUXUE_GRASS.get());
                         pOutput.accept(ModBlocks.RED_MEI_LOG.get());
                         pOutput.accept(ModBlocks.WHITE_MEI_LOG.get());
                         pOutput.accept(ModBlocks.GREEN_CALYX_MEI_LOG.get());
@@ -615,6 +616,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.LOTUS_ROOT.get());
                         pOutput.accept(ModItems.LOTUS_SEED_POD.get());
                         pOutput.accept(ModItems.LOTUS_SEED.get());
+                        pOutput.accept(ModItems.MUXUE_GRASS_BALE.get());
                         pOutput.accept(ModItems.BAMBOO_SHOOTS_SOUP.get());
                         pOutput.accept(ModItems.LOTUS_ROOT_SOUP.get());
                         pOutput.accept(ModItems.LOTUS_SEED_SOUP.get());

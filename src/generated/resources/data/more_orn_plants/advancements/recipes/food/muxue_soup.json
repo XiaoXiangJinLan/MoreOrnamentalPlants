@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_muxue_grass": {
+    "has_muxue_grass_bale": {
       "conditions": {
         "items": [
           {
             "items": [
-              "more_orn_plants:muxue_grass"
+              "more_orn_plants:muxue_grass_bale"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_muxue_grass",
+      "has_muxue_grass_bale",
       "has_the_recipe"
     ]
   ],

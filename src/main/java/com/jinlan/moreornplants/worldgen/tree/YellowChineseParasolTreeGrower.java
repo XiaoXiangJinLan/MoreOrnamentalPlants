@@ -1,6 +1,6 @@
 package com.jinlan.moreornplants.worldgen.tree;
 
-import com.jinlan.moreornplants.worldgen.ModConfiguredFeatures;
+import com.jinlan.moreornplants.worldgen.features.ModTreeFeatures;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
@@ -11,6 +11,6 @@ public class YellowChineseParasolTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return pRandom.nextBoolean() ? ModConfiguredFeatures.YELLOW_CHINESE_PARASOL : ModConfiguredFeatures.YELLOW_CHINESE_PARASOL_WITH_LEAF_PILE;
+        return pRandom.nextBoolean() ? ModTreeFeatures.YELLOW_CHINESE_PARASOL : ModTreeFeatures.YELLOW_CHINESE_PARASOL_WITH_LEAF_PILE;
     }
 }

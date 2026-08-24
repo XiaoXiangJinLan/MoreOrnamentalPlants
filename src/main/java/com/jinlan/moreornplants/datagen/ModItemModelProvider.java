@@ -357,6 +357,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         flowerItem(ModBlocks.PINK_FOUNTAIN_GRASS);
         flowerItem(ModBlocks.WHITE_FOUNTAIN_GRASS);
         flowerItem(ModBlocks.BAMBOO_STICK);
+        flowerItem(ModBlocks.MUXUE_GRASS);
 
         tallCrossItem(ModBlocks.WINTERSWEET);
         tallCrossItem(ModBlocks.YAO_HUANG_PEONY);
@@ -391,6 +392,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         tallCrossItem(ModBlocks.PINK_HOLLYHOCK);
         tallCrossItem(ModBlocks.ORANGE_HOLLYHOCK);
         tallCrossItem(ModBlocks.WHITE_HOLLYHOCK);
+        tallCrossItem(ModBlocks.TALL_MUXUE_GRASS);
 
         flowerItem(ModBlocks.CUT_PEONY);
         flowerItem(ModBlocks.CUT_LIGHT_PINK_PEONY);
@@ -429,7 +431,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RED_LOTUS);
         simpleItem(ModItems.LOTUS_LEAF);
         simplerBlockItem(ModBlocks.HARDY_BANANA);
-        simplerBlockItem(ModBlocks.MUXUE_GRASS);
         simpleItem(ModItems.LOTUS_ROOT);
         simpleItem(ModItems.LOTUS_SEED);
         simpleItem(ModItems.LOTUS_SEED_POD);
@@ -442,6 +443,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.IMMORTAL_PEACH);
         simpleItem(ModItems.MEI);
         simpleItem(ModItems.GOLDEN_MEI);
+        simpleItem(ModItems.MUXUE_GRASS_BALE);
         simpleItem(ModItems.MUXUE_SOUP);
 
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);

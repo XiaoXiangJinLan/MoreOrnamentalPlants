@@ -1,6 +1,6 @@
 package com.jinlan.moreornplants.worldgen.tree;
 
-import com.jinlan.moreornplants.worldgen.ModConfiguredFeatures;
+import com.jinlan.moreornplants.worldgen.features.ModTreeFeatures;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.grower.AbstractMegaTreeGrower;
@@ -11,12 +11,12 @@ public class GoldenGinkgoTreeGrower extends AbstractMegaTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return pRandom.nextBoolean() ? ModConfiguredFeatures.GOLDEN_GINKGO : ModConfiguredFeatures.GOLDEN_GINKGO_WITH_LEAF_PILE;
+        return pRandom.nextBoolean() ? ModTreeFeatures.GOLDEN_GINKGO : ModTreeFeatures.GOLDEN_GINKGO_WITH_LEAF_PILE;
     }
 
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredMegaFeature(RandomSource pRandom) {
-        return ModConfiguredFeatures.ANCIENT_GOLDEN_GINKGO;
+        return ModTreeFeatures.ANCIENT_GOLDEN_GINKGO;
     }
 }

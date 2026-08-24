@@ -809,6 +809,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         flowerBlock(ModBlocks.BAMBOO_STICK);
         simpleBlock(ModBlocks.POTTED_BAMBOO_STICK.get(), models().singleTexture("potted_bamboo_stick", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.BAMBOO_STICK.get())).renderType("cutout"));
+        flowerBlock(ModBlocks.MUXUE_GRASS);
 
         tallCrossBlock(ModBlocks.YAO_HUANG_PEONY);
         tallCrossBlock(ModBlocks.WEI_ZI_PEONY);
@@ -858,6 +859,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         tallCrossBlock(ModBlocks.ORANGE_HOLLYHOCK);
         tallCrossBlock(ModBlocks.WHITE_HOLLYHOCK);
         hardyBananaBlock();
+        tallCrossBlock(ModBlocks.TALL_MUXUE_GRASS);
 
         flowerBlock(ModBlocks.CUT_PEONY);
         simpleBlock(ModBlocks.POTTED_CUT_PEONY.get(), models().singleTexture("potted_cut_peony", new ResourceLocation("flower_pot_cross"), "plant",

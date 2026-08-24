@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_muxue_grass": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:muxue_grass"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:muxue_grass_bale_from_muxue_grass"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_muxue_grass",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:muxue_grass_bale_from_muxue_grass"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -8,6 +8,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.function.Supplier;
+
 public class ModTreeDecoratorTypes {
     public static final DeferredRegister<TreeDecoratorType<?>> TREE_DECORATOR =
             DeferredRegister.create(ForgeRegistries.TREE_DECORATOR_TYPES, MoreOrnPlants.MOD_ID);
@@ -25,8 +27,10 @@ public class ModTreeDecoratorTypes {
             TREE_DECORATOR.register("snow_around_trunk", () -> new TreeDecoratorType<>(SnowAroundTrunk.CODEC));
 
     public static final RegistryObject<TreeDecoratorType<LeafPileDecorator>> LEAF_PILE_DECORATOR =
-            TREE_DECORATOR.register("leaf_pile_decorator",
-                    () -> new TreeDecoratorType<>(LeafPileDecorator.CODEC));
+            TREE_DECORATOR.register("leaf_pile_decorator", () -> new TreeDecoratorType<>(LeafPileDecorator.CODEC));
+
+    public static final RegistryObject<TreeDecoratorType<FallenLogDecorator>> FALLEN_LOG_DECORATOR =
+            TREE_DECORATOR.register("fallen_log_decorator", () -> new TreeDecoratorType<>(FallenLogDecorator.CODEC));
 
     public static void register(IEventBus eventBus){
         TREE_DECORATOR.register(eventBus);

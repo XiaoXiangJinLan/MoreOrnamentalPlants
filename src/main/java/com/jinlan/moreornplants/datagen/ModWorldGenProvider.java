@@ -1,9 +1,10 @@
 package com.jinlan.moreornplants.datagen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
-import com.jinlan.moreornplants.worldgen.ModConfiguredFeatures;
+import com.jinlan.moreornplants.worldgen.features.ModTreeFeatures;
 import com.jinlan.moreornplants.worldgen.ModPlacedFeatures;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
+import com.jinlan.moreornplants.worldgen.features.ModVegetationFeatures;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -15,7 +16,10 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-            .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
+            .add(Registries.CONFIGURED_FEATURE, context -> {
+                ModTreeFeatures.bootstrap(context);
+                ModVegetationFeatures.bootstrap(context);
+            })
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
             .add(Registries.BIOME, ModBiomes::bootstrap);
 

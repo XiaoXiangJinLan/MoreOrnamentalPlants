@@ -180,7 +180,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.WHITE_MOTH_ORCHID.get().asItem(), ModBlocks.PINK_MOTH_ORCHID.get().asItem(), ModBlocks.PURPLE_MOTH_ORCHID.get().asItem(), ModBlocks.GOLDEN_MOTH_ORCHID.get().asItem())
                 .add(ModBlocks.BRANCHY_TAMARISK.get().asItem(), ModBlocks.GOLDEN_BRANCHY_TAMARISK.get().asItem())
                 .add(ModBlocks.PEACH_PINK_PETALS.get().asItem(), ModBlocks.FRAGRANT_SNOW_PETALS.get().asItem(), ModBlocks.SPRING_PETALS.get().asItem())
-                .add(ModItems.BAMBOO_STICK.get(), ModBlocks.MUXUE_GRASS.get().asItem())
+                .add(ModItems.BAMBOO_STICK.get(), ModBlocks.MUXUE_GRASS.get().asItem(), ModBlocks.TALL_MUXUE_GRASS.get().asItem())
                 .add(Blocks.POPPY.asItem())
                 .add(Blocks.ROSE_BUSH.asItem())
                 .add(Blocks.SUNFLOWER.asItem())

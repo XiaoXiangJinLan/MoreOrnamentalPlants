@@ -1,6 +1,6 @@
 package com.jinlan.moreornplants.worldgen.tree;
 
-import com.jinlan.moreornplants.worldgen.ModConfiguredFeatures;
+import com.jinlan.moreornplants.worldgen.features.ModTreeFeatures;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
@@ -11,6 +11,6 @@ public class SweetgumTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return pRandom.nextBoolean() ? ModConfiguredFeatures.SWEETGUM : ModConfiguredFeatures.SWEETGUM_WITH_LEAF_PILE;
+        return pRandom.nextBoolean() ? ModTreeFeatures.SWEETGUM : ModTreeFeatures.SWEETGUM_WITH_LEAF_PILE;
     }
 }

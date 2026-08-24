@@ -73,7 +73,7 @@
       "fork_chance": 2,
       "height_rand_a": 2,
       "height_rand_b": 4,
-      "max_fork_angle": 60,
+      "max_fork_angle": 45,
       "max_fork_length": 8,
       "min_fork_length": 6,
       "top_branch_count": 4,
