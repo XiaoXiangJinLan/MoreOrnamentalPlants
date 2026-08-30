@@ -1153,12 +1153,11 @@ public class ModVegetationFeatures {
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
 
         SimpleWeightedRandomList.Builder<BlockState> lotusBuilder = SimpleWeightedRandomList.builder();
-        lotusBuilder.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState().setValue(WaterLotusBlock.AGE, 3),164);
+        lotusBuilder.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState().setValue(WaterLotusBlock.AGE, 3),82);
         for (int age = 0; age <= 3; age++) {
             int weight = (age <= 1) ? 1 : 2;
-            lotusBuilder.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*3);
-            lotusBuilder.add(ModBlocks.WHITE_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*2);
-            lotusBuilder.add(ModBlocks.RED_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
+            lotusBuilder.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*2);
+            lotusBuilder.add(ModBlocks.WHITE_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
         }
         register(context, LOTUS_KEY, Feature.FLOWER, new RandomPatchConfiguration(256, 14, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
@@ -1167,9 +1166,17 @@ public class ModVegetationFeatures {
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.WATER),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, -1, 0), Blocks.DIRT, Blocks.SAND, Blocks.CLAY, Blocks.MUD)))));
+        SimpleWeightedRandomList.Builder<BlockState> lotusBuilder2 = SimpleWeightedRandomList.builder();
+        lotusBuilder2.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState().setValue(WaterLotusBlock.AGE, 3),164);
+        for (int age = 0; age <= 3; age++) {
+            int weight = (age <= 1) ? 1 : 2;
+            lotusBuilder2.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*3);
+            lotusBuilder2.add(ModBlocks.WHITE_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*2);
+            lotusBuilder2.add(ModBlocks.RED_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
+        }
         register(context, LOTUS_RIVER, Feature.FLOWER, new RandomPatchConfiguration(256, 14, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(new WeightedStateProvider(lotusBuilder.build())),
+                        new SimpleBlockConfiguration(new WeightedStateProvider(lotusBuilder2.build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.WATER),
                                 BlockPredicate.matchesBlocks(new BlockPos(0, 1, 0), Blocks.AIR)))));
