@@ -4,8 +4,8 @@
     "decorators": [
       {
         "type": "more_orn_plants:fallen_log_decorator",
-        "decoration_probability": 0.5,
-        "decoration_provider": {
+        "decorator_chance": 0.2,
+        "decorator_provider": {
           "type": "minecraft:simple_state_provider",
           "state": {
             "Name": "more_orn_plants:ginkgo_leaf",
@@ -24,7 +24,7 @@
             }
           }
         },
-        "probability": 0.35
+        "probability": 0.5
       },
       {
         "type": "more_orn_plants:leaf_pile_decorator",

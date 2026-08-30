@@ -203,13 +203,13 @@ public class ModBiomeConfig {
         BUILDER.push("Region Weight Settings");
         OVERWORLD_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for main overworld biomes region")
-                .defineInRange("overworldBiomesWeight", 6, 1, 20);
+                .defineInRange("overworldBiomesWeight", 6, 0, 20);
         SECOND_OVERWORLD_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for second overworld biomes region")
-                .defineInRange("secondOverworldBiomesWeight", 5, 1, 20);
+                .defineInRange("secondOverworldBiomesWeight", 5, 0, 20);
         THIRD_OVERWORLD_BIOMES_WEIGHT = BUILDER
                 .comment("Weight for third overworld biomes region")
-                .defineInRange("thirdOverworldBiomesWeight", 4, 1, 20);
+                .defineInRange("thirdOverworldBiomesWeight", 4, 0, 20);
         BUILDER.pop();
 
         // 武器伤害配置

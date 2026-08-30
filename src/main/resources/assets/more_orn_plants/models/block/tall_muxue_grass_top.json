@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "more_orn_plants:block/tall_muxue_grass_top"
-  },
-  "render_type": "cutout"
-}
