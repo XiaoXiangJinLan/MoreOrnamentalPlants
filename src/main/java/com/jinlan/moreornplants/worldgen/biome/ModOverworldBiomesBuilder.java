@@ -517,6 +517,7 @@ public class ModOverworldBiomesBuilder {
                                        Climate.Parameter erosion, Climate.Parameter weirdness, float offset, ResourceKey<Biome> biome) {
 
         if (biome == null) return;
+        if (!isBiomeAllowed(biome)) return;
 
         mapper.accept(Pair.of(Climate.parameters(temperature, humidity, continentalness, erosion,
                 Climate.Parameter.span(0.2F, 0.9F), weirdness, offset), biome));
