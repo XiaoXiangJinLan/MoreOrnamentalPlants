@@ -400,7 +400,7 @@ public class ModBiomes {
                 .hasPrecipitation(true).temperature(0.5f).downfall(0.6f)
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(4159204).waterFogColor(329011).skyColor(7972607).fogColor(12638463).grassColorOverride(16763904).foliageColorOverride(0xF58931).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                        .waterColor(4159204).waterFogColor(329011).skyColor(7972607).fogColor(12638463).grassColorOverride(isColored ? 16763904 : 0xFFAF00).foliageColorOverride(0xF58931).ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
                 .build();
     }
 
