@@ -71,28 +71,11 @@
             }
           ],
           "name": "more_orn_plants:golden_mei",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:unbreaking": 3
-              }
-            }
-          ],
-          "name": "minecraft:enchanted_book",
           "weight": 2
         },
         {
           "type": "minecraft:item",
           "name": "more_orn_plants:mei_xiangnang"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "more_orn_plants:versicolor_weeping_mei_sapling"
         }
       ],
       "rolls": {

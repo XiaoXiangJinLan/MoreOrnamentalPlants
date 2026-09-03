@@ -3,7 +3,7 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "more_orn_plants:little_iron_threshold_temple/little_iron_threshold_temple",
+        "location": "more_orn_plants:little_iron_threshold_temple/little_iron_threshold_temple_main_hall",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },

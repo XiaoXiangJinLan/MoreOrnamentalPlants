@@ -350,6 +350,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GLOWSTONE_LOGS = registerKey("glowstone_logs");
     public static final ResourceKey<PlacedFeature> GLOWSTONE_GRASS = registerKey("glowstone_grass");
 
+    public static final ResourceKey<PlacedFeature> WEEPING_MEI = registerKey("weeping_mei");
+    public static final ResourceKey<PlacedFeature> GOLDEN_GINKGO = registerKey("golden_ginkgo");
     public static final ResourceKey<PlacedFeature> PINK_APRICOT = registerKey("pink_apricot");
     public static final ResourceKey<PlacedFeature> WHITE_APRICOT = registerKey("white_apricot");
 
@@ -1085,6 +1087,10 @@ public class ModPlacedFeatures {
         register(context, DEAD_BUSH, configuredFeatures.getOrThrow(ModVegetationFeatures.DEAD_BUSH),
                 List.of(CountPlacement.of(2), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
+        register(context, WEEPING_MEI, configuredFeatures.getOrThrow(ModTreeFeatures.RED_WEEPING_MEI),
+                List.of(BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(ModBlocks.RED_WEEPING_MEI_SAPLING.get().defaultBlockState(), BlockPos.ZERO))));
+        register(context, GOLDEN_GINKGO, configuredFeatures.getOrThrow(ModTreeFeatures.GOLDEN_GINKGO),
+                List.of(BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(ModBlocks.GOLDEN_GINKGO_SAPLING.get().defaultBlockState(), BlockPos.ZERO))));
         register(context, PINK_APRICOT, configuredFeatures.getOrThrow(ModTreeFeatures.PINK_APRICOT),
                 List.of(BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(ModBlocks.PINK_APRICOT_SAPLING.get().defaultBlockState(), BlockPos.ZERO))));
         register(context, WHITE_APRICOT, configuredFeatures.getOrThrow(ModTreeFeatures.WHITE_APRICOT),
