@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-03T22:07:20.3139816	Registries
+// 1.21.1	2026-09-04T00:03:08.8557392	Registries
 211cc5040a3e3007d07b6c6460d7eb5ba7825fd8 data/more_orn_plants/worldgen/biome/autumn_river.json
 0e4e5adc4241237b4e567c553fc6a6913e036d4a data/more_orn_plants/worldgen/biome/azalea_forest.json
 b40a616e639d05f2ec64ca129502c9ff75be1a00 data/more_orn_plants/worldgen/biome/blue_wisteria_valley.json
@@ -435,7 +435,6 @@ e56b3c98eda787276ad89c43ab88fd9cef5e865e data/more_orn_plants/worldgen/placed_fe
 590b4f4909faff5291c8ea871ba2a9d6c6ba4107 data/more_orn_plants/worldgen/placed_feature/golden_crabapple_fields.json
 1e6153fcb60fab0a99ff6c164321e15aaeeb7545 data/more_orn_plants/worldgen/placed_feature/golden_crabapple_gold_placed.json
 fee9a1ab68783c97bb8ba953edc2e1076348e18e data/more_orn_plants/worldgen/placed_feature/golden_crabapple_placed.json
-c6e8f45a5a5d7170b302759660a4a07b0e929cf7 data/more_orn_plants/worldgen/placed_feature/golden_ginkgo.json
 ce0ce2f0a8e30590faa7ff14de2fdc9c1fca4323 data/more_orn_plants/worldgen/placed_feature/golden_ginkgo_forest.json
 a66ca9be029b3503f673fd4f981f4fa5c68915b9 data/more_orn_plants/worldgen/placed_feature/golden_ginkgo_placed.json
 863efaf612c69d17c6213b7b455318e77c1ee071 data/more_orn_plants/worldgen/placed_feature/golden_mei_gold_placed.json
