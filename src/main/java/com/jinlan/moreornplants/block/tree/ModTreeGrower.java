@@ -13,8 +13,8 @@ public class ModTreeGrower {
             Optional.empty(), // 没有次级大型树
             Optional.of(ModTreeFeatures.RED_MEI), // 普通红梅树
             Optional.of(ModTreeFeatures.ANCIENT_RED_MEI), // 古红梅树作为次级变体
-            Optional.empty(), // 没有带蜜蜂的普通红梅树
-            Optional.empty()  // 没有带蜜蜂的古红梅树
+            Optional.of(ModTreeFeatures.RED_MEI_BEES),
+            Optional.empty()
     );
 
     public static final TreeGrower WHITE_MEI = new TreeGrower(
@@ -24,7 +24,7 @@ public class ModTreeGrower {
             Optional.empty(),
             Optional.of(ModTreeFeatures.WHITE_MEI),
             Optional.of(ModTreeFeatures.ANCIENT_WHITE_MEI),
-            Optional.empty(),
+            Optional.of(ModTreeFeatures.WHITE_MEI_BEES),
             Optional.empty()
     );
 
@@ -35,7 +35,7 @@ public class ModTreeGrower {
             Optional.empty(),
             Optional.of(ModTreeFeatures.PINK_MEI),
             Optional.of(ModTreeFeatures.ANCIENT_PINK_MEI),
-            Optional.empty(),
+            Optional.of(ModTreeFeatures.PINK_MEI_BEES),
             Optional.empty()
     );
 
@@ -57,7 +57,7 @@ public class ModTreeGrower {
             Optional.empty(),
             Optional.of(ModTreeFeatures.GREEN_CALYX_MEI),
             Optional.of(ModTreeFeatures.ANCIENT_GREEN_CALYX_MEI),
-            Optional.empty(),
+            Optional.of(ModTreeFeatures.GREEN_CALYX_MEI_BEES),
             Optional.empty()
     );
 
@@ -68,7 +68,7 @@ public class ModTreeGrower {
             Optional.empty(),
             Optional.of(ModTreeFeatures.DOUBLE_PINK_MEI),
             Optional.of(ModTreeFeatures.ANCIENT_DOUBLE_PINK_MEI),
-            Optional.empty(),
+            Optional.of(ModTreeFeatures.DOUBLE_PINK_MEI_BEES),
             Optional.empty()
     );
 
@@ -79,7 +79,7 @@ public class ModTreeGrower {
             Optional.empty(),
             Optional.of(ModTreeFeatures.DOUBLE_WHITE_MEI),
             Optional.of(ModTreeFeatures.ANCIENT_DOUBLE_WHITE_MEI),
-            Optional.empty(),
+            Optional.of(ModTreeFeatures.DOUBLE_WHITE_MEI_BEES),
             Optional.empty()
     );
 
@@ -90,7 +90,7 @@ public class ModTreeGrower {
             Optional.empty(),
             Optional.of(ModTreeFeatures.FLAVESCENS_MEI),
             Optional.of(ModTreeFeatures.ANCIENT_FLAVESCENS_MEI),
-            Optional.empty(),
+            Optional.of(ModTreeFeatures.FLAVESCENS_MEI_BEES),
             Optional.empty()
     );
 
@@ -101,7 +101,7 @@ public class ModTreeGrower {
             Optional.empty(),
             Optional.of(ModTreeFeatures.VERSICOLOR_MEI),
             Optional.of(ModTreeFeatures.ANCIENT_VERSICOLOR_MEI),
-            Optional.empty(),
+            Optional.of(ModTreeFeatures.VERSICOLOR_MEI_BEES),
             Optional.empty()
     );
 
@@ -109,42 +109,42 @@ public class ModTreeGrower {
             "red_weeping_mei",
             Optional.empty(), // 没有次级大型树
             Optional.of(ModTreeFeatures.RED_WEEPING_MEI),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.RED_WEEPING_MEI_BEES)
     );
 
     public static final TreeGrower WHITE_WEEPING_MEI = new TreeGrower(
             "white_weeping_mei",
             Optional.empty(),
             Optional.of(ModTreeFeatures.WHITE_WEEPING_MEI),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.WHITE_WEEPING_MEI_BEES)
     );
 
     public static final TreeGrower GREEN_WEEPING_MEI = new TreeGrower(
             "green_weeping_mei",
             Optional.empty(),
             Optional.of(ModTreeFeatures.GREEN_WEEPING_MEI),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.GREEN_WEEPING_MEI_BEES)
     );
 
     public static final TreeGrower PINK_WEEPING_MEI = new TreeGrower(
             "pink_weeping_mei",
             Optional.empty(),
             Optional.of(ModTreeFeatures.PINK_WEEPING_MEI),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.PINK_WEEPING_MEI_BEES)
     );
 
     public static final TreeGrower VERSICOLOR_WEEPING_MEI = new TreeGrower(
             "versicolor_weeping_mei",
             Optional.empty(),
             Optional.of(ModTreeFeatures.VERSICOLOR_WEEPING_MEI),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.VERSICOLOR_WEEPING_MEI_BEES)
     );
 
     public static final TreeGrower UPRIGHT_CRABAPPLE = new TreeGrower(
             "upright_crabapple",
             Optional.empty(),
-            Optional.of(ModTreeFeatures.UPRIGHT_CRABAPPLE_WITH_FRUITS),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.UPRIGHT_CRABAPPLE),
+            Optional.of(ModTreeFeatures.UPRIGHT_CRABAPPLE_BEES)
     );
 
     public static final TreeGrower GOLDEN_CRABAPPLE = new TreeGrower(
@@ -158,77 +158,77 @@ public class ModTreeGrower {
             "weeping_crabapple",
             Optional.empty(),
             Optional.of(ModTreeFeatures.WEEPING_CRABAPPLE),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.WEEPING_CRABAPPLE_BEES)
     );
 
     public static final TreeGrower PINK_APRICOT = new TreeGrower(
             "pink_apricot",
             Optional.empty(),
             Optional.of(ModTreeFeatures.PINK_APRICOT),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.PINK_APRICOT_BEES)
     );
 
     public static final TreeGrower WHITE_APRICOT = new TreeGrower(
             "white_apricot",
             Optional.empty(),
             Optional.of(ModTreeFeatures.WHITE_APRICOT),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.WHITE_APRICOT_BEES)
     );
 
     public static final TreeGrower CLOUD_APRICOT = new TreeGrower(
             "cloud_apricot",
             Optional.empty(),
             Optional.of(ModTreeFeatures.CLOUD_APRICOT),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.CLOUD_APRICOT_BEES)
     );
 
     public static final TreeGrower ORNAMENTAL_PEACH = new TreeGrower(
             "ornamental_peach",
             Optional.empty(),
             Optional.of(ModTreeFeatures.ORNAMENTAL_PEACH),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.ORNAMENTAL_PEACH_BEES)
     );
 
     public static final TreeGrower WILD_PEACH = new TreeGrower(
             "wild_peach",
             Optional.empty(),
             Optional.of(ModTreeFeatures.WILD_PEACH),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.WILD_PEACH_BEES)
     );
 
     public static final TreeGrower WHITE_PEACH = new TreeGrower(
             "white_peach",
             Optional.empty(),
             Optional.of(ModTreeFeatures.WHITE_PEACH),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.WHITE_PEACH_BEES)
     );
 
     public static final TreeGrower IMMORTAL_PEACH = new TreeGrower(
             "immortal_peach",
             Optional.empty(),
             Optional.of(ModTreeFeatures.IMMORTAL_PEACH),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.IMMORTAL_PEACH_BEES)
     );
 
     public static final TreeGrower PEAR = new TreeGrower(
             "pear",
             Optional.empty(),
             Optional.of(ModTreeFeatures.PEAR),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.PEAR_BEES)
     );
 
     public static final TreeGrower TAIWAN_CHERRY = new TreeGrower(
             "taiwan_cherry",
             Optional.empty(),
             Optional.of(ModTreeFeatures.TAIWAN_CHERRY),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.TAIWAN_CHERRY_BEES)
     );
 
     public static final TreeGrower FLOWERING_PURPLE_LEAF_PLUM = new TreeGrower(
             "flowering_purple_leaf_plum",
             Optional.empty(),
             Optional.of(ModTreeFeatures.FLOWERING_PURPLE_LEAF_PLUM),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.FLOWERING_PURPLE_LEAF_PLUM_BEES)
     );
 
     public static final TreeGrower PURPLE_LEAF_PLUM = new TreeGrower(
@@ -242,21 +242,21 @@ public class ModTreeGrower {
             "golden_osmanthus",
             Optional.empty(),
             Optional.of(ModTreeFeatures.GOLDEN_OSMANTHUS),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.GOLDEN_OSMANTHUS_BEES)
     );
 
     public static final TreeGrower ORANGE_OSMANTHUS = new TreeGrower(
             "orange_osmanthus",
             Optional.empty(),
             Optional.of(ModTreeFeatures.ORANGE_OSMANTHUS),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.ORANGE_OSMANTHUS_BEES)
     );
 
     public static final TreeGrower WHITE_OSMANTHUS = new TreeGrower(
             "white_osmanthus",
             Optional.empty(),
             Optional.of(ModTreeFeatures.WHITE_OSMANTHUS),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.WHITE_OSMANTHUS_BEES)
     );
 
     public static final TreeGrower GOLDEN_GINKGO = new TreeGrower(
@@ -321,14 +321,14 @@ public class ModTreeGrower {
             "dove_tree",
             Optional.empty(),
             Optional.of(ModTreeFeatures.DOVE_TREE),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.DOVE_TREE_BEES)
     );
 
     public static final TreeGrower CHINABERRY = new TreeGrower(
             "chinaberry",
             Optional.empty(),
             Optional.of(ModTreeFeatures.CHINABERRY),
-            Optional.empty()
+            Optional.of(ModTreeFeatures.CHINABERRY_BEES)
     );
 
     public static final TreeGrower DESERT_POPLAR = new TreeGrower(

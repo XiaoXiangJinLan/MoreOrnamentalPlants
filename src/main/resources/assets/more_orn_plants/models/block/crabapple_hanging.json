@@ -37,6 +37,16 @@
 				"north": {"uv": [0, 5, 8, 13], "texture": "#crabapple"},
 				"south": {"uv": [8, 5, 0, 13], "texture": "#crabapple"}
 			}
+		},
+		{
+			"from": [0.5, 12, 6.6],
+			"to": [0.5, 17, 11.6],
+			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"east": {"uv": [8, 6, 13, 11], "texture": "#crabapple"},
+				"west": {"uv": [13, 6, 8, 11], "texture": "#crabapple"}
+			}
 		}
 	]
 }

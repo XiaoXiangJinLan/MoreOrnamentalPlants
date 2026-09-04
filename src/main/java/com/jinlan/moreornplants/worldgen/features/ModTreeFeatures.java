@@ -28,6 +28,7 @@ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSi
 import net.minecraft.world.level.levelgen.feature.foliageplacers.*;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
+import net.minecraft.world.level.levelgen.feature.treedecorators.BeehiveDecorator;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.*;
 
 import java.util.List;
@@ -37,55 +38,82 @@ public class ModTreeFeatures {
     //mei
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_RED_MEI = registerKey("ancient_red_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_MEI = registerKey("red_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RED_MEI_BEES = registerKey("red_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_RED_MEI_WITH_SNOW = registerKey("ancient_red_mei_with_snow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_MEI_WITH_SNOW = registerKey("red_mei_with_snow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_WHITE_MEI = registerKey("ancient_white_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_MEI = registerKey("white_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_MEI_BEES = registerKey("white_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_PINK_MEI = registerKey("ancient_pink_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_MEI = registerKey("pink_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_MEI_BEES = registerKey("pink_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_GOLDEN_MEI = registerKey("ancient_golden_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_MEI = registerKey("golden_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_GREEN_CALYX_MEI = registerKey("ancient_green_calyx_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_CALYX_MEI = registerKey("green_calyx_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_CALYX_MEI_BEES = registerKey("green_calyx_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_CALYX_MEI_WITH_SNOW = registerKey("green_calyx_mei_with_snow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_DOUBLE_PINK_MEI = registerKey("ancient_double_pink_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DOUBLE_PINK_MEI = registerKey("double_pink_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DOUBLE_PINK_MEI_BEES = registerKey("double_pink_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_DOUBLE_WHITE_MEI = registerKey("ancient_double_white_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DOUBLE_WHITE_MEI = registerKey("double_white_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DOUBLE_WHITE_MEI_BEES = registerKey("double_white_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_FLAVESCENS_MEI = registerKey("ancient_flavescens_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLAVESCENS_MEI = registerKey("flavescens_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FLAVESCENS_MEI_BEES = registerKey("flavescens_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLAVESCENS_MEI_WITH_SNOW = registerKey("flavescens_mei_with_snow");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_VERSICOLOR_MEI = registerKey("ancient_versicolor_mei");
     public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_MEI = registerKey("versicolor_mei");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_MEI_BEES = registerKey("versicolor_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_WEEPING_MEI = registerKey("red_weeping_mei_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RED_WEEPING_MEI_BEES = registerKey("red_weeping_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_WEEPING_MEI = registerKey("white_weeping_mei_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_WEEPING_MEI_BEES = registerKey("white_weeping_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_WEEPING_MEI = registerKey("green_weeping_mei_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_WEEPING_MEI_BEES = registerKey("green_weeping_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_WEEPING_MEI = registerKey("pink_weeping_mei_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_WEEPING_MEI_BEES = registerKey("pink_weeping_mei_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_WEEPING_MEI = registerKey("versicolor_weeping_mei_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> VERSICOLOR_WEEPING_MEI_BEES = registerKey("versicolor_weeping_mei_bees");
     //crabapple
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE = registerKey("upright_crabapple");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE_WITH_FRUITS = registerKey("upright_crabapple_fruits");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE_BEES = registerKey("upright_crabapple_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CRABAPPLE = registerKey("golden_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CRABAPPLE_WITH_FRUITS = registerKey("golden_crabapple_fruits");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE = registerKey("weeping_crabapple");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE_BEES = registerKey("weeping_crabapple_bees");
     //apricot & peach & pear & cherry & plum
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_APRICOT = registerKey("pink_apricot");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_APRICOT_BEES = registerKey("pink_apricot_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_APRICOT = registerKey("white_apricot");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_APRICOT_BEES = registerKey("white_apricot_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CLOUD_APRICOT = registerKey("cloud_apricot");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CLOUD_APRICOT_BEES = registerKey("cloud_apricot_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORNAMENTAL_PEACH = registerKey("ornamental_peach");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ORNAMENTAL_PEACH_BEES = registerKey("ornamental_peach_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILD_PEACH = registerKey("wild_peach");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WILD_PEACH_BEES = registerKey("wild_peach_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_PEACH = registerKey("white_peach");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_PEACH_BEES = registerKey("white_peach_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> IMMORTAL_PEACH = registerKey("immortal_peach");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> IMMORTAL_PEACH_BEES = registerKey("immortal_peach_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEAR = registerKey("pear");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEAR_BEES = registerKey("pear_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEAR_WITH_FALLEN_LOG = registerKey("pear_with_fallen_log");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TAIWAN_CHERRY = registerKey("taiwan_cherry");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TAIWAN_CHERRY_BEES = registerKey("taiwan_cherry_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_PURPLE_LEAF_PLUM = registerKey("flowering_purple_leaf_plum");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_PURPLE_LEAF_PLUM_BEES = registerKey("flowering_purple_leaf_plum_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_LEAF_PLUM = registerKey("purple_leaf_plum");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_LEAF_PLUM_WITH_FALLEN_LOG = registerKey("purple_leaf_plum_with_fallen_log");
     //osmanthus
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_OSMANTHUS = registerKey("golden_osmanthus");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_OSMANTHUS_BEES = registerKey("golden_osmanthus_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORANGE_OSMANTHUS = registerKey("orange_osmanthus");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ORANGE_OSMANTHUS_BEES = registerKey("orange_osmanthus_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_OSMANTHUS = registerKey("white_osmanthus");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_OSMANTHUS_BEES = registerKey("white_osmanthus_bees");
     //ginkgo & wutong & sweetgum
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_GINKGO = registerKey("golden_ginkgo");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_GINKGO_WITH_LEAF_PILE = registerKey("golden_ginkgo_with_leaf_pile");
@@ -110,7 +138,9 @@ public class ModTreeFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NEW_ANCIENT_CAMPHOR = registerKey("new_ancient_camphor");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SMALL_CAMPHOR = registerKey("small_camphor");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DOVE_TREE = registerKey("dove_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DOVE_TREE_BEES = registerKey("dove_tree_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINABERRY = registerKey("chinaberry");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CHINABERRY_BEES = registerKey("chinaberry_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINABERRY_WITH_FALLEN_LOG = registerKey("chinaberry_with_fallen_log");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CHINABERRY_SMALL = registerKey("chinaberry_small");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DESERT_POPLAR_0 = registerKey("desert_poplar_0");
@@ -197,7 +227,10 @@ public class ModTreeFeatures {
         register(context, ANCIENT_VERSICOLOR_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
                 new AncientMeiTrunkPlacer(16, 2, 4, 2, 6, 8, 0.5F, 45, 4, 3),
-                new VersicolorMeiLeavesProvider(BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()), BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()), BlockStateProvider.simple(ModBlocks.VERSICOLOR_MEI_LEAVES.get()),55, 30, 15),
+                new VersicolorMeiLeavesProvider(BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()),
+                        BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()),
+                        BlockStateProvider.simple(ModBlocks.VERSICOLOR_MEI_LEAVES.get()),
+                        55, 30, 15),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).ignoreVines().build());
 
@@ -252,40 +285,143 @@ public class ModTreeFeatures {
         register(context, VERSICOLOR_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
                 new MeiTrunkPlacer(7, 2, 2, 3, 4, 5, 0.4F, 60),
-                new VersicolorMeiLeavesProvider(BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()), BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()), BlockStateProvider.simple(ModBlocks.VERSICOLOR_MEI_LEAVES.get()),60, 25, 15),
+                new VersicolorMeiLeavesProvider(BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()),
+                        BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()),
+                        BlockStateProvider.simple(ModBlocks.VERSICOLOR_MEI_LEAVES.get()),
+                        60, 25, 15),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+
+        BeehiveDecorator beehivedecorator = new BeehiveDecorator(0.05F);
+        register(context, RED_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.RED_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 2, 3, 4, 5, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.RED_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, WHITE_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.WHITE_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 0, 3, 4, 5, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.WHITE_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, PINK_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 0, 3, 4, 5, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.PINK_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, GREEN_CALYX_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.GREEN_CALYX_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 2, 3, 4, 5, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.GREEN_CALYX_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, DOUBLE_PINK_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 2, 3, 4, 5, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, DOUBLE_WHITE_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.WHITE_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 2, 3, 4, 5, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, FLAVESCENS_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.WHITE_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 2, 3, 4, 5, 0.4F, 60),
+                BlockStateProvider.simple(ModBlocks.FLAVESCENS_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, VERSICOLOR_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
+                new MeiTrunkPlacer(7, 2, 2, 3, 4, 5, 0.4F, 60),
+                new VersicolorMeiLeavesProvider(BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()),
+                        BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()),
+                        BlockStateProvider.simple(ModBlocks.VERSICOLOR_MEI_LEAVES.get()),
+                        60, 25, 15),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
 
         register(context, RED_WEEPING_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.RED_MEI_LOG.get()),
                 new WeepingMeiTrunkPlacer(8, 2, 2, 3, 4, 6, 0.5F, 60, 0.3F),
                 BlockStateProvider.simple(ModBlocks.RED_MEI_LEAVES.get()),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
-                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.RED_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.RED_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(
+                        new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.RED_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.RED_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
         register(context, WHITE_WEEPING_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.WHITE_MEI_LOG.get()),
                 new WeepingMeiTrunkPlacer(8, 2, 2, 3, 4, 6, 0.5F, 60, 0.3F),
                 BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
-                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.WHITE_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.WHITE_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(
+                        new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.WHITE_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.WHITE_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
         register(context, GREEN_WEEPING_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GREEN_CALYX_MEI_LOG.get()),
                 new WeepingMeiTrunkPlacer(8, 2, 2, 3, 4, 6, 0.5F, 60, 0.3F),
                 BlockStateProvider.simple(ModBlocks.GREEN_CALYX_MEI_LEAVES.get()),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
-                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.GREEN_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.GREEN_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(
+                        new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.GREEN_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.GREEN_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
         register(context, PINK_WEEPING_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
                 new WeepingMeiTrunkPlacer(8, 2, 2, 3, 4, 6, 0.5F, 60, 0.3F),
                 BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
-                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.PINK_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.PINK_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(
+                        new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.PINK_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.PINK_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
         register(context, VERSICOLOR_WEEPING_MEI, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
                 new WeepingMeiTrunkPlacer(8, 2, 2, 3, 4, 6, 0.5F, 60, 0.3F),
-                new VersicolorMeiLeavesProvider(BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()), BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()), BlockStateProvider.simple(ModBlocks.VERSICOLOR_MEI_LEAVES.get()),60, 25, 15),
+                new VersicolorMeiLeavesProvider(BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()),
+                        BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()),
+                        BlockStateProvider.simple(ModBlocks.VERSICOLOR_MEI_LEAVES.get()),
+                        60, 25, 15),
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
-                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new VersicolorWeepingMeiVineDecorator(0.8f, 36, 3, 5, 0.5f, 0.25f, 0.25f))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(
+                        new VersicolorWeepingMeiVineDecorator(0.8f, 36, 3, 5, 0.5f, 0.25f, 0.25f))).ignoreVines().build());
+
+        register(context, RED_WEEPING_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.RED_MEI_LOG.get()),
+                new WeepingMeiTrunkPlacer(8, 2, 2, 3, 4, 6, 0.5F, 60, 0.3F),
+                BlockStateProvider.simple(ModBlocks.RED_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator,
+                new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.RED_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.RED_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
+        register(context, WHITE_WEEPING_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.WHITE_MEI_LOG.get()),
+                new WeepingMeiTrunkPlacer(8, 2, 2, 3, 4, 6, 0.5F, 60, 0.3F),
+                BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator,
+                new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.WHITE_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.WHITE_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
+        register(context, GREEN_WEEPING_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.GREEN_CALYX_MEI_LOG.get()),
+                new WeepingMeiTrunkPlacer(8, 2, 2, 3, 4, 6, 0.5F, 60, 0.3F),
+                BlockStateProvider.simple(ModBlocks.GREEN_CALYX_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator,
+                new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.GREEN_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.GREEN_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
+        register(context, PINK_WEEPING_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
+                new WeepingMeiTrunkPlacer(8, 2, 2, 3, 4, 6, 0.5F, 60, 0.3F),
+                BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator,
+                new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.PINK_WEEPING_MEI.get()), BlockStateProvider.simple(ModBlocks.PINK_WEEPING_MEI_PLANT.get()), 0.9f, 36, 3, 5))).ignoreVines().build());
+        register(context, VERSICOLOR_WEEPING_MEI_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LOG.get()),
+                new WeepingMeiTrunkPlacer(8, 2, 2, 3, 4, 6, 0.5F, 60, 0.3F),
+                new VersicolorMeiLeavesProvider(BlockStateProvider.simple(ModBlocks.DOUBLE_PINK_MEI_LEAVES.get()),
+                        BlockStateProvider.simple(ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get()),
+                        BlockStateProvider.simple(ModBlocks.VERSICOLOR_MEI_LEAVES.get()),
+                        60, 25, 15),
+                new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator,
+                new VersicolorWeepingMeiVineDecorator(0.8f, 36, 3, 5, 0.5f, 0.25f, 0.25f))).ignoreVines().build());
 
         register(context, ANCIENT_RED_MEI_WITH_SNOW, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.RED_MEI_LOG.get()),
@@ -318,19 +454,12 @@ public class ModTreeFeatures {
                 BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
-        SimpleWeightedRandomList.Builder<BlockState> crabappleBuilder = SimpleWeightedRandomList.builder();
-        for(Direction direction : Direction.Plane.HORIZONTAL) {
-            crabappleBuilder.add(ModBlocks.CRABAPPLE.get().defaultBlockState()
-                    .setValue(PeachBlock.AGE, 1)
-                    .setValue(CrabappleBlock.FACING, direction), 1);
-        }
-        WeightedStateProvider provider = new WeightedStateProvider(crabappleBuilder.build());
-        register(context, UPRIGHT_CRABAPPLE_WITH_FRUITS, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        register(context, UPRIGHT_CRABAPPLE_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
                 new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
                 BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
-                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(provider, 0.6F))).ignoreVines().build());
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
         register(context, GOLDEN_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
                 new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
@@ -356,6 +485,12 @@ public class ModTreeFeatures {
                 BlockStateProvider.simple(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get()),
                 new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(ModBlocks.WEEPING_CRABAPPLE.get().defaultBlockState(), 0.9F))).ignoreVines().build());
+        register(context, WEEPING_CRABAPPLE_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
+                new CrabappleTrunkPlacer(10, 1, 1, 5, 4, 3, 3, 4, 0.6F),
+                BlockStateProvider.simple(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get()),
+                new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator, new CrabappleDecorator(ModBlocks.WEEPING_CRABAPPLE.get().defaultBlockState(), 0.9F))).ignoreVines().build());
 
         register(context, PINK_APRICOT, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.APRICOT_LOG.get()),
@@ -375,6 +510,25 @@ public class ModTreeFeatures {
                 BlockStateProvider.simple(ModBlocks.CLOUD_APRICOT_LEAVES.get()),
                 new ApricotFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(3)),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(ModBlocks.CLOUD_APRICOT.get().defaultBlockState().setValue(PeachBlock.AGE, 1), 0.18F))).ignoreVines().build());
+
+        register(context, PINK_APRICOT_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.APRICOT_LOG.get()),
+                new ApricotTrunkPlacer(9, 2,2, 3, 3, 4, 6, 0.7F, 0.6F),
+                BlockStateProvider.simple(ModBlocks.PINK_APRICOT_LEAVES.get()),
+                new ApricotFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(3)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, WHITE_APRICOT_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.APRICOT_LOG.get()),
+                new ApricotTrunkPlacer(9, 2,2, 3, 3, 3, 6, 0.7F, 0.6F),
+                BlockStateProvider.simple(ModBlocks.WHITE_APRICOT_LEAVES.get()),
+                new ApricotFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(3)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, CLOUD_APRICOT_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.APRICOT_LOG.get()),
+                new ApricotTrunkPlacer(9, 2,2, 3, 3, 3, 6, 0.7F, 0.6F),
+                BlockStateProvider.simple(ModBlocks.CLOUD_APRICOT_LEAVES.get()),
+                new ApricotFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(3)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator, new CrabappleDecorator(ModBlocks.CLOUD_APRICOT.get().defaultBlockState().setValue(PeachBlock.AGE, 1), 0.18F))).ignoreVines().build());
 
         register(context, ORNAMENTAL_PEACH, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
@@ -401,19 +555,50 @@ public class ModTreeFeatures {
                 new PeachFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(4)),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(ModBlocks.IMMORTAL_PEACH.get().defaultBlockState().setValue(PeachBlock.AGE, 1), 0.12F))).ignoreVines().build());
 
+        register(context, ORNAMENTAL_PEACH_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
+                new PeachTrunkPlacer(6, 2, 2, 2, 4, 3, 4, 0.9F, 0.4F),
+                BlockStateProvider.simple(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get()),
+                new PeachFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(3)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, WILD_PEACH_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
+                new PeachTrunkPlacer(7, 2, 2, 2, 4, 4, 5, 0.9F, 0.5F),
+                BlockStateProvider.simple(ModBlocks.WILD_PEACH_LEAVES.get()),
+                new PeachFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(4)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, WHITE_PEACH_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
+                new PeachTrunkPlacer(6, 2, 2, 2, 4, 3, 4, 0.9F, 0.4F),
+                BlockStateProvider.simple(ModBlocks.WHITE_PEACH_LEAVES.get()),
+                new PeachFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(3)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, IMMORTAL_PEACH_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
+                new PeachTrunkPlacer(7, 2, 2, 2, 4, 4, 5, 0.9F, 0.5F),
+                BlockStateProvider.simple(ModBlocks.IMMORTAL_PEACH_LEAVES.get()),
+                new PeachFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(4)),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator, new CrabappleDecorator(ModBlocks.IMMORTAL_PEACH.get().defaultBlockState().setValue(PeachBlock.AGE, 1), 0.12F))).ignoreVines().build());
+
         register(context, PEAR, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PEAR_LOG.get()),
                 new FancyTrunkPlacer(12, 4, 0),
                 BlockStateProvider.simple(ModBlocks.PEAR_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, PEAR_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.PEAR_LOG.get()),
+                new FancyTrunkPlacer(12, 4, 0),
+                BlockStateProvider.simple(ModBlocks.PEAR_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
         register(context, PEAR_WITH_FALLEN_LOG, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PEAR_LOG.get()),
                 new FancyTrunkPlacer(12, 4, 0),
                 BlockStateProvider.simple(ModBlocks.PEAR_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(1, 0, 1))
-                .decorators(List.of(
+                .decorators(List.of(beehivedecorator,
                         new FallenLogDecorator(BlockStateProvider.simple(ModBlocks.PEAR_LOG.get()), 0.5f, BlockStateProvider.simple(Blocks.MOSS_CARPET), 0.6f))).ignoreVines().build());
 
         register(context, TAIWAN_CHERRY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -424,6 +609,14 @@ public class ModTreeFeatures {
                 BlockStateProvider.simple(ModBlocks.TAIWAN_CHERRY_LEAVES.get()),
                 new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, TAIWAN_CHERRY_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.CHERRY_LOG),
+                new CherryTrunkPlacer(7, 1, 0,
+                        new WeightedListInt(SimpleWeightedRandomList.<IntProvider>builder().add(ConstantInt.of(1), 1).add(ConstantInt.of(2), 1).add(ConstantInt.of(3), 1).build()),
+                        UniformInt.of(2, 4), UniformInt.of(-4, -3), UniformInt.of(-1, 0)),
+                BlockStateProvider.simple(ModBlocks.TAIWAN_CHERRY_LEAVES.get()),
+                new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
 
         register(context, FLOWERING_PURPLE_LEAF_PLUM, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PURPLE_LEAF_PLUM_LOG.get()),
@@ -431,6 +624,12 @@ public class ModTreeFeatures {
                 BlockStateProvider.simple(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 5),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, FLOWERING_PURPLE_LEAF_PLUM_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.PURPLE_LEAF_PLUM_LOG.get()),
+                new FancyTrunkPlacer(7, 2, 0),
+                BlockStateProvider.simple(ModBlocks.FLOWERING_PURPLE_LEAF_PLUM_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 5),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
         register(context, PURPLE_LEAF_PLUM, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PURPLE_LEAF_PLUM_LOG.get()),
                 new FancyTrunkPlacer(7, 2, 0),
@@ -464,6 +663,25 @@ public class ModTreeFeatures {
                 BlockStateProvider.simple(ModBlocks.WHITE_OSMANTHUS_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+
+        register(context, GOLDEN_OSMANTHUS_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.OSMANTHUS_LOG.get()),
+                new FancyTrunkPlacer(5, 4, 1),
+                BlockStateProvider.simple(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, ORANGE_OSMANTHUS_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.OSMANTHUS_LOG.get()),
+                new FancyTrunkPlacer(5, 4, 1),
+                BlockStateProvider.simple(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, WHITE_OSMANTHUS_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.OSMANTHUS_LOG.get()),
+                new FancyTrunkPlacer(5, 4, 1),
+                BlockStateProvider.simple(ModBlocks.WHITE_OSMANTHUS_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
 
         register(context, GOLDEN_GINKGO, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.GINKGO_LOG.get()),
@@ -625,6 +843,12 @@ public class ModTreeFeatures {
                 new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get().defaultBlockState(), 3).add(ModBlocks.DOVE_TREE_LEAVES.get().defaultBlockState(), 1)),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, DOVE_TREE_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DOVE_TREE_LOG.get()),
+                new FancyTrunkPlacer(10, 4, 4),
+                new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.DOVE_TREE_BLOSSOM_LEAVES.get().defaultBlockState(), 3).add(ModBlocks.DOVE_TREE_LEAVES.get().defaultBlockState(), 1)),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
 
         register(context, CHINABERRY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CHINABERRY_LOG.get()),
@@ -632,13 +856,19 @@ public class ModTreeFeatures {
                 BlockStateProvider.simple(ModBlocks.CHINABERRY_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, CHINABERRY_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CHINABERRY_LOG.get()),
+                new CamphorTrunkPlacer(9, 3, 1, 4, 3, 4, 0.8F, 2),
+                BlockStateProvider.simple(ModBlocks.CHINABERRY_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
         register(context, CHINABERRY_WITH_FALLEN_LOG, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CHINABERRY_LOG.get()),
                 new CamphorTrunkPlacer(9, 3, 1, 4, 3, 4, 0.8F, 2),
                 BlockStateProvider.simple(ModBlocks.CHINABERRY_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 1))
-                .decorators(List.of(
+                .decorators(List.of(beehivedecorator,
                         new FallenLogDecorator(BlockStateProvider.simple(ModBlocks.CHINABERRY_LOG.get()), 0.8f, BlockStateProvider.simple(Blocks.MOSS_CARPET), 0.6f))).ignoreVines().build());
         register(context, CHINABERRY_SMALL, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CHINABERRY_LOG.get()),
