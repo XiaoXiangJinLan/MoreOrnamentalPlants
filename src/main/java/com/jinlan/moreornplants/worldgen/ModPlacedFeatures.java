@@ -360,7 +360,7 @@ public class ModPlacedFeatures {
         register(context, ANCIENT_RED_MEI_SNOW_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.ANCIENT_RED_MEI_WITH_SNOW),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05F, 1), ModBlocks.RED_MEI_SAPLING.get()));
         register(context, RED_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.RED_MEI_WITH_SNOW),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(4, 0.1f, 1), ModBlocks.RED_MEI_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 1), ModBlocks.RED_MEI_SAPLING.get()));
         register(context, WINTERSWEET_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.WINTERSWEET),
                 List.of(RarityFilter.onAverageOnceEvery(3), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 

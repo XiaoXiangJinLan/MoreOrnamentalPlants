@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-04T00:03:08.8557392	Registries
+// 1.21.1	2026-09-04T11:32:58.8952339	Registries
 211cc5040a3e3007d07b6c6460d7eb5ba7825fd8 data/more_orn_plants/worldgen/biome/autumn_river.json
 0e4e5adc4241237b4e567c553fc6a6913e036d4a data/more_orn_plants/worldgen/biome/azalea_forest.json
 b40a616e639d05f2ec64ca129502c9ff75be1a00 data/more_orn_plants/worldgen/biome/blue_wisteria_valley.json
@@ -564,7 +564,7 @@ ff930e3d5d5d673cfaa5310a731cb401bb3b1acc data/more_orn_plants/worldgen/placed_fe
 7b482f0b172c10aabb022245a0376ecadd6529d7 data/more_orn_plants/worldgen/placed_feature/red_crape_myrtle_caves.json
 33ff4e1b370ce9d743a7ef14568f80a475f58109 data/more_orn_plants/worldgen/placed_feature/red_crape_myrtle_garden.json
 6db58b2593805c8b8263c71c9f8bb6362da3f569 data/more_orn_plants/worldgen/placed_feature/red_crape_myrtle_tree_garden.json
-2dea7dbab846b018b01bfda3c078ea5869d15f43 data/more_orn_plants/worldgen/placed_feature/red_mei_placed.json
+02a02c81c5345ecc3fd2457e6df788c52fc4aa7b data/more_orn_plants/worldgen/placed_feature/red_mei_placed.json
 051f49508068f4e095ec4ac6b4c4000844cab939 data/more_orn_plants/worldgen/placed_feature/red_mei_red_placed.json
 6c31d64d1dafd468aa6b2fd38cc72b2b11a73af5 data/more_orn_plants/worldgen/placed_feature/rose_bush.json
 7ebdee34bdc326647f39e72c56b6d2aef5f5ba8e data/more_orn_plants/worldgen/placed_feature/small_blue_flowers_grove_placed.json
