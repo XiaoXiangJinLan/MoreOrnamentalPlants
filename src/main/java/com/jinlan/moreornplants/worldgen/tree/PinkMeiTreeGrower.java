@@ -14,7 +14,7 @@ public class PinkMeiTreeGrower extends AbstractTreeGrower {
         if (pRandom.nextInt(10) == 0) {
             return ModTreeFeatures.ANCIENT_PINK_MEI;
         } else {
-            return ModTreeFeatures.PINK_MEI;
+            return pHasFlowers ? ModTreeFeatures.PINK_MEI_BEES : ModTreeFeatures.PINK_MEI;
         }
     }
 }

@@ -14,7 +14,7 @@ public class GreenCalyxMeiTreeGrower extends AbstractTreeGrower {
         if (pRandom.nextInt(10) == 0) {
             return ModTreeFeatures.ANCIENT_GREEN_CALYX_MEI;
         } else {
-            return ModTreeFeatures.GREEN_CALYX_MEI;
+            return pHasFlowers ? ModTreeFeatures.GREEN_CALYX_MEI_BEES : ModTreeFeatures.GREEN_CALYX_MEI;
         }
     }
 }

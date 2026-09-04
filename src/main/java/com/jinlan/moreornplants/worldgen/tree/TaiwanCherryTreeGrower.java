@@ -12,6 +12,6 @@ public class TaiwanCherryTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull RandomSource pRandom, boolean pHasFlowers) {
-        return ModTreeFeatures.TAIWAN_CHERRY;
+        return pHasFlowers ? ModTreeFeatures.TAIWAN_CHERRY_BEES : ModTreeFeatures.TAIWAN_CHERRY;
     }
 }

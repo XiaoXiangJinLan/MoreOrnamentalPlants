@@ -14,7 +14,7 @@ public class RedMeiTreeGrower extends AbstractTreeGrower {
         if (pRandom.nextInt(10) == 0) {
             return ModTreeFeatures.ANCIENT_RED_MEI;
         } else {
-            return ModTreeFeatures.RED_MEI;
+            return pHasFlowers ? ModTreeFeatures.RED_MEI_BEES : ModTreeFeatures.RED_MEI;
         }
     }
 }

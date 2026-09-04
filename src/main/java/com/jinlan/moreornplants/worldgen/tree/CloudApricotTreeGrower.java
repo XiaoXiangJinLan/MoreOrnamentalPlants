@@ -12,6 +12,6 @@ public class CloudApricotTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull RandomSource pRandom, boolean pHasFlowers) {
-        return ModTreeFeatures.CLOUD_APRICOT;
+        return pHasFlowers ? ModTreeFeatures.CLOUD_APRICOT_BEES : ModTreeFeatures.CLOUD_APRICOT;
     }
 }

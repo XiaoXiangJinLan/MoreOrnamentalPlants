@@ -14,7 +14,7 @@ public class DoubleWhiteMeiTreeGrower extends AbstractTreeGrower {
         if (pRandom.nextInt(10) == 0) {
             return ModTreeFeatures.ANCIENT_DOUBLE_WHITE_MEI;
         } else {
-            return ModTreeFeatures.DOUBLE_WHITE_MEI;
+            return pHasFlowers ? ModTreeFeatures.DOUBLE_WHITE_MEI_BEES : ModTreeFeatures.DOUBLE_WHITE_MEI;
         }
     }
 }

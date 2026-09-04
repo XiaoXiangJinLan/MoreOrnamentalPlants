@@ -14,7 +14,7 @@ public class FlavescensMeiTreeGrower extends AbstractTreeGrower {
         if (pRandom.nextInt(10) == 0) {
             return ModTreeFeatures.ANCIENT_FLAVESCENS_MEI;
         } else {
-            return ModTreeFeatures.FLAVESCENS_MEI;
+            return pHasFlowers ? ModTreeFeatures.FLAVESCENS_MEI_BEES : ModTreeFeatures.FLAVESCENS_MEI;
         }
     }
 }

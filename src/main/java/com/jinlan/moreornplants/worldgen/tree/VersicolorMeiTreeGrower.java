@@ -14,7 +14,7 @@ public class VersicolorMeiTreeGrower extends AbstractTreeGrower {
         if (pRandom.nextInt(10) == 0) {
             return ModTreeFeatures.ANCIENT_VERSICOLOR_MEI;
         } else {
-            return ModTreeFeatures.VERSICOLOR_MEI;
+            return pHasFlowers ? ModTreeFeatures.VERSICOLOR_MEI_BEES : ModTreeFeatures.VERSICOLOR_MEI;
         }
     }
 }

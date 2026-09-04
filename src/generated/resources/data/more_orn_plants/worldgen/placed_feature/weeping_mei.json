@@ -1,0 +1,17 @@
+{
+  "feature": "more_orn_plants:red_weeping_mei_key",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "more_orn_plants:red_weeping_mei_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    }
+  ]
+}

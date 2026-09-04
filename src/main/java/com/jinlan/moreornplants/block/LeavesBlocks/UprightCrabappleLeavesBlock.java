@@ -45,13 +45,12 @@ public class UprightCrabappleLeavesBlock extends ModLeavesBlock {
 
         if (!state.getValue(BlockStateProperties.PERSISTENT)) {
             BlockPos belowPos = pos.below();
-            if (level.getBiome(pos).is(ModTags.Biomes.CRABAPPLE_BEARING)) {
-                if (level.isEmptyBlock(belowPos)) {
-                    if (random.nextInt(10) == 0) {
-                        Direction randomDirection = Direction.Plane.HORIZONTAL.getRandomDirection(random);
-                        level.setBlock(belowPos, ModBlocks.CRABAPPLE.get().defaultBlockState()
-                                .setValue(CrabappleBlock.FACING, randomDirection), 2);
-                    }
+            if (level.isEmptyBlock(belowPos)) {
+                int chance = level.getBiome(pos).is(ModTags.Biomes.CRABAPPLE_BEARING) ? 10 : 20;
+                if (random.nextInt(chance) == 0) {
+                    Direction randomDirection = Direction.Plane.HORIZONTAL.getRandomDirection(random);
+                    level.setBlock(belowPos, ModBlocks.CRABAPPLE.get().defaultBlockState()
+                            .setValue(CrabappleBlock.FACING, randomDirection), 2);
                 }
             }
         }

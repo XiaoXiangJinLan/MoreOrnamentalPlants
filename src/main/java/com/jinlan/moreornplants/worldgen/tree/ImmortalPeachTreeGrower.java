@@ -12,6 +12,6 @@ public class ImmortalPeachTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull RandomSource pRandom, boolean pHasFlowers) {
-        return ModTreeFeatures.IMMORTAL_PEACH;
+        return pHasFlowers ? ModTreeFeatures.IMMORTAL_PEACH_BEES : ModTreeFeatures.IMMORTAL_PEACH;
     }
 }

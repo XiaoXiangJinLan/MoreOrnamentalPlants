@@ -1,8 +1,10 @@
 package com.jinlan.moreornplants.block.LeavesBlocks;
 
 import com.jinlan.moreornplants.block.ModBlocks;
+import com.jinlan.moreornplants.block.WeepingBlocks.CrabappleBlock;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.LeavesBlock;
@@ -32,7 +34,9 @@ public class GoldenCrabappleLeavesBlock extends LeavesBlock {
             if (level.isEmptyBlock(belowPos)) {
                 int chance = level.getBiome(pos).is(ModTags.Biomes.CRABAPPLE_BEARING) ? 5 : 10;
                 if (random.nextInt(chance) == 0) {
-                    level.setBlock(belowPos, ModBlocks.GOLDEN_CRABAPPLE.get().defaultBlockState(), 2);
+                    Direction randomDirection = Direction.Plane.HORIZONTAL.getRandomDirection(random);
+                    level.setBlock(belowPos, ModBlocks.GOLDEN_CRABAPPLE.get().defaultBlockState()
+                            .setValue(CrabappleBlock.FACING, randomDirection), 2);
                 }
             }
         }

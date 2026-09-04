@@ -5,12 +5,13 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class RedWeepingMeiTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
-    protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return ModTreeFeatures.RED_WEEPING_MEI;
+    protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull RandomSource pRandom, boolean pHasFlowers) {
+        return pHasFlowers ? ModTreeFeatures.RED_WEEPING_MEI_BEES : ModTreeFeatures.RED_WEEPING_MEI;
     }
 }

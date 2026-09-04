@@ -3,6 +3,10 @@
   "config": {
     "decorators": [
       {
+        "type": "minecraft:beehive",
+        "probability": 0.05
+      },
+      {
         "type": "more_orn_plants:fallen_log_decorator",
         "decorator_chance": 0.6,
         "decorator_provider": {
