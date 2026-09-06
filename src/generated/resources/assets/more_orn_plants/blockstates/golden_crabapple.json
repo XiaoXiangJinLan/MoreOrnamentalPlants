@@ -1,18 +1,33 @@
 {
   "variants": {
-    "age=0,facing=east,hanging=true": {
+    "age=0,facing=east,hanging=true,white=false": {
       "model": "more_orn_plants:block/golden_crabapple_age_0",
       "y": 90
     },
-    "age=0,facing=north,hanging=true": {
+    "age=0,facing=east,hanging=true,white=true": {
+      "model": "more_orn_plants:block/golden_crabapple_age_0_white",
+      "y": 90
+    },
+    "age=0,facing=north,hanging=true,white=false": {
       "model": "more_orn_plants:block/golden_crabapple_age_0"
     },
-    "age=0,facing=south,hanging=true": {
+    "age=0,facing=north,hanging=true,white=true": {
+      "model": "more_orn_plants:block/golden_crabapple_age_0_white"
+    },
+    "age=0,facing=south,hanging=true,white=false": {
       "model": "more_orn_plants:block/golden_crabapple_age_0",
       "y": 180
     },
-    "age=0,facing=west,hanging=true": {
+    "age=0,facing=south,hanging=true,white=true": {
+      "model": "more_orn_plants:block/golden_crabapple_age_0_white",
+      "y": 180
+    },
+    "age=0,facing=west,hanging=true,white=false": {
       "model": "more_orn_plants:block/golden_crabapple_age_0",
+      "y": 270
+    },
+    "age=0,facing=west,hanging=true,white=true": {
+      "model": "more_orn_plants:block/golden_crabapple_age_0_white",
       "y": 270
     },
     "age=1,facing=east,hanging=true": {

@@ -71,6 +71,8 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_BIOME_NO_ENEMY;
     public static final ModConfigSpec.BooleanValue ENABLE_MOD_FOX_SPAWN;
 
+    public static final ModConfigSpec.BooleanValue PARTICLE_DESPAWN_ON_GROUND;
+
     // 武器伤害配置
     public static final ModConfigSpec.ConfigValue<Double> CAMPHOR_SWORD_MULTIPLIER;
     public static final ModConfigSpec.ConfigValue<Double> CHINESE_PARASOL_SWORD_MULTIPLIER;
@@ -217,6 +219,12 @@ public class ModBiomeConfig {
                 .define("enableBiomeNoEnemy", true);
         ENABLE_MOD_FOX_SPAWN = BUILDER
                 .define("enableModFoxSpawn", true);
+        BUILDER.pop();
+
+        // 花瓣粒子效果设置
+        BUILDER.push("Particle Settings");
+        PARTICLE_DESPAWN_ON_GROUND = BUILDER
+                .define("particleDespawnOnGround", true);
         BUILDER.pop();
 
         // 武器伤害配置

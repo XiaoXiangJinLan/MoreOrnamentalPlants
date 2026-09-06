@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_golden_crabapple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:golden_crabapple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:golden_crabapple_sapling_from_white_crabapple_sapling"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_crabapple_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:white_crabapple_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_golden_crabapple",
+      "has_white_crabapple_sapling"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:golden_crabapple_sapling_from_white_crabapple_sapling"
+    ]
+  }
+}

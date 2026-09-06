@@ -30,7 +30,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 3
+                "weight": 2
               },
               {
                 "data": {
@@ -42,11 +42,35 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 2
+                "weight": 1
               },
               {
                 "data": {
                   "Name": "more_orn_plants:red_lotus",
+                  "Properties": {
+                    "age": "0",
+                    "half": "lower",
+                    "on_farmland": "false",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:black_lotus",
+                  "Properties": {
+                    "age": "0",
+                    "half": "lower",
+                    "on_farmland": "false",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:green_lotus",
                   "Properties": {
                     "age": "0",
                     "half": "lower",
@@ -66,7 +90,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 3
+                "weight": 2
               },
               {
                 "data": {
@@ -78,11 +102,35 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 2
+                "weight": 1
               },
               {
                 "data": {
                   "Name": "more_orn_plants:red_lotus",
+                  "Properties": {
+                    "age": "1",
+                    "half": "lower",
+                    "on_farmland": "false",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:black_lotus",
+                  "Properties": {
+                    "age": "1",
+                    "half": "lower",
+                    "on_farmland": "false",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:green_lotus",
                   "Properties": {
                     "age": "1",
                     "half": "lower",
@@ -102,7 +150,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 6
+                "weight": 4
               },
               {
                 "data": {
@@ -114,11 +162,35 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 4
+                "weight": 2
               },
               {
                 "data": {
                   "Name": "more_orn_plants:red_lotus",
+                  "Properties": {
+                    "age": "2",
+                    "half": "lower",
+                    "on_farmland": "false",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:black_lotus",
+                  "Properties": {
+                    "age": "2",
+                    "half": "lower",
+                    "on_farmland": "false",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:green_lotus",
                   "Properties": {
                     "age": "2",
                     "half": "lower",
@@ -138,7 +210,7 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 6
+                "weight": 4
               },
               {
                 "data": {
@@ -150,11 +222,35 @@
                     "waterlogged": "true"
                   }
                 },
-                "weight": 4
+                "weight": 2
               },
               {
                 "data": {
                   "Name": "more_orn_plants:red_lotus",
+                  "Properties": {
+                    "age": "3",
+                    "half": "lower",
+                    "on_farmland": "false",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:black_lotus",
+                  "Properties": {
+                    "age": "3",
+                    "half": "lower",
+                    "on_farmland": "false",
+                    "waterlogged": "true"
+                  }
+                },
+                "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:green_lotus",
                   "Properties": {
                     "age": "3",
                     "half": "lower",

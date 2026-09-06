@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-15T10:54:54.1564926	Tags for minecraft:block mod id more_orn_plants
+// 1.21.1	2026-09-05T10:35:32.9320542	Tags for minecraft:block mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/block/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/block/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/block/azalea.json
@@ -9,8 +9,8 @@ cbe3e674f36e91461aa7f8b76f952dc75772cbad data/c/tags/block/chinese_parasol_leave
 55aa72c81e238515c1850ac3d7346d310aa765e0 data/c/tags/block/chinese_parasol_sapling.json
 eae1762d269a0248cc31924e8a169260ff520db5 data/c/tags/block/chinese_rose.json
 243fcebbc1a4a52079a1aab0bfdb80d324f62835 data/c/tags/block/chrysanthemum.json
-6149dfbf53b014bad189fa6e4f8119d1d2b39b82 data/c/tags/block/crabapple_leaves.json
-e0d5185cf60a7ff236f9d4fa2894180654bd2b77 data/c/tags/block/crabapple_sapling.json
+78c888c5c6325dcff2327cd13a0f2e11393c3484 data/c/tags/block/crabapple_leaves.json
+cf9a02cb3a3b43276cc33de9be7eb1e00641a188 data/c/tags/block/crabapple_sapling.json
 0a11e3be557f43b916c68edb5897b1f8c5fa5c65 data/c/tags/block/crape_myrtle.json
 cfafca40eaa0a4f29b2ecf0358dad783eedc7960 data/c/tags/block/crape_myrtle_leaves.json
 1d26ee48ee0b3a3790656ba5c261326c6f33c64f data/c/tags/block/crape_myrtle_sapling.json
@@ -22,7 +22,7 @@ edc1aae18a35311be8df5db2dfb84cc1dba6303c data/c/tags/block/cymbidium.json
 37ea26f5e9711dd112ef5bce6ee738d233ba5734 data/c/tags/block/ginkgo_sapling.json
 8d86a028bae7eeb0c300ebc49c829a6134f97e28 data/c/tags/block/herbaceous_peony.json
 1a9cc60553fff40aa2623a7892348386c0c1062a data/c/tags/block/hollyhock.json
-c00048d22e4475b7fd6daa315418e2a3465b8cf7 data/c/tags/block/lotus.json
+9a4c394ff0ab26b54857ceb51d10d2ee7bd6f6c2 data/c/tags/block/lotus.json
 a8bec61c63a7789094252327a9e73546e9f0df26 data/c/tags/block/mei_leaves.json
 b80637844a042d40f6b1df361e37bdede79efe38 data/c/tags/block/mei_sapling.json
 3f7a5c0c69c6bd3c64aa81535d685dd82689e7e2 data/c/tags/block/narcissus.json
@@ -46,7 +46,7 @@ c2ad8485da52e3c52b9b6d7aa3cfcc21749463fa data/c/tags/block/wisteria.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/block/enderman_holdable.json
 9d51ebf161664dd8984d5cb2009cb7f724043d47 data/minecraft/tags/block/fence_gates.json
 78531f698628bf08d9d33d93be955098d62f0ac5 data/minecraft/tags/block/flowers.json
-018b4d37edb31730fe408dfbb06f048c56bbb40c data/minecraft/tags/block/flower_pots.json
+eaefab38b3d6c2e328fc57fd46cb4fd498bc77fc data/minecraft/tags/block/flower_pots.json
 6f2a600ab79986fee6995717d799c45b2d249d38 data/minecraft/tags/block/leaves.json
 8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/block/logs_that_burn.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/block/lush_ground_replaceable.json

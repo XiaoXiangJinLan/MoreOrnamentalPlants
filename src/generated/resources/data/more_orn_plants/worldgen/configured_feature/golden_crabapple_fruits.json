@@ -14,7 +14,8 @@
                   "age": "1",
                   "facing": "north",
                   "hanging": "true",
-                  "waterlogged": "false"
+                  "waterlogged": "false",
+                  "white": "false"
                 }
               },
               "weight": 1
@@ -26,7 +27,8 @@
                   "age": "1",
                   "facing": "east",
                   "hanging": "true",
-                  "waterlogged": "false"
+                  "waterlogged": "false",
+                  "white": "false"
                 }
               },
               "weight": 1
@@ -38,7 +40,8 @@
                   "age": "1",
                   "facing": "south",
                   "hanging": "true",
-                  "waterlogged": "false"
+                  "waterlogged": "false",
+                  "white": "false"
                 }
               },
               "weight": 1
@@ -50,7 +53,8 @@
                   "age": "1",
                   "facing": "west",
                   "hanging": "true",
-                  "waterlogged": "false"
+                  "waterlogged": "false",
+                  "white": "false"
                 }
               },
               "weight": 1

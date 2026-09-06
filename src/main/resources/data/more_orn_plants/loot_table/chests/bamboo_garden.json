@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "more_orn_plants:golden_crabapple",
+          "name": "minecraft:bamboo",
           "weight": 5
         },
         {
@@ -33,21 +33,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:gold_ingot",
+          "name": "minecraft:bamboo_block",
           "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:mending": 1
-              }
-            }
-          ],
-          "name": "minecraft:enchanted_book",
-          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -97,10 +84,6 @@
         {
           "type": "minecraft:item",
           "name": "more_orn_plants:lotus_xiangnang"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "more_orn_plants:enchanted_golden_crabapple"
         }
       ],
       "rolls": {
@@ -108,6 +91,39 @@
         "max": 8.0,
         "min": 6.0
       }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:mending": 1
+              }
+            }
+          ],
+          "name": "minecraft:enchanted_book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:saddle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:name_tag"
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "more_orn_plants:chests/bamboo_garden"

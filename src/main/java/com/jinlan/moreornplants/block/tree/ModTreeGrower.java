@@ -147,6 +147,13 @@ public class ModTreeGrower {
             Optional.of(ModTreeFeatures.UPRIGHT_CRABAPPLE_BEES)
     );
 
+    public static final TreeGrower WHITE_CRABAPPLE = new TreeGrower(
+            "white_crabapple",
+            Optional.empty(),
+            Optional.of(ModTreeFeatures.WHITE_CRABAPPLE),
+            Optional.of(ModTreeFeatures.WHITE_CRABAPPLE_BEES)
+    );
+
     public static final TreeGrower GOLDEN_CRABAPPLE = new TreeGrower(
             "golden_crabapple",
             Optional.empty(),

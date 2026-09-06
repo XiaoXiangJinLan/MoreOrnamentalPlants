@@ -81,10 +81,16 @@
     "more_orn_plants:upright_crabapple_leaves": {
       "chance": 0.3
     },
+    "more_orn_plants:white_crabapple_leaves": {
+      "chance": 0.3
+    },
     "more_orn_plants:weeping_crabapple_leaves": {
       "chance": 0.3
     },
     "more_orn_plants:upright_crabapple_sapling": {
+      "chance": 0.3
+    },
+    "more_orn_plants:white_crabapple_sapling": {
       "chance": 0.3
     },
     "more_orn_plants:weeping_crabapple_sapling": {
@@ -646,6 +652,12 @@
       "chance": 0.65
     },
     "more_orn_plants:red_lotus": {
+      "chance": 0.65
+    },
+    "more_orn_plants:black_lotus": {
+      "chance": 0.65
+    },
+    "more_orn_plants:green_lotus": {
       "chance": 0.65
     },
     "more_orn_plants:lotus_leaf": {

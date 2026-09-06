@@ -16,12 +16,23 @@
         "recipe": "more_orn_plants:golden_crabapple_sapling"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_upright_crabapple_sapling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:upright_crabapple_sapling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_golden_crabapple"
+      "has_golden_crabapple",
+      "has_upright_crabapple_sapling"
     ]
   ],
   "rewards": {

@@ -83,6 +83,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_RED_WEEPING_MEI_SAPLING.get(), ModBlocks.POTTED_WHITE_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_GREEN_WEEPING_MEI_SAPLING.get(), ModBlocks.POTTED_PINK_WEEPING_MEI_SAPLING.get(), ModBlocks.POTTED_VERSICOLOR_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.POTTED_WEEPING_CRABAPPLE_SAPLING.get())
+                .add(ModBlocks.POTTED_WHITE_CRABAPPLE_SAPLING.get(), ModBlocks.POTTED_GOLDEN_CRABAPPLE_SAPLING.get())
                 .add(ModBlocks.POTTED_PINK_APRICOT_SAPLING.get(), ModBlocks.POTTED_WHITE_APRICOT_SAPLING.get(), ModBlocks.POTTED_CLOUD_APRICOT_SAPLING.get())
                 .add(ModBlocks.POTTED_ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.POTTED_WILD_PEACH_SAPLING.get())
                 .add(ModBlocks.POTTED_WHITE_PEACH_SAPLING.get(), ModBlocks.POTTED_IMMORTAL_PEACH_SAPLING.get())
@@ -714,9 +715,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI.get());
 
         this.tag(CommonTags.Blocks.CRABAPPLE_SAPLING)
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get());
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get(), ModBlocks.WHITE_CRABAPPLE_SAPLING.get());
         this.tag(CommonTags.Blocks.CRABAPPLE_LEAVES)
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get());
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get(), ModBlocks.WHITE_CRABAPPLE_LEAVES.get());
 
         this.tag(CommonTags.Blocks.OSMANTHUS_SAPLING)
                 .add(ModBlocks.GOLDEN_OSMANTHUS_SAPLING.get(), ModBlocks.ORANGE_OSMANTHUS_SAPLING.get(), ModBlocks.WHITE_OSMANTHUS_SAPLING.get());
@@ -822,7 +823,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RED_AZALEA.get(), ModBlocks.CHINESE_AZALEA.get());
 
         this.tag(CommonTags.Blocks.LOTUS)
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get());
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get(), ModBlocks.BLACK_LOTUS.get(), ModBlocks.GREEN_LOTUS.get());
 
         this.tag(CommonTags.Blocks.NARCISSUS)
                 .add(ModBlocks.CHINESE_NARCISSUS.get(), ModBlocks.GOLDEN_CHINESE_NARCISSUS.get());

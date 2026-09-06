@@ -1170,9 +1170,11 @@ public class ModVegetationFeatures {
         lotusBuilder2.add(ModBlocks.LOTUS_LEAF.get().defaultBlockState().setValue(WaterLotusBlock.AGE, 3),164);
         for (int age = 0; age <= 3; age++) {
             int weight = (age <= 1) ? 1 : 2;
-            lotusBuilder2.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*3);
-            lotusBuilder2.add(ModBlocks.WHITE_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*2);
+            lotusBuilder2.add(ModBlocks.LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight*2);
+            lotusBuilder2.add(ModBlocks.WHITE_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
             lotusBuilder2.add(ModBlocks.RED_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
+            lotusBuilder2.add(ModBlocks.BLACK_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
+            lotusBuilder2.add(ModBlocks.GREEN_LOTUS.get().defaultBlockState().setValue(WaterLotusBlock.AGE, age), weight);
         }
         register(context, LOTUS_RIVER, Feature.FLOWER, new RandomPatchConfiguration(256, 14, 1,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,

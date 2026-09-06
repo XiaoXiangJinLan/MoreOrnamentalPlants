@@ -332,6 +332,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.SPRING_CYMBIDIUM.asItem())
                 .add(ModBlocks.GREEN_CHRYSANTHEMUM.asItem())
                 .add(ModBlocks.DOU_GREEN_PEONY.asItem())
+                .add(ModItems.GREEN_LOTUS.get())
                 .add(ModBlocks.GREEN_PEONY.asItem());
 
         this.tag(ModTags.Items.GREEN_DYE)
@@ -349,6 +350,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.BLACK_DYE)
                 .add(ModBlocks.WINTER_CYMBIDIUM.asItem())
                 .add(ModBlocks.BLACK_CHRYSANTHEMUM.asItem())
+                .add(ModItems.BLACK_LOTUS.get())
                 .add(ModBlocks.INK_PEONY.asItem());
 
         this.tag(ModTags.Items.ZIYING_FOX_FOOD)
@@ -380,7 +382,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(CommonTags.Items.CROPS_LOTUS);
 
         this.tag(CommonTags.Items.CROPS_LOTUS)
-                .add(ModItems.LOTUS.get(), ModItems.WHITE_LOTUS.get(), ModItems.RED_LOTUS.get())
+                .add(ModItems.LOTUS.get(), ModItems.WHITE_LOTUS.get(), ModItems.RED_LOTUS.get(), ModItems.BLACK_LOTUS.get(), ModItems.GREEN_LOTUS.get())
                 .add(ModItems.LOTUS_LEAF.get());
 
         this.tag(Tags.Items.FOODS_FRUIT)

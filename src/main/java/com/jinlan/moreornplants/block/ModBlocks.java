@@ -58,6 +58,8 @@ public class ModBlocks {
             registerBlock("versicolor_mei_leaves", () -> new VersicolorMeiLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
     public static final DeferredBlock<Block> UPRIGHT_CRABAPPLE_LEAVES =
             registerBlock("upright_crabapple_leaves", () -> new UprightCrabappleLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES)));
+    public static final DeferredBlock<Block> WHITE_CRABAPPLE_LEAVES =
+            registerBlock("white_crabapple_leaves", () -> new WhiteCrabappleLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.SNOW)));
     public static final DeferredBlock<Block> GOLDEN_CRABAPPLE_LEAVES =
             registerBlock("golden_crabapple_leaves", () -> new GoldenCrabappleLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_LEAVES).mapColor(MapColor.GOLD)));
     public static final DeferredBlock<Block> WEEPING_CRABAPPLE_LEAVES =
@@ -831,6 +833,8 @@ public class ModBlocks {
             registerBlock("versicolor_weeping_mei_sapling", () -> new SaplingBlock(ModTreeGrower.VERSICOLOR_WEEPING_MEI, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> UPRIGHT_CRABAPPLE_SAPLING =
             registerBlock("upright_crabapple_sapling", () -> new SaplingBlock(ModTreeGrower.UPRIGHT_CRABAPPLE, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> WHITE_CRABAPPLE_SAPLING =
+            registerBlock("white_crabapple_sapling", () -> new SaplingBlock(ModTreeGrower.WHITE_CRABAPPLE, BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> GOLDEN_CRABAPPLE_SAPLING =
             registerBlock("golden_crabapple_sapling", () -> new DesertSaplingBlock(ModTreeGrower.GOLDEN_CRABAPPLE, BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().randomTicks().instabreak().sound(SoundType.CHERRY_SAPLING).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WEEPING_CRABAPPLE_SAPLING =
@@ -920,6 +924,8 @@ public class ModBlocks {
             BLOCKS.register("potted_versicolor_weeping_mei_sapling", () -> flowerPot(VERSICOLOR_WEEPING_MEI_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_UPRIGHT_CRABAPPLE_SAPLING =
             BLOCKS.register("potted_upright_crabapple_sapling", () -> flowerPot(UPRIGHT_CRABAPPLE_SAPLING.get()));
+    public static final DeferredBlock<Block> POTTED_WHITE_CRABAPPLE_SAPLING =
+            BLOCKS.register("potted_white_crabapple_sapling", () -> flowerPot(WHITE_CRABAPPLE_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_GOLDEN_CRABAPPLE_SAPLING =
             BLOCKS.register("potted_golden_crabapple_sapling", () -> flowerPot(GOLDEN_CRABAPPLE_SAPLING.get()));
     public static final DeferredBlock<Block> POTTED_WEEPING_CRABAPPLE_SAPLING =
@@ -1493,6 +1499,10 @@ public class ModBlocks {
             BLOCKS.register("white_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.SNOW).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final DeferredBlock<Block> RED_LOTUS =
             BLOCKS.register("red_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.COLOR_RED).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
+    public static final DeferredBlock<Block> BLACK_LOTUS =
+            BLOCKS.register("black_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.COLOR_BLACK).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
+    public static final DeferredBlock<Block> GREEN_LOTUS =
+            BLOCKS.register("green_lotus", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).mapColor(MapColor.PLANT).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final DeferredBlock<Block> LOTUS_LEAF =
             BLOCKS.register("lotus_leaf", () -> new WaterLotusBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LILY_PAD).noCollission().offsetType(BlockBehaviour.OffsetType.XZ)));
     public static final DeferredBlock<Block> MUXUE_GRASS =

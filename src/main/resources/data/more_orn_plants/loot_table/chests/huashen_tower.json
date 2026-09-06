@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "more_orn_plants:crabapple",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "more_orn_plants:weeping_crabapple",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "more_orn_plants:crabapple_log",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "more_orn_plants:crabapple_planks",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:upright_crabapple_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:white_crabapple_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:weeping_crabapple_sapling"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 8.0,
+        "min": 6.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:golden_crabapple",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:mending": 1
+              }
+            }
+          ],
+          "name": "minecraft:enchanted_book",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:enchanted_golden_crabapple"
+        }
+      ],
+      "rolls": 2.0
+    }
+  ],
+  "random_sequence": "more_orn_plants:chests/huashen_tower"
+}

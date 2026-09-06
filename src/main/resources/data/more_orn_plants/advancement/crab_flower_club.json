@@ -1,0 +1,44 @@
+{
+  "parent": "more_orn_plants:celestial_consort",
+  "criteria": {
+    "found_huashen_tower": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "more_orn_plants:huashen_tower"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.crab_flower_club.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:white_crabapple_sapling"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.crab_flower_club.title"
+    }
+  },
+  "requirements": [
+    [
+      "found_huashen_tower"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "more_orn_plants:advancement/golden_crabapple_sapling"
+    ]
+  },
+  "sends_telemetry_event": true
+}

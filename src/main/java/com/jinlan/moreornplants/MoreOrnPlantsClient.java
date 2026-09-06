@@ -89,6 +89,10 @@ public class MoreOrnPlantsClient {
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
         ));
+        event.registerSpriteSet(ModParticleTypes.WHITE_CRABAPPLE_LEAVES.get(), ((spriteProvider) ->
+                (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
+                        new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)
+        ));
         event.registerSpriteSet(ModParticleTypes.WEEPING_CRABAPPLE_LEAVES.get(), ((spriteProvider) ->
                 (parameters, pLevel, pX, pY, pZ, velocitypX, velocitypY, velocitypZ) ->
                         new BlossomParticle(pLevel, pX, pY, pZ, spriteProvider)

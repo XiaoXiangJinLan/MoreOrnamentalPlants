@@ -44,6 +44,8 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.StemBlock;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
@@ -465,8 +467,10 @@ public class BaihuaCat extends Cat {
         this.playSound(SoundEvents.CAT_PURR, 1.0F, 1.0F);
     }
     protected void giveCrabappleSapling() {
-        ItemStack stack = new ItemStack(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get());
-        this.spawnAtLocation(stack);
+        ItemStack pinkCrabapple = new ItemStack(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get());
+        ItemStack whiteCrabapple = new ItemStack(ModBlocks.WHITE_CRABAPPLE_SAPLING.get());
+        this.spawnAtLocation(pinkCrabapple);
+        this.spawnAtLocation(whiteCrabapple);
         this.playSound(SoundEvents.CAT_PURR, 1.0F, 1.0F);
     }
     protected void giveMeiSaplings() {
@@ -488,6 +492,20 @@ public class BaihuaCat extends Cat {
                         if (cropBlock.isValidBonemealTarget(this.level(), pos, state)) {
                             if (this.random.nextInt(2) == 0) {
                                 cropBlock.performBonemeal((ServerLevel) this.level(), this.random, pos, state);
+                                spawnBonemealParticles(pos);
+                            }
+                        }
+                    } else if (state.getBlock() instanceof StemBlock stemBlock) {
+                        if (stemBlock.isValidBonemealTarget(this.level(), pos, state)) {
+                            if (this.random.nextInt(2) == 0) {
+                                stemBlock.performBonemeal((ServerLevel) this.level(), this.random, pos, state);
+                                spawnBonemealParticles(pos);
+                            }
+                        }
+                    } else if (state.getBlock() instanceof SweetBerryBushBlock sweetBerryBushBlock) {
+                        if (sweetBerryBushBlock.isValidBonemealTarget(this.level(), pos, state)) {
+                            if (this.random.nextInt(2) == 0) {
+                                sweetBerryBushBlock.performBonemeal((ServerLevel) this.level(), this.random, pos, state);
                                 spawnBonemealParticles(pos);
                             }
                         }
