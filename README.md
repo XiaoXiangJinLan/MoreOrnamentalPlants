@@ -1,7 +1,7 @@
 Ornamental Plants is a biome mod themed around botanical decoration, bringing the beauty of Eastern gardens into Minecraft. 
 It adds a variety of classic ornamental plants native to China, such as famous flowering trees: Mei Blossom, Crabapple; 
 colorful foliage trees: Ginkgo, Chinese Parasol; and renowned flowers: Chinese Rose, Herbaceous Peony, Camellia, and more. 
-This mod introduces fifty-two new biomes and seven structures, waiting for you to explore!
+This mod introduces fifty-two new biomes and eight structures, waiting for you to explore!
 
 New Trees
 ============
@@ -42,13 +42,9 @@ Ziying Caves, Suyu Caves.
 
 New Structures
 ==========
-• Little Iron Threshold Temple – A small temple generated in the Red Mei Forest.  
-• Peach Blossom Hermitage – A small temple generated in the Peach Blossom Spring.  
-• Apricot Peach – A traditional style village generated in the Peach Blossom Spring.  
-• Apricot Village – A traditional style village generated in the Camellia Valley and the Apricot Spring Plateau.  
-• Bamboo Garden - A small garden generated in the Furong Guo.  
-• Mount Mei Tudi Temple – A small folk temple generated in the Mount Mei.  
-• XiangXue Pavilion - A traditional style pavilion generated in the Fragrant Snow Sea.
+Little Iron Threshold Temple, Peach Blossom Hermitage, Mount Mei Tudi Temple;
+Huashen Tower, Bamboo Garden, XiangXue Pavilion;
+Peach Village, Apricot Village.
 
 New Foods
 ==========
@@ -74,7 +70,7 @@ New Mobs
 • Baihua Cat: Spawns in Flowers Grove, Crabapple Grove, The Peach Blossom Spring, and Penglai. Can be tamed with flowers. When fed Immortal Peach, Cloud Apricot, or Crabapple, it produces the corresponding fruit tree sapling. It also accelerates the growth of crops, cut flowers, and other plants within a 1-block radius.
 
 《观赏植物》是一个以植物装饰为主题的群系模组，将东方园林之美引入《我的世界》，添加了多种源自中国的经典观赏植物，诸如著名的观赏花树：梅花、海棠；
-彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了五十二个新生物群系、七个新结构，等待你来探索！
+彩叶树种：银杏、梧桐；以及著名花卉：月季、芍药、茶花等。本模组添加了五十二个新生物群系、八个新结构，等待你来探索！
 
 ## 新树种
 梅花、海棠、杏花、桃花、梨花、钟花樱、紫叶李、桂花、银杏、梧桐、枫香、香樟、珙桐、苦楝、胡杨。
@@ -149,6 +145,7 @@ New Mobs
 
 ## 新结构
 **小铁槛寺**：小型寺庙，生成在白雪红梅；  
+**花神楼**：三层楼阁，生成在烟雨海棠；  
 **桃花庵**：小型寺庙，生成在世外桃源；  
 **杏花村**：传统村庄，生成在世外桃源；  
 **杏花村**：传统村庄，生成在茶花谷和高原春杏；  
