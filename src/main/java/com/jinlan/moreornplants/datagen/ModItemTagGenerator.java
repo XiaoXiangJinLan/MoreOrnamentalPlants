@@ -31,7 +31,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ItemTags.SMALL_FLOWERS)
                 .addTag(ItemTags.TALL_FLOWERS)
                 .addTag(ForgeTags.Items.MEI_SAPLING)
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem(), ModBlocks.WHITE_CRABAPPLE_SAPLING.get().asItem())
                 .addTag(ForgeTags.Items.APRICOT_SAPLING)
                 .addTag(ForgeTags.Items.PEACH_SAPLING)
                 .add(ModBlocks.PEAR_SAPLING.get().asItem())
@@ -46,8 +46,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_SAPLING.get().asItem(), ModBlocks.RED_CRAPE_MYRTLE_SAPLING.get().asItem())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE_SAPLING.get().asItem(), ModBlocks.WHITE_CRAPE_MYRTLE_SAPLING.get().asItem())
                 .addTag(ForgeTags.Items.MEI_LEAVES)
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get().asItem())
-                .add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get().asItem())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get().asItem(), ModBlocks.WHITE_CRABAPPLE_LEAVES.get().asItem(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE.get().asItem())
                 .addTag(ForgeTags.Items.APRICOT_LEAVES)
                 .addTag(ForgeTags.Items.PEACH_LEAVES)
@@ -286,6 +285,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ForgeTags.Items.CRABAPPLE_SAPLING)
                 .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem())
+                .add(ModBlocks.WHITE_CRABAPPLE_SAPLING.get().asItem())
                 .add(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem());
         this.tag(ModTags.Items.CRABAPPLE_SAPLING)
                 .addTag(ForgeTags.Items.CRABAPPLE_SAPLING)
@@ -341,7 +341,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.BLACK_BAMBOO.get());
 
         this.tag(ForgeTags.Items.LOTUS)
-                .add(ModItems.LOTUS.get(), ModItems.WHITE_LOTUS.get(), ModItems.RED_LOTUS.get());
+                .add(ModItems.LOTUS.get(), ModItems.WHITE_LOTUS.get(), ModItems.RED_LOTUS.get(), ModItems.BLACK_LOTUS.get(), ModItems.GREEN_LOTUS.get());
 
         this.tag(ForgeTags.Items.NARCISSUS)
                 .add(ModBlocks.CHINESE_NARCISSUS.get().asItem())
@@ -453,7 +453,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.SPRING_CYMBIDIUM.get().asItem())
                 .add(ModBlocks.GREEN_CHRYSANTHEMUM.get().asItem())
                 .add(ModBlocks.DOU_GREEN_PEONY.get().asItem())
-                .add(ModBlocks.GREEN_PEONY.get().asItem());
+                .add(ModBlocks.GREEN_PEONY.get().asItem())
+                .add(ModItems.GREEN_LOTUS.get());
 
         this.tag(ModTags.Items.GREEN_DYE)
                 .add(ModBlocks.SUMMER_CYMBIDIUM.get().asItem(), ModBlocks.AUTUMN_CYMBIDIUM.get().asItem())
@@ -469,7 +470,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.BLACK_DYE)
                 .add(ModBlocks.WINTER_CYMBIDIUM.get().asItem())
                 .add(ModBlocks.BLACK_CHRYSANTHEMUM.get().asItem())
-                .add(ModBlocks.INK_PEONY.get().asItem());
+                .add(ModBlocks.INK_PEONY.get().asItem())
+                .add(ModItems.BLACK_LOTUS.get());
 
         this.tag(ModTags.Items.ZIYING_FOX_FOOD)
                 .addTag(ItemTags.FOX_FOOD)
@@ -507,6 +509,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ForgeTags.Items.FRUITS)
                 .addTag(ForgeTags.Items.VEGETABLES);
 
+        this.tag(Tags.Items.CROPS)
+                .addTag(ForgeTags.Items.CROPS_LOTUS);
+
         this.tag(ForgeTags.Items.VEGETABLES)
                 .addTag(ForgeTags.Items.VEGETABLES_BAMBOO_SHOOTS)
                 .addTag(ForgeTags.Items.VEGETABLES_BAMBOO_SPROUTS)
@@ -519,6 +524,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ForgeTags.Items.FRUITS_PEACH)
                 .addTag(ForgeTags.Items.FRUITS_APRICOT)
                 .addTag(ForgeTags.Items.FRUITS_MEI);
+
+        this.tag(ForgeTags.Items.CROPS_LOTUS)
+                .add(ModItems.LOTUS.get(), ModItems.WHITE_LOTUS.get(), ModItems.RED_LOTUS.get(), ModItems.BLACK_LOTUS.get(), ModItems.GREEN_LOTUS.get())
+                .add(ModItems.LOTUS_LEAF.get());
 
         this.tag(ForgeTags.Items.VEGETABLES_BAMBOO_SHOOTS)
                 .add(ModItems.PEELED_BAMBOO_SHOOTS.get());

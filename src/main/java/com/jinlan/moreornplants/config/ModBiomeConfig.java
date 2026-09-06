@@ -63,6 +63,8 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_BIOME_NO_ENEMY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_MOD_FOX_SPAWN;
 
+    public static final ForgeConfigSpec.BooleanValue PARTICLE_DESPAWN_ON_GROUND;
+
     // 区域权重配置
     public static final ForgeConfigSpec.IntValue OVERWORLD_BIOMES_WEIGHT;
     public static final ForgeConfigSpec.IntValue SECOND_OVERWORLD_BIOMES_WEIGHT;
@@ -197,6 +199,12 @@ public class ModBiomeConfig {
                 .define("enableBiomeNoEnemy", true);
         ENABLE_MOD_FOX_SPAWN = BUILDER
                 .define("enableModFoxSpawn", true);
+        BUILDER.pop();
+
+        // 花瓣粒子效果设置
+        BUILDER.push("Particle Settings");
+        PARTICLE_DESPAWN_ON_GROUND = BUILDER
+                .define("particleDespawnOnGround", true);
         BUILDER.pop();
 
         // 区域权重设置

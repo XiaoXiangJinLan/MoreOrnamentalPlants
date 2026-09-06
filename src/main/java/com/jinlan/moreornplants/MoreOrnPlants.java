@@ -123,6 +123,8 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_CRABAPPLE_LEAVES.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_CRABAPPLE_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WEEPING_CRABAPPLE_SAPLING.get().asItem(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_APRICOT_LEAVES.get().asItem(), 0.3F);
@@ -311,6 +313,8 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.LOTUS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_LOTUS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_LOTUS.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.BLACK_LOTUS.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.GREEN_LOTUS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.HOLLYHOCK.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_HOLLYHOCK.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.ORANGE_HOLLYHOCK.get().asItem(), 0.65F);

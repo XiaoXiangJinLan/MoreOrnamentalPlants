@@ -246,6 +246,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.PINK_WEEPING_MEI_SAPLING);
         saplingItem(ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING);
         saplingItem(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING);
+        saplingItem(ModBlocks.WHITE_CRABAPPLE_SAPLING);
         saplingItem(ModBlocks.GOLDEN_CRABAPPLE_SAPLING);
         saplingItem(ModBlocks.WEEPING_CRABAPPLE_SAPLING);
         saplingItem(ModBlocks.PINK_APRICOT_SAPLING);
@@ -429,6 +430,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.LOTUS);
         simpleItem(ModItems.WHITE_LOTUS);
         simpleItem(ModItems.RED_LOTUS);
+        simpleItem(ModItems.BLACK_LOTUS);
+        simpleItem(ModItems.GREEN_LOTUS);
         simpleItem(ModItems.LOTUS_LEAF);
         simplerBlockItem(ModBlocks.HARDY_BANANA);
         simpleItem(ModItems.LOTUS_ROOT);

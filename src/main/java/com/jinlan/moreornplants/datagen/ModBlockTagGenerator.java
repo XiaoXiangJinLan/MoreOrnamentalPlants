@@ -111,6 +111,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.POTTED_PINK_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_VERSICOLOR_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.POTTED_UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.POTTED_WEEPING_CRABAPPLE_SAPLING.get())
+                .add(ModBlocks.POTTED_WHITE_CRABAPPLE_SAPLING.get(), ModBlocks.POTTED_GOLDEN_CRABAPPLE_SAPLING.get())
                 .add(ModBlocks.POTTED_PINK_APRICOT_SAPLING.get(), ModBlocks.POTTED_WHITE_APRICOT_SAPLING.get(), ModBlocks.POTTED_CLOUD_APRICOT_SAPLING.get())
                 .add(ModBlocks.POTTED_ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.POTTED_WILD_PEACH_SAPLING.get())
                 .add(ModBlocks.POTTED_WHITE_PEACH_SAPLING.get(), ModBlocks.POTTED_IMMORTAL_PEACH_SAPLING.get())
@@ -190,7 +191,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINK_MEI_SAPLING.get(), ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get(), ModBlocks.FLAVESCENS_MEI_SAPLING.get())
                 .add(ModBlocks.RED_WEEPING_MEI_SAPLING.get(), ModBlocks.WHITE_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.GREEN_WEEPING_MEI_SAPLING.get(), ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get(), ModBlocks.WHITE_CRABAPPLE_SAPLING.get())
                 .add(ModBlocks.PINK_APRICOT_SAPLING.get(), ModBlocks.WHITE_APRICOT_SAPLING.get(), ModBlocks.CLOUD_APRICOT_SAPLING.get())
                 .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.WILD_PEACH_SAPLING.get(), ModBlocks.WHITE_PEACH_SAPLING.get(), ModBlocks.IMMORTAL_PEACH_SAPLING.get())
                 .add(ModBlocks.PEAR_SAPLING.get())
@@ -210,7 +211,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GREEN_WEEPING_MEI.get(), ModBlocks.GREEN_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.PINK_WEEPING_MEI.get(), ModBlocks.PINK_WEEPING_MEI_PLANT.get())
                 .add(ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_PLANT.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get(), ModBlocks.WHITE_CRABAPPLE_LEAVES.get())
                 .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get(), ModBlocks.CLOUD_APRICOT_LEAVES.get())
                 .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get(), ModBlocks.WHITE_PEACH_LEAVES.get(), ModBlocks.IMMORTAL_PEACH_LEAVES.get())
                 .add(ModBlocks.PEAR_LEAVES.get())
@@ -238,7 +239,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get(), ModBlocks.GOLDEN_MEI_LEAVES.get(),
                         ModBlocks.PINK_MEI_LEAVES.get(), ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get(), ModBlocks.FLAVESCENS_MEI_LEAVES.get())
                 .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get(), ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), ModBlocks.VERSICOLOR_MEI_LEAVES.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get(), ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get(),
+                        ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get(), ModBlocks.WHITE_CRABAPPLE_LEAVES.get())
                 .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get(), ModBlocks.CLOUD_APRICOT_LEAVES.get())
                 .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get(), ModBlocks.WHITE_PEACH_LEAVES.get(), ModBlocks.IMMORTAL_PEACH_LEAVES.get())
                 .add(ModBlocks.PEAR_LEAVES.get())
@@ -277,7 +279,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RED_MEI_LEAVES.get(), ModBlocks.WHITE_MEI_LEAVES.get(), ModBlocks.GOLDEN_MEI_LEAVES.get())
                 .add(ModBlocks.GREEN_CALYX_MEI_LEAVES.get(), ModBlocks.DOUBLE_PINK_MEI_LEAVES.get(), ModBlocks.VERSICOLOR_MEI_LEAVES.get(),
                         ModBlocks.PINK_MEI_LEAVES.get(), ModBlocks.DOUBLE_WHITE_MEI_LEAVES.get(), ModBlocks.FLAVESCENS_MEI_LEAVES.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get(), ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), ModBlocks.WEEPING_CRABAPPLE_LEAVES.get(),
+                        ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get(), ModBlocks.WHITE_CRABAPPLE_LEAVES.get())
                 .add(ModBlocks.PINK_APRICOT_LEAVES.get(), ModBlocks.WHITE_APRICOT_LEAVES.get(), ModBlocks.CLOUD_APRICOT_LEAVES.get())
                 .add(ModBlocks.ORNAMENTAL_PEACH_LEAVES.get(), ModBlocks.WILD_PEACH_LEAVES.get(), ModBlocks.WHITE_PEACH_LEAVES.get(), ModBlocks.IMMORTAL_PEACH_LEAVES.get())
                 .add(ModBlocks.PEAR_LEAVES.get())
@@ -686,7 +689,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WHITE_WEEPING_MEI_SAPLING.get(), ModBlocks.GREEN_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.PINK_WEEPING_MEI_SAPLING.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get())
                 .add(ModBlocks.PINK_MEI_SAPLING.get(), ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get(), ModBlocks.FLAVESCENS_MEI_SAPLING.get())
-                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get(), ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get())
+                .add(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), ModBlocks.WEEPING_CRABAPPLE_SAPLING.get(),
+                        ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get(), ModBlocks.WHITE_CRABAPPLE_SAPLING.get())
                 .add(ModBlocks.PINK_APRICOT_SAPLING.get(), ModBlocks.WHITE_APRICOT_SAPLING.get(), ModBlocks.CLOUD_APRICOT_SAPLING.get())
                 .add(ModBlocks.ORNAMENTAL_PEACH_SAPLING.get(), ModBlocks.WILD_PEACH_SAPLING.get(), ModBlocks.WHITE_PEACH_SAPLING.get(), ModBlocks.IMMORTAL_PEACH_SAPLING.get())
                 .add(ModBlocks.PEAR_SAPLING.get())
@@ -725,7 +729,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get())
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get(), ModBlocks.BLACK_LOTUS.get(), ModBlocks.GREEN_LOTUS.get())
                 .add(ModBlocks.HOLLYHOCK.get(), ModBlocks.PINK_HOLLYHOCK.get())
                 .add(ModBlocks.ORANGE_HOLLYHOCK.get(), ModBlocks.WHITE_HOLLYHOCK.get())
                 .add(ModBlocks.HARDY_BANANA.get())
@@ -810,7 +814,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE.get(), ModBlocks.RED_CRAPE_MYRTLE.get())
                 .add(ModBlocks.PINK_CRAPE_MYRTLE.get(), ModBlocks.WHITE_CRAPE_MYRTLE.get())
                 .add(ModBlocks.COTTON_ROSE.get())
-                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get())
+                .add(ModBlocks.LOTUS.get(), ModBlocks.WHITE_LOTUS.get(), ModBlocks.RED_LOTUS.get(), ModBlocks.BLACK_LOTUS.get(), ModBlocks.GREEN_LOTUS.get())
                 .add(ModBlocks.HOLLYHOCK.get(), ModBlocks.PINK_HOLLYHOCK.get())
                 .add(ModBlocks.ORANGE_HOLLYHOCK.get(), ModBlocks.WHITE_HOLLYHOCK.get());
 

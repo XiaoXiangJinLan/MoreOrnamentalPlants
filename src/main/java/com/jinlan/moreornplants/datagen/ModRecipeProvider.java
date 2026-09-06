@@ -864,6 +864,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.GOLDEN_CRABAPPLE.get())
                 .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE.get()), has(ModItems.GOLDEN_CRABAPPLE.get()))
                 .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get(), 1)
+                .requires(ModBlocks.WHITE_CRABAPPLE_SAPLING.get())
+                .requires(ModItems.GOLDEN_CRABAPPLE.get())
+                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE.get()), has(ModItems.GOLDEN_CRABAPPLE.get()))
+                .unlockedBy(getHasName(ModBlocks.WHITE_CRABAPPLE_SAPLING.get()), has(ModBlocks.WHITE_CRABAPPLE_SAPLING.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "golden_crabapple_sapling_from_white_crabapple_sapling"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), 1)
                 .requires(ModBlocks.DOUBLE_PINK_MEI_SAPLING.get())

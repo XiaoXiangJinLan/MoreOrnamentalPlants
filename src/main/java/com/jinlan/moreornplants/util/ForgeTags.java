@@ -52,6 +52,7 @@ public class ForgeTags {
         public static final TagKey<Item> APRICOT_LEAVES = tag("apricot_leaves");
         public static final TagKey<Item> PEACH_LEAVES = tag("peach_leaves");
 
+        public static final TagKey<Item> CROPS_LOTUS = tag("crops/lotus");
         public static final TagKey<Item> VEGETABLES = tag("vegetables");
         public static final TagKey<Item> VEGETABLES_BAMBOO_SHOOTS = tag("vegetables/bamboo_shoots");
         public static final TagKey<Item> VEGETABLES_BAMBOO_SPROUTS = tag("vegetables/bamboo_sprouts");

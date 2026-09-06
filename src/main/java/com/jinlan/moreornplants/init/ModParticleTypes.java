@@ -39,6 +39,9 @@ public class ModParticleTypes {
     public static final RegistryObject<SimpleParticleType> UPRIGHT_CRABAPPLE_LEAVES =
             registerParticleType("upright_crabapple_leaves", () -> new SimpleParticleType(false));
 
+    public static final RegistryObject<SimpleParticleType> WHITE_CRABAPPLE_LEAVES =
+            registerParticleType("white_crabapple_leaves", () -> new SimpleParticleType(false));
+
     public static final RegistryObject<SimpleParticleType> WEEPING_CRABAPPLE_LEAVES =
             registerParticleType("weeping_crabapple_leaves", () -> new SimpleParticleType(false));
 

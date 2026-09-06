@@ -322,6 +322,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.VERSICOLOR_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.add(ModBlocks.WHITE_CRABAPPLE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WHITE_CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.WEEPING_CRABAPPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.PINK_APRICOT_LEAVES.get(), block ->
@@ -577,6 +579,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get());
         this.add(ModBlocks.POTTED_UPRIGHT_CRABAPPLE_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get()));
+        this.dropSelf(ModBlocks.WHITE_CRABAPPLE_SAPLING.get());
+        this.add(ModBlocks.POTTED_WHITE_CRABAPPLE_SAPLING.get(),
+                createPotFlowerItemTable(ModBlocks.WHITE_CRABAPPLE_SAPLING.get()));
         this.dropSelf(ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get());
         this.add(ModBlocks.POTTED_GOLDEN_CRABAPPLE_SAPLING.get(),
                 createPotFlowerItemTable(ModBlocks.GOLDEN_CRABAPPLE_SAPLING.get()));
@@ -1146,6 +1151,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.LOTUS.get(), block -> createLotusDrops(ModBlocks.LOTUS.get()));
         this.add(ModBlocks.WHITE_LOTUS.get(), block -> createLotusDrops(ModBlocks.WHITE_LOTUS.get()));
         this.add(ModBlocks.RED_LOTUS.get(), block -> createLotusDrops(ModBlocks.RED_LOTUS.get()));
+        this.add(ModBlocks.BLACK_LOTUS.get(), block -> createLotusDrops(ModBlocks.BLACK_LOTUS.get()));
+        this.add(ModBlocks.GREEN_LOTUS.get(), block -> createLotusDrops(ModBlocks.GREEN_LOTUS.get()));
         this.add(ModBlocks.LOTUS_LEAF.get(), block -> LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootItem.lootTableItem(ModBlocks.LOTUS_LEAF.get().asItem()))

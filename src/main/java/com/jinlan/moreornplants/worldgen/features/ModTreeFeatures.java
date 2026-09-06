@@ -80,6 +80,8 @@ public class ModTreeFeatures {
     //crabapple
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE = registerKey("upright_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE_BEES = registerKey("upright_crabapple_bees");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRABAPPLE = registerKey("white_crabapple");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRABAPPLE_BEES = registerKey("white_crabapple_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CRABAPPLE = registerKey("golden_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CRABAPPLE_WITH_FRUITS = registerKey("golden_crabapple_fruits");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE = registerKey("weeping_crabapple");
@@ -459,6 +461,18 @@ public class ModTreeFeatures {
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
                 new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
                 BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, WHITE_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
+                BlockStateProvider.simple(ModBlocks.WHITE_CRABAPPLE_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
+                new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
+        register(context, WHITE_CRABAPPLE_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
+                BlockStateProvider.simple(ModBlocks.WHITE_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
         register(context, GOLDEN_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(

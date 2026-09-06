@@ -252,6 +252,10 @@ public class ModItems {
             ITEMS.register("white_lotus", () -> new PlaceInWaterBlockItem(ModBlocks.WHITE_LOTUS.get(), new Item.Properties()));
     public static final RegistryObject<Item> RED_LOTUS =
             ITEMS.register("red_lotus", () -> new PlaceInWaterBlockItem(ModBlocks.RED_LOTUS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BLACK_LOTUS =
+            ITEMS.register("black_lotus", () -> new PlaceInWaterBlockItem(ModBlocks.BLACK_LOTUS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> GREEN_LOTUS =
+            ITEMS.register("green_lotus", () -> new PlaceInWaterBlockItem(ModBlocks.GREEN_LOTUS.get(), new Item.Properties()));
     public static final RegistryObject<Item> LOTUS_LEAF =
             ITEMS.register("lotus_leaf", () -> new PlaceInWaterBlockItem(ModBlocks.LOTUS_LEAF.get(), new Item.Properties()));
     public static final RegistryObject<Item> LOTUS_ROOT =

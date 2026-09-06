@@ -455,6 +455,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING);
         simpleBlock(ModBlocks.POTTED_UPRIGHT_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_upright_crabapple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.UPRIGHT_CRABAPPLE_SAPLING.get())).renderType("cutout"));
+        leavesBlock(ModBlocks.WHITE_CRABAPPLE_LEAVES);
+        saplingBlock(ModBlocks.WHITE_CRABAPPLE_SAPLING);
+        simpleBlock(ModBlocks.POTTED_WHITE_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_white_crabapple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
+                blockTexture(ModBlocks.WHITE_CRABAPPLE_SAPLING.get())).renderType("cutout"));
         leavesBlock(ModBlocks.GOLDEN_CRABAPPLE_LEAVES);
         saplingBlock(ModBlocks.GOLDEN_CRABAPPLE_SAPLING);
         simpleBlock(ModBlocks.POTTED_GOLDEN_CRABAPPLE_SAPLING.get(), models().singleTexture("potted_golden_crabapple_sapling", new ResourceLocation("flower_pot_cross"), "plant",
@@ -950,6 +954,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         lotusBlock(ModBlocks.LOTUS);
         lotusBlock(ModBlocks.WHITE_LOTUS);
         lotusBlock(ModBlocks.RED_LOTUS);
+        lotusBlock(ModBlocks.BLACK_LOTUS);
+        lotusBlock(ModBlocks.GREEN_LOTUS);
 
         petalsBlock(ModBlocks.PEACH_PINK_PETALS);
         petalsBlock(ModBlocks.FRAGRANT_SNOW_PETALS);
@@ -1106,6 +1112,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         }
         ModelFile age0Model = models().cross(baseName + "_age_0", modLoc("block/" + baseName + "_age_0"))
                 .renderType("cutout");
+        ModelFile age0WhiteModel = models().cross(baseName + "_age_0_white", modLoc("block/" + baseName + "_age_0_white"))
+                .renderType("cutout");
         ModelFile age1Model = models().withExistingParent(baseName + "_age_1", modLoc("block/crabapple_hanging"))
                 .texture("crabapple", modLoc("block/" + baseName + "_age_1"))
                 .renderType("cutout");
@@ -1120,8 +1128,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 case WEST -> rotationY = 270;
                 default -> rotationY = 0;
             }
-            builder.partialState().with(PeachBlock.HANGING, true).with(PeachBlock.AGE, 0).with(CrabappleBlock.FACING, direction)
+            builder.partialState().with(PeachBlock.HANGING, true).with(PeachBlock.AGE, 0).with(CrabappleBlock.WHITE, false).with(CrabappleBlock.FACING, direction)
                     .modelForState().modelFile(age0Model).rotationY(rotationY).addModel()
+                    .partialState().with(PeachBlock.HANGING, true).with(PeachBlock.AGE, 0).with(CrabappleBlock.WHITE, true).with(CrabappleBlock.FACING, direction)
+                    .modelForState().modelFile(age0WhiteModel).rotationY(rotationY).addModel()
                     .partialState().with(PeachBlock.HANGING, true).with(PeachBlock.AGE, 1).with(CrabappleBlock.FACING, direction)
                     .modelForState().modelFile(age1Model).rotationY(rotationY).addModel()
                     .partialState().with(PeachBlock.HANGING, false).with(CrabappleBlock.FACING, direction)

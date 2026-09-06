@@ -1,11 +1,13 @@
 package com.jinlan.moreornplants.particle;
 
+import com.jinlan.moreornplants.config.ModBiomeConfig;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.ParticleRenderType;
 import net.minecraft.client.particle.SpriteSet;
 import net.minecraft.client.particle.TextureSheetParticle;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import org.jetbrains.annotations.NotNull;
 
 @OnlyIn(Dist.CLIENT)
 public class ChineseParasolParticle extends TextureSheetParticle {
@@ -33,7 +35,7 @@ public class ChineseParasolParticle extends TextureSheetParticle {
     }
 
     @Override
-    public ParticleRenderType getRenderType() {
+    public @NotNull ParticleRenderType getRenderType() {
         return ParticleRenderType.PARTICLE_SHEET_OPAQUE;
     }
 
@@ -57,7 +59,8 @@ public class ChineseParasolParticle extends TextureSheetParticle {
             this.oRoll = this.roll;
             this.roll += this.rotSpeed / 20.0F;
             this.move(this.xd, this.yd, this.zd);
-            if (this.onGround || this.lifetime < 299 && (this.xd == 0.0D || this.zd == 0.0D)) {
+            boolean despawnOnGround = ModBiomeConfig.PARTICLE_DESPAWN_ON_GROUND.get();
+            if ((despawnOnGround && this.onGround) || this.lifetime < 299 && (this.xd == 0.0D || this.zd == 0.0D)) {
                 this.remove();
             }
 
