@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 138167335,
+    "separation": 16,
+    "spacing": 36
+  },
+  "structures": [
+    {
+      "structure": "more_orn_plants:huanghua_studio",
+      "weight": 1
+    }
+  ]
+}

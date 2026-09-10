@@ -808,7 +808,7 @@
   ],
   "rewards": {
     "loot": [
-      "more_orn_plants:advancement/zhuiyue_sword",
+      "more_orn_plants:advancements/zhuiyue_sword",
       "more_orn_plants:advancements/caiyun_sword"
     ]
   },

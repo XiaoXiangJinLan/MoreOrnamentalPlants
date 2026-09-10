@@ -260,32 +260,41 @@ public class ModEvents {
         LivingEntity entity = event.getEntity();
         if (entity.level().isClientSide) return;
         int tick = entity.tickCount;
-        if (ModBiomeConfig.ENABLE_BIOME_HURT_ENEMY.get() && entity instanceof Enemy && tick % 40 == 0) {
-            Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
-            if (biomeHolder.is(ModBiomes.WUTONG_FOREST) || biomeHolder.is(ModBiomes.COLORED_FOREST)) {
-                if (!(entity instanceof ZombieVillager && entity.getHealth() <= 10.0F)) {
-                    entity.setSecondsOnFire(2);
-                    if (entity.fireImmune() || entity.hasEffect(MobEffects.FIRE_RESISTANCE)) {
-                        entity.invulnerableTime = 0;
-                        entity.hurt(entity.level().damageSources().magic(), 9.0F);
-                        entity.invulnerableTime = 0;
-                        entity.hurt(entity.level().damageSources().generic(), 9.0F);
-                        entity.invulnerableTime = 0;
-                        entity.hurt(entity.level().damageSources().drown(), 9.0F);
-                        entity.invulnerableTime = 0;
-                        entity.hurt(entity.level().damageSources().wither(), 9.0F);
-                    } else {
-                        entity.hurt(entity.level().damageSources().inFire(), 9.0F);
+        Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
+        if (ModBiomeConfig.ENABLE_BIOME_HURT_ENEMY.get() && tick % 40 == 0) {
+            if (entity instanceof Enemy) {
+                if (biomeHolder.is(ModBiomes.WUTONG_FOREST) || biomeHolder.is(ModBiomes.COLORED_FOREST)) {
+                    if (!(entity instanceof ZombieVillager && entity.getHealth() <= 10.0F)) {
+                        entity.setSecondsOnFire(2);
+                        if (entity.fireImmune() || entity.hasEffect(MobEffects.FIRE_RESISTANCE)) {
+                            entity.invulnerableTime = 0;
+                            entity.hurt(entity.level().damageSources().magic(), 9.0F);
+                            entity.invulnerableTime = 0;
+                            entity.hurt(entity.level().damageSources().generic(), 9.0F);
+                            entity.invulnerableTime = 0;
+                            entity.hurt(entity.level().damageSources().drown(), 9.0F);
+                            entity.invulnerableTime = 0;
+                            entity.hurt(entity.level().damageSources().wither(), 9.0F);
+                        } else {
+                            entity.hurt(entity.level().damageSources().inFire(), 9.0F);
+                        }
                     }
                 }
-            }
-            if (biomeHolder.is(ModBiomes.ZIYING_CAVES)) {
-                entity.hurt(entity.level().damageSources().wither(), 3.0F);
-                entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 3));
-            }
-            if (biomeHolder.is(ModBiomes.SUYU_CAVES)) {
-                entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 2));
-                entity.addEffect(new MobEffectInstance(MobEffects.POISON, 600, 2));
+                if (biomeHolder.is(ModBiomes.ZIYING_CAVES)) {
+                    entity.hurt(entity.level().damageSources().wither(), 3.0F);
+                    entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 3));
+                }
+                if (biomeHolder.is(ModBiomes.SUYU_CAVES)) {
+                    entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 2));
+                    entity.addEffect(new MobEffectInstance(MobEffects.POISON, 600, 2));
+                }
+                if (entity.isInvertedHealAndHarm()) {
+                    if (biomeHolder.is(ModBiomes.THE_PEACH_BLOSSOM_SPRING)) {
+                        if (!(entity instanceof ZombieVillager && entity.getHealth() <= 10.0F)) {
+                            entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1));
+                        }
+                    }
+                }
             }
         }
         if (!(entity instanceof Player || entity instanceof Villager || entity instanceof Animal ||
@@ -294,7 +303,6 @@ public class ModEvents {
         }
         if (!ModBiomeConfig.ENABLE_BIOME_EFFECTS.get()) return;
         if (tick % 100 != 0) {
-            Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
             if (biomeHolder.is(ModBiomes.LONGEVITY_FOREST)) {
                 AttributeInstance attribute = entity.getAttribute(Attributes.MAX_HEALTH);
                 if (attribute != null && attribute.getModifier(LONGEVITY_BOOST_UUID) == null) {
@@ -316,7 +324,6 @@ public class ModEvents {
         }
 
         if (tick % 40 == 0) {
-            Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
             if (biomeHolder.is(ModBiomes.PENGLAI)) {
                 MobEffectInstance currentEffect1 = entity.getEffect(MobEffects.FIRE_RESISTANCE);
                 MobEffectInstance currentEffect2 = entity.getEffect(MobEffects.WATER_BREATHING);

@@ -40,7 +40,7 @@
   ],
   "rewards": {
      "loot": [
-      "more_orn_plants:advancement/golden_crabapple_sapling"
+      "more_orn_plants:advancements/golden_crabapple_sapling"
     ]
   },
   "sends_telemetry_event": true
