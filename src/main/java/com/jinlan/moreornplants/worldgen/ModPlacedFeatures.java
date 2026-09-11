@@ -881,7 +881,7 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(18), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, PEAR_WOODS, configuredFeatures.getOrThrow(ModTreeFeatures.PEAR_WITH_FALLEN_LOG),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(4, 0.1f, 1), ModBlocks.PEAR_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 1), ModBlocks.PEAR_SAPLING.get()));
         register(context, LILY_OF_THE_VALLEY_WOODS_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.LILY_OF_THE_VALLEY_WOODS),
                 List.of(NoiseThresholdCountPlacement.of(-0.1D, 4, 0), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, CHINESE_NARCISSUS_WOODS_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.CHINESE_NARCISSUS_WOODS),
