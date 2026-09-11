@@ -661,38 +661,38 @@ public class ModTreeFeatures {
 
         register(context, GOLDEN_OSMANTHUS, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.OSMANTHUS_LOG.get()),
-                new FancyTrunkPlacer(5, 4, 1),
+                new FancyTrunkPlacer(5, 4, 2),
                 BlockStateProvider.simple(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, ORANGE_OSMANTHUS, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.OSMANTHUS_LOG.get()),
-                new FancyTrunkPlacer(5, 4, 1),
+                new FancyTrunkPlacer(5, 4, 2),
                 BlockStateProvider.simple(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, WHITE_OSMANTHUS, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.OSMANTHUS_LOG.get()),
-                new FancyTrunkPlacer(5, 4, 1),
+                new FancyTrunkPlacer(5, 4, 2),
                 BlockStateProvider.simple(ModBlocks.WHITE_OSMANTHUS_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
 
         register(context, GOLDEN_OSMANTHUS_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.OSMANTHUS_LOG.get()),
-                new FancyTrunkPlacer(5, 4, 1),
+                new FancyTrunkPlacer(5, 4, 2),
                 BlockStateProvider.simple(ModBlocks.GOLDEN_OSMANTHUS_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
         register(context, ORANGE_OSMANTHUS_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.OSMANTHUS_LOG.get()),
-                new FancyTrunkPlacer(5, 4, 1),
+                new FancyTrunkPlacer(5, 4, 2),
                 BlockStateProvider.simple(ModBlocks.ORANGE_OSMANTHUS_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
         register(context, WHITE_OSMANTHUS_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.OSMANTHUS_LOG.get()),
-                new FancyTrunkPlacer(5, 4, 1),
+                new FancyTrunkPlacer(5, 4, 2),
                 BlockStateProvider.simple(ModBlocks.WHITE_OSMANTHUS_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
@@ -918,12 +918,12 @@ public class ModTreeFeatures {
 
         register(context, WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
-                new ForkingTrunkPlacer(5, 2, 2),
+                new ApricotTrunkPlacer(9, 2,2, 3, 4, 4, 6, 0.9F, 0.6F),
                 BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LEAVES.get()),
-                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2)),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(
                         List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
-                                BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA_PLANT.get().defaultBlockState()), 0.9f, 72, 1, 3))).ignoreVines().build());
+                                BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 102, 1, 3))).ignoreVines().build());
         register(context, TALL_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
                 new AncientCamphorTrunkPlacer(16, 4, 4, 5, 4, 4, 0.95F, 5),
