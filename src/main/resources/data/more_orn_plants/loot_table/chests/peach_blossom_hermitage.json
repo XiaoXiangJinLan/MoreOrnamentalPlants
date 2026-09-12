@@ -60,7 +60,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:wooden_hoe",
-          "weight": 2,
           "functions": [
             {
               "damage": {
@@ -70,7 +69,8 @@
               },
               "function": "minecraft:set_damage"
             }
-          ]
+          ],
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -84,23 +84,33 @@
         },
         {
           "type": "minecraft:item",
-          "name": "more_orn_plants:peach_xiangnang",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "more_orn_plants:peach_wooden_sword"
+          "name": "more_orn_plants:peach_xiangnang"
         },
         {
           "type": "minecraft:item",
           "name": "more_orn_plants:wild_peach_sapling",
-          "weight": 3
+          "weight": 2
         },
         {
           "type": "minecraft:item",
           "name": "more_orn_plants:ornamental_peach_sapling",
-          "weight": 3
+          "weight": 2
         },
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:white_peach_sapling",
+          "weight": 2
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 8.0,
+        "min": 6.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
         {
           "type": "minecraft:item",
           "functions": [
@@ -111,19 +121,24 @@
               }
             }
           ],
-          "name": "minecraft:enchanted_book",
-          "weight": 2
+          "name": "minecraft:enchanted_book"
         },
         {
           "type": "minecraft:item",
           "name": "more_orn_plants:immortal_peach"
         }
       ],
-      "rolls": {
-        "type": "minecraft:uniform",
-        "max": 8.0,
-        "min": 6.0
-      }
+      "rolls": 2.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:peach_wooden_sword"
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "more_orn_plants:chests/peach_blossom_hermitage"

@@ -1,0 +1,42 @@
+{
+  "parent": "more_orn_plants:flower_hermit",
+  "criteria": {
+    "found_huanghua_studio": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "more_orn_plants:huanghua_studio"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.moreornplants.huanghua_studio.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "more_orn_plants:xihu_liuyue"
+    },
+    "title": {
+      "translate": "advancement.moreornplants.huanghua_studio.title"
+    }
+  },
+  "requirements": [
+    [
+      "found_huanghua_studio"
+    ]
+  ],
+  "rewards": {
+    "experience": 9
+  },
+  "sends_telemetry_event": true
+}

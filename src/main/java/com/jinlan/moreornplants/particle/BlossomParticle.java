@@ -50,9 +50,11 @@ public class BlossomParticle extends TextureSheetParticle {
             this.xd += d0 * (double) 0.0025F;
             this.zd += d1 * (double) 0.0025F;
             this.yd -= this.gravity;
-            this.rotSpeed += this.spinAcceleration / 20.0F;
-            this.oRoll = this.roll;
-            this.roll += this.rotSpeed / 20.0F;
+            if (!this.onGround) {
+                this.rotSpeed += this.spinAcceleration / 20.0F;
+                this.oRoll = this.roll;
+                this.roll += this.rotSpeed / 20.0F;
+            }
             this.move(this.xd, this.yd, this.zd);
             boolean despawnOnGround = ModBiomeConfig.PARTICLE_DESPAWN_ON_GROUND.get();
             if ((despawnOnGround && this.onGround) || this.lifetime < 299 && (this.xd == 0.0D || this.zd == 0.0D)) {
