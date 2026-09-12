@@ -38,6 +38,20 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:emerald"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 8.0,
+        "min": 6.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
           "functions": [
             {
               "function": "minecraft:set_enchantments",
@@ -46,23 +60,24 @@
               }
             }
           ],
-          "name": "minecraft:enchanted_book",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "more_orn_plants:camphor_wooden_sword"
+          "name": "minecraft:enchanted_book"
         },
         {
           "type": "minecraft:item",
           "name": "more_orn_plants:cloud_apricot"
         }
       ],
-      "rolls": {
-        "type": "minecraft:uniform",
-        "max": 8.0,
-        "min": 6.0
-      }
+      "rolls": 2.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:camphor_wooden_sword"
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "more_orn_plants:chests/village/village_apricot_house"
