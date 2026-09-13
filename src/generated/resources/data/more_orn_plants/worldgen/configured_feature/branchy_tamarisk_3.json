@@ -8,7 +8,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "more_orn_plants:pink_peony"
+              "Name": "more_orn_plants:branchy_tamarisk"
             }
           }
         }
@@ -30,14 +30,14 @@
                   -1,
                   0
                 ],
-                "tag": "minecraft:dirt"
+                "tag": "minecraft:dead_bush_may_place_on"
               }
             ]
           }
         }
       ]
     },
-    "tries": 36,
+    "tries": 8,
     "xz_spread": 6,
     "y_spread": 2
   }

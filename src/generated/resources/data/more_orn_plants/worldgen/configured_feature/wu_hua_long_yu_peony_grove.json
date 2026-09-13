@@ -8,7 +8,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "more_orn_plants:pink_peony"
+              "Name": "more_orn_plants:wu_hua_long_yu_peony"
             }
           }
         }
@@ -37,7 +37,7 @@
         }
       ]
     },
-    "tries": 36,
+    "tries": 27,
     "xz_spread": 6,
     "y_spread": 2
   }
