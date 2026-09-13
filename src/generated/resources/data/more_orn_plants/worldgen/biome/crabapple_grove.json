@@ -73,9 +73,10 @@
     ],
     [
       "minecraft:glow_lichen",
-      "more_orn_plants:upright_crabapple_grove",
       "more_orn_plants:weeping_crabapple_grove",
+      "more_orn_plants:upright_crabapple_grove",
       "more_orn_plants:peony_pink_grove",
+      "more_orn_plants:wu_hua_long_yu_peony_grove",
       "more_orn_plants:peony_tree_pink_grove",
       "more_orn_plants:peach_petals_river",
       "more_orn_plants:tall_grass",

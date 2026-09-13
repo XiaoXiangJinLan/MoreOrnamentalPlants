@@ -71,6 +71,7 @@ public class ModVegetationFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_BLUE_KEY = registerKey("peony_blue_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_GREEN_KEY = registerKey("peony_green_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_PINK_GROVE = registerKey("peony_pink_grove");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WU_HUA_LONG_YU_PEONY_GROVE = registerKey("wu_hua_long_yu_peony_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEONY_GROVE = registerKey("peony_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LIGHT_PEONY_GROVE = registerKey("light_peony_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> INK_PEONY_GROVE = registerKey("ink_peony_grove");
@@ -158,9 +159,11 @@ public class ModVegetationFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> HARDY_BANANA_KEY = registerKey("hardy_banana_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BRANCHY_TAMARISK_KEY = registerKey("branchy_tamarisk");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BRANCHY_TAMARISK_2 = registerKey("branchy_tamarisk_2");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BRANCHY_TAMARISK_3 = registerKey("branchy_tamarisk_3");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BRANCHY_TAMARISK_GROVE = registerKey("branchy_tamarisk_grove");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BRANCHY_TAMARISK_LAND = registerKey("branchy_tamarisk_land");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_BRANCHY_TAMARISK = registerKey("golden_branchy_tamarisk");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_BRANCHY_TAMARISK_2 = registerKey("golden_branchy_tamarisk_2");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MUXUE_GRASS_KEY = registerKey("muxue_grass_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_MUXUE_GRASS_KEY = registerKey("tall_muxue_grass_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WISTERIA = registerKey("wisteria");
@@ -998,7 +1001,13 @@ public class ModVegetationFeatures {
 
         register(context, PEONY_PINK_GROVE, Feature.FLOWER, new RandomPatchConfiguration(36, 6, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PEONY.get())),
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PINK_PEONY.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
+        register(context, WU_HUA_LONG_YU_PEONY_GROVE, Feature.FLOWER, new RandomPatchConfiguration(27, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WU_HUA_LONG_YU_PEONY.get())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
@@ -1604,7 +1613,19 @@ public class ModVegetationFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DEAD_BUSH_MAY_PLACE_ON)))));
+        register(context, BRANCHY_TAMARISK_3, Feature.FLOWER, new RandomPatchConfiguration(8, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BRANCHY_TAMARISK.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DEAD_BUSH_MAY_PLACE_ON)))));
         register(context, GOLDEN_BRANCHY_TAMARISK, Feature.FLOWER, new RandomPatchConfiguration(100, 6, 2,
+                PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.GOLDEN_BRANCHY_TAMARISK.get())),
+                        BlockPredicate.allOf(
+                                BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DEAD_BUSH_MAY_PLACE_ON)))));
+        register(context, GOLDEN_BRANCHY_TAMARISK_2, Feature.FLOWER, new RandomPatchConfiguration(8, 6, 2,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.GOLDEN_BRANCHY_TAMARISK.get())),
                         BlockPredicate.allOf(
@@ -1781,7 +1802,7 @@ public class ModVegetationFeatures {
                 ConstantInt.of(1), 0.0F, 5, 0.8F,
                 UniformInt.of(4, 7), 0.3F));
 
-        register(context, GRASS_GROVE, Feature.RANDOM_PATCH, new RandomPatchConfiguration(30, 6, 4,
+        register(context, GRASS_GROVE, Feature.RANDOM_PATCH, new RandomPatchConfiguration(40, 6, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.SHORT_GRASS)),
                         BlockPredicate.allOf(

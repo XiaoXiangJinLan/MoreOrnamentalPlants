@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:peony_pink_grove",
+  "feature": "minecraft:flower_default",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 2
+      "type": "minecraft:rarity_filter",
+      "chance": 2
     },
     {
       "type": "minecraft:in_square"

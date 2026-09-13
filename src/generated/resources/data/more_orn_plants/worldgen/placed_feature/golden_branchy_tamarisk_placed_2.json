@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:peony_pink_grove",
+  "feature": "more_orn_plants:golden_branchy_tamarisk_2",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 2
+      "type": "minecraft:rarity_filter",
+      "chance": 1
     },
     {
       "type": "minecraft:in_square"

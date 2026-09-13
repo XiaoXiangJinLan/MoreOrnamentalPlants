@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:branchy_tamarisk_2",
+  "feature": "more_orn_plants:branchy_tamarisk_3",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 3
+      "chance": 1
     },
     {
       "type": "minecraft:in_square"

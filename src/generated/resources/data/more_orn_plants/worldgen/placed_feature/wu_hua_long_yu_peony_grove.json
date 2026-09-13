@@ -1,9 +1,9 @@
 {
-  "feature": "more_orn_plants:peony_pink_grove",
+  "feature": "more_orn_plants:wu_hua_long_yu_peony_grove",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 2
+      "count": 1
     },
     {
       "type": "minecraft:in_square"
