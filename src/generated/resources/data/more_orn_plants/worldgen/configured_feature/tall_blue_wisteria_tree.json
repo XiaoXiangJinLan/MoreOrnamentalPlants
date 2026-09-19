@@ -61,7 +61,7 @@
     },
     "trunk_placer": {
       "type": "more_orn_plants:ancient_camphor_trunk_placer",
-      "base_height": 16,
+      "base_height": 18,
       "branch_chance": 0.95,
       "branch_length": 5,
       "fork_height": 5,

@@ -1,5 +1,5 @@
 {
-  "feature": "more_orn_plants:tall_red_wisteria_tree",
+  "feature": "more_orn_plants:wisteria_tree",
   "placement": [
     {
       "type": "minecraft:count",
@@ -11,7 +11,7 @@
             "weight": 1
           },
           {
-            "data": 1,
+            "data": 2,
             "weight": 1
           }
         ]
