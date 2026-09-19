@@ -2,14 +2,12 @@ package com.jinlan.moreornplants.worldgen.features;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.ModBlocks;
-import com.jinlan.moreornplants.block.WeepingBlocks.CrabappleBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.WisteriaBlock;
 import com.jinlan.moreornplants.feature.blockstateproviders.VersicolorMeiLeavesProvider;
 import com.jinlan.moreornplants.feature.foliageplacers.*;
 import com.jinlan.moreornplants.feature.treedecorators.*;
 import com.jinlan.moreornplants.feature.trunkplacers.*;
-import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
@@ -83,7 +81,6 @@ public class ModTreeFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRABAPPLE = registerKey("white_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRABAPPLE_BEES = registerKey("white_crabapple_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CRABAPPLE = registerKey("golden_crabapple");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CRABAPPLE_WITH_FRUITS = registerKey("golden_crabapple_fruits");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE = registerKey("weeping_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE_BEES = registerKey("weeping_crabapple_bees");
     //apricot & peach & pear & cherry & plum
@@ -485,19 +482,6 @@ public class ModTreeFeatures {
                 BlockStateProvider.simple(ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
-        SimpleWeightedRandomList.Builder<BlockState> goldenCrabappleBuilder = SimpleWeightedRandomList.builder();
-        for(Direction direction : Direction.Plane.HORIZONTAL) {
-            goldenCrabappleBuilder.add(ModBlocks.GOLDEN_CRABAPPLE.get().defaultBlockState()
-                    .setValue(PeachBlock.AGE, 1)
-                    .setValue(CrabappleBlock.FACING, direction), 1);
-        }
-        WeightedStateProvider provider2 = new WeightedStateProvider(goldenCrabappleBuilder.build());
-        register(context, GOLDEN_CRABAPPLE_WITH_FRUITS, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
-                new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
-                BlockStateProvider.simple(ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get()),
-                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
-                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(provider2, 0.6F))).ignoreVines().build());
         register(context, WEEPING_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
                 new CrabappleTrunkPlacer(10, 1, 1, 5, 4, 3, 3, 4, 0.6F),

@@ -1074,11 +1074,16 @@ public class ModBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GRASS_PLAIN);
 
         float f = isSnow ? 0.0f : 0.5f;
+        BiomeSpecialEffects.Builder effectsBuilder = new BiomeSpecialEffects.Builder()
+                .waterColor(isSnow ? 3750089 : 4159204).waterFogColor(329011).skyColor(isSnow ? 0xA3C0FF : 8103167).fogColor(12638463);
+        if (isAutumn) {
+            effectsBuilder.grassColorOverride(0xFFE050);
+            effectsBuilder.foliageColorOverride(0xE03010);
+        }
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(true).temperature(f).downfall(0.6f)
                 .generationSettings(biomeBuilder.build()).mobSpawnSettings(spawnBuilder.build())
-                .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(isSnow ? 3750089 : 4159204).waterFogColor(329011).skyColor(isSnow ? 0xA3C0FF : 8103167).fogColor(12638463).build())
+                .specialEffects(effectsBuilder.build())
                 .build();
     }
 

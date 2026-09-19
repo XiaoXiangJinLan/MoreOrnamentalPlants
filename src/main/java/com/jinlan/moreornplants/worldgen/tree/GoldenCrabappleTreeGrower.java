@@ -12,6 +12,6 @@ public class GoldenCrabappleTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull RandomSource pRandom, boolean pHasFlowers) {
-        return ModTreeFeatures.GOLDEN_CRABAPPLE_WITH_FRUITS;
+        return ModTreeFeatures.GOLDEN_CRABAPPLE;
     }
 }
