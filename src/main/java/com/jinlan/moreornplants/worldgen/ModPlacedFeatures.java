@@ -572,11 +572,11 @@ public class ModPlacedFeatures {
                 List.of(CountPlacement.of(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, WILD_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.WILD_PEACH_BEES),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1), ModBlocks.WILD_PEACH_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1), ModBlocks.WILD_PEACH_SAPLING.get()));
         register(context, ORNAMENTAL_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.ORNAMENTAL_PEACH_BEES),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1), ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1), ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
         register(context, WHITE_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.WHITE_PEACH_BEES),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1), ModBlocks.WHITE_PEACH_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1), ModBlocks.WHITE_PEACH_SAPLING.get()));
         register(context, CAMPHOR_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.CAMPHOR),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5F, 1), ModBlocks.CAMPHOR_SAPLING.get()));
         register(context, ANCIENT_CAMPHOR_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.ANCIENT_CAMPHOR),
