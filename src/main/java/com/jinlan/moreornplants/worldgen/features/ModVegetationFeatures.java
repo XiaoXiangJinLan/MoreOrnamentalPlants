@@ -671,7 +671,7 @@ public class ModVegetationFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), ModBlocks.CAMPHOR_LOG.get())))));
-        register(context, GLOWSTONE_2, Feature.RANDOM_PATCH, new RandomPatchConfiguration(16, 7, 4,
+        register(context, GLOWSTONE_2, Feature.RANDOM_PATCH, new RandomPatchConfiguration(6, 7, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.GLOWSTONE)),
                         BlockPredicate.allOf(

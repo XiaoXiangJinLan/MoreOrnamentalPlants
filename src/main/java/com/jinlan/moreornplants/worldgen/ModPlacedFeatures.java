@@ -121,11 +121,16 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> DESERT_POPLAR_3_PLACED = registerKey("desert_poplar_3_placed");
     public static final ResourceKey<PlacedFeature> WISTERIA_TREE_PLACED = registerKey("wisteria_tree_placed");
     public static final ResourceKey<PlacedFeature> WISTERIA_TREE_FIELDS = registerKey("wisteria_tree_fields");
-    public static final ResourceKey<PlacedFeature> TALL_WISTERIA_TREE_GARDEN = registerKey("tall_wisteria_tree_garden");
-    public static final ResourceKey<PlacedFeature> TALL_PURPLE_WISTERIA_TREE_GARDEN = registerKey("tall_purple_wisteria_tree_garden");
-    public static final ResourceKey<PlacedFeature> TALL_WHITE_WISTERIA_TREE_GARDEN = registerKey("tall_white_wisteria_tree_garden");
-    public static final ResourceKey<PlacedFeature> TALL_RED_WISTERIA_TREE_GARDEN = registerKey("tall_red_wisteria_tree_garden");
-    public static final ResourceKey<PlacedFeature> TALL_BLUE_WISTERIA_TREE_GARDEN = registerKey("tall_blue_wisteria_tree_garden");
+    public static final ResourceKey<PlacedFeature> WISTERIA_TREE_VALLEY = registerKey("wisteria_tree_valley");
+    public static final ResourceKey<PlacedFeature> PURPLE_WISTERIA_TREE_VALLEY = registerKey("purple_wisteria_tree_valley");
+    public static final ResourceKey<PlacedFeature> WHITE_WISTERIA_TREE_VALLEY = registerKey("white_wisteria_tree_valley");
+    public static final ResourceKey<PlacedFeature> RED_WISTERIA_TREE_VALLEY = registerKey("red_wisteria_tree_valley");
+    public static final ResourceKey<PlacedFeature> BLUE_WISTERIA_TREE_VALLEY = registerKey("blue_wisteria_tree_valley");
+    public static final ResourceKey<PlacedFeature> TALL_WISTERIA_TREE_VALLEY = registerKey("tall_wisteria_tree_valley");
+    public static final ResourceKey<PlacedFeature> TALL_PURPLE_WISTERIA_TREE_VALLEY = registerKey("tall_purple_wisteria_tree_valley");
+    public static final ResourceKey<PlacedFeature> TALL_WHITE_WISTERIA_TREE_VALLEY = registerKey("tall_white_wisteria_tree_valley");
+    public static final ResourceKey<PlacedFeature> TALL_RED_WISTERIA_TREE_VALLEY = registerKey("tall_red_wisteria_tree_valley");
+    public static final ResourceKey<PlacedFeature> TALL_BLUE_WISTERIA_TREE_VALLEY = registerKey("tall_blue_wisteria_tree_valley");
     public static final ResourceKey<PlacedFeature> TAIWAN_CHERRY_PLACED =registerKey("taiwan_cherry_placed");
     public static final ResourceKey<PlacedFeature> TAIWAN_CHERRY_FIELDS =registerKey("taiwan_cherry_fields");
     public static final ResourceKey<PlacedFeature> MEGA_PINE_LONGEVITY = registerKey("mega_pine_longevity");
@@ -470,7 +475,7 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.ORANGE_OSMANTHUS_SAPLING.get()));
         register(context, CHINABERRY_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.CHINABERRY_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.CHINABERRY_SAPLING.get()));
-        register(context, WISTERIA_TREE_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.WISTERIA_TREE),
+        register(context, WISTERIA_TREE_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.PURPLE_WISTERIA_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
         register(context, TAIWAN_CHERRY_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.TAIWAN_CHERRY_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.TAIWAN_CHERRY_SAPLING.get()));
@@ -550,7 +555,7 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.025f, 1), ModBlocks.ORANGE_OSMANTHUS_SAPLING.get()));
         register(context, CHINABERRY_FIELDS, configuredFeatures.getOrThrow(ModTreeFeatures.CHINABERRY_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.025f, 1), ModBlocks.CHINABERRY_SAPLING.get()));
-        register(context, WISTERIA_TREE_FIELDS, configuredFeatures.getOrThrow(ModTreeFeatures.WISTERIA_TREE),
+        register(context, WISTERIA_TREE_FIELDS, configuredFeatures.getOrThrow(ModTreeFeatures.PURPLE_WISTERIA_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.025f, 1), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
         register(context, TAIWAN_CHERRY_FIELDS, configuredFeatures.getOrThrow(ModTreeFeatures.TAIWAN_CHERRY_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.025f, 1), ModBlocks.TAIWAN_CHERRY_SAPLING.get()));
@@ -566,12 +571,12 @@ public class ModPlacedFeatures {
         register(context, PEONY_TREE_PINK_GROVE, configuredFeatures.getOrThrow(ModVegetationFeatures.ZHAO_PINK_PEONY_GROVE),
                 List.of(CountPlacement.of(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
+        register(context, WILD_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.WILD_PEACH_BEES),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1), ModBlocks.WILD_PEACH_SAPLING.get()));
         register(context, ORNAMENTAL_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.ORNAMENTAL_PEACH_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1), ModBlocks.ORNAMENTAL_PEACH_SAPLING.get()));
-        register(context, WILD_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.WILD_PEACH_BEES),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.2f, 1), ModBlocks.WILD_PEACH_SAPLING.get()));
         register(context, WHITE_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.WHITE_PEACH_BEES),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1), ModBlocks.WHITE_PEACH_SAPLING.get()));
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.2f, 1), ModBlocks.WHITE_PEACH_SAPLING.get()));
         register(context, CAMPHOR_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.CAMPHOR),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5F, 1), ModBlocks.CAMPHOR_SAPLING.get()));
         register(context, ANCIENT_CAMPHOR_PEACH_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.ANCIENT_CAMPHOR),
@@ -660,11 +665,11 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05F, 1), ModBlocks.CAMPHOR_SAPLING.get()));
 
         register(context, RED_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.RED_CAMELLIA_KEY),
-                List.of(CountPlacement.of(9), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+                List.of(CountPlacement.of(8), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, WHITE_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.WHITE_CAMELLIA_KEY),
-                List.of(CountPlacement.of(9), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+                List.of(CountPlacement.of(8), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PINK_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.PINK_CAMELLIA_KEY),
-                List.of(CountPlacement.of(9), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+                List.of(CountPlacement.of(8), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, TALL_RED_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.TALL_RED_CAMELLIA_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, TALL_WHITE_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.TALL_WHITE_CAMELLIA_KEY),
@@ -844,16 +849,26 @@ public class ModPlacedFeatures {
         register(context, WHITE_CRAPE_MYRTLE_GARDEN, configuredFeatures.getOrThrow(ModVegetationFeatures.WHITE_CRAPE_MYRTLE_GARDEN),
                 List.of(CountPlacement.of(2), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
-        register(context, TALL_WISTERIA_TREE_GARDEN, configuredFeatures.getOrThrow(ModTreeFeatures.TALL_WISTERIA_TREE),
+        register(context, WISTERIA_TREE_VALLEY, configuredFeatures.getOrThrow(ModTreeFeatures.WISTERIA_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.5f, 1), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
-        register(context, TALL_PURPLE_WISTERIA_TREE_GARDEN, configuredFeatures.getOrThrow(ModTreeFeatures.TALL_PURPLE_WISTERIA_TREE),
+        register(context, PURPLE_WISTERIA_TREE_VALLEY, configuredFeatures.getOrThrow(ModTreeFeatures.PURPLE_WISTERIA_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.5f, 0), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
-        register(context, TALL_RED_WISTERIA_TREE_GARDEN, configuredFeatures.getOrThrow(ModTreeFeatures.TALL_RED_WISTERIA_TREE),
+        register(context, RED_WISTERIA_TREE_VALLEY, configuredFeatures.getOrThrow(ModTreeFeatures.RED_WISTERIA_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.5f, 0), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
-        register(context, TALL_WHITE_WISTERIA_TREE_GARDEN, configuredFeatures.getOrThrow(ModTreeFeatures.TALL_WHITE_WISTERIA_TREE),
+        register(context, WHITE_WISTERIA_TREE_VALLEY, configuredFeatures.getOrThrow(ModTreeFeatures.WHITE_WISTERIA_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.5f, 1), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
-        register(context, TALL_BLUE_WISTERIA_TREE_GARDEN, configuredFeatures.getOrThrow(ModTreeFeatures.TALL_BLUE_WISTERIA_TREE),
+        register(context, BLUE_WISTERIA_TREE_VALLEY, configuredFeatures.getOrThrow(ModTreeFeatures.BLUE_WISTERIA_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.5f, 1), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
+        register(context, TALL_WISTERIA_TREE_VALLEY, configuredFeatures.getOrThrow(ModTreeFeatures.TALL_WISTERIA_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
+        register(context, TALL_PURPLE_WISTERIA_TREE_VALLEY, configuredFeatures.getOrThrow(ModTreeFeatures.TALL_PURPLE_WISTERIA_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
+        register(context, TALL_RED_WISTERIA_TREE_VALLEY, configuredFeatures.getOrThrow(ModTreeFeatures.TALL_RED_WISTERIA_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
+        register(context, TALL_WHITE_WISTERIA_TREE_VALLEY, configuredFeatures.getOrThrow(ModTreeFeatures.TALL_WHITE_WISTERIA_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.5f, 1), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
+        register(context, TALL_BLUE_WISTERIA_TREE_VALLEY, configuredFeatures.getOrThrow(ModTreeFeatures.TALL_BLUE_WISTERIA_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.5f, 1), ModBlocks.CRAPE_MYRTLE_SAPLING.get()));
         register(context, GLOWSTONE_LOGS, configuredFeatures.getOrThrow(ModVegetationFeatures.GLOWSTONE_1),
                 List.of(CountPlacement.of(80), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, GLOWSTONE_GRASS, configuredFeatures.getOrThrow(ModVegetationFeatures.GLOWSTONE_2),

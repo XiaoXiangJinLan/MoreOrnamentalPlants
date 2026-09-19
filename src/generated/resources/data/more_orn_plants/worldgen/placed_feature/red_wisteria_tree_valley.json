@@ -1,5 +1,5 @@
 {
-  "feature": "more_orn_plants:wild_peach_bees",
+  "feature": "more_orn_plants:red_wisteria_tree",
   "placement": [
     {
       "type": "minecraft:count",
@@ -8,10 +8,10 @@
         "distribution": [
           {
             "data": 1,
-            "weight": 4
+            "weight": 1
           },
           {
-            "data": 2,
+            "data": 1,
             "weight": 1
           }
         ]
@@ -36,10 +36,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "more_orn_plants:wild_peach_sapling",
-          "Properties": {
-            "stage": "0"
-          }
+          "Name": "more_orn_plants:crape_myrtle_sapling"
         }
       }
     }

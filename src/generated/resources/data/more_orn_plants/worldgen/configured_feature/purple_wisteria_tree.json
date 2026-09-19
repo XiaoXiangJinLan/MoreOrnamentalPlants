@@ -7,7 +7,7 @@
         "body_block": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "more_orn_plants:white_chinese_wisteria_plant",
+            "Name": "more_orn_plants:nanjing_wisteria_plant",
             "Properties": {
               "top": "false"
             }
@@ -17,16 +17,16 @@
         "head_block": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "more_orn_plants:white_chinese_wisteria",
+            "Name": "more_orn_plants:nanjing_wisteria",
             "Properties": {
               "age": "0",
               "top": "false"
             }
           }
         },
-        "max_length": 5,
-        "max_vines": 300,
-        "min_length": 2
+        "max_length": 3,
+        "max_vines": 102,
+        "min_length": 1
       }
     ],
     "dirt_provider": {
@@ -37,13 +37,13 @@
     },
     "foliage_placer": {
       "type": "minecraft:acacia_foliage_placer",
-      "offset": 0,
+      "offset": 2,
       "radius": 2
     },
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "more_orn_plants:white_crape_myrtle_leaves",
+        "Name": "more_orn_plants:crape_myrtle_leaves",
         "Properties": {
           "distance": "7",
           "persistent": "false",
@@ -60,15 +60,16 @@
       "upper_size": 1
     },
     "trunk_placer": {
-      "type": "more_orn_plants:ancient_camphor_trunk_placer",
-      "base_height": 18,
-      "branch_chance": 0.95,
-      "branch_length": 5,
-      "fork_height": 5,
-      "height_rand_a": 4,
-      "height_rand_b": 4,
-      "max_branches": 4,
-      "min_branches": 4
+      "type": "more_orn_plants:apricot_trunk_placer",
+      "base_height": 9,
+      "branch_chance": 0.9,
+      "branch_max_length": 6,
+      "branch_min_length": 4,
+      "branch_start_height": 3,
+      "branch_upward_bias": 0.6,
+      "height_rand_a": 2,
+      "height_rand_b": 2,
+      "max_branches_per_level": 4
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
