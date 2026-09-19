@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-19T12:52:09.9773711	Registries
+// 1.21.1	2026-09-19T17:06:13.2816097	Registries
 211cc5040a3e3007d07b6c6460d7eb5ba7825fd8 data/more_orn_plants/worldgen/biome/autumn_river.json
 0e4e5adc4241237b4e567c553fc6a6913e036d4a data/more_orn_plants/worldgen/biome/azalea_forest.json
 212a3f3fb68cee9c88b428cd4aa4f2a9ce47c696 data/more_orn_plants/worldgen/biome/blue_wisteria_valley.json
@@ -153,7 +153,6 @@ ba6e11a956f4f00588cfd545350313d0f49ce0da data/more_orn_plants/worldgen/configure
 24bc82b81f2d05b484c27521d5efccc801f3a822 data/more_orn_plants/worldgen/configured_feature/golden_branchy_tamarisk.json
 ba47427cb39978b3663aa8ba109d3bb7edc8ff1c data/more_orn_plants/worldgen/configured_feature/golden_branchy_tamarisk_2.json
 8a91e1b8dcdfd2e60f2cd0d0d16f71f197afc2ad data/more_orn_plants/worldgen/configured_feature/golden_crabapple.json
-375f17fa86808f23b11ff48e85a3565cb6df2436 data/more_orn_plants/worldgen/configured_feature/golden_crabapple_fruits.json
 f44a3d247428efd3bffd4d53b0b784dc98f0091a data/more_orn_plants/worldgen/configured_feature/golden_ginkgo.json
 416f3697b053ccbc82515af42fb3f22f0aad19f1 data/more_orn_plants/worldgen/configured_feature/golden_ginkgo_with_fallen_log.json
 dec00b0602fcf95ed0836ce617a5a9411824612b data/more_orn_plants/worldgen/configured_feature/golden_ginkgo_with_leaf_pile.json

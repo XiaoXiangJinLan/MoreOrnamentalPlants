@@ -157,7 +157,7 @@ public class ModTreeGrower {
     public static final TreeGrower GOLDEN_CRABAPPLE = new TreeGrower(
             "golden_crabapple",
             Optional.empty(),
-            Optional.of(ModTreeFeatures.GOLDEN_CRABAPPLE_WITH_FRUITS),
+            Optional.of(ModTreeFeatures.GOLDEN_CRABAPPLE),
             Optional.empty()
     );
 
