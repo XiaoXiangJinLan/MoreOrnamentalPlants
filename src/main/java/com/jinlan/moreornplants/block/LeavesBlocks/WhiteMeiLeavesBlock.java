@@ -42,7 +42,8 @@ public class WhiteMeiLeavesBlock extends ModLeavesBlock {
 
         if (!level.isAreaLoaded(pos, 1)) return;
 
-        if (!state.getValue(BlockStateProperties.PERSISTENT)) {
+        int distance = state.getValue(BlockStateProperties.DISTANCE);
+        if (!state.getValue(BlockStateProperties.PERSISTENT) && (distance == 3 || distance == 5)) {
             BlockPos belowPos = pos.below();
             if (level.isEmptyBlock(belowPos)) {
                 int chance = level.getBiome(pos).is(ModTags.Biomes.APRICOT_BEARING) ? 5 : 10;
