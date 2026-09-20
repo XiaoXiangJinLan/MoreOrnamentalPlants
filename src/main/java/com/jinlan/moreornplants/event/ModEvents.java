@@ -119,13 +119,13 @@ public class ModEvents {
                 event.setAmount(multiplier * (event.getAmount() + maxHealth));
             }
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getMobType() == MobType.ARTHROPOD) {
-            event.setAmount(event.getAmount() * ModBiomeConfig.CAMPHOR_SWORD_MULTIPLIER.get().floatValue() * 2);
+            event.setAmount(event.getAmount() * ModBiomeConfig.CAMPHOR_SWORD_MULTIPLIER.get().floatValue());
         } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
             if (target1.isInvertedHealAndHarm()) {
                 target1.setSecondsOnFire(20);
             }
             if (target1 instanceof Raider) {
-                event.setAmount(event.getAmount() * ModBiomeConfig.CHINESE_PARASOL_SWORD_MULTIPLIER.get().floatValue() * 2);
+                event.setAmount(event.getAmount() * ModBiomeConfig.CHINESE_PARASOL_SWORD_MULTIPLIER.get().floatValue());
             }
         } else if (weapon.is(ModTags.Items.ZIYING_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob || hasMeleeAttackGoal(target1))) {
             if (player.getRandom().nextFloat() < 0.75f) {
@@ -518,17 +518,21 @@ public class ModEvents {
                 spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
             }
         }
-        if (player.tickCount % 10 == 0) {
+        if (player.tickCount % 8 == 0) {
             if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
-            } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
+            }
+            if (offHand.is(ModItems.PEACH_WOODEN_SWORD.get())) {
+                spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
+            }
+        }
+        if (player.tickCount % 10 == 0) {
+            if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.CAMPHOR_LEAVES.get());
             } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get());
             }
-            if (offHand.is(ModItems.PEACH_WOODEN_SWORD.get())) {
-                spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
-            } else if (offHand.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
+            if (offHand.is(ModItems.CAMPHOR_WOODEN_SWORD.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.CAMPHOR_LEAVES.get());
             } else if (offHand.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get());
