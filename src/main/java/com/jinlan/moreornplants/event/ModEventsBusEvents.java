@@ -156,13 +156,13 @@ public class ModEventsBusEvents {
                 event.setAmount(multiplier * (event.getAmount() + maxHealth));
             }
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getType().is(EntityTypeTags.ARTHROPOD)) {
-            event.setAmount(event.getAmount() * ModBiomeConfig.CAMPHOR_SWORD_MULTIPLIER.get().floatValue() * 2);
+            event.setAmount(event.getAmount() * ModBiomeConfig.CAMPHOR_SWORD_MULTIPLIER.get().floatValue());
         } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
             if (target1.getType().is(EntityTypeTags.UNDEAD)) {
                 target1.igniteForSeconds(20);
             }
             if (target1 instanceof Raider) {
-                event.setAmount(event.getAmount() * ModBiomeConfig.CHINESE_PARASOL_SWORD_MULTIPLIER.get().floatValue() * 2);
+                event.setAmount(event.getAmount() * ModBiomeConfig.CHINESE_PARASOL_SWORD_MULTIPLIER.get().floatValue());
             }
         } else if (weapon.is(ModTags.Items.ZIYING_TOOLS) && (target1 instanceof Enemy || target1 instanceof NeutralMob || hasMeleeAttackGoal(target1))) {
             if (player.getRandom().nextFloat() < 0.75f) {

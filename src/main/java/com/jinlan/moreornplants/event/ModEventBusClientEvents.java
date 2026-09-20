@@ -189,17 +189,21 @@ public class ModEventBusClientEvents {
                 spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
             }
         }
-        if (player.tickCount % 10 == 0) {
+        if (player.tickCount % 8 == 0) {
             if (weapon.is(ModItems.PEACH_WOODEN_SWORD)) {
                 spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
-            } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD)) {
+            }
+            if (offHand.is(ModItems.PEACH_WOODEN_SWORD)) {
+                spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
+            }
+        }
+        if (player.tickCount % 10 == 0) {
+            if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD)) {
                 spawnSwordParticle2(player, ModParticleTypes.CAMPHOR_LEAVES.get());
             } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD)) {
                 spawnSwordParticle2(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get());
             }
-            if (offHand.is(ModItems.PEACH_WOODEN_SWORD)) {
-                spawnSwordParticle2(player, ModParticleTypes.IMMORTAL_PEACH_LEAVES.get());
-            } else if (offHand.is(ModItems.CAMPHOR_WOODEN_SWORD)) {
+            if (offHand.is(ModItems.CAMPHOR_WOODEN_SWORD)) {
                 spawnSwordParticle2(player, ModParticleTypes.CAMPHOR_LEAVES.get());
             } else if (offHand.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD)) {
                 spawnSwordParticle2(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get());

@@ -93,6 +93,7 @@ public class ModTreeFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORNAMENTAL_PEACH_BEES = registerKey("ornamental_peach_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILD_PEACH = registerKey("wild_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WILD_PEACH_BEES = registerKey("wild_peach_bees");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_WILD_PEACH = registerKey("ancient_wild_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_PEACH = registerKey("white_peach");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_PEACH_BEES = registerKey("white_peach_bees");
     public static final ResourceKey<ConfiguredFeature<?, ?>> IMMORTAL_PEACH = registerKey("immortal_peach");
@@ -556,7 +557,12 @@ public class ModTreeFeatures {
                 BlockStateProvider.simple(ModBlocks.IMMORTAL_PEACH_LEAVES.get()),
                 new PeachFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(4)),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(ModBlocks.IMMORTAL_PEACH.get().defaultBlockState().setValue(PeachBlock.AGE, 1), 0.12F))).ignoreVines().build());
-
+        register(context, ANCIENT_WILD_PEACH, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
+                new AncientCamphorTrunkPlacer(16, 2, 2, 5, 4, 4, 0.8F, 5),
+                BlockStateProvider.simple(ModBlocks.WILD_PEACH_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(0, 0, 0)).ignoreVines().build());
         register(context, ORNAMENTAL_PEACH_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PEACH_LOG.get()),
                 new PeachTrunkPlacer(6, 2, 2, 2, 4, 3, 4, 0.9F, 0.4F),
