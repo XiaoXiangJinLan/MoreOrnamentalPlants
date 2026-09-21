@@ -40,11 +40,11 @@
     },
     "trunk_placer": {
       "type": "more_orn_plants:ancient_mei_trunk_placer",
-      "base_height": 16,
+      "base_height": 15,
       "bend_factor": 0.5,
       "fork_chance": 2,
       "height_rand_a": 2,
-      "height_rand_b": 4,
+      "height_rand_b": 2,
       "max_fork_angle": 45,
       "max_fork_length": 8,
       "min_fork_length": 6,
