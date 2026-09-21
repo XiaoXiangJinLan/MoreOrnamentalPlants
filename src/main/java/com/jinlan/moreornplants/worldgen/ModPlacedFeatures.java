@@ -441,21 +441,21 @@ public class ModPlacedFeatures {
         register(context, FRAGRANT_SNOW_PETALS_PATCH_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.FRAGRANT_SNOW_PETALS_PATCH),
                 List.of(NoiseThresholdCountPlacement.of(-0.8, 6, 10), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
-        register(context, SNOW_RED_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.RED_MEI),
+        register(context, SNOW_RED_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.RED_MEI_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.RED_MEI_SAPLING.get()));
-        register(context, SNOW_WHITE_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.WHITE_MEI),
+        register(context, SNOW_WHITE_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.WHITE_MEI_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 1), ModBlocks.WHITE_MEI_SAPLING.get()));
-        register(context, SNOW_PINK_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.PINK_MEI),
+        register(context, SNOW_PINK_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.PINK_MEI_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 1), ModBlocks.PINK_MEI_SAPLING.get()));
-        register(context, SNOW_DOUBLE_PINK_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.DOUBLE_PINK_MEI),
+        register(context, SNOW_DOUBLE_PINK_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.DOUBLE_PINK_MEI_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 1), ModBlocks.DOUBLE_PINK_MEI_SAPLING.get()));
-        register(context, SNOW_DOUBLE_WHITE_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.DOUBLE_WHITE_MEI),
+        register(context, SNOW_DOUBLE_WHITE_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.DOUBLE_WHITE_MEI_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05f, 1), ModBlocks.DOUBLE_WHITE_MEI_SAPLING.get()));
-        register(context, SNOW_GREEN_CALYX_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.GREEN_CALYX_MEI),
+        register(context, SNOW_GREEN_CALYX_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.GREEN_CALYX_MEI_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.GREEN_CALYX_MEI_SAPLING.get()));
-        register(context, SNOW_FLAVESCENS_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.FLAVESCENS_MEI),
+        register(context, SNOW_FLAVESCENS_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.FLAVESCENS_MEI_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.FLAVESCENS_MEI_SAPLING.get()));
-        register(context, SNOW_VERSICOLOR_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.VERSICOLOR_MEI),
+        register(context, SNOW_VERSICOLOR_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.VERSICOLOR_MEI_BEES),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.5f, 1), ModBlocks.VERSICOLOR_MEI_SAPLING.get()));
         register(context, GOLDEN_MEI_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.GOLDEN_MEI),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.2f, 1), ModBlocks.GOLDEN_MEI_SAPLING.get()));

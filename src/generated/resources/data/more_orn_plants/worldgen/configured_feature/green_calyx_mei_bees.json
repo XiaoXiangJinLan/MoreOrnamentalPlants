@@ -45,8 +45,8 @@
     "trunk_placer": {
       "type": "more_orn_plants:mei_trunk_placer",
       "base_height": 7,
-      "bend_factor": 0.4,
-      "fork_chance": 3,
+      "bend_factor": 0.5,
+      "fork_chance": 2,
       "height_rand_a": 2,
       "height_rand_b": 2,
       "max_fork_angle": 60,
