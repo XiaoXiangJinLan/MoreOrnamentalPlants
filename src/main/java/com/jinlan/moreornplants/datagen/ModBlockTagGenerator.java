@@ -39,7 +39,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CHINESE_WISTERIA_PLANT.get(), ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get(), ModBlocks.NANJING_WISTERIA_PLANT.get(),
                         ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get(), ModBlocks.RED_CHINESE_WISTERIA_PLANT.get())
                 .add(ModBlocks.CRABAPPLE.get(), ModBlocks.GOLDEN_CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(),
-                        ModBlocks.MEI.get(), ModBlocks.GOLDEN_MEI.get(), ModBlocks.BAMBOO_STICK.get());
+                        ModBlocks.MEI.get(), ModBlocks.GOLDEN_MEI.get(), ModBlocks.BAMBOO_STICK.get())
+                .add(ModBlocks.CRABAPPLE_PILE.get(), ModBlocks.GOLDEN_CRABAPPLE_PILE.get(),
+                        ModBlocks.CLOUD_APRICOT_PILE.get(), ModBlocks.IMMORTAL_PEACH_PILE.get(),
+                        ModBlocks.MEI_PILE.get(), ModBlocks.GOLDEN_MEI_PILE.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ZIYING_BEADLIGHT.get(), ModBlocks.SUYU_BEADLIGHT.get());

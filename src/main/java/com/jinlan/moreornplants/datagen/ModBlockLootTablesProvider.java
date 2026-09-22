@@ -1221,6 +1221,12 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.LOTUS_ROOT_SOUP.get());
         this.dropSelf(ModBlocks.LOTUS_SEED_SOUP.get());
         this.dropSelf(ModBlocks.MUXUE_SOUP.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_PILE.get());
+        this.dropSelf(ModBlocks.GOLDEN_CRABAPPLE_PILE.get());
+        this.dropSelf(ModBlocks.CLOUD_APRICOT_PILE.get());
+        this.dropSelf(ModBlocks.IMMORTAL_PEACH_PILE.get());
+        this.dropSelf(ModBlocks.MEI_PILE.get());
+        this.dropSelf(ModBlocks.GOLDEN_MEI_PILE.get());
     }
 
     private LootTable.Builder createLotusDrops(Block lotusBlock) {

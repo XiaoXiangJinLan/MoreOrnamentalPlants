@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:immortal_peach"
+    },
+    {
+      "item": "more_orn_plants:immortal_peach"
+    },
+    {
+      "item": "more_orn_plants:immortal_peach"
+    },
+    {
+      "item": "more_orn_plants:immortal_peach"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_orn_plants:immortal_peach_pile"
+  }
+}

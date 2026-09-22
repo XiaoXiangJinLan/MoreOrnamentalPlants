@@ -23,17 +23,17 @@ public class BlackBambooStalkBlock extends BambooStalkBlock {
     }
 
     @Override
-    public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
         return true;
     }
 
     @Override
-    public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
         return 60;
     }
 
     @Override
-    public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
         return 60;
     }
 
@@ -69,16 +69,17 @@ public class BlackBambooStalkBlock extends BambooStalkBlock {
     }
 
     @Override
-    public @NotNull BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pPos, BlockPos pNeighborPos) {
-        if (!pState.canSurvive(pLevel, pPos)) {
-            pLevel.scheduleTick(pPos, this, 1);
+    public @NotNull BlockState updateShape(BlockState state, @NotNull Direction direction, @NotNull BlockState neighborState,
+                                           @NotNull LevelAccessor level, @NotNull BlockPos pos, @NotNull BlockPos neighborPos) {
+        if (!state.canSurvive(level, pos)) {
+            level.scheduleTick(pos, this, 1);
         }
 
-        if (pDirection == Direction.UP && pNeighborState.is(ModBlocks.BLACK_BAMBOO.get()) && pNeighborState.getValue(AGE) > pState.getValue(AGE)) {
-            pLevel.setBlock(pPos, pState.cycle(AGE), 2);
+        if (direction == Direction.UP && neighborState.is(ModBlocks.BLACK_BAMBOO.get()) && neighborState.getValue(AGE) > state.getValue(AGE)) {
+            level.setBlock(pos, state.cycle(AGE), 2);
         }
 
-        return super.updateShape(pState, pDirection, pNeighborState, pLevel, pPos, pNeighborPos);
+        return super.updateShape(state, direction, neighborState, level, pos, neighborPos);
     }
 
     @Override

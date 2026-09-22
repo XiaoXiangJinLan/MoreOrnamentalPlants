@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_immortal_peach": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_orn_plants:immortal_peach"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:immortal_peach_pile"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_immortal_peach"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:immortal_peach_pile"
+    ]
+  }
+}
