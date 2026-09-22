@@ -45,7 +45,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.FOUNTAIN_GRASS.get(), ModBlocks.PURPLE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.PINK_FOUNTAIN_GRASS.get(), ModBlocks.WHITE_FOUNTAIN_GRASS.get())
                 .add(ModBlocks.CRABAPPLE.get(), ModBlocks.GOLDEN_CRABAPPLE.get(), ModBlocks.CLOUD_APRICOT.get(), ModBlocks.IMMORTAL_PEACH.get(),
-                        ModBlocks.MEI.get(), ModBlocks.GOLDEN_MEI.get(), ModBlocks.BAMBOO_STICK.get());
+                        ModBlocks.MEI.get(), ModBlocks.GOLDEN_MEI.get(), ModBlocks.BAMBOO_STICK.get())
+                .add(ModBlocks.CRABAPPLE_PILE.get(), ModBlocks.GOLDEN_CRABAPPLE_PILE.get(),
+                        ModBlocks.CLOUD_APRICOT_PILE.get(), ModBlocks.IMMORTAL_PEACH_PILE.get(),
+                        ModBlocks.MEI_PILE.get(), ModBlocks.GOLDEN_MEI_PILE.get());
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.GOLD_SAND.get());

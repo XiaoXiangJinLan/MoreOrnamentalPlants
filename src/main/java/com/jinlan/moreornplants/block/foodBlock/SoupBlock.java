@@ -18,8 +18,7 @@ public class SoupBlock extends Block {
 
     @Override
     @NotNull
-    public VoxelShape getShape(BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
-        Vec3 vec3 = state.getOffset(level, pos);
-        return SHAPE.move(vec3.x, vec3.y, vec3.z);
+    public VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
+        return SHAPE;
     }
 }

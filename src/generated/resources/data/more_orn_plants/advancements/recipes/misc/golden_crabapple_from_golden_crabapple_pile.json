@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_golden_crabapple_pile": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "more_orn_plants:golden_crabapple_pile"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_orn_plants:golden_crabapple_from_golden_crabapple_pile"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_golden_crabapple_pile",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_orn_plants:golden_crabapple_from_golden_crabapple_pile"
+    ]
+  },
+  "sends_telemetry_event": false
+}

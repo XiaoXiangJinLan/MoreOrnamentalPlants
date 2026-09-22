@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:mei"
+    },
+    {
+      "item": "more_orn_plants:mei"
+    },
+    {
+      "item": "more_orn_plants:mei"
+    },
+    {
+      "item": "more_orn_plants:mei"
+    }
+  ],
+  "result": {
+    "item": "more_orn_plants:mei_pile"
+  }
+}
