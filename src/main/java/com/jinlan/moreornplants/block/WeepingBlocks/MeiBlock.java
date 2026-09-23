@@ -26,7 +26,7 @@ public class MeiBlock extends PeachBlock {
         super.randomTick(state, level, pos, random);
 
         int age = state.getValue(AGE);
-        boolean isCorrectBiome = level.getBiome(pos).is(ModTags.Biomes.APRICOT_BEARING);
+        boolean isCorrectBiome = level.getBiome(pos).is(ModTags.Biomes.MEI_BEARING);
         if (age < 1) {
             int growthChance = isCorrectBiome ? 3 : 1;
             if (random.nextInt(5) < growthChance) {

@@ -4,6 +4,8 @@ import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -11,6 +13,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.BambooStalkBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BambooLeaves;
 import org.jetbrains.annotations.NotNull;
@@ -18,6 +21,10 @@ import org.jetbrains.annotations.NotNull;
 import javax.annotation.Nullable;
 
 public class BlackBambooStalkBlock extends BambooStalkBlock {
+    private static final Direction[] HORIZONTAL_DIRS = {
+            Direction.NORTH, Direction.SOUTH, Direction.EAST, Direction.WEST
+    };
+
     public BlackBambooStalkBlock(Properties pProperties) {
         super(pProperties);
     }
@@ -69,7 +76,8 @@ public class BlackBambooStalkBlock extends BambooStalkBlock {
     }
 
     @Override
-    public @NotNull BlockState updateShape(BlockState state, @NotNull Direction direction, @NotNull BlockState neighborState,
+    @NotNull
+    public BlockState updateShape(BlockState state, @NotNull Direction direction, @NotNull BlockState neighborState,
                                            @NotNull LevelAccessor level, @NotNull BlockPos pos, @NotNull BlockPos neighborPos) {
         if (!state.canSurvive(level, pos)) {
             level.scheduleTick(pos, this, 1);
@@ -123,5 +131,39 @@ public class BlackBambooStalkBlock extends BambooStalkBlock {
             i++;
         }
         return i;
+    }
+
+    @Override
+    public void randomTick(@NotNull BlockState state, @NotNull ServerLevel level, @NotNull BlockPos pos, @NotNull RandomSource random) {
+        super.randomTick(state, level, pos, random);
+        if (level.getBlockState(pos.below()).getBlock() instanceof BambooStalkBlock) {
+            return;
+        }
+        if (random.nextFloat() >= 0.05F) {
+            return;
+        }
+        Direction chosenDir = null;
+        int validCount = 0;
+        for (Direction dir : HORIZONTAL_DIRS) {
+            BlockPos neighborPos = pos.relative(dir);
+            BlockState neighborState = level.getBlockState(neighborPos);
+            if (neighborState.getBlock() instanceof BambooStalkBlock) {
+                return;
+            }
+            if (neighborState.isAir() || neighborState.canBeReplaced()) {
+                BlockState neighborBelow = level.getBlockState(neighborPos.below());
+                if (neighborBelow.is(BlockTags.DIRT) || neighborBelow.is(BlockTags.SAND) ||
+                        neighborBelow.is(Blocks.GRAVEL) || neighborBelow.is(Blocks.SUSPICIOUS_GRAVEL)) {
+                    validCount++;
+                    if (random.nextInt(validCount) == 0) {
+                        chosenDir = dir;
+                    }
+                }
+            }
+        }
+        if (chosenDir == null) {
+            return;
+        }
+        level.setBlock(pos.relative(chosenDir), ModBlocks.BLACK_BAMBOO_SAPLING.get().defaultBlockState(), 3);
     }
 }
