@@ -7,7 +7,7 @@
 		{
 			"from": [-2.4, 4, 15.6],
 			"to": [2.6, 9, 15.6],
-			"shade_direction_override": "up",
+            "shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [2, 0, 4]},
 			"faces": {
 				"north": {"uv": [8, 6, 13, 11], "texture": "#crabapple"},
@@ -17,7 +17,7 @@
 		{
 			"from": [6.5, 3, 15.4],
 			"to": [14.5, 11, 15.4],
-			"shade_direction_override": "up",
+			"shade": false,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [2, 3, 16]},
 			"faces": {
 				"north": {"uv": [0, 5, 8, 13], "texture": "#crabapple"},
@@ -53,7 +53,7 @@
 		{
 			"from": [-6.4, 4, 7.6],
 			"to": [-1.4, 9, 7.6],
-			"shade_direction_override": "up",
+			"shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [-2, 0, -4]},
 			"faces": {
 				"north": {"uv": [8, 6, 13, 11], "texture": "#crabapple"},
@@ -63,7 +63,7 @@
 		{
 			"from": [2.5, 3, 7.4],
 			"to": [10.5, 11, 7.4],
-			"shade_direction_override": "up",
+			"shade": false,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [-2, 3, 8]},
 			"faces": {
 				"north": {"uv": [0, 5, 8, 13], "texture": "#crabapple"},
@@ -99,7 +99,7 @@
 		{
 			"from": [-8.4, 4, 13.6],
 			"to": [-3.4, 9, 13.6],
-			"shade_direction_override": "up",
+			"shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [-4, 0, 2]},
 			"faces": {
 				"north": {"uv": [8, 6, 13, 11], "texture": "#crabapple"},
@@ -109,7 +109,7 @@
 		{
 			"from": [0.5, 3, 13.4],
 			"to": [8.5, 11, 13.4],
-			"shade_direction_override": "up",
+			"shade": false,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [-4, 3, 14]},
 			"faces": {
 				"north": {"uv": [0, 5, 8, 13], "texture": "#crabapple"},
@@ -145,7 +145,7 @@
 		{
 			"from": [-0.4, 4, 9.6],
 			"to": [4.6, 9, 9.6],
-			"shade_direction_override": "up",
+			"shade": false,
 			"rotation": {"angle": 45, "axis": "y", "origin": [4, 0, -2]},
 			"faces": {
 				"north": {"uv": [8, 6, 13, 11], "texture": "#crabapple"},
@@ -155,7 +155,7 @@
 		{
 			"from": [8.5, 3, 9.4],
 			"to": [16.5, 11, 9.4],
-			"shade_direction_override": "up",
+			"shade": false,
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [4, 3, 10]},
 			"faces": {
 				"north": {"uv": [0, 5, 8, 13], "texture": "#crabapple"},

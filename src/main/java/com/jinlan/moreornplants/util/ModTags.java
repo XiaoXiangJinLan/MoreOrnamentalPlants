@@ -88,6 +88,7 @@ public class ModTags {
         public static final TagKey<Biome> CRABAPPLE_BEARING = tag("crabapple_bearing");
         public static final TagKey<Biome> PEACH_BEARING = tag("peach_bearing");
         public static final TagKey<Biome> APRICOT_BEARING = tag("apricot_bearing");
+        public static final TagKey<Biome> MEI_BEARING = tag("mei_bearing");
         public static final TagKey<Biome> NO_ENEMY = tag("no_enemy");
         public static final TagKey<Biome> FLOWERS_AND_MOON = tag("flowers_and_moon");
         public static final TagKey<Biome> PINK_BAIHUA_CAT = tag("has_baihua_cat_variant/pink_baihua_cat");

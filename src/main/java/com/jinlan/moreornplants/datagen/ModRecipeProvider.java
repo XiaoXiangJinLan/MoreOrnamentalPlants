@@ -26,20 +26,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(@NotNull Consumer<FinishedRecipe> pWriter) {
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.GOLD_SAND.get()),
                         RecipeCategory.MISC,
-                        new ItemStack(Items.GOLD_NUGGET, 3).getItem(),
-                        1.5f,
-                        160)
+                        new ItemStack(Items.GOLD_NUGGET).getItem(),
+                        0.5f,
+                        120)
                 .group("gold_sand")
                 .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "gold_nugget_from_smelting_gold_sand"));
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.GOLD_SAND.get()),
                         RecipeCategory.MISC,
-                        new ItemStack(Items.GOLD_NUGGET, 3).getItem(),
-                        1.5f,
-                        80)
+                        new ItemStack(Items.GOLD_NUGGET).getItem(),
+                        0.5f,
+                        60)
                 .group("gold_sand")
                 .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "gold_nugget_from_blasting_gold_sand"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.MISCANTHUS.get()),
+                        RecipeCategory.MISC,
+                        new ItemStack(ModBlocks.GOLDEN_MISCANTHUS.get()).getItem(),
+                        0.7f,
+                        200)
+                .group("gold_sand")
+                .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "golden_miscanthus_from_smelting_miscanthus"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.MISCANTHUS.get()),
+                        RecipeCategory.MISC,
+                        new ItemStack(ModBlocks.GOLDEN_MISCANTHUS.get()).getItem(),
+                        0.7f,
+                        100)
+                .group("gold_sand")
+                .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "golden_miscanthus_from_blasting_miscanthus"));
 
         planksFromLogs(pWriter, ModBlocks.RED_MEI_PLANKS.get(), ModTags.Items.RED_MEI_LOGS, 4);
         planksFromLogs(pWriter, ModBlocks.WHITE_MEI_PLANKS.get(), ModTags.Items.WHITE_MEI_LOGS, 4);
@@ -1553,11 +1569,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRABAPPLE_PILE.get())
-                .requires(ModItems.CRABAPPLE.get(), 6)
+                .requires(ModItems.CRABAPPLE.get(), 4)
                 .unlockedBy(getHasName(ModItems.CRABAPPLE.get()), has(ModItems.CRABAPPLE.get()))
                 .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLDEN_CRABAPPLE_PILE.get())
-                .requires(ModItems.GOLDEN_CRABAPPLE.get(), 6)
+                .requires(ModItems.GOLDEN_CRABAPPLE.get(), 4)
                 .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE.get()), has(ModItems.GOLDEN_CRABAPPLE.get()))
                 .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CLOUD_APRICOT_PILE.get())
@@ -1577,11 +1593,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.GOLDEN_MEI.get()), has(ModItems.GOLDEN_MEI.get()))
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CRABAPPLE.get(), 6)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CRABAPPLE.get(), 4)
                 .requires(ModBlocks.CRABAPPLE_PILE.get())
                 .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PILE.get()), has(ModBlocks.CRABAPPLE_PILE.get()))
                 .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GOLDEN_CRABAPPLE.get(), 6)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GOLDEN_CRABAPPLE.get(), 4)
                 .requires(ModBlocks.GOLDEN_CRABAPPLE_PILE.get())
                 .unlockedBy(getHasName(ModBlocks.GOLDEN_CRABAPPLE_PILE.get()), has(ModBlocks.GOLDEN_CRABAPPLE_PILE.get()))
                 .save(pWriter,  new ResourceLocation(MoreOrnPlants.MOD_ID, "golden_crabapple_from_golden_crabapple_pile"));

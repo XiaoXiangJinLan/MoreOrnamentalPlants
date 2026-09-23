@@ -4,6 +4,8 @@ import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -11,12 +13,18 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.BambooStalkBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BambooLeaves;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
 public class MottledBambooStalkBlock extends BambooStalkBlock {
+    private static final Direction[] HORIZONTAL_DIRS = {
+            Direction.NORTH, Direction.SOUTH, Direction.EAST, Direction.WEST
+    };
+
     public MottledBambooStalkBlock(Properties properties) {
         super(properties);
     }
@@ -37,7 +45,7 @@ public class MottledBambooStalkBlock extends BambooStalkBlock {
     }
 
     @Override
-    public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
+    public boolean canSurvive(@NotNull BlockState state, LevelReader level, BlockPos pos) {
         return level.getBlockState(pos.below()).is(ModTags.Blocks.MOTTLED_BAMBOO_PLANTABLE_ON);
     }
 
@@ -68,7 +76,8 @@ public class MottledBambooStalkBlock extends BambooStalkBlock {
     }
 
     @Override
-    public BlockState updateShape(BlockState pState, Direction pDirection, BlockState pNeighborState, LevelAccessor pLevel, BlockPos pPos, BlockPos pNeighborPos) {
+    public @NotNull BlockState updateShape(BlockState pState, @NotNull Direction pDirection, @NotNull BlockState pNeighborState,
+                                           @NotNull LevelAccessor pLevel, @NotNull BlockPos pPos, @NotNull BlockPos pNeighborPos) {
         if (!pState.canSurvive(pLevel, pPos)) {
             pLevel.scheduleTick(pPos, this, 1);
         }
@@ -81,7 +90,7 @@ public class MottledBambooStalkBlock extends BambooStalkBlock {
     }
 
     @Override
-    protected void growBamboo(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom, int pAge) {
+    protected void growBamboo(@NotNull BlockState pState, Level pLevel, BlockPos pPos, @NotNull RandomSource pRandom, int pAge) {
         BlockState blockstate = pLevel.getBlockState(pPos.below());
         BlockPos blockpos = pPos.below(2);
         BlockState blockstate1 = pLevel.getBlockState(blockpos);
@@ -106,7 +115,7 @@ public class MottledBambooStalkBlock extends BambooStalkBlock {
     }
 
     @Override
-    protected int getHeightAboveUpToMax(BlockGetter pLevel, BlockPos pPos) {
+    protected int getHeightAboveUpToMax(@NotNull BlockGetter pLevel, @NotNull BlockPos pPos) {
         int i;
         for(i = 0; i < 16 && pLevel.getBlockState(pPos.above(i + 1)).is(ModBlocks.MOTTLED_BAMBOO.get()); ++i) {
         }
@@ -115,11 +124,45 @@ public class MottledBambooStalkBlock extends BambooStalkBlock {
     }
 
     @Override
-    protected int getHeightBelowUpToMax(BlockGetter pLevel, BlockPos pPos) {
+    protected int getHeightBelowUpToMax(@NotNull BlockGetter pLevel, @NotNull BlockPos pPos) {
         int i;
         for(i = 0; i < 16 && pLevel.getBlockState(pPos.below(i + 1)).is(ModBlocks.MOTTLED_BAMBOO.get()); ++i) {
         }
 
         return i;
+    }
+
+    @Override
+    public void randomTick(@NotNull BlockState state, @NotNull ServerLevel level, @NotNull BlockPos pos, @NotNull RandomSource random) {
+        super.randomTick(state, level, pos, random);
+        if (level.getBlockState(pos.below()).getBlock() instanceof BambooStalkBlock) {
+            return;
+        }
+        if (random.nextFloat() >= 0.05F) {
+            return;
+        }
+        Direction chosenDir = null;
+        int validCount = 0;
+        for (Direction dir : HORIZONTAL_DIRS) {
+            BlockPos neighborPos = pos.relative(dir);
+            BlockState neighborState = level.getBlockState(neighborPos);
+            if (neighborState.getBlock() instanceof BambooStalkBlock) {
+                return;
+            }
+            if (neighborState.isAir() || neighborState.canBeReplaced()) {
+                BlockState neighborBelow = level.getBlockState(neighborPos.below());
+                if (neighborBelow.is(BlockTags.DIRT) || neighborBelow.is(BlockTags.SAND) ||
+                        neighborBelow.is(Blocks.GRAVEL) || neighborBelow.is(Blocks.SUSPICIOUS_GRAVEL)) {
+                    validCount++;
+                    if (random.nextInt(validCount) == 0) {
+                        chosenDir = dir;
+                    }
+                }
+            }
+        }
+        if (chosenDir == null) {
+            return;
+        }
+        level.setBlock(pos.relative(chosenDir), ModBlocks.BLACK_BAMBOO_SAPLING.get().defaultBlockState(), 3);
     }
 }

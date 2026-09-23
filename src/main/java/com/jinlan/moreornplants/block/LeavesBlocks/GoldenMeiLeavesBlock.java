@@ -31,7 +31,7 @@ public class GoldenMeiLeavesBlock extends LeavesBlock {
         if (!state.getValue(BlockStateProperties.PERSISTENT) && (distance == 3 || distance == 5)) {
             BlockPos belowPos = pos.below();
             if (level.isEmptyBlock(belowPos)) {
-                int chance = level.getBiome(pos).is(ModTags.Biomes.APRICOT_BEARING) ? 5 : 10;
+                int chance = level.getBiome(pos).is(ModTags.Biomes.MEI_BEARING) ? 5 : 10;
                 if (random.nextInt(chance) == 0) {
                     level.setBlock(belowPos, ModBlocks.GOLDEN_MEI.get().defaultBlockState(), 2);
                 }
