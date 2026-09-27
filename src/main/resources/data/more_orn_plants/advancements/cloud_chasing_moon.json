@@ -1,7 +1,7 @@
 {
   "parent": "more_orn_plants:flowers_and_moon",
   "criteria": {
-    "visit_1": {
+    "visit_red_mei_forest": {
       "conditions": {
         "player": [
           {
@@ -17,7 +17,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_2": {
+    "visit_fragrant_snow_sea": {
       "conditions": {
         "player": [
           {
@@ -33,7 +33,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_3": {
+    "visit_snow_greets_spring": {
       "conditions": {
         "player": [
           {
@@ -49,7 +49,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_4": {
+    "visit_colored_forest": {
       "conditions": {
         "player": [
           {
@@ -65,7 +65,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_5": {
+    "visit_wutong_forest": {
       "conditions": {
         "player": [
           {
@@ -81,7 +81,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_6": {
+    "visit_camellia_valley": {
       "conditions": {
         "player": [
           {
@@ -97,7 +97,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_7": {
+    "visit_red_camellia_valley": {
       "conditions": {
         "player": [
           {
@@ -113,7 +113,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_8": {
+    "visit_pink_camellia_valley": {
       "conditions": {
         "player": [
           {
@@ -129,7 +129,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_9": {
+    "visit_peony_sea": {
       "conditions": {
         "player": [
           {
@@ -145,7 +145,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_10": {
+    "visit_peony_meadows": {
       "conditions": {
         "player": [
           {
@@ -161,7 +161,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_11": {
+    "visit_furong_guo": {
       "conditions": {
         "player": [
           {
@@ -177,7 +177,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_12": {
+    "visit_crops_green": {
       "conditions": {
         "player": [
           {
@@ -193,7 +193,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_13": {
+    "visit_the_land_of_abundance": {
       "conditions": {
         "player": [
           {
@@ -209,7 +209,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_14": {
+    "visit_pink_land": {
       "conditions": {
         "player": [
           {
@@ -225,7 +225,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_15": {
+    "visit_purple_land": {
       "conditions": {
         "player": [
           {
@@ -241,7 +241,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_16": {
+    "visit_white_land": {
       "conditions": {
         "player": [
           {
@@ -257,7 +257,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_17": {
+    "visit_yellow_land": {
       "conditions": {
         "player": [
           {
@@ -273,7 +273,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_18": {
+    "visit_chinese_rose_fields": {
       "conditions": {
         "player": [
           {
@@ -289,7 +289,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_19": {
+    "visit_crape_myrtle_garden": {
       "conditions": {
         "player": [
           {
@@ -305,7 +305,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_20": {
+    "visit_dongli_scenery": {
       "conditions": {
         "player": [
           {
@@ -321,7 +321,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_21": {
+    "visit_spring_river": {
       "conditions": {
         "player": [
           {
@@ -337,7 +337,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_22": {
+    "visit_lotus_river": {
       "conditions": {
         "player": [
           {
@@ -353,7 +353,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_23": {
+    "visit_autumn_river": {
       "conditions": {
         "player": [
           {
@@ -369,7 +369,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_24": {
+    "visit_azalea_forest": {
       "conditions": {
         "player": [
           {
@@ -385,7 +385,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_25": {
+    "visit_ten_mile_gallery": {
       "conditions": {
         "player": [
           {
@@ -401,7 +401,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_26": {
+    "visit_the_peach_blossom_spring": {
       "conditions": {
         "player": [
           {
@@ -417,7 +417,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_27": {
+    "visit_flowers_grove": {
       "conditions": {
         "player": [
           {
@@ -433,7 +433,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_28": {
+    "visit_flowers_fields": {
       "conditions": {
         "player": [
           {
@@ -449,7 +449,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_29": {
+    "visit_crabapple_grove": {
       "conditions": {
         "player": [
           {
@@ -465,7 +465,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_30": {
+    "visit_chinaberry_woods": {
       "conditions": {
         "player": [
           {
@@ -481,7 +481,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_31": {
+    "visit_sweetgum_woods": {
       "conditions": {
         "player": [
           {
@@ -497,7 +497,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_32": {
+    "visit_snow_woods": {
       "conditions": {
         "player": [
           {
@@ -513,7 +513,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_33": {
+    "visit_purple_cloud": {
       "conditions": {
         "player": [
           {
@@ -529,7 +529,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_34": {
+    "visit_penglai": {
       "conditions": {
         "player": [
           {
@@ -545,7 +545,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_35": {
+    "visit_yunmeng_marsh": {
       "conditions": {
         "player": [
           {
@@ -561,7 +561,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_36": {
+    "visit_mount_mei": {
       "conditions": {
         "player": [
           {
@@ -577,7 +577,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_37": {
+    "visit_the_apricot_spring_plateau": {
       "conditions": {
         "player": [
           {
@@ -593,7 +593,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_38": {
+    "visit_wisteria_valley": {
       "conditions": {
         "player": [
           {
@@ -609,7 +609,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_39": {
+    "visit_white_wisteria_valley": {
       "conditions": {
         "player": [
           {
@@ -625,7 +625,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_40": {
+    "visit_blue_wisteria_valley": {
       "conditions": {
         "player": [
           {
@@ -641,7 +641,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_41": {
+    "visit_red_highlands": {
       "conditions": {
         "player": [
           {
@@ -657,7 +657,7 @@
       },
       "trigger": "more_orn_plants:flowers_and_moon"
     },
-    "visit_42": {
+    "visit_longevity_forest": {
       "conditions": {
         "player": [
           {
@@ -692,118 +692,110 @@
   },
   "requirements": [
     [
-      "visit_1"
+      "visit_red_mei_forest"
     ],
     [
-      "visit_2"
+      "visit_fragrant_snow_sea"
     ],
     [
-      "visit_3"
+      "visit_snow_greets_spring"
     ],
     [
-      "visit_4",
-      "visit_5"
+      "visit_colored_forest",
+      "visit_wutong_forest"
     ],
     [
-      "visit_6",
-      "visit_7",
-      "visit_8"
+      "visit_camellia_valley",
+      "visit_red_camellia_valley",
+      "visit_pink_camellia_valley"
     ],
     [
-      "visit_9"
+      "visit_peony_sea",
+      "visit_peony_meadows"
     ],
     [
-      "visit_10"
+      "visit_furong_guo"
     ],
     [
-      "visit_11"
+      "visit_crops_green"
     ],
     [
-      "visit_12"
+      "visit_the_land_of_abundance"
     ],
     [
-      "visit_13"
+      "visit_pink_land",
+      "visit_purple_land",
+      "visit_white_land",
+      "visit_yellow_land"
     ],
     [
-      "visit_14"
+      "visit_chinese_rose_fields"
     ],
     [
-      "visit_15"
+      "visit_crape_myrtle_garden"
     ],
     [
-      "visit_16"
+      "visit_dongli_scenery"
     ],
     [
-      "visit_17"
+      "visit_spring_river"
     ],
     [
-      "visit_18"
+      "visit_lotus_river"
     ],
     [
-      "visit_19"
+      "visit_autumn_river"
     ],
     [
-      "visit_20"
+      "visit_azalea_forest"
     ],
     [
-      "visit_21"
+      "visit_ten_mile_gallery"
     ],
     [
-      "visit_22"
+      "visit_the_peach_blossom_spring"
     ],
     [
-      "visit_23"
+      "visit_flowers_grove",
+      "visit_flowers_fields"
     ],
     [
-      "visit_24"
+      "visit_crabapple_grove"
     ],
     [
-      "visit_25"
+      "visit_chinaberry_woods"
     ],
     [
-      "visit_26"
+      "visit_sweetgum_woods"
     ],
     [
-      "visit_27",
-      "visit_28"
+      "visit_snow_woods"
     ],
     [
-      "visit_29"
+      "visit_purple_cloud"
     ],
     [
-      "visit_30"
+      "visit_penglai"
     ],
     [
-      "visit_31"
+      "visit_yunmeng_marsh"
     ],
     [
-      "visit_32"
+      "visit_mount_mei"
     ],
     [
-      "visit_33"
+      "visit_the_apricot_spring_plateau"
     ],
     [
-      "visit_34"
+      "visit_wisteria_valley",
+      "visit_white_wisteria_valley",
+      "visit_blue_wisteria_valley"
     ],
     [
-      "visit_35"
+      "visit_red_highlands"
     ],
     [
-      "visit_36"
-    ],
-    [
-      "visit_37"
-    ],
-    [
-      "visit_38",
-      "visit_39",
-      "visit_40"
-    ],
-    [
-      "visit_41"
-    ],
-    [
-      "visit_42"
+      "visit_longevity_forest"
     ]
   ],
   "rewards": {

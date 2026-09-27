@@ -28,7 +28,7 @@ public class CrabappleTrunkPlacer extends TrunkPlacer {
                     Codec.intRange(0, 24).fieldOf("height_rand_a").forGetter(placer -> placer.heightRandA),
                     Codec.intRange(0, 24).fieldOf("height_rand_b").forGetter(placer -> placer.heightRandB),
                     Codec.intRange(1, 8).fieldOf("branch_start_height").forGetter(placer -> placer.branchStartHeight),
-                    Codec.intRange(1, 10).fieldOf("branch_limit").forGetter(placer -> placer.branchLimit),
+                    Codec.intRange(1, 4).fieldOf("min_branches").forGetter(placer -> placer.minBranches),
                     Codec.intRange(1, 4).fieldOf("max_branches_per_level").forGetter(placer -> placer.maxBranchesPerLevel),
                     Codec.intRange(2, 8).fieldOf("branch_min_length").forGetter(placer -> placer.branchMinLength),
                     Codec.intRange(3, 12).fieldOf("branch_max_length").forGetter(placer -> placer.branchMaxLength),
@@ -37,18 +37,18 @@ public class CrabappleTrunkPlacer extends TrunkPlacer {
     );
 
     private final int branchStartHeight;
-    private final int branchLimit;
+    private final int minBranches;
     private final int maxBranchesPerLevel;
     private final int branchMinLength;
     private final int branchMaxLength;
     private final float branchUpwardBias;
 
     public CrabappleTrunkPlacer(int baseHeight, int heightRandA, int heightRandB,
-                                int branchStartHeight, int branchLimit, int maxBranchesPerLevel,
+                                int branchStartHeight, int minBranches, int maxBranchesPerLevel,
                                 int branchMinLength, int branchMaxLength, float branchUpwardBias) {
         super(baseHeight, heightRandA, heightRandB);
         this.branchStartHeight = branchStartHeight;
-        this.branchLimit = branchLimit;
+        this.minBranches = minBranches;
         this.maxBranchesPerLevel = maxBranchesPerLevel;
         this.branchMinLength = branchMinLength;
         this.branchMaxLength = branchMaxLength;
@@ -56,7 +56,7 @@ public class CrabappleTrunkPlacer extends TrunkPlacer {
     }
 
     @Override
-    protected TrunkPlacerType<?> type() {
+    protected @NotNull TrunkPlacerType<?> type() {
         return ModTrunkPlacerTypes.CRABAPPLE_TRUNK_PLACER.get();
     }
 
@@ -73,7 +73,7 @@ public class CrabappleTrunkPlacer extends TrunkPlacer {
             this.placeLog(level, blockSetter, random, currentPos, config, Direction.Axis.Y);
 
             // 在达到分支起始高度后，开始生成分支
-            if (height >= branchStartHeight && height < freeTreeHeight - branchLimit) {
+            if (height >= branchStartHeight && height < freeTreeHeight - 4) {
                 // 决定是否在这个高度生成分支
                 if (random.nextFloat() < 1.0F) {
                     // 生成多个方向的分支
@@ -101,8 +101,8 @@ public class CrabappleTrunkPlacer extends TrunkPlacer {
                 Direction.NORTH, Direction.EAST, Direction.SOUTH, Direction.WEST // 重复以增加某些方向的权重
         };
 
-        // 随机决定这个高度生成的分支数量（1到最大分支数）
-        int branchCount = 1 + random.nextInt(maxBranchesPerLevel);
+        // 随机决定这个高度生成的分支数量
+        int branchCount = minBranches + random.nextInt(maxBranchesPerLevel);
         Set<Direction> usedDirections = new HashSet<>();
 
         for (int i = 0; i < branchCount; i++) {

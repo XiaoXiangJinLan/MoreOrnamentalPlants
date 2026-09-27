@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_crape_myrtle_logs": {
+    "has_golden_crabapple": {
       "conditions": {
         "items": [
           {
             "items": [
-              "more_orn_plants:crape_myrtle_log"
+              "more_orn_plants:golden_crabapple"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_orn_plants:stick_from_crape_myrtle_log"
+        "recipe": "more_orn_plants:enchanted_golden_crabapple_from_golden_crabapple"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_crape_myrtle_logs",
+      "has_golden_crabapple",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "more_orn_plants:stick_from_crape_myrtle_log"
+      "more_orn_plants:enchanted_golden_crabapple_from_golden_crabapple"
     ]
   },
   "sends_telemetry_event": false

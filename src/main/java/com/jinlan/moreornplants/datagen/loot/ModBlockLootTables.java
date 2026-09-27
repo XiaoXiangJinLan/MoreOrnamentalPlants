@@ -129,6 +129,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.DESERT_POPLAR_PLANKS.get());
         this.dropSelf(ModBlocks.CRAPE_MYRTLE_LOG.get());
         this.dropSelf(ModBlocks.CRAPE_MYRTLE_WOOD.get());
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_PLANKS.get());
 
         this.dropSelf(ModBlocks.RED_MEI_STAIRS.get());
         this.dropSelf(ModBlocks.RED_MEI_BUTTON.get());
@@ -215,41 +216,30 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.DESERT_POPLAR_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.DESERT_POPLAR_FENCE.get());
         this.dropSelf(ModBlocks.DESERT_POPLAR_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_STAIRS.get());
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_BUTTON.get());
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_FENCE.get());
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_FENCE_GATE.get());
 
-        this.add(ModBlocks.RED_MEI_SLAB.get(),
-                createSlabItemTable(ModBlocks.RED_MEI_SLAB.get()));
-        this.add(ModBlocks.WHITE_MEI_SLAB.get(),
-                createSlabItemTable(ModBlocks.WHITE_MEI_SLAB.get()));
-        this.add(ModBlocks.GREEN_CALYX_MEI_SLAB.get(),
-                createSlabItemTable(ModBlocks.GREEN_CALYX_MEI_SLAB.get()));
-        this.add(ModBlocks.DOUBLE_PINK_MEI_SLAB.get(),
-                createSlabItemTable(ModBlocks.DOUBLE_PINK_MEI_SLAB.get()));
-        this.add(ModBlocks.CRABAPPLE_SLAB.get(),
-                createSlabItemTable(ModBlocks.CRABAPPLE_SLAB.get()));
-        this.add(ModBlocks.APRICOT_SLAB.get(),
-                createSlabItemTable(ModBlocks.APRICOT_SLAB.get()));
-        this.add(ModBlocks.PEACH_SLAB.get(),
-                createSlabItemTable(ModBlocks.PEACH_SLAB.get()));
-        this.add(ModBlocks.PEAR_SLAB.get(),
-                createSlabItemTable(ModBlocks.PEAR_SLAB.get()));
-        this.add(ModBlocks.PURPLE_LEAF_PLUM_SLAB.get(),
-                createSlabItemTable(ModBlocks.PURPLE_LEAF_PLUM_SLAB.get()));
-        this.add(ModBlocks.OSMANTHUS_SLAB.get(),
-                createSlabItemTable(ModBlocks.OSMANTHUS_SLAB.get()));
-        this.add(ModBlocks.GINKGO_SLAB.get(),
-                createSlabItemTable(ModBlocks.GINKGO_SLAB.get()));
-        this.add(ModBlocks.CHINESE_PARASOL_SLAB.get(),
-                createSlabItemTable(ModBlocks.CHINESE_PARASOL_SLAB.get()));
-        this.add(ModBlocks.SWEETGUM_SLAB.get(),
-                createSlabItemTable(ModBlocks.SWEETGUM_SLAB.get()));
-        this.add(ModBlocks.CAMPHOR_SLAB.get(),
-                createSlabItemTable(ModBlocks.CAMPHOR_SLAB.get()));
-        this.add(ModBlocks.DOVE_TREE_SLAB.get(),
-                createSlabItemTable(ModBlocks.DOVE_TREE_SLAB.get()));
-        this.add(ModBlocks.CHINABERRY_SLAB.get(),
-                createSlabItemTable(ModBlocks.CHINABERRY_SLAB.get()));
-        this.add(ModBlocks.DESERT_POPLAR_SLAB.get(),
-                createSlabItemTable(ModBlocks.DESERT_POPLAR_SLAB.get()));
+        this.add(ModBlocks.RED_MEI_SLAB.get(), createSlabItemTable(ModBlocks.RED_MEI_SLAB.get()));
+        this.add(ModBlocks.WHITE_MEI_SLAB.get(), createSlabItemTable(ModBlocks.WHITE_MEI_SLAB.get()));
+        this.add(ModBlocks.GREEN_CALYX_MEI_SLAB.get(), createSlabItemTable(ModBlocks.GREEN_CALYX_MEI_SLAB.get()));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_SLAB.get(), createSlabItemTable(ModBlocks.DOUBLE_PINK_MEI_SLAB.get()));
+        this.add(ModBlocks.CRABAPPLE_SLAB.get(), createSlabItemTable(ModBlocks.CRABAPPLE_SLAB.get()));
+        this.add(ModBlocks.APRICOT_SLAB.get(), createSlabItemTable(ModBlocks.APRICOT_SLAB.get()));
+        this.add(ModBlocks.PEACH_SLAB.get(), createSlabItemTable(ModBlocks.PEACH_SLAB.get()));
+        this.add(ModBlocks.PEAR_SLAB.get(), createSlabItemTable(ModBlocks.PEAR_SLAB.get()));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_SLAB.get(), createSlabItemTable(ModBlocks.PURPLE_LEAF_PLUM_SLAB.get()));
+        this.add(ModBlocks.OSMANTHUS_SLAB.get(), createSlabItemTable(ModBlocks.OSMANTHUS_SLAB.get()));
+        this.add(ModBlocks.GINKGO_SLAB.get(), createSlabItemTable(ModBlocks.GINKGO_SLAB.get()));
+        this.add(ModBlocks.CHINESE_PARASOL_SLAB.get(), createSlabItemTable(ModBlocks.CHINESE_PARASOL_SLAB.get()));
+        this.add(ModBlocks.SWEETGUM_SLAB.get(), createSlabItemTable(ModBlocks.SWEETGUM_SLAB.get()));
+        this.add(ModBlocks.CAMPHOR_SLAB.get(), createSlabItemTable(ModBlocks.CAMPHOR_SLAB.get()));
+        this.add(ModBlocks.DOVE_TREE_SLAB.get(), createSlabItemTable(ModBlocks.DOVE_TREE_SLAB.get()));
+        this.add(ModBlocks.CHINABERRY_SLAB.get(), createSlabItemTable(ModBlocks.CHINABERRY_SLAB.get()));
+        this.add(ModBlocks.DESERT_POPLAR_SLAB.get(), createSlabItemTable(ModBlocks.DESERT_POPLAR_SLAB.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_SLAB.get(), createSlabItemTable(ModBlocks.CRAPE_MYRTLE_SLAB.get()));
 
         this.dropSelf(ModBlocks.RED_MEI_TRAPDOOR.get());
         this.dropSelf(ModBlocks.WHITE_MEI_TRAPDOOR.get());

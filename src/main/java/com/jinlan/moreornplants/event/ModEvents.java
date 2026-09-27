@@ -301,8 +301,7 @@ public class ModEvents {
                 entity instanceof AbstractGolem || entity instanceof Allay)) {
             return;
         }
-        if (!ModBiomeConfig.ENABLE_BIOME_EFFECTS.get()) return;
-        if (tick % 100 != 0) {
+        if (ModBiomeConfig.ENABLE_LONGEVITY_FOREST_EFFECTS.get() && tick % 100 != 0) {
             if (biomeHolder.is(ModBiomes.LONGEVITY_FOREST)) {
                 AttributeInstance attribute = entity.getAttribute(Attributes.MAX_HEALTH);
                 if (attribute != null && attribute.getModifier(LONGEVITY_BOOST_UUID) == null) {
@@ -324,7 +323,7 @@ public class ModEvents {
         }
 
         if (tick % 40 == 0) {
-            if (biomeHolder.is(ModBiomes.PENGLAI)) {
+            if (biomeHolder.is(ModBiomes.PENGLAI) && ModBiomeConfig.ENABLE_PENGLAI_EFFECTS.get()) {
                 MobEffectInstance currentEffect1 = entity.getEffect(MobEffects.FIRE_RESISTANCE);
                 MobEffectInstance currentEffect2 = entity.getEffect(MobEffects.WATER_BREATHING);
                 MobEffectInstance currentEffect3 = entity.getEffect(MobEffects.DAMAGE_BOOST);
@@ -341,8 +340,7 @@ public class ModEvents {
                     entity.addEffect(new MobEffectInstance(MobEffects.LUCK, 120600, 4));
                 }
             }
-            Holder<Biome> biomeHolder3 = entity.level().getBiome(entity.blockPosition());
-            if (biomeHolder3.is(ModBiomes.RED_HIGHLANDS)) {
+            if (biomeHolder.is(ModBiomes.RED_HIGHLANDS) && ModBiomeConfig.ENABLE_RED_HIGHLANDS_EFFECTS.get()) {
                 MobEffectInstance currentRegen = entity.getEffect(MobEffects.DAMAGE_BOOST);
                 MobEffectInstance currentEffect2 = entity.getEffect(MobEffects.DAMAGE_RESISTANCE);
                 MobEffectInstance currentEffect3 = entity.getEffect(MobEffects.DIG_SPEED);
@@ -354,8 +352,7 @@ public class ModEvents {
                     entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 12300, 2));
                 }
             }
-            Holder<Biome> biomeHolder2 = entity.level().getBiome(entity.blockPosition());
-            if (biomeHolder2.is(ModTags.Biomes.FLOWERS_AND_MOON)) {
+            if (biomeHolder.is(ModTags.Biomes.FLOWERS_AND_MOON) && ModBiomeConfig.ENABLE_FLOWER_BIOME_EFFECTS.get()) {
                 Level level = entity.level();
                 if (level.isNight() && level.getMoonPhase() == 0 && !level.isRaining() && !level.isThundering()) {
                     MobEffectInstance currentRegen1 = entity.getEffect(MobEffects.REGENERATION);

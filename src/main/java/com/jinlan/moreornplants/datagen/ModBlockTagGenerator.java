@@ -311,8 +311,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(ModTags.Blocks.DOVE_TREE_LOGS)
                 .addTag(ModTags.Blocks.CHINABERRY_LOGS)
                 .addTag(ModTags.Blocks.DESERT_POPLAR_LOGS)
-                .add(ModBlocks.CRAPE_MYRTLE_LOG.get())
-                .add(ModBlocks.CRAPE_MYRTLE_WOOD.get());
+                .addTag(ModTags.Blocks.CRAPE_MYRTLE_LOGS);
 
         this.tag(BlockTags.OVERWORLD_NATURAL_LOGS)
                 .add(ModBlocks.RED_MEI_LOG.get())
@@ -351,7 +350,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_PLANKS.get())
                 .add(ModBlocks.DOVE_TREE_PLANKS.get())
                 .add(ModBlocks.CHINABERRY_PLANKS.get())
-                .add(ModBlocks.DESERT_POPLAR_PLANKS.get());
+                .add(ModBlocks.DESERT_POPLAR_PLANKS.get())
+                .add(ModBlocks.CRAPE_MYRTLE_PLANKS.get());
 
         this.tag(BlockTags.WOODEN_STAIRS)
                 .add(ModBlocks.RED_MEI_STAIRS.get())
@@ -370,7 +370,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_STAIRS.get())
                 .add(ModBlocks.DOVE_TREE_STAIRS.get())
                 .add(ModBlocks.CHINABERRY_STAIRS.get())
-                .add(ModBlocks.DESERT_POPLAR_STAIRS.get());
+                .add(ModBlocks.DESERT_POPLAR_STAIRS.get())
+                .add(ModBlocks.CRAPE_MYRTLE_STAIRS.get());
 
         this.tag(BlockTags.WOODEN_SLABS)
                 .add(ModBlocks.RED_MEI_SLAB.get())
@@ -389,7 +390,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_SLAB.get())
                 .add(ModBlocks.DOVE_TREE_SLAB.get())
                 .add(ModBlocks.CHINABERRY_SLAB.get())
-                .add(ModBlocks.DESERT_POPLAR_SLAB.get());
+                .add(ModBlocks.DESERT_POPLAR_SLAB.get())
+                .add(ModBlocks.CRAPE_MYRTLE_SLAB.get());
 
         this.tag(BlockTags.WOODEN_BUTTONS)
                 .add(ModBlocks.RED_MEI_BUTTON.get())
@@ -408,7 +410,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_BUTTON.get())
                 .add(ModBlocks.DOVE_TREE_BUTTON.get())
                 .add(ModBlocks.CHINABERRY_BUTTON.get())
-                .add(ModBlocks.DESERT_POPLAR_BUTTON.get());
+                .add(ModBlocks.DESERT_POPLAR_BUTTON.get())
+                .add(ModBlocks.CRAPE_MYRTLE_BUTTON.get());
 
         this.tag(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(ModBlocks.RED_MEI_PRESSURE_PLATE.get())
@@ -427,7 +430,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_PRESSURE_PLATE.get())
                 .add(ModBlocks.DOVE_TREE_PRESSURE_PLATE.get())
                 .add(ModBlocks.CHINABERRY_PRESSURE_PLATE.get())
-                .add(ModBlocks.DESERT_POPLAR_PRESSURE_PLATE.get());
+                .add(ModBlocks.DESERT_POPLAR_PRESSURE_PLATE.get())
+                .add(ModBlocks.CRAPE_MYRTLE_PRESSURE_PLATE.get());
 
         this.tag(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.RED_MEI_FENCE.get())
@@ -446,7 +450,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_FENCE.get())
                 .add(ModBlocks.DOVE_TREE_FENCE.get())
                 .add(ModBlocks.CHINABERRY_FENCE.get())
-                .add(ModBlocks.DESERT_POPLAR_FENCE.get());
+                .add(ModBlocks.DESERT_POPLAR_FENCE.get())
+                .add(ModBlocks.CRAPE_MYRTLE_FENCE.get());
 
         this.tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.RED_MEI_FENCE_GATE.get())
@@ -465,7 +470,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_FENCE_GATE.get())
                 .add(ModBlocks.DOVE_TREE_FENCE_GATE.get())
                 .add(ModBlocks.CHINABERRY_FENCE_GATE.get())
-                .add(ModBlocks.DESERT_POPLAR_FENCE_GATE.get());
+                .add(ModBlocks.DESERT_POPLAR_FENCE_GATE.get())
+                .add(ModBlocks.CRAPE_MYRTLE_FENCE_GATE.get());
 
         this.tag(BlockTags.WOODEN_DOORS)
                 .add(ModBlocks.RED_MEI_DOOR.get())
@@ -666,6 +672,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DESERT_POPLAR_WOOD.get(),
                         ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get(),
                         ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get());
+        this.tag(ModTags.Blocks.CRAPE_MYRTLE_LOGS)
+                .add(ModBlocks.CRAPE_MYRTLE_LOG.get(), ModBlocks.CRAPE_MYRTLE_WOOD.get());
 
         this.tag(BlockTags.SAPLINGS)
                 .add(ModBlocks.RED_MEI_SAPLING.get(), ModBlocks.WHITE_MEI_SAPLING.get(), ModBlocks.GOLDEN_MEI_SAPLING.get())
@@ -824,7 +832,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_FENCE.get())
                 .add(ModBlocks.DOVE_TREE_FENCE.get())
                 .add(ModBlocks.CHINABERRY_FENCE.get())
-                .add(ModBlocks.DESERT_POPLAR_FENCE.get());
+                .add(ModBlocks.DESERT_POPLAR_FENCE.get())
+                .add(ModBlocks.CRAPE_MYRTLE_FENCE.get());
 
         this.tag(Tags.Blocks.FENCE_GATES_WOODEN)
                 .add(ModBlocks.RED_MEI_FENCE_GATE.get())
@@ -843,7 +852,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_FENCE_GATE.get())
                 .add(ModBlocks.DOVE_TREE_FENCE_GATE.get())
                 .add(ModBlocks.CHINABERRY_FENCE_GATE.get())
-                .add(ModBlocks.DESERT_POPLAR_FENCE_GATE.get());
+                .add(ModBlocks.DESERT_POPLAR_FENCE_GATE.get())
+                .add(ModBlocks.CRAPE_MYRTLE_FENCE_GATE.get());
 
         this.tag(ForgeTags.Blocks.STRIPPED_LOGS)
                 .add(ModBlocks.STRIPPED_RED_MEI_LOG.get())

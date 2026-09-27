@@ -78,11 +78,14 @@ public class ModTreeFeatures {
     //crabapple
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE = registerKey("upright_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE_BEES = registerKey("upright_crabapple_bees");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> UPRIGHT_CRABAPPLE_BEES_1 = registerKey("upright_crabapple_bees_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRABAPPLE = registerKey("white_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRABAPPLE_BEES = registerKey("white_crabapple_bees");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_CRABAPPLE_BEES_1 = registerKey("white_crabapple_bees_1");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_CRABAPPLE = registerKey("golden_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE = registerKey("weeping_crabapple");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE_BEES = registerKey("weeping_crabapple_bees");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_CRABAPPLE_BEES_1 = registerKey("weeping_crabapple_bees_1");
     //apricot & peach & pear & cherry & plum
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_APRICOT = registerKey("pink_apricot");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINK_APRICOT_BEES = registerKey("pink_apricot_bees");
@@ -453,48 +456,67 @@ public class ModTreeFeatures {
                 new MeiFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(4), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new SnowAroundTrunk(8, 0.9F, 6))).ignoreVines().build());
 
+        BeehiveDecorator beehivedecorator2 = new BeehiveDecorator(1.0F);
         register(context, UPRIGHT_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
-                new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 2, 4, 2, 3, 0.9F),
                 BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, UPRIGHT_CRABAPPLE_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
-                new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 2, 4, 2, 3, 0.9F),
                 BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, UPRIGHT_CRABAPPLE_BEES_1, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 2, 4, 2, 3, 0.9F),
+                BlockStateProvider.simple(ModBlocks.UPRIGHT_CRABAPPLE_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator2)).ignoreVines().build());
         register(context, WHITE_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
-                new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 2, 4, 2, 3, 0.9F),
                 BlockStateProvider.simple(ModBlocks.WHITE_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, WHITE_CRABAPPLE_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
-                new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 2, 4, 2, 3, 0.9F),
                 BlockStateProvider.simple(ModBlocks.WHITE_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator)).ignoreVines().build());
+        register(context, WHITE_CRABAPPLE_BEES_1, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 2, 4, 2, 3, 0.9F),
+                BlockStateProvider.simple(ModBlocks.WHITE_CRABAPPLE_LEAVES.get()),
+                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator2)).ignoreVines().build());
         register(context, GOLDEN_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
-                new CrabappleTrunkPlacer(7, 1, 1, 2, 4, 4, 2, 3, 0.9F),
+                new CrabappleTrunkPlacer(7, 1, 1, 2, 2, 4, 2, 3, 0.9F),
                 BlockStateProvider.simple(ModBlocks.GOLDEN_CRABAPPLE_LEAVES.get()),
                 new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
         register(context, WEEPING_CRABAPPLE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
-                new CrabappleTrunkPlacer(10, 1, 1, 5, 4, 3, 3, 4, 0.6F),
+                new CrabappleTrunkPlacer(10, 1, 1, 5, 1, 3, 3, 4, 0.6F),
                 BlockStateProvider.simple(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get()),
                 new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(new CrabappleDecorator(ModBlocks.WEEPING_CRABAPPLE.get().defaultBlockState(), 0.9F))).ignoreVines().build());
         register(context, WEEPING_CRABAPPLE_BEES, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
-                new CrabappleTrunkPlacer(10, 1, 1, 5, 4, 3, 3, 4, 0.6F),
+                new CrabappleTrunkPlacer(10, 1, 1, 5, 1, 3, 3, 4, 0.6F),
                 BlockStateProvider.simple(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get()),
                 new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
                 new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator, new CrabappleDecorator(ModBlocks.WEEPING_CRABAPPLE.get().defaultBlockState(), 0.9F))).ignoreVines().build());
+        register(context, WEEPING_CRABAPPLE_BEES_1, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()),
+                new CrabappleTrunkPlacer(10, 1, 1, 5, 1, 3, 3, 4, 0.6F),
+                BlockStateProvider.simple(ModBlocks.WEEPING_CRABAPPLE_LEAVES.get()),
+                new CherryFoliagePlacer(ConstantInt.of(4), ConstantInt.of(0), ConstantInt.of(5), 0.25F, 0.5F, 0.16666667F, 0.33333334F),
+                new TwoLayersFeatureSize(1, 0, 1)).decorators(List.of(beehivedecorator2, new CrabappleDecorator(ModBlocks.WEEPING_CRABAPPLE.get().defaultBlockState(), 0.9F))).ignoreVines().build());
 
         register(context, PINK_APRICOT, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.APRICOT_LOG.get()),

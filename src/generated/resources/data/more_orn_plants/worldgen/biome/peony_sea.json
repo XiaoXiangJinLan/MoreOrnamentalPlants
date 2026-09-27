@@ -72,6 +72,7 @@
     ],
     [
       "minecraft:glow_lichen",
+      "more_orn_plants:weeping_crabapple_peony",
       "more_orn_plants:peony_sea",
       "more_orn_plants:peony_sea_placed",
       "more_orn_plants:peony_sea_yellow",
@@ -79,7 +80,6 @@
       "more_orn_plants:peony_sea_pink",
       "more_orn_plants:peony_sea_red",
       "more_orn_plants:peony_sea_green",
-      "more_orn_plants:upright_crabapple_placed",
       "more_orn_plants:grass_plain"
     ],
     [

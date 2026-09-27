@@ -121,6 +121,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.copy(ModTags.Blocks.DOVE_TREE_LOGS, ModTags.Items.DOVE_TREE_LOGS);
         this.copy(ModTags.Blocks.CHINABERRY_LOGS, ModTags.Items.CHINABERRY_LOGS);
         this.copy(ModTags.Blocks.DESERT_POPLAR_LOGS, ModTags.Items.DESERT_POPLAR_LOGS);
+        this.copy(ModTags.Blocks.CRAPE_MYRTLE_LOGS, ModTags.Items.CRAPE_MYRTLE_LOGS);
 
         this.copy(BlockTags.SAPLINGS, ItemTags.SAPLINGS);
         this.copy(BlockTags.SMALL_FLOWERS, ItemTags.SMALL_FLOWERS);

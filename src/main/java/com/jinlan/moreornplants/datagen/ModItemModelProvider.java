@@ -37,6 +37,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.DOVE_TREE_FENCE, ModBlocks.DOVE_TREE_PLANKS);
         fenceItem(ModBlocks.CHINABERRY_FENCE, ModBlocks.CHINABERRY_PLANKS);
         fenceItem(ModBlocks.DESERT_POPLAR_FENCE, ModBlocks.DESERT_POPLAR_PLANKS);
+        fenceItem(ModBlocks.CRAPE_MYRTLE_FENCE, ModBlocks.CRAPE_MYRTLE_PLANKS);
 
         buttonItem(ModBlocks.RED_MEI_BUTTON, ModBlocks.RED_MEI_PLANKS);
         buttonItem(ModBlocks.WHITE_MEI_BUTTON, ModBlocks.WHITE_MEI_PLANKS);
@@ -55,6 +56,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.DOVE_TREE_BUTTON, ModBlocks.DOVE_TREE_PLANKS);
         buttonItem(ModBlocks.CHINABERRY_BUTTON, ModBlocks.CHINABERRY_PLANKS);
         buttonItem(ModBlocks.DESERT_POPLAR_BUTTON, ModBlocks.DESERT_POPLAR_PLANKS);
+        buttonItem(ModBlocks.CRAPE_MYRTLE_BUTTON, ModBlocks.CRAPE_MYRTLE_PLANKS);
 
         simplerBlockItem(ModBlocks.RED_MEI_DOOR);
         simplerBlockItem(ModBlocks.WHITE_MEI_DOOR);
@@ -142,6 +144,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.DESERT_POPLAR_SLAB);
         evenSimplerBlockItem(ModBlocks.DESERT_POPLAR_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.DESERT_POPLAR_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.CRAPE_MYRTLE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.CRAPE_MYRTLE_SLAB);
+        evenSimplerBlockItem(ModBlocks.CRAPE_MYRTLE_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.CRAPE_MYRTLE_FENCE_GATE);
 
         trapdoorItem(ModBlocks.RED_MEI_TRAPDOOR);
         trapdoorItem(ModBlocks.WHITE_MEI_TRAPDOOR);

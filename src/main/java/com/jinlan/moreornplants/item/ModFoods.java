@@ -3,7 +3,6 @@ package com.jinlan.moreornplants.item;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Items;
 
 public class ModFoods {
     public static final FoodProperties PEELED_BAMBOO_SHOOTS = new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).effect(() -> new MobEffectInstance(MobEffects.HUNGER, 300, 0), 0.8F).build();
@@ -24,13 +23,13 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 3000, 0), 1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 1800, 1), 1.0F).alwaysEat().build();
     public static final FoodProperties PEACH = new FoodProperties.Builder().nutrition(6).saturationMod(1.6F)
-            .effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 100, 0), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 1000, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 100, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 100, 0), 1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 6000, 19), 1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 8), 1.0F).alwaysEat().build();
     public static final FoodProperties APRICOT = new FoodProperties.Builder().nutrition(6).saturationMod(1.2F)
-            .effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 60, 0), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 600, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 60, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 60, 0), 1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 3000, 9), 1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 4), 1.0F).alwaysEat().build();
     public static final FoodProperties MEI = new FoodProperties.Builder().nutrition(1).saturationMod(0.0F)

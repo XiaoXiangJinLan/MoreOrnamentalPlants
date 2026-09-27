@@ -58,7 +58,10 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_ZIYING_CAVES;
     public static final ForgeConfigSpec.BooleanValue ENABLE_SUYU_CAVES;
 
-    public static final ForgeConfigSpec.BooleanValue ENABLE_BIOME_EFFECTS;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_FLOWER_BIOME_EFFECTS;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_LONGEVITY_FOREST_EFFECTS;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_PENGLAI_EFFECTS;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS_EFFECTS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_BIOME_HURT_ENEMY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_BIOME_NO_ENEMY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_MOD_FOX_SPAWN;
@@ -191,19 +194,33 @@ public class ModBiomeConfig {
 
         // 生物群系提供效果设置
         BUILDER.push("Biome Effects Settings");
-        ENABLE_BIOME_EFFECTS = BUILDER
-                .define("enableBiomeEffects", true);
+        ENABLE_FLOWER_BIOME_EFFECTS = BUILDER
+                .comment("是否让繁花群系提供效果")
+                .define("enableFlowerBiomeEffects", true);
+        ENABLE_LONGEVITY_FOREST_EFFECTS = BUILDER
+                .comment("是否让长寿林提供效果")
+                .define("enableLongevityForestEffects", true);
+        ENABLE_PENGLAI_EFFECTS = BUILDER
+                .comment("是否让蓬莱提供效果")
+                .define("enablePenglaiEffects", true);
+        ENABLE_RED_HIGHLANDS_EFFECTS = BUILDER
+                .comment("是否让映山红提供效果")
+                .define("enableRedHighlandsEffects", true);
         ENABLE_BIOME_HURT_ENEMY = BUILDER
+                .comment("是否让群系伤害敌对生物")
                 .define("enableBiomeHurtEnemy", true);
         ENABLE_BIOME_NO_ENEMY = BUILDER
+                .comment("是否让群系不生成敌对生物")
                 .define("enableBiomeNoEnemy", true);
         ENABLE_MOD_FOX_SPAWN = BUILDER
+                .comment("是否生成紫英狐与素玉狐")
                 .define("enableModFoxSpawn", true);
         BUILDER.pop();
 
         // 花瓣粒子效果设置
         BUILDER.push("Particle Settings");
         PARTICLE_DESPAWN_ON_GROUND = BUILDER
+                .comment("花瓣粒子触地消失")
                 .define("particleDespawnOnGround", true);
         BUILDER.pop();
 
@@ -223,43 +240,43 @@ public class ModBiomeConfig {
         // 武器伤害配置
         BUILDER.push("Weapon Config");
         CAMPHOR_SWORD_MULTIPLIER = BUILDER
-                .comment("Damage multiplier for Camphor Wooden Sword")
+                .comment("樟木剑伤害倍率")
                 .define("camphorSwordMultiplier", 4.0);
         CHINESE_PARASOL_SWORD_MULTIPLIER = BUILDER
-                .comment("Damage multiplier for Chinese Parasol Wooden Sword")
+                .comment("梧桐剑伤害倍率")
                 .define("chineseParasolSwordMultiplier", 6.0);
 
         ZIYING_TOOLS_MULTIPLIER = BUILDER
-                .comment("Critical hit damage multiplier for Ziying tools")
+                .comment("紫英工具伤害倍率")
                 .define("ziyingToolsMultiplier", 3.0);
         SUYU_TOOLS_MULTIPLIER = BUILDER
-                .comment("Damage multiplier for Suyu tools")
+                .comment("素玉工具伤害倍率")
                 .define("suyuToolsMultiplier", 1.5);
         ZIYU_YUANYANG_TOOLS_BASE_MULTIPLIER = BUILDER
-                .comment("Base damage multiplier for Ziyu Yuanyang tools")
-                .define("ziyuYuanyangToolsBaseMultiplier", 1.25);
+                .comment("紫玉鸳鸯工具基础伤害倍率")
+                .define("紫玉鸳鸯工具额外暴击倍率", 1.25);
         ZIYU_YUANYANG_TOOLS_CRIT_MULTIPLIER = BUILDER
-                .comment("Critical hit damage multiplier for Ziyu Yuanyang tools")
+                .comment("紫玉鸳鸯工具额外暴击倍率")
                 .define("ziyuYuanyangToolsCritMultiplier", 3.0);
 
         ZHUIYUE_SWORD_FULL_MOON_MULTIPLIER = BUILDER
-                .comment("Damage multiplier for Zhuiyue Sword during full moon")
+                .comment("追月剑满月伤害倍率")
                 .define("zhuiyueSwordFullMoonMultiplier", 3.0);
         CAIYUN_SWORD_CLEAR_MULTIPLIER = BUILDER
-                .comment("Damage multiplier for Caiyun Sword in clear weather")
+                .comment("彩云剑晴天伤害倍率")
                 .define("caiyunSwordClearMultiplier", 2.0);
         CAIYUN_SWORD_RAIN_MULTIPLIER = BUILDER
-                .comment("Damage multiplier for Caiyun Sword in rain (no thunder)")
+                .comment("彩云剑雨天伤害倍率")
                 .define("caiyunSwordRainMultiplier", 1.0);
         CAIYUN_SWORD_THUNDER_MULTIPLIER = BUILDER
-                .comment("Damage multiplier for Caiyun Sword in thunderstorm")
+                .comment("彩云剑雷雨伤害倍率")
                 .define("caiyunSwordThunderMultiplier", 0.5);
 
         BAIHUA_SWORD_FLOWER_MULTIPLIER = BUILDER
-                .comment("Damage multiplier for Baihua Sword when player has a flower")
+                .comment("百花剑花朵增伤倍率")
                 .define("baihuaSwordFlowerMultiplier", 5.0);
         BAIHUA_SWORD_FLORAL_BIOME_MULTIPLIER = BUILDER
-                .comment("Damage multiplier for Baihua Sword in floral biomes")
+                .comment("百花剑群系增伤倍率")
                 .define("baihuaSwordFloralBiomeMultiplier", 9.0);
         BUILDER.pop();
 

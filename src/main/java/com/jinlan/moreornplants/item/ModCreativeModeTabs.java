@@ -538,8 +538,15 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DESERT_POPLAR_BUTTON.get());
                         pOutput.accept(ModItems.DESERT_POPLAR_SIGN.get());
                         pOutput.accept(ModItems.DESERT_POPLAR_HANGING_SIGN.get());
-                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_LOG.get());
-                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_WOOD.get());
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_LOG.get());
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_WOOD.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_PLANKS.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_STAIRS.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_SLAB.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_FENCE.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_BUTTON.get());
                         pOutput.accept(ModBlocks.GOLD_SAND.get());
                         pOutput.accept(ModBlocks.ZIYING_BEADLIGHT.get());
                         pOutput.accept(ModBlocks.SUYU_BEADLIGHT.get());

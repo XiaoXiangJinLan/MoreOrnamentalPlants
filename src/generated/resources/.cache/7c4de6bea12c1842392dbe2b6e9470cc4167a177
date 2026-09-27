@@ -1,6 +1,6 @@
-// 1.20.1	2026-09-22T23:38:42.570574	Tags for minecraft:block mod id more_orn_plants
-6bf26f6731cb1f1c270ee74b5f19787094adc568 data/forge/tags/blocks/fences/wooden.json
-9d51ebf161664dd8984d5cb2009cb7f724043d47 data/forge/tags/blocks/fence_gates/wooden.json
+// 1.20.1	2026-09-26T20:19:12.0390495	Tags for minecraft:block mod id more_orn_plants
+7eaba370c999899868d92cf679b93b76bd3b0fc2 data/forge/tags/blocks/fences/wooden.json
+3438b38250db22cd0d38e3d0b022607b112b819d data/forge/tags/blocks/fence_gates/wooden.json
 03b0f5a11ed9ffe99eeaa7b86840233f2320f7e5 data/forge/tags/blocks/stripped_logs.json
 a7fab72ff624f6e7874d56884f64dce8d2da50c9 data/forge/tags/blocks/stripped_woods.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/blocks/azalea_root_replaceable.json
@@ -8,11 +8,11 @@ a7fab72ff624f6e7874d56884f64dce8d2da50c9 data/forge/tags/blocks/stripped_woods.j
 ad8f13ff44756682b3fb20a0ed2c52f6b4dc401a data/minecraft/tags/blocks/climbable.json
 3b16affb22cf92d885490aaa56e7c632d7b7bfa1 data/minecraft/tags/blocks/crops.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/blocks/enderman_holdable.json
-9d51ebf161664dd8984d5cb2009cb7f724043d47 data/minecraft/tags/blocks/fence_gates.json
+3438b38250db22cd0d38e3d0b022607b112b819d data/minecraft/tags/blocks/fence_gates.json
 e6a3f68a62c42fb7ca72b217e859d8eaef4750dc data/minecraft/tags/blocks/flowers.json
 9fc13f6db2c6b88064b0fbb245ca8709a516c0d5 data/minecraft/tags/blocks/flower_pots.json
 1b46f0edb972192a8a77c958da03481830e4166f data/minecraft/tags/blocks/leaves.json
-8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/blocks/logs_that_burn.json
+06607d549e7c27184eb5e0b40a755e3ca7e1d347 data/minecraft/tags/blocks/logs_that_burn.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/blocks/lush_ground_replaceable.json
 3b16affb22cf92d885490aaa56e7c632d7b7bfa1 data/minecraft/tags/blocks/maintains_farmland.json
 1373561e581b475dfdd3a4a188b9d32a1ad9eaf4 data/minecraft/tags/blocks/mineable/axe.json
@@ -20,7 +20,7 @@ e6a3f68a62c42fb7ca72b217e859d8eaef4750dc data/minecraft/tags/blocks/flowers.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/blocks/mineable/shovel.json
 ad8f13ff44756682b3fb20a0ed2c52f6b4dc401a data/minecraft/tags/blocks/moss_replaceable.json
 31dbb2f2f136298e59f2bb57a398fc358867fd43 data/minecraft/tags/blocks/overworld_natural_logs.json
-73c33643918bd977c2ecc0002fa55666390463e5 data/minecraft/tags/blocks/planks.json
+8cb45beb9060397e46a342e3a535d6abe6ee1dc3 data/minecraft/tags/blocks/planks.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/blocks/rabbits_spawnable_on.json
 954ed770331ddf1f9d9be9dbd16335440a544bd6 data/minecraft/tags/blocks/replaceable.json
 a28a248e9b491aaf37e57a84633409df6433ca31 data/minecraft/tags/blocks/replaceable_by_trees.json
@@ -33,12 +33,12 @@ bc03161e220a8d6acd7e62fff17a6408bae8536c data/minecraft/tags/blocks/sword_effici
 29ef6255514415658f3e4bb8c02e46391eb03eba data/minecraft/tags/blocks/tall_flowers.json
 22b011177a51f69381e1df31c8daf51a58166552 data/minecraft/tags/blocks/wall_hanging_signs.json
 439814142e22799e8194fe394bbf0c577f705312 data/minecraft/tags/blocks/wall_signs.json
-642513386a0fa7c2a2ca0bb55e9435fcd28ed916 data/minecraft/tags/blocks/wooden_buttons.json
+6f242066a348ecc0edf2aab4ede4260e1a542aca data/minecraft/tags/blocks/wooden_buttons.json
 9cccb244033f9bdd546d95f47168d750339d9156 data/minecraft/tags/blocks/wooden_doors.json
-6bf26f6731cb1f1c270ee74b5f19787094adc568 data/minecraft/tags/blocks/wooden_fences.json
-fbed7c9d782e644a91b33be336a276d305ae9183 data/minecraft/tags/blocks/wooden_pressure_plates.json
-d5fe3bcaf2be6a620929b25d2db7e21baa4a257f data/minecraft/tags/blocks/wooden_slabs.json
-99e6ae91f79d98cfb2104be6f0becdfaf55b40cb data/minecraft/tags/blocks/wooden_stairs.json
+7eaba370c999899868d92cf679b93b76bd3b0fc2 data/minecraft/tags/blocks/wooden_fences.json
+716113698bf8ed2c895aeb428b4af0c4bfa439d7 data/minecraft/tags/blocks/wooden_pressure_plates.json
+945d9b7907ebfea91419b53af21b984d1c2cfcc1 data/minecraft/tags/blocks/wooden_slabs.json
+ef0b586ecee9823284dae3cfd53595a1fb553d7d data/minecraft/tags/blocks/wooden_stairs.json
 9e580060f449ac535c0c88160130921a20b62bbc data/minecraft/tags/blocks/wooden_trapdoors.json
 74450d40162bedac8cc75d901fa2f6069433c895 data/more_orn_plants/tags/blocks/apricot_logs.json
 feabe6bfada7a23a09dfd2d752d435e249a29cf7 data/more_orn_plants/tags/blocks/black_bamboo_plantable_on.json
@@ -46,6 +46,7 @@ feabe6bfada7a23a09dfd2d752d435e249a29cf7 data/more_orn_plants/tags/blocks/black_
 bbc2c8b21249b87c5cd617c1d84990d2b6b86f7c data/more_orn_plants/tags/blocks/chinaberry_logs.json
 317cd23c8ed3572bf67b51a3c3ece2f9a9591268 data/more_orn_plants/tags/blocks/chinese_parasol_logs.json
 bb247fef3cd34749130563305b7387266456fdc2 data/more_orn_plants/tags/blocks/crabapple_logs.json
+e191341c74002d97b3b58432057705d7afdda7fb data/more_orn_plants/tags/blocks/crape_myrtle_logs.json
 977d3d4d7d3ff80c0306ce751ced14fab411ebeb data/more_orn_plants/tags/blocks/desert_poplar_logs.json
 4da5ef66f42438f537d28e33610c73b01ad81576 data/more_orn_plants/tags/blocks/double_pink_mei_logs.json
 23740ae277c1ee580e5aab436e2b860a732ce30a data/more_orn_plants/tags/blocks/dove_tree_logs.json

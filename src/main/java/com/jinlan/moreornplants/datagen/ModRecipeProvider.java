@@ -24,36 +24,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(@NotNull Consumer<FinishedRecipe> pWriter) {
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.GOLD_SAND.get()),
-                        RecipeCategory.MISC,
-                        new ItemStack(Items.GOLD_NUGGET).getItem(),
-                        0.5f,
-                        120)
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.GOLD_SAND.get()), RecipeCategory.MISC,
+                        new ItemStack(Items.GOLD_NUGGET).getItem(), 0.5f, 120)
                 .group("gold_sand")
                 .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "gold_nugget_from_smelting_gold_sand"));
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.GOLD_SAND.get()),
-                        RecipeCategory.MISC,
-                        new ItemStack(Items.GOLD_NUGGET).getItem(),
-                        0.5f,
-                        60)
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.GOLD_SAND.get()), RecipeCategory.MISC,
+                        new ItemStack(Items.GOLD_NUGGET).getItem(), 0.5f, 60)
                 .group("gold_sand")
                 .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "gold_nugget_from_blasting_gold_sand"));
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.MISCANTHUS.get()),
-                        RecipeCategory.MISC,
-                        new ItemStack(ModBlocks.GOLDEN_MISCANTHUS.get()).getItem(),
-                        0.7f,
-                        200)
-                .group("gold_sand")
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.MISCANTHUS.get()), RecipeCategory.MISC,
+                        new ItemStack(ModBlocks.GOLDEN_MISCANTHUS.get()).getItem(), 0.7f, 200)
+                .group("miscanthus")
                 .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "golden_miscanthus_from_smelting_miscanthus"));
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.MISCANTHUS.get()),
-                        RecipeCategory.MISC,
-                        new ItemStack(ModBlocks.GOLDEN_MISCANTHUS.get()).getItem(),
-                        0.7f,
-                        100)
-                .group("gold_sand")
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.MISCANTHUS.get()), RecipeCategory.MISC,
+                        new ItemStack(ModBlocks.GOLDEN_MISCANTHUS.get()).getItem(), 0.7f, 100)
+                .group("miscanthus")
                 .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
                 .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "golden_miscanthus_from_blasting_miscanthus"));
 
@@ -74,6 +62,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         planksFromLogs(pWriter, ModBlocks.DOVE_TREE_PLANKS.get(), ModTags.Items.DOVE_TREE_LOGS, 4);
         planksFromLogs(pWriter, ModBlocks.CHINABERRY_PLANKS.get(), ModTags.Items.CHINABERRY_LOGS, 4);
         planksFromLogs(pWriter, ModBlocks.DESERT_POPLAR_PLANKS.get(), ModTags.Items.DESERT_POPLAR_LOGS, 4);
+        planksFromLogs(pWriter, ModBlocks.CRAPE_MYRTLE_PLANKS.get(), ModTags.Items.CRAPE_MYRTLE_LOGS, 4);
 
         woodFromLogs(pWriter, ModBlocks.RED_MEI_WOOD.get(), ModBlocks.RED_MEI_LOG.get());
         woodFromLogs(pWriter, ModBlocks.WHITE_MEI_WOOD.get(), ModBlocks.WHITE_MEI_LOG.get());
@@ -179,6 +168,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(pWriter);
+        stairBuilder(ModBlocks.CRAPE_MYRTLE_STAIRS.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_stairs")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
+                .save(pWriter);
 
         slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_MEI_SLAB.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
                 .group("wooden_slab")
@@ -247,6 +239,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DESERT_POPLAR_SLAB.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .group("wooden_slab")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
+                .save(pWriter);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRAPE_MYRTLE_SLAB.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
                 .save(pWriter);
 
         doorBuilder(ModBlocks.RED_MEI_DOOR.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
@@ -455,6 +450,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(pWriter);
+        fenceBuilder(ModBlocks.CRAPE_MYRTLE_FENCE.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_fence")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
+                .save(pWriter);
 
         fenceGateBuilder(ModBlocks.RED_MEI_FENCE_GATE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
                 .group("wooden_fence_gate")
@@ -523,6 +521,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         fenceGateBuilder(ModBlocks.DESERT_POPLAR_FENCE_GATE.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
+                .save(pWriter);
+        fenceGateBuilder(ModBlocks.CRAPE_MYRTLE_FENCE_GATE.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_fence_gate")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
                 .save(pWriter);
 
         buttonBuilder(ModBlocks.RED_MEI_BUTTON.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
@@ -593,6 +594,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(pWriter);
+        buttonBuilder(ModBlocks.CRAPE_MYRTLE_BUTTON.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_button")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
+                .save(pWriter);
 
         pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.RED_MEI_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
                 .group("wooden_pressure_plate")
@@ -661,6 +665,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.DESERT_POPLAR_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
+                .save(pWriter);
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CRAPE_MYRTLE_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_pressure_plate")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
                 .save(pWriter);
 
         signBuilder(ModItems.RED_MEI_SIGN.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
@@ -786,28 +793,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(pWriter, ModItems.CHINABERRY_CHEST_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
         chestBoat(pWriter, ModItems.DESERT_POPLAR_CHEST_BOAT.get(), ModBlocks.DESERT_POPLAR_PLANKS.get());
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 12)
-                .define('#', ModBlocks.CRAPE_MYRTLE_LOG.get())
-                .pattern("#")
-                .pattern("#")
-                .group("sticks")
-                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_LOG.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "stick_from_crape_myrtle_log"));
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 12)
-                .define('#', ModBlocks.CRAPE_MYRTLE_WOOD.get())
-                .pattern("#")
-                .pattern("#")
-                .group("sticks")
-                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_WOOD.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "stick_from_crape_myrtle_wood"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CRAFTING_TABLE)
-                .requires(ModBlocks.CRAPE_MYRTLE_LOG.get())
-                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_LOG.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "crafting_table_from_crape_myrtle_log"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CRAFTING_TABLE)
-                .requires(ModBlocks.CRAPE_MYRTLE_WOOD.get())
-                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_WOOD.get()))
-                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "crafting_table_from_crape_myrtle_wood"));
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 2)
                 .define('#', ModItems.MOTTLED_BAMBOO.get())
                 .pattern("#")
@@ -869,6 +854,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .unlockedBy(getHasName(ModItems.CRABAPPLE.get()), has(ModItems.CRABAPPLE.get()))
                 .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get())
+                .requires(ModItems.GOLDEN_CRABAPPLE.get(), 9)
+                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE.get()), has(ModItems.GOLDEN_CRABAPPLE.get()))
+                .save(pWriter, new ResourceLocation(MoreOrnPlants.MOD_ID, "enchanted_golden_crabapple_from_golden_crabapple"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GOLDEN_MEI.get())
                 .requires(Items.GOLD_NUGGET, 4)
                 .requires(ModItems.MEI.get())
