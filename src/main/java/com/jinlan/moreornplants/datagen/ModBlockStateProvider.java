@@ -354,6 +354,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.DOVE_TREE_DOOR.get()), modLoc("block/dove_tree_door_bottom"), modLoc("block/dove_tree_door_top"), "cutout");
         doorBlockWithRenderType(((DoorBlock) ModBlocks.CHINABERRY_DOOR.get()), modLoc("block/chinaberry_door_bottom"), modLoc("block/chinaberry_door_top"), "cutout");
         doorBlockWithRenderType(((DoorBlock) ModBlocks.DESERT_POPLAR_DOOR.get()), modLoc("block/desert_poplar_door_bottom"), modLoc("block/desert_poplar_door_top"), "cutout");
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.CRAPE_MYRTLE_DOOR.get()), modLoc("block/crape_myrtle_door_bottom"), modLoc("block/crape_myrtle_door_top"), "cutout");
 
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.RED_MEI_TRAPDOOR.get()), modLoc("block/red_mei_trapdoor"), true, "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.WHITE_MEI_TRAPDOOR.get()), modLoc("block/white_mei_trapdoor"), true, "cutout");
@@ -372,6 +373,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.DOVE_TREE_TRAPDOOR.get()), modLoc("block/dove_tree_trapdoor"), true, "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.CHINABERRY_TRAPDOOR.get()), modLoc("block/chinaberry_trapdoor"), true, "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.DESERT_POPLAR_TRAPDOOR.get()), modLoc("block/desert_poplar_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.CRAPE_MYRTLE_TRAPDOOR.get()), modLoc("block/crape_myrtle_trapdoor"), true, "cutout");
 
         signBlock(((StandingSignBlock) ModBlocks.RED_MEI_SIGN.get()), ((WallSignBlock) ModBlocks.RED_MEI_WALL_SIGN.get()), blockTexture(ModBlocks.RED_MEI_PLANKS.get()));
         signBlock(((StandingSignBlock) ModBlocks.WHITE_MEI_SIGN.get()), ((WallSignBlock) ModBlocks.WHITE_MEI_WALL_SIGN.get()), blockTexture(ModBlocks.WHITE_MEI_PLANKS.get()));
@@ -390,6 +392,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         signBlock(((StandingSignBlock) ModBlocks.DOVE_TREE_SIGN.get()), ((WallSignBlock) ModBlocks.DOVE_TREE_WALL_SIGN.get()), blockTexture(ModBlocks.DOVE_TREE_PLANKS.get()));
         signBlock(((StandingSignBlock) ModBlocks.CHINABERRY_SIGN.get()), ((WallSignBlock) ModBlocks.CHINABERRY_WALL_SIGN.get()), blockTexture(ModBlocks.CHINABERRY_PLANKS.get()));
         signBlock(((StandingSignBlock) ModBlocks.DESERT_POPLAR_SIGN.get()), ((WallSignBlock) ModBlocks.DESERT_POPLAR_WALL_SIGN.get()), blockTexture(ModBlocks.DESERT_POPLAR_PLANKS.get()));
+        signBlock(((StandingSignBlock) ModBlocks.CRAPE_MYRTLE_SIGN.get()), ((WallSignBlock) ModBlocks.CRAPE_MYRTLE_WALL_SIGN.get()), blockTexture(ModBlocks.CRAPE_MYRTLE_PLANKS.get()));
 
         hangingSignBlock(ModBlocks.RED_MEI_HANGING_SIGN.get(), ModBlocks.RED_MEI_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_RED_MEI_LOG.get()));
         hangingSignBlock(ModBlocks.WHITE_MEI_HANGING_SIGN.get(), ModBlocks.WHITE_MEI_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_WHITE_MEI_LOG.get()));
@@ -408,6 +411,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         hangingSignBlock(ModBlocks.DOVE_TREE_HANGING_SIGN.get(), ModBlocks.DOVE_TREE_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_DOVE_TREE_LOG.get()));
         hangingSignBlock(ModBlocks.CHINABERRY_HANGING_SIGN.get(), ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_CHINABERRY_LOG.get()));
         hangingSignBlock(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get()));
+        hangingSignBlock(ModBlocks.CRAPE_MYRTLE_HANGING_SIGN.get(), ModBlocks.CRAPE_MYRTLE_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.CRAPE_MYRTLE_LOG.get()));
 
         saplingBlock(ModBlocks.RED_MEI_SAPLING);
         simpleBlock(ModBlocks.POTTED_RED_MEI_SAPLING.get(), models().singleTexture("potted_red_mei_sapling", new ResourceLocation("flower_pot_cross"), "plant",

@@ -545,8 +545,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_SLAB.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_FENCE.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_DOOR.get());
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_TRAPDOOR.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_PRESSURE_PLATE.get());
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_BUTTON.get());
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_SIGN.get());
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_HANGING_SIGN.get());
                         pOutput.accept(ModBlocks.GOLD_SAND.get());
                         pOutput.accept(ModBlocks.ZIYING_BEADLIGHT.get());
                         pOutput.accept(ModBlocks.SUYU_BEADLIGHT.get());
@@ -607,6 +611,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CHINABERRY_CHEST_BOAT.get());
                         pOutput.accept(ModItems.DESERT_POPLAR_BOAT.get());
                         pOutput.accept(ModItems.DESERT_POPLAR_CHEST_BOAT.get());
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_BOAT.get());
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_CHEST_BOAT.get());
                         pOutput.accept(ModItems.PEACH_WOODEN_SWORD.get());
                         pOutput.accept(ModItems.CAMPHOR_WOODEN_SWORD.get());
                         pOutput.accept(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get());

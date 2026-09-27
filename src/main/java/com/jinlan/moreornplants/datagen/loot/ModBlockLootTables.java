@@ -258,41 +258,26 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.DOVE_TREE_TRAPDOOR.get());
         this.dropSelf(ModBlocks.CHINABERRY_TRAPDOOR.get());
         this.dropSelf(ModBlocks.DESERT_POPLAR_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_TRAPDOOR.get());
 
-        this.add(ModBlocks.RED_MEI_DOOR.get(),
-                createDoorTable(ModBlocks.RED_MEI_DOOR.get()));
-        this.add(ModBlocks.WHITE_MEI_DOOR.get(),
-                createDoorTable(ModBlocks.WHITE_MEI_DOOR.get()));
-        this.add(ModBlocks.GREEN_CALYX_MEI_DOOR.get(),
-                createDoorTable(ModBlocks.GREEN_CALYX_MEI_DOOR.get()));
-        this.add(ModBlocks.DOUBLE_PINK_MEI_DOOR.get(),
-                createDoorTable(ModBlocks.DOUBLE_PINK_MEI_DOOR.get()));
-        this.add(ModBlocks.CRABAPPLE_DOOR.get(),
-                createDoorTable(ModBlocks.CRABAPPLE_DOOR.get()));
-        this.add(ModBlocks.APRICOT_DOOR.get(),
-                createDoorTable(ModBlocks.APRICOT_DOOR.get()));
-        this.add(ModBlocks.PEACH_DOOR.get(),
-                createDoorTable(ModBlocks.PEACH_DOOR.get()));
-        this.add(ModBlocks.PEAR_DOOR.get(),
-                createDoorTable(ModBlocks.PEAR_DOOR.get()));
-        this.add(ModBlocks.PURPLE_LEAF_PLUM_DOOR.get(),
-                createDoorTable(ModBlocks.PURPLE_LEAF_PLUM_DOOR.get()));
-        this.add(ModBlocks.OSMANTHUS_DOOR.get(),
-                createDoorTable(ModBlocks.OSMANTHUS_DOOR.get()));
-        this.add(ModBlocks.GINKGO_DOOR.get(),
-                createDoorTable(ModBlocks.GINKGO_DOOR.get()));
-        this.add(ModBlocks.CHINESE_PARASOL_DOOR.get(),
-                createDoorTable(ModBlocks.CHINESE_PARASOL_DOOR.get()));
-        this.add(ModBlocks.SWEETGUM_DOOR.get(),
-                createDoorTable(ModBlocks.SWEETGUM_DOOR.get()));
-        this.add(ModBlocks.CAMPHOR_DOOR.get(),
-                createDoorTable(ModBlocks.CAMPHOR_DOOR.get()));
-        this.add(ModBlocks.DOVE_TREE_DOOR.get(),
-                createDoorTable(ModBlocks.DOVE_TREE_DOOR.get()));
-        this.add(ModBlocks.CHINABERRY_DOOR.get(),
-                createDoorTable(ModBlocks.CHINABERRY_DOOR.get()));
-        this.add(ModBlocks.DESERT_POPLAR_DOOR.get(),
-                createDoorTable(ModBlocks.DESERT_POPLAR_DOOR.get()));
+        this.add(ModBlocks.RED_MEI_DOOR.get(), createDoorTable(ModBlocks.RED_MEI_DOOR.get()));
+        this.add(ModBlocks.WHITE_MEI_DOOR.get(), createDoorTable(ModBlocks.WHITE_MEI_DOOR.get()));
+        this.add(ModBlocks.GREEN_CALYX_MEI_DOOR.get(), createDoorTable(ModBlocks.GREEN_CALYX_MEI_DOOR.get()));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_DOOR.get(), createDoorTable(ModBlocks.DOUBLE_PINK_MEI_DOOR.get()));
+        this.add(ModBlocks.CRABAPPLE_DOOR.get(), createDoorTable(ModBlocks.CRABAPPLE_DOOR.get()));
+        this.add(ModBlocks.APRICOT_DOOR.get(), createDoorTable(ModBlocks.APRICOT_DOOR.get()));
+        this.add(ModBlocks.PEACH_DOOR.get(), createDoorTable(ModBlocks.PEACH_DOOR.get()));
+        this.add(ModBlocks.PEAR_DOOR.get(), createDoorTable(ModBlocks.PEAR_DOOR.get()));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_DOOR.get(), createDoorTable(ModBlocks.PURPLE_LEAF_PLUM_DOOR.get()));
+        this.add(ModBlocks.OSMANTHUS_DOOR.get(), createDoorTable(ModBlocks.OSMANTHUS_DOOR.get()));
+        this.add(ModBlocks.GINKGO_DOOR.get(), createDoorTable(ModBlocks.GINKGO_DOOR.get()));
+        this.add(ModBlocks.CHINESE_PARASOL_DOOR.get(), createDoorTable(ModBlocks.CHINESE_PARASOL_DOOR.get()));
+        this.add(ModBlocks.SWEETGUM_DOOR.get(), createDoorTable(ModBlocks.SWEETGUM_DOOR.get()));
+        this.add(ModBlocks.CAMPHOR_DOOR.get(), createDoorTable(ModBlocks.CAMPHOR_DOOR.get()));
+        this.add(ModBlocks.DOVE_TREE_DOOR.get(), createDoorTable(ModBlocks.DOVE_TREE_DOOR.get()));
+        this.add(ModBlocks.CHINABERRY_DOOR.get(), createDoorTable(ModBlocks.CHINABERRY_DOOR.get()));
+        this.add(ModBlocks.DESERT_POPLAR_DOOR.get(), createDoorTable(ModBlocks.DESERT_POPLAR_DOOR.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_DOOR.get(), createDoorTable(ModBlocks.CRAPE_MYRTLE_DOOR.get()));
 
         this.add(ModBlocks.RED_MEI_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.RED_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -421,108 +406,78 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createWeepingMeiPlantDrops(block, ModBlocks.VERSICOLOR_WEEPING_MEI.get(), ModBlocks.VERSICOLOR_WEEPING_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         this.add(ModBlocks.RED_MEI_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_SIGN.get()));
-        this.add(ModBlocks.RED_MEI_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.RED_MEI_SIGN.get()));
+        this.add(ModBlocks.RED_MEI_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_SIGN.get()));
         this.add(ModBlocks.WHITE_MEI_SIGN.get(), block -> createSingleItemTable(ModItems.WHITE_MEI_SIGN.get()));
-        this.add(ModBlocks.WHITE_MEI_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.WHITE_MEI_SIGN.get()));
+        this.add(ModBlocks.WHITE_MEI_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.WHITE_MEI_SIGN.get()));
         this.add(ModBlocks.GREEN_CALYX_MEI_SIGN.get(), block -> createSingleItemTable(ModItems.GREEN_CALYX_MEI_SIGN.get()));
-        this.add(ModBlocks.GREEN_CALYX_MEI_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.GREEN_CALYX_MEI_SIGN.get()));
+        this.add(ModBlocks.GREEN_CALYX_MEI_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.GREEN_CALYX_MEI_SIGN.get()));
         this.add(ModBlocks.DOUBLE_PINK_MEI_SIGN.get(), block -> createSingleItemTable(ModItems.DOUBLE_PINK_MEI_SIGN.get()));
-        this.add(ModBlocks.DOUBLE_PINK_MEI_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.DOUBLE_PINK_MEI_SIGN.get()));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.DOUBLE_PINK_MEI_SIGN.get()));
         this.add(ModBlocks.CRABAPPLE_SIGN.get(), block -> createSingleItemTable(ModItems.CRABAPPLE_SIGN.get()));
-        this.add(ModBlocks.CRABAPPLE_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.CRABAPPLE_SIGN.get()));
+        this.add(ModBlocks.CRABAPPLE_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.CRABAPPLE_SIGN.get()));
         this.add(ModBlocks.APRICOT_SIGN.get(), block -> createSingleItemTable(ModItems.APRICOT_SIGN.get()));
-        this.add(ModBlocks.APRICOT_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.APRICOT_SIGN.get()));
+        this.add(ModBlocks.APRICOT_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.APRICOT_SIGN.get()));
         this.add(ModBlocks.PEACH_SIGN.get(), block -> createSingleItemTable(ModItems.PEACH_SIGN.get()));
-        this.add(ModBlocks.PEACH_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.PEACH_SIGN.get()));
+        this.add(ModBlocks.PEACH_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.PEACH_SIGN.get()));
         this.add(ModBlocks.PEAR_SIGN.get(), block -> createSingleItemTable(ModItems.PEAR_SIGN.get()));
-        this.add(ModBlocks.PEAR_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.PEAR_SIGN.get()));
+        this.add(ModBlocks.PEAR_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.PEAR_SIGN.get()));
         this.add(ModBlocks.PURPLE_LEAF_PLUM_SIGN.get(), block -> createSingleItemTable(ModItems.PURPLE_LEAF_PLUM_SIGN.get()));
-        this.add(ModBlocks.PURPLE_LEAF_PLUM_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.PURPLE_LEAF_PLUM_SIGN.get()));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.PURPLE_LEAF_PLUM_SIGN.get()));
         this.add(ModBlocks.OSMANTHUS_SIGN.get(), block -> createSingleItemTable(ModItems.OSMANTHUS_SIGN.get()));
-        this.add(ModBlocks.OSMANTHUS_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.OSMANTHUS_SIGN.get()));
+        this.add(ModBlocks.OSMANTHUS_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.OSMANTHUS_SIGN.get()));
         this.add(ModBlocks.GINKGO_SIGN.get(), block -> createSingleItemTable(ModItems.GINKGO_SIGN.get()));
-        this.add(ModBlocks.GINKGO_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.GINKGO_SIGN.get()));
+        this.add(ModBlocks.GINKGO_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.GINKGO_SIGN.get()));
         this.add(ModBlocks.CHINESE_PARASOL_SIGN.get(), block -> createSingleItemTable(ModItems.CHINESE_PARASOL_SIGN.get()));
-        this.add(ModBlocks.CHINESE_PARASOL_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.CHINESE_PARASOL_SIGN.get()));
+        this.add(ModBlocks.CHINESE_PARASOL_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.CHINESE_PARASOL_SIGN.get()));
         this.add(ModBlocks.SWEETGUM_SIGN.get(), block -> createSingleItemTable(ModItems.SWEETGUM_SIGN.get()));
-        this.add(ModBlocks.SWEETGUM_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.SWEETGUM_SIGN.get()));
+        this.add(ModBlocks.SWEETGUM_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.SWEETGUM_SIGN.get()));
         this.add(ModBlocks.CAMPHOR_SIGN.get(), block -> createSingleItemTable(ModItems.CAMPHOR_SIGN.get()));
-        this.add(ModBlocks.CAMPHOR_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.CAMPHOR_SIGN.get()));
+        this.add(ModBlocks.CAMPHOR_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.CAMPHOR_SIGN.get()));
         this.add(ModBlocks.DOVE_TREE_SIGN.get(), block -> createSingleItemTable(ModItems.DOVE_TREE_SIGN.get()));
-        this.add(ModBlocks.DOVE_TREE_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.DOVE_TREE_SIGN.get()));
+        this.add(ModBlocks.DOVE_TREE_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.DOVE_TREE_SIGN.get()));
         this.add(ModBlocks.CHINABERRY_SIGN.get(), block -> createSingleItemTable(ModItems.CHINABERRY_SIGN.get()));
-        this.add(ModBlocks.CHINABERRY_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.CHINABERRY_SIGN.get()));
+        this.add(ModBlocks.CHINABERRY_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.CHINABERRY_SIGN.get()));
         this.add(ModBlocks.DESERT_POPLAR_SIGN.get(), block -> createSingleItemTable(ModItems.DESERT_POPLAR_SIGN.get()));
-        this.add(ModBlocks.DESERT_POPLAR_WALL_SIGN.get(), block ->
-                createSingleItemTable(ModItems.DESERT_POPLAR_SIGN.get()));
+        this.add(ModBlocks.DESERT_POPLAR_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.DESERT_POPLAR_SIGN.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_SIGN.get(), block -> createSingleItemTable(ModItems.CRAPE_MYRTLE_SIGN.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.CRAPE_MYRTLE_SIGN.get()));
 
         this.add(ModBlocks.RED_MEI_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_HANGING_SIGN.get()));
-        this.add(ModBlocks.RED_MEI_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.RED_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.RED_MEI_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_HANGING_SIGN.get()));
         this.add(ModBlocks.WHITE_MEI_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.WHITE_MEI_HANGING_SIGN.get()));
-        this.add(ModBlocks.WHITE_MEI_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.WHITE_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.WHITE_MEI_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.WHITE_MEI_HANGING_SIGN.get()));
         this.add(ModBlocks.GREEN_CALYX_MEI_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.GREEN_CALYX_MEI_HANGING_SIGN.get()));
-        this.add(ModBlocks.GREEN_CALYX_MEI_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.GREEN_CALYX_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.GREEN_CALYX_MEI_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.GREEN_CALYX_MEI_HANGING_SIGN.get()));
         this.add(ModBlocks.DOUBLE_PINK_MEI_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.DOUBLE_PINK_MEI_HANGING_SIGN.get()));
-        this.add(ModBlocks.DOUBLE_PINK_MEI_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.DOUBLE_PINK_MEI_HANGING_SIGN.get()));
+        this.add(ModBlocks.DOUBLE_PINK_MEI_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.DOUBLE_PINK_MEI_HANGING_SIGN.get()));
         this.add(ModBlocks.CRABAPPLE_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CRABAPPLE_HANGING_SIGN.get()));
-        this.add(ModBlocks.CRABAPPLE_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.CRABAPPLE_HANGING_SIGN.get()));
+        this.add(ModBlocks.CRABAPPLE_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CRABAPPLE_HANGING_SIGN.get()));
         this.add(ModBlocks.APRICOT_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.APRICOT_HANGING_SIGN.get()));
-        this.add(ModBlocks.APRICOT_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.APRICOT_HANGING_SIGN.get()));
+        this.add(ModBlocks.APRICOT_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.APRICOT_HANGING_SIGN.get()));
         this.add(ModBlocks.PEACH_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.PEACH_HANGING_SIGN.get()));
-        this.add(ModBlocks.PEACH_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.PEACH_HANGING_SIGN.get()));
+        this.add(ModBlocks.PEACH_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.PEACH_HANGING_SIGN.get()));
         this.add(ModBlocks.PEAR_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.PEAR_HANGING_SIGN.get()));
-        this.add(ModBlocks.PEAR_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.PEAR_HANGING_SIGN.get()));
+        this.add(ModBlocks.PEAR_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.PEAR_HANGING_SIGN.get()));
         this.add(ModBlocks.PURPLE_LEAF_PLUM_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.PURPLE_LEAF_PLUM_HANGING_SIGN.get()));
-        this.add(ModBlocks.PURPLE_LEAF_PLUM_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.PURPLE_LEAF_PLUM_HANGING_SIGN.get()));
+        this.add(ModBlocks.PURPLE_LEAF_PLUM_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.PURPLE_LEAF_PLUM_HANGING_SIGN.get()));
         this.add(ModBlocks.OSMANTHUS_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.OSMANTHUS_HANGING_SIGN.get()));
-        this.add(ModBlocks.OSMANTHUS_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.OSMANTHUS_HANGING_SIGN.get()));
+        this.add(ModBlocks.OSMANTHUS_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.OSMANTHUS_HANGING_SIGN.get()));
         this.add(ModBlocks.GINKGO_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.GINKGO_HANGING_SIGN.get()));
-        this.add(ModBlocks.GINKGO_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.GINKGO_HANGING_SIGN.get()));
+        this.add(ModBlocks.GINKGO_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.GINKGO_HANGING_SIGN.get()));
         this.add(ModBlocks.CHINESE_PARASOL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CHINESE_PARASOL_HANGING_SIGN.get()));
-        this.add(ModBlocks.CHINESE_PARASOL_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.CHINESE_PARASOL_HANGING_SIGN.get()));
+        this.add(ModBlocks.CHINESE_PARASOL_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CHINESE_PARASOL_HANGING_SIGN.get()));
         this.add(ModBlocks.SWEETGUM_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.SWEETGUM_HANGING_SIGN.get()));
-        this.add(ModBlocks.SWEETGUM_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.SWEETGUM_HANGING_SIGN.get()));
+        this.add(ModBlocks.SWEETGUM_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.SWEETGUM_HANGING_SIGN.get()));
         this.add(ModBlocks.CAMPHOR_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CAMPHOR_HANGING_SIGN.get()));
-        this.add(ModBlocks.CAMPHOR_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.CAMPHOR_HANGING_SIGN.get()));
+        this.add(ModBlocks.CAMPHOR_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CAMPHOR_HANGING_SIGN.get()));
         this.add(ModBlocks.DOVE_TREE_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.DOVE_TREE_HANGING_SIGN.get()));
-        this.add(ModBlocks.DOVE_TREE_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.DOVE_TREE_HANGING_SIGN.get()));
+        this.add(ModBlocks.DOVE_TREE_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.DOVE_TREE_HANGING_SIGN.get()));
         this.add(ModBlocks.CHINABERRY_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CHINABERRY_HANGING_SIGN.get()));
-        this.add(ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.CHINABERRY_HANGING_SIGN.get()));
+        this.add(ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CHINABERRY_HANGING_SIGN.get()));
         this.add(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.DESERT_POPLAR_HANGING_SIGN.get()));
-        this.add(ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get(), block ->
-                createSingleItemTable(ModItems.DESERT_POPLAR_HANGING_SIGN.get()));
+        this.add(ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.DESERT_POPLAR_HANGING_SIGN.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CRAPE_MYRTLE_HANGING_SIGN.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CRAPE_MYRTLE_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.RED_MEI_SAPLING.get());
         this.add(ModBlocks.POTTED_RED_MEI_SAPLING.get(),

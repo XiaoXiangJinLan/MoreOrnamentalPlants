@@ -312,6 +312,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("wooden_door")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(pWriter);
+        doorBuilder(ModBlocks.CRAPE_MYRTLE_DOOR.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
+                .save(pWriter);
 
         trapdoorBuilder(ModBlocks.RED_MEI_TRAPDOOR.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
                 .group("wooden_trapdoor")
@@ -380,6 +383,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.DESERT_POPLAR_TRAPDOOR.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
+                .save(pWriter);
+        trapdoorBuilder(ModBlocks.CRAPE_MYRTLE_TRAPDOOR.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_trapdoor")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
                 .save(pWriter);
 
         fenceBuilder(ModBlocks.RED_MEI_FENCE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
@@ -738,6 +744,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(pWriter);
+        signBuilder(ModItems.CRAPE_MYRTLE_SIGN.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_sign")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
+                .save(pWriter);
 
         hangingSign(pWriter, ModItems.RED_MEI_HANGING_SIGN.get(), ModBlocks.STRIPPED_RED_MEI_LOG.get());
         hangingSign(pWriter, ModItems.WHITE_MEI_HANGING_SIGN.get(), ModBlocks.STRIPPED_WHITE_MEI_LOG.get());
@@ -756,6 +765,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         hangingSign(pWriter, ModItems.DOVE_TREE_HANGING_SIGN.get(), ModBlocks.STRIPPED_DOVE_TREE_LOG.get());
         hangingSign(pWriter, ModItems.CHINABERRY_HANGING_SIGN.get(), ModBlocks.STRIPPED_CHINABERRY_LOG.get());
         hangingSign(pWriter, ModItems.DESERT_POPLAR_HANGING_SIGN.get(), ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get());
+        hangingSign(pWriter, ModItems.CRAPE_MYRTLE_HANGING_SIGN.get(), ModBlocks.CRAPE_MYRTLE_LOG.get());
 
         woodenBoat(pWriter, ModItems.RED_MEI_BOAT.get(), ModBlocks.RED_MEI_PLANKS.get());
         woodenBoat(pWriter, ModItems.WHITE_MEI_BOAT.get(), ModBlocks.WHITE_MEI_PLANKS.get());
@@ -774,6 +784,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         woodenBoat(pWriter, ModItems.DOVE_TREE_BOAT.get(), ModBlocks.DOVE_TREE_PLANKS.get());
         woodenBoat(pWriter, ModItems.CHINABERRY_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
         woodenBoat(pWriter, ModItems.DESERT_POPLAR_BOAT.get(), ModBlocks.DESERT_POPLAR_PLANKS.get());
+        woodenBoat(pWriter, ModItems.CRAPE_MYRTLE_BOAT.get(), ModBlocks.CRAPE_MYRTLE_PLANKS.get());
 
         chestBoat(pWriter, ModItems.RED_MEI_CHEST_BOAT.get(), ModBlocks.RED_MEI_PLANKS.get());
         chestBoat(pWriter, ModItems.WHITE_MEI_CHEST_BOAT.get(), ModBlocks.WHITE_MEI_PLANKS.get());
@@ -792,6 +803,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(pWriter, ModItems.DOVE_TREE_CHEST_BOAT.get(), ModBlocks.DOVE_TREE_PLANKS.get());
         chestBoat(pWriter, ModItems.CHINABERRY_CHEST_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
         chestBoat(pWriter, ModItems.DESERT_POPLAR_CHEST_BOAT.get(), ModBlocks.DESERT_POPLAR_PLANKS.get());
+        chestBoat(pWriter, ModItems.CRAPE_MYRTLE_CHEST_BOAT.get(), ModBlocks.CRAPE_MYRTLE_PLANKS.get());
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 2)
                 .define('#', ModItems.MOTTLED_BAMBOO.get())

@@ -439,6 +439,7 @@ public class MoreOrnPlants
             Sheets.addWoodType(ModWoodTypes.DOVE_TREE);
             Sheets.addWoodType(ModWoodTypes.CHINABERRY);
             Sheets.addWoodType(ModWoodTypes.DESERT_POPLAR);
+            Sheets.addWoodType(ModWoodTypes.CRAPE_MYRTLE);
 
             EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
             EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));

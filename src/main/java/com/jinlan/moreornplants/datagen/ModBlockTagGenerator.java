@@ -490,7 +490,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_DOOR.get())
                 .add(ModBlocks.DOVE_TREE_DOOR.get())
                 .add(ModBlocks.CHINABERRY_DOOR.get())
-                .add(ModBlocks.DESERT_POPLAR_DOOR.get());
+                .add(ModBlocks.DESERT_POPLAR_DOOR.get())
+                .add(ModBlocks.CRAPE_MYRTLE_DOOR.get());
 
         this.tag(BlockTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.RED_MEI_TRAPDOOR.get())
@@ -509,7 +510,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_TRAPDOOR.get())
                 .add(ModBlocks.DOVE_TREE_TRAPDOOR.get())
                 .add(ModBlocks.CHINABERRY_TRAPDOOR.get())
-                .add(ModBlocks.DESERT_POPLAR_TRAPDOOR.get());
+                .add(ModBlocks.DESERT_POPLAR_TRAPDOOR.get())
+                .add(ModBlocks.CRAPE_MYRTLE_TRAPDOOR.get());
 
         this.tag(BlockTags.STANDING_SIGNS)
                 .add(ModBlocks.RED_MEI_SIGN.get())
@@ -528,7 +530,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_SIGN.get())
                 .add(ModBlocks.DOVE_TREE_SIGN.get())
                 .add(ModBlocks.CHINABERRY_SIGN.get())
-                .add(ModBlocks.DESERT_POPLAR_SIGN.get());
+                .add(ModBlocks.DESERT_POPLAR_SIGN.get())
+                .add(ModBlocks.CRAPE_MYRTLE_SIGN.get());
 
         this.tag(BlockTags.WALL_SIGNS)
                 .add(ModBlocks.RED_MEI_WALL_SIGN.get())
@@ -547,7 +550,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_WALL_SIGN.get())
                 .add(ModBlocks.DOVE_TREE_WALL_SIGN.get())
                 .add(ModBlocks.CHINABERRY_WALL_SIGN.get())
-                .add(ModBlocks.DESERT_POPLAR_WALL_SIGN.get());
+                .add(ModBlocks.DESERT_POPLAR_WALL_SIGN.get())
+                .add(ModBlocks.CRAPE_MYRTLE_WALL_SIGN.get());
 
         this.tag(BlockTags.CEILING_HANGING_SIGNS)
                 .add(ModBlocks.RED_MEI_HANGING_SIGN.get())
@@ -566,7 +570,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_HANGING_SIGN.get())
                 .add(ModBlocks.DOVE_TREE_HANGING_SIGN.get())
                 .add(ModBlocks.CHINABERRY_HANGING_SIGN.get())
-                .add(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get());
+                .add(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get())
+                .add(ModBlocks.CRAPE_MYRTLE_HANGING_SIGN.get());
 
         this.tag(BlockTags.WALL_HANGING_SIGNS)
                 .add(ModBlocks.RED_MEI_WALL_HANGING_SIGN.get())
@@ -585,58 +590,39 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.DOVE_TREE_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get())
-                .add(ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get());
+                .add(ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get())
+                .add(ModBlocks.CRAPE_MYRTLE_WALL_HANGING_SIGN.get());
 
         this.tag(ModTags.Blocks.RED_MEI_LOGS)
-                .add(ModBlocks.RED_MEI_LOG.get(),
-                        ModBlocks.RED_MEI_WOOD.get(),
-                        ModBlocks.STRIPPED_RED_MEI_LOG.get(),
-                        ModBlocks.STRIPPED_RED_MEI_WOOD.get());
+                .add(ModBlocks.RED_MEI_LOG.get(), ModBlocks.RED_MEI_WOOD.get(),
+                        ModBlocks.STRIPPED_RED_MEI_LOG.get(), ModBlocks.STRIPPED_RED_MEI_WOOD.get());
         this.tag(ModTags.Blocks.WHITE_MEI_LOGS)
-                .add(ModBlocks.WHITE_MEI_LOG.get(),
-                        ModBlocks.WHITE_MEI_WOOD.get(),
-                        ModBlocks.STRIPPED_WHITE_MEI_LOG.get(),
-                        ModBlocks.STRIPPED_WHITE_MEI_WOOD.get());
+                .add(ModBlocks.WHITE_MEI_LOG.get(), ModBlocks.WHITE_MEI_WOOD.get(),
+                        ModBlocks.STRIPPED_WHITE_MEI_LOG.get(), ModBlocks.STRIPPED_WHITE_MEI_WOOD.get());
         this.tag(ModTags.Blocks.GREEN_CALYX_MEI_LOGS)
-                .add(ModBlocks.GREEN_CALYX_MEI_LOG.get(),
-                        ModBlocks.GREEN_CALYX_MEI_WOOD.get(),
-                        ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.get(),
-                        ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.get());
+                .add(ModBlocks.GREEN_CALYX_MEI_LOG.get(), ModBlocks.GREEN_CALYX_MEI_WOOD.get(),
+                        ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.get(), ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.get());
         this.tag(ModTags.Blocks.DOUBLE_PINK_MEI_LOGS)
-                .add(ModBlocks.DOUBLE_PINK_MEI_LOG.get(),
-                        ModBlocks.DOUBLE_PINK_MEI_WOOD.get(),
-                        ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG.get(),
-                        ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD.get());
+                .add(ModBlocks.DOUBLE_PINK_MEI_LOG.get(), ModBlocks.DOUBLE_PINK_MEI_WOOD.get(),
+                        ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG.get(), ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD.get());
         this.tag(ModTags.Blocks.CRABAPPLE_LOGS)
-                .add(ModBlocks.CRABAPPLE_LOG.get(),
-                        ModBlocks.CRABAPPLE_WOOD.get(),
-                        ModBlocks.STRIPPED_CRABAPPLE_LOG.get(),
-                        ModBlocks.STRIPPED_CRABAPPLE_WOOD.get());
+                .add(ModBlocks.CRABAPPLE_LOG.get(), ModBlocks.CRABAPPLE_WOOD.get(),
+                        ModBlocks.STRIPPED_CRABAPPLE_LOG.get(), ModBlocks.STRIPPED_CRABAPPLE_WOOD.get());
         this.tag(ModTags.Blocks.APRICOT_LOGS)
-                .add(ModBlocks.APRICOT_LOG.get(),
-                        ModBlocks.APRICOT_WOOD.get(),
-                        ModBlocks.STRIPPED_APRICOT_LOG.get(),
-                        ModBlocks.STRIPPED_APRICOT_WOOD.get());
+                .add(ModBlocks.APRICOT_LOG.get(), ModBlocks.APRICOT_WOOD.get(),
+                        ModBlocks.STRIPPED_APRICOT_LOG.get(), ModBlocks.STRIPPED_APRICOT_WOOD.get());
         this.tag(ModTags.Blocks.PEACH_LOGS)
-                .add(ModBlocks.PEACH_LOG.get(),
-                        ModBlocks.PEACH_WOOD.get(),
-                        ModBlocks.STRIPPED_PEACH_LOG.get(),
-                        ModBlocks.STRIPPED_PEACH_WOOD.get());
+                .add(ModBlocks.PEACH_LOG.get(), ModBlocks.PEACH_WOOD.get(),
+                        ModBlocks.STRIPPED_PEACH_LOG.get(), ModBlocks.STRIPPED_PEACH_WOOD.get());
         this.tag(ModTags.Blocks.PEAR_LOGS)
-                .add(ModBlocks.PEAR_LOG.get(),
-                        ModBlocks.PEAR_WOOD.get(),
-                        ModBlocks.STRIPPED_PEAR_LOG.get(),
-                        ModBlocks.STRIPPED_PEAR_WOOD.get());
+                .add(ModBlocks.PEAR_LOG.get(), ModBlocks.PEAR_WOOD.get(),
+                        ModBlocks.STRIPPED_PEAR_LOG.get(), ModBlocks.STRIPPED_PEAR_WOOD.get());
         this.tag(ModTags.Blocks.PURPLE_LEAF_PLUM_LOGS)
-                .add(ModBlocks.PURPLE_LEAF_PLUM_LOG.get(),
-                        ModBlocks.PURPLE_LEAF_PLUM_WOOD.get(),
-                        ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_LOG.get(),
-                        ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_WOOD.get());
+                .add(ModBlocks.PURPLE_LEAF_PLUM_LOG.get(), ModBlocks.PURPLE_LEAF_PLUM_WOOD.get(),
+                        ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_LOG.get(), ModBlocks.STRIPPED_PURPLE_LEAF_PLUM_WOOD.get());
         this.tag(ModTags.Blocks.OSMANTHUS_LOGS)
-                .add(ModBlocks.OSMANTHUS_LOG.get(),
-                        ModBlocks.OSMANTHUS_WOOD.get(),
-                        ModBlocks.STRIPPED_OSMANTHUS_LOG.get(),
-                        ModBlocks.STRIPPED_OSMANTHUS_WOOD.get());
+                .add(ModBlocks.OSMANTHUS_LOG.get(), ModBlocks.OSMANTHUS_WOOD.get(),
+                        ModBlocks.STRIPPED_OSMANTHUS_LOG.get(), ModBlocks.STRIPPED_OSMANTHUS_WOOD.get());
         this.tag(ModTags.Blocks.GINKGO_LOGS)
                 .add(ModBlocks.GINKGO_LOG.get(),
                         ModBlocks.GINKGO_WOOD.get(),
