@@ -395,6 +395,8 @@ public class ModBlocks {
             registerBlock("chinaberry_planks", () -> new ModPlanksBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final DeferredBlock<Block> DESERT_POPLAR_PLANKS =
             registerBlock("desert_poplar_planks", () -> new ModPlanksBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final DeferredBlock<Block> CRAPE_MYRTLE_PLANKS =
+            registerBlock("crape_myrtle_planks", () -> new ModPlanksBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
 
     public static final DeferredBlock<Block> RED_MEI_STAIRS =
             registerBlock("red_mei_stairs", () -> stair(ModBlocks.RED_MEI_PLANKS.get()));
@@ -430,6 +432,8 @@ public class ModBlocks {
             registerBlock("chinaberry_stairs", () -> stair(ModBlocks.CHINABERRY_PLANKS.get()));
     public static final DeferredBlock<Block> DESERT_POPLAR_STAIRS =
             registerBlock("desert_poplar_stairs", () -> stair(ModBlocks.DESERT_POPLAR_PLANKS.get()));
+    public static final DeferredBlock<Block> CRAPE_MYRTLE_STAIRS =
+            registerBlock("crape_myrtle_stairs", () -> stair(ModBlocks.CRAPE_MYRTLE_PLANKS.get()));
 
     public static final DeferredBlock<Block> RED_MEI_SLAB =
             registerBlock("red_mei_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
@@ -465,6 +469,8 @@ public class ModBlocks {
             registerBlock("chinaberry_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
     public static final DeferredBlock<Block> DESERT_POPLAR_SLAB =
             registerBlock("desert_poplar_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
+    public static final DeferredBlock<Block> CRAPE_MYRTLE_SLAB =
+            registerBlock("crape_myrtle_slab", () -> new ModSlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sound(SoundType.WOOD).ignitedByLava()));
 
     public static final DeferredBlock<Block> RED_MEI_BUTTON =
             registerBlock("red_mei_button", () -> woodenButton(ModBlockSetType.RED_MEI));
@@ -500,6 +506,8 @@ public class ModBlocks {
             registerBlock("chinaberry_button", () -> woodenButton(ModBlockSetType.CHINABERRY));
     public static final DeferredBlock<Block> DESERT_POPLAR_BUTTON =
             registerBlock("desert_poplar_button", () -> woodenButton(ModBlockSetType.DESERT_POPLAR));
+    public static final DeferredBlock<Block> CRAPE_MYRTLE_BUTTON =
+            registerBlock("crape_myrtle_button", () -> woodenButton(ModBlockSetType.CRAPE_MYRTLE));
 
     public static final DeferredBlock<Block> RED_MEI_PRESSURE_PLATE =
             registerBlock("red_mei_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.RED_MEI, BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
@@ -535,6 +543,8 @@ public class ModBlocks {
             registerBlock("chinaberry_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.CHINABERRY, BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> DESERT_POPLAR_PRESSURE_PLATE =
             registerBlock("desert_poplar_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.DESERT_POPLAR, BlockBehaviour.Properties.of().mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CRAPE_MYRTLE_PRESSURE_PLATE =
+            registerBlock("crape_myrtle_pressure_plate", () -> new PressurePlateBlock(ModBlockSetType.CRAPE_MYRTLE, BlockBehaviour.Properties.of().mapColor(CRAPE_MYRTLE_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).noCollission().strength(0.5F).ignitedByLava().pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> RED_MEI_FENCE =
             registerBlock("red_mei_fence" , () -> new ModFenceBlock(BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
@@ -570,6 +580,8 @@ public class ModBlocks {
             registerBlock("chinaberry_fence" , () -> new ModFenceBlock(BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
     public static final DeferredBlock<Block> DESERT_POPLAR_FENCE =
             registerBlock("desert_poplar_fence" , () -> new ModFenceBlock(BlockBehaviour.Properties.of().mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
+    public static final DeferredBlock<Block> CRAPE_MYRTLE_FENCE =
+            registerBlock("crape_myrtle_fence" , () -> new ModFenceBlock(BlockBehaviour.Properties.of().mapColor(CRAPE_MYRTLE_PLANKS.get().defaultMapColor()).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava().sound(SoundType.WOOD)));
 
     public static final DeferredBlock<Block> RED_MEI_FENCE_GATE =
             registerBlock("red_mei_fence_gate", () -> new ModFenceGateBlock(ModWoodTypes.RED_MEI, BlockBehaviour.Properties.of().mapColor(RED_MEI_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava()));
@@ -605,6 +617,8 @@ public class ModBlocks {
             registerBlock("chinaberry_fence_gate", () -> new ModFenceGateBlock(ModWoodTypes.CHINABERRY, BlockBehaviour.Properties.of().mapColor(CHINABERRY_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava()));
     public static final DeferredBlock<Block> DESERT_POPLAR_FENCE_GATE =
             registerBlock("desert_poplar_fence_gate", () -> new ModFenceGateBlock(ModWoodTypes.DESERT_POPLAR, BlockBehaviour.Properties.of().mapColor(DESERT_POPLAR_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava()));
+    public static final DeferredBlock<Block> CRAPE_MYRTLE_FENCE_GATE =
+            registerBlock("crape_myrtle_fence_gate", () -> new ModFenceGateBlock(ModWoodTypes.CRAPE_MYRTLE, BlockBehaviour.Properties.of().mapColor(CRAPE_MYRTLE_PLANKS.get().defaultMapColor()).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).ignitedByLava()));
 
     public static final DeferredBlock<Block> RED_MEI_DOOR =
             registerBlock("red_mei_door", () -> new DoorBlock(ModBlockSetType.RED_MEI, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).mapColor(RED_MEI_PLANKS.get().defaultMapColor())));

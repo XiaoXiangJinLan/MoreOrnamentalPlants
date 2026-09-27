@@ -541,6 +541,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DESERT_POPLAR_HANGING_SIGN);
                         pOutput.accept(ModItems.CRAPE_MYRTLE_LOG);
                         pOutput.accept(ModItems.CRAPE_MYRTLE_WOOD);
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_PLANKS);
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_STAIRS);
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_SLAB);
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_FENCE);
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_FENCE_GATE);
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_PRESSURE_PLATE);
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_BUTTON);
                         pOutput.accept(ModBlocks.GOLD_SAND);
                         pOutput.accept(ModBlocks.ZIYING_BEADLIGHT);
                         pOutput.accept(ModBlocks.SUYU_BEADLIGHT);

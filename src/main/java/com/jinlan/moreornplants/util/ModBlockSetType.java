@@ -21,4 +21,5 @@ public class ModBlockSetType {
     public static final BlockSetType DOVE_TREE = BlockSetType.register(new BlockSetType(MoreOrnPlants.MODID + ":dove_tree"));
     public static final BlockSetType CHINABERRY = BlockSetType.register(new BlockSetType(MoreOrnPlants.MODID + ":chinaberry"));
     public static final BlockSetType DESERT_POPLAR = BlockSetType.register(new BlockSetType(MoreOrnPlants.MODID + ":desert_poplar"));
+    public static final BlockSetType CRAPE_MYRTLE = BlockSetType.register(new BlockSetType(MoreOrnPlants.MODID + ":crape_myrtle"));
 }

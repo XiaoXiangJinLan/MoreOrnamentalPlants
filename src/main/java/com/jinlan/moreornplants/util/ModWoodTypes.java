@@ -22,4 +22,5 @@ public class ModWoodTypes {
     public static final WoodType DOVE_TREE = WoodType.register(new WoodType(MoreOrnPlants.MODID + ":dove_tree", ModBlockSetType.DOVE_TREE));
     public static final WoodType CHINABERRY = WoodType.register(new WoodType(MoreOrnPlants.MODID + ":chinaberry", ModBlockSetType.CHINABERRY));
     public static final WoodType DESERT_POPLAR = WoodType.register(new WoodType(MoreOrnPlants.MODID + ":desert_poplar", ModBlockSetType.DESERT_POPLAR));
+    public static final WoodType CRAPE_MYRTLE = WoodType.register(new WoodType(MoreOrnPlants.MODID + ":crape_myrtle", ModBlockSetType.CRAPE_MYRTLE));
 }

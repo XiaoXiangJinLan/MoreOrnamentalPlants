@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-12T22:59:25.4643864	Tags for minecraft:item mod id more_orn_plants
+// 1.21.1	2026-09-24T22:14:05.1544551	Tags for minecraft:item mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/item/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/item/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/item/azalea.json
@@ -19,8 +19,8 @@ b4c20bad58f0e4ecede95af04498b90396ba2943 data/c/tags/item/crops.json
 d3e06129df49a629cdf5dd2aab94e05adb98a600 data/c/tags/item/crops/lotus.json
 edc1aae18a35311be8df5db2dfb84cc1dba6303c data/c/tags/item/cymbidium.json
 7bc3f6bb3d7e4fcf50c3dec2105c8d0be4ce6b2c data/c/tags/item/dove_tree_leaves.json
-6bf26f6731cb1f1c270ee74b5f19787094adc568 data/c/tags/item/fences/wooden.json
-9d51ebf161664dd8984d5cb2009cb7f724043d47 data/c/tags/item/fence_gates/wooden.json
+7eaba370c999899868d92cf679b93b76bd3b0fc2 data/c/tags/item/fences/wooden.json
+3438b38250db22cd0d38e3d0b022607b112b819d data/c/tags/item/fence_gates/wooden.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/c/tags/item/foods/bamboo_shoots.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/c/tags/item/foods/bamboo_sprouts.json
 ed562274fe55cda51552895cd71a6f60e2f993a1 data/c/tags/item/foods/fruit.json
@@ -60,19 +60,19 @@ d9bbdc0027d0534b1598ca9b68e6e9657f8624ee data/minecraft/tags/item/axes.json
 f5877f7cac1b1a10079613e11d66c160a762e701 data/minecraft/tags/item/chest_boats.json
 8be1aa4fe90dbc5a1d7ee11fe7233bd9671eea5b data/minecraft/tags/item/chicken_food.json
 8be1aa4fe90dbc5a1d7ee11fe7233bd9671eea5b data/minecraft/tags/item/cow_food.json
-9d51ebf161664dd8984d5cb2009cb7f724043d47 data/minecraft/tags/item/fence_gates.json
+3438b38250db22cd0d38e3d0b022607b112b819d data/minecraft/tags/item/fence_gates.json
 16d5b1ae67fc2d5ebb4be61ed28953291a8a6854 data/minecraft/tags/item/flowers.json
 75f26a5668b4a0fe62a7c87c8c4c14828c2e4629 data/minecraft/tags/item/fox_food.json
 8be1aa4fe90dbc5a1d7ee11fe7233bd9671eea5b data/minecraft/tags/item/goat_food.json
 1b8c5a8f9e3e244c81143a92e0b3832348df7f14 data/minecraft/tags/item/hanging_signs.json
 f4b15c7bf46f35ca7822538bbc3a2d56a801a15f data/minecraft/tags/item/hoes.json
 6f2a600ab79986fee6995717d799c45b2d249d38 data/minecraft/tags/item/leaves.json
-8fe0e476f36eb27984ca94400714564ee06398b9 data/minecraft/tags/item/logs_that_burn.json
+06607d549e7c27184eb5e0b40a755e3ca7e1d347 data/minecraft/tags/item/logs_that_burn.json
 c7a6c6396f99a4c3a387ccfe7633a28b1e1f2ef7 data/minecraft/tags/item/panda_food.json
 d9ea0b070df9f1a21b3e8c4ce888674b075edbfa data/minecraft/tags/item/pickaxes.json
 118a012508ad2dd1c17228a77eae692a634df93d data/minecraft/tags/item/piglin_loved.json
 8be1aa4fe90dbc5a1d7ee11fe7233bd9671eea5b data/minecraft/tags/item/pig_food.json
-73c33643918bd977c2ecc0002fa55666390463e5 data/minecraft/tags/item/planks.json
+8cb45beb9060397e46a342e3a535d6abe6ee1dc3 data/minecraft/tags/item/planks.json
 a47d4738ffafd47491db6eef95b4e180b36879b1 data/minecraft/tags/item/saplings.json
 8be1aa4fe90dbc5a1d7ee11fe7233bd9671eea5b data/minecraft/tags/item/sheep_food.json
 fe1f51273d04cf9b5252133d8921fa45846e2516 data/minecraft/tags/item/shovels.json
@@ -82,12 +82,12 @@ cdd56d55f82797f481621b8601b284d005dafaf4 data/minecraft/tags/item/small_flowers.
 475f4cbe5aa449112bd4d2fa4459b9e73cb221a5 data/minecraft/tags/item/tall_flowers.json
 372c5fb5e8093f395043daea6db746ddf92db028 data/minecraft/tags/item/turtle_food.json
 6995201cf22453ed2d0ee08808a5a64092d6ac4c data/minecraft/tags/item/wolf_food.json
-642513386a0fa7c2a2ca0bb55e9435fcd28ed916 data/minecraft/tags/item/wooden_buttons.json
+6f242066a348ecc0edf2aab4ede4260e1a542aca data/minecraft/tags/item/wooden_buttons.json
 9cccb244033f9bdd546d95f47168d750339d9156 data/minecraft/tags/item/wooden_doors.json
-6bf26f6731cb1f1c270ee74b5f19787094adc568 data/minecraft/tags/item/wooden_fences.json
-fbed7c9d782e644a91b33be336a276d305ae9183 data/minecraft/tags/item/wooden_pressure_plates.json
-d5fe3bcaf2be6a620929b25d2db7e21baa4a257f data/minecraft/tags/item/wooden_slabs.json
-99e6ae91f79d98cfb2104be6f0becdfaf55b40cb data/minecraft/tags/item/wooden_stairs.json
+7eaba370c999899868d92cf679b93b76bd3b0fc2 data/minecraft/tags/item/wooden_fences.json
+716113698bf8ed2c895aeb428b4af0c4bfa439d7 data/minecraft/tags/item/wooden_pressure_plates.json
+945d9b7907ebfea91419b53af21b984d1c2cfcc1 data/minecraft/tags/item/wooden_slabs.json
+ef0b586ecee9823284dae3cfd53595a1fb553d7d data/minecraft/tags/item/wooden_stairs.json
 9e580060f449ac535c0c88160130921a20b62bbc data/minecraft/tags/item/wooden_trapdoors.json
 74450d40162bedac8cc75d901fa2f6069433c895 data/more_orn_plants/tags/item/apricot_logs.json
 0b702102e35758a6d4a5d4a0e2f6d2cda207d73b data/more_orn_plants/tags/item/baihua_cat_food.json
@@ -98,6 +98,7 @@ bbc2c8b21249b87c5cd617c1d84990d2b6b86f7c data/more_orn_plants/tags/item/chinaber
 317cd23c8ed3572bf67b51a3c3ece2f9a9591268 data/more_orn_plants/tags/item/chinese_parasol_logs.json
 bb247fef3cd34749130563305b7387266456fdc2 data/more_orn_plants/tags/item/crabapple_logs.json
 a3d9f1e725a8c73123bd95245ed6055e6144c41e data/more_orn_plants/tags/item/crabapple_sapling.json
+e191341c74002d97b3b58432057705d7afdda7fb data/more_orn_plants/tags/item/crape_myrtle_logs.json
 977d3d4d7d3ff80c0306ce751ced14fab411ebeb data/more_orn_plants/tags/item/desert_poplar_logs.json
 4da5ef66f42438f537d28e33610c73b01ad81576 data/more_orn_plants/tags/item/double_pink_mei_logs.json
 23740ae277c1ee580e5aab436e2b860a732ce30a data/more_orn_plants/tags/item/dove_tree_logs.json

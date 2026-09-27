@@ -66,7 +66,10 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.IntValue SECOND_OVERWORLD_BIOMES_WEIGHT;
     public static final ModConfigSpec.IntValue THIRD_OVERWORLD_BIOMES_WEIGHT;
 
-    public static final ModConfigSpec.BooleanValue ENABLE_BIOME_EFFECTS;
+    public static final ModConfigSpec.BooleanValue ENABLE_FLOWER_BIOME_EFFECTS;
+    public static final ModConfigSpec.BooleanValue ENABLE_LONGEVITY_FOREST_EFFECTS;
+    public static final ModConfigSpec.BooleanValue ENABLE_PENGLAI_EFFECTS;
+    public static final ModConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS_EFFECTS;
     public static final ModConfigSpec.BooleanValue ENABLE_BIOME_HURT_ENEMY;
     public static final ModConfigSpec.BooleanValue ENABLE_BIOME_NO_ENEMY;
     public static final ModConfigSpec.BooleanValue ENABLE_MOD_FOX_SPAWN;
@@ -211,8 +214,14 @@ public class ModBiomeConfig {
 
         // 生物群系提供效果设置
         BUILDER.push("Biome Effects Settings");
-        ENABLE_BIOME_EFFECTS = BUILDER
-                .define("enableBiomeEffects", true);
+        ENABLE_FLOWER_BIOME_EFFECTS = BUILDER
+                .define("enableFlowerBiomeEffects", true);
+        ENABLE_LONGEVITY_FOREST_EFFECTS = BUILDER
+                .define("enableLongevityForestEffects", true);
+        ENABLE_PENGLAI_EFFECTS = BUILDER
+                .define("enablePenglaiEffects", true);
+        ENABLE_RED_HIGHLANDS_EFFECTS = BUILDER
+                .define("enableRedHighlandsEffects", true);
         ENABLE_BIOME_HURT_ENEMY = BUILDER
                 .define("enableBiomeHurtEnemy", true);
         ENABLE_BIOME_NO_ENEMY = BUILDER

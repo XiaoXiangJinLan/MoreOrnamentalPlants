@@ -24,36 +24,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.GOLD_SAND.get()),
-                        RecipeCategory.MISC,
-                        new ItemStack(Items.GOLD_NUGGET, 3),
-                        1.5f,
-                        160)
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.GOLD_SAND.get()), RecipeCategory.MISC,
+                        new ItemStack(Items.GOLD_NUGGET, 3), 1.5f, 160)
                 .group("gold_sand")
                 .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":gold_nugget_from_smelting_gold_sand");
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.GOLD_SAND.get()),
-                        RecipeCategory.MISC,
-                        new ItemStack(Items.GOLD_NUGGET, 3),
-                        1.5f,
-                        80)
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.GOLD_SAND.get()), RecipeCategory.MISC,
+                        new ItemStack(Items.GOLD_NUGGET, 3), 1.5f, 80)
                 .group("gold_sand")
                 .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":gold_nugget_from_blasting_gold_sand");
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.MISCANTHUS.get()),
-                        RecipeCategory.MISC,
-                        new ItemStack(ModBlocks.GOLDEN_MISCANTHUS.get()),
-                        0.7f,
-                        200)
-                .group("gold_sand")
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModBlocks.MISCANTHUS.get()), RecipeCategory.MISC,
+                        new ItemStack(ModBlocks.GOLDEN_MISCANTHUS.get()), 0.7f, 200)
+                .group("miscanthus")
                 .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":golden_miscanthus_from_smelting_miscanthus");
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.MISCANTHUS.get()),
-                        RecipeCategory.MISC,
-                        new ItemStack(ModBlocks.GOLDEN_MISCANTHUS.get()),
-                        0.7f,
-                        100)
-                .group("gold_sand")
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModBlocks.MISCANTHUS.get()), RecipeCategory.MISC,
+                        new ItemStack(ModBlocks.GOLDEN_MISCANTHUS.get()), 0.7f, 100)
+                .group("miscanthus")
                 .unlockedBy("has_gold_sand", has(ModBlocks.GOLD_SAND.get()))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":golden_miscanthus_from_blasting_miscanthus");
 
@@ -74,6 +62,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         planksFromLogs(recipeOutput, ModBlocks.DOVE_TREE_PLANKS.get(), ModTags.Items.DOVE_TREE_LOGS, 4);
         planksFromLogs(recipeOutput, ModBlocks.CHINABERRY_PLANKS.get(), ModTags.Items.CHINABERRY_LOGS, 4);
         planksFromLogs(recipeOutput, ModBlocks.DESERT_POPLAR_PLANKS.get(), ModTags.Items.DESERT_POPLAR_LOGS, 4);
+        planksFromLogs(recipeOutput, ModBlocks.CRAPE_MYRTLE_PLANKS.get(), ModTags.Items.CRAPE_MYRTLE_LOGS, 4);
 
         woodFromLogs(recipeOutput, ModBlocks.RED_MEI_WOOD.get(), ModBlocks.RED_MEI_LOG.get());
         woodFromLogs(recipeOutput, ModBlocks.WHITE_MEI_WOOD.get(), ModBlocks.WHITE_MEI_LOG.get());
@@ -111,624 +100,489 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         woodFromLogs(recipeOutput, ModBlocks.STRIPPED_CHINABERRY_WOOD.get(), ModBlocks.STRIPPED_CHINABERRY_LOG.get());
         woodFromLogs(recipeOutput, ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get(), ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get());
 
-        stairBuilder(ModBlocks.RED_MEI_STAIRS.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.RED_MEI_STAIRS.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.WHITE_MEI_STAIRS.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.WHITE_MEI_STAIRS.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.GREEN_CALYX_MEI_STAIRS.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.GREEN_CALYX_MEI_STAIRS.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.DOUBLE_PINK_MEI_STAIRS.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.DOUBLE_PINK_MEI_STAIRS.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.CRABAPPLE_STAIRS.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.CRABAPPLE_STAIRS.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.APRICOT_STAIRS.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.APRICOT_STAIRS.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.PEACH_STAIRS.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.PEACH_STAIRS.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.PEAR_STAIRS.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.PEAR_STAIRS.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.PURPLE_LEAF_PLUM_STAIRS.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.PURPLE_LEAF_PLUM_STAIRS.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.OSMANTHUS_STAIRS.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.OSMANTHUS_STAIRS.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.GINKGO_STAIRS.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.GINKGO_STAIRS.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.CHINESE_PARASOL_STAIRS.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.CHINESE_PARASOL_STAIRS.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.SWEETGUM_STAIRS.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.SWEETGUM_STAIRS.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.CAMPHOR_STAIRS.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.CAMPHOR_STAIRS.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.DOVE_TREE_STAIRS.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.DOVE_TREE_STAIRS.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.CHINABERRY_STAIRS.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.CHINABERRY_STAIRS.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get())).group("wooden_stairs")
                 .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(recipeOutput);
-        stairBuilder(ModBlocks.DESERT_POPLAR_STAIRS.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
-                .group("wooden_stairs")
+        stairBuilder(ModBlocks.DESERT_POPLAR_STAIRS.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get())).group("wooden_stairs")
+                .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
+                .save(recipeOutput);
+        stairBuilder(ModBlocks.CRAPE_MYRTLE_STAIRS.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_stairs")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
+                .save(recipeOutput);
+
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_MEI_SLAB.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_MEI_SLAB.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CALYX_MEI_SLAB.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DOUBLE_PINK_MEI_SLAB.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRABAPPLE_SLAB.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.APRICOT_SLAB.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEACH_SLAB.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEAR_SLAB.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_LEAF_PLUM_SLAB.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OSMANTHUS_SLAB.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GINKGO_SLAB.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHINESE_PARASOL_SLAB.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SWEETGUM_SLAB.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CAMPHOR_SLAB.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DOVE_TREE_SLAB.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHINABERRY_SLAB.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DESERT_POPLAR_SLAB.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
+                .save(recipeOutput);
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRAPE_MYRTLE_SLAB.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_slab")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
+                .save(recipeOutput);
+
+        doorBuilder(ModBlocks.RED_MEI_DOOR.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.WHITE_MEI_DOOR.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.GREEN_CALYX_MEI_DOOR.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.DOUBLE_PINK_MEI_DOOR.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.CRABAPPLE_DOOR.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.APRICOT_DOOR.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.PEACH_DOOR.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.PEAR_DOOR.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.PURPLE_LEAF_PLUM_DOOR.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.OSMANTHUS_DOOR.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.GINKGO_DOOR.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.CHINESE_PARASOL_DOOR.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.SWEETGUM_DOOR.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.CAMPHOR_DOOR.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.DOVE_TREE_DOOR.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.CHINABERRY_DOOR.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get())).group("wooden_door")
+                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
+                .save(recipeOutput);
+        doorBuilder(ModBlocks.DESERT_POPLAR_DOOR.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get())).group("wooden_door")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(recipeOutput);
 
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_MEI_SLAB.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.RED_MEI_TRAPDOOR.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_MEI_SLAB.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.WHITE_MEI_TRAPDOOR.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CALYX_MEI_SLAB.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.GREEN_CALYX_MEI_TRAPDOOR.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DOUBLE_PINK_MEI_SLAB.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.DOUBLE_PINK_MEI_TRAPDOOR.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRABAPPLE_SLAB.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.CRABAPPLE_TRAPDOOR.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.APRICOT_SLAB.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.APRICOT_TRAPDOOR.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEACH_SLAB.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.PEACH_TRAPDOOR.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PEAR_SLAB.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.PEAR_TRAPDOOR.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_LEAF_PLUM_SLAB.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.PURPLE_LEAF_PLUM_TRAPDOOR.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OSMANTHUS_SLAB.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.OSMANTHUS_TRAPDOOR.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GINKGO_SLAB.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.GINKGO_TRAPDOOR.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHINESE_PARASOL_SLAB.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.CHINESE_PARASOL_TRAPDOOR.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SWEETGUM_SLAB.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.SWEETGUM_TRAPDOOR.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CAMPHOR_SLAB.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.CAMPHOR_TRAPDOOR.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DOVE_TREE_SLAB.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.DOVE_TREE_TRAPDOOR.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHINABERRY_SLAB.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.CHINABERRY_TRAPDOOR.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(recipeOutput);
-        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DESERT_POPLAR_SLAB.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
-                .group("wooden_slab")
+        trapdoorBuilder(ModBlocks.DESERT_POPLAR_TRAPDOOR.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get())).group("wooden_trapdoor")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(recipeOutput);
 
-        doorBuilder(ModBlocks.RED_MEI_DOOR.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.RED_MEI_FENCE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.WHITE_MEI_DOOR.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.WHITE_MEI_FENCE.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.GREEN_CALYX_MEI_DOOR.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.GREEN_CALYX_MEI_FENCE.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.DOUBLE_PINK_MEI_DOOR.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.DOUBLE_PINK_MEI_FENCE.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.CRABAPPLE_DOOR.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.CRABAPPLE_FENCE.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.APRICOT_DOOR.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.APRICOT_FENCE.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.PEACH_DOOR.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.PEACH_FENCE.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.PEAR_DOOR.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.PEAR_FENCE.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.PURPLE_LEAF_PLUM_DOOR.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.PURPLE_LEAF_PLUM_FENCE.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.OSMANTHUS_DOOR.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.OSMANTHUS_FENCE.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.GINKGO_DOOR.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.GINKGO_FENCE.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.CHINESE_PARASOL_DOOR.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.CHINESE_PARASOL_FENCE.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.SWEETGUM_DOOR.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.SWEETGUM_FENCE.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.CAMPHOR_DOOR.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.CAMPHOR_FENCE.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.DOVE_TREE_DOOR.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.DOVE_TREE_FENCE.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.CHINABERRY_DOOR.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.CHINABERRY_FENCE.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(recipeOutput);
-        doorBuilder(ModBlocks.DESERT_POPLAR_DOOR.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
-                .group("wooden_door")
+        fenceBuilder(ModBlocks.DESERT_POPLAR_FENCE.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get())).group("wooden_fence")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(recipeOutput);
+        fenceBuilder(ModBlocks.CRAPE_MYRTLE_FENCE.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_fence")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
+                .save(recipeOutput);
 
-        trapdoorBuilder(ModBlocks.RED_MEI_TRAPDOOR.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.RED_MEI_FENCE_GATE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.WHITE_MEI_TRAPDOOR.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.WHITE_MEI_FENCE_GATE.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.GREEN_CALYX_MEI_TRAPDOOR.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.GREEN_CALYX_MEI_FENCE_GATE.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.DOUBLE_PINK_MEI_TRAPDOOR.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.DOUBLE_PINK_MEI_FENCE_GATE.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.CRABAPPLE_TRAPDOOR.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.CRABAPPLE_FENCE_GATE.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.APRICOT_TRAPDOOR.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.APRICOT_FENCE_GATE.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.PEACH_TRAPDOOR.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.PEACH_FENCE_GATE.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.PEAR_TRAPDOOR.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.PEAR_FENCE_GATE.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.PURPLE_LEAF_PLUM_TRAPDOOR.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.PURPLE_LEAF_PLUM_FENCE_GATE.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.OSMANTHUS_TRAPDOOR.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.OSMANTHUS_FENCE_GATE.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.GINKGO_TRAPDOOR.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.GINKGO_FENCE_GATE.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.CHINESE_PARASOL_TRAPDOOR.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.CHINESE_PARASOL_FENCE_GATE.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.SWEETGUM_TRAPDOOR.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.SWEETGUM_FENCE_GATE.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.CAMPHOR_TRAPDOOR.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.CAMPHOR_FENCE_GATE.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.DOVE_TREE_TRAPDOOR.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.DOVE_TREE_FENCE_GATE.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.CHINABERRY_TRAPDOOR.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.CHINABERRY_FENCE_GATE.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(recipeOutput);
-        trapdoorBuilder(ModBlocks.DESERT_POPLAR_TRAPDOOR.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
-                .group("wooden_trapdoor")
+        fenceGateBuilder(ModBlocks.DESERT_POPLAR_FENCE_GATE.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get())).group("wooden_fence_gate")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(recipeOutput);
+        fenceGateBuilder(ModBlocks.CRAPE_MYRTLE_FENCE_GATE.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_fence_gate")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
+                .save(recipeOutput);
 
-        fenceBuilder(ModBlocks.RED_MEI_FENCE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.RED_MEI_BUTTON.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.WHITE_MEI_FENCE.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.WHITE_MEI_BUTTON.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.GREEN_CALYX_MEI_FENCE.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.GREEN_CALYX_MEI_BUTTON.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.DOUBLE_PINK_MEI_FENCE.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.DOUBLE_PINK_MEI_BUTTON.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.CRABAPPLE_FENCE.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.CRABAPPLE_BUTTON.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.APRICOT_FENCE.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.APRICOT_BUTTON.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.PEACH_FENCE.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.PEACH_BUTTON.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.PEAR_FENCE.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.PEAR_BUTTON.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.PURPLE_LEAF_PLUM_FENCE.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.PURPLE_LEAF_PLUM_BUTTON.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.OSMANTHUS_FENCE.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.OSMANTHUS_BUTTON.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.GINKGO_FENCE.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.GINKGO_BUTTON.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.CHINESE_PARASOL_FENCE.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.CHINESE_PARASOL_BUTTON.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.SWEETGUM_FENCE.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.SWEETGUM_BUTTON.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.CAMPHOR_FENCE.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.CAMPHOR_BUTTON.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.DOVE_TREE_FENCE.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.DOVE_TREE_BUTTON.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.CHINABERRY_FENCE.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.CHINABERRY_BUTTON.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(recipeOutput);
-        fenceBuilder(ModBlocks.DESERT_POPLAR_FENCE.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
-                .group("wooden_fence")
+        buttonBuilder(ModBlocks.DESERT_POPLAR_BUTTON.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get())).group("wooden_button")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(recipeOutput);
+        buttonBuilder(ModBlocks.CRAPE_MYRTLE_BUTTON.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_button")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
+                .save(recipeOutput);
 
-        fenceGateBuilder(ModBlocks.RED_MEI_FENCE_GATE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.RED_MEI_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.WHITE_MEI_FENCE_GATE.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.WHITE_MEI_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.GREEN_CALYX_MEI_FENCE_GATE.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.GREEN_CALYX_MEI_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.DOUBLE_PINK_MEI_FENCE_GATE.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.DOUBLE_PINK_MEI_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.CRABAPPLE_FENCE_GATE.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CRABAPPLE_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.APRICOT_FENCE_GATE.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.APRICOT_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.PEACH_FENCE_GATE.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.PEACH_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.PEAR_FENCE_GATE.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.PEAR_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.PURPLE_LEAF_PLUM_FENCE_GATE.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.PURPLE_LEAF_PLUM_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.OSMANTHUS_FENCE_GATE.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.OSMANTHUS_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.GINKGO_FENCE_GATE.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.GINKGO_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.CHINESE_PARASOL_FENCE_GATE.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CHINESE_PARASOL_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.SWEETGUM_FENCE_GATE.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.SWEETGUM_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.CAMPHOR_FENCE_GATE.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CAMPHOR_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.DOVE_TREE_FENCE_GATE.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.DOVE_TREE_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.CHINABERRY_FENCE_GATE.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CHINABERRY_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(recipeOutput);
-        fenceGateBuilder(ModBlocks.DESERT_POPLAR_FENCE_GATE.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
-                .group("wooden_fence_gate")
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.DESERT_POPLAR_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get())).group("wooden_pressure_plate")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(recipeOutput);
-
-        buttonBuilder(ModBlocks.RED_MEI_BUTTON.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.WHITE_MEI_BUTTON.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.GREEN_CALYX_MEI_BUTTON.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.DOUBLE_PINK_MEI_BUTTON.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.CRABAPPLE_BUTTON.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.APRICOT_BUTTON.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.PEACH_BUTTON.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.PEAR_BUTTON.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.PURPLE_LEAF_PLUM_BUTTON.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.OSMANTHUS_BUTTON.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.GINKGO_BUTTON.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.CHINESE_PARASOL_BUTTON.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.SWEETGUM_BUTTON.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.CAMPHOR_BUTTON.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.DOVE_TREE_BUTTON.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.CHINABERRY_BUTTON.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
-                .save(recipeOutput);
-        buttonBuilder(ModBlocks.DESERT_POPLAR_BUTTON.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
-                .group("wooden_button")
-                .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
+        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CRAPE_MYRTLE_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CRAPE_MYRTLE_PLANKS.get())).group("wooden_pressure_plate")
+                .unlockedBy(getHasName(ModBlocks.CRAPE_MYRTLE_PLANKS.get()), has(ModBlocks.CRAPE_MYRTLE_PLANKS.get()))
                 .save(recipeOutput);
 
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.RED_MEI_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.RED_MEI_SIGN.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.WHITE_MEI_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.WHITE_MEI_SIGN.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.GREEN_CALYX_MEI_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.GREEN_CALYX_MEI_SIGN.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.DOUBLE_PINK_MEI_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.DOUBLE_PINK_MEI_SIGN.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CRABAPPLE_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.CRABAPPLE_SIGN.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.APRICOT_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.APRICOT_SIGN.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.PEACH_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.PEACH_SIGN.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.PEAR_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.PEAR_SIGN.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.PURPLE_LEAF_PLUM_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.PURPLE_LEAF_PLUM_SIGN.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.OSMANTHUS_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.OSMANTHUS_SIGN.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.GINKGO_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.GINKGO_SIGN.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CHINESE_PARASOL_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.CHINESE_PARASOL_SIGN.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.SWEETGUM_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.SWEETGUM_SIGN.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CAMPHOR_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.CAMPHOR_SIGN.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.DOVE_TREE_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.DOVE_TREE_SIGN.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.CHINABERRY_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
-                .group("wooden_pressure_plate")
+        signBuilder(ModItems.CHINABERRY_SIGN.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
                 .save(recipeOutput);
-        pressurePlateBuilder(RecipeCategory.REDSTONE, ModBlocks.DESERT_POPLAR_PRESSURE_PLATE.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
-                .group("wooden_pressure_plate")
-                .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
-                .save(recipeOutput);
-
-        signBuilder(ModItems.RED_MEI_SIGN.get(), Ingredient.of(ModBlocks.RED_MEI_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.RED_MEI_PLANKS.get()), has(ModBlocks.RED_MEI_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.WHITE_MEI_SIGN.get(), Ingredient.of(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.WHITE_MEI_PLANKS.get()), has(ModBlocks.WHITE_MEI_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.GREEN_CALYX_MEI_SIGN.get(), Ingredient.of(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()), has(ModBlocks.GREEN_CALYX_MEI_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.DOUBLE_PINK_MEI_SIGN.get(), Ingredient.of(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()), has(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.CRABAPPLE_SIGN.get(), Ingredient.of(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLANKS.get()), has(ModBlocks.CRABAPPLE_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.APRICOT_SIGN.get(), Ingredient.of(ModBlocks.APRICOT_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.APRICOT_PLANKS.get()), has(ModBlocks.APRICOT_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.PEACH_SIGN.get(), Ingredient.of(ModBlocks.PEACH_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.PEACH_PLANKS.get()), has(ModBlocks.PEACH_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.PEAR_SIGN.get(), Ingredient.of(ModBlocks.PEAR_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.PEAR_PLANKS.get()), has(ModBlocks.PEAR_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.PURPLE_LEAF_PLUM_SIGN.get(), Ingredient.of(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()), has(ModBlocks.PURPLE_LEAF_PLUM_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.OSMANTHUS_SIGN.get(), Ingredient.of(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.OSMANTHUS_PLANKS.get()), has(ModBlocks.OSMANTHUS_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.GINKGO_SIGN.get(), Ingredient.of(ModBlocks.GINKGO_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.GINKGO_PLANKS.get()), has(ModBlocks.GINKGO_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.CHINESE_PARASOL_SIGN.get(), Ingredient.of(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.CHINESE_PARASOL_PLANKS.get()), has(ModBlocks.CHINESE_PARASOL_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.SWEETGUM_SIGN.get(), Ingredient.of(ModBlocks.SWEETGUM_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.SWEETGUM_PLANKS.get()), has(ModBlocks.SWEETGUM_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.CAMPHOR_SIGN.get(), Ingredient.of(ModBlocks.CAMPHOR_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.CAMPHOR_PLANKS.get()), has(ModBlocks.CAMPHOR_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.DOVE_TREE_SIGN.get(), Ingredient.of(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.DOVE_TREE_PLANKS.get()), has(ModBlocks.DOVE_TREE_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.CHINABERRY_SIGN.get(), Ingredient.of(ModBlocks.CHINABERRY_PLANKS.get()))
-                .group("wooden_sign")
-                .unlockedBy(getHasName(ModBlocks.CHINABERRY_PLANKS.get()), has(ModBlocks.CHINABERRY_PLANKS.get()))
-                .save(recipeOutput);
-        signBuilder(ModItems.DESERT_POPLAR_SIGN.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get()))
-                .group("wooden_sign")
+        signBuilder(ModItems.DESERT_POPLAR_SIGN.get(), Ingredient.of(ModBlocks.DESERT_POPLAR_PLANKS.get())).group("wooden_sign")
                 .unlockedBy(getHasName(ModBlocks.DESERT_POPLAR_PLANKS.get()), has(ModBlocks.DESERT_POPLAR_PLANKS.get()))
                 .save(recipeOutput);
 
@@ -786,28 +640,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(recipeOutput, ModItems.CHINABERRY_CHEST_BOAT.get(), ModBlocks.CHINABERRY_PLANKS.get());
         chestBoat(recipeOutput, ModItems.DESERT_POPLAR_CHEST_BOAT.get(), ModBlocks.DESERT_POPLAR_PLANKS.get());
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 12)
-                .define('#', ModBlocks.CRAPE_MYRTLE_LOG)
-                .pattern("#")
-                .pattern("#")
-                .group("sticks")
-                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_LOG))
-                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "stick_from_crape_myrtle_log");
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 12)
-                .define('#', ModBlocks.CRAPE_MYRTLE_WOOD)
-                .pattern("#")
-                .pattern("#")
-                .group("sticks")
-                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_WOOD))
-                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "stick_from_crape_myrtle_wood");
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CRAFTING_TABLE)
-                .requires(ModBlocks.CRAPE_MYRTLE_LOG)
-                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_LOG))
-                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "crafting_table_from_crape_myrtle_log");
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CRAFTING_TABLE)
-                .requires(ModBlocks.CRAPE_MYRTLE_WOOD)
-                .unlockedBy("has_crape_myrtle_logs", has(ModBlocks.CRAPE_MYRTLE_WOOD))
-                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "crafting_table_from_crape_myrtle_wood");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK, 2)
                 .define('#', ModItems.MOTTLED_BAMBOO)
                 .pattern("#")
@@ -869,6 +701,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .unlockedBy(getHasName(ModItems.CRABAPPLE), has(ModItems.CRABAPPLE))
                 .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ENCHANTED_GOLDEN_CRABAPPLE)
+                .requires(ModItems.GOLDEN_CRABAPPLE, 9)
+                .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE), has(ModItems.GOLDEN_CRABAPPLE))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "enchanted_golden_crabapple_from_golden_crabapple");
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GOLDEN_MEI)
                 .requires(Items.GOLD_NUGGET, 4)
                 .requires(ModItems.MEI)

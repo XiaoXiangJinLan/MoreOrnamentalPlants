@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/cross",
+  "parent": "more_orn_plants:block/grass",
   "textures": {
-    "cross": "more_orn_plants:block/white_fountain_grass_1"
+    "grass": "more_orn_plants:block/white_fountain_grass_1"
   },
   "render_type": "cutout"
 }
