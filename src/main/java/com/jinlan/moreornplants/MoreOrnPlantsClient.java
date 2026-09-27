@@ -375,6 +375,11 @@ public class MoreOrnPlantsClient {
         public static final ModelLayerLocation DESERT_POPLAR_CHEST_BOAT_LAYER = new ModelLayerLocation(
                 ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "chest_boat/desert_poplar"), "main");
 
+        public static final ModelLayerLocation CRAPE_MYRTLE_BOAT_LAYER = new ModelLayerLocation(
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "boat/crape_myrtle"), "main");
+        public static final ModelLayerLocation CRAPE_MYRTLE_CHEST_BOAT_LAYER = new ModelLayerLocation(
+                ResourceLocation.parse(MoreOrnPlants.MODID + ":" + "chest_boat/crape_myrtle"), "main");
+
     }
 
     @SubscribeEvent
@@ -426,6 +431,7 @@ public class MoreOrnPlantsClient {
         Sheets.addWoodType(ModWoodTypes.DOVE_TREE);
         Sheets.addWoodType(ModWoodTypes.CHINABERRY);
         Sheets.addWoodType(ModWoodTypes.DESERT_POPLAR);
+        Sheets.addWoodType(ModWoodTypes.CRAPE_MYRTLE);
 
         EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
         EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));

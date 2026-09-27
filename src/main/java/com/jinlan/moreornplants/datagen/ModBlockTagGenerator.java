@@ -246,10 +246,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(ModTags.Blocks.CRAPE_MYRTLE_LOGS);
 
         this.tag(BlockTags.OVERWORLD_NATURAL_LOGS)
-                .add(ModBlocks.RED_MEI_LOG.get())
-                .add(ModBlocks.WHITE_MEI_LOG.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_LOG.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_LOG.get())
+                .add(ModBlocks.RED_MEI_LOG.get(), ModBlocks.WHITE_MEI_LOG.get(),
+                        ModBlocks.GREEN_CALYX_MEI_LOG.get(), ModBlocks.DOUBLE_PINK_MEI_LOG.get())
                 .add(ModBlocks.CRABAPPLE_LOG.get())
                 .add(ModBlocks.APRICOT_LOG.get())
                 .add(ModBlocks.PEACH_LOG.get())
@@ -266,10 +264,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_LOG.get());
 
         this.tag(Tags.Blocks.STRIPPED_LOGS)
-                .add(ModBlocks.STRIPPED_RED_MEI_LOG.get())
-                .add(ModBlocks.STRIPPED_WHITE_MEI_LOG.get())
-                .add(ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.get())
-                .add(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG.get())
+                .add(ModBlocks.STRIPPED_RED_MEI_LOG.get(), ModBlocks.STRIPPED_WHITE_MEI_LOG.get(),
+                        ModBlocks.STRIPPED_GREEN_CALYX_MEI_LOG.get(), ModBlocks.STRIPPED_DOUBLE_PINK_MEI_LOG.get())
                 .add(ModBlocks.STRIPPED_CRABAPPLE_LOG.get())
                 .add(ModBlocks.STRIPPED_APRICOT_LOG.get())
                 .add(ModBlocks.STRIPPED_PEACH_LOG.get())
@@ -285,10 +281,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.STRIPPED_DESERT_POPLAR_LOG.get());
 
         this.tag(Tags.Blocks.STRIPPED_WOODS)
-                .add(ModBlocks.STRIPPED_RED_MEI_WOOD.get())
-                .add(ModBlocks.STRIPPED_WHITE_MEI_WOOD.get())
-                .add(ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.get())
-                .add(ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD.get())
+                .add(ModBlocks.STRIPPED_RED_MEI_WOOD.get(), ModBlocks.STRIPPED_WHITE_MEI_WOOD.get(),
+                        ModBlocks.STRIPPED_GREEN_CALYX_MEI_WOOD.get(), ModBlocks.STRIPPED_DOUBLE_PINK_MEI_WOOD.get())
                 .add(ModBlocks.STRIPPED_CRABAPPLE_WOOD.get())
                 .add(ModBlocks.STRIPPED_APRICOT_WOOD.get())
                 .add(ModBlocks.STRIPPED_PEACH_WOOD.get())
@@ -304,10 +298,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.STRIPPED_DESERT_POPLAR_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(ModBlocks.RED_MEI_PLANKS.get())
-                .add(ModBlocks.WHITE_MEI_PLANKS.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_PLANKS.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())
+                .add(ModBlocks.RED_MEI_PLANKS.get(), ModBlocks.WHITE_MEI_PLANKS.get(),
+                        ModBlocks.GREEN_CALYX_MEI_PLANKS.get(), ModBlocks.DOUBLE_PINK_MEI_PLANKS.get())
                 .add(ModBlocks.CRABAPPLE_PLANKS.get())
                 .add(ModBlocks.APRICOT_PLANKS.get())
                 .add(ModBlocks.PEACH_PLANKS.get())
@@ -324,10 +316,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_PLANKS.get());
 
         this.tag(BlockTags.WOODEN_STAIRS)
-                .add(ModBlocks.RED_MEI_STAIRS.get())
-                .add(ModBlocks.WHITE_MEI_STAIRS.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_STAIRS.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_STAIRS.get())
+                .add(ModBlocks.RED_MEI_STAIRS.get(), ModBlocks.WHITE_MEI_STAIRS.get(),
+                        ModBlocks.GREEN_CALYX_MEI_STAIRS.get(), ModBlocks.DOUBLE_PINK_MEI_STAIRS.get())
                 .add(ModBlocks.CRABAPPLE_STAIRS.get())
                 .add(ModBlocks.APRICOT_STAIRS.get())
                 .add(ModBlocks.PEACH_STAIRS.get())
@@ -344,10 +334,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_STAIRS.get());
 
         this.tag(BlockTags.WOODEN_SLABS)
-                .add(ModBlocks.RED_MEI_SLAB.get())
-                .add(ModBlocks.WHITE_MEI_SLAB.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_SLAB.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_SLAB.get())
+                .add(ModBlocks.RED_MEI_SLAB.get(), ModBlocks.WHITE_MEI_SLAB.get(),
+                        ModBlocks.GREEN_CALYX_MEI_SLAB.get(), ModBlocks.DOUBLE_PINK_MEI_SLAB.get())
                 .add(ModBlocks.CRABAPPLE_SLAB.get())
                 .add(ModBlocks.APRICOT_SLAB.get())
                 .add(ModBlocks.PEACH_SLAB.get())
@@ -364,10 +352,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_SLAB.get());
 
         this.tag(BlockTags.WOODEN_BUTTONS)
-                .add(ModBlocks.RED_MEI_BUTTON.get())
-                .add(ModBlocks.WHITE_MEI_BUTTON.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_BUTTON.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_BUTTON.get())
+                .add(ModBlocks.RED_MEI_BUTTON.get(), ModBlocks.WHITE_MEI_BUTTON.get(),
+                        ModBlocks.GREEN_CALYX_MEI_BUTTON.get(), ModBlocks.DOUBLE_PINK_MEI_BUTTON.get())
                 .add(ModBlocks.CRABAPPLE_BUTTON.get())
                 .add(ModBlocks.APRICOT_BUTTON.get())
                 .add(ModBlocks.PEACH_BUTTON.get())
@@ -384,10 +370,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_BUTTON.get());
 
         this.tag(BlockTags.WOODEN_PRESSURE_PLATES)
-                .add(ModBlocks.RED_MEI_PRESSURE_PLATE.get())
-                .add(ModBlocks.WHITE_MEI_PRESSURE_PLATE.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_PRESSURE_PLATE.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_PRESSURE_PLATE.get())
+                .add(ModBlocks.RED_MEI_PRESSURE_PLATE.get(), ModBlocks.WHITE_MEI_PRESSURE_PLATE.get(),
+                        ModBlocks.GREEN_CALYX_MEI_PRESSURE_PLATE.get(), ModBlocks.DOUBLE_PINK_MEI_PRESSURE_PLATE.get())
                 .add(ModBlocks.CRABAPPLE_PRESSURE_PLATE.get())
                 .add(ModBlocks.APRICOT_PRESSURE_PLATE.get())
                 .add(ModBlocks.PEACH_PRESSURE_PLATE.get())
@@ -404,10 +388,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_PRESSURE_PLATE.get());
 
         this.tag(BlockTags.WOODEN_FENCES)
-                .add(ModBlocks.RED_MEI_FENCE.get())
-                .add(ModBlocks.WHITE_MEI_FENCE.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_FENCE.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_FENCE.get())
+                .add(ModBlocks.RED_MEI_FENCE.get(), ModBlocks.WHITE_MEI_FENCE.get(),
+                        ModBlocks.GREEN_CALYX_MEI_FENCE.get(), ModBlocks.DOUBLE_PINK_MEI_FENCE.get())
                 .add(ModBlocks.CRABAPPLE_FENCE.get())
                 .add(ModBlocks.APRICOT_FENCE.get())
                 .add(ModBlocks.PEACH_FENCE.get())
@@ -424,10 +406,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_FENCE.get());
 
         this.tag(Tags.Blocks.FENCES_WOODEN)
-                .add(ModBlocks.RED_MEI_FENCE.get())
-                .add(ModBlocks.WHITE_MEI_FENCE.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_FENCE.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_FENCE.get())
+                .add(ModBlocks.RED_MEI_FENCE.get(), ModBlocks.WHITE_MEI_FENCE.get(),
+                        ModBlocks.GREEN_CALYX_MEI_FENCE.get(), ModBlocks.DOUBLE_PINK_MEI_FENCE.get())
                 .add(ModBlocks.CRABAPPLE_FENCE.get())
                 .add(ModBlocks.APRICOT_FENCE.get())
                 .add(ModBlocks.PEACH_FENCE.get())
@@ -444,10 +424,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_FENCE.get());
 
         this.tag(BlockTags.FENCE_GATES)
-                .add(ModBlocks.RED_MEI_FENCE_GATE.get())
-                .add(ModBlocks.WHITE_MEI_FENCE_GATE.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_FENCE_GATE.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_FENCE_GATE.get())
+                .add(ModBlocks.RED_MEI_FENCE_GATE.get(), ModBlocks.WHITE_MEI_FENCE_GATE.get(),
+                        ModBlocks.GREEN_CALYX_MEI_FENCE_GATE.get(), ModBlocks.DOUBLE_PINK_MEI_FENCE_GATE.get())
                 .add(ModBlocks.CRABAPPLE_FENCE_GATE.get())
                 .add(ModBlocks.APRICOT_FENCE_GATE.get())
                 .add(ModBlocks.PEACH_FENCE_GATE.get())
@@ -464,10 +442,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_FENCE_GATE.get());
 
         this.tag(Tags.Blocks.FENCE_GATES_WOODEN)
-                .add(ModBlocks.RED_MEI_FENCE_GATE.get())
-                .add(ModBlocks.WHITE_MEI_FENCE_GATE.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_FENCE_GATE.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_FENCE_GATE.get())
+                .add(ModBlocks.RED_MEI_FENCE_GATE.get(), ModBlocks.WHITE_MEI_FENCE_GATE.get(),
+                        ModBlocks.GREEN_CALYX_MEI_FENCE_GATE.get(), ModBlocks.DOUBLE_PINK_MEI_FENCE_GATE.get())
                 .add(ModBlocks.CRABAPPLE_FENCE_GATE.get())
                 .add(ModBlocks.APRICOT_FENCE_GATE.get())
                 .add(ModBlocks.PEACH_FENCE_GATE.get())
@@ -484,10 +460,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CRAPE_MYRTLE_FENCE_GATE.get());
 
         this.tag(BlockTags.WOODEN_DOORS)
-                .add(ModBlocks.RED_MEI_DOOR.get())
-                .add(ModBlocks.WHITE_MEI_DOOR.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_DOOR.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_DOOR.get())
+                .add(ModBlocks.RED_MEI_DOOR.get(), ModBlocks.WHITE_MEI_DOOR.get(),
+                        ModBlocks.GREEN_CALYX_MEI_DOOR.get(), ModBlocks.DOUBLE_PINK_MEI_DOOR.get())
                 .add(ModBlocks.CRABAPPLE_DOOR.get())
                 .add(ModBlocks.APRICOT_DOOR.get())
                 .add(ModBlocks.PEACH_DOOR.get())
@@ -500,13 +474,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_DOOR.get())
                 .add(ModBlocks.DOVE_TREE_DOOR.get())
                 .add(ModBlocks.CHINABERRY_DOOR.get())
-                .add(ModBlocks.DESERT_POPLAR_DOOR.get());
+                .add(ModBlocks.DESERT_POPLAR_DOOR.get())
+                .add(ModBlocks.CRAPE_MYRTLE_DOOR.get());
 
         this.tag(BlockTags.WOODEN_TRAPDOORS)
-                .add(ModBlocks.RED_MEI_TRAPDOOR.get())
-                .add(ModBlocks.WHITE_MEI_TRAPDOOR.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_TRAPDOOR.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_TRAPDOOR.get())
+                .add(ModBlocks.RED_MEI_TRAPDOOR.get(), ModBlocks.WHITE_MEI_TRAPDOOR.get(),
+                        ModBlocks.GREEN_CALYX_MEI_TRAPDOOR.get(), ModBlocks.DOUBLE_PINK_MEI_TRAPDOOR.get())
                 .add(ModBlocks.CRABAPPLE_TRAPDOOR.get())
                 .add(ModBlocks.APRICOT_TRAPDOOR.get())
                 .add(ModBlocks.PEACH_TRAPDOOR.get())
@@ -519,13 +492,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_TRAPDOOR.get())
                 .add(ModBlocks.DOVE_TREE_TRAPDOOR.get())
                 .add(ModBlocks.CHINABERRY_TRAPDOOR.get())
-                .add(ModBlocks.DESERT_POPLAR_TRAPDOOR.get());
+                .add(ModBlocks.DESERT_POPLAR_TRAPDOOR.get())
+                .add(ModBlocks.CRAPE_MYRTLE_TRAPDOOR.get());
 
         this.tag(BlockTags.STANDING_SIGNS)
-                .add(ModBlocks.RED_MEI_SIGN.get())
-                .add(ModBlocks.WHITE_MEI_SIGN.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_SIGN.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_SIGN.get())
+                .add(ModBlocks.RED_MEI_SIGN.get(), ModBlocks.WHITE_MEI_SIGN.get(),
+                        ModBlocks.GREEN_CALYX_MEI_SIGN.get(), ModBlocks.DOUBLE_PINK_MEI_SIGN.get())
                 .add(ModBlocks.CRABAPPLE_SIGN.get())
                 .add(ModBlocks.APRICOT_SIGN.get())
                 .add(ModBlocks.PEACH_SIGN.get())
@@ -538,13 +510,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_SIGN.get())
                 .add(ModBlocks.DOVE_TREE_SIGN.get())
                 .add(ModBlocks.CHINABERRY_SIGN.get())
-                .add(ModBlocks.DESERT_POPLAR_SIGN.get());
+                .add(ModBlocks.DESERT_POPLAR_SIGN.get())
+                .add(ModBlocks.CRAPE_MYRTLE_SIGN.get());
 
         this.tag(BlockTags.WALL_SIGNS)
-                .add(ModBlocks.RED_MEI_WALL_SIGN.get())
-                .add(ModBlocks.WHITE_MEI_WALL_SIGN.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_WALL_SIGN.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_WALL_SIGN.get())
+                .add(ModBlocks.RED_MEI_WALL_SIGN.get(), ModBlocks.WHITE_MEI_WALL_SIGN.get(),
+                        ModBlocks.GREEN_CALYX_MEI_WALL_SIGN.get(), ModBlocks.DOUBLE_PINK_MEI_WALL_SIGN.get())
                 .add(ModBlocks.CRABAPPLE_WALL_SIGN.get())
                 .add(ModBlocks.APRICOT_WALL_SIGN.get())
                 .add(ModBlocks.PEACH_WALL_SIGN.get())
@@ -557,13 +528,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_WALL_SIGN.get())
                 .add(ModBlocks.DOVE_TREE_WALL_SIGN.get())
                 .add(ModBlocks.CHINABERRY_WALL_SIGN.get())
-                .add(ModBlocks.DESERT_POPLAR_WALL_SIGN.get());
+                .add(ModBlocks.DESERT_POPLAR_WALL_SIGN.get())
+                .add(ModBlocks.CRAPE_MYRTLE_WALL_SIGN.get());
 
         this.tag(BlockTags.CEILING_HANGING_SIGNS)
-                .add(ModBlocks.RED_MEI_HANGING_SIGN.get())
-                .add(ModBlocks.WHITE_MEI_HANGING_SIGN.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_HANGING_SIGN.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_HANGING_SIGN.get())
+                .add(ModBlocks.RED_MEI_HANGING_SIGN.get(), ModBlocks.WHITE_MEI_HANGING_SIGN.get(),
+                        ModBlocks.GREEN_CALYX_MEI_HANGING_SIGN.get(), ModBlocks.DOUBLE_PINK_MEI_HANGING_SIGN.get())
                 .add(ModBlocks.CRABAPPLE_HANGING_SIGN.get())
                 .add(ModBlocks.APRICOT_HANGING_SIGN.get())
                 .add(ModBlocks.PEACH_HANGING_SIGN.get())
@@ -576,13 +546,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_HANGING_SIGN.get())
                 .add(ModBlocks.DOVE_TREE_HANGING_SIGN.get())
                 .add(ModBlocks.CHINABERRY_HANGING_SIGN.get())
-                .add(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get());
+                .add(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get())
+                .add(ModBlocks.CRAPE_MYRTLE_HANGING_SIGN.get());
 
         this.tag(BlockTags.WALL_HANGING_SIGNS)
-                .add(ModBlocks.RED_MEI_WALL_HANGING_SIGN.get())
-                .add(ModBlocks.WHITE_MEI_WALL_HANGING_SIGN.get())
-                .add(ModBlocks.GREEN_CALYX_MEI_WALL_HANGING_SIGN.get())
-                .add(ModBlocks.DOUBLE_PINK_MEI_WALL_HANGING_SIGN.get())
+                .add(ModBlocks.RED_MEI_WALL_HANGING_SIGN.get(), ModBlocks.WHITE_MEI_WALL_HANGING_SIGN.get(),
+                        ModBlocks.GREEN_CALYX_MEI_WALL_HANGING_SIGN.get(), ModBlocks.DOUBLE_PINK_MEI_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.CRABAPPLE_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.APRICOT_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.PEACH_WALL_HANGING_SIGN.get())
@@ -595,7 +564,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CAMPHOR_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.DOVE_TREE_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get())
-                .add(ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get());
+                .add(ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get())
+                .add(ModBlocks.CRAPE_MYRTLE_WALL_HANGING_SIGN.get());
 
         this.tag(ModTags.Blocks.RED_MEI_LOGS)
                 .add(ModBlocks.RED_MEI_LOG.get(), ModBlocks.RED_MEI_WOOD.get(), ModBlocks.STRIPPED_RED_MEI_LOG.get(), ModBlocks.STRIPPED_RED_MEI_WOOD.get());

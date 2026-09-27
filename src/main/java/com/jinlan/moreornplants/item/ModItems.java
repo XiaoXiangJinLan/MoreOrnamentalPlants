@@ -49,6 +49,8 @@ public class ModItems {
             ITEMS.register("chinaberry_sign", () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.CHINABERRY_SIGN.get(), ModBlocks.CHINABERRY_WALL_SIGN.get()));
     public static final DeferredItem<Item> DESERT_POPLAR_SIGN =
             ITEMS.register("desert_poplar_sign", () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.DESERT_POPLAR_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_SIGN.get()));
+    public static final DeferredItem<Item> CRAPE_MYRTLE_SIGN =
+            ITEMS.register("crape_myrtle_sign", () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.CRAPE_MYRTLE_SIGN.get(), ModBlocks.CRAPE_MYRTLE_WALL_SIGN.get()));
 
     public static final DeferredItem<Item> RED_MEI_HANGING_SIGN =
             ITEMS.register("red_mei_hanging_sign", () -> new HangingSignItem(ModBlocks.RED_MEI_HANGING_SIGN.get(), ModBlocks.RED_MEI_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
@@ -84,6 +86,8 @@ public class ModItems {
             ITEMS.register("chinaberry_hanging_sign", () -> new HangingSignItem(ModBlocks.CHINABERRY_HANGING_SIGN.get(), ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
     public static final DeferredItem<Item> DESERT_POPLAR_HANGING_SIGN =
             ITEMS.register("desert_poplar_hanging_sign", () -> new HangingSignItem(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<Item> CRAPE_MYRTLE_HANGING_SIGN =
+            ITEMS.register("crape_myrtle_hanging_sign", () -> new HangingSignItem(ModBlocks.CRAPE_MYRTLE_HANGING_SIGN.get(), ModBlocks.CRAPE_MYRTLE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final DeferredItem<Item> RED_MEI_BOAT =
             ITEMS.register("red_mei_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.RED_MEI, new Item.Properties()));
@@ -153,6 +157,10 @@ public class ModItems {
             ITEMS.register("desert_poplar_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
     public static final DeferredItem<Item> DESERT_POPLAR_CHEST_BOAT =
             ITEMS.register("desert_poplar_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.DESERT_POPLAR, new Item.Properties()));
+    public static final DeferredItem<Item> CRAPE_MYRTLE_BOAT =
+            ITEMS.register("crape_myrtle_boat", () -> new ModBoatItem(false, ModBoatEntity.Type.CRAPE_MYRTLE, new Item.Properties()));
+    public static final DeferredItem<Item> CRAPE_MYRTLE_CHEST_BOAT =
+            ITEMS.register("crape_myrtle_chest_boat", () -> new ModBoatItem(true, ModBoatEntity.Type.CRAPE_MYRTLE, new Item.Properties()));
 
     public static final DeferredItem<Item> ZIYING_FOX_SPAWN_EGG =
             ITEMS.register("ziying_fox_spawn_egg", () -> new SpawnEggItem(ModEntities.ZIYING_FOX.get(), 14144467, 12369084, new Item.Properties()));

@@ -31,7 +31,8 @@ public class ModBlockEntities {
                             ModBlocks.CAMPHOR_SIGN.get(), ModBlocks.CAMPHOR_WALL_SIGN.get(),
                             ModBlocks.DOVE_TREE_SIGN.get(), ModBlocks.DOVE_TREE_WALL_SIGN.get(),
                             ModBlocks.CHINABERRY_SIGN.get(), ModBlocks.CHINABERRY_WALL_SIGN.get(),
-                            ModBlocks.DESERT_POPLAR_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_SIGN.get()).build(null));
+                            ModBlocks.DESERT_POPLAR_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_SIGN.get(),
+                            ModBlocks.CRAPE_MYRTLE_SIGN.get(), ModBlocks.CRAPE_MYRTLE_WALL_SIGN.get()).build(null));
 
     public static final Supplier<BlockEntityType<ModHangingSignBlockEntity>> MOD_HANGING_SIGN =
             BLOCK_ENTITIES.register("mod_hanging_sign", () ->
@@ -49,7 +50,8 @@ public class ModBlockEntities {
                             ModBlocks.CAMPHOR_HANGING_SIGN.get(), ModBlocks.CAMPHOR_WALL_HANGING_SIGN.get(),
                             ModBlocks.DOVE_TREE_HANGING_SIGN.get(), ModBlocks.DOVE_TREE_WALL_HANGING_SIGN.get(),
                             ModBlocks.CHINABERRY_HANGING_SIGN.get(), ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(),
-                            ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get()).build(null));
+                            ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get(),
+                            ModBlocks.CRAPE_MYRTLE_HANGING_SIGN.get(), ModBlocks.CRAPE_MYRTLE_WALL_HANGING_SIGN.get()).build(null));
 
     public static final Supplier<BlockEntityType<MeiXiangnangBlockEntity>> MEI_XIANGNANG =
             BLOCK_ENTITIES.register("mei_xiangnang", () ->

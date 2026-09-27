@@ -546,8 +546,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_SLAB);
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_FENCE);
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_FENCE_GATE);
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_DOOR);
+                        pOutput.accept(ModBlocks.CRAPE_MYRTLE_TRAPDOOR);
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_PRESSURE_PLATE);
                         pOutput.accept(ModBlocks.CRAPE_MYRTLE_BUTTON);
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_SIGN);
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_HANGING_SIGN);
                         pOutput.accept(ModBlocks.GOLD_SAND);
                         pOutput.accept(ModBlocks.ZIYING_BEADLIGHT);
                         pOutput.accept(ModBlocks.SUYU_BEADLIGHT);
@@ -608,6 +612,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CHINABERRY_CHEST_BOAT);
                         pOutput.accept(ModItems.DESERT_POPLAR_BOAT);
                         pOutput.accept(ModItems.DESERT_POPLAR_CHEST_BOAT);
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_BOAT);
+                        pOutput.accept(ModItems.CRAPE_MYRTLE_CHEST_BOAT);
                         pOutput.accept(ModItems.PEACH_WOODEN_SWORD);
                         pOutput.accept(ModItems.CAMPHOR_WOODEN_SWORD);
                         pOutput.accept(ModItems.CHINESE_PARASOL_WOODEN_SWORD);

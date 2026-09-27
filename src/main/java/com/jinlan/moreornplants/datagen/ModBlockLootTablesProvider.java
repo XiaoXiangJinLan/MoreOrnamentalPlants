@@ -258,6 +258,7 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.DOVE_TREE_TRAPDOOR.get());
         this.dropSelf(ModBlocks.CHINABERRY_TRAPDOOR.get());
         this.dropSelf(ModBlocks.DESERT_POPLAR_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.CRAPE_MYRTLE_TRAPDOOR.get());
 
         this.add(ModBlocks.RED_MEI_DOOR.get(), createDoorTable(ModBlocks.RED_MEI_DOOR.get()));
         this.add(ModBlocks.WHITE_MEI_DOOR.get(), createDoorTable(ModBlocks.WHITE_MEI_DOOR.get()));
@@ -276,6 +277,7 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.DOVE_TREE_DOOR.get(), createDoorTable(ModBlocks.DOVE_TREE_DOOR.get()));
         this.add(ModBlocks.CHINABERRY_DOOR.get(), createDoorTable(ModBlocks.CHINABERRY_DOOR.get()));
         this.add(ModBlocks.DESERT_POPLAR_DOOR.get(), createDoorTable(ModBlocks.DESERT_POPLAR_DOOR.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_DOOR.get(), createDoorTable(ModBlocks.CRAPE_MYRTLE_DOOR.get()));
 
         this.add(ModBlocks.RED_MEI_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.RED_MEI_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -427,6 +429,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.CHINABERRY_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.CHINABERRY_SIGN.get()));
         this.add(ModBlocks.DESERT_POPLAR_SIGN.get(), block -> createSingleItemTable(ModItems.DESERT_POPLAR_SIGN.get()));
         this.add(ModBlocks.DESERT_POPLAR_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.DESERT_POPLAR_SIGN.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_SIGN.get(), block -> createSingleItemTable(ModItems.CRAPE_MYRTLE_SIGN.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_WALL_SIGN.get(), block -> createSingleItemTable(ModItems.CRAPE_MYRTLE_SIGN.get()));
 
         this.add(ModBlocks.RED_MEI_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_HANGING_SIGN.get()));
         this.add(ModBlocks.RED_MEI_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.RED_MEI_HANGING_SIGN.get()));
@@ -462,6 +466,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.add(ModBlocks.CHINABERRY_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CHINABERRY_HANGING_SIGN.get()));
         this.add(ModBlocks.DESERT_POPLAR_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.DESERT_POPLAR_HANGING_SIGN.get()));
         this.add(ModBlocks.DESERT_POPLAR_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.DESERT_POPLAR_HANGING_SIGN.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CRAPE_MYRTLE_HANGING_SIGN.get()));
+        this.add(ModBlocks.CRAPE_MYRTLE_WALL_HANGING_SIGN.get(), block -> createSingleItemTable(ModItems.CRAPE_MYRTLE_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.RED_MEI_SAPLING.get());
         this.add(ModBlocks.POTTED_RED_MEI_SAPLING.get(), createPotFlowerItemTable(ModBlocks.RED_MEI_SAPLING.get()));

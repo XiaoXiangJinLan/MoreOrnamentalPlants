@@ -61,6 +61,8 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(MoreOrnPlantsClient.ModModelLayers.CHINABERRY_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
         event.registerLayerDefinition(MoreOrnPlantsClient.ModModelLayers.DESERT_POPLAR_BOAT_LAYER, BoatModel::createBodyModel);
         event.registerLayerDefinition(MoreOrnPlantsClient.ModModelLayers.DESERT_POPLAR_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
+        event.registerLayerDefinition(MoreOrnPlantsClient.ModModelLayers.CRAPE_MYRTLE_BOAT_LAYER, BoatModel::createBodyModel);
+        event.registerLayerDefinition(MoreOrnPlantsClient.ModModelLayers.CRAPE_MYRTLE_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
     }
 
     @SubscribeEvent
