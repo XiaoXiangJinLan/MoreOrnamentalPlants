@@ -227,13 +227,13 @@ public class ModBiomeConfig {
         // 区域权重设置
         BUILDER.push("Region Weight Settings");
         OVERWORLD_BIOMES_WEIGHT = BUILDER
-                .comment("Weight for main overworld biomes region")
+                .comment("主群系权重")
                 .defineInRange("overworldBiomesWeight", 6, 0, 20);
         SECOND_OVERWORLD_BIOMES_WEIGHT = BUILDER
-                .comment("Weight for second overworld biomes region")
+                .comment("次群系权重")
                 .defineInRange("secondOverworldBiomesWeight", 5, 0, 20);
         THIRD_OVERWORLD_BIOMES_WEIGHT = BUILDER
-                .comment("Weight for third overworld biomes region")
+                .comment("次次群系权重")
                 .defineInRange("thirdOverworldBiomesWeight", 4, 0, 20);
         BUILDER.pop();
 
