@@ -1108,6 +1108,7 @@
   "more_orn_plants.configuration.enableSuyuCaves": "Enable SuyuCaves",
   "more_orn_plants.configuration.overworldBiomesWeight": "Overworld Biomes Weight",
   "more_orn_plants.configuration.secondOverworldBiomesWeight": "Second Overworld Biomes Weight",
+  "more_orn_plants.configuration.thirdOverworldBiomesWeight": "Third Overworld Biomes Weight",
 
   "more_orn_plants.configuration.Biome Effects Settings": "Biome Effects Settings",
   "more_orn_plants.configuration.enableFlowerBiomeEffects": "Enable Flower Biome Effects",
