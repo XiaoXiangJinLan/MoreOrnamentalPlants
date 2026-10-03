@@ -3,6 +3,7 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
+import com.jinlan.moreornplants.block.foodBlock.SoupBlock;
 import com.jinlan.moreornplants.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
@@ -975,10 +976,15 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SUYU_BEADLIGHT.get());
         this.dropSelf(ModBlocks.GOLD_SAND.get());
 
-        this.dropSelf(ModBlocks.BAMBOO_SHOOTS_SOUP.get());
-        this.dropSelf(ModBlocks.LOTUS_ROOT_SOUP.get());
-        this.dropSelf(ModBlocks.LOTUS_SEED_SOUP.get());
-        this.dropSelf(ModBlocks.MUXUE_SOUP.get());
+        List<Block> soups = List.of(
+                ModBlocks.BAMBOO_SHOOTS_SOUP.get(),
+                ModBlocks.LOTUS_ROOT_SOUP.get(),
+                ModBlocks.LOTUS_SEED_SOUP.get(),
+                ModBlocks.MUXUE_SOUP.get()
+        );
+        for (Block soup : soups) {
+            this.add(soup, block -> createSoupDrops(soup));
+        }
         this.dropSelf(ModBlocks.CRABAPPLE_PILE.get());
         this.dropSelf(ModBlocks.GOLDEN_CRABAPPLE_PILE.get());
         this.dropSelf(ModBlocks.CLOUD_APRICOT_PILE.get());
@@ -1035,6 +1041,25 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(fruitBlock)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
                                         .hasProperty(PeachBlock.HANGING, false))));
+    }
+
+    private LootTable.Builder createSoupDrops(Block soupBlock) {
+        return LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(soupBlock.asItem()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(soupBlock)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(SoupBlock.BITES, 0))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.BOWL))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(soupBlock)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(SoupBlock.BITES, 1))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.BOWL))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(soupBlock)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(SoupBlock.BITES, 2))));
     }
 
     @Override

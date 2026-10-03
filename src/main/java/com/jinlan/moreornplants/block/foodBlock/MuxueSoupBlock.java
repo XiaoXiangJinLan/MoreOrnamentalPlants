@@ -1,46 +1,24 @@
 package com.jinlan.moreornplants.block.foodBlock;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
-public class SoupBlock extends Block {
-    public static final MapCodec<SoupBlock> CODEC = simpleCodec(SoupBlock::new);
-    public static final int MAX_BITES = 2;
-    public static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 2);
-    protected static final VoxelShape SHAPE = Block.box(4.0D, 0.0D, 4.0D, 12.0D, 3.0D, 12.0D);
-
-    public SoupBlock(Properties properties) {
+public class MuxueSoupBlock extends SoupBlock{
+    public MuxueSoupBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.stateDefinition.any().setValue(BITES, 0));
-    }
-
-    @Override
-    public @NotNull MapCodec<SoupBlock> codec() {
-        return CODEC;
-    }
-
-    @Override
-    @NotNull
-    public VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
-        return SHAPE;
     }
 
     @Override
@@ -62,7 +40,8 @@ public class SoupBlock extends Block {
         if (!player.canEat(false)) {
             return InteractionResult.PASS;
         } else {
-            player.getFoodData().eat(3, 0.3F);
+            player.getFoodData().eat(1, 0.2F);
+            player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 900, 0));
             int i = state.getValue(BITES);
             level.gameEvent(player, GameEvent.EAT, pos);
             if (i < MAX_BITES) {
@@ -76,29 +55,5 @@ public class SoupBlock extends Block {
             }
             return InteractionResult.SUCCESS;
         }
-    }
-
-    @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(BITES);
-    }
-
-    @Override
-    protected int getAnalogOutputSignal(BlockState blockState, @NotNull Level level, @NotNull BlockPos pos) {
-        return getOutputSignal(blockState.getValue(BITES));
-    }
-
-    public static int getOutputSignal(int eaten) {
-        return (2 - eaten) * 2;
-    }
-
-    @Override
-    protected boolean hasAnalogOutputSignal(@NotNull BlockState state) {
-        return true;
-    }
-
-    @Override
-    protected boolean isPathfindable(@NotNull BlockState state, @NotNull PathComputationType pathComputationType) {
-        return false;
     }
 }

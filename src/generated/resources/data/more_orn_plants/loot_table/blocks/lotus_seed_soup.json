@@ -5,13 +5,55 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "minecraft:survives_explosion"
+          "block": "more_orn_plants:lotus_seed_soup",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "bites": "0"
+          }
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "more_orn_plants:lotus_seed_soup"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "more_orn_plants:lotus_seed_soup",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "bites": "1"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bowl"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "more_orn_plants:lotus_seed_soup",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "bites": "2"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bowl"
         }
       ],
       "rolls": 1.0
