@@ -1,7 +1,15 @@
 {
   "variants": {
-    "": {
+    "bites=0": {
       "model": "more_orn_plants:block/lotus_root_soup",
+      "y": 90
+    },
+    "bites=1": {
+      "model": "more_orn_plants:block/lotus_root_soup_1",
+      "y": 90
+    },
+    "bites=2": {
+      "model": "more_orn_plants:block/lotus_root_soup_2",
       "y": 90
     }
   }

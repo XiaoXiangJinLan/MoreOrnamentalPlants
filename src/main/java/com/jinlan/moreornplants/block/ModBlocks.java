@@ -11,6 +11,7 @@ import com.jinlan.moreornplants.block.WaterPlantsBlock.MuxueGrassBlock;
 import com.jinlan.moreornplants.block.WaterPlantsBlock.TallMuxueGrassBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.*;
 import com.jinlan.moreornplants.block.foodBlock.FruitPileBlock;
+import com.jinlan.moreornplants.block.foodBlock.MuxueSoupBlock;
 import com.jinlan.moreornplants.block.foodBlock.SoupBlock;
 import com.jinlan.moreornplants.block.saplingBlocks.*;
 import com.jinlan.moreornplants.block.xiangnangBlocks.*;
@@ -1601,7 +1602,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> LOTUS_SEED_SOUP =
             BLOCKS.register("lotus_seed_soup", () -> new SoupBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> MUXUE_SOUP =
-            BLOCKS.register("muxue_soup", () -> new SoupBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+            BLOCKS.register("muxue_soup", () -> new MuxueSoupBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
 
     private static ModRotatedPillarBlock log(MapColor pTopMapColor, MapColor pSideMapColor) {
         return new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((p_152624_) ->
