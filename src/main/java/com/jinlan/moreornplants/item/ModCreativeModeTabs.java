@@ -623,12 +623,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BAIHUA_SWORD);
                         pOutput.accept(ModItems.ZHUIYUE_SWORD);
                         pOutput.accept(ModItems.CAIYUN_SWORD);
-                        pOutput.accept(ModBlocks.CRABAPPLE_PILE);
-                        pOutput.accept(ModBlocks.GOLDEN_CRABAPPLE_PILE);
-                        pOutput.accept(ModBlocks.IMMORTAL_PEACH_PILE);
-                        pOutput.accept(ModBlocks.CLOUD_APRICOT_PILE);
-                        pOutput.accept(ModBlocks.MEI_PILE);
-                        pOutput.accept(ModBlocks.GOLDEN_MEI_PILE);
+                        pOutput.accept(ModBlocks.CRABAPPLE_PLATE);
+                        pOutput.accept(ModBlocks.GOLDEN_CRABAPPLE_PLATE);
+                        pOutput.accept(ModBlocks.IMMORTAL_PEACH_PLATE);
+                        pOutput.accept(ModBlocks.CLOUD_APRICOT_PLATE);
+                        pOutput.accept(ModBlocks.MEI_PLATE);
+                        pOutput.accept(ModBlocks.GOLDEN_MEI_PLATE);
                         pOutput.accept(ModItems.CRABAPPLE);
                         pOutput.accept(ModItems.GOLDEN_CRABAPPLE);
                         pOutput.accept(ModItems.ENCHANTED_GOLDEN_CRABAPPLE);

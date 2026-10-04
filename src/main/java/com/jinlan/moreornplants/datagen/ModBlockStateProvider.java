@@ -3,7 +3,7 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.*;
-import com.jinlan.moreornplants.block.foodBlock.FruitPileBlock;
+import com.jinlan.moreornplants.block.foodBlock.FruitPlateBlock;
 import com.jinlan.moreornplants.block.xiangnangBlocks.MeiXiangnangBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
 import net.minecraft.core.Direction;
@@ -605,12 +605,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fruitBlock(ModBlocks.CLOUD_APRICOT, "peach", "peach");
         fruitBlock(ModBlocks.IMMORTAL_PEACH, "peach", "peach");
         fruitBlock(ModBlocks.GOLDEN_MEI, "mei_fruit", "mei");
-        fruitPileBlock(ModBlocks.CRABAPPLE_PILE, "crabapple_pile", "crabapple", "crabapple_age_1");
-        fruitPileBlock(ModBlocks.GOLDEN_CRABAPPLE_PILE, "crabapple_pile", "crabapple", "golden_crabapple_age_1");
-        fruitPileBlock(ModBlocks.CLOUD_APRICOT_PILE, "peach_pile", "peach", "cloud_apricot_age_1");
-        fruitPileBlock(ModBlocks.IMMORTAL_PEACH_PILE, "peach_pile", "peach", "immortal_peach_age_1");
-        fruitPileBlock(ModBlocks.MEI_PILE, "mei_fruit_pile", "mei", "mei_age_1");
-        fruitPileBlock(ModBlocks.GOLDEN_MEI_PILE, "mei_fruit_pile", "mei", "golden_mei_age_1");
+        fruitPlateBlock(ModBlocks.CRABAPPLE_PLATE, "crabapple_plate", "crabapple", "crabapple_age_1");
+        fruitPlateBlock(ModBlocks.GOLDEN_CRABAPPLE_PLATE, "crabapple_plate", "crabapple", "golden_crabapple_age_1");
+        fruitPlateBlock(ModBlocks.CLOUD_APRICOT_PLATE, "peach_plate", "peach", "cloud_apricot_age_1");
+        fruitPlateBlock(ModBlocks.IMMORTAL_PEACH_PLATE, "peach_plate", "peach", "immortal_peach_age_1");
+        fruitPlateBlock(ModBlocks.MEI_PLATE, "mei_fruit_plate", "mei", "mei_age_1");
+        fruitPlateBlock(ModBlocks.GOLDEN_MEI_PLATE, "mei_fruit_plate", "mei", "golden_mei_age_1");
 
         wisteriaBlock(ModBlocks.CHINESE_WISTERIA);
         wisteriaPlantBlock(ModBlocks.CHINESE_WISTERIA_PLANT);
@@ -1134,10 +1134,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 .modelForState().modelFile(standingModel).addModel();
     }
 
-    private void fruitPileBlock(DeferredBlock<Block> block, String parentModelPath, String textureKey, String texture) {
+    private void fruitPlateBlock(DeferredBlock<Block> block, String parentModelPath, String textureKey, String texture) {
         String baseName = block.getId().getPath();
         ModelFile model = models().withExistingParent(baseName + "_standing", modLoc("block/" + parentModelPath))
                 .texture(textureKey, modLoc("block/" + texture))
+                .texture("plate", modLoc("block/plate"))
                 .renderType("cutout");
         for (Direction direction : Direction.Plane.HORIZONTAL) {
             int rotationY;
@@ -1148,7 +1149,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 default -> rotationY = 0;
             }
             getVariantBuilder(block.get())
-                    .partialState().with(FruitPileBlock.FACING, direction)
+                    .partialState().with(FruitPlateBlock.FACING, direction)
                     .modelForState().modelFile(model).rotationY(rotationY).addModel();
         }
         simpleBlockItem(block.get(), model);

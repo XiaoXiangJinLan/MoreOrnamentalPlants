@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_crabapple_pile": {
+    "has_crabapple_plate": {
       "conditions": {
         "items": [
           {
-            "items": "more_orn_plants:crabapple_pile"
+            "items": "more_orn_plants:crabapple_plate"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_crabapple_pile"
+      "has_crabapple_plate"
     ]
   ],
   "rewards": {

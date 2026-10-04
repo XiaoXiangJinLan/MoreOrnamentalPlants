@@ -1430,54 +1430,54 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SUYU_BEADLIGHT), has(ModBlocks.SUYU_BEADLIGHT))
                 .save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRABAPPLE_PILE)
-                .requires(ModItems.CRABAPPLE, 4)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CRABAPPLE_PLATE)
+                .requires(ModItems.CRABAPPLE, 3)
                 .unlockedBy(getHasName(ModItems.CRABAPPLE), has(ModItems.CRABAPPLE))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLDEN_CRABAPPLE_PILE)
-                .requires(ModItems.GOLDEN_CRABAPPLE, 4)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLDEN_CRABAPPLE_PLATE)
+                .requires(ModItems.GOLDEN_CRABAPPLE, 3)
                 .unlockedBy(getHasName(ModItems.GOLDEN_CRABAPPLE), has(ModItems.GOLDEN_CRABAPPLE))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CLOUD_APRICOT_PILE)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CLOUD_APRICOT_PLATE)
                 .requires(ModItems.CLOUD_APRICOT, 4)
                 .unlockedBy(getHasName(ModItems.CLOUD_APRICOT), has(ModItems.CLOUD_APRICOT))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.IMMORTAL_PEACH_PILE)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.IMMORTAL_PEACH_PLATE)
                 .requires(ModItems.IMMORTAL_PEACH, 4)
                 .unlockedBy(getHasName(ModItems.IMMORTAL_PEACH), has(ModItems.IMMORTAL_PEACH))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MEI_PILE)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MEI_PLATE)
                 .requires(ModItems.MEI, 4)
                 .unlockedBy(getHasName(ModItems.MEI), has(ModItems.MEI))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLDEN_MEI_PILE)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.GOLDEN_MEI_PLATE)
                 .requires(ModItems.GOLDEN_MEI, 4)
                 .unlockedBy(getHasName(ModItems.GOLDEN_MEI), has(ModItems.GOLDEN_MEI))
                 .save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CRABAPPLE, 4)
-                .requires(ModBlocks.CRABAPPLE_PILE)
-                .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PILE), has(ModBlocks.CRABAPPLE_PILE))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CRABAPPLE, 3)
+                .requires(ModBlocks.CRABAPPLE_PLATE)
+                .unlockedBy(getHasName(ModBlocks.CRABAPPLE_PLATE), has(ModBlocks.CRABAPPLE_PLATE))
                 .save(recipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GOLDEN_CRABAPPLE, 4)
-                .requires(ModBlocks.GOLDEN_CRABAPPLE_PILE)
-                .unlockedBy(getHasName(ModBlocks.GOLDEN_CRABAPPLE_PILE), has(ModBlocks.GOLDEN_CRABAPPLE_PILE))
-                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "golden_crabapple_from_golden_crabapple_pile");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GOLDEN_CRABAPPLE, 3)
+                .requires(ModBlocks.GOLDEN_CRABAPPLE_PLATE)
+                .unlockedBy(getHasName(ModBlocks.GOLDEN_CRABAPPLE_PLATE), has(ModBlocks.GOLDEN_CRABAPPLE_PLATE))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "golden_crabapple_from_golden_crabapple_plate");
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CLOUD_APRICOT, 4)
-                .requires(ModBlocks.CLOUD_APRICOT_PILE)
-                .unlockedBy(getHasName(ModBlocks.CLOUD_APRICOT_PILE), has(ModBlocks.CLOUD_APRICOT_PILE))
+                .requires(ModBlocks.CLOUD_APRICOT_PLATE)
+                .unlockedBy(getHasName(ModBlocks.CLOUD_APRICOT_PLATE), has(ModBlocks.CLOUD_APRICOT_PLATE))
                 .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.IMMORTAL_PEACH, 4)
-                .requires(ModBlocks.IMMORTAL_PEACH_PILE)
-                .unlockedBy(getHasName(ModBlocks.IMMORTAL_PEACH_PILE), has(ModBlocks.IMMORTAL_PEACH_PILE))
+                .requires(ModBlocks.IMMORTAL_PEACH_PLATE)
+                .unlockedBy(getHasName(ModBlocks.IMMORTAL_PEACH_PLATE), has(ModBlocks.IMMORTAL_PEACH_PLATE))
                 .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MEI, 4)
-                .requires(ModBlocks.MEI_PILE)
-                .unlockedBy(getHasName(ModBlocks.MEI_PILE), has(ModBlocks.MEI_PILE))
+                .requires(ModBlocks.MEI_PLATE)
+                .unlockedBy(getHasName(ModBlocks.MEI_PLATE), has(ModBlocks.MEI_PLATE))
                 .save(recipeOutput);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GOLDEN_MEI, 4)
-                .requires(ModBlocks.GOLDEN_MEI_PILE)
-                .unlockedBy(getHasName(ModBlocks.GOLDEN_MEI_PILE), has(ModBlocks.GOLDEN_MEI_PILE))
-                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "golden_mei_from_golden_mei_pile");
+                .requires(ModBlocks.GOLDEN_MEI_PLATE)
+                .unlockedBy(getHasName(ModBlocks.GOLDEN_MEI_PLATE), has(ModBlocks.GOLDEN_MEI_PLATE))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "golden_mei_from_golden_mei_plate");
     }
 }

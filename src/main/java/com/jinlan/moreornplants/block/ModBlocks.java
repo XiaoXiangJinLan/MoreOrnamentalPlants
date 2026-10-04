@@ -9,7 +9,7 @@ import com.jinlan.moreornplants.block.FlowerBlocks.*;
 import com.jinlan.moreornplants.block.LeavesBlocks.*;
 import com.jinlan.moreornplants.block.WaterPlantsBlock.MuxueGrassBlock;
 import com.jinlan.moreornplants.block.WaterPlantsBlock.TallMuxueGrassBlock;
-import com.jinlan.moreornplants.block.foodBlock.FruitPileBlock;
+import com.jinlan.moreornplants.block.foodBlock.FruitPlateBlock;
 import com.jinlan.moreornplants.block.foodBlock.MuxueSoupBlock;
 import com.jinlan.moreornplants.block.foodBlock.SoupBlock;
 import com.jinlan.moreornplants.block.saplingBlocks.*;
@@ -184,18 +184,18 @@ public class ModBlocks {
             BLOCKS.register("mei", () -> new MeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> GOLDEN_MEI =
             BLOCKS.register("golden_mei", () -> new MeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 10)));
-    public static final DeferredBlock<Block> CRABAPPLE_PILE =
-            registerBlock("crabapple_pile", () -> new FruitPileBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).pushReaction(PushReaction.DESTROY)));
-    public static final DeferredBlock<Block> GOLDEN_CRABAPPLE_PILE =
-            registerBlock("golden_crabapple_pile", () -> new FruitPileBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 15)));
-    public static final DeferredBlock<Block> CLOUD_APRICOT_PILE =
-            registerBlock("cloud_apricot_pile", () -> new FruitPileBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).pushReaction(PushReaction.DESTROY)));
-    public static final DeferredBlock<Block> IMMORTAL_PEACH_PILE =
-            registerBlock("immortal_peach_pile", () -> new FruitPileBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).pushReaction(PushReaction.DESTROY)));
-    public static final DeferredBlock<Block> MEI_PILE =
-            registerBlock("mei_pile", () -> new FruitPileBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).pushReaction(PushReaction.DESTROY)));
-    public static final DeferredBlock<Block> GOLDEN_MEI_PILE =
-            registerBlock("golden_mei_pile", () -> new FruitPileBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 15)));
+    public static final DeferredBlock<Block> CRABAPPLE_PLATE =
+            registerBlock("crabapple_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> GOLDEN_CRABAPPLE_PLATE =
+            registerBlock("golden_crabapple_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 15)));
+    public static final DeferredBlock<Block> CLOUD_APRICOT_PLATE =
+            registerBlock("cloud_apricot_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> IMMORTAL_PEACH_PLATE =
+            registerBlock("immortal_peach_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> MEI_PLATE =
+            registerBlock("mei_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> GOLDEN_MEI_PLATE =
+            registerBlock("golden_mei_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 15)));
 
     public static final DeferredBlock<Block> CHINESE_WISTERIA =
             registerBlock("chinese_wisteria", () -> new WisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));
