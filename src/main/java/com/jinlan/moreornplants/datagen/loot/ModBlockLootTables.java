@@ -1149,12 +1149,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         for (Block soup : soups) {
             this.add(soup, block -> createSoupDrops(soup));
         }
-        this.dropSelf(ModBlocks.CRABAPPLE_PILE.get());
-        this.dropSelf(ModBlocks.GOLDEN_CRABAPPLE_PILE.get());
-        this.dropSelf(ModBlocks.CLOUD_APRICOT_PILE.get());
-        this.dropSelf(ModBlocks.IMMORTAL_PEACH_PILE.get());
-        this.dropSelf(ModBlocks.MEI_PILE.get());
-        this.dropSelf(ModBlocks.GOLDEN_MEI_PILE.get());
+        this.dropSelf(ModBlocks.CRABAPPLE_PLATE.get());
+        this.dropSelf(ModBlocks.GOLDEN_CRABAPPLE_PLATE.get());
+        this.dropSelf(ModBlocks.CLOUD_APRICOT_PLATE.get());
+        this.dropSelf(ModBlocks.IMMORTAL_PEACH_PLATE.get());
+        this.dropSelf(ModBlocks.MEI_PLATE.get());
+        this.dropSelf(ModBlocks.GOLDEN_MEI_PLATE.get());
     }
 
     protected LootTable.Builder createWeepingMeiPlantDrops(Block plantBlock, Block flowerBlock, Block saplingBlock, float... saplingChances) {

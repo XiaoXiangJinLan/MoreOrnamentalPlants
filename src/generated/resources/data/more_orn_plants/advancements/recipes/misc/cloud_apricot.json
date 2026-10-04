@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cloud_apricot_pile": {
+    "has_cloud_apricot_plate": {
       "conditions": {
         "items": [
           {
             "items": [
-              "more_orn_plants:cloud_apricot_pile"
+              "more_orn_plants:cloud_apricot_plate"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cloud_apricot_pile",
+      "has_cloud_apricot_plate",
       "has_the_recipe"
     ]
   ],

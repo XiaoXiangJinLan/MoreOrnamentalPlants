@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:crabapple"
+    },
+    {
+      "item": "more_orn_plants:crabapple"
+    },
+    {
+      "item": "more_orn_plants:crabapple"
+    }
+  ],
+  "result": {
+    "item": "more_orn_plants:crabapple_plate"
+  }
+}

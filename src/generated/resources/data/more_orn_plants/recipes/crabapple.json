@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "more_orn_plants:crabapple_pile"
+      "item": "more_orn_plants:crabapple_plate"
     }
   ],
   "result": {
-    "count": 4,
+    "count": 3,
     "item": "more_orn_plants:crabapple"
   }
 }

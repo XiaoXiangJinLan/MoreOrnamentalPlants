@@ -622,12 +622,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BAIHUA_SWORD.get());
                         pOutput.accept(ModItems.ZHUIYUE_SWORD.get());
                         pOutput.accept(ModItems.CAIYUN_SWORD.get());
-                        pOutput.accept(ModBlocks.CRABAPPLE_PILE.get());
-                        pOutput.accept(ModBlocks.GOLDEN_CRABAPPLE_PILE.get());
-                        pOutput.accept(ModBlocks.IMMORTAL_PEACH_PILE.get());
-                        pOutput.accept(ModBlocks.CLOUD_APRICOT_PILE.get());
-                        pOutput.accept(ModBlocks.MEI_PILE.get());
-                        pOutput.accept(ModBlocks.GOLDEN_MEI_PILE.get());
+                        pOutput.accept(ModBlocks.CRABAPPLE_PLATE.get());
+                        pOutput.accept(ModBlocks.GOLDEN_CRABAPPLE_PLATE.get());
+                        pOutput.accept(ModBlocks.IMMORTAL_PEACH_PLATE.get());
+                        pOutput.accept(ModBlocks.CLOUD_APRICOT_PLATE.get());
+                        pOutput.accept(ModBlocks.MEI_PLATE.get());
+                        pOutput.accept(ModBlocks.GOLDEN_MEI_PLATE.get());
                         pOutput.accept(ModItems.CRABAPPLE.get());
                         pOutput.accept(ModItems.GOLDEN_CRABAPPLE.get());
                         pOutput.accept(ModItems.ENCHANTED_GOLDEN_CRABAPPLE.get());

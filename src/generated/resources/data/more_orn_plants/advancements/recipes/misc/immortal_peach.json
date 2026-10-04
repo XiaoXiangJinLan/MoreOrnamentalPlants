@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_immortal_peach_pile": {
+    "has_immortal_peach_plate": {
       "conditions": {
         "items": [
           {
             "items": [
-              "more_orn_plants:immortal_peach_pile"
+              "more_orn_plants:immortal_peach_plate"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_immortal_peach_pile",
+      "has_immortal_peach_plate",
       "has_the_recipe"
     ]
   ],
