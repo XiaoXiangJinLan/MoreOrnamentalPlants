@@ -1116,7 +1116,10 @@
   "more_orn_plants.configuration.enableLongevityForestEffects": "Enable Longevity Forest Effects",
   "more_orn_plants.configuration.enablePenglaiEffects": "Enable Penglai Effects",
   "more_orn_plants.configuration.enableRedHighlandsEffects": "Enable Red Highlands Effects",
-  "more_orn_plants.configuration.enableBiomeHurtEnemy": "Enable Biome Hurting on Enemies",
+  "more_orn_plants.configuration.enableWutongBiomeHurtEnemy": "Enable Wutong Biome Hurting on Enemies",
+  "more_orn_plants.configuration.enableCavesBiomeHurtEnemy": "Enable Caves Biome Hurting on Enemies",
+  "more_orn_plants.configuration.enablePeachBiomeHurtEnemy": "Enable Peach Blossom Spring Biome Hurting on Enemies",
+  "more_orn_plants.configuration.enablePeachBiomeAutoCure": "Enable Peach Blossom Spring Biome Cure ZombieVillager",
   "more_orn_plants.configuration.enableBiomeNoEnemy": "Enable Biome No Enemies",
   "more_orn_plants.configuration.enableModFoxSpawn": "Enable Mod Fox Spawn",
 

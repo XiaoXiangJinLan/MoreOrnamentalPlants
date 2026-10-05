@@ -70,7 +70,10 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_LONGEVITY_FOREST_EFFECTS;
     public static final ModConfigSpec.BooleanValue ENABLE_PENGLAI_EFFECTS;
     public static final ModConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS_EFFECTS;
-    public static final ModConfigSpec.BooleanValue ENABLE_BIOME_HURT_ENEMY;
+    public static final ModConfigSpec.BooleanValue ENABLE_WUTONG_BIOME_HURT_ENEMY;
+    public static final ModConfigSpec.BooleanValue ENABLE_CAVES_BIOME_HURT_ENEMY;
+    public static final ModConfigSpec.BooleanValue ENABLE_PEACH_BIOME_HURT_ENEMY;
+    public static final ModConfigSpec.BooleanValue ENABLE_PEACH_BIOME_AUTO_CURE;
     public static final ModConfigSpec.BooleanValue ENABLE_BIOME_NO_ENEMY;
     public static final ModConfigSpec.BooleanValue ENABLE_MOD_FOX_SPAWN;
 
@@ -222,8 +225,14 @@ public class ModBiomeConfig {
                 .define("enablePenglaiEffects", true);
         ENABLE_RED_HIGHLANDS_EFFECTS = BUILDER
                 .define("enableRedHighlandsEffects", true);
-        ENABLE_BIOME_HURT_ENEMY = BUILDER
-                .define("enableBiomeHurtEnemy", true);
+        ENABLE_WUTONG_BIOME_HURT_ENEMY = BUILDER
+                .define("enableWutongBiomeHurtEnemy", true);
+        ENABLE_CAVES_BIOME_HURT_ENEMY = BUILDER
+                .define("enableCavesBiomeHurtEnemy", true);
+        ENABLE_PEACH_BIOME_HURT_ENEMY = BUILDER
+                .define("enablePeachBiomeHurtEnemy", true);
+        ENABLE_PEACH_BIOME_AUTO_CURE = BUILDER
+                .define("enablePeachBiomeAutoCure", true);
         ENABLE_BIOME_NO_ENEMY = BUILDER
                 .define("enableBiomeNoEnemy", true);
         ENABLE_MOD_FOX_SPAWN = BUILDER

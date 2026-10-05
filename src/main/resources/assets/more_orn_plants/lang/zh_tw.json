@@ -1116,7 +1116,10 @@
   "more_orn_plants.configuration.enableLongevityForestEffects": "是否譲長壽林提供效果",
   "more_orn_plants.configuration.enablePenglaiEffects": "是否譲蓬萊提供效果",
   "more_orn_plants.configuration.enableRedHighlandsEffects": "是否譲映山紅提供效果",
-  "more_orn_plants.configuration.enableBiomeHurtEnemy": "是否譲羣系傷害敵對生物",
+  "more_orn_plants.configuration.enableWutongBiomeHurtEnemy": "是否譲朝陽林伤害敵對生物",
+  "more_orn_plants.configuration.enableCavesBiomeHurtEnemy": "是否譲紫英洞与素玉洞伤害敵對生物",
+  "more_orn_plants.configuration.enablePeachBiomeHurtEnemy": "是否譲世外桃源伤害敵對生物",
+  "more_orn_plants.configuration.enablePeachBiomeAutoCure": "是否譲世外桃源療愈喪屍村民",
   "more_orn_plants.configuration.enableBiomeNoEnemy": "是否譲羣系不生成敵對生物",
   "more_orn_plants.configuration.enableModFoxSpawn": "是否生成紫英狐与素玉狐",
 

@@ -1116,7 +1116,10 @@
   "more_orn_plants.configuration.enableLongevityForestEffects": "長壽林供效",
   "more_orn_plants.configuration.enablePenglaiEffects": "蓬萊供效",
   "more_orn_plants.configuration.enableRedHighlandsEffects": "映山紅供效",
-  "more_orn_plants.configuration.enableBiomeHurtEnemy": "羣系攻敵",
+  "more_orn_plants.configuration.enableWutongBiomeHurtEnemy": "朝陽林攻敵",
+  "more_orn_plants.configuration.enableCavesBiomeHurtEnemy": "紫英素玉洞攻敵",
+  "more_orn_plants.configuration.enablePeachBiomeHurtEnemy": "世外桃源攻敵",
+  "more_orn_plants.configuration.enablePeachBiomeAutoCure": "世外桃源愈敵",
   "more_orn_plants.configuration.enableBiomeNoEnemy": "羣系无敵",
   "more_orn_plants.configuration.enableModFoxSpawn": "生狐否",
 
