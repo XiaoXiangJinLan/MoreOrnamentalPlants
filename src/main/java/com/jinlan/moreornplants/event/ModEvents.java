@@ -261,9 +261,9 @@ public class ModEvents {
         if (entity.level().isClientSide) return;
         int tick = entity.tickCount;
         Holder<Biome> biomeHolder = entity.level().getBiome(entity.blockPosition());
-        if (ModBiomeConfig.ENABLE_BIOME_HURT_ENEMY.get() && tick % 40 == 0) {
+        if (tick % 40 == 0) {
             if (entity instanceof Enemy) {
-                if (biomeHolder.is(ModBiomes.WUTONG_FOREST) || biomeHolder.is(ModBiomes.COLORED_FOREST)) {
+                if (ModBiomeConfig.ENABLE_WUTONG_BIOME_HURT_ENEMY.get() && (biomeHolder.is(ModBiomes.WUTONG_FOREST) || biomeHolder.is(ModBiomes.COLORED_FOREST))) {
                     if (!(entity instanceof ZombieVillager && entity.getHealth() <= 10.0F)) {
                         entity.setSecondsOnFire(2);
                         if (entity.fireImmune() || entity.hasEffect(MobEffects.FIRE_RESISTANCE)) {
@@ -280,18 +280,26 @@ public class ModEvents {
                         }
                     }
                 }
-                if (biomeHolder.is(ModBiomes.ZIYING_CAVES)) {
+                if (ModBiomeConfig.ENABLE_CAVES_BIOME_HURT_ENEMY.get() && biomeHolder.is(ModBiomes.ZIYING_CAVES)) {
                     entity.hurt(entity.level().damageSources().wither(), 3.0F);
                     entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 3));
                 }
-                if (biomeHolder.is(ModBiomes.SUYU_CAVES)) {
+                if (ModBiomeConfig.ENABLE_CAVES_BIOME_HURT_ENEMY.get() && biomeHolder.is(ModBiomes.SUYU_CAVES)) {
                     entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 2));
                     entity.addEffect(new MobEffectInstance(MobEffects.POISON, 600, 2));
                 }
                 if (entity.isInvertedHealAndHarm()) {
                     if (biomeHolder.is(ModBiomes.THE_PEACH_BLOSSOM_SPRING)) {
-                        if (!(entity instanceof ZombieVillager && entity.getHealth() <= 10.0F)) {
+                        if (ModBiomeConfig.ENABLE_PEACH_BIOME_HURT_ENEMY.get() && !(entity instanceof ZombieVillager)) {
                             entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1));
+                        }
+                        if (ModBiomeConfig.ENABLE_PEACH_BIOME_AUTO_CURE.get() && entity instanceof ZombieVillager zombieVillager) {
+                            if (!zombieVillager.isConverting()) {
+                                zombieVillager.startConverting(null, zombieVillager.getRandom().nextInt(801) + 1200);
+                            }
+                            if (zombieVillager.isConverting()) {
+                                zombieVillager.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 80, 0));
+                            }
                         }
                     }
                 }

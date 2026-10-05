@@ -62,7 +62,10 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_LONGEVITY_FOREST_EFFECTS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_PENGLAI_EFFECTS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS_EFFECTS;
-    public static final ForgeConfigSpec.BooleanValue ENABLE_BIOME_HURT_ENEMY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_WUTONG_BIOME_HURT_ENEMY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_CAVES_BIOME_HURT_ENEMY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_PEACH_BIOME_HURT_ENEMY;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_PEACH_BIOME_AUTO_CURE;
     public static final ForgeConfigSpec.BooleanValue ENABLE_BIOME_NO_ENEMY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_MOD_FOX_SPAWN;
 
@@ -206,9 +209,18 @@ public class ModBiomeConfig {
         ENABLE_RED_HIGHLANDS_EFFECTS = BUILDER
                 .comment("是否让映山红提供效果")
                 .define("enableRedHighlandsEffects", true);
-        ENABLE_BIOME_HURT_ENEMY = BUILDER
-                .comment("是否让群系伤害敌对生物")
-                .define("enableBiomeHurtEnemy", true);
+        ENABLE_WUTONG_BIOME_HURT_ENEMY = BUILDER
+                .comment("是否让朝阳林伤害敌对生物")
+                .define("enableWutongBiomeHurtEnemy", true);
+        ENABLE_CAVES_BIOME_HURT_ENEMY = BUILDER
+                .comment("是否让紫英洞与素玉洞伤害敌对生物")
+                .define("enableCavesBiomeHurtEnemy", true);
+        ENABLE_PEACH_BIOME_HURT_ENEMY = BUILDER
+                .comment("是否让世外桃源伤害敌对生物")
+                .define("enablePeachBiomeHurtEnemy", true);
+        ENABLE_PEACH_BIOME_AUTO_CURE = BUILDER
+                .comment("是否让世外桃源疗愈僵尸村民")
+                .define("enablePeachBiomeAutoCure", true);
         ENABLE_BIOME_NO_ENEMY = BUILDER
                 .comment("是否让群系不生成敌对生物")
                 .define("enableBiomeNoEnemy", true);
