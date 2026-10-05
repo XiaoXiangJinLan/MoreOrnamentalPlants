@@ -3,7 +3,9 @@ package com.jinlan.moreornplants.datagen;
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.*;
+import com.jinlan.moreornplants.block.foodBlock.CrabapplePlateBlock;
 import com.jinlan.moreornplants.block.foodBlock.FruitPlateBlock;
+import com.jinlan.moreornplants.block.foodBlock.PeachPlateBlock;
 import com.jinlan.moreornplants.block.xiangnangBlocks.MeiXiangnangBlock;
 import com.jinlan.moreornplants.block.ModBlocks;
 import net.minecraft.core.Direction;
@@ -605,8 +607,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fruitBlock(ModBlocks.CLOUD_APRICOT, "peach", "peach");
         fruitBlock(ModBlocks.IMMORTAL_PEACH, "peach", "peach");
         fruitBlock(ModBlocks.GOLDEN_MEI, "mei_fruit", "mei");
-        fruitPlateBlock(ModBlocks.CRABAPPLE_PLATE, "crabapple_plate", "crabapple", "crabapple_age_1");
-        fruitPlateBlock(ModBlocks.GOLDEN_CRABAPPLE_PLATE, "crabapple_plate", "crabapple", "golden_crabapple_age_1");
+        crabapplePlateBlock(ModBlocks.CRABAPPLE_PLATE, "crabapple_age_1");
+        crabapplePlateBlock(ModBlocks.GOLDEN_CRABAPPLE_PLATE, "golden_crabapple_age_1");
         fruitPlateBlock(ModBlocks.CLOUD_APRICOT_PLATE, "peach_plate", "peach", "cloud_apricot_age_1");
         fruitPlateBlock(ModBlocks.IMMORTAL_PEACH_PLATE, "peach_plate", "peach", "immortal_peach_age_1");
         fruitPlateBlock(ModBlocks.MEI_PLATE, "mei_fruit_plate", "mei", "mei_age_1");
@@ -1136,8 +1138,23 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void fruitPlateBlock(DeferredBlock<Block> block, String parentModelPath, String textureKey, String texture) {
         String baseName = block.getId().getPath();
-        ModelFile model = models().withExistingParent(baseName + "_standing", modLoc("block/" + parentModelPath))
+        ModelFile model = models().withExistingParent(baseName + "_counts4", modLoc("block/" + parentModelPath))
                 .texture(textureKey, modLoc("block/" + texture))
+                .texture("plate", modLoc("block/plate"))
+                .renderType("cutout");
+        ModelFile model3 = models().withExistingParent(baseName + "_counts3", modLoc("block/" + parentModelPath + "_3"))
+                .texture(textureKey, modLoc("block/" + texture))
+                .texture("plate", modLoc("block/plate"))
+                .renderType("cutout");
+        ModelFile model2 = models().withExistingParent(baseName + "_counts2", modLoc("block/" + parentModelPath + "_2"))
+                .texture(textureKey, modLoc("block/" + texture))
+                .texture("plate", modLoc("block/plate"))
+                .renderType("cutout");
+        ModelFile model1 = models().withExistingParent(baseName + "_counts1", modLoc("block/" + parentModelPath + "_1"))
+                .texture(textureKey, modLoc("block/" + texture))
+                .texture("plate", modLoc("block/plate"))
+                .renderType("cutout");
+        ModelFile model0 = models().withExistingParent(baseName + "_counts0", modLoc("block/plate"))
                 .texture("plate", modLoc("block/plate"))
                 .renderType("cutout");
         for (Direction direction : Direction.Plane.HORIZONTAL) {
@@ -1149,10 +1166,54 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 default -> rotationY = 0;
             }
             getVariantBuilder(block.get())
-                    .partialState().with(FruitPlateBlock.FACING, direction)
-                    .modelForState().modelFile(model).rotationY(rotationY).addModel();
+                    .partialState().with(FruitPlateBlock.FACING, direction).with(PeachPlateBlock.COUNTS, 4)
+                    .modelForState().modelFile(model).rotationY(rotationY).addModel()
+                    .partialState().with(FruitPlateBlock.FACING, direction).with(PeachPlateBlock.COUNTS, 3)
+                    .modelForState().modelFile(model3).rotationY(rotationY).addModel()
+                    .partialState().with(FruitPlateBlock.FACING, direction).with(PeachPlateBlock.COUNTS, 2)
+                    .modelForState().modelFile(model2).rotationY(rotationY).addModel()
+                    .partialState().with(FruitPlateBlock.FACING, direction).with(PeachPlateBlock.COUNTS, 1)
+                    .modelForState().modelFile(model1).rotationY(rotationY).addModel()
+                    .partialState().with(FruitPlateBlock.FACING, direction).with(PeachPlateBlock.COUNTS, 0)
+                    .modelForState().modelFile(model0).rotationY(rotationY).addModel();
         }
-        simpleBlockItem(block.get(), model);
+    }
+
+    private void crabapplePlateBlock(DeferredBlock<Block> block, String texture) {
+        String baseName = block.getId().getPath();
+        ModelFile model = models().withExistingParent(baseName + "_counts3", modLoc("block/crabapple_plate"))
+                .texture("crabapple", modLoc("block/" + texture))
+                .texture("plate", modLoc("block/plate"))
+                .renderType("cutout");
+        ModelFile model2 = models().withExistingParent(baseName + "_counts2", modLoc("block/crabapple_plate_2"))
+                .texture("crabapple", modLoc("block/" + texture))
+                .texture("plate", modLoc("block/plate"))
+                .renderType("cutout");
+        ModelFile model1 = models().withExistingParent(baseName + "_counts1", modLoc("block/crabapple_plate_1"))
+                .texture("crabapple", modLoc("block/" + texture))
+                .texture("plate", modLoc("block/plate"))
+                .renderType("cutout");
+        ModelFile model0 = models().withExistingParent(baseName + "_counts0", modLoc("block/plate"))
+                .texture("plate", modLoc("block/plate"))
+                .renderType("cutout");
+        for (Direction direction : Direction.Plane.HORIZONTAL) {
+            int rotationY;
+            switch (direction) {
+                case EAST -> rotationY = 90;
+                case SOUTH -> rotationY = 180;
+                case WEST -> rotationY = 270;
+                default -> rotationY = 0;
+            }
+            getVariantBuilder(block.get())
+                    .partialState().with(FruitPlateBlock.FACING, direction).with(CrabapplePlateBlock.COUNTS, 3)
+                    .modelForState().modelFile(model).rotationY(rotationY).addModel()
+                    .partialState().with(FruitPlateBlock.FACING, direction).with(CrabapplePlateBlock.COUNTS, 2)
+                    .modelForState().modelFile(model2).rotationY(rotationY).addModel()
+                    .partialState().with(FruitPlateBlock.FACING, direction).with(CrabapplePlateBlock.COUNTS, 1)
+                    .modelForState().modelFile(model1).rotationY(rotationY).addModel()
+                    .partialState().with(FruitPlateBlock.FACING, direction).with(CrabapplePlateBlock.COUNTS, 0)
+                    .modelForState().modelFile(model0).rotationY(rotationY).addModel();
+        }
     }
 
     private void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {

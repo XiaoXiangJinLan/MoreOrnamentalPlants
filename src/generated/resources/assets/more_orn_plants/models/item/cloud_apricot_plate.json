@@ -1,3 +1,6 @@
 {
-  "parent": "more_orn_plants:block/cloud_apricot_plate_standing"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "more_orn_plants:item/cloud_apricot_plate"
+  }
 }

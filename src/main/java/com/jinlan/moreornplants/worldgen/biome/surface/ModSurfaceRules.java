@@ -10,6 +10,7 @@ public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource SAND = SurfaceRules.state(Blocks.SAND.defaultBlockState());
     private static final SurfaceRules.RuleSource SANDSTONE = SurfaceRules.state(Blocks.SANDSTONE.defaultBlockState());
     private static final SurfaceRules.RuleSource GOLD_SAND = SurfaceRules.state(ModBlocks.GOLD_SAND.get().defaultBlockState());
+    private static final SurfaceRules.RuleSource RAW_GOLD_BLOCK = SurfaceRules.state(Blocks.RAW_GOLD_BLOCK.defaultBlockState());
     private static final SurfaceRules.RuleSource MUD = SurfaceRules.state(Blocks.MUD.defaultBlockState());
     private static final SurfaceRules.RuleSource WATER = SurfaceRules.state(Blocks.WATER.defaultBlockState());
 
@@ -41,12 +42,15 @@ public class ModSurfaceRules {
         SurfaceRules.RuleSource goldCountryRules = SurfaceRules.ifTrue(isGoldCountry,
                 SurfaceRules.sequence(
                         SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR,
-                                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, SANDSTONE), GOLD_SAND)),
+                                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, RAW_GOLD_BLOCK), GOLD_SAND)),
                         SurfaceRules.ifTrue(SurfaceRules.UNDER_FLOOR, GOLD_SAND),
-                        SurfaceRules.ifTrue(SurfaceRules.VERY_DEEP_UNDER_FLOOR, SANDSTONE)
+                        SurfaceRules.ifTrue(SurfaceRules.VERY_DEEP_UNDER_FLOOR, RAW_GOLD_BLOCK)
                 )
         );
 
-        return SurfaceRules.sequence(desertRules, yunmengMarshRules, goldCountryRules);
+        return SurfaceRules.ifTrue(
+                SurfaceRules.abovePreliminarySurface(),
+                SurfaceRules.sequence(desertRules, yunmengMarshRules, goldCountryRules)
+        );
     }
 }
