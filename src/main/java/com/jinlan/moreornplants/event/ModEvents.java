@@ -396,7 +396,7 @@ public class ModEvents {
                     itemstack.shrink(1);
                 }
                 if (!event.getLevel().isClientSide) {
-                    zombieVillager.startConverting(event.getEntity().getUUID(), zombieVillager.getRandom().nextInt(1201) + 2400);
+                    zombieVillager.startConverting(event.getEntity().getUUID(), zombieVillager.getRandom().nextInt(1201) + 1800);
                 }
                 event.setCancellationResult(InteractionResult.SUCCESS);
             } else {
