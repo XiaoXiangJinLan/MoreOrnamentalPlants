@@ -523,6 +523,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         swordItem(ModItems.ZHUIYUE_SWORD);
         swordItem(ModItems.CAIYUN_SWORD);
         swordItem(ModItems.BAIHUA_SWORD);
+
+        evenSimplerBlockItem(ModBlocks.MUXUE_GRASS_BLOCK);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

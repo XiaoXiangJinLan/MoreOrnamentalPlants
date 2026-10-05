@@ -328,12 +328,16 @@ public class MoreOrnPlants
             ComposterBlock.COMPOSTABLES.put(ModBlocks.LOTUS_LEAF.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.HARDY_BANANA.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModBlocks.MUXUE_GRASS.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.TALL_MUXUE_GRASS.get().asItem(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.CRABAPPLE.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.MEI.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.LOTUS_ROOT.get(), 0.65F);
             ComposterBlock.COMPOSTABLES.put(ModItems.PEELED_BAMBOO_SHOOTS.get(), 0.65F);
 
             ComposterBlock.COMPOSTABLES.put(ModBlocks.MISCANTHUS.get().asItem(), 0.85F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.MUXUE_GRASS_BALE.get().asItem(), 0.85F);
+
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.MUXUE_GRASS_BLOCK.get().asItem(), 0.95F);
         });
 
         initCuttingMap();

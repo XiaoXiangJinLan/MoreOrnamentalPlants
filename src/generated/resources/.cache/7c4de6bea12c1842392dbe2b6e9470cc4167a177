@@ -1,4 +1,4 @@
-// 1.20.1	2026-10-04T14:19:45.0977273	Tags for minecraft:block mod id more_orn_plants
+// 1.20.1	2026-10-05T21:04:49.1015335	Tags for minecraft:block mod id more_orn_plants
 7eaba370c999899868d92cf679b93b76bd3b0fc2 data/forge/tags/blocks/fences/wooden.json
 3438b38250db22cd0d38e3d0b022607b112b819d data/forge/tags/blocks/fence_gates/wooden.json
 03b0f5a11ed9ffe99eeaa7b86840233f2320f7e5 data/forge/tags/blocks/stripped_logs.json
@@ -16,7 +16,7 @@ e6a3f68a62c42fb7ca72b217e859d8eaef4750dc data/minecraft/tags/blocks/flowers.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/blocks/lush_ground_replaceable.json
 3b16affb22cf92d885490aaa56e7c632d7b7bfa1 data/minecraft/tags/blocks/maintains_farmland.json
 b83faffe4aa7b1f3064cd184f1aa4b8fe479170c data/minecraft/tags/blocks/mineable/axe.json
-1aa6ca7d2d3d6920e0261beb71fab8ebcef952ac data/minecraft/tags/blocks/mineable/hoe.json
+09b4f7529af669e4a7de0be0cb68e02af2e3fe47 data/minecraft/tags/blocks/mineable/hoe.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/blocks/mineable/shovel.json
 ad8f13ff44756682b3fb20a0ed2c52f6b4dc401a data/minecraft/tags/blocks/moss_replaceable.json
 31dbb2f2f136298e59f2bb57a398fc358867fd43 data/minecraft/tags/blocks/overworld_natural_logs.json
