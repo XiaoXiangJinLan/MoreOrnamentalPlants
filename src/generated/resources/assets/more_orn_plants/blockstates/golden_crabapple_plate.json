@@ -1,18 +1,63 @@
 {
   "variants": {
-    "facing=east": {
-      "model": "more_orn_plants:block/golden_crabapple_plate_standing",
+    "counts=0,facing=east": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts0",
       "y": 90
     },
-    "facing=north": {
-      "model": "more_orn_plants:block/golden_crabapple_plate_standing"
+    "counts=0,facing=north": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts0"
     },
-    "facing=south": {
-      "model": "more_orn_plants:block/golden_crabapple_plate_standing",
+    "counts=0,facing=south": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts0",
       "y": 180
     },
-    "facing=west": {
-      "model": "more_orn_plants:block/golden_crabapple_plate_standing",
+    "counts=0,facing=west": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts0",
+      "y": 270
+    },
+    "counts=1,facing=east": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts1",
+      "y": 90
+    },
+    "counts=1,facing=north": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts1"
+    },
+    "counts=1,facing=south": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts1",
+      "y": 180
+    },
+    "counts=1,facing=west": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts1",
+      "y": 270
+    },
+    "counts=2,facing=east": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts2",
+      "y": 90
+    },
+    "counts=2,facing=north": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts2"
+    },
+    "counts=2,facing=south": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts2",
+      "y": 180
+    },
+    "counts=2,facing=west": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts2",
+      "y": 270
+    },
+    "counts=3,facing=east": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts3",
+      "y": 90
+    },
+    "counts=3,facing=north": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts3"
+    },
+    "counts=3,facing=south": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts3",
+      "y": 180
+    },
+    "counts=3,facing=west": {
+      "model": "more_orn_plants:block/golden_crabapple_plate_counts3",
       "y": 270
     }
   }

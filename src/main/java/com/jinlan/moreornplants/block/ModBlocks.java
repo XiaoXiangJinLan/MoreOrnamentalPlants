@@ -10,9 +10,7 @@ import com.jinlan.moreornplants.block.LeavesBlocks.*;
 import com.jinlan.moreornplants.block.WaterPlantsBlock.MuxueGrassBlock;
 import com.jinlan.moreornplants.block.WaterPlantsBlock.TallMuxueGrassBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.*;
-import com.jinlan.moreornplants.block.foodBlock.FruitPlateBlock;
-import com.jinlan.moreornplants.block.foodBlock.MuxueSoupBlock;
-import com.jinlan.moreornplants.block.foodBlock.SoupBlock;
+import com.jinlan.moreornplants.block.foodBlock.*;
 import com.jinlan.moreornplants.block.saplingBlocks.*;
 import com.jinlan.moreornplants.block.xiangnangBlocks.*;
 import com.jinlan.moreornplants.item.ModItems;
@@ -185,17 +183,17 @@ public class ModBlocks {
     public static final RegistryObject<Block> GOLDEN_MEI =
             BLOCKS.register("golden_mei", () -> new MeiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).noCollission().instabreak().sound(SoundType.SWEET_BERRY_BUSH).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 10)));
     public static final RegistryObject<Block> CRABAPPLE_PLATE =
-            registerBlock("crabapple_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+            registerBlock("crabapple_plate", () -> new CrabapplePlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GOLDEN_CRABAPPLE_PLATE =
-            registerBlock("golden_crabapple_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 15)));
+            registerBlock("golden_crabapple_plate", () -> new GoldenCrabapplePlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 15)));
     public static final RegistryObject<Block> CLOUD_APRICOT_PLATE =
-            registerBlock("cloud_apricot_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+            registerBlock("cloud_apricot_plate", () -> new ApricotPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> IMMORTAL_PEACH_PLATE =
-            registerBlock("immortal_peach_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+            registerBlock("immortal_peach_plate", () -> new PeachPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> MEI_PLATE =
-            registerBlock("mei_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
+            registerBlock("mei_plate", () -> new MeiPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> GOLDEN_MEI_PLATE =
-            registerBlock("golden_mei_plate", () -> new FruitPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 15)));
+            registerBlock("golden_mei_plate", () -> new GoldenMeiPlateBlock(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY).lightLevel(p_220867_ -> 15)));
 
     public static final RegistryObject<Block> CHINESE_WISTERIA =
             registerBlock("chinese_wisteria", () -> new WisteriaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).noCollission().instabreak().sound(SoundType.CAVE_VINES).pushReaction(PushReaction.DESTROY)));

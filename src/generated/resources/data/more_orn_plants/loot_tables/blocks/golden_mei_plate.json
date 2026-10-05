@@ -5,13 +5,88 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "minecraft:survives_explosion"
+          "block": "more_orn_plants:golden_mei_plate",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "counts": "4"
+          }
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "more_orn_plants:golden_mei_plate"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "more_orn_plants:golden_mei_plate",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "counts": "3"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 3.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "more_orn_plants:golden_mei"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "more_orn_plants:golden_mei_plate",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "counts": "2"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "more_orn_plants:golden_mei"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "more_orn_plants:golden_mei_plate",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "counts": "1"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "more_orn_plants:golden_mei"
         }
       ],
       "rolls": 1.0

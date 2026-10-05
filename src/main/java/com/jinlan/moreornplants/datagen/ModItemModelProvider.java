@@ -460,6 +460,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GOLDEN_MEI);
         simpleItem(ModItems.MUXUE_GRASS_BALE);
         simpleItem(ModItems.MUXUE_SOUP);
+        simplerBlockItem(ModBlocks.CRABAPPLE_PLATE);
+        simplerBlockItem(ModBlocks.GOLDEN_CRABAPPLE_PLATE);
+        simplerBlockItem(ModBlocks.CLOUD_APRICOT_PLATE);
+        simplerBlockItem(ModBlocks.IMMORTAL_PEACH_PLATE);
+        simplerBlockItem(ModBlocks.MEI_PLATE);
+        simplerBlockItem(ModBlocks.GOLDEN_MEI_PLATE);
 
         simplerBlockItem(ModBlocks.PEACH_PINK_PETALS);
         simplerBlockItem(ModBlocks.FRAGRANT_SNOW_PETALS);

@@ -3,11 +3,14 @@ package com.jinlan.moreornplants.datagen.loot;
 import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
+import com.jinlan.moreornplants.block.foodBlock.CrabapplePlateBlock;
+import com.jinlan.moreornplants.block.foodBlock.PeachPlateBlock;
 import com.jinlan.moreornplants.block.foodBlock.SoupBlock;
 import com.jinlan.moreornplants.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -1149,12 +1152,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         for (Block soup : soups) {
             this.add(soup, block -> createSoupDrops(soup));
         }
-        this.dropSelf(ModBlocks.CRABAPPLE_PLATE.get());
-        this.dropSelf(ModBlocks.GOLDEN_CRABAPPLE_PLATE.get());
-        this.dropSelf(ModBlocks.CLOUD_APRICOT_PLATE.get());
-        this.dropSelf(ModBlocks.IMMORTAL_PEACH_PLATE.get());
-        this.dropSelf(ModBlocks.MEI_PLATE.get());
-        this.dropSelf(ModBlocks.GOLDEN_MEI_PLATE.get());
+        this.add(ModBlocks.CRABAPPLE_PLATE.get(), block -> createCrabapplePlateDrops(ModBlocks.CRABAPPLE_PLATE.get(), ModItems.CRABAPPLE.get()));
+        this.add(ModBlocks.GOLDEN_CRABAPPLE_PLATE.get(), block -> createCrabapplePlateDrops(ModBlocks.GOLDEN_CRABAPPLE_PLATE.get(), ModItems.GOLDEN_CRABAPPLE.get()));
+        this.add(ModBlocks.CLOUD_APRICOT_PLATE.get(), block -> createFruitPlateDrops(ModBlocks.CLOUD_APRICOT_PLATE.get(), ModItems.CLOUD_APRICOT.get()));
+        this.add(ModBlocks.IMMORTAL_PEACH_PLATE.get(), block -> createFruitPlateDrops(ModBlocks.IMMORTAL_PEACH_PLATE.get(), ModItems.IMMORTAL_PEACH.get()));
+        this.add(ModBlocks.MEI_PLATE.get(), block -> createFruitPlateDrops(ModBlocks.MEI_PLATE.get(), ModItems.MEI.get()));
+        this.add(ModBlocks.GOLDEN_MEI_PLATE.get(), block -> createFruitPlateDrops(ModBlocks.GOLDEN_MEI_PLATE.get(), ModItems.GOLDEN_MEI.get()));
     }
 
     protected LootTable.Builder createWeepingMeiPlantDrops(Block plantBlock, Block flowerBlock, Block saplingBlock, float... saplingChances) {
@@ -1248,6 +1251,52 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                         .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(soupBlock)
                                 .setProperties(StatePropertiesPredicate.Builder.properties()
                                         .hasProperty(SoupBlock.BITES, 2))));
+    }
+
+    private LootTable.Builder createFruitPlateDrops(Block fruitPlateBlock, Item fruitItem) {
+        return LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(fruitPlateBlock.asItem()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(fruitPlateBlock)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachPlateBlock.COUNTS, 4))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(fruitItem)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(3))))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(fruitPlateBlock)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachPlateBlock.COUNTS, 3))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(fruitItem)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2))))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(fruitPlateBlock)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachPlateBlock.COUNTS, 2))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(fruitItem))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(fruitPlateBlock)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(PeachPlateBlock.COUNTS, 1))));
+    }
+
+    private LootTable.Builder createCrabapplePlateDrops(Block crabapplePlateBlock, Item fruitItem) {
+        return LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(crabapplePlateBlock.asItem()))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(crabapplePlateBlock)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(CrabapplePlateBlock.COUNTS, 3))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(fruitItem)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2))))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(crabapplePlateBlock)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(CrabapplePlateBlock.COUNTS, 2))))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(fruitItem))
+                        .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(crabapplePlateBlock)
+                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                        .hasProperty(CrabapplePlateBlock.COUNTS, 1))));
     }
 
     @Override

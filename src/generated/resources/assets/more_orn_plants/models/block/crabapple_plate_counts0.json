@@ -1,0 +1,7 @@
+{
+  "parent": "more_orn_plants:block/plate",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plate": "more_orn_plants:block/plate"
+  }
+}

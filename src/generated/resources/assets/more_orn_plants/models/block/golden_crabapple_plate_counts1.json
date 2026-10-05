@@ -1,0 +1,8 @@
+{
+  "parent": "more_orn_plants:block/crabapple_plate_1",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "crabapple": "more_orn_plants:block/golden_crabapple_age_1",
+    "plate": "more_orn_plants:block/plate"
+  }
+}
