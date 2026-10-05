@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-05T00:56:29.5576541	Loot Tables
+// 1.21.1	2026-10-05T17:48:18.3312647	Loot Tables
 9bd100ddc44a910aa4eca8eb5c99051f6dbb99a5 data/more_orn_plants/loot_table/blocks/apricot_button.json
 29ad296f9e5d5657f956312dd73126e53be96aa7 data/more_orn_plants/loot_table/blocks/apricot_door.json
 2555d27e581c071a3f86a0a8415b3dd543b8d640 data/more_orn_plants/loot_table/blocks/apricot_fence.json
@@ -315,6 +315,7 @@ f3afb2219818ed3821493d8382a6655f900e55bd data/more_orn_plants/loot_table/blocks/
 b28a8dd01334ca0804941a5f106e16208eee8640 data/more_orn_plants/loot_table/blocks/mottled_bamboo.json
 57cfbabd4f56e68b176d31f8874edf9337156d07 data/more_orn_plants/loot_table/blocks/mottled_bamboo_sapling.json
 0bca0ccade4aa378352cb10aaca2c33bec6ef7ae data/more_orn_plants/loot_table/blocks/muxue_grass.json
+c4d88ff982f463fef7ac11ae1900505a1cd5302d data/more_orn_plants/loot_table/blocks/muxue_grass_block.json
 f5f3a084cdabd7a3adbb96781eb93b26d6282861 data/more_orn_plants/loot_table/blocks/muxue_soup.json
 350f375b6199d92eada75dc55366d0e5f4d94353 data/more_orn_plants/loot_table/blocks/nanjing_wisteria.json
 fcf4adf02a00561f15ea7e12a474a3a625e5efd4 data/more_orn_plants/loot_table/blocks/nanjing_wisteria_plant.json

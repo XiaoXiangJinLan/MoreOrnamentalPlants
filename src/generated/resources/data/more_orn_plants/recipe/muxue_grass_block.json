@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "more_orn_plants:muxue_grass_bale"
+    },
+    {
+      "item": "more_orn_plants:muxue_grass_bale"
+    },
+    {
+      "item": "more_orn_plants:muxue_grass_bale"
+    },
+    {
+      "item": "more_orn_plants:muxue_grass_bale"
+    },
+    {
+      "item": "more_orn_plants:muxue_grass_bale"
+    },
+    {
+      "item": "more_orn_plants:muxue_grass_bale"
+    },
+    {
+      "item": "more_orn_plants:muxue_grass_bale"
+    },
+    {
+      "item": "more_orn_plants:muxue_grass_bale"
+    },
+    {
+      "item": "more_orn_plants:muxue_grass_bale"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_orn_plants:muxue_grass_block"
+  }
+}

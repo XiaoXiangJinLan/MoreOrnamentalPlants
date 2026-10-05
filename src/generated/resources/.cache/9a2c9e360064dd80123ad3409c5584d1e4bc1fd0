@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-04T22:45:59.3674371	Item Models: more_orn_plants
+// 1.21.1	2026-10-05T17:48:18.3221826	Item Models: more_orn_plants
 b5ab60cbe0ebae4015f813be60b0031661f3ad49 assets/more_orn_plants/models/item/apricot_boat.json
 834c54e5d315e863faf39c12f26f2d5eddc2af18 assets/more_orn_plants/models/item/apricot_button.json
 ca0df73248c0b949fcc2ba9a51d5328ffea02220 assets/more_orn_plants/models/item/apricot_chest_boat.json
@@ -262,6 +262,7 @@ d8245a08c5a9f13674a5cdd2c6c28f2dccb7d817 assets/more_orn_plants/models/item/mayi
 c8dd95d8f382dd745659f51c1eb07a18b4f965dc assets/more_orn_plants/models/item/mottled_bamboo.json
 0242d0029c1a73b333ad6300af76e9b60a203e76 assets/more_orn_plants/models/item/muxue_grass.json
 8feae5d6f5e07153b9757b7910fd8086ac0d4390 assets/more_orn_plants/models/item/muxue_grass_bale.json
+05e84be49d242d6c6a0a5f3860abfd48a08bc2e4 assets/more_orn_plants/models/item/muxue_grass_block.json
 90d3b53e303cd05757a94df4d89019ae42fc85b9 assets/more_orn_plants/models/item/muxue_soup.json
 d9512b5ee86f29985512c77d3c3aefa4559efd2f assets/more_orn_plants/models/item/nanjing_wisteria.json
 dd702884fcb105def37fa9ac8df611cef07d24c5 assets/more_orn_plants/models/item/ochre_yellow_peony.json

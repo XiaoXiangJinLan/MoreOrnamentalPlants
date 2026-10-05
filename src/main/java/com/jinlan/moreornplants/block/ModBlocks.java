@@ -1602,6 +1602,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MUXUE_SOUP =
             BLOCKS.register("muxue_soup", () -> new MuxueSoupBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
 
+    public static final DeferredBlock<Block> MUXUE_GRASS_BLOCK =
+            registerBlock("muxue_grass_block", () -> new HayBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).mapColor(MapColor.SNOW)));
+
     private static Block log(MapColor topMapColor, MapColor sideMapColor) {
         return new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(p_152624_ -> p_152624_.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor)
                         .instrument(NoteBlockInstrument.BASS).strength(2.0F).sound(SoundType.WOOD).ignitedByLava());

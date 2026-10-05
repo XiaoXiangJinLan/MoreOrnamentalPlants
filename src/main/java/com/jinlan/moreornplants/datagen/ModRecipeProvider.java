@@ -1479,5 +1479,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.GOLDEN_MEI_PLATE)
                 .unlockedBy(getHasName(ModBlocks.GOLDEN_MEI_PLATE), has(ModBlocks.GOLDEN_MEI_PLATE))
                 .save(recipeOutput, MoreOrnPlants.MODID + ":" + "golden_mei_from_golden_mei_plate");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MUXUE_GRASS_BLOCK)
+                .requires(ModItems.MUXUE_GRASS_BALE, 9)
+                .unlockedBy(getHasName(ModItems.MUXUE_GRASS_BALE), has(ModItems.MUXUE_GRASS_BALE))
+                .save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MUXUE_GRASS_BALE, 9)
+                .requires(ModBlocks.MUXUE_GRASS_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.MUXUE_GRASS_BLOCK), has(ModBlocks.MUXUE_GRASS_BLOCK))
+                .save(recipeOutput, MoreOrnPlants.MODID + ":" + "muxue_grass_bale_from_muxue_grass_block");
     }
 }

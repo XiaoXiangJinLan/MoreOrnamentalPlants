@@ -698,6 +698,9 @@
     },
     "more_orn_plants:muxue_grass_bale": {
       "chance": 0.85
+    },
+    "more_orn_plants:muxue_grass_block": {
+      "chance": 0.95
     }
   }
 }

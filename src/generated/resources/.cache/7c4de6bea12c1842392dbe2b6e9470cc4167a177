@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-04T13:16:43.9060693	Tags for minecraft:block mod id more_orn_plants
+// 1.21.1	2026-10-05T17:48:18.3177369	Tags for minecraft:block mod id more_orn_plants
 51fb7582a125cee46039e1c7f17e6d07c3db7d63 data/c/tags/block/apricot_leaves.json
 aef1a8dd14084e2835fc9025196586ca0cf0f545 data/c/tags/block/apricot_sapling.json
 b3bd8f768976738594784c7afc484b2d9ada6e33 data/c/tags/block/azalea.json
@@ -52,7 +52,7 @@ eaefab38b3d6c2e328fc57fd46cb4fd498bc77fc data/minecraft/tags/block/flower_pots.j
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/block/lush_ground_replaceable.json
 02563b1c740984a58e80cf30252042ce86fe978e data/minecraft/tags/block/maintains_farmland.json
 79c12ec201ba901a5415c2e4473890f24bbaed12 data/minecraft/tags/block/mineable/axe.json
-ee3561080ab6811885599f461af1cc6ab41d7d39 data/minecraft/tags/block/mineable/hoe.json
+1e08abda5205be48057e4660708bd468a87e96a9 data/minecraft/tags/block/mineable/hoe.json
 b23dc07826c17fe7795f7684efbaa97c5b2b03fd data/minecraft/tags/block/mineable/pickaxe.json
 243770dc57b976a7fcc137ee05c27a01d2097e16 data/minecraft/tags/block/mineable/shovel.json
 9442dca413ac0c28713babfb85e8718f81f4da5c data/minecraft/tags/block/moss_replaceable.json

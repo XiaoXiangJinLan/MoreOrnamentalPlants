@@ -523,6 +523,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ZHUIYUE_SWORD.get());
         handheldItem(ModItems.CAIYUN_SWORD.get());
         handheldItem(ModItems.BAIHUA_SWORD.get());
+
+        evenSimplerBlockItem(ModBlocks.MUXUE_GRASS_BLOCK);
     }
 
     private void saplingItem(DeferredBlock<Block> item) {

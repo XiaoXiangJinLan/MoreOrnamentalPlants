@@ -223,7 +223,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(CommonTags.Blocks.RHODODENDRON_LEAVES)
                 .addTag(CommonTags.Blocks.CAMELLIA_LEAVES)
                 .add(ModBlocks.PEACH_PINK_PETALS.get(), ModBlocks.FRAGRANT_SNOW_PETALS.get(), ModBlocks.SPRING_PETALS.get())
-                .add(ModBlocks.WOOD_SORREL.get(), ModBlocks.PINK_WOOD_SORREL.get(), ModBlocks.WHITE_WOOD_SORREL.get(), ModBlocks.ORANGE_WOOD_SORREL.get());
+                .add(ModBlocks.WOOD_SORREL.get(), ModBlocks.PINK_WOOD_SORREL.get(), ModBlocks.WHITE_WOOD_SORREL.get(), ModBlocks.ORANGE_WOOD_SORREL.get())
+                .add(ModBlocks.MUXUE_GRASS_BLOCK.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .addTag(ModTags.Blocks.RED_MEI_LOGS)

@@ -436,10 +436,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.LOTUS_ROOT_SOUP.get());
 
         this.tag(ItemTags.AXOLOTL_FOOD)
-                .add(ModBlocks.MUXUE_GRASS.asItem(), ModBlocks.TALL_MUXUE_GRASS.asItem(), ModItems.MUXUE_GRASS_BALE.get());
+                .add(ModBlocks.MUXUE_GRASS.asItem(), ModBlocks.TALL_MUXUE_GRASS.asItem(), ModItems.MUXUE_GRASS_BALE.get(), ModBlocks.MUXUE_GRASS_BLOCK.asItem());
 
         this.tag(ItemTags.TURTLE_FOOD)
-                .add(ModBlocks.MUXUE_GRASS.asItem(), ModBlocks.TALL_MUXUE_GRASS.asItem(), ModItems.MUXUE_GRASS_BALE.get());
+                .add(ModBlocks.MUXUE_GRASS.asItem(), ModBlocks.TALL_MUXUE_GRASS.asItem(), ModItems.MUXUE_GRASS_BALE.get(), ModBlocks.MUXUE_GRASS_BLOCK.asItem());
 
         this.tag(ModTags.Items.ZIYING_TOOLS)
                 .add(ModItems.ZIYING_SWORD.get(), ModItems.ZIYING_AXE.get(), ModItems.ZIYING_PICKAXE.get(),
