@@ -282,6 +282,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_GALLERY_PLACED = registerKey("black_bamboo_gallery_placed");
     public static final ResourceKey<PlacedFeature> BLACK_BAMBOO_SAPLING_PLACED = registerKey("black_bamboo_sapling_placed");
     public static final ResourceKey<PlacedFeature> BAMBOO_PLACED = registerKey("bamboo_placed");
+    public static final ResourceKey<PlacedFeature> BAMBOO_PEACH_PLACED = registerKey("bamboo_peach_placed");
     public static final ResourceKey<PlacedFeature> LOTUS_PLACED = registerKey("lotus_placed");
     public static final ResourceKey<PlacedFeature> LOTUS_RIVER_PLACED = registerKey("lotus_river_placed");
     public static final ResourceKey<PlacedFeature> HOLLYHOCK_GROVE_PLACED = registerKey("hollyhock_grove_placed");
@@ -591,9 +592,11 @@ public class ModPlacedFeatures {
         register(context, PEACH_PINK_PETALS_PATCH_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.PEACH_PINK_PETALS_PATCH),
                 List.of(NoiseThresholdCountPlacement.of(-0.8, 4, 8), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, SMALL_FLOWERS_PEACH_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.SMALL_FLOWERS_PEACH),
-                List.of(RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
-        register(context, TALL_FLOWERS_PEACH_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.TALL_FLOWERS_PEACH),
                 List.of(RarityFilter.onAverageOnceEvery(2), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, TALL_FLOWERS_PEACH_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.TALL_FLOWERS_PEACH),
+                List.of(RarityFilter.onAverageOnceEvery(3), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, BAMBOO_PEACH_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.BAMBOO_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PEACH_PETALS, configuredFeatures.getOrThrow(ModVegetationFeatures.PEACH_PETALS),
                 List.of(CountPlacement.of(3), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
