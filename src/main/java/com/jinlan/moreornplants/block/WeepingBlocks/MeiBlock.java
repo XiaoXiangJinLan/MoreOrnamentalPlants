@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraftforge.common.ForgeHooks;
 import org.jetbrains.annotations.NotNull;
 
 public class MeiBlock extends PeachBlock {
@@ -29,8 +30,10 @@ public class MeiBlock extends PeachBlock {
         boolean isCorrectBiome = level.getBiome(pos).is(ModTags.Biomes.MEI_BEARING);
         if (age < 1) {
             int growthChance = isCorrectBiome ? 3 : 1;
-            if (random.nextInt(5) < growthChance) {
+            boolean shouldGrow = random.nextInt(5) < growthChance;
+            if (ForgeHooks.onCropsGrowPre(level, pos, state, shouldGrow)) {
                 level.setBlock(pos, state.setValue(AGE, age + 1), 3);
+                ForgeHooks.onCropsGrowPost(level, pos, state);
             }
         }
     }

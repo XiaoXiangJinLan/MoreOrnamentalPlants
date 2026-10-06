@@ -2,6 +2,8 @@ package com.jinlan.moreornplants.event;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
 import com.jinlan.moreornplants.advancement.ModCriteriaTriggers;
+import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
+import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
 import com.jinlan.moreornplants.config.ModBiomeConfig;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.init.ModParticleTypes;
@@ -9,8 +11,10 @@ import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ForgeTags;
 import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
@@ -35,6 +39,10 @@ import net.minecraft.world.entity.raid.Raider;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
@@ -42,15 +50,18 @@ import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.living.MobSpawnEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.List;
 import java.util.UUID;
 
 @Mod.EventBusSubscriber(modid = MoreOrnPlants.MOD_ID)
 public class ModEvents {
     private static final UUID LONGEVITY_BOOST_UUID = UUID.nameUUIDFromBytes("more_orn_plants:longevity_health".getBytes(java.nio.charset.StandardCharsets.UTF_8));
     private static final float LONGEVITY_EXTRA_HEALTH = 10.0F;
+    private static final ThreadLocal<Integer> EXTRA_GROWTH = ThreadLocal.withInitial(() -> 0);
 
     @SubscribeEvent
     public static void onEntityJoinLevel(EntityJoinLevelEvent event) {
@@ -109,14 +120,19 @@ public class ModEvents {
         ItemStack weapon = player.getMainHandItem();
         LivingEntity target1 = event.getEntity();
         InventoryState state = getInventoryState(player);
-        if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get()) && target1.isInvertedHealAndHarm()) {
-            float multiplier = 1.0f;
-            float maxHealth = target1.getMaxHealth();
-            if (maxHealth > 4.0f) {
-                multiplier = maxHealth / 2.0f;
-                event.setAmount(multiplier * (event.getAmount() - 1));
-            } else {
-                event.setAmount(multiplier * (event.getAmount() + maxHealth));
+        if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get())) {
+            if (target1 instanceof ZombieVillager zombieVillager && !zombieVillager.isConverting()) {
+                event.setAmount(event.getAmount() * 0.5f);
+                zombieVillager.startConverting(player.getUUID(), zombieVillager.getRandom().nextInt(81) + 120);
+            } else if (target1.isInvertedHealAndHarm()) {
+                float multiplier = 1.0f;
+                float maxHealth = target1.getMaxHealth();
+                if (maxHealth > 4.0f) {
+                    multiplier = maxHealth / 2.0f;
+                    event.setAmount(multiplier * (event.getAmount() - 1));
+                } else {
+                    event.setAmount(multiplier * (event.getAmount() + maxHealth));
+                }
             }
         } else if (weapon.is(ModItems.CAMPHOR_WOODEN_SWORD.get()) && target1.getMobType() == MobType.ARTHROPOD) {
             event.setAmount(event.getAmount() * ModBiomeConfig.CAMPHOR_SWORD_MULTIPLIER.get().floatValue());
@@ -295,7 +311,7 @@ public class ModEvents {
                         }
                         if (ModBiomeConfig.ENABLE_PEACH_BIOME_AUTO_CURE.get() && entity instanceof ZombieVillager zombieVillager) {
                             if (!zombieVillager.isConverting()) {
-                                zombieVillager.startConverting(null, zombieVillager.getRandom().nextInt(801) + 1200);
+                                zombieVillager.startConverting(null, zombieVillager.getRandom().nextInt(481) + 720);
                             }
                             if (zombieVillager.isConverting()) {
                                 zombieVillager.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 80, 0));
@@ -386,6 +402,60 @@ public class ModEvents {
     }
 
     @SubscribeEvent
+    public static void onCropGrowPre(BlockEvent.CropGrowEvent.Pre event) {
+        if (!ModBiomeConfig.ENABLE_BIOME_SPEED_CROP.get()) return;
+        if (!(event.getLevel() instanceof ServerLevel level)) return;
+        if (EXTRA_GROWTH.get() > 0) return;
+        BlockPos pos = event.getPos();
+        if (!level.getBiome(pos).is(ModTags.Biomes.HARVEST)) return;
+        EXTRA_GROWTH.set(1);
+        try {
+            int times = 1 + (level.getRandom().nextFloat() < 0.25f ? 1 : 0);
+            for (int i = 0; i < times; i++) {
+                event.getState().randomTick(level, event.getPos(), level.getRandom());
+            }
+        } finally {
+            EXTRA_GROWTH.set(0);
+        }
+    }
+
+    @SubscribeEvent
+    public static void onBlockBreak(BlockEvent.BreakEvent event) {
+        if (!ModBiomeConfig.ENABLE_BIOME_SPEED_CROP.get()) return;
+        if (!(event.getLevel() instanceof ServerLevel serverLevel)) return;
+        BlockPos pos = event.getPos();
+        BlockState state = serverLevel.getBlockState(pos);
+        if (state.getBlock() instanceof WaterLotusBlock && state.getValue(DoublePlantBlock.HALF) == DoubleBlockHalf.UPPER) {
+            BlockPos belowPos = pos.below();
+            BlockState belowState = serverLevel.getBlockState(belowPos);
+            if (belowState.getBlock() instanceof WaterLotusBlock && belowState.getValue(DoublePlantBlock.HALF) == DoubleBlockHalf.LOWER) {
+                pos = belowPos;
+                state = belowState;
+            }
+        }
+        if (!serverLevel.getBiome(pos).is(ModTags.Biomes.HARVEST)) return;
+        if (!isMatureCrop(state)) return;
+        Player player = event.getPlayer();
+        BlockEntity blockEntity = serverLevel.getBlockEntity(pos);
+        List<ItemStack> drops = Block.getDrops(state, serverLevel, pos, blockEntity, player, player.getMainHandItem());
+        for (ItemStack drop : drops) {
+            Block.popResource(serverLevel, pos, drop);
+        }
+    }
+
+    private static boolean isMatureCrop(BlockState state) {
+        Block block = state.getBlock();
+
+        if (block instanceof CropBlock crop) return crop.isMaxAge(state);
+        if (block instanceof NetherWartBlock) return state.getValue(NetherWartBlock.AGE) >= 3;
+        if (block instanceof SweetBerryBushBlock) return state.getValue(SweetBerryBushBlock.AGE) >= 3;
+        if (block instanceof CocoaBlock) return state.getValue(CocoaBlock.AGE) >= 2;
+        if (block instanceof WaterLotusBlock) return state.getValue(WaterLotusBlock.AGE) >= 3;
+        if (block instanceof PeachBlock) return state.getValue(PeachBlock.AGE) >= 1;
+        return false;
+    }
+
+    @SubscribeEvent
     public static void onPlayerInteractEntity(PlayerInteractEvent.EntityInteract event) {
         if (!(event.getTarget() instanceof ZombieVillager zombieVillager)) return;
 
@@ -397,6 +467,19 @@ public class ModEvents {
                 }
                 if (!event.getLevel().isClientSide) {
                     zombieVillager.startConverting(event.getEntity().getUUID(), zombieVillager.getRandom().nextInt(1201) + 1800);
+                }
+                event.setCancellationResult(InteractionResult.SUCCESS);
+            } else {
+                event.setCancellationResult(InteractionResult.CONSUME);
+            }
+        }
+        if (itemstack.is(ModItems.IMMORTAL_PEACH.get())) {
+            if (!zombieVillager.isConverting()) {
+                if (!event.getEntity().getAbilities().instabuild) {
+                    itemstack.shrink(1);
+                }
+                if (!event.getLevel().isClientSide) {
+                    zombieVillager.startConverting(event.getEntity().getUUID(), zombieVillager.getRandom().nextInt(2401) + 3600);
                 }
                 event.setCancellationResult(InteractionResult.SUCCESS);
             } else {

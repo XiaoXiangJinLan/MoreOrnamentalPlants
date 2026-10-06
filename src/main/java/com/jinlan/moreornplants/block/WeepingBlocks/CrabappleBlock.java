@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraftforge.common.ForgeHooks;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
@@ -52,8 +53,10 @@ public class CrabappleBlock extends PeachBlock {
         int age = state.getValue(AGE);
         if (age < 1) {
             int chance = level.getBiome(pos).is(ModTags.Biomes.CRABAPPLE_BEARING) ? 20 : 40;
-            if (random.nextInt(chance) == 0) {
+            boolean shouldGrow = random.nextInt(chance) == 0;
+            if (ForgeHooks.onCropsGrowPre(level, pos, state, shouldGrow)) {
                 level.setBlock(pos, state.setValue(AGE, age + 1), 3);
+                ForgeHooks.onCropsGrowPost(level, pos, state);
             }
         }
     }

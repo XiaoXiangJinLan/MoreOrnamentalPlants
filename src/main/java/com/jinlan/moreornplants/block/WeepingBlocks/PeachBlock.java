@@ -25,6 +25,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.common.ForgeHooks;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
@@ -125,8 +126,10 @@ public class PeachBlock extends Block implements BonemealableBlock {
         boolean isCorrectBiome = level.getBiome(pos).is(ModTags.Biomes.PEACH_BEARING);
         if (age < 1) {
             int growthChance = isCorrectBiome ? 5 : 1;
-            if (random.nextInt(20) < growthChance) {
+            boolean shouldGrow = random.nextInt(20) < growthChance;
+            if (ForgeHooks.onCropsGrowPre(level, pos, state, shouldGrow)) {
                 level.setBlock(pos, state.setValue(AGE, age + 1), 3);
+                ForgeHooks.onCropsGrowPost(level, pos, state);
             }
         }
     }

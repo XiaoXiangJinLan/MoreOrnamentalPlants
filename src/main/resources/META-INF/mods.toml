@@ -24,7 +24,7 @@ description='''${mod_description}'''
     side="BOTH"
 [[dependencies.${mod_id}]]
     modId="terrablender"
-    mandatory=true
+    mandatory=false
     versionRange="${terrablender_version_range}"
     ordering="NONE"
     side="BOTH"
