@@ -669,11 +669,11 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.05F, 1), ModBlocks.CAMPHOR_SAPLING.get()));
 
         register(context, RED_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.RED_CAMELLIA_KEY),
-                List.of(CountPlacement.of(8), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+                List.of(CountPlacement.of(6), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, WHITE_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.WHITE_CAMELLIA_KEY),
-                List.of(CountPlacement.of(8), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+                List.of(CountPlacement.of(6), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, PINK_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.PINK_CAMELLIA_KEY),
-                List.of(CountPlacement.of(8), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+                List.of(CountPlacement.of(6), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, TALL_RED_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.TALL_RED_CAMELLIA_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, TALL_WHITE_CAMELLIA_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.TALL_WHITE_CAMELLIA_KEY),
