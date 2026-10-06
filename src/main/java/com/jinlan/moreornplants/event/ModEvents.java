@@ -410,7 +410,7 @@ public class ModEvents {
         if (!level.getBiome(pos).is(ModTags.Biomes.HARVEST)) return;
         EXTRA_GROWTH.set(1);
         try {
-            int times = 1 + (level.getRandom().nextFloat() < 0.25f ? 1 : 0);
+            int times = 2 + (level.getRandom().nextFloat() < 0.25f ? 1 : 0);
             for (int i = 0; i < times; i++) {
                 event.getState().randomTick(level, event.getPos(), level.getRandom());
             }
