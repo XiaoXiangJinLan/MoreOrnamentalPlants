@@ -1121,6 +1121,7 @@
   "more_orn_plants.configuration.enablePeachBiomeHurtEnemy": "世外桃源攻敵",
   "more_orn_plants.configuration.enablePeachBiomeAutoCure": "世外桃源愈敵",
   "more_orn_plants.configuration.enableBiomeNoEnemy": "羣系无敵",
+  "more_orn_plants.configuration.enableBiomeSpeedCrop": "羣系催熟",
   "more_orn_plants.configuration.enableModFoxSpawn": "生狐否",
 
   "more_orn_plants.configuration.Particle Settings": "落英",

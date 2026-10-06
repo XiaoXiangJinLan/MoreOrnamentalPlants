@@ -1121,6 +1121,7 @@
   "more_orn_plants.configuration.enablePeachBiomeHurtEnemy": "Enable Peach Blossom Spring Biome Hurting on Enemies",
   "more_orn_plants.configuration.enablePeachBiomeAutoCure": "Enable Peach Blossom Spring Biome Cure ZombieVillager",
   "more_orn_plants.configuration.enableBiomeNoEnemy": "Enable Biome No Enemies",
+  "more_orn_plants.configuration.enableBiomeSpeedCrop": "Enable Biome Speed up Crop",
   "more_orn_plants.configuration.enableModFoxSpawn": "Enable Mod Fox Spawn",
 
   "more_orn_plants.configuration.Particle Settings": "Particle Settings",

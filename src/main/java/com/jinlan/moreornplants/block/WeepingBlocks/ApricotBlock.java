@@ -5,6 +5,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.common.CommonHooks;
 import org.jetbrains.annotations.NotNull;
 
 public class ApricotBlock extends PeachBlock {
@@ -20,8 +21,10 @@ public class ApricotBlock extends PeachBlock {
         boolean isCorrectBiome = level.getBiome(pos).is(ModTags.Biomes.APRICOT_BEARING);
         if (age < 1) {
             int growthChance = isCorrectBiome ? 5 : 1;
-            if (random.nextInt(12) < growthChance) {
+            boolean shouldGrow = random.nextInt(12) < growthChance;
+            if (CommonHooks.canCropGrow(level, pos, state, shouldGrow)) {
                 level.setBlock(pos, state.setValue(AGE, age + 1), 3);
+                CommonHooks.fireCropGrowPost(level, pos, state);
             }
         }
     }

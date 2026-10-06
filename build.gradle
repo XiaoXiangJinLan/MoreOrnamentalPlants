@@ -81,7 +81,9 @@ configurations {
 
 dependencies {
 
-    implementation "com.github.glitchfiend:TerraBlender-neoforge:${minecraft_version}-${terrablender_version}"
+    compileOnly "com.github.glitchfiend:TerraBlender-neoforge:${minecraft_version}-${terrablender_version}"
+    // 开发环境运行时依赖，方便测试
+    localRuntime "com.github.glitchfiend:TerraBlender-neoforge:${minecraft_version}-${terrablender_version}"
 
 }
 

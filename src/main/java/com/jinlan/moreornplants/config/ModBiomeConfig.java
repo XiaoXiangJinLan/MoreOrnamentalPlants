@@ -75,6 +75,7 @@ public class ModBiomeConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_PEACH_BIOME_HURT_ENEMY;
     public static final ModConfigSpec.BooleanValue ENABLE_PEACH_BIOME_AUTO_CURE;
     public static final ModConfigSpec.BooleanValue ENABLE_BIOME_NO_ENEMY;
+    public static final ModConfigSpec.BooleanValue ENABLE_BIOME_SPEED_CROP;
     public static final ModConfigSpec.BooleanValue ENABLE_MOD_FOX_SPAWN;
 
     public static final ModConfigSpec.BooleanValue PARTICLE_DESPAWN_ON_GROUND;
@@ -235,6 +236,8 @@ public class ModBiomeConfig {
                 .define("enablePeachBiomeAutoCure", true);
         ENABLE_BIOME_NO_ENEMY = BUILDER
                 .define("enableBiomeNoEnemy", true);
+        ENABLE_BIOME_SPEED_CROP = BUILDER
+                .define("enableBiomeSpeedCrop", true);
         ENABLE_MOD_FOX_SPAWN = BUILDER
                 .define("enableModFoxSpawn", true);
         BUILDER.pop();

@@ -26,7 +26,7 @@ A biome mod themed around botanical decoration.
     side="BOTH"
 [[dependencies.${mod_id}]]
     modId="terrablender"
-    type="required"
+    type="optional"
     versionRange="${terrablender_version_range}"
     ordering="NONE"
     side="BOTH"
