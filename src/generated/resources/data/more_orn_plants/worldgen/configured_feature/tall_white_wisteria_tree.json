@@ -60,13 +60,13 @@
       "upper_size": 1
     },
     "trunk_placer": {
-      "type": "more_orn_plants:ancient_camphor_trunk_placer",
+      "type": "more_orn_plants:ancient_wisteria_trunk_placer",
       "base_height": 18,
-      "branch_chance": 0.95,
-      "branch_length": 5,
-      "fork_height": 5,
-      "height_rand_a": 4,
-      "height_rand_b": 4,
+      "branch_chance": 0.65,
+      "branch_length": 7,
+      "fork_height": 6,
+      "height_rand_a": 2,
+      "height_rand_b": 2,
       "max_branches": 4,
       "min_branches": 4
     },

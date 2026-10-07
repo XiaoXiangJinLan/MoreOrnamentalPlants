@@ -40,6 +40,9 @@ public class ModTrunkPlacerTypes {
     public static final Supplier<TrunkPlacerType<AncientCamphorTrunkPlacer>> ANCIENT_CAMPHOR_TRUNK_PLACER =
             TRUNK_PLACERS.register("ancient_camphor_trunk_placer", () -> new TrunkPlacerType<>(AncientCamphorTrunkPlacer.CODEC));
 
+    public static final Supplier<TrunkPlacerType<AncientWisteriaTrunkPlacer>> ANCIENT_WISTERIA_TRUNK_PLACER =
+            TRUNK_PLACERS.register("ancient_wisteria_trunk_placer", () -> new TrunkPlacerType<>(AncientWisteriaTrunkPlacer.CODEC));
+
     public static void register(IEventBus eventBus) {
         TRUNK_PLACERS.register(eventBus);
     }

@@ -11,6 +11,7 @@ import com.jinlan.moreornplants.entity.custom.SuyuFox;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ModTags;
+import com.jinlan.moreornplants.util.SeasonsTags;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
@@ -443,16 +444,32 @@ public class ModEventsBusEvents {
         if (!(event.getLevel() instanceof ServerLevel level)) return;
         if (EXTRA_GROWTH.get() > 0) return;
         BlockPos pos = event.getPos();
-        if (!level.getBiome(pos).is(ModTags.Biomes.HARVEST)) return;
+        BlockState state = event.getState();
+        Holder<Biome> biome = level.getBiome(pos);
+
+        boolean harvest = biome.is(ModTags.Biomes.HARVEST);
+        boolean seasonal = isSeasonalMatch(state, biome);
+
+        if (!harvest && !seasonal) return;
+        int times = 2 + (level.getRandom().nextFloat() < 0.25f ? 1 : 0);
+        if (harvest && seasonal) {
+            times += 2;
+        }
         EXTRA_GROWTH.set(1);
         try {
-            int times = 2 + (level.getRandom().nextFloat() < 0.25f ? 1 : 0);
             for (int i = 0; i < times; i++) {
-                event.getState().randomTick(level, event.getPos(), level.getRandom());
+                state.randomTick(level, pos, level.getRandom());
             }
         } finally {
             EXTRA_GROWTH.set(0);
         }
+    }
+
+    private static boolean isSeasonalMatch(BlockState state, Holder<Biome> biome) {
+        return (state.is(SeasonsTags.Blocks.SPRING_CROPS) && biome.is(ModTags.Biomes.SPRING_BIOME))
+                || (state.is(SeasonsTags.Blocks.SUMMER_CROPS) && biome.is(ModTags.Biomes.SUMMER_BIOME))
+                || (state.is(SeasonsTags.Blocks.AUTUMN_CROPS) && biome.is(ModTags.Biomes.AUTUMN_BIOME))
+                || (state.is(SeasonsTags.Blocks.WINTER_CROPS) && biome.is(ModTags.Biomes.WINTER_BIOME));
     }
 
     @SubscribeEvent

@@ -27,19 +27,19 @@ public class AncientCamphorTrunkPlacer extends TrunkPlacer {
                     Codec.intRange(0, 32).fieldOf("base_height").forGetter(placer -> placer.baseHeight),
                     Codec.intRange(0, 24).fieldOf("height_rand_a").forGetter(placer -> placer.heightRandA),
                     Codec.intRange(0, 24).fieldOf("height_rand_b").forGetter(placer -> placer.heightRandB),
-                    Codec.intRange(2, 6).fieldOf("fork_height").forGetter(placer -> placer.forkHeight),
+                    Codec.intRange(2, 10).fieldOf("fork_height").forGetter(placer -> placer.forkHeight),
                     Codec.intRange(2, 4).fieldOf("min_branches").forGetter(placer -> placer.minBranches),
                     Codec.intRange(3, 6).fieldOf("max_branches").forGetter(placer -> placer.maxBranches),
                     Codec.floatRange(0.0F, 1.0F).fieldOf("branch_chance").forGetter(placer -> placer.branchChance),
-                    Codec.intRange(2, 6).fieldOf("branch_length").forGetter(placer -> placer.branchLength)
+                    Codec.intRange(2, 10).fieldOf("branch_length").forGetter(placer -> placer.branchLength)
             ).apply(instance, AncientCamphorTrunkPlacer::new)
     );
 
-    private final int forkHeight;
-    private final int minBranches;
-    private final int maxBranches;
-    private final float branchChance;
-    private final int branchLength;
+    public final int forkHeight;
+    public final int minBranches;
+    public final int maxBranches;
+    public final float branchChance;
+    public final int branchLength;
 
     public AncientCamphorTrunkPlacer(int baseHeight, int heightRandA, int heightRandB,
                                      int forkHeight, int minBranches, int maxBranches,
@@ -58,10 +58,14 @@ public class AncientCamphorTrunkPlacer extends TrunkPlacer {
         return ModTrunkPlacerTypes.ANCIENT_CAMPHOR_TRUNK_PLACER.get();
     }
 
+    protected int getFoliageOffset() {
+        return 2;
+    }
+
     @Override
     @NotNull
-    public List<FoliagePlacer.FoliageAttachment> placeTrunk(LevelSimulatedReader level, BiConsumer<BlockPos, BlockState> blockSetter,
-                                                            RandomSource random, int freeTreeHeight, BlockPos pos, TreeConfiguration config) {
+    public List<FoliagePlacer.FoliageAttachment> placeTrunk(@NotNull LevelSimulatedReader level, @NotNull BiConsumer<BlockPos, BlockState> blockSetter,
+                                                            @NotNull RandomSource random, int freeTreeHeight, @NotNull BlockPos pos, @NotNull TreeConfiguration config) {
         List<FoliagePlacer.FoliageAttachment> foliageAttachments = new ArrayList<>();
 
         BlockPos currentPos = pos;
@@ -183,7 +187,7 @@ public class AncientCamphorTrunkPlacer extends TrunkPlacer {
     }
 
     // 生成主干及其分枝（保持原有逻辑）
-    private List<FoliagePlacer.FoliageAttachment> generateMainTrunkWithBranches(LevelSimulatedReader level, BiConsumer<BlockPos, BlockState> blockSetter,
+    protected List<FoliagePlacer.FoliageAttachment> generateMainTrunkWithBranches(LevelSimulatedReader level, BiConsumer<BlockPos, BlockState> blockSetter,
                                                                                 RandomSource random, BlockPos startPos, Direction growthDirection, int remainingHeight, TreeConfiguration config) {
         List<FoliagePlacer.FoliageAttachment> foliageAttachments = new ArrayList<>();
         BlockPos currentPos = startPos;
@@ -203,12 +207,12 @@ public class AncientCamphorTrunkPlacer extends TrunkPlacer {
             currentPos = currentPos.above();
         }
 
-        foliageAttachments.add(new FoliagePlacer.FoliageAttachment(currentPos.above(2), 0, false));
+        foliageAttachments.add(new FoliagePlacer.FoliageAttachment(currentPos.above(getFoliageOffset()), 0, false));
         return foliageAttachments;
     }
 
     // 生成分枝（保持原有逻辑）
-    private void generateBranch(LevelSimulatedReader level, BiConsumer<BlockPos, BlockState> blockSetter,
+    protected void generateBranch(LevelSimulatedReader level, BiConsumer<BlockPos, BlockState> blockSetter,
                                 RandomSource random, BlockPos startPos, TreeConfiguration config,
                                 List<FoliagePlacer.FoliageAttachment> foliageAttachments) {
         Direction direction = Direction.Plane.HORIZONTAL.getRandomDirection(random);
@@ -222,7 +226,7 @@ public class AncientCamphorTrunkPlacer extends TrunkPlacer {
             }
             this.placeLog(level, blockSetter, random, currentPos, config, axis);
             if (i == branchLength - 1) {
-                foliageAttachments.add(new FoliagePlacer.FoliageAttachment(currentPos.above(2), 0, false));
+                foliageAttachments.add(new FoliagePlacer.FoliageAttachment(currentPos.above(getFoliageOffset()), 0, false));
             }
         }
     }
