@@ -61,10 +61,10 @@
     },
     "trunk_placer": {
       "type": "more_orn_plants:ancient_wisteria_trunk_placer",
-      "base_height": 18,
+      "base_height": 24,
       "branch_chance": 0.65,
       "branch_length": 7,
-      "fork_height": 6,
+      "fork_height": 10,
       "height_rand_a": 2,
       "height_rand_b": 2,
       "max_branches": 4,

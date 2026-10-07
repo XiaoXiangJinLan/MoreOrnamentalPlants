@@ -15,7 +15,7 @@
                     "half": "lower"
                   }
                 },
-                "weight": 2
+                "weight": 1
               },
               {
                 "data": {
@@ -33,7 +33,7 @@
                     "half": "lower"
                   }
                 },
-                "weight": 1
+                "weight": 2
               },
               {
                 "data": {
@@ -51,6 +51,15 @@
                     "half": "lower"
                   }
                 },
+                "weight": 1
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:pink_chinese_rose",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
                 "weight": 2
               },
               {
@@ -60,7 +69,7 @@
                     "half": "lower"
                   }
                 },
-                "weight": 2
+                "weight": 1
               },
               {
                 "data": {
@@ -78,7 +87,7 @@
                     "half": "lower"
                   }
                 },
-                "weight": 1
+                "weight": 2
               },
               {
                 "data": {
@@ -88,6 +97,15 @@
                   }
                 },
                 "weight": 2
+              },
+              {
+                "data": {
+                  "Name": "more_orn_plants:crape_myrtle",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                },
+                "weight": 1
               },
               {
                 "data": {

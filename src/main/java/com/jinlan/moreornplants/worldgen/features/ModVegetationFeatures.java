@@ -292,17 +292,18 @@ public class ModVegetationFeatures {
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
                                         .add(ModBlocks.SPRING_CYMBIDIUM.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.CHRYSANTHEMUM.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.CHRYSANTHEMUM.get().defaultBlockState(), 1)
                                         .add(ModBlocks.WHITE_CHRYSANTHEMUM.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.PINK_CHRYSANTHEMUM.get().defaultBlockState(), 2)
                                         .add(ModBlocks.PURPLE_CHRYSANTHEMUM.get().defaultBlockState(), 1)
                                         .add(ModBlocks.PEONY.get().defaultBlockState(), 2)
                                         .add(ModBlocks.BLUE_PEONY.get().defaultBlockState(), 1)
                                         .add(ModBlocks.PURPLE_PEONY.get().defaultBlockState(), 1)
                                         .add(ModBlocks.CHARMING_RHODODENDRON.get().defaultBlockState(), 2)
                                         .add(ModBlocks.CHINESE_AZALEA.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.CAMELLIA.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.CAMELLIA.get().defaultBlockState(), 1)
                                         .add(ModBlocks.WHITE_CAMELLIA.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.PINK_CAMELLIA.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.PINK_CAMELLIA.get().defaultBlockState(), 2)
                                         .add(ModBlocks.CHINESE_NARCISSUS.get().defaultBlockState(), 2)
                                         .add(ModBlocks.GOLDEN_CHINESE_NARCISSUS.get().defaultBlockState(), 1).build())),
                         BlockPredicate.allOf(
@@ -312,15 +313,17 @@ public class ModVegetationFeatures {
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(ModBlocks.YAO_HUANG_PEONY.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.YAO_HUANG_PEONY.get().defaultBlockState(), 1)
                                         .add(ModBlocks.WEI_ZI_PEONY.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.ZHAO_PINK_PEONY.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.ZHAO_PINK_PEONY.get().defaultBlockState(), 2)
                                         .add(ModBlocks.DOU_GREEN_PEONY.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.CHINESE_ROSE.get().defaultBlockState(), 2)
-                                        .add(ModBlocks.TALL_CAMELLIA.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.CHINESE_ROSE.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.PINK_CHINESE_ROSE.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.TALL_CAMELLIA.get().defaultBlockState(), 1)
                                         .add(ModBlocks.TALL_WHITE_CAMELLIA.get().defaultBlockState(), 1)
-                                        .add(ModBlocks.TALL_PINK_CAMELLIA.get().defaultBlockState(), 1)
+                                        .add(ModBlocks.TALL_PINK_CAMELLIA.get().defaultBlockState(), 2)
                                         .add(ModBlocks.COTTON_ROSE.get().defaultBlockState(), 2)
+                                        .add(ModBlocks.CRAPE_MYRTLE.get().defaultBlockState(), 1)
                                         .add(ModBlocks.CRAPE_MYRTLE.get().defaultBlockState(), 2).build())),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
@@ -667,13 +670,13 @@ public class ModVegetationFeatures {
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.DIRT)))));
-        register(context, GLOWSTONE_1, Feature.RANDOM_PATCH, new RandomPatchConfiguration(186, 5, 10,
+        register(context, GLOWSTONE_1, Feature.RANDOM_PATCH, new RandomPatchConfiguration(186, 5, 15,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.GLOWSTONE)),
                         BlockPredicate.allOf(
                                 BlockPredicate.matchesBlocks(BlockPos.ZERO, Blocks.AIR),
                                 BlockPredicate.matchesBlocks(Direction.DOWN.getNormal(), ModBlocks.CAMPHOR_LOG.get())))));
-        register(context, GLOWSTONE_2, Feature.RANDOM_PATCH, new RandomPatchConfiguration(6, 7, 4,
+        register(context, GLOWSTONE_2, Feature.RANDOM_PATCH, new RandomPatchConfiguration(3, 7, 4,
                 PlacementUtils.filtered(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.GLOWSTONE)),
                         BlockPredicate.allOf(

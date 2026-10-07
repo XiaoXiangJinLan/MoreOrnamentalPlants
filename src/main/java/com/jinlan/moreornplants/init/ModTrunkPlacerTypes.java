@@ -8,6 +8,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.function.Supplier;
+
 public class ModTrunkPlacerTypes {
     public static final DeferredRegister<TrunkPlacerType<?>> TRUNK_PLACERS =
             DeferredRegister.create(Registries.TRUNK_PLACER_TYPE, MoreOrnPlants.MOD_ID);
@@ -38,6 +40,9 @@ public class ModTrunkPlacerTypes {
 
     public static final RegistryObject<TrunkPlacerType<AncientCamphorTrunkPlacer>> ANCIENT_CAMPHOR_TRUNK_PLACER =
             TRUNK_PLACERS.register("ancient_camphor_trunk_placer", () -> new TrunkPlacerType<>(AncientCamphorTrunkPlacer.CODEC));
+
+    public static final RegistryObject<TrunkPlacerType<AncientWisteriaTrunkPlacer>> ANCIENT_WISTERIA_TRUNK_PLACER =
+            TRUNK_PLACERS.register("ancient_wisteria_trunk_placer", () -> new TrunkPlacerType<>(AncientWisteriaTrunkPlacer.CODEC));
 
     public static void register(IEventBus eventBus) {
         TRUNK_PLACERS.register(eventBus);

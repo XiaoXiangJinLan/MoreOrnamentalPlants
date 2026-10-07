@@ -97,6 +97,10 @@ public class ModTags {
         public static final TagKey<Biome> PINK_BAIHUA_CAT = tag("has_baihua_cat_variant/pink_baihua_cat");
         public static final TagKey<Biome> BLUE_BAIHUA_CAT = tag("has_baihua_cat_variant/blue_baihua_cat");
         public static final TagKey<Biome> PURPLE_BAIHUA_CAT = tag("has_baihua_cat_variant/purple_baihua_cat");
+        public static final TagKey<Biome> SPRING_BIOME = tag("spring_biome");
+        public static final TagKey<Biome> SUMMER_BIOME = tag("summer_biome");
+        public static final TagKey<Biome> AUTUMN_BIOME = tag("autumn_biome");
+        public static final TagKey<Biome> WINTER_BIOME = tag("winter_biome");
 
         private static TagKey<Biome> tag(String name) {
             return TagKey.create(Registries.BIOME, new ResourceLocation(MoreOrnPlants.MOD_ID, name));

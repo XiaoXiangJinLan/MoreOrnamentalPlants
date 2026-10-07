@@ -180,6 +180,11 @@ public class ModTreeFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_WHITE_WISTERIA_TREE = registerKey("tall_white_wisteria_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_RED_WISTERIA_TREE = registerKey("tall_red_wisteria_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_BLUE_WISTERIA_TREE = registerKey("tall_blue_wisteria_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_WISTERIA_TREE_2 = registerKey("tall_wisteria_tree_2");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_PURPLE_WISTERIA_TREE_2 = registerKey("tall_purple_wisteria_tree_2");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_WHITE_WISTERIA_TREE_2 = registerKey("tall_white_wisteria_tree_2");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_RED_WISTERIA_TREE_2 = registerKey("tall_red_wisteria_tree_2");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TALL_BLUE_WISTERIA_TREE_2 = registerKey("tall_blue_wisteria_tree_2");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         context.lookup(Registries.CONFIGURED_FEATURE);
@@ -975,7 +980,7 @@ public class ModTreeFeatures {
                         BlockStateProvider.simple(ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 102, 1, 3))).ignoreVines().build());
         register(context, TALL_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
-                new AncientCamphorTrunkPlacer(18, 4, 4, 5, 4, 4, 0.95F, 5),
+                new AncientWisteriaTrunkPlacer(18, 2, 2, 6, 4, 4, 0.65F, 7),
                 BlockStateProvider.simple(Blocks.ACACIA_LEAVES),
                 new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
                 new TwoLayersFeatureSize(1, 0, 1))
@@ -983,7 +988,7 @@ public class ModTreeFeatures {
                         BlockStateProvider.simple(ModBlocks.CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
         register(context, TALL_PURPLE_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
-                new AncientCamphorTrunkPlacer(18, 4, 4, 5, 4, 4, 0.95F, 5),
+                new AncientWisteriaTrunkPlacer(18, 2, 2, 6, 4, 4, 0.65F, 7),
                 BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LEAVES.get()),
                 new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
                 new TwoLayersFeatureSize(1, 0, 1))
@@ -991,7 +996,7 @@ public class ModTreeFeatures {
                         BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
         register(context, TALL_WHITE_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
-                new AncientCamphorTrunkPlacer(18, 4, 4, 5, 4, 4, 0.95F, 5),
+                new AncientWisteriaTrunkPlacer(18, 2, 2, 6, 4, 4, 0.65F, 7),
                 BlockStateProvider.simple(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get()),
                 new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
                 new TwoLayersFeatureSize(1, 0, 1))
@@ -999,7 +1004,7 @@ public class ModTreeFeatures {
                         BlockStateProvider.simple(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
         register(context, TALL_RED_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
-                new AncientCamphorTrunkPlacer(18, 4, 4, 5, 4, 4, 0.95F, 5),
+                new AncientWisteriaTrunkPlacer(18, 2, 2, 6, 4, 4, 0.65F, 7),
                 BlockStateProvider.simple(ModBlocks.RED_CRAPE_MYRTLE_LEAVES.get()),
                 new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
                 new TwoLayersFeatureSize(1, 0, 1))
@@ -1007,7 +1012,47 @@ public class ModTreeFeatures {
                         BlockStateProvider.simple(ModBlocks.RED_CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
         register(context, TALL_BLUE_WISTERIA_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
-                new AncientCamphorTrunkPlacer(18, 4, 4, 5, 4, 4, 0.95F, 5),
+                new AncientWisteriaTrunkPlacer(18, 2, 2, 6, 4, 4, 0.65F, 7),
+                BlockStateProvider.simple(Blocks.ACACIA_LEAVES),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 1))
+                .decorators(List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.BLUE_CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.BLUE_CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
+        register(context, TALL_WISTERIA_TREE_2, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new AncientWisteriaTrunkPlacer(24, 2, 2, 10, 4, 4, 0.65F, 7),
+                BlockStateProvider.simple(Blocks.ACACIA_LEAVES),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 1))
+                .decorators(List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
+        register(context, TALL_PURPLE_WISTERIA_TREE_2, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new AncientWisteriaTrunkPlacer(24, 2, 2, 10, 4, 4, 0.65F, 7),
+                BlockStateProvider.simple(ModBlocks.CRAPE_MYRTLE_LEAVES.get()),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 1))
+                .decorators(List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.NANJING_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
+        register(context, TALL_WHITE_WISTERIA_TREE_2, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new AncientWisteriaTrunkPlacer(24, 2, 2, 10, 4, 4, 0.65F, 7),
+                BlockStateProvider.simple(ModBlocks.WHITE_CRAPE_MYRTLE_LEAVES.get()),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 1))
+                .decorators(List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.WHITE_CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.WHITE_CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
+        register(context, TALL_RED_WISTERIA_TREE_2, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new AncientWisteriaTrunkPlacer(24, 2, 2, 10, 4, 4, 0.65F, 7),
+                BlockStateProvider.simple(ModBlocks.RED_CRAPE_MYRTLE_LEAVES.get()),
+                new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                new TwoLayersFeatureSize(1, 0, 1))
+                .decorators(List.of(new WeepingMeiVineDecorator(BlockStateProvider.simple(ModBlocks.RED_CHINESE_WISTERIA.get().defaultBlockState().setValue(WisteriaBlock.TOP, false)),
+                        BlockStateProvider.simple(ModBlocks.RED_CHINESE_WISTERIA_PLANT.get().defaultBlockState()), 0.95f, 300, 2, 5))).ignoreVines().build());
+        register(context, TALL_BLUE_WISTERIA_TREE_2, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CAMPHOR_LOG.get()),
+                new AncientWisteriaTrunkPlacer(24, 2, 2, 10, 4, 4, 0.65F, 7),
                 BlockStateProvider.simple(Blocks.ACACIA_LEAVES),
                 new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
                 new TwoLayersFeatureSize(1, 0, 1))
