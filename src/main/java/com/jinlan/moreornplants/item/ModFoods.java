@@ -25,13 +25,13 @@ public class ModFoods {
     public static final FoodProperties PEACH = new FoodProperties.Builder().nutrition(6).saturationMod(1.6F)
             .effect(() -> new MobEffectInstance(MobEffects.JUMP, 160, 1), 1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 100, 0), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 6000, 19), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 8), 1.0F).alwaysEat().build();
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 6000, 19), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 2), 1.0F).alwaysEat().build();
     public static final FoodProperties APRICOT = new FoodProperties.Builder().nutrition(6).saturationMod(1.2F)
             .effect(() -> new MobEffectInstance(MobEffects.JUMP, 100, 0), 1.0F)
             .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 60, 0), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 3000, 9), 1.0F)
-            .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 4), 1.0F).alwaysEat().build();
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 3000, 9), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 1), 1.0F).alwaysEat().build();
     public static final FoodProperties MEI = new FoodProperties.Builder().nutrition(1).saturationMod(0.0F)
             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 60, 0), 0.2F).fast().build();
     public static final FoodProperties GOLDEN_MEI = new FoodProperties.Builder().nutrition(4).saturationMod(1.0F)

@@ -1,6 +1,8 @@
 package com.jinlan.moreornplants.block.foodBlock;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -58,6 +60,13 @@ public class SoupBlock extends Block {
             player.getFoodData().eat(3, 0.3F);
             int i = state.getValue(BITES);
             level.gameEvent(player, GameEvent.EAT, pos);
+            if (level instanceof Level realLevel && !realLevel.isClientSide) {
+                if (i < MAX_BITES) {
+                    realLevel.playSound(null, pos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.5F, realLevel.getRandom().nextFloat() * 0.1F + 0.9F);
+                } else {
+                    realLevel.playSound(null, pos, SoundEvents.ITEM_PICKUP, SoundSource.PLAYERS, 0.6F, realLevel.getRandom().nextFloat() * 0.2F + 1.0F);
+                }
+            }
             if (i < MAX_BITES) {
                 level.setBlock(pos, state.setValue(BITES, i + 1), 3);
             } else {

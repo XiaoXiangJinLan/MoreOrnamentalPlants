@@ -13,18 +13,12 @@ public class MuxueSoupItem extends BowlFoodBlockItem {
     }
 
     @Override
-    public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity entity) {
-        ItemStack result = super.finishUsingItem(stack, level, entity);
-
-        if (!level.isClientSide) {
-            entity.removeEffect(MobEffects.CONFUSION);
-            entity.removeEffect(MobEffects.BLINDNESS);
-            entity.removeEffect(MobEffects.WEAKNESS);
-            entity.removeEffect(MobEffects.POISON);
-            entity.removeEffect(MobEffects.WITHER);
-            entity.removeEffect(MobEffects.DARKNESS);
-        }
-
-        return result;
+    protected void onConsumed(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity entity) {
+        entity.removeEffect(MobEffects.CONFUSION);
+        entity.removeEffect(MobEffects.BLINDNESS);
+        entity.removeEffect(MobEffects.WEAKNESS);
+        entity.removeEffect(MobEffects.POISON);
+        entity.removeEffect(MobEffects.WITHER);
+        entity.removeEffect(MobEffects.DARKNESS);
     }
 }
