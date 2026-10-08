@@ -285,9 +285,9 @@ public class ModItems {
     public static final DeferredItem<Item> ENCHANTED_GOLDEN_CRABAPPLE =
             ITEMS.register("enchanted_golden_crabapple", () -> new Item(new Item.Properties().rarity(Rarity.EPIC).food(ModFoods.ENCHANTED_GOLDEN_CRABAPPLE).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
     public static final DeferredItem<Item> CLOUD_APRICOT =
-            ITEMS.register("cloud_apricot", () -> new FoodBlockItem(ModBlocks.CLOUD_APRICOT.get(), new Item.Properties().rarity(Rarity.RARE).food(ModFoods.APRICOT)));
+            ITEMS.register("cloud_apricot", () -> new CloudApricotItem(ModBlocks.CLOUD_APRICOT.get(), new Item.Properties().rarity(Rarity.RARE).food(ModFoods.APRICOT)));
     public static final DeferredItem<Item> IMMORTAL_PEACH =
-            ITEMS.register("immortal_peach", () -> new FoodBlockItem(ModBlocks.IMMORTAL_PEACH.get(), new Item.Properties().rarity(Rarity.RARE).food(ModFoods.PEACH)));
+            ITEMS.register("immortal_peach", () -> new ImmortalPeachItem(ModBlocks.IMMORTAL_PEACH.get(), new Item.Properties().rarity(Rarity.RARE).food(ModFoods.PEACH)));
     public static final DeferredItem<Item> MEI =
             ITEMS.register("mei", () -> new FoodBlockItem(ModBlocks.MEI.get(), new Item.Properties().food(ModFoods.MEI)));
     public static final DeferredItem<Item> GOLDEN_MEI =
