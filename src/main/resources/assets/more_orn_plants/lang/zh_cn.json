@@ -1048,5 +1048,8 @@
   "tooltip.more_orn_plants.baihua_sword.tooltip": "§7当拥有花朵，或者位于繁花群系时，伤害提高",
   "tooltip.more_orn_plants.ziying_bead.tooltip": "§7手持或在背包中时，有25%的概率不会受伤",
   "tooltip.more_orn_plants.suyu_bead.tooltip": "§7手持或在背包中时，降低25%受到的伤害",
-  "tooltip.more_orn_plants.ziyu_bead.tooltip": "§7手持或在背包中时，降低20%受到的伤害，\n并有20%的概率不会受伤"
+  "tooltip.more_orn_plants.ziyu_bead.tooltip": "§7手持或在背包中时，降低20%受到的伤害，\n并有20%的概率不会受伤",
+
+  "death.attack.biome_damage": "%1$s 被天地之力抹除",
+  "death.attack.biome_damage.player": "%1$s 在 %2$s 的注视下遭天地之力抹除"
 }

@@ -62,6 +62,8 @@ public class ModBiomeConfig {
     public static final ForgeConfigSpec.BooleanValue ENABLE_LONGEVITY_FOREST_EFFECTS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_PENGLAI_EFFECTS;
     public static final ForgeConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS_EFFECTS;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_RED_HIGHLANDS_HURT_ENEMY;
+    public static final ForgeConfigSpec.ConfigValue<Double> VALUE_OF_RED_HIGHLANDS_HURT_ENEMY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_WUTONG_BIOME_HURT_ENEMY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_CAVES_BIOME_HURT_ENEMY;
     public static final ForgeConfigSpec.BooleanValue ENABLE_PEACH_BIOME_HURT_ENEMY;
@@ -260,6 +262,12 @@ public class ModBiomeConfig {
         ENABLE_RED_HIGHLANDS_EFFECTS = BUILDER
                 .comment("是否让映山红提供效果")
                 .define("enableRedHighlandsEffects", true);
+        ENABLE_RED_HIGHLANDS_HURT_ENEMY = BUILDER
+                .comment("是否让映山红伤害敌对生物")
+                .define("enableRedHighlandsHurtEnemy", true);
+        VALUE_OF_RED_HIGHLANDS_HURT_ENEMY = BUILDER
+                .comment("映山红伤敌基础数值")
+                .define("valueOfRedHighlandsHurtEnemyValue", 20.0);
         ENABLE_WUTONG_BIOME_HURT_ENEMY = BUILDER
                 .comment("是否让朝阳林伤害敌对生物")
                 .define("enableWutongBiomeHurtEnemy", true);

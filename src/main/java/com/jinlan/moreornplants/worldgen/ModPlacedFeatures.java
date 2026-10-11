@@ -742,9 +742,9 @@ public class ModPlacedFeatures {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1), ModBlocks.CHINESE_AZALEA.get()));
 
         register(context, RED_AZALEA_RED_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.RED_AZALEA_KEY),
-                List.of(CountPlacement.of(8), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+                List.of(CountPlacement.of(6), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, MAYING_RHODODENDRON_RED_PLACED, configuredFeatures.getOrThrow(ModVegetationFeatures.MAYING_RHODODENDRON_KEY),
-                List.of(CountPlacement.of(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+                List.of(CountPlacement.of(3), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, RED_MEI_RED_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.RED_MEI),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.1f, 1), ModBlocks.RED_MEI_SAPLING.get()));
         register(context, ORNAMENTAL_PEACH_RED_PLACED, configuredFeatures.getOrThrow(ModTreeFeatures.ORNAMENTAL_PEACH),

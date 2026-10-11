@@ -1048,5 +1048,8 @@
   "tooltip.more_orn_plants.baihua_sword.tooltip": "§7持花於手或囊中者，傷增五倍；\n處繁花群系者，傷增九倍",
   "tooltip.more_orn_plants.ziying_bead.tooltip": "§7持之或置囊中，有四分之一之機免傷",
   "tooltip.more_orn_plants.suyu_bead.tooltip": "§7持之或置囊中，所受之傷減免四分之一",
-  "tooltip.more_orn_plants.ziyu_bead.tooltip": "§7持之或置囊中，所受之傷減免五分之一，\n且有兩成之機全然無傷"
+  "tooltip.more_orn_plants.ziyu_bead.tooltip": "§7持之或置囊中，所受之傷減免五分之一，\n且有兩成之機全然無傷",
+
+  "death.attack.biome_damage": "%1$s 为天地所诛",
+  "death.attack.biome_damage.player": "%1$s 与 %2$s 缠斗之际，为天地所诛"
 }
