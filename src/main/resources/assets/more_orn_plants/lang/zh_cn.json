@@ -52,6 +52,7 @@
   "biome.more_orn_plants.ziying_caves": "紫英洞",
   "biome.more_orn_plants.suyu_caves": "素玉洞",
 
+  "more_orn_plants.the_qunfang": "群芳",
   "dimension.more_orn_plants.the_qunfang": "群芳",
   "travelerstitles.more_orn_plants.the_qunfang": "群芳",
 
@@ -1054,6 +1055,6 @@
   "tooltip.more_orn_plants.suyu_bead.tooltip": "§7手持或在背包中时，降低25%受到的伤害",
   "tooltip.more_orn_plants.ziyu_bead.tooltip": "§7手持或在背包中时，降低20%受到的伤害，\n并有20%的概率不会受伤",
 
-  "death.attack.biome_damage": "%1$s 被天地之力抹除",
-  "death.attack.biome_damage.player": "%1$s 在 %2$s 的注视下遭天地之力抹除"
+  "death.attack.more_orn_plants.biome_damage": "%1$s 遭天诛地灭",
+  "death.attack.more_orn_plants.biome_damage.player": "%1$s 在 %2$s 的注视下遭天诛地灭"
 }
