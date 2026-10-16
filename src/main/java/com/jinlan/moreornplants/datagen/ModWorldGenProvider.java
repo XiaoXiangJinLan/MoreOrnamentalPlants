@@ -1,6 +1,7 @@
 package com.jinlan.moreornplants.datagen;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import com.jinlan.moreornplants.worldgen.dimension.ModDimension;
 import com.jinlan.moreornplants.worldgen.features.ModTreeFeatures;
 import com.jinlan.moreornplants.worldgen.ModPlacedFeatures;
 import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
@@ -21,7 +22,9 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
                 ModVegetationFeatures.bootstrap(context);
             })
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(Registries.BIOME, ModBiomes::bootstrap);
+            .add(Registries.BIOME, ModBiomes::bootstrap)
+            .add(Registries.DIMENSION_TYPE, ModDimension::bootstrap)
+            .add(Registries.LEVEL_STEM, ModDimension::bootstrapLevelStems);
 
     public ModWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(MoreOrnPlants.MOD_ID));

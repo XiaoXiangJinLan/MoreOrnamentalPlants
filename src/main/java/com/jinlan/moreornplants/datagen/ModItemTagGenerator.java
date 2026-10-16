@@ -205,6 +205,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.ZHAO_PINK_PEONY.get().asItem(), ModBlocks.DOU_GREEN_PEONY.get().asItem())
                 .add(ModBlocks.LUOYANG_RED_PEONY.get().asItem(), ModBlocks.TWO_QIAO_PEONY.get().asItem(), ModBlocks.VERSICOLOR_PEONY.get().asItem());
 
+        this.tag(ForgeTags.Items.PEONY)
+                .addTag(ForgeTags.Items.TREE_PEONY);
+
         this.tag(ForgeTags.Items.HERBACEOUS_PEONY)
                 .add(ModBlocks.PEONY.get().asItem())
                 .add(ModBlocks.LIGHT_PINK_PEONY.get().asItem())

@@ -24,6 +24,7 @@ public class ForgeTags {
         public static final TagKey<Item> STRIPPED_WOODS = tag("stripped_woods");
 
         public static final TagKey<Item> MEI_SAPLING = tag("mei_sapling");
+        public static final TagKey<Item> PEONY = tag("peony");
         public static final TagKey<Item> TREE_PEONY = tag("tree_peony");
         public static final TagKey<Item> CYMBIDIUM = tag("cymbidium");
         public static final TagKey<Item> HERBACEOUS_PEONY = tag("herbaceous_peony");

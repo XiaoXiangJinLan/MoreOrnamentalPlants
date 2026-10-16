@@ -1,5 +1,5 @@
 {
-  "feature": "more_orn_plants:green_weeping_mei_key",
+  "feature": "more_orn_plants:desert_poplar_3",
   "placement": [
     {
       "type": "minecraft:count",
@@ -7,11 +7,11 @@
         "type": "minecraft:weighted_list",
         "distribution": [
           {
-            "data": 1,
-            "weight": 4
+            "data": 0,
+            "weight": 9
           },
           {
-            "data": 2,
+            "data": 1,
             "weight": 1
           }
         ]
@@ -36,7 +36,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "more_orn_plants:green_weeping_mei_sapling",
+          "Name": "more_orn_plants:desert_poplar_sapling",
           "Properties": {
             "stage": "0"
           }

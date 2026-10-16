@@ -350,6 +350,22 @@ public class ModOverworldBiomesBuilder {
 
     protected void addUndergroundBiomes(Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> consume) {
         // 这里可以添加你的模组的地下生物群系
+        this.addUndergroundBiome(
+                consume, this.FULL_RANGE, this.FULL_RANGE, Climate.Parameter.span(0.8F, 1.0F), this.FULL_RANGE, this.FULL_RANGE, 0.0F, Biomes.DRIPSTONE_CAVES
+        );
+        this.addUndergroundBiome(
+                consume, this.FULL_RANGE, Climate.Parameter.span(0.7F, 1.0F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, Biomes.LUSH_CAVES
+        );
+        this.addBottomBiome(
+                consume,
+                this.FULL_RANGE,
+                this.FULL_RANGE,
+                this.FULL_RANGE,
+                Climate.Parameter.span(this.erosions[0], this.erosions[1]),
+                this.FULL_RANGE,
+                0.0F,
+                Biomes.DEEP_DARK
+        );
         this.addUndergroundBiome(consume, Climate.Parameter.span(-0.5F, -0.3F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, ModBiomes.SUYU_CAVES);
         this.addUndergroundBiome(consume, Climate.Parameter.span(-0.2F, 0.0F), this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, this.FULL_RANGE, 0.0F, ModBiomes.ZIYING_CAVES);
     }
@@ -521,6 +537,14 @@ public class ModOverworldBiomesBuilder {
 
         mapper.accept(Pair.of(Climate.parameters(temperature, humidity, continentalness, erosion,
                 Climate.Parameter.span(0.2F, 0.9F), weirdness, offset), biome));
+    }
+
+    private void addBottomBiome(Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> consumer,
+                                Climate.Parameter temperature, Climate.Parameter humidity, Climate.Parameter continentalness,
+                                Climate.Parameter erosion, Climate.Parameter weirdness, float offset, ResourceKey<Biome> biome) {
+        consumer.accept(
+                Pair.of(Climate.parameters(temperature, humidity, continentalness, erosion, Climate.Parameter.point(1.1F), weirdness, offset), biome)
+        );
     }
 
     protected ResourceKey<Biome>[][] createFilteredBiomeMap(ResourceKey<Biome>[][] baseMap) {

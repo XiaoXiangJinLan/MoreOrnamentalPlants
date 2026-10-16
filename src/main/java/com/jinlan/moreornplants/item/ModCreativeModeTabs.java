@@ -555,6 +555,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ZIYING_BEADLIGHT.get());
                         pOutput.accept(ModBlocks.SUYU_BEADLIGHT.get());
                         pOutput.accept(ModBlocks.MUXUE_GRASS_BLOCK.get());
+                        pOutput.accept(ModBlocks.QUNFANG_DRAW.get());
                         pOutput.accept(ModItems.CYMBIDIUM_XIANGNANG.get());
                         pOutput.accept(ModItems.OSMANTHUS_XIANGNANG.get());
                         pOutput.accept(ModItems.WINTERSWEET_XIANGNANG.get());

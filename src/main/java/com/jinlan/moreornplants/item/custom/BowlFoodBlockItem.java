@@ -13,8 +13,22 @@ public class BowlFoodBlockItem extends FoodBlockItem{
         super(block, properties);
     }
 
-    public @NotNull ItemStack finishUsingItem(@NotNull ItemStack pStack, @NotNull Level pLevel, @NotNull LivingEntity pEntityLiving) {
-        ItemStack itemstack = super.finishUsingItem(pStack, pLevel, pEntityLiving);
-        return pEntityLiving instanceof Player && ((Player)pEntityLiving).getAbilities().instabuild ? itemstack : new ItemStack(Items.BOWL);
+    @Override
+    public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity entity) {
+        ItemStack result = super.finishUsingItem(stack, level, entity);
+        if (entity instanceof Player player && player.getAbilities().instabuild) {
+            return result;
+        }
+        if (!level.isClientSide) {
+            ItemStack bowl = new ItemStack(Items.BOWL);
+            if (entity instanceof Player player) {
+                if (!player.getInventory().add(bowl)) {
+                    player.drop(bowl, false);
+                }
+            } else {
+                entity.spawnAtLocation(bowl);
+            }
+        }
+        return result;
     }
 }

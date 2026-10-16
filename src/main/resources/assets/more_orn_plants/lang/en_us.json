@@ -52,6 +52,9 @@
   "biome.more_orn_plants.ziying_caves": "Ziying Caves",
   "biome.more_orn_plants.suyu_caves": "Suyu Caves",
 
+  "dimension.more_orn_plants.the_qunfang": "The Qunfang",
+  "travelerstitles.more_orn_plants.the_qunfang": "The Qunfang",
+
   "block.more_orn_plants.red_mei_leaves": "Red Bone Mei Leaves",
   "block.more_orn_plants.red_mei_sapling": "Red Bone Mei Sapling",
   "block.more_orn_plants.red_mei_log": "Red Bone Mei Log",
@@ -679,6 +682,7 @@
   "block.more_orn_plants.suyu_beadlight": "Suyu Beadlight",
   "block.more_orn_plants.gold_sand": "Gold Sand",
   "block.more_orn_plants.muxue_grass_block": "muxue grass block",
+  "block.more_orn_plants.qunfang_draw": "Qunfang Draw",
 
   "block.more_orn_plants.potted_red_mei_sapling": "Potted Red Bone Mei Sapling",
   "block.more_orn_plants.potted_white_mei_sapling": "Potted Jiang Mei Sapling",

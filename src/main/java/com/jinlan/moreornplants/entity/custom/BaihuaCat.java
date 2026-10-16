@@ -66,6 +66,7 @@ public class BaihuaCat extends Cat {
     private int produceApricotTimer = 0;
     private int produceCrabappleTimer = 0;
     private int produceMeiTimer = 0;
+    private int produceQunfangTimer = 0;
     private int regenCooldown = 0;
 
     public BaihuaCat(EntityType<? extends Cat> pEntityType, Level pLevel) {
@@ -149,6 +150,7 @@ public class BaihuaCat extends Cat {
         compound.putInt("ProduceApricotTimer", this.produceApricotTimer);
         compound.putInt("ProduceCrabappleTimer", this.produceCrabappleTimer);
         compound.putInt("ProduceMeiTimer", this.produceMeiTimer);
+        compound.putInt("ProduceQunfangTimer", this.produceQunfangTimer);
         compound.putInt("RegenCooldown", this.regenCooldown);
     }
 
@@ -165,6 +167,7 @@ public class BaihuaCat extends Cat {
         this.produceApricotTimer = compound.getInt("ProduceApricotTimer");
         this.produceCrabappleTimer = compound.getInt("ProduceCrabappleTimer");
         this.produceMeiTimer = compound.getInt("ProduceMeiTimer");
+        this.produceQunfangTimer = compound.getInt("ProduceQunfangTimer");
         this.regenCooldown = compound.getInt("RegenCooldown");
     }
 
@@ -281,6 +284,14 @@ public class BaihuaCat extends Cat {
                     this.playSound(SoundEvents.CAT_EAT, 0.5F, 1.0F);
                     return InteractionResult.SUCCESS;
                 }
+                if (this.isPeony(item) && this.produceQunfangTimer == 0) {
+                    this.produceQunfangTimer = 100;
+                    if (!pPlayer.getAbilities().instabuild) {
+                        item.shrink(1);
+                    }
+                    this.playSound(SoundEvents.CAT_EAT, 0.5F, 1.0F);
+                    return InteractionResult.SUCCESS;
+                }
                 return super.mobInteract(pPlayer, pHand);
             } else if (item.is(ModTags.Items.BAIHUA_CAT_FOOD) && !this.isTame()) {
                 item.shrink(1);
@@ -318,6 +329,9 @@ public class BaihuaCat extends Cat {
     }
     public boolean isMei(ItemStack stack) {
         return stack.is(ModItems.MEI.get());
+    }
+    public boolean isPeony(ItemStack stack) {
+        return stack.is(ForgeTags.Items.PEONY);
     }
 
     public SimpleParticleType getParticle() {
@@ -376,6 +390,12 @@ public class BaihuaCat extends Cat {
                     this.giveMeiSaplings();
                 }
             }
+            if (this.produceQunfangTimer > 0) {
+                this.produceQunfangTimer--;
+                if (this.produceQunfangTimer == 0) {
+                    this.giveQunfangDraw();
+                }
+            }
 
             if (this.getHealth() < this.getMaxHealth()) {
                 if (this.regenCooldown <= 0) {
@@ -417,6 +437,11 @@ public class BaihuaCat extends Cat {
         ItemStack pinkMei = new ItemStack(ModBlocks.PINK_MEI_SAPLING.get());
         this.spawnAtLocation(whiteMei);
         this.spawnAtLocation(pinkMei);
+        this.playSound(SoundEvents.CAT_PURR, 1.0F, 1.0F);
+    }
+    protected void giveQunfangDraw() {
+        ItemStack stack = new ItemStack(ModBlocks.QUNFANG_DRAW.get());
+        this.spawnAtLocation(stack);
         this.playSound(SoundEvents.CAT_PURR, 1.0F, 1.0F);
     }
 

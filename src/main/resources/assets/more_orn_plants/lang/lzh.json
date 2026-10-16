@@ -52,6 +52,9 @@
   "biome.more_orn_plants.ziying_caves": "紫英洞",
   "biome.more_orn_plants.suyu_caves": "素玉洞",
 
+  "dimension.more_orn_plants.the_qunfang": "羣芳",
+  "travelerstitles.more_orn_plants.the_qunfang": "羣芳",
+
   "block.more_orn_plants.red_mei_leaves": "硃砂梅葉",
   "block.more_orn_plants.red_mei_sapling": "硃砂梅秧",
   "block.more_orn_plants.red_mei_log": "硃砂梅樁",
@@ -679,6 +682,7 @@
   "block.more_orn_plants.suyu_beadlight": "素玉珠燈",
   "block.more_orn_plants.gold_sand": "金沙",
   "block.more_orn_plants.muxue_grass_block": "暮雪草束",
+  "block.more_orn_plants.qunfang_draw": "羣芳畫卷",
 
   "block.more_orn_plants.potted_red_mei_sapling": "硃砂梅盆景",
   "block.more_orn_plants.potted_white_mei_sapling": "江梅盆景",
