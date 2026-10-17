@@ -683,7 +683,7 @@
   "block.more_orn_plants.suyu_beadlight": "素玉珠燈",
   "block.more_orn_plants.gold_sand": "金沙",
   "block.more_orn_plants.muxue_grass_block": "暮雪草捆",
-  "block.more_orn_plants.qunfang_draw": "羣芳畫卷",
+  "block.more_orn_plants.qunfang_scroll": "羣芳畫卷",
 
   "block.more_orn_plants.potted_red_mei_sapling": "硃砂梅樹苗盆栽",
   "block.more_orn_plants.potted_white_mei_sapling": "江梅樹苗盆栽",
@@ -1040,7 +1040,7 @@
   "advancement.moreornplants.baihua_gift.title": "百花仙子的贈禮",
   "advancement.moreornplants.baihua_gift.description": "八節長青草，四時不謝花",
 
-  "tooltip.more_orn_plants.qunfang_draw.tooltip": "§7以花為媒，入畫羣芳",
+  "tooltip.more_orn_plants.qunfang_scroll.tooltip": "§7以花為媒，入畫羣芳",
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§77光皮樹",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞品種，無竹板",
   "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7對不死生物有特殊傷害",

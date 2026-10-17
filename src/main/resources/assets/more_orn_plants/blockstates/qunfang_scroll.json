@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "more_orn_plants:block/qunfang_scroll",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "more_orn_plants:block/qunfang_scroll"
+    },
+    "facing=south": {
+      "model": "more_orn_plants:block/qunfang_scroll",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "more_orn_plants:block/qunfang_scroll",
+      "y": 270
+    }
+  }
+}

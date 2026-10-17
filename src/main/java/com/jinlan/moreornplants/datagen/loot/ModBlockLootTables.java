@@ -1143,7 +1143,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SUYU_BEADLIGHT.get());
         this.dropSelf(ModBlocks.GOLD_SAND.get());
         this.dropSelf(ModBlocks.MUXUE_GRASS_BLOCK.get());
-        this.dropSelf(ModBlocks.QUNFANG_DRAW.get());
+        this.dropSelf(ModBlocks.QUNFANG_SCROLL.get());
 
         List<Block> soups = List.of(
                 ModBlocks.BAMBOO_SHOOTS_SOUP.get(),

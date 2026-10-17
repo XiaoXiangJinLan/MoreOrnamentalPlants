@@ -683,7 +683,7 @@
   "block.more_orn_plants.suyu_beadlight": "Suyu Beadlight",
   "block.more_orn_plants.gold_sand": "Gold Sand",
   "block.more_orn_plants.muxue_grass_block": "muxue grass block",
-  "block.more_orn_plants.qunfang_draw": "Qunfang Draw",
+  "block.more_orn_plants.qunfang_scroll": "Qunfang Scroll",
 
   "block.more_orn_plants.potted_red_mei_sapling": "Potted Red Bone Mei Sapling",
   "block.more_orn_plants.potted_white_mei_sapling": "Potted Jiang Mei Sapling",
@@ -1040,7 +1040,7 @@
   "advancement.moreornplants.baihua_gift.title": "Gift of the Baihua Fairy",
   "advancement.moreornplants.baihua_gift.description": "Flowers that never fade through all seasons, and grass that stays evergreen year-round.",
 
-  "tooltip.more_orn_plants.qunfang_draw.tooltip": "§7With a blossom as the key, step into the painted Qunfang realm.",
+  "tooltip.more_orn_plants.qunfang_scroll.tooltip": "§7With a blossom as the key, step into the painted Qunfang realm.",
   "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7Light-barked tree",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7Ornamental varieties,non-building material",
   "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7Deals special damage to undead",

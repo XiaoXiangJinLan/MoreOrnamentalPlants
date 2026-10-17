@@ -2,8 +2,8 @@
   "ambientocclusion": false,
   "render_type": "minecraft:cutout",
   "textures": {
-    "particle": "more_orn_plants:block/qunfang_draw",
-    "draw": "more_orn_plants:block/qunfang_draw"
+    "particle": "more_orn_plants:block/qunfang_scroll",
+    "draw": "more_orn_plants:block/qunfang_scroll"
   },
   "elements": [
     {

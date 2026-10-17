@@ -172,7 +172,7 @@ public class CombatDamageEvents {
             event.setAmount(event.getAmount() * multiplier);
         }
         if (!event.getSource().is(BIOME_DAMAGE)) {
-            boolean hasQunfangDraw = weapon.is(ModItems.QUNFANG_DRAW.get()) || offhand.is(ModItems.QUNFANG_DRAW.get());
+            boolean hasQunfangDraw = weapon.is(ModItems.QUNFANG_SCROLL.get()) || offhand.is(ModItems.QUNFANG_SCROLL.get());
             if (hasQunfangDraw) {
                 float extraDamage = player.level().dimension().equals(ModDimension.THE_QUNFANG_LEVEL) ? 6.0F : 3.0F;
                 int originalInvulnerableTime = target.invulnerableTime;
@@ -304,7 +304,7 @@ public class CombatDamageEvents {
             spawnSwordParticle(player, ModParticleTypes.CAMPHOR_LEAVES.get(), 16);
         } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
             spawnSwordParticle(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get(), 12);
-        } else if (weapon.is(ModItems.BAIHUA_SWORD.get()) || weapon.is(ModItems.QUNFANG_DRAW.get())) {
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get()) || weapon.is(ModItems.QUNFANG_SCROLL.get())) {
             spawnSwordParticle(player, ModParticleTypes.BAIHUA_CAT.get(), 24);
         }
     }
@@ -325,7 +325,7 @@ public class CombatDamageEvents {
             spawnSwordParticle(player, ModParticleTypes.CAMPHOR_LEAVES.get(), 16);
         } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
             spawnSwordParticle(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get(), 12);
-        } else if (weapon.is(ModItems.BAIHUA_SWORD.get()) || weapon.is(ModItems.QUNFANG_DRAW.get())) {
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get()) || weapon.is(ModItems.QUNFANG_SCROLL.get())) {
             spawnSwordParticle(player, ModParticleTypes.BAIHUA_CAT.get(), 24);
         }
     }
@@ -363,7 +363,7 @@ public class CombatDamageEvents {
                 spawnSwordParticle2(player, ModParticleTypes.SUYU_FOX.get());
             } else if (weapon.is(ModTags.Items.ZIYU_YUANYANG_TOOLS) || weapon.is(ModItems.ZIYU_YUANYANG_BEAD.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.ZIYU_YUANYANG.get());
-            } else if (weapon.is(ModItems.BAIHUA_SWORD.get()) || weapon.is(ModItems.QUNFANG_DRAW.get())) {
+            } else if (weapon.is(ModItems.BAIHUA_SWORD.get()) || weapon.is(ModItems.QUNFANG_SCROLL.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
             }
             if (offHand.is(ModTags.Items.ZIYING_TOOLS) || offHand.is(ModItems.ZIYING_BEAD.get())) {
@@ -372,7 +372,7 @@ public class CombatDamageEvents {
                 spawnSwordParticle2(player, ModParticleTypes.SUYU_FOX.get());
             } else if (offHand.is(ModTags.Items.ZIYU_YUANYANG_TOOLS) || offHand.is(ModItems.ZIYU_YUANYANG_BEAD.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.ZIYU_YUANYANG.get());
-            } else if (offHand.is(ModItems.BAIHUA_SWORD.get()) || offHand.is(ModItems.QUNFANG_DRAW.get())) {
+            } else if (offHand.is(ModItems.BAIHUA_SWORD.get()) || offHand.is(ModItems.QUNFANG_SCROLL.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
             }
         }

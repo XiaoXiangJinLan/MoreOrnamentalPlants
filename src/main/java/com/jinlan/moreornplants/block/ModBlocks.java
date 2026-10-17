@@ -1605,8 +1605,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> MUXUE_GRASS_BLOCK =
             registerBlock("muxue_grass_block", () -> new HayBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).mapColor(MapColor.SNOW)));
 
-    public static final RegistryObject<Block> QUNFANG_DRAW =
-            BLOCKS.register("qunfang_draw", () -> new QunfangPortalBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).noCollission().randomTicks().instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.BLOCK)));
+    public static final RegistryObject<Block> QUNFANG_SCROLL =
+            BLOCKS.register("qunfang_scroll", () -> new QunfangPortalBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).noCollission().randomTicks().instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.BLOCK)));
 
     private static ModRotatedPillarBlock log(MapColor pTopMapColor, MapColor pSideMapColor) {
         return new ModRotatedPillarBlock(BlockBehaviour.Properties.of().mapColor((p_152624_) ->

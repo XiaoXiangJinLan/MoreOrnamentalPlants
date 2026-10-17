@@ -320,8 +320,8 @@ public class ModItems {
     public static final RegistryObject<Item> LOTUS_XIANGNANG =
             ITEMS.register("lotus_xiangnang", () -> new XiangnangItem(ModBlocks.LOTUS_XIANGNANG.get(), new Item.Properties(), 300, 0));
 
-    public static final RegistryObject<Item> QUNFANG_DRAW =
-            ITEMS.register("qunfang_draw", () -> new QunfangDrawBlockItem(ModBlocks.QUNFANG_DRAW.get(), new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> QUNFANG_SCROLL =
+            ITEMS.register("qunfang_scroll", () -> new QunfangScrollBlockItem(ModBlocks.QUNFANG_SCROLL.get(), new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
