@@ -440,7 +440,7 @@ public class BaihuaCat extends Cat {
         this.playSound(SoundEvents.CAT_PURR, 1.0F, 1.0F);
     }
     protected void giveQunfangDraw() {
-        ItemStack stack = new ItemStack(ModBlocks.QUNFANG_DRAW.get());
+        ItemStack stack = new ItemStack(ModItems.QUNFANG_DRAW.get());
         this.spawnAtLocation(stack);
         this.playSound(SoundEvents.CAT_PURR, 1.0F, 1.0F);
     }

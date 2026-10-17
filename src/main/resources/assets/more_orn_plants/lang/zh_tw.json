@@ -1040,7 +1040,8 @@
   "advancement.moreornplants.baihua_gift.title": "百花仙子的贈禮",
   "advancement.moreornplants.baihua_gift.description": "八節長青草，四時不謝花",
 
-  "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§7小喬木，無木材",
+  "tooltip.more_orn_plants.qunfang_draw.tooltip": "§7以花為媒，入畫羣芳",
+  "tooltip.more_orn_plants.crape_myrtle_log.tooltip": "§77光皮樹",
   "tooltip.more_orn_plants.mod_bamboo.tooltip": "§7觀賞品種，無竹材",
   "tooltip.more_orn_plants.peach_wooden_sword.tooltip": "§7對不死生物有特殊傷害",
   "tooltip.more_orn_plants.camphor_wooden_sword.tooltip": "§7對節肢生物傷害提高",
