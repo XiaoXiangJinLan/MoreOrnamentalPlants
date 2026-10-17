@@ -1,6 +1,7 @@
 package com.jinlan.moreornplants.event;
 
 import com.jinlan.moreornplants.MoreOrnPlants;
+import com.jinlan.moreornplants.block.ModBlocks;
 import com.jinlan.moreornplants.config.ModBiomeConfig;
 import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
@@ -33,11 +34,15 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 import static com.jinlan.moreornplants.init.ModDamageTypes.BIOME_DAMAGE;
+import static com.jinlan.moreornplants.init.ModDamageTypes.biomeDamage;
 
 @Mod.EventBusSubscriber(modid = MoreOrnPlants.MOD_ID)
 public class CombatDamageEvents {
     @SubscribeEvent
     public static void onLivingHurt(LivingHurtEvent event) {
+        if (event.getSource().is(BIOME_DAMAGE)) {
+            return;
+        }
         LivingEntity target = event.getEntity();
         if (target.level().dimension().equals(ModDimension.THE_QUNFANG_LEVEL) && !event.getSource().is(BIOME_DAMAGE)) {
             event.setAmount(event.getAmount() * 0.5f);
@@ -86,6 +91,7 @@ public class CombatDamageEvents {
 
         if (!(event.getSource().getDirectEntity() instanceof Player player)) return;
         ItemStack weapon = player.getMainHandItem();
+        ItemStack offhand = player.getOffhandItem();
         LivingEntity target1 = event.getEntity();
         InventoryState state = getInventoryState(player);
         if (weapon.is(ModItems.PEACH_WOODEN_SWORD.get())) {
@@ -96,8 +102,9 @@ public class CombatDamageEvents {
                 float multiplier = 1.0f;
                 float maxHealth = target1.getMaxHealth();
                 if (maxHealth > 4.0f) {
+                    float currentDamage = Math.max(4.0f, event.getAmount());
                     multiplier = maxHealth / 2.0f;
-                    event.setAmount(multiplier * (event.getAmount() - 1));
+                    event.setAmount(multiplier * (currentDamage - 1));
                 } else {
                     event.setAmount(multiplier * (event.getAmount() + maxHealth));
                 }
@@ -164,6 +171,19 @@ public class CombatDamageEvents {
                 multiplier *= ModBiomeConfig.BAIHUA_SWORD_FLORAL_BIOME_MULTIPLIER.get().floatValue() * 2;
             }
             event.setAmount(event.getAmount() * multiplier);
+        }
+        if (!event.getSource().is(BIOME_DAMAGE)) {
+            boolean hasQunfangDraw = weapon.is(ModBlocks.QUNFANG_DRAW.get().asItem()) || offhand.is(ModBlocks.QUNFANG_DRAW.get().asItem());
+            if (hasQunfangDraw) {
+                float extraDamage = player.level().dimension().equals(ModDimension.THE_QUNFANG_LEVEL) ? 6.0F : 3.0F;
+                int originalInvulnerableTime = target.invulnerableTime;
+                float originalLastHurt = target.lastHurt;
+                target.invulnerableTime = 0;
+                target.lastHurt = 0;
+                target.hurt(biomeDamage(player.level(), player), extraDamage);
+                target.invulnerableTime = originalInvulnerableTime;
+                target.lastHurt = originalLastHurt;
+            }
         }
     }
 
@@ -285,7 +305,7 @@ public class CombatDamageEvents {
             spawnSwordParticle(player, ModParticleTypes.CAMPHOR_LEAVES.get(), 16);
         } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
             spawnSwordParticle(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get(), 12);
-        } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get()) || weapon.is(ModBlocks.QUNFANG_DRAW.get().asItem())) {
             spawnSwordParticle(player, ModParticleTypes.BAIHUA_CAT.get(), 24);
         }
     }
@@ -306,7 +326,7 @@ public class CombatDamageEvents {
             spawnSwordParticle(player, ModParticleTypes.CAMPHOR_LEAVES.get(), 16);
         } else if (weapon.is(ModItems.CHINESE_PARASOL_WOODEN_SWORD.get())) {
             spawnSwordParticle(player, ModParticleTypes.YELLOW_CHINESE_PARASOL_LEAVES.get(), 12);
-        } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+        } else if (weapon.is(ModItems.BAIHUA_SWORD.get()) || weapon.is(ModBlocks.QUNFANG_DRAW.get().asItem())) {
             spawnSwordParticle(player, ModParticleTypes.BAIHUA_CAT.get(), 24);
         }
     }
@@ -344,7 +364,7 @@ public class CombatDamageEvents {
                 spawnSwordParticle2(player, ModParticleTypes.SUYU_FOX.get());
             } else if (weapon.is(ModTags.Items.ZIYU_YUANYANG_TOOLS) || weapon.is(ModItems.ZIYU_YUANYANG_BEAD.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.ZIYU_YUANYANG.get());
-            } else if (weapon.is(ModItems.BAIHUA_SWORD.get())) {
+            } else if (weapon.is(ModItems.BAIHUA_SWORD.get()) || weapon.is(ModBlocks.QUNFANG_DRAW.get().asItem())) {
                 spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
             }
             if (offHand.is(ModTags.Items.ZIYING_TOOLS) || offHand.is(ModItems.ZIYING_BEAD.get())) {
@@ -353,7 +373,7 @@ public class CombatDamageEvents {
                 spawnSwordParticle2(player, ModParticleTypes.SUYU_FOX.get());
             } else if (offHand.is(ModTags.Items.ZIYU_YUANYANG_TOOLS) || offHand.is(ModItems.ZIYU_YUANYANG_BEAD.get())) {
                 spawnSwordParticle2(player, ModParticleTypes.ZIYU_YUANYANG.get());
-            } else if (offHand.is(ModItems.BAIHUA_SWORD.get())) {
+            } else if (offHand.is(ModItems.BAIHUA_SWORD.get()) || offHand.is(ModBlocks.QUNFANG_DRAW.get().asItem())) {
                 spawnSwordParticle2(player, ModParticleTypes.BAIHUA_CAT.get());
             }
         }

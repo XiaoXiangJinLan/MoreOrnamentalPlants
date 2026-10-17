@@ -6,7 +6,6 @@ import com.jinlan.moreornplants.block.FlowerBlocks.WaterLotusBlock;
 import com.jinlan.moreornplants.block.WeepingBlocks.PeachBlock;
 import com.jinlan.moreornplants.config.ModBiomeConfig;
 import com.jinlan.moreornplants.entity.custom.ZiyingFox;
-import com.jinlan.moreornplants.init.ModParticleTypes;
 import com.jinlan.moreornplants.item.ModItems;
 import com.jinlan.moreornplants.util.ModTags;
 import com.jinlan.moreornplants.util.SeasonsTags;
@@ -14,7 +13,6 @@ import com.jinlan.moreornplants.worldgen.biome.ModBiomes;
 import com.jinlan.moreornplants.worldgen.dimension.ModDimension;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
-import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionResult;
@@ -45,7 +43,6 @@ import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.EntityLeaveLevelEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.living.MobSpawnEvent;
-import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
 import net.minecraftforge.event.level.BlockEvent;
@@ -180,7 +177,7 @@ public class ModEvents {
                 entity instanceof AbstractGolem || entity instanceof Allay)) {
             return;
         }
-        if (ModBiomeConfig.ENABLE_LONGEVITY_FOREST_EFFECTS.get() && tick % 100 != 0) {
+        if (ModBiomeConfig.ENABLE_LONGEVITY_FOREST_EFFECTS.get() && tick % 100 == 0) {
             if (biomeHolder.is(ModBiomes.LONGEVITY_FOREST)) {
                 AttributeInstance attribute = entity.getAttribute(Attributes.MAX_HEALTH);
                 if (attribute != null && attribute.getModifier(LONGEVITY_BOOST_UUID) == null) {
@@ -379,11 +376,11 @@ public class ModEvents {
 
     @SubscribeEvent
     public static void onPlayerTick2(TickEvent.PlayerTickEvent event) {
-        // 只在服务端执行，且只在 tick 结束时触发一次（避免重复）
         if (event.phase == TickEvent.Phase.END && !event.player.level().isClientSide) {
             ServerPlayer player = (ServerPlayer) event.player;
-            // 调用你的自定义触发器
-            ModCriteriaTriggers.FLOWERS_AND_MOON.trigger(player);
+            if (player.tickCount % 20 == 0) {
+                ModCriteriaTriggers.FLOWERS_AND_MOON.trigger(player);
+            }
         }
     }
 }

@@ -7,7 +7,9 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.Nullable;
 
 public class ModDamageTypes {
     public static final ResourceKey<DamageType> BIOME_DAMAGE = ResourceKey.create(
@@ -16,9 +18,16 @@ public class ModDamageTypes {
     );
 
     public static DamageSource biomeDamage(Level level) {
-        Holder<DamageType> holder = level.registryAccess()
+        return new DamageSource(getHolder(level));
+    }
+
+    public static DamageSource biomeDamage(Level level, @Nullable Entity entity) {
+        return new DamageSource(getHolder(level), entity, entity);
+    }
+
+    private static Holder<DamageType> getHolder(Level level) {
+        return level.registryAccess()
                 .registryOrThrow(Registries.DAMAGE_TYPE)
                 .getHolderOrThrow(BIOME_DAMAGE);
-        return new DamageSource(holder);
     }
 }
